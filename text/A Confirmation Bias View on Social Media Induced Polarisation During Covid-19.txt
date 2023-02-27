@@ -1,0 +1,1428 @@
+Information Systems Frontiers
+https://doi.org/10.1007/s10796-021-10222-9
+
+
+
+
+A Confirmation Bias View on Social Media Induced Polarisation During
+Covid‑19
+Sachin Modgil1 · Rohit Kumar Singh1 · Shivam Gupta2 · Denis Dennehy3
+
+Accepted: 1 November 2021
+© The Author(s) 2021
+
+
+Abstract
+Social media has played a pivotal role in polarising views on politics, climate change, and more recently, the Covid-19 pan-
+demic. Social media induced polarisation (SMIP) poses serious challenges to society as it could enable ‘digital wildfires’
+that can wreak havoc worldwide. While the effects of SMIP have been extensively studied, there is limited understanding of
+the interplay between two key components of this phenomenon: confirmation bias (reinforcing one’s attitudes and beliefs)
+and echo chambers (i.e., hear their own voice). This paper addresses this knowledge deficit by exploring how manifestations
+of confirmation bias contributed to the development of ‘echo chambers’ at the height of the Covid-19 pandemic. Thematic
+analysis of data collected from 35 participants involved in supply chain information processing forms the basis of a con-
+ceptual model of SMIP and four key cross-cutting propositions emerging from the data that have implications for research
+and practice.
+
+Keywords Echo Chambers · Social Media Induced Polarisation · Confirmation Bias · Covid-19
+
+
+1 Introduction                                                   transactions, consumer sentiment, and purchasing decisions,
+                                                                 as well as interact with consumers to track their behaviour
+Social media is increasingly being used by organisations         (Brusset & Teller, 2017; Havakhor et al., 2018; Min & Zhou,
+to manage business activities and relationships among            2002). Essentially, social media enables stakeholders of a
+supply-chain stakeholders (Choi et al., 2020; Huang et al.,      supply chain to communicate and exchange information that
+2020; Singh et al., 2018) including, new product develop-        can impact the forecasting of disruptions, order fulfilment,
+ment (Giannakis et al., 2020), service improvement (Fan          and production flow to match supply and demand (Grant,
+& Niu, 2016), daily sales forecasts (Cui et al., 2019), and      2016; Rauniar et al., 2014). On one hand social media helps
+information dissemination (Kanagarajoo et al., 2019). The        in communicating individuals and organizations about their
+prevalence and speed at which social media platforms             products, services and developing network of communities
+(e.g., WeChat, Facebook, LinkedIn, Twitter, Flickr, What-        that can be helpful to share the information on real time
+sApp) facilitate the exchange of real-time data (Gorwa           basis and create the awareness on a specific issue such as
+& Guilbeault, 2020; Rousidis et al., 2020) has made it a         health during Covid-19 (Mheidly & Fares, 2020). On the
+popular tool for effective supply chain management (Choi         other hand, social media is full of possibilities of fake and
+et al., 2020). For instance, throughout the supply chain,        misleading content such as Covid-19 variants and their cure
+social media is being used to monitor in real-time, risks,       along with role of vaccination in fighting Covid-19, along
+                                                                 with cyber risks (Brummette et al., 2018; Islam et al., 2020).
+                                                                    The universal access to real-time information that social
+* Shivam Gupta                                                   media provides to users (Dwivedi et al., 2018) can lead to
+* Denis Dennehy                                                  supply chain participants becoming highly susceptible to
+  denis.dennehy@nuigalway.ie                                     ‘confirmation bias’ and ‘echo chambers’ e.g., situations
+1
+    International Management Institute (IMI) Kolkata, Kolkata,   where individuals “hear their own voice” (Bessi, 2016;
+    India                                                        Boutyline & Willer, 2017; Brugnoli et al., 2019; Jacob-
+2
+    NEOMA Business School, Mont‑Saint‑Aignan, France             son et al., 2016). The influence of echo chambers includes
+3
+                                                                 excluding alternate perspectives (Gillespie et al., 2014), a
+    National University of Ireland Galway, Galway, Ireland
+
+
+                                                                                                                    13
+                                                                                                               Vol.:(0123456789)
+                                                                                                       Information Systems Frontiers
+
+
+lack of common ground (Layman et al., 2006) and politi-           favour certain social media platforms due to their familiarity
+cal, administrative, and social gridlock in many contexts         with the source of information rather than its trustworthi-
+(Hutchens et al., 2021; Kim & Kim, 2019). Therefore, an           ness (Fidel & Green, 2004; Orji et al., 2020). The choice
+approach of mindfulness and reliability needs to be devel-        of social media platform can significantly impact supply
+oped to avoid echo chambers across the supply chain (Butler       chains from a risk management perspective (Culp, 2020;
+& Gray, 2006; Dernbecher & Beck, 2017; Thatcher et al.,           Fu et al., 2013; O’Leary, 2011) as supply chain participants
+2018). Hence, social media induced polarization (SMIP) can        are influenced by the sentiment of posts, concerns or tweets
+be defined as skewed opinions, information/misinformation         that are expressed by customers, retailers, and other stake-
+regarding socio-cultural activities including products or ser-    holders (Clapham et al., 2019; Wuebben, 2016; Zadeh &
+vices that can lead to mass destruction of property and other     Sharda, 2014).
+crisis (O’Hara & Stevens, 2015).                                     As supply chains become increasingly digitised using
+   The devastating effect of SMIP on communities, busi-           social media platforms and other digital technologies (i.e.,
+nesses, and governments has been identified by the World          AI, Big data), supply chain participants are increasingly
+Economic Forum (2018) as the greatest threat to society due       seeking and believing the information from like-minded
+to the speed at which ‘digital wildfires’ spread on a global      individuals (He et al., 2017; Sestino et al., 2020; Tim et al.,
+scale. Discourse on SMIP has reached mainstream media             2021). This approach can increase the risk to echo cham-
+with prominent business leaders including Tim Cook (CEO,          bers as participants may unknowingly seek reinforcement of
+Apple) criticising polarisation and misinformation due to         existing biases and beliefs (Bhardwaj et al., 2016; Flaxman
+social media and the facilitating role that technology com-       et al., 2016).
+panies play by prioritising conspiracy theories and violent          The phenomenon of ‘SMIP’ has been studied from differ-
+incitement because of their high rates of engagement (Reu-        ent perspectives (e.g., Flaxman et al., 2016; Geschke et al.,
+ters, 2021; Weckler, 2021). The providers as well as users        2019; O’Hara & Stevens, 2015; Spohr, 2017) and in var-
+are the victims of unreliable information that affect the deci-   ied contexts, such as politics (Kim & Kim, 2019; Hyun, &
+sion making for most of the organizations.                        Moon, 2016; Yarchi et al., 2020, Lee, 2016), climate change
+   In the context of SMIP, echo chambers refer to situations      (e.g., Fisher et al., 2013; Leviston et al., 2013), and news
+where users consume content and engage in discourse that          framing (Han & Federico, 2018; Hyun & Moon, 2016).
+predominantly supports the same point of view that users          Recent studies (e.g., Del Vicario et al., 2017; Sikder et al.,
+hold and believe themselves (Boutyline & Willer, 2017;            2020) have begun modelling the combination of bias and
+Flaxman et al., 2016). In the context of this study, social       polarisation to examine the impact of misinformation in
+media can induce polarisation in the form of echo cham-           social media networks. There remains however, much scope
+bers in global supply chains due to regional differences          to advance understanding of SMIP as there is a noticeable
+in terms of selecting, filtering, and sorting of information      absence of research that focuses on the structure of social
+on social media (Flaxman et al., 2016; Miroudot, 2020).           media polarisation in the context of global events such as
+For example, echo chambers can occur as a global event            Covid-19, where participants are highly susceptible to devel-
+unfolds (i.e., Covid-19, natural disaster) whereby supply         oping echo chambers through confirmation bias (Boutyline
+chain participants are influenced by their professional and       & Willer, 2017; Orji et al., 2020). To this end, the aim of
+personal experiences (Bhagwat & Sharma, 2007; Muckstadt           this study is to ‘explore how manifestations of confirmation
+et al., 2001), as well as the information that is circulated      bias contribute to the development of echo chambers, in the
+and referred through social media (Gupta et al., 2021; Bar-       context of supply chains during the Covid-19 pandemic.’ To
+berá et al., 2015; Toubiana & Zietsma, 2017). The impact of       achieve this aim, we seek to answer the following research
+echo chambers on supply chain decision making can lead to         question: How do the elements of SMIP lead to the emer-
+excessive or insufficient stock levels in regional warehouses     gence of echo chambers in the context of supply chains?
+(Sharma et al., 2020).                                               To answer this research question, this study adopts an
+   The ubiquitous nature and speed of social media has been       interpretive qualitative approach to explore SMIP from the
+attributed to its popularity as a tool to coordinate supply       perspective of supply chain participants by using thematic
+chain activities (Choi et al., 2020). The speed of informa-       analysis to identify how four elements (e.g., environmental
+tion dissemination on social media is also highly influential     setting, actors, mechanism, and outcome) contribute to the
+as content published first tends to get more attention and it     development of echo chambers.
+influences the opinion of end users (Roozenbeek & van der            The remainder of the paper is structured as follows. A
+Linden, 2019; Wang et al., 2015), as well as decision mak-        review of pertinent SMIP literature that informs our con-
+ers spread across the globe (Arnott, 2006; Wu et al., 2019).      ceptualisation of echo chambers through confirmation bias
+Supply chain participants are also increasingly exposed to        is presented. Next, the research method and data collection
+high volumes of information and over a period they tend to        and analysis are outlined. Then key findings and emergent
+
+13
+Information Systems Frontiers
+
+themes are presented that form the basis of four cross-cutting   Therefore, individuals need to rely on mindfulness and adopt
+propositions. Followed by a discussion, implications, and        reliable technologies consuming and sharing information
+future research. The paper ends with a conclusion.               (Endsley, 2018). Individuals also tend to seek social media
+                                                                 platforms that support their beliefs and attitudes, to gain
+                                                                 confidence in their biased views (Arnott, 2006; Nikolov
+2 Literature Review                                             et al., 2019; Shin & Thorson, 2017; Susarla et al., 2012).
+                                                                 The fake content circulating on social media lead to extreme
+2.1 Social Media Induced Polarisation                           situations. For example, in 2019, a baby’s bloodied corpse
+                                                                 led to the violence and killed at least 10 people in Africa’s
+The proliferation of social media has been a catalyst to         Nigeria (LA Times, 2019). In another fake campaign run by
+inducing a dangerous, socio-cultural polarisation of society     secondary school students in Chile against the fare of metro,
+(Montalvo & Reynal-Querol, 2005; Spohr, 2017; Vishwa-            led to the developments of civil protest, violence and deaths
+nath, 2015). This polarisation phenomenon has led research-      leading to the instability for weeks in the country (Atlantic
+ers to explore SMIP from different theoretical lenses to study   Council, 2019). Recently, people are posting the content
+specific social media platforms and particular attention         related to Covid-19 and its vaccination impact and people
+given to fake news (Langley et al., 2021; Brummette et al.,      are avoiding taking the vaccine, which is culminating the
+2018; Lee et al., 2015a; Shearer & Grieco, 2019; Singh           fear of another variant of Covid-19 and resulting into slow
+et al., 2020). Manifestations of SMIP include misinforma-        progress of inoculation (India Today, 2021).
+tion about presidential election campaigns (Guess et al.,            The degree of SMIP is however, depends on the type of
+2018; Linvill & Warren, 2020; Schäfer et al., 2017), race        network (e.g., centralised or egalitarian) that individual con-
+(Jamieson, 2020), immigration (Jaramillo-Dent & Pérez-           sumers have joined (Juris, 2012). In a centralised network
+Rodríguez, 2021; Newman et al., 2017), religion (Said,           there is usually only one or a select number of individuals
+2008), and pandemics, specifically Covid-19 (Laato et al.,       at the centre who play the role of ‘influencer’ as they can
+2020). The rapid global adoption of social media technol-        filter or block information before sharing it to a much wider
+ogy has significantly influenced many job roles and supply       network of its members (Culnan et al., 2010; Gallaugher
+chain activities (Ribarsky et al., 2014; Zamani et al., 2020).   & Ransbotham, 2010). While in an egalitarian network, all
+Organisations are incorporating social media technology          members have equal contact and influence across the net-
+as a core capability to deliver information efficiently and      work and therefore opinions can be shared by any individual
+cost-effectively to stakeholders in their supply chain (Osat-    within the network, and information is shared unfiltered to
+uyi, 2013; Thatcher et al., 2018; Xie & Lee, 2015; Zhang         all members (Sikder et al., 2020). The attitude or belief sys-
+et al., 2017). For example, increasing its visibility in the     tem of a participant can be influenced due to the information
+supply chain ecosystem, facilitating real-time communica-        processing approaches in both types of networks (Petty et al.,
+tion between its customers, and to mitigate risks (Wu & Li,      2009). When a participant is motivated and capable, they
+2018).                                                           will carefully engage, reflect, and connect with pre-existing
+    Social media tools (e.g., blogs, wikis) and platforms        beliefs and then influence the cognitive network (Arnott,
+(Facebook, Twitter, and LinkedIn etc.) are increasingly          2006). A cognitive network indicates a complex structure,
+being used by consumers (individuals) and providers (organ-      where nodes signify concepts and branches specify one or
+isations) to (i) post and share information, (ii) develop a      more type of conceptual relationship, for instance two words
+network of communities, and to achieve competitive advan-        describe the same sense in one context or like one another
+tage in both developed and developing countries (Batrinca        (Islam et al., 2020). The cognitive network is dependent
+& Treleaven, 2015; Obar et al., 2012; Stieglitz & Dang-          on cognitive ability of individuals those are motivated, not
+Xuan, 2013). Essentially, social media enables individuals       motivated or lack cognitive ability may engage in peripheral
+and organisations to act as influencers in the dissemination     processing and rely on the source of information due to its
+of information in terms of posting, re-sharing, commenting,      credibility that can lead to a change of attitude (Petty et al.,
+tagging, and re-tweeting (Lee et al., 2015b; Shin & Thorson,     1987). Compared to central processing, the egalitarian net-
+2017). The dark side of this form of endorsed information        work does not produce long lasting changes in belief system
+sharing is that consumers of the information are exposed to      (Kelman, 2006).
+‘filtered’ information (Fletcher & Nielsen, 2018; Gallaugher         SMIP can be witnessed in both types of networks
+& Ransbotham, 2010; Kietzmann et al., 2011; Tran et al.,         (Centralised and Egalitarian) as partisan bias can become
+2020). This exposure increases the risk of misinformation        amplified when bias is displayed by a centralised echo
+being shared across the social media platform, leading to        chamber, while in the egalitarian echo chambers, the
+SMIP, such as echo chambers (Brugnoli et al., 2019; Mondal       quality of ideas is a basis for their spread as compared to
+et al., 2018; Toubiana & Zietsma, 2017; Wu et al., 2019).        a particular individual (Chou et al., 2018). In the context
+
+
+                                                                                                                      13
+                                                                                                        Information Systems Frontiers
+
+of supply chains, participants act as ‘partisan’ (e.g., creator   where users consume content that expresses the same point
+and gatekeeper of the shared information) or ‘bipartisan’         of view that users hold themselves (Bessi, 2016; Geschke
+(e.g., consumer of the information or reshare/endorse the         et al., 2019). As social media platforms largely rely on
+information) on social media platforms (Anand et al., 2007;       algorithms to generate large quantity of content, which can
+Sharif, 2002). For example, due to national and regional          lead to the emergence of conspiracy theories, other forms
+lockdowns during the Covid-19 pandemic, people spent              of distorted information, and even extremist groups with
+more time on social media discussing their views about            a shared ideology, which further lead to the emergence of
+the virus and vaccines (Sarkis, 2020; Islam et al., 2020;         echo chambers (Boutyline & Willer, 2017; Flaxman et al.,
+Nabity-Grover, 2020). Using social media in this way is           2016; Schilling & Fang, 2014). The evolution of a group
+an ‘infodemic’, due to the creation and consumption of            or community can be observed through the configuration
+misinformation related to the virus and vaccines which            of communication patterns (Tim et al., 2018). Weak pat-
+created confusion and distrust among people and hampered          terns of communication between a group of users can be
+an effective response to the pandemic (Verma & Gustafsson,        observed as compared to strong patterns of communication
+2020) and influencing the supply chains.                          within the group, leading to the formation of echo chambers
+                                                                  (Brugnoli et al., 2019). Since it is difficult to further identify
+2.2 Confirmation Bias                                            the sub-groups by just analyzing the communication pat-
+                                                                  tern on social media platforms, the measurement of echo
+Confirmation bias occurs, when users encounter informa-           chambers cannot be identified at group level as it requires
+tion that reinforces their pre-existing beliefs and attitudes     the measurement of communication pattern within group
+(Bessi, 2016; Geschke et al., 2019; Zhao et al., 2020). Con-      as compared to between groups (Carr & Hayes, 2015; Go &
+firmation bias is defined as the tendency to interpret, search    You, 2016). However, the level of fragmentation between
+for, recall, and favour the information in a way that con-        groups can define the degree of echo in chambers (Brugnoli
+firms one’s pre-existing beliefs or hypotheses resulting into     et al., 2019).
+polarised views about an issue or event (Westerwick et al.,           The exponential growth of data creation, data flow and
+2017; Gupta et al., 2021). Confirmation biases indicate why       consumption across the spectrum of social media platforms
+a group of individuals with opposing views on a topic can         offers many opportunities and challenges for supply chain
+view the same evidence. The individuals those are victims of      participants (Legner et al., 2017; Sarimveis et al., 2008). On
+confirmation bias give more weightage to evidence to sup-         the one hand, supply chain participants are actively looking
+port their beliefs rather than undervaluing the evidence that     for the modes, where they can capture the precise infor-
+can disprove it (Westerwick et al., 2017; Huang et al., 2012).    mation and improve the visibility, control, and efficiency
+Therefore, the tendency of people to favour the information       in their supply chain (Sodhi & Tang, 2019). On the other
+on their prior exposure or hypotheses can be regarded as          hand, supply chain activities are governed by participants
+confirmation bias, which is stronger for the activities and       who have their own pre-existing beliefs and attitudes that
+issues those are highly emotive and deeply entrenched (Zhao       can lead to ‘confirmation bias’, which can negatively impact
+et al., 2020). The information presented on social media is       the supply chain activities (Huang et al., 2020; Huang et al.,
+not only reflective of the designer’s values and beliefs, which   2012; Zhao et al., 2020). Earlier studies on social media have
+can be one-sided and/or sensational (Zhang et al., 2017; Par-     majorly focused on identity, social power, social capital, and
+iser, 2011). Previous studies conclude that users generally       social loafing that led to polarisation based on individuals’
+tend to search, believe, and share information that conforms      attitudes, actions, and intentions for using social media
+to their own beliefs and attitudes, but ignore the information    (Dwivedi et al., 2018; Erkan & Evans, 2016; O’Leary, 2011;
+that challenges their beliefs and attitudes (Itzchakov & Van      Rauniar et al., 2014; Rim et al., 2020). Indeed, such studies
+Harreveld, 2018; Knobloch-Westerwick & Kleinman, 2012;            have made valuable contributions to knowledge; however,
+van Strien, Kammerer et al., 2016). In the context of SMIP,       they do not conceptualise how the (i) foundational elements,
+social media platforms facilitate the configuration and aggre-    (ii) role of actors, and (iii) phenomena lead to the emergence
+gation of ‘like-minded’ people and network that reinforce         of echo chambers through dominance of confirmation bias
+and further empower polarised groups (Giannoccaro, 2018;          (Boulianne et al., 2020; Sasahara et al., 2020). In this study,
+Westerwick et al., 2017; Stroud, 2008).                           we conceptualize how confirmation bias can illuminate ele-
+                                                                  ments that can contribute to the development of ‘echo cham-
+2.3 Echo Chambers                                                bers’ in the context of supply chains (see Fig. 1).
+                                                                      In the context of supply chains, participants include
+Echo chambers refer to the situation where people ‘hear           professionals, consulting firms and organisations that
+their own voice’ (Boutyline & Willer, 2017; Flaxman et al.,       play an equal role in creating and sharing the informa-
+2016). In the context of social media, it refers to situations    tion. It is therefore appropriate to view the system as
+
+
+13
+Information Systems Frontiers
+
+Fig. 1  Conceptualisation of
+echo chambers through confir-
+mation bias on social media
+
+
+
+
+egalitarian, where partisan and bi-partisan members co-        evidence, ranging from initial research questions to ulti-
+exist. Partisans are the producers and users of the con-       mate case study conclusions.” (Yin, 2002, p.83).
+tent with one-sided leaning, whereas bi-partisan produc-
+ers create and consume the content with both side view.        3.1 Data Collection
+The gatekeeper type of users consumes the content with
+both perspectives but produce it with single sided lean-       Using snowball sampling (Naderifar et al., 2017; Noy 2008),
+ing after some filtration. These consumers and producers       35 supply chain practitioners with extensive industry experi-
+represent a smaller group with higher network centrality,      ence and knowledge of AI were identified for the purpose of
+without much embedded in their community network. It           this study (see Table 1). Interviews were conducted between
+is relatively easy to identify partisan users as compared      September and December 2020. Due to Covid-19, interviews
+to gatekeepers (Garimella et al., 2018). The character-        were conducted remotely via Microsoft Teams and Zoom.
+istics of partisans, bi-partisans and gatekeepers leads to     The duration of interviews ranged between 30 and 50 min.
+the development of confirmation bias, whereby content          Interviews were recorded and transcribed using Otter, an AI-
+is related and familiar and posted through new source          based transcription software, proof-read and annotated. Data
+(Jacobson et al., 2016). When different users on social        saturation (Birks et al., 2013; Nelson, 2017) was achieved
+media consume the information from different sources,          after 35 interviews, and therefore, no additional interviews
+they develop the echo chambers on the premise of confir-       were conducted. For the purpose of research rigour and
+mation of their beliefs resulting into polarisation.           anoymonity, a code (e.g., R1 to R35) was assigned to each
+                                                               interviewee.
+
+                                                               3.2 Data Analysis
+3 Research Methods
+                                                               Data analysis was conducted using open, axial, and selec-
+This exploratory study adopts an interpretive case study       tive coding that further enabled us to derive themes and
+approach as it is suited to (i) understanding of the influ-    sub-themes through the process of iteration (Dezdar &
+ence of context (Walsham, 1993), (ii) examining a new          Sulaiman, 2009; Strauss & Corbin 1997). Both the Glaserian
+phenomenon that lacks empirical substantiation (Benba-         and Straussian grounded theory methodologies are the most
+sat et al., 1987; Eisenhardt, 1989; Stake, 2000), and (iii)    prevalent in extant literature (Matavire & Brown, 2013).
+extending the theoretical underpinning of the study (Ben-      The Glaserian approach is rooted in critical and rationalis-
+basat et al., 1987; Pagell & Wu, 2009; Stuart et al., 2002).   tic thinking, whereas the Straussian approach is pragmatic
+The research design (see Fig. 2) provides a clear ‘chain       and can identify the phenomenon through interaction among
+of evidence’ (Yin, 2002) with explicit links between the       participants. A thematic analysis of the qualitative data using
+research questions, the data collected, and the conclu-        the Strauss & Corbin (1997) method was adopted as it sup-
+sions drawn, which helps “follow the derivation of any         ports the development of theory based on the stories and
+
+
+
+                                                                                                                   13
+                                                                                                     Information Systems Frontiers
+
+Fig. 2  Research design
+
+
+
+
+views of participants and it provides a pre-defined coding        participants involved in supply chain information process-
+scheme. We conducted primary, secondary, and tertiary             ing. The coding scheme is presented in Appendix Table 8.
+analysis (three-layer analysis i.e., open, axial, and selective   Table 2 presents the triangulation approach, where we found
+coding) since it was capable of consolidating and facilitating    the convergence through industry reports, research articles
+the raw data to meaningful themes.                                and data collected from the participants.
+   Four key propositions emerged out of the data that was
+analysed through three stages. The first stage of the data
+analysis involved reading the transcripts, identifying differ-    4 Key Findings & Emergent Themes
+ences and similarities between responses to the interview
+questions, and observing emerging themes. This stage is           This section presents key findings under four themes that
+about conceptualisation and description of the data at basic      emerged from the data, namely, environmental setting,
+level and is commonly known as open coding. In the sec-           actors, mechanism, and outcome. Each of these themes are
+ond stage, we analysed the relationship among open codes          discussed in the context of supply chains and form the basis
+leading to develop the axial codes. Second stage of axial         for the proposed framework of SMIP and the emergence of
+coding of the data analysis involved further categorisation,      echo chambers.
+by matching the open codes to the underlying constructs of
+confirmation bias. The third stage of data analysis known as      4.1 Environmental Setting
+selective coding employed for identifying the relationship
+among axial codes to map the phenomena of emerging echo           The surroundings and fragmented society derive the une-
+chambers. Through this three-stage process of data analy-         qual status and economic displacements in every part of
+sis, we shed new light on the role of confirmation bias in        the world (Bessi, 2016). The society represents individuals
+
+
+13
+Information Systems Frontiers
+
+Table 1  Interviewee profile    No.      Code        Job title                         Nature of work                Years of
+                                                                                                                     Experi-
+                                                                                                                     ence
+
+                                1        R1          Senior Manager                    Sales & Marketing             >10
+                                2        R2          Senior Manager                    Logistics & Supply Chain      >10
+                                3        R3          Marketing Executive               Sales & Marketing             6-10
+                                4        R4          Logistics Manager                 Sales & Marketing             6-10
+                                5        R5          Corporate Finance Executive       Logistics & Supply Chain      1-5
+                                6        R6          Logistics Manager                 Logistics & Supply Chain      1-5
+                                7        R7          Corporate Finance Executive       Sales & Marketing             1-5
+                                8        R8          Engineer                          Consulting                    1-5
+                                9        R9          Corporate Finance Executive       Consulting                    1-5
+                                10       R10         Engineer                          Logistics & Supply Chain      1-5
+                                11       R11         Corporate Finance Executive       Manufacturing                 1-5
+                                12       R12         Senior Manager                    Sales & Marketing             6-10
+                                13       R13         Logistics Manager                 Logistics & Supply Chain      1-5
+                                14       R14         Sales/ Marketing Executive        Logistics &Supply Chain       1-5
+                                15       R15         Engineer                          IT Services/ Software         6-10
+                                16       R16         Senior Manager                    Logistics & Supply Chain      5-10
+                                17       R17         Senior Manager                    Logistics & Supply Chain      >10
+                                18       R18         Logistics Manager                 Logistics & Supply Chain      1-5
+                                19       R19         Senior Manager                    Logistics & Supply Chain      1-5
+                                20       R20         Consultant                        Consulting                    1-5
+                                21       R21         Engineer                          Logistics & Supply Chain      1-5
+                                22       R22         Corporate Finance Executive       Consulting                    1-5
+                                23       R23         Senior Manager                    Manufacturing                 6-10
+                                24       R24         Senior Manager                    Manufacturing                 6-10
+                                25       R25         Engineer                          IT Services/ Software         1-5
+                                26       R26         Senior Manager                    IT Services/ Software         1-5
+                                27       R27         Logistics Manager                 Construction/ Real Estate     6-10
+                                28       R28         Marketing Executive               Food & Beverage               5-10
+                                29       R29         Senior Manager                    Financial Services            >10
+                                30       R30         Logistics Manager                 Logistics & Supply Chain      1-5
+                                31       R31         Logistics Manager                 Logistics & Supply Chain      6-10
+                                32       R32         Engineer                          IT Services/ Software         1-5
+                                33       R33         Engineer                          Manufacturing                 1-5
+                                34       R34         Director/ Founder                 Food & Beverage               >10
+                                35       R35         Director/ Founder                 Logistics & Supply Chain      >10
+
+
+
+
+with democratic and republican mind set from political           the diverse activities in a supply chain. Table 3 displays
+discourse view. Democrats and republicans develop a              the related quotes and codes to environmental setting that
+ground for opposite views with their own belief system           represents the formation of echo chambers.
+and philosophy (Neiman et al., 2016). The role models,
+influencers and benchmarks advance the environmental             4.2 Actors
+setting. Additionally, the persuasion of social and human
+ideas, social security, government policies and economic         Social media generates large volume of data that is influ-
+principles lay the foundation in the interaction of diverse      enced by agents or actors. These agents (e.g., partisan, and
+stakeholders on different platforms influencing the sur-         bipartisan) work around the specific features and characteris-
+rounding factors (Barnett, 2007). These adjoining factors        tics that focus on certain pain points ranging from individu-
+further rise to the diverse culture that has a close rela-       als to large entities such as supply chain (Shin & Thorson,
+tionship towards the active participation and supporting         2017). For instance, Facebook uses the private data of users
+
+
+                                                                                                                    13
+13
+     Table 2  Triangulation approach
+     Industry Reports                                Research Articles                               Data Gathered                                   Evolving Themes
+
+     India Today (2021) - The experiences and        Sasahara et al. (2021) - The social influence R9- As a consultant, I have found many execu-     -Experience of others and developing own
+       incidents shared by people on social media     and follow personalities or topics on social  tives’ referring a particular platform for         mind-set
+       led to develop the hesitancy about Covid-19    media lead to the development of echo         their processes on the bases of success story    - Role of actors such as relatives and neigh-
+       vaccination.                                   chambers later.                               shared by their peers on the social media,         bours in fastening the baseless beliefs.
+                                                                                                    without it verified.
+     McKinsey & Company (2015) - The organiza- Laato et al. (2020) - The misinformation            R21- The social media has been witnessed in       - Digitization
+      tions are adopting the digital routes not      spreading through social media is dangerous    doing the role of promoting and favouring        -Quick and real-time information sharing
+      based on their actual requirements, but their  towards the effective response to Covid-19     local supply chain that may occur costly         -Vocal for local supply chain
+      possibility of success comparing with their    response, whether it is tracing, treatment,    later.                                           - Safety and security
+      competitors. The organizations are adopting    or vaccination. Therefore, secured, and safe
+      cloud-oriented solutions for their data that   data needs to be verified.
+      can be quickly retrieved.
+     KPMG (2021) - social media influences the      Nabity-Grover et al. (2020) - The social       R7- I have been posting and searching about       -Personalized choices and consumption of data
+      consumption of data which is based on the      media-based consumption of data is directed    the price dynamism in the aviation industry,     -Individual and Organizational biases
+      algorithm-based mechanism to offer person-     based on interest of the consumer and that     and I frequently the fares of flights, and
+      alized choices based on historical search.     further deepens the confirmation bias in       I receive the frequent email and links to
+                                                     certain opinion of consumers.                  flights on a particular route, that may be due
+                                                                                                    to the search I have conducted recently.
+     PwC (2021) - The organizations and their sup- Islam et al. (2020) - The products and services R15- We have hired a consultant for a process     -Consulting organizations
+      ply chains are influenced by different actors  offered by organization mature as social       improvement of hydro sulphate supply chain       -Employees as actors
+      and their activities on different platforms    identity over the period and that can further  and the communication among customers,           -Companies own image
+      apart from working in typical factory set-up.  influence the confirmation bias leading to     the consultant shared his experience working
+                                                     the development of echo chambers.              with similar organization and its response
+                                                                                                    on social media in terms of effectiveness of
+                                                                                                    communication.
+                                                                                                                                                                                                     Information Systems Frontiers
+Information Systems Frontiers
+
+                                                                                                                                                                                                                                                                      to expose them with large amount of content (Bessi, 2016).
+
+
+
+
+                                                                                                                                                                                         One of major benefit of employing social platforms is to serve and solve
+
+
+
+
+                                                                                                                                                                                           positively and negatively. Additionally, offline, and online experiences
+                                                                                                                                                                                           customer queries to enhance the level of accountability of the organi-
+
+
+
+                                                                                                                                                                                           satisfied and unsatisfied individuals share their views and can impact
+
+
+
+
+                                                                                                                                                                                           and less efficient. The modern platforms such as social media can be
+                                                                                                                                                                                           social media develop their beliefs based on others experience (R10).
+                                                                                                                                                                                                                                                                      The companies or product specific characteristics distract
+
+
+
+
+                                                                                                                                                                                           sations. Using Twitter like medium can expose the brands, how they
+                                                                                                                                                                                           respond, and it becomes a tool to ensure effective value chain (R5).
+
+
+
+
+                                                                                                                                                                                           bution for their supply chain. This turns their operations disjointed
+                                                                                                                                                                                           are shared in the support or against the supply chains and users of
+
+                                                                                             Information platforms Internet, blogs, and other modern platforms help customer and organi- In many firms the attention is paid to core manufacturing and distri-
+
+
+                                                                                                                                                                                           employed to get connected and meet the diverse needs of customer
+                                                                                                                                                                                                                                                                      the users from the fundamentals through social media and
+
+
+
+
+                                                                                                                   To enhance both online and offline experiences with customers organi- Social media has been observed as an experience platform, where
+                                                                                                                                                                                                                                                                      it serves as a society-fracturing tool. The consulting firm’s
+                                                                                                                                                                                                                                                                      belief as an actor strengthens when their success or fail-
+                                                                                                                                                                                                                                                                      ure stories are witnessed over social media (Anand et al.,
+                                                                                                                                                                                                                                                                      2007). The belief system further gets a strong bond when
+                                                                                                                                                                                                                                                                      other similar entities succeed or fail that lead to make their
+
+
+
+
+                                                                                                                                                                                           through greater visibility and control (R21).
+                                                                                                                                                                                                                                                                      belief system more extreme (Teo et al., 2008). Supply chain
+                                                                                                                                                                                                                                                                      interaction with social media lead information exposes it
+                                                                                                                                                                                                                                                                      to numerous topics and global events. For example, Covid-
+                                                                                                                                                                                                                                                                      19 directed practitioners to take certain actions to derive
+                                                                                                                                                                                                                                                                      the business operations that define the social identity of the
+                                                                                                                                                                                                                                                                      supply chain, which plays a critical and influential role in
+                                                                                                                                                                                                                                                                      supply chain decisions. Table 4 displays the related quotes
+                                                                                                                                                                                                                                                                      and codes for actors that contribute to the formation of echo
+                                                                                                                                                                                                                                                                      chambers.
+
+                                                                                                                                                                                                                                                                      4.3 Mechanism
+                                                                            Quote
+
+
+
+
+                                                                                                                                                                                                                                                                      In the age of social media not only in individual, but also in
+                                                                                             Social media influence the expectations from a particular supply chain
+
+
+
+
+                                                                                                                                                                                                                                                                      business to individual and business to business interactions,
+                                                                                                                                                                                                                                                                      the personalisation is pervasive (Neves et al., 2014). The
+                                                                                                                                                                                                                                                                      personalisation facilitates the higher user efficiency and
+                                                                                                                                                                                                                                                                      greater revenue to the platform by providing relevant
+                                                                                                                                                                                                                                                                      content to the user needs. Feeds, group membership, product
+                                                                                                                     sation to organise its supply chain more efficiently.
+
+
+
+
+                                                                                                                                                                                                                                                                      recommendation and e-advertisement pervade the system
+                                                                                                                                                                                                                                                                      towards personalization (Tim et al., 2018). Data and content
+                                                                                                                                                                                                                                                                      selection algorithm consider the user’s characteristics,
+                                                                                                                                                                                                                                                                      activities on social media and interests based on past
+                                                                                                                     sations take the route of social media
+
+
+
+
+                                                                                                                                                                                                                                                                      behaviour to display the personalised list of content (Stepan
+                                                                                                                                                                                                                                                                      et al., 2016). The personalized content and news feed along
+                                                                                                                                                                                                                                                                      with other sources can lead to filter bubble in developing a
+                                                                                                                                                                                                                                                                      tunnel vision for individuals to groups (Pariser, 2011). This
+                                                                                                                                                                                                                                                                      way practitioners as well as systems like supply chain develop
+       Table 3  Sample of quotes and coding for the environmental setting
+
+
+
+
+                                                                                                                                                                                                                                                                      their ideological bubble. On the other hand, the choices that
+                                                                                                                                                                                                                                                                      individuals make on social platform facilitate group and
+                                                                            Open code
+
+
+
+
+                                                                                                                                                                                                                                                                      systemic biases to polarise the belief system (Dubois & Blank,
+                                                                                                                                                                                                                                                                      2018). Content is categorised into diverse groups based on
+                                                                                                                                                                                                                                                                      sensitive attributes viz. some stories may have a particular
+                                                                                                                                                                                                                                                                      political orientation (liberal or conservative) or a topic that
+                                                                                                                                                                                                                                                                      can impact a particular sector of the business or supply chain.
+                                                                                                                                                                                                                                                                         The objective of data selection algorithm is to match
+                                                                                                                                                                                                                                                                      the user needs to maximise the positive feedback; hence it
+                                                                                             Environmental setting Expectation
+
+
+
+                                                                                             Experience
+                                                                            Axial code
+
+
+
+
+                                                                                                                                                                                                                                                                      must learn and organise about the topics that the user is
+                                                                                                                                                                                                                                                                      most interested in. Table 5 displays the related quotes and
+                                                                                                                                                                                                                                                                      codes for mechanism that represents the formation of echo
+                                                                                                                                                                                                                                                                      chambers.
+                                                                            Selective Code
+
+
+
+
+                                                                                                                                                                                                                                                                      4.4 Outcome
+
+                                                                                                                                                                                                                                                                      The digital economy and environment have steered the
+                                                                                                                                                                                                                                                                      multitudes of information platforms (Tim et al., 2021). The
+
+
+                                                                                                                                                                                                                                                                                                                          13
+     Table 4  Sample of quotes and coding for actors
+     Selective code Axial code                 Open code                                                                Quote
+
+
+
+
+13
+     Actors          Consulting firms       Similar supply chains adopt different strategies to drive business outcome There are handful of companies in supply chain and logistics those help
+                                              influenced by consulting organisations                                    their customers in developing the expertise, skills, and knowledge to take
+                                                                                                                        appropriate decisions. Due to the diverse spectrum of knowledge and
+                                                                                                                        understanding the firms operating in same business have opposite ways
+                                                                                                                        to drive the business right from the alignment of information systems,
+                                                                                                                        digital technologies to margins. For example, some supply chains are
+                                                                                                                        market driven, whereas some drives the market (R24).
+                     Companies and products Companies and products as key stakeholder can drive the supply chain in Involving stakeholders in the design process help to answer the issues in
+                                              different directions                                                      design and materials, whereas there are other successful companies they
+                                                                                                                        design the products by themselves, and customer accept it as a thrill.
+                                                                                                                        One system favours the customer perception driven by company status,
+                                                                                                                        products they offer, celebrity associated, whereas other products and
+                                                                                                                        company market performance is driven by customer perception (R8).
+                     Social identity        The supply chains establish an orientation to establish their identity     The organisation, strategy, design, tools, and enablers in a supply chain
+                                              based on the belief system of a group                                     define the architecture and degree of robustness that can be viewed
+                                                                                                                        differently from the experiences ranging from consumers and providers
+                                                                                                                        have had. Covid-19 has exposed the key actors’ importance in defining
+                                                                                                                        the expression of diverse supply chains on the parameters of leanness,
+                                                                                                                        agility and resilience emerged from a group of advocates (R13).
+
+
+
+     Table 5  Sample of quotes and coding for mechanism
+
+     Selective code Axial code       Open code                                                                     Quote
+
+     Mechanism       User choices    Practitioners of supply chain are choosing the information based on their     We have been getting consulting services from a top firm due to their success
+                                      requirement                                                                    with other players that the service provider firm have posted on LinkedIn. We
+                                                                                                                     have been searching for a firm who can help in developing and designing the
+                                                                                                                     digital architecture for our supply chain to address the disruptions caused by
+                                                                                                                     Covid-19 (R16).
+                     Algorithmic     Information displayed is based on personalised search queries and platform    In Covid we were tasked to identify the risk nodes for risk assessment in our
+                      personalisa-     algorithm provides the content based on diverse parameters.                   supply chain. When I browsed the LinkedIn and Internet in my head office, it
+                      tion (Filter                                                                                   was showing the information and communication technologies as priority,
+                      bubbles)                                                                                       when I searched on next day at my home, then it was showing the severity,
+                                                                                                                     occurrence, and detection for risk management. I have observed the differ-
+                                                                                                                     ences in information display on social media when I browse through laptop
+                                                                                                                     or mobile or through different browsers, however it was about the SC risk
+                                                                                                                     management (R2).
+                     Biases          WhatsApp platform communication by individual create a group bias and         In our company sales people always influence forecast in supply chain through
+                      (Individual,    reflect in the entire supply chain system.                                     WhatsApp to ensure the enough availability of finished goods to market,
+                      group, and                                                                                     whereas operations group who are responsible to manage supplies, inventory
+                      system)                                                                                        and production favour smooth demand and avoid costly affairs involved in the
+                                                                                                                     process. To overcome this a new system of single business numbers have been
+                                                                                                                     stated that may have other active biases (R32).
+                                                                                                                                                                                                      Information Systems Frontiers
+Information Systems Frontiers
+
+practicing managers in supply chains should examine and              of R30 (Logistics coordinator with 3 years of experience
+analyse large amount of information and by doing so they             from logistics and supply chain), “Earlier it was expected
+may favour or develop certain channel of information in their        that internet and other social media can provide greater
+day-to-day operations. This selection of information channels        transparency by offering more content, however with varied
+creates the risk of online echo chambers that reinforces the         expectations and experiences of stakeholders has developed
+pre-existing biases and beliefs (Flaxman et al., 2016). The          a different kind of environment for users and their thought
+choice of social media platforms or information channels             process”. Many social media users consume the information
+have a significant impact on consumer choice and therefore,          without seeing the source and develop their theories for
+exposes risk to stakeholders of supply chain. The familiarity        the topic of their interest or related to it (Westerwick et al.,
+and inclination with a social media source of information            2017; Zamani & Pouloudi, 2021). Social media is a mix
+outplays as compared to its inherent reliability and                 of genuine and fake content posted by related individuals,
+trustworthiness (Dwivedi et al., 2018; Butler & Gray, 2006).         groups or organisations and it is very difficult to make out
+This is observed by the fact that even though witnessing an          and filter the true ones (Tim et al., 2018). In the words of R9
+increase in computerisation and availability of information          (Analyst with 3 years of experience from consulting), “Many
+around 33 % of the companies have not analysed their supply          of the supply chain decisions are aligned with the incidents
+chains for the potential sources of disruption (Gomber et al.,       reported on social media to save the image of an organisation.
+2018). The remaining 67 % of the companies have developed            Additionally, many consumers on the experience of their
+their echo-chambers based on the success and failure stories         friends or relatives opt social media to complain or connect
+pre and during Covid-19 to ensure the continuity of their            to company in case of product failure and this has been very
+business. Covid-19 has compromised many individual                   frequent during Covid-19 due to face-to-face restrictions.
+accounts on social as well as personal space that indirectly         In some cases, the influential people amplify the voice of
+influence the supply chains and hence consider investing             actual complainer”. This way the exposure and expectation
+in strengthening cyber security, increasing flexibility,             from social media platforms including online and offline
+strengthening local supply chains and identify the risk nodes        experiences act as a basis to develop a certain belief system
+for better response during emergency situations (Spanaki             and influence the activities of value chain.
+et al., 2019). Table 6 displays the related quotes and codes
+to outcome that represents the formation of echo chambers.              Proposition 2: Supply chain consulting firms create and
+    Following the thematic analysis, the study captured                 develop new forms of knowledge and information that
+different open codes from the data of interview. After multiple         help in displaying the social identity. The products and
+iterations, back and forth, we recognized the axial codes those         service behaviour are tracked to recognise the consumer
+were further integrated to develop selective codes. In summary,         choices for personalised content to be offered.
+our study identifies four selective codes presented in Table 7.
+                                                                        In the age of information many functions of a business
+                                                                     are using social media to understand the market trends and
+5 Propositions and Framework for SMIP                               reaction to a specific offer (Felix et al., 2017). It has become
+   in Supply Chains                                                  more obvious for supply chain and related professionals,
+                                                                     since facilitating the consumer is one of the key objectives
+In this section, we developed four propositions based on             and most of the consumers are present and use social media
+the thematic analysis of the data. The propositions demon-           for many decisions that further influence the activities of a
+strate the contextual complexity of supply chain information         supply chain (Fu et al., 2013). In the words of R26 (Logistics
+sharing and the impact of information sharing that is highly         manager with 10 years of experience from construction), “The
+nuanced.                                                             performance of a supply chain is measured, how the product
+                                                                     and organisational efforts are recognized and perceived by
+   Proposition 1: The off-line and online experiences of             real consumers, therefore to track the product performance
+   diverse stakeholders and degree of exposure to social             and resolve the complaints we are connected to our consumers
+   media set the diverse expectations from a supply chain            through social platforms such as Twitter, Facebook and
+   and influence the partisan and bi-partisans orientation.          LinkedIn and also we consider consulting firms advices
+                                                                     and piece of information shared on their websites regarding
+   The offline experience of individuals, professionals and          changing needs of a supply chain”. The expectations of
+organisations acts as base to model their cognitive behaviour        customers are also advanced by some of the consulting firms
+in online platforms and social media (Arnott, 2006). Users           indirectly and therefore the organisations map their social
+expect the content in line of their expectation and experience       identity to match the customer expectation and the cluster
+on internet and that further influence their beliefs. In the words   they belong to (Sharif, 2002). In the words of R31 (Logistics
+
+
+                                                                                                                          13
+13
+     Table 6  Sample of quotes and coding for outcome
+     Selective code Axial code             Open code                                                                    Quote
+
+     Outcome        Digital architecture   Digitisation is beneficial for one sector can be helpful for me and we canMany industries have been shared their success stories on LinkedIn of dig-
+                                            follow the same steps as others.                                          itisation and its importance for supply chain during Covid-19. I represent
+                                                                                                                      the construction industry and I think a robust digital network will help our
+                                                                                                                      company also to reduce the time of completion of projects and efficient
+                                                                                                                      usage of materials along with resources (R18).
+                    Real-time information Real-time information tracking will enhance the visibility and transpar-   Many supply chains lack in having an overall view of information shar-
+                                           ency.                                                                      ing across their partners and hence fail to fulfil the gap of supply and
+                                                                                                                      demand. In today’s global and fast changing market scenario the real-time
+                                                                                                                      information tracking help developing competitive edge over others (R14).
+                    Flexibility           Supply chains needs to be flexible to match the performance requirements Our company has closed one of its main product manufacturing and started
+                                           in dynamic environment.                                                    manufacturing the masks and later we developed a hand sanitiser unit
+                                                                                                                      also during Covid-19 and partnered with third party for the distribution
+                                                                                                                      part, this helped us to maintain the performance of the organisation in
+                                                                                                                      right direction. Upon sharing our success over social media other have
+                                                                                                                      also tried, but very few succeeded (R28).
+                    Safety and security   There can be an increase in spending of secured systems regardless of sec- During Covid-19 as compared to physical security, the cyber security has
+                                           tors to ensure data and networks are safe.                                 become more crucial due to events happening around the world. For most
+                                                                                                                      of the supply chains the data is on cloud and networks which is commu-
+                                                                                                                      nicated regularly. Therefore, disaster recovery plan from operational and
+                                                                                                                      user perspective should be in place by organisations (R16).
+                    Regionalisation       Focusing local supply chain can help us to ensure business continuity.     We were procuring the raw materials before Covid-19 from multiple parts
+                                                                                                                      of the world due to its cost competitiveness and quality. I have read few
+                                                                                                                      reports on internet, and it indicates that due to increased prices, short-
+                                                                                                                      age of raw materials and lot more time consumption during Covid-19
+                                                                                                                      it will be difficult to survive and that has led us to draw our focus from
+                                                                                                                      globalised souring to local and maintain the desired resilience (R33).
+                    Mitigate the risk     Risk identification and developing measures to mitigate to ensure smooth We have focused on business continuity strategies and diversified our supply
+                                           flow.                                                                      chains from geographic perspective to decrease the supply chain risks
+                                                                                                                      based on reports published on internet. We have developed the system that
+                                                                                                                      diversify our system and prioritise the probability and its impact (R7).
+                                                                                                                                                                                                     Information Systems Frontiers
+Information Systems Frontiers
+
+Table 7  Summary of findings
+Selective Code          Axial Code               Meaning of different Open Codes
+
+Environmental setting   Expectation              Social media influence the expectations of varied consumers based on experiences they have
+                        Experience                in physical, online, and internet-based platforms.
+                        Information platforms
+Actors                  Consulting Firms         Different consulting organizations offer different solutions to the concerns of customer
+                        Companies and products    engagement to improving their supply chains, that further influence the positioning of com-
+                                                  panies and products in the form the celebrity endorsement and market performance. The
+                        Social Identity
+                                                  social identity of a product/organization is perceived based on experiences they have.
+Mechanism               User Choices             The executives of upstream and downstream access the social media information based on
+                        Filter bubbles            their requirement and that is further advanced based on algorithmic personalization when
+                                                  it comes to ultimate consumer and leads to filter bubbles. The specific groups on different
+                        Biases
+                                                  platforms may create certain biases or myopic view to certain processes in the topics of
+                                                  their interest.
+Outcome                 Digital architecture     Success of a digital architecture for one business may be helpful for my business based on
+                        Real-time information     LinkedIn sharing. The flexible layout of the company is directly related to the capability of
+                                                  a company and not the copy pasting ensure the success of business activities. Many organi-
+                        Flexibility
+                                                  zations are concerned about the safety and security of data along with regionalization of
+                        Safety and security       their supply chain activities to mitigate the risk, due to several stories shared on social
+                        Regionalization           media by practitioners and consulting organizations, which may not be the case.
+                        Mitigate the Risk
+
+
+
+
+manager with 10 years of experience from logistics and supply           vendors for enterprise resource planning, to my surprise and
+chain), “The supply chains design their networks to avoid the           save on time, they advised me to describe the product offered
+role conflict and maintain intergroup relations due to the large        by Oracle. Two years later, when I visited another organisation
+players involved in delivering a product and offering aftersales        from the region, they quoted the earlier organisation success
+services, therefore the supply chain develops a specific social         and opted for Oracle”. Therefore, the polarisation occurs due
+identity to create the user perception”. The network structure          to the individual, group, and system biases.
+and architecture can act as an actor to influence the user
+choices on social media. These actors exchange and develop                 Proposition 4: The user’s choices, experiences and algo-
+their knowledge based on their feeds.                                      rithmic personalisation influence the confirmation bias
+                                                                           that further develop the echo chambers in supply chains.
+   Proposition 3: User choices trigger the algorithmic per-                As a result, some supply chains are focusing more on
+   sonalisation that form the filter bubbles and vice-versa.               digitalisation or monitoring real-time information, where
+   These filter bubbles influence the individual, group, and               some others are investing heavily on cyber security, risk
+   system biases and vice-versa and it creates the echo-                   mitigation and regionalisation.
+   chambers along the supply chain.
+                                                                           Due to the exposure to large amount of data in supply
+   The opinion and existing knowledge gained through                    chain processes, tracking and monitoring of customers and
+websites, blogs and other forms of internet help forming                their pain points through social media becomes a complex
+the choices of the content a consumer want to view (Zhao                task (Manavalan & Jayakrishna, 2019). There has been huge
+et al., 2020). This represents the polarisation cycle from the          wave of data and that has been advanced during Covid-19
+view of confirmation bias that is pervasive. In the words of            due to more time spent by public on internet and social
+R35 (Director with more than 10 years of experience from                media platforms as well as companies interacting with their
+logistics and supply chain), “We use multiple personalisation           customers (Nabity-Grover et al., 2020). In the words of R10
+approached on the basis of user clusters and their search               (Engineer with 3 years of experience in logistics and supply
+history to enhance the loyalty of the user to our portal that           chain), “The non- face to face interaction to ensure business
+further advanced the product recommendation through genetic             continuity has turned many organisations to automation and
+adaptive architecture for profiling”. This personalisation              to strengthen their digital architecture, whereas the play-
+creates the filter bubble for individuals and groups (Garrett,          ers those could have avoided this investment on digitisation
+2009; Kapoor et al., 2018). In the words of R20 (Consultant             have also invested and some of them resulted into low return
+with 3 years of experience from consulting), “In one of the             of investment, thus creating an echo chamber with respect
+experiences with my client, I offered applications from different       to digitisation”.
+
+
+                                                                                                                                   13
+                                                                                                              Information Systems Frontiers
+
+   Supply chains have been found referring to the websites                chambers through confirmation bias (cf. Boutyline & Willer,
+and reports of consulting companies and sharing few suc-                  2017; Orji et al., 2020).
+cess stories have focused on enhancing the flexibility and                   Drawing on contemporary literature, we frame the theo-
+approaches for identifying and mitigating the risk at differ-             retical and empirical contributions of this study (Ågerfalk,
+ent nodes (Anand et al., 2007). With the digitisation, there              2014; Corley & Gioia, 2011; Zamani et al., 2020). This is
+are more transactions online, therefore online tracking of                attained in several ways. The most salient theoretical contri-
+real-time information is critical. In the words of R25 (Engi-             bution of this study is to use the confirmation bias and echo
+neer with 5 years of experience in IT services), “With the                chambers as a lens to study SMIP in the context of supply
+increase of digital payments and online tracking the security             chain during the Covid-19 pandemic. This is an important
+and safety of the systems is critical and have been advised by            contribution as studies linking confirmation bias and echo
+a consulting firm to spend a specific amount of the revenue               chambers to supply chains remain under studied (Fu et al.,
+in ensuring the networks are secure and we are proceeding                 2013; O’Leary, 2011; Orji et al., 2020). This study also con-
+in that direction”. Separately from this, the focus on local              tributes to addressing the grand challenges of IS research
+supply chains have been emphasised and realised due to                    (Becker et al., 2015; Winter & Butler, 2011), by specifi-
+time, safety, and cost of sourcing from global supply chains.             cally focusing on important socio-technical challenges such
+   Building on the emergent themes and propositions, a                    as effective IS for emergency management, and leveraging
+conceptual framework of SMIP and the emergence of echo                    knowledge from data, with the related management of high
+chambers is presented in Fig. 3.                                          data volumes (Becker et al., 2015). As this study builds on
+                                                                          extant SMIP literature, it makes an empirical contribution
+                                                                          by extending the generalisability of SMIP to provide novel
+6 Discussion                                                             insights that have not been reported in previous studies. This
+                                                                          is achieved by identifying four themes (e.g., environmental
+Research has recently addressed the implications of SMIP in               setting, actors, mechanism, and outcome) and developing a
+the context of supply chains highlighting issues in decision              set of propositions in the context of supply chains that may
+making (Sharma et al., 2020), risk management (Fu et al.,                 affect the extent to which confirmation bias facilitates crea-
+2013; O’Leary, 2011), sentiment (Wuebben, 2016; Zadeh &                   tion of echo chamber in supply chains.
+Sharda, 2014). To date however, limited research exists on
+understanding how manifestations of confirmation bias con-                6.1 Implications for Research
+tribute to the development of ‘echo chambers’ in the context
+of supply chains. A context where it has been acknowledged                This research builds on the cumulative body of knowledge
+that participants are highly vulnerable to developing echo                related to SMIP, by rigorously identifying four themes (i.e.,
+                                                                          environmental setting, actors, mechanism, and outcome) and
+
+
+
+
+Fig. 3  Proposed framework for social media induced polarisation in supply chains
+
+
+13
+Information Systems Frontiers
+
+developing a set of propositions that provide rich qualitative        the nodes of filter bubbles and clusters of echo chambers in
+insights. These propositions, which were developed through            their supply networks by employing the proposed framework
+the lens of confirmation bias, can enable researchers from a          to solve the issues occurring in their day-to-day operations.
+range of disciplines to assess them through hypothesis test-          The practicing managers, governments and consumers of
+ing. The proposed framework conceptualises the complex                the information can work together to solve the problems
+phenomenon of SMIP, which in turn provides a structure                of fake information and developing the perspective on that
+for researchers to examine the four themes collectively or            basis. The technology and social media companies can come
+individually, and in different contexts. This study extends           together in developing technologies those can identify the fake
+previous studies by demonstrating that there is a recipro-            information and reduce the incentives for the beneficiaries of
+cal, reinforcing relationship between confirmation bias and           misinformation on different platforms. The lack of appropriate
+echo chambers that accelerates SMIP, as opposed to just the           and precise information can further create information vacuum
+social media platform itself. Our study displays the tendency         that offer space for misinformation to circulate. Managers
+to search, recall and favour the information with reference           should have a strong focus on the scope of developing echo
+to existing beliefs and experiences that professionals have           chambers especially when there is limited information about
+online and offline. Further, our study contributes to SMIP            what is not known. Finally, individuals need to be informed
+literature by presenting the relationship among different             about the implications of dispersed information and how it can
+aspects developed based on filter bubbles created and user            lead to a ‘rose tinted’ view of the real-world.
+choices leading to polarized in supply chains. Other studies
+in the literature indicate the other forms and ways of forming        6.3 Limitations and Future Research
+confirmation bias that leads to emergence of echo cham-
+bers. For instance, Sasahara et al. (2021) pointed out that           We acknowledge this study has two limitations, which also
+minimum social media exposure also influences the thought             offer directions for future research. First, the study was
+process and developing a network of choice by un-follow-              conducted during a global pandemic that behaved like a
+ing people of a different mind-set, leading to homogenous             ‘once-in-a-century pathogen’ (Gates, 2020) which led to
+communities and echo chambers. Apart from developing                  restricted movements due to national lockdowns and height-
+polarization and echo chambers, confirmation bias reveals             ened emotive discussions around its source and solution.
+the personal traits of the individual, group, and system spe-         Future research could consider contextual factors such as the
+cifically in dynamic times such as Covid-19. Our study has            role of organisational culture which has not been adequately
+unveiled the structure of elements that lead to the creation          explored in this context, and there is a need for research link-
+of echo chambers across the supply chain.                             ing social media technology to national culture (Gupta et al.,
+                                                                      2018; Gupta et al., 2019). Second, the utility of the proposed
+6.2 Implications for Practice                                        framework for SMIP in supply chain has not been evalu-
+                                                                      ated. Future studies could adopt a design science approach
+The research provides further evidence to support supply              to assess its utility in the context of supply chains or extend
+chain practitioners and members of online communities to              it to other social settings to identify the sources and con-
+reflect and reassess their pre-existing biases (Parra et al., 2021)   sequences of echo chambers. Despite these limitations, it
+and how their choice of social medial platforms can positively        provides direction for future multidisciplinary research.
+or negatively reinforce this deep-seated belief system. Before
+adopting, referring, and developing an opinion about the
+information on social media that can directly or indirectly           7 Conclusions
+influence the supply chain, it is imperative to analyse and
+understand (i) the source of information (ii) validation              This study draws on confirmation bias and echo chambers to
+of information, and (iii) openness while considering the              advance understanding of how manifestations of confirma-
+information. Managers need to increase awareness about                tion bias contribute to the development of echo chambers in
+highly influential nature of online and offline information           supply chain information sharing during the Covid-19 pan-
+in terms of employees’ acceptance of information received             demic. The findings demonstrate that there is a reciprocal,
+via social media and their role as consumer and producer              reinforcing relationship between confirmation bias and echo
+of this information further. Managers need to understand              chambers that accelerates SMIP, as opposed to just the social
+the highly complex, contextualised environment of supply              media platforms itself. Concluding, this study advances
+chains due to the large number of actors involved in the              understanding of the architecture of confirmation bias that
+ecosystem, perception, orientation of the organisation, type          leads to echo chambers, not just in the context of global
+of products and what kind of social identity their supply chain       pandemics, but also in national and international events that
+is displaying to online consumers. The managers can identify          can have devastating effects on societies.
+
+
+                                                                                                                           13
+     Appendix
+
+
+
+
+13
+     Table 8  Open and axial codes
+     Coded Interview Data                                                            Open Code                                                                       Axial Code
+
+     The behavior shown on social media platforms is captured by algorithms          Online behavior is determined based on search queries executed and algo-        Algorithmic personalization
+      that further filter the content delivery to users. For instance, on a social    rithmic mechanism developed
+      media platform you are presented with the content generated through
+      your close contacts such as family members and friends (R29)
+     Social media uses the algorithms those arrange the posts on the bases of        Using algorithms social media offer the personalized content to users.
+      relevancy instead of publishing time. Through this characteristic, social
+      network prioritizes the feeds of user by the likelihood that they want to
+      explore and see (R6)
+     The organizations promote their brands through social platforms, and            Social media raises the expectations of consumers in a value chain              Expectation
+      when consumer endorse the related brands on the platform, they expect
+      social platform to be used to solve their problems, since it is one message
+      away and company will reach out to them for the concern they have
+      (R25).
+     Most of the times consumers take social media route to communicate to a         It is easy to communicate through social media and enhances transpar-
+      company and authorities when they need to reach out to someone from              ency.
+      the organization. This sets the expectations of other consumers to have
+      visibility and transparency in the supply chains (R4).
+     Organizations and supply chains today are exposed to multiple risks; there-     Developing appropriate supply chain risk management practices.                  Mitigating the risk nodes
+      fore, it becomes apparent for firms to include the practices such as cargo
+      insurance, diversified supplier base, maintain transparency and ensuring
+      supplier quality (R17).
+     The globalized supply chains carry sensitive information and increased          Identify the potential failure points and degree of risk to develop a risk
+      complexity in the supply chain design creates more potential failure             management framework.
+      points and greater degree of risk. The firms can develop a risk manage-
+      ment framework based on identifiable and non-identifiable risk for better
+      control in their supply chain (R22).
+     The product type has a great influence in the design of supply chain net-       Design of products and working style of organizations influence supply          Companies and products
+      work and their impact on different stages that it follows. The organiza-        chain.
+      tions also influence or converge the different product’s supply chain
+      structure and strategy resulting into similar distribution and logistics
+      patterns (R8).
+     Transportation is one of key element of a supply chain and the cost             Parallel processing culture and efficient transportation are driven by appro-
+      of transportation and inventory is the function of the way product is           priate product design.
+      designed or improved over the period. Apart from meeting customer
+      needs, the organizations have to consider packaging, concurrent process-
+      ing and standardization in the supply chains (R27).
+                                                                                                                                                                                                   Information Systems Frontiers
+     Table 8  (continued)
+     Coded Interview Data                                                           Open Code                                                                     Axial Code
+
+     Social media do not discriminate between true or false statements and       Inability of social media to filter the information in right spirit viewed by    Experience
+      lack in presenting the context in which the post or experience has been      many individual users.
+      shared. This inability of social media pushes many individuals to believe
+      or not and develop their belief system on the post shared by others (R10).
+     The customers and providers both prefer social media platforms for quick       Consumers and providers use their experience and beliefs on social media
+                                                                                                                                                                                          Information Systems Frontiers
+
+
+
+
+       communication. However, in the era of pandemic such as Covid-19, the          for taking decisions.
+       fake news about national and regional lockdown fueled the panic buying
+       of grocery products, which further forged their belief based on their
+       experience of previous lockdowns and ensure their food security (R3)
+     The supply chain events such as disruption of fuel supplies during the         Information sharing pattern on social media platform about the supply         Social face/identity
+       months of April, May and June 2020 have been shared widely on social           chain activities develop a mindset of consumers.
+       media platforms and such disruptions impacts the cost of it. Therefore,
+       social media platform can develop a mindset towards a supply chain
+       based on activities shared frequently (R13).
+     The way companies respond and interact with consumers develop the              The response to online customer queries helps firms to develop their social
+       image of a brand and organization. This image development is a function       identity.
+       of capturing information in different supply chain events online and
+       keeping everyone update with current situation (R23).
+     Information flow is one of the critical components across the value chain,     Expecting real time information based on their experience with other          Real time information
+       where multiple partners exist in both upstream and downstream. The            brands.
+       consumers today develop their expectation about quick and real time
+       information based on experience with other brands or organizations
+       (R14).
+     Companies and users prefer the social media as a platform to make distant      Saving on time and cost through sharing information on social platforms.
+       communication reachable in very short period that is transparent and vis-
+       ible specifically during Covid-19. This also help organizations to save on
+       time and cost which is very crucial for any business (R26).
+     Many users use malware via emails usually but can also be spread through       The hidden and fishing links lead to compromising online security and         Security and Safety
+       social media platforms. Many users get looted through their Facebook or       safety of Individuals.
+       Instagram accounts through the exposure to hidden links and lucrative
+       offers online (R15).
+     Since organizations are taking the fastest and cost-effective route for com-   Online data sharing poses the risk of cyber-attack leading to collapse a
+       municating with customers, it also poses the threats such as cyber secu-      system.
+       rity due to huge data shared on social media related to different events.
+       Therefore, organizations need to have better control on weak points of
+       social media usage (R9).
+
+
+
+
+13
+     Table 8  (continued)
+     Coded Interview Data                                                          Open Code                                                                    Axial Code
+
+
+
+
+13
+     We have considered the services for designing our supply chain during    Companies choose the information based on their requirement                       User choices
+      Covid-19 based on the experience shared by our competitor on LinkedIn.
+      We were quite satisfied with the elements that we were looking for were
+      within the capability of the consulting firm that we have shortlisted
+      (R16).
+     The actual users and marketers will differ in their choices while selecting   The users will use unconscious belief system to view, perceive and select
+       the content on social media. The unconscious errors in the mind guide        the information on social media
+       the view, perception, interpretation and making certain decisions by
+       choosing the information on social media platform (R29).
+     Apart from connecting with multiple stakeholder’s social media helps          Digitization linked to social media can help in sharing the risks in a supply Digital system/architecture
+       in digitizing the supply chain that helps beyond developing the rela-        chain.
+       tionships. Digitization of processes and linking it to social media help
+       organization to share risks and allocate vulnerability quotient (R18).
+     The business and supply chain operations consists of large number of play-    Digitization of processes offer better control and visibility.
+       ers that make it possible to provide the product to customers. To ensure
+       end- to- end transparency, every member should have access to all type
+       of data specifically during Covid-19 pandemic. Digitizing the processes
+       make it happen and offer real time insights (R34).
+     Blogs are an important medium to provide information to diverse               Blogs and social media linkage can promote the content effectively.          Information and Social media platforms
+       stakeholder about the current happenings and promote new brands.
+       Even some organizations link blog content on social media channels to
+       promote their content effectively
+     (R21).
+     The providers and users utilize social media to drive core activities of a    Utilization of social media platforms for processing the information
+       business such sharing the information, posting the relevant updates, com-
+       ments made by individuals on the content and tagging related individuals
+       that leads to influence or develop cognitive biases in most cases (R1).
+     The organizations develop their knowledge either on experience or infor-      Competitor firm may choose different solutions suggested by experts for      Consulting organizations
+       mation shared by limited consulting firms. The companies operating in        the same problem.
+       the same domain may choose different set of tools and approaches to
+       solve their problem suggested by consultants and experts working with
+       employees of a company (R21)
+     Consulting organizations play a key role in solving the problems of           Consulting organizations can offer multiple solutions to a problem.
+       industry, those are either old, complex or emerging due to environmental
+       uncertainty. Consulting solutions are majorly based on experience and
+       deep research and a particular problem can be solved in multiple ways
+       and a user can select an approach based on their belief system (R7).
+                                                                                                                                                                                                         Information Systems Frontiers
+     Table 8  (continued)
+     Coded Interview Data                                                           Open Code                                                                    Axial Code
+
+     Before March 2020 it was almost impossible to see our employees not      Organizations can achieve the target performance levels meeting online             Flexible approach
+      coming to office and working from home. As Covid-19 lockdown             during Covid-19.
+      announced, we prepared and trained our staff with utilizing Zoom and
+      Webex platform for meetings. After few months we realized that even
+      using these online platforms we were able to manage the business (R28).
+                                                                                                                                                                                                       Information Systems Frontiers
+
+
+
+
+     During lockdown the demand for other than essential items was lowered          Planning of alternate products to tradeoff between opportunity and perfor-
+      significantly and that forced many companies to opt for converting their        mance target.
+      factories to produce PPE Kits, Masks, Gloves and Hand Sanitizers, that
+      has helped bidirectional, first to the nation in the fight against Covid-19
+      and second to achieve their performance target (R19)
+     Today organizations are trying hard to catch the real time information and     Social media and quick messaging platforms give rise to create individual    Individual and Group Biases
+      for that reason WhatsApp and Telegram are one of the convenient ways           and group biases
+      among certain groups in the organizations. These groups behavior and
+      the thinking style of individuals is influenced by the conversation they
+      have over the period (R32).
+     The business activities and supply chain operations are driven by employ-      Personal, social and cognitive biases influence the business activities.
+      ees, and they are the function of personal, social and cognitive biases.
+      Sometime small group of individuals form a different behavior and
+      influence the business activities. For instance, even in a company the
+      views of marketing and purchasing department differs according to their
+      orientation and select biases (R35).
+     Due to the shortage of raw materials amid Covid-19 crisis, many firms          Efficient regional supply chains can help the businesses to withstand        Regionalization/Local supply chains
+      have strengthened their regional suppliers that can reduce the depend-         Covid-19 disruption.
+      ability on the foreign suppliers. Based on online reports, one can focus
+      on the elements of strengthening the resilience in the local supply chain
+      (R33).
+     Covid-19 has disrupted the supply chains worldwide and more has been           Regional supply chains can help in addressing the delay and cost part of
+      written also on different platforms about the rise of freight prices and       supply chain during Covid-19.
+      delay in shipments. We have witnessed the sharp rise in fuel prices when
+      lockdown happened in the country and same is going to happen with
+      other commodities those otherwise were imported from other countries
+      (R11).
+
+
+
+
+13
+                                                                                                                                        Information Systems Frontiers
+
+
+Declarations                                                                                  nature, diversity and opportunities. European Journal of Infor-
+                                                                                              mation Systems, 22(1), 1–8.
+                                                                                        Boulianne, S., Koc-Michalska, K., & Bimber, B. (2020). Right-wing
+Conflict of interest None.
+                                                                                              populism, social media and echo chambers in Western democra-
+                                                                                              cies. New Media & Society, 22(4), 683–699.
+Open Access This article is licensed under a Creative Commons Attri-                    Boutyline, A., & Willer, R. (2017). The social structure of political
+bution 4.0 International License, which permits use, sharing, adapta-                         echo chambers: Variation in ideological homophily in online
+tion, distribution and reproduction in any medium or format, as long                          networks. Political Psychology, 38(3), 551–569.
+as you give appropriate credit to the original author(s) and the source,                Brugnoli, E., Cinelli, M., Quattrociocchi, W., & Scala, A. (2019).
+provide a link to the Creative Commons licence, and indicate if changes                       Recursive patterns in online echo chambers. Scientific Reports,
+were made. The images or other third party material in this article are                       9(1), 1–18.
+included in the article's Creative Commons licence, unless indicated                    Brummette, J., DiStaso, M., Vafeiadis, M., & Messner, M. (2018).
+otherwise in a credit line to the material. If material is not included in                    Read all about it: The politicization of “fake news” on Twitter.
+the article's Creative Commons licence and your intended use is not                           Journalism & Mass Communication Quarterly, 95(2), 497–517.
+permitted by statutory regulation or exceeds the permitted use, you will                Brusset, X., & Teller, C. (2017). Supply chain capabilities, risks, and
+need to obtain permission directly from the copyright holder. To view a                       resilience. International Journal of Production Economics, 184,
+copy of this licence, visit http://​creat​iveco​mmons.​org/​licen​ses/​by/4.​0/.              59–68.
+                                                                                        Butler, B. S., & Gray, P. H. (2006). Reliability, mindfulness, and infor-
+                                                                                              mation systems. MIS Quarterly, 30(2), 211–224. https://​doi.​org/​
+                                                                                              10.​2307/​25148​728.
+                                                                                        Carr, C. T., & Hayes, R. A. (2015). Social media: Defining, developing,
+References                                                                                    and divining. Atlantic Journal of Communication, 23(1), 46–65.
+                                                                                        Choi, T. M., Guo, S., & Luo, S. (2020). When blockchain meets social
+Ågerfalk, P. (2014). Insufficient theoretical contribution: a conclusive                      media: Will the result benefit social media analytics for supply
+      rationale for rejection? European Journal of Information System,                        chain operations management? Transportation Research Part E:
+      23, 593–599. https://doi.org/10.1057/ejis.2014.35.                                      Logistics and Transportation Review. https://​doi.​org/​10.​1016/j.​
+Anand, N., Gardner, H. K., & Morris, T. (2007). Knowledge-based                               tre.​2020.​101860
+      innovation: Emergence and embedding of new practice areas in                      Chou, W. Y. S., Oh, A., & Klein, W. M. (2018). Addressing health-
+      management consulting firms. Academy of Management Journal,                             related misinformation on social media. Jama, 320(23),
+      50(2), 406–428.                                                                         2417–2418.
+Arnott, D. (2006). Cognitive biases and decision support systems                        Clapham, B., Siering, M., & Gomber, P. (2019). Popular news are rel-
+      development: a design science approach. Information Systems                             evant news! how investor attention affects algorithmic decision-
+      Journal, 16(1), 55–78.                                                                  making and decision support in financial markets. Information
+Atlantic Council (2019). Bolivia reflects the deep polarization crisis                        Systems Frontiers. https://d​ oi.o​ rg/1​ 0.1​ 007/s​ 10796-0​ 19-0​ 9950-w.
+      in Latin America. Available at- https://​atlan​ticco​uncil.​org/​blogs/​          Corley, K. G., & Gioia, D. A. (2011). Building theory about theory
+      new-​atlan​ticist/​boliv​ia-​refle​cts-​the-​deep-​polar​izati​on-​crisis-​in-​         building: what constitutes a theoretical contribution? Academy
+      latin-​ameri​ca. Accessed 1 July 2021                                                   of Management Review, 36(1), 12–32.
+Barberá, P., Jost, J. T., Nagler, J., Tucker, J. A., & Bonneau, R. (2015).              Cui, X., Huo, B., Lei, Y., & Zhou, Q. (2019). The influence of team
+      Tweeting from left to right: Is online political communication                          social media usage on individual knowledge sharing and job per-
+      more than an echo chamber? Psychological Science, 26(10),                               formance from a cross-level perspective. International Journal
+      1531–1542.                                                                              of Operations & Production Management, 40(5), 1749–1769.
+Barnett, M. L. (2007). Stakeholder influence capacity and the vari-                     Culnan, M. J., McHugh, P. J., & Zubillaga, J. I. (2010). How large US
+      ability of financial returns to corporate social responsibility.                        companies can use Twitter and other social media to gain busi-
+      Academy of Management Review, 32(3), 794–816.                                           ness value. MIS Quarterly Executive, 9(4), 243–259.
+Batrinca, B., & Treleaven, P. C. (2015). Social media analytics: a                      Culp, S. (2020). A comprehensive approach to managing social media
+      survey of techniques, tools and platforms. AI & Society, 30(1),                         risk and compliance (Retrieved on 10th December, 2020) https://​
+      89–116.                                                                                 www.​accen​ture.​com/_​acnme​dia/​Accen​ture/​Conve​rsion-​Assets/​
+Becker, J., Vom Brocke, J., Heddier, M., & Seidel, S. (2015). In search                       DotCom/​Docum​ents/​Global/​PDF/​Techn​ology_9/​Accen​ture-​
+      of information systems (grand) challenges. Business & Informa-                                            ​ pproa​ ch-M
+                                                                                              Compre​ hensi​ ve-A           ​ anagi​ ng-S            ​ edia-R
+                                                                                                                                             ​ ocial-M       ​ isk-C​ ompl​
+      tion Systems Engineering, 57(6), 377–390.                                               iance.​pdf
+Benbasat, I., Goldstein, D. K., & Mead, M. (1987). The case research                    Del Vicario, M., Scala, A., Caldarelli, G., Stanley, H. E., & Quattroci-
+      strategy in studies of information systems. MIS Quarterly,                              occhi, W. (2017). Modeling confirmation bias and polarization.
+      369–386                                                                                 Scientific Reports, 7, 1-9
+Bessi, A. (2016). Personality traits and echo chambers on facebook.                     Dernbecher, S., & Beck, R. (2017). The concept of mindfulness in
+      Computers in Human Behavior, 65, 319–324.                                               information systems research: A multidimensional analysis.
+Bhagwat, R., & Sharma, M. K. (2007). Performance measurement of                               European Journal of Information Systems, 26(2), 121–142.
+      supply chain management: A balanced scorecard approach. Com-                      Dezdar, S., & Sulaiman, A. (2009). Successful enterprise resource
+      puters & Industrial Engineering, 53(1), 43–62.                                          planning implementation: taxonomy of critical factors. Industrial
+Bhardwaj, A., Qureshi, I., Konrad, A. M., & Lee, S. H. (2016). A                              Management & Data Systems, 109(8), 1037–1052.
+      two-wave study of self-monitoring personality, social network                     Dubois, E., & Blank, G. (2018). The echo chamber is overstated: the
+      churn, and in-degree centrality in close friendship and general                         moderating effect of political interest and diverse media. Infor-
+      socializing networks. Group & Organization Management, 41(4),                           mation, Communication & Society, 21(5), 729–745.
+      526–559.                                                                          Dwivedi, Y. K., Kelly, G., Janssen, M., Rana, N. P., Slade, E. L., &
+Birks, D. F., Fernandez, W., Levina, N., & Nasirin, S. (2013).                                Clement, M. (2018). Social Media: The good, the bad, and the
+      Grounded theory method in information systems research: its                             ugly. Information Systems Frontiers, 20(3), 419–423.
+
+
+
+13
+Information Systems Frontiers
+
+Eisenhardt, K. M. (1989). Building theories from case study research.      Gomber, P., Kauffman, R. J., Parker, C., & Weber, B. W. (2018). On the
+      Academy of Management Review, 14(4), 532–550.                              fintech revolution: Interpreting the forces of innovation, disrup-
+Endsley, M. R. (2018). Combating information attacks in the age of               tion, and transformation in financial services. Journal of Man-
+      the Internet: new challenges for cognitive engineering. Human              agement Information Systems, 35(1), 220–265.
+      Factors, 60(8), 1081–1094.                                           Gorwa, R., & Guilbeault, D. (2020). Unpacking the social media bot: A
+Erkan, I., & Evans, C. (2016). The influence of eWOM in social media             typology to guide research and policy. Policy & Internet, 12(2),
+      on consumers’ purchase intentions: An extended approach to                 225–248.
+      information adoption. Computers in Human Behavior, 61, 47–55.        Grant, S. B. (2016). Classifying emerging knowledge sharing practices
+Fan, Y., & Niu, R. H. (2016). To tweet or not to tweet? Exploring the            and some insights into antecedents to social networking: a case in
+      effectiveness of service recovery strategies using social media.           insurance. Journal of Knowledge Management, 20(5), 898–917.
+      International Journal of Operations & Production Management,         Guess, A., Nyhan, B., & Reifler, J. (2018). Selective exposure to misin-
+      36(9), 1014-1036                                                           formation: Evidence from the consumption of fake news during
+Felix, R., Rauschnabel, P. A., & Hinsch, C. (2017). Elements of stra-            the 2016 US presidential campaign. European Research Council,
+      tegic social media marketing: A holistic framework. Journal of             9(3), 4.
+      Business Research, 70, 118–126.                                      Gupta, M., Parra, C. M., & Dennehy, D. (2021). Questioning racial
+Fidel, R., & Green, M. (2004). The many faces of accessibility: engi-            and gender bias in AI-based recommendations: do espoused
+      neers’ perception of information sources. Information Processing           national cultural values matter? Information Systems Frontiers,
+      & Management, 40(3), 563–581.                                              1-17. https://​doi.​org/​10.​1007/​s10796-​021-​10156-2.
+Fisher, D. R., Waggle, J., & Leifeld, P. (2013). Where does political      Gupta, M., Esmaeilzadeh, P., Uz, I., & Tennant, V. M. (2019). The
+      polarization come from? Locating polarization within the US                effects of national cultural values on individuals’ intention to
+      climate change debate. American Behavioral Scientist, 57(1),               participate in peer-to-peer sharing economy. Journal of Business
+      70–92.                                                                     Research, 97, 20–29.
+Flaxman, S., Goel, S., & Rao, J. M. (2016). Filter bubbles, echo cham-     Gupta, M., Uz, I., Esmaeilzadeh, P., Noboa, F., Mahrous, A. A., Kim,
+      bers, and online news consumption. Public Opinion Quarterly,               E., & Kulikova, I. (2018). Do cultural norms affect social net-
+      80(S1), 298–320.                                                           work behavior inappropriateness? A global study. Journal of
+Fletcher, R., & Nielsen, R. K. (2018). Are people incidentally exposed           Business Research, 85, 10–22.
+      to news on social media? A comparative analysis. New Media &         Han, J., & Federico, C. M. (2018). The polarizing effect of news fram-
+      Society, 20(7), 2450–2468.                                                 ing: Comparing the mediating roles of motivated reasoning, self-
+Fu, X. J., Goh, R. S. M., Tong, J. C., Ponnambalam, L., Yin, X. F.,              stereotyping, and intergroup animus. Journal of Communication,
+      Wang, Z. X., & Lu, S. F. … (2013, December). Social media                  68(4), 685–711.
+      for supply chain risk management. In 2013 IEEE International         Havakhor, T., Soror, A. A., & Sabherwal, R. (2018). Diffusion of
+      Conference on Industrial Engineering and Engineering Manage-               knowledge in social media networks: effects of reputation mecha-
+      ment (pp. 206-210). IEEE                                                   nisms and distribution of knowledge roles. Information Systems
+Gallaugher, J., & Ransbotham, S. (2010). Social media and customer               Journal, 28(1), 104–141.
+      dialog management at Starbucks. MIS Quarterly Executive, 9(4),       He, W., Wang, F. K., & Akula, V. (2017). Managing extracted knowl-
+      197–212.                                                                   edge from big social media data for business decision making.
+Garimella, K., De Francisci Morales, G., Gionis, A., & Mathioudakis,             Journal of Knowledge Management, 21(2), 275–294.
+      M. (2018). Political discourse on social media: Echo chambers,       Huang, H. H., Hsu, J. S. C., & Ku, C. Y. (2012). Understanding the role
+      gatekeepers, and the price of bipartisanship. In Proceedings of            of computer-mediated counter-argument in countering confirma-
+      the 2018 World Wide Web Conference (pp. 913-922)                           tion bias. Decision Support Systems, 53(3), 438–447.
+Garrett, R. K. (2009). Echo chambers online?: Politically motivated        Huang, S., Potter, A., & Eyers, D. (2020). Social media in operations
+      selective exposure among Internet news users. Journal of Com-              and supply chain management: State-of-the-Art and research
+      puter-Mediated Communication, 14(2), 265–285.                              directions. International Journal of Production Research, 58(6),
+Gates, B. (2020). Responding to Covid-19 — A Once-in-a-Century                   1893–1925.
+      Pandemic?’. New England Journal of Medicine, 382(18),                Hutchens, M. J., Hmielowski, J. D., Beam, M. A., & Romanova, E.
+      1677–1679.                                                                 (2021). Trust over Use: Examining the Roles of Media Use and
+Geschke, D., Lorenz, J., & Holtz, P. (2019). The triple-filter bubble:           Media Trust on Misperceptions in the 2016 US Presidential Elec-
+      Using agent‐based modelling to test a meta‐theoretical frame-              tion. Mass Communication and Society, 1–24.
+      work for the emergence of filter bubbles and echo chambers.          Hyun, K. D., & Moon, S. J. (2016). Agenda setting in the partisan
+      British Journal of Social Psychology, 58(1), 129–149.                      TV news context: Attribute agenda setting and polarized evalu-
+Giannakis, M., Dubey, R., Yan, S., Spanaki, K., & Papadopou-                     ation of presidential candidates among viewers of NBC, CNN,
+      los, T. (2020). Social media and sensemaking patterns in                   and Fox News. Journalism & Mass Communication Quarterly,
+      new product development: demystifying the customer senti-                  93(3), 509–529.
+      ment. Annals of Operations Research. https://​doi.​org/​10.​1007/​   India Today (2021). Fake news on social media leads to vaccine hesi-
+      s10479-​020-​03775-6.                                                      tancy in parts of Kolkata. Available at- https://​www.​india​today.​
+Giannoccaro, I. (2018). Centralized vs. decentralized supply chains:             in/​cities/​kolka​t a/​story/​fake-​news-​social-​media-​vacci​ne-​hesit​
+      The importance of decision maker’s cognitive ability and resist-           ancy-​kolka​ta-​18100​21-​2021-​06-​02. Accessed 10 July 2021
+      ance to change. Industrial Marketing Management, 73, 59–69.          Islam, A. N., Laato, S., Talukder, S., & Sutinen, E. (2020). Misin-
+Gillespie, T., Boczkowski, P. J., & Foot, K. A. (Eds.). (2014). Media            formation sharing and social media fatigue during COVID-19:
+      technologies: Essays on communication, materiality, and society.           An affordance and cognitive load perspective. Technological
+      MIT Press                                                                  Forecasting and Social Change. https://​doi.​org/​10.​1016/j.​techf​
+Go, E., & You, K. H. (2016). But not all social media are the same:              ore.​2020.​120201.
+      Analyzing organizations’ social media usage patterns. Telematics     Itzchakov, G., & Van Harreveld, F. (2018). Feeling torn and fearing
+      and Informatics, 33(1), 176–186.                                           rue: Attitude ambivalence and anticipated regret as antecedents
+
+
+
+
+                                                                                                                                            13
+                                                                                                                                      Information Systems Frontiers
+
+      of biased information seeking. Journal of Experimental Social                Legner, C., Eymann, T., Hess, T., Matt, C., Böhmann, T., Drews, P.,
+      Psychology, 75, 19–26.                                                             & Ahlemann, F. (2017). Digitalization: opportunity and chal-
+Jacobson, S., Myung, E., & Johnson, S. L. (2016). Open media or                          lenge for the business and information systems engineering com-
+      echo chamber: The use of links in audience discussions on the                      munity. Business & Information Systems Engineering, 59(4),
+      Facebook pages of partisan news organizations. Information,                        301–308.
+      Communication & Society, 19(7), 875–891.                                     Leviston, Z., Walker, I., & Morwinski, S. (2013). Your opinion on
+Jamieson, K. H. (2020). Cyberwar: how Russian hackers and trolls                         climate change might not be as common as you think. Nature
+      helped elect a president: what we don’t, can’t, and do know.                       Climate Change, 3(4), 334–337.
+      Oxford University Press                                                      Linvill, D. L., & Warren, P. L. (2020). Troll factories: Manufacturing
+Jaramillo-Dent, D., & Pérez-Rodríguez, M. A. (2021). #Migrant-                           specialized disinformation on Twitter. Political Communication.
+      Caravan: The border wall and the establishment of otherness                        https://​doi.​org/​10.​1080/​10584​609.​2020.​17182​57.
+      on Instagram. New Media & Society, 23(1), 121–141.                           Manavalan, E., & Jayakrishna, K. (2019). A review of Internet of
+Juris, J. S. (2012). Reflections on# Occupy Everywhere: Social                           Things (IoT) embedded sustainable supply chain for industry
+      media, public space, and emerging logics of aggregation.                           4.0 requirements. Computers & Industrial Engineering, 127,
+      American Ethnologist, 39(2), 259–279.                                              925–953.
+Kanagarajoo, M. V., Fulford, R., & Standing, C. (2019). The contri-                Matavire, R., & Brown, I. (2013). Profiling grounded theory approaches
+      bution of social media to project management. International                        in information systems research. European Journal of Informa-
+      Journal of Productivity and Performance Management, 69(4),                         tion Systems, 22(1), 119–129.
+      834–872.                                                                     McKinsey & Company (2015). Getting a sharper picture of social
+Kapoor, K. K., Tamilmani, K., Rana, N. P., Patil, P., Dwivedi, Y.                        media’s influence. Available athttps://​www.​mckin​sey.​com/​busin​
+      K., & Nerur, S. (2018). Advances in social media research:                         ess-​funct​ions/​marke​ting-​and-​sales/​our-​insig​hts/​getti​ng-a-​sharp​
+      Past, present and future. Information Systems Frontiers, 20(3),                    er-​pictu​re-​of-​social-​medias-​influ​ence. Accessed 26 June 2021
+      531–558.                                                                     Mheidly, N., & Fares, J. (2020). Leveraging media and health com-
+Kelman, H. C. (2006). Interests, relationships, identities: Three cen-                   munication strategies to overcome the COVID-19 infodemic.
+      tral issues for individuals and groups in negotiating their social                 Journal of Public Health Policy, 41, 410–420.
+      environment. Annual Review of Psychology, 57, 1–26.                          Min, H., & Zhou, G. (2002). Supply chain modeling: past, present and
+Kietzmann, J. H., Hermkens, K., McCarthy, I. P., & Silvestre, B. S.                      future. Computers & Industrial Engineering, 43(1–2), 231–249.
+      (2011). Social media? Get serious! Understanding the func-                   Miroudot, S. (2020). Reshaping the policy debate on the implications
+      tional building blocks of social media. Business Horizons,                         of COVID-19 for global supply chains. Journal of International
+      54(3), 241–251.                                                                    Business Policy, 3(4), 430–442.
+Kim, Y., & Kim, Y. (2019). Incivility on Facebook and political                    Mondal, T., Pramanik, P., Bhattacharya, I., Boral, N., & Ghosh, S.
+      polarization. The mediating role of seeking further comments                       (2018). Analysis and early detection of rumors in a post disaster
+      and negative emotion. Computers in Human Behavior, 99,                             scenario. Information Systems Frontiers, 20(5), 961–979.
+      219–227                                                                      Montalvo, J. G., & Reynal-Querol, M. (2005). Ethnic polarization,
+Knobloch-Westerwick, S., & Kleinman, S. B. (2012). Preelection                           potential conflict, and civil wars. American Economic Review,
+      selective exposure: Confirmation bias versus informational                         95(3), 796–816.
+      utility. Communication Research, 39(2), 170–193.                             Muckstadt, J. A., Murray, D. H., Rappold, J. A., & Collins, D. E.
+KPMG (2021). Combating fraud in the time of Covid-19. Avail-                             (2001). Guidelines for collaborative supply chain system design
+      able on -https://​h ome.​k pmg/​i n/​e n/​h ome/​i nsig​h ts/​2 020/​0 5/​         and operation. Information Systems Frontiers, 3(4), 427–453.
+      comba​tting-​fraud-​in-​the-​time-​of-​covid-​19.​html. Accessed 17          Nabity-Grover, T., Cheung, C. M., & Thatcher, J. B. (2020). Inside
+      July 2021                                                                          out and outside in: How the COVID-19 pandemic affects self-
+Laato, S., Islam, A. N., Islam, M. N., & Whelan, E. (2020). What                         disclosure on social media. International Journal of Information
+      drives unverified information sharing and cyberchondria dur-                       Management. https://​doi.​org/​10.​1016/j.​ijinf​omgt.​2020.​102188.
+      ing the COVID-19 pandemic? European Journal of Informa-                      Naderifar, M., Goli, H., & Ghaljaie, F. (2017). Snowball sampling: A
+      tion Systems, 29(3), 288–305.                                                      purposeful method of sampling in qualitative research. Strides
+LATimes (2019). ‘Fake news’ has killed Nigerians. Can a bill                             in Development of Medical Education, 14(3), 1–6.
+      stop the violence? Available at- https://​w ww.​l atim​e s.​c om/​           Neiman, J. L., Gonzalez, F. J., Wilkinson, K., Smith, K. B., & Hibbing,
+      world-​nation/​story/​2019-​12-​24/​la-​fg-​niger ​ia-​fake-​news-​bill.           J. R. (2016). Speaking different languages or reading from the
+      Accessed 24 June 2021                                                              same script? Word usage of Democratic and Republican politi-
+Langley, D., Reidy, C., Towey, M., Manisha, & Dennehy, D. (2021).                        cians. Political Communication, 33(2), 212–240.
+      Developing a machine learning model for predicting social                    Nelson, J. (2017). Using conceptual depth criteria: addressing the chal-
+      media induced fake news. In Proceedings of The 20th IFIP                           lenge of reaching saturation in qualitative research. Qualitative
+      Conference e-Business, e-Services, and e-Society. 3E 2021,                         Research, 17(5), 554–570.
+      Springer, LNCS 12896, pp. 656–669                                            Neves, A. R. D. M., Carvalho, Ã. M. G., & Ralha, C. G. (2014).
+Layman, G. C., Carsey, T. M., & Horowitz, J. M. (2006). Party                            Agent-based architecture for context-aware and personalized
+      polarization in American politics: Characteristics, causes, and                    event recommendation. Expert Systems with Applications, 41(2),
+      consequences. Annual Review of Politics Science, 9, 83–110.                        563–573.
+Lee, F. L. (2016). Impact of social media on opinion polarization in               Newman, N., Fletcher, R., Kalogeropoulos, A., Levy, A., & Nielsen, R.
+      varying times. Communication and the Public, 1(1), 56–71.                          (2017). Reuters Institute digital news report 2017. Available at:
+Lee, J., Agrawal, M., & Rao, H. R. (2015). Message diffusion through                     https://​reute​rsins​titute.​polit​ics.​ox.​ac.​uk/​sites/​defau​lt/​files/​Digit​
+      social network service: The case of rumor and non-rumor related                    al%​20News%​20Rep​ort%​20201​7 %​20web_0.​pdf. Retrieved on
+      tweets during Boston bombing 2013. Information Systems Fron-                       22nd Jan 2021
+      tiers, 17(5), 997–1005.                                                      Nikolov, D., Lalmas, M., Flammini, A., & Menczer, F. (2019). Quanti-
+Lee, J. K., Choi, J., Kim, C., & Kim, Y. (2015). Social media, network                   fying biases in online information exposure. Journal of the Asso-
+      heterogeneity, and opinion polarization. Journal of Communica-                     ciation for Information Science and Technology, 70(3), 218–229.
+      tion, 64(4), 702–722.
+
+
+13
+Information Systems Frontiers
+
+Noy, C. (2008). Sampling knowledge: the hermeneutics of snowball                  Sarkis, J. (2020). Supply chain sustainability: learning from the
+       sampling in qualitative research. International Journal of Social                COVID-19 pandemic. International Journal of Operations &
+       Research Methodology, 11(4), 327–344.                                            Production Management, 41(1), 63–73.
+Obar, J. A., Zube, P., & Lampe, C. (2012). Advocacy 2.0: An analysis              Sasahara, K., Chen, W., Peng, H., Ciampaglia, G. L., Flammini, A., &
+       of how advocacy groups in the United States perceive and use                     Menczer, F. (2021). Social influence and unfollowing acceler-
+       social media as tools for facilitating civic engagement and col-                 ate the emergence of echo chambers. Journal of Computational
+       lective action. Journal of Information Policy, 2, 1–25.                          Social Science, 4(1), 381–402.
+O’Hara, K., & Stevens, D. (2015). Echo chambers and online radical-               Sasahara, K., Chen, W., Peng, H., Ciampaglia, G. L., Flammini,
+       ism: Assessing the Internet’s complicity in violent extremism.                   A., & Menczer, F. (2020). Social influence and unfollowing
+       Policy & Internet, 7(4), 401–422.                                                accelerate the emergence of echo chambers. Journal of Com-
+O’Leary, D. E. (2011). The use of social media in the supply chain:                     putational Social Science, 1–22
+       Survey and extensions. Intelligent Systems in Accounting,                  Schäfer, F., Evert, S., & Heinrich, P. (2017). Japan’s 2014 general
+       Finance and Management, 18(2–3), 121–144.                                        election: Political bots, right-wing internet activism, and Prime
+Orji, I. J., Kusi-Sarpong, S., & Gupta, H. (2020). The critical success                 Minister Shinzō Abe’s hidden nationalist agenda. Big Data,
+       factors of using social media for supply chain social sustain-                   5(4), 294–309.
+       ability in the freight logistics industry. International Journal of        Schilling, M. A., & Fang, C. (2014). When hubs forget, lie, and play
+       Production Research, 58(5), 1522–1539.                                           favorites: Interpersonal network structure, information distor-
+Osatuyi, B. (2013). Information sharing on social media sites. Comput-                  tion, and organizational learning. Strategic Management Jour-
+       ers in Human Behavior, 29(6), 2622–263.                                          nal, 35(7), 974–994.
+Parra, C., Gupta, M., & Dennehy, D. (2021). Likelihood of questioning             Sestino, A., Prete, M. I., Piper, L., & Guido, G. (2020). Internet of
+       ai-based recommendations due to perceived racial/gender bias.                    Things and Big Data as enablers for business digitalization
+       IEEE Transactions on Technology and Society. https://​doi.​org/​                 strategies. Technovation. https://​doi.​org/​10.​1016/j.​techn​ovati​
+       10.​1109/​TTS.​2021.​31203​03.                                                   on.​2020.​102173.
+Pagell, M., & Wu, Z. (2009). Building a more complete theory of                   Sharif, A. M. (2002). Professional services organizations and the
+       sustainable supply chain management using case studies of 10                     role of consulting in the new economy. Information Systems
+       exemplars. Journal of Supply Chain Management, 45(2), 37–56.                     Management, 19(2), 19–30.
+Pariser, E. (2011). The filter bubble: How the new personalized web is            Sharma, A., Adhikary, A., & Borah, S. B. (2020). Covid-19’s impact
+       changing what we read and how we think. Penguin                                  on supply chain decisions: strategic insights for NASDAQ 100
+Petty, R. E., Briñol, P., & Priester, J. R. (2009). Mass media attitude                 firms using twitter data. Journal of Business Research, 117,
+       change: Implications of the elaboration likelihood model of                      443–449.
+       persuasion. In J. Bryant & M. B. Oliver (Eds.), Media effects:             Shearer, E., & Grieco, E. (2019). Americans are wary of the role
+       Advances in theory and research (pp. 125–164). Routledge.                        social media sites play in delivering the news. Pew Research
+Petty, R. E., Kasmer, J. A., Haugtvedt, C. P., & Cacioppo, J. T. (1987).                Center. Available at: https://​www.​journ​alism.​org/​2019/​10/​02/​
+       Source and message factors in persuasion: A reply to Stiff’s cri-                ameri​c ans-​a re-​wary-​o f-​t he-​role-​s ocial-​m edia-​s ites-​p lay-​i n-​
+       tique of the elaboration likelihood model. Communication Mono-                   deliv​ering-​the-​news/. Reterived on 22nd January 2021
+       graphs, 54, 233–249.                                                       Shin, J., & Thorson, K. (2017). Partisan selective sharing: The biased
+PwC (2021). How fake news has exploited Covid-19. Available at-                         diffusion of fact-checking messages on social media. Journal
+       https://​www.​pwc.​co.​uk/​issues/​crisis-​and-​resil​ience/​covid-​19/​         of Communication, 67(2), 233–255.
+       how-​fake-​news-​has-​explo​ited-​covid​19-​cyber.​html. Accessed 18       Sikder, O., Smith, R. E., Vivo, P., & Livan, G. (2020). A minimal-
+       July 2021                                                                        istic model of bias, polarization and misinformation in social
+Rauniar, R., Rawski, G., Yang, J., & Johnson, B. (2014). Technology                     networks. Scientific Reports, 10(1), 1–11.
+       acceptance model (TAM) and social media usage: an empirical                Singh, A., Shukla, N., & Mishra, N. (2018). Social media data ana-
+       study on Facebook. Journal of Enterprise Information Manage-                     lytics to improve supply chain management in food industries.
+       ment, 27(1), 6–30.                                                               Transportation Research Part E: Logistics and Transportation
+Reuters (2021). Apple CEO slams social media in Facebook fight.                         Review, 114, 398–415.
+       https://​www.​reute​rs.​com/​video/​watch/​apple-​ceo-​slams-​social-​     Singh, J. P., Kumar, A., Rana, N. P., & Dwivedi, Y. K. (2020). Atten-
+       media-​in-​faceb​ook-​id724​962792?​chan=​9qsux​198. Accessed                    tion-based LSTM network for rumor veracity estimation of
+       13 Nov 2021.                                                                     tweets. Information Systems Frontiers. https://​doi.​org/​10.​1007/​
+Ribarsky, W., Wang, D. X., & Dou, W. (2014). Social media analytics                     s10796-​020-​10040-5.
+       for competitive advantage. Computers & Graphics, 38, 328–331.              Sodhi, M. S., & Tang, C. S. (2019). Research opportunities in supply
+Rim, H., Lee, Y., & Yoo, S. (2020). Polarized public opinion respond-                   chain transparency. Production and Operations Management,
+       ing to corporate social advocacy: Social network analysis of boy-                28(12), 2946–2959.
+       cotters and advocators. Public Relations Review. https://​doi.​org/​       Spanaki, K., Gürgüç, Z., Mulligan, C., & Lupu, E. (2019). Organiza-
+       10.​1016/j.​pubrev.​2019.​101869.                                                tional cloud security and control: a proactive approach. Informa-
+Roozenbeek, J., & van der Linden, S. (2019). The fake news game:                        tion Technology & People, 32(3), 516–537.
+       actively inoculating against the risk of misinformation. Journal           Spohr, D. (2017). Fake news and ideological polarization: Filter bub-
+       of Risk Research, 22(5), 570–580.                                                bles and selective exposure on social media. Business Informa-
+Rousidis, D., Koukaras, P., & Tjortjis, C. (2020). Social media pre-                    tion Review, 34(3), 150–160.
+       diction: a literature review. Multimedia Tools and Applications,           Stake, R. E. (2000). The art of case study research. Sage.
+       79(9), 6279–6311.                                                          Stepan, T., Morawski, J. M., Dick, S., & Miller, J. (2016). Incorporat-
+Said, E. W. (2008). Covering Islam: How the Media and the Experts                       ing spatial, temporal, and social context in recommendations for
+       Determine How We See the Rest of the World. Random House.                        location-based social networks. IEEE Transactions on Compu-
+Sarimveis, H., Patrinos, P., Tarantilis, C. D., & Kiranoudis, C. T.                     tational Social Systems, 3(4), 164–175.
+       (2008). Dynamic modeling and control of supply chain sys-                  Stieglitz, S., & Dang-Xuan, L. (2013). Social media and political com-
+       tems: A review. Computers & Operations Research, 35(11),                         munication: a social media analytics framework. Social Network
+       3530–3561.                                                                       Analysis and Mining, 3(4), 1277–1291.
+
+
+                                                                                                                                                        13
+                                                                                                                                        Information Systems Frontiers
+
+Strauss, A., & Corbin, J. M. (1997). Grounded theory in practice. Sage.                      Wu, Y. L., & Li, E. Y. (2018). Marketing mix, customer value, and
+Stroud, N. J. (2008). Media use and political predispositions: Revisit-                            customer loyalty in social commerce. Internet Research, 28(1),
+      ing the concept of selective exposure. Political Behavior, 30(3),                            74–104.
+      341–366.                                                                               Wuebben, D. (2016). Getting likes, going viral, and the intersections
+Stuart, I., McCutcheon, D., Handfield, R., McLachlin, R., & Samson,                                between popularity metrics and digital composition. Computers
+      D. (2002). Effective case research in operations management: a                               and Composition, 42, 66–79.
+      process perspective. Journal of Operations Management, 20(5),                          Xie, K., & Lee, Y. J. (2015). Social media and brand purchase: Quanti-
+      419–433.                                                                                     fying the effects of exposures to earned and owned social media
+Susarla, A., Oh, J. H., & Tan, Y. (2012). Social networks and the diffu-                           activities in a two-stage decision making model. Journal of Man-
+      sion of user-generated content: Evidence from YouTube. Infor-                                agement Information Systems, 32(2), 204–238.
+      mation Systems Research, 23(1), 23–41.                                                 Yarchi, M., Baden, C., & Kligler-Vilenchik, N. (2020). Political polari-
+Teo, T. S., Srivastava, S. C., & Jiang, L. (2008). Trust and electronic                            zation on the digital sphere: A cross-platform, over-time analysis
+      government success: An empirical study. Journal of Management                                of interactional, positional, and affective polarization on social
+      Information Systems, 25(3), 99–132.                                                          media. Political Communication. https://​doi.​org/​10.​1080/​10584​
+Thatcher, J. B., Wright, R. T., Sun, H., Zagenczyk, T. J., & Klein, R.                             609.​2020.​17850​67.
+      (2018). Mindfulness in information technology use: definitions,                        Yin, R. K. (2002). Case study research: Design and methods. SAGE.
+      distinctions, and a new measure. MIS Quarterly, 42(3), 831–847.                        Zadeh, A. H., & Sharda, R. (2014). Modeling brand post popularity
+Tim, Y., Cui, L., & Sheng, Z. (2021). Digital resilience: How rural                                dynamics in online social networks. Decision Support Systems,
+      communities leapfrogged into sustainable development. Informa-                               65, 59–68.
+      tion Systems Journal. https://​doi.​org/​10.​1111/​isj.​12312.                         Zamani, E. D., & Pouloudi, N. (2021). Shared mental models and per-
+Tim, Y., Pan, S. L., Bahri, S., & Fauzi, A. (2018). Digitally enabled                              ceived proximity: a comparative case study. Information Technol-
+      affordances for community-driven environmental movement in                                   ogy & People. https://​doi.​org/​10.​1108/​ITP-​02-​2020-​0072.
+      rural Malaysia. Information Systems Journal, 28(1), 48–75.                             Zamani, E. D., Pouloudi, N., Giaglis, G. M., & Wareham, J. (2020).
+Toubiana, M., & Zietsma, C. (2017). The message is on the wall? Emo-                               Appropriating information technology artefacts through trial
+      tions, social media and the dynamics ofinstitutional complex-                                and error: the case of the tablet. Information Systems Frontiers.
+      ity. Academy of Management Journal, 60(3), 922–953.                                          https://​doi.​org/​10.​1007/​s10796-​020-​10067-8.
+Tran, T., Valecha, R., Rad, P., & Rao, H. R. (2020). An investiga-                           Zhang, M., Guo, L., Hu, M., & Liu, W. (2017). Influence of customer
+      tion of misinformation harms related to social media during two                              engagement with company social networks on stickiness: Medi-
+      humanitarian crises. Information Systems Frontiers. https://​doi.​                           ating effect of customer value creation. International Journal of
+      org/​10.​1007/​s10796-​020-​10088-3.                                                         Information Management, 37(3), 229–240.
+van Strien, J. L., Kammerer, Y., Brand-Gruwel, S., & Boshuizen, H.                           Zhao, H., Fu, S., & Chen, X. (2020). Promoting users’ intention to
+      P. (2016). How attitude strength biases information processing                               share online health articles on social media: The role of con-
+      and evaluation on the web? Computers in Human Behavior, 60,                                  firmation bias. Information Processing & Management, 57(6),
+      245–252.                                                                                     102354. https://​doi.​org/​10.​1016/j.​ipm.​2020.​102354.
+Verma, S., & Gustafsson, A. (2020). Investigating the emerging
+      COVID-19 research trends in the field of business and manage-                          Publisher’s Note Springer Nature remains neutral with regard to
+      ment: A bibliometric analysis approach. Journal of Business                            jurisdictional claims in published maps and institutional affiliations.
+      Research, 118, 253–261.
+Vishwanath, A. (2015). Diffusion of deception in social media: Social
+      contagion effects and its antecedents. Information Systems Fron-
+      tiers, 17(6), 1353–1367.                                                               Sachin Modgil (Ph.D.) is an Assistant Professor in International
+Walsham, G. (1993). IS strategy and implementation: a case study of a                        Management Institute Kolkata in India. He has pursued his PhD from
+      building society. ACM SIGOIS Bulletin, 14(2), 13–16.                                   NITIE, Mumbai, India in the domain of technology and operations
+Wang, X. H., Fang, Y., Qureshi, I., & Janssen, O. (2015). Understand-                        management. His areas of interest include big data, artificial intel-
+      ing employee innovative behavior: Integrating the social network                       ligence, supply chain management, sustainable operations and pro-
+      and leader–member exchange perspectives. Journal of Organi-                            duction management, lean management, operations, and strategy con-
+      zational Behavior, 36(3), 403–420.                                                     trol. He has more than 9 years of experience including industry and
+Weckler, A. (2021). Apple’s Tim Cook accuses Facebook of creating                            academia. He has conducted several MDPs and FDPs in operations
+      chaos and hate. https://w    ​ ww.i​ ndepe​ ndent.i​ e/b​ usine​ ss/a​ pples-t​ im-​   management domain and has published research papers in leading
+      cook-​accus​es-​faceb​ook-​of-​creat​ing-​chaos-​and-​hate-​40023​709.​                academic journals.
+      html. Retrieved on 29th Jan 2021
+Westerwick, A., Johnson, B. K., & Knobloch-Westerwick, S. (2017).                            Rohit Kumar Singh (Ph.D.) is an Associate Professor in International
+      Confirmation biases in selective exposure to political online                          Management Institute Kolkata in India. He pursued his PhD in the
+      information: Source bias vs. content bias. Communication Mono-                         domain of supply chain management from Indian Institute of Infor-
+      graphs, 84(3), 343–364                                                                 mation Technology, Gwalior. He is actively involved in research and
+Winter, S. J., & Butler, B. S. (2011). Creating bigger problems: grand                       has published papers in journals of international repute and presented
+      challenges as boundary objects and the legitimacy of the infor-                        papers and chaired sessions at international and national conferences.
+      mation systems field. Journal of Information Technology, 26(2),                        He has also been the convener and organizing secretary of two interna-
+      99–108.                                                                                tional conferences in operations and supply chain management.
+World Economic Forum (2018). Digital wildfires Report. https://​repor​
+         ​ eforu​ m.o​ rg/g​ lobal-r​ isks-2​ 018/d​ igita​ l-w
+      ts.w                                                    ​ ildf​i res/. Retrieved on    Shivam Gupta (Ph.D.) is a Professor at NEOMA Business School,
+      29th Jan 2021                                                                          France with a demonstrated history of working in the higher education
+Wu, L., Morstatter, F., Carley, K. M., & Liu, H. (2019). Misinformation                      industry. Skilled in Statistics, Cloud Computing, Big Data Analytics,
+      in social media: definition, manipulation, and detection. ACM                          Artificial Intelligence and Sustainability. Strong education professional
+      SIGKDD Explorations Newsletter, 21(2), 80–90.
+
+
+
+13
+Information Systems Frontiers
+
+with a Doctor of Philosophy (PhD) focused on Cloud Computing and        Denis Dennehy (Ph.D.) is the Director of the master’s in business
+Operations Management from Indian Institute of Technology (IIT)         Analytics and funded investigator with Lero | The Irish Software
+Kanpur. Followed by PhD, postdoctoral research was pursued at Freie     Research Centre at NUI Galway, Ireland. His research examines the
+Universität Berlin and SUSTech, China. He has completed HDR from        mediating role of digital technologies and analytics in the context of
+University of Montpellier, France. He has published several research    information systems, and its implications for people, organisations, and
+papers in reputed journals and has been the recipient of the Interna-   society. This research has been published in leading journals includ-
+tional Young Scientist Award by the National Natural Science Founda-    ing European Journal of Operational Research,International Journal
+tion of China (NSFC) in 2017 and winner of the 2017 Emerald South       of Operations and Production Management; Information Systems
+Asia LIS award.                                                         Frontiers,International Journal of Production Research, Information
+                                                                        & Management, IT & People, and IEEE.He is a Senior Editor ofInfor-
+                                                                        mation Technology & People, chaired IFIP I3E2021 conference and
+                                                                        edited numerous special issues.
+
+
+
+
+                                                                                                                                   13
+

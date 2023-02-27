@@ -1,0 +1,1578 @@
+International Journal on Digital Libraries (2019) 20:391–415
+https://doi.org/10.1007/s00799-018-0261-y
+
+
+
+
+Automated identification of media bias in news articles:
+an interdisciplinary literature review
+Felix Hamborg1          · Karsten Donnay1            · Bela Gipp1
+
+Received: 21 June 2018 / Revised: 8 October 2018 / Accepted: 29 October 2018 / Published online: 16 November 2018
+© The Author(s) 2018
+
+
+Abstract
+Media bias, i.e., slanted news coverage, can strongly impact the public perception of the reported topics. In the social sciences,
+research over the past decades has developed comprehensive models to describe media bias and effective, yet often manual
+and thus cumbersome, methods for analysis. In contrast, in computer science fast, automated, and scalable methods are
+available, but few approaches systematically analyze media bias. The models used to analyze media bias in computer science
+tend to be simpler compared to models established in the social sciences, and do not necessarily address the most pressing
+substantial questions, despite technically superior approaches. Computer science research on media bias thus stands to profit
+from a closer integration of models for the study of media bias developed in the social sciences with automated methods from
+computer science. This article first establishes a shared conceptual understanding by mapping the state of the art from the
+social sciences to a framework, which can be targeted by approaches from computer science. Next, we investigate different
+forms of media bias and review how each form is analyzed in the social sciences. For each form, we then discuss methods
+from computer science suitable to (semi-)automate the corresponding analysis. Our review suggests that suitable, automated
+methods from computer science, primarily in the realm of natural language processing, are already available for each of the
+discussed forms of media bias, opening multiple directions for promising further research in computer science in this area.
+
+Keywords News bias · News slant · Natural language processing (NLP)
+
+
+1 Introduction                                                              media coverage often exhibits an internal bias, reflected in
+                                                                            news articles and commonly referred to as media bias. Fac-
+The Internet has increased the degree of self-determination                 tors influencing this bias can include ownership or source of
+in how people gather knowledge, shape their own views,                      income of the media outlet, or a specific political or ideolog-
+and engage with topics of societal relevance [1]. Unre-                     ical stance of the outlet and its audience [4].
+stricted access to unbiased information is crucial for forming                 The literature identifies numerous ways in which media
+a well-balanced understanding of current events. For many                   coverage can manifest bias. For instance, journalists select
+individuals, news articles are the primary source to attain such            events, sources, and from these sources the information they
+information. News articles thus play a central role in shaping              want to publish in a news article. This initial selection pro-
+personal and public opinion. Furthermore, news consumers                    cess introduces bias to the resulting news story. Journalists
+rate news articles as having the highest quality and trustwor-              can also affect the reader’s perception of a topic through
+thiness compared to other media formats, such as TV or radio                word choice, e.g., if the author uses a word with a positive
+broadcasts, or more recently, social media [1–3]. However,                  or a negative connotation to refer to an entity [5], or by vary-
+                                                                            ing the credibility ascribed to the source [6–8]. Finally, the
+B   Felix Hamborg                                                           placement and size of an article within a newspaper or on a
+    felix.hamborg@uni-konstanz.de                                           website determine how much attention the article will receive
+    Karsten Donnay                                                          [9].
+    karsten.donnay@uni-konstanz.de                                             The impact of media bias on shaping public opinion has
+    Bela Gipp                                                               been studied by numerous scholars [10]. Historically, major
+    bela.gipp@uni-konstanz.de                                               outlets exerted a strong influence on public opinion, e.g.,
+1
+                                                                            in elections [11, 12], or the social acceptance of tobacco
+    University of Konstanz, Constance, Germany
+
+
+                                                                                                                                 123
+392                                                                                                                F. Hamborg et al.
+
+
+consumption [13, 14]. The influence of media corporations         as a guide for computer scientists to better benefit from
+has increased significantly in the past decades. Today, six       already more established media bias research in the social sci-
+corporations control 90% of the media in the USA [15].            ences. Similarly, social scientists seeking to apply powerful,
+This naturally increases the risk of media coverage being         state-of-the-art approaches from computer science to their
+intentionally biased [16, 17]. Also on social media, which        own media bias research will also benefit from this review.
+typically reflects a broader range of opinions, people may            The remainder of this article is structured as follows: In
+still be subject to media bias [18–20], despite social media      Sect. 2, we introduce the term media bias, and describe
+being characterized by more direct and frequent interaction       its effects (Sect. 2.1), develop a conceptual understanding
+between users, and hence presumably more exposure to dif-         of how media bias arises in the process of news produc-
+ferent perspectives. Some argue that social media users are       tion (Sect. 2.2), and briefly introduce the most important
+more likely to actively or passively isolate themselves in a      approaches from the social sciences to analyze bias in the
+“filter bubble” or “echo chamber” [21], i.e., only be sur-        media (Sect. 2.3). Each of the subsections in Sect. 3 focuses
+rounded by news and opinions close to their own. However,         on a specific form of media bias, describes studies from the
+this isolation is not necessarily as absolute as often assumed,   social sciences that analyze the specified form of media bias,
+e.g., Barberá et al. [22] find noticeable isolation for politi-   and discusses methods from computer science that either
+cal issues but not for others, such as reporting on accidents     have been used, or could be used, to automatically identify
+and disasters. Recent technological developments are another      the specified form of bias. In Sect. 4, we discuss the reli-
+reason for topical isolation of social media consumers, which     ability and generalizability of the manual approaches from
+might lead to a general decrease in the diversity of news con-    the social sciences and point out key issues to be considered
+sumption. For instance, Facebook, the world’s largest social      when evaluating interdisciplinary research on media bias. In
+network with more than one billion active users [23], recently    Sect. 5, we conclude the article with a discussion of the main
+introduced Trending Topics, a news overview feature. Users        findings of our literature review.
+can now discover current events by exclusively relying on
+Facebook. However, the consumption of news from only a
+single distributor amplifies the previously mentioned level       2 Media bias
+of influence further: Only a single company controls what is
+shown to news consumers.                                          The study of biased news reporting has a long tradition in
+    The automated identification of media bias, and the analy-    the social sciences going back at least to the 1950s [29]. In
+sis of news articles in general, have recently gained attention   the classical definition of Williams, media bias must both
+in computer science. A popular example are news aggre-            be intentional, i.e., reflect a conscious act or choice, and it
+gators, such as Google News, which give news readers a            must be sustained, i.e., represent a systematic tendency rather
+quick overview of a broad news landscape. Yet, established        than an isolated incident [30]. In this article, we thus focus on
+systems currently provide no support for showing the differ-      intentional media bias, which journalists and other involved
+ent perspectives contained in articles reporting on the same      parties implement purposely to achieve a specific goal [13].
+news event. Thus, most news aggregators ultimately tend to        This definition sets the media bias that we consider apart from
+facilitate media bias [24, 25]. Recent research efforts aim       other sources of unintentional bias in news coverage. Source
+to fill this gap and reduce the effects of such biases. How-      of unintentional bias include the influence of news values
+ever, the approaches suffer from practical limitations, such      [31] throughout the production of news [27], and later the
+as being fine-tuned to only one news category, or relying         news consumption by readers with different backgrounds [7].
+heavily on user input [26–28]. As we show in this article,        Examples for news values include the geographic vicinity of
+an important reason for the comparably poor performance of        a newsworthy event to the location of the news outlet and
+the technically superior computer science methods for auto-       consumers, or the effects of the general visibility or societal
+matic identification of instances of media bias is that such      relevance of a specific topic [32].
+approaches currently tend to not make full use of the knowl-         Various definitions of media bias and its specific forms
+edge and expertise on this topic from the social sciences.        exist, each depending on the particular context and research
+    This article is motivated by the question of how computer     questions studied. Mullainathan and Shleifer define two high-
+science approaches can contribute to identifying and mit-         level types of media bias concerned with the intention of news
+igating media bias by ultimately making available a more          outlets when writing articles: ideology and spin [33]. Ideo-
+balanced coverage of events and societal issues to news           logical bias is present if an outlet biases articles to promote
+consumers. We address this question by comparing and con-         a specific opinion on a topic. Spin bias is present if the outlet
+trasting established research on the topic of media bias in the   attempts to create a memorable story. A second definition
+social sciences with the state-of-the-art technical approaches    of media bias that is commonly used distinguishes between
+from computer science. This comparative review thus serves        three types: coverage, gatekeeping, and statement (cf. [34]).
+
+
+123
+Automated identification of media bias in news articles: an interdisciplinary literature review                                              393
+
+
+Coverage bias is concerned with the visibility of topics or                      choosing. News consumers’ evaluation of topics is further-
+entities, such as a person or country, in media coverage. Gate-                  more based on the perspectives portrayed in news articles,
+keeping bias, also called selection bias or agenda bias, relates                 which are also known as frames, [54]. Journalists use fram-
+to which stories media outlets select or reject for reporting.                   ing to present a topic from their perspective to “promote a
+Statement bias, also called presentation bias, is concerned                      particular interpretation” [55].
+with how articles choose to report on concepts. For example,                        We illustrate the effect of framing using an example pro-
+in the US elections, a well-observed bias arises from editorial                  vided by Kahneman and Tversky [41]: Assume a scenario in
+slant [35], in which the editorial position on a given presiden-                 which a population of 600 people is endangered by an out-
+tial candidate affects the quantity and tone of a newspaper’s                    break of a virus. In a first survey, Kahneman and Tversky
+coverage. Further forms of media bias can be found in the                        asked participants which option they would choose:
+extensive discussion by D’Alessio and Allen [34].
+                                                                                 A. 200 people be will be saved.
+2.1 Effects of biased news consumption                                           B. 66% chance that 600 people will be saved. 33% chance
+                                                                                    that no one will be saved.
+Media bias has a strong impact on both individual and public
+perception of news events, and thus impacts political deci-                         In the first survey, 72% of the participants chose A, and
+sions [10, 36–41]. Despite the rise of social media, news                        26% chose B. Afterward, a second survey was conducted that
+articles published by well-established media outlets remain                      objectively represents the exact same choices, but here the
+the primary source of information on current events (cf.                         options to choose from were framed in terms of likely deaths
+[1–3]). Thus, if the reporting of a news outlet is biased, read-                 rather than lives saved.
+ers are prone to adopting similarly biased views. Today, the
+effects of biased coverage are amplified by social media, in                     C. 400 people will die.
+which readers tend to “follow” only the news that conforms                       D. 66% chance that no one will die. 33% chance that 600
+with their established views and beliefs [42–46]. On social                         people will die.
+media, news readers thus encounter an “echo chamber,”
+where their internal biases are only reinforced. Furthermore,                       In this case, the preference of participants was reversed.
+most news readers only consult a small subset of available                       22% of the participants chose C, and 72% chose D. The
+news outlets [47], as a result of information overload, lan-                     results of the survey thus demonstrated that framing alone,
+guage barriers, or their specific interests or habits.                           that is, the way in which information is presented, has the
+    Nearly all news consumers are affected by media bias                         ability to draw attention to either the negative or the positive
+[11, 12, 48–50], which may, for example, influence vot-                          aspects of an issue [41].
+ers and, in turn, influence election outcomes [11, 12, 35,                          In summary, the effects of media bias are manifold and
+51, 52]. Another effect of media bias is the polarization of                     especially dangerous when individuals are unaware of the
+public opinion [21], which complicates agreements on con-                        occurrence of bias. The recent concentration of the majority
+tentious topics. These strong negative effects have led some                     of mass media in the hands of a few corporations amplifies
+researchers to believe that media bias challenges the pillars                    the potential impact of media bias of individual news outlets
+of our democracy [40, 41]: If media outlets influence pub-                       even further.
+lic opinion, is the observed public opinion really the “true”
+public opinion? For instance, a 2003 survey showed that                          2.2 Understanding media bias
+there were significant differences in the presentation of infor-
+mation on US television channels. Fox News viewers were                          Understanding not only various forms of media bias but also
+most misinformed about the Iraq war. Over 40% of view-                           at which stage in the news production process they can arise
+ers believed that weapons of mass destruction were actually                      [27] is beneficial to devise methods and systems that help
+found in Iraq [50], which is the reason used by the US gov-                      to reduce the impact of media bias on readers. We focus
+ernment to justify the war.                                                      on a specific conceptualization of the news production pro-
+    According to social science research, the three key ways in                  cess, depicted in Fig. 1, which models how media outlets
+which media bias affects the perception of news are priming,                     turn events into news stories and how then readers consume
+agenda setting, and framing [35], [53]. Priming theory states                    the stories (cf. [6, 27, 38, 56–58]). The stages in the process
+that how news consumers tend to evaluate a topic is influ-                       map to the forms of bias described by Baker et al. [6]. Since
+enced by their (prior) perception of the specific issues that                    each stage of the process is distinctively defined, we find
+were portrayed in news on that topic. Agenda setting refers                      this conceptualization of the news production process and
+to the ability of news publishers to influence which topics are                  the included bias forms to be the most comprehensive model
+considered relevant by selectively reporting on topics of their                  of media bias for the purpose of devising future research in
+
+
+                                                                                                                                      123
+394                                                                                                                                             F. Hamborg et al.
+
+Fig. 1 Motives underlying
+                                                     Political   Ideological            Target
+media bias and forms of media                                                                          Owners           Advertisers Government
+bias introduced in the news                           View          View               Audience
+production process. The                                                         Political Interest    Business Interest
+“consumer context” label (far                                                         Reputation      Funding
+right) additionally shows factors                                                               ...   ...
+influencing the perception of the
+described news event that are
+not related to media bias.                       Reality                        News Production and Consumption Process
+
+Adapted from [27]
+                                                                                                                                     Consum ers
+
+
+
+
+                                                                    Gathering
+
+
+
+
+                                                                                                             Editing
+                                                                                           Writing
+
+
+
+
+                                                                                                                             News
+                                                   News
+                                                                                                                                     Perception
+                                                   Event
+
+
+
+                                          Fact Selection                  Writing Style                 Presentation Style            Consumer Context
+                                      •   Event Selection          • Labeling                            •     Placement               •   Background Knowledge
+                                      •   Source Selection         • Word choice                         •     Size Allocation         •   Attitude
+                                      •   Commission                                                     •     Picture Selection       •   Social Status
+                                      •   Omission                                                       •     Picture Explanation     •   Country
+
+                                                                                    Spin
+
+
+computer science. In the following paragraphs, we exemplar-                       mation to their news consumers as their main goal [65]; in
+ily demonstrate the different forms of media bias within the                      fact, news consumers expect commentators to take positions
+news production and consumption process. In Sect. 3, we                           on important issues, and filter important from unimportant
+discuss each form in more detail. Note that while the process                     information (cf. [66, 67]).
+focuses on news articles, most of our discussion in Sect. 3                          All these factors influence the news production process at
+can be adapted to other media types, such as social media,                        various stages (gray). In the first stage, gathering, journal-
+blogs, or transcripts of newscasts.                                               ists select facts from all the news events that happened. This
+    Various parties can directly or indirectly, intentionally or                  stage starts with the selection of events, also named story
+structurally influence the news production process (refer to                      selection. Naturally, not all events are relevant to a new out-
+the motives underlying media bias shown in the orange rect-                       let’s target audience, or sensational stories might yield more
+angle in Fig. 1). News producers have their own political and                     sales [42]. Next, journalists need to select sources, e.g., press
+ideological views [59]. These views extend through all levels                     releases, other news articles, or studies, to be used when writ-
+of a news company, e.g., news outlets and their journalists                       ing an article. Ultimately, the journalists must decide which
+typically have a slant toward a certain political direction [42].                 information from the sources to be included and which to
+Journalists might also introduce bias in a story if the change                    be excluded from the article to be written. This step is called
+is supportive of their career [60]. In addition to these internal                 commission or omission, and likewise affects which perspec-
+forces, external factors may also influence the news produc-                      tive is taken on the event.
+tion cycle. News stories are often tailored for a current target                     In the next phase, writing, journalists may use different
+audience of the news outlet [42, 59, 61], e.g., because readers                   writings styles to bias news. For instance, two forms defined
+switch to other news outlets if their current news source too                     in the production process are labeling (an event, action,
+often contradicts their own beliefs and views [43–46, 61].                        attribute, etc., is labeled positively, e.g., “independent politi-
+News producers may tailor news stories for their advertisers                      cian,” whereas for the other party no label or a negative label
+and owners, e.g., they might not report on a negative event                       is used), and word choice (how the article refers to an entity,
+involving one of their main advertisers or partnered com-                         e.g., “coalition forces” versus “invading forces”).
+panies [38, 59, 62]. Similarly, producers may bias news in                           The last stage, editing, is concerned with the presentation
+favor of governments since they rely on them as a source of                       style of the story. This includes, for instance, the placement of
+information [58, 63, 64].                                                         the story and the size allocation (a large cover story receives
+    In addition to these external factors, business reasons can                   more attention than a brief comment on page three), the pic-
+also affect the resulting news story, e.g., investigative jour-                   ture selection (e.g., usage of emotional pictures or their size
+nalism is more expensive than copyediting prepared press                          influence attention and perception of an event), and the pic-
+releases. Ultimately, most news producers are profit-oriented                     ture explanation (i.e., placing the picture in context using a
+companies that may not claim the provision of bias-free infor-                    caption).
+
+
+123
+Automated identification of media bias in news articles: an interdisciplinary literature review                                                   395
+
+
+Table 1 Overview: forms of media bias
+Name of form              Citations                 Medium                    Target object          Stage          Explanation/example
+
+Event selection           [71–73]                   News outlet               News article           Gathering      The news outlet rarely reports
+                                                                                                                     on events criticizing the
+                                                                                                                     government
+Source selection          [42, 74, 75]              News article              Text, picture          Gathering      Inclusion of more sources that
+                                                                                                                      report on a certain perspective
+Commission and            [27, 61, 76]              News article              Text                   Gathering      Facts that support or question a
+ omission                                                                                                            specific perspective are added
+                                                                                                                     to or omitted from the article
+Labeling and              [5, 77, 78]               Text                      Entity, action,        Writing        Liberal versus conservative,
+ word choice                                                                   attribute, etc.                       expert, independent;
+                                                                                                                     intervene versus invade,
+                                                                                                                     clever versus sneaky, refugee
+                                                                                                                     versus immigrant
+Story placement           [79]                      News outlet               News article           Editing        Cover story receives more
+                                                                                                                     attention than a 3rd page story.
+Size allocation           [73, 80]                  News outlet               News article           Editing        A large story is likely to receive
+                                                                                                                     more attention than a small
+                                                                                                                     story
+Picture selection         [81–83]                   News article              Picture                Editing        What does the picture show?
+                                                                                                                     For example, fighting versus
+                                                                                                                     a peace flag
+Picture                   [84]                      Text                      Picture caption        Editing        The caption puts the picture
+  explanation                                                                                                        into context and may either
+                                                                                                                     support or criticize what is
+                                                                                                                     pictured
+Spin                      [57, 85–87]               News article and          One or more            All            The overall slant of the article,
+                                                     outlet                    news articles          phases         i.e., the result when the
+                                                                                                                     various types of news bias are
+                                                                                                                     combined
+The second column contains for each form of bias references to an exemplary study from the social sciences, and the most relevant publications
+from computer science, if any
+
+
+   Lastly, spin bias is a form of media bias that represents the                 man defines a communication process that essentially mirrors
+overall bias of a news article. An article’s spin is essentially                 all the same steps discussed in Fig. 1: (1) Communicators
+a combination of all previously mentioned forms of bias and                      make intentional or unintentional decisions about the con-
+other minor forms (see Sect. 3.8).                                               tent of a text. (2) The text inherently contains different forms
+   In summary, the resulting news story has potentially been                     of media bias. (3) Receivers, i.e., news readers, draw conclu-
+subject to various sources of media bias at different stages                     sions based on the information and style presented in the text
+of the story’s genesis before it is finally consumed by the                      (which, however, may or may not reflect the text’s perspec-
+reader. The consumer context, in turn, affects how readers                       tive). (4) Receivers of a social group are additionally subject
+actually perceive the described information (cf. [68, 69]). The                  to culture, also known as a common set of perspectives [54].
+perception of any event will differ, depending on the read-                         Table 1 gives an overview of the previously described
+ers’ background knowledge, their preexisting attitude toward                     forms of media bias, where the “Medium” column shows
+the described event (sometimes called hostile media percep-                      the medium that is the source of the specific form of bias,
+tion) [70], their social status (how readers are affected by                     and the column “Target Object” shows the items within the
+the event), and country (news reporting negatively about a                       target medium that are affected.
+reader’s country might lead to refusal of the discussed topic),
+and a range of other factors. Note, however, that “consumer
+                                                                                 2.3 Approaches in the social sciences to analyze
+context” is not a form of media bias, and thus will be excluded
+                                                                                     media bias
+from analysis in the remainder of this article.
+   Other models exist of how media bias arises, but their com-
+                                                                                 Researchers from the social sciences primarily conduct so-
+ponents can effectively be mapped to the news production and
+                                                                                 called content analyses to identify and quantify media bias
+consumption process detailed previously. For instance, Ent-
+                                                                                 in news coverage [34], or to, more generally, study patterns
+
+
+                                                                                                                                         123
+396                                                                                                                F. Hamborg et al.
+
+
+in communication. First, we briefly describe the concept and       in a printed newspaper. These measurements are also called
+workflow of content analysis. Next, we describe the concept        volumetric measurements [34].
+of frame analysis, which is a specialized form of content              Thus far, the majority of studies on media bias performed
+analysis commonly used to study the presence of frames in          in the social sciences conduct qualitative content analyses
+news coverage [88]. Lastly, we introduce meta-analysis, in         because the findings tend to be more comprehensive. Quan-
+which researchers combine the findings from other studies          titative analyses can be performed faster and can by partially
+and analyze general patterns across these studies [89].            automated, but are more likely to miss subtle forms of bias
+                                                                   [98].
+2.3.1 Content analysis                                                 Content analysis software, generally also called com-
+                                                                   puter-assisted qualitative data analysis software (CAQDAS),
+Content analysis quantifies media bias by identifying and          supports analysts when performing content analyses [99].
+characterizing its instances within news texts. In a content       Most tools support the manual annotation of findings for the
+analysis, researchers first define one or more analysis ques-      analyzed news data or for other types of reports, such as
+tions or hypotheses. Researchers then gather the relevant          police reports [90]. To reduce the large amount of texts that
+news data, and coders systematically read the news texts,          need to be reviewed, the software helps users find relevant
+annotating parts of the texts that indicate instances of media     text passages, e.g., by finding documents or text segments
+bias relevant to the analysis being performed. Afterward, the      containing the words specified in the codebook or from a
+researchers use the annotated findings to accept or reject their   keyword list [100] so that the coder must review less texts
+hypotheses [90, 91].                                               manually. In addition, most software helps users find patterns
+   In a deductive content analysis, researchers devise a code-     in the documents, e.g., by analyzing the frequencies of terms,
+book before coders read and annotate the texts [92, 93]. The       topic, or word co-occurrences [99].
+codebook contains definitions, detailed rules, and examples
+of what should be annotated and in which way. Sometimes,
+researchers reuse existing codebooks, e.g., Papacharissi and       2.3.2 Frame analysis
+Oliveira used annotation definitions from a previous study
+by Cappella and Jamieson [94] to create their codebook,            Frame analysis investigates how readers perceive the infor-
+then they performed a deductive content analysis compar-           mation in a news article [54]. This is done by broadly asking
+ing news coverage on terrorism in the USA and the UK               two questions: (1) what information is conveyed in the arti-
+[77]. In an inductive content analysis, coders read the texts      cle? (2) How is that information conveyed? Both questions
+without specified instructions on how to code the text, only       together define a “frame.” As described in Sect. 2.1, a frame
+knowing the research question [42]. Since statistically sound      is a selection of and emphasis on specific parts of an event.
+conclusions can only be derived from the results of deductive         Not all frame analyses focus on the text of news articles.
+content analyses [95], researchers conduct inductive content       For instance, DellaVigna and Kaplan analyzed the gradual
+analyses mainly in early phases of their research, e.g., to        adoption of cable TV of Fox News between 1996 and 2000
+verify the line of research, or to find patterns in the data and   to show that Fox News had a “significant impact” on the
+devise a codebook [88, 95]. Usually, creating and refining the     presidential elections [51]. Essentially, the study analyzed
+codebook is a time-intensive process, during which multiple        whether a district had already adopted the Fox News channel,
+analyses or tests using different iterations of a codebook are     and what the election result was. The results revealed that the
+performed. Achieving a sufficiently high inter-coder reliabil-     Republican party had an increased vote share in those towns
+ity (ICR), e.g., when the individual coders annotate the same      that had adopted Fox News.
+parts of the documents with same codes from the codebook,
+is a common criterion that must be satisfied before the final
+deductive analysis can be conducted [96].                          2.3.3 Meta-analysis
+   Social scientists distinguish between two types of con-
+tent analyses: quantitative and qualitative [97]. A qualitative    In a meta-analysis, researchers combine the results of mul-
+analysis seeks to find “all” instances of media bias, including    tiple studies to derive further findings from them [89]. For
+subtle instances that require human interpretation of the text.    example, in the analysis of event selection bias, a common
+In a quantitative analysis, researchers in the social sciences     question is which factors influence whether media organi-
+determine the frequency of specific words or phrases (usually      zations will choose to report on an event or not. McCarthy
+as specified in a codebook). Quantitative content analyses         et al. [32] performed a meta-analysis of the results of prior
+may also measure other, non-textual features of news arti-         work suggesting that the main factors for media to report on
+cles, such as the number of articles published by a news           a demonstration are the demonstration size and the previous
+outlet on a certain event, or the size and placement of a story    media attention on the demonstration’s topic.
+
+
+123
+Automated identification of media bias in news articles: an interdisciplinary literature review                                                397
+
+
+2.4 Summary                                                                      3.1 Event selection
+
+News coverage has a strong impact on public opinion, i.e.,                       From the countless stream of events happening each day, only
+what people think about (agenda setting), the context in                         a small fraction can make it into the news. Event selection
+which news is perceived (priming), or how topics are commu-                      is a necessary task, yet it is also the first step to bias news
+nicated (framing). Researchers from the social sciences have                     coverage. The analysis of this form of media bias requires
+extensively studied such forms of media bias, i.e., the inten-                   both an event-specific and a long-term observation of multi-
+tional, non-objective coverage of news events. The extensive                     ple news outlets. The main question guiding such an analysis
+research has resulted in a broad literature on different forms                   is whether an outlet’s coverage shows topical patterns, i.e.,
+and possible sources of media bias and their impact on (politi-                  some topics are reported more or less in one as compared to
+cal) communication or opinion formation. In tandem, various                      another outlet, or which factors influence whether an outlet
+well-established research methodologies, such as content                         reports on an event or not.
+analysis, frame analysis, and meta-analysis, have emerged                           To analyze event selection bias, at least two datasets are
+in the social sciences.                                                          required. The first dataset consists of news articles from
+    The three forms of analysis discussed in Sect. 2.3 require                   one or more outlets; the second is used as a ground truth
+significant manual effort and expertise [27], since those anal-                  or baseline, which ideally contains “all” events relevant to
+yses require human interpretation of the texts and cannot be                     the analysis question. For the baseline dataset, researchers
+fully automated. For example, a quantitative content analysis                    from the social sciences typically rely on sources that are
+might (semi-)automatically count words that have previously                      considered to be the most objective, such as police reports
+been manually defined in a codebook but they would be                            [71]. After linking events across the datasets, a comparison
+unable to read for “meaning between the lines,” which is why                     enables researchers to deduce factors that influence whether
+such methods continue to be considered less comprehensive                        a specific news outlet reports on a given event. For instance,
+than a qualitative analysis. However, the recent methodolog-                     several studies compare demonstrations mentioned in police
+ical progress in natural language processing in computer                         reports with news coverage on those demonstrations [32,
+science promises to help alleviate many of these concerns.                       90, 91]. During the manual content analyses, the researchers
+    In the remainder of this article, we discuss different forms                 extracted the type of event, i.e., whether it was a rally, march,
+of media bias defined by the news production and consump-                        or protest, the issue the demonstration was about, and the
+tion process. The process we have laid out in detail previously                  number of participants. Two studies found that the number
+is in our view the most suitable conceptual framework to map                     of participants and the issue of the event, e.g., protests against
+analysis workflows from the social sciences to computer sci-                     the legislative body [90], had a high impact on the frequency
+ence, and thus helps us to discuss where and how computer                        in news coverage [71].
+scientists can make unique contributions to the study of media                      Meta-analyses have also been used to analyze event selec-
+bias.                                                                            tion bias, mainly by summarizing findings from other studies.
+                                                                                 For instance, D’Alessio and Allen [34] found that the main
+                                                                                 factors influencing media reporting on demonstration are the
+3 Manual and automated approaches                                                demonstration size and the previous media attention on the
+  to identify media bias                                                         demonstration’s topic.
+                                                                                    To our knowledge, in computer science, only few
+This section is structured into eight subsections discussing                     approaches have been proposed that specifically aim to
+all of the forms of media bias depicted in Table 1. In each                      analyze event selection bias. Other than in social sciences
+subsection, we first introduce each form of bias and then pro-                   studies, none of them compare news coverage with a baseline
+vide an overview of the studies and techniques from the social                   that is considered objective, but they compare the coverage
+sciences used to analyze that particular form. Subsequently,                     of multiple outlets or other online news sources [72, 73].
+we describe methods and systems that have been proposed                          First, we describe these approaches in more detail, then we
+by computer science researchers to identify or analyze that                      also describe state-of-the-art methods and systems that can
+specific form of media bias. Since media bias analysis is a                      support the analysis of this form of bias.
+rather young topic in computer science, often no or few meth-                       Bourgeois et al. span a matrix over news sources and
+ods have been specifically designed for that specific form                       events extracted from GDELT [101], where the value of each
+of media bias, in which case, we describe the methods that                       cell in the matrix describes whether the source (row) reported
+could best be used to study the form of bias. Each subsection                    on the event (column) [99]. They use matrix factorization
+concludes with a summary of the main findings highlighting                       (MF) to extract “latent factors,” which influence whether a
+where and how computer science research can make a unique                        source reports on an event. Main factors found were the affil-
+contribution to the study of media bias.                                         iation, ownership, and geographic proximity of two sources.
+
+
+                                                                                                                                       123
+398                                                                                                                    F. Hamborg et al.
+
+
+Saez-Trumper et al. analyze relations between news sources          lar documents and document-groups [111]. HAC has been
+and events [79]. By analyzing the overlap between news              used successfully in several research projects [27, 112].
+sources’ content, they find, for example, that news agencies,       Another state-of-the-art clustering method is affinity propa-
+such as AP, publish most non-exclusive content—i.e., if news        gation [113]. Other methods to group related articles exploit
+agencies report on an event, other news sources will likely         news-specific characteristics, such as the five journalistic W
+also report on the event—and that news agencies are more            questions (5Ws). The 5Ws describe the main event of a news
+likely to report on international events than other sources.        article, i.e., who did what, when, where, and why. Journal-
+Media type was also a relevant event selection factor. For          ists usually answer the 5W questions within the first few
+example, magazine-type media, such as The Economist, are            sentences of a news article [85]. 5Ws extraction approaches
+more likely to publish on events with high prominence, i.e.,        automatically extract phrases that answer the 5Ws [114, 115].
+events that receive a lot of attention in the media.                These phrases can then be used to group articles that report
+   Similar to the manual analyses performed in the social           on the same main event (cf. [114]).
+sciences, automated approaches need to (1) find articles rel-          News aggregation1 is one of the most popular approaches
+evant to the question being analyzed (we describe relevant          to enable users to get an overview of the large amounts of
+techniques later in this subsection, see the paragraphs on          news that is published nowadays. Established news aggrega-
+news aggregation), (2) link articles to baseline data or other      tors, such as Google News and Yahoo News, show related
+articles, and (3) compute statistics on the linked data. In addi-   articles by different outlets reporting on the same event.
+tion to automating analysis relevant for researchers studying       Hence, the approach is feasible to reveal instances of bias
+media bias, we believe that news aggregators could thus also        by source selection, e.g., if one outlet does not report on an
+be used to reveal event selection bias to news consumers,           important event. News aggregators rely on methods from
+e.g., by providing visual cues on how selective reporting is.       computer science, particularly methods from natural lan-
+   In task (2), we have to distinguish whether one wants to         guage processing (NLP). The analysis pipeline of most news
+compare articles to a baseline, or technically said, across         aggregators aims to find the most important news topics, and
+different media, or to other articles. Linking events from          present them in a compressed form to users. The analysis
+different media, e.g., news articles and tweets on the same         pipeline typically involves the following tasks [116, 117]:
+events, has recently gained attention in computer science
+[73, 102]. However, to our knowledge, there are currently           1. Data gathering, i.e., crawling articles from news web-
+no generic methods to extract the required information from            sites.
+police reports or other, non-media databases, since the infor-      2. Article extraction from website data, which is typically
+mation that needs to be extracted strongly depends on the              HTML or RSS.
+particular question studied and the information structure and       3. Grouping, i.e., finding and grouping related articles
+format differs greatly between these documents, e.g., police           reporting on the same topic or event.
+reports from different countries or states usually do not share     4. Summarization of related articles.
+common formats (cf. [103, 104]).                                    5. Visualization, e.g., presenting the most important topics
+   To link news articles reporting on the same event, vari-            to users.
+ous techniques can be used. Event detection extracts events
+from text documents. Since news articles are usually con-              For the first two tasks, data gathering and article extrac-
+cerned with events, event detection is commonly used in             tion, established and reliable methods exist, e.g., in the form
+news related analyses. For instance, in order to group related      of web crawling frameworks [118]. Articles can be extracted
+articles, i.e., those reporting on the same event [105], one        with naive approaches, such as website-specific wrappers
+needs to first find events described in these articles. Topic       [119], or more generic methods based on content heuris-
+modeling extracts semantic concepts, or topics, from a set of       tics [120]. Combined approaches perform both crawling and
+text documents where topics are typically extracted as lists        extracting, and offer other functionality tailored to news anal-
+of weighted terms. A commonly employed implementation               ysis. For example, news-please, a web crawler and extractor
+is Latent Dirichlet Allocation (LDA) [106], which is, for           for news articles, can extract information from all news arti-
+instance, used in the Europe Media Monitor (EMM) news               cles on a website, given only the root URL of the news outlet
+aggregator [107].                                                   to be crawled [121].
+   Related articles can also be grouped with the help of               The objective of grouping is to identify topics and group
+document clustering methods. Hierarchical agglomerative             articles on the same topic, e.g., using LDA or other topic mod-
+clustering (HAC) [108] computes pair-wise document sim-             eling techniques, as described previously. Articles are then
+ilarity on text-features using measures such as the cosine
+distance on TF-IDF vectors [109] or word embeddings                 1 The paragraphs about news aggregation have been adapted partially
+[110]. This way HAC creates a hierarchy of the most simi-           from [118].
+
+
+123
+Automated identification of media bias in news articles: an interdisciplinary literature review                                                                               399
+
+Fig. 2 Matrix news overview to                                                                             Menoned Countries
+enable comparative news
+analysis in MNA. The color of                                                      UA                       RU           GB                                      DE
+each cell refers to its main topic.
+                                                                           Foreign Policy Adviser       Ukraine Crisis,
+Source: [123]
+                                                                                Says Russia           Sancons Against        Cameron Says Britain        Berlin wall: the
+                                                                      RU    Commied to Peace         Russia Not on G20        Will Pay Only Half of   symbol of Cold War as
+                                                                              Process in East        Agenda in Australia:     $2.6 Bln EU Surcharge        an art object
+                                                                                  Ukraine              Russian Sherpa
+
+
+
+
+                                                Publisher Countries
+                                                                                                                              Cameron has warned
+                                                                             Ukraine crisis: Kiev                                                      Fall of the Berlin Wall:
+                                                                                                     Tank column crosses      there wil be a „major
+                                                                              accuses Russia of                                                              ‚Our tears of
+                                                                      GB   military invasion aer
+                                                                                                       from Russia into        problem“ if Brussels
+                                                                                                                                                        frustraon turned to
+                                                                                                    Ukraine – Kiev military      insists on Britain
+                                                                            ‚tanks cross border‘                                                             those of joy‘
+                                                                                                                                paying its $2.6 bn
+
+                                                                           Kyiv calls Berlin amid
+                                                                                                     Kyiv: 32 tanks enter       Britain allowed to      Germany‘s east sll
+                                                                      DE    Russian incursion
+                                                                                                     Ukraine from Russia       halve EU budget bill        lags behind
+                                                                                  reports
+
+
+
+                                                                             Ukraine accuses          Ukraine accuses         Britain ﬁnds deal with
+                                                                                                                                                       AP WAS THERE: The
+                                                                      US    Russia of sending in     Russia of sending in     EU over controversial
+                                                                                                                                                       Berlin Wall crumbles
+                                                                             donzens of tanks         donzens of tanks                  bill
+
+
+
+
+summarized using methods such as simple TF-IDF-based                                            for common use cases, e.g., to analyze only major Western
+scores or complex approaches considering redundancy and                                         countries, or define own rows and columns from which the
+order of appearance [122]. By performing the five tasks of the                                  matrix shall be generated.
+news aggregation pipeline in an automatized fashion, news                                          To analyze event selection bias, users can use MNA to
+aggregators can cope with the large amount of information                                       explore main topics in different countries as in Fig. 2, or
+produced by news outlets every day.                                                             span the matrix over publishers and topics in a country.
+   However, no established news aggregator reveals event                                           Research in the social sciences concerned with bias by
+selection bias of news outlets to their users. Incorporating                                    event selection requires significant effort due to the time-
+this functionality for short-term or event-oriented analysis of                                 consuming manual linking of events from news articles to
+event selection bias, news aggregators could show the pub-                                      a second “baseline” dataset. Many established studies use
+lishers that did not publish an article on a selected event. For                                event data from a source that is considered “objective,” for
+long-term or trend-oriented analysis, news aggregators could                                    example, police reports (cf. [90, 104, 124]). However, the
+visualize a news outlet’s coverage frequency of specific top-                                   automated extraction of relevant information from such non-
+ics, e.g., to show whether the issues of a specific politician                                  news sources requires the development and maintenance of
+or party, or an oil company’s accident is either promoted or                                    specialized tools for each of the sources. Reasons for the
+demoted.                                                                                        increased extraction effort include the diversity or unavail-
+   In addition to traditional news aggregators, which show                                      ability of such sources, e.g., police reports are structured
+topics and related topics in a list, recent news aggregators use                                differently in different countries or may not be published
+different analysis approaches and visualizations to promote                                     at all. Linking events from different sources in an automated
+differences in news coverage caused by biased event selec-                                      fashion poses another challenge because of the different ways
+tion. Matrix-based news aggregation (MNA) is an approach                                        in which the same event may be described by each of the
+that follows the analysis workflow of established news aggre-                                   sources. This places a limit on the possible contributions of
+gators while organizing and visualizing articles into rows                                      automated approaches for comparison across sources or arti-
+and columns of a two-dimensional matrix [87], [117]. The                                        cles.
+exemplary matrix depicted in Fig. 2 reveals what is primarily                                      In our view, the automated analysis of events within news
+stated by media in one country (rows) about another coun-                                       articles, however, is a very promising line of inquiry for com-
+try (columns). For instance, the cell of the publisher country                                  puter science research. Sophisticated tools can already gather
+Russia and the mentioned country Ukraine, denoted with RU-                                      and extract relevant data from online news sources. Methods
+UA, contains all articles that have been published in Russia                                    to link events in news articles are already available or are
+and mention Ukraine. Each cell shows the title of the most                                      the subject of active research [27, 105–107, 109, 111, 112,
+representative article, determined through a TF-IDF-based                                       114]. Of course, news articles must originate from a carefully
+summarization score among all cell articles [87]. Users either                                  selected set of news publishers, which not only represent
+select rows and columns from a list of given configurations                                     mainstream media but also alternative and independent pub-
+
+
+                                                                                                                                                                  123
+400                                                                                                                   F. Hamborg et al.
+
+
+lishers, such as Wikinews.2 Finally, revealing differences in        scientists [77]. One of their key findings is that UK news out-
+the selection of top news stories between publishers, or even        lets often referred to other news articles, whereas US news
+the mass media of different countries has shown promising            outlets did that less often but referred to governments, opin-
+results [117], and could eventually be integrated into regular       ions, and analyses.
+news consumption using news aggregators demonstrating the               On social media, people can be subject to their own source
+potential for computer science approaches to make a unique           selection bias, as discussed in Sect. 1. For instance, on Face-
+contribution to the study event selection.                           book people tend to be friends with likewise minded people,
+                                                                     e.g., who share similar believes or political orientations [18].
+3.2 Source selection                                                 People who use social media platforms as their primary news
+                                                                     source are subject to selection bias not only by the operating
+Journalists must decide on the trustworthiness of informa-           company [16, 23], but also by their friends [18].
+tion sources and the actuality of information for a selected            To our knowledge, there are currently no approaches in
+event. While source selection is a necessary task to avoid           computer science that aim to specifically identify bias by
+information overload, it may lead to biased coverage, e.g., if       source selection. However, several automated techniques are
+journalists mainly consult sources supporting one perspec-           well suited to address this form of bias. Plagiarism detection
+tive when writing the article. The choice of sources used by a       (PD) is a field in computer science with the broad aim of
+journalist or an outlet as a whole can reveal patterns of media      identifying instances of unauthorized information reuse in
+bias. However, journalistic writing standards do not require         documents. Methods from PD may be used to identify the
+journalists to list sources [81], which make the identification      potential sources of information for a given article beyond
+of original sources difficult or even impossible. One can only       identifying actual “news plagiarism” (cf. [125]). While there
+find hints in an article, such as the use of quotes, references      are some approaches focused on detecting instances of pla-
+to studies, phrases such as “according to [name of other news        giarism in news, e.g., using simple text-matching methods to
+outlet]” [5], or the dateline, which indicates whether and from      find 1:1 duplicates [74], research on news plagiarism is not
+which press agency the article was copyedited. One can also          as active as research on academic plagiarism. This is most
+analyze whether the content and the argumentation structure          likely a consequence of the fact that authorized copyediting is
+match those of an earlier article [92].                              a fundamental component in the production of news. Another
+   The effects of source selection bias are similar to the           relevant field that we describe in this section is semantic text
+effects of commission and omission (Sect. 3.3), because              similarity (STS), which measures the semantic equivalence
+using only sources supporting one side of the event when             of two (usually short) texts [75].
+writing an article (source selection) is similar to omitting all        The vast majority of plagiarism detection techniques
+information supporting the other side (omission). Because            analyzes text [126], and thus could also be adapted and sub-
+many studies in the social sciences are concerned with the           sequently applied to news texts. State-of-the-art methods can
+effects of media bias, e.g., [10–12, 36, 38–41, 48–50, 61],          reliably detect copy and paste plagiarism, the most common
+and the effects of these three bias forms are similar, bias by       form of plagiarism [126, 127]. Ranking methods use, for
+source selection and bias by commission and omission are             instance, TF-IDF and other information retrieval techniques
+often analyzed together.                                             to estimate the relevance of other documents as plagiarism
+   Few analyses in the social sciences aim to find the selected      candidates [128]. Fingerprinting methods generate hashes of
+sources to derive insights on the source selection bias of an        phrases or documents. Documents with similar hashes indi-
+article or an outlet. However, there are notable exceptions, for     cate plagiarism candidates [128, 129].
+example, one study counts how often news outlets and politi-            Today’s plagiarism detection methods thus already pro-
+cians cite phrases originating in think tanks and other political    vide most of the functionality to identify the potential sources
+organizations. The researchers had previously assigned the           of news articles. Copyedited articles are often shortened or
+organizations to a political spectrum [42]. The frequencies          slightly modified, and in some cases, are a 1:1 duplicate
+of specific phrases used in articles, such as “We are initiating     of a press agency release. These types of slight modifi-
+this boycott, because we believe that it is racist to fly the Con-   cations, however, can be reliably detected with ranking or
+federate Flag on the state capitol” [42], which originated in        fingerprinting methods (cf. [74, 126]). Current methods only
+the civil rights organization NACCP, are then aggregated to          continue to struggle with heavily paraphrased texts [126],
+estimate the bias of news outlets. In another study of media         but research is extending also to other non-textual data
+content, Papacharissi and Oliveira annotate indications of           types such as analyzing links [130], an approach that can
+source selection in news articles, such as whether an article        be used for the analysis of online news texts as well. Another
+refers to a study conducted by the government or independent         text-independent approach to plagiarism detection is cita-
+                                                                     tion-based plagiarism detection algorithms, which achieve
+2   https://en.wikinews.org/wiki/Main_Page.                          good results by comparing patterns of citations between two
+
+
+123
+Automated identification of media bias in news articles: an interdisciplinary literature review                                               401
+
+
+scientific documents [76]. Due to their text-independence,                       outlets copyedit articles from press agencies or other major
+these algorithms also allow a cross-lingual detection of infor-                  news outlets [137]. Using PD, such as fingerprinting and
+mation reuse [76]. News articles typically do not contain                        pattern-based analysis as previously described, to measure
+citations, but the patterns of quotes, hyperlinks, or other                      the likelihood of information reuse between all possible pairs
+named entities can also be used as a suitable marker to mea-                     of articles in a set of related articles, implicitly constructs a
+sure the semantic similarity of news articles (cf. [42, 130,                     directed dependency graph. The nodes represent single arti-
+131]). Some articles also contain explicit referral phrases,                     cles, the directed edges represent the flow of information
+such as “according to the New York Times.” The dateline of                       reuse, and the weights of the edges represent the degree of
+an article can also state whether and from where an article was                  information reuse. The graph can be analyzed with the help
+copyedited [132]. Text search and rule-based methods can be                      of methods from graph analysis, e.g., to estimate importance
+used to identify referral phrases and to extract the resources                   or slant of news outlets or to identify clusters of articles or
+being referenced. In our view, future research should focus                      outlets that frame an event in a similar manner (cf. [136]).
+on identifying the span of information that was taken from                       For instance, if many news outlets reuse information from a
+the referred resource (see also Sect. 3.3).                                      specific news outlet, the higher we can rate its importance.
+   Semantic textual similarity (STS) methods measure the                         The detection of semantic (near-)duplicates would also help
+semantic equivalence of two (usually short) texts [75]. State-                   lower the number of articles that researchers from the social
+of-the-art STS methods use basic measures, such as n-gram                        sciences need to manually investigate to analyze other forms
+overlap, WordNet node-to-node distance, and syntax-based,                        of media bias in content analyses.
+e.g., compare whether the predicate is the same in two                              In summary, the analysis of bias by source selection is
+sentences [133]. More advanced methods combine various                           challenging, since the sources of information are mostly not
+techniques and use deep learning networks, achieving a Pear-                     documented in news articles. Hence, in both the social sci-
+son correlation to human coders of 0.78 [134]. Recently, these                   ences and in computer science research, only few studies have
+methods have also focused on cross-lingual STS [75], and                         analyzed this form of bias. Notable exceptions are the studies
+use, for example, machine translation before employing reg-                      discussed previously that analyzed quotes used by politicians
+ular mono-lingual STS methods [135]. Machine translation                         originating from think tanks. Methods from computer science
+has proven useful also for other cross-lingual tasks, such as                    can in principle provide the required techniques for the (semi-
+event analysis [87].                                                             )automated analysis of this form of bias and thus make a very
+   Graph analysis is concerned with the analysis of relations                    valuable contribution. The methods, most importantly those
+between nodes in a graph. The relation between news articles                     from plagiarism detection research, could be (and partially
+can be used to construct a dependency graph. Spitz and Gertz                     already have been [74]) adapted and extended from academic
+analyzed how information propagates in online news cover-                        plagiarism detection and other domains, where extensive and
+age using hyperlinks linking to other websites [136]. They                       reliable methods already exist.
+identified four types of hyperlinks: navigational (menu struc-
+ture to navigate the website), advertisement, references (links                  3.3 Commission and omission of information
+within the article pointing to semantically related sites), and
+internal links (further articles published by the same news                      Analyses of bias by commission and omission compare the
+outlet). They only used reference links to build a network,                      information contained in a news article with those in other
+since the other link types contain too many unrelated sites                      news articles or sources, such as police reports and other
+(internal) or irrelevant information (advertisement and navi-                    official reports. The “implementation” and effects of com-
+gational). One finding by Spitz and Gertz is that networks of                    mission and omission overlap with those of source selection,
+news articles can be analyzed with methods of citation net-                      i.e., when information supporting or opposing a perspective is
+work analysis. Another method extracts quotes attributed to                      either included or left out of an article. Analyses in the social
+individuals in news articles to follow how information propa-                    sciences aim to determine which frames the information
+gates over time in a news landscape [131]. One finding is that                   included in such articles support. For instance, frame anal-
+quotes undergo variation over time but remain recognizable                       yses typically compare the frequencies of frame-attributing
+with automated methods [131].                                                    phrases in a set of news articles [61, 138]. More generally,
+   In our view, computer science research could therefore                        content analysis compares which facts are presented in news
+provide promising solutions to long-standing technical prob-                     articles and other sources [139]. In the following, we describe
+lems in the systematic study of source selection by combining                    exemplary studies of each of the two forms.
+methods from PD and graph analysis. If two articles are                              A frame analysis by Gentzkow and Shapiro analyzed the
+strongly similar, the later published article will most likely                   frequency of phrases that may sway readers to one or the
+contain reused information from the former published arti-                       other side of a political issue [61]. For this analysis, the
+cle. This is a typical case in news coverage, e.g., many news                    researchers first examined which phrases were used signif-
+
+
+                                                                                                                                       123
+402                                                                                                                 F. Hamborg et al.
+
+
+icantly more often by politicians of one party over another,      ferent aspects of a selected topic. A user study found that
+and vice versa. Afterward, they counted the occurrence of         users of NewsCube became aware of the different perspec-
+phrases in news outlets to estimate the outlet’s bias toward      tives, and subsequently read more original articles containing
+one side of the political spectrum. The results of the study      perspective-attributing aspects. However, the approach can-
+showed that news producers have economic motives to bias          not reliably assess the diversity of the aspects. NewsCube
+their coverage toward the ideological views of their readers.     shows all aspects, even though many of them are similar,
+Similarly, another method, briefly mentioned in Sect. 3.2,        which decreases the efficiency of using the visualization to
+counts how often US congressmen use the phrases coined by         get an overview of the different perspectives in news cover-
+think tanks, which the researchers previously associated with     age. Word and phrase embeddings might be used to recognize
+political parties [42]. One finding is that Fox News coverage     the similarity of aspects (cf. [110, 140]). The NewsCube visu-
+was significantly slanted toward the US Republican party.         alization also does not highlight which information is subject
+   A content analysis conducted by Smith et al. investigated      to commission and omission bias, i.e., what information is
+whether the aims of protesters corresponded to the way in         contained in a particular article and left out by another article.
+which news reported one demonstrations [139]. One of their           Methods from plagiarism detection (see Sect. 3.2) open a
+key hypotheses was that news outlets will tend to favor the       promising research direction for the automated detection of
+positions of the government over the positions of protesters.     commission and omission of information in news. More than
+In the analysis, Smith et al. extracted relevant textual infor-   80% of related news articles add no new information and only
+mation from news articles, transcripts of TV broadcasts, and      reuse information contained in previously published articles
+police reports. They then asked analysts to annotate the data,    [137]. Comparing the presented facts of one article with the
+and statistically tested the hypotheses using the annotated       facts presented in previously published articles would help
+data.                                                             identify commission and omission of information. Methods
+   Bias by commission and omission of information has             from PD can detect and visualize which segments of a text
+not specifically been addressed by approaches in computer         may have been taken from other texts [76]. The relatedness
+science despite the existence of various methods that we con-     of bias by source selection and bias by commission and omis-
+sider beneficial for the analysis of both forms of bias in a      sion suggests that an analysis workflow may ideally integrate
+(semi-)automated manner. Researchers from the social sci-         methods from PD to address both issues (also see Sect. 3.2).
+ences are already using text search to find relevant documents       Centering resonance analysis (CRA) aims to find how
+and phrases within documents [100]. However, search terms         influential terms are within a text by constructing a graph with
+need to be constructed manually, and the final analysis still     each node representing a term that is contained in the noun
+requires a human interpretation of the text to answer coding      phrases (NP) of a given text [141]. Two nodes are connected if
+tasks, such as “assess the spin of the coverage of the event”     their terms are in the same NP or boundary terms of two adja-
+[139]. Another challenge is that content analyses comparing       cent NPs. The idea of the approach is that the more edges a
+news articles with other sources require the development of       node has, the more influential its term is to the text’s meaning.
+scrapers and information extractors tailored specifically to      To compare two documents, methods from graph analysis can
+these sources. While there are mature generic tools to crawl      be used to analyze both CRA graphs (Sect. 3.2 gave a brief
+and extract information from news articles (cf. [121]), there     introduction to methods from graph analysis). Researchers
+are no established or publicly available generic extractors for   from the social sciences have successfully employed CRA
+police reports.                                                   to extract influential words from articles, and then manu-
+   An approach that partially addresses commission and            ally compare the information contained in the articles [77].
+omission of information is aspect-level browsing as imple-        Recent advancements toward computational extraction and
+mented in the news aggregator NewsCube [27]. Park et al.          representation of the “meaning” of words and phrases, espe-
+define an “aspect” as the semantic proposition of a news          cially word embeddings [110], may serve as another way to
+topic. The aspect-level browsing enables users to view dif-       (semi-)automatically compare the contents of multiple news
+ferent perspectives on political topics. The approach follows     articles.
+the news aggregation workflow described in Sect. 3.1, but            To conclude, studies in the social sciences researching
+with a novel grouping phase: NewsCube extracts aspects            bias by commission and omission have always compared
+from each article using keywords and syntactic rules, and         the analyzed articles with other news articles and/or non-
+weighs these aspects according to their position in the article   media sources, such as police reports. No approaches from
+(motivated by the inverted pyramid concept: the earlier the       computer science research specifically aim to identify this
+information appears in the article, the more important it is      bias form. However, automated methods, specifically PD,
+[85]). Afterward, NewsCube performs HAC to group related          CRA, graph analysis, and more recent also word embed-
+articles. The visualization is similar to the topic list shown    dings, are promising candidates to address this form of
+in established news aggregators, but additionally shows dif-      bias opening new avenues for unique contributions of well-
+
+
+123
+Automated identification of media bias in news articles: an interdisciplinary literature review                                             403
+
+
+established computer science methodology in this area. CRA,                      that time, was mentioned more positively in the conservative
+for instance, has already been employed by researchers from                      Washington Times compared to other news outlets.
+the social sciences to compare the information contained in                          The most closely related field is sentiment analysis, which
+two articles.                                                                    aims to extract an author’s attitude toward a semantic con-
+                                                                                 cept mentioned in the text [143]. Current sentiment analysis
+                                                                                 methods reliably extract the unambiguously stated sentiment
+3.4 Labeling and word choice                                                     [143]. For example, those methods reliably identify whether
+                                                                                 customers used “positive,” such as “good” and “durable,” or
+When referring to a semantic concept, such as an entity, a                       “negative” words, such as “poor quality,” to review a product
+geographic position, or activity, authors can label the con-                     [143]. However, the highly context-dependent, hence more
+cept and choose from various words to refer to it. Instances of                  ambiguous sentiment in news coverage described previously
+bias by labeling and word choice frame the referred concept                      in this section remains challenging to detect reliably [7].
+differently, e.g., simply positively or negatively, or they high-                Recently, researchers proposed approaches using affect anal-
+light a specific perspective, e.g., economical or cultural (see                  ysis, e.g., using more dimensions than polarity in sentiment
+Sect. 2.1 for a background on framing). Examples include                         analysis to extract and represent emotions induced by a text,
+“coalition forces” or “invading forces,” “freedom fighters” or                   and crowdsourcing, e.g., systems that ask users to rate and
+“terrorists” [7], or “immigrant” or “economic migrant.” The                      annotate phrases that induce bias by labeling and word choice
+effects of this form of bias range from concept-level, e.g.,                     [57]. We describe these fields in the following paragraphs.
+a specific politician is shown to be incompetent, to article-                        While sentiment analysis presents one of the promis-
+level, e.g., the overall tone of the article features emotional                  ing methods to be used for automating the identification
+or factual words [77, 142].                                                      of bias by labeling and word choice, the performance of
+   Content analyses and framing analyses are used in the                         state-of-the-art sentiment extraction on news texts is rather
+social sciences to identify bias by labeling and word choice                     poor (cf. [7, 144]). Two reasons why sentiment analysis per-
+within news articles. Similar to the approaches discussed in                     forms poorly on news texts [7] are (1) the lack of large-scale
+previous sections, the manual coding task is once again time-                    gold standard datasets and (2) the high context-dependency
+consuming, since annotating news articles requires careful                       of sentiment-inducing phrases. A gold standard is required
+human interpretation. The analyses are typically either topic-                   to train state-of-the-art sentiment extractors using machine
+oriented or person-oriented. For instance, Papacharissi and                      learning [145]. The other category of sentiment extractors use
+Oliveira used CRA to extract influential words (see Sect. 3.3).                  manually [146] or semi-automatically [147, 148] created dic-
+They investigated labeling and word choice in the coverage                       tionaries of positive and negative words to score a sentence’s
+of different news outlets on topics related to terrorism [77].                   sentiment. However, to our knowledge no sentiment dictio-
+They found that the New York Times used a more dramatic                          nary exists that is specifically designed for news texts, and
+tone, e.g., news articles dehumanized terrorists by not ascrib-                  generic dictionaries tend to perform poorly on such texts (cf.
+ing any motive to terrorist attacks or usage of metaphors,                       [7, 69, 144]). Godbole et al. [147] used WordNet to automat-
+such as “David and Goliath” [77]. The Washington Post used                       ically expand a small, manually created seed dictionary to a
+a less dramatic tone, and both the Financial Times and the                       larger dictionary. They used the semantic relations of Word-
+Guardian focused their news articles on factual reporting.                       Net to expand upon the manually added words to closely
+Another study analyzed whether articles portrayed Bill Clin-                     related words. An evaluation showed that the resulting dic-
+ton, the US president at that time, positively, neutrally, or                    tionary had similar quality in sentiment analysis as solely
+negatively [142].                                                                manually created dictionaries. However, the performance of
+   The automated analysis of labeling and word choice in                         entity-related sentiment extraction using the dictionary tested
+news texts is challenging due to limitations of current NLP                      on news websites and blogs is missing a comparison against
+methods [117], which cannot reliably interpret the frame                         a ground truth, such as an annotated news dataset. Addition-
+induced by labeling and word choice, due to the frame’s                          ally, dictionary-based approaches are not sufficient for news
+dependency on the context of the words in the text [7]. Few                      texts, since the sentiment of a phrase strongly depends on
+automated methods from computer science have been pro-                           its context, for example, in economics a “low market price”
+posed to identify bias induced by labeling and word choice.                      may be good for consumers but bad for producers.
+Grefenstette et al. [5] devised a system that investigates the                       To avoid the difficulties of interpreting news texts,
+frequency of affective words close to words defined by the                       researchers have proposed approaches to perform sentiment
+user, for example, names of politicians. They find that the                      analysis specifically on quotes [69] or on the comments of
+automatically derived polarity scores of named entities are                      readers [149]. The motivation for analyzing only the senti-
+in line with the publicly assumed slant of analyzed news                         ment contained in quotes or comments is that phrases stated
+outlets, e.g., George Bush, the Republican US president at                       by someone are far more likely to contain an explicit state-
+
+
+                                                                                                                                     123
+404                                                                                                                 F. Hamborg et al.
+
+
+ment of sentiment or opinion-conveying words. While the            choice but to identify spin bias, i.e., the overall slant of an
+analysis of quotes achieved poor results [69], readers’ com-       article.
+ments appeared to contain more explicitly stated opinions             The forms of bias by labeling and word choice have been
+and regular sentiment analysis methods perform better: A           studied extensively in the social sciences using frame analy-
+classifier that used the extracted sentiments from the read-       ses and content analyses. However, to date not much research
+ers’ comments achieved a precision of 0.8 [149].                   on both forms has been conducted in computer science. Yet,
+    Overall, the performance of sentiment analysis on news         the previously presented techniques from computer science,
+texts is still rather poor. This is attributable to the fact       such as sentiment analysis and affect analysis, are already
+that, thus far, not much research has focused on improv-           capable of achieving reliable results in other similar domains
+ing sentiment analysis when compared to the large number           and could therefore make a unique contribution here (and
+of publications targeting the prime use case of sentiment          partially have [5]). Crowdsourcing has already successfully
+analysis: product reviews. Currently, no public annotated          been used to identify instances of such bias. Future research
+news dataset for sentiment analysis exists, which is a cru-        should focus on the creation of news-specific methods for
+cial requirement for driving forward successful, collaborative     the analysis of sentiment and affect, which may not only dif-
+research on this topic.                                            ferentiate between positive and negative connotation but also
+    A final challenge when applying sentiment analysis to          other properties affecting readers’ perception of entities, e.g.,
+news articles is that the one-dimensional positive–nega-           emotions.
+tive scale used by all mature sentiment analysis methods
+likely falls short of representing the complexity of news arti-    3.5 Placement and size allocation
+cles. Some researchers suggested to investigate emotions or
+affects, e.g., induced by headlines [150] or in entire news        The placement and size allocation of a story indicates the
+articles [151], whereas investigating the full text seems to       value a news outlet assigns to that story [6, 34]. Long-term
+yield better results. Affect analysis aims to find the emotions    analyses reveal patterns of bias, e.g., the favoring of specific
+that a text induces on the contained concepts, e.g., entities      topics or avoidance of others. Furthermore, the findings of
+or activities, by comparing relevant words from the text,          such an analysis should be combined with frame analysis
+e.g., nearby the investigated concept, with affect dictionaries    to give comprehensive insights on the bias of a news outlet,
+[152]. Bhowmick et al. devised an approach that automat-           e.g., a news outlet might report disproportionately much on
+ically estimates which emotions a news text induces on its         one topic, but otherwise its articles are well-balanced and
+readers using features such as tokens, polarity, and seman-        objective [35].
+tic representation of tokens [78]. An ML-based approach by            The first manual studies on the placement and size of news
+Mishne classifies blog posts into emotion classes using fea-       articles in the social sciences were already conducted in the
+tures such as n-grams and semantic orientation to determine        1960s. Researchers measured the size and the number of
+the mood of the author when writing the text [153].                columns of articles present in newspapers, or the broadcast
+    Semantics derived using word embeddings may be used to         length in minutes dedicated to a specific topic, to investi-
+determine whether words in an article contain a slant, since       gate if there were any differences in US presidential election
+the most common word embeddings models contain biases,             coverage [79, 80, 156, 157]. These early studies, and also
+particularly gender bias and racial discrimination [154, 155].     a more recent study conducted in 2000 [34], found no sig-
+Bolukbasi describe a method to debias word embeddings              nificant differences in article size between the news outlets
+[155]; the dimensions that were removed or changed by this         analyzed. Fewer studies have focused on the placement of
+process contain potentially biased words; hence, they may          an article, but found that article placement does not reveal
+also be used to find biased words in news texts.                   patterns of bias for specific news outlets [79, 157]. Related
+    Besides fully automated approaches to identify bias by         factors that have also been considered are the size of head-
+labeling and word choice, semi-automated approaches incor-         lines and pictures (see also Sect. 3.6 for more information on
+porate users’ feedback. For instance, NewsCube 2.0 employs         the analysis of pictures), which also showed no significant
+crowdsourcing to estimate the bias of articles reporting on        patterns of bias [79, 157].
+a topic. The system allows users to collaboratively annotate          Bias by article placement and size has more recently
+bias by labeling and word choice in news articles [57]. After-     not been re-analyzed extensively, even though the rise of
+ward, NewsCube 2.0 presents contrastive perspectives on the        online news and social media may have introduced significant
+topic to users. In their user study, Park et al. find that the     changes. Traditional printed news articles are a permanent
+NewsCube 2.0 supports participants to collectively organize        medium, in the sense that once they were printed, their
+news articles according to their slant of bias [57]. Section 3.8   content could not (easily) be altered, especially not for all
+describes Allsides, a news aggregator that employs crowd-          issues ever printed. However, online news websites are often
+sourcing, though not to identify bias by labeling and word         updated. For example, if a news story is still developing, the
+
+
+123
+Automated identification of media bias in news articles: an interdisciplinary literature review                                                 405
+
+
+news article may be updated every few minutes (cf. [158]).                       3.6 Picture selection
+Such updates of news articles also include the placement and
+allotted size of previews of articles on the main page and on                    Pictures contained in news articles strongly influence how
+other navigational pages. To our knowledge, no study has yet                     readers perceive a reported topic [163]. In particular, readers
+systematically analyzed the changes in the size and position                     who wish to get an overview of current events are likely
+of online news articles over time.                                               to browse many articles and thus view only each article’s
+   Fully automated methods are able to measure placement                         headline and image. The effects of picture selection even go
+and size allocation of news articles because both forms can                      so far as to influence readers’ voting preferences in elections
+be determined by volumetric measurements (see Sect. 2.3).                        [163]. Reporters or news agencies sometimes (purposefully)
+Printed newspapers must be digitalized first, e.g., using opti-                  show pictures out of context [164, 165], e.g., a popular picture
+cal character recognition (OCR) and document segmentation                        in 2015 showed an aggressive refugee with an alleged ISIS
+techniques [159, 160]. Measuring a digitalized or online arti-                   flag fighting against police officers. It later turned out that the
+cle’s placement and size is a trivial task. Due to the Internet’s                picture was taken in 2012, before the rise of ISIS, and that
+inherent structure of linked websites, online news even allows                   the flag was not related to ISIS [166]; hence, the media had
+for a more advanced and fully automated measurements of                          falsely linked the refugee with the terrorist organization.
+news article importance, such as PageRank [161], which                              Researchers from the social sciences have analyzed pic-
+could also be applied within pages of the publishing news                        tures used in news articles for over 50 years [167], approx-
+outlet. Most popular news datasets, such as RCV1 [162],                          imately as long as media bias itself has been studied. Basic
+are text-based and do not contain information on the size and                    studies count the number of pictures and their size to mea-
+placement of a news article. Future research, however, should                    sure the degree of importance ascribed by the news outlet to
+especially take into consideration the fast pace in online news                  a particular topic (see also Sect. 3.5 for information on bias
+production as described previously.                                              by size). In this section, we describe the techniques stud-
+   While measuring size and placement automatically is a                         ies use to analyze the semantics of selected images. To our
+straightforward task in computer science, only few special-                      knowledge, all bias-related studies in the social sciences are
+ized systems currently exists that can measure these forms                       concerned with political topics. Analyses of picture selection
+of news bias. Saez-Trumper et al. [73] devised a system that                     are either person-oriented or topic-oriented.
+measures the importance ascribed to a news story by an outlet                       Person-oriented analyses ask analysts to rate the articles’
+by counting the total number of words of news articles report-                   pictures showing specific politicians. Typical rating dimen-
+ing on the story. To measure the importance ascribed to the                      sions are [168, 169]:
+story by the outlet’s readers, the system counts the number of
+Tweets linking to these news articles. One finding is that both                  • Expression, e.g., smiling versus frowning
+factors are slightly correlated. NewsCube’s visualization is                     • Activity, e.g., shaking hands versus sitting
+designed to provide equal size and avoid unfair placement of                     • Interaction, e.g., cheering crowd versus alone
+news articles to “not skew users’ visual attention” [27]. Even                   • Background, e.g., the country’s flags versus not identifiable
+though the authors ascribe this issue high importance in their                   • Camera angle, e.g., eye-level shots versus shots from
+visualization, they do not analyze placement and size in the                       above
+underlying articles.                                                             • Body posture, e.g., upright versus bowed torso
+   Research in the social sciences and in computer science
+benefits from the increasing accessibility of online news,                          Findings are mixed, e.g., a study from 1998 found no
+which allows effective automated analysis of bias by tak-                        significant differences in the selected pictures between the
+ing into consideration article placement and size. Measuring                     news outlets analyzed, e.g., whether selected pictures of a
+placement and size of articles is a trivial and scalable task that               specific news outlets were in favor of a specific politician
+can be performed on any number of articles without requir-                       [168]. Another study from 1988 found that the Washing-
+ing cumbersome manual effort. However, most recent studies                       ton Post did not contain significant picture selection bias but
+in the social sciences have not considered including bias by                     that the Washington Times selected images that were more
+placement and size into their analysis. The same is true for                     likely favorable toward Republicans [169]. A study of Ger-
+systems in computer science that should similarly include the                    man TV broadcasts in 1976 found that one candidate for
+placement and size of articles as an additional dimension of                     German chancellorship, Helmut Schmidt, was significantly
+media bias. With the conclusions that have been drawn based                      more often shown in favorable shots including better camera
+on the analysis of traditional, printed articles, still in need of               angles and reactions of citizens than the other main candi-
+verification for online media, computer science approaches                       date, Helmut Kohl [170].
+can here make a truly unique contribution.                                          Topic-oriented analyses do not investigate bias toward
+                                                                                 persons but toward certain topics. For instance, a recent
+
+
+                                                                                                                                        123
+406                                                                                                                    F. Hamborg et al.
+
+
+study on Belgian news coverage analyzed the presence of              was that one picture showed a black man, who “looted” the
+two frames [171]: Asylum seekers in Belgium are (1) vic-             store, while the other picture depicted a white couple, who
+tims that need protection or (2) intruders that disturb Belgian      “found” food in the store [84].
+culture and society. Articles supporting the first frame typ-            Researchers from the social sciences typically perform
+ically chose pictures depicting refugee families with young          two types of analyses that are concerned with bias from
+children in distress or expressing fear. Articles supporting         image captions: jointly analyzing image and caption, or only
+the second frame chose pictures depicting large groups of            analyzing the caption, ignoring the image. Only few studies
+mostly male, asylum seekers. The study found that the victim         analyze captions and images jointly. For instance, a com-
+frame was predominantly adopted in Belgian news coverage,            parison of images and captions from the Washington Post
+and particularly in the French-speaking part of Belgium. The         and the Washington Times found that the captions were not
+study also revealed a temporal pattern: During Christmas             significantly biased [169]. A frame analysis on the refugee
+time, the victim frame was even more predominant.                    topic in Belgian news coverage also took into consideration
+   To our knowledge, there are currently no systems or               image captions. However, the authors focused on the over-
+approaches from computer science that analyze media bias             all impression of the analyzed articles rather than examining
+through image selection. However, methods in computer                any potential bias specifically present in the picture captions
+vision can measure some of the previously described dimen-           [171].
+sions. Automated methods can identify faces in images [172],             The vast majority of studies analyze captions without
+recognize emotions [83, 173], categorize objects shown in            placing them in context with their pictures. Studies and tech-
+pictures [174], and even generate captions for a picture             niques concerned with the text of a caption (but not the
+[175]. Research has advanced so far in these applications            picture) are described in the previous sections, especially
+that several companies, such as Facebook, Microsoft, and             in the sections for bias by commission and omission (see
+Google, are using such automated methods in production               Sect. 3.3), and labeling and word choice (see Sect. 3.4). We
+or are offering them as a paid service. Segalin et al. [82]          found that most studies in the social sciences either analyze
+trained a convolutional neural network (CNN) on the Psycho-          image captions as a component of the main text, or analyze
+Flickr dataset to estimate the personality traits of the pictures’   images but disregard their captions entirely [79, 157, 168].
+authors [176]. To evaluate the classification performance of         Likewise, relevant methods from computer science are effec-
+the system, they compared the CNN’s classifications with             tively the same as those concerned with bias by commission
+self-assessments by picture authors and also with attributed         and omission (see Sect. 3.3), and labeling and word choice
+assessments by participants of a study. The results of their         (see Sect. 3.4). For the other type of studies, i.e., jointly ana-
+evaluation suggest that CNNs are suitable to derive such char-       lyzing images and captions, relevant methods are discussed
+acteristics that are not even visible in the analyzed pictures.      in Sect. 3.6, i.e., computer vision to analyze the contents of
+   Picture selection is an important factor in the perception of     pictures, and additionally in Sects. 3.3 and 3.4, e.g., sentiment
+news. Basic research from psychology has shown that image            analysis to find biased words in captions.
+selection can slant coverage toward one direction, although              To our knowledge, no study has examined picture referrals
+studies in the social sciences on bias by selection in the past      contained in the article’s main text. This is most likely due
+concluded that there were no significant differences in picture      to the infrequency of picture referrals.
+selection. Advances in image processing research and the                 The few analyses on captions suggest that bias by picture
+increasing accessibility of online news provide completely           explanation is not very common. However, more fundamen-
+new avenues to study potential effects of picture selection.         tal studies show strong impact of captions on the perception
+Computer science approaches can here primarily contribute            of images and note rather subtle differences in word choice.
+by enabling the automated analysis of images on much bigger          While many studies analyzed captions as part of the regu-
+scale allowing us to reopen important questions on the effect        lar text, e.g., analyzing bias by labeling and word choice,
+of picture selection in news coverage and beyond.                    research currently lacks specialized analyses that examine
+                                                                     captions in conjunction with their images.
+3.7 Picture explanation
+                                                                     3.8 Spin: the vagueness of media bias
+Captions below images and referrals to the images in the main
+text provide images with the needed textual context. Images          Bias by spin is closely related to all other forms of media
+and their captions should be analyzed jointly because text can       bias and is also the vaguest form. Spin is concerned with the
+change a picture’s meaning, and vice versa [167, 177]. For           context of presented information. Journalists create the spin
+instance, during hurricane “Katrina” in 2005, two similar            of an article on all textual levels, e.g., by supporting a quote
+pictures published in US media showed survivors wading               with an explanation (phrase level), highlighting certain parts
+away with food from a grocery store. The only difference             of the event (paragraph level), or even by concluding the
+
+
+123
+Automated identification of media bias in news articles: an interdisciplinary literature review                                              407
+
+
+article with a statement that frames all previously presented                    contrary statements that span a two-dimensional map [179].
+information differently (article level). The order in which                      Below the map, the news outlet lists excerpts from other out-
+facts are presented to the reader influences what is perceived                   lets that support or contradict the map’s statements.
+(e.g., some readers might only read the headline and lead                            The automated analysis of spin bias using methods from
+paragraph) and how readers rate the importance of reported                       computer science is maybe the most challenging of all forms
+information [85]. Not only the text of an article but all other                  because its manifestation is the vaguest among the forms
+elements, including pictures, captions, and the presentation                     of bias discussed. Spin refers to the overall perception of
+of the information contribute to an article’s overall spin.                      an article. Bias by spin is not, however, just the sum of all
+   In the social sciences, the two primarily used methods                        other forms but includes other factors, such as the order of
+to analyze the spin of articles are frame analysis, and more                     information presented in a news article, the article’s tone,
+generally content analysis. For instance, one finding in the                     and emphasis on certain facts. Methods we describe in the
+terrorism analysis conducted by Papacharissi and de Fatima                       following are partially also relevant for other forms of bias.
+Oliveira [77] (see Sect. 3.2) was that the New York Times                        For instance, the measurement of an article’s degree of per-
+often personified the events in their articles, e.g., by focusing                sonification in the terrorism in news coverage study [77] is
+on persons involved in the event and the use of dramatic                         supported by the computation of CRA [85]. What is not auto-
+language.                                                                        mated is the annotation of entities and their association with
+   Some practices in journalism can be seen as countermea-                       an issue. Named entity extraction [180] could be used to par-
+sures to mitigate media bias. Press reviews summarize an                         tially address these previously manually performed tasks.
+event by referring to the main statements found in articles by                       Other approaches analyze news readers’ input, such as
+other news outlets. This does not necessarily reveal media                       readers’ comments, to identify differences in news coverage.
+bias, because any perspective can be supported by source                         The rationale of these approaches is that readers’ input con-
+selection, e.g., only “reputable” outlets are used. However,                     tains explicitly stated opinions and sentiment on certain topic,
+typically press reviews broaden a reader’s understanding of                      which are usually missing from the news article itself. Explic-
+an event and might be a starting point for further research.                     itly stated opinion can reliably be extracted with the help of
+Another practice that supports mitigation of media bias is                       state-of-the-art NLP methods, such as sentiment analysis. For
+opposing commentaries in newspapers, where two authors                           instance, one method analyzes readers’ comments to catego-
+subjectively elaborate their perspective on the same topic.                      rize related articles [86]. The method measures the similarity
+Readers will see both perspectives and can make their own                        of two articles by comparing their reader comments, focus-
+decisions regarding the topic.                                                   ing on the entities mentioned and the sentiment expressed in
+   Social media has given rise to new collaborative                              the comments, and country of the comment’s author. Another
+approaches to media bias detection. Reddit3 is a social news                     method counts and analyzes Twitter followers of news out-
+aggregator, where users post links or texts regarding current                    lets to estimate the political orientation of the audience of
+events or other topics, and rate or comment on posts by other                    the news outlet [20]. A seed group of Twitter accounts is
+users. Through the comments on a post, a discussion can                          manually rated according to their political orientation, e.g.,
+emerge that is often controversial and contains the various                      conservative or liberal. This group is automatically expanded
+perspectives of commenters on the topic. Reddit also has a                       using those accounts’ followers. The method then estimates
+“media bias” thread4 where contributors share examples of                        the political orientation of a news outlet’s audience by aver-
+biased articles. Wikinews is a collaborative news producer,                      aging the political orientation of the outlet’s followers in the
+where volunteers author and edit articles. Wikinews aims                         expanded, group of categorized accounts (cf. [42, 59, 61]).
+to provide “reliable, unbiased and relevant news […] from                            The news aggregator Allsides5 shows users the most con-
+a neutral point of view” [178]. However, two main issues                         trastive articles on a topic, e.g., left and right leaning on a
+are the mixed quality of news (because many authors may                          political spectrum. The system asks users to rate the spin of
+have participated) and the low number of articles, i.e., only                    news outlets, e.g., after reading articles published by these
+major events are covered in the English version, and other                       outlets. To estimate the spin of an outlet, Allsides uses the
+languages have even fewer articles. Thus, Wikinews cur-                          feedback of users and expert knowledge provided by their
+rently cannot be used as a primary, fully reliable news source.                  staff. NewsCube 2.0 lets (expert) users collaboratively define
+Some approaches employ crowdsourcing to visualize differ-                        and rate frames in related articles [57]. The frames are in turn
+ent opinions or statements on politicians or news topics, for                    presented to other users, e.g., a contrast view shows the most
+example, the German news outlet Spiegel Online frequently                        contrasting frames of one event. Users can then incrementally
+asks readers to define their position regarding two pairs of                     improve the quality of coding by refining existing frames.
+
+3   https://www.reddit.com/.
+4   https://www.reddit.com/r/MediaBias/.                                         5   http://www.allsides.com/.
+
+
+                                                                                                                                      123
+408                                                                                                                  F. Hamborg et al.
+
+
+    Another method for news spin identification categorizes         currently still address media bias as vaguely defined differ-
+news articles on contentious news topics into two (opposing)        ences in news coverage and therefore stand to profit from
+groups by analyzing quotes and nearby entities [181]. The           prior research in the social sciences. In turn, there are few
+rationale of the approach is that articles portraying a simi-       scalable approaches to the analysis of media biases in the
+lar perspective on a topic have more common quotes, which           social sciences significantly hampering progress in the field.
+may support the given perspective, than articles that have          We therefore see a strong prospect for collaborative research
+different perspectives. The method extracts weighted triples        on automated approaches to the analysis of media bias across
+representing who criticizes whom, where the weight depends          both disciplines.
+on the importance of the triple, e.g., estimated by the posi-
+tion within the article (the earlier, the more important). The
+method measures the similarity of two articles by comparing         4 Reliability, generalizability, and evaluation
+their triples.
+    Other methods analyze frequencies and co-occurrences of         This section discusses how automated approaches for ana-
+terms to find frames in related articles and assign each article    lyzing media bias should be evaluated. Therefore, we first
+to one of the frames. For instance, one method clusters arti-       describe how social scientists measure the reliability and gen-
+cles by measuring the similarity of two documents using the         eralizability of studies on media bias.
+co-occurrences of the two documents’ most frequent terms               The reliability and generalizability of manual annotation
+[182]. The results of this rather simple method are then            in the social sciences provides the benchmark for any auto-
+used for a manually conducted frame analysis. Hiérarchie            mated approach. Best practices in social science research can
+uses recursive topic modeling to find topics and subtopics in       involve both the careful development and iterative refinement
+Tweets posted by users on a specific issue [183]. A radial          of underlying codebooks, as well as the formal validation of
+treemap visualizes the extracted topics and subtopics. In the       inter-coder reliability. For example, as discussed in Sect. 2.3,
+presented case study, users find and explore different theories     a smaller, careful inductive manual annotation aids in con-
+on the disappearance of flight MH-370 discussed in Tweets.          structing the codebook. The main deductive analysis is then
+    Recently, a Dagstuhl workshop on fake news proposed a           performed by a larger pool of coders where the results of
+number of axes of quantitative computer analysis, such as           individual coders, their agreement on the assignment of codes
+factuality, readability, and virality, could help users to make     can be systematically compared. Standard measures for inter-
+more informed judgments about the news items they read              coder reliability, e.g., the widely used Krippendorff’s Alpha
+[184].                                                              [185], provide estimates for the reliability and robustness of
+    Lastly, manually added information related to media bias,       the coding. Whether coding rules, and with these the quality
+e.g., the overall spin of articles rated by users of Allsides, or   of annotations, can be generalized beyond a specific case is
+articles annotated by social scientists during frame analysis,      usually not routinely analyzed because, by virtue of the sig-
+is in our view, a promising learning dataset for machine learn-     nificant effort required for manual annotation, the scope of
+ing. Other data that exploit the wisdom of the crowd might be       such studies is usually limited to a specific question or con-
+incorporated as well, e.g., analyzing the Reddit media bias         text. Note, however, that the usual setup of a small deductive
+thread.                                                             analysis, conducted on a subset of the data, implies that a
+    In our view, the existence of the very concept of spin bias     codebook generated in this way can generalize to a larger
+allows drawing two conclusions. First, media bias is a com-         corpus.
+plex model of skewed news coverage with overlapping and                 Computer science approaches for the automated analysis
+partially contradicting definitions. While many instances of        of media bias stand to profit a lot from a broad adoption
+media bias fit into one of the other more precisely defined         of their methods by researchers across a wider set of disci-
+forms of media defined in the news production and consump-          plines. The impact and usefulness of automatized approaches
+tion process (see Sect. 2.2), some instances of bias do not.        for substantive cross-disciplinary analyses, however, hinges
+Likewise, such instances of bias may fit into other models          critically on two central questions. First, compared to man-
+from the social sciences that are concerned with differences in     ual methodologies, how reliable are automated approaches?
+news coverage, such as the bias forms of coverage, gatekeep-        Specifically, broad adoption of automated approaches in
+ing, and statement (Sect. 2.2 briefly discusses other models        social sciences applications is only likely if the automated
+of media bias), while other instances would not fit into such       approaches identify at least close to the same instances of
+models. Second, we found that most of the approaches from           bias as manual annotations would.
+computer science for identifying, or suitable for identifying,          Depending on which kind of more or less subtle form of
+spin bias, omit the extensive research that has been con-           bias is analyzed, the results gained through manual anno-
+ducted in the social sciences. Computer science approaches          tation might represent a more or less difficult benchmark
+
+
+
+123
+Automated identification of media bias in news articles: an interdisciplinary literature review                                             409
+
+
+to beat. Especially in complex cases, manual annotation of                       simply because the costs of generating benchmark datasets is
+individual items may systematically perform better in cap-                       too high. Ultimately, it would be best practice for benchmark
+turing subtle instances relevant to the analysis question than                   studies to establish more generally whether or not specific
+automated approaches. Note that, for example, currently no                       characteristics of news are related to the performance of the
+public annotated news dataset for sentiment analysis exists                      automated approaches developed.
+(see Sect. 3.4). The situation is similar for most of the applica-
+tions reviewed in this article, i.e., there is currently a dearth of
+standard benchmark datasets. Meaningful validation would                         5 Conclusion
+thus require as a first step the careful (and time-intensive)
+development of such datasets across a range of relevant con-                     News coverage strongly influences public opinion. How-
+texts.                                                                           ever, at times, the news coverage of media outlets is far
+    One way to counter the present lack of evaluation datasets                   from objective, a phenomenon called media bias. Media bias
+is to not solely rely on manual content analysis for annota-                     can potentially negatively impact the public, since biased
+tion. For simple annotation tasks, such as rating the subjective                 news coverage may influence elections or public opinion on
+slant of a news picture, crowdsourcing can be a suitable alter-                  societal issues. Recent trends, such as social bots that auto-
+native to content analysis. This procedure requires less effort                  matically write news posts, or the centralization of media
+than conducting a full content analysis, including creation                      outlet ownership, have the potential to further amplify the
+of a codebook and refining it until the ICR is sufficiently                      negative effects of biased news coverage. News consumers
+high (cf. [186]). Another way is to reuse existing datasets,                     should be able to view different perspectives of the same
+something which has already been done successfully to cre-                       news topic [26]. Especially in democratic societies, unre-
+ate learning datasets in the context of biased language. For                     stricted access to unbiased information is crucial for citizens
+instance, Recasens et al. [187] use bias-related revisions                       to form their own views and make informed decisions [46,
+from the Wikipedia edit history to retrieve presumably biased                    123], e.g., during elections. Since media bias has been, and
+single-word phrases. The political slant classification of news                  continues to be, structurally inherent in news coverage [27,
+articles and outlets crowdsourced by users on web services                       56, 58], the detection and analysis of media bias is a topic of
+such as Allsides (see Sect. 3.8) may serve as another com-                       high societal and policy relevance—especially, if these anal-
+parison baseline.                                                                yses and associated tools and platforms help news consumers
+    Another way to evaluate the performance of bias identi-                      to become more aware of instances of media bias.
+fication methods, is to manually analyze the automatically                           Researchers from the social sciences have studied media
+extracted instances of media bias, e.g., through crowdsourc-                     bias extensively over the past decades, resulting in a compre-
+ing or (typically fewer) specialized coders. However, evalu-                     hensive set of methodologies, such as content analysis and
+ating the results of an automated approach this way decreases                    frame analysis, as well as models to describe media bias.
+the comparability between approaches, since these have to                        One of these models, the “news production and consump-
+be evaluated in the same way manually again. Generating                          tion process,” describes how journalists turn events into news
+annotated benchmark datasets, on the other hand, requires                        articles. The process defines nine forms of media bias that
+greater initial effort, but the results can then be used multiple                can occur during the three phases of news production: in the
+times to evaluate and compare multiple approaches.6                              first phase, “gathering of information,” the bias forms are
+    The second central question is how well automated                            (1) event selection, (2) source selection, and (3) commission
+approaches generalize to the study of similar forms of bias in                   and omission of information. In the second phase, “writing,”
+different contexts than those contexts for which they were                       the bias forms are (4) labeling and word choice. In the third
+initially developed. This question pertains to the external                      phase, “editing,” the bias forms are (5) story placement, (6)
+validity of developed approaches, i.e., is their performance                     size allocation, (7) picture selection, and (8) picture expla-
+dependent on a specific empirical or topical context? Out-                       nation. Lastly, bias by (9) spin is a form of media bias that
+of-sample performance could be tested against benchmark                          represents the overall bias of a news article and essentially
+datasets not used for initial evaluation; however, as empha-                     combines the other forms of bias, including minor forms not
+sized before, such datasets must still be developed. Hence,                      defined specifically by the news production and consumption
+systematically testing the performance of approaches across                      process.
+many contexts is likely also infeasible for the near future                          For each of the forms of media bias, we discussed exem-
+                                                                                 plary approaches being applied in the social sciences, and
+6 The SemEval series [76] are a representative example from computer
+                                                                                 described the automated methods from computer science
+science where with high initial effort comprehensive evaluation (and
+                                                                                 that have been used, or could best be used, to address the
+training and test) datasets are created, allowing a quantitative compari-        particular form of bias. We summarize the findings of our
+son of the performance of multiple approaches afterward.                         comprehensive review of the current status-quo as follows:
+
+
+                                                                                                                                     123
+410                                                                                                                  F. Hamborg et al.
+
+
+F1. Only few approaches in computer science address the             are actual differences, nor can MNA enforce finding differ-
+    analysis of media bias. The majority of these approaches        ences [117]. Likewise, Hiérarchie finds subtopics in news
+    analyze media bias from the perspective of regular news         posts that may or may not refer to differences caused by
+    consumers and neglect both the established approaches           media bias [183]. To overcome the limitations in identifying
+    and the comprehensive models that have already been             bias, some approaches, such as NewsCube 2.0 [57] and All-
+    developed in the social sciences. In many cases, the            sides (Sect. 3.8), outsource the task of identifying media bias
+    underlying models of media bias are too simplistic, and         to users, e.g., by asking users to manually rate the slant of
+    their results when compared to models and results of            news articles.
+    research in the social sciences do not provide additional           Content analysis and frame analysis both require sig-
+    insights.                                                       nificant manual effort and expertise (F2). Especially time-
+F2. The majority of content analyses in the social sciences         intensive are the tasks of systematic screening of texts and
+    do not employ state-of-the-art text analysis meth-              their subsequent annotation, tasks that can only be performed
+    ods from computer science. As a result, the manual              by human coders [34, 88]. Currently, in our view, the exe-
+    content analysis approaches conducted by social scien-          cution of these tasks cannot be improved significantly by
+    tists require exacting and very time-consuming effort,          employing automated text analysis methods due to the lack of
+    as well as significant expertise and experience. This           mature methods capable of identifying specific instances of
+    severely limits the scope of what social scientists can         media bias, which follows from F1. This limitation, however,
+    study and has significantly hampered progress in the            may be revised once interdisciplinary research has resulted in
+    field.                                                          more advanced automated methods. Other tasks, such as data
+F3. In our view, there is therefore a lot of potential for inter-   gathering, or searching for relevant documents and phrases,
+    disciplinary research on media bias among computer              are already supported by basic (semi-)automated methods
+    scientists and social scientists. Useful state-of-the-art       and tools, such as content analysis software [99]. However,
+    approaches from computer science are available for              clearly the full potential of the state of the art in computer
+    each of the nine forms of media bias that we discussed.         science is not yet being exploited. The employed techniques,
+    On the one hand, methodologies and models of media              e.g., keyword-based text matching to find relevant documents
+    bias in the social sciences can help computer scientists        [100], or frequency-based extraction of representative terms
+    make the automated approaches more effective. Like-             to find patterns [99], are rather simple compared to the state of
+    wise, the development of automated methods to identify          the art in automated text analysis. Few of the reviewed tools
+    instances of specific forms of media bias can help make         used by researchers in the social sciences employ methods
+    content analysis in the social sciences more efficient by       proven effective in natural language processing, such as reso-
+    automating more tasks.                                          lution of co-references or synonyms, or finding related article
+                                                                    using an event-based search approach.
+   Media bias analysis is a rather young research topic                 In our view, combining the expertise of both the social
+within computer science, particularly when compared with            sciences and computer science results in valuable opportu-
+the social sciences, where the first studies on media bias          nities for interdisciplinary research (F3). Reliable models
+were published more than 60 years ago [29, 177]. Our first          of media bias and manual approaches for the detection of
+finding (F1) is that most of the reviewed computer science          media bias can be combined with methods for automated
+approaches treat media bias vaguely, and view it only as            data analysis, in particular, with state-of-the-art text analy-
+“differences of [news] coverage” [149], “diverse opinions”          sis and natural language processing approaches. NewsCube
+[188], or “topic diversity” [26]. The majority of the exist-        [27], for instance, extracts so-called “aspects” from news
+ing approaches neglect the state of the art developed in the        articles, which refer to the “frames” defined by social sci-
+social science. They do not make use of models describing           entists [39]. Users of NewsCube became more aware of the
+different forms of media bias or how biased news coverage           different perspectives contained in news coverage on spe-
+emerges in the news production and consumption process              cific topics, than users of Google News. In this article, we
+[6, 27] (Sect. 2.2). Also, approaches in computer science           showed that promising automated methods from computer
+do not employ methods to analyze the specific forms of              science are available for all forms of media bias as defined by
+bias, such as content analysis [34] and frame analysis [88]         the news production and consumption process (see Sect. 3).
+(Sect. 2.3). Consequently, many state-of-the-art approaches         For instance, studies concerned with bias by source selection
+in computer science are limited in their capability for iden-       or the commission and omission of information, investigate
+tifying instances of media bias. For instance, matrix-based         how information is reused in news coverage [42, 61, 138].
+news aggregation (MNA) organizes articles and topics in a           Similarly to these studies, methods from plagiarism detec-
+matrix to facilitate showing differences in international news      tion aim to identify instances of information reuse in a set of
+topics, but the approach can neither determine whether there        documents, and these methods yield reliable results for pla-
+
+
+123
+Automated identification of media bias in news articles: an interdisciplinary literature review                                                           411
+
+
+giarism with sufficient textual similarity [125, 126]. Finally,                         tria, June 4–5 June 2012. https://doi.org/10.2312/PE/EuroVAST/
+recent advancements text analysis, particularly word embed-                             EuroVA12/049-053
+                                                                                   8.   Gentzkow, M., Shapiro, J.M: Media bias and reputation. J. Polit.
+dings [110] and deep learning [189], open a promising area                              Econ. 114(2), 280–316 (2006). https://doi.org/10.1086/499414
+of research on media bias. Thus far, few studies use word                          9.   Bucher, H.J., Schumacher, P.: The relevance of attention for select-
+embeddings and deep learning to analyze media bias in news                              ing news content. An eye-tracking study on attention patterns in
+coverage. However, the techniques have proven very suc-                                 the reception of print and online media. Communications 31, 347
+                                                                                        (2006)
+cessful in various related problems (cf. [75, 134, 190, 191]),                    10.   Bernhardt, D., Krasa, S., Polborn, M.: Political polarization
+which lets us anticipate that the majority of the textual bias                          and the electoral effects of media bias. J. Public Econ. 92(5),
+forms could be addressed effectively with such approaches.                              1092–1104 (2008)
+    We believe that interdisciplinary research on media bias                      11.   Napolitan, J.: The Election Game and How to Win it. Doubleday,
+                                                                                        New York (1972)
+can result in three main benefits. First, automated approaches                    12.   Meyrowitz, J.: No Sense of Place: The Impact of Electronic Media
+for analyzing media bias will become more effective and                                 on Social Behavior. Oxford University Press, Oxford (1986)
+more broadly applicable, since they build on the substan-                         13.   Tye, L.: The Father of Spin: Edward L. Bernays and the Birth of
+tial, theoretical expertise that already exists in the social                           Public Relations. Macmillan, London (2002)
+                                                                                  14.   Amos, A., Haglund, M.: From social taboo to ‘torch of freedom’:
+sciences. Second, content analyses in the social sciences                               the marketing of cigarettes to women. Tob. Control 9(1), 3–8
+will become more efficient, since more tasks can be auto-                               (2000)
+mated, or supported by automated methods from computer                            15.   Lutz, A: These 6 corporations control 90% of the media in
+science. Finally, we argue that news consumers will bene-                               America. Bus. Insider (2014). http://www.businessinsider.com/
+                                                                                        these-6-corporations-control-90-of-the-media-in-america-2012-
+fit from improved automated methods for identifying media                               6. Accessed 12 Jan 2017
+bias, since the methods can be used by news aggregators to                        16.   Esser, F., Reinemann, C., Fan, D.: Spin doctors in the United
+detect and visualize the occurrence of potential media bias                             States, Great Britain, and Germany Metacommunication about
+in real time.                                                                           media manipulation. Harv. Int. J. Press. 6(1), 16–45 (2001)
+                                                                                  17.   Straubhaar, J.D.: Media Now: Communication Media in Informa-
+                                                                                        tion Age. Thomson Learning, Boston (2000)
+Acknowledgements This work was supported by the Carl Zeiss Foun-
+                                                                                  18.   Bakshy, E., Messing, S., Adamic, L.A.: Exposure to ideologi-
+dation and the Zukunftskolleg program of the University of Konstanz.
+                                                                                        cally diverse news and opinion on Facebook. Science 348(6239),
+We thank the anonymous reviewers for their valuable comments that
+                                                                                        1130–1132 (2015)
+significantly helped to improve this article.
+                                                                                  19.   An, J., Cha, M., Gummadi, K.P., Crowcroft, J., Quercia, D.: Visu-
+                                                                                        alizing media bias through Twitter. In: Proceedings of ICWSM
+Open Access This article is distributed under the terms of the Creative
+                                                                                        SocMedNews Workshop (2012)
+Commons Attribution 4.0 International License (http://creativecomm
+                                                                                  20.   Golbeck, J., Hansen, D.: Computing political preference among
+ons.org/licenses/by/4.0/), which permits unrestricted use, distribution,
+                                                                                        twitter followers. In: Proceedings of the SIGCHI Conference on
+and reproduction in any medium, provided you give appropriate credit
+                                                                                        Human Factors in Computing Systems, pp. 1105–1108 (2011)
+to the original author(s) and the source, provide a link to the Creative
+                                                                                  21.   Sunstein, C.R.: The law of group polarization. J. Polit. Philos.
+Commons license, and indicate if changes were made.
+                                                                                        10(2), 175–195 (2002)
+                                                                                  22.   Barberá, P., Jost, J.T., Nagler, J., Tucker, J.A., Bonneau, R.: Tweet-
+                                                                                        ing from left to right: is online political communication more than
+                                                                                        an echo chamber? Psychol. Sci. 26(10), 1531–1542 (2015)
+References                                                                        23.   Facebook, “Company Info.” (2016)
+                                                                                  24.   Bui, C.: How online gatekeepers guard our view: news portals’
+  1. Mossberger, K., Tolbert, C.J., McNeal, R.S.: Digital Citizenship:                  inclusion and ranking of media and events. Glob. Media J. 9(16),
+     The Internet, Society, and Participation. MIT Press, Cambridge                     1–41 (2010)
+     (2007)                                                                       25.   Wanta, W., Golan, G., Lee, C.: Agenda setting and international
+  2. Urban, C.D.: Examining our credibility: perspectives of the public                 news: media influence on public perceptions of foreign nations.
+     and the press. Urban1999-URBEOC, Asne Foundation (1999)                            Journal. Mass Commun. Q. 81(2), 364–377 (2004)
+  3. Crossman, J.: Aussies turn to social media for news despite not              26.   Munson, S.A., Zhou, D.X., Resnick, P.: Sidelines: an algorithm for
+     trusting it as much, Crossman Communications, Nov-2014. http://                    increasing diversity in news and opinion aggregators. In: ICWSM
+     crossman.com.au/?p=3853                                                            (2009)
+  4. University of Michigan.: News bias explored—The art of reading               27.   Park, S., Kang, S., Chung, S., Song, J.: NewsCube: delivering
+     the news (2014). http://umich.edu/~newsbias/. Accessed 01 Aug                      multiple aspects of news to mitigate media bias. In: Proceedings
+     2018                                                                               of CHI’09, SIGCHI Conference on Human Factors Computer
+  5. Grefenstette, G., Qu, Y., Shanahan, J., Evans, D.: Coupling niche                  System, pp. 443–453 (2009)
+     browsers and affect analysis for an opinion mining applica-                  28.   Munson, S.A., Lee, S.Y., Resnick, P.: Encouraging reading of
+     tion. In: Proceedings of 12th International Conference on Rech.                    diverse political viewpoints with a browser widget. In: ICWSM
+     d’Information Assistee par Ordinateur (2004)                                       (2013)
+  6. Baker, B.H., Graham, T., Kaminsky, S.: How to Identify, Expose               29.   White, D.M.: The ‘gate keeper’: a case study in the selection of
+     and Correct Liberal Media Bias. Media Research Center, Alexan-                     news. J. Bull. 27(4), 383–390 (1950)
+     dria (1994)                                                                  30.   Williams, A.: Unbiased study of television news bias. J. Commun.
+  7. Oelke, D., Geißelmann, B., Keim, D.A.: Visual analysis of                          25(4), 190–199 (1975)
+     explicit opinion and news bias in german soccer articles. EuroVis            31.   Harcup, T., O’neill, D.: What is news? Galtung and Ruge revisited.
+     Workshop on Visual Analytics, EuroVA 2012, Vienna, Aus-                            J. Stud. 2(2), 261–280 (2001)
+
+
+                                                                                                                                                 123
+412                                                                                                                               F. Hamborg et al.
+
+
+32. McCarthy, J.D., McPhail, C., Smith, J.: Images of protest:             58. Herman, E.S.: The propaganda model: a retrospective. J. Stud.
+    dimensions of selection bias in media coverage of Washington               1(1), 101–112 (2000)
+    demonstrations, 1982 and 1991. Am. Soc. Rev. 61(3), 478–499            59. MacGregor, B.: Live, Direct, and Biased?: Making Television
+    (1996)                                                                     News in the Satellite Age. Arnold, London (1997)
+33. Mullainathan, S., Shleifer, A.: Media bias. In: National Bureau of     60. Baron, D.P.: Persistent media bias. J. Public Econ. 90(1), 1–36
+    Economic Research, vol. 9295, pp. 127 (2002)                               (2006)
+34. D’Alessio, D., Allen, M.: Media bias in presidential elections: a      61. Gentzkow, M., Shapiro, J.M.: What drives media slant? Evidence
+    meta-analysis. J. Commun. 50, 133–156 (2000)                               from US daily newspapers. Econometrica 78(1), 35–71 (2010)
+35. Druckman, J.N., Parkin, M.: The impact of media bias: how edi-         62. Gilens, M., Hertzman, C.: Corporate ownership and news bias:
+    torial slant affects voters. J. Polit. 67(4), 1030–1049 (2005)             newspaper coverage of the 1996 Telecommunications Act. J. Polit.
+36. Gerber, A.S., Karlan, D., Bergan, D.: Does the media matter? A             62(02), 369–386 (2000)
+    field experiment measuring the effect of newspapers on voting          63. D’Angelo, P., Kuypers, J.A.: Doing News Framing Analysis:
+    behavior and political opinions. Am. Econ. J. Appl. Econ. 1(2),            Empirical and Theoretical Perspectives. Routledge, Abingdon
+    35–52 (2009)                                                               (2010)
+37. Gentzkow, M., Glaeser, E.L., Goldin, C.: The rise of the fourth        64. Besley, T., Prat, A.: Handcuffs for the grabbing hand? Media
+    estate How newspapers became informative and why it mat-                   capture and government accountability. Am. Econ. Rev. 96(3),
+    tered. In: Glaeser, E.L., Goldin, C. (eds.) Corruption and Reform:         720–736 (2006). https://doi.org/10.1257/aer.96.3.720
+    Lessons from America’s Economic History, pp. 187–230. Univer-          65. Paul, R., Elder, L.: The Thinker’s Guide for Conscientious Citi-
+    sity of Chicago Press, Chicago (2006)                                      zens on how to Detect Media Bias & Propaganda in National and
+38. De Vreese, C.H.: News framing: theory and typology. Inf. Des. J.           World News. Foundation Critical Thinking (2004)
+    Doc. Des. 13(1), 51–62 (2005)                                          66. F. Esser, “Editorial structures and work principles in British and
+39. Iyengar, S.: Is Anyone Responsible? How Television Frames                  German newsrooms,” Eur. J. Commun., 1998
+    Political Issues. University of Chicago Press, Chicago (1994)          67. Boczkowski, P.J.: The processes of adopting multimedia and inter-
+40. Zaller, J.: The Nature and Origins of Mass Opinion. Cambridge              activity in three online newsrooms. J. Commun. 54, 197–213
+    university Press, Cambridge (1992)                                         (2004)
+41. Kahneman, D., Tversky, A.: Choices, values, and frames. Am.            68. Sundar, S.S.: Exploring receivers’ criteria for perception of print
+    Psychol. 39(4), 341 (1984)                                                 and online news. J. Mass Commun. Q. 76(2), 373–386 (1999)
+42. Groseclose, T., Milyo, J.: A measure of media bias. Q. J. Econ.        69. Balahur, A. et al.: Sentiment analysis in the news. arXiv Prepr.
+    120, 1191–1237 (2005)                                                      arXiv1309.6202 (2013)
+43. Sunstein, C.R.: Echo Chambers: Bush v. Gore, Impeachment, and          70. Vallone, R.P., Ross, L., Lepper, M.R.: The hostile media phe-
+    Beyond. Princeton University Press, Princeton (2001)                       nomenon: biased perception and perceptions of media bias in
+44. Frey, D.: Recent research on selective exposure to information.            coverage of the Beirut massacre. J. Pers. Soc. Psychol. 49(3),
+    Adv. Exp. Soc. Psychol. 19, 41–80 (1986)                                   577 (1985)
+45. Mutz, D.C.: Facilitating communication across lines of political       71. Gruenewald, J., Pizarro, J., Chermak, S.M.: Race, gender, and the
+    difference: the role of mass media. Am. Polit. Sci. Assoc. 95(01),         newsworthiness of homicide incidents. J. Crim. Justice. 37, 262
+    97–114 (2001)                                                              (2009)
+46. Mullainathan, S., Shleifer, A.: The market for news. Am. Econ.         72. Bourgeois, D., Rappaz, J., Aberer, K.: Selection bias in news
+    Rev. 95, 1031–1053 (2005)                                                  coverage: learning it, fighting it. In: Companion of the The
+47. N. Newman, D. A. L. Levy, and R. K. Nielsen, “Reuters Institute            Web Conference 2018 on The Web Conference 2018—WWW’18
+    Digital News Report 2015,” Available SSRN 2619576, 2015                    (2018)
+48. De Marzo, P., Vayanos, D., Zwiebel, J.: Persuasion bias. Soc. Influ.   73. Saez-Trumper, D., Castillo, C., Lalmas, M.: Social media news
+    Unidimen. Opin. Q. J. Econ. 118, 909–967 (2003)                            communities: gatekeeping, coverage, and statement bias. In:
+49. Lakoff, G.: Women, Fire, and Dangerous Things. What Categories             Proceedings of the 22nd ACM International Conference on Infor-
+    Reveal About Mind. The University of Chicago Press, Chicago                mation & Knowledge Management (2013)
+    (1987)                                                                 74. Sanderson, M.: Duplicate detection in the Reuters collection. In:
+50. Kull, S., Ramsay, C., Lewis, E.: Misperceptions, the media, and            Technical Report Department of Computer Science University
+    the Iraq war. Polit. Sci. Q. 118(4), 569–598 (2003)                        Glasgow. G12 8QQ, UK (1997)
+51. DellaVigna, S.. Kaplan, E.: The fox news effect: media bias and        75. Agirre, E, et al.: SemEval-2016 task 1: semantic textual similarity,
+    voting. Q. J. Econ. 122(3), 1187–1234 (2007). https://doi.org/10.          monolingual and cross-lingual evaluation. In: Proceedings of the
+    3386/w12169                                                                10th International Workshop on Semantic Evaluation (SemEval-
+52. Larcinese, V., Puglisi, R., Snyder, J.M.: Partisan bias in economic        2016) (2016)
+    news: evidence on the agenda-setting behavior of US newspapers.        76. Gipp, B.: Citation-based plagiarism detection. In: Gipp, B. (ed.)
+    J. Public Econ. 95(9), 1178–1189 (2011)                                    Citation-Based Plagiarism Detection, pp. 57–88. Springer, Berlin
+53. Scheufele, D.A.: Agenda-setting, priming, and framing revisited:           (2014)
+    another look at cognitive effects of political communication. Mass     77. Papacharissi, Z., de Fatima Oliveira, M.: News frames terrorism:
+    Commun. Soc. 3(2–3), 297–316 (2000)                                        a comparative analysis of frames employed in terrorism coverage
+54. Entman, R.M.: Framing: toward clarification of a fractured                 in U.S. and U.K. newspapers. Int. J. Press. 13(1), 52–74 (2008)
+    paradigm. J. Commun. 43(4), 51–58 (1993)                               78. Bhowmick, P.K., Basu, A., Mitra, P.: Reader perspective emotion
+55. Entman, R.M.: Framing bias: media in the distribution of power.            analysis in text through ensemble based multi-label classification
+    J. Commun. 57(1), 163–173 (2007)                                           framework. Comput. Inf. Sci. 2, 64–74 (2009)
+56. Herman, E.S., Chomsky, N.: Manufacturing Consent: The Polit-           79. Stovall, J.G.: The third-party challenge of 1980: news coverage
+    ical Economy of the Mass Media. Random House, New York                     of the presidential candidates. J. Mass Commun. Q. 62(2), 266
+    (2010)                                                                     (1985)
+57. Park, S., Ko, M., Kim, J., Choi, H., Song, J.: NewsCube 2.0: an        80. Stempel, G.H.: The prestige press meets the third-party challenge.
+    exploratory design of a social news website for media bias miti-           J. Mass Commun. Q. 46(4), 699–706 (1969)
+    gation. In: Workshop on Social Recommender Systems (2011)
+
+
+123
+Automated identification of media bias in news articles: an interdisciplinary literature review                                                      413
+
+
+ 81. Waldman, P., Devitt, J.: Newspaper photographs and the 1996                 104. McGregor, M.J., Wiebe, E., Marion, S.A., Livingstone, C.: Why
+     presidential election: the question of bias. J. Mass Commun. 75(2),              don’t more women report sexual assault to the police? Can. Med.
+     302–311 (1998)                                                                   Assoc. J. 162(5), 659–660 (2000)
+ 82. Segalin, C., Perina, A., Cristani, M., Vinciarelli, A.: The pictures        105. Julinda, S., Boden, C., Akbik, A.: Extracting a repository of
+     we like are our image: continuous mapping of favorite pictures                   events and event references from news clusters. COLING 2014,
+     into self-assessed and attributed personality traits. IEEE Trans.                14 (2014)
+     Affect. Comput. 2, 268 (2017)                                               106. Blei, D.M.: Probabilistic topic models. Commun. ACM 55(4),
+ 83. Busso, C., et al.: Analysis of emotion recognition using facial                  77–84 (2012)
+     expressions, speech and multimodal information. In: Proceedings             107. Best, C., van der Goot, E., Blackler, K., Garcia, T., Horby, D.:
+     of The 6th International Conference on Multimodal Interfaces,                    Europe media monitor. Technical Report EUR 22173 EN (2005)
+     pp. 205–211 (2004)                                                          108. Manning, C.D., Raghavan, P., Schutze, H.: An introduction to
+ 84. Sommers, S.R., Apfelbaum, E.P., Dukes, K.N., Toosi, N., Wang,                    information retrieval. Online (2009)
+     E.J.: Race and media coverage of Hurricane Katrina: analysis,               109. Salton, G., Buckley, C.: Term-weighting approaches in automatic
+     implications, and future research questions. Anal. Soc. Issues Pub-              text retrieval. Inf. Process. Manag. 24(5), 513–523 (1988)
+     lic Policy 6(1), 39–55 (2006)                                               110. Le, Q., Mikolov, T.: Distributed Representations of Sentences and
+ 85. Christian, D., Froke, P., Jacobsen, S., Minthorn, D.: The Associ-                Documents. Int. Conf. Mach. Learn. ICML 32, 2014 (2014)
+     ated Press Stylebook and Briefing on Media Law. The Associated              111. Maimon, O., Rokach, L.: Introduction to knowledge discovery
+     Press, New York (2014)                                                           and data mining. In: Maimon, O., Rokach, L. (eds.) Data Mining
+ 86. Abbar, S., Amer-Yahia, S., Indyk, P., Mahabadi, S.: Real-time                    and Knowledge Discovery Handbook, pp. 1–15. Springer, Berlin
+     recommendation of diverse related articles. In: Proceedings of                   (2009)
+     the 22nd International Conference on World Wide Web, pp. 1–12               112. McKeown, K.R., et al.: Tracking and summarizing news on a daily
+     (2013)                                                                           basis with Columbia’s Newsblaster. In: Proceedings of the Sec-
+ 87. Hamborg, F., Meuschke, N., Gipp, B.: Bias-aware news analysis                    ond International Conference on Human Language Technology
+     using matrix-based news aggregation. Int. J. Digit. Libr                         Research, pp. 280–285 (2002)
+ 88. Van Gorp, B.: Strategies to take subjectivity out of framing analy-         113. Frey, B.J., Dueck, D.: Clustering by passing messages between
+     sis. Doing news Fram. Anal. Empir. Theor. Perspect. pp 100–125                   data points. Science 315, 972–976 (2007)
+     (2010)                                                                      114. Hamborg, F., Lachnit, S., Schubotz, M., Hepp, T., Gipp, B.:
+ 89. Hunter, J.E., Schmidt, F.L., Jackson, G.B.: Meta-Analysis: Cumu-                 Giveme5W: main event retrieval from news articles by extrac-
+     lating Research Findings Across Studies, vol. 4. Sage Publica-                   tion of the five journalistic w questions. In: Proceedings of the
+     tions, Inc, New York (1982)                                                      iConference (2018)
+ 90. Oliver, P.E., Maney, G.M.: Political processes and local news-              115. Hamborg, F., Breitinger, C., Schubotz, M., Lachnit, S., Gipp, B.:
+     paper coverage of protest events: from selection bias to triadic                 Extraction of main event descriptors from news articles by answer-
+     interactions. Am. J. Sociol. 106(2), 463–505 (2000)                              ing the journalistic five W and one H questions. In: Proceedings of
+ 91. McCarthy, J., Titarenko, L., McPhail, C., Rafail, P., Augustyn,                  the ACM/IEEE-CS Joint Conference on Digital Libraries (JCDL)
+     B.: Assessing stability in the patterns of selection bias in newspa-             (2018)
+     per coverage of protest during the transition from communism in             116. Evans, D.K., Klavans, J.L., McKeown, K.R.: Columbia news-
+     Belarus. Mob. An Int. Q. 13(2), 127–146 (2008)                                   blaster: multilingual news summarization on the Web. In: Demon-
+ 92. Davis, M.S., Goffman, E.: Frame analysis: an essay on the orga-                  stration Papers at HLT-NAACL 2004, pp. 1–4 (2004)
+     nization of experience. Contemp. Sociol. 4, 599–603 (1975)                  117. Hamborg, F., Meuschke, N., Gipp, B.: Matrix-based news aggre-
+ 93. Matthes, J.: What’s in a frame? A content analysis of media                      gation: exploring different news perspectives. In: Proceedings of
+     framing studies in the world’s leading communication journals,                   ACM/IEEE Joint Conference of Digital Libraries, vol. 10, no. 17
+     1990–2005. J. Mass Commun. Q. 86(2), 349–367 (2009)                              (2017)
+ 94. Cappella, J.N., Jamieson, K.H.: Spiral of Cynicism: The Press and           118. Mitchell, R.: Web Scraping with Python: Collecting Data from
+     the Public Good. Oxford University Press, Oxford (1997)                          the Modern Web. O’Reilly Media, Inc. (2015)
+ 95. Neuendorf, K.A.: The Content Analysis Guidebook. Sage Publi-                119. Paliouras, G., Mouzakidis, A., Moustakas, V., Skourlas, C.: PNS:
+     cations, New York (2016)                                                         A personalized news aggregator on the web. In: Tsihrintzis, G.A.,
+ 96. Landis, J.R., Koch, G.G.: The measurement of observer agreement                  Virvou, M. (eds.) Intelligent Interactive Systems in Knowledge-
+     for categorical data. Biometrics 33(1), 159–174 (1977)                           Based Environments. Springer, Berlin, pp. 175–197 (2008)
+ 97. Vaismoradi, M., Turunen, H., Bondas, T.: Content analysis                   120. Kohlschütter, C., Fankhauser, P., Nejdl, W.: Boilerplate detec-
+     and thematic analysis: implications for conducting a qualitative                 tion using shallow text features. In: Proceedings of the Third
+     descriptive study. Nurs. Health Sci. 15(3), 398–405 (2013)                       ACM International Conferencce on Web Search and Data Mining,
+ 98. Schreier, M.: Qualitative Content Analysis in Practice. Sage Pub-                pp. 441–450 (2010)
+     lications, Thousands Oaks (2012)                                            121. Hamborg, F., Meuschke, N., Breitinger, C., Gipp, B.: News-
+ 99. Lowe, W.: Software for content analysis–A review. Cambridge                      please: a generic news crawler and extractor. In: Proceedings
+     Weather. Cent. Int. Aff. Harvard Identity Proj. (2002)                           of the 15th International Symposium of Information Science,
+100. Stemler, S.: An overview of content analysis. Pract. Assess. Res.                pp. 218–223 (2017)
+     Eval. 7(17), 137–146 (2001)                                                 122. Radev, D.R., Jing, H., Budzikowska, M.: Centroid-based summa-
+101. Leetaru, K., Schrodt, P.A.: GDELT: global data on events, location               rization of multiple documents: sentence extraction, utility-based
+     and tone, 1979–2012. In: Annual Meeting International Studies                    evaluation, and user studies. In: Proceedings of the 2000 NAACL-
+     Association (2013)                                                               ANLP Workshop on Automatic summarization, pp. 21–30 (2000)
+102. Tsagkias, M., De Rijke, M., Weerkamp, W.: Linking online news               123. Hamborg, F., Meuschke, N., Aizawa, A., Gipp, B.: Identification
+     and social media. In: Proceedings of the Fourth ACM International                and analysis of media bias in news articles. In: Proceedings of the
+     Conference on Web Search and Data Mining, pp. 565–574 (2011)                     15th International Symposium of Information Science (2017)
+103. LexisNexis, “LexisNexis Police Reports,” 2017. [Online]. https://           124. Agran, P.F., Castillo, D.N., Winn, D.G.: Limitations of data com-
+     policereports.lexisnexis.com/search/search. Accessed 25 Sep                      piled from police reports on pediatric pedestrian and bicycle motor
+     2018                                                                             vehicle events. Accid. Anal. Prev. 22, 361 (1990)
+
+
+                                                                                                                                            123
+414                                                                                                                                  F. Hamborg et al.
+
+
+125. Kim, J.W., Candan, K.S., Tatemura, J.: Efficient overlap and             144. Kaya, M., Fidan, G., Toroslu, I.H.: Sentiment analysis of turk-
+     content reuse detection in blogs and online news articles. In: Pro-           ish political news. In: Proceedings of the 2012 IEEE/WIC/ACM
+     ceedings of the 18th international conference on World wide web,              International Joint Conferences on Web Intelligence and Intelli-
+     pp. 81–90 (2009)                                                              gent Agent Technology, vol. 01, pp. 174–180 (2012)
+126. Meuschke, N., Gipp, B.: State-of-the-art in detecting academic           145. Mullen, T., Collier, N.: Sentiment analysis using support vector
+     plagiarism. Int. J. Educ. Integr. 9(1), 50 (2013)                             machines with diverse information sources. EMNLP 4, 412–418
+127. Zu Eissen, S.M., Stein, B.: Intrinsic plagiarism detection. In: Euro-         (2004)
+     pean Conference on Information Retrieval, pp. 565–569 (2006)             146. Hu, M., Liu, B.: Mining and summarizing customer reviews. In:
+128. Hoad, T.C., Zobel, J.: Methods for identifying versioned and pla-             Proceedings of the Tenth ACM SIGKDD International Confer-
+     giarized documents. J. Am. Soc. Inf. Sci. Technol. 54(3), 203–215             ence on Knowledge Discovery and Data Mining, pp. 168–177
+     (2003)                                                                        (2004)
+129. Shivakumar, N., Garcia-Molina, H.: SCAM: a copy detection                147. Godbole, N., Srinivasaiah, M., Skiena, S.: Large-scale sentiment
+     mechanism for digital documents. In: In Proceedings of the Sec-               analysis for news and blogs. ICWSM 7(21), 219–222 (2007)
+     ond Annual Conference on the Theory and Practice of Digital              148. Baccianella, S., Esuli, A., Sebastiani, F.: SentiWordNet 3.0: an
+     Libraries (1995)                                                              enhanced lexical resource for sentiment analysis and opinion min-
+130. Gipp, B., Taylor, A., Beel, J.: Link proximity analysis-clustering            ing. LREC 10, 2200–2204 (2010)
+     websites by examining link proximity. In: International Confer-          149. Park, S., Ko, M., Kim, J., Liu, Y., Song, J.: The politics of
+     ence on Theory and Practice of Digital Libraries, pp. 449–452                 comments: predicting political orientation of news stories with
+     (2010)                                                                        commenters’ sentiment patterns. In: Proceedings of the ACM
+131. Leskovec, J., Backstrom, L., Kleinberg, J.: Meme-tracking and                 2011 Conference on Computer Supported Cooperative Work,
+     the dynamics of the news cycle. In: Proceedings of the 15th ACM               pp. 113–122 (2011)
+     SIGKDD International Conference on Knowledge Discovery and               150. Strapparava, C., Mihalcea, R.: Semeval-2007 task 14: affective
+     Data Mining, pp. 497–506 (2009)                                               text. In: Proceedings of the 4th International Workshop on Seman-
+132. Hanna, M.: Keywords in news and journalism studies. J. Stud.                  tic Evaluations, pp. 70–74 (2007)
+     15(1), 118–119 (2014)                                                    151. Grefenstette, G., Qu, Y., Shanahan, J., Evans, D.: Coupling niche
+133. Šarić, F., Glavaš, G., Karan, M., Šnajder, J., Bašić, B.D.: Takelab:        browsers and affect analysis for an opinion mining application.
+     systems for measuring semantic text similarity. Proceedings of the            In: Proc. 12th Int. Conf. Rech. d’Information Assist. par Ordinat.,
+     First Joint Conference on Lexical and Computational Semantics-                pp. 186–194 (2004)
+     Volume 1: Proceedings of the main conference and the shared task,        152. Subasic, P., Huettner, A.: Affect analysis of text using fuzzy
+     and Volume 2: Proceedings of the Sixth International Workshop                 semantic typing. IEEE Trans. Fuzzy Syst. 9, 483–496 (2001)
+     on Semantic Evaluation, Association for Computational Linguis-           153. Mishne, G.: Experiments with mood classification in blog posts.
+     tics, pp. 441–448 (2012)                                                      In: Proc. ACM SIGIR 2005 Work. Stylist. Anal. Text Inf. Access
+134. Rychalska, B., Pakulska, K., Chodorowska, K., Walczak, W.,                    (2005)
+     Andruszkiewicz, P.: Samsung Poland NLP Team at SemEval-                  154. Caliskan, A., Bryson, J.J., Narayanan, A.: Semantics derived
+     2016 Task 1: Necessity for diversity; combining recursive autoen-             automatically from language corpora contain human-like biases.
+     coders, WordNet and ensemble methods to measure semantic                      Science (80-) 356, 183 (2017)
+     similarity. In: Proceedings of the 10th International Workshop           155. Bolukbasi, T., Chang, K.-W., Zou, J.Y., Saligrama, V., Kalai, A.T.:
+     on Semantic Evaluation (SemEval-2016) (2016)                                  Man is to computer programmer as woman is to homemaker?
+135. Brychcin, T., Svoboda, L.: UWB at SemEval-2016 Task 1:                        Debiasing word embeddings. In: Advances in Neural Information
+     semantic textual similarity using lexical, syntactic, and semantic            Processing Systems, pp. 4349–4357 (2016)
+     information. In: International Workshop on Semantic Evaluation           156. Stempel, G.H., Windhauser, J.W.: The prestige press revisited:
+     (2016)                                                                        coverage of the 1980 presidential campaign. Journal. Mass Com-
+136. Spitz, A., Gertz, M.: Breaking the news: extracting the sparse                mun. Q. 61(1), 49 (1984)
+     citation network backbone of online news articles. In: Proceedings       157. Stovall, J.G.: Coverage of 1984 presidential campaign. Journal.
+     of the 2015 IEEE/ACM International Conference on Advances in                  Mass Commun. Q. 65(2), 443 (1988)
+     Social Networks Analysis and Mining 2015, pp. 274–279 (2015)             158. Cohen, N.S.: At work in the digital newsroom. Digit. J. 2, 94
+137. The Media Insight Project. The Personal News Cycle: How Amer-                 (2018)
+     icans Get Their News (2014)                                              159. Mori, S., Nishida, H., Yamada, H.: Optical Character Recognition.
+138. Haes, J.W.H.: September 11 in Germany and the United States:                  Wiley, Hoboken (1999)
+     reporting, reception, and interpretation. Cris. Commun. Lessons          160. Jain, A.K., Bhattacharjee, S.: Text segmentation using Gabor fil-
+     Sept. 11, 125–132 (2003)                                                      ters for automatic document processing. Mach. Vis. Appl. 5(3),
+139. Smith, J., McCarthy, J.D., McPhail, C., Augustyn, B.: From                    169–184 (1992)
+     protest to agenda building: description bias in media coverage of        161. Page, L., Brin, S., Motwani, R., Winograd, T.: The PageRank cita-
+     protest events in Washington, DC. Soc. Forces 79(4), 1397–1423                tion ranking: bringing order to the web. Stanford InfoLab (1999)
+     (2001)                                                                   162. Lewis, D.D., Yang, Y., Rose, T.G., Li, F.: Rcv1: a new benchmark
+140. Shalaby, W., Zadrozny, W., Jin, H.: Beyond word embeddings:                   collection for text categorization research. J. Mach. Learn. Res.
+     learning entity and concept representations from large scale                  5, 361–397 (2004)
+     knowledge bases. Inf. Retr. J. (2018). https://doi.org/10.1007/          163. Rosenberg, S.W., Bohan, L., McCafferty, P., Harris, K.: The image
+     s10791-018-9340-3#citeas                                                      and the vote: the effect of candidate presentation on voter prefer-
+141. Corman, S.R., Kuhn, T., McPhee, R.D., Dooley, K.J.: Studying                  ence. Am. J. Pol. Sci. 30, 108–127 (1986)
+     complex discursive systems. Hum. Commun. Res. 28(2), 157–206             164. Rusk, D.: How the internet misled you in 2015 (2015). https://
+     (2002)                                                                        www.bbc.com/news/world-35051618. Accessed 18 Nov 2005
+142. Niven, D.: Tilt?: The Search for Media Bias. Greenwood Publish-          165. Estrin, J.: The Real Story About the Wrong Photos in #Bring-
+     ing Group, Westport (2002)                                                    BackOurGirls (2014). https://lens.blogs.nytimes.com/2014/05/
+143. Pang, B., Lee, L.: Opinion mining and sentiment analysis. Found.              08/the-real-story-about-the-wrong-photos-inbringbackourgirls/.
+     Trends Inf. Retr. 2(1–2), 1–135 (2008)                                        Accessed 18 Nov 2005
+
+
+123
+Automated identification of media bias in news articles: an interdisciplinary literature review                                                     415
+
+
+166. Dearden, L.: The fake refugee images that are being used to                 179. Spiegel Online: Übertreibt Horst Seehofer seine Attacken? Das
+     distort public opinion on asylum seekers (2015). https://www.                    sagen die Medien. http://www.spiegel.de/politik/deutschland/
+     independent.co.uk/news/world/europe/the-fake-refugee-images-                     uebertreibt-horst-seehofer-seine-attacken-das-sagen-die-
+     that-are-being-used-to-distort-public-opinion-on-asylum-                         medien-a-1076867.html. Accessed 05 Sep 2017 (2016)
+     seekers-10503703.html. Accessed 18 Nov 2005                                 180. Nadeau, D., Sekine, S.: A survey of named entity recognition and
+167. Kerrick, J.S.: News pictures, captions and the point of resolution.              classification. Lingvisticae Investig. 30(1), 3–26 (2007)
+     Journal. Mass Commun. Q. 36(2), 183–188 (1959)                              181. Park, S., Lee, K., Song, J.: Contrasting opposing views of
+168. Waldman, P., Devitt, J.: Newspaper photographs and the 1996                      news articles on contentious issues. In: Proceedings of the 49th
+     presidential election: the question of bias. Journal. Mass Commun.               Annual Meeting of the Association for Computational Linguis-
+     Q. 75(2), 302–311 (1998)                                                         tics: Human Language Technologies, vol. 1, pp. 340–349 (2011)
+169. Kenney, K., Simpson, C.: Was coverage of the 1988 presidential              182. Miller, M.M.: Frame mapping and analysis of news coverage of
+     race by Washington’s two major dailies biased? Journal. Mass                     contentious issues. Soc. Sci. Comput. Rev. 15(4), 367–378 (1997)
+     Commun. Q. 70(2), 345–355 (1993)                                            183. Smith, A., Hawes, T, Myers, M.: Hiérarchie: interactive visu-
+170. Kepplinger, H.M.: Visual biases in television campaign coverage.                 alization for hierarchical topic models. In: Proceedings of the
+     Commun. Res. 9(3), 432–446 (1982)                                                Workshop on Interactive Language Learning, Visualization, and
+171. Van Gorp, B.: Where is the frame? Victims and intruders in the                   Interfaces, pp. 71–78 (2014)
+     Belgian press coverage of the asylum issue. Eur. J. Commun.                 184. Fuhr, N. et al.: An information nutritional label for online docu-
+     20(4), 484–507 (2005)                                                            ments. In: ACM SIGIR Forum, pp. 46–66 (2018)
+172. Viola, P., Jones, M.J.: Robust real-time face detection. Int. J. Com-       185. Hayes, A.F., Krippendorff, K.: Answering the Call for a Standard
+     put. Vis. 57(2), 137–154 (2004)                                                  Reliability Measure for Coding Data. Commun. Methods Meas.
+173. De Silva, L.C., Miyasato, T., Nakatsu, R.: Facial emotion recog-                 1(1), 77–89 (2007)
+     nition using multi-modal information. In: Proceedings of 1997               186. Hripcsak, G., Rothschild, A.S.: Agreement, the F-measure, and
+     International Conference on Information, Communications and                      reliability in information retrieval. J. Am. Med. Inform. Assoc.
+     Signal Processing, 1997. ICICS, vol. 1, pp. 397–401 (1997)                       12(3), 296–298 (2005)
+174. Krizhevsky, A., Sutskever, I., Hinton, G.E.: Imagenet classifica-           187. Recasens, M., Danescu-Niculescu-Mizil, C., Jurafsky, D.: Lin-
+     tion with deep convolutional neural networks. In: Advances in                    guistic models for analyzing and detecting biased language. In:
+     Neural Information Processing Systems, pp. 1097–1105 (2012)                      Proceedings of the 51st Annual Meeting of the Association for
+175. Feng, Y., Lapata, M.: Automatic caption generation for news                      Computational Linguistics, pp. 1650–1659 (2013)
+     images. IEEE Trans. Pattern Anal. Mach. Intell. 35(4), 797–812              188. Munson, S.A., Resnick, P.: Presenting diverse political opinions:
+     (2013)                                                                           how and how much. In: Proceedings of the SIGCHI Conference
+176. Segalin, C., Cheng, D.S., Cristani, M.: Social profiling through                 on Human Factors in Computing Systems, pp. 1457–1466 (2010)
+     image understanding: personality inference using convolutional              189. Lecun, Y., Bengio, Y., Hinton, G.: Deep learning. Nature 521, 436
+     neural networks. Comput. Vis. Image Underst. 156, 34 (2017)                      (2015)
+177. Kerrick, J.S.: The influence of captions on picture interpretation.         190. Kumar, A. et al.: Ask me anything: dynamic memory networks
+     Journal. Mass Commun. Q. 32(2), 177–182 (1955)                                   for natural language processing. arXiv (2015)
+178. Wikinews. Main Page—Wikinews, The free news source you can                  191. dos Santos, C.N., Gatti, M.: Deep convolutional neural networks
+     write. (2015)                                                                    for sentiment analysis of short texts. Coling-2014 (2014)
+
+
+
+
+                                                                                                                                            123
+

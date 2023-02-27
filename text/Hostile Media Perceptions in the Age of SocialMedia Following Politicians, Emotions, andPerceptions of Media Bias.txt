@@ -1,0 +1,940 @@
+      Journal of Broadcasting & Electronic Media
+
+
+
+
+      ISSN: (Print) (Online) Journal homepage: https://www.tandfonline.com/loi/hbem20
+
+
+
+
+Hostile Media Perceptions in the Age of Social
+Media: Following Politicians, Emotions, and
+Perceptions of Media Bias
+
+Brian E. Weeks, Dam Hee Kim, Lauren B. Hahn, Trevor H. Diehl & Nojin Kwak
+
+To cite this article: Brian E. Weeks, Dam Hee Kim, Lauren B. Hahn, Trevor H. Diehl & Nojin Kwak
+(2019) Hostile Media Perceptions in the Age of Social Media: Following Politicians, Emotions,
+and Perceptions of Media Bias, Journal of Broadcasting & Electronic Media, 63:3, 374-392, DOI:
+10.1080/08838151.2019.1653069
+
+To link to this article: https://doi.org/10.1080/08838151.2019.1653069
+
+
+
+
+       View supplementary material                           Published online: 20 Sep 2019.
+
+
+
+       Submit your article to this journal                   Article views: 3338
+
+
+
+       View related articles                                 View Crossmark data
+
+
+
+       Citing articles: 15 View citing articles
+
+
+
+
+                      Full Terms & Conditions of access and use can be found at
+            https://www.tandfonline.com/action/journalInformation?journalCode=hbem20
+Hostile Media Perceptions in the Age of Social
+ Media: Following Politicians, Emotions, and
+         Perceptions of Media Bias
+Brian E. Weeks, Dam Hee Kim, Lauren B. Hahn, Trevor H. Diehl,
+                      and Nojin Kwak
+
+    Hostile media perceptions are prominent today but little research has exam-
+    ined how social media use contributes to these beliefs. This study examines
+    whether following politicians’ social media feeds is indirectly linked to hostile
+    media perceptions by evoking emotional responses in the audience. We test
+    this possibility by analyzing two-wave panel survey data collected in the
+    United States during the 2016 presidential election. Following politicians on
+    social media is associated with anger at the presidential candidate individuals
+    oppose and enthusiasm for their supported candidate, both of which are
+    subsequently related to hostile media perceptions.
+
+   Media coverage of the 2016 presidential election in the United States was more
+unfavorable than of nearly every other campaign in modern U.S. history, as news
+about the two candidates, Donald Trump and Hillary Clinton, was epitomized by
+overwhelming negativity (Patterson, 2016). This negative coverage may have con-
+tributed to both candidates speaking out publicly to address what they perceived to
+be biased news coverage against their campaigns (Easley, 2016), including Trump’s
+
+
+Brian E. Weeks (Ph.D., Ohio State University) is an Assistant Professor in the Department of Communication
+Studies and a Faculty Associate in the Center for Political Studies at the University of Michigan. His research
+interests include political misinformation and misperceptions, news on social media, and political informa-
+tion sharing online.
+
+Dam Hee Kim (Ph.D., University of Michigan) is an Assistant Professor in the Department of
+Communication at the University of Arizona. Her research interests include news sharing, political engage-
+ment, and exposure to news from diverse viewpoints in the context of social media.
+
+Lauren B. Hahn (M.A., Purdue University) is a doctoral student in the Department of Communication
+Studies at the University of Michigan. Her research interests include women and politics, media and
+identity, and news and trust.
+
+Trevor H. Diehl (Ph.D. University of Vienna) is an assistant professor at Central Michigan University. His
+research interests include social media and politics, multi-platform news, and public opinion about science
+issues.
+
+Nojin Kwak (Ph.D., University of Wisconsin-Madison) is a professor of Communication Studies at the
+University of Michigan. His research interests include political communication, social and digital media,
+and democratic citizenship.
+© 2019 Broadcast Education Association  Journal of Broadcasting & Electronic Media 63(3), 2019, pp. 374–392
+DOI: https://doi.org/10.1080/08838151.2019.1653069                   ISSN: 0883-8151 print/1550-6878 online
+
+                                                     374
+      Weeks et al./HOSTILE MEDIA PERCEPTIONS IN THE AGE OF SOCIAL MEDIA            375
+
+frequent use of social media to express his view that the media were biased against
+him (Enli, 2017). Amid candidates’ claims of media bias, polls conducted during the
+election showed that supporters also believed the media were biased against their
+preferred candidate, including 90% of individuals who were favorable toward
+Trump (Gallup, 2016). This scenario represents an example of hostile media per-
+ceptions, which arise when partisans on both sides of a political issue or campaign
+perceive unfair media bias against their side or point of view (Perloff, 2015; Vallone,
+Ross, & Lepper, 1985).
+   This study seeks to better understand how hostile media perceptions develop
+in the contemporary political media environment. Politicians often make accusa-
+tions of media bias that can contribute to public perceptions of hostility (Watts,
+Domke, Shah, & Fan, 1999). However, social media provide political elites the
+communication tools to stoke beliefs among their followers that news media are
+biased. Social media feeds provide political elites the opportunity to bypass
+traditional media outlets and instead speak directly to followers in a more
+personalized way (McLaughlin & Macafee, 2019; Metz, Kruikemeier, &
+Lecheler, 2019). Following politicians’ updates on social media platforms like
+Facebook and Twitter has become an increasingly prominent way for people to
+receive political information; 24% of adults in the US followed social media
+activity by Trump or Clinton during the 2016 election, up from 6% who fol-
+lowed a politician in 2010 and 16% in 2014 (Pew, 2016).
+   This study examines the theoretical question of whether following politicians
+on social media contributed to citizens’ hostile media perceptions during the
+2016 election. If hostile media perceptions do arise from following politicians’
+feeds, the next question is, how? We build on work demonstrating the emotional
+underpinnings of the hostile media effect (Arpan & Nabi, 2011; Matthes, 2013)
+that suggests that emotional experiences may promote biased perceptions. We
+argue that politicians’ social media activity evokes unique emotional responses
+toward the presidential candidates individuals support or oppose, which may
+subsequently promote perceptions of media hostility.
+   Our novel findings advance the literature on hostile media perceptions in two
+important ways. First, the study responds to calls to understand how social
+media use is associated with perceptions of media bias (Perloff, 2015),
+a question that has received surprisingly little attention in the literature (cf.
+Lee, Kim, & Coe, 2018; Rojas, Barnidge, & Abril, 2016). The results demonstrate
+that politicians can use social media to indirectly encourage hostile media
+perceptions among their followers. Second, the study highlights one mechanism
+through which hostile media perceptions emerge, showing that discrete emotions
+like anger and enthusiasm are key links between following politicians on social
+media and perceptions of media bias. Taken together, this study provides
+a theoretical account for how hostile media perceptions develop in the social
+media environment.
+376 Journal of Broadcasting & Electronic Media/September 2019
+
+
+Politicians’ Social Media Feeds and Hostile Media Perceptions
+
+   The hostile media perception is defined as partisans’ tendencies to “perceive
+hostile bias … in news coverage that most nonpartisans find even-handed and
+objective” (Vallone et al., 1985, p. 578). Supporters and opponents of a political
+issue or politician may hold contradictory views of media content, such that both
+sides believe the media are biased against their position and favor the opponent
+(Gunther & Schmitt, 2004). Despite claims of media bias, meta-analyses and large-
+scale studies of media content do not find strong evidence that news favors one side
+over the other (D’Alessio & Allen, 2000). This raises an important question: If news
+media show no systematic bias in content, why do partisans continue to perceive
+such bias?
+   One potential source of hostile media perceptions may be politicians themselves.
+Recent surveys suggest that politicians believe the media are biased against them
+and often express those beliefs publicly. For example, politicians who perceive the
+media to be hostile are less willing to directly engage journalists, are more likely to
+believe the media fail to inform the public, and are more inclined to emphasize
+conflicts (as opposed to substantive arguments) to garner public attention and news
+coverage (Matthes, Maurer, & Arendt, 2019). Politicians also frequently accuse the
+media of bias, particularly bias favoring liberal perspectives (Watts et al., 1999),
+although the 2016 U.S. election saw both Republican and Democratic candidates
+express such concerns (Easley, 2016; Enli, 2017).
+   In prior eras in which broadcast television and newspapers were the dominant
+sources of political information, politicians making accusations of media bias were
+mostly dependent on the media to report those claims to reach voters. In many
+cases, the news media offered extensive coverage of these claims, which subse-
+quently promoted public perceptions of media bias (Watts et al., 1999). Thus, news
+media were the key venue through which politicians leveled charges of media
+hostility.
+   Although politicians continue to rely on news coverage to reach voters, social
+media have changed how political elites communicate with the public. Social
+media are utilized to bypass traditional news gatekeepers, allowing politicians to
+communicate directly with constituents. While each social media platform offers
+a unique set of affordances and may reach different audiences, politicians generally
+use social media as a central part of their campaign strategies (Kreiss, Lawrence, &
+McGregor, 2018). Audiences have responded as well; nearly one-third of American
+adults follow politicians’ social media feeds (Newman, Fletcher, Kalogeropoulos,
+Levy, & Nielsen, 2017) to monitor and engage with political leaders. On
+Election Day 2016, Trump had 12.3 million followers on Facebook and
+12.9 million on Twitter, while Clinton had 8.3 million Facebook and 10.2 million
+Twitter followers (Stromer-Galley et al., 2016).
+   Social media may provide an environment ripe for politicians to encourage
+perceptions of media bias among their supporters. Social media users are up to
+      Weeks et al./HOSTILE MEDIA PERCEPTIONS IN THE AGE OF SOCIAL MEDIA           377
+
+five times more likely to follow a supported politician’s social media feed compared
+to an opposed politician’s account (Newman et al., 2017; Pew Research Center,
+2016), and politicians use these platforms to try to influence and persuade their
+supporters (Borah, 2016; Kreiss et al., 2018). By following a politician on social
+media, individuals may be exposed to implicit cues suggesting the media are biased
+(Watts et al., 1999) or even explicit claims of media bias from politicians (Enli,
+2017). Followers are also exposed to politicians’ posts that promote in-group
+identification (McLaughlin & Macafee, 2019), which can strengthen hostile media
+perceptions. Heightened group identification—such as political partisanship or
+ideology—can lead to both in-group favoritism and out-group derogation and is
+often used as a cue to evaluate media content. When group identity is made salient,
+partisans tend to perceive neutral media to be biased against their side (Reid, 2012).
+We therefore expect that following a politician on social media will encourage
+perceptions of media bias against a supported political candidate.
+
+   H1: Following a politician on social media (W1) is positively related to hostile
+   media perceptions (W2).
+
+
+Following Politicians on Social Media and Emotions toward Candidates
+
+   While we expect following a politician on social media to be directly related to
+hostile media perceptions, this behavior may also be associated with people’s
+emotions toward politicians. Emotions are valenced and evaluative reactions to
+events, objects, or individuals in the environment (Nabi, 2010). Although these
+responses can be studied along continuous dimensions of affect like valence and
+arousal, researchers have recommended that a discrete approach to emotion—one
+that focuses on unique emotional states—is better suited to understanding the
+relationships between communicative behavior and affect (Nabi, 2010). Given
+that different emotions are associated with different thought patterns (appraisals)
+that lead to unique behaviors, motivations, perceptions, and cognitions (Nabi,
+2010), different discrete emotions—including those that share a valence—may
+influence hostile media perceptions in dissimilar ways. A number of studies show
+that discrete emotions like anger, anxiety, and enthusiasm have unique effects on
+individuals’ political beliefs and perceptions (MacKuen, Wolak, Keele, & Marcus,
+2010; Weeks, 2015). This study assesses whether discrete emotional responses
+toward the 2016 U.S. presidential candidates mediate the link between following
+politicians on social media and hostile media perceptions.
+   There are several reasons to expect following politicians on social media to be
+associated with negative emotions toward an opposed candidate and positive
+emotions toward the supported candidate. Modern political campaigns must strike
+a balance between attacking other candidates and building support for themselves.
+Yet political campaigns are particularly negative, as candidates frequently criticize
+opponents in an effort to win over voters (Iyengar, 2011). This negative
+378 Journal of Broadcasting & Electronic Media/September 2019
+
+campaigning is effective in triggering both positive and negative emotional
+responses from the audience (Brader, 2005). Presidential campaigns often use social
+media to make direct emotional appeals to their followers, including enthusiasm,
+anger, and fear appeals (Borah, 2016), which can drive engagement with content on
+politicians’ social media pages (Hasell & Weeks, 2016; Heiss, Schmuck, & Matthes,
+2018).
+   Emotional responses may also be intensified by the personalization of political
+communication on social media. Personalization can strengthen the connection
+between constituents and politicians, particularly when that personalization is
+emotional (McLaughlin & Macafee, 2019; Metz et al., 2019). This more personal
+connection may affect feelings about both supported and opposed candidates.
+Because candidates use emotional appeals on social media to promote themselves
+and attack their opponents (Borah, 2016), we expect following politicians on social
+media to be associated with more negative emotions toward the presidential candi-
+date an individual opposes. At the same time, because politicians are often success-
+ful in using emotional appeals to build enthusiasm for their own campaigns (Brader,
+2005), we also expect individuals who follow politicians on social media to exhibit
+greater enthusiasm for their supported candidate.
+
+   H2: Following a politician on social media (W1) is positively related to negative
+   emotions (anger, anxiety) toward the opposed presidential candidate (W2).
+
+   H3: Following a politician on social media (W1) is positively related to enthu-
+   siasm toward the supported presidential candidate (W2).
+
+
+Emotions and Hostile Media Perceptions
+
+   The connection between emotions and hostile media perceptions has been
+mostly overlooked in prior scholarship, though recent work has begun to address
+the potential link (Arpan & Nabi, 2011; Matthes, 2013; Matthes & Beyer, 2017). Yet
+existing research on the relationship between emotion and hostile media percep-
+tions has, for the most part, not examined the unique influence of different discrete
+emotions—namely, feelings of enthusiasm, anger, and anxiety. For example,
+Matthes and colleagues’ work on affective involvement and hostile media percep-
+tions (Matthes, 2013; Matthes & Beyer, 2017) measured discrete emotions but
+combined these items into valence-based scales (positive/negative) in their primary
+analyses. Generally speaking, these studies find that negative affective involvement
+with a political issue is associated with greater hostile media perceptions, while
+positive affective involvement is linked to lower perceived media hostility.
+   Despite some evidence that positive affect may dampen hostile media percep-
+tions (Matthes & Beyer, 2017), other work suggests that the discrete emotion
+enthusiasm might in fact promote these perceptions in some situations. In
+a political context, enthusiasm is a positive emotion that signals things are going
+      Weeks et al./HOSTILE MEDIA PERCEPTIONS IN THE AGE OF SOCIAL MEDIA           379
+
+well, which serves to reinforce people’s motivation to support their party (Brader,
+2005). People who express enthusiasm toward a supported politician tend to act in
+a more partisan fashion and make political decisions primarily based on prior
+political beliefs and preferences (Brader, 2005). In other words, enthusiasm drives
+people to further rally around political elites they support. If politicians make
+accusations of media bias, an enthused supporter may believe this claim because
+they are motivated to uncritically accept what the politician says or to process this
+statement through a partisan lens (MacKuen et al., 2010). Furthermore, those more
+connected to a candidate (as an enthused supporter is likely to be) are more likely to
+report bias in media coverage (Vallone et al., 1985). This suggests that individuals
+who are more enthusiastic about their preferred candidate will be more prone to
+perceive media bias against that candidate.
+
+   H4: Enthusiasm about the candidate individuals support (W2) is positively
+   related to hostile media perceptions (W2).
+
+   Anger should also promote hostile media perceptions. Anger is a discrete nega-
+tive emotion that occurs when individuals’ goals or interests are disrupted or when
+someone is hurt or perceives a slight from others (Nabi, 2010). In political settings,
+angry people become defensive about their existing beliefs and are more partisan
+when considering new information or reporting their opinions. Angry individuals
+are more likely to become politically close-minded and less willing to compromise,
+search for information, or consider alternative perspectives (MacKuen et al., 2010;
+Weeks, 2015). Simply put, angry people see the political world in a more biased
+and partisan manner. In the context of an election, voters who are angry at the
+opposed political candidate may fall victim to perceptual biases and be more likely
+to think the media are biased against their side. For instance, anger triggered by
+news stories is associated with higher levels of hostile media perceptions (Arpan &
+Nabi, 2011) and anger about political issues can also promote perceptions of media
+bias (Matthes, 2013, footnote 3). Thus, anger directed toward the candidate indivi-
+duals oppose should drive perceptions of media bias.
+
+   H5: Anger toward the candidate individuals oppose (W2) is positively related to
+   hostile media perceptions (W2).
+
+   Although angry and anxious feelings both involve negative emotional arousal,
+these two emotions may work differently to predict hostile media perceptions.
+While angry individuals are likely to become more partisan, anxious people tend
+to be more open-minded and attentive to new perspectives and information.
+Anxious individuals more carefully consider available information and are less
+likely to automatically process information in a way that is consistent with prior
+political attitudes (MacKuen et al., 2010). Accordingly, anxious people should
+weigh the evidence of the existence of hostile media but, ultimately, be less likely
+380 Journal of Broadcasting & Electronic Media/September 2019
+
+to perceive media bias against their candidate. We therefore do not expect anxiety
+to have a strong relationship with hostile media perceptions that is either positive or
+negative. Rather, we advance the following research question, noting the need to
+test whether anxiety is relevant in predicting hostile media perceptions (Matthes,
+2013).
+
+  RQ1: Is anxiety toward the candidate individuals oppose (W2) related to hostile
+  media perceptions (W2)?
+
+  We are ultimately interested in the underlying theoretical processes through
+which following politicians on social media may contribute to hostile media per-
+ceptions. Given the expectations regarding the antecedents and consequences of
+anger and enthusiasm outlined above, we expect the following indirect relation-
+ships to emerge:
+
+   H6: Following a politician on social media (W1) will have a positive indirect
+   relationship with hostile media perceptions (W2) through enthusiasm toward the
+   supported presidential candidate (W2).
+
+   H7: Following a politician on social media (W1) will have a positive indirect
+   relationship with hostile media perceptions (W2) through anger toward the
+   opposed presidential candidate (W2).
+
+  We are less certain about the nature of the relationship between anxiety and
+hostile media perceptions. As a result, we pose the following research question
+regarding the indirect relationship through anxiety:
+
+  RQ2: Is following a politician on social media (W1) indirectly related to hostile
+  media perceptions (W2) through anxiety toward the opposed presidential
+  candidate (W2)?
+
+
+Do Platform Differences Matter?
+
+   Our theoretical model argues that following politicians on social media should be
+associated with emotional responses that subsequently relate to hostile media
+perceptions. However, there are reasons to question whether these proposed rela-
+tionships are consistent across the two social media platforms we examine,
+Facebook and Twitter. Although there is some evidence that campaigns tend to
+post much of the same content to Facebook and Twitter (Bossetta, 2018), important
+differences in the architecture, functions, and audiences of these platforms may lead
+to different political outcomes. First, Twitter users tend to be younger, Democrat,
+more highly educated, and have higher incomes than the US population (Pew,
+2019). Second, campaigns at times use these platforms differently. Facebook is by
+     Weeks et al./HOSTILE MEDIA PERCEPTIONS IN THE AGE OF SOCIAL MEDIA           381
+
+far the largest social media platform and because of its broad audience, campaigns
+use it to speak to the general public and to target particular groups of interest
+through algorithmic filtering (Bossetta, 2018; Kreiss et al., 2018). Campaigns also
+tend to use Facebook to mobilize voters and promote daily activities (Stier, Bleier,
+Lietz, & Strohmaier, 2018). In contrast, campaigns often use Twitter to reach
+journalists and other elites, which allow them to better control the news cycle
+and drive conversations around high-profile events (Kreiss et al., 2018).
+Campaigns also prefer Twitter as a platform for politicians to comment on devel-
+oping political events (Stier et al., 2018). Given the potential for differences to
+emerge, we ask the following research question:
+
+  RQ3: Do the proposed relationships between following politicians on social
+  media, emotional responses, and hostile media perceptions differ depending
+  on platform?
+
+
+                                     Method
+
+Sample
+
+   Data were collected in 2016 via a two-wave national online survey conducted
+in the US. The survey research company YouGov was contracted to conduct data
+collection. Our sample was drawn from YouGov’s panel of adult respondents in
+the US using a matching technique to ensure the sample resembled the American
+population in terms of key demographics like age, gender, race, income, and
+education. Wave 1 was fielded in late September during the general campaign
+period of the presidential election. 6,213 individuals were invited to participate
+in W1; 1,800 provided valid responses (29% participation rate). Wave 2 was
+fielded in early November 2016 during the final six days before the election. Of
+the 1,800 participants in W1, 1,293 also completed W2 (71.83% retention rate).
+To assure respondents were paying attention and providing valid data, the ques-
+tionnaire in W1 included an attention check. 366 participants failed the attention
+check in W1 and were subsequently disqualified from analyses in either wave.
+This resulted in a sample of 1,434 respondents in W1 and 1,056 in W2.
+   Although not representative, the resulting sample resembles the demographic
+characteristics of the adult American population based on a comparison to the US
+Census Bureau’s 2015 American Community Survey (ACS). The median age in the
+sample was 51 (ACS median = 45 to 54 years old), the median household income
+was $50,000 to $59,000 (ACS median = $53,889), and the median level of educa-
+tion for those 25 and older was “some college” (ACS median = “some college”). The
+sample did differ slightly in terms of gender, as 56.82% of our respondents were
+women, compared to 51.4% in the ACS.
+   The primary criterion variable for this study is individuals’ perceptions that the
+media are hostile toward their preferred presidential candidate. It was therefore
+382 Journal of Broadcasting & Electronic Media/September 2019
+
+necessary to limit the analyses to respondents who, in the second wave, expressed
+a preference (measured by vote intention) for one of the two major party presiden-
+tial candidates, Donald Trump and Hillary Clinton. Of those respondents who
+passed the attention filter, 460 reported support for Clinton and 394 supported
+Trump, resulting in a final sample of 854. Descriptive statistics for the variables
+and all analyses are derived from this final sample.
+
+
+
+Measures
+
+   Following Politicians on Social Media. Facebook and Twitter allow people to
+receive updates from politicians and their campaigns by following their official page
+or feed. The independent variable was measured using two items asking
+respondents how often they receive updates from a politician or political
+advocate they follow on (a) Facebook and (b) Twitter (6-point scale, 1 = “never”,
+2 = “once in the past 14 days”, 3 = “2–3 days per week”, 4 = “2–3 days per week in
+the past 14 days”, 5 = “4–6 days per week in the past 14 days”, 6 = “every day in
+the past 14 days”). Respondents who did not use social media were coded as having
+“never” followed a politician on social media. Respondents who used social media
+but did not use Facebook or Twitter in particular were also coded as “never” for the
+corresponding platform. Responses were combined into an averaged-item scale
+(W1 M = 1.66, SD = 1.10, r = .39).
+   To address RQ3, we also separated the analyses by platform. Of the respondents
+in our final sample, 77.6% used Facebook, while 24.7% used Twitter. Mean levels
+of following a politician on each platform were as follows: Facebook (W1 M = 1.83,
+SD = 1.56) and Twitter (W1 M = 1.48, SD = 1.30).
+
+
+  Emotional Responses toward Presidential Candidates. Emotional responses to the
+candidates were measured with a series of questions that asked about Clinton and
+Trump separately. On a five-point scale (1 = “not at all” to 5 = “extremely”)
+respondents reported their agreement with the statement(s), “Please tell us the
+extent to which you feel the following about [candidate]:” followed by seven
+discrete emotions presented in random order: hopeful, enthusiastic, proud, angry,
+mad, anxious, and afraid. Responses to the hopeful, enthusiastic, and proud items
+were combined into indices that represent enthusiasm for Clinton (W2 M = 2.24,
+SD = 1.44, α = .97) and Trump (W2 M = 2.22, SD = 1.51, α = .96). The angry and
+mad items were combined to create a scale tapping anger about Clinton
+(W2 M = 2.75, SD = 1.69, r = .94) and Trump (W2 M = 2.91, SD = 1.67, r = .93).
+Finally, the anxious and afraid items assessed anxiety about Clinton (W2 M = 2.77,
+SD = 1.56, r = .77) and Trump (W2 M = 3.04, SD = 1.56, α = .78). Feelings toward
+the supported and opposed candidates were assessed based on the intended vote
+choice question in W2 noted above. Items were then computed to reflect
+enthusiasm for supported candidate (W2 M = 3.35, SD = 1.28), anger about
+      Weeks et al./HOSTILE MEDIA PERCEPTIONS IN THE AGE OF SOCIAL MEDIA           383
+
+opposing candidate (W2 M = 4.20, SD = 1.14), and anxiety about opposing
+candidate (W2 M = 4.13, SD = 1.11).
+
+
+  Hostile Media Perceptions. There is little consistency in the literature on how to
+operationalize hostile media perceptions, as studies often use different items to
+measure the concept. However, there is widespread agreement that at its core,
+the concept involves individuals’ perceptions that media content is not neutral,
+balanced, or fair (Perloff, 2015). Our novel measure was therefore designed to
+capture beliefs about a lack of media neutrality and fairness toward the
+candidates. Given that both candidates claimed that mainstream, legacy media
+outlets were unfair toward their campaigns (Easley, 2016), we created an original
+measure to assess respondents’ perceptions of unfair treatment of candidates by the
+media. In W2, respondents were asked on a five-point scale (1 = “not at all” to
+5 = “extremely”) the extent to which they believed “the mainstream media try to
+unfairly influence the election against [candidate].” Participants were asked to
+report perceived media bias against both Clinton (M = 1.77, SD = 1.16) and
+Trump (M = 2.84, SD = 1.74). Next, the variable hostile media perception was
+created by determining which candidate the respondent supported based on their
+response to the candidate support question from W2 (W2 M = 3.26, SD = 1.60). For
+respondents who reported electoral support for Clinton, their score for hostile media
+perceptions about Clinton was used for this variable. For respondents who reported
+electoral support for Trump, their score for hostile media perceptions about Trump
+was used.
+
+
+   Control Variables. The analyses include potentially confounding control
+variables. In addition to demographics, perceptions of the media are influenced
+in part by individuals’ political characteristics and exposure to news content
+(Perloff, 2015). The models include a measure of news media use, measured as
+the average frequency of news consumption in the last seven days for national
+and local TV news, daily newspapers, cable news (CNN, FOX, or MSNBC), and
+online news (W1 M = 2.71, SD = .98, α = .60; five-point scale, 1 = “never”,
+5 = “very often”). Political characteristics include interest in politics (single item
+“I am interested in politics”, seven–point scale, strongly disagree to strongly
+agree, W1 M = 5.26, SD = 1.68), political affiliation (W1 M = 2.81, SD = .1.30;
+five-point scale, strong Democrat to strong Republican), and political knowledge
+(8-item averaged scale testing knowledge of candidates’ stances on issues,
+W1 M = 4.04, SD = 1.94). Models also included controls for distrust in
+government (two items, seven-point scale, strongly disagree to strongly agree,
+“People in the government waste a lot of the money we pay in taxes” and “Most
+politicians can be trusted” (reverse coded, W1 M = 5.49, SD = 1.23, r = .27) and
+political cynicism (“Corruption is always present in American politics” and “No
+matter which party is in power, it seems like our government is run by a few big
+interest groups,” seven-point scale, strongly disagree to strongly agree,
+384 Journal of Broadcasting & Electronic Media/September 2019
+
+W1 M = 5.68, SD = 1.08, r = .43). Finally, polls in 2016 indicated that Trump
+supporters were more likely to perceive media bias against their candidate than
+were Clinton supporters (Gallup, 2016). We therefore included a dichotomous
+variable for candidate support, wherein respondents who indicated support for
+Trump were coded high and Clinton supporters coded low.
+
+
+
+
+                                      Results
+
+   The main analyses used PROCESS (Hayes, 2013) and focused on a single media-
+tion model that first examines whether following a politician on social media (W1)
+related to enthusiasm about an individual’s supported candidate, as well as their
+anger and anxiety toward the opposed candidate (W2). The second part of the
+model subsequently tests whether those candidate-directed emotions related to
+perceptions of media bias (W2).
+   H1 predicted that following a politician on social media (W1) would have
+a positive, direct relationship with perceptions of media bias against the supported
+candidate (W2). This hypothesis was not supported, as there was no direct link
+between the two variables, b = − .00 (.03), p = .94 (See Table 1). This suggests that
+any link between following a politician on social media and hostile media percep-
+tions must be indirect.
+   H2 predicted that following a politician on social media in the first wave would
+be associated with more negative emotions about the opposed presidential candi-
+date in the second wave. The data offer some support for this prediction. Data
+indicate a positive and significant relationship between following a politician on
+social media and anger directed at the opposed candidate, b = .08 (.04), p = .03, (all
+p-values two-tailed). However, this behavior was not correlated with anxiety toward
+the opposed candidate, b = .03 (.03), p = .43.
+   We also expected that following a politician on social media would be positively
+associated with enthusiasm about the supported candidate (H3). Results indicate
+that greater exposure to politicians’ social media activity was positively related to
+enthusiasm about the candidate individuals support, b = .13 (.04), p < .001. This
+lends support to H3 and suggests that using social media may be an effective way
+for politicians to increase enthusiasm among their supporters.1
+   We next turn to the predictors of hostile media perceptions. The model accounts
+for 58% of the variance in perceptions of hostile media. Some control variables help
+explain these perceptions. For instance, the variable for Trump supporters was
+a significant predictor, and its coefficient suggests that all else equal, Trump sup-
+porters were 2.06 units (on a five-point scale) higher in perceptions of media
+hostility against their candidate than were Clinton supporters. Governmental cyni-
+cism was also a significant predictor of hostile media perceptions.
+   Next, enthusiasm about a supported candidate was related to higher levels of
+hostile media perceptions, supporting H4, b = .26 (.03), p < .001. There is also
+      Weeks et al./HOSTILE MEDIA PERCEPTIONS IN THE AGE OF SOCIAL MEDIA         385
+
+                                      Table 1
+Predicting Emotional Responses to Candidates (W2) and Hostile Media Perception (W2)
+
+                                       Anger About     Anxiety About     Hostile
+                       Enthusiasm       Opposed          Opposed          Media
+                     About Supported    Candidate       Candidate       Perception
+                     Candidate (W2)       (W2)             (W2)            (W2)
+
+Follow Politician      .13 (.04)***     .08 (.04)*      .03 (.03)      −.00 (.03)
+  on Social
+  Media (W1)
+Enthusiasm                 —                —               —           .26 (.03)***
+  About
+  Supported
+  Candidate
+  (W2)
+Anger About                —                —               —           .11 (.04)*
+  Opposed
+  Candidate
+  (W2)
+Anxiety About              —                —               —          −.03 (.04)
+  Opposed
+  Candidate
+  (W2)
+Trump Supporter        .65 (.13)***     .08 (.19)      −.17 (.11)      2.06 (.11)***
+Age (W1)               .01 (.00) ***    .00 (.00)       .01 (.00)*     −.00 (.00)
+Gender (Women          .23 (.09)*       .03 (.08)       .18 (.08)*      .00 (.08)
+  Coded High)
+  (W1)
+Education (W1)        −.06 (.03)*       .00 (.03)       .08 (.03)**    −.04 (.03)
+News Media Use         .06 (.05)       −.05 (.05)      −.09 (.04)*      .04 (.04)
+  (W1)
+Distrust in           −.08 (.04)#       .11 (.04) **    .07 (.04)#      .07 (.04)#
+  Government
+  (W1)
+Cynicism (W1)         −.06 (.05)        .04 (.04)       .02 (.04)       .11 (.04)**
+Political Interest     .08 (.03)**      .10 (.04)***    .11 (.03)***    .02 (.03)
+  (W1)
+Party Affiliation     −.13 (.05)**     −.01 (.04)       .06 (.04)       .01 (.04)
+  (Rep. Coded
+  High) (W1)
+Political              .09 (.03)**      .04 (.03)#      .07 (.03)**     .00 (.03)
+  Knowledge
+  (W1)
+Constant              2.38 (.38)***    2.47 (.35)***   2.09 (.34)**    −.00 (.02)
+R2 (F)                 .14 (11.98)      .07 (5.15)      .08 (6.46)      .58 (81.31)
+(df)                    (11, 813)        (11, 813)       (11, 813)       (14, 810)
+
+Note. N = 825. Unstandardized coefficients reported. Standard errors in parentheses.
+***p < .001, **p < .01, *p < .05 #p < .10 (two-tailed).
+386 Journal of Broadcasting & Electronic Media/September 2019
+
+support for the predicted association between anger and perceptions of hostile
+media, as anger toward the opposed presidential candidate was linked to these
+perceptions (H5), b = .11 (.04), p = .01. The initial research question asked whether
+anxiety toward the opposed presidential candidate (RQ1) was related to hostile
+media perceptions. It was not (b = − .03 (.04), p = .47).2
+   The next hypotheses and research question examined the indirect relationship
+between following a politician on social media and hostile media perceptions
+through the three emotion variables. The model included the emotions as
+parallel mediators, and bias-corrected 95% confidence intervals were generated
+using 10,000 bootstrapping samples. Following a politician on social media is
+indirectly associated with hostile media perceptions through both enthusiasm
+(H6) for a supported candidate (point estimate = .03 (.01), 95% CI = .02 to .06)
+and anger (H7) directed at the opposed candidate (point estimate = .01 (.00),
+95% CI = .00 to .02). While both of these mediated links are relatively small,
+they nonetheless highlight that following politicians on social media is indirectly
+linked to perceptions of media hostility. There was no indirect relationship
+through anxiety (RQ2) (see Table S1).3
+   The final analyses examined possible differences in the proposed relationships
+on two different platforms, Facebook and Twitter. Looking first at Facebook, the
+same results emerge as in the combined analyses. Following a politician on
+Facebook is not directly related to hostile media perceptions but is associated
+with both enthusiasm about the supported candidate and anger toward the
+opposed candidate (see Table S2 for coefficients). Enthusiasm and anger are
+subsequently related to hostile media perceptions. There remains an indirect
+link between following a politician on Facebook and hostile media perceptions
+through both enthusiasm and anger. As in the primary analyses, following
+a politician on Facebook does not drive anxiety, nor is anxiety related to hostile
+media perceptions.
+   When isolating the analyses to Twitter, the same pattern of relationships for
+enthusiasm is apparent. Following a politician on Twitter is related to greater
+enthusiasm for the supported candidate, which is then positively related to
+hostile media perceptions (see Table S3 for coefficients). The indirect link
+between following a politician on Twitter and hostile media perceptions through
+enthusiasm also remained. We find a slightly different pattern with anger. In
+particular, the link between following a politician on Twitter and anger toward
+the opposed candidate becomes non-significant, though anger is still associated
+with hostile media perceptions. The indirect link between using Twitter to follow
+politicians and hostile media perceptions through anger is also no longer sig-
+nificant. As in the primary analyses, anxiety is not associated with either our
+independent or dependent variable.
+      Weeks et al./HOSTILE MEDIA PERCEPTIONS IN THE AGE OF SOCIAL MEDIA              387
+
+
+                                     Discussion
+
+   While past research documents how hostile media perceptions stem from tradi-
+tional media like newspapers and television, changes in the way people receive
+political information require scholars to also examine whether social media use
+contributes to this perceived bias and, if so, how (Perloff, 2015). To our knowledge,
+this study is the first investigation into whether using social media to follow political
+elites promotes hostile media perceptions. We find that attention to politicians’
+social feeds during the 2016 U.S. presidential election is indirectly related to
+perceptions of media bias through anger at the opposed presidential candidate
+and enthusiasm for the supported one. These findings have a number of theoretical
+implications for our understanding of how social media as platforms for political
+communication relate to hostile media effects more broadly.
+   While other studies have failed to find a relationship between general social
+media use and hostile media perceptions (Rojas et al., 2016), we find that people
+who actively choose to follow politicians on social media have stronger politically
+relevant emotional responses that subsequently promote perceptions of media
+hostility. Although it is possible for people to be incidentally exposed to politicians’
+social media feeds through general media use or media coverage of the feed, the
+data suggest that hostile media perceptions were indirectly associated with purpo-
+sefully following politicians on social media. Directly following a politician on
+social media increases the likelihood that one is exposed to their posts, and the
+various persuasion cues and rhetoric politicians employ on their social media pages
+to discuss the media may facilitate perceptions of media hostility, in much the same
+way as in offline contexts (Watts et al., 1999). Politicians are increasingly using
+social media as a primary way to reach voters (Kreiss et al., 2018), taking advantage
+of the ability to bypass the media and speak directly with their followers, thereby
+creating a prominent platform to criticize the media and their opponents and to
+promote themselves (Enli, 2017).
+   This study also demonstrates two emotional pathways through which following
+a politician on social media indirectly relates to hostile media perceptions. We find
+that politicians may be able to use social media to generate enthusiasm about their
+own campaign while also stirring anger about their opponent. Our findings are
+consistent with prior work demonstrating that social media are important platforms
+for politicians’ emotional appeals to voters (Borah, 2016; Heiss et al., 2018; Metz
+et al., 2019). This is significant because the experience of these emotions in our
+study was subsequently related to hostile media perceptions. Yet our work also
+suggests that not all emotions promote hostile media perceptions. While anger was
+related to perceptions of media bias, anxiety was not. Anger is often associated with
+more partisan bias, and our findings support work indicating that this bias extends to
+perceptions of media hostility (Arpan & Nabi, 2011). The experience of political
+anxiety is often associated with open-mindedness and consideration of opposing
+political arguments (MacKuen et al., 2010), which may be why no relationship
+388 Journal of Broadcasting & Electronic Media/September 2019
+
+between anxiety and hostile media perceptions emerged. This also suggests that
+prior relationships between negatively-valenced affect and hostile media percep-
+tions may be driven primarily by anger rather than anxiety (Matthes, 2013).
+Combining the two negative emotions in analyses may mask the more powerful
+effect of anger. Experimental work that manipulates emotions is needed to better
+tease out not only the causal effects of emotions but also the unique effects of
+similarly-valenced yet discrete emotions.
+   The positive influence of enthusiasm on hostile media perceptions found here is
+in contrast to prior work finding that positive emotions lowered hostile media
+perceptions (Matthes & Beyer, 2017). The difference in these findings may lie in
+the target of the measured emotions. Matthes and Beyer (2017) asked about positive
+emotions toward news coverage of illegal immigration, whereas the measure here
+was enthusiasm about a supported political candidate. In line with affective intelli-
+gence theory (Brader, 2005; MacKuen et al., 2010), experiencing enthusiasm about
+a liked candidate should drive partisan evaluations of media content, as we find. In
+other words, if an individual is very enthusiastic about their favored politician, they
+are more likely to think the media are treating that politician unfairly. This politi-
+cian-driven enthusiasm is not the same as positive emotions experienced about
+news coverage of a particular issue—if one feels hopeful about news coverage, it is
+less likely that they will also see bias in that coverage.
+   It is important to note some limitations in the interpretation of the findings. Although
+we look at these processes over time using data from different waves, we do not argue
+that these relationships are causal. We only measured our dependent variable—hostile
+media perceptions— in the second wave, which prevents us from analyzing whether
+following politicians on social media and emotional responses over time also predict
+changes in perceptions of bias. It may also be that the causal arrow works in the
+opposite direction. We demonstrate cross-sectionally that those with hostile media
+perceptions exhibit stronger emotional responses that are associated with following
+politicians on social media (see note 3). This raises the possibility of a process in which
+following politicians, emotional responses, and hostile media perceptions reinforce
+one another over time. Future work utilizing experimental designs that assign indivi-
+duals to follow certain political accounts or that manipulate the degree to which
+politicians criticize the media would be helpful in identifying causal effects. We also
+did not ask respondents which politicians they followed on social media. Although
+prior research suggests that people are twice as likely to follow supported candidates
+than opposed ones (Pew Research Center, 2016), we are not able to identify which
+accounts they followed. There is likely variation in the extent to which candidates
+criticize the media or make accusations of bias, so future research should track which
+accounts are followed, what content politicians post, and the effects of posts. Neither
+can our study account for exposure to politicians’ social media feeds that occurs
+through social sharing or media coverage of the posts. The single-item measure of
+hostile media perceptions of mainstream media is also a limitation. Although this item
+captures core components of hostile media perceptions—mainly a departure from
+      Weeks et al./HOSTILE MEDIA PERCEPTIONS IN THE AGE OF SOCIAL MEDIA                    389
+
+media neutrality and fairness—respondents may have had different beliefs about what
+constitutes “mainstream” media or media more generally, which may have influenced
+the findings (Perloff, 2015). This is especially true given that people perceive “the
+media” in general to be biased, even as self-selected partisan media are not perceived
+that way (Barnidge et al., 2017).
+   It is also important to recognize that social media are not monolithic—each platform
+has its own affordances, audiences, and norms that may lead to different effects (Kreiss
+et al., 2018). We chose to combine Facebook and Twitter in our primary analyses
+because we were interested in the consequences of following politicians on social
+media, which both of these platforms allow. However, our post-hoc analyses suggest
+the findings were driven primarily by Facebook. While we do find subtle differences in
+the hypothesized relationships on Twitter, we are unable to make strong claims about
+the reason behind these differences. It may be that politicians use Twitter differently or
+that Twitter users respond differently to following politicians’ posts. It may also be that
+the differences emerged as a result of the relatively small number of Twitter users in our
+sample. Testing these platform-specific relationships will require studies that examine
+samples of users of specific platforms. Likewise, our data were collected during one of
+the most emotionally-charged U.S. elections, in which one candidate (Trump) was
+highly critical of the news media. It is important for future research to test these
+mechanisms in other contexts, including in future presidential elections, in other non-
+presidential races, and in other countries.
+   Despite these limitations, this study illustrates one important way in which social
+media use can promote hostile media perceptions. As politicians’ social media
+accounts become more central to political campaigns and sources of political informa-
+tion for citizens, it is necessary to better understand the consequences of this relatively
+new form of political communication. This study suggests that political campaigns can
+use these platforms to stir politically-relevant emotions, ultimately contributing to
+perceptions of media bias. This is particularly consequential at a time in which political
+parties are polarized and trust in media is low; those who distrust the media to begin
+with may turn to politicians’ social media feeds as sources of information, thus further-
+ing their perceptions of media bias. In an increasingly partisan political environment, it
+is important to know how hostile media perceptions emerge. This work identifies that
+an increasing reliance on politicians’ social media feeds as sources of campaign
+information may contribute to divergent realities among partisans, particularly when
+it comes to perceptions of media bias.
+
+
+
+                                           Notes
+
+1.   Treating W2 emotions as mediating variables suggests emotions should have a more
+     immediate relationship with hostile media perceptions. However, we also tested a model
+     with W1 emotions as mediators. Results are consistent, as following politicians on social
+     media is related to enthusiasm about the supported candidate (b = .13 (.04), p < .001) and
+     anger at the opposed candidate (b = .11 (.04), p = .002). Unlike the original model,
+390 Journal of Broadcasting & Electronic Media/September 2019
+
+      following a politician on social media is related to anxiety about the opposed candidate
+      (b = .09 (.03), p < .01), though anxiety is not related to hostile media perceptions. Like the
+      original model, W1 enthusiasm toward the supported candidate is related to hostile
+      media perceptions (b = .20 (.03), p < .001), as is anger at the opposed candidate, though
+      the latter variable falls short of conventional standards of statistical significance if a two-
+      tailed test is used (b = .07 (.04), p = .06).
+2.    Measuring emotions in both waves allows for models that include a lagged measure of
+      emotion to predict changes in this variable over time. Controlling for W1 emotions, follow-
+      ing politicians on social media is not significantly associated with W2 emotions, as most of
+      the variance is explained by emotions in the previous wave. Enthusiasm toward the sup-
+      ported candidate in W2 remains significantly related to hostile media perceptions (b = .34
+      (.06), p < .001). Anger at the opposed candidate is also related to hostile media perceptions,
+      though the coefficient here does not fall below conventional standards of statistical signifi-
+      cance if a two-tailed test is used (b = .10 (.06), p = .065). Although the data do not provide
+      evidence that following politicians on social media changes emotional responses toward
+      candidates over time, there remains strong and consistent evidence that following politicians
+      on social media is associated with enthusiasm toward the supported candidate and anger at
+      the opposed candidate over the course of the election cycle.
+3.    We also tested the possibility of reverse causal order. Because hostile media perceptions were
+      only measured in W2, we cannot use W1 perceptions to predict W2 social media following
+      behavior or emotions. We therefore examine how hostile media perceptions predict emotional
+      responses and following politicians on social media in W2 only. Individuals who perceive the
+      media as hostile toward their candidate are more angry (b = .18 (.04), p < .001) and anxious
+      (b = .08 (.03), p = .02) at the opposed candidate, and more enthusiastic about the supported
+      candidate (b = .34 (.04), p < .001). Anger directed at the opposed candidate (b = .10 (.04),
+      p = .03) and enthusiasm toward the supported candidate (b = .10 (.04), p = .004) are associated
+      with following politicians on social media cross-sectionally in W2.
+
+
+
+
+                                  Disclosure statement
+
+     No potential conflict of interest was reported by the authors.
+
+
+
+
+                                            Funding
+
+This study was funded in part by the Marsh Research Award from the Department of
+Communication Studies at the University of Michigan; Pohs Research Award,
+Department of Communication Studies, University of Michigan [N/A].
+
+
+
+
+                                Supplementary material
+
+     Supplemental data for this article can be accessed here.
+      Weeks et al./HOSTILE MEDIA PERCEPTIONS IN THE AGE OF SOCIAL MEDIA                     391
+
+
+                                       References
+
+Arpan, L. M., & Nabi, R. L. (2011). Exploring anger in the hostile media process: Effects on
+   news preferences and source evaluation. Journalism & Mass Communication Quarterly, 88,
+   5–22. doi:10.1177/107769901108800101
+Barnidge, M., Gunther, A. C., Kim, J., Hong, Y., Perryman, M., Tay, S. K., & Knisely, S. (2017).
+   Politically motivated selective exposure and perceived media bias. Communication
+   Research. Advance online publication. doi:10.1177/0093650217713066
+Borah, P. (2016). Political Facebook use: Campaign strategies used in 2008 and 2012 pre-
+   sidential elections. Journal of Information Technology & Politics, 13, 326–338.
+   doi:10.1080/19331681.2016.1163519
+Bossetta, M. (2018). The digital architectures of social media: Comparing political campaign-
+   ing on Facebook, Twitter, Instagram, and Snapchat in the 2016 U.S. election. Journalism &
+   Mass Communication Quarterly, 95, 471–496. doi:10.1177/1077699018763307
+Brader, T. (2005). Striking a responsive chord: How political ads motivate and persuade voters
+   by appealing to emotions. American Journal of Political Science, 49, 388–405.
+   doi:10.1111/j.0092-5853.2005.00130.x
+D’Alessio, D., & Allen, M. (2000). Media bias in presidential elections: A meta-analysis.
+   Journal of Communication, 50, 133–156. doi:10.1111/j.1460-2466.2000.tb02866.x
+Easley, J. (2016, September 10). Trump, Clinton battle over media bias. The Hill. Retrieved
+   from https://thehill.com/blogs/ballot-box/presidential-races/295198-trump-clinton-battle-
+   over-media-bias
+Enli, G. (2017). Twitter as arena for the authentic outsider: Exploring the social media
+   campaigns of Trump and Clinton in the 2016 US presidential election. European Journal
+   of Communication, 32, 50–61. doi:10.1177/0267323116682802
+Gallup. (2016, November 3). Majority of U.S. voters think media favors Clinton. Retrieved
+   from http://news.gallup.com/poll/197090/majority-voters-think-media-favors-clinton.aspx
+Gunther, A. C., & Schmitt, K. (2004). Mapping boundaries of the hostile media effect. Journal
+   of Communication, 54, 55–70. doi:10.1111/j.1460-2466.2004.tb02613.x
+Hasell, A., & Weeks, B. E. (2016). Partisan provocation: The role of partisan news use and
+   emotional responses in political information sharing in social media. Human
+   Communication Research, 42, 641–661. doi:10.1111/hcre.12092
+Hayes, A. F. (2013). Introduction to mediation, moderation, and conditional process analysis.
+   New York, NY: The Guilford Press.
+Heiss, R., Schmuck, D., & Matthes, J. (2018). What drives interaction on political actors’
+   Facebook posts? Profile and content predictors of user engagement and political actors’
+   reactions. Information, Communication, & Society. Advance online article. doi:10.1080/
+   1369118X.2018.1445273
+Iyengar, S. (2011). Media politics: A citizens’ guide. New York, NY: W.W. Norton &
+   Company.
+Kreiss, D., Lawrence, R. G., & McGregor, S. C. (2018). In their own words: political practi-
+   tioner accounts of candidates, audiences, affordances, genres, and timing in strategic social
+   media use. Political Communication, 35, 8–31. doi:10.1080/10584609.2017.1334727
+Lee, T. K., Kim, Y., & Coe, K. (2018). When social media become hostile media: An experi-
+   mental examination of news sharing, partisanship, and follower count. Mass
+   Communication & Society, 21, 450–472. doi:10.1080/15205436.2018.1429635
+MacKuen, M., Wolak, J., Keele, L., & Marcus, G. E. (2010). Civic engagements: Resolute
+   partisanship or reflective deliberation. American Journal of Political Science, 54, 440–458.
+   doi:10.1111/j.1540-5907.2010.00440.x
+Matthes, J. (2013). The affective underpinnings of hostile media perceptions: Exploring the
+   distinct effects of affective and cognitive involvement. Communication Research, 40,
+   360–387. doi:10.1177/0093650211420255
+392 Journal of Broadcasting & Electronic Media/September 2019
+
+Matthes, J., & Beyer, A. (2017). Toward a cognitive-affective process model of hostile media
+    perceptions: A multi-country structural equation modeling approach. Communication
+    Research, 44, 1075–1098. doi:10.1177/0093650215594234
+Matthes, J., Maurer, P., & Arendt, F. (2019). Consequences of politicians’ perceptions of the
+    news media. Journalism Studies, 20, 345–363. doi:10.1080/1461670X.2017.1377102
+McLaughlin, B., & Macafee, T. (2019). Becoming a presidential candidate: Social media
+    following and politician identification. Mass Communication and Society, 1–20. Advance
+    online publication. doi:10.1080/15205436.2019.1614196
+Metz, M., Kruikemeier, S., & Lecheler, S. (2019). Personalization of politics on Facebook:
+    examining the content and effects of professional, emotional, and private
+    self-personalization. Information, Communication & Society, 1–18. Advance online article.
+    doi:10.1080/1369118X.2019.1581244
+Nabi, R. L. (2010). The case for emphasizing discrete emotions in communication research.
+    Communication Monographs, 77(2), 153–159. doi:10.1080/03637751003790444
+Newman, N., Fletcher, R., Kalogeropoulos, A., Levy, D. A. L., & Nielsen, R. K. (2017). Reuters
+    institute digital news report 2017. Reuters Institute for the Study of Journalism. Oxford,
+    England: Reuters Institute for the Study of Journalism,University of Oxford.
+Patterson, T. E. (2016). News coverage of the 2016 national conventions: Negative news,
+    lacking context. HKS Working Paper, 16(051). doi:10.2139/ssrn.2884835
+Perloff, R. M. (2015). A three-decade retrospective on the hostile media effect. Mass
+    Communication and Society, 18, 701–729. doi:10.1080/15205436.2015.1051234
+Pew Research Center. (2016). Election 2016: Campaigns as a direct source of news. Retrieved
+    from https://www.journalism.org/2016/07/18/election-2016-campaigns-as-a-direct-source-
+    of-news/
+Pew Research Center. (2019). Sizing up Twitter users. Retrieved from https://www.pewinter
+    net.org/2019/04/24/sizing-up-twitter-users/
+Reid, S. A. (2012). A self-categorization explanation for the hostile media effect. Journal of
+    Communication, 62, 381–399. doi:10.1111/j.1460-2466.2012.01647.x
+Rojas, H., Barnidge, M., & Abril, E. P. (2016). Egocentric publics and corrective action.
+    Communication and the Public, 1, 27–38. doi:10.1177/2057047315619421
+Stier, S., Bleier, A., Lietz, H., & Strohmaier, M. (2018). Election campaigning on social media:
+    Politicians, audiences, and the mediation of political communication on Facebook and
+    Twitter. Political Communication, 35, 50–74. doi:10.1080/10584609.2017.1334728
+Stromer-Galley, J., Hemsley, J., Tanupabrungsun, S., Zhang, F., Rossini, P., Bryant, L., …
+    Robinson, J. (2016). Illuminating 2016 project. Retrieved from http://illuminating.ischool.
+    syr.edu/
+Vallone, R. P., Ross, L., & Lepper, M. R. (1985). The hostile media phenomenon: Biased
+    perception and perceptions of media bias in coverage of the Beirut massacre. Journal of
+    Personality and Social Psychology, 49(3), 577–585. doi:10.1037/0022-3514.49.3.577
+Watts, M. D., Domke, D., Shah, D. V., & Fan, D. P. (1999). Elite cues and media bias in
+    presidential campaigns: Explaining public perceptions of a liberal press. Communication
+    Research, 26, 144–175. doi:10.1177/009365099026002003
+Weeks, B. E. (2015). Emotions, partisanship, and misperceptions: How anger and anxiety
+    moderate the effect of partisan bias on susceptibility to political misinformation. Journal of
+    Communication, 65(4), 699–719. doi:10.1111/jcom.12164
+

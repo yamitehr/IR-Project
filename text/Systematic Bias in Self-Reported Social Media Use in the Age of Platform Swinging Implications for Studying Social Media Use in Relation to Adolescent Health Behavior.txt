@@ -1,0 +1,1041 @@
+             International Journal of
+             Environmental Research
+             and Public Health
+
+
+Article
+Systematic Bias in Self-Reported Social Media Use in the Age
+of Platform Swinging: Implications for Studying Social Media
+Use in Relation to Adolescent Health Behavior
+Sarah C. Boyle * , Sebastian Baez, Bradley M. Trager                        and Joseph W. LaBrie
+
+
+                                           HeadsUP Labs, Department of Psychological Science, Loyola Marymount University,
+                                           Los Angeles, CA 90045, USA
+                                           * Correspondence: sarah.boyle@lmu.edu
+
+
+                                           Abstract: Public health researchers are increasingly interested in the potential relationships between
+                                           social media (SM) use, well-being, and health behavior among adolescents. However, most research
+                                           has assessed daily SM time via self-report survey questions, despite a lack of clarity around the
+                                           accuracy of such reports given the current tendency of youth to access SM on multiple electronic
+                                           devices and cycle between multiple SM platforms on a daily basis (i.e., platform swinging). The
+                                           current study investigates the potential for systematic reporting biases to skew findings. Three
+                                           hundred and twenty incoming college students downloaded software on their computers, tablets,
+                                           and smartphones to track their active use of Facebook, Twitter, Instagram, and Snapchat over a 2-week
+                                           surveillance period and then self-reported their average daily minutes on each platform immediately
+                                           after. Larger proportions of students over-estimated than under-estimated their use, with the largest
+                                           overestimations found on the most heavily used platforms. Females logged significantly more SM
+                                           time and were less accurate in reporting than were males and, independently, the likelihood of
+Citation: Boyle, S.C.; Baez, S.; Trager,   substantial inaccuracies in reporting total SM time and time on most individual platforms increased
+B.M.; LaBrie, J.W. Systematic Bias in      with each additional SM platform participants reported using. Findings demonstrate that self-
+Self-Reported Social Media Use in the      reported estimates of SM time among adolescents in the age of SM platform swinging are prone
+Age of Platform Swinging:                  to substantial error and may lead to biased conclusions about relationships between variables.
+Implications for Studying Social           Alternative measurement approaches are suggested to improve the validity of future research in
+Media Use in Relation to Adolescent        this area.
+Health Behavior. Int. J. Environ. Res.
+Public Health 2022, 19, 9847. https://     Keywords: social media use; adolescence; objective assessment; self-report assessment; validity;
+doi.org/10.3390/ijerph19169847
+                                           platform swinging
+Academic Editor: Carlos Salavera
+
+Received: 30 June 2022
+Accepted: 5 August 2022
+                                           1. Introduction
+Published: 10 August 2022
+                                                Social media (SM) has become an increasingly important aspect of adolescence, pro-
+Publisher’s Note: MDPI stays neutral
+                                           viding opportunities for bonding and bridging social capital, peer interaction, identity
+with regard to jurisdictional claims in
+                                           expression, and connection to others outside of their immediate environments [1–3]. Yet,
+published maps and institutional affil-
+                                           research has also highlighted potential dark sides of SM, with studies linking greater
+iations.
+                                           time on SM to a myriad of negative outcomes, including depression [4,5]), body image
+                                           concerns [6,7]), sleep disturbance [8,9], alcohol use [10,11], misperceived health behavior
+                                           norms [12,13], and cyberbullying victimization [14]. However, most studies examining
+Copyright: © 2022 by the authors.
+                                           these relationships have relied on survey items to retrospectively assess daily or weekly
+Licensee MDPI, Basel, Switzerland.         on a specific SM platform or across all SM used, acknowledging that the accuracy with
+This article is an open access article     which individuals are able to retrospectively self-report these behaviors is unclear. While
+distributed under the terms and            commonly identified as a study limitation, other recent research has argued that reporting
+conditions of the Creative Commons         errors in the domain of SM time are likely to be random rather than systematic [15], and
+Attribution (CC BY) license (https://      therefore should not be of great concern to the researchers asking these questions. Given
+creativecommons.org/licenses/by/           the increasing interest in the psychosocial and behavioral correlates of SM use during
+4.0/).                                     adolescence, the current study furthers this debate using improved methods. Consistent
+
+
+
+Int. J. Environ. Res. Public Health 2022, 19, 9847. https://doi.org/10.3390/ijerph19169847                   https://www.mdpi.com/journal/ijerph
+Int. J. Environ. Res. Public Health 2022, 19, 9847                                                                             2 of 15
+
+
+
+
+                                        with adolescents’ present tendency to regularly use multiple SM platforms on multiple
+                                        electronic devices [16,17], this research employs cross-device objective time-tracking soft-
+                                        ware to evaluate and compare the validity of young adults’ self-reported daily time on four
+                                        widely used SM platforms. Also examined are three novel factors that may be systemati-
+                                        cally associated with an increased likelihood of inaccurate self-reports in the current SM
+                                        landscape: the particular SM platform in question, the sex of the participant, and the total
+                                        number of SM platforms used by the participant.
+
+                                        1.1. Previous Research and Limitations
+                                               Among the first to consider the potential for inaccuracy in retrospective reporting of
+                                        SM time was Junco [18]. A software program was installed on the personal computers of
+                                        participating college students to monitor the minutes per day they spent on Facebook over
+                                        a 30-day period. Results revealed that students substantially overestimated their Facebook
+                                        use, self-reporting an average of 145 min per day of active use while objectively logging
+                                        only an average of 26 min. This study was limited in that it objectively tracked Facebook
+                                        time on students’ computers but not on other devices (i.e., smartphones, tablets), and
+                                        included a small sample (N = 49) of mostly female (73%) students preventing examination
+                                        of sex differences. Moreover, fewer than half of the students who completed the baseline
+                                        survey (which comprised only 17% of students to whom it was sent) agreed to install the
+                                        computer tracking application, further limiting generalizability. In recent years, several
+                                        studies have revisited the issue of self-report accuracy in the context of SM use, generally
+                                        replicating two findings with larger samples: reporting inaccuracies are common, and they
+                                        tend toward the direction of over-reporting [19,20]. However, these studies share substan-
+                                        tial limitations with the initial investigation [18] including the assessment of SM time on
+                                        one specific electronic device (iPhones) [20], a single platform [19], or lumping time on
+                                        multiple SM platforms together to examine total time [15,20]. Due to these issues, findings
+                                        and implications are limited in their usefulness to researchers designing new studies. For
+                                        instance, in single device studies, some portion of participants’ reporting errors may be
+                                        attributed to difficulty cognitively separating SM time on a specific device (i.e., iPhone)
+                                        from total SM time across electronic devices (e.g., iPhone, tablet, and computer). Thus,
+                                        participants may report total time across devices while only time on a specific device is
+                                        tracked, artificially leading researchers to observe over-estimation. Further, findings from
+                                        studies investigating self-report accuracy for total time across a broad category of SM have
+                                        unclear implications for researchers who tend to be interested in the use of specific SM
+                                        platforms [6,21] in order to inform the development of platform-specific health intervention
+                                        or prevention efforts [22,23]. Previous studies require the assumption that self-report accu-
+                                        racy is consistent across SM platforms used more and less frequently used by adolescents,
+                                        despite some evidence that heavier SM use affords greater opportunity for reporting an
+                                        error [20]. Additionally, few studies have investigated platform or participant-level factors
+                                        that may increase the likelihood or degree of inaccuracy or over-reporting. Greater insight
+                                        into these factors may help public health researchers investigating adolescents’ social media
+                                        time optimize their methods.
+
+                                        1.2. Explanations for Reporting Inaccuracy and Potential Systematic Predictors
+                                              Social desirability [24,25], careless responding [26], the construction of self-report
+                                        assessments [27,28], and social identity-related self-perception [29–31] are common ex-
+                                        planations for measurement error in survey research with adolescents. Although youth
+                                        are likely to perceive adult researchers to find their spending less time on SM more de-
+                                        sirable than more time, adolescents and emerging adults have been found more likely to
+                                        over-report this behavior, suggesting that social desirability concerns may not explain SM
+                                        reporting inaccuracies well. However, recent findings suggest that careless responding
+                                        may play at least some role in the inaccuracy of SM use estimations among adolescents.
+                                        Sewall [20] highlighted associations between depressed mood, heavier iPhone-specific
+                                        SM use, and larger discrepancies between objective assessment and self-reported iPhone-
+Int. J. Environ. Res. Public Health 2022, 19, 9847                                                                               3 of 15
+
+
+
+
+                                        specific time on SM. Thus, the depressed mood appears to be one factor that may lead to
+                                        inaccuracy potentially through a lack of motivation. Building on this work, this research
+                                        examines how identity processes, self-perception, and use of specific SM platforms may also
+                                        be implicated in the accuracy of self-reported use time and the direction of discrepancies.
+
+                                        1.2.1. SM Platform
+                                              Recent surveys of American adolescents have revealed patterns of frequent and heavy
+                                        use of Snapchat and Instagram coupled with dwindling Facebook and Twitter engage-
+                                        ment [32–35].. Meanwhile, research in the domain of behavior measurement suggests
+                                        that self-reports of behavioral data are often inaccurate especially if the behaviors in ques-
+                                        tion comprise habitual and indistinct events such as frequency of anger or smartphone
+                                        use [36,37]. Given that recent data suggests that young adults may engage in the habitual
+                                        use of some SM platforms (Instagram, Snapchat) more than others (Facebook, Twitter),
+                                        it follows that there may also be platform-based differences in the accuracy with which
+                                        students self-report their use. Likewise, Junco [18] proposed that students’ estimates of
+                                        their Facebook use may have been inflated by stereotypes and media depictions of young
+                                        adults as heavy Facebook users. However, since 2013, stereotypes around SM use have
+                                        shifted considerably with Facebook now recognized as tremendously popular with older
+                                        adults, and consequentially, less frequented by young people [38]. In contrast, today’s news
+                                        stories, song lyrics, and television shows more frequently reflect the popularity of Insta-
+                                        gram, Snapchat, and other image-based platforms among youth [39,40] potentially making
+                                        young adults more likely to overestimate their own use of these popular SM platforms.
+                                        This prediction is consistent with the finding that behaviors recognized to be normative
+                                        in the peer group are commonly over-reported in surveys due to identity processes and
+                                        self-perception [29–31].
+
+                                        1.2.2. Reporter Sex
+                                             Participant sex and gender may similarly impact the reliability of reporting on SM-
+                                        related behaviors through identity-related processes. American females reliably self-report
+                                        more time on SM than do males [41–43]. However, it remains unknown whether these
+                                        sex differences in self-reported SM use coincide with objective reality or reflect artifacts of
+                                        gendered self-perception. For instance, research suggests that females devote more of their
+                                        online time to maintaining and cultivating interpersonal relationships whereas males tend
+                                        to be more focused on information-seeking and non-social tasks [44]. Further, females tend
+                                        to derive a greater sense of self through the strengths of their social ties and relationships
+                                        than do males [45]. Thus, it stands to reason that heavy SM use may be perceived as
+                                        more normative among females than males, potentially making females more likely to
+                                        overestimate their time on SM.
+
+                                        1.2.3. SM Platform Swinging
+                                             The majority of young adults today engage in platform swinging, a term coined by
+                                        Tandoc and colleagues [3] to describe the regular use of multiple SM platforms and the
+                                        routine rotation or cycling of engagement between platforms. As a large proportion of the
+                                        SM research conducted to date has focused on one platform (i.e., Facebook or Instagram),
+                                        there has been very little consideration of platform swinging’s potential cognitive effects.
+                                        For instance, it is unknown whether platform swinging reflects habitual behavior or more
+                                        deliberate and conscious processes. Also unknown is the extent to which platform swingers
+                                        are able to cognitively distinguish between their time on different platforms. Thus, with
+                                        regard to SM research methods, a critical question lies in whether platform swinging
+                                        impedes young adults’ ability to accurately report their time across the multiple SM
+                                        platforms they use. That is, just as multitasking on mobile devices has been found to
+                                        increase recall biases for different app usage categories [46,47] cycling engagement between
+                                        a greater number of SM platforms may result in decreased accuracy when self-reporting
+                                        time on individual platforms.
+Int. J. Environ. Res. Public Health 2022, 19, 9847                                                                                4 of 15
+
+
+
+
+                                        1.3. The Current Study
+                                             Building on Junco’s initial investigation [18], this study recruited a large sample of
+                                        incoming college students and utilized a novel software application to track students’ active
+                                        minutes per day using Facebook, Instagram, Snapchat, and Twitter across their electronic
+                                        devices (personal computers, tablets, smartphones). Informed by Junco’s findings, we
+                                        predicted that students would exhibit sizable inaccuracies in their self-reported use across
+                                        platforms (H1) with students more likely to overestimate than underestimate their daily
+                                        use (H2). Guided by research on the impact of identity and self-perception in the survey
+                                        measurement context, poorer accuracy and greater over-estimations of use were expected
+                                        for Instagram and Snapchat, relative to older platforms Facebook and Twitter, due to
+                                        heavier actual use of these newer platforms by participants and media representations of
+                                        young adults as heavy users (H3). Extending the same logic, we also predicted that female
+                                        students would be more prone to inaccuracies and more likely to overestimate their SM
+                                        use than male students (H4). Finally, we hypothesized that self-reporting use of a greater
+                                        number of SM platforms during the surveillance period would increase the likelihood of
+                                        substantially over-estimating time across SM platforms and on any given platform (H5).
+
+                                        2. Methods and Materials
+                                        2.1. Participants
+                                             Participants were 320 matriculating college students recruited as part of a larger study
+                                        investigating SM influences among incoming college students at a mid-sized university
+                                        in the western United States. Recruitment took place over a two-week period in July of
+                                        2018, prior to matriculation. To be eligible for the larger study, students had to be registered
+                                        as an incoming first-year student, 18 years of age or older, in possession of an Apple or
+                                        Android smartphone, active on at least one SM platform, and planning to live on campus
+                                        during their first year. Interested students meeting eligibility requirements were invited to
+                                        complete baseline assessments until the 320 spots in the study were filled, which occurred
+                                        in approximately one week. The study’s sample was representative of the freshman class
+                                        at the host university as the mean age of the sample was 18.60 years (SD = 0.26), 63% were
+                                        female, 48% were Caucasian, 15% were Asian, 10% were African American, 17% were
+                                        Hispanic, and 9% were multi-racial or other.
+
+                                        2.2. Recruitment and Study Procedures
+                                             Prior to the start of the fall semester, the Registrar’s office emailed incoming first-year
+                                        students a link to the larger study’s informational website, which detailed all study proce-
+                                        dures and included a link to a screening survey that allowed interested students to assess
+                                        their eligibility. Eligible students were invited to participate and, after providing informed
+                                        consent, completed a baseline survey. At the end of the baseline survey, participants were
+                                        prompted to install a custom research version of the software application, RescueTime,
+                                        onto their smartphones, tablets, and personal computers to track their Facebook, Instagram,
+                                        Snapchat, and Twitter use over a two-week surveillance period. Blind to the RescueTime
+                                        data being collected from their devices during this time, participants were texted and
+                                        emailed a link to complete a short survey at the end of the two-week period. The first
+                                        page of the survey prompted students to estimate their average daily minutes spent on
+                                        each of the four SM platforms (Facebook, Instagram, Twitter, and Snapchat) over the pre-
+                                        vious 2 weeks. Upon submission, participants with Android phones were directed to a
+                                        personalized dashboard at which they could view their RescueTime SM time tracking data.
+                                        However, as the RescueTime software application was not fully compatible with iPhones,
+                                        participants with iPhones were first directed to a survey page that provided instructions
+                                        for navigating to the application battery usage screen of their iPhone, using battery screen
+                                        settings to display active SM application use data in minutes per day over the previous
+                                        2 weeks, taking a screenshot of the data displayed, and uploading this screenshot into
+                                        the survey. Following submission, they advanced to the RescueTime dashboard. The
+                                        university’s Institutional Review Board approved all study procedures and measures.
+Int. J. Environ. Res. Public Health 2022, 19, 9847                                                                             5 of 15
+
+
+
+
+                                        2.3. Measures
+                                        2.3.1. Demographics
+                                            Participants reported basic demographic information including sex, age, race,
+                                        and ethnicity.
+
+                                        2.3.2. Objective Daily Time on SM
+                                             A custom research version of RescueTime, a commercially available cross-device time
+                                        management software program, was used in this study to track participants’ total minutes
+                                        of active Facebook, Instagram, Snapchat, and Twitter use on their personal computers,
+                                        tablets, and smartphones. Participants were required to install the custom application
+                                        on at least two electronic devices (i.e., personal computers, tablets, smartphones) to track
+                                        their SM use over a surveillance period spanning the first 2 weeks of August, prior to
+                                        matriculation. During the surveillance period, participants could not view any of their
+                                        RescueTime use data. Meanwhile, a data dashboard allowed the research team to check
+                                        device installs for each participant and export CSV files detailing each participant’s total
+                                        minutes spent actively using Facebook, Instagram, Snapchat, and Twitter applications and
+                                        related websites across devices. Following the surveillance period, this data was exported
+                                        and the total minutes of active use on each SM for each participant were divided by 14 to
+                                        calculate an objective measure of average daily minutes spent on each SM platform during
+                                        the 2-week period. In addition, average daily minutes on each SM were summed to derive
+                                        an objective measure of total minutes per day on SM.
+
+                                        2.3.3. Supplemental Battery Screen Data (iPhone Owners Only)
+                                              As the RescueTime software application was not fully compatible with iPhones, iPhone
+                                        owners were required to follow additional steps to ensure that the time they spent actively
+                                        using the four SM platforms from their phones during the surveillance period could be
+                                        combined with the data from their other electronic devices logged by RescueTime. After
+                                        self-reporting their SM use at the end of the surveillance period, iPhone users were directed
+                                        to a second survey page which provided detailed step-by-step instructions for navigating
+                                        to the application battery usage screen of their iPhone, manipulating the battery screen
+                                        settings to display active SM application use data in minutes per day over the previous
+                                        2 weeks, taking a screenshot of the data displayed, and uploading this screenshot into
+                                        the survey. Battery screen data documenting each iPhone user’s total minutes of active
+                                        Facebook, Instagram, Snapchat, and Twitter IOS app usage over the 14-day period was
+                                        pulled from these screenshots and added to each participant’s RescueTime derived total
+                                        minutes of active use across their other devices (computers, tablets), prior to computing
+                                        average daily use for each platform.
+
+                                        2.3.4. Self-Reported Platform Use and Daily SM Time
+                                             Immediately following the surveillance period, participants were sent a brief survey
+                                        that prompted them to indicate the SM platforms they actively used during the previous
+                                        2 weeks from a list that included Facebook, Twitter, Snapchat, and Instagram. Then, for
+                                        each platform they reported using, participants were prompted to estimate their average
+                                        minutes per day of active use over the previous 2 weeks. Platform-specific daily minute
+                                        estimates were used individually in analyses and were also summed to create a composite
+                                        measure of self-reported daily total time on SM.
+
+                                        2.4. Analytic Plan
+                                             First, patterns of SM platform use according to self-report and objective measures are
+                                        examined via descriptive statistics and t-tests. Then, the prediction that students would
+                                        exhibit significant inaccuracies in estimating their daily SM use (H1) is dually examined via
+                                        paired sampled t-tests focused on discrepancies between measures of SM time and bivariate
+                                        correlations between measures. Next, tests of directional hypotheses H2–H5, which focus
+                                        on the likelihood of problematic overestimation versus underestimation versus accurate
+Int. J. Environ. Res. Public Health 2022, 19, 9847                                                                                          6 of 15
+
+
+
+
+                                       reporting of daily SM time, are evaluated by more meaningfully classifying participants
+                                       based on the size and direction of their reporting discrepancies. Cut-points used to classify
+                                       participants were informed by the distribution of reporting discrepancies in the sample as
+                                       well as consideration of the degree of error that may be meaningful in the applied health
+                                       research context. For each platform and across platforms, participants who self-reported
+                                       use within ±9 min of their objective assessment are classified as “Accurate”, those who
+                                       self-reported time 10 or more minutes less than their objective assessment are classified as
+                                       “Underestimators”, and those who self-reported time exceeding their objectively logged
+                                       time by 10 min or more are classified as “Overestimators”. The predictions that participants
+                                       would be more likely to overestimate than underestimate their use overall (H2) and be
+                                       more likely to overestimate their daily time on newer platforms relative to older platforms
+                                       (H3) are evaluated by comparing proportions of participants classified as Underestima-
+                                       tors, Overestimators, or Accurate Reporters via Chi-Square Goodness of Fit tests. Then
+                                       to evaluate H4 and H5, multinomial regression models predicting participant accuracy
+                                       classification (i.e., underestimator, overestimator, or accurate reporter) are examined for
+                                       each SM platform and across all SM as functions of participant sex (H4) and the total
+                                       number of SM platforms participants reported using (H5).
+
+                                        3. Results
+                                        3.1. Preliminary Analysis
+                                                    Figure 1 compares the “users” of each SM platform in terms of the percentages of
+                                            participants who self-reported active use versus objectively logged minutes of active use.
+                                            Striking here is the observation that greater numbers of participants self-reported active
+                                            use of Facebook (n = 289) and Twitter (n = 199) than objectively logged any time on these
+                                            platforms (Facebook n = 206; Twitter n = 150) during the surveillance period. Meanwhile,
+                                            for Instagram and Snapchat, which were more widely used in the sample, similar numbers
+                                              19,participants
+    Int. J. Environ. Res. Public Health 2022,of   x FOR PEER REVIEW                                                        7 of 16 logged
+                                                               self-reported (Instagram n = 304; Snapchat n = 297) and objectively
+                                            use (Instagram n = 301; Snapchat n = 296).
+
+
+                                                                     Self-Reported Use     Objectively Logged Use
+
+                                          100                                                    95.3 94.4              93.1 92.8
+                                                      90.5
+                                            90
+                                            80
+                                            70                64.6         62.4
+                                            60
+                                                                                  47
+                                            50
+                                            40
+                                            30
+                                            20
+                                            10
+                                             0
+                                                      Facebook               Twitter              Instagram             Snapchat
+
+                                        Figure 1.
+                                        Figure 1. Percentages   thethe
+                                                  Percentagesofof    sample self-reporting
+                                                                       sample              versus
+                                                                                self-reporting    logging
+                                                                                               versus     active active
+                                                                                                                 use of each
+                                                                                                       logging               SM.
+                                                                                                                        use of each SM.
+
+                                              As proportionally
+                                              As  proportionally   depicted in Figure
+                                                                     depicted               2,number
+                                                                                       2, the
+                                                                                in Figure              of SMof
+                                                                                               the number     platforms  used byused
+                                                                                                                                  partici-
+                                                                                                                 SM platforms           by partici-
+                                         pants significantly differed by assessment type, t(318) = 12.14, p < 0.001, with the number
+                                        pants significantly differed by assessment type, t(318) = 12.14, p < 0.001, with the number
+                                         of SM platforms used according to self-report (M = 3.41 SD = 0.77) exceeding those used
+                                        of SM platforms used according to self-report (M = 3.41, SD = 0.77) exceeding those used
+                                         according to objective data (M = 2.97 SD = 0.87). By sex, male (M = 3.38, SD = 0.84) and
+                                        according        objective
+                                         female (M =to3.43,         dataparticipants
+                                                             SD = 0.72)   (M = 2.97,didSDnot= 0.87).          malein(M
+                                                                                                      By sex,differ
+                                                                                               significantly                3.38, SD
+                                                                                                                      the=number      = 0.84) and
+                                                                                                                                   of SM
+                                        female   (M   = 3.43, SD   = 0.72)
+                                         platforms they self-reported using, t(318) = −0.61, p = 0.54. However, objectively, males (M of SM
+                                                                           participants    did  not significantly   differ in the number
+                                         = 2.84 SD =they
+                                        platforms     0.95) self-reported
+                                                            logged time onusing,
+                                                                            significantly   = −0.61,
+                                                                                    t(318)fewer        p = 0.54.
+                                                                                                  platforms        did femalesobjectively,
+                                                                                                             thanHowever,       (M = 3.06 males
+                                        (M
+                                         SD =   2.84, SD = 0.95) logged time on significantly fewer platforms than did females
+                                             = 0.80).
+                                        (M = 3.06, SD = 0.80).
+                         Self-Reported # of SM Used                                      Objective # of SM Used
+                                             9, 3%                                                    17, 5%
+                                                     28, 9%
+
+                                                                                                                    74, 23%
+                178, 56%                                                    101, 32%
+                                                                    As proportionally depicted in Figure 2, the number of SM platforms used by partici-
+                                                               pants significantly differed by assessment type, t(318) = 12.14, p < 0.001, with the number
+                                                               of SM platforms used according to self-report (M = 3.41 SD = 0.77) exceeding those used
+                                                               according to objective data (M = 2.97 SD = 0.87). By sex, male (M = 3.38, SD = 0.84) and
+                                                               female (M = 3.43, SD = 0.72) participants did not significantly differ in the number of SM
+Int. J. Environ. Res. Public Health 2022, 19, 9847                                                                                                  7 of 15
+                                                               platforms they self-reported using, t(318) = −0.61, p = 0.54. However, objectively, males (M
+                                                               = 2.84 SD = 0.95) logged time on significantly fewer platforms than did females (M = 3.06
+                                                               SD = 0.80).
+
+
+                                                     Self-Reported # of SM Used                                 Objective # of SM Used
+                                                                     9, 3%                                                      17, 5%
+                                                                              28, 9%
+
+                                                                                                                                          74, 23%
+                                            178, 56%                                                 101, 32%
+
+
+
+
+                                                                                       104, 32%
+                                                                                                                                           128, 40%
+
+
+
+                                                       1 SM   2 SM     3 SM      4 SM                           1 SM     2 SM     3 SM   4 SM
+
+
+                                        Figure 2. Number (#) of SM platforms “used” assessed via self-report and objectively logged time.
+                                                               Figure 2. Number (#) of SM platforms “used” assessed via self-report and objectively logged time.
+
+                                             Table 1 presents raw    means
+                                                                 Table        andraw
+                                                                       1 presents   standard
+                                                                                       means anddeviations     for objectively
+                                                                                                  standard deviations              assessed
+                                                                                                                        for objectively       and
+                                                                                                                                        assessed andself-
+                                                                                                                                                      self-
+                                        reported minutes per    day on
+                                                            reported     each per
+                                                                      minutes   SM.dayWithin   sets
+                                                                                         on each SM.   self-reports
+                                                                                                    ofWithin           and objective
+                                                                                                               sets of self-reports      assessments,
+                                                                                                                                     and objective assess-
+                                                            ments,
+                                        paired samples t-tests      paired samples
+                                                                 examined                             platform-based
+                                                                                    t-tests examineddifferences
+                                                                               platform-based                       in differences
+                                                                                                                       minutes per  in minutes
+                                                                                                                                        day ofperactive
+                                                                                                                                                   day of
+                                        use with significantactive use with significant
+                                                               differences    flaggeddifferences             in the overall
+                                                                                                    flaggedcolumn.
+                                                                                          in the overall                     column. Consistent
+                                                                                                                        Consistent                with re-
+                                                                                                                                        with recently
+                                                            cently published SM trends among adolescents and young adults based on self-reported
+                                        published SM trends      among adolescents and young adults based on self-reported data
+                                                            data (Auxier & Anderson, 2021), both sexes self-reported and objectively logged greater
+                                        (Auxier & Anderson,     2021),
+                                                            daily time onboth  sexes
+                                                                          Snapchat       Instagram than and
+                                                                                    andself-reported           objectively
+                                                                                                         they did  on older SM logged    greater
+                                                                                                                                platforms,         daily
+                                                                                                                                            Facebook  and
+                                        time on Snapchat and Instagram than they did on older SM platforms, Facebook and Twitter.
+                                        Within measurement sets, independent samples t-tests also examined sex differences in
+                                        minutes per day of use by SM platform and overall. Consistent with previous self-report
+                                        findings, relative to males (M = 87.84, SD = 75.85), females objectively logged (M = 110.60,
+                                        SD = 99.32) significantly greater daily time on SM, F(1, 318) = 4.69, p = 0.03, with females’
+                                        greater time on Instagram and Snapchat primarily driving these differences. A parallel but
+                                        slightly more extreme pattern of sex differences was observed among self-report estimates.
+
+                                        Table 1. Objectively assessed and self-reported daily minutes of active SM use and discrepancies
+                                        between measures overall and by sex.
+
+                                                                             Overall (N = 319)            Males (N = 121)                Females (N = 198)
+                                                                                   M (SD)                       M (SD)                          M (SD)
+                                            Objective Measure
+                                                Facebook A                   11.49 (18.26) ***C, D          10.34 (20.51)                   12.19 (16.75)
+                                                  Twitter B                  14.32 (33.65) ***C, D          14.25 (29.01)                   14.36 (36.20)
+                                                Instagram C                  34.42 (37.49) ***A, B          27.60 (28.12)                   38.58 (41.71)
+                                                 Snapchat D                  41.75 (43.09) ***A, B          35.65 (36.43)                   45.46 (46.37)
+                                                  Total SM                      101.99 (91.70)              87.84 (75.85)                  110.60 (99.32)
+                                           Self-Report Measure
+                                                Facebook A                   18.28 (30.12) ***C, D          17.00 (29.58)                  19.07 (30.49)
+                                                  Twitter B                  20.69 (32.75) ***C, D          18.93 (29.35)                  21.76 (34.69)
+                                                Instagram C                  49.96 (52.12) ***A, B          31.56 (27.82)                  61.21 (59.82)
+                                                 Snapchat D                  57.51 (68.08) ***A, B          42.31 (43.18)                  66.80 (78.21)
+                                                  Total SM                     146.38 (129.54)              109.80 (87.01)                168.74 (145.44)
+                                                  Meandiff
+                                                Facebook A                  −6.83 (28.62) ***         −6.65 (27.76) **           −6.93 (29.21) ***
+                                                  Twitter B                 −6.34 (35.68) **           −4.70 (28.89)              −7.34 (39.29) **
+                                                Instagram C                −15.53 (55.28) ***          −3.95 (29.72)             −22.60 (65.28) ***
+                                                 Snapchat D                −15.98 (65.10) ***          −6.66 (37.25)             −21.67 (76.87) ***
+                                                  Total SM                 −44.60 (137.79) ***        −21.95 (78.50) **         −58.45 (162.44) ***
+                                        Notes. Objective and Self-Report Measure rows in the overall column flag significant differences between time
+                                        spent on individual SM platforms which are labeled A–D (Facebook A , Twitter B , Instagram C , and Snapchat
+                                        D ). The Meandiff rows at the bottom of the table indicate significant mean differences between Objective and
+
+                                        Self-Report Measures for each platform and overall (computed as Objective minus Self-report) are flagged.
+                                        ** p < 0.01, *** p < 0.001 throughout).
+Int. J. Environ. Res. Public Health 2022, 19, 9847                                                                                                                                                      8 of 15
+
+
+
+
+                                                        3.2. Accuracy of Self-Reported Daily SM Time (H1)
+                                                            Tests of the mean differences between self-report and objective measures are presented
+                                                       at the bottom of Table 1. Indicating support for H1, overall participants exhibited significant
+                                                       discrepancies in their self-report estimates of SM time overall and on each platform. Al-
+                                                       though measurement discrepancies were bidirectional, the negative values of discrepancies
+                                                       indicate that the average participant overestimated, rather than underestimated their use of
+                                                       each platform. Correlations provided in Table 2 between self-report and objective measures
+                                                       of daily SM time overall and by sex offer additional support for H1. Tests of differences
+                                                       between male and female-specific correlations by platform and overall are presented in
+                                                       the right-most column of Table 2. The relationship between self-reported and objectively
+                                                       assessed total daily SM time was significantly weaker among females than males (Z = 3.79,
+                                                       p < 0.001), and this was primarily driven by females’ weaker correlations between measures
+                                                       of daily Instagram (p = 0.01), Snapchat (p = 0.003) time. Thus, females were less accurate
+                                                       than males in reporting their total daily SM time, and this was primarily driven by females’
+                                                       poorer accuracy in reporting their Instagram and Snapchat time.
+
+                                                       Table 2. Bivariate correlations between retrospectively self-reported and objectively assessed daily
+                                                       minutes spent on SM among all participants and self-reported users overall and by sex.
+
+                                                                                                             Overall                                              By Sex
+                                                                                                                    R                                 R Males    R Females               Z Sex Rdiff
+                                                                         Facebook                             0.39 ***                                0.43 ***    0.35 ***                    0.81
+                                                                           Twitter                            0.42 ***                                0.51 ***    0.38 ***                    1.39
+                                                                         Instagram                            0.27 ***                                0.44 ***    0.21 **                   2.22 **
+                                                                          Snapchat                            0.32 ***                                0.57 ***    0.32 ***                  2.70 **
+                                                                           All SM                             0.26 ***                                0.54 ***     0.16 *                   3.79 ***
+                                                       Notes. Z Sex Rdiff refers to tests of the difference between
+                    Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW                            9 of 16 the male and female specific correlation coefficients;
+                                                       * p < 0.05, ** p < 0.01, *** p < 0.001.
+                                                        Table 2. Bivariate correlations between retrospectively self-reported and objectively assessed daily
+                                                        minutes spent on SM among all participants and self-reported users overall and by sex.
+                                                        3.3. Major versus
+                                                                    Overall
+                                                                            Minor Inaccuracies
+                                                                                         By Sex
+                                                                                                in Self-Report Overall (H2) and by SM Platform (H3)
+                                                                                       R                 R Males             R Females       Z Sex Rdiff
+                                                                   In contrast
+                                                             Facebook                    0.39 ***to raw 0.43      discrepancies
+                                                                                                                      ***            0.35 *** and 0.81    correlations between measures, our classification
+                                                               Twitter                   0.42 ***                0.51 ***            0.38 ***             1.39
+                                                       of participants
+                                                             Instagram                         as
+                                                                                         0.27 ***     accurate   0.44 ***  reporters, 0.21 **     under-estimators,
+                                                                                                                                                        2.22 **                and over-estimators more mean-
+                                                       ingfully identified
+                                                              Snapchat
+                                                               All SM
+                                                                                         0.32 ***
+                                                                                         0.26 ***
+                                                                                                         the     proportions
+                                                                                                                 0.57 ***
+                                                                                                                 0.54 ***
+                                                                                                                                     0.32 ***
+                                                                                                                                      0.16 *
+                                                                                                                                              of  participants
+                                                                                                                                                        2.70 **
+                                                                                                                                                        3.79 ***
+                                                                                                                                                                        who   substantially and problematically
+                                                       misreported          diff
+                                                                                          their         SM
+                                                        Notes. Z Sex R refers to tests of the difference between the male and female specific correlation
+                                                        coefficients; * p < 0.05, ** p < 0.01, *** p < 0.001.
+                                                                                                                  time        in    either        direction          relative to those  who  were inconsequen-
+                                                       tially        off only a handful of minutes (See Figure 3). In support of H2, a significantly larger
+                                                        3.3. Major versus Minor Inaccuracies in Self-Report Overall (H2) and by SM Platform (H3)
+                                                       percentage
+                                                              In contrast to raw          participants
+                                                                                    ofdiscrepancies                     were
+                                                                                                          and correlations   betweensubstantially
+                                                                                                                                       measures, our classifica-
+                                                        tion of participants as accurate reporters, under-estimators, and over-estimators more
+                                                                                                                                                                 over-estimated (59%) than substantially under-
+                                                       estimated
+                                                        meaningfully              (23%)
+                                                                          identified   the         or
+                                                                                            proportions   accurately
+                                                                                                            of participants  who   reported
+                                                                                                                                   substantially
+                                                        ically misreported their SM time in either direction relative to those who were inconse-
+                                                                                                                                                       (18%)
+                                                                                                                                                 and problemat-     their total SM time, X2 (2)= 95.14, p < 0.001.
+                                                        quentially off only a support
+                                                       Providing                   handful of minutes    for(SeeH3,        3). In support ofto
+                                                                                                                   Figure relative            H2,the      numbers of participants who substantially over-
+                                                                                                                                                  a significantly
+                                                        larger percentage of participants were substantially over-estimated (59%) than substan-
+                                                       estimated
+                                                        tially under-estimated       (23%) ortime
+                                                                                  their          accuratelyon       older,
+                                                                                                              reported            lesser-used
+                                                                                                                         (18%) their total SM time, X (2)=platforms,
+                                                                                                                                                  2         95.14,         Facebook (n = 80, 25.1%) and Twitter
+                                                        p < 0.001. Providing support for H3, relative to the numbers of participants who substan-
+                                                        tially=
+                                                       (n         85, 26.6%),
+                                                               over-estimated       their time nearly              twice
+                                                                                                  on older, lesser-used          as many
+                                                                                                                           platforms,  Facebook (nover-estimated
+                                                                                                                                                     = 80, 25.1%)            their time on newer, more heavily
+                                                        and Twitter (n = 85, 26.6%), nearly twice as many over-estimated their time on newer,
+                                                       used
+                                                        more heavilyplatforms,                   Instagram
+                                                                         used platforms, Instagram                                   145, (n45.5%)
+                                                                                                                           (nand=Snapchat
+                                                                                                            (n = 145, 45.5%)                    = 157, 49.2%),and
+                                                                                                                                                                all  Snapchat (n = 157, 49.2%), all ps < 0.001.
+                                                        ps < 0.001.
+
+
+                                                                                                Under    Accurate   Over
+
+
+
+
+                                                                           32.5
+                                                                                                          41.7               45
+                                                                                           47
+                                                                                                                                           58.9
+                                                            PERCENTAGE
+
+
+
+
+                                                                           54.9                           38.6
+                                                                                         34.7                                38.9
+                                                                                                                                           18.2
+
+
+
+
+                                                                                                          19.7                             22.9
+                                                                                         18.3                                16.1
+                                                                           12.6
+
+                                                                         FACEBOOK     INSTAGRAM         SNAPCHAT           TWITTER       OVERALL
+
+
+                                                        Figure 3. Percentages of students under-reporting, accurately reporting, and over-reporting their
+                                                        Figure 3. Percentages of students under-reporting, accurately reporting, and over-reporting their
+                                                        social media use by platform and across all platforms among all participants.
+
+                                                        3.4. Is Sex (H4) or # of SM Used (H5) Related to Likelihood of Over/Under-Estimation?
+                                                        social       media use by platform and across all platforms among all participants.
+                                                            Table 3 presents results from multinomial regression models examining the relative
+                                                        impacts of female sex and the number of SM platforms participants reported using on the
+Int. J. Environ. Res. Public Health 2022, 19, 9847                                                                                         9 of 15
+
+
+
+
+                                        3.4. Is Sex (H4) or # of SM Used (H5) Related to Likelihood of Over/Under-Estimation?
+                                              Table 3 presents results from multinomial regression models examining the relative
+                                        impacts of female sex and the number of SM platforms participants reported using on
+                                        the likelihood of substantially under-estimating or over-estimating (relative to accurately
+                                        reporting) total SM time and time on each individual platform.
+
+                                        Table 3. Multinomial regression models predicting the odds of self-report classification (relative to
+                                        Accurate) for each SM platform as a function of participant sex and total number of SM platforms used.
+
+       Platform                     Outcome                            Predictors                           OR               95% CI [OR]
+       Facebook
+                               Under-estimator                      Female Sex                             0.89                0.39–2.03
+                                                            Number of SM platforms used                    1.01                0.59–1.72
+                                Over-estimator                      Female Sex                             1.36                0.79–2.33
+                                                            Number of SM platforms used                    0.96                0.69–1.35
+        Twitter
+                               Under-estimator                      Female Sex                             1.08                0.44–2.67
+                                                            Number of SM platforms used                   6.07 **              2.14–17.21
+                                Over-estimator                         Sex                                 1.19                 0.67–2.13
+                                                            Number of SM platforms used                   7.94 **              4.10–15.37
+      Instagram
+                               Under-estimator                      Female Sex                             1.22                0.64–2.31
+                                                            Number of SM platforms used                    1.06                0.72–1.57
+                                Over-estimator                         Sex                                2.15 **              1.29–3.59
+                                                            Number of SM platforms used                   1.51 **              1.08–2.10
+       Snapchat
+                               Under-estimator                      Female Sex                            1.92 *               1.01–3.64
+                                                            Number of SM platforms used                   1.69 *               1.08–2.66
+                                Over-estimator                      Female Sex                            2.26 **              1.35–3.79
+                                                            Number of SM platforms used                   1.43 *               1.03–2.00
+       Total SM
+                               Under-estimator                         Sex                                 1.28                0.63–2.58
+                                                            Number of SM platforms used                    1.38                0.91–2.08
+                                Over-estimator                         Sex                                 1.43                0.78–2.62
+                                                            Number of SM platforms used                   1.82 **              1.26–2.60
+                                        Notes. OR refers to Odds Ratio and 95% CI of [OR] refers the 95% confidence interval for the Odds Ratio;
+                                        * p < 0.05, ** p < 0.01.
+
+
+                                              Suggesting a lack of support for H4, female sex was not significantly associated with
+                                        over-estimating (relative to accurately reporting) total daily SM time when the number
+                                        of SM platforms used was held constant. However, being female was associated with
+                                        increased odds of over-estimating daily time on Instagram and both over-estimating and
+                                        under-estimating time on Snapchat. Meanwhile, female sex was not related to the likelihood
+                                        of over-estimating or underestimating time on less used platforms Twitter or Facebook. In
+                                        support of H5, holding constant sex, reporting use of a greater number of SM platforms was
+                                        related to significantly greater odds of substantially over-estimating (relative to accurately
+                                        reporting) total daily time on SM. Results varied somewhat by individual platform. Consis-
+                                        tent with H5, using a greater number of platforms was associated with an increased odds of
+                                        substantially over-estimating daily time on Instagram. Meanwhile, using a greater number
+                                        of SM platforms was significantly associated with increased odds of both substantially
+                                        over-estimating and under-estimating daily time on Snapchat and Twitter. In sum, as the
+                                        number of SM platforms participants reported using on a daily basis increased, so did the
+                                        likelihood of committing substantial inaccuracies in self-reporting total SM time as well as
+                                        time on 3 of 4 the individual SM platforms of focus in this study.
+Int. J. Environ. Res. Public Health 2022, 19, 9847                                                                              10 of 15
+
+
+
+
+                                        4. Discussion
+                                             This study compared objective cross-device SM time-tracking data to self-reported
+                                        daily SM time in order to investigate whether systematic reporting biases may obscure
+                                        public health researchers’ understanding of psychosocial and behavioral correlates of SM
+                                        use. Concerningly, many participants in this study were unable to accurately report the
+                                        number of SM platforms they used during the 2-week surveillance period, reporting use of
+                                        Facebook and Twitter during this period despite objectively spending no time at all on these
+                                        platforms across their electronic devices. Further, examining the accuracy of self-reported
+                                        daily time spent on four popular SM platforms individually across electronic devices
+                                        yielded results largely consistent with those from previous studies focused on the use of a
+                                        specific SM platform on a specific device [18]: inaccuracies were abundant and tended to be
+                                        in the direction of over-estimation. However, in contrast to recent findings suggesting that
+                                        inaccuracies in self-report are random and should not be of concern in survey research [15],
+                                        results from this study revealed the likelihood of meaningful overestimation to be a function
+                                        of both specific SM platform in question and participant sex. As expected, participants
+                                        were more likely to overestimate time spent on the platforms they used more heavily (e.g.,
+                                        Instagram and Snapchat) relative to those used less (e.g., Facebook and Twitter). Thus,
+                                        platform-based differences in the accuracy of self-report may simply be a function of daily
+                                        time spent on a platform (e.g., spending greater time on Instagram and Snapchat may make
+                                        it more difficult to accurately report daily time on these platforms) rather than cognitive
+                                        factors or platform characteristics. However, these findings are also consistent with the
+                                        implicit theory explanation introduced by Junco [18] nearly a decade ago as well as sources
+                                        of survey measurement error rooted in social identity and peer norms [29–31]. That is,
+                                        because pop culture depictions of young people as particularly heavy users of Instagram
+                                        and Snapchat are plentiful, adolescents’ estimates of their daily time on these platforms may
+                                        also be inflated by perceptions of normative use among in-group peers. Similarly, results
+                                        revealed that females spent more time than males on SM platforms considered normative
+                                        amongst youth (Instagram and Snapchat) and are also more likely to overestimate their
+                                        daily time on these SM. These findings are not surprising given that these SM platforms
+                                        may help satisfy psychological needs that are typically stronger in females than males:
+                                        cultivating interpersonal relationships [44] and deriving a greater sense of self through
+                                        social ties [45]. Thus, females’ greater tendency toward over-estimation may be explained
+                                        both by their greater time spent on particular SM and perceived gender-specific norms
+                                        regarding the use of those platforms.
+                                             Given the ever-expanding SM landscape and adolescents’ tendency toward platform
+                                        swinging [3], this study’s most important finding may be the link between the number of
+                                        SM platforms used during the surveillance period and the accuracy of self-reported time on
+                                        individual platforms. In sum, as the number of SM platforms participants reported using
+                                        increased, so did the likelihood of committing substantial inaccuracies in self-reporting total
+                                        SM time as well as time on 3 of the 4 individual SM platforms assessed. Thus, it appears
+                                        that platform swinging does indeed impede young adults’ ability to accurately estimate the
+                                        time they spend on individual SM platforms and that cognitive bleed may occur between
+                                        these online activities. These findings are consistent with those from previous studies
+                                        linking greater cycling between mobile applications to greater recall bias [46,47] and taken
+                                        together suggest that the phenomenon of misreporting time spent on SM may be a broader
+                                        issue associated with multi-tasking on electronic devices.
+
+                                        4.1. Implications for Researchers Studying Social Media Use among Adolescents
+                                             This study was designed to closely map onto the self-report validity concerns of
+                                        researchers increasingly interested in the degree to which cross-device time on one or
+                                        more popular SM platforms is associated with the well-being or health behavior among
+                                        adolescents. Findings suggest that self-report validity concerns in this literature are very
+                                        much warranted as inaccuracies in self-reported SM time were found to be systematically
+                                        related to the specific SM platform in question, participant sex, and the number of SM
+Int. J. Environ. Res. Public Health 2022, 19, 9847                                                                               11 of 15
+
+
+
+
+                                        platforms used regularly by participants. These findings are concerning as such systematic
+                                        biases may obscure the true relationships between variables. For instance, the larger project
+                                        from which the current investigation was derived examined prospective relationships
+                                        between daily time on the four SM platforms during the transition into college in relation
+                                        to subsequent perceptions of peer drinking norms and drinking behavior later in the school
+                                        year. When objective data were used in analyses, as planned, the theorized model was fully
+                                        supported [48]. However, when the model was re-run using self-report survey data from
+                                        the same participants several key linkages were no longer supported (results available upon
+                                        request) presumably due to the noise created by the reporting biases identified in the present
+                                        study. Underscoring the importance of objective assessment in the SM use domain, reliance
+                                        on only self-report measures would have led to the incorrect conclusion that daily SM time
+                                        is not a predictor of drinking over the first year of college. Fortunately, compared to Junco’s
+                                        initial study [18], where less than half of the participants who completed the baseline
+                                        assessment installed the time-tracking software on their computers, the current sample
+                                        was easily recruited despite the multi-device objective time-tracking requirements and no
+                                        participants withdrew from the study due to this or other SM privacy invasive aspects [21].
+                                        This suggests that SM privacy concerns among youth may have faded considerably since
+                                        2013 and should encourage researchers to find cost-effective ways to objectively track SM
+                                        platform time across adolescents’ electronic devices.
+                                              Although supporting a shift toward objective SM time tracking methods, findings
+                                        also carry implications for researchers limited to the use of self-report measures. That is, a
+                                        greater understanding of the demographic, personality, and social identity characteristics
+                                        systematically related to over-reporting SM time may help researchers for whom an objec-
+                                        tive assessment is not possible to reduce or account for such reporting biases. For example,
+                                        findings suggest that the accuracy of self-report is higher on SM platforms used less heavily
+                                        (e.g., Facebook, Twitter). Thus, researchers limited to self-report may prefer to investigate
+                                        time on these platforms. Alternatively, rather than ask multiple choice or free response
+                                        questions about daily or weekly time on SM platforms prone to systematic reporting bias,
+                                        it may be optimal for researchers limited by survey-based assessments to adopt validated,
+                                        psychometrically sound scales to assess SM addiction or problematic SM use [49,50] in
+                                        efforts to study correlates of excessive use. However, for survey researchers who need
+                                        to assess daily time using a specific popular SM platform rather than SM addiction or
+                                        problematic use, findings from this study suggest that it may be useful to query partici-
+                                        pants about their time on various SM rather than only ask questions about the particular
+                                        SM platform of interest. Although more research is needed, it may be possible to reduce
+                                        reporting-related noise in relationships of interest in the analysis stage through advanced
+                                        statistical techniques to the extent that associated participant-level data (i.e., sex, number of
+                                        SM platforms used, and time on other SM platforms) is available.
+
+                                        4.2. Limitations and Future Directions
+                                              This study is limited in that data came from a sample of incoming first-year students
+                                        from a single American university. However, the sample size exceeded those utilized
+                                        in previous studies [15,18], and self-reported daily SM platform use patterns mapped
+                                        onto national survey data from American 18–24-year-olds [32,49], suggesting that findings
+                                        may generalize to older American adolescents beyond the current sample. However,
+                                        it is unknown whether the similar patterns of daily use and systematic reporting biases
+                                        generalize to younger adolescents or adolescents outside of the United States. An additional
+                                        limitation was related to the RescueTime software application used in this study not
+                                        being compatible with iPhones. This resulted in iPhone users being required to complete
+                                        additional steps to ensure that the time they spent actively using the four SM platforms from
+                                        their phones during the surveillance period could be combined with the data from their
+                                        other electronic devices. To avoid such an extra burden among a subset of participants, it
+                                        will be important for future research to develop and utilize cross-device software programs
+Int. J. Environ. Res. Public Health 2022, 19, 9847                                                                               12 of 15
+
+
+
+
+                                        able to track participants’ SM use more seamlessly across all versions of IOS, Android, and
+                                        Windows-based operating systems.
+                                              Another potential limitation is that participants’ awareness of the software installed
+                                        on their electronic devices may have impacted their patterns of SM use to some unknown
+                                        degree. However, data were collected within a larger multi-component project which
+                                        likely worked against the potential for any such software impact. That is, participants
+                                        were invited to take part in a 9-month study investigating the potential psychological
+                                        impacts of what they see on SM during the transition into college. Informed consent
+                                        information framed the collection of this study’s data in the context of the larger project’s
+                                        broader research questions (e.g., “does seeing a lot of posts about partying or studying
+                                        on SM influence your perceptions of how much college students really party or study?”).
+                                        Although participants installed the tracking software and reported on their SM use in one
+                                        of five surveys, in the service of the larger project they also provided their SM account
+                                        logins so a bot could periodically sample the posts in their social media feeds, and were
+                                        repeatedly surveyed about their normative perceptions, and completed multiple implicit
+                                        association tests. Participants were also encouraged to use social media as usual during the
+                                        study period and the research team’s secondary interest in their reporting accuracy was
+                                        not disclosed. Although participants’ patterns of SM use and the discrepancies observed
+                                        between objectively tracked and self-reported time seem unlikely to be an artifact of the
+                                        time-tracking software or broader study participation, additional attention to this issue is
+                                        warranted.
+                                              A final limitation is that the study did not objectively assess participants’ time spent on
+                                        every SM platform currently available (e.g., TikTok, YouTube, etc.), and instead narrowed
+                                        its focus to the four platforms most widely used by American adolescents at the time
+                                        of data collection and commonly studied in relation to well-being and health behavior
+                                        outcomes. Although more research is needed, this study’s findings suggest that expanding
+                                        focus to a larger number of popular SM platforms may lead to even greater reporting
+                                        inaccuracies among adolescents swinging a greater number of platforms, with these inaccu-
+                                        racies potentially further obscuring true relationships between time on SM, well-being, and
+                                        health behavior. Thus, examining self-report inaccuracies on additional SM platforms and
+                                        evaluating potential correlates such as culture, social identity, perceived in-group norms
+                                        for platform use, and other SM variables (e.g., motivations for use, passive lurking versus
+                                        active sharing or interaction) represent important directions for future research that may
+                                        provide researchers investigating SM use among adolescents additional insight into survey
+                                        question optimization and illuminate novel methods to reduce bias in self-report data.
+
+                                        5. Conclusions
+                                             Despite public health researchers’ tendency to assess adolescent social media behavior
+                                        via self-report survey questions, findings from this study reveal that many adolescent
+                                        participants are unable to accurately report the SM platforms they used over the previous
+                                        2 weeks, and that, on average, adolescents also substantially over-estimate the average
+                                        daily time they spend on individual SM platforms over this period of time. Further, the
+                                        accuracy of adolescents’ responses to questions about average daily use appears to be
+                                        systematically associated with the specific social media platforms in question, as well as the
+                                        participant’s sex and the total number of social media platforms they use regularly, thereby
+                                        biasing the results of survey-based studies investigating health-related correlates of SM
+                                        use. As understanding adolescent patterns of SM use and psychosocial and behavioral
+                                        correlates represent critical areas of inquiry that may inform the development of new public
+                                        health intervention and prevention programs, the validity of social media assessments
+                                        must improve.
+Int. J. Environ. Res. Public Health 2022, 19, 9847                                                                                      13 of 15
+
+
+
+
+                                        Author Contributions: S.C.B. is responsible for the study’s conceptualization, methodology, formal
+                                        analysis, and the majority of the writing. S.B. assisted with the literature review and references.
+                                        Review of the writing, including editing and comments, were provided by B.M.T. and J.W.L. J.W.L.
+                                        also supervised the study’s data collection and acquired the funding for the larger project. All authors
+                                        have read and agreed to the published version of the manuscript.
+                                        Funding: This research was funded by the National Institute of Alcohol Abuse and Alcoholism
+                                        (NIAAA), grant number R21 AA024853. The NIAAA had no role in the study design, collection,
+                                        analysis, interpretation of the data, writing the manuscript, or the decision to submit the paper
+                                        for publication.
+                                        Institutional Review Board Statement: The study was conducted in accordance with the Declaration
+                                        of Helsinki and approved by the Institutional Review Board of Loyola Marymount University
+                                        (protocol number LMU IRB 2017 SP 60 approved on 25 May 2017).
+                                        Informed Consent Statement: Informed consent was obtained from all subjects involved in the study.
+                                        Data Availability Statement: Deidentified study data is available upon request from the correspond-
+                                        ing author (email: sarah.boyle@lmu.edu).
+                                        Conflicts of Interest: The authors declare no conflict of interest.
+
+References
+1.    Jarman, H.K.; Marques, M.D.; McLean, S.A.; Slater, A. Motivations for social media use: Associations with social media
+      engagement and body satisfaction and well-being among adolescents. J. Youth Adolesc. 2021, 50, 2279–2293. [CrossRef] [PubMed]
+2.    Phua, J.; Jin, S.V.; Kim, J. Uses and gratifications of social networking sites for bridging and bonding social capital: A comparison
+      of Facebook, Twitter, Instagram, and Snapchat. Comput. Hum. Behav. 2017, 72, 115–122. [CrossRef]
+3.    Tandoc, E.C.; Lou, C.; Min VL, H. Platform-swinging in a poly-social-media context: How and why users navigate multiple social
+      media platforms. J. Comput.-Mediat. Commun. 2019, 24, 21–35. [CrossRef]
+4.    Ivie, E.J.; Pettitt, A.; Moses, L.J.; Allen, N.B. A meta-analysis of the association between adolescent social media use and depressive
+      symptoms. J. Affect. Disord. 2020, 275, 165–174. [CrossRef]
+5.    Lin, L.; Sidani, J.E.; Shensa, A.; Radovic, A.; Miller, E.; Colditz, J.B.; Hoffman, B.L.; Giles, L.M.; Primack, B.A. Association between
+      social media use and depression among U.S. young adults. Depress. Anxiety 2016, 33, 323–331. [CrossRef]
+6.    Marengo, D.; Longobardi, C.; Fabris, M.A.; Settanni, M. Highly-visual social media and internalizing symptoms in adolescence:
+      The mediating role of body image concerns. Comput. Hum. Behav. 2018, 82, 63–69. [CrossRef]
+7.    Yang, H.; Wang, J.J.; Tng, G.Y.Q.; Yang, S. Effects of social media and smartphone use on body esteem in female adolescents:
+      Testing a cognitive and affective model. Children 2020, 7, 148. [CrossRef]
+8.    Alonzo, R.; Hussain, J.; Stranges, S.; Anderson, K.K. Interplay between social media use, sleep quality, and mental health in youth:
+      A systematic review. Sleep Med. Rev. 2021, 56, 101414. [CrossRef]
+9.    Levenson, J.C.; Shensa, A.; Sidani, J.E.; Colditz, J.B.; Primack, B.A. The association between social media use and sleep disturbance
+      among young adults. Prev. Med. 2016, 85, 36–41. [CrossRef]
+10.   Hormes, J.M. Under the influence of Facebook? Excess use of social networking sites and drinking motives, consequences, and
+      attitudes in college students. J. Behav. Addict. 2016, 5, 122–129. [CrossRef]
+11.   Ng Fat, L.; Cable, N.; Kelly, Y. Associations between social media usage and alcohol use among youths and young adults:
+      Findings from Understanding Society. Addiction 2021, 116, 2995–3005. [CrossRef]
+12.   Perkins, J.M.; Perkins, H.W.; Craig, D.W. Misperceived norms and personal sugar-sweetened beverage consumption and fruit
+      and vegetable intake among students in the United States. Appetite 2018, 129, 82–93. [CrossRef] [PubMed]
+13.   Litt, D.M.; Rodriguez, L.M.; Stewart, S.H. Examining associations between social networking site alcohol-specific social norms,
+      posting behavior, and drinking to cope during the Covid-19 pandemic. Cyberpsychol. Behav. Soc. Netw. 2021, 24, 715–721.
+      [CrossRef] [PubMed]
+14.   Perasso, G.; Carone, N.; Health Behavior in School Aged Children Lombardy Group; Barone, L. Written and visual cyberbullying
+      victimization in adolescence: Shared and unique associated factors. Eur. J. Dev. Psych. 2021, 18, 658–677. [CrossRef]
+15.   Johannes, N.; Nguyen, T.; Weinstein, N.; Przybylski, A.K. Objective, subjective, and accurate reporting of social media use: No
+      evidence that daily social media use correlates with personality traits, motivational states, or well-being. Technol. Mind Behav.
+      2021, 2, 1–14. [CrossRef]
+16.   Anderson, M.; Jiang, J. Teens, Social Media & Technology 2018; Pew Research Center: Washington, DC, USA, 2018. Available online:
+      https://www.pewresearch.org/internet/2018/05/31/teens-social-media-technology-2018/ (accessed on 8 December 2021).
+17.   Villanti, A.C.; Johnson, A.L.; Ilakkuvan, V.; Jacobs, M.A.; Graham, A.L.; Rath, J.M. Social media use and access to digital
+      technology in US young adults in 2016. J. Med. Internet Res. 2017, 18, e7303. [CrossRef] [PubMed]
+18.   Junco, R. Comparing actual and self-reported measures of Facebook use. Comput. Hum. Behav. 2013, 29, 626–631. [CrossRef]
+Int. J. Environ. Res. Public Health 2022, 19, 9847                                                                                   14 of 15
+
+
+
+
+19.   Ernala, S.K.; Burke, M.; Leavitt, A.; Ellison, N.B. How well do people report time spent on Facebook? An evaluation of established
+      survey questions with recommendations. In Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems;
+      ACM Digital Library: New York, NY, USA, 2020; pp. 1–14. [CrossRef]
+20.   Sewall, C.J.; Bear, T.M.; Merranko, J.; Rosen, D. How psychosocial well-being and usage amount predict inaccuracies in
+      retrospective estimates of digital technology use. Mob. Media Commun. 2020, 8, 379–399. [CrossRef]
+21.   LaBrie, J.W.; Trager, B.M.; Boyle, S.C.; Davis, J.P.; Earle, A.M.; Morgan, R.M. An examination of the prospective associations
+      between objectively assessed exposure to alcohol-related Instagram content, alcohol-specific cognitions, and first-year college
+      drinking. Addict. Behav. 2021, 119, 106948. [CrossRef]
+22.   Blackstone, S.; Russie, C. Using Instagram to deliver a theory-based wellness intervention designed to promote behavior change.
+      Eur. J. Public Health 2020, 30, ckaa166-008. [CrossRef]
+23.   Vogel, E.A.; Ramo, D.E.; Meacham, M.C.; Prochaska, J.J.; Delucchi, K.L.; Humfleet, G.L. The put it out project (POP) Facebook
+      intervention for young sexual and gender minority smokers: Outcomes of a pilot, randomized, controlled trial. Nicotine Tob. Res.
+      2020, 22, 1614–1621. [CrossRef] [PubMed]
+24.   Dodou, D.; de Winter, J.C. Social desirability is the same in offline, online, and paper surveys: A meta-analysis. Comput. Hum.
+      Behav. 2014, 36, 487–495. [CrossRef]
+25.   Durmaz, A.; Dursun, İ.; Kabadayi, E.T. Mitigating the effects of social desirability bias in self-report surveys: Classical and new
+      techniques. In Applied Social Science Approaches to Mixed Methods Research; IGI Global: Hershey, PA, USA, 2020; pp. 146–185.
+      [CrossRef]
+26.   Ward, M.K.; Meade, A.W. Applying social psychology to prevent careless responding during online surveys. Appl. Psychol. 2018,
+      67, 231–263. [CrossRef]
+27.   Hill, N.L.; Mogle, J.; Whitaker, E.B.; Gilmore-Bykovskyi, A.; Bhargava, S.; Bhang, I.Y.; Van Haitsma, K. Sources of response bias in
+      cognitive self-report items: Which memory are you talking about? Gerontologist 2019, 59, 912–924. [CrossRef]
+28.   Weaver, P.; Choi, J.; Kaufman, T. Question wording and response bias: Students’ perceptions of ethical issues in the hospitality
+      and tourism industry. J. Hosp. Tour. Educ. 1997, 9, 21–26. [CrossRef]
+29.   Brenner, P.S. Overreporting of voting participation as a function of identity. Soc. Sci. J. 2012, 49, 421–429. [CrossRef]
+30.   Brenner, P.S. Narratives of response error from cognitive interviews of survey questions about normative behavior. Sociol. Methods
+      Res. 2017, 46, 540–564. [CrossRef]
+31.   Brenner, P.S.; DeLamater, J. Lies, damned lies, and survey self-reports? Identity as a cause of measurement bias. Soc. Psychol. Q.
+      2016, 79, 333–354. [CrossRef]
+32.   Auxier, B.; Anderson, M. Social Media Use in 2021; Pew Research Center: Washington, DC, USA, 2021. Available online:
+      https://www.pewresearch.org/internet/2021/04/07/social-media-use-in-2021/ (accessed on 8 December 2021).
+33.   Boyle, S.C.; Earle, A.M.; LaBrie, J.W.; Ballou, K. Facebook dethroned: Revealing the more likely social media destinations for
+      college students’ depictions of underage drinking. Addict. Behav. 2017, 65, 63–67. [CrossRef]
+34.   Hoelzel, M. Update: A breakdown of the Demographics for Each of the Different Social Networks; Business Insider: New York, NY, USA,
+      2015. Available online: http://www.businessinsider.com/update-a-breakdown-of-the-demographics-for-each-of-the-different-
+      social-networks-2015-6 (accessed on 8 December 2021).
+35.   Neal, R.W. Facebook Gets Older: Demographic Report Shows 3 Million Teens Left Social Network in 3 Years. International Business
+      Times. 2014. Available online: http://www.ibtimes.com/facebook-gets-older-demographic-report-shows-3-million-teens-left-
+      social-network-3-years-1543092 (accessed on 8 December 2021).
+36.   Schwarz, N.; Oyserman, D. Asking questions about behavior: Cognition, communication, and questionnaire construction. Am. J.
+      Eval. 2001, 22, 127–160. [CrossRef]
+37.   Tourangeau, R.; Rips, L.J.; Rasinski, K. The Psychology of Survey Response; Cambridge University Press: Cambridge, UK, 2000.
+      [CrossRef]
+38.   Gramlich, J. 10 Facts about Americans and Facebook; Pew Research Center: Washington, DC, USA, 2019. Available online:
+      https://www.pewresearch.org/fact-tank/2019/05/16/facts-about-americans-and-facebook/ (accessed on 8 December 2021).
+39.   Djafarova, E.; Rushworth, C. Exploring the credibility of online celebrities’ Instagram profiles in influencing the purchase
+      decisions of young female users. Comput. Hum. Behav. 2016, 68, 1–7. [CrossRef]
+40.   Lim, Y.J. Decision to use either Snapchat or Instagram for Most Powerful Celebrities. Res. J. Inst. Public Relat. 2017, 3, 1–16.
+41.   Bányai, F.; Zsila, Á.; Király, O.; Maraz, A.; Elekes, Z.; Griffiths, M.D.; Demetrovics, Z. Problematic social media use: Results from a
+      large-scale nationally representative adolescent sample. PLoS ONE 2017, 12, e0169839. [CrossRef]
+42.   Knight-McCord, J.; Cleary, D.; Grant, N.; Herron, A.; Jumbo, S.; Lacey, T.; Livingston, T.; Robinson, S.; Smith, R.; Emanuel, R.
+      What social media sites do college students use most? J. Undergrad. Ethn. Minority Psychol. 2016, 2, 6.
+43.   Madden, M.; Zickuhr, K. 65% of Online Adults Use Social Networking Sites: Women Maintain Their Foothold on SNS Use and
+      Older Americans are still Coming Aboard; Pew Research Centrer: Washington, DC, USA, 2021. Available online: https://www.
+      pewresearch.org/internet/2011/08/26/65-of-online-adults-use-social-networking-sites/ (accessed on 8 December 2021).
+44.   Muscanell, N.L.; Guadagno, R.E. Make new friends or keep the old: Gender and personality differences in social networking use.
+      Comput. Hum. Behav. 2012, 28, 107–112. [CrossRef]
+45.   Park, N.; Lee, H. Gender difference in social networking on smartphones: A case study of Korean college student smartphone
+      users. Int. Telecommun. Policy Rev. 2014, 21, 1–18.
+Int. J. Environ. Res. Public Health 2022, 19, 9847                                                                                15 of 15
+
+
+
+
+46.   Deng, T.; Kanthawala, S.; Meng, J.; Peng, W.; Kononova, A.; Hao, Q.; David, P. Measuring smartphone usage and task switching
+      with log tracking and self-reports. Mob. Media Commun. 2019, 7, 3–23. [CrossRef]
+47.   Lee, H.; Ahn, H.; Nguyen, T.G.; Choi, S.-W.; Kim, D.J. Comparing the self-report and measured smartphone usage of college
+      students: A pilot study. Psychiatry Investig. 2017, 14, 198–204. [CrossRef]
+48.   LaBrie, J.W.; Boyle, S.C.; Young, S.H.; Tan, C.N. Prospective relationships between objectively assessed social media use, drinking
+      norms, and alcohol consumption among first-year students. J. Stud. Alcohol Drugs 2021, 82, 339–350. [CrossRef]
+49.   Andreassen, C.; Billieux, J.; Griffiths, M.; Kuss, D.; Demetrovics, Z.; Mazzoni, E.; Pallesen, S. The relationship between addictive
+      use of social media and video games and symptoms of psychiatric disorders: A large-scale cross-sectional study. Psychol. Addict.
+      Behav. 2016, 30, 252–262. [CrossRef]
+50.   Van den Eijnden, R.J.; Lemmens, J.S.; Valkenburg, P.M. The social media disorder scale. Comp. Hum. Behav. 2016, 61, 478–487.
+      [CrossRef]
+

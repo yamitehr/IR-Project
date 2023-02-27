@@ -1,0 +1,1197 @@
+ Luzsa, R., & Mayr, S. (2021). False consensus in the echo chamber: Exposure to favorably biased social media
+ news feeds leads to increased perception of public support for own opinions. Cyberpsychology: Journal of
+ Psychosocial Research on Cyberspace, 15(1), article 3. https://doi.org/10.5817/CP2021-1-3
+
+
+   False Consensus in the Echo Chamber: Exposure to Favorably Biased
+    Social Media News Feeds Leads to Increased Perception of Public
+                        Support for Own Opinions
+                                               Robert Luzsa & Susanne Mayr
+
+                                            University of Passau, Passau, Germany
+
+
+
+
+                                                           Abstract
+
+   Studies suggest that users of online social networking sites can tend to preferably connect with like-minded others,
+   leading to “Echo Chambers” in which attitudinally congruent information circulates. However, little is known about
+   how exposure to artifacts of Echo Chambers, such as biased attitudinally congruent online news feeds, affects
+   individuals’ perceptions and behavior. This study experimentally tested if exposure to attitudinally congruent
+   online news feeds affects individuals' False Consensus Effect, that is, how strongly individuals perceive public
+   opinions as favorably biased and in support of their own opinions. It was predicted that the extent of the False
+   Consensus Effect is influenced by the level of agreement individuals encounter in online news feeds, with high
+   agreement leading to a higher estimate of public support for their own opinions than low agreement. Two online
+   experiments (n1 = 331 and n2 = 207) exposed participants to nine news feeds, each containing four messages. Two
+   factors were manipulated: Agreement expressed in message texts (all but one [Exp.1] / all [Exp.2] messages were
+   congruent or incongruent to participants' attitudes) and endorsement of congruent messages by other users
+   (congruent messages displayed higher or lower numbers of “likes” than incongruent messages). Additionally, based
+   on Elaboration Likelihood Theory, interest in a topic was considered as a moderating variable. Both studies
+   confirmed that participants infer public support for their own attitudes from the degree of agreement they
+   encounter in online messages, yet are skeptical of the validity of “likes”, especially if their interest in a topic is high.
+
+Keywords: Echo chambers; social networking; false consensus; selective exposure
+
+
+                                                        Introduction
+
+There is a growing debate in media, society, and science whether online social networks like Facebook or Twitter
+facilitate biased information consumption and opinion formation, and, in turn, give rise to negative consequences
+like misinformation (Del Vicario et al., 2016), radicalization, and societal polarization (Grömping, 2014; Williams et
+al., 2015). Studies have found users of online social networks showing the same tendencies for confirmation bias
+(Wason, 1968) and homophily that can also be observed in offline settings: They often prefer information that is
+consistent to their own attitudes (e.g., Knobloch-Westerwick, 2014) and form ties with like-minded others (Del
+Vicario et al., 2016; Quattrociocchi et al., 2016; Schmidt et al., 2017; Zollo et al., 2017), especially in regard to highly
+political topics (Barberá et al., 2015). Online communication showing these tendencies has been characterized as
+“Echo Chamber” (Gilbert et al., 2009; Quattrociocchi et al., 2016; Sunstein, 2001), as similar attitudes and
+information supporting these attitudes appear to “echo” between users, and deviant opinions are excluded. The
+emergence of Echo Chamber-like communication structures comes as no surprise, as humans have long been
+known to reduce cognitive dissonance by preferring selective exposure to attitudinally congruent information
+(Cotton & Hieser, 1980; Hart et al., 2009; Knobloch-Westerwick, 2014; Sears & Freedman, 1967) and to preferably
+connect with similar others (McPherson et al., 2001). Online media may further strengthen these biases by letting
+users engage with a permanently available stream of information that is more personalized than traditional,
+asynchronous media, often devoid of editorial judgement and quality control (Allcott & Gentzkow, 2017) and
+algorithmically tailored to the users’ preferences and usage patterns (Beam, 2014; Pariser, 2011).
+
+However, it must be noted that the prevalence of Echo Chamber-like communication structures is subject to
+controversial debate (for a short overview see Guess et al., 2019): While some studies, such as a recent analysis of
+14 million Facebook users' interactions with news sites over the span of six years (Cinelli et al., 2020), present
+compelling evidence for online users' preference for selective exposure and their segregation in Echo Chambers,
+others do not. For example, only a minority of Facebook and Twitter users describe their network as mostly
+comprised of like-minded others (Duggan & Smith, 2016), a self-report that is backed by an analysis of Australian
+Twitter users’ likelihood to be exposed to attitudinally congruent and incongruent contents (Bruns, 2017), and a
+recent study based on Eurobarometer survey data could not link self-reported network homogeneity and political
+polarization regarding attitudes towards the European Union (Nguyen & Vu, 2019). These findings, nonetheless,
+are not necessarily in contradiction to evidence of users’ preference for attitudinally congruent information and
+homophily. Instead, the current state of research demonstrates that online networks differ significantly in regard
+to their degree of homophily, with both Echo Chambers and more heterogeneous patterns emerging. Whether
+communication and news consumption take the form of an Echo Chamber appears to be influenced by structural
+variables like the existence of opinion leaders among whom like-minded crowds gather (Guo et al., 2020) and
+individual variables like the degree of involvement with a topic (Dubois & Blank, 2018). Different operationalization
+and measurement of Echo Chambers (e.g., via self-reported news exposure or network composition, via liking and
+retweeting behavior or via observed website dwell times) may further explain the observed discrepancies.
+
+In summary, while Echo Chambers may not be a necessary consequence of online networking and news
+consumption, communication structures in which users are selectively exposed to attitudinally congruent
+information can emerge and exist in online contexts. While further research on the prevalence of Echo Chambers
+and their connection to factors like societal polarization is important, the current paper focuses on another equally
+crucial yet still little researched aspect: How does confrontation with artifacts encountered in Echo Chambers
+affect the individual user? Concretely, two experiments tested whether exposure to attitudinally biased online
+news feeds influences participants’ False Consensus Effect, that is, their tendency to assume high public support
+for their own opinions.
+
+Links Between Echo Chambers and Perceived Public Support for Own Opinions
+
+It is known that the perception of public opinion or social norm is an important predictor of actual behavior (Ajzen
+& Fishbein, 1977; Fishbein, 1976; Liska, 1984): For example, individuals who hold radical political views but perceive
+the public in disagreement may not act upon them. However, if they perceive the public in support of their views,
+their inhibitions to show hostile or aggressive behavior may be reduced.
+
+Research has also demonstrated that individuals do not estimate public opinion objectively. Instead, they tend to
+perceive public opinion as favorably distorted towards their own beliefs. This tendency is called the False
+Consensus Effect (FCE, Ross et al., 1977): Given two options (e.g., “Yes” or “No” regarding approval to the statement
+“Marihuana should be legalized.”) the percentage of the population in favor of one option is overestimated by
+individuals in favor of this option as compared to individuals in favor of the other option, and vice versa. For
+example, individuals supporting marihuana legalization might estimate that 45% of the population also support
+it, while individuals strongly opposed to legalization might estimate that only 25% favor legalization. The difference
+of 20% reflects the extent of the FCE, that is, how strongly the estimate of public opinion depends on individuals'
+own opinion.
+
+Previous studies suggest that FCE is correlated with participants’ selective exposure to attitudinally congruent
+information and personal network homogeneity: For example, Bauman and Geher (2002) measured participants’
+FCE after exposure to packages of information (e.g., brochures, pamphlets or video-taped discussions).
+Participants exposed to balanced packages that contained both information supporting and questioning their own
+opinions displayed a lower FCE than members of the control group without any exposure. This can be interpreted
+as an effect of selective exposure: In everyday life, individuals prefer congruent information from which they infer
+high public support for their opinions. However, when exposed to different views on a topic, individuals are forced
+to also process incongruent information that they would not normally seek out, leading to a lower FCE.
+
+That an effect of selective exposure on FCE might also occur by participating in homogenous online groups is
+illustrated by Wojcieszak (2008) who examined FCE of members of neo-Nazi and radical environmentalist online
+forums. In the case of the neo-Nazi forum, the study found FCE positively correlated with the participants’ degree
+of forum participation as well as their level of extremism (however, in case of the environmentalist forum, only
+extremism, not forum participation correlated with FCE).
+
+Given these findings, it stands to reason that perceived public support for one’s own opinion should also be
+influenced by the resemblance of a user’s network to an Echo Chamber: If individuals surround themselves online
+with others that mostly share their attitudes, they should receive mostly messages with congruent information,
+and they should experience little interactions with others holding opposing beliefs. This should lead to a stronger
+FCE. Indeed, a prior correlative questionnaire study (Luzsa & Mayr, 2019) found such a link: The more homogenous
+participants described their online social network, the stronger their FCE, measured for twenty current political
+topics. Due to the correlative nature of that study, however, the cause for this stronger FCE could not be
+unambiguously identified. The assumption that FCE is influenced by selective exposure to attitudinally congruent
+information shared in networks still requires testing. For this, an experimental approach is necessary that
+examines how the attributes of messages shared in online social media affect FCE.
+
+Biased News Feeds as Artifacts of Online Echo Chambers
+
+Typical for online social media are news feeds consisting of messages that other connected users have shared.
+Each message consists of central content (e.g., headlines of news articles or personal commentaries),
+accompanied by popularity cues, that is, indicators which illustrate how many other users positively evaluated or
+endorsed the content, for example by “liking” it (Haim et al., 2018; Porten-Cheé et al., 2018). While there are also
+additional message attributes, such as sender names and images, this study will focus on popularity cues, in
+addition to message content because effects of popularity cues on outcomes like attention (Dvir-Gvirsman, 2019)
+and selection and appraisal of messages (Chang et al., 2015; Haim et al., 2018; Messing & Westwood, 2014) are
+well documented.
+
+It can be argued that message content and other users’ endorsement via “likes” are key attributes that differentiate
+between biased news feeds originating from Echo Chambers and feeds originating from more balanced,
+heterogeneous online communication: Firstly, news feeds of users with homogenous networks should express
+agreement with their own attitudes, that is, consist mostly of attitudinally congruent messages. Secondly, these
+attitudinally congruent contents should display strong endorsement by users' networks, while occasionally
+occurring attitudinally incongruent contents should show less endorsement. In contrast, if users’ networks are
+heterogeneous there should be neither dominance of attitudinally congruent messages nor higher endorsement
+for congruent than incongruent ones. In fact, depending on topic and network, users might even encounter mostly
+incongruent messages as well as popularity cues that display low endorsement for their own attitudes – for
+example in communities that emphasize controversial discussions (Guest, 2018).
+
+Hypotheses
+
+Based on these considerations, two hypotheses regarding the effect of Echo Chamber news feeds on FCE are
+formulated:
+
+Effects of agreement: Participants that are exposed to a news feed made up of messages mostly congruent to their
+own attitudes will display a stronger FCE, compared to participants exposed to mostly incongruent messages.
+
+Effects of endorsement: If messages congruent to participants’ own attitudes display higher endorsement by others
+than incongruent ones, participants will exhibit a stronger FCE, compared to the situation in which incongruent
+messages display higher endorsement than congruent messages.
+Additionally, both agreement expressed in message texts and endorsement expressed by “likes” may vary
+independently of each other: For example, users might read a feed in which 90% of the messages are congruent
+to their own attitudes. A positive Echo Chamber effect on FCE should occur. However, what happens if the
+remaining 10% of incongruent messages display significantly higher numbers of “likes”? Will this reduce the
+positive effect of message agreement on FCE? In the opposite case, users read a feed with mostly incongruent
+messages. This should lead to a weaker FCE. However, if the few attitudinally congruent messages display the
+strongest endorsement, will users interpret this as a “silent majority” agreeing with them, and therefore display a
+stronger FCE?
+
+Previous research does not allow assuming whether agreement or endorsement is the pivotal factor and whether
+there will be an interactive effect. Therefore, an open research question is formulated:
+
+Interactive effect: Is there an interactive effect between agreement and endorsement on FCE?
+
+Finally, in tradition of the Elaboration Likelihood Model (Petty & Cacioppo, 1986), popularity cues such as “likes”
+may be conceived as peripheral, message contents as central cues. The model states that when participants’
+involvement is high, they will be mostly affected by central cues, while low involvement leads to stronger effects
+of peripheral cues.
+
+This might imply that participants’ interest in a topic moderates the effects of agreement as well as endorsement on
+FCE: Regarding the role of agreement, if participants have little interest in a topic they might put less effort in
+processing messages related to it, with message content showing little effect on FCE. However, if interest is high,
+participants might put more effort in reading and evaluating messages, leading to a stronger effect of message
+content than when interest is low. Regarding the role of endorsement, participants who have little interest in a topic
+might focus on popularity cues such as “likes” as an effortless way to estimate public opinion. In contrast, the effect
+of “likes” on FCE should turn out weaker in case of high interest, as higher interest might make participants more
+skeptical regarding the representativeness of popularity cues.
+
+From this follows the final hypothesis:
+
+Moderation by interest: The effects of agreement as well as of endorsement on FCE are moderated by participants’
+interest in a topic. The effect of agreement will turn out stronger in case of high interest than when interest is low.
+The effect of endorsement will turn out stronger in case of low interest than when interest is high.
+
+To test these hypotheses, controlled experimental approaches are necessary which expose participants to online
+environments with either high or low Echo Chamber characteristics and then measure their effects on the
+individual. There is some experimental research which the present study can build upon: For example, Giese et al.
+(2020) tested how congruent and incongruent information is perceived and shared in attitudinally homogenous
+and heterogeneous groups of participants. Related approaches are also found in selective exposure research,
+where participants are asked to indicate attitudes regarding topics and then are exposed to attitudinally congruent
+and incongruent news while measures of exposure like viewing times or clicking behavior are observed (e.g.,
+Knobloch-Westerwick & Meng 2009). However, to the authors' best knowledge, there are no studies that have
+specifically focused the effects of agreement and endorsement in Echo Chamber-like online news feeds on
+perceptions of public opinion.
+
+Therefore, two online experiments were conducted to test the hypothesized effects.
+
+
+                                                   Experiment 1
+
+Experiment 1 adapted selective exposure paradigms (Knobloch-Westerwick & Meng, 2009; Lee & Jang, 2010;
+Messing & Westwood, 2014; Peter et al., 2014) in order to confront participants with biased Echo Chamber news
+feeds: Participants were exposed to nine news feeds, each consisting of four simultaneously presented messages,
+that is, short news headlines regarding one topic. A number of “likes” accompanied each message. The
+participants' task was to select the message whose linked full article they preferred to read. No full articles were
+displayed afterwards. The task was merely given to ensure that participants read and processed all the messages.
+The attributes of biased Echo Chamber news feeds – agreement expressed in messages and endorsement
+expressed by “likes” – were independently manipulated: Participants were exposed to either three messages
+congruent to their own attitudes and one incongruent (condition high agreement) or to three incongruent and one
+congruent (condition low agreement). Similarly, either the congruent messages had high and the incongruent
+messages low numbers of likes (condition high endorsement) or vice versa (condition low endorsement). The news
+feeds reflecting these conditions were created during the runtime of the experiment based on the initially
+assessed own attitudes of the participants.
+
+An example: If a participant favors the legalization of marihuana, Figure 1 illustrates a news feed that reflects low
+agreement (most messages are incongruent as three of four highlight the dangers of marihuana) and low
+endorsement for his or her own attitude (the three anti-marihuana messages have higher numbers of “likes” than
+the one in favor of legalization).
+
+                                 Figure 1. Example of a News Feed Used in Experiment 1.
+
+
+
+
+Method
+
+Sample
+
+A self-administered online experiment was conducted with 388 German participants, recruited on the campus of
+the University of Passau and from the authors’ volunteer database. Data collection took place in May 2018. This
+and the following experiment were conducted in accordance with the ethical guidelines of the German
+Psychological Association and the Professional Association of German Psychologists (BDP & DGPs, 2016) and with
+the 1964 Declaration of Helsinki (WMA, 2013). Participation was voluntary and participants were fully informed
+and debriefed after the experimental manipulation.
+
+Implausible cases were excluded based on completion times: First, participants who took less than 5 or longer
+than 60 minutes to complete the experiment were dropped. Then, only cases within 2 SD of the resulting mean
+completion time were kept. The final mean completion time was 12.03 minutes (SD = 4.57, Min = 5.15, Max = 28.52).
+The remaining sample comprised 331 participants (231 female; age between 18 and 35 years with M = 22.36 and
+SD = 0.27). An a-priori power analysis with G*Power (Faul et al., 2007) determined that at least 195 participants
+were necessary to achieve a power of 1–β = .95, given α = .05 and a medium sized effect of f² = 0.15 in the later
+described model1.
+Design
+
+A 2×2 between-subjects design with the factors agreement and endorsement was used: For nine topics, participants
+were exposed to either mostly attitudinally congruent (high agreement) or incongruent messages (low agreement),
+and congruent messages displayed either higher (high endorsement) or lower (low endorsement) numbers of “likes”
+than incongruent ones. Participants were exposed to the same condition over all topics. Estimates of public
+opinion for each topic were measured to calculate FCE as dependent variable. The experimental conditions and
+sizes of experimental groups are illustrated in Table 1.
+
+                   Table 1. Attributes of the Displayed News Feeds in the Experimental Conditions in Experiment 1.
+                                                 Low Agreement                                   High Agreement
+                                      1 congruent, 3 incongruent messages             3 congruent, 1 incongruent messages
+            Low Endorsement         Incongruent messages have most “likes”          Incongruent messages have most “likes”
+                                                      N = 94                                          N = 82
+                                     1 congruent, 3 incongruent messages.             3 congruent, 1 incongruent messages
+            High Endorsement         Congruent messages have most “likes”            Congruent messages have most “likes”
+                                                      N = 73                                          N = 82
+            Note. Sizes of experimental groups vary due to exclusion of cases during data cleaning.
+
+
+Materials
+
+News feed topics were selected based on a prior study (Luzsa & Mayr, 2019) which had measured attitudes and
+FCE regarding twenty current topics. Nine topics that had elicited a strong FCE yet had also displayed some
+variance of participants’ own attitudes, that is, which had not evoked unanimous assent or dissent were selected.
+The topics are listed in Table 2.
+
+The news feed messages were based on headlines and teaser texts found on social media accounts and websites
+of German news outlets (e.g., “Der Spiegel”, “Die Welt”). Sixteen texts per topic were used, eight expressing consent
+regarding the topic’s statement (e.g., highlighting advantages of legalization of marihuana), eight expressing
+dissent (e.g., emphasizing the dangers of marihuana). Some example messages are presented in Figure 1. To
+eliminate confounding variables, the assenting and dissenting messages’ characteristics (e.g., word count, use of
+exclamation marks or citations) were – If possible – balanced by rephrasing messages without altering content
+and meaning. In a pre-test, 15 participants rated how strongly they perceived each message as assenting to or
+dissenting from the topic and how likely they would click on it (6-point Likert scales). Four assenting and four
+dissenting messages per topic were selected which had received strong opinion ratings and were moderately likely
+to be clicked on. The number of words in assenting (M = 29.33) and dissenting messages (M = 28.47) was
+approximately equal.
+
+The numbers of “likes” indicating low or high endorsement were similar to those used by Messing and Westwood
+(2014), which were based on actual numbers of “likes” of American Facebook messages: Low endorsement was
+expressed by 100–500 “likes”, high endorsement by 6000–19000. This approach was chosen because these
+numbers have already been successfully used in the cited study. An alternative approach would be to use numbers
+of “likes” observed in German social media. This strategy was employed in the second experiment.
+
+Measures
+
+Prior to news feed presentation, participants indicated their own stance towards each topic (e.g., agreement to
+the statement “Marihuana should be legalized.”) on a 6-point Likert scale (“Strongly agree” to “Strongly disagree”).
+To ensure that the measurements were stable and valid for FCE calculation, attitudes were measured again at the
+end of the experiment. Due to the short re-test interval, the initial statements were not reused. Instead, two
+additional items per topic were formulated (based on existing publicly available questionnaires, e.g., “Personal
+possession of marihuana should not be criminalized.”) and confirmed in a pre-test to be consistent with the initial
+item (all Cronbach’s α > .80). The means of the two items were then used for post-exposure attitude measurement.
+In addition to their own stance towards the topics, participants indicated how interested they were in each topic
+on a 6-point Likert scale (“very interested” to “not at all interested”).
+During news feed presentation, the frequency of participants selecting congruent, incongruent, high and low
+endorsement messages was recorded.
+
+Finally, to calculate FCE, the perceived public opinion was assessed after news feed presentation: For each topic,
+participants were shown the statements previously used for attitude measurement (e.g., “Marihuana should be
+legalized”) and were asked to estimate the percentage of the population in favor of the statement via numerical
+input (0 to 100%).
+
+Procedure
+
+First, participants were informed about voluntariness of participation and the possibility to cancel at any time.
+Then, they gave their consent regarding data privacy. After stating their own attitudes and interest regarding the
+topics, they were presented with the nine news feeds in accordance with their randomly assigned experimental
+condition. The order of the presentation of feeds as well as the order of messages in each feed were randomized.
+Each feed was displayed until the participant selected a message. Afterwards, participants estimated the
+percentage of the population with a positive stance regarding each topic. Then, they answered the post-exposure
+attitude items and gave basic demographic data. Finally, participants were debriefed and informed about the
+experimental manipulation.
+
+Analysis
+
+Data analysis was conducted with GNU R 3.5.2. All data, stimuli and code are available on github
+(https://github.com/RobertLuzsa/false_consensus_2020 ) and upon request to the corresponding author.
+
+Stability of Attitudes. To ensure that the initially measured attitudes were stable and could be used for the
+further analysis, correlations with the post-exposure attitude items were calculated.
+
+Overall False Consensus Effect. First, it was tested whether the topics used in this experiment successfully
+elicited an overall FCE (independent of experimental manipulation). As the participants’ attitude towards topics
+was measured with scales and not with traditional dichotomous questions, FCE was conceptualized as the
+correlation between participants’ own stance towards a topic and their estimated percentage of the public with
+positive stance towards the topic. Positive correlations were expected (i.e., the more positive participants’ attitude
+towards a topic, the larger the estimated percentage of the public with a positive attitude towards the topic).
+
+Effects on False Consensus. For hypothesis testing, an approach that has already been successfully employed in
+a previous study (Luzsa & Mayr, 2019) was used: Traditionally, FCE is operationalized by between-groups
+comparison (Ross et al., 1977). However, for the current experiment, an individual-level measurement appeared
+suitable, as individual-level factors such as participants’ own interest in a topic needed to be considered. Several
+approaches for an individual-level measurement of FCE exist but are debated controversially (de la Haye, 2000;
+Galesic et al., 2013). Therefore, an alternative linear mixed effects modelling approach was employed, using the
+“lme4” and “lmertest” R-packages (Kuznetsova et al., 2017) for model estimation and significance testing 2.
+
+The model predicted participants’ estimate of population percentage that has a positive stance towards a topic.
+First, this outcome was predicted by two random intercepts of the crossed random factors (Baayen et al., 2008)
+participant and topic. By this, baseline differences of estimates between participants (participants may display
+idiosyncratic tendencies to give high or low estimates, independent of topic) and topics (topics may generally lead
+to higher or lower estimates) were taken into account.
+
+Then, FCE was modeled as the effect of participants’ own attitude towards a topic (6-point interval scaled from fully
+negative to fully positive) on the estimated population percentage with positive stance towards the topic. The
+regression coefficient of attitude indicates how strongly own attitudes bias estimates of public opinion: A
+coefficient of 2, for example, would indicate that participants with strong positive attitude (answer 6 on a scale
+from 1 to 6) estimate 12% more of the population having a positive attitude than participants with strong negative
+attitude (answer 1) and 4% more than participants with a weak positive attitude (answer 4). A larger coefficient
+(e.g., 5) would reflect a larger bias of own attitude (e.g., a difference of 30% in estimation between participants
+with strong positive and strong negative attitudes). Thus, the regression weight of attitude is a measure for the
+strength of FCE.
+
+The effects of agreement and endorsement on FCE were then operationalized as interactive terms of the dummy-
+coded factors (with -1 indicating low agreement/endorsement and 1 high agreement/endorsement, respectively)
+and the participants’ own interval-scaled attitudes. For example, the participants were hypothesized to display
+stronger FCE in the high agreement than in the low agreement condition. Therefore, an interaction between the
+factor agreement and participants' attitude on FCE should be found, meaning that in the high agreement condition
+the estimate of public opinion should be more strongly biased in favor of participants’ own attitudes.
+
+Finally, the participants’ age and gender as well as the news feed presentation order were included as control
+variables. All predictors entered were centered on population means in order to reduce variance inflation due to
+the included interactive terms.
+
+Message Selection. The task to click on messages was primarily given to ensure reading of messages, and no
+hypotheses regarding message selection were formulated. Nonetheless, effects of the experimental manipulation
+on message selection were explored. For this, first, the number of attitudinally congruent message choices of each
+participant (e.g., for 3 of 9 topics) was determined. Then, the number expected assuming random selection (e.g.,
+9*3/4 = 6.75 if three of four presented messages were congruent) was subtracted. The resulting value (e.g., -3.75)
+was compared between experimental conditions via 2×2 ANOVA.
+
+Results
+
+Stability of Attitudes
+
+Attitude values are reported in Table 2. For 8 of 9 topics, attitudes before and after experimental manipulation
+were strongly correlated (r from .66 to .89, p < .001). Only the topic “EU integration” displayed a moderately
+positive correlation (r = .42, p < .001). The attitudes were therefore considered stable and were used to calculate
+FCE. An additional analysis that excluded the moderately stable topic "EU integration" led to identical results as an
+analysis of all topics. Therefore, results of the latter are reported.
+
+                Table 2. Descriptive Statistics of Participants' Own Attitudes and False Consensus Indicators in Experiment 1 and 2.
+                                                                   Correlation of own        Population with positive     Population with positive
+                                                                attitude and estimate of      attitude estimated by        attitude estimated by
+                                          Own attitude
+ Topic                                                          population with positive      participants with own        participants with own
+                                                                        attitude              negative attitude (1–3)      positive attitude (4–6)
+                                       Exp. 1       Exp. 2        Exp. 1         Exp. 2        Exp. 1         Exp. 2        Exp. 1       Exp. 2
+                                        3.76          3.68                                      49.90         48.69          40.79        42.29
+ Legalization of marihuana                                        .31***         .29a**
+                                       (1.66)        (1.59)                                    (17.29)       (18.50)        (17.41)      (20.43)
+ Strengthening of traditional           2.86          2.82                                      54.32         57.84          44.57        41.30
+                                                                  .27***        .39***
+ family values                         (1.50)        (1.61)                                    (19.87)       (21.18)        (17.86)      (19.20)
+                                        4.51          4.54                                      71.76         72.63          58.10        65.68
+ Strict punishment for crime                                      .41***        .33***
+                                       (1.05)        (0.99)                                    (15.58)       (16.90)        (17.40)      (22.77)
+                                        4.27          4.34                                      48.38         50.28          39.82        43.19
+ More European unification                                        .17***        .15***
+                                       (1.15)        (1.06)                                    (18.62)       (19.50)        (17.58)      (18.75)
+ More video surveillance in             3.05          3.35                                      50.76         56.19          40.03        42.59
+                                                                  .31***        .35***
+ public places                         (1.48)        (1.50)                                    (18.35)       (20.63)        (17.53)      (16.96)
+ Measures against foreign               2.43          2.61                                      57.76         57.53          43.90        43.45
+                                                                  .34***        .36***
+ cultural infiltration                 (1.38)        (1.49)                                    (15.85)       (19.63)        (19.05)      (19.74)
+ Animal testing of drugs is             3.05          2.81                                      49.20         55.50          38.42        33.00
+                                                                  .32***        .50***
+ necessary                             (1.47)        (1.57)                                    (19.75)       (23.38)        (20.66)      (20.95)
+                                        2.38          2.33                                      52.35         48.25          37.53        37.05
+ Abolishment of dual citizenship                                  .33***        .24***
+                                       (1.43)        (1.48)                                    (16.16)       (23.71)        (19.42)      (18.37)
+ Ban on diesel vehicles in city         4.01          3.76                                      42.54         47.43          37.20        38.01
+                                                                  .14***        .22***
+ centers                               (1.47)        (1.52)                                    (18.03)       (21.70)        (18.44)      (18.95)
+ Note. Values of own attitude refer to attitudes measured before experimental manipulation with mean values between 1 (“fully disagree”)
+ and 6 (“fully agree”) and standard deviations in brackets. For correlations, Bonferroni-Holm adjusted Pearson correlations are reported.
+ Values for population estimates are percentages with standard deviations in brackets.
+ ***p < .001, **p < .01, *p < .05, ap = .07.
+Overall False Consensus Effect
+
+An overall FCE was found for all topics: The more positive the participants’ own attitude towards a topic, the higher
+they estimated the percentage of the population with positive attitude towards it, with correlations from .14 to
+.41. Additionally, to compare overall FCE with studies that employ a group-based FCE measure, the estimated
+percentage of population with positive attitude was compared between participants with own negative (answer
+1–3 on a 6-point scale) vs. own positive (answer 4–6) attitude (see Table 2). Positive FCE values were found for all
+topics, ranging from 14.82% for the topic “Dual citizenship” (52.35% vs. 37.53%) to 5.34% for “Ban on diesel
+vehicles” (42.54% vs 37.20%). FCE values were similar to those reported in literature (e.g., Bauman & Geher, 2002;
+Ross et al., 1977).
+
+Effects on False Consensus
+
+                       Table 3. Linear Mixed Effects Regression on Estimated Percentage of Population in Favor of a Statement.
+                                                        Experiment 1                                            Experiment 2
+                                         Model 0          Model 1             Model 2            Model 0          Model 1            Model 2
+Random Effects (SD)
+Participant                                6.38              5.87               5.87               8.60               7.74             7.40
+Topic                                      8.27              7.21               7.14               8.90               7.12             7.04
+Residual                                  17.72              17.04              16.92             18.61              17.77             17.64
+Intercept (β0)                       47.40*** (2.80)    46.69*** (2.54)   46.68*** (2.52)    48.21*** (3.06)    48.42*** (2.49)   48.34*** (2.46)
+Fixed Main Effects (Centered Bs)
+Own attitude                                            3.63*** (0.37)     3.95*** (0.38)                        4.33*** (0.32)   4.24*** (0.34)
+Age                                                       0.13 (0.14)        0.13 (0.14)                          -0.05 (0.25)      -0.01 (0.25)
+Gender                                                    1.02 (0.98)        1.05 (0.98)                          0.45 (0.76)       0.17 (0.75)
+Presentation order                                        0.18 (0.12)        0.20 (0.12)                          0.06 (0.16)       0.03 (0.16)
+Interest in topic                                                            0.51 (0.28)                                            0.27 (0.36)
+Agreement (1 = high, -1 = low)                                               -0.02 (0.45)                                           -1.08 (0.61)
+Endorsement (1 = high, -1 = low)                                             -0.24 (0.45)                                           -1.07 (0.67)
+Agreement × Endorsement                                                      0.32 (0.45)                                            0.18 (0.66)
+Agreement × Interest                                                         -0.21 (0.27)                                           -0.60 (0.35)
+Endorsement × Interest                                                       -0.04 (0.27)                                           0.11 (0.35)
+Agree. × Endors. × Interest                                                  0.17 (0.27)                                            0.45 (0.35)
+Fixed Interaction Effects with own attitude (Centered Bs)
+Age                                                       0.00 (0.06)        0.01 (0.06)                          -0.17 (0.10)      -0.12 (0.10)
+Gender                                                    0.73 (0.43)        -0.01 (0.44)                         0.17 (0.30)       0.05 (0.30)
+Presentation order                                        0.00 (0.08)        -0.02 (0.08)                         0.07 (0.10)       0.07 (0.10)
+Interest in topic                                                          -0.45** (0.16)                                           -0.01 (0.20)
+Agreement                                                                   0.63** (0.22)                                          0.88** (0.29)
+Endorsement                                                                  0.34 (0.22)                                          -0.82** (0.29)
+Agreement × Endorsement                                                     -0.47* (0.22)                                           0.13 (0.29)
+Agreement × Interest                                                         0.07 (0.16)                                            -0.13 (0.20)
+Endorsement × Interest                                                     -0.47** (0.16)                                           0.19 (0.20)
+Agree. × Endors. × Interest                                                  0.07 (0.16)                                            0.05 (0.20)
+-2LL                                      25874             25626              25586              16437              16245            16208
+χ²(Δ-2LL)                                                   248***             40***                                191***            37***
+Note. All variables are centered on population means. Thus, regression weights illustrate effects of a predictor when all other predictors
+display their respective means. Numbers in brackets are Standard Errors. Dichotomous variables employ sum contrasts; their regression
+weights therefore indicate the difference between levels, with -1 indicating low and +1 indicating high agreement/endorsement.
+N(Experiment 1) = 331; N(Experiment 2) = 207.
+-2LL means -2LogLikelihood.
+***p < .001; **p < .01; *p < .05.
+The left side of Table 3 displays the results of the linear mixed effects modelling for Experiment 1, with model 0 as
+random-intercept-only reference model, model 1 including only control variables, and model 2 as full model with
+all predictors. Fit of the full model was significantly better than fit of model 1 (χ²(14) = 40, p < .001), therefore
+results of the full model are stated.
+
+Firstly, the model confirmed a general FCE by finding estimated public opinion positively correlated with
+participants’ own attitude (β = 3.95, t[2909] = 10.44, p < .001). Figure 2a visualizes FCE by plotting this correlation
+as regression lines for all experimental conditions.
+
+                                                         Figures 2a and 2b. Strength of the False Consensus Effect in Experiments 1 and 2 as a Function of the Factors Agreement and
+                                                                                                 Endorsement, Illustrated as Regression Lines.
+
+                                                                      a) Experiment 1 - Average interest                                                                                             b) Experiment 2
+
+                                                               65                                                                                                                    65
+                                                                            High Endorsement,                                                                                                     High Endorsement,
+                                                                            High Agreement                                                                                                        Agreement
+
+                                                               60           High Endorsement,                                                                                        60           High Endorsement,
+
+
+                                                                                                                      Estimated percentage of population who are in favor of topic
+Estimated percentage of population who are in favor of topic
+
+
+
+
+                                                                            Low Agreement                                                                                                         Disagreement
+
+                                                                            Low Endorsement,                                                                                                      Low Endorsement,
+                                                                            High Agreement                                                                                                        Agreement
+                                                               55                                                                                                                    55
+                                                                            Low Endorsement                                                                                                       Low Endorsement,
+                                                                            Low Agreement                                                                                                         Disagreement
+
+
+                                                               50                                                                                                                    50
+
+
+
+
+                                                               45                                                                                                                    45
+
+
+
+
+                                                               40                                                                                                                    40
+
+
+
+
+                                                               35                                                                                                                    35
+
+
+
+
+                                                               30                                                                                                                    30
+                                                                    Strongly Oppose Some- Some-     Favor Strongly                                                                        Strongly Oppose Some- Some-    Favor Strongly
+                                                                    oppose           what  what            favor                                                                          oppose           what  what           favor
+                                                                                    oppose favor                                                                                                          oppose favor
+
+                                                                           Personal attitude towards topic                                                                                       Personal attitude towards topic
+
+                  Note. Values on the vertical axis are values predicted by the regression model, not observed values. Therefore, no error bars are depicted.
+                                                 Standard Errors for the illustrated regression coefficients are given in Table 2.
+
+
+The positive correlation between own attitude and estimated public opinion, that is, the FCE, was stronger when
+participants were exposed to mostly congruent messages (high agreement) than when exposed to mostly
+incongruent ones (low agreement, β = 0.63, t[2865] = 2.94, p = .004). In Figure 2a, this is indicated by the solid lines,
+representing high agreement, being steeper than the dashed lines that represent low agreement.
+The extent of this effect was moderated by endorsement (β = -0.47, t[2865] = -2.16, p = .031): If congruent messages
+displayed low endorsement, the effect of agreement was evident, and participants who saw mostly congruent
+messages (high agreement) displayed higher FCE than participants who saw mostly incongruent messages (low
+agreement). However, if congruent messages displayed high endorsement, the FCE was not affected by the number
+of congruent messages, that is, the factor agreement (see the difference in steepness between solid and dashed
+lines in case of high and low agreement, represented by black and grey lines, respectively, in Figure 2a).
+
+Additionally, an interactive effect of endorsement and participants’ interest in a topic was found (β = -0.47, t[2908] = -
+2.93, p = .003). To understand this interactive effect, the differences in FCE between the two endorsement
+conditions when the participants’ interest was lowest vs. highest are visualized in Figures 3a and 3b, respectively:
+If participants had low interest in a topic, high endorsement, that is, higher numbers of “likes” for congruent than
+incongruent messages, led to a higher FCE than low endorsement. However, if they showed high interest in a topic,
+this effect reversed, and high endorsement led to a weaker FCE than low endorsement. In contrast to the interactive
+effect of endorsement and participants’ interest on FCE, there was no interactive effect of agreement and interest.
+
+Figures 3a and 3b. Strength of the False Consensus Effect in Experiment 1 as a Function of the Factor Endorsement in Case of Lowest
+                                               (3a) and Highest (3b) Interest Values.
+
+                                                                       a) Experiment 1 - Lowest interest                                                                                    b) Experiment 1 - Highest interest
+
+                                                               65                                                                                                                   65
+
+                                                                            High Endorsement                                                                                                     High Endorsement
+
+
+                                                               60           Low Endorsement                                                                                         60           Low Endorsement
+Estimated percentage of population who are in favor of topic
+
+
+
+
+                                                                                                                     Estimated percentage of population who are in favor of topic
+
+
+
+
+                                                               55                                                                                                                   55
+
+
+
+
+                                                               50                                                                                                                   50
+
+
+
+
+                                                               45                                                                                                                   45
+
+
+
+
+                                                               40                                                                                                                   40
+
+
+
+
+                                                               35                                                                                                                   35
+
+
+
+
+                                                               30                                                                                                                   30
+                                                                    Strongly Oppose Some- Some-     Favor Strongly                                                                       Strongly Oppose Some- Some-     Favor Strongly
+                                                                    oppose           what  what            favor                                                                         oppose           what  what            favor
+                                                                                    oppose favor                                                                                                         oppose favor
+
+                                                                           Personal attitude towards topic                                                                                      Personal attitude towards topic
+
+                Note. The factor agreement did not enter into an interactive effect with interest and is therefore not shown (i.e., graphs reflect the effects of
+                         interest and endorsement). Values on the vertical axis are values predicted by the regression model, not observed values.
+Message Selection
+
+Regarding message selection, participants displayed a novelty or oddity effect (Berlyne & Ditkofksy, 1976) by
+preferentially clicking on the one message that voices a deviant opinion (F[1,327] = 370.91, p < .001).
+
+Discussion
+
+Overall, the experiment confirmed the assumption that agreement and endorsement encountered in social media
+news feeds influence participants’ perception of public opinion. Moreover, it sheds light upon the interplay of
+message contents, numbers of “likes”, and interest in a topic.
+
+It was assumed that exposure to news feeds with mostly attitudinally congruent messages (high agreement) would
+lead participants to estimate a higher percentage of the population to share their views than exposure to mostly
+incongruent messages (low agreement). Indeed, participants displayed a stronger FCE in the high agreement
+condition. This confirms that participants’ estimate of public opinion is influenced by the level of agreement they
+encounter in online messages.
+
+However, the factor agreement played a major role mostly when the congruent messages had less “likes” than the
+incongruent ones (condition low endorsement). In contrast, when congruent messages displayed high endorsement,
+the factor agreement, that is, the number of congruent messages, had no effect on FCE. This result might be
+explained as an effect of resistance and reactance due to participants suspecting a persuasive intention (van Noort
+et al., 2012): When attitudinally congruent messages consistently display high numbers of “likes”, participants
+might get skeptical of the validity of the numbers and suspect that the news feed is manipulated and biased. This
+might lead them to be more critical towards the overall news feed and the message contents. Thus, the effect of
+the number of congruent messages is reduced or disappears. It can be assumed that the simultaneous
+presentation of all four news items per topic has contributed to this effect, as there was a repeating pattern of
+three messages with similar and one with dissimilar “likes” on each page. If this was the case, the observed
+interactive pattern should be eliminated or at least weakened if messages are not presented parallelly but
+sequentially, one per screen, making patterns in “likes” less overt. This was tested and addressed in experiment 2.
+
+While there was no main effect of endorsement on FCE per se, the experiment found a second interactive effect of
+endorsement and the participants’ interest in a topic: Based on Elaboration Likelihood Theory (Petty & Cacioppo,
+1986), “likes” were conceived as peripheral cues which should have a stronger effect when involvement/interest
+was low. Thus, in case of low interest in a topic, participants were expected to take the numbers of “likes” as
+indicators of public opinion, resulting in a positive effect of endorsement on FCE. This effect was confirmed.
+
+In case of high interest in a topic, however, participants were expected to pay less attention to “likes”, with the effect
+of endorsement turning out weaker or disappearing. In fact, the experiment found that the effect did not merely
+disappear but even reversed: As hypothesized, when interest in a topic was low, high endorsement led to a stronger
+FCE than low endorsement. However, when interest was high, high endorsement led to a significantly weaker FCE.
+Thus, the moderating effect of interest was even stronger than expected. A possible explanation for this could be
+seen in an interplay of participants' elaboration style and the numbers of "likes" used in the experiment: In case
+of low interest, participants put little effort into the processing of messages and accept the numbers of “likes” as
+valid indicators of public opinion. However, when they have high interest, they elaborate messages and numbers
+of “likes” more thoroughly and more critically and perhaps question the objectivity and representativeness of the
+seen numbers, therefore adjusting their estimate of public opinion in the opposite direction. This effect might
+have been amplified by the high numbers of “likes” adapted from Messing and Westwood (2014) and based on
+American Facebook profiles. These numbers may have appeared unrealistic to German participants who are
+accustomed to lower numbers in German social media. This might have contributed to the assumed perception
+of a persuasive intent. Therefore, the follow-up experiment will use the alternative strategy described above, with
+numbers of “likes” based on those observed on German news outlets' social media pages.
+
+Two more methodological aspects of the paradigm need to be addressed:
+The paradigm implemented an Echo Chamber in which there is a majority view on the topic and one deviant
+message. However, it is well known that exposure to a mostly homogenous group in which one member states a
+deviant opinion has less impact on judgements than exposure to a completely unanimous group (Asch, 1961). A
+similar effect might have occurred in the present experiment. Therefore, it appears worthwhile to examine the
+effects on FCE when there is unanimity in the Echo Chamber, that is, no message expresses a deviant point of
+view.
+
+Moreover, the experiment used a forced-choice paradigm that required participants to explicitly click on one
+message. While this was based on existing paradigms, it can be criticized for having low ecological validity
+(Knobloch-Westerwick, 2014): When browsing real social media news feeds, users are not forced to follow only
+one link, but might open several links one after another. Thus, it cannot be ruled out that the current experiments’
+specific task might have led participants to process and evaluate the messages and popularity cues differently
+than in a more naturalistic setting. A replication could avoid this by instead letting participants indicate for each
+message how likely they are to click upon it.
+
+All mentioned issues were addressed in Experiment 2.
+
+
+                                                   Experiment 2
+
+Experiment 2 aimed at replicating the findings of Experiment 1 regarding effects of agreement and endorsement
+on FCE3 while testing the robustness of the findings under changed modes of presentation. The paradigm was
+altered as follows: Participants were again exposed to congruent and incongruent messages that again displayed
+either high or low endorsement. However, participants were exposed to only one message per screen and were
+required to indicate how likely they would click on and read this message if it appeared in a social media news
+feed (see Figure 4). Four messages per topic were shown in sequence. In contrast to Experiment 1, no attitudinally
+deviant message was included: In the agreement condition, all messages were in accordance with participants’
+point of view, in the disagreement condition all messages disagreed with participants’ opinion. Endorsement was
+again manipulated via numbers of “likes”: In case of low endorsement, congruent messages had low or incongruent
+high numbers of “likes”, and vice versa for high endorsement. As all messages were either congruent or incongruent,
+participants always saw either high or low numbers of “likes”.
+
+As no deviant message with differing numbers of “likes” was shown, participants needed an anchor (Furnham &
+Boo, 2011) to allow them to judge whether numbers were high or low. For this, four irrelevant messages (topic
+“housing costs”) were presented in the beginning, two of them displaying high, two low numbers of “likes”.
+
+                                Figure 4. Example of a Message Presented in Experiment 2.
+Method
+
+Sample
+
+A sample of 236 participants was recruited via student social media groups and on University of Passau campus
+in December 2018 and January 2019. After data cleaning similar to Experiment 1 and exclusion of participants who
+already took part in Experiment 1, 207 valid cases remained (146 female; age between 18 and 35 years with
+M = 21.69 and SD = 2.75). Again, the criterion of 195 cases for a power of 1–β = .95, f² = 0.15 and α = .05 was met.
+
+Materials. Topics and news feed texts were identical to Experiment 1. The numbers of “likes” to express high or
+low endorsement were now based on actual numbers observed for Facebook messages of several major German
+news outlets (e.g., “Der Spiegel”, “Tagesschau”) over a two-day period. Observed values mostly ranged between 10
+and 1000. Therefore, low endorsement was expressed by 10 to 50 “likes” and high endorsement by 300 to 999 “likes”.
+
+The four irrelevant messages were taken from news articles on the unrelated topic “housing costs”. Two displayed
+low endorsement numbers, two high endorsement numbers.
+
+
+Measures
+
+Attitudes and interest regarding the topics and estimates of public opinion were measured as in Experiment 1.
+Message selection was operationalized as the likelihood to click on messages, measured via a 6-point Likert scale
+(“Would certainly click” to “Would certainly not click”).
+
+
+Design
+
+Again a 2×2 between-subjects design with factors agreement and endorsement was used: Participants either saw
+only congruent (agreement) or only incongruent messages (disagreement), and endorsement was either high
+(congruent messages displaying high or incongruent low numbers of “likes”) or low (incongruent messages
+displaying low or congruent high numbers of “likes”). FCE as dependent variable was calculated as in experiment
+1. The sizes of the experimental groups are given in Table 4.
+
+                  Table 4. Attributes of the Displayed News Feeds in the Experimental Conditions in Experiment 2.
+                                                Low Agreement                                  High Agreement
+                                         4 incongruent messages                          4 congruent messages
+           Low Endorsement         Messages have large numbers of “likes”         Messages have small numbers of “likes”
+                                                  N = 51                                         N = 54
+                                         4 incongruent messages                          4 congruent messages
+           High Endorsement         Messages have small numbers “likes”           Messages have large numbers of “likes”
+                                                  N = 53                                         N = 49
+           Note. Sizes of experimental groups vary due to exclusion of cases during data cleaning.
+
+
+Procedure
+
+As in Experiment 1, participants were first informed about voluntariness of participation, gave consent and then
+stated their own attitudes and interest in topics. Afterwards, the four neutral messages were displayed, two of
+them with high, two with low numbers of “likes”. Then, participants were exposed to the biased news feed, with
+four messages for each of the nine topics displayed sequentially, one per screen. Presentation orders of topics
+and of messages for each topic were randomized, but all messages for one topic were displayed blocked. After
+exposure, participants gave their estimates of public opinion, then answered demographic questions and were
+debriefed.
+
+Analysis
+
+The existence of a general FCE was examined by correlating own attitude and estimated public opinion as in
+Experiment 1. Similarly, the effects of experimental conditions on FCE were analyzed with the same model as used
+in Experiment 1. In addition, an exploratory evaluation of participants’ message selection was conducted. As
+message selection was now indicated as the likelihood to click on an article on a 6-point Likert-scale, a linear mixed
+effect regression model identical to that used for FCE analysis was employed to evaluate effects on message
+selection.
+
+Results
+
+Overall False Consensus
+
+Overall FCE patterns similar to Experiment 1 were observed (see Table 2).
+
+Effects on False Consensus
+
+The effects of agreement and endorsement on FCE are illustrated on the right side of Table 3 and in Figure 2b.
+Results are similar to Experiment 1 but do not reveal the same complex interactive structure: The overall FCE was
+again reflected by the effect of own attitude on estimated public opinion (β = 4.24, t[1819] = 12.39, p < .001). Also
+comparable to Experiment 1, FCE turned out stronger in the agreement condition, that is, when only congruent
+messages were shown than when participants only saw incongruent messages (i.e., disagreement condition,
+β = 0.88, t[1787] = 3.08, p = .002). High endorsement, however, led to a weaker FCE compared to low endorsement
+(β = -0.82, t[1783] = -2.83, p = .005), independent of interest in topic and other factors. No further effects were
+significant.
+
+Message Selection
+
+Participants indicated a higher likelihood to click on messages when the opinion voiced in the message was
+congruent to their own (β = 0.19, t[203] = 4.30, p < .001), when the message had a high number of likes (β = 0.10,
+t[203] = 2.26, p = .025), and when their interest in the messages topic was high (β = 0.04, t[1614] = 2.48, p = .013).
+
+Discussion
+
+Experiment 2 successfully replicated the effect of agreement on FCE: Similar to Experiment 1, if participants saw
+congruent messages, they displayed higher FCE than when exposed to incongruent messages. The size of this
+effect was independent of endorsement, that is, the numbers of “likes” displayed, while in Experiment 1 it was
+stronger when “likes” expressed low endorsement for the participants’ attitude.
+
+The effect of endorsement on FCE, however, could only be partially replicated: In Experiment 1, endorsement
+interacted with participants’ interest in a topic, with high endorsement increasing FCE when interest was low, but
+decreasing FCE when interest was high. In Experiment 2, participants’ FCE was weaker in the high endorsement
+condition than in the low endorsement condition, independent of interest in topic.
+
+Thus, in Experiment 2, the assumption of higher endorsement leading to higher FCE has to be discarded, and
+instead, an inversed effect occurred. An explanation for the reversal of the effect could be that in the second
+experiment, participants might have always been skeptical of “likes” and suspected a persuasive, manipulative
+intention. This more critical view of endorsement might have been caused by the unanimity in numbers of “likes”
+while in Experiment 1 there was always one deviant message with a strongly different number of “likes”. For
+participants with low interest, this observable variance in “likes” might have been enough to accept them as a valid
+indicator of popular opinion, while highly involved participants perceived them as biased. In Experiment 2, “likes”
+were continuously high or low in comparison to the initially displayed anchor values. Therefore, even participants
+with low interest might have realized that the numbers show little variance and are biased, leading them to also
+react with skepticism and lower their estimates of public support, thus weakening FCE. This explanation appears
+in accordance with prior research illustrating that both context of presentation and participants' previous
+experiences affect interpretation of popularity (Haim et al., 2018).
+                                                General Discussion
+
+Evidence for Effects of Online Echo Chambers
+
+Both experiments tested whether online Echo Chambers can influence False Consensus Effect (FCE), that is, how
+strongly individuals overestimate public support for their own opinions. Participants were exposed to biased news
+feeds in which most/all messages were either congruent (high agreement) or incongruent (low agreement) to their
+attitudes and in which higher numbers of “likes” were displayed for congruent (high endorsement) or incongruent
+messages (low endorsement).
+
+Both experiments confirm that exposure to biased online news feeds leads to a more favorably distorted
+perception of public opinions: When participants encounter high agreement, that is, (mostly) attitudinally congruent
+messages in news feeds, they will display a stronger FCE. This occurs independent of participants’ interest for a
+topic, and regardless of mode of presentation and whether there is one message with a deviant opinion or
+complete unanimity. Such an effect was expected, given previous findings regarding links between availability of
+attitudinally (in)congruent information and FCE (Bauman & Geher, 2002; Wojcieszak, 2008). However, the current
+experiments also verify this effect for information in shape of short social media news messages. They
+demonstrate that participants’ perception of public opinion can be distorted by exposure to a biased news feed,
+even if no further interaction (e.g., clicking on links and reading longer texts) occurs. Moreover, the effect of
+agreement suggests that participants tend to accept information expressed in message contents as basis for their
+estimate of public opinion, and that they are less suspicious of biases in message contents than of biases in
+numbers of “likes”.
+
+Regarding the size of effects, the overall dichotomized False Consensus values (see Table 2) are close to the 10%–
+20% traditionally found (Ross et al., 1977). Due to the newness of the paradigm, the effects of agreement and
+endorsement on FCE are more difficult to judge: For example, the interactive effect of 0.88 of agreement in
+experiment 2 means that the effect of own attitude on estimated population opinion increases from 3.36 (4.24–
+0.88) in the disagreement to 5.12 (4.24 + 0.88) in the agreement condition. To compare to previous research, a
+dichotomized FCE value can be calculated, by subtracting the sum of effects for pro attitude (answers 4–6 on the
+Likert-scale) from the sum of contra attitude (answers 1–3). The obtained FCE is 5.28% higher in the agreement
+(15.36%) than the disagreement condition (10.08%). When compared to traditional overall FCE values of 10%–20%,
+this appears as a medium-sized and practically relevant effect of agreement.
+
+Overall, these findings highlight that warnings of negative effects of online Echo Chambers are at least somewhat
+substantiated: Users of online social networks often tend to surround themselves preferably with like-minded
+others (Del Vicario et al., 2016; Quattrociocchi et al., 2016; Schmidt et al., 2017; Zollo et al., 2017) and thus receive
+mostly messages that agree with their own attitudes. The current study suggests that they will most likely conclude
+from this selective exposure to attitudinally congruent messages to high public support for their own points of
+view. This perception of public support and favorably distorted social norm might, in turn, make them more willing
+to act upon their attitudes, giving rise to possibly harmful consequences. For example, persons who hold racist or
+otherwise hostile attitudes might conclude from the approval by their biased social network that large parts of the
+population agree with them, and they might therefore be more likely to put their beliefs into (violent) action.
+
+However, the present study also allows for more optimistic conclusions. While online users appear not to suspect
+biases in agreement expressed in message texts, they appear critical of endorsement indicated by the numbers of
+“likes”: They do not universally interpret high numbers of “likes” for messages congruent to their own attitudes as
+valid evidence for the public agreeing with them, especially if their interest in a topic is high. Instead, they lower
+their estimate of public agreement. Thus, users appear to be wary of biases in numbers of “likes” and should be
+somewhat resistant towards attempts to influence their perception of public opinion via manipulated numbers.
+Moreover, in experiment 1, this critical view of “likes” was stronger when participants reported more interest in a
+topic, and a previous correlative study (Luzsa & Mayr, 2019) found that higher ambiguity tolerance, that is, more
+openness towards ambiguous and contradicting information, leads to weaker FCE. Both factors –
+interest/involvement and ambiguity tolerance – thus appear to increase resilience towards negative effects of Echo
+Chambers. Further research might therefore examine whether and how these resilience factors could be
+strengthened, for example by “nudging” users towards a more critical evaluation of information through website
+design (Kim & Dennis, 2019).
+
+Methodological Considerations
+
+Some limitations of both reported experiments must be addressed:
+
+It is unclear how stable the effects of Echo Chamber induction on FCE are, as FCE was measured directly after
+news feed exposure. A long-term effect appears plausible, given that in real life individuals are exposed to news
+feeds whenever they visit a social networking platform. This could be tested with a repeated measurement design.
+For example, participants could repeatedly take part in discussions in a dedicated online community, where they
+are confronted with news feeds with high or low agreement and endorsement, but can also interact with the
+website in other ways. By measuring FCE repeatedly, the stability of effects and their robustness in a more realistic
+online environment could be tested. Moreover, if additionally other outcomes (e.g., attitudinal strength and
+extremity as more direct indicators of polarization) are measured and users' message selection behavior is
+observed, the interplay between False Consensus, polarization and Echo Chamber formation could be more
+closely examined.
+
+Moreover, in this environment, other operationalizations of participants' involvement with a topic instead of self-
+reported interest could be used, for example by giving tasks with offered rewards. Similarly, such studies would
+also allow for the testing of interventions that try to reduce individuals' biases in online news perception and
+processing, for example via online games (Roozenbeek & van der Linden, 2019).
+
+The second main limitation of the current study is that, due to the experimental approach, only the message
+attributes agreement and endorsement were manipulated. Real social media messages, however, also show
+additional attributes that might influence users, such as sender names and images. Their effects should be
+addressed in future experiments. Attention could also be paid to other types of popularity cues (e.g., how often
+messages were shared or commented on) and whether these display similar effects as “likes”.
+
+Another limitation can be seen in the use of news messages as stimuli. These were employed because FCE was
+measured towards news topics and because news play an import role in social media (Bastos, 2015; Swart et al.,
+2019). However, interaction in social networks is also made up of personal messages and personal narrations.
+Thus, it should be tested whether the current findings can be replicated with more subjectively phrased personal
+messages that express agreement or disagreement regarding a topic. This could also reduce possible
+confoundation that arises from using actual news texts, which, despite being homogenized and pre-tested, can
+still display some unavoidable variance (e.g., differences in linguistic and argumentation style, some texts citing
+public figures).
+
+Furthermore, the experimental conditions can be discussed: Both experiments compared conditions in which the
+majority of messages either voiced opinions congruent or incongruent to subjects’ opinions. This decision was
+made to maximize the power of the experimental manipulation. However, future studies might include a balanced
+condition with equal numbers of congruent and incongruent messages to establish a baseline of FCE values.
+Parallel to this, by using an uneven numbered attitude scale that also allows for a neutral answer, further research
+might also test effects of biased news feeds on participants that indicate no clear pro or contra stances.
+
+Lastly, the current study used a non-representative sample. This, however, does not need to be seen as a
+weakness, as the expected effects were found even in this well-educated and young sample which can be assumed
+to be experienced and critical regarding online contents. Nonetheless, examination in other, more representative
+and international samples seems reasonable as well as additional examination of personal-level variables that
+might influence how strongly biased news feeds affect individuals, for example overall internet skills (van Deursen
+et al., 2016) or information literacy (Çoklar et al., 2017). In the same vein, a bias check might be conducted by
+examining which participants report to have perceived the news feeds as biased, and how this perception
+influences the effects of the news feeds on the participants.
+Despite these limitations, however, the present study offers valuable insights into the effects of online Echo
+Chambers on individuals’ actual perceptions and behavior. Furthermore, the study demonstrates that
+experimental approaches that modify existing paradigms can be successfully used to investigate Echo Chambers
+and uncover their causal effects on outcomes like FCE.
+
+
+                                                        Footnotes
+
+1. The power refers to an F-test for difference in explained variance R² between the full model with 21 predictors
+and the control variables only model with seven predictors (models 1 and 2 in Table 3). As the estimated linear
+mixed effects model uses random intercepts but only fixed slopes, power is approximated via power calculation
+for traditional OLS regression. This serves as conservative lower-boundary approximation of power, as in case of
+fixed slopes, mixed effect models generally have more power than OLS (Snijders, 2005).
+
+2. In “lmertest”, for significance testing, degrees of freedom are approximated via Satterthwaite's approximation.
+
+3. Experiment 2 examined participants’ willingness to share attitudinally congruent messages with their social
+network contacts as an additional dependent variable. However, no effects were found. The measurement took
+place at the end of the experiment and did not interfere with the other measurements. As the findings are not
+informative with respect to the central purpose of Experiment 2, they are not discussed in further detail.
+
+
+                                                       References
+
+Ajzen, I., & Fishbein, M. (1977). Attitude-behavior relations: A theoretical analysis and review of empirical
+research. Psychological Bulletin, 84(5), 888–918. https://doi.org/10.1037/0033-2909.84.5.888
+
+Allcott, H., & Gentzkow, M. (2017). Social media and fake news in the 2016 election. Journal of Economic
+Perspectives, 31(2), 211–236. https://doi.org/10.1257/jep.31.2.211
+
+Asch, S. E. (1961). Effects of group pressure upon the modification and distortion of judgments. In M. Henle (Ed.),
+Documents of gestalt psychology (pp. 222–236). University of California Press.
+
+Baayen, R. H., Davidson, D. J., & Bates, D. M. (2008). Mixed-effects modeling with crossed random effects for
+subjects and items. Journal of Memory and Language, 59(4), 390–412. https://doi.org/10.1016/j.jml.2007.12.005
+
+Barberá, P., Jost, J. T., Nagler, J., Tucker, J. A., & Bonneau, R. (2015). Tweeting from left to right: Is online political
+communication more than an echo chamber? Psychological Science, 26(10), 1531–1542.
+https://doi.org/10.1177/0956797615594620
+
+Bastos, M. T. (2015). Shares, pins, and tweets: News readership from daily papers to social media. Journalism
+Studies, 16(3), 305–325. https://doi.org/10.1080/1461670X.2014.891857
+
+Bauman, K. P., & Geher, G. (2002). We think you agree: The detrimental impact of the false consensus effect on
+behavior. Current Psychology, 21(4), 293–318. https://doi.org/10.1007/s12144-002-1020-0
+
+BDP, & DGPs. (2016). Berufsethische Richtlinien des Berufsverbands Deutscher Psychologinnen und Psychologen und
+der Deutschen Gesellschaft für Psychologie [Professional Ethical Guidelines of the Professional Association of
+German       Psychologists       e.V.      and       the      German        Psychological     Society      e.V.].
+https://www.dgps.de/fileadmin/documents/Empfehlungen/ber-foederation-2016.pdf
+
+Beam, M. A. (2014). Automating the news: How personalized news recommender system design choices impact
+news reception. Communication Research, 41(8), 1019–1041. https://doi.org/10.1177/0093650213497979
+
+Berlyne, D. E., & Ditkofksy, J. (1976). Effects of novelty and oddity on visual selective attention. British Journal of
+Psychology, 67(2), 175–180. https://doi.org/10.1111/j.2044-8295.1976.tb01508.x
+Bruns, A. (2017, September 14). Echo chamber? What echo chamber? Reviewing the evidence [Poster presentation].
+6th Biennial Future of Journalism Conference (FOJ17), Cardiff. https://eprints.qut.edu.au/113937/
+
+Chang, Y.-T., Yu, H., & Lu, H.-P. (2015). Persuasive messages, popularity cohesion, and message diffusion in social
+media marketing. Journal of Business Research, 68(4), 777–782. https://doi.org/10.1016/j.jbusres.2014.11.027
+
+Cinelli, M., Brugnoli, E., Schmidt, A. L., Zollo, F., Quattrociocchi, W., & Scala, A. (2020). Selective exposure shapes
+the Facebook news diet. PLoS ONE, 15(3), Article e0229129. https://doi.org/10.1371/journal.pone.0229129
+
+Çoklar, A. N., Yaman, N. D., & Yurdakul, I. K. (2017). Information literacy and digital nativity as determinants of
+online information search strategies. Computers in Human Behavior, 70, 1–9.
+https://doi.org/10.1016/j.chb.2016.12.050
+
+Cotton, J. L., & Hieser, R. A. (1980). Selective exposure to information and cognitive dissonance. Journal of
+Research in Personality, 14(4), 518–527. https://doi.org/10.1016/0092-6566(80)90009-4
+
+de la Haye, A.-M. (2000). A methodological note about the measurement of the false-consensus effect. European
+Journal of Social Psychology, 30(4), 569–581. https://doi.org/10.1002/1099-0992(200007/08)30:4<569::AID-
+EJSP8>3.0.CO;2-V
+
+Del Vicario, M., Bessi, A., Zollo, F., Petroni, F., Scala, A., Caldarelli, G., Stanley, H. E., & Quattrociocchi, W. (2016).
+The spreading of misinformation online. PNAS: Proceedings of the National Academy of Sciences of the United States
+of America, 113(3), 554–559. https://doi.org/10.1073/pnas.1517441113
+
+Dubois, E., & Blank, G. (2018). The echo chamber is overstated: The moderating effect of political interest and
+diverse media. Information, Communication & Society, 21(5), 729–745.
+https://doi.org/10.1080/1369118X.2018.1428656
+
+Duggan, M., & Smith, A. (2016). The political environment on social media. Pew Research Center.
+https://www.pewresearch.org/internet/2016/10/25/the-political-environment-on-social-media/
+
+Dvir-Gvirsman, S. (2019). I like what I see: Studying the influence of popularity cues on attention allocation and
+news selection. Information, Communication & Society, 22(2), 286–305.
+https://doi.org/10.1080/1369118X.2017.1379550
+
+Faul, F., Erdfelder, E., Lang, A.-G., & Buchner, A. (2007). G*Power 3: A flexible statistical power analysis program
+for the social, behavioral, and biomedical sciences. Behavior Research Methods, 39(2), 175–191.
+https://doi.org/10.3758/BF03193146
+
+Fishbein, M. (1976). A behavior theory approach to the relations between beliefs about an object and the
+attitude toward the object. In U. H. Funke (Ed.), Mathematical models in marketing: A collection of abstracts (pp. 87–
+88). Springer. https://doi.org/10.1007/978-3-642-51565-1_25
+
+Furnham, A., & Boo, H. C. (2011). A literature review of the anchoring effect. The Journal of Socio-Economics, 40(1),
+35–42. https://doi.org/10.1016/j.socec.2010.10.008
+
+Galesic, M., Olsson, H., & Rieskamp, J. (2013). False consensus about false consensus. In M. Knauff, M. Pauen, N.
+Sebanz, & I. Wachsmuth (Eds.), Proceedings of the 35th Annual Conference of the Cognitive Science Society (pp. 472–
+476). http://csjarchive.cogsci.rpi.edu/Proceedings/2013/papers/0109/paper0109.pdf
+
+Giese, H., Neth, H., Moussaïd, M., Betsch, C., & Gaissmaier, W. (2020). The echo in flu-vaccination echo chambers:
+Selective attention trumps social influence. Vaccine, 38(8), 2070–2076.
+https://doi.org/10.1016/j.vaccine.2019.11.038
+Gilbert, E., Bergstrom, T., & Karahalios, K. (2009). Blogs are echo chambers: Blogs are echo chambers. In
+Proceedings of the 42nd Hawaii International Conference on System Sciences (HICSS’09). IEEE.
+https://doi.org/10.1109/HICSS.2009.91
+
+Grömping, M. (2014). ‘Echo chambers’: Partisan Facebook groups during the 2014 Thai election. Asia Pacific Media
+Educator, 24(1), 39–59. https://doi.org/10.1177/1326365X14539185
+
+Guess, A., Nagler, J., & Tucker, J. (2019). Less than you think: Prevalence and predictors of fake news
+dissemination on Facebook. Science Advances, 5(1), Article eaau4586. https://doi.org/10.1126/sciadv.aau4586
+
+Guest, E. (2018). (Anti-)echo chamber participation: Examining contributor activity beyond the chamber. In
+SMSociety ’18: Proceedings of the 9th International Conference on Social Media and Society (pp. 301–304). ACM.
+https://doi.org/10.1145/3217804.3217933
+
+Guo, L., A. Rohde, J., & Wu, H. D. (2020). Who is responsible for Twitter’s echo chamber problem? Evidence from
+2016 U.S. election networks. Information, Communication & Society, 23(2), 234–251.
+https://doi.org/10.1080/1369118X.2018.1499793
+
+Haim, M., Kümpel, A. S., & Brosius, H.-B. (2018). Popularity cues in online media: A review of conceptualizations,
+operationalizations, and general effects. SCM: Studies in Communication and Media, 7(2), 186–207.
+https://doi.org/10.5771/2192-4007-2018-2-58
+
+Hart, W., Albarracín, D., Eagly, A. H., Brechan, I., Lindberg, M. J., & Merrill, L. (2009). Feeling validated versus being
+correct: A meta-analysis of selective exposure to information. Psychological Bulletin, 135(4), 555–588.
+https://doi.org/10.1037/a0015701
+
+Kim, A., & Dennis, A. R. (2019). Says who? The effects of presentation format and source rating on fake news in
+social media. MIS Quarterly, 43(3), 1025–1039. https://doi.org/10.25300/MISQ/2019/15188
+
+Knobloch-Westerwick, S. (2014). Choice and preference in media use: Advances in selective exposure theory and
+research. Routledge.
+
+Knobloch-Westerwick, S. & Meng, J. (2009). Looking the other way: Selective exposure to attitude-consistent and
+counterattitudinal political information. Communication Research, 36(3), 426–448.
+https://doi.org/10.1177/0093650209333030
+
+Kuznetsova, A., Brockhoff, P. B., & Christensen, R. H. B. (2017). lmerTest package: Tests in linear mixed effects
+models. Journal of Statistical Software, 82(13). https://doi.org/10.18637/jss.v082.i13
+
+Lee, E.-J. & Jang, Y. J. (2010). What do others’ reactions to news on Internet portal sites tell us? Effects of
+presentation format and readers’ need for cognition on reality perception. Communication Research, 37(6), 825–
+846. https://doi.org/10.1177/0093650210376189
+
+Liska, A. E. (1984). A critical examination of the causal structure of the Fishbein/Ajzen attitude-behavior model.
+Social Psychology Quarterly, 47(1), 61–74. https://doi.org/10.2307/3033889
+
+Luzsa, R. & Mayr, S. (2019). Links between users' online social network homogeneity, ambiguity tolerance, and
+estimated public support for own opinions. Cyberpsychology, Behavior and Social Networking, 22(5), 325-329.
+https://doi.org/10.1089/cyber.2018.0550
+
+McPherson, M., Smith-Lovin, L., & Cook, J. M. (2001). Birds of a feather: Homophily in social networks. Annual
+Review of Sociology, 27, 415–444. https://doi.org/10.1146/annurev.soc.27.1.415
+Messing, S., & Westwood, S. J. (2014). Selective exposure in the age of social media: Endorsements trump
+partisan source affiliation when selecting news online. Communication Research, 41(8), 1042–1063.
+https://doi.org/10.1177/0093650212466406
+
+Nguyen, A., & Vu, H. T. (2019). Testing popular news discourse on the “echo chamber” effect: Does political
+polarisation occur among those relying on social media as their primary politics news source? First Monday, 24(6).
+https://doi.org/10.5210/fm.v24i6.9632
+
+Pariser, E. (2011). The filter bubble: What the Internet is hiding from you. Penguin.
+
+Peter, C., Rossmann, C., & Keyling, T. (2014). Exemplification 2.0: Roles of direct and indirect social information in
+conveying health messages through social network sites. Journal of Media Psychology: Theories, Methods, and
+Applications, 26(1), 19–28. https://doi.org/10.1027/1864-1105/a000103
+
+Petty, R. E., & Cacioppo, J. T. (1986). The elaboration likelihood model of persuasion. Advances in Experimental
+Social Psychology, 19, 123–205. https://doi.org/10.1016/S0065-2601(08)60214-2
+
+Porten-Cheé, P., Haßler, J., Jost, P., Eilders, C., & Maurer, M. (2018). Popularity cues in online media: Theoretical
+and methodological perspectives. Studies in Communication and Media, 7(2), 208–230.
+https://doi.org/10.5771/2192-4007-2018-2-80
+
+Quattrociocchi, W., Scala, A., & Sunstein, C. R. (2016). Echo chambers on Facebook. SSRN.
+https://dx.doi.org/10.2139/ssrn.2795110
+
+Roozenbeek, J., & van der Linden, S. (2019). The fake news game: Actively inoculating against the risk of
+misinformation. Journal of Risk Research, 22(5), 570–580. https://doi.org/10.1080/13669877.2018.1443491
+
+Ross, L., Greene, D., & House, P. (1977). The “false consensus effect”: An egocentric bias in social perception and
+attribution processes. Journal of Experimental Social Psychology, 13(3), 279–301. https://doi.org/10.1016/0022-
+1031(77)90049-X
+
+Schmidt, A. L., Zollo, F., Del Vicario, M., Bessi, A., Scala, A., Caldarelli, G., Stanley, H. E., & Quattrociocchi, W. (2017).
+Anatomy of news consumption on Facebook. PNAS: Proceedings of the National Academy of Sciences of the United
+States, 114(12), 3035–3039. https://doi.org/10.1073/pnas.1617052114
+
+Sears, D. O., & Freedman, J. L. (1967). Selective exposure to information: A critical review. Public Opinion
+Quarterly, 31(2), 194–213. https://doi.org/10.1086/267513
+
+Snijders, T. A. B. (2005). Power and sample size in multilevel modeling. In B. S. Everitt & D. C. Howell (Eds.),
+Encyclopedia of statistics in behavioral science (pp. 1570–1573). Wiley.
+
+Sunstein, C. R. (2001). Echo chambers: Bush v. Gore, impeachment, and beyond. Princeton University Press.
+
+Swart, J., Peters, C., & Broersma, M. (2019). Sharing and discussing news in private social media groups: The
+social function of news and current affairs in location-based, work-oriented and leisure-focused communities.
+Digital Journalism, 7(2), 187–205. https://doi.org/10.1080/21670811.2018.1465351
+
+van Deursen, A. J. A. M., Helsper, E. J., & Eynon, R. (2016). Development and validation of the Internet Skills Scale
+(ISS). Information, Communication & Society, 19(6), 804–823. https://doi.org/10.1080/1369118X.2015.1078834
+
+van Noort, G., Antheunis, M. L., & van Reijmersdal, E. A. (2012). Social connections and the persuasiveness of viral
+campaigns in social network sites: Persuasive intent as the underlying mechanism. Journal of Marketing
+Communications, 18(1), 39–53. https://doi.org/10.1080/13527266.2011.620764
+Wason, P. C. (1968). Reasoning about a rule. Quarterly Journal of Experimental Psychology, 20(3), 273–281.
+https://doi.org/10.1080/14640746808400161
+
+Williams, H. T. P., McMurray, J. R., Kurz, T., & Lambert, F. H. (2015). Network analysis reveals open forums and
+echo chambers in social media discussions of climate change. Global Environmental Change, 32, 126–138.
+https://doi.org/10.1016/j.gloenvcha.2015.03.006
+
+WMA. (2013). WMA Declaration of Helsinki—Ethical principles for medical research involving human subjects.
+https://www.wma.net/policies-post/wma-declaration-of-helsinki-ethical-principles-for-medical-research-
+involving-human-subjects/
+
+Wojcieszak, M. (2008). False consensus goes online: Impact of ideologically homogeneous groups on false
+consensus. Public Opinion Quarterly, 72(4), 781–791. https://doi.org/10.1093/poq/nfn056
+
+Zollo, F., Bessi, A., Del Vicario, M., Scala, A., Caldarelli, G., Shekhtman, L., Havlin, S., & Quattrociocchi, W. (2017).
+Debunking in a world of tribes. PLoS ONE, 12(7), Article e0181821. https://doi.org/10.1371/journal.pone.0181821
+
+
+
+
+Correspondence to:
+Robert Luzsa
+Universität Passau
+Dr.-Hans-Kapfinger-Str. 14B
+94032 Passau
+Germany
+Email: robert.luzsa(at)uni-passau.de
+
+
+
+Editorial record: First submission received on July 1, 2019. Revisions received on July 18, 2020 and December 24, 2020.
+Accepted for publication on January 11, 2021.
+Editor in charge: Kristian Daneback
+
+
+
+
+                                                   About Authors
+
+Dr. Robert Luzsa (Dr., University of Passau) is postdoctoral research associate at the Chair of Psychology and
+Human-Machine Interaction at the University of Passau. His work is devoted to applied aspects of human-machine
+interaction, with a focus on cognitive biases and online behavior.
+
+Prof. Dr. Susanne Mayr (Dr., Heinrich Heine University Düsseldorf) is full professor of Psychology and Human-
+Machine Interaction at the University of Passau. Her work is devoted to topics in human-machine interaction and
+cognitive psychology.
+
+
+
+  © 2007-2021 Cyberpsychology: Journal of Psychosocial Research on Cyberspace | ISSN: 1802-7962 Faculty of
+                        Social Studies, Masaryk University | Contact | Editor: David Smahel
+

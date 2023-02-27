@@ -1,0 +1,1044 @@
+                         Fake News Detection on Social Media:
+                              A Data Mining Perspective
+
+                    Kai Shu† , Amy Sliva‡ , Suhang Wang† , Jiliang Tang \ , and Huan Liu†
+                     †
+                     Computer Science & Engineering, Arizona State University, Tempe, AZ, USA
+                                   ‡
+                                     Charles River Analytics, Cambridge, MA, USA
+                 \
+                   Computer Science & Engineering, Michigan State University, East Lansing, MI, USA
+                                    †
+                                        {kai.shu,suhang.wang,huan.liu}@asu.edu,
+                                          ‡
+                                              asliva@cra.com, \ tangjili@msu.edu
+
+ ABSTRACT                                                         on, and discuss the news with friends or other readers on
+                                                                  social media. For example, 62 percent of U.S. adults get
+ Social media for news consumption is a double-edged sword.
+                                                                  news on social media in 2016, while in 2012, only 49 per-
+ On the one hand, its low cost, easy access, and rapid dissem-
+                                                                  cent reported seeing news on social media1 . It was also
+ ination of information lead people to seek out and consume
+                                                                  found that social media now outperforms television as the
+ news from social media. On the other hand, it enables the
+                                                                  major news source2 . Despite the advantages provided by
+ wide spread of “fake news”, i.e., low quality news with in-
+                                                                  social media, the quality of news on social media is lower
+ tentionally false information. The extensive spread of fake
+                                                                  than traditional news organizations. However, because it
+ news has the potential for extremely negative impacts on
+                                                                  is cheap to provide news online and much faster and easier
+ individuals and society. Therefore, fake news detection on
+                                                                  to disseminate through social media, large volumes of fake
+ social media has recently become an emerging research that
+                                                                  news, i.e., those news articles with intentionally false infor-
+ is attracting tremendous attention. Fake news detection
+                                                                  mation, are produced online for a variety of purposes, such
+ on social media presents unique characteristics and chal-
+                                                                  as financial and political gain. It was estimated that over 1
+ lenges that make existing detection algorithms from tradi-
+                                                                  million tweets are related to fake news “Pizzagate”3 by the
+ tional news media ineffective or not applicable. First, fake
+                                                                  end of the presidential election. Given the prevalence of this
+ news is intentionally written to mislead readers to believe
+                                                                  new phenomenon, “Fake news” was even named the word of
+ false information, which makes it difficult and nontrivial to
+                                                                  the year by the Macquarie dictionary in 2016.
+ detect based on news content; therefore, we need to include
+ auxiliary information, such as user social engagements on        The extensive spread of fake news can have a serious nega-
+ social media, to help make a determination. Second, ex-          tive impact on individuals and society. First, fake news can
+ ploiting this auxiliary information is challenging in and of     break the authenticity balance of the news ecosystem. For
+ itself as users’ social engagements with fake news produce       example, it is evident that the most popular fake news was
+ data that is big, incomplete, unstructured, and noisy. Be-       even more widely spread on Facebook than the most pop-
+ cause the issue of fake news detection on social media is both   ular authentic mainstream news during the U.S. 2016 pres-
+ challenging and relevant, we conducted this survey to fur-       ident election4 . Second, fake news intentionally persuades
+ ther facilitate research on the problem. In this survey, we      consumers to accept biased or false beliefs. Fake news is
+ present a comprehensive review of detecting fake news on         usually manipulated by propagandists to convey political
+ social media, including fake news characterizations on psy-      messages or influence. For example, some report shows that
+ chology and social theories, existing algorithms from a data     Russia has created fake accounts and social bots to spread
+ mining perspective, evaluation metrics and representative        false stories5 . Third, fake news changes the way people in-
+ datasets. We also discuss related research areas, open prob-     terpret and respond to real news. For example, some fake
+ lems, and future research directions for fake news detection     news was just created to trigger people’s distrust and make
+ on social media.                                                 them confused, impeding their abilities to differentiate what
+                                                                  is true from what is not6 . To help mitigate the negative ef-
+                                                                  fects caused by fake news–both to benefit the public and
+ 1.   INTRODUCTION                                                the news ecosystem–It’s critical that we develop methods to
+ As an increasing amount of our lives is spent interacting        automatically detect fake news on social media.
+ online through social media platforms, more and more peo-        1
+ ple tend to seek out and consume news from social media            http://www.journalism.org/2016/05/26/news-use-across-
+                                                                  social-media-platforms-2016/
+ rather than traditional news organizations. The reasons for      2
+                                                                    http://www.bbc.com/news/uk-36528256
+ this change in consumption behaviors are inherent in the         3
+                                                                    https://en.wikipedia.org/wiki/Pizzagate conspiracy theory
+ nature of these social media platforms: (i) it is often more     4
+                                                                    https://www.buzzfeed.com/craigsilverman/viral-
+ timely and less expensive to consume news on social media        fake-election-news-outperformed-real-news-on-
+ compared with traditional news media, such as newspapers         facebook?utm term=.nrg0WA1VP0#.gjJyKapW5y
+ or television; and (ii) it is easier to further share, comment   5
+                                                                    http://time.com/4783932/inside-russia-social-media-war-
+                                                                  america/
+                                                                  6
+                                                                    https://www.nytimes.com/2016/11/28/opinion/fake-
+                                                                  news-and-the-internet-shell-game.html? r=0
+
+
+
+
+SIGKDD Explorations                                 Volume 19, Issue 1                                               Page 22
+ Detecting fake news on social media poses several new and           • We discuss the narrow and broad definitions of fake
+ challenging research problems. Though fake news itself is             news that cover most existing definitions in the litera-
+ not a new problem–nations or groups have been using the               ture and further present the unique characteristics of
+ news media to execute propaganda or influence operations              fake news on social media and its implications com-
+ for centuries–the rise of web-generated news on social me-            pared with the traditional media;
+ dia makes fake news a more powerful force that challenges
+ traditional journalistic norms. There are several character-        • We give an overview of existing fake news detection
+ istics of this problem that make it uniquely challenging for          methods with a principled way to group representative
+ automated detection. First, fake news is intentionally writ-          methods into different categories; and
+ ten to mislead readers, which makes it nontrivial to detect
+                                                                     • We discuss several open issues and provide future di-
+ simply based on news content. The content of fake news is
+                                                                       rections of fake news detection in social media.
+ rather diverse in terms of topics, styles and media platforms,
+ and fake news attempts to distort truth with diverse lin-        The remainder of this survey is organized as follows. In
+ guistic styles while simultaneously mocking true news. For       Section 2, we present the definition of fake news and char-
+ example, fake news may cite true evidence within the in-         acterize it by comparing different theories and properties in
+ correct context to support a non-factual claim [22]. Thus,       both traditional and social media. In Section 3, we continue
+ existing hand-crafted and data-specific textual features are     to formally define the fake news detection problem and sum-
+ generally not sufficient for fake news detection. Other aux-     marize the methods to detect fake news. In Section 4, we
+ iliary information must also be applied to improve detec-        discuss the datasets and evaluation metrics used by existing
+ tion, such as knowledge base and user social engagements.        methods. We briefly introduce areas related to fake news de-
+ Second, exploiting this auxiliary information actually leads     tection on social media in Section 5. Finally, we discuss the
+ to another critical challenge: the quality of the data itself.   open issues and future directions in Section 6 and conclude
+ Fake news is usually related to newly emerging, time-critical    this survey in Section 7.
+ events, which may not have been properly verified by exist-
+ ing knowledge bases due to the lack of corroborating ev-
+ idence or claims. In addition, users’ social engagements         2. FAKE NEWS CHARACTERIZATION
+ with fake news produce data that is big, incomplete, un-         In this section, we introduce the basic social and psychologi-
+ structured, and noisy [79]. Effective methods to differenti-     cal theories related to fake news and discuss more advanced
+ ate credible users, extract useful post features and exploit     patterns introduced by social media. Specifically, we first
+ network interactions are an open area of research and need       discuss various definitions of fake news and differentiate re-
+ further investigations.                                          lated concepts that are usually misunderstood as fake news.
+ In this article, we present an overview of fake news detection   We then describe different aspects of fake news on tradi-
+ and discuss promising research directions. The key motiva-       tional media and the new patterns found on social media.
+ tions of this survey are summarized as follows:
+                                                                  2.1 Definitions of Fake News
+    • Fake news on social media has been occurring for sev-       Fake news has existed for a very long time, nearly the same
+      eral years; however, there is no agreed upon definition     amount of time as news began to circulate widely after the
+      of the term “fake news”. To better guide the future         printing press was invented in 14397 . However, there is no
+      directions of fake news detection research, appropriate     agreed definition of the term “fake news”. Therefore, we first
+      clarifications are necessary.                               discuss and compare some widely used definitions of fake
+                                                                  news in the existing literature, and provide our definition of
+    • Social media has proved to be a powerful source for         fake news that will be used for the remainder of this survey.
+      fake news dissemination. There are some emerging            A narrow definition of fake news is news articles that are in-
+      patterns that can be utilized for fake news detection       tentionally and verifiably false and could mislead readers [2].
+      in social media. A review on existing fake news detec-      There are two key features of this definition: authenticity
+      tion methods under various social media scenarios can       and intent. First, fake news includes false information that
+      provide a basic understanding on the state-of-the-art       can be verified as such. Second, fake news is created with
+      fake news detection methods.                                dishonest intention to mislead consumers. This definition
+                                                                  has been widely adopted in recent studies [57; 17; 62; 41].
+    • Fake news detection on social media is still in the early   Broader definitions of fake news focus on the either authen-
+      age of development, and there are still many challeng-      ticity or intent of the news content. Some papers regard
+      ing issues that need further investigations. It is neces-   satire news as fake news since the contents are false even
+      sary to discuss potential research directions that can      though satire is often entertainment-oriented and reveals its
+      improve fake news detection and mitigation capabili-        own deceptiveness to the consumers [67; 4; 37; 9]. Other
+      ties.                                                       literature directly treats deceptive news as fake news [66],
+                                                                  which includes serious fabrications, hoaxes, and satires.
+ To facilitate research in fake news detection on social me-
+ dia, in this survey we will review two aspects of the fake       In this article, we use the narrow definition of fake news.
+ news detection problem: characterization and detection. As       Formally, we state this definition as follows,
+ shown in Figure 1, we will first describe the background of
+ the fake news detection problem using theories and prop-         Definition 1 (Fake News) Fake news is a news article
+ erties from psychology and social studies; then we present       that is intentionally and verifiably false.
+ the detection approaches. Our major contributions of this        7
+                                                                    http://www.politico.com/magazine/story/2016/12/fake-
+ survey are summarized as follows:                                news-history-long-violent-214535
+
+
+
+
+SIGKDD Explorations                                 Volume 19, Issue 1                                               Page 23
+                            Figure 1: Fake news on social media: from characterization to detection.
+
+
+                                                                   to reduce misperceptions, but sometimes may even increase
+ The reasons for choosing this narrow definition are three-        the misperceptions, especially among ideological groups [59].
+ folds. First, the underlying intent of fake news provides both
+ theoretical and practical value that enables a deeper under-
+ standing and analysis of this topic. Second, any techniques       Social Foundations of the Fake News Ecosystem.
+ for truth verification that apply to the narrow conception        Considering the entire news consumption ecosystem, we can
+ of fake news can also be applied to under the broader defi-       also describe some of the social dynamics that contribute to
+ nition. Third, this definition is able to eliminate the ambi-     the proliferation of fake news. Prospect theory describes
+ guities between fake news and related concepts that are not       decision making as a process by which people make choices
+ considered in this article. The following concepts are not        based on the relative gains and losses as compared to their
+ fake news according to our definition: (1) satire news with       current state [39; 81]. This desire for maximizing the reward
+ proper context, which has no intent to mislead or deceive         of a decision applies to social gains as well, for instance,
+ consumers and is unlikely to be mis-perceived as factual;         continued acceptance by others in a user’s immediate social
+ (2) rumors that did not originate from news events; (3) con-      network. As described by social identity theory [76; 77] and
+ spiracy theories, which are difficult verify as true or false;    normative influence theory [3; 40], this preference for social
+ (4) misinformation that is created unintentionally; and (5)       acceptance and affirmation is essential to a person’s identity
+ hoaxes that are only motivated by fun or to scam targeted         and self-esteem, making users likely to choose “socially safe”
+ individuals.                                                      options when consuming and disseminating news informa-
+                                                                   tion, following the norms established in the community even
+ 2.2 Fake News on Traditional News Media                           if the news being shared is fake news.
+                                                                   This rational theory of fake news interactions can be mod-
+ Fake news itself is not a new problem. The media ecology
+                                                                   eled from an economic game theoretical perspective [26] by
+ of fake news has been changing over time from newsprint to
+                                                                   formulating the news generation and consumption cycle as a
+ radio/television and, recently, online news and social media.
+                                                                   two-player strategy game. For explaining fake news, we as-
+ We denote “traditional fake news” as the fake news problem
+                                                                   sume there are two kinds of key players in the information
+ before social media had important effects on its production
+                                                                   ecosystem: publisher and consumer. The process of news
+ and dissemination. Next, we will describe several psycholog-
+                                                                   publishing is modeled as a mapping from original signal s
+ ical and social science foundations that describe the impact
+                                                                   to resultant news report a with an effect of distortion bias
+ of fake news at both the individual and social information                   b
+ ecosystem levels.                                                            → a, where b = [−1, 0, 1] indicates [lef t, no, right]
+                                                                   b, i.e., s −
+                                                                   biases take effects on news publishing process. Intuitively,
+ Psychological Foundations of Fake News. Humans are                this is capturing the degree to which a news article may be
+ naturally not very good at differentiating between real and       biased or distorted to produce fake news. The utility for
+ fake news. There are several psychological and cognitive          the publisher stems from two perspectives: (i) short-term
+ theories that can explain this phenomenon and the influen-        utility: the incentive to maximize profit, which is positively
+ tial power of fake news. Traditional fake news mainly tar-        correlated with the number of consumers reached; (ii) long-
+ gets consumers by exploiting their individual vulnerabilities.    term utility: their reputation in terms of news authenticity.
+ There are two major factors which make consumers natu-            Utility of consumers consists of two parts: (i) information
+ rally vulnerable to fake news: (i) Naı̈ve Realism: consumers      utility: obtaining true and unbiased information (usually ex-
+ tend to believe that their perceptions of reality are the only    tra investment cost needed); (ii) psychology utility: receiving
+ accurate views, while others who disagree are regarded as         news that satisfies their prior opinions and social needs, e.g.,
+ uninformed, irrational, or biased [92]; and (ii) Confirmation     confirmation bias and prospect theory. Both publisher and
+ Bias: consumers prefer to receive information that confirms       consumer try to maximize their overall utilities in this strat-
+ their existing views [58]. Due to these cognitive biases inher-   egy game of the news consumption process. We can capture
+ ent in human nature, fake news can often be perceived as real     the fact that fake news happens when the short-term utility
+ by consumers. Moreover, once the misperception is formed,         dominates a publisher’s overall utility and psychology utility
+ it is very hard to correct it. Psychology studies shows that      dominates the consumer’s overall utility, and an equilibrium
+ correction of false information (e.g., fake news) by the pre-     is maintained. This explains the social dynamics that lead
+ sentation of true, factual information is not only unhelpful      to an information ecosystem where fake news can thrive.
+
+
+
+
+SIGKDD Explorations                                 Volume 19, Issue 1                                                 Page 24
+ 2.3 Fake News on Social Media                                    cess by which people consume and believe fake news due to
+ In this subsection, we will discuss some unique character-       the following psychological factors [60]: (1) social credibility,
+ istics of fake news on social media. Specifically, we will       which means people are more likely to perceive a source as
+ highlight the key features of fake news that are enabled by      credible if others perceive the source is credible, especially
+ social media. Note that the aforementioned characteristics       when there is not enough information available to access the
+ of traditional fake news are also applicable to social media.    truthfulness of the source; and (2) frequency heuristic, which
+                                                                  means that consumers may naturally favor information they
+ Malicious Accounts on Social Media for Propaganda.               hear frequently, even if it is fake news. Studies have shown
+ While many users on social media are legitimate, social me-      that increased exposure to an idea is enough to generate a
+ dia users may also be malicious, and in some cases are not       positive opinion of it [100; 101], and in echo chambers, users
+ even real humans. The low cost of creating social media          continue to share and consume the same information. As a
+ accounts also encourages malicious user accounts, such as        result, this echo chamber effect creates segmented, homoge-
+ social bots, cyborg users, and trolls. A social bot refers to    neous communities with a very limited information ecosys-
+ a social media account that is controlled by a computer al-      tem. Research shows that the homogeneous communities
+ gorithm to automatically produce content and interact with       become the primary driver of information diffusion that fur-
+ humans (or other bot users) on social media [23]. Social bots    ther strengthens polarization [18].
+ can become malicious entities designed specifically with the
+ purpose to do harm, such as manipulating and spreading           3. FAKE NEWS DETECTION
+ fake news on social media. Studies shows that social bots        In the previous section, we introduced the conceptual char-
+ distorted the 2016 U.S. presidential election online discus-     acterization of traditional fake news and fake news in so-
+ sions on a large scale [6], and that around 19 million bot       cial media. Based on this characterization, we further ex-
+ accounts tweeted in support of either Trump or Clinton in        plore the problem definition and proposed approaches for
+ the week leading up to election day8 . Trolls, real human        fake news detection.
+ users who aim to disrupt online communities and provoke
+ consumers into an emotional response, are also playing an        3.1 Problem Definition
+ important role in spreading fake news on social media. For       In this subsection, we present the details of mathematical
+ example, evidence suggests that there were 1,000 paid Rus-       formulation of fake news detection on social media. Specif-
+ sian trolls spreading fake news on Hillary Clinton9 . Trolling   ically, we will introduce the definition of key components
+ behaviors are highly affected by people’s mood and the con-      of fake news and then present the formal definition of fake
+ text of online discussions, which enables the easy dissemi-      news detection. The basic notations are defined below,
+ nation of fake news among otherwise “normal” online com-
+ munities [14]. The effect of trolling is to trigger people’s        • Let a refer to a News Article. It consists of two ma-
+ inner negative emotions, such as anger and fear, resulting            jor components: Publisher and Content. Publisher p~a
+ in doubt, distrust, and irrational behavior. Finally, cyborg          includes a set of profile features to describe the origi-
+ users can spread fake news in a way that blends automated             nal author, such as name, domain, age, among other
+ activities with human input. Usually cyborg accounts are              attributes. Content c~a consists of a set of attributes
+ registered by human as a camouflage and set automated pro-            that represent the news article and includes headline,
+ grams to perform activities in social media. The easy switch          text, image, etc.
+ of functionalities between human and bot offers cyborg users
+ unique opportunities to spread fake news [15]. In a nutshell,       • We also define Social News Engagements as a set of
+ these highly active and partisan malicious accounts on so-            tuples E = {eit } to represent the process of how news
+ cial media become the powerful sources and proliferation of           spread over time among n users U = {u1 , u2 , ..., un }
+ fake news.                                                            and their corresponding posts P = {p1 , p2 , ..., pn } on
+                                                                       social media regarding news article a. Each engage-
+ Echo Chamber Effect. Social media provides a new paradigm             ment eit = {ui , pi , t} represents that a user ui spreads
+ of information creation and consumption for users. The                news article a using pi at time t. Note that we set
+ information seeking and consumption process are chang-                t = N ull if the article a does not have any engage-
+ ing from a mediated form (e.g., by journalists) to a more             ment yet and thus ui represents the publisher.
+ disinter-mediated way [19]. Consumers are selectively ex-
+ posed to certain kinds of news because of the way news           Definition 2 (Fake News Detection) Given the social
+ feed appear on their homepage in social media, amplifying        news engagements E among n users for news article a, the
+ the psychological challenges to dispelling fake news identi-     task of fake news detection is to predict whether the news
+ fied above. For example, users on Facebook always follow         article a is a fake news piece or not, i.e., F : E → {0, 1}
+ like-minded people and thus receive news that promote their      such that,
+ favored existing narratives [65]. Therefore, users on social                        (
+ media tend to form groups containing like-minded people                                 1,   if a is a piece of fake news,
+ where they then polarize their opinions, resulting in an echo              F(a) =                                             (1)
+                                                                                         0,   otherwise.
+ chamber effect. The echo chamber effect facilitates the pro-
+                                                                  where F is the prediction function we want to learn.
+ 8
+   http://comprop.oii.ox.ac.uk/2016/11/18/resource-for-           Note that we define fake news detection as a binary classifi-
+ understanding-political-bots/                                    cation problem for the following reason: fake news is essen-
+ 9                                                                tially a distortion bias on information manipulated by the
+   http://www.huffingtonpost.com/entry/russian-trolls-fake-
+ news us 58dde6bae4b08194e3b8d5c4                                 publisher. According to previous research about media bias
+
+
+
+
+SIGKDD Explorations                                 Volume 19, Issue 1                                                   Page 25
+ theory [26], distortion bias is usually modeled as a binary        as frequency of function words and phrases (i.e., “n-grams”
+ classification problem.                                            and bag-of-words approaches [24]) or punctuation and parts-
+ Next, we propose a general data mining framework for fake          of-speech (POS) tagging. Domain-specific linguistic fea-
+ news detection which includes two phases: (i) feature ex-          tures, which are specifically aligned to news domain, such
+ traction and (ii) model construction. The feature extraction       as quoted words, external links, number of graphs, and the
+ phase aims to represent news content and related auxiliary         average length of graphs, etc [62]. Moreover, other features
+ information in a formal mathematical structure, and model          can be specifically designed to capture the deceptive cues
+ construction phase further builds machine learning models          in writing styles to differentiate fake news, such as lying-
+ to better differentiate fake news and real news based on the       detection features [1].
+ feature representations.
+                                                                    Visual-based: Visual cues have been shown to be an im-
+ 3.2 Feature Extraction                                             portant manipulator for fake news propaganda10 . As we
+ Fake news detection on traditional news media mainly relies        have characterized, fake news exploits the individual vulner-
+ on news content, while in social media, extra social context       abilities of people and thus often relies on sensational or even
+ auxiliary information can be used to as additional informa-        fake images to provoke anger or other emotional response of
+ tion to help detect fake news. Thus, we will present the           consumers. Visual-based features are extracted from visual
+ details of how to extract and represent useful features from       elements (e.g. images and videos) to capture the different
+ news content and social context.                                   characteristics for fake news. Faking images were identified
+                                                                    based on various user-level and tweet-level hand-crafted fea-
+ 3.2.1   News Content Features                                      tures using classification framework [28]. Recently, various
+ News content features c~a describe the meta information re-        visual and statistical features has been extracted for news
+ lated to a piece of news. A list of representative news content    verification [38]. Visual features include clarity score, coher-
+ attributes are listed below:                                       ence score, similarity distribution histogram, diversity score,
+                                                                    and clustering score. Statistical features include count, im-
+    • Source: Author or publisher of the news article               age ratio, multi-image ratio, hot image ratio, long image
+    • Headline: Short title text that aims to catch the at-         ratio, etc.
+      tention of readers and describes the main topic of the
+                                                                    3.2.2   Social Context Features
+      article
+                                                                    In addition to features related directly to the content of
+    • Body Text: Main text that elaborates the details of           the news articles, additional social context features can also
+      the news story; there is usually a major claim that is        be derived from the user-driven social engagements of news
+      specifically highlighted and that shapes the angle of         consumption on social media platform. Social engagements
+      the publisher                                                 represent the news proliferation process over time, which
+                                                                    provides useful auxiliary information to infer the veracity of
+    • Image/Video: Part of the body content of a news               news articles. Note that few papers exist in the literature
+      article that provides visual cues to frame the story          that detect fake news using social context features. How-
+ Based on these raw content attributes, different kinds of          ever, because we believe this is a critical aspect of successful
+ feature representations can be built to extract discriminative     fake news detection, we introduce a set of common features
+ characteristics of fake news. Typically, the news content we       utilized in similar research areas, such as rumor veracity
+ are looking at will mostly be linguistic-based and visual-         classification on social media. Generally, there are three
+ based, described in more detail below.                             major aspects of the social media context that we want to
+                                                                    represent: users, generated posts, and networks. Below, we
+                                                                    investigate how we can extract and represent social context
+ Linguistic-based: Since fake news pieces are intention-            features from these three aspects to support fake news de-
+ ally created for financial or political gain rather than to re-    tection.
+ port objective claims, they often contain opinionated and
+ inflammatory language, crafted as “clickbait” (i.e., to en-        User-based: As we mentioned in Section 2.3, fake news
+ tice users to click on the link to read the full article) or       pieces are likely to be created and spread by non-human
+ to incite confusion [13]. Thus, it is reasonable to exploit        accounts, such as social bots or cyborgs. Thus, capturing
+ linguistic features that capture the different writing styles      users’ profiles and characteristics by user-based features can
+ and sensational headlines to detect fake news. Linguistic-         provide useful information for fake news detection. User-
+ based features are extracted from the text content in terms        based features represent the characteristics of those users
+ of document organizations from different levels, such as char-     who have interactions with the news on social media. These
+ acters, words, sentences, and documents. In order to cap-          features can be categorized across different levels: individual
+ ture the different aspects of fake news and real news, ex-         level and group level. Individual level features are extracted
+ isting work utilized both common linguistic features and           to infer the credibility and reliability for each user using
+ domain-specific linguistic features. Common linguistic fea-        various aspects of user demographics, such as registration
+ tures are often used to represent documents for various tasks      age, number of followers/followees, number of tweets the
+ in natural language processing. Typical common linguis-            user has authored, etc [11]. Group level user features cap-
+ tic features are: (i) lexical features, including character-       ture overall characteristics of groups of users related to the
+ level and word-level features, such as total words, charac-        news [99]. The assumption is that the spreaders of fake news
+ ters per word, frequency of large words, and unique words;         10
+                                                                     https://www.wired.com/2016/12/photos-fuel-spread-fake-
+ (ii) syntactic features, including sentence-level features, such   news/
+
+
+
+
+SIGKDD Explorations                                  Volume 19, Issue 1                                                 Page 26
+ and real news may form different communities with unique           are properly built, existing network metrics can be applied
+ characteristics that can be depicted by group level features.      as feature representations. For example, degree and cluster-
+ Commonly used group level features come from aggregat-             ing coefficient have been used to characterize the diffusion
+ ing (e.g., averaging and weighting) individual level features,     network [42] and friendship network [42]. Other approaches
+ such as ‘percentage of verified users’ and ‘average number         learn the latent node embedding features by using SVD [69]
+ of followers’ [49; 42].                                            or network propagation algorithms [37].
+
+ Post-based: People express their emotions or opinions to-          3.3 Model Construction
+ wards fake news through social media posts, such as skep-          In the previous section, we introduced features extracted
+ tical opinions, sensational reactions, etc. Thus, it is rea-       from different sources, i.e., news content and social con-
+ sonable to extract post-based features to help find potential      text, for fake news detection. In this section, we discuss the
+ fake news via reactions from the general public as expressed       details of the model construction process for several exist-
+ in posts. Post-based features focus on identifying useful in-      ing approaches. Specifically we categorize existing methods
+ formation to infer the veracity of news from various aspects       based on their main input sources as: News Content Models
+ of relevant social media posts. These features can be cat-         and Social Context Models.
+ egorized as post level, group level, and temporal level. Post
+ level features generate feature values for each post. The          3.3.1    News Content Models
+ aforementioned linguistic-based features and some embed-           In this subsection, we focus on news content models, which
+ ding approaches [69] for news content can also be applied          mainly rely on news content features and existing factual
+ for each post. Specifically, there are unique features for         sources to classify fake news. Specifically, existing approaches
+ posts that represent the social response from general pub-         can be categorized as Knowledge-based and Style-based.
+ lic, such as stance, topic, and credibility. Stance features (or
+ viewpoints) indicate the users’ opinions towards the news,         Knowledge-based: Since fake news attempts to spread
+ such as supporting, denying, etc [37]. Topic features can be       false claims in news content, the most straightforward means
+ extracted using topic models, such as latent Dirichlet allo-       of detecting it is to check the truthfulness of major claims
+ cation (LDA) [49]. Credibility features for posts assess the       in a news article to decide the news veracity. Knowledge-
+ degree of reliability [11]. Group level features aim to ag-        based approaches aim to use external sources to fact-check
+ gregate the feature values for all relevant posts for specific     proposed claims in news content. The goal of fact-checking is
+ news articles by using “wisdom of crowds”. For example,            to assign a truth value to a claim in a particular context [83].
+ the average credibility scores are used to evaluate the credi-     Fact-checking has attracted increasing attention, and many
+ bility of news [37]. A more comprehensive list of group-level      efforts have been made to develop a feasible automated fact-
+ post features can also be found in [11]. Temporal level fea-       checking system. Existing fact-checking approaches can be
+ tures consider the temporal variations of post level feature       categorized as expert-oriented, crowdsourcing-oriented, and
+ values [49]. Unsupervised embedding methods, such as re-           computational-oriented.
+ current neural network (RNN), are utilized to capture the
+ changes in posts over time [69; 48]. Based on the shape of              • Expert-oriented fact-checking heavily relies on human
+ this time series for various metrics of relevant posts (e.g,              domain experts to investigate relevant data and doc-
+ number of posts), mathematical features can be computed,                  uments to construct the verdicts of claim veracity, for
+ such as SpikeM parameters [42].                                           example PolitiFact11 , Snopes12 , etc. However, expert-
+                                                                           oriented fact-checking is an intellectually demanding
+ Network-based: Users form different networks on social                    and time-consuming process, which limits the poten-
+ media in terms of interests, topics, and relations. As men-               tial for high efficiency and scalability.
+ tioned before, fake news dissemination processes tend to
+ form an echo chamber cycle, highlighting the value of ex-               • Crowdsourcing-oriented fact-checking exploits the “wis-
+ tracting network-based features to represent these types of               dom of crowd” to enable normal people to annotate
+ network patterns for fake news detection. Network-based                   news content; these annotations are then aggregated
+ features are extracted via constructing specific networks among           to produce an overall assessment of the news verac-
+ the users who published related social media posts. Different             ity. For example, Fiskkit13 allows users to discuss and
+ types of networks can be constructed. The stance network                  annotate the accuracy of specific parts of a news arti-
+ can be built with nodes indicating all the tweets relevant                cle. As another example, an anti-fake news bot named
+ to the news and the edge indicating the weights of similar-               “For real” is a public account in the instant communi-
+ ity of stances [37; 75]. Another type of network is the co-               cation mobile application LINE14 , which allows people
+ occurrence network, which is built based on the user engage-              to report suspicious news content which is then further
+ ments by counting whether those users write posts relevant                checked by editors.
+ to the same news articles [69]. In addition, the friendship
+ network indicates the following/followee structure of users             • Computational-oriented fact-checking aims to provide
+ who post related tweets [42]. An extension of this friendship             an automatic scalable system to classify true and false
+ network is the diffusion network, which tracks the trajectory             claims. Previous computational-oriented fact checking
+ of the spread of news [42], where nodes represent the users               methods try to solve two majors issues: (i) identifying
+ and edges represent the information diffusion paths among          11
+                                                                       http://www.politifact.com/
+ them. That is, a diffusion path between two users ui and uj        12
+                                                                       http://www.snopes.com/
+ exists if and only if (1) uj follows ui , and (2) uj posts about   13
+                                                                       http://fiskkit.com
+ a given news only after ui does so. After these networks           14
+                                                                       https://grants.g0v.tw/projects/588fa7b382223f001e022944
+
+
+
+
+SIGKDD Explorations                                  Volume 19, Issue 1                                                 Page 27
+      check-worthy claims and (ii) discriminating the verac-                wants to convey, and thus misleading and deceptive
+      ity of fact claims. To identify check-worthy claims, fac-             clickbait titles can serve as a good indicator for recog-
+      tual claims in news content are extracted that convey                 nizing fake news articles [13].
+      key statements and viewpoints, facilitating the subse-
+      quent fact-checking process [31]. Fact-checking for spe-
+      cific claims largely relies on external resources to deter-   3.3.2     Social Context Models
+      mine the truthfulness of a particular claim. Two typ-         The nature of social media provides researchers with ad-
+      ical external sources include the open web and struc-         ditional resources to supplement and enhance News Con-
+      tured knowledge graph. Open web sources are utilized          tent Models. Social context models include relevant user
+      as references that can be compared with given claims          social engagements in the analysis, capturing this auxiliary
+      in terms of both the consistency and frequency [5; 50].       information from a variety of perspectives. We can clas-
+      Knowledge graphs are integrated from the linked open          sify existing approaches for social context modeling into two
+      data as a structured network topology, such as DB-            categories: Stance-based and Propagation-based. Note that
+      pedia and Google Relation Extraction Corpus. Fact-            very few existing fake news detection approaches have uti-
+      checking using a knowledge graph aims to check whether        lized social context models. Thus, we also introduce similar
+      the claims in news content can be inferred from exist-        methods for rumor detection using social media, which have
+      ing facts in the knowledge graph [98; 16; 72].                potential application for fake news detection.
+ Style-based: Fake news publishers often have malicious
+                                                                    Stance-based: Stance-based approaches utilize users’ view-
+ intent to spread distorted and misleading information and
+                                                                    points from relevant post contents to infer the veracity of
+ influence large communities of consumers, requiring partic-
+                                                                    original news articles. The stance of users’ posts can be
+ ular writing styles necessary to appeal to and persuade a
+                                                                    represented either explicitly or implicitly. Explicit stances
+ wide scope of consumers that is not seen in true news ar-
+                                                                    are direct expressions of emotion or opinion, such as the
+ ticles. Style-based approaches try to detect fake news by
+                                                                    “thumbs up” and “thumbs down” reactions expressed in
+ capturing the manipulators in the writing style of news con-
+                                                                    Facebook. Implicit stances can be automatically extracted
+ tent. There are mainly two typical categories of style-based
+                                                                    from social media posts. Stance detection is the task of
+ methods: Deception-oriented and Objectivity-oriented.
+                                                                    automatically determining from a post whether the user is
+    • Deception-oriented stylometric methods capture the            in favor of, neutral toward, or against some target entity,
+      deceptive statements or claims from news content. The         event, or idea [53]. Previous stance classification methods
+      motivation of deception detection originates from foren-      mainly rely on hand-crafted linguistic or embedding features
+      sic psychology (i.e., Undeutsch Hypothesis) [82] and          on individual posts to predict stances [53; 64]. Topic model
+      various forensic tools including Criteria-based Content       methods, such as latent dirichlet allocation (LDA) can be
+      Analysis [84] and Scientific-based Content Analysis [45]      applied to learn latent stance from topics [37]. Using these
+      have been developed. More recently, advanced natu-            methods, we can infer the news veracity based on the stance
+      ral language processing models are applied to spot de-        values of relevant posts. Tacchini et al. proposed to con-
+      ception phases from the following perspectives: Deep          struct a bipartite network of user and Facebook posts using
+      syntax and Rhetorical structure. Deep syntax models           the “like” stance information [75]; based on this network,
+      have been implemented using probabilistic context fr-         a semi-supervised probabilistic model was used to predict
+      ree grammers (PCFG), with which sentences can be              the likelihood of Facebook posts being hoaxes. Jin et al.
+      transformed into rules that describe the syntax struc-        explored topic models to learn latent viewpoint values and
+      ture. Based on the PCFG, different rules can be de-           further exploited these viewpoints to learn the credibility of
+      veloped for deception detection, such as unlexicalized/       relevant posts and news content [37].
+      lexicalized production rules and grandparent rules [22].
+      Rhetorical structure theory can be utilized to capture        Propagation-based: Propagation-based approaches for fake
+      the differences between deceptive and truthful sen-           news detection reason about the interrelations of relevant
+      tences [68]. Deep network models, such as convolu-            social media posts to predict news credibility. The basic
+      tional neural networks (CNN), have also been applied          assumption is that the credibility of a news event is highly
+      to classify fake news veracity [90].                          related to the credibilities of relevant social media posts.
+                                                                    Both homogeneous and heterogeneous credibility networks
+    • Objectivity-oriented approaches capture style signals         can be built for propagation process. Homogeneous credi-
+      that can indicate a decreased objectivity of news con-        bility networks consist of a single type of entities, such as
+      tent and thus the potential to mislead consumers, such        post or event [37]. Heterogeneous credibility networks in-
+      as hyperpartisan styles and yellow-journalism. Hyper-         volve different types of entities, such as posts, sub-events,
+      partisan styles represent extreme behavior in favor of a      and events [36; 29]. Gupta et al. proposed a PageRank-like
+      particular political party, which often correlates with       credibility propagation algorithm by encoding users’ credi-
+      a strong motivation to create fake news. Linguistic-          bilities and tweets’ implications on a three layer user-tweet-
+      based features can be applied to detect hyperpartisan         event heterogeneous information network. Jin et al. pro-
+      articles [62]. Yellow-journalism represents those ar-         posed to include news aspects (i.e., latent sub-events), build
+      ticles that do not contain well-researched news, but          a three-layer hierarchical network, and utilize a graph op-
+      instead rely on eye-catching headlines (i.e., clickbait)      timization framework to infer event credibilities. Recently,
+      with a propensity for exaggeration, sensationalization,       the conflicting viewpoint relationships are included to build
+      scare-mongering, etc. Often, news titles will summa-          a homogeneous credibility network among tweets and guide
+      rize the major viewpoints of the article that the author      the process to evaluate their credibilities [37].
+
+
+
+
+SIGKDD Explorations                                 Volume 19, Issue 1                                                   Page 28
+ 4.     ASSESSING DETECTION EFFICACY                                 these datasets also have specific limitation that make them
+ In this section, we discuss how to assess the performance of        challenging to use for fake news detection. BuzzFeedNews
+ algorithms for fake news detection. We focus on the avail-          only contains headlines and text for each news piece and
+ able datasets and evaluation metrics for this task.                 covers news articles from very few news agencies. LIAR in-
+                                                                     cludes mostly short statements, rather than the entire news
+ 4.1 Datasets                                                        content. Further, these statements are collected from vari-
+ Online news can be collected from different sources, such           ous speakers, rather than news publishers, and may include
+ as news agency homepages, search engines, and social me-            some claims that are not fake news. BS Detector data is
+ dia websites. However, manually determining the verac-              collected and annotated by using a developed news veracity
+ ity of news is a challenging task, usually requiring annota-        checking tool. As the labels have not been properly vali-
+ tors with domain expertise who performs careful analysis of         dated by human experts, any model trained on this data is
+ claims and additional evidence, context, and reports from           really learning the parameters of BS Detector, rather than
+ authoritative sources. Generally, news data with annota-            expert-annotated ground truth fake news. Finally, CRED-
+ tions can be gathered in the following ways: Expert journal-        BANK was originally collected for tweet credibility assess-
+ ists, Fact-checking websites, Industry detectors, and Crowd-        ment, so the tweets in this dataset are not really the social
+ sourced workers. However, there are no agreed upon bench-           engagements for specific news articles.
+ mark datasets for the fake news detection problem. Some             To address the disadvantages of existing fake news detec-
+ publicly available datasets are listed below:                       tion datasets, we have an ongoing project to develop a us-
+                                                                     able dataset for fake news detection on social media. This
+      • BuzzFeedNews 15 : This dataset comprises a complete          dataset, called F akeN ewsN et20 , includes all mentioned news
+        sample of news published in Facebook from 9 news             content and social context features with reliable ground truth
+        agencies over a week close to the 2016 U.S. election         fake news labels.
+        from September 19 to 23 and September 26 and 27.
+        Every post and the linked article were fact-checked          4.2 Evaluation Metrics
+        claim-by-claim by 5 BuzzFeed journalists. This dataset       To evaluate the performance of algorithms for fake news de-
+        is further enriched in [62] by adding the linked articles,   tection problem, various evaluation metrics have been used.
+        attached media, and relevant metadata. It contains           In this subsection, we review the most widely used metrics
+        1,627 articles–826 mainstream, 356 left-wing, and 545        for fake news detection. Most existing approaches consider
+        right-wing articles.                                         the fake news problem as a classification problem that pre-
+                                                                     dicts whether a news article is fake or not:
+      • LIAR 16 : This dataset is collected from fact-checking
+        website PolitiFact through its API [90]. It includes               • True Positive (TP): when predicted fake news pieces
+        12,836 human-labeled short statements, which are sam-                are actually annotated as fake news;
+        pled from various contexts, such as news releases, TV              • True Negative (TN): when predicted true news pieces
+        or radio interviews, campaign speeches, etc. The labels              are actually annotated as true news;
+        for news truthfulness are fine-grained multiple classes:
+        pants-fire, false, barely-true, half-true, mostly true,            • False Negative (FN): when predicted true news pieces
+        and true.                                                            are actually annotated as fake news;
+                                                                           • False Positive (FP): when predicted fake news pieces
+      • BS Detector 17 : This dataset is collected from a browser            are actually annotated as true news.
+        extension called BS detector developed for checking
+        news veracity18 . It searches all links on a given web-      By formulating this as a classification problem, we can define
+        page for references to unreliable sources by checking        following metrics,
+        against a manually complied list of domains. The la-
+        bels are the outputs of BS detector, rather than human                                    |T P |
+                                                                               P recision   =                                     (2)
+        annotators.                                                                           |T P | + |F P |
+                                                                                                   |T P |
+      • CREDBANK 19 : This is a large scale crowdsourced                          Recall    =                                     (3)
+        dataset of approximately 60 million tweets that cover                                 |T P | + |F N |
+        96 days starting from October 2015. All the tweets are                                    P recision · Recall
+                                                                                      F1    = 2·                                  (4)
+        broken down to be related to over 1,000 news events,                                     P recision + Recall
+        with each event assessed for credibilities by 30 anno-                                         |T P | + |T N |
+        tators from Amazon Mechanical Turk [52].                               Accuracy     =                                     (5)
+                                                                                              |T P | + |T N | + |F P | + |F N |
+ In Table 1, we compare these public fake news detection             These metrics are commonly used in the machine learning
+ datasets, highlighting the features that can be extracted           community and enable us to evaluate the performance of a
+ from each dataset. We can see that no existing public dataset       classifier from different perspectives. Specifically, accuracy
+ can provide all possible features of interest. In addition,         measures the similarity between predicted fake news and real
+15
+                                                                     fake news. Precision measures the fraction of all detected
+   https://github.com/BuzzFeedNews/2016-10-facebook-                 fake news that are annotated as fake news, addressing the
+ fact-check/tree/master/data                                         important problem of identifying which news is fake. How-
+16
+   https://www.cs.ucsb.edu/ william/data/liar dataset.zip
+17                                                                   ever, because fake news datasets are often skewed, a high
+   https://www.kaggle.com/mrisdal/fake-news
+18                                                                   precision can be easily achieved by making fewer positive
+   https://github.com/bs-detector/bs-detector
+19                                                                   20
+   http://compsocial.github.io/CREDBANK-data/                             https://github.com/KaiDMML/FakeNewsNet
+
+
+
+
+SIGKDD Explorations                                   Volume 19, Issue 1                                                   Page 29
+                                     Table 1: Comparison of Fake News Detection Datasets.
+                                       Features     News Content           Social Context
+                           Dataset                Linguistic Visual     User Post Network
+                           BuzzFeedNews                X
+                           LIAR                        X
+                           BS Detector                 X
+                           CREDBANK                    X                  X       X          X
+
+ predictions. Thus, recall is used to measure the sensitivity,   detection, rumor tracking, stance classification, and verac-
+ or the fraction of annotated fake news articles that are pre-   ity classification [102]. Specifically, rumor detection aims to
+ dicted to be fake news. F1 is used to combine precision and     classify a piece of information as rumor or non-rumor [96;
+ recall, which can provide an overall prediction performance     70]; rumor tracking aims to collect and filter posts discussing
+ for fake news detection. Note that for P recision, Recall,      specific rumors; rumor stance classification determines how
+ F1 , and Accuracy, the higher the value, the better the per-    each relevant post is oriented with respect to the rumor’s
+ formance.                                                       veracity; veracity classification attempts to predict the ac-
+ The Receiver Operating Characteristics (ROC) curve pro-         tual truth value of the rumor. The most related task to fake
+ vides a way of comparing the performance of classifiers by      news detection is the rumor veracity classification. Rumor
+ looking at the trade-off in the False Positive Rate (FPR) and   veracity classification relies heavily on the other subtasks,
+ the True Positive Rate (TPR). To draw the ROC curve, we         requiring the stances or opinions can be extracted from rel-
+ plot the FPR on the x axis and and TPR along the y axis.        evant posts. These posts are considered as important sen-
+ The ROC curve compares the performance of different clas-       sors for determining the veracity of the rumor. Different
+ sifiers by changing class distributions via a threshold. TPR    from rumors, which may include long-term rumors, such as
+ and FPR are defined as follows (note that TPR is the same       conspiracy theories, as well as short-term emerging rumors,
+ as recall defined above):                                       fake news refers to information related specifically to public
+                                                                 news events that can be verified as false.
+                                   |T P |
+                  TPR     =                                (6)
+                              |T P | + |F N |                    5.2 Truth Discovery
+                                  |F P |                         Truth discovery is the problem of detecting true facts from
+                  FPR     =                                (7)
+                              |F P | + |T N |                    multiple conflicting sources [46]. Truth discovery methods
+                                                                 do not explore the fact claims directly, but rely on a collec-
+ Based on the ROC curve, we can compute the Area Under
+                                                                 tion of contradicting sources that record the properties of
+ the Curve (AUC) value, which measures the overall perfor-
+                                                                 objects to determine the truth value. Truth discovery aims
+ mance of how likely the classifier is to rank the fake news
+                                                                 to determine the source credibility and object truthfulness
+ higher than any true news. Based on [30], AUC is defined
+                                                                 at the same time. The fake news detection problem can
+ as below.
+                P                                                benefit from various aspects of truth discovery approaches
+                  (n0 + n1 + 1 − ri ) − n0 (n0 + 1)/2            under different scenarios. First, the credibility of different
+        AU C =                                            (8)
+                                n0 n1                            news outlets can be modeled to infer the truthfulness of re-
+                                                                 ported news. Second, relevant social media posts can also
+ where ri is the rank of ith fake news piece and n0 (n1 ) is
+                                                                 be modeled as social response sources to better determine
+ the number of fake (true) news pieces. It is worth men-
+                                                                 the truthfulness of claims [56; 93]. However, there are some
+ tioning that AUC is more statistically consistent and more
+                                                                 other issues that must be considered to apply truth discovery
+ discriminating than accuracy [47], and it is usually applied
+                                                                 to fake news detection in social media scenarios. First, most
+ in an imbalanced classification problem, such as fake news
+                                                                 existing truth discovery methods focus on handling struc-
+ classification, where the number of ground truth fake news
+                                                                 tured input in the form of Subject-Predicate-Object (SPO)
+ articles and and true news articles have a very imbalanced
+                                                                 tuples, while social media data is highly unstructured and
+ distribution.
+                                                                 noisy. Second, truth discovery methods can not be well ap-
+                                                                 plied when a fake news article is newly launched and pub-
+ 5.   RELATED AREAS                                              lished by only a few news outlets because at that point there
+ In this section, we further discuss areas that are related to   is not enough social media posts relevant to it to serve as
+ the problem of fake news detection. We aim to point out         additional sources.
+ the differences between these areas and fake news detection
+ by briefly explaining the task goals and highlighting some      5.3 Clickbait Detection
+ popular methods.                                                Clickbait is a term commonly used to describe eye-catching
+                                                                 and teaser headlines in online media. Clickbait headlines
+ 5.1 Rumor Classification                                        create a so-called “curiosity gap”, increasing the likelihood
+ A rumor can usually be defined as “a piece of circulating       that reader will click the target link to satisfy their curios-
+ information whose veracity status is yet to be verified at      ity. Existing clickbait detection approaches utilize various
+ the time of spreading” [102]. The function of a rumor is        linguistic features extracted from teaser messages, linked
+ to make sense of an ambiguous situation, and the truthful-      webpages, and tweet meta information [12; 8; 63]. Differ-
+ ness value could be true, false or unverified. Previous ap-     ent types of clickbait are categorized, and some of them are
+ proaches for rumor analysis focus on four subtasks: rumor       highly correlated with non-factual claims [7]. The underly-
+
+
+
+
+SIGKDD Explorations                                Volume 19, Issue 1                                               Page 30
+ ing motivation of clickbait is usually for click-through rates     58; 59], but quantitative studies to verify these psychological
+ and the resultant advertising revenue. Thus, the body text         factors are rather limited. For example, the echo chamber
+ of clickbait articles are often informally organized and poorly    effect plays an important role for fake news spreading in so-
+ reasoned. This discrepancy has been used by researchers to         cial media. Then how to capture echo chamber effects and
+ identify the inconsistency between headlines and news con-         how to utilize the pattern for fake news detection in social
+ tents in an attempt to detect fake news articles21 . Even          media could be an interesting investigation. Moreover, in-
+ though not all fake news may include clickbait headlines,          tention detection from news data is promising but limited
+ specific clickbait headlines could serve as an important in-       as most existing fake news research focus on detecting the
+ dicator, and various features can be utilized to help detect       authenticity but ignore the intent aspect of fake news. In-
+ fake news.                                                         tention detection is very challenging as the intention is often
+                                                                    explicitly unavailable. Thus. it’s worth to explore how to
+ 5.4 Spammer and Bot Detection                                      use data mining methods to validate and capture psychol-
+ Spammer detection on social media, which aims to cap-              ogy intentions.
+ ture malicious users that coordinate among themselves to
+ launch various attacks, such as spreading ads, disseminat-         Feature-oriented: Feature-oriented fake news research aims
+ ing pornography, delivering viruses, and phishing [44], has        to determine effective features for detecting fake news from
+ recently attracted wide attention. Existing approaches for         multiple data sources. We have demonstrated that there are
+ social spammer detection mainly rely on extracting features        two major data sources: news content and social context.
+ from user activities and social network information [35; 95;       From a news content perspective, we introduced linguistic-
+ 33; 34]. In addition, the rise of social bots has also increased   based and visual-based techniques to extract features from
+ the circulation of false information as they automatically         text information. Note that linguistic-based features have
+ retweet posts without verifying the facts [23]. The major          been widely studied for general NLP tasks, such as text clas-
+ challenge brought by social bots is that they can give a false     sification and clustering, and specific applications such as
+ impression that information is highly popular and endorsed         author identification [32] and deception detection [22], but
+ by many people, which enables the echo chamber effect for          the underlying characteristics of fake news have not been
+ the propagation of fake news. Previous approaches for bot          fully understood. Moreover, embedding techniques, such as
+ detection are based on social network information, crowd-          word embedding and deep neural networks, are attracting
+ sourcing, and discriminative features [23; 55; 54]. Thus,          much attention for textual feature extraction, and has the
+ both spammer and social bots could provide insights about          potential to learn better representations [90; 87; 88]. In ad-
+ target specific malicious social media accounts that can be        dition, visual features extracted from images are also shown
+ used for fake news detection.                                      to be important indicators for fake news [38]. However, very
+                                                                    limited research has been done to exploit effective visual fea-
+                                                                    tures, including traditional local and global features [61] and
+ 6.     OPEN ISSUES AND FUTURE RESEARCH                             newly emerging deep network-based features [43; 89; 85],
+ In this section, we present some open issues in fake news          for the fake news detection problem. Recently, it has been
+ detection and future research directions. Fake news detec-         shown that advanced tools can manipulate video footage of
+ tion on social media is a newly emerging research area, so         public figures [80], synthesize high quality videos [74], etc.
+ we aim to point out promising research directions from a           Thus, it becomes much more challenging and important to
+ data mining perspective. Specifically, as shown in Figure 2,       differentiate real and fake visual content, and more advanced
+ we outline the research directions in four categories: Data-       visual-based features are needed for this research. From a
+ oriented, Feature-oriented, Model-oriented and Application-        social context perspective, we introduced user-based, post-
+ oriented.                                                          based, and network-based features. Existing user-based fea-
+                                                                    tures mainly focus on general user profiles, rather than dif-
+ Data-oriented: Data-oriented fake news research is fo-             ferentiating account types separately and extracting user-
+ cusing on different kinds of data characteristics, such as :       specific features. Post-based features can be represented us-
+ dataset, temporal and psychological. From a dataset per-           ing other techniques, such as convolutional neural networks
+ spective, we demonstrated that there is no existing bench-         (CNN) [69], to better capture people’s opinions and reac-
+ mark dataset that includes resources to extract all relevant       tions toward fake news. Images in social media posts can
+ features. A promising direction is to create a comprehensive       also be utilized to better understand users’ sentiments [91]
+ and large-scale fake news benchmark dataset, which can be          toward news events. Network-based features are extracted
+ used by researchers to facilitate further research in this area.   to represent how different types of networks are constructed.
+ From a temporal perspective, fake news dissemination on so-        It is important to extend this preliminary work to explore
+ cial media demonstrates unique temporal patterns different         (i) how other networks can be constructed in terms of differ-
+ from true news. Along this line, one interesting problem           ent aspects of relationships among relevant users and posts;
+ is to perform early fake news detection, which aims to give        and (ii) other advanced methods of network representations,
+ early alerts of fake news during the dissemination process.        such as network embedding [78; 86].
+ For example, this approach could look at only social media
+ posts within some time delay of the original post as sources       Model-oriented: Model-oriented fake news research opens
+ for news verification [37]. Detecting fake news early can help     the door to building more effective and practical models for
+ prevent further propagation on social media. From a psycho-        fake news detection. Most previously mentioned approaches
+ logical perspective, different aspects of fake news have been      focus on extracting various features, incorporating theses
+ qualitatively explored in the social psychology literature [92;    features into supervised classification models, such as naı̈ve
+21                                                                  Bayes, decision tree, logistic regression, k nearest neighbor
+     http://www.fakenewschallenge.org/
+
+
+
+
+SIGKDD Explorations                                  Volume 19, Issue 1                                                Page 31
+                      Figure 2: Future directions and open issues for fake news detection on social media.
+
+
+ (KNN), and support vector machines (SVM), and then se-            vised classification methods may be more accurate given a
+ lecting the classifier that performs the best [62; 75; 1]. More   well-curated ground truth dataset for training, unsupervised
+ research can be done to build more complex and effective          models can be more practical because unlabeled datasets are
+ models and to better utilize extracted features, such as ag-      easier to obtain.
+ gregation methods, probabilistic methods, ensemble methods,
+ or projection methods [73]. Specifically, we think there is       Application-oriented: Application-oriented fake news re-
+ some promising research in the following directions. First,       search encompass research that goes into other areas beyond
+ aggregation methods combine different feature representa-         fake news detection. We propose two major directions along
+ tions into a weighted form and optimize the feature weights.      these lines: fake news diffusion and fake news intervention.
+ Second, since fake news may commonly mix true statements          Fake news diffusion characterizes the diffusion paths and
+ with false claims, it may make more sense to predict the          patterns of fake news on social media sites. Some early re-
+ likelihood of fake news instead of producing a binary value;      search has shown that true information and misinformation
+ probabilistic models predict a probabilistic distribution of      follow different patterns when propagating in online social
+ class labels (i.e., fake news versus true news) by assuming       networks [18; 51]. Similarly, the diffusion of fake news in
+ a generative model that pulls from the same distribution as       social media demonstrates its own characteristics that need
+ the original feature space [25]. Third, one of the major chal-    further investigation, such as social dimensions, life cycle,
+ lenges for fake news detection is the fact that each feature,     spreader identification, etc. Social dimensions refer to the
+ such as source credibility, news content style, or social re-     heterogeneity and weak dependency of social connections
+ sponse, has some limitations to directly predict fake news on     within different social communities. Users’ perceptions of
+ its own. Ensemble methods build a conjunction of several          fake news pieces are highly affected by their like-minded
+ weak classifiers to learn a strong classifier that is more suc-   friends in social media (i.e., echo chambers), while the de-
+ cessful than any individual classifier alone; ensembles have      gree differs along different social dimensions. Thus, it is
+ been widely applied to various applications in the machine        worth exploring why and how different social dimensions
+ learning literature [20]. It may be beneficial to build ensem-    play a role in spreading fake news in terms of different top-
+ ble models as news content and social context features each       ics, such as political, education, sports, etc. The fake news
+ have supplementary information that has the potential to          diffusion process also has different stages in terms of peo-
+ boost fake news detection performance. Finally, fake news         ple’s attentions and reactions as time goes by, resulting in
+ content or social context information may be noisy in the         a unique life cycle. Research has shown that breaking news
+ raw feature space; projection methods refer to approaches         and in-depth news demonstrate different life cycles in social
+ that lean projection functions to map between original fea-       media [10]. Studying the life cycle of fake news will provide
+ ture spaces (e.g., news content features and social context       deeper understanding of how particular stories “go viral”
+ features) and the latent feature spaces that may be more          from normal public discourse. Tracking the life cycle of fake
+ useful for classification.                                        news on social media requires recording essential trajectories
+ Moreover, most existing approaches are supervised, which          of fake news diffusion in general [71], as well as further in-
+ requires a pre-annotated fake news ground truth dataset           vestigations of the process for specific fake news pieces, such
+ to train a model. However, obtaining a reliable fake news         as graph-based models and evolution-based models [27]. In
+ dataset is very time and labor intensive, as the process of-      addition, identifying key spreaders of fake news is crucial to
+ ten requires expert annotators to perform careful analysis of     mitigate the diffusion scope in social media. Note that key
+ claims and additional evidence, context, and reports from         spreaders can be categorized in two ways, i.e., stance and
+ authoritative sources. Thus, it is also important to con-         authenticity. Along the stance dimensions, spreaders can
+ sider scenarios where limited or no labeled fake news pieces      either be (i) clarifiers, who propose skeptical and opposing
+ are available in which semi-supervised or unsupervised mod-       viewpoints towards fake news and try to clarify them; or (ii)
+ els can be applied. While the models created by super-            persuaders, who spread fake news with supporting opinions
+
+
+
+
+SIGKDD Explorations                                 Volume 19, Issue 1                                                Page 32
+ to persuade others to believe it. In this sense, it is impor-    [4] Meital Balmas. When fake news becomes real: Com-
+ tant to explore how to detect clarifiers and persuaders and          bined exposure to multiple news sources and political
+ better use them to control the dissemination of fake news.           attitudes of inefficacy, alienation, and cynicism. Com-
+ From an authenticity perspective, spreaders could be either          munication Research, 41(3):430–454, 2014.
+ human, bot, or cyborg. Social bots have been used to inten-      [5] Michele Banko, Michael J Cafarella, Stephen Soder-
+ tionally spread fake news in social media, which motivates           land, Matthew Broadhead, and Oren Etzioni. Open
+ further research to better characterize and detect malicious         information extraction from the web. In IJCAI’07.
+ accounts designed for propaganda.
+ Finally, we also propose further research into fake news in-     [6] Alessandro Bessi and Emilio Ferrara. Social bots dis-
+ tervention, which aims to reduce the effects of fake news            tort the 2016 us presidential election online discussion.
+ by proactive intervention methods that minimize the spread           First Monday, 21(11), 2016.
+ scope or reactive intervention methods after fake news goes      [7] Prakhar Biyani, Kostas Tsioutsiouliklis, and John
+ viral. Proactive fake news intervention methods try to (i)           Blackmer. ” 8 amazing secrets for getting more clicks”:
+ remove malicious accounts that spread fake news or fake              Detecting clickbaits in news streams using article in-
+ news itself to isolate it from future consumers; (ii) immu-          formality. In AAAI’16.
+ nize users with true news to change the belief of users that
+                                                                  [8] Jonas Nygaard Blom and Kenneth Reinecke Hansen.
+ may already have been affected by fake news. There is recent
+                                                                      Click bait: Forward-reference as lure in online news
+ research that attempts to use content-based immunization
+                                                                      headlines. Journal of Pragmatics, 76:87–100, 2015.
+ and network-based immunization methods in misinforma-
+ tion intervention [94; 97]. One approach uses a multivariate     [9] Paul R Brewer, Dannagal Goldthwaite Young, and
+ Hawkes process to model both true news and fake news and             Michelle Morreale. The impact of real news about
+ mitigate the spreading of fake news in real-time [21]. The           fake news: Intertextual processes and political satire.
+ aforementioned spreader detection techniques can also be             International Journal of Public Opinion Research,
+ applied to target certain users (e.g., persuaders) in social         25(3):323–343, 2013.
+ media to stop spreading fake news, or other users (e.g. clar-   [10] Carlos Castillo, Mohammed El-Haddad, Jürgen Pfef-
+ ifiers) to maximize the spread of corresponding true news.           fer, and Matt Stempeck. Characterizing the life cycle
+                                                                      of online news stories using social media reactions. In
+ 7. CONCLUSION                                                        CSCW’14.
+ With the increasing popularity of social media, more and        [11] Carlos Castillo, Marcelo Mendoza, and Barbara
+ more people consume news from social media instead of tra-           Poblete. Information credibility on twitter. In
+ ditional news media. However, social media has also been             WWW’11.
+ used to spread fake news, which has strong negative impacts
+ on individual users and broader society. In this article, we    [12] Abhijnan Chakraborty, Bhargavi Paranjape, Sourya
+ explored the fake news problem by reviewing existing lit-            Kakarla, and Niloy Ganguly. Stop clickbait: Detect-
+                                                                      ing and preventing clickbaits in online news media. In
+ erature in two phases: characterization and detection. In
+ the characterization phase, we introduced the basic concepts         ASONAM’16.
+ and principles of fake news in both traditional media and so-   [13] Yimin Chen, Niall J Conroy, and Victoria L Rubin.
+ cial media. In the detection phase, we reviewed existing fake        Misleading online content: Recognizing clickbait as
+ news detection approaches from a data mining perspective,            false news. In Proceedings of the 2015 ACM on Work-
+ including feature extraction and model construction. We              shop on Multimodal Deception Detection, pages 15–19.
+ also further discussed the datasets, evaluation metrics, and         ACM, 2015.
+ promising future directions in fake news detection research     [14] Justin Cheng, Michael Bernstein, Cristian Danescu-
+ and expand the field to other applications.                          Niculescu-Mizil, and Jure Leskovec. Anyone can be-
+                                                                      come a troll: Causes of trolling behavior in online dis-
+ 8. ACKNOWLEDGEMENTS                                                  cussions. In CSCW ’17.
+ This material is based upon work supported by, or in part       [15] Zi Chu, Steven Gianvecchio, Haining Wang, and
+ by, the ONR grant N00014-16-1-2257.                                  Sushil Jajodia. Detecting automation of twitter ac-
+                                                                      counts: Are you a human, bot, or cyborg? IEEE
+ 9. REFERENCES                                                        Transactions on Dependable and Secure Computing,
+                                                                      9(6):811–824, 2012.
+   [1] Sadia Afroz, Michael Brennan, and Rachel Green-           [16] Giovanni Luca Ciampaglia, Prashant Shiralkar,
+       stadt. Detecting hoaxes, frauds, and deception in writ-        Luis M Rocha, Johan Bollen, Filippo Menczer, and
+       ing style online. In ISSP’12.                                  Alessandro Flammini. Computational fact checking
+   [2] Hunt Allcott and Matthew Gentzkow. Social media                from knowledge networks. PloS one, 10(6):e0128193,
+       and fake news in the 2016 election. Technical report,          2015.
+       National Bureau of Economic Research, 2017.               [17] Niall J Conroy, Victoria L Rubin, and Yimin Chen.
+   [3] Solomon E Asch and H Guetzkow. Effects of group                Automatic deception detection: Methods for finding
+       pressure upon the modification and distortion of judg-         fake news. Proceedings of the Association for Infor-
+       ments. Groups, leadership, and men, pages 222–236,             mation Science and Technology, 52(1):1–4, 2015.
+       1951.                                                     [18] Michela Del Vicario, Alessandro Bessi, Fabiana Zollo,
+                                                                      Fabio Petroni, Antonio Scala, Guido Caldarelli, H Eu-
+
+
+
+
+SIGKDD Explorations                                Volume 19, Issue 1                                              Page 33
+      gene Stanley, and Walter Quattrociocchi. The spread-            Social spammer detection in microblogging. In IJ-
+      ing of misinformation online. Proceedings of the Na-            CAI’13.
+      tional Academy of Sciences, 113(3):554–559, 2016.           [36] Zhiwei Jin, Juan Cao, Yu-Gang Jiang, and Yongdong
+  [19] Michela Del Vicario, Gianna Vivaldo, Alessandro                 Zhang. News credibility evaluation on microblog with
+       Bessi, Fabiana Zollo, Antonio Scala, Guido Caldarelli,          a hierarchical propagation model. In ICDM’14.
+       and Walter Quattrociocchi. Echo chambers: Emo-             [37] Zhiwei Jin, Juan Cao, Yongdong Zhang, and Jiebo
+       tional contagion and group polarization on facebook.            Luo. News verification by exploiting conflicting social
+       Scientific Reports, 6, 2016.                                    viewpoints in microblogs. In AAAI’16.
+  [20] Thomas G Dietterich et al. Ensemble methods in ma-         [38] Zhiwei Jin, Juan Cao, Yongdong Zhang, Jianshe Zhou,
+       chine learning. Multiple classifier systems, 1857:1–15,         and Qi Tian. Novel visual and statistical image fea-
+       2000.                                                           tures for microblogs news verification. IEEE Transac-
+  [21] Mehrdad Farajtabar, Jiachen Yang, Xiaojing Ye,                  tions on Multimedia, 19(3):598–608, 2017.
+       Huan Xu, Rakshit Trivedi, Elias Khalil, Shuang Li,         [39] Daniel Kahneman and Amos Tversky. Prospect the-
+       Le Song, and Hongyuan Zha. Fake news mitigation                 ory: An analysis of decision under risk. Economet-
+       via point process based intervention. arXiv preprint            rica: Journal of the econometric society, pages 263–
+       arXiv:1703.07823, 2017.                                         291, 1979.
+  [22] Song Feng, Ritwik Banerjee, and Yejin Choi. Syntactic      [40] Jean-Noel Kapferer. Rumors: Uses, Interpretation
+       stylometry for deception detection. In ACL’12.                  and Necessity. Routledge, 2017.
+  [23] Emilio Ferrara, Onur Varol, Clayton Davis, Filippo         [41] David O Klein and Joshua R Wueller. Fake news: A
+       Menczer, and Alessandro Flammini. The rise of so-               legal perspective. 2017.
+       cial bots. Communications of the ACM, 59(7):96–104,
+       2016.                                                      [42] Sejeong Kwon, Meeyoung Cha, Kyomin Jung, Wei
+                                                                       Chen, and Yajun Wang. Prominent features of rumor
+  [24] Johannes Fürnkranz. A study using n-gram features              propagation in online social media. In ICDM’13, pages
+       for text categorization. Austrian Research Institute for        1103–1108. IEEE, 2013.
+       Artifical Intelligence, 3(1998):1–10, 1998.
+                                                                  [43] Yann LeCun, Yoshua Bengio, and Geoffrey Hinton.
+  [25] Ashutosh Garg and Dan Roth. Understanding proba-                Deep learning. Nature, 521(7553):436–444, 2015.
+       bilistic classifiers. ECML’01.
+                                                                  [44] Kyumin Lee, James Caverlee, and Steve Webb. Un-
+  [26] Matthew Gentzkow, Jesse M Shapiro, and Daniel F                 covering social spammers: social honeypots+ machine
+       Stone. Media bias in the marketplace: Theory. Tech-             learning. In SIGIR’10.
+       nical report, National Bureau of Economic Research,
+       2014.                                                      [45] Tony Lesce. Scan: Deception detection by scientific
+                                                                       content analysis. Law and Order, 38(8):3–6, 1990.
+  [27] Adrien Guille, Hakim Hacid, Cecile Favre, and
+       Djamel A Zighed. Information diffusion in online social    [46] Yaliang Li, Jing Gao, Chuishi Meng, Qi Li, Lu Su,
+       networks: A survey. ACM Sigmod Record, 42(2):17–                Bo Zhao, Wei Fan, and Jiawei Han. A survey on
+       28, 2013.                                                       truth discovery. ACM Sigkdd Explorations Newsletter,
+                                                                       17(2):1–16, 2016.
+  [28] Aditi Gupta, Hemank Lamba, Ponnurangam Ku-
+       maraguru, and Anupam Joshi. Faking sandy: charac-          [47] Charles X Ling, Jin Huang, and Harry Zhang. Auc: a
+       terizing and identifying fake images on twitter during          statistically consistent and more discriminating mea-
+       hurricane sandy. In WWW’13.                                     sure than accuracy.
+  [29] Manish Gupta, Peixiang Zhao, and Jiawei Han. Eval-         [48] Jing Ma, Wei Gao, Prasenjit Mitra, Sejeong Kwon,
+       uating event credibility on twitter. In PSDM’12.                Bernard J Jansen, Kam-Fai Wong, and Meeyoung
+                                                                       Cha. Detecting rumors from microblogs with recur-
+  [30] David J Hand and Robert J Till. A simple generalisa-            rent neural networks.
+       tion of the area under the roc curve for multiple class
+       classification problems. Machine learning, 2001.           [49] Jing Ma, Wei Gao, Zhongyu Wei, Yueming Lu, and
+                                                                       Kam-Fai Wong. Detect rumors using time series of so-
+  [31] Naeemul Hassan, Chengkai Li, and Mark Tremayne.                 cial context information on microblogging websites. In
+       Detecting check-worthy factual claims in presidential           CIKM’15.
+       debates. In CIKM’15.
+                                                                  [50] Amr Magdy and Nayer Wanas. Web-based statistical
+  [32] John Houvardas and Efstathios Stamatatos. N-gram                fact checking of textual documents. In Proceedings of
+       feature selection for authorship identification. Artifi-        the 2nd international workshop on Search and mining
+       cial Intelligence: Methodology, Systems, and Applica-           user-generated contents, pages 103–110. ACM, 2010.
+       tions, pages 77–86, 2006.
+                                                                  [51] Filippo Menczer. The spread of misinformation in so-
+  [33] Xia Hu, Jiliang Tang, Huiji Gao, and Huan Liu. So-              cial media. In WWW’16.
+       cial spammer detection with sentiment information. In
+       ICDM’14.                                                   [52] Tanushree Mitra and Eric Gilbert. Credbank: A large-
+                                                                       scale social media corpus with associated credibility
+  [34] Xia Hu, Jiliang Tang, and Huan Liu. Online social               annotations. In ICWSM’15.
+       spammer detection. In AAAI’14, pages 59–65, 2014.
+                                                                  [53] Saif M Mohammad, Parinaz Sobhani, and Svet-
+  [35] Xia Hu, Jiliang Tang, Yanchao Zhang, and Huan Liu.              lana Kiritchenko. Stance and sentiment in tweets.
+
+
+
+
+SIGKDD Explorations                                 Volume 19, Issue 1                                            Page 34
+      ACM Transactions on Internet Technology (TOIT),                  Huan Liu. Leveraging the implicit structure within so-
+      17(3):26, 2017.                                                  cial media for emergent rumor detection. In CIKM’15.
+  [54] Fred Morstatter, Harsh Dani, Justin Sampson, and            [71] Chengcheng Shao, Giovanni Luca Ciampaglia,
+       Huan Liu. Can one tamper with the sample api?: To-               Alessandro Flammini, and Filippo Menczer. Hoaxy:
+       ward neutralizing bias from spam and bot content. In             A platform for tracking online misinformation. In
+       WWW’16.                                                          WWW’16.
+  [55] Fred Morstatter, Liang Wu, Tahora H Nazer, Kath-            [72] Baoxu Shi and Tim Weninger. Fact checking in het-
+       leen M Carley, and Huan Liu. A new approach to bot               erogeneous information networks. In WWW’16.
+       detection: Striking the balance between precision and
+                                                                   [73] Kai Shu, Suhang Wang, Jiliang Tang, Reza Zafarani,
+       recall. In ASONAM’16.
+                                                                        and Huan Liu. User identity linkage across online so-
+  [56] Subhabrata Mukherjee and Gerhard Weikum. Lever-                  cial networks: A review. ACM SIGKDD Explorations
+       aging joint interactions for credibility analysis in news        Newsletter, 18(2):5–17, 2017.
+       communities. In CIKM’15.
+                                                                   [74] Supasorn Suwajanakorn, Steven M Seitz, and Ira
+  [57] Eni Mustafaraj and Panagiotis Takis Metaxas. The                 Kemelmacher-Shlizerman. Synthesizing obama: learn-
+       fake news spreading plague: Was it preventable?                  ing lip sync from audio. ACM Transactions on Graph-
+       arXiv preprint arXiv:1703.06988, 2017.                           ics (TOG), 36(4):95, 2017.
+  [58] Raymond S Nickerson. Confirmation bias: A ubiqui-           [75] Eugenio Tacchini, Gabriele Ballarin, Marco L
+       tous phenomenon in many guises. Review of general                Della Vedova, Stefano Moret, and Luca de Alfaro.
+       psychology, 2(2):175, 1998.                                      Some like it hoax: Automated fake news detection
+  [59] Brendan Nyhan and Jason Reifler. When corrections                in social networks. arXiv preprint arXiv:1704.07506,
+       fail: The persistence of political misperceptions. Po-           2017.
+       litical Behavior, 32(2):303–330, 2010.                      [76] Henri Tajfel and John C Turner. An integrative theory
+  [60] Christopher Paul and Miriam Matthews. The russian                of intergroup conflict. The social psychology of inter-
+       firehose of falsehood propaganda model.                          group relations, 33(47):74, 1979.
+  [61] Dong ping Tian et al. A review on image feature ex-         [77] Henri Tajfel and John C Turner. The social identity
+       traction and representation techniques. International            theory of intergroup behavior. 2004.
+       Journal of Multimedia and Ubiquitous Engineering,           [78] Jian Tang, Meng Qu, Mingzhe Wang, Ming Zhang,
+       8(4):385–396, 2013.                                              Jun Yan, and Qiaozhu Mei. Line: Large-scale infor-
+  [62] Martin Potthast, Johannes Kiesel, Kevin Reinartz,                mation network embedding. In WWW’15.
+       Janek Bevendorff, and Benno Stein. A stylometric in-
+                                                                   [79] Jiliang Tang, Yi Chang, and Huan Liu. Mining social
+       quiry into hyperpartisan and fake news. arXiv preprint
+                                                                        media with social theories: a survey. ACM SIGKDD
+       arXiv:1702.05638, 2017.
+                                                                        Explorations Newsletter, 15(2):20–29, 2014.
+  [63] Martin Potthast, Sebastian Köpsel, Benno Stein, and
+                                                                   [80] Justus Thies, Michael Zollhofer, Marc Stamminger,
+       Matthias Hagen. Clickbait detection. In European
+                                                                        Christian Theobalt, and Matthias Nießner. Face2face:
+       Conference on Information Retrieval, pages 810–817.
+                                                                        Real-time face capture and reenactment of rgb videos.
+       Springer, 2016.
+                                                                        In CVPR’16.
+  [64] Vahed Qazvinian, Emily Rosengren, Dragomir R
+                                                                   [81] Amos Tversky and Daniel Kahneman. Advances in
+       Radev, and Qiaozhu Mei. Rumor has it: Identifying
+                                                                        prospect theory: Cumulative representation of uncer-
+       misinformation in microblogs. In EMNLP’11.
+                                                                        tainty. Journal of Risk and uncertainty, 5(4):297–323,
+  [65] Walter Quattrociocchi, Antonio Scala, and Cass R                 1992.
+       Sunstein. Echo chambers on facebook. 2016.
+                                                                   [82] Udo Undeutsch. Beurteilung der glaubhaftigkeit von
+  [66] Victoria L Rubin, Yimin Chen, and Niall J Conroy.                aussagen. Handbuch der psychologie, 11:26–181, 1967.
+       Deception detection for news: three types of fakes.
+       Proceedings of the Association for Information Science      [83] Andreas Vlachos and Sebastian Riedel. Fact checking:
+       and Technology, 52(1):1–4, 2015.                                 Task definition and dataset construction. ACL’14.
+
+  [67] Victoria L Rubin, Niall J Conroy, Yimin Chen, and           [84] Aldert Vrij. Criteria-based content analysis: A quali-
+       Sarah Cornwell. Fake news or truth? using satirical              tative review of the first 37 studies. Psychology, Public
+       cues to detect potentially misleading news. In Pro-              Policy, and Law, 11(1):3, 2005.
+       ceedings of NAACL-HLT, pages 7–17, 2016.                    [85] Suhang Wang, Charu Aggarwal, Jiliang Tang, and
+  [68] Victoria L Rubin and Tatiana Lukoianova. Truth and               Huan Liu. Attributed signed network embedding. In
+       deception at the rhetorical structure level. Journal of          CIKM’17.
+       the Association for Information Science and Technol-        [86] Suhang Wang, Jiliang Tang, Charu Aggarwal,
+       ogy, 66(5):905–917, 2015.                                        Yi Chang, and Huan Liu. Signed network embedding
+  [69] Natali Ruchansky, Sungyong Seo, and Yan Liu. Csi:                in social media. In SDM’17.
+       A hybrid deep model for fake news. arXiv preprint           [87] Suhang Wang, Jiliang Tang, Charu Aggarwal, and
+       arXiv:1703.06959, 2017.                                          Huan Liu. Linked document embedding for classifica-
+  [70] Justin Sampson, Fred Morstatter, Liang Wu, and                   tion. In CIKM’16.
+
+
+
+
+SIGKDD Explorations                                 Volume 19, Issue 1                                               Page 35
+  [88] Suhang Wang, Jiliang Tang, Fred Morstatter, and             [96] Liang Wu, Jundong Li, Xia Hu, and Huan Liu. Glean-
+       Huan Liu. Paired restricted boltzmann machine for                ing wisdom from the past: Early detection of emerging
+       linked data. In CIKM’16.                                         rumors in social media. In SDM’17.
+  [89] Suhang Wang, Yilin Wang, Jiliang Tang, Kai Shu,             [97] Liang Wu, Fred Morstatter, Xia Hu, and Huan Liu.
+       Suhas Ranganath, and Huan Liu. What your images                  Mining misinformation in social media. Big Data in
+       reveal: Exploiting visual contents for point-of-interest         Complex and Social Networks, pages 123–152, 2016.
+       recommendation. In WWW’17.                                  [98] You Wu, Pankaj K Agarwal, Chengkai Li, Jun Yang,
+  [90] William Yang Wang. ” liar, liar pants on fire”: A                and Cong Yu. Toward computational fact-checking.
+       new benchmark dataset for fake news detection. arXiv             Proceedings of the VLDB Endowment, 7(7):589–600,
+       preprint arXiv:1705.00648, 2017.                                 2014.
+  [91] Yilin Wang, Suhang Wang, Jiliang Tang, Huan Liu,            [99] Fan Yang, Yang Liu, Xiaohui Yu, and Min Yang. Au-
+       and Baoxin Li. Unsupervised sentiment analysis for               tomatic detection of rumor on sina weibo. In Proceed-
+       social media images. In IJCAI, pages 2378–2379, 2015.            ings of the ACM SIGKDD Workshop on Mining Data
+  [92] Andrew Ward, L Ross, E Reed, E Turiel, and                       Semantics, page 13. ACM, 2012.
+       T Brown. Naive realism in everyday life: Implications      [100] Robert B Zajonc. Attitudinal effects of mere exposure.
+       for social conflict and misunderstanding. Values and             Journal of personality and social psychology, 9(2p2):1,
+       knowledge, pages 103–135, 1997.                                  1968.
+  [93] Gerhard Weikum. What computers should know,                [101] Robert B Zajonc. Mere exposure: A gateway to the
+       shouldn’t know, and shouldn’t believe. In WWW’17.                subliminal. Current directions in psychological science,
+  [94] L Wu, F Morstatter, X Hu, and H Liu. Chapter 5:                  10(6):224–228, 2001.
+       Mining misinformation in social media, 2016.               [102] Arkaitz Zubiaga, Ahmet Aker, Kalina Bontcheva,
+  [95] Liang Wu, Xia Hu, Fred Morstatter, and Huan Liu.                 Maria Liakata, and Rob Procter. Detection and res-
+       Adaptive spammer detection with sparse group mod-                olution of rumours in social media: A survey. arXiv
+       eling. In ICWSM’17.                                              preprint arXiv:1704.00656, 2017.
+
+
+
+
+SIGKDD Explorations                                 Volume 19, Issue 1                                              Page 36
+

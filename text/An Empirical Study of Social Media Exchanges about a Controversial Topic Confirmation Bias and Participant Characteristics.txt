@@ -1,0 +1,787 @@
+                                                                       The Journal of Social Media in Society
+                                                                      Spring 2018, Vol. 7, No. 1, Page 381-400
+                                                                                                   thejsms.org
+
+
+
+
+An Empirical Study of Social Media Exchanges
+about a Controversial Topic: Confirmation Bias
+and Participant Characteristics
+
+Michael Workman
+Department of Educational Administration and Human Resource Development
+Texas A&M University, College Station, TX
+workmanfit@tamu.edu
+
+
+There has been a significant amount of research into      know if social media conversations were reflective or
+social media commentary influences on human               influencers of human behavior. Using a social media
+behaviors, ranging from its role in affecting political   mining technology we were able to determine
+elections to predicting corporate revenues; however,      sentiments,     sentiment   intensity,    and     the
+to this point, the factors and influences of social       characteristics of participants. We found strong
+media have not been completely explained and it is        evidence of confirmation bias, but that bias was
+not entirely clear whether social media influences or     influenced by personal characteristics, and in some
+simply confirms preconceptions. Moreover, with            cases, whether the sentiments were strongly positive
+sentiment analysis, much of the research has relied       or strongly negative.
+on human expert interpretation of the sentiments
+and semantics written in various social media. It            Keywords: confirmation bias, online sentiment,
+has also tended to be interpretive rather than            behavioral characteristics, natural language
+predictive in nature. In our study, we wanted to          processing
+
+
+
+
+F
+               fom watching popular news media, one may get the impression that people
+               have generally come to accept that social media influences people’s thinking
+               and their decisions. Furthermore, to this point, there has been a trove of
+               marketing and behavioral literature that has focused on interpreting data
+after the fact regarding consumer decisions influenced by social media (c.f. Baird &
+Parasnis, 2011; Lee & Oh, 2017). While financials are often easily attained ex post facto,
+predicting future consumer behaviors has been challenging because not all of the semantic
+factors and human attributes have been determinable largely owing to a lack of theoretical
+grounding (Workman, Phelps, & Hare, 2013; Zafarani, Ali, & Liu, 2014). Moreover, those
+studies that have attempted to ascertain human attributes have tended to rely on self-
+
+                                                   Page 381
+                                                          An Empirical Study of Social Media Exchanges
+
+report or human expert raters, rather than algorithmically mined from the patterns in the
+extant data (c.f. Gosling, Augustine, Vazire, Holtzman, & Gaddis, 2011). Finally, the
+domain or topic of interest may also be a factor in terms of value; in other words, social
+media may be more influential with regard to making purchases from an online vendor
+compared to opinion shaping about religious or ethical beliefs (Forbes & Vespoli, 2013).
+         In spite of these challenges we wanted to know whether social media commentary
+changed people’s minds, or whether social media commentary served to reinforce what
+people already believed (confirmation bias). Moreover, we were interested in if, and how,
+behavioral characteristics factored into this outcome. To help answer this question, for
+this study, we chose a finite and well-bounded controversial problem to study using a
+technologically advanced social media mining and semantic analysis application. The
+question is important to understand because enormous amounts of money (in the billions
+USD) is being spent yearly by industries to entice, collect, and sell information about
+people by companies such as Facebook, Twitter, YouTube, and Google, for the purposes of
+targeted marketing and other social engineering that has presumed additive if not
+exponential value to the acquisition third parties (Hanna, Rohm, & Crittenden, 2011).
+Many companies even provide free services and useful or fun mobile device applications to
+consumers just to collect their personal information for these reasons (Kaplan & Haenlien,
+2010).
+         In this manuscript, we provide evidence that social media may be more reflective in
+terms of preconceptions and tends to reinforces already held beliefs, known as
+confirmation bias (Kahneman & Tversky, 1973), rather than acting in opinion shaping;
+but this depends on certain topics and the behavioral characteristics or attributes of the
+individual participants, combined with the intensity of their sentiments, regardless of
+whether the sentiments were positive, neutral, or negative. Furthermore, we build upon
+the extant social media research literature by, (1) articulating circumstances and
+characteristics that illuminate confirmation bias, (2) develop an explanation of attributes
+that modify this condition, which is not based on human raters or self-reports, and (3) we
+produce a theoretical framework for further testing in other contexts to help explain more
+widely human-social influence “online.” We proceed as follows: (1) We situate the problem
+in a conceptual frame, (2) we introduce the theoretical components derived from the data
+
+382 | Spring 2018                           thejsms.org
+                                                                                           Workman
+
+excavation, (3) we conduct a multilevel analysis of the data to provide rich results, and (4)
+we present our findings and draw conclusions about if, why, and how people make
+determinations from conversations found in social media.
+
+
+THEORY FRAME AND HYPOTHESES
+Attitudes, Sentiment, and Social Influences
+      Attitudes have been defined as dispositional factors that lead to positive or negative
+evaluations about people, places and things as well as actions and behaviors –known as
+the target (Ajzen, 2001). These positive or negative evaluations reflect sentiment, which
+encapsulates the notions of positive, neutral, or negative feelings along with the property
+of intensity, or force (Argamon, Bloom, Esuli & Sebastiani, 2009).
+      According to social cognitive theory (Bandura, 1977), social influences contribute to
+positive or negative cognitive appraisals to varying degrees. As such, sentiments are
+conveyed through social processes (Suzuki, 1997), and supportive social influences lead to
+more positive attitudes about the target, while conversely, unsupportive social influences
+fosters more negative attitudes. As social influence increases, people are more inclined to
+yield to the normative pressure (Beck & Ajzen, 1991; Salanick & Pfeffer, 1978; Suzuki,
+1997). If there is strong sentiment against an idea or a proposition, they are more likely to
+be dissuaded; whereas if there is strongly supporting sentiment, people are more likely to
+be persuaded (Terry & Hogg, 1996).
+      In online forums such as Youtube, Facebook, and blogs, people may express their
+sentiment in binary form such clicking on icons that represent thumbs up (for like) or
+thumbs down (for dislike), but more interestingly, it is discoverable through data
+excavation to determine what people like or dislike, as well as the force or intensity of
+those sentiments. Moreover, through advanced technologies, we may now mathematically
+infer clusters of human attributes, such as optimism versus pessimism (calculated on a
+normative scale).
+      There are a variety of technologies and techniques to accomplish this from online
+forums, such as Natural Language Processing (NLP) and Latent Semantic Analytics
+(LSA), which have been used to determine both what people are referring to in their
+sentiments and the relationships of the sentiments to specific terms, along with clusters of
+
+                                                 The Journal of Social Media in Society, Vol. 7, No. 1
+                                                         An Empirical Study of Social Media Exchanges
+
+characteristics based on the prose (Baeza-Yates & Ribeiro-Neto, 1999; Danescu-Niculescu-
+Mizil, Gamon, & Dumais, 2011). These factors can be computed by number of stars
+selected on a scale, in addition to the use of adjectives, adverbs, and expletives used in
+context of the sentiment, among other linguistic terms. For example, adverbs used in a
+particular linguistic form describe how one perceives that something happens. Adjectives
+used in a particular linguistic form describe a particular quality, such as “disgusting” or
+“thoughtful” regarding the target or topic about which there is a particular negative or
+positive sentiment (Romero, Galub, Asur, & Huberman, 2011; Splunk Inc., 2017).
+      The entirety of these linguistic components in context enables semantic analysis
+software to infer intensity by means of the modifying terms, such as “This plan is
+absolutely wonderful” compared to “This plan is barely acceptable.” A semantic distance is
+computable between these two positive sentiments, which can be expressed in multiple
+ways such as geometrically or on a reproduced scale (Argamon, et al., 2009). A reproduced
+scale creates degrees of a form (a scale), where an absolute form is the lowest point on the
+scale, the middle point is known as the comparative form, and the highest point is called
+the superlative form (Pang & Lee, 2004).
+      Next, not all social media venues are alike in terms of how they allow ratings or in
+terms of what is rated. For instance, Amazon sells products online in which both the
+product and provider may be rated using 5 stars, plus comments. However, there has been
+vociferous criticism of most of these product promotion sites because they allow negative
+reviews to be removed by the providers, and because reputation companies frequently
+create artificial positive reviews to overwhelm legitimate negative ones (Chen, van der
+Lans & Phan, 2017; Workman, et. al., 2013).
+      Hence, for our research purposes, we determined that the best integrity of reviews
+would be to use a bounded discussion board that had no limit on commentary such that
+our analytics could richly mine the patterns in the prose, and without the worry of positive
+review contamination, and that focused on topical ideation rather than individual or
+personal dealings with a particular product or vendor.
+
+
+
+
+384 | Spring 2018                          thejsms.org
+                                                                                           Workman
+
+Confirmation Bias
+      Among their many contributions to understanding of human conceptualizations and
+behavior, Kahneman and Tversky (1973) explained how biases affect intentions and
+decisions. In scope for our investigation was their notion of confirmation bias. To illustrate
+this concept, research using an implicit-association test (IAT) has shown that when people
+were asked to sort pictures of people of color and white people with positive and negative
+terms, participants were able to complete the sorting much faster when pictures of white
+people were paired with positive terms than when people of color were paired with positive
+terms, and vice versa (Greenwald, McGhee, & Schwartz, 1998). This indicates a latent
+bias that carries over into confirmation bias. Confirmation is form of cognitive bias, which
+is a systematic pattern that diverges from normative judgments. In other words, the bias
+leads to illogical perceptions and behaviors because these biases lead people to construct a
+social reality that matches their preconceptions and this may result in outcomes such as
+self-fulfilling prophesies (Darley & Gross, 1983).
+      Once sentiments are formed and become firmly held, they become calcified from
+systematic reinforcement, and thus they are not easily changeable (Swann, 1997). This
+differs from when someone is seeking new knowledge, prior to the formation of strongly
+held beliefs or opinions (Forbes & Vespoli, 2013). When sentiments have been formed,
+either positively or negatively about a target, certain ignitions such as when a topic is
+controversial may intensify these sentiments to the point where people become even more
+intransigent (Zadeh, 2015). Therefore, we hypothesize that:
+      H1a0: People will not change their sentiment based on social media discussions.
+      H1b0: People will not change their sentiment regardless of sentiment intensity
+      based on social media discussions.
+
+
+Optimism and Pessimism
+      Although there are different views regarding the source of optimistic and
+pessimistic outlooks, such as whether they are heritable or conditioned, optimism leads to
+more positive expectancies whereas pessimism leads to more negative expectancies (Bates,
+2015). For example, in a study by Hollingsworth (2015), subjects in a company setting
+were given an inventory to assess their optimistic and pessimistic propensities. They were
+
+                                                 The Journal of Social Media in Society, Vol. 7, No. 1
+                                                         An Empirical Study of Social Media Exchanges
+
+then called into a conference room where they were told that there would be a significant
+announcement the next day. After the meeting, they were asked whether they thought the
+announcement would be positive or negative. Those who were more optimistic maintained
+that the announcement would be positive, and conversely those who were more pessimistic
+expressed that they thought the announcement would be negative.
+      However, while people generally do not change their sentiments, this may depend
+on specific characteristics of the individual (Zadeh, 2015). For example, there is evidence
+that people who are more optimistic have been shown to be more open to the opinions of
+others and therefore may be more persuadable (Scheier, Carver, & Bridges, 2001). More
+specifically, people who are more optimistic tend to consider alternatives and weigh the
+pros and cons in greater proportion to those who are more pessimistic (Bayrami et al.,
+2012). Therefore,
+      H2: We hypothesize that people who are more optimistic will change their
+      sentiments in greater proportion to those who are pessimistic based on social media
+      discussions.
+
+
+Internal and External Focus
+      People have different ways of cognitively formulating concepts and processing
+information, referred to as cognitive styles (Sternberg, 1997). When considering a problem
+or an issue, some people are more self-reflective and self-reliant in terms of these cognitive
+processes, known as internal focused, compared to others who tend to rely on the
+formulation and ideation by means of group interaction, known as external-focused
+(Sternberg, 1980). The effects of this can be observed in the differences between people
+who need quiet solitude and concentration for ideational generation, and those who find
+group processes (such as group brainstorming) a means of cognitively priming ideas
+(Hayes & Allinson, 1998).
+      Since people who have internal cognitive styles tend to approach problem solving
+and information analysis in an introspective and deliberative fashion, they are less
+inclined to seek and take the advice of others. On the other hand, since people with
+external cognitive styles prefer group brainstorming, in which solutions to problems evolve
+
+
+
+386 | Spring 2018                          thejsms.org
+                                                                                           Workman
+
+through cooperative interaction, they are more inclined to seek advice and counsel of
+others (Workman, Kahnweiler, & Bommer, 2003). Thus:
+      H3: Those who are more external focused will be more likely to change their
+      sentiments based on social media commentary than those who are more internal
+      focused.
+
+
+Social and Issue Focus
+      When it comes to important topics, people have inclinations toward a social focus
+versus issue focus; meaning that some people may orient their sympathies to the social
+aspects of the topic as opposed to the more rational or logical implications of the issue
+itself, and vice versa (Calvin, 1996; Murphy, Ackermann, & Handgraaf, 2011; Stark,
+Baldwin, Hertel, & Rothman, 2017). One way of conceiving a social focus was defined by
+Ajzen (2001) in which he proposed the conception of subjective norm, which indicates one’s
+degree of desire to comply with significant others’ implicit and explicit views about a thing
+or a given behavior.
+      Subjective norm reflects both the extent of social influences as well as the depth of
+social identity (Bandura, 1977). Consequently, those who are highly sensitive to subjective
+norms seek approval and are dissuaded by disapproval from significant others; and they
+respond more readily to encouragement or discouragement by these important others
+(Terry, Hogg, & White, 1999). Thus, as social influences increase toward the extremes,
+people who are highly sensitive to subjective norms increasingly strive to conform to social
+cues and the normative pressures exerted by those they perceive as important, credible, or
+are of like mind (Terry & Hogg, 1996).
+      Alternatively, people who are more issue focused internalize the meanings of an
+issue and its consequences (Calvin, 1996). They aim to deduce cause-and-effect of the
+antecedent issue upon themselves and their immediate concerns (Reisberg, 1996). People
+who are issue focused are not easily convinced by brief expressions of alternative opinions,
+but rather demand strong justification for the premises and conclusions before they will
+even consider a proposition (Clore & Huntsinger, 2007; Evans, Over & Manktelow, 1993).
+Consequently we formally hypothesize that:
+
+
+
+                                                 The Journal of Social Media in Society, Vol. 7, No. 1
+                                                         An Empirical Study of Social Media Exchanges
+
+      H4: Those who are more socially focused will be more likely change their sentiment
+      compared to those who are more issue focused.
+
+
+Human Attributes and Interactions with Intensity
+      Do some people react differently when they feel passionately about the topic?
+Research has suggested that when people hold positions more deeply and passionately,
+they are less likely to change their positions on a topic depending on the topic in question
+(Larsen, Diener & Emmons, 1986). However, in some cases, if someone is intensely
+passionate about some issues such as social equality and justice, some may actually be
+more inclined to change their sentiments based on events that are shown to them to be
+inequitable (van den Bos, Maas, Waldring, & Waldring, 2003). Therefore, we acknowledge
+differences among human attributes we have posited in our previous hypotheses and the
+interactions with their sentiment affect intensity. Thus we formally hypothesize that:
+      H5a: People who are more intensely optimistic will be more likely to change their
+      sentiments based on social media than those who are more intensely pessimistic.
+      H5b: People who were more intensely external focused will be more likely to change
+      their sentiments based on social media commentary than those who were more
+      intensely internal focused.
+      H5c: People who are more intensely socially focused will more likely change their
+      sentiment compared to those who were more intensely issue focused.
+
+
+METHOD
+Environment
+      Studies (e.g. Forbes & Vespoli, 2013) have shown that social media influences may
+differ depending upon the forum, domain, and topic of interest, and therefore may differ in
+terms of value to a particular consumer. In particular, observations show that topics
+posted on social media often quickly devolve into trolling and random subject postings.
+The conversations often tend to atrophy and attenuate until the postings become entirely
+meaningless with regard to the original topic (Chen, et. al., 2017).
+      For example, we monitored for a period of months conversations on YouTube for a
+trailer of an animated movie (for another research project). Within four posts, the
+
+388 | Spring 2018                          thejsms.org
+                                                                                           Workman
+
+comments had devolved from the topic of the move into a political debate about the
+President of the United States, with many expletives and abundant derogatory
+commentary that were completely irrelevant to the movie. However, when we monitored
+on YouTube a topic such as “Giants of Philosophy” nearly all of the commentary for each
+philosopher (such as Kant and Spinoza) resulted in topical debates, such as whether or not
+there is freewill. Thus, we inductively determined that the topic and forum was essential
+to the value of the social media commentary, as well as in terms of the ability to influence
+opinions. Our observations were consistent with previous research into this question
+(Chen, et. al., 2017; Forbes & Vespoli, 2013). Consequently, we chose a controlled blog
+about a controversial subject, where participants were encouraged to post anonymously.
+We chose this method specifically to determine whether social media commentary would
+change minds or reinforce them, and whether there were differences in this outcome based
+on particular participant attributes.
+
+
+Participants
+      A large global financial services corporation based on the east coast of the United
+States wanted to undertake a comprehensive pay and benefits restructuring including
+dropping merit raises and replacing it with a graduated bonus program. The main
+advantage of the merit raise included gradual salary increases over time, the main
+advantage of the bonus program was that one could receive significantly more money in
+single year compared to a merit increase, but it was not guaranteed year to year, and
+his/her base salary would remain constant. This subject was considered highly
+controversial, according to the human resources department.
+      The company brought in a third party human resources consulting group to
+determine employee sentiments about the changes and identify concerns. They created an
+opinion survey, a mandatory 25-30 minute online factual presentation explaining the
+proposed compensation program, which included a short quiz at the end to ensure that
+participants had viewed the presentation (if participants scored less than 80%, they were
+required to repeat the presentation), and finally, they produced a blog where participants
+would post anonymous (confidential) comments, which was advertised by the company as
+for the purposes of helping them to come to a decision. To maximize participation in the
+
+                                                 The Journal of Social Media in Society, Vol. 7, No. 1
+                                                        An Empirical Study of Social Media Exchanges
+
+social media blog, people (associates) were regularly prompted to participate and were
+given “purchase points” for doing so, which could be applied to making purchases from
+affiliate merchants. They were also notified when someone viewed or commented on their
+post to get them to reengage. For example, bot generated prompts and cues were used to
+get participants to read the social media commentary, such as generating notifications
+that stated: “Hey, someone just viewed/commented on your posting.”
+      From an academic perspective, we were interested in if, and how, the social media
+commentary changed people’s sentiment about the program, and if so, did it do so in a
+positive or negative direction based on certain human attributes such as open or closed
+mindedness, which was determined by an advanced social media and semantic analysis
+application, the method largely explained by Sharma, Gupta, Agarwal & Bhattacharyya
+(2015), and Romero, Galuba, Asur, and Huberman, (2011).
+Instrumentation and Approach
+      For our investigation, we developed a short questionnaire to inquire (on a 7 point
+scale, where 1 = strongly disapprove, 7 = strongly approve) of the changes. The
+questionnaire was presented to participants prior to their having viewed the presentation,
+immediately after they viewed the presentation, then again after 3 weeks of social media
+commentary.
+      Next, we ran an analysis of the discussions by commenter with a social media
+mining technology that utilizes natural language processing (NLP) and logistic regression
+for categorization of concepts, along with semantic clustering into attributes using a
+modified version of latent semantic analysis (Landauer, Foltz & Laham, 2009). This
+widely used commercial technology produced (among other things) a sentiment value,
+where -1 = negative, and 1 = neutral/informational, and 2 = positive. The technology
+employs a theorem derived from a formula published by Sharma, Gupta, Agarwal &
+Bhattacharyya (2015) to determine an additional measure: A scaled sentiment intensity
+ranging from 1 to 7 indicating mildly expressed to strongly expressed affect score.
+      These measures are mathematically formulated based on the use of clusters of
+adjectives, adverbs, and other semantic terms, including the use of profanity, and does not
+rely on human raters. Beyond these capabilities, the technology (an extended version of
+open source LingPipe and Lucine) has the ability to infer various attributes of posters
+
+390 | Spring 2018                         thejsms.org
+                                                                                                     Workman
+
+geometrically from semantic terms in the prose. More specifically, the technology inferred
+certain attributes using a modified form a latent semantic analytics (LSA), augmented to
+cluster semantic concepts into the behavioral attributes: Optimism/Pessimism, Internal
+“I” focused/External “You” focused, and Social/Issue focused (c.f. Carpenter, 2004;
+Landauer, et. al., 2009).
+
+
+RESULTS
+      After data screening and pretests, we were sufficiently confident in our analyses.
+The Muachly’s test of sphericity was not significant (χ2 = 3.54, p = .61), which indicates
+that the correlation matrix was not significantly different from the identity matrix in
+which correlations between variables (Myers, Well & Lorch, 2010). This combined with a
+fairly large sample size, we were confident that the assumption of sphericity had not been
+violated. In support of continuing with the remaining analyses, the test for homogenity of
+variances was validated because the scatter was relatively equal (Myers, et. al., 2010).
+Moreover, Levene’s test was not significant at the 0.05 level (Test 1: F = 2.43, p = 0.07,
+Test 2: F = 5.72, p = 0.08, and Test 3: F = 2.70, p = 0.07), which indicated that the
+assumption of homogeneity of the covariance matrices had been met (Myers, et. al., 2010).
+The descriptive statistics are shown in Table 1.
+
+           Table 1
+           Descriptive Statistics and Correlations
+
+           Measure                          µ    σ    1       2       3       4       5       6
+           Optimism/                    3.6 1.33      --
+           Pessimism
+           Internal/External            4.0     1.79 -.14 --
+           Social/Issue                 3.4     1.57 .17* -.24** --
+           Intensity                    4.3     1.89 -.07 -.17* -.19** --
+           Pretest Sentiment            3.0     1.43 -.13* .24** -.16* .13* --
+           Posttest Sentiment           3.4     1.91 -.18* .27** -19* .10* .23** --
+           N = 753. * p < .01, **p < .001
+      For the first stage of our analysis we conducted repeated measures ANOVA. Test 1:
+prior to viewing the informational video, Test 2: after viewing the informational video,
+Test 3: after social media commentary, based on the three survey inquiries. In H1a, we
+hypothesized that there would be no change in sentiment based on social media
+
+
+                                                           The Journal of Social Media in Society, Vol. 7, No. 1
+                                                         An Empirical Study of Social Media Exchanges
+
+discussions, in other words the null hypothesis would be supported. We found that the
+informational video did significantly change participant sentiments (F = 32.82, p < 0.00),
+but that the social media conversations made no statistical difference (F = 0.28, p = 0.73).
+Similarly, for H1b, we argued that how intensely the sentiment was felt/expressed in
+social media would not change sentiments. Consistent with H1a, the analysis of H1b
+showed that the informational video did significantly change participant sentiments (F =
+12.49, p < 0.00), but that the social media conversations made no statistical difference (F =
+2.91, p = 0.06).
+       Given the results of our first stage analysis we tested our remaining hypotheses
+using multivariate analysis of covariance (MANCOVA). We wanted to determine whether
+there were significant differences among the cluster of attributes exhibited by
+participants, and since we wanted to isolate the effects upon sentiment without the
+transitive dependency, we used Test 2 (post-informational video) as the covariate to
+determine if there were significant changes in sentiment based on the social media
+commentary (Test 3). The overall MANCOVA model was significant (F = 1.01, p < .00,
+r²adj = .72). Since we posited that there would be differences based on certain
+characteristics of the participants, in other words, beyond sentiment and intensity, we
+hypothesized that participant attributes would influence the outcomes; thus we proposed
+alternative hypotheses based on the following attributes that were mined and categorized
+by the technology: optimism/pessimism, internal “I” focused/external “You” focused and
+social/issue focused.
+       Since specific tests of hypotheses must be based on univariate results and not on
+the overall multivariate test, we conducted individual ANCOVA for the remaining
+hypotheses. In H2, we hypothesized that participants who were more optimistic (μ= 3.22, σ
+= 0.47) would be more likely to change their sentiments based on social media than those
+who were more pessimistic (μ= 3.13, σ = 0.20). This hypothesis was not supported (F =
+1.14, p = 0.20, η² = 0.12). In H3, we suggested that those who were more external focused
+(μ= 3.08, σ = 0.89) would be more likely to change their sentiments based on social media
+commentary than those who were more internal focused (μ= 4.36, σ = 0.76). This
+hypothesis was supported (F = 1.49, p < 0.00, η² = 0.18). Finally, in H4, we hypothesized
+that those who were more socially focused (μ= 3.68, σ = 0.73) would more likely change
+
+392 | Spring 2018                          thejsms.org
+                                                                                                 Workman
+
+their sentiment compared to those who were more issue focused (μ= 3.32, σ = 0.55). This
+hypothesis was not supported (F = 1.27, p = 0.61, η² = 0.14). See Tables 2-4.
+       Table 2
+       ANCOVA for Optimism/ Pessimism; Dependent Variable: Post-Test
+             Source       Type III Sum df            Mean      F    Sig.    Eta
+                           of Squares               Square               Squared
+       Corrected Model 1905.131            81       23.520  18.581 .000    .692
+               Intercept      4.675         1        4.675   3.693  .055   .005
+                 Pretest 1567.386           1     1567.386 1238.247 .000   .649
+              Optimism 115.251             80        1.441   1.138  .203   .119
+                   Error 849.359          671        1.266
+                    Total 11904.479       753
+        Corrected Total 2754.489          752
+       R Squared = .692 (Adjusted R Squared = .654)
+
+
+        Table 3
+        ANCOVA for Internal/External; Dependent Variable: Post-Test
+             Source     Type III Sum         df         Mean          F        Sig.       Eta
+                         of Squares                    Square                          Squared
+             Corrected 1964.618              98        20.047      16.599      .000      .713
+                 Model
+              Intercept     1.471            1       1.471    1.218  .270                .002
+               Pre-Test 1513.089             1     1513.089 1252.812 .000                .657
+               Internal 174.738              97      1.801    1.492  .003                .181
+                  Error 789.872             654      1.208
+                  Total 11904.479           753
+        Corrected Total 2754.489            752
+        R Squared = .713 (Adjusted R Squared = .670)
+
+
+
+        Table 4
+        ANCOVA for Social/Issue; Dependent Variable: Post-Test
+                Source Type III      df    Mean         F      Sig.                     Eta
+                         Sum of           Square                                      Squared
+                         Squares
+              Corrected 1925.776     87   22.135     17.762 .000                        .699
+                 Model
+              Intercept   1.855      1     1.855      1.489    .223                     .002
+               Pre-Test 1503.589     1   1503.589 1206.553 .000                         .645
+                 Social 135.896      86    1.580      1.268    .061                     .141
+                  Error 828.714     665    1.246
+                  Total 11904.479 753
+        Corrected Total 2754.489    752
+        R Squared = .699 (Adjusted R Squared = .660)
+
+
+                                                       The Journal of Social Media in Society, Vol. 7, No. 1
+                                                         An Empirical Study of Social Media Exchanges
+
+      In our final analysis, we proposed interactions. In H5a, we hypothesized that
+participants who were more intensely optimistic would be more likely to change their
+sentiments based on social media than those who were more intensely pessimistic.
+However, this hypothesis was not supported (F = 1.20, p = 0.08, η² = 0.24). H5b suggested
+that those who were more intensely external focused would be more likely to change their
+sentiments based on social media commentary than those who were more intensely
+internal focused. This hypothesis was supported (F = 1.38, p < 0.00, η² = 0.32). Finally, in
+H5c, we hypothesized that those who were more intensely socially focused would more
+likely change their sentiment compared to those who were more intensely issue focused.
+This hypothesis was also supported (F = 1.41, p < 0.00, η² = 0.29). See Tables 5-7.
+
+
+
+
+      Table 5
+      ANCOVA for Optimism/Pessimism Intensity Interaction
+      Dependent Variable: Post-Test
+             Source           Type III      df        Mean             F      Sig.     Eta
+                               Sum of                Square                          Squared
+                              Squares
+                  Intercept      6.916     1         6.916     4.152 .049             .101
+                      Error     61.768   37.080      1.666
+                   Pre-Test   1255.327     1        1255.327 1066.657 .000            .669
+                      Error    620.216    527        1.177
+                 Optimism/     114.745     80        1.434     1.120 .240             .168
+                 Pessimism
+                      Error   567.869    443.442         1.281
+                  Intensity    24.692       7            3.527       2.703    .010    .052
+                      Error   448.809    343.870         1.305
+                Optimism *    193.025      137           1.409       1.197    .084    .237
+                  Intensity
+                      Error   620.216      527           1.177
+
+
+
+
+394 | Spring 2018                          thejsms.org
+                                                                                             Workman
+
+     Table 6
+     ANCOVA for Internal/External Intensity Interaction
+     Dependent Variable: Post-Test
+               Source          Type III       df          Mean          F       Sig.     Eta
+                                Sum of                   Square                        Squared
+                               Squares
+                   Intercept      2.141       1      2.141    1.471 .232                 .036
+                       Error     57.360     39.415   1.455
+                    Pre-Test   1200.358       1    1200.358 1151.571 .000                .704
+                       Error    505.548      485     1.042
+           Internal/External    187.440       97     1.932    1.521 .003                 .300
+                       Error    436.450    343.492 1.271
+                   Intensity     21.497       7      3.071    2.377 .022                 .051
+                       Error    396.174    306.694 1.292
+                  Internal *    232.328      162     1.434    1.376 .005                 .315
+                   Intensity
+                       Error    505.548       485         1.042
+
+
+     Table 7
+     ANCOVA for Social/Issue Intensity Interaction
+     Dependent Variable: Post-Test
+           Source       Type III Sum    df     Mean       F                   Sig.        Eta
+                         of Squares           Square                                   Squared
+             Intercept      1.821       1      1.821    1.115                 .298       .031
+                  Error    56.088     34.346   1.633
+              Pre-Test 1239.151         1    1239.151 1125.223                .000      .687
+                  Error 564.941        513     1.101
+           Social/Issue 145.122         86     1.687    1.261                 .077      .237
+                  Error 465.983      348.300   1.338
+             Intensity     26.639       7      3.806    2.760                 .009      .064
+                  Error 392.164      284.453   1.379
+               Social * 224.704        145     1.550    1.407                 .004      .285
+             Intensity
+                  Error 564.941        513     1.101
+
+
+
+DISCUSSION
+      Topics posted on YouTube and many other social media may quickly devolve into
+trolling and random postings. For example, we monitored conversations on YouTube for a
+trailer of an animated movie. Within four posts, the conversation had quickly devolved
+from the topic of the movie to a political debate about the President of the United States,
+with many expletives and abundant derogatory commentary that had nothing to do with
+
+                                                   The Journal of Social Media in Society, Vol. 7, No. 1
+                                                         An Empirical Study of Social Media Exchanges
+
+the original message. However, when we monitored a topic such as Giants of Philosophy
+on YouTube, nearly all of the commentary was a philosophical debate, such as whether or
+not there is freewill. The discussions were nearly all topical.
+      Thus, we determined that the issue or topic was critical to the value of the
+commentary found in social media. In the business world, issues pertinent to daily lives
+carry the most relevant social commentary in social media; thus, we selected an important
+and also controversial topic to study in that context. Overall, we were interested in
+whether or not social media commentary changed or confirmed previously held positions.
+We learned that there was strong support for confirmation bias, but there were also
+differences depending on intensity of the sentiment affect, and also attributes of people.
+      We concluded that generally speaking, people do not change their minds based on
+social media commentary. The research literature suggests that this is different from
+when people are searching for a product online and rely on other people’s
+recommendations –although there have been many criticisms of this proposition as well
+since people are becoming more aware of reputation bots that inflate positive reviews.
+Nevertheless, the fact that we found that participants did tend to change their minds
+based on an informative presentation does tend to support the idea that there are
+differences between those who are seeking new information to form an opinion versus
+those who have already made up their minds.
+      Also, it is important to note that confirmation bias appears not to be universal and
+depends upon certain characteristics of those who are posting and reading online
+commentary regarding an important and controversial topic, such as changing how people
+are compensated at work. The sentiment mining technology we utilized produced patterns
+consisting of three attribute characteristics: optimism/pessimism, internal “I”
+focused/external “You” focused and social/issue focused, along with a dimensional scale
+reflecting intensity of sentiment. When we analyzed the data, we found that optimism
+versus pessimism and social focus versus issue focus made no difference in terms of
+influence from the social media conversation, but externals (as opposed to internals) were
+likely to change their sentiments.
+      Furthermore, we found that people who were more extremely external focused were
+more likely to change their sentiments based on social media commentary than those who
+
+396 | Spring 2018                          thejsms.org
+                                                                                          Workman
+
+were more extremely internal focused when sentiment affect intensity was taken into
+account, as well as people who were more extremely socially focused were more likely
+change their sentiment compared to those who were more extremely issue focused when
+sentiment affect intensity was taken into account.
+      With these findings we helped to elucidate some key nuances about online
+commentary in social media and their influences, as well as their value. Also, we produced
+a theoretical framework for further testing in other contexts to help explain more widely
+human-social influence “online” without relying on the judgment of human raters. We
+would like to see this work extended into various social media forums to determine if there
+are differences among those forums, as well as type of media expression, such as video
+versus prose.
+
+
+References
+Ajzen, I. (2001). Nature and operation of attitudes. Annual Review of Psychology, 52(1),
+      27-58.
+Argamon, S., Bloom, K., Esuli, A., & Sebastiani, F. (2009). Automatically determining
+      attitude type and force for sentiment analysis. In Z. Vetulani and H. Uszkoreit
+      (Eds.), LTC/LNAI, pp. 218-231. Springer-Verlag Berlin Heidelberg.
+Baeza-Yates, R. & Ribeiro-Neto, B. (1999). Modern information retrieval. NY
+      Pearson/Addison Wesley.
+Baird, C. H., & Parasnis, G. (2011). From social media to social customer relationship
+      management. Strategy & Leadership, 39(5), 30-37.
+Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change.
+      Psychological Review, 84(1), 191–215.
+Bates, T. C. (2015). The glass is half full and half empty: A population-representative twin
+      study testing if optimism and pessimism are distinct systems. The Journal of
+      Positive Psychology, 10(6), 533–542.
+Bayrami, M., Abad, T. H. N., Ghoradel, J. A., Daneshfar, S., Heshmati, R., & Moslemifar,
+      M. (2012). The role of positive and negative affectivity, optimism, pessimism, and
+      information processing styles in student psychological adjustment. Procedia - Social
+      and Behavioral Sciences, 46(1), 306-310.
+Beck, L., & Ajzen, I. (1991). Predicting dishonest actions using the theory of planned
+      behavior, Journal of Research in Personality, 25(1), 285–301.
+Calvin, W. H. (1996). How brains think, NY, Harper Collins.
+Carpenter, B. (2004). Phrasal queries with LingPipe and Lucene. In Proceedings of the
+      13th Meeting of the Text Retrieval Conference (TREC). Gaithersburg, Maryland,
+      USA.
+Chen, X., van der Lans, R., & Phan T. Q. (2017). Uncovering the importance of
+      relationship characteristics in social networks: Implications for seeding strategies.
+      Journal of Marketing Research, 54(2), 187-201.
+
+                                                The Journal of Social Media in Society, Vol. 7, No. 1
+                                                        An Empirical Study of Social Media Exchanges
+
+Clore, G. L., & Huntsinger, J. R. (2007). How emotions inform judgment and regulate
+       thought. Trends in Cognitive Sciences, 11(9), 393-399.
+Danescu-Niculescu-Mizil, C; Gamon, M.; & Dumais, S. (2011). Mark my words! Linguistic
+       style accommodation in social media. Proceedings of the 20th ACM International
+       Conference on the World Wide Web, April, 745-754, Hyderabad, India.
+Darley, J. M., & Gross, P. H. (1983). A hypothesis-confirming bias in labeling effects.
+       Journal of Personality and Social Psychology, 44(1), 20-33.
+Evans. J., Over, D. E. , & Manktelow, K. I. (1993). Reasoning, decision making and
+       rationality. Cognition, 49 (1/2), 165-187.
+Forbes, L. P., & Vespoli, E. M. (2013). Does social media influence consumer buying
+       behavior? An investigation of recommendations and purchases. Journal of Business
+       and Economics Research, 11(2), 107-112.
+Gosling, S. D., Augustine, A. A., Vazire, S., Holtzman, N., & Gaddis, S. (2011).
+       Manifestations of personality in online social networks: Self-reported Facebook-
+       related behaviors and observable profile information. Cyberpsychology, Behavior,
+       and Social Networking, 14(9), 483-488.
+Greenwald, A. G., McGhee, D. E., & Schwartz, J. L.K. (1998). Measuring individual
+       differences in implicit cognition: The implicit association test. Journal of
+       Personality and Social Psychology, 74(6), 1464–1480.
+Hanna, R. Rohm, A., & Crittenden, V. L. (2011). We are all connected: The power of the
+       social ecosystem. Business Horizons, 54(3), 265–273.
+Hayes, J., & Allinson, C. W. (1998). Cognitive style and the theory and practice of
+       individual and collective learning in organizations. Human Relations, 51(1), 847–
+       871.
+Hollingsworth, L. C. (2015). Optimism and pessimism in guessing future outcomes: A
+       study of conflict and security expectancies. Proceedings from the First International
+     Conference on Security and Privacy Issues with Social Media, ISPI’2015 November,
+     41-49, Lyon, France.
+Kahneman, D. & Tversky, A. (1973). On the psychology of prediction. Psychological
+     Review, 80(4), 237–251. doi:10.1037/h0034747.
+Kaplan, A. M., & Haenlien, M. (2010). Users of the world, unite! The challenges and
+      opportunities of social media. Business Horizons, 53, 59-68.
+Landauer, T. K., Foltz, P. W., & Laham, D. (2009). An introduction to latent semantic
+      analysis. Discourse Processes, 25, 259-284.
+Larsen, R. J., Diener, E. & Emmons, R. A. (1986). Affect intensity and reactions to daily
+      life events. Journal of Personality and Social Psychology, 51(4), 803-814.
+Lee, H., & Oh, H. J. (2017). Normative mechanism of rumor dissemination on Twitter.
+      Cyberpsychology, Behavior, and Social Networking, 20(3), 164-171.
+Murphy, R. O., Ackermann, K. A., & Handgraaf, M. J. J. (2011). Measuring social value
+      orientation. Judgment and Decision Making, 6(8), 771-781.
+Myers, J. L., Well, A. D., & Lorch, R. F. (2010). Research design and statistical analysis.
+      NY: Rourtledge.
+Pang, B. & Lee, L. (2004). A Sentimental Education: Sentiment Analysis Using
+      Subjectivity Summarization Based on Minimum Cuts. Proceedings of the
+      Association for Computational Linguistics (ACL), July, 271–278, Barcelona, Spain.
+Reisberg, D. (1996). Cognition: Exploring the science of mind. NY: WW Norton & Co.
+
+398 | Spring 2018                         thejsms.org
+                                                                                         Workman
+
+Romero, D. M., Galuba, W., Asur, S., & Huberman, B. A. (2011). Influence and passivity in
+      social media. In: Gunopulos D., Hofmann T., Malerba D., Vazirgiannis M. (eds)
+      Machine Learning and Knowledge Discovery in Databases. ECML PKDD 2011.
+      Lecture Notes in Computer Science, vol. 6913. Springer, Berlin, Heidelberg.
+Salanick, G.J. & Pfeffer, J. (1978). A social information processing approach to job
+      attitudes and task design, Administrative Science Quarterly, 23(1), 224–253.
+Scheier, M.F., Carver, C.S., & Bridges, M.W. (2001). Optimism, pessimism, and
+      psychological well-being. In E.C. Chang (Ed.), Optimism and pessimism:
+      Implications for theory, research, and practice (pp. 189-216). Washington, DC:
+      American Psychological Association.
+Sharma, R., Gupta, M. Agarwal, A, & Bhattacharyya, P. (2015). Adjective intensity and
+      sentiment analysis. Proceedings of the 2015 Conference on Empirical Methods in
+      Natural Language Processing, pp. 2520–2526, Lisbon, Portugal, 17-21 September
+      2015, The Association for Computational Linguistics.
+Splunk Inc. (2017). Using SPLUNK user behavior analytics: Automating early breach
+      detection and continuous threat monitoring. Tech Brief White Paper. Retrieved
+      from the WWW (7/7/17): https://www.splunk.com/pdfs/technical-briefs/using-
+      splunk-user-behavior-analytics.pdf
+Stark, E., Baldwin, A. S., Hertel, A. W., & Rothman, A. J. (2017). The role of rational and
+      experiential processing in influencing the framing effect. The Journal of Social
+      Psychology, 157(3), 308-321.
+Sternberg, R. J. (1980). Sketch of a componential sub-theory of human intelligence.
+      Behavioral and Brain Sciences, 3(1), 568–585.
+Sternberg, R. J. (1997). Thinking styles. NY: Cambridge University Press.
+Suzuki, S. (1997). Cultural transmission in international organizations: impact of
+      interpersonal communication, patterns in intergroup contexts, Human
+      Communication Research, 24(1), 147–180.
+Swann, W. B. (1997). The trouble with change: Self-verification and allegiance to the self.
+      Psychological Science, 8(3), 177-180.
+Terry, D.J. & Hogg, M.A. (1996). Group norms and the attitude-behavior relationship: A
+      role for group identification, Personality and Social Psychology, 22(1), 776–793.
+Terry, D.J., Hogg, M.A. & White, K.M. (1999). The theory of planned behavior: Self-
+      identity, social identity and group norms, British Journal of Psychological Society,
+      38(1), 225–244.
+van den Bos, K., Maas, M., Waldring, I. E. U., Waldring, G. R. S. (2003). Toward
+      understanding the psychology of reactions to perceived fairness: The role of affect
+      intensity. Social Justice Research, 16(2), 151-168.
+Workman, M., Kahnweiler, W., & Bommer, W. (2003). The effects of cognitive style and
+      media richness on commitment to telework and virtual teams, Journal of Vocational
+      Behavior, 63(1), 199-219.
+Workman, M., Phelps, D., & Hare, R. C. (2013). A study of performative hactivist
+      subcultures and threats to businesses. Information Security Journal, 22(4), 187-200.
+Zadeh, A. (2015). Micro-opinion sentiment intensity analysis and summarization in online
+      videos. Proceedings of the 2015 ACM on International Conference on Multimodal
+      Interaction, Seattle, Washington, Nov 9-13, 587-591.
+
+
+                                               The Journal of Social Media in Society, Vol. 7, No. 1
+                                                        An Empirical Study of Social Media Exchanges
+
+Zafarani, R., Ali Abbasi, M., & Liu, H. (2014). Social Media Mining. Cambridge University
+      Press.
+
+
+
+
+Funding and Acknowledgements
+The author declares no funding sources or conflicts of interest.
+
+
+
+Online Connections
+To follow Michael Workman:
+https://www.researchgate.net/profile/Michael_Workman
+
+
+
+
+400 | Spring 2018                         thejsms.org
+

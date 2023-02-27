@@ -1,0 +1,1210 @@
+Session: Politics, Party, Policy, & Participation                                                         CSCW 2017, February 25–March 1, 2017, Portland, OR, USA
+
+
+
+
+           Quantifying Search Bias: Investigating Sources of Bias
+                    for Political Searches in Social Media
+                     Juhi Kulshrestha                                            Motahhare Eslami                                     Johnnatan Messias
+                    MPI-SWS, Germany                                            University of Illinois at                             MPI-SWS, Germany
+                                                                               Urbana-Champaign, USA
+            Muhammad Bilal Zafar                                                    Saptarshi Ghosh                                   Krishna P. Gummadi
+             MPI-SWS, Germany                                                     IIEST Shibpur, India                                MPI-SWS, Germany
+
+                                                                                Karrie Karahalios
+                                                                               University of Illinois at
+                                                                              Urbana-Champaign, USA
+                                                                               Adobe Research, USA
+    ABSTRACT                                                                                              systems that users rely on for a variety of daily tasks from lo-
+                                                                                                          cating specific websites or content to learning broadly about
+    Search systems in online social media sites are frequently                                            events, people, or businesses unfamiliar to them. When a user
+    used to find information about ongoing events and people.                                             is trying to “learn” or gather information about a topic [45],
+    For topics with multiple competing perspectives, such as po-                                          search engines could influence the user’s opinions about the
+    litical events or political candidates, bias in the top ranked re-                                    topic by preferentially ranking results that correspond to one
+    sults significantly shapes public opinion. However, bias does                                         particular perspective on the topic above others. This possi-
+    not emerge from an algorithm alone. It is important to distin-                                        bility is particularly troubling in the context of informational
+    guish between the bias that arises from the data that serves as                                       queries about polarizing topics like political debates or politi-
+    the input to the ranking system and the bias that arises from                                         cians, where contrasting perspectives exist. Recently con-
+    the ranking system itself. In this paper, we propose a frame-                                         ducted field studies have shown that not only do users place
+    work to quantify these distinct biases and apply this frame-                                          greater trust in higher ranked search results [29], but also that
+    work to politics-related queries on Twitter. We found that                                            user opinions about political candidates can be manipulated
+    both the input data and the ranking system contribute signifi-                                        by biased rankings of search results [8].
+    cantly to produce varying amounts of bias in the search results
+    and in different ways. We discuss the consequences of these                                           Characterizing the bias present in a search system can be quite
+    biases and possible mechanisms to signal this bias in social                                          challenging. Search engines employ a ranking system to re-
+    media search systems’ interfaces.                                                                     trieve a list of results from a corpus of data (i.e., collection of
+                                                                                                          web pages or user posts like tweets) based on their relevance
+    ACM Classification Keywords                                                                           to a user’s query. So, when quantifying the bias of a search
+    H.1.2 User / Machine Systems: Human information process-                                              engine in response to a query, it is useful to distinguish (i) the
+    ing; H.3.3 Information Search and Retrieval: Search process;                                          bias that arises from the data corpus that acts as input to the
+    H.3.5 On-line Information Services: Web-based services                                                ranking system of the search engine, from (ii) the bias that
+                                                                                                          arises from the ranking system itself. In this paper, we shed
+    Author Keywords                                                                                       light on these challenges by answering the following research
+    Search Bias; Search Bias Quantification; Sources of Search                                            questions:
+    Bias; Social Media Search; Political Bias Inference; Twitter;
+                                                                                                          • RQ1: How can we quantify the different sources of search
+    INTRODUCTION                                                                                            engine bias?
+    As algorithmic decision making systems pervade our daily
+    lives, there is a growing concern about their lack of trans-                                          • RQ2: How biased are the search results for political topics
+    parency and their potential for offering biased or discrimina-                                          on social media sites like Twitter? Where does this bias in
+    tory results to their users [10]. Search engines are one of these                                       the search results come from?
+    Permission to make digital or hard copies of all or part of this work for personal or                 We address these questions for political queries related to the
+    classroom use is granted without fee provided that copies are not made or distributed
+    for profit or commercial advantage and that copies bear this notice and the full citation
+                                                                                                          2016 US Presidential primaries using Twitter Search. We
+    on the first page. Copyrights for components of this work owned by others than the                    chose a social media search engine because people are in-
+    author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or                creasingly relying on social media for their news. In re-
+    republish, to post on servers or to redistribute to lists, requires prior specific permission
+    and/or a fee. Request permissions from permissions@acm.org.                                           cent elections, it has become common for people to search
+     CSCW ’17, February 25-March 01, 2017, Portland, OR, USA                                              for information about political candidates and events on so-
+     c 2017 Copyright held by the owner/author(s). Publication rights licensed to ACM.                    cial media sites [40]. Furthermore, in August 2015, the Pew
+    ISBN 978-1-4503-4335-0/17/03. . . $15.00                                                              Research Center announced that approximately two thirds
+    DOI: http://dx.doi.org/10.1145/2998181.2998321
+
+
+
+
+                                                                                                    417
+Session: Politics, Party, Policy, & Participation                            CSCW 2017, February 25–March 1, 2017, Portland, OR, USA
+
+
+
+    of American adults received their news from Twitter—and                  RELATED WORK
+    they continued to follow news threads on Twitter as they pro-
+    gressed [25].                                                            Bias in Web Search
+    To answer our first question, we first propose a search bias             In recent years, there has been a growing interest in study-
+    quantification framework that quantifies the bias of the out-            ing the bias in Web search engines results [11, 26, 39, 41, 42].
+    put results of a search engine. Moreover, this framework also            Much of this work has been motivated by the concern that
+    discerns to what extent this output bias is due to the input             dominant search engines like Google might favor certain
+    data set that feeds into the ranking system and how much is              websites over others when ranking relevant search results.
+    due to the bias introduced by the ranking system. Our frame-             For example, Google might preferentially rank videos from
+    work requires a methodology for inferring political bias of              YouTube (owned by Google) over videos from competing
+    individual search results. Hence, we also developed a method             sites. Whereas, exploring geographical bias, [42] measured
+    to infer the political bias of individual data items on Twitter          whether sites from certain countries are covered more than
+    with high accuracy and coverage.                                         sites from other countries in search results.
+    To address the second question, we gathered data for 25 po-              Several studies have explored political bias in Web search re-
+    litical queries in Twitter search in December 2015 during a              sults and search queries. While Weber et al [43] inferred po-
+    week in which two presidential debates occurred—one Re-                  litical leanings of search queries by linking the queries with
+    publican debate and one Democratic debate. Applying our                  political blogs, Epstein and Robertson [8] studied how bias
+    quantification method on the collected data, we found that               in search rankings can influence people’s candidate selection
+    both the input data and the ranking system contribute signif-            in elections. They asked people unaware of the political can-
+    icantly in producing the bias in the resulting Twitter search            didates in an election to search for the candidates and form
+    results. For example, while the Twitter stream containing our            an opinion based on the results. By biasing the search re-
+    selected queries (the input data) contributed to the output data         sults in a controlled manner, they showed that search rankings
+    by adding a democratic bias on average, the ranking system               could impact their voting preferences in an election by 20%
+    shifted or in some cases altered the polarity of this bias, re-          or more. Their observations demonstrate the potential impact
+    sulting in a substantially different political bias in the final         of search results on the political opinion of users, and thus
+    search results.                                                          provide the motivation for our present study.
+    This collective contribution of the input data and the ranking           A complementary line of work has studied the differences
+    system in producing the output bias can noticeably affect a              or biases in Web search results due to personalization, i.e.,
+    user’s search experience. We observed, for instance, that the            the differences in the results seen by different users for the
+    Twitter input data stream for the most popular candidates in             same query. [14, 18] studied differences in search results due
+    a party were more biased towards the opposing political per-             to the geo-location of users. [19] studied how the information-
+    spective. However, the manner in which the ranking system                seeking behavior of users changes due to a major event such
+    altered the input to produce the output, and therefore its bias,         as a shooting incident, and found that most people use search
+    was different for the popular candidates from each political             engines to access information that they agree with. These
+    party. While the ranking system mitigated the opposing bias              studies are performed from the viewpoint of particular users,
+    in the search results for the most popular democratic candi-             whereas the present work shows that political biases exist
+    date, it enhanced it for the most popular republican candidate.          even in non-personalized search results in the context of so-
+    Simply put, if a user searches for the most popular republican           cial media.
+    candidate, she will get more tweets from the opposing politi-
+    cal party than if she searched for the most popular democratic
+    candidate. This may be less than desirable for a popular re-             Measuring Political Bias on Social Media
+    publican candidate if the users with the opposing polarity pri-          While there have been prior attempts to infer the political bias
+    marily post negative tweets about the candidate that result in           of textual content in online forums, such as blogs and news
+    negatively biased search results for her or him. Additionally,           articles [1, 46, 51] or hashtags on Twitter [44], to our knowl-
+    we also observed that differently phrased but similar queries            edge, no work has measured the political bias of a tweet based
+    (referring to the same debate event) can yield significantly             on its textual content, particularly due to its very small size.
+    different biases.                                                        Instead, many previous studies have tried to infer the bias of
+                                                                             a tweet’s source (the user who posted it), by modeling the
+    Lastly, we call for raising the awareness of search engine               language usage of the users from different political polari-
+    users by signaling the bias in the search results. We briefly            ties [23, 32] or by leveraging the social links that a user has
+    discuss two possible solutions of either incorporating the bias          with other Twitter users with known biases [6,13]. Conover et
+    in the ranking systems itself or incorporating it in search en-          al. [5] inferred the political alignment of Twitter users, based
+    gine designs by making the bias in the search results transpar-          on the tweets or hashtags posted by the users, as well as the
+    ent to users.                                                            community structure of diffusion networks (via retweets) of
+                                                                             political information, observing that the mechanism relying
+                                                                             on social network performs better. In [50], the authors auto-
+                                                                             matically measure the impartiality of the social media posts
+                                                                             based on how discernible the affiliation of the author is.
+
+
+
+                                                                       418
+Session: Politics, Party, Policy, & Participation                             CSCW 2017, February 25–March 1, 2017, Portland, OR, USA
+
+
+
+    While all the aforementioned studies try to infer a Twitter
+    user’s bias, they rely on the assumption that the political lean-              { i1 (s1 ),                                                     i2 (s2 ),
+    ing of a user is explicit in either her language or her social                  i2 (s2 ),                                                      i4 (s4 ),
+    network. This may not be the case with many users who ei-                       i3 (s3 ),                     Ranking                          i5 (s5 ),
+    ther do not post political content frequently or do not connect                 i4 (s4 ),                     System                           i1 (s1 ),
+    to other political users directly, but might still have political              i5 (s5 )}                                                       i3 (s3 )
+    leanings. To account for this constraint, we build upon these
+    prior studies to propose a new methodology to infer the bias                      (set)                                                    (ranked list)
+    of a user by including other factors correlated with the politi-
+    cal affiliation of a user, namely her interests.
+                                                                                    Input                                                        Output
+    Cross-Ideological Interactions on Social Media                             (Relevant items)                                               (Ranked items)
+    With the rising popularity of social media sites like Twit-
+                                                                              Figure 1: Overview of our search bias quantification framework. For a
+    ter and Facebook, users are increasingly relying on them                  given query q, a set of data items relevant to the query is first selected. Each
+    to obtain news [21], real-time information about ongoing                  individual data item (e.g., i1 , i2 ) has some bias (e.g., s1 , s2 ). Then this set
+    events and public opinion on celebrities [40]. While some                 of relevant items is input to the ranking system which produces a ranked list
+    researchers envisaged increased democratization through so-               of the items. We define metrics for capturing the bias in the set of relevant
+    cial media usage, with higher engagement between users who                items input to the ranking system (input bias), and in the ranked list output
+                                                                              by the ranking system (output bias).
+    do not share the same political ideology [35], some others
+    argued that social media usage can result in selective ex-
+    posure by providing a platform that reinforces users’ exist-              creating discriminatory ads based on gender [7] or race [38],
+    ing biases [22]. By examining cross-ideological exposure                  showing different prices for the same products/services to dif-
+    through content and network analysis, [17] showed that polit-             ferent users [15] and mistakenly labeling a black man as an
+    ical talk on Twitter is highly partisan and users are unlikely to         ape by an image tagging algorithm [16] – are some such ex-
+    be exposed to cross-ideological content through their friend-             amples. These issues have lead researchers, organizations and
+    ship network. Other studies have also confirmed these results             even governments towards a new avenue of research called
+    by demonstrating users’ higher willingness to communicate                 “auditing algorithms”, which endeavors to understand if and
+    with other like-minded social media users [22, 37] and their              how an algorithmic system can cause biases, particularly
+    inability to engage in meaningful discussions with different-             when they are misleading or discriminatory to users [10, 34].
+    minded users [47] .
+                                                                              Besides the algorithm design, biased input data to an algo-
+    To understand the political bias in social media better, many             rithm can also result in a biased output. This insight is par-
+    researchers have studied political polarization on Twitter                ticularly crucial in this digital era where many algorithms are
+    through analyzing different groups’ behavior. [6] showed that             trained using huge amounts of data [2]. Therefore, distin-
+    Twitter users usually retweet the users who have the same po-             guishing whether a bias in an algorithmic system’s output is
+    litical ideology as themselves, making the retweeting network             caused by its input or the algorithm itself, is of prime impor-
+    structure highly partitioned into left- and right-leaning groups          tance. This work is a first step towards tackling this challenge
+    with limited connections between them. Liao et al. [20] inves-            in the area of search systems.
+    tigated political polarization in the context of a majority and
+    minority group on a political topic (pro-snowden vs. anti-
+                                                                              RQ1: QUANTIFYING SEARCH ENGINE BIAS
+    snowden), finding that while the Twitter population is more
+                                                                              This section focuses on our first research question – the quan-
+    likely to be pro-snowden, the minority group (anti-snowden)
+                                                                              tification of search bias. In this paper, we quantify the search
+    uses some features of the biased environment such as retweet-
+                                                                              bias for the Twitter social media search engine in the context
+    ing to mitigate this existing bias.
+                                                                              of the US political scenario, where there are two main politi-
+    Instead of studying the interactions between cross-ideological            cal parties: the Democratic party and the Republican party.
+    users, our current study explores the problem of measuring
+                                                                              We first propose a framework to capture the different stages
+    political bias of social media search engine and unpacking the
+                                                                              of a search process and then discuss metrics to measure the
+    sources of bias. While many studies have shown the existence
+                                                                              biases at each stage (RQ1a). This framework requires a
+    of political bias in social media, to our knowledge none have
+                                                                              methodology for inferring the bias of individual search items,
+    characterized the sources of this bias. Little is known about
+                                                                              and later in the section we present such a methodology in the
+    how much bias is inherent in the data and whether and how
+                                                                              context of Twitter search (RQ1b).
+    the search system enhances or mitigates this bias. Our study
+    tries to shed light on these questions through investigating the
+    sources of political bias in the context of 2016 US presidential          RQ1a: Search Engine Bias Quantification Framework
+    election on Twitter.                                                      Figure 1 gives an intuitive illustration of the main stages of
+                                                                              retrieving information via an algorithmic search system. The
+    Auditing Algorithms                                                       search system retrieves information from a corpus of data
+    Today, algorithms that curate and present information in on-              items. Each of these data items has a bias associated with
+    line platforms can affect users’ experiences significantly –              it, given by the bias score s (computed as described in the
+
+
+
+                                                                        419
+Session: Politics, Party, Policy, & Participation                               CSCW 2017, February 25–March 1, 2017, Portland, OR, USA
+
+
+
+        Rank r   Bias till rank r   Value                                       We next define metrics for the input bias, output bias and
+          1         B(q, 1)         s2                                          ranking bias, in terms of the bias scores of the individual data
+          2         B(q, 2)         1
+                                      (s
+                                    2 2
+                                            + s4 )                              items.
+                                    1
+          3         B(q, 3)           (s
+                                    3 2
+                                            + s4 + s5 )
+                                    1
+                                                                                Input Bias: When a user issues a query to the search sys-
+          4         B(q, 4)           (s
+                                    4 2
+                                            + s4 + s5 + s1 )                    tem, a set of items that are relevant to the query is selected
+                                    1
+          5         B(q, 5)           (s
+                                    5 2
+                                            + s4 + s5 + s1 + s3 )               out of the whole corpus, and provided as input to the ranking
+         Output bias at rank 5      1
+                                      [s (1 + 21 + 13 + 14 + 15 )
+                                    5 2
+                                                                    +           system. This input data captures the bias introduced by the
+                                    s4 ( 21 + 13 + 14 + 15 ) +                  query by filtering the relevant items from the whole corpus of
+                                    s5 ( 13 + 14 + 15 ) +                       data. Therefore, we measure the input bias for a query as the
+                                    s1 ( 41 + 15 ) +                            aggregate bias of all items relevant to the query, that become
+                                    s3 ( 51 )]                                  the input to the ranking system. Put differently, input bias
+                                                                                gives a measure of what bias a user would have observed, had
+       Table 1: Explaining the bias metrics with reference to Figure 1.         she been shown random items relevant to the query, instead
+                                                                                of a list ranked by the ranking system.
+                                                                                Specifically, the Input Bias IB(q) for query q is the average
+    next section: RQ1b). When a user submits a search query, a                  bias of all n data items that are relevant to q
+    set of data items that is relevant to the query is first retrieved                                            Pn
+    (selected out of all data items in the entire corpus). Then, the                                                    si
+                                                                                                       IB(q) = i=1                        (1)
+    set of retrieved relevant items constitutes the input data to the                                                n
+    ranking system which produces a ranked list of the relevant                 where the summation is over all the bias scores (si ) of the n
+    items, and this ranked list is shown to the user as the search              data items found relevant to q. For instance, for the query q
+    output.1 The users generally give much more attention and                   shown in Figure 1, the input bias is simply IB(q) = 15 (s1 +
+    importance to the top-ranked items in the list than the lower-              s2 + s3 + s4 + s5 ).
+    ranked items [24].
+                                                                                Output Bias: The output bias is the effective bias presented
+    In the case of Twitter search engine, the data corpus com-                  to the user (who issued the search query) via the final ranked
+    prises of the set of all tweets. When a query like ‘Bernie                  list from the search engine. While quantifying search bias,
+    Sanders’ is issued to Twitter search, all the tweets contain-               it must be noted that, whereas the input bias was for an un-
+    ing ‘Bernie Sanders’ are selected as relevant items. This set               ordered set of items, the output search bias is to be measured
+    of relevant tweets serves as the input to the ranking system,               over a ranked list. The higher ranked items should be given
+    which orders them to output a ranked list of tweets which are               more importance, since not only are the users more likely to
+    displayed to the user.                                                      browse through the top search results [24], but they also tend
+    In our framework, we quantify three different biases for a                  to have more trust in them [29]. Hence, we propose a met-
+    search system, in terms of the biases of the individual data                ric for output search bias, that is inspired by the well-known
+    items: (i) input bias: the bias in the set of retrieved items               metric Average Precision [24] from the Information Retrieval
+    relevant to the query (filtered out of the whole corpus), that              literature.
+    serves as the input data to the ranking system, (ii) ranking                For a given search query q, we first define the bias till a par-
+    bias: the bias introduced by the ranking system, and (iii) out-             ticular rank r in the ranked results (i.e., the aggregate bias of
+    put bias: the cumulative bias in the ranked list output by the              the top r results). The bias B(q, r) till rank r of the output
+    search system. In the remainder of the section, we discuss the              ranked list is defined as
+    metrics we use to quantify these biases for Twitter search in                                                Pr
+    the context of US politics.                                                                                          si
+                                                                                                      B(q, r) = i=1                           (2)
+    Bias of an individual data item: As mentioned earlier, the                                                       r
+    search scenario that we are considering is one of the US pol-               where the summation is over the top r items in the ranked list.
+    itics, where there are mainly two political parties. Each data              For instance, with respect to the situation shown in Fig. 1,
+    item (i.e., a tweet) can be positively biased (i.e., supporting)            Table 1 (first five rows) shows the bias till ranks 1, 2, ..., 5.
+    or negatively biased (i.e., opposing) or neutral towards each
+    of these two parties, and the bias score of each item (indi-                Next, we extend the above definition to define the Output
+    cated by si in Figure 1) captures the degree to which the item              Search Bias OB(q, r) for the query q at rank r.
+    is biased with respect to the two parties. In the next section                                           Pr
+    (RQ1b), we describe a methodology for measuring the bias                                                       B(q, i)
+                                                                                               OB(q, r) = i=1                         (3)
+    score of items in the context of US political searches on Twit-                                                r
+    ter social media.
+                                                                                For instance, the last row of Table 1 computes OB(q, r)
+                                                                                at rank r = 5 with respect to the situation shown in Fig-
+    1
+      The framework can also be generalized to modern-day IR systems            ure 1. Note that the bias score s2 of the top-ranked item i2 is
+    which perform retrieval and ranking together, such as systems using         given the highest weight, followed by the bias score s4 of the
+    topic modeling. We comment on this issue in the Discussion section.         second-ranked item i4 , and so on. This follows the intuition
+
+
+
+                                                                          420
+Session: Politics, Party, Policy, & Participation                                  CSCW 2017, February 25–March 1, 2017, Portland, OR, USA
+
+
+
+    that bias in the higher ranked items are likely to influence the               based on their interests. Our methodology for inferring the
+    user more than bias in the lower ranked items.2                                political bias of a given Twitter user u is based on the follow-
+                                                                                   ing steps – (i) generating two representative sets of users who
+    Ranking Bias: The ranking bias is intended to capture the                      are known to have a democratic or republican bias, (ii) infer-
+    additional bias introduced by the ranking system, over the                     ring the topical interests of u, and (iii) examining how closely
+    bias that was already present in the set of relevant items (i.e.,              u’s interests match with the interests of the representative sets
+    relevant to q) input to the ranking system. If possible, ranking               of democratic and republican users.
+    bias could be measured by auditing the exact ranking system
+    being deployed by the search engines. However, for any com-                    Generating representative sets of democratic and repub-
+    mercial search engine deployed in the real-world, it is infeasi-               lican users: The first step in our methodology involves get-
+    ble to know the internal details of the ranking system. Hence,                 ting representative sets of democratic and republican users.
+    we view the ranking system as a ‘black box’ where we only                      One option would be to collect a dataset of users who re-
+    observe the inputs and outputs.                                                port their political affiliations on Twitter. However, such a
+                                                                                   dataset would suffer from self-reportage problem, while also
+    Thus, we define the Ranking Bias RB(q, r) for the query q                      being biased towards the group of users who have self re-
+    as simply the difference between the output bias and the input                 ported. Instead, we use the methodology in [12, 36], which
+    bias for q (as defined earlier).                                               infers the topical attributes of a user v by mining the Twitter
+                    RB(q, r) = OB(q, r) − IB(q)                       (4)          Lists that other users have included v in. Thus, we rely on
+                                                                                   what other people are reporting about a user, and not what
+    Time-Averaged Bias: To capture the overall trend in the bias,                  she is identifying herself as. Using this method, we extracted
+    we collect multiple snapshots of search results, compute the                   a seed set 865 users who have been labelled with the topic
+    different bias metrics for each snapshot, and then compute                     ‘democrats’ and a seed set of 1,348 users labelled with the
+    the time-averaged values of the aforementioned metrics. For                    topic ‘republicans’. These seed sets of users include politi-
+    instance we compute the time-averaged output search bias                       cians (e.g., Steny Hoyer, Matt Blunt), political organizations
+    T OB(q, r) as the average of the OB(q, r) (given by Equa-                      (e.g., DCCC, Homer Lkprt Tea-party) as well as regular users.
+    tion 3) values measured at various instants of time. Similarly,                Inferring topical interests of a user: After obtaining the
+    we define T IB(q) and T RB(q, r) as the time-averaged input                    representative sets of democratic and republican users, the
+    bias and time-averaged ranking bias for query q respectively.                  next step is to infer a user’s interests on Twitter. To address
+                                                                                   this challenge, we rely on the methodology in [3], which
+    RQ1b: Measuring the Political Bias of an Individual Twit-                      for a user u, returns a list of topics of interest of u along
+    ter Search Result                                                              with the frequency of each topic. Here the frequency of a
+    For applying our search bias quantification framework to                       topic indicates the number of users whom u follows, who
+    Twitter search in our chosen context of US politics, we re-                    have been labelled with this topic using the aforementioned
+    quire an automated method for inferring the political bias of                  method in [12, 36]. For instance, if a user u follows 3 users
+    an individual Twitter search result – a tweet. To measure the                  tagged with ‘politics’ and 4 users tagged with ‘music’, then
+    bias of a tweet, we have two options (i) we can measure the                    the returned list would be {politics: 3, music: 4}. We convert
+    source bias, i.e. the bias of the author of the tweet, or (ii) we              this < topic, frequency > list into a weighted tf idf vector
+    can measure the content bias, i.e., the bias of the content of                 for user u, where the idf -s are computed considering the in-
+    the tweet. Especially, since the content of the tweet is quite                 terest lists of all the users in our dataset. We refer to this
+    short (only 140 characters), attempting to judge the bias from                 tf idf vector as the interest-vector Iu of the user u. Specifi-
+    the short content may not always be accurate; therefore, in                    cally, if a user u follows f users on a particular topic, then the
+    this paper we choose to use the source bias to measure the                     corresponding entry in the interest-vector of u is computed
+    political bias of an individual Twitter search result.                         using tf = 1 + logf and idf = log N     n , where N is the num-
+                                                                                   ber of all users in our dataset, and n is the number of users
+    In the rest of this section, we start by present our methodology               who follow at least one user tagged with this topic.
+    for inferring source bias of a tweet and then evaluate how well
+    it works. Finally, we end with a brief analysis of how well the                Note that, if we are unable to get the followings of a user (due
+    source bias and content bias match each other in practice in                   to her account being protected, or her following no one), or
+    the context of political search queries.                                       if she follows too few users (less than 10), we are not able
+                                                                                   to infer her interests and hence political leaning. However,
+    Source Bias - Inferring Political Bias of Twitter Users                        the study [3] showed that this methodology of inferring inter-
+    It has been reported that people’s political affiliation is corre-             ests is applicable for a very large fraction of active users in
+    lated with their various attributes.3 In this work, we leverage                Twitter.
+    this insight to infer political affiliations of users on Twitter               Matching interests of user to interests of democrats and
+    2
+     In case the bias score of a particular item in the ranked list cannot         republicans: Using the aforementioned formulation, we also
+    be inferred, this item can be ignored and the rankings can be re-              obtain the interest vectors of all the users in the two seed
+    computed. This is similar to how missing relevance judgements are              sets. Then, we construct a normalized aggregate interest vec-
+    handled in the Information Retrieval literature [48].                          tor for the democrat seed set (ID ) and the republican seed
+    3
+      http://2012election.procon.org/
+    view.resource.php?resourceID=004818
+                                                                                   set (IR ), by aggregating the interest vectors of all users in
+
+
+
+
+                                                                             421
+Session: Politics, Party, Policy, & Participation                             CSCW 2017, February 25–March 1, 2017, Portland, OR, USA
+
+
+
+    the set and normalizing such that each aggregate vector sums              Evaluation for politically interested common users
+    up to 1.0. Some of the top terms in ID are [progressive,
+                                                                              To identify a set of politically interested common users, we
+    democrats, obama, dems, policy, liberals, p2, activists, dc,
+    international] while those in IR are [patriots, conservative,             followed the methodology given in [22]. We used the Twit-
+    tcot, right, gop, republican, tea party, republicans, fox news,           ter accounts of democratic (@TheDemocrats) and republican
+    pundits], where the terms are ranked in decreasing order of               (@GOP) parties as seed accounts, and collected up to 100
+    their tf idf scores. We observe that apart from terms related             retweeters of each of the most recent 3,200 tweets posted
+    to politics, the two vectors also differ in terms of their em-            by the two accounts. Doing so, we collected 98,955 dis-
+    phasis on other topics, for example IR gives higher weight to             tinct users who retweeted @TheDemocrats and 71,270 dis-
+    sports-related terms, while ID gives higher weight to terms               tinct users who retweeted @GOP. Out of these users, we ran-
+    related to technology and entertainment. Thus, these vectors              domly selected 100 retweeters each of the democratic and re-
+                                                                              publican account, giving us a test set of 200 common users
+    can be used to infer the likely political bias of a wide range
+                                                                              who are politically interested.
+    of users, even if they are not explicitly following politicians
+    on Twitter, or even if they are following politicians from both           Judging the ground truth bias of test users: To get the bias
+    parties.                                                                  annotations for political leanings of these 200 users, we con-
+    Finally, given a user u whose political bias is to be inferred,           ducted an Amazon Mechanical Turk (AMT) survey where
+    we obtain the interest-vector Iu of u (as described above), and           human workers were shown a link to a user’s Twitter pro-
+                                                                              file, and asked to label the user as either pro-democratic, pro-
+    compute the cosine similarity of Iu with ID and IR . Then the
+                                                                              republican, or neutral, based on the user’s profile attributes
+    bias score of user u is given by,
+                                                                              and the tweets posted by the user. We got judgements from
+        Bias(u) = cos sim(Iu , ID ) − cos sim(Iu , IR ).         (5)          50 distinct AMT workers for each test user. The AMT bias
+                                                                              score of each user was computed by adding +1 for each pro-
+    We max-min normalize these differences in similarity, such                democratic judgement, −1 for each pro-republican judge-
+    that the bias score of a user lies in the range [−1.0, 1.0]. A            ment and 0 for each neutral judgement, and then normal-
+    bias score closer to +1.0 indicates that u is more democratic             izing by the total number of judgements. Thus, the AMT
+    leaning, and a score closer to −1.0 indicates that u is more              bias score for a user lies in the range [−1.0, 1.0], where a
+    republican leaning.                                                       more positive score indicates a stronger democratic bias (with
+    Public deployment of the source bias inference method-                    more AMT workers labelling the user as pro-democratic),
+    ology: We have publicly deployed the aforementioned                       whereas a more negative score indicates a stronger republi-
+    source bias inference methodology in the form of a Twitter                can bias (with more AMT workers labelling the user as pro-
+    application, at http://twitter-app.mpi-sws.org/search-                    republican).
+    political-bias-of-users/. One can login to the applica-                   Evaluating our inferred score: Our methodology could in-
+    tion using her Twitter credentials, and see their inferred polit-         fer the bias of all the 200 selected users (coverage = 100%).
+    ical affiliation. One can also search for other Twitter users to          To quantify the accuracy of the methodology, we check
+    check out their inferred political leaning.                               whether our inferred bias scores correlate well with the AMT
+    Evaluation of Political Bias Inference Methodology                        bias scores.
+
+    To check whether the source bias inference methodology                    To verify this, we present Table 2 and Table 3. In Table 2,
+    works well for whole spectrum of politically interested users,            we bin our inferred bias scores for these test users into three
+    we carry out the evaluation considering three test sets of Twit-          ranges [-1.0, -0.5], (-0.5, 0.5) and [0.5, 1.0], and then we com-
+    ter users – (i) politically interested common users, selected             pute the average AMT bias scores for users in each bin. As
+    randomly from the set of users who have retweeted the two                 can be seen from Table 2, the average AMT bias score for
+    parties’ accounts on Twitter, (ii) the current US senators, for           Bin 1 (corresponding to users inferred to be strongly republi-
+    whom it is well known which political party they represent,               can) is strongly republican leaning (−0.86), while the average
+    and (iii) self-identified common users, each having fewer than            AMT bias score for Bin 3 (corresponding to users inferred to
+    1000 followers, who have themselves indicated their political             be strongly democratic) is strongly democratic leaning (0.93).
+    ideology in their Twitter account bios.                                   Similar results are seen when we bin the users based on AMT
+                                                                              bias scores and then compute the average inferred bias score
+    We first use the set of politically interested common users to            for the users in each bin (as shown in Table 3), demonstrating
+    evaluate how good our inferred bias score is. After estab-                that our inferred bias scores are well correlated with the AMT
+    lishing that our bias score works, we define thresholds on the            bias scores.
+    score to categorize users into three distinct categories – re-
+    publican, neutral, democratic. Finally we present how well                We also observe that, though there is high correlation between
+    our inference methodology works for the senators and self                 the AMT bias scores and our inferred scores, the spread of the
+    identified common users.                                                  distribution of the two scores in the interval [−1.0, 1.0] are
+                                                                              quite different. This difference is shown in Figure 2 which
+    We evaluate the methodology with respect to two metrics:                  plots the CDF of the two scores. We observe that while many
+    (i) coverage – for what fraction of Twitter users can the                 of the AMT bias scores are close to the boundaries of the
+    methodology infer the political bias, and (ii) accuracy – for             interval, most of the inferred scores lie within [−0.5, +0.5].
+    what fraction of users is the inference correct.
+
+
+
+                                                                        422
+Session: Politics, Party, Policy, & Participation                                         CSCW 2017, February 25–March 1, 2017, Portland, OR, USA
+
+
+                       Inferred bias score bins        Avg. AMT bias score                 AMT bias score     Inferred Rep    Inferred Neutral    Inferred Dem
+                       Inferred Bin 1 [-1.0, -0.5]           −0.86                         AMT Bin 1             84.05%            13.04%             2.89%
+                       Inferred Bin 2 (-0.5, 0.5)             0.14                         AMT Bin 2             18.18%            45.45%            36.36%
+                       Inferred Bin 3 [0.5, 1.0]              0.93                         AMT Bin 3              3.89%            12.98%            83.11%
+
+    Table 2: Match between the AMT bias score and our Inferred bias score:                Table 4: Confusion matrix of the match between AMT bias scores and
+    Average AMT bias scores of users binned according to their Inferred                   Inferred bias scores
+    bias score.
+
+                       AMT bias score bins           Avg. Inferred bias score                          Political Bias           Coverage Accuracy
+                       AMT Bin 1 [-1.0, -0.5]                 −0.32                                                 Current US Senators
+                       AMT Bin 2 (-0.5, 0.5)                  −0.02                                    Democratic (n=45)        97.78%    86.36%
+                       AMT Bin 3 [0.5, 1.0]                    0.14                                    Republican (n=54)        98.15%    98.11%
+                                                                                                       Average                  97.96%    92.23%
+    Table 3: Match between the AMT bias score and our Inferred bias score:                                      Self-identified common users
+    Average Inferred bias scores of users binned according to their AMT
+                                                                                                       Democratic (n=426) 92.01%          88.52%
+    bias score.
+                                                                                                       Republican (n=675)       90.22%    82.95%
+                                                                                                       Average                  91.12%    85.73%
+
+    This difference in the spread of the distributions motivated                          Table 5: Coverage and accuracy of the political bias inference methodol-
+    us to discretize our inferred bias score, and categorize users                        ogy for (i) current US senators, and (ii) common users who have declared
+    into three classes – democratic-leaning, republican-leaning,                          their political ideology in their Twitter account profile.
+    or neutral.
+    Discretizing the bias score into categories: Having estab-
+    lished that our inferred bias score correlates well with the                          Inclusion of a neutral zone has both pros and cons. While
+    AMT bias score, we now want to categorize users accord-                               now we have higher confidence in our labels of democrats
+    ing to their bias. To do so, we take the conservative ap-                             and republicans, some of the users who are marginally demo-
+    proach of labelling a user as democratic or republican only                           cratic or republican may now get labelled as neutral. But we
+    when we have high confidence, otherwise to label them as                              make this conservative choice for our analyses, so as to not
+    neutral. To achieve this categorisation, we decided to fix a                          overestimate the bias in the search results.
+    suitable threshold x ∈ [0.0, 1.0], and label the users with in-
+    ferred bias score lying within (−x, x) as neutral, the users                          Evaluation for popular users (US senators)
+    having inferred bias score in the range [−1.0, −x] as repub-                          The performance of the methodology for the 100 current US
+    licans, and the users having inferred bias score in the range                         senators is summarized in Table 5. The methodology has a
+    [x, 1.0] as democrats. We experimented with several choices                           very high coverage for the US senators, and failed to infer the
+    for the threshold x = 0.01, 0.03, 0.05, 0.08 and 0.1. For                             political bias for only two senators, one from each party. Fur-
+    each choice, we computed a confusion matrix of the match                              ther investigation showed that one of these senators did not
+    between AMT bias scores and the inferred bias scores. For                             follow anyone on Twitter, while the other followed only one
+    instance, Table 4 depicts the confusion matrix of the match                           other user; hence, we could not infer their topical interests. In
+    between AMT bias scores and the inferred bias scores for                              terms of accuracy, our methodology correctly identified the
+    x = 0.03. We found that the threshold of x = 0.03 maxi-                               political bias of 98.1% of the Republican senators for whom
+    mizes the sum of the diagonal of the confusion matrix. In the                         bias could be inferred, and 86.4% of the Democrat senators
+    later sections of the paper, we will label users as democrats                         whose bias could be inferred.
+    or republicans, only when their inferred score falls outside of
+    the neutral zone (−0.03, 0.03).                                                       Evaluation for self-identified common users:
+                                                                                          For our final test set, we chose users who have themselves
+             1
+                                                                                          indicated their political ideology in their Twitter account bi-
+                               AMT bias score
+                            Inferred bias score
+                                                                                          ography. Using the service Followerwonk (http://moz.com/
+            0.8
+                                                                                          followerwonk), we obtained users located in the United
+                                                                                          States, with fewer than 1000 followers (to ensure that we
+            0.6                                                                           get common users), whose bios contained certain keywords
+                                                                                          matching democrats (‘democrat’, ‘liberal’, ‘progressive’) and
+      CDF
+
+
+
+
+            0.4                                                                           republicans (‘republican’, ‘conservative’, ‘libertarian’, ‘tea
+                                                                                          party’). The bio of each user was then manually inspected,
+            0.2                                                                           and we retained only those users whose bios actually reflected
+                                                                                          their political ideology. For instance, users having bios like
+             0
+                  -1                -0.5              0             0.5         1
+                                                                                          “I am a #conservative #Christian who is neither a #Demo-
+                                                  Bias Score                              crat nor a #Republican, but an #Independent voter” and “We
+                                                                                          hate Politicians - Democrats, Republicans, all of them.” were
+    Figure 2: CDF of AMT bias scores and Inferred bias scores for politi-                 discarded. Finally we obtained 426 self-identified democratic
+    cally interested common users.                                                        users and 675 self-identified republican users.
+
+
+
+                                                                                    423
+Session: Politics, Party, Policy, & Participation                              CSCW 2017, February 25–March 1, 2017, Portland, OR, USA
+
+
+
+    The performance of the proposed bias detection methodology                        Content Bias     Fraction              Source Bias
+                                                                                                       of tweets     Frac       Frac     Frac
+    on these users with self-identified biases is also indicated in                                                  Dem        Rep      Neu
+    Table 5. The coverage is 91.12% on average, across demo-                          Strongly rep      13.85%      74.59%     10.66% 14.75%
+    cratic and republican users. Closer inspection of the users for                  [−1.0, −0.75)
+    whom we could not infer the bias revealed that they were ei-                    Moderately rep      22.02%      55.73%     13.02%    31.25%
+    ther protected accounts, or they followed too few accounts,                     [−0.75, −0.25)
+                                                                                       Weakly rep       10.33%      22.22%     22.22%    55.56%
+    and as a result their interests could not be inferred.                            [−0.25, 0.0)
+    The interest vectors of correctly inferred self-identified demo-                      Neutral        5.68%      20.41%     8.16%     71.43%
+                                                                                         [0.0, 0.0]
+    cratic users contain political terms like ‘liberal’, ‘progres-                    Weakly dem        10.44%      23.33%     13.33%    63.33%
+    sive’, and ‘dem’, as well as other terms like ‘gay’, ‘lgbt’, ‘sci-                  (0.0, 0.25]
+    ence’, and ‘tech’. In contrast, those for self-identified repub-                Moderately dem      23.16%       16.5%     16.0%      67.5%
+    lican users contain political terms like ‘tea’, ‘gop’, and ‘palin’                 (0.25, 0.75]
+    along with other related terms like ‘patriots’, ‘military’, and                   Strongly dem      14.53%       9.76%     9.76%     80.49%
+                                                                                        (0.75, 1.0]
+    ‘vets’. On the other hand, many of the users for whom we in-
+    ferred the incorrect leaning either have opposite leaning tags             Table 6: Fraction of tweets in the different ranges of the content bias
+    in their interest vectors, or their non-political interests end up         score (based on AMT workers’ judgement), and the match between the
+    matching the interests of the opposite side more than their                source and content bias in the different ranges.
+    own. However, the overall accuracy of bias inference for
+    these self-identified common users is also high (85.73% on
+    average across democratic and republican users), as shown in               source bias. On the other hand, when the content is weakly bi-
+    Table 5.                                                                   ased, our inferred source bias has little or no correlation with
+                                                                               the content bias, since such weakly biased / neutral content is
+    Match between Source Bias & Content Bias                                   equally likely to be produced by users with either bias.
+    As stated earlier, we use the source bias (i.e., the bias of the           Next we present the results of applying our bias quantification
+    user who posted a tweet) to quantify the bias of a tweet, in-              framework, using the source bias inference methodology, for
+    stead of using content bias. In this section, we investigate               analyzing political searches on Twitter.
+    how closely source bias and content bias of a tweet reflect
+    each other.
+                                                                               RQ2: CHARACTERIZING POLITICAL BIAS IN SOCIAL ME-
+    Judging the content bias: For each of our selected queries                 DIA SEARCH
+    like “democratic debate”, “republican debate”, “hillary clin-              To characterize the bias in Twitter search results via our
+    ton” and “donald trump” (more details on query selection in                framework, we first describe the queries we selected and the
+    the next section), we considered two Twitter search snapshots              data we gathered from Twitter for our chosen context of US
+    – one during the republican debate on December 15, 2015 and                presidential primaries. We then analyze the collected data
+    another during the democratic debate on December 19, 2015.                 to understand the possible sources of bias in Twitter Search
+    In each snapshot we collected the first page (20 tweets) of                (RQ2a) and the interplay between the input data and the rank-
+    search results, leading to a total of 881 distinct tweets, which           ing system that produces the output bias – the bias in the
+    we use to analyze the extent to which source bias and content              search results observed by Twitter users (RQ2b).
+    bias match each other.
+                                                                               The Selection of Search Queries: In order to study search
+    To get the content bias annotations for these 881 tweets, we               bias via the proposed framework, it would be ideal to have
+    conducted an Amazon Mechanical Turk (AMT) survey where                     access to the actual search queries that people are using on
+    human workers were shown each tweet (but not the user who                  Twitter to get information about the 2016 US Presidential
+    posted it), and they were asked to label the tweet as pro-                 primary debates. However, as researchers we did not have
+    democratic, pro-republican, or neutral. We got judgements                  access to this proprietary dataset. We, therefore, followed the
+    from 10 distinct workers for each tweet. The content bias                  two step methodology used in [19] of first identifying a seed
+    score of each tweet was computed in the same manner as de-                 set of queries and then expanding them to satisfy two proper-
+    scribed in the earlier section titled “Evaluation for politically          ties. Our seed set of queries is comprised of the terms “demo-
+    interested common users”.                                                  cratic debate”, and “republican debate”, and their shortened
+    To what extent do source bias and content bias match each                  versions “dem debate” and “rep debate” that are popular on
+    other? For studying the match between source bias and con-                 Twitter to accommodate the short length of tweets.
+    tent bias, we divide the range of content bias scores into 7               Next we expanded our query set to include other likely related
+    bins, as shown in Table 6, varying from neutral to strongly                queries that satisfied two properties: (i) the queries should be
+    biased on both sides. The first thing to note from Table 6 is              used by many users, and (ii) the queries should not be biased
+    that when the content is strongly biased, the match between                to a particular party. To satisfy the first property, we used
+    the source and content bias is high (about 75% or more), ir-               hashtags to expand our query set, since hashtags are used ex-
+    respective of whether the content is biased towards the demo-              tensively on Twitter by users to tag and follow discussions
+    crat or the republican perspective. This indicates that strongly           about political topics [5]. Moreover, hashtags act as recom-
+    biased content is mostly produced by the users with the same               mended queries on Twitter; when a user clicks on a hashtag,
+
+
+
+                                                                         424
+Session: Politics, Party, Policy, & Participation                            CSCW 2017, February 25–March 1, 2017, Portland, OR, USA
+
+
+
+    a Twitter search page for that hashtag is presented to her. To              Query                 Output Bias Input Bias Ranking Bias
+                                                                                                         (TOB)          (TIB)       (TRB)
+    identify such hashtags, we collected the Twitter search results                        Queries Related to Democratic Candidates
+    for our four seed queries during the November 2015 republi-                 Hillary Clinton           0.21           0.03        0.18
+    can and democratic debates. We then identified the most fre-                Bernie Sanders            0.71           0.55        0.16
+    quently occurring hashtags containing the term “debate” to                  Martin O’Malley           0.64           0.57        0.07
+    ensure that they are related to the presidential debates. We                Average                   0.52           0.38        0.14
+                                                                                           Queries Related to Republican Candidates
+    found 57 hashtags related to the democratic debate and 63 re-               Donald Trump              0.29           0.19        0.10
+    lated to the republican debate. From these, we selected the                 Ted Cruz                 −0.48          −0.11       −0.37
+    top 10 hashtags popular within each political party. This re-               Marco Rubio              −0.41          −0.12       −0.29
+    sulted in 15 distinct hashtags.                                             Ben Carson                0.46           0.20        0.26
+                                                                                Chris Christie           −0.14           0.27       −0.41
+    In addition to being popular, we wanted the queries in our ex-              Jeb Bush                 −0.31           0.09       −0.40
+    panded set to be unbiased to avoid over estimating the bias in              Rand Paul                −0.37          −0.18       −0.19
+                                                                                Carly Fiorina             0.16           0.38       −0.22
+    search results. We, therefore, removed biased search queries                John Kasich              −0.09          −0.13        0.04
+    (e.g., #debatewithbernie, #hillarycantdebate), and only re-                 Mike Huckabee             0.30           0.12        0.18
+    tained queries for whom its difficult to estimate the political             Rick Santorum            −0.04           0.18       −0.22
+    leaning of the poster. This approach resulted in the follow-                Lindsey Graham           −0.45           0.07       −0.52
+    ing queries: democratic debate, dem debate, #democraticde-                  George Pataki            −0.17           0.09       −0.26
+                                                                                Jim Gilmore              −0.35          −0.11       −0.24
+    bate, #demdebate, republican debate, rep debate, #republi-                  Average                  −0.11           0.07       −0.18
+    candebate and #gopdebate. In addition, given that politically                              Queries related to democratic debate
+    interested users (irrespective of their leaning) can search for             democratic debate         0.43           0.38        0.05
+    any candidate by name, we also included the names of the                    dem debate                0.52           0.29        0.23
+    17 presidential candidates to our set of queries. We use our                #democraticdebate         0.28           0.19        0.07
+                                                                                #demdebate                0.57           0.56        0.01
+    quantification framework with these 25 queries to measure                   Average                   0.45           0.35        0.10
+    the bias for political searches on Twitter.                                                Queries related to republican debate
+                                                                                republican debate         0.53           0.27        0.26
+    Data Collection: For our analysis, we selected a one week                   rep debate                0.31           0.40       −0.09
+    time period that contained both a republican and a democratic               #republicandebate         0.39           0.34        0.05
+    debate – December 14 - 21, 2015. The Republican debate                      #gopdebate                0.04           0.10       −0.06
+    aired on December 15, and the Democratic debate aired on                    Average                   0.32           0.28        0.04
+    December 19. Our goal was to capture a representative col-
+    lection of tweets from Twitter Search that represented both              Table 7: Time averaged bias in Twitter search “top” results, for selected
+                                                                             queries (related to political candidates and debates) – output bias T OB,
+    parties at similar points in time and for a similar event. From          input bias T IB, and ranking bias T RB. Here a bias value closer to +1.0
+    this time period, we collected Twitter search results for each           indicates democratic bias and a value closer to −1.0 indicates republican
+    of the selected queries.                                                 bias.
+
+    Twitter search provides different filters on the search results
+    including “top”, “live”, “news”, “photos” and “videos”.4 The
+                                                                             De-Personalizing the Search Results: Our objective is to in-
+    default, “top” results, contain the tweets chosen by the propri-
+                                                                             vestigate possible bias created by the ranking of presented
+    etary Twitter ranking system based on many factors, includ-
+                                                                             tweets. Because bias may be introduced by personalization
+    ing the number of users that engaged with a tweet5 . This filter
+                                                                             features associated with the Twitter user issuing the query, we
+    provides us with the output set for a given search query. To
+                                                                             focused on the consistent, non-personalized ranking of results
+    collect the output set, we collected the top 20 search results
+                                                                             shown to every user to examine bias. To mitigate personal-
+    on the first page for each query at 10-minute intervals for the
+                                                                             ization effects (e.g., geographical personalization based on IP
+    whole aforementioned time period. The political bias of this
+                                                                             addresses), all search queries were made without logging in
+    set is the Output Bias defined in our quantification frame-
+                                                                             to Twitter, and from the same IP subnet.
+    work. In total, across all the selected queries, we collected
+    28,800 snapshots that included 34,904 distinct tweets made
+    by 17,624 distinct users.                                                RQ2a: Where Does the Bias Come from?
+
+    To collect the input data to the ranking algorithm, we used              It is Not Always the Ranking System: Input Data Matters
+    Twitter’s streaming API to collect all of the tweets that con-           Table 7 shows the three biases (output, input, and ranking) for
+    tained our selected queries during our data collection period            the selected queries. It reveals that queries related to demo-
+    and used this chronologically ordered tweet stream to calcu-             cratic and republican candidates as well as democratic and re-
+    late the Input Bias. Overall, across all the queries, we col-            publican debates have a democratic-leaning input bias (larger
+    lected more than 8.2 million tweets posted during this time              than 0) on average. This observation implies that the full
+    period, by 1.88 million distinct users which comprise of the             tweet stream containing these query-terms, without any inter-
+    input data for our selected queries.                                     ference from the ranking system, contains a more democratic
+                                                                             slant – although, the democratic bias for queries related to the
+    4
+        https://twitter.com/search-home                                      republican debate and candidates is lower than that related to
+    5
+        https://support.twitter.com/articles/131209                          the democratic debate and candidates, on average.
+
+
+
+                                                                       425
+Session: Politics, Party, Policy, & Participation                              CSCW 2017, February 25–March 1, 2017, Portland, OR, USA
+
+
+
+    It is important to note that there exists a pre-existing bias in                                             TRB of Ranking Strategies
+                                                                                      Query                 Twitter’s      Most        Most
+    the input data to the ranking system, and that this input bias                                           Ranking Retweeted Favorited
+    can have a significant effect on the final output search bias                                                           First      First
+    seen by the end user. In the case of Bernie Sanders, for exam-                            Queries Related to Democratic Candidates
+    ple, the output search bias is very democratic (0.71); only                       Hillary Clinton          0.18         0.33        0.25
+    a small fraction of this bias comes from the Twitter rank-                        Bernie Sanders           0.16         0.22        0.16
+                                                                                      Martin O’Malley          0.07        0.001        0.1
+    ing system, while the majority originates from the input data,                            Queries Related to Republican Candidates
+    indicating that most of the Twitter population that discusses                     Donald Trump             0.10         0.06        0.09
+    Bernie Sanders on Twitter has a democratic leaning. The ef-                       Ted Cruz                −0.37        −0.49      −0.35
+    fect of input data on the search results’ bias highlights the                     Marco Rubio             −0.29        −0.36      −0.27
+    importance of incorporating the input data when auditing al-                      Ben Carson               0.26         0.23        0.25
+                                                                                      Chris Christie          −0.41        −0.40      −0.34
+    gorithms, and teasing out how much of the bias is present in                      Jeb Bush                −0.40        −0.46      −0.34
+    the data itself and how much is contributed by the algorithmic                    Rand Paul               −0.19        −0.25      −0.17
+    system.                                                                           Carly Fiorina           −0.22        −0.17      −0.18
+                                                                                      John Kasich              0.04         0.04        0.11
+    The democratic leaning input bias on Twitter for a large ma-                      Mike Huckabee            0.18         0.11        0.19
+    jority of the queries can be explained by the bias of over-                       Rick Santorum           −0.22        −0.34      −0.16
+    all Twitter corpus. We measure the bias of the Twitter cor-                       Lindsey Graham          −0.52        −0.45      −0.56
+                                                                                      George Pataki           −0.26        −0.22      −0.23
+    pus in two ways: (i) User population bias: The bias of 1000                       Jim Gilmore             −0.24        −0.22      −0.21
+    Twitter users selected randomly from the Twitter userid space                                Queries related to democratic debate
+    (i.e., the user-ids were randomly selected from the range of 1                    democratic debate        0.05         0.21        0.12
+    through the id assigned to a newly created account in Decem-                      dem debate               0.23         0.22        0.22
+    ber 2015), and (ii) Full tweet stream bias: The bias of 1000                      #democraticdebate        0.07         0.08        0.14
+                                                                                      #demdebate               0.01        −0.01        0.01
+    tweets selected randomly from Twitter’s 1% random sample                                     Queries related to republican debate
+    for December 2015. For measuring the corpus bias in both                          republican debate        0.26        0.274       0.268
+    cases, we applied the same methodology as used for measur-                        rep debate              −0.09        −0.09      −0.09
+    ing the input bias, i.e., measuring the bias of the users and the                 #republicandebate        0.05         0.08        0.17
+                                                                                      #gopdebate              −0.06        −0.06      −0.02
+    source bias of the tweets. These two approaches resulted in
+    a population bias of 0.25 and a full tweet stream bias of 0.3.
+                                                                               Table 8: Time averaged ranking bias for different ranking strategies:
+    These positive bias values show that the population of Twit-               (i) Twitter’s ranking (Twitter search “top” results), (ii) Most retweeted
+    ter users is democratic-leaning, and this bias is even more                tweet first ranking, and (iii) Most favorited tweet first ranking. Here a
+    democratic-leaning when we consider the active users whose                 bias value closer to +1.0 indicates democratic bias and a value closer to
+    tweets have been included in the full tweet stream (measured               −1.0 indicates republican bias.
+    using Twitter’s 1% random sample). These findings are in-
+    line with prior studies [31] which have shown that Twitter
+    has a high fraction of democratic leaning users.                           the ranking system increased the republican bias of the input
+                                                                               by 0.18—to the point that it changed the polarity of the out-
+    It is important to note that, though the Twitter corpus has a              put bias making the final results republican (T OB = −0.11),
+    democratic-leaning bias, the input bias (TIB) of the different             even though the average input bias had a democratic leaning.
+    queries varies across the spectrum (as shown in Table 7). This
+    variation is because each query acts as a filter to extract a sub-         This change of polarity of bias via the ranking system is more
+    set of Twitter users whose tweets are relevant to that queries,            noticeable for some republican candidates. For instance, for
+    and the sets of users filtered out by different queries have dif-          Chris Christie, Jeb Bush and Lindsey Graham, while the in-
+    fering biases. Therefore, athough the corpus bias of Twitter is            put bias was positive, indicating that more democratic lean-
+    uniform, the specific query being considered determines the                ing users tweeted about them, the ranking system switched
+    input data set and hence the input bias, which in turn affects             the leaning of the output results to republican. These shifts
+    the final output bias observed by the user.                                in the bias caused by the ranking system (that can also result
+                                                                               in a polarity change), exhibit the ranking systems power in
+    The Power of the Ranking System                                            altering the inherent bias of the input data.
+    The ranking biases in Table 7 show that while data has a ma-               The ranking of posts in social media search systems is influ-
+    jor role in the search results’ bias, the ranking system still             enced by a number of factors, including the content’s pop-
+    plays a significant role by shifting the bias or even changing             ularity (e.g., number of retweets or favorites), the author’s
+    its polarity. Comparing the output bias and the input bias for             popularity (e.g., number of followers or lists), as well as the
+    the democratic and republican candidate queries reveals an                 recency of the post. While our goal in this work is not to
+    interesting discovery—on average, the ranking system shifts                reverse engineer Twitter’s ranking algorithm, we wanted to
+    the bias of each category towards that party’s leaning. For                gain some insight into the extent to which different factors
+    democratic candidate queries, on average, the ranking system               contribute to the overall observed bias. We, therefore, con-
+    enhanced the democratic bias of the input by 0.14, making the              structed rankings “solely” based on individual factors and ex-
+    output results more democratic (T OB = 0.52). On the other                 amine the bias of these rankings. Table 8 shows the time av-
+    hand, for queries related to republican candidates, on average,            eraged ranking bias of Twitter’s ranking, as well as, the bias
+
+
+
+                                                                         426
+Session: Politics, Party, Policy, & Participation                              CSCW 2017, February 25–March 1, 2017, Portland, OR, USA
+
+
+
+    for two ranking strategies, each based on a single measure                                         1
+
+    of posts’ popularity, namely the number of retweets and the
+
+
+
+
+                                                                                 Output Bias (TOB)
+                                                                                                     0.5
+    number of favorites, respectively.
+                                                                                                       0
+    Table 8 shows that the ranking biases of the three strategies
+    are quite similar to each other, indicating that popularity of                                   -0.5
+
+    the post can explain much of the observed bias in Twitter’s                                       -1
+    ranking. For instance, for Chris Christie, Jeb Bush and Lind-
+
+
+
+
+                                                                                                            Donald-Trump
+
+                                                                                                                           Ted-Cruz
+
+                                                                                                                                      Marco-Rubio
+
+                                                                                                                                                    Ben-Carson
+
+                                                                                                                                                                 Chris-Christie
+
+                                                                                                                                                                                  Jeb-Bush
+
+                                                                                                                                                                                             Rand-Paul
+
+                                                                                                                                                                                                         Carly-Fiorina
+
+                                                                                                                                                                                                                         John-Kasich
+
+                                                                                                                                                                                                                                       Mike-Huckabee
+
+                                                                                                                                                                                                                                                       Rick-Santorum
+
+                                                                                                                                                                                                                                                                       Lindsey-Graham
+
+                                                                                                                                                                                                                                                                                        George-Pataki
+
+                                                                                                                                                                                                                                                                                                        Jim-Gilmore
+    sey Graham, even though most of the users tweeting about
+    them are democratic leaning (as shown by positive T IB val-
+    ues in Table 7), most of the popular tweets about them are
+    made by republican leaning users (as shown by the negative
+    T RB values for popularity based ranking strategies in Ta-
+    ble 8). However, in some cases like Martin O’Malley, John                  Figure 3: The time averaged output bias T OB in Twitter “top” search
+    Kasich, democratic debate and #republicandebate, the differ-               results for the Republican candidates – candidates are listed left to right
+                                                                               from highest to lowest popularity.
+    ence in the T RB values between Twitter’s ranking and the
+    popularity based rankings indicate that, while popularity of
+    posts is a factor that could explain a large part of the observed
+    bias in Twitter search results, there are probably other factors           In Figure 3, we plotted the output bias for the search results of
+    that contribute to the overall bias of the search results. Note            republican candidates ranked by their popularity to examine
+    that the above experiment is just a first step towards unpack-             if there is a correlation between the popularity of a candidate
+    ing the influence of the different factors on the overall bias of          and his output bias.7 The negative slope of the line of best fit
+    search results in a social media like Twitter, and we defer a              in Figure 3 supports the observation that the more popular a
+    more in-depth analysis for the future.                                     candidate is, the more is the opposing perspective reflected in
+                                                                               his or her top search results.
+    RQ2b: The Collective Contribution of the Input Data and                    This situation may be undesirable for popular candidates, es-
+    the Ranking System                                                         pecially if users from the opposite perspective are more likely
+                                                                               to speak negatively about the candidate. We illustrate this
+    Given the impact of the input data and the influence of the                case using Table 9, which shows tweets randomly sampled
+    ranking system on the bias of Twitter search results, we were              from the set of tweets posted by users with an opposing po-
+    curious to explore the dynamics between the input data and                 larity when compared to the candidate. These tweets were
+    the ranking system when producing the output bias. While                   included in the top search results for the queries Hillary Clin-
+    Table 7 shows a variance of output biases across the queries               ton and Donald Trump, and they all either criticize or attempt
+    as a result of the interplay between the two, we particularly              to ridicule the candidates. If an unbiased and potentially un-
+    looked for the cases where the resulting output bias could af-             decided voter searches for information about a popular pres-
+    fect a user’s search experience noticeably. Below, we describe             idential candidate, she would very likely see negative tweets
+    two of these cases by first analyzing the output bias and then             posted by users of opposing leaning about the candidate. Sim-
+    exploring the input data’s and the ranking system’s contribu-              ilar to the findings of [8], this situation can be undesirable for
+    tion to the resulting output bias for each of these cases.                 the candidates as these negative tweets may impact the per-
+    The Case of Popular Candidates                                             ceptions of these undecided voters.
+    Examining the Output Bias: Comparing the output bias of                    The Contribution of Different Sources of Bias: Given the
+    the candidates in Table 7, we found a noticeable trend in the              differing output bias trend for popular candidates compared
+    output bias of popular candidates compared to the rest of the              to other candidates and the potential side effects, we explored
+    candidates with the same political leaning – the search results            if this differential output bias is inherent in the input tweets
+    for the more popular candidates have a higher bias towards                 made by Twitter users or if it results from the ranking algo-
+    the opposing perspective.6 For instance, the top search re-                rithm. To understand this, we compared the input and output
+    sults for Hillary Clinton, the most popular democratic can-                bias for the queries Hillary Clinton and Donald Trump. We
+    didate during this time, contained fewer democratic results                found that the input bias for these queries leaned towards the
+    (T OB = 0.21) than the search results for other democratic                 opposite political view (similar to what we found in the output
+    candidates. Similarly, the search results for the query “Don-              bias), indicating that the twitter users who talk about popular
+    ald Trump”, the most popular republican candidate during                   candidates are likely from the opposite political leaning than
+    this time, contained fewer republican results (T OB = 0.29)                users who talk about the less popular candidates.
+    when compared to the search results of other republican can-               However, the manner in which the ranking system altered the
+    didates. Therefore, if a user searches for popular candidate               input to produce the output and accordingly its bias was dif-
+    names in Twitter search, the top results have much higher bias             ferent for the two most popular candidates. While Hillary
+    toward the opposing perspective, while this is not as extreme              Clinton is discussed by republican users more than the other
+    for the less popular candidates.
+    6                                                                          7
+      The popularity of a candidate is estimated from the polling data           We did not perform this test for democratic candidates because
+    obtained from [33] for December 2015.                                      there were only three of them.
+
+
+
+
+                                                                         427
+Session: Politics, Party, Policy, & Participation                                       CSCW 2017, February 25–March 1, 2017, Portland, OR, USA
+
+
+            Randomly selected tweets from ‘Hillary Clinton’ search results,           Randomly selected tweets from ‘Donald Trump’ search results,
+            which are posted by a republican leaning user                             which are posted by a democratic leaning user
+            WT: Watchdog wants federal ethics probe of Clinton, possible im-          Williamsburg, #Brooklyn Dec 15 #trump2016 #MussoliniGrumpy-
+            proprieties http://bit.ly/1NvlrPA                                         cat #MakeAmericaHateAgain #DonaldTrump @realDonaldTrump
+                                                                                      pic.twitter.com/Hj6DC7M7V1
+            The Clintons both Bill and Hillary have a very long history of framing    Scotland defeats Trump on clean energy. Hopefully hell have a lot of
+            others while they commit the Crimes. History has destroyed the proof      time for golfing soon [url]
+            @CarlyFiorina: @realDonaldTrump is a big Christmas gift wrapped           Dirty little secret: Donald Trump is not a good debater.
+            up under the tree for @HillaryClinton. [url]
+            @CNN @HillaryClinton @BernieSanders hell no shes a murderer               http://MLive.com - Where Donald Trumps Michigan campaign do-
+            pic.twitter.com/zGQwR7dLZj                                                nations come from http://ow.ly/39hCWt
+            I dont care if youre a Democrat or Republican, how can you trust a        Enjoy the sweet music of Donald Trump in Carol of the Trumps [url]
+            word Hillary Clinton says and how can you consider voting for her??
+
+    Table 9: Randomly selected tweets from the search results for the queries Hillary Clinton and Donald Trump, which are posted by a user with an
+    opposite bias as compared to the candidate.
+
+
+    democratic candidates (T IB = 0.03), the ranking system                             the output bias for the queries related to the event democratic
+    mitigated this undesirable situation by increasing the demo-                        debate (e.g., democratic debate vs #democraticdebate).
+    cratic output bias of the search results by a factor of seven as
+    compared to the input bias. That is, the ranking system di-                         The Contribution of Different Sources of Bias: To under-
+    rected the search results for Hillary Clinton towards the per-                      stand the sources of these differences between the output bias
+    spective of her own party. For Donald Trump the situation                           of similarly phrased queries, we compared the contributions
+    is the opposite. More democratic leaning users tweet about                          of the input data and the ranking system to their output bias.
+    him (T IB = 0.19) than the other republican candidates, and                         As seen in Table 7, the input data contributes more to the
+                                                                                        output bias for similarly phrased queries. In a few cases,
+    the ranking system enhanced this input bias resulting in more
+                                                                                        however, the ranking system affects the input data noticeably,
+    democratic tweets in the output search results. So, while the
+                                                                                        leading to two similarly phrased queries with similar input bi-
+    ranking system mitigated the opposite bias in the search re-
+    sults for Hillary Clinton, it enhanced it for Donald Trump.                         ases to have search results with very different output biases.
+                                                                                        For example, comparison of the biases of the queries repub-
+    This means that if a user searches for most popular candi-                          lican debate (T IB = 0.27) and rep debate (T IB = 0.40)
+    dates from each political party, the results favor Hillary Clin-                    reveals that while the input bias for these queries is similar,
+    ton over Donald Trump, while this was not the case in the                           the ranking system altered their bias in opposing directions.
+    input data. These opposing dynamics between the input data                          That is, while the ranking system increased the bias of the
+    and the ranking system, while inadvertent, can have serious                         republican debate query by 0.26 making it more democratic,
+    implications, especially for the candidate for whom the rank-                       it decreased the bias of the rep debate query by 0.09, mak-
+    ing system enhanced the view points of the opposite leaning                         ing it more republican. Even when the input bias of these
+    users.                                                                              two queries was similar, the ranking system made one query
+                                                                                        significantly more democratic than the other. This example
+    Different Phrasings of Similar Queries                                              illustrates the influence a search system exerts on the input
+    Examining the Output Bias: Different users who seek in-                             data, by curating search results with different biases for two
+    formation about a certain topic might phrase their queries                          similar queries with similar input biases.
+    differently; e.g., for the event republican debate, the queries                     These examples illustrate the interplay between the input data
+    could be republican debate, rep debate, #republicandebate                           and the ranking system which produces different output bi-
+    or #gopdebate. While these differently phrased queries re-                          ases for similarly phrased queries and for queries on popular
+    fer to the exact same event, the search results might differ                        political candidate. These observations lead to new questions
+    substantially, particularly in the situation when users of dif-                     for search engine design: How do these complex interac-
+    ferent leanings selectively use different keywords and hash-                        tions between the input data and the ranking system affect the
+    tags in their tweets to refer to the same event. This differ-                       users’ search experience and how can we make users aware of
+    ence in search results for slightly differently phrased queries
+                                                                                        these effects? In the next section, we briefly discuss solutions
+    is common in many search engines, but whether the results
+                                                                                        for signaling bias in search results to the users.
+    for these similar queries exhibit different political biases is an
+    open question.
+                                                                                        DISCUSSION
+    To answer this question, in Table 7, we compare the output bi-
+    ases of similarly phrased queries referring to the same event.                      Generalizability of the Bias Quantification Framework
+    We found that the output bias of two similar search queries                         Extending to other search engines: Our proposed frame-
+    for the same event can differ noticeably. For example, the                          work can be applied to other search engines (e.g., web search
+    output results for the query republican debate have approx-                         engines, other social media search engines) to quantify the
+    imately twice the democratic leaning bias (T OB = 0.53)                             bias in the search results even if the search algorithm hides
+    as compared to the the output bias of the query rep debate                          within a black box and the internal details of the retrieval and
+    (T OB = 0.31). Similar noticeable differences also exist in                         ranking algorithms are not known (which is almost always
+
+
+
+                                                                                428
+Session: Politics, Party, Policy, & Participation                              CSCW 2017, February 25–March 1, 2017, Portland, OR, USA
+
+
+
+    the case for real-world proprietary search engines). The only              lenging, specially because the trade-off point is likely to be
+    pre-requisite for applying the framework is that a method-                 domain and user specific. Additionally, including bias as a
+    ology for measuring the bias of individual data items (e.g.,               factor in the ranking systems might lead to a degradation of
+    web-pages, tweets) is available.                                           the top search results along relevancy, popularity, recency, or
+                                                                               other metrics.
+    Our bias quantification framework (shown in Figure 1) works
+    well for social media search, where it is possible to separate             Making bias transparent: Given the aforementioned prob-
+    the contributions of the input data and the ranking algorithm              lems with changing the ranking of the search results, an alter-
+    to the final output bias. However, in many modern-day IR                   native method of addressing the bias can be to incorporate the
+    systems, data items in the corpus are directly ranked based                bias into the front-end of the search engine (by visualizing the
+    on their relevance to the query, without generating any in-                bias of search result), rather than into the ranking algorithm
+    termediate set of relevant items. In such systems, it is hard              itself. Through this method, while the search algorithm’s ef-
+    to disentangle the bias introduced by the input data from the              ficiency is not compromised, users can be made aware of the
+    bias added by the ranking process. But, we can still compare               possible biases in their search results by marking each search
+    the relative biases of different ranking systems, under the as-            result with its political bias. Such a nudging practice has been
+    sumption that both operate upon similar data corpora. For                  used widely in the literature for purposes like delivering mul-
+    instance, the ranking algorithms of Bing and Google search                 tiple aspects of news in social media [30] and encouraging
+    could be compared with each other by observing their output                reading of diverse political opinions [27, 28].
+    biases for the same set of queries.
+                                                                               A hybrid approach of the above two methods could also be
+    Extending to multiple perspectives scenario: Even though                   proposed, which not only shows the bias of each search re-
+    we have applied our quantification framework for a two-                    sult, but also separates the results of the two political perspec-
+    perspective scenario of US politics, our framework can be                  tives (republican and democratic) and shows them as distinct
+    extended to multiple perspectives by having a bias vector for              ranked lists, with each distinct list retaining the ranking of
+    each item, rather than a scalar score as we have now. For in-              the results in the original ranked list. By preserving the origi-
+    stance, if the search scenario under consideration has p differ-           nal search engine’s ranking within each list, this methodology
+    ent perspectives associated with each query (such as queries               ensures that the quality of the top search results does not de-
+    related to a political election contested by p political parties),         grade across other metrics such as relevance, popularity, and
+    then each data item (e.g., a tweet) can be represented as a p-             recency.
+    dimensional bias vector. Formally, the bias vector for the i-th
+                                                                               Developing tools to signal political bias in search results, and
+    data item would be given by Vi = [vi1 , vi2 ,..., vip ], where vij         conducting user studies to understand how users interact with
+    gives a measure of how biased the i-th data item is along the              such alternative search interface designs are important, and
+    j-th perspective, with values in the range of [−1, 1]. A value             are left for future work.
+    of vij = 1 indicates that the item supports the j-th perspec-
+    tive, vij = −1 indicates that the item opposes the perspective,            Auditing Black Boxes
+    whereas vij = 0 indicates that the item is neutral with respect            Recently, the rise of algorithmic platforms’ influence on
+    to that perspective. Then Equations 2 to 5 can be converted to             users’ online experience has motivated many studies to au-
+    their vector addition formulations, to measure the input, out-             dit these platforms and understand their biases. While some
+    put and ranking biases. A challenging aspect of extending to               of these algorithmic systems’ functionalities are open to the
+    a p-dimensional scenario would be to develop a methodology                 public, making the auditing process easier, most of them are
+    to capture these bias vectors, and it would be interesting to              not. The walls of intellectual proprietary, high complexity of
+    explore this in the future.                                                these algorithms and the perils of gaming a system via ma-
+                                                                               licious users put these algorithms in a black box, making it
+    Signaling Political Bias in Search Results
+                                                                               almost infeasible to have access to an algorithm’s specifica-
+                                                                               tions from outside, like in our study. While we know about a
+    While our analyses show that social media search results have              few general factors that a search engines takes into account in
+    varying amounts of political bias, how this bias can be tackled            curating the search results (such as relevancy, popularity, and
+    is still an open question. In this section, we briefly discuss             recency), there are hundreds of other features that are hidden
+    some potential solutions to this question, but their in-depth              in a blackbox, preventing us as researchers from being able
+    exploration is left for future work.                                       to pin-point the exact feature(s) of the algorithm which might
+                                                                               be leading to the bias being introduced in the search results.
+    Incorporating Bias into the Ranking System: One solution
+    for controlling bias could be to develop a ranking mechanism               Therefore, building on previous studies that have adopted this
+    that considers bias as a metric and trades-off relevance and               “black box” view for an algorithmic system while auditing
+    bias of the search results. For instance, a minimal value of               it [4, 9, 14, 15, 20], we characterized the bias of the ranking
+    average bias of the search results could be achieved by in-                algorithm in Twitter’s search platform, without knowing its
+    terleaving results from the various perspectives of a search               internals. Our proposed auditing framework can help users,
+    query, using methods similar to those proposed to inject di-               system designers and researchers to become aware of possi-
+    versity in search results [45, 49]. However, finding a suitable            ble biases of a search process, while they might not be aware
+    equilibrium between bias and other ranking factors is chal-                of the details of the process itself. For users, this awareness
+
+
+
+                                                                         429
+Session: Politics, Party, Policy, & Participation                             CSCW 2017, February 25–March 1, 2017, Portland, OR, USA
+
+
+
+    can result in more intelligent use of a system, knowing that              hope to pursue this in the future. Another limiting factor in
+    their search results can be far from neutral in some cases. For           our study was using the simplifying assumption of consider-
+    system designers, such auditing platforms can be used to in-              ing a user as either neutral, pro-democratic or pro-republican.
+    vestigate the algorithm’s specifications, particularly when the           Under this assumption we can not have a user who is partially
+    bias has been introduced by the algorithm and not the system              both pro-republican and pro-democrat. However, we should
+    input. And finally, researchers and watchdog organizations                clarify that for doing this classification, we still considered
+    can actively utilize such auditing platforms to measure bias              two scores for each user, one the similarity to republicans and
+    and compare it among different search platforms, making the               the other similarity to democrats. Currently to give the user
+    research community and the system designers aware of po-                  a final leaning, we consider the difference of these similari-
+    tentially misleading biases.                                              ties. However, in the future, we can use these two similarities
+                                                                              to determine the extent to which a user is pro-democratic as
+    Distinguishing the Sources of Bias: From Development                      well as pro-republican to have a more nuanced view of po-
+    to Design                                                                 litical leanings of users. And lastly, while we have discussed
+                                                                              some potential solutions for signaling political bias in search
+    Our study has proposed a first step towards distinguishing the            results, we have not as yet implemented our proposed solu-
+    different sources of bias in a search engine. The observa-                tions and evaluated the effect of this signaling on the users’
+    tion that a significant part of the bias comes from the input             search experience. This exploration would be a good follow
+    data in some cases (without the interference of the ranking               up of our current study.
+    system) highlights the need to add data-driven perspective to
+    algorithm audit studies, such that not only the output data is            CONCLUSION
+    observed to understand the algorithm’s discriminatory or bi-              To our knowledge, the present study developed the first
+    ased behavior, but also the potential biases in the input data            framework to quantify bias of ranked results in a search
+    are investigated.                                                         process, while being able to distinguish between different
+    Although a part of the output bias stems from the input data,             sources of bias. Via this ability, our framework not only mea-
+    our study revealed that an algorithm can influence the inher-             sures the bias in the output ranked list of search results, but
+    ent bias of the input data significantly, to the extent of even           is also able to capture how much of this bias is due to the bi-
+    changing its polarity. This algorithmic power is of great im-             ased set of input data to the ranking system and how much is
+    portance particularly when a design choice in the interface               contributed by the ranking system itself. In the earlier search
+    gives higher visibility to the algorithm’s results than the input         engine bias studies, these two factors have not been separated
+    data. Twitter search, for example, provides users with “top”              out. Our analyses revealed the significant effect of both in-
+    and “live” search results, where the former is the ranked list            put data and the ranking algorithm in producing considerable
+    of tweets output by the search system and the latter is simply            bias in Twitter search results based on various factors such as
+    all the tweets containing the search query in reverse chrono-             the topic of a query or how the query is phrased.
+    logical order, i.e. the input data. This means that a user look-          As more and more users are relying on social media search
+    ing for information about a topic is able to see both the input           to follow live events and news on personalities [40], the vary-
+    data (which might be more representative of the full Twitter              ing biases in search results can have significant impact on the
+    data) and the output data in Twitter search if she wants. How-            impression that users form about the different events and per-
+    ever, to give people more relevant results in a shorter amount            sonalities [8, 29]. We end by calling for mechanisms to make
+    of time, Twitter has made the top results (the ranking sys-               users more aware of the potential biases in search results, e.g.,
+    tems’s output) the default option rather than the live results            by presenting the results in a way that makes the different
+    (the input data). This design choice, while legitimate, gives             perspectives transparent to the user. Giving the users more
+    the ranked results more visibility, making the output bias and            control over the bias beyond just making them more aware
+    accordingly the ranking system’s influence more highlighted               of its existence could be a potential next step. For example,
+    than the input bias in the design. These design choices, along            users could be given controls or filters to re-rank the search
+    with the significant effect of ranking system on the final out-           results to adjust for search biases – just as they can in ranking
+    put search bias, suggest a new avenue of research for studying            of products and services on sites like Amazon or Yelp.
+    when and how the influence of the ranking system (particu-
+    larly when it is more visible in the design), might result in             ACKNOWLEDGMENT
+    showing a totally different side of a story to a user than what           This work was funded in part by NSF grant CHS-1564041.
+    the input data would show to her.
+                                                                              REFERENCES
+    LIMITATIONS                                                                1. Lada A. Adamic and Natalie Glance. 2005. The Political
+    In this study, we focussed on a limited set of queries that                   Blogosphere and the 2004 U.S. Election: Divided They
+    were either related to a political event or a political candi-                Blog. In Proc. LinkKDD.
+    date, due to the limitation on the number of queries we could
+                                                                               2. Solon Barocas and Andrew D Selbst. 2014. Big data’s
+    submit via Twitter API. Given the variation of bias over dif-
+                                                                                  disparate impact. Available at SSRN 2477899 (2014).
+    ferent queries, we believe extending our query set to more
+    general political queries on controversial topics such as gun              3. Parantapa Bhattacharya, Muhammad Bilal Zafar, Niloy
+    control and abortion would strengthen our analysis, and we                    Ganguly, Saptarshi Ghosh, and Krishna P. Gummadi.
+
+
+
+                                                                        430
+Session: Politics, Party, Policy, & Participation                         CSCW 2017, February 25–March 1, 2017, Portland, OR, USA
+
+
+
+        2014. Inferring User Interests in the Twitter Social              16. Alex Hern. 2015. Flickr faces complaints over
+        Network. In Proc. ACM RecSys.                                         ‘offensive’ auto-tagging for photos.
+                                                                              http://tinyurl.com/Flickr-AutoTagging. (2015).
+     4. Le Chen, Alan Mislove, and Christo Wilson. 2015.
+        Peeking beneath the hood of uber. In In Proc. of the              17. Itai Himelboim, Stephen McCreery, and Marc Smith.
+        2015 ACM Conference on Internet Measurement                           2013. Birds of a feather tweet together: Integrating
+        Conference. ACM, 495–508.                                             network and content analyses to examine cross-ideology
+     5. M. Conover, B. Gonçalves, J. Ratkiewicz, A. Flammini,                exposure on Twitter. Journal of Computer-Mediated
+        and F. Menczer. 2011a. Predicting the Political                       Communication 18, 2 (2013), 40–60.
+        Alignment of Twitter Users. In Proc. IEEE SocialCom.              18. Chloe Kliman-Silver, Aniko Hannak, David Lazer,
+     6. M. Conover, J. Ratkiewicz, Matthew Francisco, B                       Christo Wilson, and Alan Mislove. 2015. Location,
+        Gonçalves, F. Menczer, and A. Flammini. 2011b.                       Location, Location: The Impact of Geolocation on Web
+        Political Polarization on Twitter. In Proc. AAAI ICWSM.               Search Personalization. In Proc. ACM IMC.
+
+     7. Amit Datta, Michael Carl Tschantz, and Anupam Datta.              19. Danai Koutra, Paul N. Bennett, and Eric Horvitz. 2015.
+        2014. Automated Experiments on Ad Privacy Settings:                   Events and Controversies: Influences of a Shocking
+        A Tale of Opacity, Choice, and Discrimination. Choice,                News Event on Information Seeking. In Proc. WWW.
+        and Discrimination. arXiv. org (2014).                            20. Q Vera Liao, Wai-Tat Fu, and Markus Strohmaier. 2016.
+     8. Robert Epstein and Ronald E. Robertson. 2015. The                     # Snowden: Understanding Biases Introduced by
+        search engine manipulation effect (SEME) and its                      Behavioral Differences of Opinion Groups on Social
+        possible impact on the outcomes of elections. Proc. of                Media. In In Proc. of the 2016 CHI Conference on
+        the National Academy of Sciences (PNAS) 112, 33                       Human Factors in Computing Systems. ACM,
+        (2015), E4512–E4521.                                                  3352–3363.
+     9. Motahhare Eslami, Aimee Rickman, Kristen Vaccaro,                 21. Joseph Lichterman. 2010. New Pew data: More
+        Amirhossein Aleyasen, Andy Vuong, Karrie Karahalios,                  Americans are getting news on Facebook and Twitter.
+        Kevin Hamilton, and Christian Sandvig. 2015. I always                 (2010). http://tinyurl.com/News-on-Social-Media.
+        assumed that I wasn’t really that close to [her]:                 22. Zhe Liu and Ingmar Weber. 2014. Is Twitter a public
+        Reasoning about Invisible Algorithms in News Feeds. In                sphere for online conflicts? A cross-ideological and
+        In Proc. of the 33rd Annual ACM Conference on Human                   cross-hierarchical look. In International Conference on
+        Factors in Computing Systems. ACM, 153–162.                           Social Informatics. Springer, 336–347.
+    10. USA Executive Office of the President. 2016. Big Data:            23. Aibek Makazhanov and Davood Rafiei. 2013. Predicting
+        A Report on Algorithmic Systems, Opportunity,and                      Political Preference of Twitter Users. In Proc. ASONAM.
+        Civil Rights. http://tinyurl.com/Big-Data-White-House.
+        (2016).                                                           24. Christopher D. Manning, Prabhakar Raghavan, and
+                                                                              Hinrich Schutze. 2008. Introduction to Information
+    11. S. Fortunato, A. Flammini, F. Menczer, and A.                         Retrieval. Cambridge University Press.
+        Vespignani. 2006. Topical interests and the mitigation of
+        search engine bias. Proc. of the National Academy of              25. Amy Mitchell and Dana Page. 2015. The Evolving Role
+        Sciences (PNAS) 103, 34 (2006), 12684–12689.                          of News on Twitter and Facebook. Pew Research Center
+                                                                              (2015).
+    12. Saptarshi Ghosh, Naveen Sharma, Fabricio Benevenuto,
+        Niloy Ganguly, and Krishna Gummadi. 2012. Cognos:                 26. Abbe Mowshowitz and Akira Kawaguchi. 2005.
+        Crowdsourcing Search for Topic Experts in Microblogs.                 Measuring search engine bias. Information Processing
+        In Proc. ACM SIGIR.                                                   and Management 41, 5 (2005), 1193–1205.
+    13. Jennifer Golbeck and Derek Hansen. 2011. Computing                27. Sean A Munson, Stephanie Y Lee, and Paul Resnick.
+        Political Preference Among Twitter Followers. In ACM                  2013. Encouraging Reading of Diverse Political
+        SIGCHI.                                                               Viewpoints with a Browser Widget.. In ICWSM.
+    14. Aniko Hannak, Piotr Sapiezynski, Arash                            28. Sean A Munson and Paul Resnick. 2010. Presenting
+        Molavi Kakhki, Balachander Krishnamurthy, David                       diverse political opinions: how and how much. In In
+        Lazer, Alan Mislove, and Christo Wilson. 2013.                        Proc. of the SIGCHI conference on human factors in
+        Measuring Personalization of Web Search. In Proc.                     computing systems. ACM, 1457–1466.
+        WWW.
+                                                                          29. Bing Pan, Helene Hembrooke, Thorsten Joachims, Lori
+    15. Aniko Hannak, Gary Soeller, David Lazer, Alan                         Lorigo, Geri Gay, and Laura Granka. 2007. In Google
+        Mislove, and Christo Wilson. 2014. Measuring price                    We Trust: Users’ Decisions on Rank, Position, and
+        discrimination and steering on e-commerce web sites. In               Relevance. Journal of Computer-Mediated
+        In Proc. of the 2014 conference on internet measurement               Communication 12 (2007), 801–823. Issue 3.
+        conference. ACM, 305–318.
+
+
+
+
+                                                                    431
+Session: Politics, Party, Policy, & Participation                        CSCW 2017, February 25–March 1, 2017, Portland, OR, USA
+
+
+
+    30. Souneil Park, Seungwoo Kang, Sangyoung Chung, and                40. Jaime Teevan, Daniel Ramage, and Merredith Ringel
+        Junehwa Song. 2009. NewsCube: delivering multiple                    Morris. 2011. #TwitterSearch: a comparison of
+        aspects of news to mitigate media bias. In Proc. ACM                 microblog search and web search. In Proc. ACM WSDM.
+        CHI.
+                                                                         41. Elizabeth Van Couvering. 2010. Search engine bias: the
+    31. Pew Research 2013. Twitter Reaction to Events Often at               structuration of traffic on the World-Wide Web. Ph.D.
+        Odds with Overall Public Opinion.                                    Dissertation. The London School of Economics and
+        http://www.pewresearch.org/2013/03/04/twitter-                       Political Science.
+        reaction-to-events-often-at-odds-with-overall-public-
+                                                                         42. Liwen Vaughan and Mike Thelwall. 2004. Search
+        opinion/.
+                                                                             Engine Coverage Bias: Evidence and Possible Causes.
+        (2013).
+                                                                             Information Processing and Management 40, 4 (May
+    32. Matthew Purver and Sylwester Karolina. 2015. Twitter                 2004), 693–707.
+        Language Use Reflects Psychological Differences                  43. Ingmar Weber, Venkata Rama Kiran Garimella, and Erik
+        between Democrats and Republicans. PLoS ONE 10, 9                    Borra. 2012. Mining Web Query Logs to Analyze
+        (2015), e0137422.                                                    Political Issues. In Proc. ACM WebSci.
+    33. Real Clear Politics 2015. RealClearPolitics – Election           44. Ingmar Weber, Venkata Rama Kiran Garimella, and
+        2016 – 2016 Republican Presidential Nomination.                      Asmelash Teka. 2013. Political hashtag trends. In
+        http://tinyurl.com/us-republican-polling-data. (2015).               European Conference on Information Retrieval.
+    34. Christian Sandvig, Kevin Hamilton, Karrie Karahalios,                Springer, 857–860.
+        and Cedric Langbort. 2014. Auditing algorithms:                  45. Michael J. Welch, Junghoo Cho, and Christopher
+        Research methods for detecting discrimination on                     Olston. 2011. Search Result Diversity for Informational
+        internet platforms. Data and Discrimination:                         Queries. In Proc. WWW.
+        Converting Critical Concerns into Productive Inquiry
+        (2014).                                                          46. Tae Yano, Philip Resnik, and Noah A. Smith. 2010.
+                                                                             Shedding (a Thousand Points of) Light on Biased
+    35. Bryan C Semaan, Scott P Robertson, Sara Douglas, and                 Language. In Proc NAACL HLT Workshop on Creating
+        Misa Maruyama. 2014. Social media supporting                         Speech and Language Data with Amazon’s Mechanical
+        political deliberation across multiple public spheres:               Turk (CSLDAMT).
+        towards depolarization. In In Proc. of the 17th ACM
+        conference on Computer supported cooperative work &              47. Sarita Yardi and Danah Boyd. 2010. Dynamic debates:
+        social computing. ACM, 1409–1421.                                    An analysis of group polarization over time on twitter.
+                                                                             Bulletin of Science, Technology & Society 30, 5 (2010),
+    36. Naveen Sharma, Saptarshi Ghosh, Fabricio Benevenuto,                 316–327.
+        Niloy Ganguly, and Krishna Gummadi. 2012. Inferring
+        Who-is-Who in the Twitter Social Network. In Proc.               48. Emine Yilmaz and Javed A. Aslam. 2006. Estimating
+        ACM WOSN.                                                            Average Precision with Incomplete and Imperfect
+                                                                             Judgments. In Proc. ACM CIKM.
+    37. Laura M Smith, Linhong Zhu, Kristina Lerman, and
+        Zornitsa Kozareva. 2013. The role of social media in the         49. Elad Yom-Tov, Susan Dumais, and Qi Guo. 2013.
+        discussion of controversial topics. In Social Computing              Promoting Civil Discourse Through Search Engine
+        (SocialCom), 2013 International Conference on. IEEE,                 Diversity. Social Science Computer Review 32 (2013),
+        236–243.                                                             145–154. Issue 2.
+    38. Latanya Sweeney. 2013. Discrimination in online ad               50. Muhammad Bilal Zafar, Krishna P. Gummadi, and
+        delivery. Queue 11, 3 (2013), 10.                                    Cristian Danescu-Niculescu-Mizil. 2016. Message
+                                                                             Impartiality in Social Media Discussions. In Proc. AAAI
+    39. Herman Tavani. 2014. Search Engines and Ethics. In                   ICWSM.
+        The Stanford Encyclopedia of Philosophy (spring 2014
+        ed.), Edward N. Zalta (Ed.).                                     51. Daniel Xiaodan Zhou, Paul Resnick, and Qiaozhu Mei.
+                                                                             2011. Classifying the Political Leaning of News Articles
+                                                                             and Users from User Votes. In Proc. AAAI ICWSM.
+
+
+
+
+                                                                   432
+

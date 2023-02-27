@@ -1,0 +1,927 @@
+      $
+     £ ¥€
+            social sciences
+Article
+Black Twitter: A Response to Bias in
+Mainstream Media
+Latoya A. Lee
+ Department of Sociology, State University of New York at Oswego, 313 Mahar Hall, 7060 Route 104, Oswego,
+ NY 13126, USA; latoya.lee@oswego.edu
+
+ Academic Editors: Jenny L. Davis and David A. Banks
+ Received: 1 October 2016; Accepted: 2 March 2017; Published: 5 March 2017
+
+ Abstract: This paper seeks to shed light on the ways people of color, in the United States, are using
+ social media to challenge racial bias. As part of this investigation, this paper draws on Critical Race
+ Theory, Feminist Theory, and Digital New Media studies to examine the extent to which social media,
+ while seen as a place for ‘play’ can also operate as a digital homespace, a space used as a tool for black
+ women and men to (re)construct their bodies and identities, challenging the “controlling images”
+ widespread in mainstream media and society at large. This paper employs the methods of content
+ analysis and participant observation and find that these social media forums are not transformative
+ by themselves but instead have little moments that make for resistance and a digital homespace.
+
+ Keywords: battleground; black Twitter; digital homespace; playground; textual poaching
+
+
+
+
+1. Introduction
+     In the past couple of years, the United States has experienced an intense level of social unrest, mass
+protest, and riots partly due to the war on black bodies by police and state officials. On 17 July 2014,
+Eric Garner, a 40-year old father of six was choked to death by a New York City police officer attempting
+to subdue him. As Garner laid on the sidewalk with officers’ knees in his back and a chokehold around
+his neck he gasped for air and repeated, “I can’t breathe”. Although the tactic of using a chokehold is
+illegal, a Staten Island grand jury voted not to indict the officer responsible for Garner’s death.
+     Less than thirty days later, on 9 August 2014, in Ferguson, Missouri, Michael Brown, an unarmed
+black teenager was shot and killed by Darren Wilson, a police officer in Ferguson. Brown’s death
+incited many protests in the immediate and surrounding areas. Local people in the neighborhood
+were upset with the strong-arm tactics of the police and the state geared towards people of color in
+that neighborhood. After months of police investigation, the grand jury voted not to indict Darren
+Wilson. Thousands of people flooded the streets, in New York City, Ferguson, and around the country,
+for days of protests, blocking bridges and highways in anger at the verdicts.
+     Days following the deaths of Garner and Brown, news reports of the incidents characterized
+Brown as a thug, gang member, and lawbreaker. Garner was characterized as a repeat offender with
+news reports discussing his criminal history. News reports also made reference to the height and
+body size of both Brown and Garner, using fear-mongering labels such as “giant” and “huge” to make
+Brown and Garner seem super-human, dangerous, and therefore needing to be tamed. What are we to
+make of these cases? What are we to make of the grand jury verdicts? More importantly, what are we
+to make of the news reports that seem to justify the murder of these black men, through the labels of
+criminal and deviant?
+     To engage these questions, this research builds on an analysis of textual poaching and social media.
+Textual poaching explores how fans purposefully create their own communities to express adoration or
+fascination, but also antagonism and frustrations with their favorite media content, including movies
+
+
+Soc. Sci. 2017, 6, 26; doi:10.3390/socsci6010026                               www.mdpi.com/journal/socsci
+Soc. Sci. 2017, 6, 26                                                                                 2 of 17
+
+
+
+and television shows, such as Star Trek, and The Walking Dead, to name a few [1]. Building on this
+concept, this article is interested in the textual poaching that occurs in social media, specifically black
+Twitter, for purposes of challenging and resisting dominant degrading narratives placed on black
+and brown bodies through mainstream news coverage. Through an investigation of black Twitter,
+studies show that a disproportionately large number of young African Americans use twitter: 40% of
+18–29 year olds are active on the site compared to 28% of whites [2]. Black Twitter, a subculture within
+the Twitter platform, materializes through the creation of hashtags. These hashtags or “blacktags”
+tend to comment on black culture and society-at-large [3]. Meredith Clark, a scholar researching black
+Twitter, and Kimberly Elise, author of The Bombastic Brilliance of Black Twitter, argue that black Twitter
+can be a space for jokes, for social viewing of a television series, and as a space where people can voice
+anger and frustration [4]. According to Elise, black Twitter is one of the most largely interconnected
+and tightly interwoven subcultures, more so than any other subculture on Twitter. She argues that
+black Twitter’s power comes from its participatory democratic nature—the idea that users, through the
+creation of ironic, yet cutting-edge hashtags, create a space to address social issues of racial bias and
+discrimination. Indeed, this forum allows for textual poaching as resistance, where the user produces
+content that challenges dominant (oppressive) cultural ideologies and norms, including racial bias [1,5].
+For instance, the popular black Twitter hashtag #APHeadlines is a great example of textual poaching as
+resistance. This hashtag was created in response to the Associated Press’ tweet of the conviction of the
+Detroit man who shot Renisha McBride. McBride was a young woman of color who was looking for
+help after a car accident. However, McBride’s life was cut short when a homeowner, behind the screen
+door of his home, shot her in the head because he “feared for his safety”. The tweet, “Suburban Detroit
+homeowner convicted of second-degree murder for killing woman who showed up drunk on porch”
+seem to place the blame on McBride for her murder. Black Twitter users quickly responded with
+“AP headlines” of their own [6]. For example, one user with the twitter handle, @Phil_Lewis_ tweeted,
+
+        #APHeadlines millions of Africans complain after free cruise to the Americas; slave traders
+        find them ‘ungrateful’ [7].
+
+      Another user with the handle, @LaToubabNoire tweeted,
+
+        Homeless blasphemer from low-income Nazarene family, low on stamina, fails to survive
+        crucifixion. #APHeadlines [8].
+
+      Another user with the handle @CmartinezClass tweeted,
+
+        Children flee tourist locations in Latin America in hunt for government handouts and
+        comfy beds in deportation centers. #APHeadlines [9].
+
+     This hashtag is a demonstration of textual poaching as resistance; through facetious comedy and
+jokes Twitter users were able to create a space that allowed them to voice their anger about the lack of
+consideration and concern black bodies receive by mainstream news press and coverage, even after
+someone’s demise. Soon after the hashtag “#APHeadlines” went viral, the Associated Press changed
+the caption of the McBride story and tweeted, “Jury convicts Michigan man in killing of unarmed
+woman on his porch”, rewording the language from the previous tweet three hours after the original
+twitter message was posted. Consequently, the hashtag #APHeadlines also demonstrates the power of
+Twitter, particularly black Twitter, in exposing implicit bias and changing the narrative. It is important
+to note that one does not need to be black to participate in black Twitter. In this digital space, black
+men and women include those who self-describe/identify. Therefore, those who engage in black
+twitter also engage in what Gayatri Spivak calls strategic essentialism [10]. Strategic essentialism
+can be useful for building coalitions and organizing; the hashtag #BlackLivesMatter serves as a key
+example of essentializing for purposes of creating awareness and coalition building. Consequently,
+throughout this article, the term “black” is used strategically without ignoring the multiplicity of
+“black” people in the United States and abroad. Ultimately, it is through the exploration of social
+Soc. Sci. 2017, 6, 26                                                                               3 of 17
+
+
+
+media and textual poaching as resistance that this paper seeks to explore the possibilities black Twitter
+provides in challenging racial bias portrayed in mainstream mass media and systemic violence and
+oppression that places black and brown bodies at the margins.
+
+2. Background
+     There are many contemporary examples of news bias in the United States when reporting on
+black and brown bodies, the examples of Michael Brown and Eric Garner included. However, these
+contemporary examples have a long history stemming back to the surveillance of enslaved populations
+in the United States and early media representations of black bodies. To understand the need and
+purpose of these resistant spaces, we first have to explore the formation of the dominant and often
+unconscious rhetoric of the black body, and thus black people, as delinquent and criminal.
+
+2.1. Perceptions of Blackness and Criminality
+      According to Christian Parenti (2003) the construction of the black body being labeled as criminal
+and classified as problematic harks back to the 18th century with the fear of social insubordination
+and the disruption of capitalist norms and accumulation. Specifically, ethno-racial populations,
+including laborers, slaves, and to some extent indentured servants (folks who could disrupt the
+operations of capitalist businesses), were the targets of surveillance throughout the United States.
+Since mobility was a crucial source of power for slaves, knowing where enslaved persons were,
+what they were doing, as well as being able to identify persons, was of the utmost importance for
+better control of these populations. Slave passes, manumission papers, and slave hire badges, a form
+of identification for enslaved and “free” black men and women located in the South and North of
+the United States, are classic examples of how these populations were controlled and identified.
+Another classic form of surveillance during this time were the runaway notices that were posted
+in the local newspapers. However, more importantly, the slave patrols or “patrollers”, working in
+conjunction with/reinforcing the slave passes and manumission papers, played a paramount role in
+the surveillance and identification of enslaved populations. The patrollers were often paid by slave
+owners to be bounty hunters for runaway slaves as well as to “be in the know” of the plantation
+activities of those enslaved [11].
+      The surveillance of these populations continued with the scientific construction of “criminals”
+and “problem populations” in the 18th and 19th centuries [12]. These scientific constructions of inferior,
+superior, and biological notions of criminals were based on older (racist) notions of differences between
+white and black races [13]. However, this explicitly biased pseudo-science was used to justify and
+give credence to the continued need to control and surveil this “problematic” population by law
+enforcement [14]. This rendering of the black body as problematic is important in understanding
+how our institutions were constructed to respond to black bodies. For instance, our law enforcement
+agents were directed to surveil and “patrol” this racialized group that was deemed prone to criminality.
+The local newspapers often reinforced these notions of criminality and inferiority with the “For Sale”
+and “Wanted” advertisements and posters displayed in the paper [15]. In addition, the blackface
+[minstrel] performances during this time were also manifestations of the explicit belief that black
+people were associated with inferiority and negative attributes. Blackface, usually performed by
+white actors, represented and constructed blackness through the white gaze and act of performance.
+These blackface actors constructed blackness, in performance, as “childish, primitive, contented and
+endowed with great mimetic capacities” [16]. The explicit bias portrayed in minstrel and blackface
+performance continued in the 20th century, in mainstream media with the popular and long-running
+radio program, Amos and Andy. This radio program, written and performed by two white men, is an
+example of aural blackface and relied heavily on racist stereotypes [17]. This popular radio broadcast,
+later becoming a popular television sitcom with a black cast, was a staple in black households as well as
+white households. This reinforcement of black identity as foolish, imbecile, and primitive, propagated
+through mainstream media in the early 20th century, continues in the 21st century with the limited
+Soc. Sci. 2017, 6, 26                                                                             4 of 17
+
+
+
+and stereotypical roles for black actors and actresses in Hollywood. Furthermore, the construction
+of blackness through the practices of enslavement, scientific racism, and blackface performances
+(historically and present-day) work to naturalize race (along with these stereotypical beliefs) and
+make it appear as if it has always existed; making race an absolute marker of status or condition,
+with blackness coming to be identified with enslavement and inferiority and whiteness coming to be
+identified with having rights and privilege.
+      The Moynihan report on black poverty and the so-called “black matriarchy” or households
+headed by black women (1965) is another example of the naturalization of racial bias in the late-20th
+century [18]. The report entitled, The Negro Family: The Case for National Action criminalized and
+demonized the black [matriarchal] family because it was deemed the opposite of the “thriving” white
+[patriarchal] family. Daniel Moynihan, the Assistant Secretary of Labor for President Lyndon B. Johnson
+(at the time of writing this report) explored the “tangle of pathology” within the black family and
+community(ies), arguing the black family was in a state of disarray due to centuries of white supremacy,
+including institutional racism and inequality. However, President Lyndon B. Johnson and the mass
+media, highlighting Moynihan’s section on the disruptive black matriarchal family and culture of
+poverty, used the report to cite the high crime rates and imprisonment rates and consequently justify
+state violence against black bodies.
+      The Moynihan report (1965) is important because it is yet another moment (building on the
+rhetoric of blackness as inferior, primitive, and needing to be surveilled) where the black family and
+black community(ies) were being constructed in mainstream media as a problem due to the “culture”
+in these communities. While this report dates back to the 1960s and 1970s, we can see evidence of this
+bias towards black bodies in the present moment with the acute criminalizing and victimization of
+young men and women of color without addressing the structural problems, shaped by the history
+of slavery, the Jim Crow era, and the naturalization of racial bias, which are embedded in the fabric
+of society [13,19]. Take for example, the murder of Trayvon Martin that became more of a discussion
+about “urban” culture (code word for black) than it was about his murder in the mainstream media.
+Consequently, it became an alibi where the adolescent essentially was blamed for his own death
+because he was a youth of color wearing a hoodie. More importantly, this long-standing bias towards
+black bodies and blackness justified for George Zimmerman, a local auxiliary officer, as well as to
+the jury (who did not indict Zimmerman for Trayvon Martin’s murder) the need for the “patrol” of
+black bodies. Another example is Mike Brown who was criminalized by the media and local police
+because he lived in an impoverished and drug-infested area of St. Louis [20]. Therefore, we see in the
+present moment this continued need to redefine blackness outside of the familiar social scripts and
+(un)conscious attitudes and beliefs about race and otherness.
+      Much of how people come to understand what it means to be a man, woman, black, white, Asian,
+Latina, masculine, feminine, rural, and urban is shaped and produced by mainstream media [21–23].
+Ultimately, the media is central to what comes to represent many people’s social realities and also
+central to the spread of ideas worldwide. Most importantly, the media that comes to represent social
+realities are shaped by histories of colonization, slavery, and imperialism; histories that were shaped
+by and have shaped white supremacy, racism, and sexism in our society today. Consider for example,
+the news coverage of Hurricane Katrina, the tropical storm that hit the Gulf Coast of the United States
+in 2005, causing levees to break, mass flooding, and the displacement of many residents in Louisiana,
+Mississippi, and Alabama, but, in particular, New Orleans, a predominantly black parish of Louisiana.
+Sommers et al. (2006), exploring the way news coverage of the displaced residents in New Orleans
+shaped public perceptions of the survivors and the crisis, argue that racial bias played a role in media
+depictions [24]. Using an example from Hurricane Katrina let us explore a picture taken of a black man
+in floodwater carrying food and drinks in comparison to a white couple carrying food and drinks. The
+picture with the black man had the caption “A young man walks through chest deep flood water after
+looting a grocery store...” [25]. Whereas, the caption for the white couple reads, “Two residents wade
+through chest-deep water after finding bread and soda from a local grocery store...” [26]. What are
+Soc. Sci. 2017, 6, 26                                                                               5 of 17
+
+
+
+we to make of this discrepancy in captions for two similar images? Why does the black youth get
+the unspoken and spoken labels of deviant, criminal, and “looter”, while the white couple gets the
+unspoken and spoken labels of survivors, resilient, and “finders”? This example demonstrates how
+the mainstream media can and have shaped representations and perceptions of black bodies. Even
+when there is no crime committed, the black body gets criminalized by default. Another example of
+mainstream media reinforcing perceptions of blackness and criminality can be seen in the 2015 news
+coverage of three white men and four black men who were arrested for committing the same crime of
+burglary. The ABC Iowa news station used the mug shots of the four black men with the headline,
+“Coralville police arrest four in burglary investigation” [27]. Whereas, for the three white men, a school
+picture was used with the headline, “Three University of Iowa wrestlers arrested; burglary charges
+pending” [28]. Both of these stories were reported on the same day, by the same news station and
+written by the same journalist. The choice of pictures used by the journalists and broadcast by the
+news station speak for itself; the black men in the mugshot appear disheveled and unhappy, while the
+school picture of the three white men display them in uniformed dark-colored jackets, white collared
+shirts, with yellow ties. The picture of the three white men not only shows them smiling but it also
+displays some sort of wealth and class, as they would only be wearing that type of uniform at a private
+or preparatory school. This is another example of the black body getting the label of criminal and
+deviant, while the white men who were arrested for the same crime get the unspoken label of smart
+and good. The news reports of the Hurricane Katrina survivors and the men arrested for burglary are
+ten years apart, yet both reports expose the problem of bias in mainstream news media, while also
+indicating the need for spaces that can challenge these biased narratives.
+
+2.2. Constructing an Alternative Theory
+      In an effort to explore the racial bias in news coverage as systemic, covertly integrated into
+societal institutions, this paper seeks to explore alternative spaces and textual poachers that attempt to
+expose these patterns. Susan Bordo’s (1993) [29] concept of battleground/playground and bell hooks’
+(1990) [30] concept of homeplace is useful in analyzing the digital space of black Twitter and textual
+poaching. By placing these scholarships in dialogue with each other, this article will be able to (1) move
+away from the idea that oppressive conceptions of the body have to overdetermine our relationship to
+it (specifically, women and men who do not let the attempt to oppress and regulate their body be more
+significant than the counter-disciplinary possibilities); and (2) explore [digital] spaces, purposefully
+created for collective action and resistance, that often get overlooked.
+      For Bordo, the metaphor of the body as a “battleground” ([29], p. 263), borrowed from Foucault’s
+Discipline and Punish, captures how the body is directly involved in a political field with power
+relations having an immediate hold on it, creating a “perpetual battle” for self-determination ([14],
+p. 26). In other words, Bordo argues that the body is never void of history, politics, or culture, and
+therefore the body is an important site that is constantly under attack for control, whether it be by
+institutions, technology, doctors, and/or the media. For Bordo, the “perpetual battle” is marked by the
+individual’s or communities’ struggle to fight for the control of their own body(ies).
+      Bordo’s (1993) metaphor of “playground” is quite the opposite of the “battleground”. If the
+“battleground” is where resistance takes place, then the “playground” logic works to destabilize
+the resistance struggles of the “battleground”. Bordo argues that the playground emerges within
+postmodern conversation or technological advances and is ahistorical, apolitical, acultural, and a
+space “where anything goes” ([29], p. 258). Therefore, this article seeks to reclaim the “playground
+logic”, arguing that while the playground may be a space for play and “where anything goes” it is not
+always void of culture, history, and politics. Rather, this article embraces Fanon’s analysis that “black
+subjects”, understanding their body as a battleground and the ways racism works, will adopt and alter
+dominant ideologies for their own needs and purposes [31,32]. Consequently, this article considers
+the ways social media, often operating as a playground, can transform into a battleground. However,
+Soc. Sci. 2017, 6, 26                                                                               6 of 17
+
+
+
+the question becomes, what conditions allow for such a transformation? To engage this question, this
+research builds on bell hooks’ concept of homeplace.
+      In Homeplace, bell hooks explores a place where one can seek shelter, comfort, and nurture for
+their soul; a place where one learns dignity and integrity, along with faith ([30], p. 41). When hooks
+discuss homeplace, she is talking about a specific location, a home, which is run by women and usually
+a site for family and close friends to seek safe harbor. However, although hooks is thinking about it
+within the context of a physical home, it does not have to be restricted to that. While hooks is primarily
+concerned with black women’s senses of home and safety, homeplace can broadly be considered
+as any “place” that provides shelter, etc., for black women. The concept of digital homespace, put
+forth in this article, brings together the concepts of battleground, playground, and textual poaching,
+thus becoming a space created by marginalized and oppressed persons of color, on the World Wide
+Web that serves to (re)shape and (re)create individuals’ sense of self through redefinition, sharing of
+testimonials, collective action, and building communities. Since marginalized and oppressed groups
+often face oppression on a daily basis through dominant mainstream media, which often portray
+stereotypical and degrading images and roles of these groups, spaces that celebrate and embrace these
+marginalized groups become necessary. The hashtag #APHeadlines, explored in the first section of
+this paper, is a good example of the creation of a digital homespace through the playground and
+battleground logic and textual poaching, an exercise where users create their own communities to
+express adoration or frustration with specific media content, exposing racial bias in mainstream news
+coverage. Therefore, digital homespaces serve to (re)create and (re)define individuals’ sense of self
+by exposing bias news coverage, and through the sharing of testimonies, obstacles, struggles, and
+triumphs that oppressed folks on the margins face on a day-to-day basis, while building coalitions
+and communities. These spaces seem to be on-going, with no finite end or beginning date or time.
+Also, while these spaces may begin on the internet, they are not limited to that space, and can move
+beyond the digital sphere. Accordingly, for this article, the black body is read as a battleground site
+where there is a “perpetual battle” for control, specifically combatting dominant ideologies of racial
+bias around blackness. The battlefield is social media, and textual poaching in black Twitter is the main
+weapon/tool used to confront and challenge both implicit and explicit bias, thus creating a digital
+homespace for marginalized groups/persons.
+
+3. Methods
+      For this research, a content analysis of the corporate news media and black Twitter was performed;
+this analysis spans from 2014 to early 2016. A Lexis Nexis search was performed on the most trusted
+news stations and newspapers, which in a recent study by the Pew Research Center were named as
+CNN, ABC News, NBC News, CBS News, Fox News, The New York Times, USA Today, and The Wall
+Street Journal [33]. The analysis specifically focused on the news and black Twitter content surrounding
+the murders of Mike Brown, Eric Garner, Jordan Davis, Trayvon Martin, Tamir Rice, and Renisha
+McBride. The Lexis Nexis search consisted of published news reports from the date of the incident to a
+month after the incident, and reports after any legal action took place (such as an arrest, grand jury
+decision, or trial). There were a total of 433 news articles populated for the six murder victims; out of
+the 433 news articles, a total of 79 articles were from the top-trusted news sources. Each news report
+was hand-coded, by one person, and scrutinized for similarities and differences in reporting, including
+biased key words, phrases, content, and headlines. For the purpose of this study, much attention
+was paid to the descriptions and characterizations of the victims in the news reports. The analysis
+of black Twitter consisted of an archived content search, performed through the Twitter platform,
+on six popular hashtags that emerged after news broke of the deaths of the six murder victims and
+jury verdicts. The hashtags included #APHeadlines, #IfTheyGunnedMeDown, #DangerousBlackKids,
+#ICantBreathe, #CrimingWhileWhite, and #AliveWhileBlack. These hashtags are important to this
+research because they began to “trend” on Twitter within hours of an incident and often shaped the
+popular online attitudes about said incident. The analysis of these hashtags was shaped by participant
+Soc. Sci. 2017, 6, 26                                                                                7 of 17
+
+
+
+observation and mainstream news reports, therefore, the hashtags under investigation were tracked in
+real-time. Furthermore, an archived search was performed on all of the mentioned hashtags using
+the advanced search tab on the Twitter platform. The advanced search tab on Twitter allows for a
+search of specific hashtags and keywords within certain parameters; search filters included specific
+dates, twitter accounts, and location. In addition, news coverage of the hashtags is also included in this
+research. News coverage usually appeared the same day or within a day or two of the emergence of the
+trending hashtag. Due to the transient nature of these digital spaces, a 24-h snap-shot was performed
+(beginning from the creation of the hashtag), which highlighted the most popular/retweeted messages.
+While Twitter is a public space, it is important to acknowledge the prevalence of surveillance in these
+digital spaces (by the state and by other local actors) for purposes of intimidation and/or to silence
+dissent. It is for this reason that the popular hashtag messages shared in this research fall into one or
+more of the following categories: (1) they were the most retweeted messages; (2) they were tweeted
+by popular twitter users (including social/political activist) and (3) they were tweets that have been
+publicized in mainstream media; these tactics were used in an effort to reduce harm to users. This
+analysis is qualitative; however, quantitative statistical data is used to illustrate the impact of the
+hashtags under investigation. Foucault’s (1984) understanding of genealogy as a method was helpful
+for the analysis of black Twitter [34]. Genealogy is a method that records singular events that seem
+to have no history because the events are often understood as unrelated and not linear. Therefore,
+genealogy allows for discoveries of events masked as other or different, events that are often silenced
+by history because they are not linear and differ from traditional historical studies, to be brought to the
+surface for investigation. This methodology is extremely useful in this investigation of user responses
+on black Twitter, which due to the medium, can oftentimes be regarded as ahistorical or unrelated
+to social and political events in the mainstream news or society at-large. While recognizing that no
+single approach is sufficient in exploring the complexities of the internet, Everett’s (2002) methodology
+allows for the framing of the findings on blackness in social media as a “snapshot or moment-in-time
+approach.” This method allows for some useful information about this topic to be ascertained, while
+also appreciating the fluidity and the ephemeral nature of these spaces ([35], p. 128). Therefore, the
+analysis of black Twitter includes 24-h snap shots of the most retweeted hashtags, along with heavily
+circulated memes, photo statements, and videos. Notably, these methods expose the challenges of
+exploring online environments and the limitations of traditional methods of conducting research due
+to the fleeting nature of the information found in these online forums.
+
+4. Findings
+     The questions that emerge through the investigation of Twitter and black Twitter are: what are
+the spaces and activities on black Twitter that challenge dominant, oppressive, and biased narratives
+of the black body found in mainstream news reporting? What do these spaces look like, and are they
+always present? In the cases of Garner, Brown, Davis, Martin, and Rice, the findings demonstrate that
+social media users have created digital homespaces through textual poaching as resistance, aimed to
+“define and encourage a new consciousness among black people” ([36], p. xvi). This consciousness
+encourages pride in blackness and stimulates communal responsibility among all people of color
+for one another and for the purpose of challenging implicit and explicit racial bias. Reviewing the
+case studies, there are three specific ways that black Twitter has behaved as a digital homespace for
+black bodies: (1) redefinition; (2) enforcing counter-narratives, testimonials; and (3) organizing and
+building communities.
+
+4.1. Redefinition
+     The act of redefinition is important, as the constantly reinforced and constructed definitions
+of inferior, animalistic, brute, and thug continue to be used to justify the oppression and war
+on black bodies [36]. Therefore, in an attempt to recover/redefine and love Blackness, after the
+murder of Mike Brown in St. Louis, the hashtag “IfTheyGunnedMeDown” emerged on black Twitter.
+Soc. Sci. 2017, 6, 26                                                                            8 of 17
+
+
+
+This hashtag marked the way mainstream news sources were portraying Mike Brown, as a gang
+member, and had previously criminalized other black victims of police murder and violence [37–47].
+The #IfTheyGunnedMeDown hashtag was an effort for people to voice their discontent with the
+media’s portrayal and stereotyping of victims who had been killed or injured at the hands of the police
+and vigilantes. Consider, for example, after Michael Brown’s murder, news stations searched Brown’s
+Facebook for photos and used images of Brown wearing a red jersey and holding up a peace sign,
+which was later construed as a gang symbol by news reporters [48–50]. Another photo that surfaced
+in news outlets was of Brown staring menacingly into the camera while wearing headphones. These
+pictures were used to assault Brown’s character, along with news reports about Brown being in a gang
+and living in a neighborhood that was ridden with poverty and high drug usage [20]. Little or no
+attention was given to the fact that Brown had recently graduated from high school and was about
+to begin college in a couple of days. Black Twitter users tweeted and retweeted the picture of Mike
+Brown in his high school graduation cap and gown, the photo his family publicized after his death,
+instead of the photos the mainstream media were circulating. Similarly, in the case of Trayvon Martin,
+the news media searched his Facebook account and circulated a photo of Martin glaring into the
+camera, wearing a baseball cap, and sticking up his middle finger, which blocks the bottom half of his
+face. However, the Martin family circulated a photo of Martin smiling without a hat or anything else
+blocking his face. In both cases, the photo circulated by the news was used to characterize both Brown
+and Martin as trouble-makers needing to be surveilled or “patrolled”, and in many ways justifying the
+violence and murder of Brown and Martin.
+     Consequently, the “blacktag” “#IfTheyGunnedMeDown” asked the question, ‘what picture from
+my social media account would the news use to portray me if I were gunned down?’ Through textual
+poaching as resistance, users posted pictures they thought framed them in a compromising light
+for mainstream viewers and then juxtaposed this with pictures from their daily life. This hashtag
+was named one of the most trending hashtags for 2014, signifying the conscious effort black Twitter
+users put forth to expose the bias in mainstream media in addressing the issue of violence against
+black bodies [51]. For example, one user with the handle @tydrizzyy posted two photos, one photo
+of a young guy sitting across a bed wearing all black with pants sagging, and another photo of the
+same young guy from the previous picture, in a classroom, wearing a military uniform, reading a
+storybook to young children [52]. There were many pictures of this nature posted on twitter and
+other social media forums. Another tweeter with the handle @RevrendDoctor posted two photos,
+one photo with a friend and @RevrendDoctor doing a hand sign for his fraternity. The other photo is
+of @RevrendDoctor behind a podium, wearing a cap and gown, at a Morehouse College graduation
+ceremony [53]. This hashtag was powerful because not only did it start a national conversation about
+racial bias in mainstream news media, but it also forced many news media outlets to respond, similar
+to the hashtag “APHeadlines”. The hashtag “IfTheyGunnedMeDown”, challenging the narrative
+put forth in news outlets, was reported in four of the eight trusted news sources explored in this
+research, including USA Today, NY Times, ABC News, and The Washington Post, demonstrating its
+significance [54–58].
+     Similarly, the “blacktag” #DangerousBlackKids also emerged after a judge declared a mistrial in
+the case of Jordan Davis, a 17-year old, who was shot and killed at a gas station by Michael Dunn, a
+white patron, who objected to the loud music coming from the vehicle Davis and his friends were
+driving and “feared” for his life. This hashtag also emerged as a way to shed light on the murder of
+Tamir Rice, a 12-year old boy who was shot by Ohio police while playing with a toy gun in a community
+park. This hashtag challenged the way mainstream news sources were portraying young black children
+as dangerous and deviants [59]. For instance, one user with the handle @AntoineJLowery posted
+a picture of a boy smiling and riding piggy-back on a man’s back with the caption, “Practicing his
+choke-hold #DangerousBlackKids” [60]. Another user with the handle, @OdotJdot tweeted a picture
+of two small children in a red wagon with the caption, “Young black criminals in their getaway car.
+Careful! #DangerousBlackKids” [61]. These examples demonstrate the playground and battleground
+Soc. Sci. 2017, 6, 26                                                                                 9 of 17
+
+
+
+aspects of black Twitter. Although the users are being flippant, they are responding to a very real
+concern, the criminalization and demonization of black bodies. Ultimately, through textual poaching,
+black Twitter users took to the battlefield and created a digital homespace to fight for the control
+to define their own bodies by being very critical of mass media’s representations of black bodies.
+In many of these cases, the news media responded by changing headlines and reporting on the hashtag
+response. However, redefining the black body is only one step in challenging racial bias and oppression;
+changing the narrative is also very important in this process.
+
+4.2. Power of Testimonials—Enforcing Counter-Narratives
+     Activists and protestors made it their task to challenge the mainstream narrative of Ferguson
+and Mike Brown by tweeting and re-tweeting counter-narratives of the events taking place in
+Ferguson. This is another method of reclaiming the body/fighting for self-determination and creating
+a digital homespace.
+     In the case of Michael Brown, twitter users pre-supposed the narrative of Michael Brown’s friend,
+Dorian Johnson, who was an eyewitness over the police’s take of events. The police and news media
+were trying to undermine Johnson’s account of events [62]. Take for example, when reports came out
+that Michael Brown did not have his hands up when he was shot; however, black Twitter continued to
+side with Dorian Johnson’s account of the events leading to the death of Michael Brown, creating the
+hashtag, “#HandsUpDontShoot,” which also became a popular chant with protesters. The use of this
+hashtag in protests is an example of textual poaching moving beyond the space of social media.
+     In the case of Eric Garner, social media users shared the video of Garner being placed in a
+chokehold by police with the hashtag, #ICantBreathe. As such, while the police and mainstream
+news sources attempted to posit a narrative of a “big” guy who refused to listen to the police, black
+Twitter responded by reinforcing a counter-narrative of abusive police tactics with the hashtag and
+popular protest chant, “I Can’t Breathe”. The hashtag “#ICantBreathe” was also named one of the
+most trending hashtags on Twitter for the year 2014, as well as the hashtag “#IAmMikeBrown” [51].
+Take for example, one user with the handle @sweetannie158 who retweeted,
+
+        MASSIVE SIT-IN TAKES OVER TIMES SQUARE #HandsUpDontShoot #ICantBreathe [63].
+
+      Another user with the handle @CharinaNadura tweeted,
+
+        In front of #NYPD station in times square yelling #HandsUpDontShoot &
+        #ICantBreathe [64].
+
+      A user with the twitter handle @Sifill_LDF tweeted,
+
+        Black men do not have to perfect for their lives to have value [sic]. #EricGarner is not on
+        trial. He is a homicide victim. #Icantbreathe [65].
+
+     In addition, there were more than 18 million tweets about the hashtag, “#Ferguson”, in August of
+2014 [66]. According to a Twitter analysis of the hashtag “#Ferguson”, these Twitter posts surrounded
+the events of the Mike Brown case, the ensuing protests, and cases of police brutality [67]. According
+to that same report, the hashtag “#BlackLivesMatter”, which is used to create awareness and share
+cases of police violence, was tweeted more than 9 million times in 2015 [68]. These popular hashtags
+affirm the power of black Twitter in sparking [national] conversations of racial bias and systemic
+violence against black bodies. Prior to these hashtags, conversations of police violence and systemic
+racism often occurred on a local level. The response from the public, with the help of citizen journalists,
+is another demonstration of the power of black Twitter. Citizen journalists are the people on the
+ground filming and sharing cell-phone recordings of the protests, police violence, and citizen-police
+interactions. Consider, for example, the Ferguson protestors who were live-streaming (sending out
+the link via Twitter), sharing on Vine, and tweeting their first-hand accounts with the militarized
+St. Louis Police officers and the national guard that were attempting to control the protest and enforce
+Soc. Sci. 2017, 6, 26                                                                             10 of 17
+
+
+
+a curfew. One video, in particular, that was circulated on Twitter and Vine, a social media platform
+that allows you to share ten seconds of video, was of an officer yelling at protestors saying he was
+going to “shoot” if the protestors did not back up. This video was picked up by mainstream news
+outlets, which resulted in the removal of this officer from the Ferguson detail (as reported on Twitter).
+However, for protestors, this officer was just one in many that abused their powers and faced little to
+no punishment. However, more importantly, the world was seeing first-hand what was taking place
+in Ferguson, with the help of citizen journalists, through a different perspective. Images of police
+with body shields and body armor throwing smoke grenades at protestors, emptying cans of mace in
+protestors’ eyes, and the huge armored military tanks with loud-speakers driving down the streets
+flooded Twitter and other social media platforms during the Ferguson protests.
+     Lastly, the sharing of personal testimonies was also a powerful tool used on social media. Users
+sharing their own experiences with local police in their respective locations, across the country,
+validated the counter-narratives being shared of the Mike Brown and Eric Garner case. Take,
+for example, the twitter hashtag #CrimingWhileWhite, which sparked the black Twitter hashtag
+#AliveWhileBlack. The “criming while white” hashtag was created by Jason Ross, a writer for the
+tonight show starring Jimmy Fallon, after the grand jury decided not to indict the New York City
+police officer responsible for Eric Garner’s death. Ross shared his own story of ‘criming while white’ to
+mark the racialized double-standard of our criminal justice system, and encouraged other white folks
+to share their stories of “under-punished f-ups” [69]. This hashtag, which was named one of the most
+trending hashtags for 2014, demonstrated an unequal justice system and a racial double standard [51].
+For instance, one user with the handle @skalakattack tweeted,
+
+        Got pulled over for a brake light out. Underage and drinking and blew over the limit. Cop
+        let me walk to my friend’s apt. #CrimingWhileWhite [70].
+
+      Another tweet by a user with the handle @cardsgirl1972 stated,
+
+        When I was 20, I stole a pack of cigs, cop prayed with me and made me promise I wouldn’t
+        do it again. #CrimingWhileWhite [71].
+
+      Another user with the handle @oceana_roll stated,
+
+        In high school I got in a 3 car wreck that might have been my fault. The cop told me it was
+       ‘illegal alien’s fault’. #CrimingWhileWhite [72].
+
+     These examples demonstrate the power of testimony in highlighting discrepancies between
+police interaction and race and violence. However, while the #CrimingWhileWhite hashtag may have
+been a way to mark these disparities with counter-narratives, many people thought these narratives
+were glorifying white privilege; consequently, a twitter user, Jamilah Lemieux, a senior digital
+editor for Ebony.com, started what became the popular black Twitter hashtag #AliveWhileBlack [73].
+Lemieux tweeted,
+
+        Got raped+robbed. Police took forever to interview me, mentioned that women sometimes
+        lie to hide “gambling, overspending” #AliveWhileBlack [74].
+
+     Another example of the #AliveWhileBlack hashtag included a tweet by user Francesca Ramsey
+with the handle @chescaleigh,
+
+        I was mugged after dropping a friend off late at night after work. The cops harassed me &
+        asked why I was “really there” #alivewhileblack [75].
+
+      Another tweeter with the handle @AkilahObviously stated,
+
+       17 y/o—Drove to Kroger to get my mom Nyquil. Pulled over unexplained. Asked why I
+       was in my neighborhood. 4 backup cop cars. #AliveWhileBlack [76].
+Soc. Sci. 2017, 6, 26                                                                             11 of 17
+
+
+
+     The purpose of this hashtag was not to glorify “under-punished f-ups”, but instead to highlight
+the ways people of color have a difficult time just staying alive in regular day-to-day activities, such
+as driving to work. Here, Patricia Turner’s analysis of rumors is relevant. Turner argues that rumor
+in African-American communities operate as a tool of resistance, a vital mechanism, in which one
+uses to protect oneself from continued harm and degradation [77]. This analysis of rumors helps to
+explain how and why the testimonials and counter-narratives spread so quickly and became popular
+on black Twitter (regardless of whether the testimonies were true or not). These testimonies and
+counter-narratives, all examples of textual poaching as resistance, shared different experiences and
+stories while shedding a light on the disparities of race and inequality across the United States,
+and giving a voice to the often voiceless; but more importantly, they began a national and global
+conversation about institutionalized racial inequalities in America.
+
+4.3. Healing through Organizing and Building Community
+      Continuing the work of redefinition and enforcing counter narratives, this section explores the
+ways Twitter organizers used their forum to take the next step to challenge and reduce bias, racism,
+and oppression towards black bodies and other oppressed groups. The organizations explored in this
+section have gained popularity through social media. These organizations stand out because they
+embrace tactics from the non-violent civil rights struggle and also tactics from the more-militant black
+power struggles, they also have an active presence both online and offline and have created a list of
+demands for change on the state and federal level. In addition, these organizations created many of
+the textual poaching hashtags on black Twitter. These groups, Black Lives Matter, Ferguson Action,
+This Stops Today, Million Hoodies Movement for Justice, Hands Up United, Black Youth Project 100
+in Chicago, Leaders of the Beautiful Struggle in Baltimore, and We Charge Genocide in Chicago, are
+all a part of The Movement for Black Lives, and are similar in that they explore the problem of police
+officers acting without impunity as a systemic issue rooted within a long history of systematic racism.
+These groups are also very influential through their use of social media. Social media forums, such as
+black Twitter, Facebook, and blogs were instrumental tools in organizing beyond the space of social
+media. These groups using these tools spread the word of meet-up times and dates of demonstrations,
+publicized demands of elected officials, and provided updates to the general public.
+      One example of these organizations challenging systemic injustice through social media was
+the organized mass boycott of Black Friday. Similar to the Montgomery Bus Boycott, the objective
+of the boycott and mass protest of Black Friday, one of the biggest shopping days of the year in the
+United States, was a way of hitting the state and nation, where it hurts, their pockets. The intention
+was to show that if the state continued to demonstrate that black lives do not matter by the continual
+systemic oppression and abuse of black people then they will not support the economic structure of
+this racist state. The movement of “Black Out Black Friday” emerged with people sharing meet up
+times and boycott locations across the nation through Twitter. The blacktags “#BlackOutBlackFriday”
+and “#NotOneDime” were also named the most trending/popular Twitter hashtags in 2014 [51].
+This hashtag sent protestors out in droves to boycott Black Friday shopping across the United States.
+Many stores in various cities cited the loss of sales due to the protestors who occupied malls, forcing
+them to close [78–80]. For instance, in downtown Seattle, protestors disrupted the tree lighting
+ceremony causing the Westlake Center mall to close three hours early on one of the busiest shopping
+days of the year [81].
+      Another example of these organizations challenging systemic injustice through social media
+was the protestors shutting down highways and bridges. This demonstration addressed who has
+access to walk on the streets (think about Mike Brown being stopped because he was walking in
+the street or Eric Garner who was harassed because he was standing on the street corner or Jordan
+Davis who was at the convenience store or Trayvon Martin who was walking home from the store).
+The protestors performed die-ins (having historical ties to sit-ins), however, die-ins took place in main
+intersections and on bridges, demonstrating the loss of Mike Brown’s life and how he was left to lay
+Soc. Sci. 2017, 6, 26                                                                             12 of 17
+
+
+
+in the middle of the street for four hours before his body was taken to the coroner’s office. Many of
+these protests were organized in-person, but spread through Twitter and other social media outlets.
+An example of the power of black Twitter, during many of the protests, as events changed (such as
+police arrests or blockades), protestors were able to stay in the loop with each other by sending out a
+tweet and reconvening at another location within minutes. This caused an increase in surveillance of
+Twitter. Some Twitter users even tweeted photos of an unmarked van they believed was scrambling
+their network, making them unable to make calls and access social media. More recently, it has been
+exposed that the Department of Homeland Security used social media to gather intelligence on the
+social justice protests in Ferguson, Missouri, and also in Baltimore. Researchers have warned activists
+using Twitter and other social media platforms that the Department of Homeland Security has stated
+that social media ‘is a constant provider [of intelligence] and is fairly reliable’ [82]. Continuing this
+argument, a former Central Intelligence Agency [CIA] agent of the United States, John Kiriakou, who
+was charged and imprisoned for sharing classified information with a reporter (who never reported on
+the information shared), told The Real News Network that the government collects emails, phone calls,
+and Facebook and Twitter posts on every American citizen [83]. This speaks to the very real threat that
+surveillance poses to social actors who challenge the system through social media.
+      While the groups may differ on a few demands, what remain consistent are the real-life
+consequences and results of these movements. First, with the flourish of trending hashtags circulating
+around Twitter, including but not limited to #BlackLivesMatter, #HandsUpDontShoot, #ThisEndsNow,
+#ShutItDown, and #ICantBreathe, they were able to (1) create coalitional spaces through social media;
+(2) expose racial bias, spread awareness, and spark national conversations of the issues at hand through
+blacktags and textual poaching; (3) allow people to voice concerns of police brutality; (4) reclaim
+control over defining the black body; (5) assist in the organizing of demonstrations nationwide; and
+(6) slow down commerce, by disrupting Black Friday shopping across the country. However, these
+organizations have not stopped there; instead, organizers have continued building coalitions both
+locally and globally—another example of textual poaching and the creation of digital homespaces
+moving beyond social media.
+      Organizers in Black Lives Matter, Dream Defenders, and various Ferguson anti-police brutality
+protestors took a solidarity trip to Palestine. The purpose of the ten-day trip was to connect with
+activists living under Israeli occupation, show a link between oppressions, and build relationships.
+This was a powerful trip, with one activist stating,
+
+        In the spirit of Malcolm X, Angela Davis, Stokely Carmichael and many others, we thought
+        the connections between the African American leadership of the movement in the US and
+        those on the ground in Palestine needed to be reestablished and fortified.
+                        ~Ahmad Abuznaid, the legal and policy director of the Dream Defenders.
+
+     There were also tweets from people in other countries supporting and assisting protestors who
+were in Ferguson, by providing pictures and videos of how to defend oneself against tear gas, as well
+as photos of people marching in the streets holding posters that read “Brazilian people in solidarity
+with #Ferguson #BlackLivesMatter” and “Tokyo stands with Ferguson”.
+     Lastly, what was most interesting about the digital spaces and movements was the creation
+of a digital homespace through textual poaching, which reaffirmed humane notions of blackness,
+undermined implicit and explicit racial bias in mainstream news reports through testimonials and
+counter-narratives, and lastly the built coalitions which grew beyond the internet. Most importantly,
+these digital spaces became sites for the spread of knowledge and history, a particular history usually
+located in academic spaces.
+
+5. Discussion
+     As laid out in this paper, we see a clear need for spaces of encouragement and upliftment within
+black communities. Social media forums, while often understood as a playground, can also operate as
+Soc. Sci. 2017, 6, 26                                                                                 13 of 17
+
+
+
+a battleground—a space that actively undermines the attempts to oppress black bodies. Twitter and
+black Twitter are crucial in the awareness it provides to people around the nation. It was though these
+forums that many protests were organized and that information was spread. Social media is most
+useful for the tools it provides to organizers. The idea that one can send out a tweet or a post and
+share it with millions of people within seconds is an easy way to recruit and disseminate. Similar to
+mainstream mass media, social media also has the power to shape attitudes and beliefs of the masses.
+In this case, black Twitter worked to undermine implicit and explicit bias in mainstream news, while
+also uniting folks in these spaces through self-identification and a redefining/reclaiming of blackness.
+      While these spaces are useful, it can also be determined from this research that these spaces
+are not transformative by themselves. In other words, these spaces provide little moments that
+make for resistance. For example, while observing black Twitter, there were some cases of police
+harassment/abuse that did not receive a popular hashtag or receive the same public attention as other
+cases. Take for example, the lack of attention the Marissa Alexander case received on black Twitter
+versus the Trayvon Martin case. Marissa Alexander is an African American woman who was arrested
+for shooting a warning shot in the air to protect herself from her abusive husband. Alexander used the
+same “Stand your ground” defense as Trayvon Martin’s murderer, George Zimmerman, and while her
+warning shot did not result in a murder, she was originally sentenced to 100 years in prison. This case
+did not receive the same amount of attention on black Twitter as the Trayvon Martin case, which was
+interesting, since both cases represented a national fear of black bodies. Alexander’s case speaks to a
+number of limitations with black Twitter: (1) it marks the types of bodies that are believed to be at
+risk for violence; (2) it signifies which black lives matter; and (3) it marks the tensions and limitations
+of essentializing.
+      Consequently, while there are some cases that people can easily rally around, there are other cases
+that do not receive as much attention. This leads to the investigation of “accepted truths”. For example,
+in society we easily accept the idea that black men are constantly under attack, therefore, people
+can easily rally around those bodies in question. However, black women, queer, transgender, and
+immigrant bodies, to name a few, do not seem to receive the same attention. As such, it is quite
+ironic that the hashtag #BlackLivesMatter, created by queer black women, is not often used to bring
+attention to violence against queer black women. The power of accepted truths seems to be at play
+in these cases. Consequently, Kimberly Crenshaw and other activists/scholars deemed it necessary
+to publish a study on the institutional discrimination and oppression against black women, while
+also creating the hashtag #SayHerName [84]. The hashtag #SayHerName emerged as a response to
+the lack of attention being paid to black women (including queer and transgender folks) who face
+similar oppressions as black men. Therefore, while these spaces are useful when they operate as tools
+to challenge oppression, spread awareness, and assist in organizing counter-actions, they also tend to
+be short-lived and sparked by the power of accepted truths.
+
+Acknowledgments: The author would like to extend sincerest gratitude to the following people whose critical
+questions and engaged dialogue made these reflections possible: Gladys Jiménez-Muñoz, Kelvin Santiago-Valles,
+Bill Martin, Anna Everett, Xhercis Méndez, and Zhana Kurti.
+Conflicts of Interest: The author declares no conflict of interest.
+
+References
+1.    Jenkins, Henry. Textual Poachers: Television Fans and Participatory Culture. New York: Routledge, 1992.
+2.    Smith, Aaron. “African Americans and Technology Use: A Demographic Portrait.” Pew Research Center,
+      6 January 2014. Available online: http://www.pewinternet.org/2014/01/06/african-americans-and-
+      technology-use/ (accessed on 2 February 2014).
+3.    Manjoo, Farhad. “How Black People use Twitter: The Latest Research on Race and Microblogging.” Slate,
+      10 August 2010. Available online: http://www.slate.com/articles/technology/technology/2010/08/how_
+      black_people_use_twitter.html (accessed on 2 February 2014).
+Soc. Sci. 2017, 6, 26                                                                                      14 of 17
+
+
+
+4.    Clark, Meredith. “The Buzz over Black Twitter.” Here and Now: Boston’s NPR News Station, 10 February
+      2014. Available online: http://hereandnow.wbur.org/2014/02/10/black-twitter-dissertation (accessed on
+      2 February 2014).
+5.    Gray, Jonathan, C. Lee Harrington, and Cornel Sandvoss. Fandom: Identities and Communities in a Mediated
+      World. New York: New York University Press, 2007.
+6.    Abbey-Lambertz, Kate. “Black Twitter Calls Out Associated Press for Renisha McBride Tweet, and It’s
+      Spot on.” Huffington Post, 7 August 2014. (updated on 11 August 2014). Available online: http://www.
+      huffingtonpost.com/2014/08/07/black-twitter-renisha-mcbride-apheadlines_n_5659801.html (accessed
+      on 7 August 2014).
+7.    Lewis, Philip. “#APHeadlines Millions of Africans Complain after Free Cruise to the Americas.” Tweet,
+      7 August 2014. Available online: https://twitter.com/Phil_Lewis_/status/497485447371956224 (accessed
+      on 7 August 2014).
+8.    Jackson, Marissa. “Homeless blasphemer from low-income Nazarene family.” Tweet, 7 August 2014. Available
+      online: https://twitter.com/LaToubabNoire/statuses/497482988813561857 (accessed on 7 August 2014).
+9.    Caro.      “Children flee tourist locations in Latin America.” Tweet, 7 August 2014.               Available
+      online: https://twitter.com/CMartinezClass/status/497494919272206336?ref_src=twsrc%5Etfw (accessed
+      on 7 August 2014).
+10.   Chakravorty Spivak, Gayatri. In Other Words: Essays in Cultural Politics. New York: Routledge, 2006.
+11.   Parenti, Christian. The Soft Cage: Surveillance in America from Slavery to the War on Terror. New York: Basic
+      Books, 2003.
+12.   Leys Stepan, Nancy. “Race and Gender: The Role of Analogy in Science.” Isis 77 (1986): 261–77. [CrossRef]
+13.   Gibran Muhammad, Khalil. The Condemnation of Blackness: Race, Crime and the Making of Modern Urban
+      America. Cambridge: Harvard University Press, 2010.
+14.   Foucault, Michel. Discipline and Punish: The Birth of the Prison. New York: Vintage Books, 1995.
+15.   Santiago-Valles, Kelvin. “‘Still Longing for de Old Plantation’: The Visual Parodies and Racial National
+      Imaginary of U.S. Overseas Expansionism, 1898–1903.” American Studies International 37 (1999): 18–43.
+16.   Hartman, Saidiya V. Scenes of Subjection: Terror, Slavery and Self-Making in Nineteenth Century America.
+      New York: Oxford University Press, 1997.
+17.   Strausbaugh, John. Black Like You: Blackface, Whiteface, Insult and Imitation in American Popular Culture.
+      New York: Penguin, 2006.
+18.   Moynihan, Daniel Patrick. The Negro Family: The Case for National Action. Washington, DC: United States
+      Department of Labor Office of Policy Planning and Research, 1965.
+19.   Alexander, Michelle. The New Jim Crow: Mass Incarceration in the Age of Colorblindness. New York: The New
+      Press, 2012.
+20.   Berman, Mark. “What Do We Know about the Shooting of Michael Brown, and of Brown Himself?”
+      Washington Post, 12 August 2014.
+21.   Brooks, Dwight E., and Lisa P. Hébert. “Gender, Race, and Media Representation.” Handbook of Gender and
+      Communication 16 (2006): 297–317.
+22.   Collins, Patricia Hill. Black Feminist Thought: Knowledge, Consciousness, and the Politics of Empowerment.
+      New York: Routledge, 2005.
+23.   Hooks, Bell. Black Looks: Race and Representation. Boston: South End Press, 1992.
+24.   Sommers, Samuel R., Evan P. Apfelbaum, Kristin N. Dukes, Negin Toosi, and Elsie J. Wang. “Race and
+      Media Coverage of Hurricane Katrina: Analysis, Implications and Future Research Questions.” Analyses of
+      Social Issues and Public Policy 6 (2006): 39–55. [CrossRef]
+25.   Martin, Dave. “A Young Man Walks through Chest Deep Flood Water After Looting Bread.” Associated
+      Press, 30 August 2005. Available online: http://www.snopes.com/katrina/photos/looters.asp (accessed on
+      1 April 2015).
+26.   Graythen, Chris. “Two Residents Wade through Chest-Deep Water after Finding Bread.” Agence France-Presse,
+      30 August 2005. Available online: http://www.snopes.com/katrina/photos/looters.asp (accessed on
+      1 April 2015).
+27.   Hermiston, Lee. “Four Arrested in Coralville Burglary Investigation.” The Gazette, 23 March 2015. Available
+      online: http://www.thegazette.com//subject/news/four-arrested-in-coralville-burglary-investigation-
+      20150323 (accessed on 1 April 2015).
+Soc. Sci. 2017, 6, 26                                                                                        15 of 17
+
+
+
+28.   Hermiston, Lee. “Three University of Iowa Wrestlers Arrested; Burglary Charges Pending.” The Gazette,
+      23 March 2015. Available online: http://www.thegazette.com//subject/news/three-university-of-iowa-
+      wrestlers-arrested-20150324 (accessed on 1 April 2015).
+29.   Bordo, Susan. Unbearable Weight: Feminism, Western Culture, and the Body. Berkeley: University of California
+      Press, 1993.
+30.   Hooks, Bell. Yearning: Race, Gender and Cultural Politics. Boston: South End Press, 1990.
+31.   Fanon, Frantz. Black Skin, White Masks. New York: Grove Press, 2008.
+32.   Mercer, Kobena. “Black hair/style politics.” In Out There: Marginalization and Contemporary Cultures.
+      Edited by Russell Ferguson, Martha Gever, Trinh T. Minh-ha and Cornel West. New York: The MIT
+      Press, 1990, pp. 247–64.
+33.   Mitchell, Amy, Jeffrey Gottfried, Jocelyn Kiley, and Katerina Eva Matsa. “Political Polarization and Media
+      habits: From fox news to Facebook, how liberals and conservatives keep up with politics.” Pew Research
+      Center, 21 October 2014. Available online: http://www.people-press.org/2014/06/12/political-polarization-
+      in-the-american-public/ (accessed on 22 October 2014).
+34.   Foucault, Michel. “Nietzsche, Genealogy, History.” In The Foucault Reader. Edited by Paul Rainbow.
+      New York: Pantheon Books, 1984, pp. 76–100.
+35.   Everett, Anna. “The revolution will be digitized: Afrocentricity and the digital public sphere.” Social Text 20
+      (2002): 125–46. [CrossRef]
+36.   Ture, Kwame, and Charles V. Hamilton. Black Power: The Politics of Liberation. New York: Vintage Books, 1992.
+37.   Holt, Lester, and Ron Allen. “Police say these are pictures of Michael brown minutes before he was killed,
+      security video from a convenience store, images showing brown allegedly stealing cigars, pushing a clerk.”
+      NBC News, 15 August 2014.
+38.   Berman, Mark, and Wesley Lowery. “Michael brown suspect in robbery before he was shot to death.”
+      CNN Wire, 15 August 2014.
+39.   Alcindor, Yamiche. “Trayvon: Typical teen or troublemaker?” USA Today, 12 December 2012.
+40.   Goldstein, Joseph, and Nate Schweber. “Chokehold complaints are focus of city study.” The New York Times,
+      20 July 2014.
+41.   Oppel, Richard, Jr. “Cleveland mayor apologizes for language used to blame boy for his death.” The New
+      York Times, 3 March 2015.
+42.   “Detroit Man Charged with Killing Woman on His Porch.” The Washington Post, 6 November 2013.
+43.   Robertson, Campbell, and Lizette Alvarez. “Gunman’s account of beating by teenager is detailed.” The New
+      York Times, 27 March 2012.
+44.   Welch, William M. “Police: Trayvon martin shooting ‘avoidable’; Large cache of evidence released in
+      Zimmerman case.” USA Today, 18 May 2012.
+45.   Horwitz, Sari. “Zimmerman claims martin started confrontation.” The Washington Post, 27 March 2012.
+46.   Will, George F. “Eric Garner, criminalized to death.” The Washington Post, 11 December 2014.
+47.   Goodman, David, and Joseph Goldstein. “Grand Jury to Take Up Death Linked to Chokehold.” The New
+      York Times, 20 August 2014.
+48.   Wemple, Erik. “New York Times Defends Michael Brown Jr. ‘No Angel’ Characterization.” Washington Post
+      Blogs, 25 August 2014.
+49.   Ford, Dana, and Josh Levs. “Michael Brown’s Father: They Crucified His Character.” CNN WIRE,
+      26 November 2014.
+50.   Jaffe, Alexandra. “Huckabee: Michael Brown Acted Like a Thug.” CNN.com, 3 December 2014.
+51.   Eromosele, Diana Ozemebhoya. “2014’s Most Popular Twitter Hashtags.” The Root, 12 December
+      2014. Available online: http://www.theroot.com/photos/the_most_popular_twitter_hashtags_in_2014/
+      (accessed on 2 May 2016).
+52.   Goldie. “#IfTheyGunnedMeDown what picture would they use?” Tweet, 10 August 2014. Available
+      online: https://twitter.com/GoldMouffDawg/status/498625226133868544?ref_src=twsrc%5Etfw (accessed
+      on 10 August 2014).
+53.   Mufasa. “#2014Faves @withlove_sky: Segun this is beautiful. @RevrendDoctor.” Tweet, 10 August
+      2014. Available online: https://twitter.com/RevrendDoctor/status/498568545098563587 (accessed on
+      10 August 2014).
+Soc. Sci. 2017, 6, 26                                                                                     16 of 17
+
+
+
+54.   NPR Staff. “Behind a Twitter Campaign, a Multitude of Stories.” NPR, 16 August 2014. Available
+      online: http://www.npr.org/sections/codeswitch/2014/08/16/340669034/behind-a-twitter-campaign-
+      a-multitude-of-stories (accessed on 16 August 2014).
+55.   Curry, Colleen. “Powerful #IfTheyGunnedMeDown Hashtag Criticizes Portrayal of Black Victims.” In ABC
+      News, 13 August 2014. Available online: http://abcnews.go.com/US/powerful-gunned-hashtag-criticizes-
+      media-portrayal-african-americans/story?id=24959469 (accessed on 16 August 2014).
+56.   Durando, Jessica. “Users Ask Which Photo Media Would Use #IfTheyGunnedMeDown.” USA Today,
+      12 August 2014. Available online: http://www.usatoday.com/story/news/nation-now/2014/08/12/if-
+      they-gunned-me-down-hashtag-twitter/13982539/ (accessed on 16 August 2014).
+57.   Vega, Tanzina. “Shooting Spurs Hashtag Effort on Stereotypes.” The New York Times, 12 August 2014.
+      Available online: https://www.nytimes.com/2014/08/13/us/if-they-gunned-me-down-protest-on-twitter.
+      html (accessed on 16 August 2014).
+58.   McDonald, Soraya N. “After Michael Brown’s Killing, #IfTheyGunnedMeDown Shows How Selfies Shape
+      History.” The Washington Post, 11 August 2014. Available online: https://www.washingtonpost.com/news/
+      morning-mix/wp/2014/08/11/after-michael-browns-killing-iftheygunnedmedown-shows-how-selfies-
+      shape-history/?utm_term=.7995d41c4e74 (accessed on 16 August 2014).
+59.   Butler, Bethonie. “#DangerousBlackKids: Black Twitter’s Response to Dunn Verdict.” The Washington Post,
+      17 February 2014. Available online: https://www.washingtonpost.com/blogs/she-the-people/wp/2014/
+      02/17/dangerousblackkids-black-twitters-response-to-dunn-verdict/ (accessed on 17 February 2014).
+60.   AmericaWasNeverGreat. “Practicing His Choke Hold #DangerousBlackKids.” Tweet, 16 February 2014.
+      Available online: https://twitter.com/AntioneJLowery/status/435088036213575680?ref_src=twsrc%5Etfw
+      (accessed on 16 February 2014).
+61.   Jae. “Haaa RT @D_Brandyn: Young Black Criminals in Their Getaway Car.” Tweet, 16 February 2014.
+      Available online: https://twitter.com/OdotJdot/status/442169729483300864 (accessed on 8 March 2014).
+62.   Lowery, Wesley. “Justice Dept. Concludes that No, Michael Brown’s Hands Probably Were Not Up; ‘Hands
+      Up, Don’t Shoot’ Became a Protest Rallying Cry. But Did It Happen.” Washington Post Blogs, 4 March 2015.
+63.   Espinal, Annie. “@TheGOPStoppers: Massive Sit-In Takes over Times Square.” Tweet, 15 August
+      2014. Available online: https://twitter.com/sweetannie158/status/500199504340336640 (accessed on
+      15 August 2014).
+64.   Nadura, Charina. “In Front of #NYPD in Times Square.” Tweet, 14 August 2014. Available online: https:
+      //twitter.com/CharinaNadura/status/500073066177626117 (accessed on 15 August 2014).
+65.   Ifill, Sherrilyn. “Black men do not have to perfect for their lives to have value.” Tweet, 15 August 2014.
+      Available online: https://twitter.com/Sifill_LDF/status/500383070571495425 (accessed on 15 August 2014).
+66.   Stricker, Gabriel. “The 2014 #YearOnTwitter.” Twitter, 10 December 2014. Available online: https://blog.
+      twitter.com/2014/the-2014-yearontwitter (accessed on 2 May 2016).
+67.   Hitlin, Paul, and Jesse Holcomb. “From Twitter to Instagram, a different #Ferguson conversation.”
+      PewResearch Center, 6 April 2015. Available online: http://www.pewresearch.org/fact-tank/2015/04/
+      06/from-twitter-to-instagram-a-different-ferguson/ (accessed on 2 May 2016).
+68.   Valasec, Alexandra. “This #YearOnTwitter.” Twitter, 6 December 2015. Available online: https://blog.twitter.
+      com/2015/this-yearontwitter (accessed on 2 May 2016).
+69.   Dalrymple, Jim, II. “White People Confess to Crimes They’ve Gotten Away with after Eric
+      Garner Decision.” Buzzfeed, 4 December 2014.            Available online: http://www.buzzfeed.com/
+      jimdalrympleii/crimingwhilewhite-people-confess-to-crimes-theyve-gotten-awa#.rvwQeNwNeK (accessed
+      on 4 December 2014).
+70.   Skalak, Matthew. “Got Pulled Over for a Brake Light Out.” Tweet, 3 December 2014. Available online: https://
+      twitter.com/skalakattack/status/540285886030954496?ref_src=twsrc%5Etfw (accessed on 3 December 2014).
+71.   Cardsgirl1972. “When I Was 20, I Stole a Pack of Cigs.” Tweet, 3 December 2014. Available
+      online: https://twitter.com/cardsgirl1972/status/540327250324123648?ref_src=twsrc%5Etfw (accessed
+      on 3 December 2014).
+72.   Elizabeth. “In High School I Got in a 3 Car Wreck that Might Have Been My Fault.” Tweet, 3 December
+      2014. Available online: https://twitter.com/oceana_roll/status/540285773321211904?ref_src=twsrc%5Etfw
+      (accessed on 3 December 2014).
+Soc. Sci. 2017, 6, 26                                                                                         17 of 17
+
+
+
+73.   Galo, Sarah. “#CrimingWhileWhite vs. #AliveWhileBlack: Twitter Weighs in on Garner Decision.”
+      The Guardian, 4 December 2014. Available online: http://www.theguardian.com/us-news/2014/dec/
+      04/eric-garner-twitter (accessed on 4 December 2014).
+74.   Lemieux, Jamilah. “Got Raped + Robbed.” Tweet, 4 December 2014. Available online: https://twitter.com/
+      JamilahLemieux/status/540536140621946880?ref_src=twsrc%5Etfw (accessed on 4 December 2014).
+75.   Ramsey, Chescaleigh. “I Was Mugged Dropping a Friend off Late at Night after Work.” Tweet, 4 December
+      2014. Available online: https://twitter.com/chescaleigh/status/540524210549178368?ref_src=twsrc%5Etfw
+      (accessed on 4 December 2014).
+76.   Hughes, Akilah. “17 y/o—Drove to Kroger to Get My Mom Nyquil.” Tweet, 4 December 2014. Available
+      online: https://twitter.com/AkilahObviously/status/540522176785711104?ref_src=twsrc%5Etfw (accessed
+      on 4 December 2014).
+77.   Turner, Patricia A. I Heard It through the Grapevine: Rumor in African-American Culture. Berkeley: University of
+      California Press, 1993, p. 220.
+78.   Sommer, Jeff. “Looking for the Effects of the Black Friday Boycott.” The New York Times, 8 December 2014.
+      Available online: https://www.nytimes.com/2014/12/07/your-money/elusive-effects-of-the-black-friday-
+      boycott.html?_r=0 (accessed on 12 December 2016).
+79.   Madhani, Aamer. “Arrests across Nation as Protest Target Black Friday.” USA Today, 29 November 2014.
+      Available online: http://www.usatoday.com/story/news/nation/2014/11/28/crowd-protests-grand-jury-
+      decision-black-friday-st-louis/19624337/ (accessed on 12 December 2016).
+80.   Fieldstadt, Elisha. “Michael Brown Protestors Urge Shoppers to Boycott Black Friday.” NBC News, 29
+      November 2014. Available online: http://www.nbcnews.com/storyline/michael-brown-shooting/michael-
+      brown-protesters-urge-shoppers-boycott-black-friday-n257881 (accessed on 12 December 2016).
+81.   Lerman, Rachel. “Seattle Retailers Hit Hard by Black Friday Ferguson Protests, Westlake Center Closure.”
+      Associated Press, 1 December 2014. Available online: http://www.bizjournals.com/seattle/blog/2014/12/
+      seattle-retailers-hit-hard-by-black-friday.html (accessed on 12 December 2016).
+82.   Leopold, Jason. “How the Government Monitored Twitter during Baltimore’s Freddie Gray protests.” Vice,
+      18 May 2016. Available online: http://www.vice.com/read/riot-police-v23n3?utm_source=vicetwitterus
+      (accessed on 18 May 2016).
+83.   Hedges, Thomas. “Intelligence Agencies are Gathering Information against You in Case of Your Dissent.”
+      The Real News Network, 28 September 2016. Available online: http://therealnews.com/t2/index.php?Itemid=
+      74&id=31&jumival=17339&option=com_content&task=view#newsletter1 (accessed on 28 September 2016).
+84.   African American Policy Forum (AAPF). “Say Her Name: Resisting Police Brutality among
+      Black Women.” Available online: http://static1.squarespace.com/static/53f20d90e4b0b80451158d8c/t/
+      55a810d7e4b058f342f55873/1437077719984/AAPF_SMN_Brief_full_singles.compressed.pdf (accessed on
+      31 July 2015).
+
+                        © 2017 by the author. Licensee MDPI, Basel, Switzerland. This article is an open access
+                        article distributed under the terms and conditions of the Creative Commons Attribution
+                        (CC BY) license (http://creativecommons.org/licenses/by/4.0/).
+

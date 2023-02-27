@@ -1,0 +1,635 @@
+                        ,QWHUQDWLRQDO&RQIHUHQFHRQ2SHQ6RXUFH6\VWHPVDQG7HFKQRORJLHV ,&2667 
+
+
+
+ Exploring Media Bias and Toxicity in South Asian
+               Political Discourse
+                              Adnan Qayyum∗ , Zafar Gilani† , Siddique Latif∗ and Junaid Qadir∗
+                                           ∗ InformationTechnology University, Punjab, Pakistan
+                                       Email: (adnan.qayyum,siddique.latif,junaid.qadir)@itu.edu.pk
+                                               † University of Cambridge, United Kingdom
+
+                                                    Email: szuhg2@alumni.cam.ac.uk
+
+
+   Abstract—Media outlets and political campaigners recognise                   against a certain entity or ideology can shape the behaviour
+social media as a means for widely disseminating news and                       of a certain group of people, and also inadvertently assist
+opinions. In particular, Twitter is used by political groups all over           to certain agenda to be fulﬁlled [5]. Such bias can also
+the world to spread political messages, engage their supporters,
+drive election campaigns, and challenge their critics. Further,                 affect the voting behaviour and have the ability to promote
+news agencies, many of which aim to give an impression of                       intolerance and antagonisms in social and political issues [6]–
+balance, are often of a particular political persuasion which is                [9]. The awareness, tracking, and overcoming bias in news
+reﬂected in the content they produce. Driven by the potential                   media is very crucial for societies especially in emerging
+for political and media organisations to inﬂuence public opinion,               countries, where social networking services like Twitter has
+our aim is to quantify the nature of political discourse by these
+organisations through their use of social media. In this study,                 the capability to shape the democracy [10], [11].
+we analyse the sentiments, toxicity, and bias exhibited by the                     Therefore in this paper, we focus on two South Asian
+most prominent Pakistani and Indian political parties and media                 developing economies for Twitter news media analysis using
+houses, and the pattern by which these political parties utilise                sentiments, bias, and toxicity in the political landscape. We
+Twitter. We found that media bias and toxicity exist in the
+political discourse of these two developing nations.
+                                                                                consider three pressing questions:
+   Index Terms—computational social science, sentiment analysis,                   1) Does the media’s reporting/commentary through social
+bias analysis, toxicity quantiﬁcation, topic modelling.                               media, as regards to political entities, indicate bias? And
+                                                                                      if so, how and to what degree?
+                        I. I NTRODUCTION                                           2) If provocative/inﬂammatory (toxic) speech is a com-
+   Twitter has assumed the role of an inﬂuential micro-                               mon practice on social media in developing political
+blogging platform worldwide with 328 million active users per                         economies?
+month, as of December 2017. One of the major manifestations                        3) To which extent these political economies exhibit simi-
+of this inﬂuence can be seen in the socio-political realm in                          larity in social media usage?
+which social media outlets like Twitter play a major role in                       We choose two biggest countries in South Asia: Pakistan
+shaping the views, opinions, and sentiments of people [1]. This                 and India, with a combined population of 1.517 billion people
+‘socio-political’ inﬂuence—driven by the wide reach of social                   as of 2016. These countries share high geographical as well
+media platforms, and the propensity for content to ’go viral’—                  as cultural and political similarity as two different nations.
+has had a signiﬁcant impact on the interplay among the society,                 As, Pakistan and India come into existence as two separate
+mainstream political powerhouses, and the mainstream media.                     states by the division of colonial India. This makes these
+   While the developed world faces issues of political inﬂuence                 countries an interesting choice for exploring similar trends
+through social media [2]. ‘Fake news’, ‘post-truth’ and ‘bots’                  in their political sphere with the fact that social media has
+have become a topic of serious discussion in the Western                        had a direct impact on their political landscapes. For instance,
+world, where judiciary, law and order, democracy and free                       social media, particularly Twitter have contributed to the PTI’s
+speech are fundamental. However, concerns over the use of so-                   (political party) success to emerge as a third largest national
+cial media for political aims are compounded in the developing                  party in the 2013 Pakistan general elections [11]. While the
+world, where the democratic apparatus is comparatively weak                     AAP’s (political party in India) emergence as a political party
+coupled with the power of the emotionally charged, politically                  was also driven by social media [10]. Indeed, we see the
+motivated mass crowds [1], [3].                                                 use of social media by political parties is on the rise in
+   Goals of this research: Twitter is a popular social media                    both nations. However, we only use Twitter accounts that are
+service that is widely being used as a source of online news.                   ofﬁcially associated with news organisations (news channels)
+The open nature and global reach of such news media can                         and political parties for our analysis.
+spread the fake or misleading, and agenda-driven information                       Contributions of this paper: In this paper, we build
+to deceive people and inﬂuence their opinions [4]. It has been                  upon our previous work on measuring sentiments of con-
+argued that the existence of bias in social media towards or                    troversial topics [5] to explore the South Asian political
+
+
+
+,(((                                    
+          Authorized licensed use limited to: University Haifa. Downloaded on January 18,2023 at 19:52:21 UTC from IEEE Xplore. Restrictions apply.
+                           ,QWHUQDWLRQDO&RQIHUHQFHRQ2SHQ6RXUFH6\VWHPVDQG7HFKQRORJLHV ,&2667 
+
+
+landscape. Through a detailed empirical analysis, we outline                     ideologies (i.e., liberal and conservative) which cannot be
+a methodology to understand and measure: (i) the coverage                        applied for measuring media bias in more diverse multi-party
+and sentiments biases among news organisations for political                     settings like in Pakistan and India. Therefore, in this research,
+parties, (ii) the intensity of toxicity in news coverage given by                we analyse the nature of political discourse among political
+news organisations to political parties, and also by political                   organisations of Pakistan and India in addition to only measure
+parties towards their rivals, (iii) the common topics discussed                  media biases.
+by political parties, and (iv) comparison of similarity trends                      Pakistani Political Landscape and Social Media: The study
+of Twitter usage among Pakistani and Indian politicians.                         presented in [11], explores the effective use of social media by
+   Terminology and deﬁnitions: We ﬁrst deﬁne the terms                           a Pakistani political party. The authors speciﬁcally focus on the
+sentiment, bias, and toxicity.                                                   Pakistan Tehreek-e-Insaaf’s (PTI) campaigns during the 2013
+Bias is an inclination or prejudice toward a person or a group                   general elections and showed how the PTI emerged as a third
+[12]. This might be for or against, but considered to be unfair                  national party by mobilising and engaging voters on social
+either way. In particular, we study two types of bias, i.e.,                     media. The efﬁcacy of inferring political behaviour from the
+coverage bias, and statement bias. We deﬁne coverage bias as                     Twitter analysis is studied in [19]. Large-scale experimentation
+the preference given to one news over the expense of another                     on sentiment analysis and tweet classiﬁcation showed that
+and statement bias as the coverage sentiment given by a news                     the political behaviour of party followers and campaigning
+channel to a political entity, i.e., reporting using favourable                  impact can be predicted using social media content. In a
+terms and phrases [13].                                                          similar study [20], authors proposed a methodology to extract
+Sentiment is a view, feeling or an expression that a person                      sentiment from the political conversation using Twitter data.
+holds with regard to some aspects of a topic [14]. This could                    They performed sentiment analysis on political slang words
+both be positive (optimistic) or negative (pessimistic), or                      and political trolls that supporters of different political parties
+utopian vs dystopian.                                                            used to attack each other during 2013 general elections of
+Toxicity is the attribute of something being rude, disrespectful,                Pakistan.
+malignant, hateful, etc.                                                            Indian Political Landscape and Social Media: Various stud-
+                                                                                 ies aim at examining social media content to explore political
+   Paper arrangement: The rest of the paper is organised as                      landscape of India, especially in the era of Indian general
+follows. Section II presents the related work. Details about                     elections. In [21], the effect of changing political traditions is
+the dataset and methodology adapted for analysis is presented                    investigated before 2014 Indian general election by using the
+in Section III. Empirical analysis with results is presented in                  tweets from the ofﬁcial accounts of top ten political parties
+Section IV and we conclude in Section V.                                         for a period of two months. The study found that, among
+                       II. R ELATED W ORK                                        ten parties, Bharatiya Janta Party (BJP), and Aam Aadmi
+                                                                                 Party (AAP) were actively using Twitter for campaigning and
+   In recent years many researchers have analysed Twitter                        projecting their party manifesto. Such extensive use of Twitter
+data for prediction of political events such as electoral pre-                   by BJP’s politicians aided them to win a majority in Lok Sabha
+diction [15], political orientation prediction [16] and bias                     of India. Sentiment analysis of tweets for prediction of 2016
+of news sources [6]. Despite having high popularity among                        general state elections is presented in [22]. Authors measured
+its viewership, mainstream media often fails to meet the                         sentiments of the population towards ﬁve political parties by
+standards of journalism ethics, and inadvertently patronises                     analysing data of two months. A comprehensive analysis of
+certain ideas [5]. Furthermore, news sources are also known to                   2014 Indian elections is presented in [23] that speciﬁcally
+inject political bias while reporting [9], [17], [18], potentially               focuses on BJP success which was greatly inﬂuenced by the
+affecting the political beliefs of the audience, which might                     effective use of Twitter.
+result in altering voting behaviour [18]. Recently it was shown
+                                                                                    This work differs from the studies presented above which
+that Fox News had been misrepresenting facts in an effort to
+                                                                                 mostly aim at exploring Pakistani and Indian political land-
+appeal to conservative viewers [6].
+                                                                                 scape for electoral events. To the best of our knowledge, this
+   Here we present the literature related to media biases
+                                                                                 is ﬁrst attempt to explore political inclination of media in these
+quantiﬁcation and the work done using social media on the
+                                                                                 countries and no previous work directly compares politicians
+politics of Pakistan and India.
+                                                                                 and their Twitter usage pattern across these nations.
+   Media Bias: In [6], authors introduced unsupervised meth-
+ods to quantify three types of media biases: selection bias,
+coverage bias, and statement bias. They analysed the data from
+different international news channels for the duration of two                                     III. DATA AND M ETHODOLOGY
+weeks and showed that the biases are observable and depend
+upon the geographical boundaries. Similarly, numerous works                        In this section, we describe our data collection process
+have quantiﬁed media bias but most of them are focused on                        and provide details about the dataset. Moreover, methodology
+US-centric news outlets [9], [18]. This US-centric research                      adapted to empirically answer the questions raised earlier
+is restricted to measure media bias towards two political                        using different approaches is presented in this section.
+
+
+
+
+                                                                            
+          Authorized licensed use limited to: University Haifa. Downloaded on January 18,2023 at 19:52:21 UTC from IEEE Xplore. Restrictions apply.
+                               ,QWHUQDWLRQDO&RQIHUHQFHRQ2SHQ6RXUFH6\VWHPVDQG7HFKQRORJLHV ,&2667 
+
+      TABLE I: Tweets collected per entity, P is a political party, N C is a news channel and #Accs denote number of accounts, collected over a period of six months.
+
+  Country      Type    Entity                                       #Accs     #Tweets         #English           #Urdu/Hindi        #Processed      Klout    #Followers
+                       Pakistan Tehreek-e-Insaf (PTI)                   9       22113     17126    77.45%       3718   16.81%           20844       68.22      2281771
+                       Pakistan Muslim League Nawaz (PML-N)            10       15516      8928    57.54%       4736   30.52%           13664        65.4      1276272
+               P
+                       Pakistan People Party (PPP)                     12        6831      4124    60.37%       1592   23.31%            5716       65.33       762349
+                       Muttahida Qaumi Movement (MQM)                   8        1522       972    63.86%        406   26.68%            1378       54.75         85006
+  Pakistan
+                       Geo News                                         9        8648      5417    62.64%       2830   32.72%            8247        67.4      1506823
+                       ARY News                                         8        6914      3287    47.54%       2514   36.36%            5801       67.12       929566
+               NC
+                       Express News                                     8        4397      2872    65.32%       1208   27.47%            4080       59.22       409202
+                       DAWN News                                        8        3346      2481    74.15%        559   16.71%            3040          61       394896
+                       Bharatiya Janata Party (BJP)                    13      103167     75165    72.86%      19084    18.5%           94249          75      6390782
+                       Indian National Congress (INC)                  12       54590     40027    73.32%      12260   22.46%           52287       71.42       813516
+               P
+                       All India Trinamool Congress (AITC)              5        3280      2740    83.54%        186    5.67%            2926        53.4       403568
+                       Aam Aadmi Party (AAP)                           11       21411      9344    43.64%      10511   49.09%           19855       65.73       403568
+  India
+                       Aaj Tak News                                    10       27126      8608    31.73%      16855   62.14%           25463          66      1320962
+                       NDTV News                                        7       40866     28530    69.81%       5176   12.67%           33706          66      1764582
+               NC
+                       Zee News                                         9       12778      4786    37.46%       6972   54.56%           11758          62       663970
+                       India Today News                                 8       26251     22650    86.28%       1846    7.03%           24496        72.4      2379074
+
+
+
+A. Data collection and data pre-processing                                                 Data pre-processing: After downloading the tweets corpus,
+   Data curation: Our dataset consists of tweets curated                                we performed pre-processing of the data to standardise it for
+from accounts of news channels and political parties using                              effective textual analysis. It involves removing all ancillary
+Stweeler [24]. Data was curated for six months from June                                elements such as stop words, punctuation signs, unnecessary
+to November 2017. For this, we identiﬁed four major polit-                              spaces, URL, user mention symbol, hashtag symbol and con-
+ical parties of both countries using statistics of last general                         verting upper-case letters to lower case letters.
+elections of Pakistan1 and India2 held in 2013 and 2014 re-                                Note that our dataset also contains tweets in languages other
+spectively. We then identify popular members of each political                          than English, most prominently Urdu and Hindi, which are
+party including parties’ chairmen, secretaries, and members                             the national languages of Pakistan and India respectively. The
+of parliament and national assembly. Similarly, four major                              language in these tweets was ﬁrst detected using Google’s
+news channels from both countries are selected based on the                             language detection library3 and then translated into English
+higher number of viewers. We consider the journalists as the                            using widely used (e.g., [31], [32] ) TextBlob’s4 language
+representatives of their respective news channel. Because they                          translation library. Also, by following this strategy tweets in
+are known to reﬂect political inclination [25], [26] of their                           languages other than English, Urdu and Hindi are ﬁltered out
+employer [27].                                                                          which reduced the total size of the dataset, as shown in Table I.
+   We considered only those accounts who have ofﬁcial ac-                               To avoid redundancy, we only considered tweets having unique
+counts veriﬁed by Twitter (with the exception of a few) and                             content after performing pre-processing and translation.
+have high inﬂuence. One way is to select inﬂuential account                                Data statistics: Details about the dataset such as size,
+based on a large number of followers (as adopted in [28]),                              number of accounts, average Klout score and the average
+but past research has shown that a high number of followers                             number of followers for each media and political entity of
+on Twitter does not always entail an inﬂuential account [29].                           both countries are shown in Table I. We see that among all the
+Therefore, we used well-known Klout score [30] to calculate                             Pakistani political parties, PTI is the most inﬂuential political
+the inﬂuence of Twitter users. It is an inﬂuence scoring system                         party on Twitter, while MQM is the least inﬂuential. Similarly,
+that is used to assigns scores to millions of users across                              Geo News is the most inﬂuential news channel on Twitter,
+different social media networks on a daily basis [30]. It assigns                       while Dawn News is the least one. On the other hand, BJP
+a score to a user, ranging from 1 to 100, where a higher score                          is the most inﬂuential political party in India and AITC is
+means more inﬂuence. To determine the inﬂuence of an entity                             less inﬂuential. Among Indian news channels, India Today
+having multiple accounts, we obtain an entity Klout score by                            News has higher inﬂuence as compared to others and Zee
+averaging Klout score of all accounts belonging to this entity.                         News has the least inﬂuence. From Table I, it is also clear that
+   Based on the statistics, we replaced third ranked party,                             PTI and BJP are the frequent tweeter and have large follower
+i.e., All India Anna Dramuka Kazhagam (AIADMK) of 2014                                  base as compared to the other parties in Pakistan and India
+India’s general election with Aam Aadmi Party (AAP), as AAP                             respectively. There is a signiﬁcant difference in the number of
+has a strong inﬂuence on Twitter as compared to AIADMK,                                 tweets by PTI and BJP, as BJP’s members are more active on
+i.e., AIADMK has only three ofﬁcial twitter accounts with                               social media.
+comparatively little followers base and have less Klout score.
+                                                                                        B. Methodology
+This decision can be attributed by a recent study [10] which
+aims at investigating how AAP emerged as a national party                                 We leveraged from three types of experiments, i.e., (i)
+from anti-corruption social movement and became a popular                               measuring bias of news channels, (ii) toxicity quantiﬁcation,
+political party.                                                                        and (iii) measuring similarities in social media usage by
+  1 https://goo.gl/9iPAgK                                                                 3 https://github.com/Mimino666/langdetect
+  2 https://goo.gl/dZbMo3                                                                 4 https://goo.gl/yvMPLn
+
+
+
+
+                                                                                   
+             Authorized licensed use limited to: University Haifa. Downloaded on January 18,2023 at 19:52:21 UTC from IEEE Xplore. Restrictions apply.
+                         ,QWHUQDWLRQDO&RQIHUHQFHRQ2SHQ6RXUFH6\VWHPVDQG7HFKQRORJLHV ,&2667 
+
+
+political parties. Details about each of the analysis are given                  of tweets, we used Perspective API5 . Perspective API is a
+as follows.                                                                      part of Google’s Conversation AI project which enables the
+   1) Measuring bias of news channels: To measure the                            developers to identify the ’toxicity’ of the given social media
+degree of ‘bias’ of news channels towards political parties, we                  content. We indicated the toxicity of tweets having negatively
+examine two types of biases, i.e., coverage bias and statement                   reporting by news channels about political parties of both
+bias on news channels’ data.                                                     countries. Also we quantify the intensity of toxicity of the
+      a) Measuring coverage bias: The degree of policies to                      tweets by different Pakistani and Indian parties when talking
+cover different political issues or stories among different news                 about their respective rival political parties.
+sources may vary. Coverage bias comes in when a speciﬁc                             We note that toxicity is an indication; the Perspective API
+news organisation gives more prominence or attention to a                        has some limitations as it is designed for text written in US
+certain political party as compared to other news media. The                     English style and it fails to compute toxicity for text having
+distribution of prominence given to particular political entity or               bad sentence structure. Therefore, tweets for which API was
+party can be quantiﬁed in various ways. We compute such cov-                     successfully able to compute toxicity are incorporated into the
+erage bias by measuring the instances of members’ mentions                       analysis.
+of each Pakistani and Indian political party in tweets corpus                       3) Measuring similarity in social media usage: To explore
+collected from respective national news channels. Mentions                       and measure the similarity trend exhibited by political entities
+are calculated only for those members who are part of this                       of Pakistan and India in their social media usage, we perform
+study, i.e., from whom we collect data and we use members’                       political discourse analysis. As the deﬁnition of politics is
+names and their Twitter account’s screen name for mentions                       ambiguous hence it is hard to deﬁne political discourse as
+measurement. Coverage computation is further enhanced by                         well. Therefore, we focus our analysis on discovering major
+measuring instances of party names’ acronym and a few                            things or issues discussed by each political party of both coun-
+important key phrases, e.g., pm abbasi, cm kpk and cm                            tries by using topic modelling approach. We leveraged from
+punjab, etc. In coverage analysis, a tweet is marked relevant                    widely used topic modelling technique, i.e., Latent Dirich-
+for a political party if it either mentions its members, name                    let Allocation (LDA) [33]. It is an unsupervised generative
+acronym, or a key phrase.                                                        probabilistic model which tends to discover latent structure
+                                                                                 in a set of documents by representing each document as a
+      b) Measuring statement bias: Statement bias exists in
+                                                                                 random collection of latent topics. Where each topic itself
+tweets when more favourable statements are used for a partic-
+                                                                                 is modelled as a distribution over words co-occurrences. We
+ular political party or entity at the expense of others. We study
+                                                                                 performed topic modelling using the aggregated data from the
+statement biases in tweets identiﬁed relevant in the coverage
+                                                                                 accounts of each political party, as they are its representatives
+bias analysis by using sentiments. We computed sentiments
+                                                                                 and will often talk about their parties’ manifesto and news. The
+score in three dimensions (i.e., positive, negative and neutral)
+                                                                                 data is then transformed into term frequencies for LDA model
+using TextBlob’s sentiment analyser. It assigns a sentiment
+                                                                                 training. We used grid search cross-validation in order to tune
+score st ranging from −1.0 to 1.0, where a value close to
+                                                                                 model’s hyperparameters and for selecting the best-estimated
+these numbers means to contain more negative and positive
+                                                                                 model for topic modelling of our data. As a result, we got the
+sentiment respectively. Let’s assume st is the sentiment score
+                                                                                 best-trained model with two topics for each political entity. In
+for a tweet t and to classify st into any of three sentiment
+                                                                                 addition to LDA, we also used principal component analysis
+types, i.e., positive, negative, and neutral, we choose interval
+                                                                                 (PCA) to measure the similarity in Twitter usage by political
+given in Eq. 1 where, St is the classiﬁed sentiment type.
+                                                                                 entities of Pakistan and India.
+                                                                                    Note that ethical considerations such as the four principles
+                        st >= 0.1           positive                            as proposed in the Belmont Report [34] and the Menlo Report
+                St =     st <= -0.1          negative                   (1)      [35] and described by Salganik namely [36], (i) respect for
+                          otherwise           neutral                            persons (ii) beneﬁcence (iii) justice and (iv) respect for law
+                                                                                 and public interest were taken into account during this work.
+   Although a rare case, if a tweet contains mentions related to                 Although informed consent was not taken from individuals
+two or more entities then that tweet will be marked relevant                     whose tweets are being used, as we utilised public data and
+for each entity. The tweet will then be classiﬁed based on                       mitigated informational risk, i.e., the potential harm from the
+its sentiment. However, if it was only positively addressed                      disclosure of personal information through aggregation of data
+towards one of the entities (and negatively towards the others),                 where appropriate.
+sentiment scores of other entities would also be positively
+affected. We opt to ignore this limitation for now, since the                                       IV. A NALYSIS AND R ESULTS
+overall percentage of tweets affected by this is negligible, i.e.,                  In this section, detailed empirical analysis for exploring
+only 0.03% of 116591 tweets are affected in our dataset.                         bias, sentiments, toxicity, and political discourse along with
+   2) Quantifying toxicity: The toxic instances like verbal                      results is presented.
+violence and aggression in political tweets widely used due
+to the increase of political polarisation. To quantify toxicity                    5 https://www.perspectiveapi.com/
+
+
+
+
+                                                                            
+          Authorized licensed use limited to: University Haifa. Downloaded on January 18,2023 at 19:52:21 UTC from IEEE Xplore. Restrictions apply.
+                                              ,QWHUQDWLRQDO&RQIHUHQFHRQ2SHQ6RXUFH6\VWHPVDQG7HFKQRORJLHV ,&2667 
+
+          450                                                                                                                                1200
+                                                                                                                       Positive                                                                                                                         Positive
+          400   PML-N                                                                                                  Negative                                                                                                                         Negative
+                                                                                                                                                                                                                                     BJP
+                                                                                                                       Neutral                                                                                                                          Neutral
+                                                                                                                                             1000   BJP
+          350
+
+          300                 PTI
+                                                                                                                                              800                                                           BJP
+                                                                                                                                                          INC
+                                                                                                                                                                             BJP                                                           INC
+#Tweets
+
+
+
+
+                                                                                                                                   #Tweets
+          250
+                                                                         PML-N                                                                600                                                                 INC
+          200
+                                          PML-N                                        PTI
+                                                                                                   PML-N                                                                           INC
+          150                                                                                                                                 400
+
+          100           PPP                                                                                      PTI                                                   AAP
+
+                                                        PTI                                                                                   200                                                                                                       AAP
+                                                                                 PPP
+          50                                      PPP
+                                    MQM                                                                    PPP                                                                                                                 AAP
+                                                                                             MQM                       MQM                                                                      AAP
+                                                              MQM                                                                                                                                                       AITC                     AITC
+                                                                                                                                                                AITC                     AITC
+           0                                                                                                                                    0
+                         GEO                       ARY                           Express                   DAWN                                           Aaj Tak                  Zee News                      India Today                NDTV
+                                                               News Channels                                                                                                                     News Channels
+
+
+                                                                (a)                                                                                                                               (b)
+
+Fig. 1: Coverage and sentiments given by news channels to political parties. Where Figure 1(a) shows the coverage and sentiments given by various Pakistani news channels to
+their national political parties and 1(b) present the coverage and sentiments given by Indian news channels to their national political parties.
+
+
+
+A. Indicating political bias in online news sources                                                                                          consistently pro-PML-N, and anti-PTI, while ARY News is
+   Here we discuss the coverage bias and sentiments of cov-                                                                                  pro-PTI and anti-PML-N. This is despite the fact that PML-
+erage given to each political party by each news channel.                                                                                    N has had a fair share of political controversies as well as
+   Which political party is given the most and the least                                                                                     corruption scandals, including the latest Panama Papers6 . Also,
+coverage by each news channel?                                                                                                               prime minister of PML-N stepped down by Supreme Court’s
+   Figure 1(a) shows the coverage given to different Pakistani                                                                               disqualiﬁcation order on account of his corruption scandals.
+political parties by Pakistani news channels. It is prominent                                                                                   Similarly, the coverage sentiments given by various Indian
+from Figure 1(a) that almost all news channels give most                                                                                     news channels when reporting each Indian political party is
+attention to PML-N which is expected as it holds the gov-                                                                                    illustrated in Figure 1. It is found that every Indian news
+ernment in federal and in a major province. Whereas, PTI is                                                                                  channel is giving more positive sentiments to BJP. While INC
+the second party to get more prominence and it is clear that                                                                                 is getting more positive coverage as compared to AITC and
+all news channels give less coverage to PPP and very least                                                                                   AAP but lesser then BJP. BJP gets more negative coverage
+coverage to MQM. We hypothesise that PML-N, PTI, and                                                                                         from almost every channel with exception of Zee News. Also,
+PPP are given more media attention compared to MQM due to                                                                                    AITC is the only party to get a fewer coverage and most
+the fact that all hold the major governmental unit and would                                                                                 neutral coverage among others.
+understandably get more coverage: PML-N (federal govt and
+Punjab provincial), PTI (KPK provincial), and PPP (Sindh                                                                                     B. Exploring toxicity in social discussions
+provincial).                                                                                                                                    To indicate provocative, i.e., toxic speech in social discus-
+   Similarly, the coverage given to various Indian political                                                                                 sions by news channels and political parties we consider two
+parties by Indian news channels is shown in Figure 1(b). It                                                                                  questions.
+is clear from the Figure 1(b) that, every channel gives most                                                                                    How toxic is the content when a news channel negatively
+coverage to BJP while, INC gets more air as compared to                                                                                      discusses different political parties?
+AITC, and AAP but less than BJP. AITC is getting very                                                                                           To answer this question, we compute average toxicity
+less coverage, and Zee News give the least coverage to AAP                                                                                   of tweets having negative sentiment given by various news
+when compared with other channels. BJP’s and INC’s higher                                                                                    channels of Pakistan and India to political parties. Results
+coverage may be due to the fact that, BJP is ruling Indian                                                                                   for toxicity analysis on content dissemination about each
+Government while INC is the second largest party of Indian                                                                                   political party by different news channels of both countries
+parliament and it has ruled government in the previous decade.                                                                               are summarised in Table II. It reveals that Pakistani channels
+   What are sentiments of coverage given to each political                                                                                   such as GEO News are spreading relatively more toxic content
+party by different news channels?                                                                                                            about PTI, ARY News and Express News are reporting PPP
+   Figure 1 also shows the sentiments (i.e., positive, negative or                                                                           with higher toxicity despite their more negative coverage to
+neutral) given by various Pakistani and Indian news channels                                                                                 PML-N. DAWN News is giving highest toxic sentiments to
+when covering each national political party. Almost every                                                                                    PPP. GEO’s higher toxic coverage to PTI and ARY’s higher
+Pakistani news channel is giving most positive coverage to                                                                                   negative coverage to PML-N support the perception as stated
+PML-N. Whereas, PTI is the second party to get higher                                                                                        earlier, i.e., GEO News is consistently pro-PML-N, and anti-
+positive coverage and consequently PPP is at number three                                                                                    PTI, while ARY News is pro-PTI and anti-PML-N.
+after PML-N and PTI. Also, MQM is having very least positive                                                                                    Similarly, among Indian news channels, Aaj Tak News is
+and most neutral coverage by almost every channel. What is                                                                                   disseminating higher toxic content about BJP and Zee News is
+surprising is ARY’s more positive coverage towards PML-N.
+The common perception in Pakistan is that GEO News is                                                                                           6 https://en.wikipedia.org/wiki/Panama                   Papers case (Pakistan)
+
+
+
+
+                                                                                                                                  
+                         Authorized licensed use limited to: University Haifa. Downloaded on January 18,2023 at 19:52:21 UTC from IEEE Xplore. Restrictions apply.
+                               ,QWHUQDWLRQDO&RQIHUHQFHRQ2SHQ6RXUFH6\VWHPVDQG7HFKQRORJLHV ,&2667 
+
+                     TABLE II: Average toxicity given by Pakistani and Indian news channels to their national political parties. Where, %Neg shows
+                     percentage of negative tweets, Avg Tox means average toxicity and %NP represents percentage of tweets that is not processed.
+
+                                                                                Pakistani News Channels
+              Pakistani
+                                          GEO                             ARY                         Express                              DAWN
+              Parties
+                               %Neg      Avg Tox     %NP       %Neg      Avg Tox     %NP     %Neg     Avg Tox           %NP      %Neg      Avg Tox      %NP
+              PML-N            16.84     0.2783      0         11.9      0.2917      0       13.89    0.2847            0        11.64     0.3061       0
+              PPP              10.23     0.323       0         10.26     0.4325      0       7.84     0.502             0        10        0.3118       0
+              PTI              13.75     0.3101      0         11.29     0.3793      0       13.17    0.3317            0        14.13     0.2525       0
+              MQM              15.38     0.1744      0         8.33      0.3965      0       10.53    0.4249            0        12.5      0.1544       0
+                                                                                 Indian News Channels
+              Indian
+                                         Aaj Tak                        Zee News                    India Today                            NDTV
+              Parties
+                               %Neg      Avg Tox     %NP       %Neg      Avg Tox     %NP     %Neg     Avg Tox           %NP      %Neg      Avg Tox      %NP
+              BJP              15.15     0.2784      2.16      6.91      0.3353      0.75    15.54    0.3595            0.78     13.61     0.3504       0.97
+              INC              15.74     0.2472      0.99      11.78     0.2849      0.24    13.11    0.3282            0.36     11.63     0.3104       1.21
+              AITC             0         0           0         7.14      0.4065      0       5        0.318             0        11.76     0.2489       0
+              AAP              14.4      0.266       0.8       1.82      0.2352      0       12.5     0.3553            0        10.47     0.2964       0.58
+
+                     TABLE III: Average toxicity given by each political party to their rivals. Where, %Tweets is the percentage of relevant toxic tweets,
+                     Avg Tox means average toxicity and %NP represents percentage of tweets that is not processed.
+
+         Pakistani                                                              Pakistani Political Parties
+         Rival                      PML-N                                PPP                                  PTI                                MQM
+         Parties        %Tweets      Avg Tox       %NP      %Tweets      Avg Tox     %NP       %Tweets        Avg Tox     %NP       %Tweets      Avg Tox       %NP
+         PML-N                         -                    5.35         0.2497      0.04      13.4           0.2681      0.04      4.26         0.1854        0
+         PPP            0.9          0.3274        0.02                    -                   1.6            0.2466      0         3.39         0.1953        0.11
+         PTI            4.38         0.2739        0.07     4.08         0.2738      0                          -                   5.36         0.1964        0
+         MQM            0.08         0.231         0        1.03         0.2243      0.12      0.25           0.2393      0                        -
+         Indian                                                                  Indian Political Parties
+         Rival                         BJP                               INC                                  AITC                               AAP
+         Parties        %Tweets        Avg Tox     %NP      %Tweets      Avg Tox     %NP       %Tweets        Avg Tox     %NP       %Tweets      Avg Tox       %NP
+         BJP                             -                  13.45        0.266       0.66      3.66           0.2931      0.33      9.96         0.2599        0.47
+         INC            5.54           0.2679      0.45                    -                   1.77           0.3102      0.2       2.94         0.2629        0.21
+         AITC           0.11           0.3498      0.01     0.11         0.3421      0.01                       -                   0.08         0.3067        0.02
+         AAP            0.8            0.3027      0.11     0.47         0.3822      0.08      0.98           0.2822      0.26                     -
+
+
+
+giving higher negative coverage to INC while spreading more                                  Similarly, among Indian political parties, BJP is getting a
+toxic content about AITC. Whereas, India Today News and                                   higher number of tweets from each party with a comparatively
+NDTV are giving coverage with high toxic intensity to BJP                                 high intensity of toxicity (see Table III). This is due to fact
+as compared to other news channels.                                                       that BJP is currently ruling the government of India and it
+  How toxic is the content when a political party talks                                   receives criticism in terms of toxicity from other parties. INC
+about their other rival political parties?                                                is giving high toxicity to AAP and AITC while it talks more
+                                                                                          about BJP with a comparative high toxicity. Similarly, AITC
+   To get relevant tweets posted by a speciﬁc party about its
+                                                                                          is spreading more toxic content about BJP and also spreading
+rival parties, we measure occurrences of rival parties’ members
+                                                                                          higher toxicity about INC just like the trend found in statistics
+mentions using their names and Twitter screen names. This is
+                                                                                          of AAP about INC.
+further supplemented by measuring mentions of rival parties
+’name acronym and a few important key phrases, e.g., pm                                   C. Twitter political discourse analysis
+abbasi, cm punjab, etc. This strategy is similar to what we                                  Here we highlight the major things or issues discussed
+followed for coverage analysis of political parties by news                               during data collection period by each political party on their
+channels. The results of this analysis, i.e., the percentage                              Twitter accounts.
+of relevant toxic tweets, average toxicity, and percentage of                                What are the major issues discussed by the political
+tweets not included are presented in Table III. It is found                               parties on Twitter?
+that among Pakistani political parties, PML-N is talking                                     To observe topics under discussion, we generate word
+more about PTI with comparatively high toxicity, and PPP                                  clouds from top 50 terms associated with each topic learned
+has posted more tweets about PML-N and spreading higher                                   by LDA model. Figure 2 depicts the similarities between the
+toxicity about PTI similar to MQM. Among all parties, PTI                                 way incumbents (present government) and the oppositions use
+is the only party which is talking more about PML-N with                                  Twitter for political discourse. Where terms in larger size rep-
+high toxicity. The common trend in Pakistan is that PTI is                                resent the high frequency of use and importance. We found that
+consistently criticising PML-N and PTI’s high toxic intensity                             each Pakistani and Indian political party typically discusses
+to PML-N validates this trend. We see that almost all parties                             topics such as Pakistan, India, themselves, their leadership,
+are frequently talking about PML-N as it holds federal unit.                              their members, and their opposing political parties, etc. Issues
+MQM is a small party having least representatives, therefore,                             of national interests are rarely found in their conversations like
+getting very less consideration by all other parties. In Pakistan,                        they can be seen in social media usage by American political
+the PTI and PPP are major representatives of the opposition                               entities [37].
+and hence they talk more about PML-N that is ruling current                                  To which extent political entities of Pakistan and India
+government of the country.                                                                share similarity while using Twitter sphere?
+
+
+
+
+                                                                                     
+          Authorized licensed use limited to: University Haifa. Downloaded on January 18,2023 at 19:52:21 UTC from IEEE Xplore. Restrictions apply.
+                                                              ,QWHUQDWLRQDO&RQIHUHQFHRQ2SHQ6RXUFH6\VWHPVDQG7HFKQRORJLHV ,&2667 
+
+
+
+
+                                                 (a) PML-N                                              (b) PPP                                            (c) PTI                         (d) MQM
+
+
+
+
+                                                    (e) BJP                                             (f) INC                                           (g) AITC                          (h) AAP
+
+                                                   Fig. 2: Word clouds illustrating common topics discussed by various Pakistani (upper row) and Indian (lower row) political parties on Twitter.
+
+
+
+   For this typical analysis, we selected only popular members                                                                                  a discriminative feature for him.
+of each political entity of both countries based on the number
+of their followers. To measure the degree of similarity in the                                                                                             V. C ONCLUSIONS AND F UTURE W ORK
+Twitter user proﬁle and usage pattern, we extracted twelve                                                                                         We studied the media biases and toxicity among different
+user proﬁle related features such as the number of tweets                                                                                       online news organisations of Pakistan and India. Further,
+posted, number of friends and followers, etc. and few features                                                                                  the similarity in political discussions of these two South
+from tweets produced by these members and their tweeting                                                                                        Asian countries is highlighted to ﬁnd similar trends in Twitter
+pattern, e.g., number of used hashtags, and URLs etc. After                                                                                     usage. Our results based on the empirical analysis support the
+feature extraction, we use principal component analysis (PCA)                                                                                   following high-level conclusions.
+to visualise similarity exhibited by various political entities of                                                                                 Political parties of both developing countries are found to be
+Pakistan and India in two-dimensional space (see Figure 3).                                                                                     very active on social media. Our ﬁndings revealed that PTI and
+                                                                                                                                                BJP are the dominant among all Pakistani and Indian political
+                                  ×10 4                                                                                                         parties on Twitter, respectively. Among news organisations of
+                             14                                                                                Pakistani Politicians
+                                                                                                               Indian Politicians               these countries, Geo News and India Today are the dominant
+                             12
+                                               Ali Raza Abidi (MQM)
+                                                                                                                                                news channels on Twitter.
+Second Principal Component
+
+
+
+
+                             10
+
+                              8                                                                                                                    News organisations of Pakistan and India show the political
+                              6                                                                                                                 leaning towards political parties in terms of coverage and
+                              4
+                                                     Maryam Nawaz (PML-N)                                 Narendra Modi (BJP)                   statement biases. We are able to empirically observe the
+                              2
+
+                              0
+                                                                        Arvind Kerijwal (AAP)                                                   toxicity in tweets of the news organisation for some political
+                             -2    Bilawal Bhutto (PPP) Imran Khan (PTI)                                                                        parties and also in tweets of each political party towards
+                             -4                    Rahul Gandhi (INC)                                                                           its rivals. Interestingly, political parties holding the federal
+                                  Mamata Banerjee (AITC)
+                             -6                                                                                                                 government in Pakistan and India receive more criticism and
+                                          -1       -0.5       0          0.5         1            1.5      2          2.5              3
+                                                                      First Principal Component                                ×10 7
+                                                                                                                                                toxicity on Twitter.
+Fig. 3: Visualisation of similarity among various politicians of Pakistan and India using                                                          The political discourse analysis shows that the political
+dimensionality reduction of different features using PCA.                                                                                       parties from both countries usually talk about the things
+                                                                                                                                                involving the names of their countries, leadership, party mem-
+   We discovered that among the selected politicians of Pak-                                                                                    bers, and their rivals with a few discussions on national issues.
+istan and India, Bilawal Bhutto (PPP), Imran Khan (PTI),                                                                                        A similarity trend in Twitter usage is also observed when
+Rahul Gandhi (INC) and Mamata Banerjee (AITC) share                                                                                             popular politicians from both countries are compared. Most of
+resemblance in their Twitter proﬁle and usage. They are                                                                                         the popular political entities have similarity in Twitter usage
+making a cluster in the left bottom of the Figure 3 with                                                                                        but only a few politicians are found dissimilar based on the
+least variance (relatively high correlation) in feature space.                                                                                  signiﬁcant difference in their follower base and frequency of
+While Maryam Nawaz (PML-N), Arvind Kerijwal (AAP),                                                                                              tweeting.
+Ali Raza Abidi (MQM) and Narendra Modi (BJP) exhibit                                                                                               Future work includes increasing the size of the dataset by
+dissimilarity when compared with rest of politicians. We see                                                                                    including more loosely associated user accounts, i.e., includ-
+that Narendra Modi’s dissimilarity is due to his huge follower                                                                                  ing those entities that are less prominent but perhaps more
+base, i.e., more than 39 million, while Ali Raza Abidi has                                                                                      ‘extreme’ or confrontational in their views (as is common
+posted a signiﬁcantly large number of Tweets which becomes                                                                                      to the region). Moreover, it is worth acknowledging there
+
+
+
+
+                                                                                                                                           
+                                               Authorized licensed use limited to: University Haifa. Downloaded on January 18,2023 at 19:52:21 UTC from IEEE Xplore. Restrictions apply.
+                          ,QWHUQDWLRQDO&RQIHUHQFHRQ2SHQ6RXUFH6\VWHPVDQG7HFKQRORJLHV ,&2667 
+
+are several considerations in using social media to analyse                            [16] M. D. Conover, B. Gonçalves, J. Ratkiewicz, A. Flammini, and
+the actual underlying political landscape. For example, social                              F. Menczer, “Predicting the political alignment of twitter users,” in
+                                                                                            Privacy, Security, Risk and Trust (PASSAT) and 2011 IEEE Third
+media may be a poor proxy due to the statistical selection bias,                            Inernational Conference on Social Computing (SocialCom), 2011 IEEE
+i.e., the Twitter sample users may not be the true representative                           Third International Conference on. IEEE, 2011, pp. 192–199.
+of the overall population. Moreover, our analysis leveraged                            [17] A. Younus, M. A. Qureshi, S. K. Kingrani, M. Saeed, N. Touheed,
+                                                                                            C. O’Riordan, and P. Gabriella, “Investigating bias in traditional media
+existing tools for sentiment analysis and measuring toxicity,                               through social media,” in Proceedings of the 21st International Confer-
+which were developed in an English-speaking context. There                                  ence on World Wide Web. ACM, 2012, pp. 643–644.
+is clear scope to explore the building and application of such                         [18] J. An, M. Cha, K. P. Gummadi, J. Crowcroft, and D. Quercia, “Vi-
+                                                                                            sualizing media bias through twitter,” in Proc. ICWSM SocMedNews
+tools that are tailored to the language and cultural aspects of                             Workshop, 2012.
+the region being analysed.                                                             [19] M. A. Razzaq, A. M. Qamar, and H. S. M. Bilal, “Prediction and analysis
+                                                                                            of pakistan election 2013 based on sentiment analysis,” in Advances
+   Acknowledgments: This work is partially funded by                                        in Social Networks Analysis and Mining (ASONAM), 2014 IEEE/ACM
+the UK EPSRC Global Challenges Research Fund (Grant                                         International Conference on. IEEE, 2014, pp. 700–703.
+EP/R512783/1). We would like to thank Sarim Zafar and                                  [20] A. Younus, M. A. Qureshi, M. Saeed, N. Touheed, C. O’Riordan, and
+                                                                                            G. Pasi, “Election trolling: analyzing sentiment in tweets during pakistan
+Usman Sarwar for assisting us in preparing an earlier version                               elections 2013,” in Proceedings of the 23rd International Conference on
+of the manuscript.                                                                          World Wide Web. ACM, 2014, pp. 411–412.
+                                                                                       [21] K. Jaidka and S. Ahmed, “The 2014 indian general election on twitter:
+                                                                                            An analysis of changing political traditions,” in Proceedings of the
+                              R EFERENCES                                                   Seventh International Conference on Information and Communication
+                                                                                            Technologies and Development. ACM, 2015, p. 43.
+                                                                                       [22] P. Sharma and T.-S. Moh, “Prediction of indian election using senti-
+ [1] N. Eltantawy and J. B. Wiest, “The arab spring— social media in                        ment analysis on hindi twitter,” in Big Data (Big Data), 2016 IEEE
+     the egyptian revolution: reconsidering resource mobilization theory,”                  International Conference on. IEEE, 2016, pp. 1966–1971.
+     International Journal of Communication, vol. 5, p. 18, 2011.                      [23] D. Lu, A. Shah, and A. Kulshrestha, “India’s# twitterelection 2014,” CS
+ [2] C. Udanor, S. Aneke, and B. O. Ogbuokiri, “Determining social media                    224W Fall, 2014.
+     impact on the politics of developing countries using social network               [24] Z. Gilani, L. Wang, J. Crowcroft, M. Almeida, and R. Farahbakhsh,
+     analytics,” Program, vol. 50, no. 4, pp. 481–507, 2016.                                “Stweeler: A framework for twitter bot analysis,” in Proceedings of
+ [3] M. Lynch, D. Freelon, and S. Aday, “Syrias socially mediated civil war,”               the 25th International Conference Companion on World Wide Web.
+     United States Institute of Peace, vol. 91, no. 1, pp. 1–35, 2014.                      International World Wide Web Conferences Steering Committee, 2016,
+ [4] S. Zannettou, T. Caulﬁeld, E. De Cristofaro, N. Kourtelris, I. Leontiadis,             pp. 37–38.
+     M. Sirivianos, G. Stringhini, and J. Blackburn, “The web centipede:               [25] B. KC, “Political inclination of journalits and it’s inﬂuence on news,”
+     understanding how web communities inﬂuence each other through the                      Master’s thesis, Ateneo de Manila University, the Philippines, 2014.
+     lens of mainstream and alternative news sources,” in Proceedings of the                [Online]. Available: research.butmedia.org/?smd process download=1&
+     2017 Internet Measurement Conference. ACM, 2017, pp. 405–417.                          download id=318
+ [5] S. Zafar, U. Sarwar, Z. Gilani, and J. Qadir, “Sentiment analysis of              [26] W. Donsbach and T. E. Patterson, “Political news journalists,” Com-
+     controversial topics on pakistan’s twitter user-base,” in Proceedings of               paring political communication: Theories, cases, and challenges, pp.
+     the 7th Annual Symposium on Computing for Development, ser. ACM                        251–270, 2004.
+     DEV ’16. New York, NY, USA: ACM, 2016, pp. 35:1–35:4. [Online].                   [27] J. R. Zaller, “A theory of media politics: How the interests of politicians,
+     Available: http://doi.acm.org/10.1145/3001913.3006644                                  journalists, and citizens shapes the news,” University of California, Los
+                                                                                            Angeles. Typescript, 1999.
+ [6] D. Saez-Trumper, C. Castillo, and M. Lalmas, “Social media news
+                                                                                       [28] A. E. Ali, T. C. Stratmann, S. Park, J. Schöning, W. Heuten, and S. C.
+     communities: gatekeeping, coverage, and statement bias,” in Proceedings
+                                                                                            Boll, “Measuring, understanding, and classifying news media sympathy
+     of the 22nd ACM international conference on Conference on information
+                                                                                            on twitter after crisis events,” arXiv preprint arXiv:1801.05802, 2018.
+     & knowledge management. ACM, 2013, pp. 1679–1684.
+                                                                                       [29] M. Cha, H. Haddadi, F. Benevenuto, and P. K. Gummadi, “Measuring
+ [7] S. DellaVigna and E. Kaplan, “The fox news effect: Media bias and                      user inﬂuence in twitter: The million follower fallacy.” Icwsm, vol. 10,
+     voting,” The Quarterly Journal of Economics, vol. 122, no. 3, pp. 1187–                no. 10-17, p. 30, 2010.
+     1234, 2007.                                                                       [30] A. Rao, N. Spasojevic, Z. Li, and T. DSouza, “Klout score: Measuring
+ [8] C.-F. Chiang and B. Knight, “Media bias and inﬂuence: Evidence from                    inﬂuence across multiple social networks,” in Big Data (Big Data), 2015
+     newspaper endorsements,” The Review of Economic Studies, vol. 78,                      IEEE International Conference on. IEEE, 2015, pp. 2282–2289.
+     no. 3, pp. 795–820, 2011.                                                         [31] A. Manushree, M. Adarsh, and P. R. Kumar, “A comparative method for
+ [9] T. Groseclose and J. Milyo, “A measure of media bias,” The Quarterly                   different aspect based products features in online reviews of different
+     Journal of Economics, pp. 1191–1237, 2005.                                             languages,” in Recent Trends in Electronics, Information & Communi-
+[10] G. B. LEICHTY, M. U. D’SILVA, and M. R. JOHNS, “Twitter and aam                        cation Technology (RTEICT), 2017 2nd IEEE International Conference
+     aadmi party: Collective representations of a social movement turned                    on. IEEE, 2017, pp. 1836–1840.
+     political party.” Intercultural Communication Studies, vol. 25, no. 2,            [32] W. Iguider and D. R. Recupero, “Language independent sentiment
+     2016.                                                                                  analysis of the shukran social network using apache spark,” in Semantic
+[11] S. Ahmed and M. M. Skoric, “My name is khan: The use of twitter in                     Web Evaluation Challenge. Springer, 2017, pp. 129–132.
+     the campaign for 2013 pakistan general election,” in 2014 47th Hawaii             [33] D. M. Blei, A. Y. Ng, and M. I. Jordan, “Latent dirichlet allocation,”
+     International Conference on System Sciences, Jan 2014, pp. 2242–2251.                  Journal of machine Learning research, vol. 3, no. Jan, pp. 993–1022,
+[12] P. Today, “Bias access date: 31 january 2018.” [Online]. Available:                    2003.
+     https://www.psychologytoday.com/basics/bias                                       [34] U. D. of Health, H. Services et al., “The belmont report,” 1979.
+[13] D. D’Alessio and M. Allen, “Media bias in presidential elections: a               [35] D. Dittrich, E. Kenneally et al., “The menlo report: Ethical principles
+     meta-analysis,” Journal of communication, vol. 50, no. 4, pp. 133–156,                 guiding information and communication technology research,” US De-
+     2000.                                                                                  partment of Homeland Security, 2012.
+[14] E. H. Hovy, “What are sentiment, affect, and emotion? applying the                [36] M. J. Salganik, Bit by bit: social research in the digital age. Princeton
+     methodology of michael zock to sentiment analysis,” in Language                        University Press, 2017.
+     production, cognition, and the Lexicon. Springer, 2015, pp. 13–24.                [37] H. T. Le, G. Boynton, Y. Mejova, Z. Shaﬁq, and P. Srinivasan, “Revis-
+[15] P. Burnap, R. Gibson, L. Sloan, R. Southern, and M. Williams, “140                     iting the american voter on twitter,” in Proceedings of the 2017 CHI
+     characters to victory?: Using twitter to predict the uk 2015 general                   Conference on Human Factors in Computing Systems. ACM, 2017,
+     election,” Electoral Studies, vol. 41, pp. 230–233, 2016.                              pp. 4507–4519.
+
+
+
+
+                                                                                  
+
+            Authorized licensed use limited to: University Haifa. Downloaded on January 18,2023 at 19:52:21 UTC from IEEE Xplore. Restrictions apply.
+

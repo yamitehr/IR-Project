@@ -1,0 +1,355 @@
+                                Proceedings of the Sixth International AAAI Conference on Weblogs and Social Media
+
+
+
+
+                    #bias: Measuring the Tweeting Behavior of Propagandists
+
+          Cristian Lumezanu                                   Nick Feamster                                     Hans Klein
+ NEC Laboratories America, Georgia Tech                        Georgia Tech                                     Georgia Tech
+         lume@nec-labs.com                                feamster@cc.gatech.edu                              hans@gatech.edu
+
+
+
+
+                            Abstract                                         first, and could ultimately inform future propaganda detec-
+                                                                             tion methods.
+  Twitter is an efficient conduit of information for millions of
+  users around the world. Its ability to quickly spread infor-                  To study propaganda on Twitter, we must first define what
+  mation to a large number of people makes it an efficient way               constitutes propaganda. For the purposes of this initial study,
+  to shape information and, hence, shape public opinion. We                  we focus on a particular type of propaganda, which we call
+  study the tweeting behavior of Twitter propagandists, users                hyperadvocacy and define as the consistent lack of impar-
+  who consistently express the same opinion or ideology, fo-                 tiality. While the term “propaganda” suggests the use of de-
+  cusing on two online communities: the 2010 Nevada sen-                     ception, confusion, and manipulation to change public opin-
+  ate race and the 2011 debt-ceiling debate. We identify sev-                ion, hyperadvocacy refers to those users and content that are
+  eral extreme tweeting patterns that could characterize users               consistently biased towards a specific point of view, with-
+  who spread propaganda: (1) sending high volumes of tweets                  out necessarily having a malicious or subversive intent. If
+  over short periods of time, (2) retweeting while publishing
+                                                                             most tweets published by a user on a topic subscribe to a
+  little original content, (3) quickly retweeting, and (4) collud-
+  ing with other, seemingly unrelated, users to send duplicate               single ideology or opinion, we consider the user to be a hy-
+  or near-duplicate messages on the same topic simultaneously.               peradvocate; otherwise the user is neutral. This definition
+  These four features appear to distinguish tweeters who spread              serves as our “ground truth” for tweeters who we consider
+  propaganda from other more neutral users and could serve                   hyperadvocates and is appropriate for Twitter communities
+  as starting point for developing behavioral-based propaganda               organized around partisan political issues, where many users
+  detection techniques for Twitter.                                          consistently try to support their views and discredit opposing
+                                                                             views. Throughout this paper we use both “hyperadvocacy”
+                                                                             and “propaganda” to refer to the consistent lack of impar-
+                        Introduction                                         tiality.
+Twitter is a conduit for many different types of information,                   Given our definition of hyperadvocacy, our next step is to
+including breaking news (Kwak et al. 2010), political dis-                   look for characteristics of tweets that are unique to hyperad-
+course (Conover et al. 2010), community events (Washing-                     vocates. One way to make hyperadvocacy, and propaganda
+ton Post 2011a), and calls for protest (Los Angeles Times                    in general, effective is to appeal to emotion by tweaking the
+2011). Twitter’s reach and diversity of uses makes it a pow-                 content of tweets (e.g., using words that express strong sen-
+erful tool for shaping public opinion: indeed Twitter is al-                 timent). Existing techniques analyze content to detect pro-
+ready being used to defame political candidates and discredit                paganda in traditional mass media (Herman and Chomsky
+their views (Ratkiewicz et al. 2010; Metaxas and Mustafaraj                  1988; mediaaccuracy.org 2008), but they are less likely to
+2010). Countries such as China are using censors to track                    work in social media where the large number of publishers
+Internet discussions and shape opinions (Directing Internet                  makes it difficult to establish standards for impartiality.
+opinion 2005).                                                                  Another method to shape opinions on Twitter is to in-
+   In this paper, we take a first step towards understanding                 crease the visibility of a topic through extreme publish-
+how Twitter is used to spread propaganda. Propaganda is                      ing behavior; we study this aspect in our paper. Consis-
+the systematic dissemination of information to support or                    tent with Herman and Chomsky’s views on spreading pro-
+discredit a cause, point of view, or topic (How to detect                    paganda (Herman and Chomsky 1988), we are looking for
+propaganda? 1937). We seek to understand how the pub-                        users that are acting as amplifiers (or repeaters) of infor-
+lishing behavior of Twitter propagandists differs from that                  mation on Twitter. We study four publishing patterns that
+of users who express more neutral or balanced viewpoints.                    could be associated with hyperadvocates: 1) sending high
+Behavioral differences between propagandists and balanced                    volumes of tweets over short periods of time, 2) retweeting
+tweeters could be used to quickly detect extreme bias in con-                while publishing little original content, 3) quickly retweet-
+tent dissemination, without necessarily parsing the content                  ing others’ content, and 4) colluding with other, seemingly
+Copyright c 2012, Association for the Advancement of Artificial              unrelated, users to send similar content at the same time.
+Intelligence (www.aaai.org). All rights reserved.                               We analyze how these publishing patterns differ between
+
+
+
+                                                                       210
+                                                           NV Senate Race         Debt ceiling debate
+                                                               #nvsen                #debtceiling
+                               Tweets                          43,032                   53,282
+                               Retweets                     23,750 (55%)             3,667 (7%)
+                               Users                            6,080                   26,784
+                               - Avg tweets per user              7.1                       2
+                               Users (over 20 tweets)            326                      165
+                               - Avg tweets per user             83.5                      39
+                               - Hyperadvocates                  266                       59
+                               - Neutral users                    58                      106
+
+                                                         Table 1: Data sets
+
+
+hyperadvocates and neutral users in two Twitter commu-                     Quickly and accurately identifying users that exhibit bias
+nities organized around US political issues: #nvsen, ded-               towards or against certain topics is important for preserv-
+icated to the 2010 Nevada Senate race and #debtceiling,                 ing the fairness and openness of social media. Some efforts
+about the 2011 debt-ceiling debate. All of these features               have focused on analyzing the content of news and identify-
+appear to distinguish hyperadvocates from neutral partic-               ing publishers with strong sentiment or unusual choices of
+ipants. Of course, the uniqueness of these features de-                 words in traditional news sources, such as newspapers (me-
+pends on the community and topic being studied; we show                 diaaccuracy.org 2008). Several tools attempt to analyze the
+that volume-based features (sending high-volumes of tweets              content of tweets by detecting positive or negative opin-
+and exclusive retweeting) are more present in communi-                  ions (Twitter sentiment 2011). However, with thousands of
+ties with higher fractions of retweets and higher daily vol-            publishers, it is difficult to establish a standard for the im-
+umes of tweets while time-based features (quick retweeting              partial way of presenting a piece of information on Twit-
+and collusion) appear more in groups with fewer retweets                ter. Additionally, the lack of accountability allows pro-
+and tweets overall. That hyperadvocates and neutral Twit-               pagandists to easily evade content-based filters by sending
+ter users exhibit different publishing behavior patterns is ex-         information from multiple identities. In contrast, detec-
+tremely important for quick identification of biased content:           tion techniques based on watching tweeting behavior could
+rather than parsing the content, which may be expensive, we             avoid these shortcomings because they focus on how to send
+could monitor how content is sent.                                      content effectively rather than on what the content is (Ra-
+   The rest of the paper is organized as follows. In Section ,          machandran and Feamster 2006; Ramachandran, Feamster,
+we present background on opinion shaping, hyperadvocacy,                and Vempala 2007).
+and spreading propaganda in social media. In Section , we                  The Truthy system detects suspicious memes of Twit-
+describe the data sets we use in our analysis and how we                ter by studying the diffusion network of a topic (i.e., who
+quantify opinion bias in them. Section describes our at-                tweets and retweets about the topic) (Ratkiewicz et al. 2010).
+tempts to understand and evaluate the four behavioral pat-              Truthy can detect suspicious topics but cannot always dis-
+terns that could differentiate between hyperadvocates and               tinguish hyperadvocates from more neutral users, since le-
+neutral users. We conclude in Section .                                 gitimate users may unwittingly participate in a discussion
+                                                                        concerning a suspicious topic. Our approach of studying
+                       Background                                       the behavior of users is complementary to Truthy and is
+                                                                        inspired by Herman and Chomsky’s seminal work on pro-
+Propaganda has existed in traditional mass media for many
+                                                                        paganda (Herman and Chomsky 1988), which identifies re-
+years (psywar.org 2011; Herman and Chomsky 1988), and
+                                                                        peating content as an effective way of spreading propaganda.
+it is now slowly permeating social media. For example, the
+United States government is funding projects to both build
+online persona management software which would help dis-                            Collecting and Labeling Data
+seminate propaganda (The Guardian 2011) and to detect                   In this section, we describe the data sets used in our analysis
+and track popular ideas in social media (Washington Post                and show how to identify hyperadvocates.
+2011b). China has long employed teams of censors to track
+Internet discussions and quickly shape opinions (Directing              Data sets
+Internet opinion 2005).                                                 We collect tweets from two online discussion groups: the
+    Spreading misinformation or lies could alter perceived              2010 Nevada Senate race (identified by the hashtag #nvsen)
+public opinion on a topic and have real-world repercussions.            and the 2011 debt ceiling debate (identified by the hashtag
+Previous studies have shown that the results of elections               #debtceiling) using the API offered by Topsy (Topsy 2011).
+are positively correlated with opinion about candidates ex-             The collection process is rate-limited by Topsy and may not
+pressed on Twitter (OConnor et al. 2010; Tumasjan et al.                retrieve all tweets in a community. Our estimates based on
+2010). Other reports mention the significant role of Twitter            the number of results in direct searches for the correspond-
+and Facebook in helping organize and coordinate protests in             ing hashtags, however, indicate that we processed more than
+Tunisia, Libya, or Egypt (Los Angeles Times 2011).                      80% of the tweets in each community.
+
+
+
+                                                                  211
+  Figure 1: Number of tweets and retweets published each day in the #nvsen (top) and #debtceiling (bottom) communities.
+
+
+   Table 1 presents statistics about the data sets. Figure 1
+shows the number of tweets and retweets per day for the two
+communities. We make two observations. First, in #nvsen, a
+much higher fraction of the tweets are retweets, meaning
+that #nvsen has fewer “original” publishers. Second, the
+number of tweets in each community increases as we ap-
+proach the deadline around which the community is orga-
+nized (November 2, 2010 for #nvsen and August 2, 2011 for
+#debtceiling); after the deadline has passed there are very
+few tweets with the corresponding hashtag. In addition, in
+#nvsen there is a high volume of tweets on October 15, 2010,
+the day of the candidates debate. Figure 2 shows the CDF of
+the number of tweets sent by each user; while, in both cases,
+the majority of users sent fewer than 10 tweets, there are a
+small number of high-volume tweeters in each case.
+
+Labeling data
+Because there is no precise quantitative definition of hy-
+peradvocacy, obtaining ground truth for what messages                 Figure 2: Cumulative distribution of the number of tweets
+constitute hyperadvocacy is challenging. Although some                sent by each user in the #nvsen and #debtceiling communi-
+users are clearly hyperadvocates (e.g., dumpreid in #nvsen,           ties.
+whose tweets continually defame democratic candidate
+Harry Reid), for most users such a clear-cut classification
+is more difficult. As previously mentioned, we define hyper-          of tweets to annotate users with a specific political identity.
+advocacy as lack of balance or impartiality: users that con-          Using 252,300 politically relevant tweets, they showed that
+sistently express the same opinion about a topic are hyper-           the retweet communities identified by their algorithm match
+advocates, while those that express mixed opinions or views           groups of users with similar political alignment.
+are neutral.                                                             Our method of labeling users has two steps. The first step
+   To classify a user as biased or neutral, we apply the fol-         is identical to the approach of Conover et al.: we begin by
+lowing finding of Conover et al. (Conover et al. 2010), used          randomly assigning each user to one of two clusters1 , cor-
+to find political polarization on Twitter: users with simi-
+lar ideologies tend to retweet exclusively each other’s mes-             1
+                                                                           We choose to start with two clusters because this fits well with
+sages. To evaluate their method, Connover et al. used quali-          the bipartisan US political landscape. The method works with any
+tative content analysis (Kolbe and Burnett 1991) on the text          number of clusters.
+
+
+
+
+                                                                212
+Figure 3: Publishing patterns for hyperadvocates (top) and neutral users (bottom) in the #nvsen community. Each point is
+associated with a user and a day. Its color intensity reflects the number of all tweets (left) or fraction of retweets (right)
+published by the user during the day. The color bar has logarithmic scale for the left-hand plots.
+
+
+responding to one set of related opinions (e.g., liberal and           neutral users for f = 0.8. Because it is based on retweeting
+conservative). We seed the algorithm by assigning the users            behavior, this approach may lead to mislabeling some of the
+whose political views we know (such as the accounts of the             hyperadvocates in communities with few retweets (such as
+two candidates, @harryreid and @sharronangle, in #nvsen)               #debtceiling). We return to this limitation in Section .
+to the cluster corresponding to their viewpoint. We consider
+two users to be associated with one another if one of them                     Understanding Tweeting Behavior
+retweets a message originally published by the other; then,            In this section, we study how the tweeting behavior of hy-
+we iterate through the users, reassigning every user to the            peradvocates differs from that of neutral users. We start by
+cluster for which that user has the most associated users. We          making several observations about tweeting patterns in the
+stop after 1,000 iterations.                                           the #nvsen and #debtceiling communities; we then use the
+   In the second step, we inspect every user: if at least a            labeled sets of users from Section to study specific behav-
+fraction f of the connections are to users in the same clus-           iors in more detail.
+ter then the user is a hyperadvocate; otherwise, the user is
+neutral. The choice of f defines the sensitivity of the algo-          Observations
+rithm in labeling hyperadvocates. Lower values for f yield             Volume. Figure 2 presents the cumulative distribution of the
+more hyperadvocates but the risk of false positives is higher.         volume of tweets sent by each user. Most accounts send very
+High values of f implicitly establish a more strict labeling.          few tweets. Only 5% of users in #nvsen and less than 1%
+We experimented with values of f from 0.8 to 1. Table 1                of users in #debtceiling send more than 20 tweets over the
+presents statistics about the number of propagandists and              measurement period. Because it is unlikely that low-volume
+
+
+
+                                                                 213
+Figure 4: Publishing patterns for hyperadvocates (top) and neutral users (bottom) in the #debtceiling community. Each point
+is associated with a user and a day. Its color intensity reflects the number of all tweets (left) or fraction of retweets (right)
+published by the user during the day. The color bar has logarithmic scale for the left-hand plots.
+
+
+accounts can be effective hyperadvocates by themselves, we                (predominantly dark lines in left-hand plots);
+focus on those users that send more than 20 tweets in either
+community. Of course, low-volume users might still collude              • similarly, hyperadvocates consistently send a higher
+to gain better exposure and higher audiences for their mes-               daily fraction of retweets (lines with many black regions
+sages. We examine such scenarios in Section .                             in right-hand plots).
+   Tweeting and retweeting behavior. Figure 3 shows                     We also studied the tweeting and retweeting behavior in
+when and how hyperadvocates and neutral users publish                   #debtceiling, depicted in Figure 4, but did not observe the
+their messages (left) and retweets (right) in #nvsen. Each              same behaviors as in #nvsen. We return to the reasons of
+point is associated with a user and a day, and its color in-            why the observations are not consistent in Section .
+tensity is proportional to the number of tweets or fraction of             These results suggests that two tweeting patterns may be
+retweets sent by the user during that day. Users are sorted ac-         specific to some hyperadvocates: (1) they send more mes-
+cording to their lifetime (i.e., difference between the times-          sages over short periods and (2) they send more retweets
+tamps of the last and first tweets published in the commu-              than original content. In addition, inspired by Herman
+nity), with the long-lived users towards the bottom of the              and Chomsky’s work on propaganda models (Herman and
+plots; within each community, the ordering of users is con-             Chomsky 1988), we propose two more patterns that could
+sistent across plots.                                                   help amplify the effect opinion shaping: (3) they retweet
+   We make several observations about tweeting behavior in              quickly, and (4) they collude to send similar messages si-
+#nvsen:                                                                 multaneously, to offer the illusion of volume and coverage
+• hyperadvocates send higher daily volumes of tweets                    for a specific topic. The last two tweeting patterns carry
+
+
+
+                                                                  214
+Figure 5: Cumulative distributions of the number of high-volume days for (left) #nvsen and (right) #debtceiling. Propagandists
+have more high-volume days than neutral users in #nvsen.
+
+
+an implicit malicious intent and could help us identify who              We define a user’s repeater score as the ratio of the
+among hyperadvocates is truly propagandist. We evaluate               number of retweets to the total number of tweets. Fig-
+these four features next.                                             ure 6(left) shows the distribution of the repeater score for
+                                                                      users in #nvsen and #debtceiling. Few users in #debtceiling
+Bursty volumes                                                        are repeaters; of those, hyperadvocates send slightly more
+We consider a user to have a high-volume day if it publishes          retweets than neutral users. The gap is wider for #nvsen:
+more tweets than a predefined threshold θ. Because what               75% of hyperadvocates and only 35% of neutral users have
+constitutes normal publishing behavior varies from day to             a repeater score of at least 0.5 (i.e., more than half of their
+day (e.g., users are expected to publish more tweets right            messages are retweets).
+before the election than six months before the election), the
+value of θ varies daily. We experiment with two formula-
+tions for the threshold θ. First, we consider the θ as three          Quick retweeting
+standard deviations over the daily average number of tweets
+(θ1 = avg + 3 ∗ std), which, in a normal distribution would           To increase the effectiveness of a message, hyperadvocates
+eliminate about 99% of the users. Second, we set θ to three           could use automated accounts to quickly retweet content
+times the daily average number of tweets (θ2 = 3 ∗ avg),              shared by users they support. We define the reaction time
+based on observations we made on the two data sets that this          for a retweeted message as the difference between the time
+value filters out about 90% of all users.                             of the retweet and the time of the original message. We con-
+   Figure 5 shows the distribution of the number of high-             sider all retweets in each community and, for every user that
+volume days for both types of users. Hyperadvocates have              has retweeted at least five times in the community, compute
+more high-volume days than neutral users in #nvsen. Only              the average reaction time across all her retweets. We do not
+one neutral user has more than three high-volume days                 consider the retweets where we cannot identify the time of
+when θ = avg + 3 ∗ std, while some hyperadvocates have                the original message (e.g., because the original appeared be-
+over twenty such days. Because each user in #debtceil-                fore we started data collection or is not part of the commu-
+ing sends fewer tweets, even hyperadvocates do not exhibit            nity). For messages retweeted multiple times we compute
+high-volume publishing patterns. As we show later in the              the reaction time based on the most recent retweet.
+section, publishing patterns that account for time between               In Figure 6(right), we show the cumulative distribution
+tweets are better suited for #debtceiling.                            for the average retweet time for all users with more than
+                                                                      five retweets and 20 tweets overall. The results for #nvsen
+Exclusive retweeting                                                  match our intuition only partially. On one hand, no neutral
+As Conover et al. discovered, retweets are a popular method           user retweets less then 15 minutes after the original message,
+for spreading messages in Twitter political communities               while a few hyperadvocates have an average retweet time of
+(Conover et al. 2010). Retweeting amplifies the visibility of         around one minute. On the other hand, however, hyperadvo-
+a topic by exposing it to a different audience or by increas-         cates tend to have a higher retweet reaction time than neutral
+ing the volume of tweets that mention it. Next, we study              users. For #debtceiling, hyperadvocates are slightly quicker
+whether the fraction of retweets that a user sends can help           in retweeting although no one retweets less than one hour
+determine whether the user is a hyperadvocate.                        after the original message.
+
+
+
+                                                                215
+Figure 6: CDFs for (left) repeater score and (right) average retweet reaction time for active users in #nvsen and #debtceiling.
+Hyperadvocates send more retweets and less original content than neutral users but do not necessarily retweet faster.
+
+
+                                                                         utes apart. (Results for one, five, and ten minutes apart were
+                                                                         similar.) 16% of all users (including those with less than
+                                                                         twenty tweets) in #nvsen and 46% of those in #debtceiling
+                                                                         have at least one colluder. Hyperadvocates and neutral users
+                                                                         in #nvsen exhibit similar behavior. On the other hand, hy-
+                                                                         peradvocates collude more often than neutral users in #debt-
+                                                                         ceiling: 40% of propagandists and fewer than 30% of neu-
+                                                                         tral users have more than one colluder. These results offer
+                                                                         a possible explanation for why the volume-based behavioral
+                                                                         patterns appear more in #nvsen than in #debtceiling: #debt-
+                                                                         ceiling has more users and fewer messages per user where
+                                                                         propaganda is spread through collusion of low-volume users
+                                                                         rather than retweeting or high-volume tweeting over short
+                                                                         intervals.
+
+                                                                         Summary
+                                                                         We studied four tweeting patterns that could help amplify
+                                                                         the effect on hyperadvocacy on Twitter and showed that their
+Figure 7: Cumulative distribution of the number of users                 presence or absence depend on the properties of the commu-
+that send similar messages less than three minutes apart, for            nity being analyzed. Volume-based patterns, such as send-
+every user in #nvsen and #debtceiling.                                   ing many tweets over short periods or retweeting without
+                                                                         publishing much original content are better suited for com-
+                                                                         munities with higher average number of tweets and fraction
+Collusion                                                                of retweets. On the other hand, time-based patterns, such
+To appear neutral while still increasing the visibility of their         as quickly retweeting or sending similar messages close in
+message, hyperadvocates might collude to send similar mes-               time appear in communities with fewer retweets and smaller
+sages simultaneously. We study how often and how far apart               volume of tweets.
+in time pairs of users send duplicate and near-duplicate mes-
+sages. Two messages are near-duplicates if they have more                                       Conclusion
+than 80% of the words in common. We do not consider                      This paper presented a first step towards measuring how
+retweets because we want to focus only on similar messages               Twitter is used to disseminate propaganda. We focused on a
+where the connection between senders is not explicit.                    particular type of propaganda: hyperadvocacy, or the con-
+   For each user in #nvsen and #debtceiling, we compute                  sistent dissemination of content that subscribes to a sin-
+the number of colluders, the users in the same community                 gle ideology or opinion. Using observations of tweeting
+that send duplicate or near-duplicate messages very close in             behavior in two Twitter communities, as well as intuition
+time. Figure 7 presents the cumulative distribution of the               from Herman and Chomsky’s seminal work on propaganda
+number of colluders for messages sent less than three min-               models (Herman and Chomsky 1988), we described four
+
+
+
+                                                                   216
+tweeting patterns that could amplify the visibility of pro-           Metaxas, P. T., and Mustafaraj, E. 2010. From obscurity
+paganda on Twitter. We evaluated these patterns using                 to prominence in minutes: Political speech and real-time
+tweets about the 2010 Nevada senate race and the 2011 debt-           search. In WebSci.
+ceiling debate, and showed that their presence depends on             OConnor, B.; Balasubramanyan, R.; Routledge, B. R.; and
+the properties of the Twitter community being analyzed, but           Smith, N. A. 2010. From Tweets to Polls: Linking Text
+that, ultimately, they could provide a starting point towards         Sentiment to Public Opinion Time Series. In ICWSM.
+behavioral-based detection of Twitter propaganda.
+                                                                      2011. Psywar. http://goo.gl/SVvWL.
+                       References                                     Ramachandran, A., and Feamster, N. 2006. Understanding
+                                                                      the network-level behavior of spammers. In ACM Sigcomm.
+Conover, M.; Ratkiewicz, J.; Francisco, M.; Gonalves, B.;
+Flammini, A.; and Menczer, F. 2010. Political polarization            Ramachandran, A.; Feamster, N.; and Vempala, S. 2007.
+on Twitter. In AAAI ICWSM.                                            Filtering spam with behavioral blacklisting. In ACM CCS.
+2005. The Practical Aspects of Directing Internet Opinion.            Ratkiewicz, J.; Conover, M.; Meiss, M.; Gonçalves, B.;
+http://goo.gl/wzlfr.                                                  Patil, S.; Flammini, A.; and Menczer, F. 2010. Detect-
+Herman, E. S., and Chomsky, N. 1988. Manufacturing Con-               ing and tracking the spread of astroturf memes in microblog
+sent: The Political Economy of the Mass Media. Pantheon               streams. In AAAI ICWSM.
+Books.                                                                2011. US spy operation. http://goo.gl/cJVOM.
+1937. How to detect propaganda? http://goo.gl/Wg4O9.                  2011. Topsy. http://www.topsy.com.
+Kolbe, R. H., and Burnett, M. S. 1991. Content analysis               Tumasjan, A.; Sprenger, T. O.; Sandner, P. G.; and Welpe,
+research: An examination of applications with directives for          I. M. 2010. Predicting Elections with Twitter: What
+improving research reliability and objectivity. The Journal           140 Characters Reveal about Political Sentiment. In AAAI
+of Consumer Research 18(2):243–250.                                   ICWSM.
+Kwak, H.; Lee, C.; Park, H.; and Moon, S. 2010. What is               2011. Twitter Sentiment. http://goo.gl/TocPH.
+Twitter, a social network or a news media? In WWW.                    2011a. Obama holds first White House Twitter Town Hall.
+2011. Tunisia protesters use Facebook, Twitter and YouTube            http://goo.gl/t55GQ.
+to help organize and report. http://goo.gl/PfP3C.                     2011b. Pentagon puts out a call for the socially savvy. http:
+2008. Colombia and Venezuela: Testing the Propaganda                  //goo.gl/Ce7aH.
+Model. http://goo.gl/ybHsy.
+
+
+
+
+                                                                217
+

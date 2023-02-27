@@ -1,0 +1,921 @@
+       Journal of Children and Media
+
+
+
+
+       ISSN: (Print) (Online) Journal homepage: https://www.tandfonline.com/loi/rchm20
+
+
+
+
+Introducing the Social Media Literacy (SMILE)
+model with the case of the positivity bias on social
+media
+
+Lara Schreurs & Laura Vandenbosch
+
+To cite this article: Lara Schreurs & Laura Vandenbosch (2021) Introducing the Social Media
+Literacy (SMILE) model with the case of the positivity bias on social media, Journal of Children and
+Media, 15:3, 320-337, DOI: 10.1080/17482798.2020.1809481
+
+To link to this article: https://doi.org/10.1080/17482798.2020.1809481
+
+
+
+
+       Published online: 16 Aug 2020.
+
+
+
+       Submit your article to this journal
+
+
+
+       Article views: 3573
+
+
+
+       View related articles
+
+
+
+       View Crossmark data
+
+
+
+       Citing articles: 14 View citing articles
+
+
+
+
+                       Full Terms & Conditions of access and use can be found at
+             https://www.tandfonline.com/action/journalInformation?journalCode=rchm20
+JOURNAL OF CHILDREN AND MEDIA
+2021, VOL. 15, NO. 3, 320–337
+https://doi.org/10.1080/17482798.2020.1809481
+
+
+
+
+Introducing the Social Media Literacy (SMILE) model with the
+case of the positivity bias on social media
+Lara Schreursa,b and Laura Vandenboscha
+a
+    School for Mass Communication Research, Faculty of Social Sciences, KU Leuven, Leuven, Belgium;
+b
+    Research Foundation Flanders (FWO-Vlaanderen), Brussels, Belgium
+
+
+      ABSTRACT                                                                    ARTICLE HISTORY
+      Although current literature has extensively discussed media                 Received 19 August 2019
+      literacy processes, few theories exist explaining the role of social        Revised 3 August 2020
+      media literacy. Social media are used daily by a substantial                Accepted 10 August 2020
+      number of young people and may exert an important influence                 KEYWORDS
+      on its users’ well-beings. Considering media literacy, media                Social media literacy; the
+      effects, social psychology, interpersonal communication and                 positivity bias on social
+      educational literature, a novel theoretical framework called the            media; empowerment;
+      Social Media Literacy (SMILE) model is introduced. This frame­              development
+      work was formulated to explain (1) how to conceptualize social
+      media literacy, (2) how social media literacy can change the
+      dynamics between social media and its users and (3) how
+      participatory mediation processes result into social media lit­
+      eracy. The SMILE-model is illustrated against the background
+      of the social media positivity bias. Ultimately, the newly devel­
+      oped guiding framework aims to stimulate more theory-driven
+      research into the scholarly understanding of social media lit­
+      eracy in well-being. Such insights may especially be useful for
+      research in the field of children, adolescents and the media.
+
+
+
+Growing concerns from scholars and policy makers about the pervasive usage of social
+media in the current society echo the scholarly call for more research into effective
+measures to help especially young social media users get the most out of their social
+media experiences (Kleemans, Daalmans, Carbaat, & Anschütz, 2018). Within the limited
+research that mainly exists among young users, social media literacy has recently been
+suggested as a promising direction in this regard (Tamplin, Mclean, & Paxton, 2018).
+Daneels and Vanwynsberghe (2017) define social media literacy as “the technical and
+cognitive competencies users need to use social media in an effective and efficient way
+for social interaction and communication on the web”. Livingstone (2014) emphasizes in
+her view on social media literacy its potential to help children avoid (privacy) risks and
+safely explore the opportunities of the online environment. One scholar has conceptua­
+lized this concept from a domain-specific area of social media effects and defined it as
+a critical understanding of both advertisers and peers’ motivations and techniques for
+modifying social media images (Tamplin et al., 2018).
+
+
+CONTACT Laura Vandenbosch         laura.vandenbosch@soc.kuleuven.be   School for Mass Communication Research,
+KU Leuven, Leuven B-3000, Belgium
+© 2020 Informa UK Limited, trading as Taylor & Francis Group
+                                                      JOURNAL OF CHILDREN AND MEDIA        321
+
+
+    Although these first attempts to conceptualize (and study) social media literacy are
+valuable, this paper argues that their definitions do not adequately address the complex­
+ities that are central within this concept. Social media literacy can be partly embedded in
+the rich area of literature on media literacy (Daneels & Vanwynsberghe, 2017), however,
+the distinctive characteristics of social media (e.g., content creating/editing and exponen­
+tial opportunities for interactions and social comparisons with “similar” peers) warrant
+a unique approach. The different dynamics in which social media literacy operates have
+not been at the core of previous conceptualizations as these conceptualizations mainly
+occurred in empirical research and thus did not aim to theoretically explain its role in
+youth’s well-being.
+    To address these gaps, the Social Media Literacy (SMILE) model is introduced and
+embodies a first guiding framework for social media literacy. The model bridges the
+literature on (social) media effects with insights from traditional media literacy research,
+educational and social psychology literature (1) to conceptualize social media literacy,
+(2) to explain its development, and (3) to describe its role in social media user interac­
+tions. The model starts from the idea that social media literacy can maximize the
+opportunities and minimalize or even prevent the risks of social media use. In its core,
+the SMILE-model intends to inspire more theory-driven research lines on the role of
+social media literacy in social media effects, ultimately aiming to contribute to young
+people’s overall well-being.
+    Moreover, current perspectives on traditional media literacy emphasize that different
+types of media literacy share several components across the media effects that they each
+target, but, at the same time, different characteristics exist within each media literacy area
+(e.g., appearance, sexuality and violence) (Byrne, 2009). Similarly, each area of social media
+effects is typified by unique dynamics and peculiarities. For example, different character­
+istics exist for social media effects regarding privacy concerns, safety issues, cyberbullying
+and body image. Consequently, we illustrate the general model’s assumptions for one
+single area of social media literacy: The social media positivity bias among adolescents.
+This area was selected because adolescents are among the most frequent daily users of
+social media (Anderson & Jiang, 2018) and during their usage, they interact endlessly with
+positively biased posts. The positivity bias has increasingly been hold responsible for
+adolescents’ decreased mental well-being (e.g., Kleemans et al., 2018), which is a pertinent
+public concern in today’s society.
+
+
+Defining the meaning of social media literacy
+Media literacy fundamentally aims to provide users with the necessary critical autonomy
+to interact with media in a healthy and responsible way (Aufderheide, 1993). At its core,
+media literacy will reduce negative media effects and maximize positive ones. In contrast
+to the strong consensus on the value of media literacy, scholars disagree upon the key
+elements that define this concept with regards to traditional media (Jeong, Cho, & Hwang,
+2012) and social media (e.g., Daneels & Vanwynsberghe, 2017; Tamplin et al., 2018). To
+seek direction in this clutter of interpretations, we define social media literacy as follows:
+“the extent to which cognitive and affective structures are present among users to ensure the
+risks of interactions with social media content are mitigated and the opportunities are
+maximized.” According to this definition, social media literacy can be seen as
+322      L. SCHREURS AND L. VANDENBOSCH
+
+
+a continuous variable with two subcomponents (i.e., cognitive and affective structures)
+that each are present in varying levels.
+    The subcomponent of cognitive structures is adopted from Potter’s (2004) processing
+model and extended with insights from social media literature (Boyd & Ellison, 2008).
+Cognitive structures include sets of organized knowledge in the user’s memory that
+provide the user with sufficient resources to process social media content adequately
+(Lang, 2017). As such, these structures guide the construction and interpretation of social
+media content. This knowledge entails different layers of understanding within social
+media effects. In its most basic level, adolescents are not social media literate and thus do
+not understand what different types of social media effects are or could be. At an average
+level, knowledge on the effects exists but is not, or inconsistently, applied. Accordingly,
+a more passive form of cognitive structures is present as the structures are not always
+actively applied when using social media. At a high level, adolescents actively use their
+cognitive structures and interpret, reflect on and understand social media content within
+its specific context. They thereby empower themselves during their social media experi­
+ences. Even more, they act with a sense of responsibility towards other users when
+developing their own posts.
+    Part of the cognitive structures are rooted in users’ traditional media literacy. Existing
+knowledge on the commercial intent of media industries (Potter, 2004) can help a user
+reflect upon the revenue strategies of social media companies, but also companies that
+use social media for profit purposes (Vanwynsberghe, 2014). Understandings of produc­
+tion techniques of traditional media, such as television and magazines (Potter, 2004), are
+relevant to interpret the sharing of traditionally produced messages on social media. Yet,
+such understandings will need to be further tailored to the peculiarities of social media
+(e.g., who shares the video with what intent, what is the meaning of receiving likes, re-
+posting and comments).
+    Regarding these peculiarities, social media content is much more personal and self-
+focused than traditional media content (Perloff, 2014). The audience of social media
+messages is not conceptualized as heterogeneous or anonymous, but consists of indivi­
+duals who are similar to the sender. Social media are said to be “fundamentally media of
+one’s peers” (Perloff, 2014, p. 366). These peers are all allowed to directly transmit
+personal-generated content on social media (Perloff, 2014). Thus apart from being passive
+recipients of media content – which also occurs very frequently on social media – users
+can interactively create, edit and share messages within their personal online network by
+using the platform’s instant messaging technology and its tools to post status updates
+and share photos/videos (Tsitsika et al., 2014).
+    Due to their interactive nature, social media are eminent tools for interpersonal
+communication. Users can extend their offline relations online or initiate new social ties.
+Social media interactions are editable and highly accessible, develop asynchronously, and
+allow a limited and selective set of social-contextual cues to be present. Because of these
+affordances, social media interactions differ in their core from offline interactions and
+impact communication processes and social relationships in different ways (Walther,
+2017). Social media literate adolescents have developed cognitive structures on these
+unique social mediated interpersonal norms and dynamics. Together, cognitive structures
+of social media literacy include understandings of (a) traditional media literacy, (b) social
+media features and (c) interpersonal communication dynamics on social media.
+                                                     JOURNAL OF CHILDREN AND MEDIA        323
+
+
+    The subcomponent of affective structures refers to sets of organized emotions in the
+users’ memory which guide (spontaneous) emotions in response to using social media.
+The inclusion of this subcomponent builds upon the insight of traditional media literacy
+literature that cognitive structures alone are not sufficient to counter adversarial media
+effects (Austin & Pinkleton, 2016) and the importance of the capitalization of the positive
+outcomes that follow from social media interactions (Palmer, Ramsey, Morey, & Gentzler,
+2016). First, traditional media literacy literature argues that although users may be aware
+of the negative effects of media content, such media content may still spontaneously and
+thus instinctively appeal to, and even emotionally affect, youth (Gill, 2012). Therefore,
+being literate cannot be about possessing the “right” affective responses but instead
+relates to managing one’s affective responses. In this regard, emotion regulation literature
+has typically distinguished between adaptive and maladaptive strategies to manage one’s
+affective responses, based on the strategies’ relations to mental health (Cracco, Goossens,
+& Braet, 2017). What characterizes a social media literate user is that he/she would rather
+apply adaptive than maladaptive strategies when experiencing negative or positive
+emotions resulting from one’s social media usage.
+    Also, literature on social media and positive well-being specifically suggests that
+affective structures determine the upward spiral toward psychological well-being that
+may follow after positive social media interactions (Fredrickson & Joiner, 2002). Engaging
+in self-posting behavior, but also exposure to social media content posted by others is
+accordingly more likely to trigger positive outcomes if individuals possess the necessary
+adaptive emotional regulation strategies to maximize the enjoyment state (e.g., Palmer
+et al., 2016; Tugade & Fredrickson, 2007).
+
+
+The Social Media Literacy (SMILE) model
+Ample studies have assessed the effectiveness of media literacy. For instance, it has been
+demonstrated that media literacy education can increase media knowledge and criticism,
+reduce media realism and diminish the influence of desirable media portrayals of social
+actors (Jeong et al., 2012; Vahedi, Sibalis, & Sutherland, 2018). In addition, scant evidence
+exists on the actual decline/increase of negative media effects when media literacy
+increases (Vahedi et al., 2018; Xie, Gai, & Zhou, 2019). Yet for social media, such evidence
+is missing which may be because no model exists that can explain the mechanisms
+relating to social media literacy. The SMILE-model was designed to map and understand
+such processes, and puts forward five assumptions that relate to empowering social media
+users (assumptions 1–2; see Figure 1) and developing social media literacy (assumptions
+3–5; see Figure 1).
+
+Empowerment
+As for empowerment, the SMILE-model suggests two assumptions that directly build on
+the Differential Susceptibility to Media Effects Model (DSMM) (Valkenburg & Peter, 2013),
+which integrates insights from renowned media effects theories and social psychology
+literature.
+
+Assumption 1: Social media literacy as a moderator. Social media literacy is assumed to
+operate as a moderator in the relation between social media use and well-being. Social
+324      L. SCHREURS AND L. VANDENBOSCH
+
+
+
+
+Figure 1. The SMILE-model.
+
+
+
+learning theory (Bandura, 2001), script theory (Wright, 2011), and media literacy theory
+(Potter, 2004) explain that when specific social media content conflicts with a user’s
+cognitions, a negative well-being effect is less likely. Potentially harmful social media
+interactions will clash with the cognitive, and therefore also with the affective structures
+of literate users. As these users have a thorough understanding of the negative effects
+that one’s own behaviors and certain content types of others could trigger, they are in
+control of their affective responses towards these behaviors and contents. Accordingly,
+they adaptively regulate the rare negative emotions that still occur. Also, users with
+advanced levels of social media literacy may only experience positive emotions in these
+situations as they are able to focus on the scarce positive aspects of these (undesirable)
+behaviors and contents (Buunk, Collins, Taylor, VanYperen, & Dakof, 1990). Additionally,
+when users display behaviors or interact with content which inherently triggers positive
+effects, these effects may be even stronger among social media literate users as their
+elaborated cognitive and affective structures constantly help them to maximize their
+social media experiences.
+
+Assumption 2. Social media literacy as a predictor. The DSMM (Valkenburg & Peter, 2013)
+describes that the same factors that moderate relations between media use and well-
+being, may also affect how often a user is exposed to media messages in the first place.
+Accordingly, we assume that social media literacy as a predictor shapes social media
+content preferences, i.e., exposure to social media content of others and one’s own social
+media behavior.
+
+   Considering exposure, social media literate users are likely to be less exposed to
+potentially adverse content than non-literate users. This manifests itself at two different
+levels. First, drawing on media selection theory (Klapper, 1960), social media literate users
+selectively chose from whom they view social media content. They critically evaluate the
+persons to whom they connect and mainly include peers and other known individuals
+instead of strangers (Trepte & Reinecke, 2011). Therefore, their chances to come across
+potentially harmful messages are much smaller (e.g., Lup, Trub, & Rosenthal, 2015).
+   Second, even though users control whom is included in their online network, research
+suggests that the distinctive attributes of social media platforms still imply that “the
+                                                        JOURNAL OF CHILDREN AND MEDIA         325
+
+
+content that people view in their social media feeds is largely outside of individual
+control” (Vraga, Bode, & Troller-Renfree, 2016, p. 150). Therefore, unlike with traditional
+media consumption, the predictive power of social media literacy lies only partly in the
+selective non-exposure to content (Klapper, 1960) and manifests itself further at the level
+of attention processes. In this context, users contribute variable attention in function of
+how optimal the messages are; social media literate users intentionally pay little attention
+to potentially harmful content and more attention to potentially beneficial messages as
+they understand how they can be negatively vs positively affected by viewing certain
+posts (Vraga et al., 2016).
+   Considering one’s own social media behavior, social media literate users are believed
+to engage in the social media environment relying on their elaborated cognitive and
+affective structures. Again, this manifests itself at two different levels. First, these users are
+well aware of the people that have access to their profile entries. As explained above, they
+mainly connect with known individuals and limit strangers’ access (Trepte & Reinecke,
+2011). Moreover, as they know that not all content types are equally appropriate among
+different audiences (e.g., friends, family and professional relations), they apply advanced
+privacy control settings which limit the visibility of certain posts to specific connections
+(Trepte & Reinecke, 2011). Consequently, social media literate users are much less likely to
+be negatively affected.
+   Second, users’ level of social media literacy shapes the messages they share. Unlike
+with traditional media, social media users are constantly enabled to create, edit and share
+content themselves (Tsitsika et al., 2014). By drawing on media selection theory (Klapper,
+1960), social media users are likely to carefully monitor the content they create and post in
+order to obtain wished-for beneficial emotions. Accordingly, these users succeed in
+balancing the need to share content, which helps accrue the benefits of social media
+usage, and the need to control this content, which minimizes the privacy risks related to
+sharing personal information online (Trepte & Reinecke, 2011).
+
+Development
+By applying an ecological perspective (Bronfenbrenner & Morris, 2006), the SMILE-model
+argues that social media literacy develops through interactions between a person and his/
+her environment. Within this environment, several agents play an important role and do
+not exclusively refer to educators (i.e., formal agents) but also account for peers and family
+members (i.e., informal agents). As the literature traditionally considers formal agents and
+seems to position these agents as fundamentally different from family and peer socializa­
+tion, a scholarly debate has taken place on how to understand different sources of
+people’s (social) media literacy (Hobbs, 2011). The SMILE-model intends to help this
+debate move forward by arguing that both formal and informal agents contribute to
+social media literacy and conceptualizes a novel process labelled “the participatory
+mediation of social media literacy.”
+   The process of participatory mediation is rooted within the autonomy-supportive
+parental mediation literature (Valkenburg, Piotrowski, Hermanns, & de Leeuw, 2013)
+and media literacy theory (Potter, 2004). High participatory mediation is received when
+an agent and an individual actively discuss social media topics in a way that helps the
+individual (a) to understand its potential effects and (b) be in control of adopting desirable
+affective responses when using social media. Importantly, the agent acknowledges the
+326      L. SCHREURS AND L. VANDENBOSCH
+
+
+person’s thoughts and feelings during these active discussions. Low participatory media­
+tion occurs when the agent transfers cognitive, and thereby also affective structures
+without any interaction. Participatory mediation can thus be considered on
+a continuum including more or less interactions between the agent and the individual.
+Based on self-determination theory (Deci & Ryan, 1985), many interactions between the
+agent and the individual, in which the individual’s perspective is actively taken into
+account, results in a better internalization of the received social media literacy structures.
+    To understand how participatory mediation relates to the development of social
+media literacy, the SMILE-model theorizes reciprocal, conditional and differential learn­
+ing processes. Similar processes can occur for the development of more traditional
+forms of media literacy, yet the current paper aims to foreground social media peculia­
+rities in each.
+
+Assumption 3: Reciprocal processes. The relations between participatory mediation pro­
+cesses and social media literacy development are assumed to be reciprocal. An agent may
+mediate social media literacy among people. At the same time, when these people
+actively participate and exert agency in their development (Grusec & Hastings, 2015),
+their responses to this mediation may shape future mediation messages received from
+the agent. Such reciprocal relations are drawn from Bandura’s social cognitive theory
+(2001), but also are theorized in models such as the family systems framework (Broderick,
+1993) and are especially likely to occur for high levels of participatory mediation. During
+active discussions, the messages of both members are likely to affect each other positively
+(Vandenbosch, 2018).
+
+Assumption 4: Conditional processes. Bandura’s model (2001) and socialization literature
+(Grusec & Hastings, 2015) suggest that generally, different agents in the environment do
+not influence people as separate entities but operate simultaneously and may strengthen
+or weaken each other. Accordingly, it is believed that the development of social media
+literacy depends on the impact of one agent interacting with the influence of other
+agents. Such interactive processes have also been suggested for traditional media literacy
+as scholars have for instance argued that when educators and parents both promote
+media literacy, stronger skills are developed (Chakroff & Nathanson, 2011).
+
+Assumption 5: Differential learning processes. Finally, the model assumes that, depending
+on which agent is involved in the participatory mediation (e.g., educator, family member
+or peer), people develop different social media literacy competencies through differential
+types of learning processes (i.e., qualification and socialization). Following education
+literature (Biesta, 2006), we argue to distinguish between qualification and socialization
+agents. Through qualification, people acquire more formal social media literacy compe­
+tencies. A prime example of an important qualification agent is an educator. Educators are
+typically teachers for young people, or researchers for older people, who deliver a formal
+media literacy intervention (Xie et al., 2019). During such an intervention, educators
+instruct on how to understand and evaluate media messages (Vahedi et al., 2018).
+A substantial number of intervention studies have shown that such intensive formal
+training increases general media knowledge and critical thinking skills (Jeong et al.,
+2012; Vahedi et al., 2018).
+                                                     JOURNAL OF CHILDREN AND MEDIA        327
+
+
+    Such interventions focus on low participatory mediation processes as these are often
+delivered in a one-to-many format and therefore do not leave room for active discussions.
+Also, they typically provide a highly valuable foundation to develop strong cognitive
+structures as educators are trained to accurately inform their audience. Such interventions
+are often very intense – with time being carefully devoted to instruct.
+    However, there are also several downsides related to educator-based interventions.
+First, following literature on emotion regulation development (Morris, Silk, Steinberg,
+Myers, & Robinson, 2007), educators are less likely than other agents (e.g., peers and
+family members) to stimulate affective structures. The learning of (adaptive) emotion
+regulation capabilities often occurs while experiencing emotions or by modeling other
+people’s strategies after observing them in social media interactions (Morris et al., 2007).
+As it is unlikely that a person experiences strong emotions related to social media usage
+during a formal intervention or models the educator’s own strategies to regulate emo­
+tions, educators are not suitable agents to mediate affective structures of social media
+literacy.
+    Second, the effects of these interventions are highly likely to fade in time. Priming
+literature argues that the lasting effect of a prime on a targeted behavior/thought/
+emotion is a product of its frequency and recency (Roskos-Ewoldsen, Roskos-Ewoldsen, &
+Dillman Carpentier, 2002). In this view, participatory mediation processes that occur
+regularly and are close in time to people’s social media behavior are most likely to
+stimulate the acquirement of social media literacy. Yet, as social media is normally not
+used during the formal educator-based intervention (i.e., recency), and as these interven­
+tions are often highly intensive but occur only once (i.e., frequency), the cognitive
+structures are not developed strongly enough to be chronically accessible. Furthermore,
+educators, who typically use a protective approach to convert (social) media literacy
+messages, could face resistance as their approach often neglects users’ own beliefs
+about- and emotional engagement with (social) media (Hobbs, 2011). This might hold
+especially true in a classroom setting in which young (social) media users resist the
+mediation messages received from their teachers.
+    Through socialization, people develop social media literacy more informally as they
+would acquire the knowledge/skills within the context of being/becoming a member of
+a social group. A prime example of such a socialization agent is peers. Especially young
+people attach considerable importance to the knowledge and values peers pass on to
+them. Therefore, peers are known to be the most important socialization agents in their
+lives (Grusec & Hastings, 2015). Participatory mediation processes through peers (both
+low and high) provide individuals firstly with knowledge on different types of social media
+effects. People may informally transfer social media knowledge they acquired themselves
+to their friends. Also, peers may indirectly mediate affective structures. Emotion regulation
+theory explains that regulation strategies are learned by observing how others control
+particular emotions (Morris et al., 2007). As peers are the most straightforward agents to
+experience negative and positive emotions due to social media usage in the presence of
+an individual, this individual might learn to regulate one’s own emotions by observing
+how peers deal with theirs.
+    Peer mediation strategies are expected to have (relatively) strong effects in terms of
+frequency and recency. First, peers are likely to regularly discuss social media and related
+emotions among each other (Yau & Reich, 2018). Accordingly, people receive many (low
+328      L. SCHREURS AND L. VANDENBOSCH
+
+
+or high participatory) mediation messages from peers (i.e., frequency). Also, these media­
+tion messages seem to occur very close to the moment when social media literacy is
+actually needed as social media effects and related emotions can be discussed among
+peers while browsing their social media feeds (i.e., recency). Moreover, as people perceive
+peers as valuable information sources (Grusec & Hastings, 2015), they are less likely to
+resist mediation messages coming from peers. However, the quality of peers’ participatory
+mediation highly depends on peers’ own social media literacy level. It could be, for
+instance, that peers with less elaborated levels give incorrect information or adopt
+maladaptive emotion regulation strategies when engaging with social media content
+themselves.
+    Lastly, family members are argued to mediate social media literacy amongst each
+other. On the one hand, parents can mediate social media literacy among their children.
+Specifically, they can take up both the role of a qualification and a socialization agent. The
+literature argues that parents can, similar to educators, qualify social media literacy (e.g.,
+Daneels & Vanwynsberghe, 2017). For instance, by formally providing social media knowl­
+edge, they may stimulate a critical disposition towards social media. Moreover, as parents
+intentionally “teach” adaptive emotion regulation strategies (Morris et al., 2007), they are
+also likely to qualify affective social media literacy structures.
+    Some scholars question if parents have the same potential as trained educators to
+properly qualify media literacy competences (see for instance Hobbs, 2011). Accordingly,
+parents could also take up a more socializing role. In this interpretation, they could
+likewise provide their children with knowledge on social media effects. This transferred
+knowledge, however, is not guaranteed to be “right” if, for instance, parents are less active
+social media users. Parents could also mediate affective structures; they could adopt more
+informal practices such as talking about experienced negative emotions and could help
+making sense of them. Consequently, children may learn to use their social media literacy
+knowledge to adaptively regulate their emotions when engaging with social media.
+    On the other hand, children are just as likely as their parents to be mediation agents of
+social media literacy. In this case, they mediate their parents’ level of social media literacy.
+First, children can qualify their social media knowledge to their parents. As they often
+have more practical social media knowledge, they intentionally teach their less informed
+and skilled parents how to use social media platforms (e.g., Correa, Straubhaar, Chen, &
+Spence, 2015). Yet, children can also take up a more socializing role. Children explain to
+their parents how they should interact within these platforms and which behaviors are
+thought appropriate (Van den Bulck, Custers, & Nelissen, 2016). Children have less
+potential to mediate affective social media literacy structures, though. Parents are less
+likely to seek advice from their children when facing negative emotions, they rather turn
+to other agents (e.g., life partner or a friend).
+
+
+An application of the SMILE-model: the positivity bias and adolescents’
+social media literacy
+Build-in platform features of social media (e.g., automatically showing picture-enhancing
+filters when posting a picture) facilitate the construction of positive content and thus the
+participation in the positivity bias (Boyd & Ellison, 2008; Sheldon & Bryant, 2016; Walther,
+Van Der Heide, Ramirez, Burgoon, & Pena, 2015). Participation in the positivity bias on
+                                                       JOURNAL OF CHILDREN AND MEDIA        329
+
+
+social media can be defined as the extent to which social media users strategically post self-
+related content which is typically highly selective, curated and unspontaneous as the goal of
+a positive self-presentation prevails over other goals of social media usage. A typical example
+of an unspontaneous post is someone who organizes a photoshoot of himself/herself
+with the sole purpose of selecting a good picture to post on social media. Often, the
+selected picture is curated or manipulated before being posted on social media. The social
+media post in which the selected and curated picture is featured is labelled to be
+unspontaneous.
+    A positivity bias in social media content especially occurs when presenting oneself on
+the platform to a larger audience as opposed to social media interactions with close
+friends (Yau & Reich, 2018). The attractiveness of posting positively biased content is
+usually explained in the literature by the well-known theory of Goffman (1959). Goffman
+argued that individuals are intuitively concerned about how others perceive them and
+thus try to strategically manage and influence these perceptions. Especially adolescents
+are considered to take part in such impression management behavior as such behavior
+relates to their developmental needs. Adolescents are more dependent on peers than
+other developmental groups and are preoccupied with building a personal identity
+(Subrahmanyam & Šmahel, 2011). In line with this reasoning, adolescents frequently use
+social media to present themselves to peers in a favorable way (e.g., Yau & Reich, 2018).
+    Because of the daily confrontations with the positivity bias and adolescents’ develop­
+mental needs, social media literacy in this area may be particularly relevant. The pre­
+viously presented definition of social media literacy implies that social media literate
+adolescents understand the implications of (positively) presenting oneself in social media
+environments. Moreover, they have cognitive and affective structures to handle the
+effects of the positivity bias. Drawing on the SMILE-model and literature on the positivity
+bias, the mechanisms explaining how social media literacy empowers adolescents and
+develops among them in regards of the positivity bias are described below. Several
+testable predictions follow from the integration of the literature that may be useful for
+future research.
+
+
+Social media literacy and the empowerment process
+Walther et al. (2015) noticed that users who exclusively received online positive informa­
+tion about another user were more likely to idealize this user. Festinger (1954) adds that
+exposure to idealization is typically followed by social comparison processes. Such
+upward comparisons result in either self-improvement motivations or negative self-
+effect. Self-improvement motivations typically occur for people who strongly feel in
+control over their personal outcomes (Buunk et al., 1990). As these people believe they
+can improve themselves and/or avoid failures, upward comparisons are not threatening
+for their self-views. Instead comparisons are very likely to be experienced as inspiring
+(Buunk et al., 1990; Buunk & Gibbons, 2007).
+   As feeling in control over one’s social media experiences is characteristic for social
+media literate users, the SMILE-model (assumption 1) argues that social media literacy
+determines which outcomes will occur resulting from comparison processes. Particularly,
+social media literate users are expected to be able to use the positively biased content as
+a source of inspiration and may find a healthy dose of goodwill to improve oneself when
+330      L. SCHREURS AND L. VANDENBOSCH
+
+
+using social media (Meier & Schäfer, 2018). Consequently, upward comparison processes
+with positively biased presented users merely result in positive affect (Buunk & Gibbons,
+2007) which maximizes the positive experience of exposure. Moderate literate social
+media users are specifically expected to try to adaptively control negative emotions,
+such as jealousy and envy, resulting from upward comparison processes. For the other
+least literate users, the comparisons may negatively affect their self-views as they are less
+in control of their social media experiences.
+   Furthermore, social media literate adolescents will progress their own positively biased
+self-posting behaviors differently. Self-perception theory postulates that self-effects occur
+because people derive particular self-concepts from prior behavior (Bem, 1972). If the
+derived self-concepts are in line with (or only mildly deviate from) their current self-
+concept, individuals are theorized to maximize the strength of the consistency between
+those two self-concepts. This can be done by adapting their subsequent behaviors,
+cognitions and beliefs (Valkenburg, 2017). If the derived self-concepts deviate from
+one’s true self-concept, a discrepancy will occur and trigger adverse consequences,
+such as a lowered self-esteem and depressed feelings (Higgins, 1987).
+   In general, the literature has shown that adolescents who do not act true to themselves
+in their day-to-day interactions are much more likely to experience harmful identity
+discrepancies (Harter, 1997) and that such problems are more severe for adolescents
+who are not able to adaptively control their behaviors and emotions (Harter, Marold,
+Whitesell, & Cobbs, 1996). Similarly, social media research has found that young adults
+who are experiencing emotional instability – and are thus unable to adaptively control
+emotions – are more frequently engaging in online false self-presentations (Michikyan,
+Dennis, & Subrahmanyam, 2015) which may result in negative well-being consequences
+(Gil-Or, Levi-Belz, & Turel, 2015).
+   According to this literature, the social media literacy definition (see section) and the
+SMILE-model, social media literate adolescents are expected to post a “best version” of
+themselves online, but this version will still be in line with whom they truly are. As a result,
+they feel even more positive about themselves over time (see the research of Reinecke
+and Trepte (2014) for initial support on this reasoning). The reverse can be expected for
+less social media literate adolescents as they could easily experience an identity discre­
+pancy because their positively biased content does not reflect their true selves. As these
+less literate persons are also not able to adaptively control the negative emotions that
+come along with the identity discrepancies, negative well-being outcomes are triggered.
+   Although social media literate adolescents may also post (highly) biased content, the
+SMILE-model expects this is rather unlikely (assumption 2). As social media literate users
+know how extremely biased self-presentations could negatively affect oneself, they
+proficiently construct a self-presentation which reflects for the most part their natural
+self. These self-presentations can to some extent be a reflection of a better version of the
+self in order to boost positive affect and self-confidence.
+   Also, posting positively biased content online inherently involves sharing personal
+information. In this context, “the nature and the publicity of disclosed personal informa­
+tion has to be co-interpreted as a psychological trade-off between ‘the need to be seen’
+and the awareness of possible privacy issues” (Trepte & Reinecke, 2011, p. 185). In other
+words, social media literate users know that they will not be able to get all benefits out of
+their social media experiences when posting too little positive information whereas
+                                                       JOURNAL OF CHILDREN AND MEDIA        331
+
+
+posting too much information brings along enormous privacy risks. Therefore, social
+media literate users are capable of pondering the opportunities and risks of positive
+online self-presentations and to make use of different strategies to achieve a precarious
+balance in this regard. These users probably avoid sharing information that includes
+privacy risks (e.g., leaving for a holiday) and rather share indirect personal details (e.g.,
+disclosing that one is passionate about travelling) (Trepte & Reinecke, 2011).
+   Moreover, social media literate adolescents may differently select social media content.
+By limiting their connections to strangers, these adolescents protect themselves in a first
+step from potential negative effects of positively biased content. Research has suggested
+that positive posts from strangers are especially likely to trigger adverse upward compar­
+ison processes (de Vries, Möller, Wieringa, Eigenraam, & Hamelink, 2018). Yet, avoiding
+content of strangers will not be sufficient to avoid exposure to the positivity bias, as a vast
+number of social media users present themselves in a highly positive light (e.g., Yau &
+Reich, 2018). As social media literate adolescents understand how such imagery can
+negatively affect them, they are expected to make the conscious decision to spend little
+attention on such posts (Vraga et al., 2016).
+
+
+Social media literacy and the development process
+Contemporary literature on the positivity bias has highly neglected how literacy regarding
+this bias is developed. The SMILE-model’s assumptions and the literature on interactions
+about social media topics may help to understand how such processes develop. This
+literature suggests that adolescents discuss the positivity bias with different agents in
+their environment (Fant, Schreurs, & Vandenbosch, 2019; Yau & Reich, 2018), yet research
+has mainly illustrated the existence of peer discussion about this topic. This gap is
+somewhat surprising as researchers have explicitly recommended parents and educators
+to discuss the positivity bias with children (van Driel, Pouwels, Beyens, Keijsers, &
+Valkenburg, 2019). The SMILE-model highlights that not all agents have the same poten­
+tial to mediate social media literacy (assumption 5).
+    Peers seem the most promising agents as they, more than any other agent, function as
+experts in this area (Yau & Reich, 2018). Research has indicated that adolescents are highly
+aware of other peers struggling with exposure to and the self-posting of positively biased
+content (Verlinden, Schreurs, & Vandenbosch, 2019). Moreover, some peers are seen as
+highly knowledgeable in this area and are even explicitly consulted for advice on social
+media behavior. Also, adolescents indicate to share emotions that have been triggered by
+the positivity bias with peers and thus it can be expected they learn emotion regulation
+strategies from their peers (Verlinden et al., 2019). Yet, peers’ potential as a successful
+mediation agent depends on the accuracy and correctness of their own social media
+literacy.
+    In this sense, the participatory mediation messages of educators are more likely to
+transfer correct and accurate information on positivity bias effects. The study of McLean,
+Paxton, and Wertheim (2016) indeed showed that an educator-based intervention on
+positively biased appearance-related content increased cognitive media literacy skills.
+However, this type of mediation is expected to be rather short-term in nature according to
+the SMILE model.
+332      L. SCHREURS AND L. VANDENBOSCH
+
+
+    In one of the rare studies on parents (Fant et al., 2019), only a small number of the
+adolescent interviewees indicated that their parents actively taught them positivity bias
+knowledge. Presumably, that is due to parents’ limited literacy in this area. Parents are less
+likely to invest in online impression management behavior as such behavior is less
+prevalent among older people (e.g., Dhir, Pallesen, Torsheim, & Andreassen, 2016).
+Sharenting research also showed that parents have limited positivity bias understandings.
+Parents often post child-related content which is found embarrassing by the child and
+even harmful for his/her online identity (Verswijvel, Walrave, Hardies, & Heirman, 2019).
+    Consequently, children may strongly feel they are more expert in this area than their
+parents and therefore, it seems much more likely that children teach their parents
+positivity bias knowledge. Such processes are often referred to in the literature as the
+child-effect (Van den Bulck et al., 2016). In support of this, research shows that children
+sometimes instruct their parents on the appropriateness of social media posts (Fant et al.,
+2019). Such child mediation messages may result in novel cognitive structures among
+parents. Subsequently, the increased literacy may make parents more insightful in their
+children’s positively biased content and as a result, they are more likely to stimulate social
+media literacy among their children. This example illustrates how reciprocal processes
+could take place in the development of social media literacy (assumption 3).
+    Moreover, the SMILE model expects that this mediational impact will be dependent on
+the interaction with other agents (assumption 4). Indeed, research shows adolescents
+frequently discuss the positivity bias with peers (Yau & Reich, 2018) and, to a lesser extent,
+with educators. The congruence between the different discussions will determine the
+extent to which literacy will be developed. For instance, the impact of an active classroom
+discussion about how to control jealousy when being exposed to positively biased
+Instagram images may be heightened/reduced when an adolescent encounters similar/
+opposite messages coming from valued peers.
+
+
+Directions for future research
+Given the ubiquity of social media (Anderson & Jiang, 2018), it is surprising that no
+attempts were made to formulate a role for social media literacy in users’ well-being.
+The SMILE-model, as a first guiding framework for social media literacy, addresses such
+fundamental shortcomings in media literacy and media effects literature by modeling an
+empowering and a development process of social media literacy. As the model connects
+two subfields in communication studies that have seldom been related before, it may
+contribute to the fast-developing field of social media literacy in several important ways.
+   Particularly, future research drawing on the SMILE-model will reveal whether the
+inclusion of social media literacy increases the power of the social media/well-being
+model to explain negative and positive outcomes among users. Moreover, such research
+will tackle the underexplored, mutually influencing mediation processes of several agents
+in the development of social media literacy. It will be disclosed whether a dynamic and
+interactive approach towards multiple agents allows for a more detailed understanding of
+the complex learning of social media literacy.
+   Importantly, research that addresses these novel matters should consider different
+research designs. Qualitative research could, for instance, provide some first insights
+about the present cognitive and affective structures when young users engage in different
+                                                          JOURNAL OF CHILDREN AND MEDIA       333
+
+
+social media areas and how they develop such structures. Such insights will be particularly
+helpful to construct new measurement instruments for social media literacy and social
+media behaviors which are needed in survey research. Other research designs may also
+prove useful to gain a deeper understanding of several assumptions of the framework. For
+instance, eye-tracking research could discover the amount of attention social media literate
+users pay to harmful vs beneficial social media content (i.e., assumption 2).
+    Notably, some groups of people may be more likely than others to develop social
+media literacy and to use these structures when interacting with social media. For
+example, a strong need for cognition (Cacioppo & Petty, 1982) would facilitate the
+development of cognitive structures when receiving mediation messages. Future
+research should carefully consider such important individual differences when exploring
+the model assumptions.
+    Finally, the field of traditional media literacy has typically been developed for young
+media users as researchers but also policymakers and the public have been concerned
+about the significant role of mass media in their development (Potter, 2020). The same is
+likely to happen for the social media literacy field as children and adolescents are the most
+intense consumers of social media (Anderson & Jiang, 2018) and social media are at the
+heart of contemporary youth development. Consequently, social media seem to affect
+these age groups the most profoundly (Kleemans et al., 2018; van Driel et al., 2019). In this
+respect, the SMILE-model especially serves as a theoretical backdrop for scholars who are
+engaged in the study of media in the lives of children and adolescents. Specifically, we
+hope that the SMILE-model will spark research lines among these scholars that examine
+how social media literacy can enrich the lives of these developmental groups.
+    One important research line inspired by the SMILE-model concerns the rethinking of
+(social) media literacy interventions. All too often, such interventions are implemented
+without a previous understanding of the competencies needed to counter specific (social)
+media effects. Such an understanding is the first necessary step to develop interventions
+which adequately target the appropriate competencies among young social media users.
+
+
+Disclosure statement
+The authors declare that they have no conflict of interest.
+
+
+Funding
+This work was supported by the Research Foundation Flanders (FWO-Vlaanderen) under Grant
+11D3119N.
+
+
+Notes on contributor
+Lara Schreurs is a PhD fellow of the Research Foundation Flanders (FWO) at the Leuven School for
+Mass Communication Research (KU Leuven) under supervision of professor Laura Vandenbosch. Her
+research interests concern the relations between adolescents’ and young adults’ (social) media use
+and well-being. In her PhD-project, Lara specifically focuses on the role of social media literacy
+within the social media-effects literature.
+   Laura Vandenbosch is an assistant professor at the School for Mass Communication Research
+(BOF-ZAP research professorship grant), KU Leuven. The relations between media and well-being
+334       L. SCHREURS AND L. VANDENBOSCH
+
+
+are the core subject of her research, leading to international publications in several fields including
+developmental psychology, sexology, body image, social relationships and communication theory.
+
+
+
+References
+Anderson, M., & Jiang, J. (2018, May 31). Teens, social media and technology, 2018. Pew Research
+   Center. http://www.pewinternet.org/2018/05/31/teens-social-media-technology-2018/
+Aufderheide, P. (1993). Media literacy: A report of the national leadership conference on media literacy.
+   Aspen, CO: Aspen Institute.
+Austin, E. W., & Pinkleton, B. E. (2016). The viability of media literacy in reducing the influence of
+   misleading media messages on young people’s decision-making concerning alcohol, tobacco,
+   and other substances. Current Addiction Reports, 3, 175–181.
+Bandura, A. (2001). Social cognitive theory of mass communication. Media Psychology, 3, 265–299.
+Bem, D. J. (1972). Self-perception theory. In L. Berkowitz (Ed.), Advances in experimental social
+   psychology (pp. 1–62). New York, NY: Academic Press.
+Biesta, G. (2006). Beyond learning: Democratic education for a human future. Boulder: Paradigm
+   Publishers.
+Boyd, D. M., & Ellison, N. B. (2008). Social network sites: Definition, history, and scholarship. Journal of
+   Computer-Mediated Communication, 13, 210–230.
+Broderick, C. B. (1993). Understanding family process: Basics of family systems theory. Thousand Oaks,
+   CA: Sage Publications, Inc.
+Bronfenbrenner, U., & Morris, P. A. (2006). The bioecological model of human development. In
+   W. Damon & R. M. Lerner (Eds.), Handbook of child psychology: Theoretical models of human
+   development (pp. 793–828). New York, NY: Wiley.
+Buunk, A. P., & Gibbons, F. X. (2007). Social comparison: The end of a theory and the emergence of a
+   field. Organizational Behavior and Human Decision Processes, 102, 3–21.
+Buunk, B. P., Collins, R. L., Taylor, S. E., VanYperen, N. W., & Dakof, G. A. (1990). The affective
+   consequences of social comparison: Either direction has its ups and downs. Journal of
+   Personality and Social Psychology, 59, 1238–1249.
+Byrne, S. (2009). Media literacy interventions: What makes them boom or boomerang?
+   Communication Education, 58, 1–14.
+Cacioppo, J. T., & Petty, R. E. (1982). The need for cognition. Journal of Personality and Social
+   Psychology, 42, 116–131.
+Chakroff, J. L., & Nathanson, A. I. (2011). Parent and school interventions: Mediation and media
+   literacy. In S. L. Calvert & B. J. R. D. Wilson (Eds.), The handbook of children, media, and development
+   (pp. 552–576). Malden: Wiley-blackwell.
+Correa, T., Straubhaar, J. D., Chen, W., & Spence, J. (2015). Brokering new technologies: The role of
+   children in their parents’ usage of the internet. New Media & Society, 17, 483–500.
+Cracco, E., Goossens, L., & Braet, C. (2017). Emotion regulation across childhood and adolescence:
+   Evidence for a maladaptive shift in adolescence. European Child & Adolescent Psychiatry, 26,
+   909–921.
+Daneels, R., & Vanwynsberghe, H. (2017). Mediating social media use: Connecting parents’ media­
+   tion strategies and social media literacy. Cyberpsychology: Journal of Psychosocial Research on
+   Cyberspace, 11. doi:10.5817/CP2017-3-5
+de Vries, D. A., Möller, A. M., Wieringa, M. S., Eigenraam, A. W., & Hamelink, K. (2018). Social
+   comparison as the thief of joy: Emotional consequences of viewing strangers’ Instagram posts.
+   Media Psychology, 21, 222–245.
+Deci, E. L., & Ryan, R. M. (1985). Intrinsic motivation and self-determination in human behavior.
+   New York: Plenum.
+Dhir, A., Pallesen, S., Torsheim, T., & Andreassen, C. S. (2016). Do age and gender differences exist in
+   selfie-related behaviours? Computers in Human Behavior, 63, 549–555.
+                                                            JOURNAL OF CHILDREN AND MEDIA            335
+
+
+Fant, J., Schreurs, L., & Vandenbosch, L. (2019). Familiedynamieken in sociale mediawijsheid: Een
+   onderzoek naar de rol van de familiecontext in de ontwikkeling van sociale mediawijsheid bij
+   adolescenten (Unpublished master’s thesis). KU Leuven, Belgium.
+Festinger, L. (1954). A theory of social comparison processes. Human Relations, 7, 117–140.
+Fredrickson, B. L., & Joiner, T. (2002). Positive emotions trigger upward spirals toward emotional
+   well-Being. Psychological Science, 13, 172–175.
+Gill, R. (2012). Media, Empowerment and the “sexualization of culture” debates. Sex Roles, 66,
+   736–745.
+Gil-Or, O., Levi-Belz, Y., & Turel, O. (2015). The “Facebook-self”: Characteristics and psychological
+   predictors of false self-presentation on Facebook. Frontiers in Psychology, 6, 1–10.
+Goffman, E. (1959). The presentation of self in everyday life. New York, NY: Anchor.
+Grusec, J. E., & Hastings, P. D. (2015). Handbook of socialization: Theory and research. New York,
+   London: The Guilford Press.
+Harter, S. (1997). The personal self in social context: Barriers to authenticity. In R. D. Ashmore &
+   L. Jussim (Eds.), Self and Identity: Fundamental issues (pp. 81–105). New York: Oxford University
+   Press.
+Harter, S., Marold, D. B., Whitesell, N. R., & Cobbs, G. (1996). A model of the effects of perceived
+   parent and peer support on adolescent false self behavior. Child Development, 67, 360–374.
+Higgins, E. T. (1987). Self-discrepancy: A theory relating self and affect. Psychological Review, 94,
+   319–340.
+Hobbs, R. (2011). The state of media literacy: A response to Potter. Journal of Broadcasting &
+   Electronic Media, 55, 601–604.
+Jeong, S., Cho, H., & Hwang, Y. (2012). Media literacy interventions: A meta-analytic review. Journal of
+   Communication, 62, 454–472.
+Klapper, J. T. (1960). The effects of mass communication. New York: Free Press.
+Kleemans, M., Daalmans, S., Carbaat, I., & Anschütz, D. (2018). Picture perfect: The direct effect of
+   manipulated Instagram photos on body image in adolescent girls. Media Psychology, 21,
+   93–110.
+Lang, A. (2017). Limited capacity model of motivated mediated message processing. In C. Hoffner &
+   L. van Zoonen (Eds.), The international encyclopedia of media effects (pp. 1–9). Malden, MA: John
+   Wiley & Sons, Inc.
+Livingstone, S. (2014). Developing social media literacy: How children learn to interpret risky
+   opportunities on social network sites. Communications, 39, 283–303.
+Lup, K., Trub, L., & Rosenthal, L. (2015). Instagram #Instasad?: Exploring associations among
+   Instagram use, depressive symptoms, negative social comparison, and strangers Followed.
+   Cyberpsychology, Behavior and Social Networking, 18, 247–252.
+McLean, S. A., Paxton, S. J., & Wertheim, E. H. (2016). Does media literacy mitigate risk for reduced
+   body satisfaction following exposure to thin-ideal media? Journal of Youth and Adolescents, 45,
+   1678–1695.
+Meier, A., & Schäfer, S. (2018). The positive side of social comparison on social network sites: How
+   envy can drive inspiration on Instagram. Cyberpsychology, Behavior and Social Networking, 21,
+   411–417.
+Michikyan, Dennis, & Subrahmanyam. (2015). Can you guess who I am? Real, ideal, and false
+   self-presentation on Facebook among emerging adults. Emerging Adulthood, 3, 55–64.
+Morris, A. S., Silk, J. S., Steinberg, L., Myers, S. S., & Robinson, L. R. (2007). The role of the family
+   context in the development of emotion regulation. Social Development, 16, 361–388.
+Palmer, C. A., Ramsey, M. A., Morey, J. N., & Gentzler, A. L. (2016). How do people share their positive
+   events? Individual differences in capitalizing, bragging, and mass-sharing. Journal of Individual
+   Differences, 37, 250–259.
+Perloff, R. M. (2014). Social media effects on young women’s body image concerns: Theoretical
+   perspectives and an agenda for research. Sex Roles, 71, 363–377.
+Potter, W. J. (2004). Theory of media literacy: A cognitive approach. Thousand Oaks, CA: Sage.
+Potter, W. J. (2020). Media literacy: Ninth edition. Thousand Oaks, CA: Sage.
+336        L. SCHREURS AND L. VANDENBOSCH
+
+
+Reinecke, L., & Trepte, S. (2014). Authenticity and well-being on social network sites: A two-wave
+   longitudinal study on the effects of online authenticity and the positivity bias in SNS
+   communication. Computers in Human Behavior, 30, 95–102.
+Roskos-Ewoldsen, D. R., Roskos-Ewoldsen, B., & Dillman Carpentier, F. R. (2002). Media priming:
+   A synthesis. In J. Bryant & D. Zillman (Eds.), Media effects: Advances in theory and research (pp.
+   97–120). London: Lawrence Erlbaum Associates, Publishers.
+Sheldon, P., & Bryant, K. (2016). Instagram: Motives for its use and relationship to narcissism and
+   contextual age. Computers in Human Behavior, 58, 89–97.
+Subrahmanyam, K., & Šmahel, D. (2011). Digital youth: The role of media in development. New York:
+   Springer.
+Tamplin, N., Mclean, S. A., & Paxton, S. J. (2018). Social media literacy protects against the negative
+   impact of exposure to appearance ideal social media images in young adult women but not men.
+   Body Image, 26, 29–37.
+Trepte, S., & Reinecke, L. (2011). Privacy online: Perspectives on privacy and self-disclosure in the social
+   web. New York: Springer.
+Tsitsika, A. K., Tzavela, E. C., Janikian, M., Ólafsson, K., Iordache, A., Schoenmakers, T. M., . . .
+   Richardson, C. (2014). Online social networking in adolescence: Patterns of use in six European
+   countries and links with psychosocial functioning. Journal of Adolescent Health, 55, 141–147.
+Tugade, M. M., & Fredrickson, B. L. (2007). Regulation of positive emotions: Emotion regulation
+   strategies that promote resilience. Journal of Happiness Studies, 8, 311–333.
+Vahedi, Z., Sibalis, A., & Sutherland, J. E. (2018). Are media literacy interventions effective at changing
+   attitudes and intentions towards risky health behaviors in adolescents? A meta-analytic review.
+   Journal of Adolescence, 67, 140–152.
+Valkenburg, P. M. (2017). Understanding self-effects in social media. Human Communication
+   Research, 43, 477–490.
+Valkenburg, P. M., & Peter, J. (2013). The differential susceptibility to media effects model. Journal of
+   Communication, 63, 221–243.
+Valkenburg, P. M., Piotrowski, J. T., Hermanns, J., & de Leeuw, R. (2013). Developing and validating
+   the perceived parental media mediation scale: A self-determination perspective. Human
+   Communication Research, 39, 445–469.
+Van den Bulck, J., Custers, K., & Nelissen, S. (2016). The child-effect in the new media environment:
+   Challenges and opportunities for communication research. Journal of Children and Media, 10,
+   30–38.
+van Driel, I. I., Pouwels, J. L., Beyens, I., Keijsers, L., & Valkenburg, P. M. (2019). ‘Posten, scrollen, appen
+   en snappen’: Jongeren (14–15 jaar) en social media in 2019, Center for Research on Children,
+   Adolescents, and the Media (CcaM). Universiteit van Amsterdam.
+Vandenbosch, L. (2018). Sexual socialization. In T. Shackelford & V. Weekes-Shackelford (Eds.),
+   Encyclopedia of evolutionary psychological science (pp. 1–7). Springer, Cham.
+Vanwynsberghe, H. (2014). How users balance opportunity and risk: A conceptual exploration of social
+   media literacy and measurement. Ghent, Belgium: Ghent University. Faculty of Political and Social
+   Sciences.
+Verlinden, E., Schreurs, L., & Vandenbosch, L. (2019). Schone schijn op sociale media: Een verken­
+   nend onderzoek naar de constructie van een positief vertekend beeld op sociale media en naar
+   de ontwikkeling van sociale mediawijsheid bij adolescenten (Unpublished master’s thesis). KU
+   Leuven, Belgium.
+Verswijvel, K., Walrave, M., Hardies, K., & Heirman, W. (2019). Sharenting, is it a good or a bad thing?
+   Understanding how adolescents think and feel about sharenting on social network sites. Children
+   and Youth Services Review, 104, 1–10.
+Vraga, E., Bode, L., & Troller-Renfree, S. (2016). Beyond self-reports: Using eye tracking to measure
+   topic and style differences in attention to social media content. Communication Methods and
+   Measures, 10, 149–164.
+Walther, J. B., Van Der Heide, B., Ramirez, A., Burgoon, J. K., & Pena, J. (2015). Interpersonal and
+   hyperpersonal dimensions of computer-mediated communication. In S. S. Sundar (Ed.), The
+                                                           JOURNAL OF CHILDREN AND MEDIA          337
+
+
+   handbook of the psychology of communication technology (pp. 3–23). Chichester, UK: John Wiley &
+   Sons.
+Walther, J. B. (2017). The merger of mass and interpersonal communication via new media:
+   Integrating metaconstructs. Human Communication Research, 43, 559–572.
+Wright, P. J. (2011). Mass media effects on youth sexual behavior: Assessing the claim for causality.
+   Annals of the International Communication Association, 35, 343–385. doi: 10.1080/
+   23808985.2011.11679121
+Xie, X., Gai, X., & Zhou, Y. (2019). A meta-analysis of media literacy interventions for deviant
+   behaviors. Computers & Education, 139, 146–156.
+Yau, J. C., & Reich, S. M. (2018). “It’s just a lot of work”: Adolescents’ self-presentation norms and
+   practices on Facebook and Instagram. Journal of Research on Adolescence, 1–14. doi:10.1111/
+   jora.12376
+

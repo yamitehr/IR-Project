@@ -1,0 +1,784 @@
+JISTaP http://www.jistap.org                                                                                         Research Paper
+Journal of Information Science Theory and Practice                                                     J Inf Sci Theory Pract 7(2): 40-53, 2019
+eISSN : 2287-4577 pISSN : 2287-9099                                                                    https://doi.org/10.1633/JISTaP.2019.7.2.4
+
+
+
+
+Fake News in Social Media: Bad Algorithms or Biased Users?
+
+
+
+Franziska Zimmer                                                        Katrin Scheibe
+Department of Information Science, Heinrich Heine University,           Department of Information Science, Heinrich Heine University,
+Düsseldorf, Germany                                                     Düsseldorf, Germany
+E-mail: franziska.zimmer@hhu.de                                         E-mail: katrin.scheibe@hhu.de
+
+Mechtild Stock                                                          Wolfgang G. Stock*
+Stock-Kerpen, Kerpen, Germany                                           Department of Information Science, Heinrich Heine University,
+E-mail: mechtildstock@gmail.com                                         Düsseldorf, Germany
+                                                                        E-mail: stock@phil.hhu.de
+
+
+
+
+ABSTRACT
+Although fake news has been present in human history at any time, nowadays, with social media, deceptive information has a
+stronger effect on society than before. This article answers two research questions, namely (1) Is the dissemination of fake news
+supported by machines through the automatic construction of filter bubbles, and (2) Are echo chambers of fake news man-
+made, and if yes, what are the information behavior patterns of those individuals reacting to fake news? We discuss the role of
+filter bubbles by analyzing social media’s ranking and results’ presentation algorithms. To understand the roles of individuals in
+the process of making and cultivating echo chambers, we empirically study the effects of fake news on the information behavior
+of the audience, while working with a case study, applying quantitative and qualitative content analysis of online comments
+and replies (on a blog and on Reddit). Indeed, we found hints on filter bubbles; however, they are fed by the users’ information
+behavior and only amplify users’ behavioral patterns. Reading fake news and eventually drafting a comment or a reply may be the
+result of users’ selective exposure to information leading to a confirmation bias; i.e. users prefer news (including fake news) fitting
+their pre-existing opinions. However, it is not possible to explain all information behavior patterns following fake news with the
+theory of selective exposure, but with a variety of further individual cognitive structures, such as non-argumentative or off-topic
+behavior, denial, moral outrage, meta-comments, insults, satire, and creation of a new rumor.
+Keywords: fake news, truth, information behavior, social media, filter bubble, echo chamber
+
+
+
+ Open Access
+Received date: April 18, 2019                                           All JISTaP content is Open Access, meaning it is accessible online to everyone,
+Accepted date: June 05, 2019                                            without fee and authors’ permission. All JISTaP content is published and
+                                                                        distributed under the terms of the Creative Commons Attribution License
+*Corresponding Author: Wolfgang G. Stock                                (https://creativecommons.org/licenses/by/4.0/). Under this license, authors
+Professor                                                               reserve the copyright for their content; however, they permit anyone to
+Department of Information Science, Heinrich Heine University,           unrestrictedly use, distribute, and reproduce the content in any medium as far
+Universitätsstraße 1 D-40225 Düsseldorf, Germany                        as the original authors and source are cited. For any reuse, redistribution, or
+E-mail: stock@phil.hhu.de                                               reproduction of a work, users must clarify the license terms under which the
+                                                                        work was produced.
+
+
+
+© Franziska Zimmer, Katrin Scheibe, Mechtild Stock , Wolfgang G. Stock, 2019
+                                                                                     Fake News in Social Media: Bad Algorithms or Biased Users?
+
+
+
+
+1. INTRODUCTION                                                            Roth, & Pirolli, 2012) refer to “echo chambers,” which are loosely
+                                                                           connected clusters of users with similar ideologies or interests,
+   It is a truism that false propositions or even deceptions               whose members notice and share only information appropriate
+reach their recipients every day and everywhere. Fake news on              to their common interests. The information behavior of the user
+online press sites and on social media is no exception. However,           in question in combination with other users’ behaviors (e.g.,
+deceptive information “has had dramatic effect on our society              commenting on posts or replying to comments) exhibits special
+in recent years” (Volkova & Jang, 2018, p. 575). Deceptions and            patterns which may lead to the echo chamber effect (Bruns,
+fake news may possibly survive very well in environments of                2017).
+all kinds of social media, be it weblogs, microblogging services,
+social live streaming platforms, image and video sharing
+services, or social networking services. “Despite optimistic               2. RESEARCH OUTLINE
+talk about ‘collective intelligence,’ the Web has helped create an
+echo chamber where misinformation thrives. Indeed, the viral                  First of all, the main concepts must be defined. Fake news is
+spread of hoaxes, conspiracy theories, and other false or baseless         information including “phony news stories maliciously spread
+information online is one of the most disturbing social trends             by outlets that mimic legitimate news sources” (Torres, Gerhart,
+of the early 21st century” (Quattrociocchi, 2017, p. 60), leading          & Negahban, 2018, p. 3977); it is misinformation (transmitting
+even to the “emergence of a post-truth world” (Lewandowsky,                untrue propositions, nonconsidering the cognitive state of
+Ecker, & Cook, 2017, p. 357). Especially, such historically                the sender) and disinformation (again, transmitting untrue
+relevant events as the UK’s Brexit vote (Bastos, Mercea, &                 propositions, but now consciously by the sender) (Shin, Jian,
+Baronchelli, 2018), the 2016 presidential election in the United           Driscoll, & Bar, 2018). Deception is a kind of disinformation
+States (Allcott & Gentskow, 2017), and the excessive use of the            which brings an advantage to the sender. Other authors compare
+term “fake news” by Donald Trump has led to discussions about              fake news to satire and parody, fabrication, manipulation,
+the role of fake news in society. The related term “post-truth”            and propaganda (Tandoc Jr., Lim, & Ling, 2018). The users’
+was named word of the year for 2016 by the Oxford Dictionaries             appraisement of a news story as fake or non-fake depends on
+(2016).                                                                    the content of the story and—a little bit more—on the source of
+   In The Guardian, we read “social media filter bubbles and               the transmitted information (Zimmer & Reich, 2018) as well as
+algorithms influence the election” in Great Britain (Hern, 2017).          on the presentation format (Kim & Dennis, 2018).
+Similarly, for the Observer, “the problem isn’t fake news, it’s bad           This paper follows the well-known definition of social media
+algorithms” (Holmes, 2016). The University of Amsterdam’s                  by Kaplan and Haenlein (2010, p. 61): “Social Media is a group
+Master of Media blog addresses filter bubbles as algorithms                of Internet-based applications that build on the ideological
+customizing our access to information (Mans, 2016). These                  and technological foundations of Web 2.0, and that allow the
+three examples clearly demonstrate what the cause of fake news             creation and exchange of User Generated Content.” Social Media
+dissemination is: It is bad algorithms. Nevertheless, one may find         includes, among other systems, weblogs, social networking
+divergent opinions in the popular press. The New Statesman                 services (such as Facebook), news aggregators (such as Reddit),
+claims, “Forget fake news of Facebook: the real filter bubble is           knowledge bases (such as Wikipedia), sharing services for
+you” (Self, 2016). Now, the cause of fake news distribution is the         videos and images (such as YouTube and Instagram), social
+misleading information behavior of individual people, i.e. biased          live streaming services (such as Periscope), and services for
+users. As filter bubbles and echo chambers are often discussed             knowledge exchange (such as Twitter) (Linde & Stock, 2011, pp.
+in the press Bruns (2019) asks, “are filter bubbles real,” and are         259ff.). In contrast to such media as newspapers, radio, or TV,
+they overstated?                                                           in social media there is no formal information dissemination
+   “Bad algorithms” are related to “filter bubbles,” being                 institution (as, say, The New York Times, CBS Radio, or NBC);
+applications of personalized information retrieval as well as              thus, disintermediation happens. All social media are not
+of recommender systems. They lead the users to receive only                immune from fake news (Zimmer, Scheibe, Stock, & Stock,
+an excerpt of (maybe false) propositions instead of the entire             2019).
+spectrum of appropriate information. A source for concrete                    A user of Internet services acts as consumer (only receiving
+algorithmic recommendations is the user’s former information               content), producer (producing and distributing content),
+behavior, which is recognized by the machine. On the other                 and participant (liking or sharing content) on all kinds of
+hand, “bad user behavior” or “biased users” (Vydiswaran, Zhai,             online media (Zimmer, Scheibe, & Stock, 2018). In classical
+
+
+                                                                      41                                                 http://www.jistap.org
+JISTaP Vol.7 No.2, 40-53
+
+
+
+
+communication science one speaks of the audience of media;                opinions” (Bessi et al., 2015, p. 1). Prima facie, this sounds great.
+nowadays, especially on social media, audience members are                However, if we take a look at the other side of the coin, “confusion
+called “users.” Algorithms are sets of rules defining sequences of        about causation may encourage speculations, rumors, and
+operations; they can be implemented as computer programs in               mistrust” (Bessi et al., 2015, p. 1). The disappearance of
+computational machinery. In this article, the term “algorithm”            intermediation has not only “fostered a space for direct meetings
+is only used in the context of computer programs running on               in a sort of online Habermasian public sphere” (Törnberg, 2018,
+“machines.”                                                               p. 17), but has also fostered misuse of social media through the
+    Filter bubbles and echo chambers are metaphorical                     publication of fake news by biased users. Habermas himself was
+expressions. For Pariser (2011), a filter bubble is a “unique             always pessimistic about social media (Linde & Stock, 2011,
+universe of information for each of us.” Pariser lists three              p. 275), as for him weblogs play “a parasitical role of online
+characteristics of the relationship between users and filter              communication” (Habermas, 2006, p. 423). The disappearance
+bubbles, namely (1) one is alone in the bubble, (2) the bubble            of intermediation also supports the parasitical roles of fake news
+is invisible, and (3) the user never chose to enter the bubble.           in social media.
+We will critically question Pariser’s characteristics. For Dubois
+and Blank (2018, p. 3) a filter bubble means “algorithmic
+filtering which personalizes content presented on social media.”          3. RESEARCH MODEL
+Davies (2018, p. 637) defines filter bubbles as “socio-technical
+recursion,” i.e. as an interplay between technologies (as, for              The different estimations on the causes of fake news
+instance, search engines or social media services) and the                dissemination in social media directly lead to our central
+behavior of the users and their social relations.                         research question (RQ): Are echo chambers and filter bubbles of
+    An echo chamber describes “a situation where only certain             fake news man-made or produced by algorithms? To be more
+ideas, information and beliefs are shared” (Dubois & Blank,               precise:
+2018, p. 1). Echo chambers occur “when people with the same                 • RQ1: Is the dissemination of fake news supported by
+interests or views interact primarily with their group. They seek              machines through the automatic construction of filter
+and share information that both conforms to the norms of their                 bubbles, and if yes, how do such algorithms work?
+group and tends to reinforce existing beliefs” (Dubois & Blank,             • RQ2: Are echo chambers of fake news man-made, and if
+2018, p. 3). Users in echo chambers are on a media or content                  yes, what are the information behavior patterns of those
+“diet” (Case & Given, 2018, p. 116) or in “ideological isolation”              individuals reacting to fake news?
+(Flaxman, Goel, & Rao, 2016, p. 313) concerning a certain topic.
+Such isolation may result from selective exposure of information             In our research model (Fig. 1), RQ1 is located on the left-
+(Hyman & Sheatsley, 1947; Liao & Fu, 2013; Spohr, 2017) and               hand side and RQ2 on the right hand side. We start searching
+a confirmation bias (Vydiswaran, Zhai, Roth, & Pirolli, 2015;             for false propositions, i.e. fake news, and their dissemination
+Murungi, Yates, Purao, Yu, & Zhan, 2019). There are different             via social media channels. First, we are going to describe
+manifestations of selective information exposure; its strongest           processes leading to filter bubbles. A user will be informed of
+form is “that people prefer exposure to communications that               the existence of the false propositions via the push service of the
+agree with their pre-existing opinions” (Sears & Freedman,                social media platform. The selection of the documents which
+1967, p. 197). A special kind of selective exposure of information        are shown to the user is controlled by the service’s algorithms,
+is “partisan selective exposure,” which is related to political           which in turn are fed by the user’s information behavior
+affiliations and not—as general selective exposure—based on               patterns and their behavior on the specific service (e.g., forming
+ideologies or opinions (Kearney, 2019).                                   friendships, giving likes, etc.). It is possible that the interaction
+    Both basic concepts are closely related; however, an echo             between the algorithms and the former user behavior clips
+chamber is more related to human information behavior and                 only certain aspects of information content while neglecting all
+a filter bubble is more associated with algorithmic information           other content, thus forming a filter bubble. On Facebook, it is
+filtering and results’ presentation in online services.                   difficult to handle a bypass of the systems’ algorithms. However,
+    Social media documents are skipping the intermediation                on other social media services, for instance, weblogs, there is
+process; indeed, “social media enabled a direct path from                 a direct push of (fake) news to users. Following, we direct our
+producers to consumers of contents, i.e., disintermediation,              attention to echo chambers. The same user can comment on the
+changing the ways users get informed, debate, and shape their             false propositions or reply to comments about such fake news.
+
+
+                                                                     42
+                                                                                        Fake News in Social Media: Bad Algorithms or Biased Users?
+
+
+
+
+                                                                 False proposition
+                                                              (fake news, deception)
+
+
+                                                                Dissemination via
+                                                                   social media
+
+
+                                    Algorithms of                                                  Other user's
+                                 social media services                                        information behavior
+
+
+
+
+                                     Former user               Information behavior
+                                                                                               Comments/replies
+                                      behavior                       patterns
+
+
+                                                                       User
+
+                                      “Filter bubble”                                          “Echo chamber”
+
+                                    Fig. 1. Our research model: Filter bubble and echo chamber in social media.
+
+
+
+
+His or her cognitive information behavior patterns may lead to                RQ2, we empirically studied patterns of cognitive processes
+different reactions such as confirmation, denial, moral outrage,              of human information behavior in response to fake news. A
+and satire. In combination with other users’ information                      case study provides us with empirical data of user comments
+behavior (replying to the user’s comments or replies, liking                  and replies. Then, we describe the applied methods (case study
+them, sharing them, and so on) echo chambers of like-minded                   research and content analysis), the empirical findings, and the
+users may appear.                                                             data analysis. The final paragraph summarizes the main results,
+   As there are two different research questions, this study applies          confesses limitations, and gives an outlook on further research.
+different methods answering them. RQ1 will be evaluated by
+analyzing the sorting and presentation algorithms of social
+media by the example of Facebook. For RQ2 the authors                         4. KNOWLEDGE, INFORMATION, AND TRUTH
+performed empirical case study research applying content
+analysis of comments and replies on fake news distributed via                    If we want to distinguish between fake (misinformation and
+social media channels. The channels disseminating the fake                    disinformation) and non-fake (knowledge) we should know
+news were a weblog (The Political Insider) and two subreddits                 what knowledge, information, and truth are. The corresponding
+of the news aggregator Reddit, namely r/The_Donald and r/                     discipline is philosophy, more precisely epistemology. What
+worldpolitics. We choose the blog from The Political Insider as               follows is an excursus on the philosophical foundations of truth.
+it published the fake story on our case (“Hillary Clinton sold                The aim of this paragraph is to show that the definition of truth
+weapons to the Islamic State”) for the first time; the subreddit              and the assignment of truth values to empirical statements are
+r/The_Donald is clearly addressed to supporters of Donald                     anything but easy.
+Trump, while r/worldpolitics is a more liberal subreddit. As a                   Only a proposition is able to be true or false. In epistemology,
+result of this selection we were able to analyze comments from                one kind of knowledge (“knowing that” in contrast to “knowing
+different ideological orientations.                                           how”) is based on true propositions. Chisholm (1977, p. 138)
+   How is our article structured? In the next paragraph,                      defines knowledge:
+we define our basic terms. As fake news disseminate false                        h is known by S =df h is accepted by S; h is true; and h is
+propositions, it is necessary to discuss the concept of “truth” in            nondefectively evident for S,
+relation to knowledge and information as well as to mediated
+contexts. In order to analyze and answer RQ1 this paper                         where h is a proposition and S a subject; =df means “equals
+introduces relevance, pertinence, and ranking algorithms and                  by definition.” Hence, Chisholm demands that the subject S
+describes Facebook’s sorting algorithm in detail. To work on                  accepts the proposition h (as true), which is in fact the case
+
+
+                                                                       43                                                   http://www.jistap.org
+JISTaP Vol.7 No.2, 40-53
+
+
+
+
+(objectively speaking) and that this is so not merely through a            1971, p. 129). A person, who will make true propositions on
+happy coincidence, but precisely “nondefectively evident.” Only            a certain state of affairs in reality, must perceive (watch, hear,
+if all three determinants (acceptance, truth, and evidence) are            etc.) this part of reality personally, in real-time, and on site.
+present, knowledge can be seen as well and truly established.              In our context of journalism and social media, the person
+In the absence of one of these aspects, such a statement can               reporting on a state of affairs makes a true proposition (“true”
+still be communicated—as information—but it would be an                    for his self-consciousness) when he luckily is in the right spot
+error (when truth and evidence are absent), a supposition                  at the right time. In times of social media, the term “journalist”
+(if acceptance and evidence are given, but the truth value is              includes professional investigative journalism as well as citizen
+undecided) or a lie, fake, or deception (when none of the three            journalists reporting via channels like Facebook, Reddit, Twitter,
+aspects apply).                                                            or Periscope. For the audience of those journalists, there is no
+   Knowledge cannot be transmitted as such; it is in need of               chance to verify or to falsify the correspondence between the
+a sender, data to be transmitted, a channel, and a receiver.               read or heard proposition in the newspaper, the tweet, or the
+Information dynamically sets knowledge “into motion.”                      TV broadcast, and the part of reality, since they simply were
+Knowledge always has a truth claim. Is this also the case for              not there. This is the reason why the correspondence theory
+information, if information is what sets this knowledge in                 of truth only plays a minor role, if any, in the context of fake or
+motion? Is there something like true or false information (Stock           alternative news (Muñoz-Torres, 2012).
+& Stock, 2013, p. 39)? Apart from knowledge, there are further,               Accordance with objective reality and personal awareness is
+related forms of dealing with objects. If beliefs, conjectures,            the key factor of the theory of reflection. Whether the human
+or fakes are put into motion, are they not information?                    mind contains truth is not a question of theory, but of praxis. In
+“Information is not responsible for truth value,” Kuhlen                   praxis (working, any decision procedure), humans have to prove
+(1995, p. 41) points out. Buckland (1991, p. 50) remarks, “we              the truth of their thinking in their practical behavior (Pawlow,
+are unable to say confidently of anything that it could not be             1973). A sentence is true if its proposition works in practice. The
+information.” Maybe the proposition which is transmitted by                problem with the theory of reflection is that it is impossible to
+information is true or “contingently truthful” (Floridi, 2005);            consider all facts because they are always a product of selection.
+and many information scientists “will generally ignore any                 A problem of the media is that it sometimes takes a while to
+distinction between truth or falsity of information” (Case &               gather all facts to accurately use them in practice. By the time
+Given, 2018, p. 67). The task of checking the truth value of the           the facts were gathered the media momentum has passed.
+knowledge, rather, must be delegated to the receiving subject                 The coherence theory of truth declares that one statement
+S. She or he then decides whether the information retrieved                corresponds with another statement, or with the maximal
+represents knowledge, conjecture, or untruth. Therefore, it                coherent sum of opinions and accepted clauses of statements
+is terminologically very problematic to speak of “true/false               (Neurath, 1931). There cannot be an opposite statement within
+information,” as only propositions are truth bearers.                      an already accepted system of statements. If the statement can
+   Propositions, linguistically presented by declarative sentences,        be integrated, it is true, otherwise it is false. However, instead of
+can be true or false. Here, one basic philosophical question               rejecting the new statement, it is possible to change the whole
+arises. Even Pontius Pilate once famously asked “What is truth?”           system of statements to integrate the latest one into the system.
+to which Jesus responded—with silence. Truth is a relation                 The statements need to be logically derivable from each other.
+between a proposition and a reference object. There are different             The definition of the consensus theory of truth states that
+truth theories working with different reference objects, namely            truth is what is agreed upon by all people in a group. First, the
+reality, praxis, other propositions in the same system, acceptance         speakers need to be clear about what they are saying to ensure
+inside a community, and, finally, a person’s internal state.               everyone understands what they mean, they insinuate each
+   The classical approach to analyze truth is the correspondence           other’s truthfulness, and their words are accurate. A discourse
+theory (David, 1994) theorizing the relation between a                     needs to determine if the claim of the speaker is indeed to be
+proposition and a concrete fact in space and time. Although                accepted. Everyone needs to have the same level of influence
+there are similar definitions of correspondence already in                 to rule or to oppose (Habermas, 1972). Relying only on the
+Aristotle’s work, the canonical form of this truth theory                  consensus theory of truth is difficult and does not necessarily
+originates from the early twentieth century. Bertrand Russell              lead to the truth in the sense of the correspondence theory.
+states, “(t)hus a belief is true when there is a corresponding                Brentano (1930) describes the evidence theory of truth,
+fact and is false when there is no corresponding fact” (Russell,           “When I have evidence, I cannot err.” A judgement is true if
+
+
+                                                                      44
+                                                                                           Fake News in Social Media: Bad Algorithms or Biased Users?
+
+
+
+
+it expresses a simple quality of experience. Brentano adheres                    person, that is, if the person can understand the document and
+to the traditional view that there are two different ways for a                  apply the information gained.” Pertinence ranking presupposes
+judgement to be evident; either it is immediately, or it is evident              that the information system in question is able to identify the
+insofar as it is inferable from evident judgements by applications               concrete user who works with the system; it is always subject-
+of evident rules. But, evidence is a primitive notion; it cannot be              dependent personalized ranking (Stock & Stock, 2013, pp.
+defined, it is only experienceable, and thus, found in oneself.                  361ff.).
+   The philosophical truth theories illustrate that truth or lies                   We describe only one paradigmatic example of ranking in
+are in the eye of the beholder (evidence theory), the praxis                     social media, namely the algorithms of Facebook as the most
+(theory of reflection), the community (consensus theory), or                     common social media platform. Facebook’s sorting of posts
+in the system of accepted propositions (coherence theory).                       is a pertinence ranking algorithm; it works with the three
+As the correspondence theory of truth is not applicable in                       factors affinity, weighting, and timeliness. According to these
+the environments of journalism and social media, we have                         three aspects, a user will see posts on her or his Facebook page
+big problems in stating what exactly is true and what is not.                    with the posts sorted in descending order of their retrieval
+If we do not know what the truth is, we also cannot know                         status values (Zuckerberg et al., 2006). Affinity is concerned
+exactly what “fake news” is. It is the individual person who                     with the user’s previous interactions on the posting pages,
+decides, based on a (probably unknown) truth theory, what is                     whereas different interactions are weighted variously. If a user
+considered as truth, as lies, as “true news,” and as “fake news.”                X frequently views another user’s (say, user A) posts, likes
+By the way, attempts of automatic semantic deception detection                   them, comments on them, or shares them, A’s future posts—
+(e.g., Conroy, Rubin, & Chen, 2015) are faced with the same                      depending on their weights (resulting from the numbers of
+problems, especially when they rely on the coherence or the                      likes, shares, and comments)—get a higher weight for user X.
+consensus theory of truth.                                                       Facebook also considers the position of the creator of the post
+                                                                                 (is this user often viewed, annotated, etc.?) and the nature of
+                                                                                 the post (text, image, or video). The timeliness states that a
+5.	FAKE NEWS DISSEMINATION THROUGH                                              contribution becomes more important the newer it is. However,
+    ALGORITHMIC FILTER BUBBLES (RQ1)                                             other factors play a role, and the algorithm is constantly being
+                                                                                 adapted. For example, an already viewed ranked list is not
+   The concept of relevance is one of the basic concepts                         displayed a second time in exactly the same order (i.e., the
+of information science (Saracevic, 1975). Users expect an                        criteria for the sorting are each slightly modified) in order to
+information system to contain relevant knowledge, and many                       make the lists more interesting. Also, posts from people (as
+information retrieval systems, including Internet search engines                 opposed to those from companies) are weighted higher, and the
+and social media services, arrange their results via relevance                   spatial proximity between the receiver and the sender of the post
+ranking algorithms. In information science, researchers                          plays an important role. In particular, the affinity causes a user
+distinguish between objective and subjective information needs.                  to see the one source at the top of his or her list, which he or she
+Correspondingly to these concepts, we speak of relevance (for                    has often viewed in previous sessions.
+the former) and pertinence (for the latter), respectively.                          Ranking on Facebook is always personalized and based on the
+   Since relevance always aims at user-independent, objective                    user’s common interests, her or his information behavior on the
+observations, we can establish a definition: A document, for                     service, and her or his Facebook friends (Tseng, 2015; Bakshy,
+instance, a website, a blog post, a post on Facebook or Reddit,                  Messing, & Adamic, 2015). The more a user repeatedly clicks
+or a microblog on Twitter (or, to speak more precisely, the                      on the posts of the same people, the more the selection of posts
+knowledge contained therein) is relevant for the satisfaction of                 stabilizes, which always appear at the ranking’s top positions.
+an objective (i.e. subject-independent) information need.                        Thus, in a short time—with high activity on Facebook—an
+   A research result can only be pertinent if the user has the                   information diet may occur that presents users only those posts
+ability to register and comprehend the knowledge in question                     on top of their pages, whose creators they prefer. So it can be
+according to his or her cognitive model. Soergel (1994, p. 590)                  assumed that such personalized content representation leads
+provides the following definition: “Pertinence is a relationship                 to “partial information blindness (i.e., filter bubbles)” (Haim,
+between an entity and a topic, question, function, or task with                  Graefe, & Brosius, 2018, p. 330).
+respect to a person (or system) with a given purpose. An entity                     It depends on the user to form a “friendship” on Facebook,
+is pertinent if it is topically relevant and if it is appropriate for the        and it is on the user to often select certain friends’ posts
+
+
+                                                                            45                                                  http://www.jistap.org
+JISTaP Vol.7 No.2, 40-53
+
+
+
+
+for reading, liking, sharing, and commenting. Facebook’s                     individual persons, we have to study their cognitive processes
+pertinence ranking algorithm indeed may amplify existing                     in detail. In our research study, we apply case study research
+behavioral patterns of the users into filter bubbles and then                and content analysis. As we want to investigate which concrete
+into echo chambers, whereby the information behavior of                      cognitive information behavior patterns concerning fake news
+the users plays the important primary role. In contrast to the               exist, we start our endeavors with the help of concrete cases. Case
+assumptions of Pariser (2011) on filter bubbles, (1) no one is               study researchers “examine each case expecting to uncover new
+alone in the bubble when the bubble leads to echo chambers                   and unusual interactions, events, explanations, interpretations,
+(where other users are by definition); (2) the bubble is visible             and cause-and-effect connections” (Hays, 2004, p. 218f.). Our
+to certain users insofar as they figured out Facebook’s ranking              case includes a (probably fake) post and comments as well as
+methods; for other, rather uncritical users, the bubble is indeed            replies to it. It is a story on Hillary Clinton selling weapons to the
+invisible; (3) the users’ behavior feeds the pertinence ranking              Islamic State. With the help of this singular case study (Flyvbjerg,
+algorithms; therefore, the users (consciously or unintentionally)            2006) we try to find cognitive patterns and to understand users’
+cooperate with the service entering the bubble through their                 information behavior at the time shortly after the publication of
+own information behavior.                                                    fake news.
+   Here we arrive at a first partial result and are able to answer              To analyze the cognitive patterns of the commenting users,
+RQ1: Algorithms by themselves do not produce filter bubbles                  we look upon the results of the cognitive processes, i.e. the texts
+or subsequently echo chambers, they only consolidate the                     (as we are not able to measure the human cognitive patterns
+users’ information behavior patterns. Concerning the reception               directly) and apply quantitative and qualitative content
+of fake news, it is not possible to argue that they are solely               analysis (Krippendorff, 2018) of posts in social media. In
+distributed by “bad algorithms,” but by the active collaboration             quantitative content analysis, the occurrence of the categories
+of the individual users. Also, Del Vicario et al. (2016, p. 554f.),          in the coding units is counted and, if necessary, further
+for instance, found out that “content-selective exposure is the              processed statistically; the qualitative content analysis turns
+primary driver of content diffusion and generates the formation              to the statements within the categories, namely the “manifest
+of homogeneous clusters, i.e., ‘echo chambers.’” DiFranzo and                content” (Berelson, 1952) and the “deeper meaning” (such
+Gloria-Garcia (2017, p. 33f.) arrive at a similar result: “The               as subjective senses), as well as formal textual characteristics
+related filter-bubble effect is due to the user’s network and past           such as style analysis (Mayring & Fenzl, 2019). In order to
+engagement behavior (such as clicking only on certain news                   create the appropriate categories for the content analysis, we
+stories), that is, it is not the fault of the news-feed algorithm but        applied both (1) inductive (or conventional) as well as (2)
+the choices of users themselves.” There are results concerning               deductive (or directed) measures (Elo & Kyngas, 2008; Hsieh
+fake news and the algorithms of Facebook: “While this                        & Shannon, 2005). By (1) applying the conventional approach
+criticism has focused on the ‘filter bubbles’ created by the site’s          with a first and preliminary analysis of comments concerning
+personalisation algorithms, our research indicates that users’               our case, we defined the first codes; and we (2) arrived at
+own actions also play a key role in how the site operates as a               codes while studying relevant published literature. The coding
+forum for debate” (Seargeant & Tagg, 2019, p. 41). Although                  unit was the single comment or the single reply. Every coding
+algorithms are able to amplify human information behavior                    unit was coded with only one (the best fitting) category. The
+patterns, obviously, the users play the leading role concerning              coding process was led by a short code book and conducted
+construction and maintenance of those bubbles of (fake) news.                by two of the article’s authors in August 2018, whereas all steps
+Indeed, there are filter bubbles; however, they are fed by users’            were performed intellectually. In a first round, the coders
+information behavior and-more important-they are escapable                   worked independently (resulting in Krippendorff ’s alpha >
+(Davies, 2018).                                                              0.8, signaling the appropriateness of the code book and the
+                                                                             coders’ work); in a second round, the (few) disagreements
+                                                                             were discussed and solved (Mayring & Fenzl, 2019, p. 637).
+6.	FAKE NEWS DISSEMINATION THROUGH MAN-                                     In the end, there was an intercoder consistency of 100%, i.e.,
+    MADE ECHO CHAMBERS (RQ2)                                                 Krippendorff’s alpha was 1.
+                                                                                Our approach is similar to research in microhistory
+6.1. Our Approach                                                            describing posts and comments on social networking services
+   When we want to analyze echo chambers of fake news and                    in order to find information on historically relevant—especially
+also believing as well as mistrusting such false propositions by             local—events and developments (Stock, 2016, 2017). Similar
+
+
+                                                                        46
+                                                                                     Fake News in Social Media: Bad Algorithms or Biased Users?
+
+
+
+
+to our approach, Walter, Brüggemann, and Engesser (2018)                   6.2. Results
+studied user comments in echo chambers concerning the topic                   Tables 1-3 exhibits our descriptive results for the three selected
+of climate change. Gilbert, Bergstrom, and Karahalois (2009)               sources, namely The Political Insider, r/The_Donald, and r/
+defined agreement as manifestation of an echo chamber. They                worldpolitics. Concerning our case study, most comments on
+found that about 39% of all comments agree with the blog                   The Political Insider are confirmations of the (false) proposition;
+author, 11% disagree, and half of all commentators react in other          likewise, the comments’ orientation is predominantly positive
+ways. Murungi et al. (2019, pp. 5192f.) found that significant             (Table 1). In both analyzed subreddits most comments (about
+amounts of comments on a concrete political situation (Roy                 40% to 50%) and even more replies (about 70% to 80%) are non-
+Moore’s candidacy for the U.S. Senate in Alabama in 2017) were             argumentative or off-topic (Tables 2 and 3). In the subreddit
+non-argumentative.                                                         r/The_Donald we found about 40% agreement with the fake
+   For our case study, we consulted a weblog (The Political                proposition for the comments; however, only 8% existed for the
+Insider, a right-wing oriented web site; August 2016) (N=43) and           replies.
+Reddit as the current most popular news aggregator (Zimmer,                   About half of the comments in r/The_Donald express a
+Akyürek et al., 2018). To be more precise, we analyzed Reddit’s            neutral orientation, and the other half a positive one; while most
+subreddits r/The_Donald (a forum “for Trump supporters only”;              of the replies were neutral. Most comments and more than
+September 2016) (N=177) and r/worldpolitics (a “free speech                80% of the replies in r/worldpolitics are off-topic and express no
+political subreddit”; September 2016) (N=246). We checked all              orientation concerning the given topic (i.e., the triggering post).
+comments and all replies to the comments manually. All in all,             The authors of r/worldpolitics are more critical than those of r/
+we analyzed 466 documents. Studying literature and empirical               The_Donald as about 30% of all comments were classified as
+material, we found different patterns of information behavior in           denial (in contrast to 0% in r/The_Donald).
+response to fake news and applied them as codes for our content               The dominating cognitive patterns are non-argumentative
+analysis:                                                                  or arguments being off-topic. The very first comment on r/
+   • Confirmation: broad agreement with post, attempt of                  worldpolitics was “time to put up or shut up,” which diverse
+      verification                                                         authors regarded as an invitation to speculate on different
+   • D enial: broad disagreement with post, attempt of                    political topics with loose or no relationship to the content of the
+      falsification                                                        post. We can find rather senseless texts as, e.g., “LOL who knew,”
+   • Moral outrage: questioning the posts, comments and replies           “Holy shit!!”, or “Trump was right all along” (all from r/The_
+      from a moral point of view                                           Donald). However, most of the off-topic comments and replies
+   • New rumor: creation of a new probably false proposition              pursue a similar tendency, most notably attacking Obama
+   • Satire: satirical, ironic, or sarcastic text                         and praising Trump in r/The_Donald or discussing the DNC
+   • Off-topic: non-argumentative, ignoring the discussion,               (Democratic National Committee) in r/worldpolitics.
+      arguing on other topics, broad generalization                           Confirmations of the fake news are frequent in The Political
+   • Insult: defamation of other people or groups                         Insider and r/The_Donald, but not in r/worldpolitics. Here are
+   • “Meta” comment/reply: discussing the style of another post,          some examples: “Done, done, DONE! Round up his people”-
+      offense against a commentator                                        “Traitors are hanged from the highest tree!”-“His eyes were
+                                                                           always cold to me … soulless. It is no surprise that Obama
+   Additionally, we evaluated the topic-specific orientation               would be the founder of ISIS, really.” Confirmations culminate
+(positive, negative, and neutral) for all texts. Positive means an         in death threats: “Put him [i.e., Obama] to death. Period. Let the
+articulated or implicated agreement with the original post. If a           left cry. They will never agree that they are wrong, that he was a
+comment, for instance, argues, “Clinton should be arrested” in             criminal. It doesn’t matter. He is a traitor to this country, and if
+response to the post “Hillary Clinton sold weapons to ISIS,” it is         these allegations are true, he needs to be appropriately punished”
+counted as positive. Neutral means that there is no relation to            (all from r/The_Donald).
+the concrete topic of the triggering post, e.g., “Obama is born               Sometimes, commentators are dissatisfied with the discussion
+in Kenya” as a comment on “Clinton sold weapons.” All other                and argue from a meta position as “I’m really not interested
+texts were coded as negative, e.g., “What’s there to say? It’s just        in engaging in a totally off-topic argument with you”; “What?
+a vague, unfounded accusation.” We aggregated all generations              Seriously you believe this?”; or “Why have you sent me an article
+of replies (replies to a comment, replies to a reply) into the code        about how George Bush, the Republican president, may have
+“reply.”                                                                   rigged the 2004 election as evidence that Hillary Clinton, the
+
+
+                                                                      47                                                  http://www.jistap.org
+JISTaP Vol.7 No.2, 40-53
+
+
+
+
+Table 1.	Users’ cognitive patterns in reactions to fake news: The Political Insider                Democratic candidate, has rigged the upcoming election?” (all
+          Cognitive pattern                  Comments                     Replies                   from r/worldpolitics).
+ Confirmation                                   33.3%                     23.1%                         Some (however few) comments are insults, as, for instance,
+ Denial                                           3.3%                         -                    “Yet more proof that the people at the very top are, for all
+ Moral outrage                                    3.3%                         -                    practical purposes, gangsters” (r/worldpolitics); “Obama is a
+ New rumor                                      13.3%                     15.4%                     piece of shit Globalist muslim”; or “Aw, come on. Whadya expect
+ Satire                                              -                         -                    from a f**kin’ Kenyan ‘born’ in Hawaii, raised in Indonesia,
+ Off-topic                                      26.6%                     61.5%                     programmed and sponsored by the Saudi Manchurian School
+ Insult                                         20.6%                          -                    for Gifted Leftists?” (both from r/The_Donald).
+ “Meta”                                              -                         -                        Here, a further cognitive pattern comes into play: the
+ Positive orientation                           73.3%                     46.2%                     construction of a new rumor, for example: “The Hawaiian birth
+ Negative orientation                             3.3%                         -                    certificate (of Obama, a/n) was proven to be a forgery”; “Obama’s
+ Neutral orientation                            23.3%                     53.8%                     entire life is pure fiction, a 100% CIA creation”; “Hillary is the
+ N                                              30                        13                        Mother of ISIS”; “They (Obama and Clinton, a/n) wanted this
+Post: “Wikileaks CONFIRMS Hillary Sold Weapons to ISIS… Then Drops Another                          war in Syria, they wanted the refugee influx”; or, “It will take
+BOMBSHELL! Breaking News.”
+                                                                                                    a while before people admit that Obama and Michelle and
+Table 2.	Users’ cognitive patterns in reactions to fake news: r/The_Donald                         the supported ‘daughters’ were all fake”; “Malia’s and Sasha’s
+          Cognitive pattern                  Comments                     Replies
+                                                                                                    biological parents have always been nearby while the girls
+ Confirmation                                   40.8%                       7.9%
+                                                                                                    provided a fictional family for Barack and Michelle” (all from r/
+ Denial                                              -                      4.0%
+                                                                                                    The_Donald).
+ Moral outrage                                       -                         -                        Some comments and replies consist of satirical, ironic, or
+ New rumor                                        5.3%                      5.0%                    sarcastic text, as for instance: “Of course, president Hussein was
+ Satire                                           1.3%                      2.0%                    the head of Isis. He’s a muzlim [sic]” (r/The_Donald); “Is that
+ Off-topic                                      47.4%                     78.2%                     really how your brain works? Or you just playin’?”; “Someone
+ Insult                                           5.3%                      3.0%                    feel like pointing to some of those emails? Julian? Anybody?
+ “Meta”                                              -                         -                    Like most Americans, I am too stupid and lazy to spend four
+ Positive orientation                           48.7%                     11.9%                     years reading emails”; “This news article is great, and absolutely
+ Negative orientation                                -                      5.0%                    100% real. I can’t wait to see this actually real story break
+ Neutral orientation                            51.3%                     83.2%                     worldwide, because Hillary absolutely sold weapons to ISIS
+ N                                              76                       101                        in Syria, and this is not at all a conspiracy theory!” (all from r/
+Post: “Breaking Assange: Obama & Clinton not only supplied ISIS with a billion dollars              worldpolitics). Sometimes it is problematic to identify irony;
+worth of weapons annually, they paid these mercenaries salaries! Obama employed                     however, considering the context the pattern becomes visible.
+ISIS… let it sink in. Obama was the real leader of ISIS!”
+                                                                                                        In the subreddit r/worldpolitics (but with next to nothing
+Table 3. Users’ cognitive patterns in reactions to fake news: r/worldpolitics                       in The Political Insider and r/The_Donald) we found critical
+          Cognitive pattern                  Comments                     Replies                   denials of the fake news as, for instance, “get suspicious when
+ Confirmation                                   12.5%                       9.1%                    it’s only niche websites reporting stuff like this. If there were real
+ Denial                                         29.2%                       6.1%                    evidence, every conservative site would make a front page”; or,
+ Moral outrage                                       -                      1.0%                    “1700 mails about Libya proof that Hillary sold weapons to Isis
+ New rumor                                        2.1%                      0.5%                    in Syria? I don’t mean to comment on the allegations but I hate
+ Satire                                           4.2%                      0.5%                    it when headlines are clearly bullshit.”
+ Off-topic                                      43.8%                     72.2%                         A rather uncommon pattern in this case study is moral
+ Insult                                           2.1%                      0.5%                    outrage, a kind of meta-comment from a moral point of view,
+ “Meta”                                           6.3%                    10.1%                     for instance: “All of you are blaming Hillary and President
+ Positive orientation                           14.6%                       9.6%                    Obama. They have to get approval from Congress to do this
+ Negative orientation                           31.3%                       6.6%                    stuff” (The Political Insider); or, “What’s there to say? It’s just a
+ Neutral orientation                            54.2%                     83.8%                     vague, unfounded accusation” (r/worldpolitics).
+ N                                              48                       198                            There are different distributions of cognitive patterns
+Post: “Julian Assange: ‘1,700 emails’ proves Hillary Clinton sold weapons to ISIS in Syria.”        regarding the level of discussion, i.e. between the first generation
+
+
+                                                                                               48
+                                                                                    Fake News in Social Media: Bad Algorithms or Biased Users?
+
+
+
+
+of texts (comments on the triggering fake news) and the next              to the truth. This annoying fact does not make research on fake
+generations (replies to the comments and replies to other                 news easy.
+replies). There are much more non-argumentative and off-topic                Algorithms (and their mechanisms to form filter bubbles)
+replies than off-topic comments (The Political Insider: 62%               applied in social media themselves do not form communities
+versus 27%; r/The_Donald: 78% versus 47%; r/worldpolitics:                purely on their own as they amplify users’ information behavior.
+72% versus 44%). And there are less confirmative replies than             The crucial element of fake news and their pathways into social
+confirmative comments (The Political Insider: 23% versus 33%;             media is mainly the individual users, their cognitive patterns,
+r/The_Donald: 8% versus 41%; r/worldpolitics: 9% versus 13%).             and their surrounding echo chamber (Zimmer, 2019).
+Additionally, the users’ information behavior is drifting from               Reading (fake) news and eventually drafting a comment
+positive or negative orientation at the comments’ level to an             or a reply may be the result of users’ selective exposure to
+enhanced neutral orientation at the replies’ level.                       information (Frey, 1986; Sears & Freedman, 1967) leading to
+                                                                          preferring news (including fake news) fitting their pre-existing
+6.3. Are There Indeed Echo Chambers?                                      opinions. If users take the (false) proposition as given, discuss
+    What can we learn from our case study? Do users indeed live           it uncritically, ignore other opinions, or argue further off-topic
+inside an echo chamber? The answer depends on the concrete                (however, always in the same direction), an echo chamber can
+operationalization of the “echo chamber.” If we narrowly define           be formed and stabilized. In contrast to some empirical findings
+this concept as a community with high confirmation rates (in              on echo chambers (Fischer et al., 2011; Garrett, 2009; Nelson
+our case: for fake news) in combination with high degrees of              & Webster, 2017) we found clear hints for the existence of such
+positive topic-specific orientation (and further with the creation        communities. Depending on the concrete operationalization
+of new rumors with the same direction as the original fake),              of the “echo chamber,” about one third to two-fifths (a narrow
+there are indeed hints for the existence of such communities.             definition) and more than half of all analyzed comments
+A third of the commentators of The Political Insider and about            and replies (a broad definition) can be located inside an echo
+two-fifths of the commenting audience of r/The_Donald seem                chamber of fake news. Explicitly expressed confirmation
+to argue inside their echo chambers. However, we can define               depends on the stage of discussion. In the first stage (comments),
+“echo chamber” more broadly. As we know from the texts, off-              confirmative texts are more frequent than in further stages
+topic comments and most of the neutral-orientation texts argue            (replies).
+in the same direction as the entire community; therefore the                 Confirmative information behavior on fake news goes
+filter bubble may include most of these comments and replies.             hand in hand with the consensus and the coherence theory of
+The content of the specific (false) proposition is entirely clear         truth. The (in the sense of the correspondence theory of truth
+and taken for granted, so users lose the specific thread (from            basically false) proposition will be accepted “by normative social
+the triggering post); however, they do not lose the (ideological          influence or by the coherence with the system of beliefs of the
+or political) direction. In the sense of this broad definition,           individual” (Bessi et al., 2015, p. 2). This behavior leads directly
+depending on the source, up to about 90% of comments (sum of              to a confirmation bias. Our results are partly in line with the
+confirmations and off-topic comments) in r/The_Donald, about              theory of selective exposure of information.
+60% in The Political Insider, and about 55% in r/worldpolitics               However, it is not possible to explain all information behavior
+exhibit hints towards the existence of echo chambers in those             following fake news with the theory of selective exposure,
+social media channels. In contrast to Bruns (2019) we found               but with a variety of further individual cognitive patterns. We
+that the problems concerning filter bubbles and echo chambers             were able to identify cognitive patterns clearly outside of echo
+are not overstated, but basic facts in our contemporary online            chambers as denial, moral outrage, and satire-all in all patterns
+world.                                                                    of critical information behavior.
+                                                                             This study has (as every scientific endeavor) limitations. In the
+                                                                          empirical part of the study, we analyzed comments and replies
+7. CONCLUSION                                                             to comments on social media. The publication of a comment
+                                                                          or a reply on an online medium follows a decision-making
+  As the correspondence theory of truth is not applicable in              process (should I indeed write a comment or a reply?). With our
+mediated contexts, there remain truth theories which heavily              method, we are only able to gather data on individuals who have
+depend on the community (consensus theory) and on the                     written such texts; all others remain unconsidered. We did not
+coherence of propositions (coherence theory), but do not point            talk to the commenting and replying individuals. Therefore, we
+
+
+                                                                     49                                                  http://www.jistap.org
+JISTaP Vol.7 No.2, 40-53
+
+
+
+
+were not able to ask for intellectual backgrounds, motivations,               in identifying and preventing fake news. Our analysis at the
+and demographic details of the commentators.                                  beginning of this paper has shown that there is no satisfying
+    In this article, we report about one case study only, so the              answer to what can be considered the truth in media. In the
+extent of the empirical data is rather limited. Although we                   end—and this is in line with Chisholm’s (1977) definition of
+collected and intellectually coded some hundreds of texts,                    knowledge—it is just a critical user who compares sources and
+this is like a drop in the bucket when faced with millions                    validates the timeliness and evidence of a contribution before
+of posts, comments, and replies on social media. A serious                    believing, denying, or ignoring it and then deciding whether
+methodological problem (not only ours, but of all research                    it is true or false. So, finally, it is on the individual user’s critical
+relying on data from the Internet) is the availability of complete            literacy, information literacy, digital literacy, and media literacy
+data sets on, for instance, a fake news story and all the                     in order “to help cultivate more critical consumers of media”
+comments and replies on the fake news, as users and website                   (Mihailidis & Viotty, 2017, p. 441) and, additionally, on libraries
+administrators often delete discriminating posts, comments,                   and information professionals to instruct their users “in the
+or replies. We indeed found hints for deleted posts, comments,                fight against fake news” (Batchelor, 2017, p. 143) and to “become
+or replies on The Political Insider as well as on Reddit. In                  more critical consumers of information products and services”
+lucky cases (as in our study: the post and the comments of                    (Connaway, Julien, Seadle, & Kasprak, 2017, p. 554). Libraries,
+The Political Insider), one will find some deleted data on web                next to schools (Gust von Loh & Stock, 2013), are faced with the
+archives.                                                                     task to educate and instruct people to become critical users.
+    Here are some recommendations for future research. As
+we only analyzed texts on fake news in order to find cognitive
+reaction patterns, research should also study in analogous ways               REFERENCES
+reactions to true propositions. Are there the same cognitive
+patterns? People do not only live in the online world. Of                     Allcott, H., & Gentzkow, M. (2017). Social media and fake news
+course, their lives in the physical world are influenced by family                 in the 2016 election. Journal of Economic Perspectives,
+members, friends, colleagues, and other people. As there are                       31(2), 211-236.
+empirical hints on the geographic embedding of online echo                    Bakshy, E., Messing, S., & Adamic, L. A. (2015). Political science:
+chambers (Bastos et al., 2018), it would be very helpful to                        Exposure to ideologically diverse news and opinion on
+analyze offline echo chambers and the interplay between online                     Facebook. Science, 348(6239), 1130-1132.
+and offline echo chambers as well. We distinguished between                   Bastos, M., Mercea, D., & Baronchelli, A. (2018). The geographic
+comments and replies and found different cognitive patterns                        embedding of online echo chambers: Evidence from the
+of the respective authors. Are there indeed different cognitive                    Brexit campaign. PLoS One, 13(11), e0206841.
+patterns while writing posts, formulating comments, and                       Batchelor, O. (2017). Getting out the truth: The role of libraries
+phrasing replies to the comments? How can we explain those                         in the fight against fake news. Reference Services Review,
+differences?                                                                       45(2), 143-148.
+    What is new in this paper? As algorithms (as, for instance,               Berelson, B. (1952). Content analysis in communications
+Facebook’s ranking algorithm) only amplify users’ information                      research. Glencoe: Free Press.
+behavior, it is on the individuals themselves to accept or to deny            Bessi, A., Zollo, F., Del Vicario, M., Scala, A., Caldarelli, G., &
+fake news uncritically, to try to verify or to falsify them, to ignore             Quattrociocchi, W. (2015). Trend of narratives in the age of
+them, to argue off-topic, to write satire, or to insult other users.               misinformation. PLoS ONE, 10(8), e0134641.
+If filter bubbles are made by algorithms and echo chambers by                 Brentano, F. (1930). Wahrheit und Evidenz. Leipzig: Meiner.
+users, the echo chambers influence the filter bubbles; however,               Bruns, A. (2017). Echo chamber? What echo chamber?
+filter bubbles strengthen existing echo chambers as well. There                    Reviewing the evidence. In 6th Biennal Future of
+are different cognitive patterns of the individual users leading                   Journalism Conference (FOJ17), 14-15 September, Cardiff,
+to different reactions to fake news. Living in echo chambers                       UK. Retrieved Apr 18, 2019 from https://eprints.qut.edu.
+(namely the uncritical accepting of the news due to the users’                     au/113937/.
+pre-existing opinions shared within a group or compared with a                Bruns, A. (2019). Are filter bubbles real? Cambridge: Polity
+set of propositions) indeed is a typical, but not the only cognitive               Press.
+pattern.                                                                      Buckland, M. K. (1991). Information and information systems.
+    Therefore, a “critical user” seems to be the decisive factor                   New York: Praeger.
+
+
+                                                                         50
+                                                                                   Fake News in Social Media: Bad Algorithms or Biased Users?
+
+
+
+
+Case, D. O., & Given, L.M. (2018). Looking for information:                  motivated selective exposure among Internet new users.
+     A survey of research on information seeking, needs, and                 Journal of Computer-Mediated Communication, 14(2),
+     behavior (4th ed.). Bingley: Emerald.                                   265-285.
+Chisholm, R. M. (1977). Theory of knowledge. Englewood Cliffs:           Gilbert, E., Bergstrom, T., & Karahalios, K. (2009). Blogs are
+     Prentice-Hall.                                                          echo chambers: Blogs are echo chambers. In Proceedings
+Connaway, L. S., Julien, H., Seadle, M., & Kasprak, A. (2017).               of the 42nd Hawaii International Conference on System
+     Digital literacy in the era of fake news: Key roles for                 Sciences (pp. 1-10). Washington, DC: IEEE Computer
+     information professionals. Proceedings of the Association               Science.
+     for Information Science and Technology, 54(1), 554-555.             Gust von Loh, S., & Stock, W. G. (2013). Informationskompetenz
+Conroy, N. J., Rubin, V. L., & Chen, Y. (2015). Automatic                    als Schulfach? In S. Gust von Loh & W. G. Stock
+     deception detection: Methods for finding fake news.                     (Eds.), Informationskompetenz in der Schule. Ein
+     Proceedings of the Association for Information Science and              informationswissenschaftlicher Ansatz (pp. 1-20). Berlin:
+     Technology, 52(1), 1-4.                                                 De Gruyter Saur.
+David, M. (1994). Correspondence and disquotation. An essay              Habermas, J. (1972). Knowledge and human interests. Boston:
+     on the nature of truth. Oxford: Oxford University Press.                Beacon Press.
+Davies, H. C. (2018). Redefining filter bubbles as (escapable)           Habermas, J. (2006). Political communication in media society.
+     socio-technical recursion. Sociological Research Online,                Does democracy still enjoy an epistemic dimension?
+     23(3), 637-654.                                                         The impact of normative theory on empirical research.
+Del Vicario, M., Bessi, A., Zollo, F., Petroni, F., Scala, A.,               Communication Theory, 16(4), 411-426.
+     Caldarelli, G., ... Quattrociocchi, W. (2016). The spreading        Haim, M., Graefe, A., & Brosius, H. B. (2018). Burst of the
+     of misinformation online. Proceedings of the National                   filter bubble? Effects of personalization on the diversity of
+     Academy of Sciences of the United States of America,                    Google News. Digital Journalism, 6(3), 330-343.
+     113(3), 554-559.                                                    Hays, P. A. (2004). Case study research. In K. deMarrais & S.
+DiFranzo, D., & Gloria-Garcia, K. (2017). Filter bubbles and fake            D. Lapan (Eds.), Foundations for research (pp. 217-234).
+     news. XRDS: Crossroads, ACM Magazine for Students,                      Mahwah: Lawrence Erlbaum.
+     23(3), 32-35.                                                       Hern, A. (2017, May 22). How social media filter bubbles and
+Dubois, E., & Blank, G. (2018). The echo chamber is overstated:              algorithms influence the election. The Guardian, Retrieved
+     The moderating effect of political interest and diverse                 Apr 18, 2019 from https://www.theguardian.com/
+     media. Information, Communication & Society, 21(5), 729-                technology/2017/may/22/social-media-election-facebook-
+     745.                                                                    filter-bubbles.
+Elo, S., & Kyngas, H. (2008). The qualitative content analysis           Holmes, R. (2016, December 8). The problem isn’t fake news,
+     process. Journal of Advanced Nursing, 62(1), 107-115.                   it’s bad algorithms: Here’s why. Observer. Retrieved Apr 18,
+Fischer, P., Lea, S., Kastenmuller, A., Greitemeyer, T., Fischer,            2019 from https://observer.com/2016/12/the-problem-isnt-
+     J., & Frey, D. (2011). The process of selective exposure:               fake-news-its-bad-algorithms-heres-why.
+     Why confirmatory information search weakens over time.              Hsieh, H. F., & Shannon, S. E. (2005). Three approaches to
+     Organizational Behavior and Human Decision Making,                      qualitative content analysis. Qualitative Health Research,
+     114(1), 37-48.                                                          15(9), 1277-1288.
+Flaxman, S., Goel, S., & Rao, J. M. (2016). Filter bubbles, echo         Hyman, H. H., & Sheatsley, P. B. (1947). Some reasons why
+     chambers, and online news consumption. Public Opinion                   information campaigns fail. Public Opinion Quarterly,
+     Quarterly, 80(S1), 298-320.                                             11(3), 412-423.
+Floridi, L. (2005). Is information meaningful data? Philosophy           Kaplan, A. M., & Haenlein, M. (2010). Users of the world unite!
+     and Phenomenological Research, 70(2), 351-370.                          The challenges and opportunities of social media. Business
+Flyvbjerg, B. (2006). Five misunderstandings about case-study                Horizons, 53(1), 59-68.
+     research. Qualitative Inquiry, 12(2), 219-245.                      Kearney, M. W. (2019). Analyzing change in network
+Frey, D. (1986). Recent research on selective exposure to                    polarization. New Media & Society, 21(6), 1380-1402.
+     information. Advances in Experimental Social Psychology,            Kim, A., & Dennis, A. R. (2018). Says who? How news
+     19, 41-80.                                                              presentation format influences perceived believability
+Garrett, R. K. (2009). Echo chambers online? Politically                     and the engagement level of social media users. In
+
+
+                                                                    51                                                 http://www.jistap.org
+JISTaP Vol.7 No.2, 40-53
+
+
+
+
+     Proceedings of the 51st Hawaii International Conference on                     from you. London: Viking.
+     System Sciences (pp. 3955-3965). Washington, DC: IEEE                    Pawlow, T. (1973). Die Widerspiegelungstheorie. Berlin:
+     Computer Science.                                                              Deutscher Verlag der Wissenschaften.
+Krippendorff, K. (2018). Content analysis: An introduction to its             Quattrociocchi, W. (2017). Inside the echo chamber. Scientific
+     methodology (4th ed.). Los Angeles: Sage.                                      American, 316(4), 60-63.
+Kuhlen, R. (1995). Informationsmarkt. Chancen und Risiken                     Russell, B. (1971). Problems in Philosophy. Oxford: Oxford
+     der Kommerzialisierung von Wissen. Konstanz Germany:                           University Press.
+     UVK.                                                                     Saracevic, T. (1975). Relevance: A review of and a framework for
+Lewandowsky, S., Ecker, U. K. H., & Cook, J. (2017). Beyond                         the thinking on the notion in information science. Journal
+     misinformation: Understanding and coping with the ‘post-                       of the American Society for Information Science, 26(6), 321-
+     truth’ era. Journal of Applied Research in Memory and                          343.
+     Cognition, 6(4), 353-369.                                                Seargeant, P., & Tagg, C. (2019). Social media and the future of
+Liao, Q.V., & Fu, W.T. (2013). Beyond the filter bubble:                            open debate: A user-oriented approach to Facebook’s filter
+     Interactive effects of perceived threat and topic involvement                  bubble conundrum. Discourse, Context and Media, 27, 41-
+     on selective exposure to information. In Proceedings of                        48.
+     the SIGHCI Conference on Human Factors in Computing                      Sears, D. O., & Freedman, J. L. (1967). Selective exposure to
+     Systems (pp. 2359-2368). New York: ACM.                                        information: A critical review. Public Opinion Quarterly,
+Linde, F., & Stock, W. G. (2011). Information markets: A                            31(2), 194-213.
+     strategic guide for the i-commerce. Berlin: De Gruyter Saur.             Self, W. (2016, November 28). Forget fake news on Facebook:
+Mans, S. (2016, November 13). In the filter bubble: How                             The real filter bubble is you. New Statesman America.
+     algorithms customize our access to information [Web blog                       Retrieved Apr 18, 2019 from https://www.newstatesman.
+     post]. Retrieved Apr 18, 2019 from https://mastersofmedia.                     com/science-tech/social-media/2016/11/forget-fake-news-
+     hum.uva.nl/blog/2016/11/13/in-the-filter-bubble/.                              facebook-real-filter-bubble-you.
+Mayring, P., & Fenzl, T. (2019). Qualitative inhaltsanalyse.                  Shin, J., Jian, L., Driscoll, K., & Bar, F. (2018). The diffusion
+     In N. Baur & J. Blasius (Eds.), Handbuch Methoden der                          of misinformation on social media: Temporal pattern,
+     empirischen Sozialforschung (pp. 633-648). Wiesbaden:                          message, and source. Computers in Human Behavior, 83,
+     Springer Fachmedien.                                                           278-287.
+Mihailidis, P., & Viotty, S. (2017). Spreadable spectacle in digital          Soergel, D. (1994). Indexing and the retrieval performance:
+     culture: Civic expression, fake news, and the role of media                    The logical evidence. Journal of the American Society for
+     literacy in ‘post-fact’ society. American Behavioral Scientist,                Information Science, 45(8), 589-599.
+     61(4), 441-454.                                                          Spohr, D. (2017). Fake news and ideological polarization: Filter
+Muñoz-Torres, J. R. (2012). Truth and objectivity in journalism.                    bubbles and selective exposure on social media. Business
+     Anatomy of an endless misunderstanding. Journalism                             Information Review, 34(3), 150-160.
+     Studies, 13(4), 566-582.                                                 Stock, M. (2016). Facebook: A source for microhistory? In K.
+Murungi, D. M., Yates, D. J., Purao, S., Yu, Y. J., & Zhan, R.                      Knautz & K.S. Baran (Eds.), Facets of Facebook: Use and
+     (2019). Factual or believable? Negotiating the boundaries                      users (pp. 210-240). Berlin: De Gruyter Saur.
+     of confirmation bias in online news stories. In Proceedings              Stock, M. (2017). HCI research and history: Special interests
+     of the 52nd Hawaii International Conference on System                          groups on Facebook as historical sources. In HCI
+     Sciences (pp. 5186-5195). Honolulu: HICSS.                                     International 2017: Posters' Extended Abstracts. HCI 2017
+Nelson, J. L., & Webster, J. G. (2017). The myth of partisan selective              (pp. 497-503). Cham: Springer.
+     exposure: A portrait of the online news audience. Social                 Stock, W. G., & Stock, M. (2013). Handbook of information
+     Media + Society, 3(3). doi:10.1177/2056305117729314.                           science. Berlin: De Gruyter Saur.
+Neurath, O. (1931). Soziologie im Physikalismus. Erkenntnis,                  Tandoc Jr., E. C., Lim, Z. W., & Ling, R. (2018). Defining
+     2(1), 393-431.                                                                 ‘fake news.’ A typology of scholarly definitions. Digital
+Oxford Dictionaries (2016). Word of the year 2016 is post-truth.                    Journalism, 6(2), 137-153.
+     Retrieved Apr 18, 2019 from https://en.oxforddictionaries.               Törnberg, P. (2018). Echo chambers and viral misinformation:
+     com/word-of-the-year/word-of-the-year-2016.                                    Modeling fake news as complex contagion. PLoS ONE,
+Pariser, E. (2011). The filter bubble: What the Internet is hiding                  13(9), e0203958.
+
+
+                                                                         52
+                                                                                   Fake News in Social Media: Bad Algorithms or Biased Users?
+
+
+
+
+Torres, R. R., Gerhart, N., & Negahban, A. (2018). Combating              Zimmer, F., Akyürek, H., Gelfart, D., Mariami, H., Scheibe, K.,
+    fake news: An investigation of information verification                   Stodden, R., ... Stock, W. G. (2018). An evaluation of the
+    behaviors on social networking sites. In Proceedings of the               social news aggregator Reddit. In 5th European Conference
+    51st Hawaii International Conference on System Sciences                   on Social Media (pp. 364-373). Sonning Common: Academic
+    (pp. 3976-3985). Honolulu: HICSS.                                         Conferences and Publishing International.
+Tseng, E. (2015). Providing relevant notifications based on               Zimmer, F., & Reich, A. (2018). What is truth? Fake news
+    common interests in a social networking system, U.S.                      and their uncovering by the audience. In 5th European
+    Patent No. 9,083,767. Washington, DC: U.S. Patent and                     Conference on Social Media (pp. 374-381). Sonning
+    Trademark Office.                                                         Common: Academic Conferences and Publishing
+Volkova, S., & Jang, J. Y. (2018). Misleading or falsification:               International.
+    Inferring deceptive strategies and types in online news               Zimmer, F., Scheibe, K., Stock, M., & Stock, W. G. (2019). Echo
+    and social media. In Companion Proceedings of the Web                     chambers and filter bubbles of fake news in social media.
+    Conference 2018 (pp. 575-583). Geneva: International                      Man-made or produced by algorithms? In 8th Annual
+    World Wide Web Conferences Steering Committee.                            Arts, Humanities, Social Sciences & Education Conference
+Vydiswaran, V. G. V., Zhai, C. X., Roth, D., & Pirolli, P. (2012).            (pp. 1-22). Honolulu: Hawaii University.
+    BiasTrust: Teaching biased users about controversial                  Zimmer, F., Scheibe, K., & Stock, W. G. (2018). A model for
+    content. In Proceedings of the 21st ACM International                     information behavior research on social live streaming
+    Conference on Information and Knowledge Management                        services (SLSSs). In Meiselwitz G. (Ed.), Social Computing
+    (pp. 1905-1909). New York: ACM.                                           and Social Media. Technologies and Analytics: 10th
+Vydiswaran, V. G. V., Zhai, C. X., Roth, D., & Pirolli, P. (2015).            International Conference, Part II (pp. 429-448). Cham:
+    Overcoming bias to learn about controversial topics.                      Springer.
+    Journal of the Association for Information Science and                Zuckerberg, M., Sanghvi, R., Bosworth, A., Cox, C., Sittig, A.,
+    Technology, 66(8), 1655-1672.                                             Hughes, C., ... Corson, D. (2006). Dynamically providing a
+Walter, S., Brüggemann, M., & Engesser, S. (2018). Echo                       news feed about a user of a social network, U.S. Patent No.
+    chambers of denial: Explaining user comments on climate                   7,669,123 B2. Washington, DC: U.S. Patent and Trademark
+    change. Environmental Communication, 12(2), 204-217.                      Office.
+Zimmer, F. (2019). Fake news. Unbelehrbar in der
+    Echokammer? In W. Bredemeier (Ed.), Zukunft der
+    Informationswissenschaft. Hat die Informationswissenschaft
+    eine Zukunft? (pp. 393-399). Berlin: Simon Verlag für
+    Bibliothekswissen.
+
+
+
+
+                                                                     53                                                http://www.jistap.org
+

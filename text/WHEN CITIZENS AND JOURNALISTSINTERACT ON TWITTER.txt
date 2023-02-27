@@ -1,0 +1,1020 @@
+      Journalism Studies
+
+
+
+
+      ISSN: 1461-670X (Print) 1469-9699 (Online) Journal homepage: https://www.tandfonline.com/loi/rjos20
+
+
+
+
+When Citizens and Journalists Interact on Twitter
+Expectations of journalists’ performance on social media and perceptions of
+media bias
+
+
+Homero Gil de Zúñiga, Trevor Diehl & Alberto Ardèvol-Abreu
+
+To cite this article: Homero Gil de Zúñiga, Trevor Diehl & Alberto Ardèvol-Abreu (2018)
+When Citizens and Journalists Interact on Twitter, Journalism Studies, 19:2, 227-246, DOI:
+10.1080/1461670X.2016.1178593
+
+To link to this article: https://doi.org/10.1080/1461670X.2016.1178593
+
+
+
+
+       Published online: 24 May 2016.
+
+
+
+       Submit your article to this journal
+
+
+
+       Article views: 4277
+
+
+
+       View related articles
+
+
+
+       View Crossmark data
+
+
+
+       Citing articles: 18 View citing articles
+
+
+
+
+                      Full Terms & Conditions of access and use can be found at
+             https://www.tandfonline.com/action/journalInformation?journalCode=rjos20
+      WHEN CITIZENS AND JOURNALISTS
+      INTERACT ON TWITTER
+      Expectations of journalists’ performance on
+      social media and perceptions of media bias
+
+      Homero Gil de Zúñiga, Trevor Diehl, and Alberto Ardèvol-Abreu
+
+
+
+
+      Twitter has become the leading social media platform for journalists to break news, build a follow-
+      ing, and interact with the public. Social media offer journalists and citizens a communication space,
+      where they can discuss issues, provide context for the news, and foster community values. This study
+      examines how expectations about journalistic practices on social media inﬂuence audience
+      engagement with journalists, and in turn, perceptions of editorial bias. Drawing on a two-wave
+      panel survey from the United States, we ﬁrst ﬁnd that expectations about the practice of “good jour-
+      nalism” on social media predict engagement with journalists on Twitter. Second, these personal
+      interactions lead to lower levels of perceived bias in the news media. Finally, expectations of jour-
+      nalists’ performance on social media are explored as a moderator of perceived editorial bias. This
+      study adds to the growing literature analyzing the causes and outcomes of audience engagement
+      with journalists on social media.
+
+      KEYWORDS         expectations; journalism; media bias; news; reciprocity; social media; Twitter
+
+
+
+
+      Introduction
+       The public mood toward the news media has reached an all-time nadir in the United
+States. According to a recent Gallup Poll, less than half of Americans (40 percent) say that
+they trust mass media to report the news fully, accurately, and fairly (Gallup 2015). Nearly
+three-quarters (70 percent) of the population think that the news media intentionally bias
+coverage (Paulsen 2015; Rasmussen 2015). Perceptions of media bias are troubling, since
+they have been associated with a decrease in news consumption, and detachment from
+public life (Cappella and Jamieson 1997; Jackob 2010; Pinkleton, Austin, and Fortman
+1998; Tsfati and Cappella 2003). At the same time, many Americans, especially young
+people, are getting their news online or through social media. About one-third of adults
+get some news and public affairs information from Facebook or Twitter (Pew Research
+Center 2015). These services offer a historically novel news environment, where users
+can curate information ﬂows, and create their own content (Östman 2012; Wells and
+Thorson 2015). The ability to comment, like, share, and follow news has led to increased
+audience involvement with the news (Lotan et al. 2011; Thurman 2008). In turn, the very
+boundaries of professional journalism are now debatable, as the nature of information dis-
+tribution becomes a more ﬂuid, participatory exchange between citizens and the press
+(Lewis 2012).
+                    Journalism Studies, 2018
+                    Vol. 19, No. 2, 227–246, https://doi.org/10.1080/1461670X.2016.1178593
+                    © 2016 Informa UK Limited, trading as Taylor & Francis Group
+228   HOMERO GIL DE ZÚÑIGA ET AL.
+
+            In this changing news landscape, expectations about what constitutes good journal-
+      ism are also changing (Gil de Zúñiga and Hinsley 2013). In particular, norms of interaction,
+      reciprocity, and collaboration with the community are growing areas of interest (Borger,
+      van Hoof, and Sanders 2014; Lewis 2015; Lewis, Holton, and Coddington 2014). These dis-
+      cussions represent the potential shifting role of the journalist in democratic society.
+      Although Twitter is a popular tool for journalists around the world, they rarely take full
+      advantage of the interactive and collaboration capabilities of social media (Engesser and
+      Humprecht 2015). One explanation is that journalists might be careful of appearing
+      biased. However, scholars have yet to explore how interaction on Twitter might (or
+      might not) lead to perceptions of media bias.
+            This study builds on previous research that considers the potential for pro-social out-
+      comes when journalists and citizens engage on social media (Borger, van Hoof, and Sanders
+      2014; Holton et al. 2015). This study considers whether having expectations of good jour-
+      nalism practices on social media might lead to increased engagement with journalists on
+      Twitter, such as asking questions (via direct messages (DM) or @mention) or re-tweeting
+      members of the media and citizen journalists. Second, we test whether having those expec-
+      tations inﬂuences perceptions of editorial bias. Finally, this study also explores how citizens’
+      engagement with journalists on Twitter might shape perceptions of editorial media bias.
+      Drawing on survey panel data from the United States, we tested these relationships in
+      regression models that include a full range of control variables, including: demographic
+      information, trust in the media, political orientations, and overall news use. We ﬁnd that
+      expectations of journalists’ use of social media for providing context, discussing issues,
+      sharing news, and connecting to the community are directly related to re-tweeting news
+      and asking questions via Twitter. In addition, we ﬁnd that the more individuals engage
+      with journalists on Twitter, the less likely they are to perceive that the news media has
+      an editorial bias. Finally, we tested for group differences (moderation effect) in levels of per-
+      ceived bias between those with high and low expectations of journalists on social media.
+
+
+            Twitter and the Shifting Professional Role of the Journalist
+             Twitter is an ideal social networking platform to study the interaction of journalists
+      and the public. The micro-blogging platform boasts 320 million users worldwide, and is
+      a favorite reporting tool for journalists in the United States (Farhi 2009; Twitter 2015).
+      The short, instant bits of communication text are used for breaking news, covering a
+      beat, or linking back to the news organization’s website (Manjoo 2015; Parmelee 2013).
+      Journalists are the largest group of veriﬁed users on Twitter (Mullin 2015). Twitter is also
+      a popular way to get news and public affairs information. More Twitter users get news
+      on the platform than any other social media site (Pew Research Center 2015). Micro-blog-
+      ging also makes two-way communication between users rather effortless. It is not surpris-
+      ing then, that one of the key appeals of Twitter is that it allows for collaboration between
+      citizens and journalists (Hermida et al. 2012).
+             The extent to which journalists are actually allowing citizens to participate in the
+      news-making process is a point of open contention among professional journalists
+      (Ekdale et al. 2015; Lewis 2012; Robinson 2011). This is because networked communication
+      technologies, and especially social media, alter the traditional relationships between
+      content producers and content consumers. In this environment, journalists may be hesitant
+      to break with traditional reporting practices (Deuze 2007). Thinking of the audience as a
+                              WHEN CITIZENS AND JOURNALISTS INTERACT ON TWITTER                       229
+
+collaborator, instead of source or consumer, has been unevenly applied among news
+workers. Journalists have reported being hesitant to engage in collaboration, or citizen jour-
+nalism initiatives, because they feel that the quality of news would suffer in terms of accu-
+racy and objectivity (Singer 2010). Interaction with audiences on Twitter is likely to be
+based, at least in part, on the expectations of the news workers. Some evidence suggests
+that journalists are less likely to support increased collaboration with the audience if they
+view the practice as conﬂicting with their conception of “proper” reporting practices (Deuze
+2007; Ekdale et al. 2015).
+       On the other hand, content analyses of reporting practices on Twitter ﬁnd that tra-
+ditional norms are being challenged in some cases. For example, one study analyzing pol-
+itical reporters covering the 2012 presidential campaign found a high percentage of
+personal opinion in tweets (Lawrence et al. 2014). Other studies found substantial use of
+humor, opinion, and personal brand development work on Twitter (Holton and Lewis
+2011; Molyneux 2015). However, in each of these cases authors argued that, overall, journal-
+ists tend to avoid major deviations from traditional practices (Lasorsa, Lewis, and Holton
+2012). This was particularly the case in terms of fact checking (deferring to authority)
+and avoiding critique of presidential candidates (Coddington, Molyneux, and Lawrence
+2014; Mourão, Diehl, and Vasudevan 2015). One common explanation across these
+studies is that journalists take great care not to appear biased. They are willing to make
+some concessions to the technology, but are ultimately still guided by rules of engagement
+from the ofﬂine world.
+       The growth of Twitter, and other networked communication technologies, coincides
+with a steady decline in the newspaper industry over the last decade. Newsroom staff has
+shrunk dramatically, readership is down, and revenues have fallen by more than half (Pew
+Research Center 2015). Whether or not journalism can survive in this environment depends
+on the extent to which newsrooms are able to adapt to new technologies (Ryfe 2012). In
+this vein, at least one group of scholars suggests exploring the conditions under which
+the audience successfully engage with journalists, as acts of sustained, direct, and indirect
+reciprocity (Holton et al. 2015; Lewis 2015). According to this view, interacting with journal-
+ists on social media leads to the expectation that, in turn, journalists will reciprocate with
+quality content.
+
+
+      Expectations of Performance and Engagement
+       The conditions of journalistic engagement on social media are mostly clear: they are
+reluctant to engage in social media if it challenges traditional roles, or gives the impression
+of media bias. According to some scholars, journalists seem to expect that the news on
+social media should look like the news ofﬂine (Deuze 2007; Domingo et al. 2008; Quandt
+2008; Singer 2010). The conditions determining audience participation with the news are
+rather different. Overall, individuals tend to participate in the news rarely, if at all (Bergström
+2008; Larsson 2011). Instead, they use social media for personal purposes, to broadcast
+themselves, express opinions, and engage in frivolous activity (Bergström 2008; Fröhlich,
+Quiring, and Engesser 2012; Papacharissi 2007; Quan-Haase and Young 2010).
+       When citizens do consume news on social media, it is often related to their
+impressions about the credibility of the news, personal identiﬁcation with the source, or
+for surveillance needs (Lee and Ma 2012; Turcotte et al. 2015; Zolkepli and Kamarulzaman
+2015). These perspectives borrow from cognitive and social psychology, which postulates
+230   HOMERO GIL DE ZÚÑIGA ET AL.
+
+      that expectations are the precursors of behavioral outcomes (Bandura 2001; LaRose and
+      Eastin 2004). As Van Dijck (2009) argues, the underlying mechanisms that drive individuals
+      to share content in digital spaces is incredibly nuanced and complex. However, Borger, van
+      Hoof, and Sanders (2014) identify a general pattern of engagement with the news media
+      online through a series of experiments and interviews. The authors propose a model of par-
+      ticipation with journalists based on ﬁve parts: inﬂuences, anticipation, participation, evalu-
+      ation, and reconsideration. Participation (posting, sharing content, etc.) with the news is
+      determined by expectations (anticipation) about the roles of the actors involved. Those
+      expectations are informed by previous experiences, and personal images of the news
+      organization or journalist (inﬂuences). After a participatory experience, individuals reﬂect
+      (evaluation) on how the interaction met expectations, and then decide whether or not to
+      continue participating (reconsideration). Put simply, expectations about the role of the jour-
+      nalist in society drive participation in digital news environments, and accordingly, inﬂuence
+      future interactions.
+             Based on this rationale, those that follow the news on Twitter are likely to be inﬂu-
+      enced by the basic norms of social media in general: social interaction, collaboration,
+      two-way communication, and reciprocity (Benkler 2006; Lewis 2015; Van Dijck 2009).
+      These inﬂuences alter expectations about the news—expectations that are shaped by
+      their social media experiences (Lee and Ma 2012). In other words, for those that rely on
+      social media for news, they might expect journalists to operate outside traditional roles.
+      Journalists may be asked to directly engage in a discussion with the public, share news
+      from other sources, or foster community values. In this context, expectations about how
+      a journalist should behave will be shaped by the norms of digital culture. Following
+      Borger, van Hoof, and Sanders (2014), these expectations will drive participatory behaviors.
+      Therefore, we propose the following hypothesis:
+            H1: Expectations of journalists’ performance on social media (ﬁrst wave, W1) are positively
+            associated with engagement with journalists on Twitter (second wave, W2).
+
+
+
+
+            Expectations, Engagement, and Perceptions of Editorial Bias
+            Bias in the news media has been widely discussed in political science and media
+      studies.
+            Scholars have debated the nature of framing, authority, political, and economic forms
+      of news bias (e.g. Bennett 1996; Entman 1993; Hamilton 2004; Herman and Chomsky 2010;
+      McCombs and Shaw 1972). Based on the sheer volume of research discussing the pressures
+      that shape news content, it is hardly surprising that individuals may be inclined to adopt
+      the perception that the news media are biased in some way. It is important to note that
+      the extent to which bias does exist is a matter of debate (see Hamilton 2004). For the pur-
+      poses of this article, bias is operationalized as a perception of the news media—one charac-
+      terized by editorial bias toward: (1) the owner of the media organization; (2) the need to
+      attract an audience; and (3) the tendency for news content to inﬂuence the viewer in
+      some way. This deﬁnition is roughly equivalent to corporate and framing conceptions of
+      news bias (Fico, Richardson, and Edwards 2004; Hamilton 2004; Mullainathan and Shleifer
+      2005). This type of bias is particularly germane to the modern media environment, since
+      many news organizations are facing increasing economic pressure.
+                             WHEN CITIZENS AND JOURNALISTS INTERACT ON TWITTER                     231
+
+        Public perceptions of bias in the news media can lead to political and media cynicism,
+generally deﬁned as negative attitudes toward public private media institutions (Cappella
+and Jamieson 1997; Kiousis 2001). Low evaluations of the news media are associated with a
+decrease in news consumption, and increased preference for entertainment (Jackob 2010;
+Tsfati and Cappella 2003). Decreased attention to public affairs is especially troubling, since
+news consumption is considered the foundation of democratic citizenship, and is associ-
+ated with a range of pro-social activities (Bennett 2008; Norris 2000; Paek, Yoon, and
+Shah 2005; Schudson 1998).
+        As hypothesized earlier, expectations about the role of journalists on social media
+might inﬂuence engagement with journalists on Twitter. In addition, there is theoretical
+and empirical evidence to suggest that expectations are also related to perceptions of
+media bias. Scholarship in this area offers several explanations for the prevalence of per-
+ceived media bias. These perceptions among the public have been explained as the
+result of political partisanship, strength of ideology, elite discussions of the topic, and
+the tendency for liberal-leaning journalists to over-compensate for their own bias
+(Dalton, Beck, and Huckfeldt 1998; Gunther and Schmitt 2004; Hamilton 2004; Morris
+2007; Watts et al. 1999). One rationale is that individuals form opinions about the news
+based on “media schemata” (Kosicki and Mcleod 1990). Media schemata are internal
+images, and include a range of beliefs and orientations toward the news media that
+operate as guides, or expectations that inﬂuence how individuals process messages
+(Chaffee 1990; McQuail 1987). Media schemata help explain attitudes of bias, because
+they include normative expectations about the role of the press, and inﬂuence trust in
+the news, perceptions of credibility, political fragmentation, and the view that journalists
+serve themselves over their audience (Fredin, Kosicki, and Becker 1996; Watts et al.
+1999). According to this literature, media schemata (however ﬂawed) result in perceptions
+of bias when media content appears to conﬂict with, or conforms to, a pre-existing set of
+schemata. Based on this literature, it is reasonable to suggest that expectations of journal-
+ism performance on social media will be related to perceptions of media bias in some way.
+        Empirical evidence suggests that normative expectations about the role of the press
+in society are lofty ones, rooted in the idea of an adversarial press that holds public ofﬁcials
+accountable to the public (Elliott and Schenck-Hamlin 1979; Schudson 1998). These norma-
+tive expectations often coincide with negative views of actual press performance. This is
+illustrated in the divergence between what people say journalists should do, versus what
+people actually think of the press. For example, most Americans expect journalists to be
+accurate, objective, act as a watch dog for the public, and cover stories that should be
+covered (Gil de Zúñiga and Hinsley 2013; Heider, McCombs, and Poindexter 2005). The
+irony here is that normative expectations set a standard for criteria that often conﬂicts
+with internal media schemata. In other words, although the norms may be general stan-
+dards, individuals still view the news as bias, because the content they come across con-
+ﬂicts with a range of individual characteristics—like partisanship, ideology, or general
+levels of trust in the news (Eveland and Shah 2003; Gunther and Schmitt 2004; Lee
+2005). This conﬂict explains, at least in part, why public perceptions of media bias
+remain so high. Therefore, if an individual holds high expectations about social media
+press performance it is likely that they still view traditional media as failing to meet
+these expectations.
+        Expectations alone may be associated with perceptions of media bias. However, an
+alternative explanation is that how individuals interact with media content will inﬂuence
+232   HOMERO GIL DE ZÚÑIGA ET AL.
+
+      their perceptions of bias. This is an area of increasing interest for scholars of online news
+      media, since these technologies alter the nature of the news audiences in general (Lewis
+      2012; Robinson 2011). For example, some scholars note that there is a difference
+      between consumptive and expressive behaviors online (Gil de Zúñiga et al. 2013;
+      Pingree 2007). According to this literature, those who passively consume media in a
+      digital environment are less likely to reap the rewards of increased interpersonal inter-
+      action. One reason for this is that, without expressive and communicative engagement,
+      individuals do not do the cognitive work of reﬂection and re-evaluation necessary for learn-
+      ing from news media (Gil de Zúñiga 2006; Pingree 2007). When individuals share infor-
+      mation in networked spaces, information exchanges over time help build trust, and lead
+      to more sharing over time (Hsu et al. 2007). Thus, without engaging in reciprocal behaviors,
+      expectations alone might not lead to changes in levels of perceived bias, because they are
+      unable to build trust and learn from the media.
+             There is further reason to propose that expectations alone will be associated with
+      higher levels of perceived media bias. Those with high expectations of journalism perform-
+      ance on Twitter may also be critical of the news media in general, because their expec-
+      tations of performance are set by experiences with alternative habits of media
+      consumption (in this case, social media). If the news media are expected to conform to stan-
+      dards set in social media spaces, and an individual does not interact with journalists on
+      Twitter, it is likely that they will evaluate mainstream news in general as bias. This rationale,
+      in combination with the above theoretical and empirical evidence around media schemata,
+      leads to the following hypothesis:
+            H2: Expectations of journalists’ performance on social media (W1) are associated with
+            higher perceptions of editorial media bias (W2).
+
+             We expected the above relationship with perceived media bias to be different when
+      one participates in the news environment on Twitter. On Twitter, individuals can share
+      news, directly ask journalists questions in real time, follow a conversation around the
+      news, and see details about the journalist (Hermida 2010; Hermida et al. 2012; Lasorsa,
+      Lewis, and Holton 2014). These interactions involve a higher level of closeness and personal
+      acquaintance when compared to the traditional, ofﬂine relationship between journalists
+      and their audience. Instant, inter-personal interactions with the news, and news workers,
+      are a unique product of social media. When individuals share inter-personal experiences
+      on social networks, they also receive pro-social, learning beneﬁts from interactions on
+      the network (Borger, van Hoof, and Sanders 2014; Gil de Zúñiga et al. 2013; Hsu et al.
+      2007; Pingree 2007). Personal experience with journalists, and experiences of reciprocity
+      with the news, might lead to lower levels of perceived media bias. As outlined above, jour-
+      nalists are reluctant to use social media in any way that violates long-standing conceptions
+      of proper reporting: objectivity, accuracy, and quality (e.g. Deuze 2007; Singer 2010). It
+      stands to reason then, that the more one directly interacts with journalists on Twitter,
+      the more likely it is that one will learn about how journalists do their job. In addition,
+      drawing on research on the cognitive beneﬁts of interaction on social media (Borger,
+      van Hoof, and Sanders 2014; Hsu et al. 2007), any positive experience with a journalist
+      on Twitter is likely to lead to a re-evaluation of the role of journalists in society (through
+      evaluation and reconsideration). This re-evaluation will force an individual to reconcile
+      their experience with prior expectations of performance. Thus, those that previously had
+      media bias concerns would learn from interactions on Twitter. In contrast, those individuals
+                            WHEN CITIZENS AND JOURNALISTS INTERACT ON TWITTER                    233
+
+pre-disposed to engagement on social media would have their positive expectations re-
+enforced. Therefore, we propose the following hypothesis:
+      H3: Engagement with journalists on Twitter (W1) is associated with lower perceptions of
+      editorial media bias (W2).
+       Finally, how might expectations and engagement interact to reduce, or increase,
+levels of perceived media bias? It is possible that those with low expectations of perform-
+ance might be inﬂuenced by their experiences with journalists on Twitter more than others.
+Since the key objective of this study is to test the relationship between interaction with
+journalists on Twitter and perceptions of media bias, while also exploring the potential
+group differences in this relationship between those with higher and lower expectations
+of press performance on social media, we propose the following research question:
+      RQ1: Do expectations of journalists’ performance on social media (W1) moderate the
+      effect of engagement with journalists on Twitter (W1) on perceptions of editorial media
+      bias (W2)?
+
+
+      Methods
+      Sample
+       To test these hypotheses, a two-wave online panel survey was conducted over the
+course of three months in the United States. The questionnaire was developed by a
+Research Unit at a level 1 Research University in the United States, and administered by
+the media-polling group Nielsen. The sample was constructed from over 200,000 people
+previously registered with Nielsen, applying a stratiﬁed quota sampling method based
+on demographics for an accurate representation of the US census. The study was con-
+ducted using the Web survey software Qualtrics.
+       A total of 2060 participants, from an initial sample of 5000 individuals, completed the
+ﬁrst wave from December 15, 2013 to January 5, 2014. Only 1813 of these observations
+were retained, as 247 participants had to be excluded due to incomplete or invalid data.
+From February, 15 to March 5, 2014, 1024 participants completed the second wave of
+the survey. The response rate for the ﬁrst wave was 34.6 percent, while the retention
+rate for the second wave was 57 percent. Both response rate ﬁgures fall within acceptable
+parameters for data integrity for online panel surveys (Bosnjak, Das, and Lynn 2016; Watson
+and Wooden 2006). The sample demographics are similar to the US census, although
+slightly older, better educated, and with fewer Hispanics (see below).
+
+
+      Independent and Dependent Variables
+       This study had two main objectives. First, we wanted to examine the inﬂuence of
+expectations about journalists’ performance on social media on (1) the likelihood of estab-
+lishing closer relationships with journalists via engagement on Twitter, and (2) perceptions
+regarding editorial bias in media coverage. Second, we also assessed the effects of enga-
+ging with journalists on Twitter on perceptions of editorial bias. Thus, our models
+include engagement with journalists on Twitter, both as a dependent and independent
+variable, while perceived media bias is always analyzed as a dependent variable. Accord-
+ingly, the paper includes a series of measures of these constructs, considered as key
+234   HOMERO GIL DE ZÚÑIGA ET AL.
+
+      variables. All items are 10-point Likert scale, unless otherwise noted (1 = strongly disagree,
+      10 = strongly agree).
+
+            Perceived editorial media bias. To measure perceptions of media bias, respondents
+      were asked to rate their level of agreement with the following statements: “news compa-
+      nies choose stories based on what will attract the biggest audience,” “production tech-
+      niques can be used to inﬂuence a viewer’s perception,” and “the owner of a media
+      company inﬂuences the content that is produced” (W2 Cronbach’s α = 0.91, mean = 7.87,
+      SD = 2.26).
+
+            Expectations about journalists on social media. This variable comprises personal expec-
+      tations about the positive role journalists can play on social media, through fostering con-
+      versation and contextualizing current events. Expectations about journalists’ performance
+      on social media were measured with six items. Respondents were asked how much they
+      expected journalists on social media to “give interpretations/analysis of the news,”
+      “discuss news events with other users,” “share news from other sources,” “connect commu-
+      nity members to each other,” “encourage conversation about solving community pro-
+      blems,” and “foster community values” (W1 Cronbach’s α = 0.97; mean = 2.91, SD = 2.34;
+      W2 Cronbach’s α = 0.97; mean = 2.94, SD = 2.38).
+
+            Engaging with journalists on Twitter. This variable measures the degree to which indi-
+      viduals engage in an active online relationship with journalists. Respondents were asked
+      how often they “retweet a member of the news media,” “retweet citizen journalists,” “ask
+      questions (via DM or @mention) to a member of the news media,” and “ask questions
+      (via DM or @mention) to a citizen journalist” (four-item averaged scale; W1 Cronbach’s
+      α = 0.97; mean = 1.49, SD = 1.56; W2 Cronbach’s α = 0.97; mean = 1.62, SD = 1.60).
+
+
+            Control Variables
+            In order to control for potential confounds, our statistical models also include a
+      variety of variables that may explain relationships between the variables of interest. The
+      ﬁrst set of controls includes socio-demographic variables: age (mean = 52.71, SD = 14.72),
+      gender (49.70 percent females), education (highest level of education completed, range =
+      1–8; mean = 3.61, median = some college), income (total annual household income,
+      range = 1–8; mean = 4.46, median = $50,000–$59,999), and race (77.9 percent white). A
+      second set of variables included political orientations: political interest, political knowledge,
+      discussion network size, and discussion frequency. Finally, two more variables controlled for
+      the effect of trust in traditional and alternative news media.
+
+            Political interest. This composite variable captures respondents’ degree of interest in
+      “information about what’s going on in politics and public affairs,” as well as their level of
+      attention to “information about what’s going on in politics and public affairs” (two-items
+      averaged scale, W1 Spearman–Brown = 0.97; mean = 6.67, SD = 2.70).
+
+            Political knowledge. This study also controls for the effect of individuals’ awareness of
+      current events and knowledge about the overall functioning of the political system. Correct
+      responses were coded as 1, while incorrect or missing ones were coded as 0. The authors
+                              WHEN CITIZENS AND JOURNALISTS INTERACT ON TWITTER                  235
+
+created items based on recommendations by Delli Carpini and Keeter (1997) (eight-item
+additive scales, range = 0–8, W1 Kuder–Richardson 20 (KR20) = 0.75; mean = 4.58, SD =
+2.17).
+
+      Discussion network size. We also controlled for the approximate number of people
+that make up a respondent’s discussion network, as this variable has been previously
+related to political attitudes and behaviors, including news use (Mutz 2002). We asked
+respondents in an open-ended fashion about the number of people they “talked to face-
+to-face or over the phone about politics or public affairs,” and “talked to via the internet,
+including e-mail, chat rooms and social networking sites about politics or public affairs,”
+during the past month. As expected, the additive scale consisting of these two items
+was highly skewed (W1 mean = 4.36, median = 1.00, SD = 16.89, skewness = 10.86). The
+natural logarithm was then used to convert the distribution of a variable to a more
+normal distribution (W1 mean = 0.33, median = 0.24, SD = 0.37, skewness = 1.32).
+
+      Discussion frequency.  Respondents were also asked about the frequency of political
+talk with both near and far people. The questionnaire asked how often respondents talk
+about politics or public affairs with: “spouse or partner,” “family and relatives,” “friends,”
+“acquaintances,” “strangers,” “neighbors you know well,” “co-workers you know well,”
+and “co-workers you do not know well (10-item averaged scale, W1 Cronbach’s α = 0.87;
+mean = 3.27, SD = 1.74).
+
+      Traditional media trust. This variable taps the level of conﬁdence and trust subjects
+report concerning traditional news media. Thus, the questionnaire asked respondents
+how much they trusted news from “mainstream news media” and “news aggregators”
+(two-item index, W1 Spearman–Brown = 0.50; mean = 5.00, SD = 1.95).
+
+     Alternative media trust. In order to provide a more comprehensive measure of trust in
+the media, we also considered individual’s trust in non-mainstream, alternative news
+media. Respondents were asked about their level of trust in news from “alternative news
+media (e.g., blogs, citizen journalism),” and “social media sites” (two-item index, W1 Spear-
+man–Brown = 0.70; mean = 3.56, SD = 1.98).
+
+       Traditional news media use. Respondents were asked several questions to tap fre-
+quency of exposure to news from local television news, cable, national and local newspa-
+pers, and radio news (nine-item averaged scale, W1 Cronbach’s α = 0.76; mean = 5.26, SD =
+1.85).
+
+      Social media for news. Respondents were asked questions related to news consump-
+tion on social media, including Facebook, Twitter, Google+, Pinterest, Instagram, Tumblr,
+and Reddit (seven-item averaged scale, W1 Cronbach’s α = 0.87; mean = 1.73, SD = 1.75).
+
+     Overall social media use. Since individuals use social media for a range of activities
+beyond news (Quan-Haase and Young 2010), three items were included related to
+general social media use for social and connective purposes. The items asked how often
+respondents use social media “to stay in touch with friends and family,” “to meet new
+236   HOMERO GIL DE ZÚÑIGA ET AL.
+
+      people who share interests,” and “On a typical day, how much do you use social media”
+      (three-item averaged scale, W1 Cronbach’s α = 0.75; mean = 3.63, SD = 2.29).
+
+
+            Statistical Analyses
+             In the light of our hypotheses and research question, we conducted a series of lagged
+      panel regression analyses. First, we conducted a time-lagged ordinary least-square
+      regression (OLS) to assess the predictors of expectations about journalists on social
+      media. Next, we ran a model where expectations about journalists on social media is
+      regressed on engaging with journalists on Twitter in time. In the model, the independent
+      variables (taken from W1) were introduced in different blocks. The ﬁrst block of variables
+      comprised the set of demographics, the second included sociopolitical antecedents, and
+      the third contained variables related to media antecedents (trust in traditional media,
+      trust in alternative media, traditional news use, social media for news, and overall social
+      media use). The fourth block comprised just our variable of interest: expectations of journal-
+      ists on social media. Second, we conducted a series of time-lagged OLS regressions to
+      explore the effect of our variables of interest on editorial media bias perceptions (the
+      ﬁrst model to assess the direct effects and the second to test the interaction effect). The
+      ﬁrst three blocks of variables were identical to the above-mentioned, while the fourth
+      included expectations of journalists on social media, and the interaction term (expectations
+      of journalists on social media × engagement with journalist on Twitter). Finally, to plot the
+      interaction effect, we used the PROCESS macro in SPSS (Hayes 2013; Model 1; Figure 1).
+
+
+            Results
+             The ﬁrst hypothesis (H1) proposed that expectations of performance are positively
+      related to engaging with journalists on Twitter at a later time. Table 1 shows that, consistent
+      with H1, expectations for journalists’ performance on social media (W1) is positively and
+      strongly associated with engaging with journalists on Twitter (W2) (β = 0.224, p < 0.001).
+      Younger adults (β = −0.140, p < 0.001), men (β = −0.066, p < 0.01), those who discuss poli-
+      tics (β = 0.117, p < .001), and those that rely on social media for news (β = 0.352, p <
+      0.001) were also likely to say that they engaged with journalists on Twitter. Table 1 also
+
+
+
+
+            FIGURE 1
+            Conceptual model: interaction effect of normative expectations about the press on the
+            relationship between news use and civic participation. SM, social media
+                              WHEN CITIZENS AND JOURNALISTS INTERACT ON TWITTER                         237
+
+      TABLE 1
+      Lagged panel regression model of expectations about journalist on social media (W1)
+      predicting engaging with journalists on Twitter (W2)
+
+                                        Expectations of journalists’           Engagement with
+                                     performance on social media, W1       journalists on Twitter, W2
+      Block 1: Demographics W1
+      Age                                        −0.129***                            −0.140***
+      Gender (female)                            −0.015                               −0.066**
+      Education                                  −0.014                                0.011
+      Income                                     −0.049*                              −0.012
+      Race (white)                                 0.013                              −0.020
+      ΔR2 (%)                                      6.7                                11.2
+      Block 2: Social and political antecedents W1
+      Political interest                           0.029                              −0.035
+      Political knowledge                          0.012                              −0.048
+      Discussion network size                      0.034                              −0.012
+      Frequency of discussion                      0.206***                            0.117***
+      ΔR2 (%)                                    24.7                                 12.4
+      Block 3: media antecedents W1
+      Traditional media trust                      0.008                              −0.011
+      Alternative media trust                      0.183***                            0.026
+      Traditional news                             0.030                               0.050
+      Social media news                            0.048                               0.352***
+      Overall social media                         0.365***                            0.084**
+      ΔR2 (%)                                    20.8                                 20.0
+      Block 4: Variables of interest W1
+      Expectations about                           –                                   0.224***
+        journalists on social media
+      ΔR2 (%)                                                                          2.7
+      Total R2 (%)                               45.4                                 46.4
+
+      Sample size = 1020. Cell entries are ﬁnal-entry OLS standardized coefﬁcients.
+      *p < 0.05, **p < 0.01, ***p < 0.001.
+
+
+shows the individual factors related to expectations of performance on social media.
+Younger people, those that discuss politics more frequently, those with higher levels of
+trust in alternative news sources, and those who use social media for non-news also
+expected journalists to give context to the news, share content, and foster community dis-
+cussions on social media. These ﬁndings are in line with the central thesis of the paper,
+which proposes that social media experiences set standards for a type of reciprocity
+between journalists and their audiences. H1 is supported.
+       H2 predicted that expectations about journalists on social media are positively associ-
+ated with perceptions of media bias. According to the second series of lagged OLS models
+and consistent with H2, expectations of journalists’ performance on social media are
+directly related to perceptions of editorial media bias, and the relationship is positive
+and statistically signiﬁcant (β = 0.113, p < 0.001) (Model 1; Table 2). Older adults (β =
+0.108, p < 0.001), females (β = 0.073, p < 0.05), whites (β = 0.091, p < 0.01), and those with
+higher levels of political knowledge (β = 0.189, p < 0.001) were more likely to report
+holding perceptions of media bias. H2 is conﬁrmed. Our third hypothesis stated a direct,
+negative effect of asking journalists questions and re-tweeting content via Twitter on per-
+ceptions of media bias (H3). Consistent with H3 (Model 1; Table 2), engaging with journalists
+238   HOMERO GIL DE ZÚÑIGA ET AL.
+
+            TABLE 2
+            Lagged panel regression model of expectations about journalists on social media and
+            engaging on Twitter with journalists (W1) predicting perceived media bias (W2)
+
+                                                                      Perceived media bias, W2
+
+                                                             Model 1 (main          Model 2 (interaction
+                                                                effect)                   effect)
+            Block 1: Demographics W1
+            Age                                                 0.108**                      0.101**
+            Gender (female)                                     0.073*                       0.075*
+            Education                                          −0.006                       −0.002
+            Income                                             −0.021                       −0.020
+            Race (white)                                        0.091**                      0.090**
+            ΔR2 (%)                                             5.0                          5.0
+            Block 2: Social and political antecedents W¹
+            Political interest                                   0.063                       0.061
+            Political knowledge                                  0.189***                    0.191***
+            Discussion network size                              0.062                       0.067
+            Frequency of discussion                              0.071                       0.062
+            ΔR2 (%)                                              7.8                         7.8
+            Block 3: Media antecedents W1
+            Traditional media trust                             0.049                        0.047
+            Alternative media trust                             0.001                       −0.002
+            Traditional news                                   −0.022                       −0.030
+            Social media news                                  −0.025                       −0.025
+            Overall social media                                0.022                        0.028
+            ΔR2 (%)                                             0.6                          0.6
+            Block 4: Variables of interest W1
+            Expectations about journalists on social             0.113**                     0.043
+               media
+            Engagement with journalists on Twitter             −0.128**                     −0.358***
+            Interaction: Expectations × Engagement              –                            0.282*
+            ΔR2 (%)                                             1.3                          1.8
+            Total R2 (%)                                       14.6                         15.1
+
+            Sample size = 1020. Cell entries are ﬁnal-entry OLS standardized coefﬁcients.
+            *p < 0.05, **p < 0.01, ***p < 0.001.
+
+
+
+
+      on Twitter lowers an individual’s perception of media bias (β = −0.128, p < 0.001). Those
+      more engaged with journalists on Twitter tend to perceive the news media in general as
+      less biased. H3 is conﬁrmed.
+             Finally, our research question explored a possible interaction effect of expectations
+      and engagement on perceptions of media bias. Table 2 shows a positive, statistically signiﬁ-
+      cant interaction effect (β = 0.282, p < 0.05) (Model 2; Table 2). Overall, a closer relationship
+      with journalists on Twitter is associated with lower levels of perceived media bias. However,
+      concerning the inﬂuence of the moderating variable, this positive effect is less intense
+      among those with high expectations regarding the role of journalists on social media.
+      Put differently, those who report higher levels of engagement with journalists on Twitter,
+      and have lower expectations about their role on social media, tend to beneﬁt more from
+      their Twitter interactions, at least in regards to altering their perceptions of overall media
+      bias (Figures 1 and 2).
+                             WHEN CITIZENS AND JOURNALISTS INTERACT ON TWITTER                    239
+
+
+
+
+      FIGURE 2
+      The ﬁgure shows the interaction term of expectations about journalists on social media
+      (moderator) on the relationship between engaging on Twitter with journalists and
+      perceived media bias. Group differences in expectations of journalists and engaging
+      on Twitter are the mean ± 1 SD from the mean
+
+
+      Discussion
+      Public evaluations of press performance (including media bias) are at all-time lows
+(Gallup 2015; Paulsen 2015; Rasmussen 2015). Interacting in social media spheres is one
+possible way to meliorate the situation, through sustained engagement with the public
+on micro-blogging platforms like Twitter (Lewis 2015). This study explored how expec-
+tations of good journalism on social media (giving analysis of the news, discussing
+events, sharing news from other sources, fostering community values, etc.) lead to audience
+engagement with journalists on Twitter, and in turn, lower levels of perceived media bias.
+Citizens’ perceptions of proper journalism practice on social media include a range of activi-
+ties associated with reciprocity, collaboration, and public service. The news industry is
+struggling on two fronts: contests over the role of journalism in networked information
+spaces, and increasing economic pressures (Lewis 2012; Ryfe 2012). Fulﬁlling citizens’
+expectations of “good journalism” practice on social media is one way to maintain pro-
+fessional integrity, and engage news audiences.
+
+
+
+      Engagement and Editorial Bias
+      Our models indicate that expectations of performance on social media are a strong
+predictor that one will engage with journalists on Twitter. However, in order for individuals
+to lower their levels of perceived editorial bias, they had to engage with the news on
+Twitter. That is, those with high expectations alone were also more likely to report
+seeing an editorial bias in the news. The results indicate that individuals who do not interact
+online are not experiencing the potential pro-social beneﬁts of social media (Bond et al.
+2012; Pingree 2007). This is in line with previous studies outlining the differential effects
+between consumptive and expressive media uses (Gil de Zúñiga and Rojas 2009; Gil de
+Zúñiga et al. 2013).
+240   HOMERO GIL DE ZÚÑIGA ET AL.
+
+             Although we expected that engagement would lower perceptions of editorial bias,
+      the result is also somewhat counter-intuitive. Several studies show that the traditional con-
+      ception of the “objective” reporter does not apply on Twitter. On this particular social media
+      platform, journalists share opinions, engage in humor, and discuss “job talk” with the public
+      (Lawrence et al. 2014; Molyneux 2015). If this is the case, one might argue that increased
+      interaction with journalists on Twitter would increase perceptions of bias. That is, certain
+      violations of professional objectivity might further stimulate notions of a bias press
+      corps. However, journalists only partially abandon traditional reporting norms on Twitter.
+      In fact, evidence in this area suggests that reporters on Twitter still strongly defer to auth-
+      ority, rarely criticize politicians, and often act more like stenographers than fact checkers
+      (Coddington, Molyneux, and Lawrence 2014; Lasorsa, Lewis, and Holton 2012; Mourão,
+      Diehl, and Vasudevan 2015). Other scholars point out that journalists are hesitant to relin-
+      quish control over the news, and often attach traditional norms to their digital work (e.g.
+      Quandt 2008; Singer 2010). We expect that perceptions of bias decrease, because individ-
+      uals are experiencing, at least in part, these more traditional values of reporting. In
+      response, the social interaction on Twitter stimulates long-held assumptions about the
+      “objective” reporter.
+
+
+            Interaction Effect
+             Expectations of “good journalism” practices in social media matter when explaining
+      effects on an individual’s level of perceived editorial bias. In other words, the more people
+      engage with journalists on Twitter, the less likely they are to report viewing the media as
+      having an editorial bias. However, the effect is stronger for those with lower expectations.
+      Those with low expectations of journalists’ performance on social media beneﬁt the most
+      from increased engagement. This may be because these individuals are learning more
+      about the intentions of the individual journalist, the processes of reporting, and the poten-
+      tial social utility of journalism on social media. In turn, these individuals are less likely to
+      view the overall news media as biased, because they derived some positive sense of the
+      role of the news in society. Those with higher expectations also tend to perceive the
+      media as less biased when they engage with the news on Twitter, compared to those
+      with high expectations who do not engage on Twitter. However, they do not seem to be
+      lowering their perceptions of editorial bias to the same extent as respondents with lower
+      expectations. This may be happening because those with higher expectations tend to
+      learn less from their Twitter experiences. They may also hold journalists, and the news
+      media in general, to higher normative standards that are difﬁcult to meet in reality.
+             Overall, these results suggest that when expectations of journalistic performance are
+      in line with the ethos of digital culture, respondents tend to see bias in mainstream media.
+      However, these positive expectations also lead respondents to engage more frequently
+      with journalists on social media. That social interaction seems to be strengthening positive
+      perceptions of the press. These relationships hold, after including a range of demographic
+      and personal traits. However, it is interesting to note who tends to engage with the emer-
+      ging digital news culture. According to the results, it is younger men, with higher levels of
+      trust in alternative news sources. Future studies might investigate whether, and why, a
+      gender gap might exist for these behaviors (Gil de Zúñiga and Valenzuela 2010).
+             This study has some important limitations that should be mentioned. First, this study
+      looked at Twitter speciﬁcally. Future work should investigate the effects of interactions on
+                             WHEN CITIZENS AND JOURNALISTS INTERACT ON TWITTER                      241
+
+other social media platforms. We also do not have pre-engagement and post-engagement
+measures for editorial bias. Future research in this area might experiment with the various
+types of social media activities, and with different types of news content, to better deter-
+mine when and why engagement might have positive social outcomes. Thus, more work
+needs to be done to determine the underlying causes for how social interaction leads to
+improved perceptions about media bias. The number of individuals who use Twitter for
+news is still relatively small, so results should be interpreted with caution for generalizing
+to other contexts of interaction with journalists.
+       The ﬁndings offer valuable evidence for an argument that encourages newsrooms to
+take advantage of the collaborative and networking capabilities of Twitter. Much of the lit-
+erature on professional practice on Twitter suggests that journalists refrain from certain
+types of engagement with the public, perhaps out of fear of being viewed as bias in some
+way (e.g. Engesser and Humprecht 2015). Results from the regression models suggest that
+the opposite is true. The more individuals interact with journalists on Twitter, perceptions
+of editorial bias decrease. This result offers empirical support for researchers and pro-
+fessionals who are encouraging journalists to re-think their role in democratic society. As
+newsrooms shrink and economic pressures continue to squeeze the industry, reporters
+will come under increasing pressure to maintain a public service role. In the case of social
+media, reciprocity with citizens and collaborative news making is one solution (Borger,
+van Hoof, and Sanders 2014; Holton et al. 2015; Lewis 2012; Lewis et al. 2014).
+       As long as journalists resist technological changes that conﬂict with a preferred (often
+pre-internet era) conception of their role in society, engagement with the audience will
+likely be limited in some areas (control over content, collaborative news making).
+However, by living up to expectations of good practices on social media, journalists and
+citizens will both beneﬁt. In short, “good journalism” and how both citizens and journalists
+perceive journalistic practices matter (Gil de Zúñiga and Hinsley 2013). Increased citizen
+engagement means higher likelihood of reaching a larger audience, while at the same
+time increasing trafﬁc to news websites. For citizens, the increased exposure to individual
+journalists may alter orientations toward the media, thus increasing their news consump-
+tion. This could lead to greater involvement in public life through social media, particularly
+for younger citizens.
+
+
+      DISCLOSURE STATEMENT
+      No potential conﬂict of interest was reported by the authors.
+
+
+      REFERENCES
+Bandura, Albert. 2001. “Social Cognitive Theory: An Agentic Perspective.” Annual Review of Psy-
+      chology 52 (1): 1–26. doi:0.1146/annurev.psych.52.1.1.
+Benkler, Yochai. 2006. The Wealth of Networks: How Social Production Transforms Markets and
+      Freedom. Yale University Press. http://www.jus.uio.no/sisu/the_wealth_of_networks.
+      yochai_benkler/portrait.a5.pdf.
+Bennett, Lance W. 1996. News: The Politics of Illusion. White Plains, NY: Longman.
+Bennett, Lance W. 2008. “Changing Citizenship in the Digital Age.” In Civic Life Online: Learning
+      How Digital Media Can Engage Youth, edited by Lance W. Bennett, 1–24. The John
+242   HOMERO GIL DE ZÚÑIGA ET AL.
+
+               D. and Catherine T. MacArthur Foundation Series on Digital Media and Learning. Cam-
+               bridge, MA: The MIT Press. doi: 10.1162/dmal.9780262524827.001.
+      Bergström, Annika. 2008. “The Reluctant Audience: Online Participation in the Swedish Journal-
+               istic Context.” Westminster Papers in Communication and Culture 5 (2): 60–80. http://www.
+               westminster.ac.uk/__data/assets/pdf_ﬁle/0012/20019/005WPCC-Vol5-No2-Annika_
+               Bergstrom.pdf.
+      Borger, Merel, Anita van Hoof, and José Sanders. 2014. “Expecting Reciprocity: Towards a Model
+               of the Participants’ Perspective on Participatory Journalism.” New Media & Society, (ahead
+               of print). doi:10.1177/1461444814545842.
+      Bosnjak, Michael, Marcel Das, and Peter Lynn. 2016. “Symposium Issue on Methods for Prob-
+               ability-based Online and Mixed-mode Panels.” Social Science Computer Review 34 (1): 1–
+               5. doi:10.1177/0894439315579246.
+      Cappella, Joseph N., and Kathleen Hall Jamieson. 1997. Spiral of Cynicism: The Press and the Public
+              Good. New York, NY: Oxford University Press.
+      Chaffee, J. 1990. Thinking Critically. 3rd ed. Boston: Houghton Mifﬂin.
+      Coddington, Mark, Logan Molyneux, and Regina G. Lawrence. 2014. “Fact Checking the Cam-
+               paign How Political Reporters Use Twitter to Set the Record Straight (or not).” The Inter-
+               national Journal of Press/Politics 19 (4): 391–409. doi:10.1177/1940161214540942.
+      Dalton, R. J., Paul A. Beck, and Robert Huckfeldt. 1998. “Partisan Cues and the Media: Information
+               Flows in the 1992 Presidential Election.” American Political Science Review 92 (1): 111–126.
+               doi:10.2307/2585932.
+      Delli Carpini, Michael X., and Scott Keeter. 1997. What Americans Know about Politics and Why It
+              Matters. New Haven, CT: Yale University Press.
+      Deuze, Mark. 2007. Media Work. London: Polity Press.
+      Domingo, David, Thorsten Quandt, Ari Heinonen, Steve Paulussen, Jane B. Singer, and Marina
+               Vujnovic. 2008. “Participatory Journalism Practices in the Media and Beyond: An Inter-
+               national Comparative Study of Initiatives in Online Newspapers.” Journalism Practice 2
+               (3): 326–342. doi:10.1080/17512780802281065.
+      Ekdale, Brian, Jane B. Singer, Melissa Tully, and Shawn Harmsen. 2015. “Making Change: Diffusion
+               of Technological, Relational, and Cultural Innovation in the Newsroom.” Journalism and
+               Mass Communication Quarterly, (ahead of print). doi:10.1177/1077699015596337.
+      Elliott, William R., and William J. Schenck-Hamlin. 1979. “Film, Politics and the Press: The Inﬂuence
+              of ‘All the President’s Men’.” Journalism and Mass Communication Quarterly 56 (3): 546–553.
+      Engesser, Sven, and Edda Humprecht. 2015. “Frequency or Skillfulness: How Professional News
+               Media Use Twitter in Five Western Countries.” Journalism Studies 16 (4), (ahead of print).
+               doi:10.1080/1461670X.2014.939849.
+      Entman, R. M. 1993. “Framing: Towards Clariﬁcation of a Fractured Paradigm.” In McQuail’s Reader
+              in Mass Communication Theory, edited by Denis McQuail, 390–397. London: Sage.
+      Eveland, William P., and Dhavan V. Shah. 2003. “The Impact of Individual and Interpersonal
+              Factors on Perceived News Media Bias.” Political Psychology 24: 101–117. doi:10.1111/
+              0162-895X.00318.
+      Farhi, Paul. 2009. “The Twitter Explosion.” American Journalism Review 31 (3): 26–31. http://
+              ajrarchive.org/Article.asp?id = 4756.
+      Fico, Frederick, John D. Richardson, and Steven M. Edwards. 2004. “Inﬂuence of Story Structure
+               on Perceived Story Bias and News Organization Credibility.” Mass Communication & Society
+               7 (3): 301–318. doi:10.1207/s15327825mcs0703_3.
+                              WHEN CITIZENS AND JOURNALISTS INTERACT ON TWITTER                        243
+
+Fredin, Eric S., Gerald M. Kosicki, and Lee B. Becker. 1996. “Cognitive Strategies for Media Use
+       during a Presidential Campaign.” Political Communication 13.1: 23–42. doi:10.1080/
+       10584609.1996.9963093.
+Fröhlich, Romy, Oliver Quiring, and Sven Engesser. 2012. “Between Idiosyncratic Self-interests
+       and Professional Standards: A Contribution to the Understanding of Participatory Journal-
+       ism in Web 2.0. Results from an Online Survey in Germany.” Journalism 13 (8): 1041–1063.
+       doi:10.1177/1464884912442282.
+Gallup. 2015. “Americans’ Trust in Media Remains at Historical Low.” http://www.gallup.com/poll/
+       185927/americans-trust-media-remains-historical-low.aspx.
+Gil de Zúñiga, Homero. 2006. “Reshaping the Digital Inequality in the European Union: How
+       Psychological Variables Affect Internet Adoption Rates.” Webology 3 (4). http://www.
+       webology.org/2006/v3n4/a32.html.
+Gil de Zúñiga, Homero, Ingrid Bachmann, Shih-Hsien Hsu, and Jennifer Brundidge. 2013. “Expres-
+       sive Versus Consumptive Blog Use: Implications for Interpersonal Discussion and Political
+       Participation.” International Journal of Communication 7 (22): 1538–1559. http://ijoc.org/
+       index.php/ijoc/article/view/2215.
+Gil de Zúñiga, Homero, and Amber Hinsley. 2013. “The Press Versus the Public: What is “Good
+       Journalism?”” Journalism Studies 14 (6): 926–942. doi:10.1080/1461670X.2012.744551.
+Gil de Zúñiga, Homero, and Hernando Rojas. 2009. “Análisis de los efectos de los blogs en la soci-
+       edad de la información.” Comunicación y Ciudadanía 2 (3): 60–71.
+Gil de Zúñiga, Homero, and Sebastián Valenzuela. 2010. “Who Uses Facebook and Why.” In Face-
+       book and Philosophy: What’s on Your Mind? edited by D. Wittkower, xxi–xxxi. Chicago: Open
+       Court Publishing.
+Gunther, Albert C., and Kathleen Schmitt. 2004. “Mapping Boundaries of the Hostile Media
+       Effect.” Journal of Communication 54: 55–70. doi:10.1111/j.1460-2466.2004.tb02613.x.
+Hamilton, James T. 2004. All the News That’s Fit to Sell: How the Market Transforms Information into
+       News. New Jersey: Princeton University Press.
+Hayes, Andrew F. 2013. Introduction to Mediation, Moderation, and Conditional Process Analysis: A
+       Regression-Based Approach. New York: Guilford Press.
+Heider, Don, Maxwell McCombs, and Paula M. Poindexter. 2005. “What the Public Expects of
+       Local News: Views on Public and Traditional Journalism.” Journalism & Mass Communi-
+       cation Quarterly 82 (4): 952–967.
+Herman, Edward S., and Noam Chomsky. 2010. Manufacturing Consent: The Political Economy of
+       the Mass Media. New York: Random House.
+Hermida, Alfred. 2010. “Twittering the News.” Journalism Practice 4 (3): 297–308. doi:10.1080/
+       17512781003640703.
+Hermida, Alfred, Fred Fletcher, Darryl Korell, and Donna Logan. 2012. “Share, Like, Recommend:
+       Decoding the Social Media News Consumer.” Journalism Studies 13 (5–6): 815–824. doi:10.
+       1080/1461670X.2012.664430.
+Holton, Avery E., Mark Coddington, Seth C. Lewis, and Homero Gil de Zúñiga. 2015. “Reciprocity
+       and the News: The Role of Personal and Social Media Reciprocity in News Creation and
+       Consumption.” International Journal of Communication 9 (22). http://ijoc.org/index.php/
+       ijoc/article/view/3598.
+Holton, Avery E., and Seth C. Lewis. 2011. “Journalists, Social Media, and the Use of Humor on
+       Twitter.” Electronic Journal of Communication 21 (1/2). http://www.cios.org/EJCPUBLIC/
+       021/1/021121.html.
+244   HOMERO GIL DE ZÚÑIGA ET AL.
+
+      Hsu, Meng-Hsiang, Teresa L. Ju, Chia-Hui Yen, and Chun-Ming Chang. 2007. “Knowledge Sharing
+             Behavior in Virtual Communities: The Relationship between Trust, Self-efﬁcacy, and
+             Outcome Expectations.” International Journal of Human-computer Studies 65 (2): 153–
+             169. doi:10.1016/j.ijhcs.2006.09.003.
+      Jackob, Nikolaus Georg Edmund. 2010. “No Alternatives? The Relationship between Perceived
+             Media Dependency, Use of Alternative Information Sources, and General Trust in Mass
+             Media.” International Journal of Communication 4: 589–606. http://ijoc.org/index.php/
+             ijoc/article/view/615.
+      Kiousis, Spiro. 2001. “Public Trust or Mistrust? Perceptions of Media Credibility in the Information
+             Age.” Mass Communication & Society 4 (4): 381–403. doi:0.1207/S15327825MCS0404_4.
+      Kosicki, G. M., & McLeod, J. M. 1990. “Learning from political news: Effects of media images and
+             information-processing strategies.” Mass Communication and Political Information Proces-
+             sing, 69–83.
+      Larsson, A. O. 2011. “Interactive to me–interactive to you? A study of use and appreciation of
+             interactivity on Swedish newspaper websites.” New Media & Society, 13(7): 1180–1197.
+      LaRose, Robert, and Matthew S. Eastin. 2004. “A Social Cognitive Theory of Internet Uses and
+             Gratiﬁcations: Toward a New Model of Media Attendance.” Journal of Broadcasting & Elec-
+             tronic Media 48 (3): 358–377. doi:10.1207/s15506878jobem4803.
+      Lasorsa, Dominic, Seth C. Lewis, and Avery E. Holton. 2012. “Normalizing Twitter.” Journalism
+             Studies 13 (1): 19–36. doi:10.1080/1461670X.2011.571825.
+      Lawrence, Regina G., Logan Molyneux, Mark Coddington, and Avery Holton. 2014. “TWEETING
+             CONVENTIONS: Political Journalists’ Use of Twitter to Cover the 2012 Presidential Cam-
+             paign.” Journalism Studies 15 (6): 789–806. doi:10.1080/1461670X.2013.836378.
+      Lee, Tien-Tsung. 2005. “The Liberal Media Myth Revisited: An Examination of Factors Inﬂuencing
+             Perceptions of Media Bias.” Journal of Broadcasting & Electronic Media 49: 43–64. doi:10.
+             1207/s15506878jobem4901_4.
+      Lee, Chei Sian, and Long Ma. 2012. “News Sharing in Social Media: The Effect of Gratiﬁcations and
+             Prior Experience.” Computers in Human Behavior 28 (2): 331–339. doi:10.1016/j.chb.2011.
+             10.002.
+      Lewis, Seth C. 2012. “The Tension between Professional Control and Open Participation: Journalism
+             and its Boundaries.” Journalism Studies 15: 836–866. doi:10.1080/1369118X.2012.674150.
+      Lewis, Seth C. 2015. “Reciprocity as a Key Concept for Social Media and Society.” Social Media+
+             Society 1 (1): 1–2. doi:10.1177/2056305115580339.
+      Lewis, Seth C., Avery E. Holton and Mark Coddington . 2014. “Reciprocal Journalism: A Concept of
+             Mutual Exchange between Journalists and Audiences.” Journalism Practice 8 (2): 229–241.
+             doi:10.1080/17512786.2013.859840.
+      Lotan, Gilad, Erhardt Graeff, Mike Ananny, Devin Gaffney, Ian Pearce, and danah boyd. 2011. “The
+             Arab Spring: The Revolutions Were Tweeted: Information Flows During the 2011 Tunisian
+             and Egyptian Revolutions.” International Journal of Communication (5): 1375–1405. http://
+             ijoc.org/index.php/ijoc/article/viewArticle/1246.
+      Manjoo, Farhad. 2015. “For Twitter, Future means Here and Now.” The New York Times, June 11. http://
+             www.nytimes.com/2015/06/12/business/for-twitter-future-means-here-and-now.html.
+      McCombs, Maxwell E., and Donald L. Shaw. 1972. “The Agenda-setting Function of Mass Media.”
+             Public Opinion Quarterly 36 (2): 176–187.
+      McQuail, D. 1987. “Functions of Communication: a Nonfunctionalist Overview.” In Handbook of
+             Communication Science, edited by S. Chafee and C. R. Berger, 327–349. Newbury Park,
+             CA: Sage.
+                              WHEN CITIZENS AND JOURNALISTS INTERACT ON TWITTER                        245
+
+Molyneux, Logan. 2015. “What Journalists Retweet: Opinion, Humor, and Brand Development on
+       Twitter.” Journalism 16 (7): 920–935. doi:10.1177/1464884914550135.
+Morris, Jonathan S. 2007. “Slanted Objectivity? Perceived Media Bias, Cable News Exposure, and
+       Political Attitudes.” Social Science Quarterly 88 (3): 707–728. doi:10.1111/j.1540-6237.2007.
+       00479.x.
+Mourão, Rachel, Trevor Diehl, and Kristnan Vasudevan. 2015. “I LOVE BIG BIRD: How Journalists
+       Tweeted Humor during the 2012 Presidential Debates.” Digital Journalism 4 (2): 211–228.
+       doi:10.1080/21670811.2015.1006861.
+Mullainathan, Sendhil, and Andrei Shleifer. 2005. “The Market for News.” American Economic
+       Review 95 (4): 1031–1053. http://www.jstor.org/stable/4132704.
+Mullin, Benjamin. 2015. “Report: Journalists are Largest, Most Active Veriﬁed Group on Twitter.”
+       Poynter, May, 26. http://www.poynter.org/news/mediawire/346957/report-journalists-are-
+       largest-most-active-group-on-twitter.
+Mutz, D. C. 2002. “The consequences of cross-cutting networks for political participation”. Amer-
+       ican Journal of Political Science 46 (4): 838–855.
+Norris, Pippa. 2000. A Virtuous Circle: Political Communications in Postindustrial Societies. Cam-
+       bridge, UK: Cambridge University Press.
+Östman, Johan. 2012. “Information, Expression, Participation: How Involvement in User Gener-
+       ated Content Relates to Democratic Engagement among Young People.” New Media
+       and Society 14: 1004–1021. doi:10.1177/1461444812438212.
+Paek, Hye-Jin, So-Hyang Yoon, and Dhavan V. Shah. 2005. “Local News, Social Integration, and
+       Community Participation: Hierarchical Linear Modeling of Contextual and Cross-level
+       Effects.” Journalism & Mass Communication Quarterly 82 (3): 587–606. doi:10.1177/
+       107769900508200307.
+Papacharissi, Zizi. 2007. The Blogger Revolution? Audiences as Media Producers. In Blogging, Citi-
+       zenship, and the Future of Media, edited by Mark Tremayne, 21–38. New York: Routledge.
+Parmelee, John H. 2013. “Political Journalists and Twitter: Inﬂuences on Norms and Practices.”
+       Journal of Media Practice 14 (4): 291–305. doi:10.1386/jmpr.14.4.291_1.
+Paulsen, Ken. 2015. “News Media Lose Trust but Gain Allies: Column.” USA Today, July 2. http://
+       www.usatoday.com/story/opinion/2015/07/02/ﬁrst-amendment-survey-journalism-social-
+       media-column/29432281/.
+Pew Research Center. 2015. “State of the news media 2015.” http://www.journalism.org/2015/04/
+       29/state-of-the-news-media-2015.
+Pingree, Ray J. 2007. “How Messages Affect Their Senders: A More General Model of Message
+       Effects and Implications for Deliberation.” Communication Theory 17 (4): 439–461. doi:10.
+       1111/j.1468-2885.2007.00306.x.
+Pinkleton, Bruce E., Erica Weintraub Austin, and Kristine K. J. Fortman. 1998. “Relationships of
+       Media Use and Political Disaffection to Political Efﬁcacy and Voting Behavior.” Journal of
+       Broadcasting & Electronic Media 42 (1): 34–49.
+Quan-Haase, Anabel, and Alyson L. Young. 2010. “Uses and Gratiﬁcations of Social Media: A Com-
+       parison of Facebook and Instant Messaging.” Bulletin of Science, Technology and Society 30
+       (5): 350–361. doi:10.1177/0270467610380009.
+Quandt, Thorsten. 2008. “News on the World Wide Web? A Comparative Content Analysis of
+       Online News in Europe and the United States.” Journalism Studies 9 (5): 717–738. doi:10.
+       1080/14616700802207664.
+246   HOMERO GIL DE ZÚÑIGA ET AL.
+
+      Rasmussen Reports. 2015. “Most Voters Expect Biased News Coverage of 2016 Presidential Race.”
+              http://www.rasmussenreports.com/public_content/politics/-general_politics/may_2015/
+              most_voters_expect_biased_news_coverage_of_2016_presidential_race.
+      Robinson, Sue. 2011. “Journalism as Process: The Organizational Implications of Participatory
+              Online News.” Journalism and Communication Monographs 13 (3): 138–210. doi:10.1177/
+              152263791101300302.
+      Ryfe, David. M. 2012. Can Journalism Survive? An Inside Look at American Newsrooms. Cambridge,
+              UK: Polity Press.
+      Schudson, Michael. 1998. The Good Citizen: A History of American Civic Life. New York: Free Press.
+      Singer, Jane B. 2010. “Quality Control: Perceived Effects of User-generated Content on Newsroom
+              Norms, Values, and Routines.” Journalism Practice 4 (2): 127–142. doi:10.1080/
+              1751278090339197.
+      Thurman, Neil. 2008. “Forums for Citizen Journalists? Adoption of User Generated Content Initiat-
+              ives by Online News Media.” New Media & Society 10 (1): 139–157. doi:10.1177/
+              1461444807085325.
+      Tsfati, Yariv, and Joseph N. Cappella. 2003. “Do People Watch What They Do Not Trust? Exploring
+              the Association between News Media Skepticism and Exposure.” Communication Research
+              30 (5): 504–529.
+      Turcotte, Jason, Chance York, Jacob Irving, Rosanne M. Scholl, and Raymond J. Pingree. 2015.
+              “News Recommendations from Social Media Opinion Leaders: Effects on Media Trust
+              and Information Seeking.” Journal of Computer Mediated Communication 20 (5): 520–
+              535. doi:10.1111/jcc4.12127.
+      Twitter. 2015. “Twitter Usage/Company Facts.” October 30. https://about.twitter.com/company.
+      Van Dijck, José. 2009. “Users Like You? Theorizing Agency in User-generated Content.” Media,
+              Culture & Society 31 (1): 41–58. doi:10.1177/0163443708098245.
+      Watson, Nicole, and Mark Wooden. 2006. “Modeling Longitudinal Survey Response: The Experi-
+              ence of the HILDA Survey.” In ACSPRI Social Science Methodology Conference, Sydney,
+              Australia.
+      Watts, Mark D., David Domke, Dhavan V. Shah, and David P. Fan. 1999. “Elite Cues and Media Bias
+              in Presidential Campaigns Explaining Public Perceptions of a Liberal Press.” Communi-
+              cation Research 26 (2): 144–175. doi:10.1177/009365099026002003.
+      Wells, Chris, and Kjerstin Thorson. 2015. “Combining Big Data and Survey Techniques to Model
+              Effects of Political Content Flows in Facebook.” Social Science Computer Review, (ahead of
+              print). doi:10.1177/0894439315609528.
+      Zolkepli, Izzal Asnira, and Yusniza Kamarulzaman. 2015. “Social Media Adoption: The Role of
+              Media Needs and Innovation Characteristics.” Computers in Human Behavior 43: 189–
+              209. doi:10.1016/j.chb.2014.10.050.
+
+
+        Homero Gil de Zúñiga (author to whom correspondence should be addressed), Depart-
+              ment of Communication, University of Vienna, Austria; Facultad de Comunicación y
+              Letras, Universidad Diego Portales, Chile. E-mail: homero.gil.de.zuniga@univie.ac.at
+        Trevor Diehl, Department of Communication, University of Vienna, Austria. E-mail: trevor.
+              diehl@univie.ac.at
+        Alberto Ardevol-Abreu, Department of Communication, University of Vienna, Austria. E-
+              mail: alberto.ardevol-abreu@univie.ac.at
+

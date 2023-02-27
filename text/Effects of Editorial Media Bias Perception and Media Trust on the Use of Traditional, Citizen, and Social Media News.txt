@@ -1,0 +1,1054 @@
+654684
+research-article2016
+                       JMQXXX10.1177/1077699016654684Journalism & Mass Communication QuarterlyArdèvol-Abreu and Gil de Zúñiga
+
+
+
+
+                                                      News Media Trust and Framing of Bullying Responsibility
+                                                                                                                                                                   Journalism & Mass Communication Quarterly
+                                                                                                                                                                                        2017, Vol. 94(3) 703­–724
+                                                      Effects of Editorial Media                                                                                                                   © 2016 AEJMC
+                                                                                                                                                                                        Reprints and permissions:
+                                                      Bias Perception and                                                                                                   sagepub.com/journalsPermissions.nav
+                                                                                                                                                                               DOI: 10.1177/1077699016654684
+                                                      Media Trust on the Use                                                                                               http://journals.sagepub.com/home/jmq
+
+                                                      of Traditional, Citizen,
+                                                      and Social Media News
+
+
+                                                      Alberto Ardèvol-Abreu1 and Homero Gil de Zúñiga1,2
+
+
+
+                                                      Abstract
+                                                      Citizens’ levels of mistrust toward the media, as well as their perception of media
+                                                      bias, have increased in past years in most Western democracies. This study explores
+                                                      how these negative observations on journalism may influence their use of traditional,
+                                                      citizen, and social media for news. Drawing on two-wave U.S. panel data, results
+                                                      suggest that media trust and perceived bias relate to media consumption differently.
+                                                      Trust in social and citizen media positively predicts use of news via social media, but
+                                                      has no effect on traditional or citizen news use. By contrast, perceived media bias is
+                                                      associated with decreased news use overall.
+
+                                                      Keywords
+                                                      trust in social and citizen media, trust in traditional media, media bias perception,
+                                                      journalism.
+
+
+                                                      Journalism and the news media play key roles for the proper functioning of modern
+                                                      democratic societies (Brundidge, Garret, Rojas, & Gil de Zúñiga, 2014). Not without
+                                                      reason, journalism is considered to be the life-blood of a democracy, as it enables
+                                                      informed, reasoned, and rational participation by citizens (Gil de Zúñiga, 2015; Gunther,
+                                                      1992; Habermas, 1996). Furthermore, journalism has been traditionally regarded as a
+                                                      watchdog that oversees the activities of public authorities on behalf of citizens, and also
+
+                                                      1University                                                               of Vienna, Austria
+                                                      2Universidad                                                               Diego Portales, Santiago, Chile
+
+                                                      Corresponding Author:
+                                                      Alberto Ardèvol-Abreu, University of Vienna, Faculty of Social Sciences, Department of Communication,
+                                                      Althanstraße, 14 (UZA II), 1090 Vienna, Austria.
+                                                      Email: alberto.ardevol-abreu@univie.ac.at
+704                                   Journalism & Mass Communication Quarterly 94(3)
+
+
+as a mediator between citizens and politicians (Dyck & Zingales, 2002; Serrin & Serrin,
+2002). This ideal model is based on the trust placed by people in journalists, who are
+expected to put aside their political views and create unbiased news stories in accor-
+dance with the principles of “objectivity,” “fairness,” and “clear separation of informa-
+tion and opinion” (Farnsworth & Lichter, 2007; Schudson, 1978).
+   However, this prevalent narrative about the role of journalism in democratic societ-
+ies is currently changing due to (a) the rise of the internet, online news technologies,
+social media tools, and mobile applications, and (b) a crisis in traditional media (Garret
+et al., 2012). Citizen journalism has, to some extent, challenged the hierarchical, uni-
+directional model of news due to the fact that now ordinary citizens also engage in
+journalistic practices (Goode, 2009; Kenix, 2008). In the United States, but also in
+most of Western democracies, this changing media landscape may also be fueled by
+the public’s growing distrust toward the media, as well as their concern about the per-
+vasiveness of biased reporting (Iyengar & Hahn, 2009; Jones, 2004; Morris, 2007;
+Watts, Domke, Shah, & Fan, 1999). These negative perceptions have shown to reduce
+traditional media use, as people tend to obtain information from media they trust and
+to avoid those ones they distrust (Gaziano, 1988; Kiousis, 2001; Lupia & McCubbins,
+1998). Most previous studies, however, have mainly focused their attention on the
+effects of trust in mainstream news media (e.g., Bennett, Rhine, Flickinger, & Bennett,
+1999; Jackob, 2010; Tsfati, 2010; Tsfati & Cappella, 2003), while the outcomes of
+trust in citizen or alternative media are still virtually unexplored. More specifically,
+previous research has not determined whether trust in non-mainstream media drive
+news consumption either in similar or different ways than trust in traditional media
+does. A similar gap in the literature exists regarding the possible effects of media bias
+perception on citizen journalism exposure.
+   This study takes a step toward that direction and sheds light over these important,
+unresolved questions. First, the article seeks to examine the effect of trust in the media
+and perceived bias on patterns of news use. Additionally, the potentially different
+influences of trust in traditional media versus trust in social and citizen media are
+explored. To do so, we use data from a two-wave panel survey of a national sample of
+U.S. adults, which is more appropriate than cross-sectional data to establish evidence
+of causal relationships.
+
+
+Traditional, Citizen, and Social Media Use for News
+In the recent past, the unidirectional flow of information from news media organiza-
+tions to audience members left little room for participation in the creation or dispersal
+of information about politics or public affairs. This picture has gradually changed due
+to the widespread use of the internet and social media, providing citizens with new
+opportunities to actively engage in the process of information production (Bachmann,
+Correa, & Gil de Zúñiga, 2012; Chadha, Avila, & Gil de Zúñiga, 2012). They are citi-
+zen journalists (Carpenter, 2010; Goode, 2009; Thurman, 2008). The term citizen
+journalism can be used in a restrictive way, and applied only to the creation of original
+news content (interviewing, reporting, or analyzing news events). In a more open,
+Ardèvol-Abreu and Gil de Zúñiga                                                     705
+
+
+inclusive definition, citizen journalism may also include forms of collaboration in the
+news process in which no new material is created (e.g., linking, commenting on the
+posts created by others, retweeting, re-posting, etc.; Goode, 2009; Nip, 2006).
+    Citizen journalism and user-generated content are contributing to the development
+of what has been termed the “Fifth Estate,” complementary of the traditional “Fourth
+Estate” (the mass media; Dutton & Eynon, 2009). The “Fifth Estate” is an emergent,
+non-physical institution built on “networked individuals” with the ability to access and
+share information from a variety of alternative sources, thereby opening “new ways of
+increasing the accountability of politicians, press, experts and other loci of power”
+(Dutton, 2009, p. 2). Based on their common role as disseminators of information
+about politics and public events, the Fourth and Fifth Estates have begun to create
+links between each other that have somewhat changed the patterns of news production
+and use (Newman, Dutton, & Blank, 2012). In the words of Richard Sambrook, former
+BBC’s Head of News, “from now on news coverage is a partnership [between the
+media and the public]” (cited by Newman et al., 2012).
+    However, while professional and citizen journalism influence each other, a growing
+body of literature has also found profound differences in the contents they produce
+(Carpenter, 2010) and their impact on the audience (Carr, Barnidge, Lee, & Tsang,
+2014; Kaufhold, Valenzuela, & Gil de Zúñiga, 2010). Thus, for example, citizen-gen-
+erated content typically focuses on news coverage of a limited geographic area or a
+specific topic overlooked by mainstream media (Metzgar, Kurpius, & Rowley, 2011).
+Other studies have also shown that the public perceives the roles of both professional
+and citizen journalists as different (Nah & Chung, 2012). For these reasons, it makes
+sense to study whether media trust and perceived media bias relate to traditional and
+citizen media use differently or not.
+    The symbiotic relationship between traditional and citizen news is taking place
+primarily in the social media arena. On the one hand, increasing proportions of the
+traffic to online mainstream media is referred from Facebook or Twitter by ordinary
+citizens who filter, comment, and/or adapt the media content (Holton, Coddington, &
+Gil de Zúñiga, 2013; Newman et al., 2012). On the other, professional journalists are
+engaging more and more in active online active relationships with their audience,
+which often leads the former to give credit to content created by the latter (via men-
+tion, retweet, share, link, etc.; Hermida, Lewis, & Zamith, 2014). Hence, social media
+can be a source for mainstream and citizen-created news, but also for hybrid informa-
+tion containing the attributes of both. This is why this study separately considers the
+effects of trust in the media and media bias perception on (a) traditional news use, (b)
+citizen news use, and (c) social media use for news.
+
+Trust in the Media and Media Use
+Modern societies operate through social division of work and specialization that make
+it difficult or impossible for individuals to make decisions in all areas of their lives
+(Luhmann, 1979). In the political domain, journalists and media are entrusted with
+assisting citizens in becoming informed to make meaningful political decisions. Given
+706                                   Journalism & Mass Communication Quarterly 94(3)
+
+
+that it is almost impossible for citizens to get a firsthand experience of major political
+and social issues of the country, a certain degree of trust in the media is necessary to
+ensure the proper functioning of the democratic process (Bennett et al., 1999; Tsfati &
+Cohen, 2005). The opposite of media trust is media distrust, related to “the feeling that
+journalists are not fair or objective in their reports about society and that they do not
+always tell the whole story” (Tsfati, 2003, p. 159).
+    Given the important links between media and democracy, political science and com-
+munication scholars have paid attention to the overall decline in trust in the media over
+the last decades. Most of these studies however are limited to Western democracies
+(Müller, 2013). In the U.S. context, for example, confidence in the press has fallen
+sharply from a 28.3% in 1976 to an 8.8% in 2012, with a slightly higher decline for press
+than for TV (Smith & Son, 2013, p. 2). While a long tradition in media research has
+explored the related concept of media credibility1 (e.g., Hovland, Janis, & Kelley, 1953;
+Kohring & Matthes, 2007; Westley & Severin, 1964) and the reasons behind the decline
+of trust in the media (e.g. Cappella & Jamieson, 1997), only a few studies have focused
+on the consequences of media (dis)trust (Carr et al., 2014; Tsfati & Cappella, 2003).
+    In this line of research, communication scholars have found a mild association
+between (dis)trust in mainstream media and media exposure patterns (Kiousis, 2001;
+Tsfati, 2010; Tsfati & Cappella, 2003, 2005; Wanta & Hu, 1994). Because the current
+media environment is characterized by the availability of multiple sources of informa-
+tion, it makes sense to assume—and, in fact, this has been found to be the case—that
+people tend to seek accurate information from sources they consider reliable and to
+avoid the exposure to sources they distrust (Gaziano, 1988; Kiousis, 2001; Tsfati &
+Cappella, 2003). Therefore, people who trust in mainstream media tend to consume
+more news from mainstream sources. Conversely, traditional media skeptics tend to
+consume less mainstream news and to have more non-mainstream media news as a
+part of their “media diet” (Carr et al., 2014; Jackob, 2010; Tsfati, 2010; Tsfati &
+Cappella, 2003). This effect, however, has been found to be “only modest, although
+statistically significant” (Tsfati & Cappella, 2005, p. 252). Based on these findings and
+theoretical considerations, the first set of hypotheses are proposed:
+
+   H1: Trust in traditional media at Wave 1 is positively related to traditional news use
+   at Wave 2.
+   H2: Trust in traditional news media at Wave 1 is negatively related to citizen news
+   use at Wave 2. In other words, mistrust toward traditional news media at Wave 1
+   predicts citizen news use at Wave 2.
+
+   Recent studies on the relationship between trust and online media use have found
+that skepticism toward mainstream media is negatively related to overall online news
+exposure. However, once the effects on mainstream and non-mainstream online media
+are disaggregated, media trust behaves in the same way as it does offline: Those who
+trust in the mainstream media tend to show higher levels of exposure to mainstream
+online news, while media skeptics tend to visit more non-mainstream sites (Tsfati,
+2010), which they find more credible (Carr et al., 2014). Despite these previous
+Ardèvol-Abreu and Gil de Zúñiga                                                       707
+
+
+findings in the online domain, the influence of trust in traditional media on social
+media use for news seems difficult to predict. As discussed above, social media pro-
+vide almost simultaneous access to both traditional and citizen news. Consequently,
+the first research question is as follows:
+
+   RQ1: What is the effect (if any) of trust in traditional media at Wave 1 on social
+   media use for news at Wave 2?
+
+    Although the pattern of influence from media trust to media consumption has been
+confirmed by empirical evidence, previous research has mostly paid attention to “tra-
+ditional” or “mainstream” media trust (e.g., Jones, 2004; Miller & Krosnick, 2000;
+Tsfati & Cappella, 2003). Based on the above-mentioned impact of trust in main-
+stream media on news use, one could expect a complementary effect from trust in
+social and citizen media. Therefore, trust in citizen and social media should be posi-
+tively related to citizen and social media use for news, but negatively related to tradi-
+tional media use. However, the effect might also be different, as some studies have
+found that trust in professional and citizen news media are correlated: Those who trust
+in professional journalism also tend to trust citizen journalism, and vice versa
+(Kaufhold et al., 2010). Considering such a complex picture and the absence of previ-
+ous studies looking at the role of trust in citizen and social media as antecedents of
+media exposure, the following set of research questions are addressed in the study:
+
+   RQ2: What is the effect (if any) of trust in citizen and social media at Wave 1 on
+   traditional news use at Wave 2?
+   RQ3: What is the effect (if any) of trust in citizen and social media at Wave 1 on
+   citizen news use at Wave 2?
+   RQ4: What is the effect (if any) of trust in citizen and social media at Wave 1 on
+   social media use for news at Wave 2?
+
+
+Media Objectivity, Bias Perception, and Media Exposure
+Over the past decades, public concern regarding the pervasiveness of biased reporting
+in the U.S. news media has steadily increased (Iyengar & Hahn, 2009; Morris, 2007;
+Watts et al., 1999). In 2012, 37% of Americans said that there is a “great deal” of bias
+in news coverage, while 30% more believed that there was “a fair amount” of bias
+(Pew Research Center for the People and the Press, 2012). All these allegations and
+perceptions have drawn the attention of a number of scholars, who have tried to deter-
+mine whether (a) news media contravene the standards of professional journalism by
+presenting political issues and news events in an unbalanced manner, (b) there are
+perceptive and evaluative psychological phenomena that explain the media bias per-
+ception beyond the news content itself, and (c) there is a link between media bias
+perception and media exposure.
+    The concept of media bias is elusive in nature, and lacks a universal definition. Bias
+has often been defined in a negative way, on the basis of the ingredients that make a
+708                                     Journalism & Mass Communication Quarterly 94(3)
+
+
+news story free of it. Unbiased news have been considered as a function of reporters’
+“objectivity,” “fairness,” and ability to clearly “separate information and opinion,” all
+of which are fundamentals of “good news reporting” (e.g., Farnsworth & Lichter,
+2007; Schudson, 1978). But, to begin with, many thinkers and researchers have
+addressed the necessity of reconceptualizing objectivity more as guiding principle for
+impartial inquiry than as an absolute rule (Fox & Park, 2006, p. 49). The very nature
+of news making and story-telling implies that the world beyond direct experience is
+(re)constructed according to “persistent patterns [ . . . ] of selection, emphasis, and
+exclusion” (Gitlin, 1980, p. 7). Thus, routines of newsrooms and production tech-
+niques of each medium interact with the content resulting in a particular interpretation
+of reality (Meyrowitz, 1998). Besides this, the market-oriented model of news produc-
+tion and the powerful influence of forces outside newsrooms determine not only what
+is published and what is not, but also the axis or angle around which the story is con-
+structed (e.g., Herman & Chomsky, 1988; McManus, 1995).
+    Most previous research on media bias in the United States has focused on presidential
+election campaigns and considered three main sub-dimensions or types of media bias:
+gatekeeping bias resulting from the process of filtering and selecting information, which
+might benefit one of the parties at the cost of another; coverage bias, or differences in the
+proportion of space/time devoted to each side; and statement bias, or subjective, evalua-
+tive statements (either positive or negative in tone) about one side (D’Alessio & Allen,
+2000, pp. 135-137). Although some studies have found partisan bias in certain situations,
+its direction (i.e., who benefits from and who is harmed by the bias) is variable, so bias,
+at least in the U.S. electoral context, does not seem to be pervasive (D’Alessio & Allen,
+2000; Eveland & Shah, 2003; Niven, 2002). According to this line of research, the grow-
+ing public concern about media bias (and, more specifically, the perception of a “liberal
+bias” in U.S. mainstream media) seems to have originated more in news self-coverage
+about liberal bias than in an actual liberal bias: “The increased claims of media bias
+come primarily from conservative elites who have proclaimed a liberal bias that is
+viewed as including the entire media industry” (Watts et al., 1999, p. 144).
+    More recent studies paint a somewhat different picture. In the United States and
+other Western democracies, the general use of the internet for getting news, and the
+widespread access to cable television, have given rise to a “fragmented” media envi-
+ronment where some news media adapt their content to their users’ political prefer-
+ences (Mullainathan & Shleifer, 2005). These highly biased outlets carve out audience
+niches that become wrapped “in an insulating media enclave of information and opin-
+ion” (Jamieson & Cappella, 2008, p. 4). In the United States, this reinforcing media
+space has been dubbed the “echo chamber” (Jamieson & Cappella, 2008). News media
+such as Fox News, the Wall Street Journal editorial page, or Limbaugh’s talk radio
+show create shared opinion environments where the messages from conservative
+political elites (i.e., the Republican Party) are magnified and “echoed,” while alterna-
+tive or competing interpretations are silenced (Jamieson & Cappella, 2008, p. 76).
+    The matter of media bias is further complicated with psychological variables.
+Perceptions on media bias are, in fact, more related to personal attitudes and character-
+istics than to the actual media content (Gunther, 1992; Niven, 2002). So, for example,
+Ardèvol-Abreu and Gil de Zúñiga                                                     709
+
+
+people tend to perceive and evaluate the media coverage as “biased against their own
+views” (Gunther & Christen, 2002, p. 179). This phenomenon has come to be called
+“hostile media perception” (e.g., Gunther, 1992; Vallone, Ross, & Lepper, 1985).
+    Whether these perceptions are based on the biased media content, the self-coverage
+of liberal bias, or the individuals’ skeptical dispositions, audience assessment of the
+good and fair news reporting seems to guide news consumption patterns as much as
+media trust does. Some scholars have even talked of a “revival of selective exposure”
+(Iyengar & Hahn, 2009, p. 20). Thus, during the 2000 and 2004 U.S. Presidential
+Election campaigns, Republican and Democratic partisans tended to avoid mainstream
+media they perceived as against their political views, and explored alternative sources
+such as local TV news and talk shows (Democrats) or political talk radio, radio news,
+and political advertising (Republicans; Pfau, Houston, & Semmler, 2007). Similarly,
+perceptions of bias and unfairness in traditional media predict a higher consumption of
+Fox News among those who perceive the channel as more tailored to their beliefs
+(Morris, 2007). On the contrary, those individuals who see little or no bias in the tra-
+ditional media are more likely to consume CNN and other mainstream network news.
+According to these previous findings and theoretical explanations, it seems plausible
+that overall media bias perceptions negatively predict citizens’ mainstream news con-
+sumption levels. Thus our third hypothesis is as follows:
+
+   H3: Editorial media bias perception at Wave 1 is negatively related to traditional
+   news media use at Wave 2.
+
+   Although it has been suggested that media bias perception encourages audiences to
+consume alternative sources of information, whether this holds true for citizen news
+media and social media has not been addressed. Citizen news media are not necessar-
+ily “more congenial” to certain political preferences, in the sense that they are not
+necessarily biased toward one or the other extreme of the political spectrum as Fox
+News is. In addition, social media provide access to both traditional and alternative
+news media, so the possible impact of bias perception cannot be easily predicted.
+Therefore, the last set of research questions ask,
+
+   RQ5: What is the effect (if any) of editorial media bias perception at Wave 1 on
+   citizen news use at Wave 2?
+   RQ6: What is the effect (if any) of editorial media bias perception at Wave 1 on
+   social media use for news at Wave 2?
+
+
+Methods
+Sample
+This study uses two waves of panel data spanning 3 months. Longitudinal studies are
+the most suitable for “describing processes over time” (Babbie & Mouton, 2001, p.
+104). Because our hypotheses and research questions assume a particular
+710                                    Journalism & Mass Communication Quarterly 94(3)
+
+
+causal direction (i.e., that levels of trust in the media and bias perceptions affect media
+consumption patterns), a panel study enables to test for time-order effects and to better
+explore these causal processes, compared with cross-sectional designs. Respondents
+were recruited by the media-polling group Nielsen in the United States from 200,000
+previously registered people from all over the country. To improve external validity of
+the results, participants of the survey were selected based on quotas derived from the
+adult U.S. population, corresponding to age, gender, education, and income. This pro-
+cedure minimizes the drawbacks of a convenience sample based only on internet users
+(see Bode, Vraga, Borah, & Shah, 2014; Iyengar & Hahn, 2009). In the first wave,
+distributed between December 15, 2013 and January 5, 2014, completed question-
+naires were obtained from 1,813 persons. The response rate, 34.6% (American
+Association of Public Opinion Research [AAPOR], 2011, RR3), was considered
+acceptable for online-based surveys (Bosnjak, Das, & Lynn, 2016). In the second
+wave of surveys, conducted between February 15 and March 5, 2014, we retained
+valid information of 1,024 cases (W2 cooperation rate 57%; W2 total cooperation rate,
+COOP2, 19.5% of all eligible respondents ever contacted).
+   Overall, our sample is demographically diverse and comparable to the U.S. popula-
+tion in terms of gender (49.7% females), age (M = 52.71; SD = 14.72), and race
+(77.9% whites). There are, however, some differences between the sample and the
+U.S. Census Bureau (2012) regarding age, ethnic/racial composition, and education
+level. The sample is slightly older, more educated, and includes fewer Hispanics (see
+Saldaña, McGregor, & Gil de Zúñiga, 2015, for details).
+
+
+Variables of Interest
+Social media use for news. Respondents were asked about their frequency of use (1 =
+never to 10 = all the time) of Facebook, Twitter, Google+, Pinterest, Instagram, Tumblr,
+Reddit, and LinkedIn for getting news. Two more items asked respondents how often
+they used social media “to stay informed about current events and public affairs,” and
+“to get news about current events from mainstream media” (10 items averaged scale, W1
+Cronbach’s α = .86, M = 1.94, SD = 1.31; W2 Cronbach’s α = .87, M = 1.90, SD = 1.29).
+
+Citizen news use. Although there is a lack of agreement among researchers on what
+specific practices should be considered as citizen journalism,1 our measurement aims
+to strike a balance between the different interpretations of the concept. Building on
+previous studies (for example Kaufhold et al., 2010), this variable taps the frequency
+of exposure to news from “citizen news media,” understood as all the news content
+whose production stems from a creative effort on the part of the citizen/s (i.e., not only
+retweeting, sharing, or commenting on a content item). On a 10-point scale (from 1 =
+never to 10 = all the time), respondents separately rated how frequently they get news
+from “citizen journalism sites” (e.g., CNN’s iReport, Examiner.com), and “hyperlocal
+news sites” (e.g., Patch.com or other sites dedicated to news in their local community;
+W1 Spearman-Brown2 ρ = .65; M = 1.91; SD = 1.65; W2 Spearman-Brown ρ = .67; M
+= 1.95; SD = 1.67).
+Ardèvol-Abreu and Gil de Zúñiga                                                        711
+
+
+Traditional news use. Respondents separately rated how frequently they use traditional,
+mainstream media, including network TV news, national newspapers, cable news,
+radio news, and specific cable and satellite channels such as CNN, Fox News, MSNBC,
+and BBC America (eight items averaged scale; W1 Cronbach’s α = .73; M = 3.92;
+SD = 1.72; W2 Cronbach’s α = .74; M = 3.91; SD = 1.74).
+
+Editorial media bias perception. This measure attempted to capture information about
+respondents’ perception regarding the ideals of objectivity, fairness, and balance of
+the news content produced by media companies. This measure included three items
+concerning respondents’ level of agreement (from 1 = strongly disagree to 10 =
+strongly agree) with the following statements: “News companies choose stories
+based on what will attract the biggest audience,” “Production techniques can be
+used to influence a viewer’s perception,” and “The owner of a media company
+influences the content that is produced’ (three items averaged scale; W1 Cronbach’s
+α = .91, M = 7.78, SD = 2.28).
+
+Trust in social and citizen media. Although “there is no standardized scale for measuring
+trust in the media” (Jackob, 2010, p. 595), media trust was measured building on pre-
+vious approaches to the construct (e.g., Jackob, 2010; Jones, 2004; Moy, McCluskey,
+McCoy, & Spratt, 2004). Respondents were asked to rate their level of trust (from 1 =
+do not trust to 10 = trust completely) in different alternative media. The exact wording
+of the questions was as follows: “How much do you trust news from alternative news
+media? (e.g., blogs, citizen journalism),” and “How much do you trust news from
+Social media sites” (W1 Spearman-Brown ρ = .70; M = 3.56, SD = 1.98).
+
+Trust in traditional media. Similarly to trust in alternative media, participants were
+asked about their level of trust in news from “mainstream news media,” and “news
+aggregators” (W1 Spearman-Brown ρ = .48; M = 4.99, SD = 1.95).
+
+Control Variables
+In order to minimize confounding effects, all models control for the influence of an
+exhaustive set of control variables. All of these variables have been shown to be asso-
+ciated with either the independent or the dependent variables, or with both, as explained
+below.
+
+Political discussion frequency. The frequency of political talk is influenced by the pattern
+of media use (Kim, Wyatt, & Katz, 1999; Koch, 1994). Given this relationship with
+our dependent variables, our models include discussion frequency as a control. On a
+10-point scale, respondents were asked how often they talk about politics or public
+affairs online and offline with “spouse or partner,” “family and relatives,” “friends,”
+“acquaintances,” “strangers,” “neighbors you know well,” “neighbors you do not
+know well,” “coworkers you know well,” and “coworkers you do not know well”
+(nine items averaged scale, W1, Cronbach’s α = .87; M = 3.27; SD = 1.74).
+712                                     Journalism & Mass Communication Quarterly 94(3)
+
+
+Discussion network size. The number of people with which an individual discusses reg-
+ularly has been found to predict the use of different news media, especially social
+media use for news (Gil de Zúñiga, 2002). Respondents were asked to estimate, in an
+open-ended fashion, the number of people they talked to “face-to-face or over the
+phone about politics or public affairs,” and “via the internet, including e-mail, chat
+rooms, and social networking sites about politics or public affairs.” We created an
+initial index by adding the figures from both items, but the resulting variable was
+skewed (W1 M = 4.36; Mdn = 1.00; SD = 16.89; skewness = 10.86). We then used the
+natural logarithm to convert the distribution of values to normality (W1 M = .33;
+Mdn = .24; SD = .37; skewness = 1.32).
+
+Internal political efficacy. This control variable taps respondents’ self-perception of their
+competence and ability to reason and participate in politics. Research of news expo-
+sure and efficacy has generally found a positive association between internal efficacy
+and informational uses of media (Jung, Kim, & Gil de Zúñiga, 2011; Kenski & Stroud,
+2006). On a 10-point scale, participants were asked to rate their level of agreement
+with these statements: “I have a good understanding of the important political issues
+facing our country,” and “I consider myself well qualified to participate in politics”
+(W1, Spearman-Brown ρ = .85; M = 5.34, SD = 2.56).
+
+Political interest. An individual’s level of interest in politics has been shown to be a
+strong predictor of news use (see, for example, Tsfati & Cappella, 2003, 2005).
+Accordingly, this study controls for the effects of this variable to isolate potential con-
+founding effects. Survey respondents were asked to estimate, on a 10-point scale, their
+degree of interest in “information about what’s going on in politics and public affairs,”
+as well as their level of attention to “information about what’s going on in politics and
+public affairs” (two items averaged scale, W1 Spearman-Brown coefficient = .96; M =
+6.67, SD = 2.70).
+
+Political knowledge. Prior research has identified the relationship between trust in the
+media and political knowledge (Kaufhold et al., 2010), but also between political
+knowledge and news use (Tsfati & Cappella, 2003). Participants were asked eight
+questions about current political affairs and the functioning of the U.S. political sys-
+tem. An additive scale of political knowledge was created after coding correct
+responses as “1” and incorrect or missing ones as “0” (W1 Cronbach’s α = .75; M =
+4.58, SD = 2.17).
+
+Strength of partisanship. Political ideology and strength of attachment to the major
+political parties has been found to predict trust in the media (Jones, 2004; Westley &
+Severin, 1964), media bias perceptions (Morris, 2007; Vallone et al., 1985), and media
+use and preference (Morris, 2007; Tsfati & Cappella, 2003). Respondents were also
+asked to rate their party identification, from “strong Republican” (“1”), through “inde-
+pendent” (“6”), to “strong Democrat” (“11”). To create an interval variable measuring
+strength of partisanship, we folded the item into a 6-point scale (from 0 = no party
+Ardèvol-Abreu and Gil de Zúñiga                                                        713
+
+
+identification to 5 = total party identification, either with Republicans or Democrats)
+(W1, M = 2.10, SD = 1.88).
+
+Socio-demographic variables. The models also controlled for gender, age, race, educa-
+tion, and income (for a detailed demographic breakdown, see Saldaña, McGregor, &
+Gil de Zúñiga, 2015).
+
+Statistical Analyses
+First we checked differences in the mean scores of the variables of interest in Wave 1
+and Wave 2. As expected, no significant differences between waves were observed for
+trust in traditional media, trust in social and citizen media, editorial media bias percep-
+tion, traditional news use, citizen news use, or social media use for news (paired-
+samples t tests), so that the sample composition was similar in both waves. These
+findings lend support to the notion that our models are robust testing causal order and
+it is not caused by measurement error or simple attitudinal individual variability of the
+dependent variables in time.
+    In order to examine the hypotheses and research questions, this study used three
+sets of cross-lagged, autoregressive ordinary least squares regressions, one for each
+dependent variable. Also, for comparative purposes, three series of cross-lagged, but
+non-autoregressive models were fitted. Analyses were conducted using SPSS version
+21.0 and PROCESS macro (Hayes, 2013).
+
+
+Results
+The first hypothesis predicted that trust in traditional media would significantly
+increase traditional news use. As shown in Tables 1 and 2 (first column in each table),
+empirical support for H1 was not found. Trust in traditional media was positively
+related to traditional news use, though the relationship did not reach the borderline of
+significance (β = .039, p < .10; see Table 2). Only when previous uses of traditional
+news media were disregarded, the effect was positive and significant (β = .205, p <
+.001; see non-autoregressive model in Table 1). The model, as Table 2 shows, accounts
+for 64.5% of total variance in traditional media use.
+   Disaggregated by blocks, “media use” (containing traditional news use in Wave 1)
+explained the most part of variance (ΔR2 = .343, p < .001), followed by “sociopolitical
+orientations” (ΔR2 = .208, p < .001), “news media trust” (ΔR2 = .048, p < .001), “demo-
+graphics” (ΔR2 = .043, p < .001), and “bias perception” (ΔR2 = .003, p < .01). Within
+“media use” block, traditional news use (Wave 1; β = .703, p < .001) and social media
+use for news (Wave 1; β = .075, p < .01) exerted significant influence on traditional news
+use (Wave 2). Those who consume news from traditional media and from social media
+will tend to get news from traditional news sources in the future. Strength of partisanship
+(β = .038, p < .05), political interest (β = .083, p < .01), and political discussion fre-
+quency (β = .055, p < .05) were also predictors of traditional media use within the block
+of “sociopolitical orientations.” Those with higher levels of party identification and
+714                                           Journalism & Mass Communication Quarterly 94(3)
+
+Table 1. Lagged Models Predicting Traditional, Citizen, and Social Media Use for News.
+
+                                                Traditional          Citizen news           Social media
+                                              news use (W2)           use (W2)             for news (W2)
+Block 1—Demographics (W1)
+  Age                                      .126***                      −.067*                −.170***
+  Gender (female)                          .010                         −.048                 −.008
+  Education                                .007                         −.019                 −.014
+  Income                                   .039                         −.006                 −.053†
+  Race (White = 1)                        −.067**                       −.063*                −.052*
+  ΔR2                                     4.3%                          3.8%                  9.8%
+Block 2—Sociopolitical orientations (W1)
+  Strength of partisanship                 .059*                        −.069*                 .027
+  Political knowledge                     −.079*                        −.019                 −.046
+  Political interest                       .297***                       .035                 −.050
+  Internal efficacy                       −.029                         −.001                  .035
+  Discussion network size                 −.055†                        −.014                  .080*
+  Political discussion frequency           .174***                       .129***               .098**
+  ΔR2                                    20.8%                         10.9%                  9.9%
+Block 3—Media use (W1)
+  Traditional news use                       —                           .214**                .100**
+  Citizen news use                         .199***                         —                   .155***
+  Social media for news                    .192***                       .240***                 —
+  ΔR2                                     6.9%                          8.2%                  3.2%
+Block 4—News media trust (W1)
+  Trust in traditional media               .205***                       .034                −.046
+  Trust in social and citizen media       −.121***                       .067†                .357***
+  ΔR2                                     4.8%                          4.6%                12.6%
+Block 5—Bias perception (W1)
+  Editorial media bias perception         −.050†                        −.056*               −.118***
+  ΔR2                                     0.2%                          0.3%                 1.2%
+  Total R2                               37.0%                         27.7%                36.6%
+
+Note. N = 1,021. Cell entries are final-entry ordinary least squares (OLS) standardized coefficients (β). To
+maximize statistical power, missing values on variables have been replaced with the mean. W2 = Wave 2;
+W1 = Wave 1.
+†p < .10. *p < .05. **p < .01. ***p < .001.
+
+
+
+
+political interest, and those who discuss politics more often will tend to consume tradi-
+tional, mainstream media in the future. Trust in social and citizen media, within the
+fourth block, exerted a negative, but marginally insignificant effect on traditional news
+use (β = −.047, p < .10). Thus the study did not find any influence of trust in social and
+citizen media on traditional news use (RQ2). Again, only when traditional news media
+use in Wave 1 is disregarded, the effect is negatively significant (β = −.121, p < .001; see
+non-autoregressive model in Table 1). Finally, consistent with H5, negative perceptions
+about media bias (Wave 1) significantly reduce traditional news media consumption
+Ardèvol-Abreu and Gil de Zúñiga                                                                        715
+
+Table 2. Panel Autoregressive Models Predicting Traditional, Citizen, and Social Media Use
+for News.
+
+                                                Traditional          Citizen news           Social media
+                                              news use (W2)           use (W2)             for news (W2)
+Block 1—Demographics (W1)
+  Age                                              .017                  −.061*               −.069**
+  Gender (female)                                 −.003                  −.046†               −.018
+  Education                                        .023                  −.025                −.009
+  Income                                           .005                  −.029                −.020
+  Race (White = 1)                                −.012                  −.037                −.045*
+  ΔR2                                             4.3%                   3.8%                 9.8%
+Block 2—Sociopolitical orientations (W1)
+  Strength of partisanship                         .038*                 −.051*                .022
+  Political knowledge                             −.014                  −.001                −.042
+  Political interest                               .083**                 .022                 .039
+  Internal efficacy                               −.007                   .001                −.005
+  Discussion network size                         −.011                  −.017                 .071**
+  Political discussion frequency                   .055*                  .087*                .001
+  ΔR2                                            20.8%                  10.9%                 9.9%
+Block 3—Media use (W1)
+  Traditional news use                             .703***                .105**               .003
+  Citizen news use                                 .019                   .381***              .015
+  Social media for news                            .075**                 .138***              .610***
+  ΔR2                                            34.3%                  17.2%                23.7%
+Block 4—News media trust (W1)
+  Trust in traditional media                       .039†                  .029                −.018
+  Trust in social and citizen media               −.047†                  .024                 .134***
+  ΔR2                                             4.8%                   4.6%                12.6%
+Block 5—Bias perception (W1)
+  Editorial media bias perception                 −.060**                −.053*               −.088***
+  ΔR2                                             0.3%                   0.2%                 0.7%
+  Total R2                                       64.5%                  36.7%                56.5%
+
+Note. N = 1,021. Cell entries are final-entry ordinary least squares (OLS) standardized coefficients (β). To
+maximize statistical power, missing values on variables have been replaced with the mean. W2 = Wave 2;
+W1 = Wave 1.
+†p < .10. *p < .05. **p < .01. ***p < .001.
+
+
+
+
+(Wave 2) (β = −.060, p < .01). That is, the more the people perceive news media as
+biased, the less they will consume mainstream information in the future.
+   Similarly to H1, as the second model in Table 2 shows, the study did not find any
+effect of trust in social and citizen media on citizen news use (RQ3). Once the effect
+of citizen news use in Wave 1 is controlled, the impact of trust in social and citizen
+media on citizen news media use is non-significant (β = .024, ns). Furthermore, and
+unexpectedly, trust in traditional news media does not have any effect on citizen news
+716                                   Journalism & Mass Communication Quarterly 94(3)
+
+
+use either (H2) (β = .029, ns). The whole model explains 36.7% of total variance in
+citizen news use. By blocks, “media use” (containing citizen news use in Wave 1)
+accounted for the most part of variance (ΔR2 = .172, p < .001), followed by “sociopo-
+litical orientations” (ΔR2 = .109, p < .001), “news media trust” (ΔR2 = .046, p < .001),
+“demographics” (ΔR2 = .038, p < .001), and “bias perception” (ΔR2 = .002, p < .05).
+    Different from the first model, the three variables in W1 within the third block—tra-
+ditional news use (β = .105, p < .01), citizen news use (β = .381, p < .001), and social
+media for news (β = .138, p < .001)—exerted significant influence on citizen news use
+(Wave 2). Within the second block, political discussion frequency (β = .087, p < .05)
+and strength of partisanship (β = −.051, p < .05) also showed to have an impact on citi-
+zen news use. Those who discuss politics more frequently will be more likely to con-
+sume citizen news media in the future. Conversely, both Democrat and Republican
+partisans will tend to consume less citizen-created news content. Age, within the first
+block, was also related to citizen news use (β = −.061, p < .05). The older the respon-
+dents are, the less they will consume alternative news media. Finally, and similarly to
+the first model, editorial media bias perception negatively predicted citizen news use
+(β = −.053, p < .05) (RQ5). That is, the more the people perceive editorial media as
+biased, the less they will consume citizen news media in the future.
+    The third regression model (third column in Tables 1 and 2) shows that the impact
+of trust in social and citizen media on social media use for news is strong and signifi-
+cant, both before (β = .357, p < .001, see Table 1) and after controlling for previous
+uses of social media use for news (β = .134, p < .001, see Table 2) (RQ4). Trust in
+traditional media, however, showed no significant relationship with social media news
+use for news (β = −.018, ns, see Table 2) (RQ1). As Table 2 shows, the model explains
+56.5% of total variance in social media use for news. Again, “media use” (which
+includes social media use in W1) accounted for the most part of variance (ΔR2 = .237,
+p < .001), followed by “sociopolitical orientations” (ΔR2 = .099, p < .001), “news
+media trust” (ΔR2 = .126, p < .001), “demographics” (ΔR2 = .098, p < .001), and “bias
+perception” (ΔR2 = .007, p < .001).
+    Within the third block of variables, only previous uses of social media for news (β =
+.610, p < .001) positively predicted future uses of social media for news. Discussion
+network size, on the second block, also had a positive effect on future uses of social
+media for news (β = .071, p < .01). Those who discuss politics with a larger number of
+persons will be more likely to consume news via social media. Within “demographics,”
+age (β = −.069, p < .01) and race (1 = White) (β = −.045, p < .05) negatively predicted
+alternative news use. Older respondents and Whites tend to consume less news via social
+media. Finally, editorial media bias perception, once again, negatively predicted social
+media use for news (β = −.088, p < .001) (RQ6). The more the people perceive editorial
+media as biased, the less they will consume news via social media in the future.
+
+
+Discussion and Conclusions
+This study improves our understanding of the mutual relationships between trust in the
+media, perceived media bias, and media use. To the best of the authors’ knowledge,
+Ardèvol-Abreu and Gil de Zúñiga                                                           717
+
+
+this is the first work to separately examine the impact of trust in traditional versus
+social and citizen media in predicting news media use patterns. Additionally, editorial
+media bias perception was also included in the models to ascertain whether this vari-
+able has an effect on news media use habits that extends beyond trust in the media.
+    To some extent, our findings contradict results from previous studies. We found
+that, once the analyses control for previous news media uses, the effects of trust in
+traditional media disappear. In other words, trust in traditional media does no predict
+either traditional, citizen, or social media use for news. To date, the effects of trust in
+the media on media use have recurrently been found to be “only modest, although
+statistically significant” (Tsfati & Cappella, 2005, p. 252). Most of previous studies,
+however, rely on cross-sectional data, which limits the quality of the evidence with
+regard to causal inference. This study explores these relationships on the basis of lon-
+gitudinal survey data, which is more suitable for causal inference and also affords the
+possibility of stricter statistical analyses.
+    One explanation for the lack of effects of trust in traditional media could lie in differ-
+ent motivations for using news media. As suggested by previous studies, social needs,
+need for entertainment, or need for cognition could explain the modest—or, in this case,
+the lack of—association between trust in traditional media and news use (Tsfati, 2003;
+Tsfati & Cappella, 2005). An individual might choose to get news from a source they do
+not trust, just to stay in touch with the mainstream interpretation of reality, to have a topic
+of conversation to talk with their coworkers, or simply to pass the time.
+    A complementary explanation has to do with the multidimensional character of
+trust in the media (Kohring & Matthes, 2007), and connects our findings about trust
+and bias perceptions. If we accept the idea that media trust is a multidimensional con-
+struct, it is reasonable to expect that each of the sub-dimensions will affect media use
+differently. It may be the case, for example, that some of the dimensions do not affect
+media consumption at all, while others do greatly, so that the overall effect is diluted.
+And this is where bias perceptions come in. Despite the absence of a widely accepted
+measure of trust in the media (Kohring & Matthes, 2007; Self, 1996), most of previous
+approaches to the concept include a component of lack of bias, impartiality, objectiv-
+ity, or accuracy (Gaziano & McGrath, 1986; Hovland et al., 1953; Jacobson, 1969;
+Kohring & Matthes, 2007). All these notions are remarkably similar to the notion of
+bias perception as operationalized in this study. Therefore, bias perception may well
+be the key dimension of how and why trust in previous studies explained media expo-
+sure, as suggested by our results. Thus, once the effect of bias perceptions is ruled out,
+trust in traditional media would lose its predictive power.
+    The pattern of influence of trust in citizen and social media on media use is some-
+what different. Contrary to trust in traditional media, trust in citizen media does seem to
+predict specific news media uses. In the autoregressive models, trust in citizen and
+social media has no effect on traditional or citizen news use, though it retains a strong,
+positive influence on social media use for news. A possible explanation for this last
+finding is that the positive effect of trust in social and citizen media on social media use
+for news may also capture some of the exposure to citizen and alternative media. That
+is, those who trust information from alternative media (i.e., blogs and citizen media) are
+718                                    Journalism & Mass Communication Quarterly 94(3)
+
+
+using social media as an entry gate to those alternative sources. The fact that most of the
+alternative information and citizen-generated news are distributed through social media
+(Newman et al., 2012) gives support to this interpretation. Indeed, we empirically tested
+this possibility a posteriori and found that this may be the case. Thus, we estimated the
+effect of trust in social and citizen media (W1) on citizen news use (W2) through social
+media use for news (W1). We found that social media use does mediate this relationship
+(see Notes section for the estimates of the indirect effect).3
+    Our findings also suggest that variables other than trust in the media drive media
+use patterns in these data. Specifically, results show that perceived media bias has a
+negative effect on all news use without distinction between news in traditional, citizen,
+or social media. It is possible that perceived bias moved citizens toward different,
+alternative sources of information, which they consider to be less biased or free of
+bias. These results, however, suggest otherwise. Perceived media bias has detrimental
+effects on news use, regardless of the type of news media. Given the relevant role of
+journalism and the media for the democratic process (Gil de Zúñiga & Hinsley, 2013),
+these results should be viewed with some concern. The problem is not so much the
+deleterious impact of perceived media bias on traditional media use, but the wide-
+spread negative effect on all forms of news consumption. Not even more alternative
+ways of acquiring information such as citizen journalism escapes this trend. One plau-
+sible explanation for this is that the public may not perceive citizen media platforms as
+free of the constraints and biases derived from private ownership. In fact, in most
+cases—at least in the U.S. context—they might be not. For instance, at the time of data
+collection, AOL was selling Patch.com to Hale Global, which immediately laid off
+hundreds of employees and collaborators (Kaufman, 2014). Worse, plagiarism and the
+use of fictional bylines for news stories led to the failure of the outsourced, low-cost
+hyperlocal journalism model tested by Journatic (Sonderman, 2012).
+    The findings of this study have to be interpreted with caution, as there are a number
+of limitations to consider. The first concerns the time lag between the two waves (3
+months). Our analyses show significant causal effects of our independent variables of
+interest over the dependent variables, even when controlling (autoregressive models)
+for prior individual levels of the dependent variables in Time 1. These changes are
+consistent with our expectations and theoretical explanations, and the effects remain
+significant even after introducing a large number of control variables. There is always
+a trade-off between time lag and attrition rate in panel studies, and we consider that
+this study strikes the right balance between both. With a larger time frame between
+waves, one could reasonably expect effects to be stronger, but at the risk of an inac-
+ceptable reduction in the response rate (see Bucy & Holbert, 2014; Kessler &
+Greenberg, 1981). Further research could, however, try to extend the time frame
+between waves to ensure that the effects are maintained or even increased. Second,
+although one can be reasonably sure that these findings are generalizable to the U.S.
+population, our results are based on panel data from one country. Future research
+should replicate this study in different societies with different social and political
+structures. Also, different countries may encompass distinct media systems so this call
+is relevant and in dire need in our discipline.
+Ardèvol-Abreu and Gil de Zúñiga                                                               719
+
+
+    Another limitation of this study comes from the use of an online survey. Although
+the demographic characteristics of our samples are comparable with the U.S. Census,
+participants were drawn from an opt-in panel and not from the general population. The
+use of online panels consisting of volunteer participants has become increasingly fre-
+quent in communication research (see, for example, Beam, 2014; Davis, Nonnemaker,
+Duke, & Farrelly, 2012; Gil de Zúñiga & Valenzuela, 2010), but, strictly speaking,
+samples obtained by these means are not random. However, given the diversity of the
+respondents and the large number of control variables used in all models, we can be
+reasonably sure about the external validity of our findings.
+    Finally, some qualifications regarding our measures of trust should also be noted.
+As explained above, trust in the media is a multidimensional construct. This study
+captured respondents’ levels of trust in news from different media platforms: trust in
+traditional media and trust in citizen/social media. Within this context, a potential
+confound is that people may be also consuming “traditional media” on social media
+and thus, some of the trust in social media may also relate to that behavior. Future stud-
+ies should attempt to better capture these nuances and systematically pinpoint how
+trust in news is built, particularly in social media. Likewise, this suggestion for future
+research also remains when applied to trust in traditional media: one can trust the news
+from MSNBC but not from Fox News, or vice versa. Still, our theoretical distinction
+(between trust in traditional, citizen, and social media news) constitutes a step forward
+in that direction.
+    Despite these limitations, this article makes important theoretical and empirical
+contributions in regard to the relationships between trust in the media, media bias
+perceptions, and media use. In brief, the study provides empirical evidence on the
+small role played by trust in the media (whether in traditional or alternative ones) in
+explaining media consumption patterns. What does appear certain is that the percep-
+tion that the news is biased has a generalized detrimental effect on news media use,
+whether via traditional, alternative, or social media. Based on these findings, future
+research should continue to seek other variables and mechanism that, beyond or
+together with trust in the media, predict news media exposure patterns.
+
+Declaration of Conflicting Interests
+The author(s) declared no potential conflicts of interest with respect to the research, authorship,
+and/or publication of this article.
+
+Funding
+The author(s) received no financial support for the research, authorship, and/or publication of
+this article.
+
+Notes
+1.   For a detailed review of the different approaches to and the blurred boundaries of the con-
+     cept of “citizen journalism,” see Goode (2009) and Lasica (2003).
+2.   The Spearman-Brown coefficient has been demonstrated to be a more appropriate measure for
+     reliability when only two items are used in the construct (see Brown, 1910; Spearman, 1910).
+720                                        Journalism & Mass Communication Quarterly 94(3)
+
+3.    N = 1,021. Indirect effect based on 1,000 bootstrap samples with biased corrected con-
+      fidence intervals (CIs). Standardized indirect effect (standard error) = .09 (.02) (95% CI
+      [.051, .132]). The control variables include demographics, strength of partisanship, politi-
+      cal knowledge, political interest, internal efficacy, discussion network size, political dis-
+      cussion frequency, traditional news use, trust in traditional media, and editorial media bias
+      perceptions (all measured in first wave). Missing values were replaced with the sample
+      mean. Effects were estimated using PROCESS (Hayes, 2013).
+
+
+References
+American Association of Public Opinion Research. (2011). Standard definitions: Final disposi-
+    tions of case codes and outcome rates for surveys. Author.
+Babbie, E. R., & Mouton, J. (2001). The practice of social research. London, England: Oxford
+    University Press.
+Bachmann, I., Correa, T., & Gil de Zúñiga, H. (2012). Profiling online political content cre-
+    ators: Advancing the paths to democracy. International Journal of E-Politics, 3(4), 1-19.
+    doi:10.4018/jep.2012100101
+Beam, M. A. (2014). Automating the news. How personalized news recommender sys-
+    tem design choices impact news reception. Communication Research, 41, 1019-1041.
+    doi:10.1177/0093650213497979
+Bennett, S. E., Rhine, S. L., Flickinger, R. S., & Bennett, L. L. (1999). “Video malaise” revis-
+    ited: Public trust in the media and government. The International Journal of Press/Politics,
+    4(4), 8-23. doi:10.1177/1081180X9900400402
+Bode, L., Vraga, E. K., Borah, P., & Shah, D. V. (2014). A new space for political behav-
+    ior: Political social networking and its democratic consequences. Journal of Computer-
+    Mediated Communication, 19, 414-429. doi:10.1111/jcc4.12048
+Bosnjak, M., Das, M., & Lynn, P. (2016). Symposium issue on methods for probabil-
+    ity-based online and mixed-mode panels. Social Science Computer Review, 34, 1-5.
+    doi:10.1177/0894439315579246
+Brown, W. (1910). Some experimental results in the correlation of mental abilities. British
+    Journal of Psychology, 3, 296-322.
+Brundidge, J., Garret, K., Rojas, H., & Gil de Zúñiga, H. (2014). Political participation and
+    ideological news online: “Differential gains” and “differential losses” in a presidential
+    election cycle. Mass Communication & Society, 17, 464-486. doi:10.1080/15205436.2
+    013.821492
+Bucy, E. P., & Holbert, R. L. (2014). Sourcebook for political communication research:
+    Methods, measures, and analytical techniques. New York, NY: Routledge.
+Cappella, J. N., & Jamieson, K. H. (1997). Spiral of cynicism: The press and the public good.
+    New York, NY: Oxford University Press.
+Carpenter, S. (2010). A study of content diversity in online citizen journalism and online news-
+    paper articles. New Media & Society, 12, 1064-1084.
+Carr, D. J., Barnidge, M., Lee, B. G., & Tsang, S. J. (2014). Cynics and skeptics: Evaluating
+    the credibility of mainstream and citizen journalism. Journalism & Mass Communication
+    Quarterly, 91, 452-470. doi:10.1177/1077699014538828
+Chadha, M., Avila, A., & Gil de Zúñiga, H. (2012). Listening in: Building a profile of pod-
+    cast users and analyzing their political participation. Journal of Information Technology &
+    Politics, 9, 388-401. doi:10.1080/19331681.2012.717481
+Ardèvol-Abreu and Gil de Zúñiga                                                               721
+
+D’Alessio, D., & Allen, M. (2000). Media bias in presidential elections: A meta-analysis.
+     Journal of Communication, 50, 133-156. doi:10.1111/j.1460-2466.2000.tb02866.x
+Davis, K. C., Nonnemaker, J., Duke, J., & Farrelly, M. C. (2013). Perceived effectiveness of
+     cessation advertisements: the importance of audience reactions and practical implications
+     for media campaign planning. Health Communication, 28, 461-472. doi:10.1080/1041023
+     6.2012.696535
+Dutton, W. H. (2009). The fifth estate emerging through the network of networks. Prometheus,
+     27(1), 1-15. doi:10.1080/08109020802657453
+Dutton, W. H., & Eynon, R. (2009). Networked individuals and institutions: A cross-sector com-
+     parative perspective on patterns and strategies in government and research. The Information
+     Society, 25, 198-207. doi:10.1080/01972240902848914
+Dyck, A., & Zingales, L. (2002). The corporate governance role of the media. In R. Islam
+     (Ed.), The right to tell: The role of mass media in economic development (pp. 101-137).
+     Washington, DC: The World Bank Institute.
+Eveland, W. P., & Shah, D. V. (2003). The impact of individual and interpersonal factors on
+     perceived news media bias. Political Psychology, 24, 101-117.
+Farnsworth, S. J., & Lichter, S. R. (2007). The nightly news nightmare: Television’s coverage of
+     US presidential elections, 1988-2004. Plymouth, UK: Rowman & Littlefield.
+Fox, J. R., & Park, B. (2006). The “I” of embedded reporting: An analysis of CNN coverage of
+     the “shock and awe” campaign. Journal of Broadcasting & Electronic Media, 50, 36-51.
+     doi:10.1207/s15506878jobem5001_3
+Garret, K., Bimber, B., Gil de Zúñiga, H., Heinderyckx, F., Kelly, J., & Smith, M. (2012). New
+     ICTs and the study of political communication. International Journal of Communication,
+     6, 214-231.
+Gaziano, C. (1988). How credible is the credibility crisis? Journalism & Mass Communication
+     Quarterly, 65, 267-278.
+Gaziano, C., & McGrath, K. (1986). Measuring the concept of credibility. Journalism Quarterly,
+     63, 451-462.
+Gil de Zúñiga, H. (2002). Internet inherentemente personal: Cómo su uso influencia nuestras
+     vidas [The internet, inherently personal: How its use influences our lives]. Binaria, 3, 1-45.
+Gil de Zúñiga, H. (2015). Toward a European public sphere? The promise and perils of modern
+     democracy in the age of digital and social media. International Journal of Communication,
+     9, 3152-3160.
+Gil de Zúñiga, H., & Hinsley, A. (2013). The press versus the public: What is “good journal-
+     ism?” Journalism Studies, 14, 926-942. doi:10.1080/1461670X.2012.744551
+Gil de Zúñiga, H., & Valenzuela, S. (2010). Who uses Facebook and why. In D. Wittkower
+     (Ed.), Facebook and philosophy: What’s on your mind? (pp. 21-31). Chicago, IL: Open
+     Court.
+Gitlin, T. (1980). The whole world is watching: Mass media in the making & unmaking of the
+     new left. Berkeley: University of California Press.
+Goode, L. (2009). Social news, citizen journalism and democracy. New Media & Society, 11,
+     1-19. doi:10.1177/1461444809341393
+Gunther, A. C. (1992). Biased press or biased public? Attitudes toward media coverage of social
+     groups. Public Opinion Quarterly, 56, 147-167. doi:10.1086/269308
+Gunther, A. C., & Christen, C. T. (2002). Projection or persuasive press? Contrary effects of
+     personal opinion and perceived news coverage on estimates of public opinion. Journal of
+     Communication, 52(1), 177-195. doi:10.1111/j.1460-2466.2002.tb02538.x
+722                                      Journalism & Mass Communication Quarterly 94(3)
+
+Habermas, J. (1996). Between facts and norms: Contributions to a discourse theory of law and
+    democracy (W. Rehg, Trans.). Cambridge, MA: MIT Press.
+Hayes, A. F. (2013). Introduction to mediation, moderation, and conditional process analysis.
+    New York, NY: The Guilford Press.
+Herman, E., & Chomsky, N. (1988). Manufacturing consent: The political economy of the mass
+    media. New York, NY: Pantheon.
+Hermida, A., Lewis, S. C., & Zamith, R. (2014). Sourcing the Arab spring: A case study of
+    Andy Carvin’s sources on Twitter during the Tunisian and Egyptian revolutions. Journal of
+    Computer-Mediated Communication, 19, 479-499. doi:10.1111/jcc4.12074
+Holton, A. E., Coddington, M., & Gil de Zúñiga, H. (2013). Whose news? Whose values?
+    Journalism Practice, 7, 720-737. doi:10.1080/17512786.2013.766062
+Hovland, C. I., Janis, I. L., & Kelley, H. H. (1953). Communication and persuasion:
+    Psychological studies of opinion change. New Haven, CT: Yale University Press.
+Iyengar, S., & Hahn, K. S. (2009). Red media, blue media: Evidence of ideological selectivity
+    in media use. Journal of Communication, 59, 19-39.
+Jacobson, H. K. (1969). Mass media believability: A study of receiver judgments. Journalism
+    Quarterly, 46, 20-28. doi:10.1177/107769906904600103
+Jackob, N. G. E. (2010). No alternatives? The relationship between perceived media depen-
+    dency, use of alternative information sources, and general trust in mass media. International
+    Journal of Communication, 4, 589-606.
+Jamieson, K. H., & Cappella, J. N. (2008). Echo chamber: Rush Limbaugh and the conservative
+    media establishment. New York, NY: Oxford University Press.
+Jones, D. A. (2004). Why Americans don’t trust the media. A preliminary analysis. The
+    International Journal of Press/Politics, 9, 60-75. doi:10.1177/1081180X04263461
+Jung, N., Kim, Y., & Gil de Zúñiga, H. (2011). The mediating role of knowledge and efficacy in
+    the effects of communication on political participation. Mass Communication and Society,
+    14, 407-430.
+Kaufhold, K., Valenzuela, S., & Gil de Zúñiga, H. (2010). Citizen journalism and democracy:
+    How user-generated news use relates to political knowledge and participation. Journalism
+    & Mass Communication Quarterly, 87, 515-529.
+Kaufman, L. (2014, January 29). New owner of Patch lays off hundreds. The New York Times.
+    Available from http://www.nytimes.com
+Kenix, L. J. (2008). Framing science: Climate change in the mainstream and alternative news of
+    New Zealand. Political Science, 60, 117-132. doi:10.1177/003231870806000110.
+Kenski, K., & Stroud, N. J. (2006). Connections between internet use and political efficacy,
+    knowledge, and participation. Journal of Broadcasting & Electronic Media, 50, 173-192.
+    doi:10.1207/s15506878jobem5002_1
+Kessler, R. C., & Greenberg, D. F. (1981). Linear panel analysis: Models of quantitative
+    change. New York, NY: Academic Press.
+Kim, J., Wyatt, R. O., & Katz, E. (1999). News, talk, opinion, participation: The part played by
+    conversation in deliberative democracy. Political Communication, 16, 361-385.
+Kiousis, S. (2001). Public trust or mistrust? Perceptions of media credibility in the information
+    age. Mass Communication and Society, 4, 381-403.
+Koch, N. S. (1994). Changing times? The effect of The New York Times on college students’
+    political information and behavior. Social Science Journal, 31, 29-38.
+Kohring, M., & Matthes, J. (2007). Trust in news media: Development and validation of a multidi-
+    mensional scale. Communication Research, 34, 231-252. doi:10.1177/0093650206298071
+Ardèvol-Abreu and Gil de Zúñiga                                                                723
+
+Lasica, J. D. (2003). What is participatory journalism? Online Journalism Review. Retrieved
+     from http://www.ojr.org/ojr/workplace/1060217106.php
+Luhmann, N. (1979). Trust and power. Chichester, UK: John Wiley.
+Lupia, A., & McCubbins, M. D. (1998). The democratic dilemma: Can citizens learn what they
+     need to know? Cambridge, MA: Cambridge University Press.
+McManus, J. (1995). A market-based model of news production. Communication Theory, 5,
+     301-338. doi:10.1111/j.1468-2885.1995.tb00113.x
+Metzgar, E. T., Kurpius, D. D., & Rowley, K. M. (2011). Defining hyperlocal media:
+     Proposing a framework for discussion. New Media & Society, 13, 772-787.
+     doi:10.1177/1461444810385095
+Meyrowitz, J. (1998). Multiple media literacies. Journal of Communication, 48, 96-108.
+     doi:10.1111/j.1460-2466.1998.tb02740.x
+Miller, J. M., & Krosnick, J. A. (2000). News media impact on the ingredients of presidential
+     evaluations: Politically knowledgeable citizens are guided by a trusted source. American
+     Journal of Political Science, 44, 301-315. doi:10.2307/2669312
+Morris, J. S. (2007). Slanted objectivity? Perceived media bias, cable news exposure, and politi-
+     cal attitudes. Social Science Quarterly, 88, 707-728.
+Moy, P., McCluskey, M. R., McCoy, K., & Spratt, M. A. (2004). Political correlates of local news
+     media use. Journal of Communication, 54, 532-546. doi:10.1111/j.1460-2466.2004.tb02643.x
+Mullainathan, S., & Shleifer, A. (2005). The market for news. American Economic Review,
+     1031-1053. doi:10.1257/0002828054825619
+Müller, J. (2013). Mechanisms of trust: News media in democratic and authoritarian regimes.
+     Frankfurt, Germany: Campus Verlag.
+Nah, S., & Chung, D. S. (2012). When citizens meet both professional and citizen journalists:
+     Social trust, media credibility, and perceived journalistic roles among online community
+     news readers. Journalism, 13, 714-730. doi:10.1177/1464884911431381
+Newman, N., Dutton, W. H., & Blank, G. (2012). Social media in the changing ecology of news:
+     The fourth and fifth estates in Britain. International Journal of Internet Science, 7(1), 6-22.
+Nip, J. (2006). Exploring the second phase of public journalism. Journalism Studies, 7, 212-236.
+Niven, D. (2002). Tilt? The search for media bias. Westport, CT: Praeger
+Pew Research Center for the People and the Press. (2012). Political communications and meth-
+     ods survey. Available from http://www.people-press.org
+Pfau, M. J., Houston, B., & Semmler, S. M. (2007). Mediating the vote: The changing media
+     landscape in U.S. presidential campaigns. Lanham, MD: Rowman & Littlefield.
+Saldaña, M., McGregor, S., & Gil de Zúñiga, H. (2015). Social media as a public space for
+     politics: Cross-national comparison of news consumption and participatory behaviors in
+     the United States and the United Kingdom. International Journal of Communication, 9,
+     3304-3326. doi:1932-8036/20150005
+Schudson, M. (1978). Discovering the news: A social history of American newspapers. New
+     York, NY: Basic Books.
+Self, C. C. (1996). Credibility. In M. B. Salwen & D. W. Stacks (Eds.), An integrated approach
+     to communication theory and research (pp. 421-444). Mahwah, NJ: Lawrence Erlbaum.
+Serrin, J., & Serrin, W. (2002). Muckraking! The journalism that changed America. New York,
+     NY: The New Press.
+Smith, T. W., & Son, J. (2013, May). General Social Survey 2012 final report: Trends in pub-
+     lic attitudes about confidence in institutions. Retrieved from http://www.norc.org/PDFs/
+     GSS%20Reports/Trends%20in%20Confidence%20Institutions_Final.pdf
+724                                        Journalism & Mass Communication Quarterly 94(3)
+
+Sonderman, J. (2012, July 23). The hard truths of hyperlocal journalism reveal themselves in
+    Journatic trouble. Poynter. Available from http://www.poynter.org
+Spearman, C. (1910). Correlation calculated from faulty data. British Journal of Psychology,
+    3, 271-295.
+Thurman, N. (2008). Forums for citizen journalists? Adoption of user generated content initiatives
+    by online news media. New Media & Society, 10(1), 139-157. doi:10.1177/1461444807085325
+Tsfati, Y. (2010). Online news exposure and trust in the mainstream media: Exploring possible
+    associations. American Behavioral Scientist, 54, 22-42. doi:10.1177/0002764210376309
+Tsfati, Y. (2003). Does audience skepticism of the media matter in agenda setting? Journal of
+    Broadcasting & Electronic Media, 47(2), 157-176. doi:10.1207/s15506878jobem4702_1
+Tsfati, Y., & Cappella, J. N. (2003). Do people watch what they do not trust? Exploring the associa-
+    tion between news media skepticism and exposure. Communication Research, 30, 504-529.
+Tsfati, Y., & Cappella, J. N. (2005). Why do people watch news they do not trust? The need for
+    cognition as a moderator in the association between news media skepticism and exposure.
+    Media Psychology, 7, 251-271.
+Tsfati, Y., & Cohen, J. (2005). Democratic consequences of hostile media perceptions: The case
+    of Gaza settlers. The International Journal of Press/Politics, 10, 28-51. doi:10.1177/1081
+    180X05280776
+U.S. Census Bureau. (2012). Statistical abstract of the United States. Retrieved from https://
+    www.census.gov/programs-surveys/acs/
+Vallone, R. P., Ross, L., & Lepper, M. R. (1985). The hostile media phenomenon: Biased
+    perception and perceptions of media bias in coverage of the Beirut massacre. Journal of
+    Personality and Social Psychology, 49, 577.
+Wanta, W., & Hu, Y. W. (1994). The effects of credibility, reliance, and exposure on media
+    agenda-setting: A path analysis model. Journalism & Mass Communication Quarterly, 71,
+    90-98. doi:10.1177/107769909407100109
+Watts, M. D., Domke, D., Shah, D. V., & Fan, D. P. (1999). Elite cues and media bias in
+    presidential campaigns: Explaining public perceptions of a liberal press. Communication
+    Research, 26, 144-175.
+Westley, B. H., & Severin, W. J. (1964). Some correlates of media credibility. Journalism &
+    Mass Communication Quarterly, 41, 325-335. doi:10.1177/10776990640410030
+
+Author Biographies
+Alberto Ardèvol-Abreu, PhD, is doctor in journalism and communication from the University
+of La Laguna, Spain. Currently, he is Universitätsassistent (post-doc) at the University of
+Vienna. His major research interests focus on political communication and new media. He has
+also worked on research about infotainment and political participation. In addition, he is also
+interested in media representation of immigration, ethnic minorities, and countries of the South.
+From a more theoretical perspective, he has collaborated in two research projects on the third
+level of the agenda-setting theory with the University of Texas at Austin.
+Homero Gil de Zúñiga, PhD, is doctor in political science from the Universidad Europea de
+Madrid and also pursued a PhD in mass communication with a minor in digital media from the
+University of Wisconsin–Madison. Currently, he holds the Medienwandel Professorship at
+University of Vienna, Austria, where he leads the Media Innovation Lab (MiLab). In general,
+his research addresses the influence of new technologies and digital media over people’s daily
+lives, as well as the effect of such use on the overall democratic process.
+

@@ -1,0 +1,661 @@
+                  ARTICLE
+                  https://doi.org/10.1038/s41467-021-25738-6                 OPEN
+
+                  Neutral bots probe political bias on social media
+                  Wen Chen1, Diogo Pacheco                   1,2,   Kai-Cheng Yang          1   & Filippo Menczer            1✉
+
+
+
+
+                  Social media platforms attempting to curb abuse and misinformation have been accused of
+                  political bias. We deploy neutral social bots who start following different news sources on
+                  Twitter, and track them to probe distinct biases emerging from platform mechanisms versus
+                  user interactions. We ﬁnd no strong or consistent evidence of political bias in the news feed.
+1234567890():,;
+
+
+
+
+                  Despite this, the news and information to which U.S. Twitter users are exposed depend
+                  strongly on the political leaning of their early connections. The interactions of conservative
+                  accounts are skewed toward the right, whereas liberal accounts are exposed to moderate
+                  content shifting their experience toward the political center. Partisan accounts, especially
+                  conservative ones, tend to receive more followers and follow more automated accounts.
+                  Conservative accounts also ﬁnd themselves in denser communities and are exposed to more
+                  low-credibility content.
+
+
+
+
+                  1 Observatory on Social Media, Indiana University, Bloomington, IN, USA. 2 Department of Computer Science, University of Exeter, Exeter, UK.
+                  ✉email: ﬁl@iu.edu
+
+                  NATURE COMMUNICATIONS | (2021)12:5580 | https://doi.org/10.1038/s41467-021-25738-6 | www.nature.com/naturecommunications                       1
+ARTICLE                                                                 NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-021-25738-6
+
+
+
+
+C
+        ompared with traditional media, online social media can              status. We thus turn to a method that removes the need to control
+        connect more people in a cheaper and faster way than ever            for such confounding factors by leveraging social media accounts
+        before. As a large portion of the population frequently use          that mimic human users but are completely controlled by algo-
+social media to generate content, consume information, and                   rithms, known as social bots39. Here we deploy social bots with
+interact with others1, online platforms are also shaping the norms           neutral (unbiased) and random behavior as instruments to probe
+and behaviors of their users. Experiments show that simply                   exposure biases in social media. We call our bots “drifters” to
+altering the messages appearing on social feeds can affect the               distinguish their neutral behavior from other types of benign and
+online expressions and real-world actions of users2,3 and that               malicious social bots on Twitter40.
+social media users are sensitive to early social inﬂuence4,5. At the            The drifters are designed with an identical behavior model but
+same time, discussions on social media tend to be polarized                  with the only distinctive difference of their initial friend — the
+around critical yet controversial topics like elections6–8,                  very ﬁrst account they follow. After this initial action that
+vaccination9, and climate change10. Polarization is often accom-             represents the single independent variable (treatment) in our
+panied by the segregation of users with incongruent views into so-           experiment, each drifter is let loose in the wild. To be sure, while
+called echo chambers11–16, homogeneous online communities                    all drifters have identical behaviors, their actions are different and
+that have been associated with ideology radicalization and mis-              depend on their initial conditions. We expect that a drifter who
+information spreading17–20.                                                  starts following liberal accounts will be more likely to be exposed
+   Countering such undesirable phenomena requires a deep                     to liberal content, to share some of this content, to be followed by
+understanding of their underlying mechanisms. On the one hand,               liberal accounts, and so on. But these actions are driven by
+online vulnerabilities have been associated with several socio-              platform mechanisms and social interactions, not by political bias
+cognitive biases of humans21–23, including the selection of belief-          in the treatment: the behavioral model has no way of distin-
+consistent information24 and the tendency to seek homophily in               guishing between liberal, conservative, or any type of content. The
+social ties25. On the other hand, web platforms have their own               drifter actions are therefore part of the dependent variables
+algorithmic biases26–28. For example, ranking algorithms favor               (outcomes) measured by our experiment.
+popular and engaging content, which may create a vicious cycle                  This methodology allows us to examine the combined biases
+amplifying noise over quality29. Exposure to engagement metrics              that stem both from Twitter’s system design and algorithms, and
+may also increase vulnerability to misinformation30. For a more              from the organic and inorganic social interactions between the
+extreme illustration, recent studies and media reports suggest that          drifters and other accounts. Our research questions are: (i) How
+the YouTube recommendation system might lead to videos with                  are inﬂuence and exposure to inauthentic accounts, political echo
+more misinformation or extreme viewpoints regardless of the                  chambers, and misinformation impacted by early actions on a
+starting point31.                                                            social media platform? And (ii) Can such differences be attributed
+   Beyond the socio-cognitive biases of individual users and algo-           to political bias in the platform’s news feed?
+rithmic biases of technology platforms, we have a very limited                  To answer these questions, we initialized drifters from news
+understanding of how collective interactions mediated by social              sources across the political spectrum. After ﬁve months, we
+media may bias the view of the world that we obtain through the              examined the content consumed and generated by the drifters
+online information ecosystem. The major obstacle is the com-                 and analyzed (i) characteristics of their friends and followers,
+plexity of the system — not only do users exchange huge amounts              including their liberal-conservative political alignment inferred by
+of information with large numbers of others via many hidden                  shared links and hashtags; (ii) automated activity measured via
+mechanisms, but these interactions can be manipulated overtly and            machine learning methods; and (iii) exposure to information
+covertly by legitimate inﬂuencers as well as inauthentic, adversarial        from low-credibility sources identiﬁed by news and fact-checking
+actors who are motivated to inﬂuence opinions or radicalize                  organizations.
+behaviors32. Evidence suggests that malicious entities like social              We ﬁnd that the political alignment of the initial friend has a
+bots and trolls have already been deployed to spread mis-                    major impact on the popularity, social network structure, expo-
+information and inﬂuence public opinion on critical matters33–37.            sure to bots and low-credibility sources, and political alignment
+   In this study, we aim to reveal biases in the news and infor-             manifested in the actions of each drifter. However, we ﬁnd no
+mation to which people are exposed in social media ecosystems.               evidence that these outcomes can be attributed to platform bias.
+We are particularly interested in clarifying the role of social media        The insights provided by our study into the political currents of
+interactions during the polarization process and the formation of            the Twitter’s information ecosystem can aid the public debate
+echo chambers. We therefore focus on U.S. political discourse                about how social media platforms shape people’s exposure to
+on Twitter since this platform plays an important role in                    political information.
+American politics, and strong polarization and echo chambers
+have been observed6,38. Twitter forms a directed social network
+where an edge from a friend node to a follower node indicates                Results
+that content posted by the friend appears on the news feed of the            All drifters in our experiment follow the same behavior model,
+follower.                                                                    whose design is intended to be neutral, not necessarily realistic.
+   Our goal is to study ecosystem bias, which includes both                  Each drifter is activated at random times to performs actions.
+potential platform bias and the net effects of interactions with             Action types, such as tweets, likes, and replies are selected at
+users of the social network (organic or not) that are mediated by            random according to predeﬁned probabilities. For each action,
+the platform’s mechanisms and regulated by its policies. While we            the model speciﬁes how to select a random target, such as a tweet
+only attempt to separate platform effects from naturally occurring           to be retweeted or a friend to be unfollowed. Time intervals
+biases in the narrow case of the feed curation, our investigation            between actions are drawn from a broad distribution to produce
+targets the overall bias experienced by users of the platform. This          realistic bursty behaviors. See “Methods” for further details.
+requires the exclusion of biases from individual users, which is a              We developed 15 drifter bots, divided them into ﬁve groups,
+challenge when using traditional observational methods — it                  and initialized each drifter in the same group with the same initial
+would be impossible to separate ecosystem effects from con-                  friend. Each Twitter account used as a ﬁrst friend a popular news
+founding factors that might affect the actions of tracked human              source aligned with the Left, Center-Left, Center, Center-Right, or
+accounts, such as age, gender, race, ideology, and socioeconomic             Right of the U.S. political spectrum (see details in “Methods”).
+
+2                NATURE COMMUNICATIONS | (2021)12:5580 | https://doi.org/10.1038/s41467-021-25738-6 | www.nature.com/naturecommunications
+NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-021-25738-6                                                                      ARTICLE
+
+                                                                                Density is the fraction of node pairs that are connected in a
+                                                                                network. Transitivity measures the fraction of possible triangles
+                                                                                that are actually present among the nodes. High transitivity
+                                                                                means that friends and followers are likely to follow each other
+                                                                                too. See “Methods” for further details.
+                                                                                   Figure 2a, b shows the average density and transitivity of ego
+                                                                                networks for the drifters (see details in “Methods”). Since the two
+                                                                                metrics are correlated in an ego network, Fig. 2c also plots the
+                                                                                transitivity rescaled by that of shufﬂed random networks (see
+Fig. 1 Growth in followers. The x-axis displays the duration of the
+                                                                                “Methods”). The ego networks of Right drifters are more dense than
+experiment in 2019 and the y-axis reports the average numbers of followers
+                                                                                those of Center drifters (d.f. = 4, t = − 8.28, p = 0.001), whereas the
+of different drifter groups. Colored conﬁdence intervals
+                                                                                difference in density is not signiﬁcant between Center and Left
+indicate ± 1 standard error. Source data are provided as a Source data ﬁle.
+                                                                                drifters (d.f. = 4, t = − 2.68, p = 0.055). Right account networks also
+                                                                                have higher transitivity than Center networks (d.f. = 4, t = − 9.31,
+We refer to the drifters by the political alignment of their initial            p < 0.001); so do the Left account networks (d.f. = 4, t = − 3.53,
+friends; for example, bots initialized with Center-Left sources are             p = 0.024). Right accounts are more clustered than centrists even
+called “C. Left” drifters.                                                      when accounting for the difference in density (d.f. = 4, t = − 8.96,
+   Between their deployment on July 10, 2019, and until their                   p < 0.001) while the difference is not signiﬁcant for Left vs. Center
+deactivation on December 1, 2019, we monitored the behaviors of                 (d.f. = 4, t = − 2.73, p = 0.053). Furthermore, Right drifters are in
+the drifters and collected data on a daily basis. In particular, we             stronger echo chambers than Left drifters (d.f. = 4, t = − 3.84,
+measured: (1) the number of followers of each drifter to compare                p = 0.019 for density and d.f. = 4, t = − 3.02, p = 0.039 for
+their ability to gain inﬂuence; (2) the echo-chamber exposure of                transitivity). However, the difference in normalized transitivity
+each drifter; (3) the likely automated activities of friends and                between Left and Right is not signiﬁcant (d.f. = 4, t = − 0.60,
+followers of the drifters; (4) the proportion of low-credibility                p = 0.579), indicating that the higher clustering on the Right is
+information to which the drifters are exposed; and (5) the poli-                explained by the density of social connections.
+tical alignment of the content generated by the drifters and their                 To get a better sense of what these echo chambers look like,
+friends to probe political biases.                                              Fig. 2d maps the ego networks of the 15 drifters. In addition to
+                                                                                the clustered structure, we observe a degree of homogeneity in
+                                                                                shared content as illustrated by the colors of the nodes, which
+Inﬂuence. The number of followers can be used as a crude proxy                  represent the political alignment of the links shared by the
+for inﬂuence41. To gauge how political alignment affects inﬂuence               corresponding accounts (see “Methods”; similar results are
+dynamics, Fig. 1 plots the average number of followers of drifters              obtained by measuring political alignment based on shared
+in different groups over time. To compare the growth rates of                   hashtags). In general, the neighbors of a drifter tend to share links
+different groups, we considered consecutive observations of the                 to sources that are politically aligned with the drifter’s ﬁrst friend.
+follower counts of each drifter and aggregated them across each                 We note a few exceptions, however. The Left drifters and their
+group (n = 387 for Left, 373 for C. Left, 389 for Center, 387 for C.            neighbors are more moderate, having shifted their alignment
+Right, and 386 for Right). Two trends emerged from t-tests (all t-              toward the Center. One of the C. Left drifters has become
+tests in this and the following analyses are two-sided). First,                 connected to many conservative accounts, shifting its alignment
+drifters with the most partisan sources as initial friends                      to the Right. And one of the C. Right drifters has shifted its
+tend to attract signiﬁcantly more followers than Center drifters                alignment to the Left, becoming connected to mostly liberal
+(d. f. = 774, t = 5.13, p < 0.001 for Left vs. Center and d.f. = 773,           accounts after randomly following @CNN, a Left-leaning news
+t = 8.00, p < 0.001 for Right vs. Center). Second, drifters with                organization. In most cases, drifters ﬁnd themselves in structural
+Right-leaning initial sources gain followers at a signiﬁcantly                  echo chambers where they are exposed to content with
+higher rate than those with Left-leaning initial sources (d.f = 771,            homogeneous political alignment that mirrors their own.
+t = 3.84, p < 0.001 for Right vs. Left). More details and robustness
+analysis of these ﬁndings are presented in Supplementary Notes.
+   The differences in inﬂuence among drifters could be affected                 Automated activities. Automated accounts known as social bots
+not only by the political alignment but also by other characteristics           were actively involved in online discussions about recent U.S.
+of their initial friends. To disentangle these factors, we measured             elections33,43,44. It is therefore expected for the drifters to encounter
+the correlation between the number of drifter followers and two                 bot accounts. We used the Botometer service45,46 to collect the bot
+features of their initial friends: their overall inﬂuence and their             scores of friends and followers of the drifters. We report the
+popularity among other politically aligned accounts. While drifter              distributions of bot scores for both friends and followers of the
+inﬂuence is not affected by the overall inﬂuence of the initial                 drifters in Fig. 3. Unsurprisingly, drifters are more likely to have bots
+friends, it is positively correlated with their popularity among                among their followers than among their friends, across the political
+politically aligned accounts (see Supplementary Notes). This is                 spectrum. Focusing on friends reveals a more serious potential vul-
+consistent with evidence that users with shared partisanship are                nerability of social media users. We ﬁnd that accounts followed by
+more likely to form social ties42, as we explore next.                          partisan drifters are more bot-like than those followed by centrist
+                                                                                drifters (d.f. = 618, t = − 6.14, p < 0.001 for Right vs. Center and
+Echo chambers. We deﬁne echo chambers as dense and highly                       d.f. = 486, t = − 3.67, p < 0.001 for Left vs. Center). Comparing
+clustered social media neighborhoods that amplify exposure to                   partisans and moderates, Right drifters follow accounts that are more
+homogeneous content. To investigate whether the drifter bots                    bot-like than C. Right drifters (d.f. = 735, t = − 3.01, p = 0.003),
+ﬁnd themselves in such echo chambers, let us consider the ego                   while the difference is smaller on the liberal side (d.f. = 541,
+network of each drifter, i.e., the network composed by the drifter              t = − 2.56, p = 0.011 for Left vs. C. Left). Among partisans, Right
+and its friends and followers. We can use density and transitivity              drifters follow accounts that are slightly more bot-like than Left ones
+of ego networks as proxies for the presence of echo chambers.                   (d.f. = 694, t = − 2.33, p = 0.020).
+
+
+NATURE COMMUNICATIONS | (2021)12:5580 | https://doi.org/10.1038/s41467-021-25738-6 | www.nature.com/naturecommunications                               3
+ARTICLE                                                                     NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-021-25738-6
+
+
+
+
+                                  a
+
+
+
+
+                                  b
+
+
+
+
+                                  c
+
+                          d
+
+
+
+
+Fig. 2 Echo chamber structure around drifters. a Density, b transitivity, and c normalized transitivity of drifters ego networks in different groups. Error bars
+indicate the standard errors (n = 3 drifters in each group). d Ego networks of the drifters in the ﬁve groups. Nodes represent accounts and edges represent
+friend/follower relations. Node size and color represent degree (number of neighbors) and political alignment of shared links, respectively. Black nodes
+have missing alignment scores due to not sharing political content. Source data are provided as a Source data ﬁle.
+
+
+
+
+Fig. 3 Distributions of the bot scores of friends and followers of drifters. The bot score is a number between zero and one, with higher scores signaling
+likely automation. For each group, we consider the union of a friends and b followers of the drifters in that group. Bars indicate averages. For friends,
+n = 282 (Left), 261 (C. Left), 206 (Center), 323 (C. Right), and 414 (Right). For followers, n = 172 (Left), 118 (C. Left), 65 (Center), 205 (C. Right), and 299
+(Right). Source data are provided as a Source data ﬁle.
+
+Exposure to low-credibility content. Since the 2016 U.S. pre-                    misinformation (details about low-credibility sources are found in
+sidential election, concern has been heightened about the spread                 “Methods”). We analyze exposure to content from these low-
+of misinformation in social media47. We consider a list of low-                  credibility sources for different groups of drifters in Fig. 4. We
+credibility sources that are known to publish false and misleading               observe that Right drifters receive more low-credibility content in
+news reports, conspiracy theories, junk science, and other types of              their news feeds than other groups (t = 5.06, p = 0.007 compared
+
+4                   NATURE COMMUNICATIONS | (2021)12:5580 | https://doi.org/10.1038/s41467-021-25738-6 | www.nature.com/naturecommunications
+NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-021-25738-6                                                                          ARTICLE
+
+to C. Right; p < 0.001 for other groups: t = 27.47 compared to                    results, Breitbart News is not labeled as a low-credibility source in
+Center, t = 15.06 to C. Left, and t = 13.14 to Left; d.f = 4 in all               this analysis and does not contribute to the proportions in Fig. 4.
+cases). Almost 15% of the links that appear in the timelines of
+Right drifters are from low-credibility sources. We also measured
+the absolute number of low-credibility links, and used the total                  Political alignment and news feed bias. We wish to measure the
+number of tweets or the number of tweets with links as the                        political alignment of content consumed and produced by drif-
+denominator of the proportions; the same pattern emerges in all                   ters. Given a link (URL), we can extract the source (website)
+cases.                                                                            domain name and obtain an alignment score based on its known
+  We used @BreitbartNews as the initial friend account for                        political bias. Similarly, given a hashtag, we can calculate a score
+Right drifters because it is one of the most popular conservative                 based on a computational technique that captures the political
+news sources. Although Breitbart News appears in lists of hyper-                  alignment of different hashtags. These scores can then be aver-
+partisan sources used in the literature, to prevent biasing our                   aged across the links or hashtags contained in a feed of tweets to
+                                                                                  measure their aggregate political alignment. Further details can be
+                                                                                  found in the Methods.
+                                                                                     The home timeline (also known as news feed) is the set of
+                                                                                  tweets to which accounts are exposed. The user timeline is the set
+                                                                                  of tweets produced by an account. In Fig. 5a,b,d,e we observe how
+                                                                                  the political alignment of information to which drifters are
+                                                                                  exposed in their home timelines (sh) and of the content generated
+                                                                                  by them in their user timelines (su) changed during the
+                                                                                  experiment. The initial friends strongly affect the political
+                                                                                  trajectories of the drifters. Both in terms of information to which
+                                                                                  they are exposed and content they produce, drifters initialized
+                                                                                  with Right-leaning sources stay on the conservative side of the
+                                                                                  political spectrum. Those initialized with Left-leaning sources, on
+Fig. 4 Exposure to low-credibility content. The bars express the                  the other hand, tend to drift toward the political center: they are
+proportions of low-credibility links in the home timelines of different drifter   exposed to more conservative content and even start spreading it.
+groups. Error bars indicate standard errors (n = 3 drifters in each group).       These ﬁndings are robust with respect to the method used to
+Source data are provided as a Source data ﬁle.                                    calculate political alignment, whether based on hashtags (Fig. 5a, b)
+                                                                                  or links (Fig. 5d, e).
+
+
+
+
+Fig. 5 Time series of political alignment. Negative alignment scores mean Left-leaning and positive scores mean Right-leaning. Alignment scores sh are
+calculated from content to which drifters are exposed in their home timelines, based on hashtags (a) and links (d). Alignment scores su are calculated from
+content expressed by the drifter posts in their user timelines, based on hashtags (b) and links (e). The difference sh − sf measures news feed bias
+experienced by drifters, where the political alignment score sf is derived from the content generated by friends, based on hashtags (c) and links (f). Missing
+values are replaced by preceding available ones. Colored conﬁdence intervals indicate ± 1 standard error. Source data are provided as a Source data ﬁle.
+Plots for each individual drifter are in Supplementary Figs. 2–4.
+
+NATURE COMMUNICATIONS | (2021)12:5580 | https://doi.org/10.1038/s41467-021-25738-6 | www.nature.com/naturecommunications                                    5
+ARTICLE                                                                  NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-021-25738-6
+
+
+   We measured the political bias of the news feed by calculating             suggests that the ecosystem can lead completely unbiased agents
+the difference between the alignment score of tweets posted by                to this condition, therefore, it is not necessary to impute the
+friends of the drifters, sf, and the score of tweets in the home              vulnerability to characteristics of individual social media users.
+timeline, sh. The results are shown in Fig. 5c, f for alignment               Other mechanisms that may contribute to the exposure to low-
+computed from hashtags and links, respectively. In the case of                credibility content observed for the drifters initialized with Right-
+hashtags, we observe little evidence of political bias by the news            leaning sources involve the actions of neighbor accounts (friends
+feed. For Right-leaning drifters, there is a small shift toward the           and followers) in the Right-leaning groups, including the inau-
+Center, suggesting a weak bias of the news feed (Fig. 5c). To                 thentic accounts that target these groups.
+conﬁrm this visual observation, we performed a paired t-test                     Although Breitbart News was not labeled as a low-credibility
+comparing the daily averages of home timeline scores sh and                   source in our analysis, our ﬁnding might still be biased in
+friend user timeline scores sf (Supplementary Table 3). The effect            reﬂecting this source’s low credibility in addition to its partisan
+is small for all but the Right group of drifters (p < 0.001, Cohen’s          nature. However, @BreitbartNews is one of the most popular
+d = 0.56). Similarly, in the case of links (Fig. 5f), we observe Left         conservative news sources on Twitter (Supplementary Table 1).
+bias for drifters in the Center group (p < 0.001, Cohen’s d = 0.76).          While further experiments may corroborate our ﬁndings using
+For the other groups, the effect is small (Supplementary Table 3).            alternative sources as initial friends, attempting to factor out the
+   Further details on the bias analysis can be found in                       correlation between conservative leanings and vulnerability to
+Supplementary Notes, together with trajectories of individual                 misinformation20,49 may yield a less-representative sample of
+drifters, data on follow-back rates, and descriptive statistics of the        politically active accounts.
+drifters.                                                                        While most drifters are embedded in clustered and homo-
+                                                                              geneous network communities, the echo chambers of con-
+                                                                              servative accounts grow especially dense and include a larger
+Discussion                                                                    portion of politically active accounts. Social bots also seem to play
+The present results suggest that early choices about which sources            an important role in the partisan social networks; the drifters,
+to follow impact the experiences of social media users. This is               especially the Right-leaning ones, end up following a lot of them.
+consistent with previous studies4,5. But beyond those initial                 Since bots also amplify the spread of low-credibility news33, this
+actions, drifter behaviors are designed to be neutral with respect            may help explain the prevalent exposure of Right-leaning drifters
+to partisan content and users. Therefore the partisan-dependent               to low-credibility sources. Drifters initialized with far-Left sources
+differences in their experiences and actions can be attributed to             do gain more followers and follow more bots compared with the
+their interactions with users and information mediated by the                 Center group. However, this occurs in a way that is less emphatic
+social media platform — they reﬂect biases of the online infor-               and vulnerable to low-credibility content compared to the Right
+mation ecosystem.                                                             and Center-Right groups. Nevertheless, our results are consistent
+   Drifters with Right-wing initial friends are gradually embedded            with ﬁndings that partisanship on both sides of the political
+into dense and homogeneous networks where they are constantly                 spectrum increases the vulnerability to manipulation by social
+exposed to Right-leaning content. They even start to spread                   bots50.
+Right-leaning content themselves. Such online feedback loops                     Twitter has been accused of favoring liberal content and users.
+reinforcing group identity may lead to radicalization17, especially           We examined the possible bias in Twitter’s news feed, i.e., whe-
+in conjunction with social and cognitive biases like in-/out-group            ther the content to which a user is exposed in the home timeline
+bias and group polarization. The social network communities of                is selected in a way that ampliﬁes or suppresses certain political
+the other drifters are less dense and partisan.                               content produced by friends. Our results suggest this is not the
+   We selected popular news sources across the political spectrum             case: in general, the drifters receive content that is closely aligned
+as initial friends of the drifters. There are several possible con-           with whatever their friends produce. A limitation of this analysis
+founding factors stemming from our choice of these accounts:                  is that it is based on limited sets of recent tweets from drifter
+their inﬂuence as measured by the number of followers, their                  home timelines (“Methods”). The exact posts to which Twitter
+popularity among users with a similar ideology, their activity in             users are exposed in their news feeds might differ due to the
+terms of tweets, and so on. For example, @FoxNews was popular                 recommendation algorithm, which is not available via Twitter’s
+but inactive at the time of the experiment. Furthermore, these                programmatic interface.
+quantities vary greatly both within and across ideological groups                Despite the lack of evidence of political bias in the news feed,
+(Supplementary “Methods”). While it is impossible to control for              drifters that start with Left-leaning sources shift toward the Right
+all of these factors with a limited number of drifters, we checked            during the course of the experiment, sharing and being exposed
+for a few possible confounding factors. We did not ﬁnd a sig-                 to more moderate content. Drifters that start with Right-leaning
+niﬁcant correlation between initial friend inﬂuence or popularity             sources do not experience a similar exposure to moderate infor-
+measures and drifter ego network transitivity. We also found that             mation and produce increasingly partisan content. These results
+the inﬂuence of an initial friend is not correlated with the drifter          are consistent with observations that Right-leaning bots do a
+inﬂuence. However, the popularity of an initial friend among                  better job at inﬂuencing users51.
+sources with similar political bias is a confounding factor for                  In summary, our experiment demonstrates that even if a
+drifter inﬂuence. Online inﬂuence is therefore affected by the                platform has no partisan bias, the social networks and activities of
+echo-chamber characteristics of the social network, which are                 its users may still create an environment in which unbiased agents
+correlated with partisanship, especially on the political Right20,48.         end up in echo chambers with constant exposure to partisan,
+In summary, drifters following more partisan news sources                     inauthentic, and misleading content. In addition, we observe a net
+receive more politically aligned followers, becoming embedded in              bias whereby the drifters are drawn toward the political Right. On
+denser echo chambers and gaining inﬂuence within those partisan               the conservative side, they tend to receive more followers, ﬁnd
+communities.                                                                  themselves in denser communities, follow more automated
+   The fact that Right-leaning drifters are exposed to considerably           accounts, and are exposed to more low-credibility content. Users
+more low-credibility content than other groups is in line with                have to make extra efforts to moderate the content they consume
+previous ﬁndings that conservative users are more likely to                   and the social ties they form in order to counter these currents,
+engage with misinformation on social media20,49. Our experiment               and create a healthy and balanced online experience.
+
+6                 NATURE COMMUNICATIONS | (2021)12:5580 | https://doi.org/10.1038/s41467-021-25738-6 | www.nature.com/naturecommunications
+NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-021-25738-6                                                                                     ARTICLE
+
+   Given the political neutrality of the news feed curation, we ﬁnd                  characterization of echo chambers. All drifter activities are managed through
+no evidence for attributing the conservative bias of the infor-                      Twitter’s application programmatic interface (API).
+mation ecosystem to intentional interference by the platform. The
+bias can be explained by the use (and abuse) of the platform by its                  Drifter behavior model. Drifter bots are the key instrument for this study. They
+users, and possibly to unintended effects of the policies that                       are designed to mimic social media users so that the data collected from their
+                                                                                     actions and interactions reﬂect experiences on the platform. The drifters are
+govern this use: neutral algorithms do not necessarily yield                         intended to have a neutral behavior, even if it is not necessarily realistic. For
+neutral outcomes. For example, Twitter may remove or demote                          example, they lack any ability to comprehend the content to which they are
+information from low-credibility sources and/or inauthentic                          exposed or the users with whom they interact. All actions are controlled by a
+accounts, or suspend accounts that violate its terms. To the extent                  stochastic model which was consistent across treatments and unchanged during the
+                                                                                     experiment.
+that such content or users tend to be partisan, the net result                           The Twitter API was employed to control drifter bot behavior in compliance
+would be a bias toward the Center. How to design mechanisms                          with Twitter terms of use for academic research. Twitter does not prohibit bots as
+capable of mitigating emergent biases in online information                          long as they do not engage in any prohibited behaviors like spam, deception, and
+ecosystems is a key question that remains open for debate.                           other abuse. Drifters did not engage in any such behaviors. In particular, to avoid
+                                                                                     impersonating any human, the drifter accounts were named after ﬁctional robots in
+                                                                                     the arts and literature; used robot images in the public domain for their proﬁles;
+Broader considerations and study limitations. The methodology                        and used random quotes as proﬁle descriptions, also avoiding any political
+based on neutral social bots can be applied to study a number of                     references that would bias the experiment. In addition, the drifters did not engage
+biases of social media platforms and their information ecosystems,                   in direct messages nor use any advanced natural language generative models. If a
+                                                                                     human user started a conversation with any of our drifters, it would be obvious to
+in addition to political bias. Applications of our method could be                   them that those accounts were bots.
+used to study gender and racial bias, hate speech, and algorithmic                       The experimental protocol was vetted and approved by the Indiana University
+bias. Bots could also be used for benign interventions, such as                      ethics board. A waiver of informed consent was granted: the protocol did not
+posting content from trustworthy sources in response to harmful                      require disclosure to Twitter users with whom the bots interacted. However, a large
+                                                                                     number of drifters could have a negative impact by spreading misinformation,
+health misinformation. However, when bots interact with humans                       reinforcing echo chambers, or amplifying malicious accounts. Therefore, we
+without informed consent, even in the absence of deception, there                    deployed 15 drifters as a trade-off between limiting potential harm and achieving
+are trade-offs between potential beneﬁts and risks to the users. For                 statistically signiﬁcant results.
+example, our neutral bots might share misinformation or contribute                       Like many human behaviors, social media activity is bursty52. To reproduce this
+                                                                                     feature, we draw time intervals Δt between two successive actions from a power-law
+to polarization. Therefore, the ethical implications of such applica-                distribution P(Δt) ~ Δt−α, with the exponent α = 0.9 manually tuned to minimize
+tions must be evaluated carefully.                                                   the bot score obtained from the Botometer service. The distribution was cut off at a
+   Our main ﬁnding — that the information Twitter users see in                       maximum sleep duration of 7 h between consecutive actions. Intervals were further
+their news feed depends strongly on the political leaning of their                   scaled to obtain an average frequency of 20 – 30 actions per day — a typical activity
+early connections — has important societal implications. It may                      level of normal users estimated from sampled active Twitter accounts. Moreover,
+                                                                                     the drifters were inactive between midnight and 7 a.m., a typical sleep cycle for
+increase awareness among social media users about the implicit                       social media users53.
+biases of their online connections and their own vulnerabilities to                      Every time a drifter is activated, it randomly selects an action and a source as
+selective exposure of information, or worse — inﬂuence                               illustrated in Fig. 6. Actions include tweets, retweets, likes, replies, etc. Sources
+campaigns, manipulation, misinformation, and polarization.                           include the home timeline, trends, friends, etc. Each action is selected with a
+                                                                                     predeﬁned probability. Given the selected action, one of a set of possible sources is
+   The absence of strong or consistent evidence of political bias in                 selected with a predeﬁned conditional probability. A random object is then drawn
+the Twitter news feed could help inform the public debate about                      from the source and the action is performed on it. For example, if the action is a
+social media platform regulation, and claims that platforms                          retweet and the source is the home timeline, then a random tweet in the drifter’s
+censor political speech.                                                             home timeline is retweeted. Non-English sources (users and tweets) are disregarded
+                                                                                     when they can be identiﬁed from metadata. Finally, the bot sleeps for a random
+   The media have reported extensively on links between online                       interval until the next action. To avoid behaviors typical of spambots that violate
+misinformation and harmful behaviors in domains like health                          Twitter’s policies, the follow and unfollow actions have additional constraints
+and elections. Our data are limited to online behaviors and                          regarding the ratio between friends and followers. The constraints are mutually
+cannot gauge the impact of political bias on real-world actions.                     exclusive, so that if one of these two actions fails due to a constraint not being
+                                                                                     satisﬁed, the other action can be performed. Details about actions, sources, their
+Our research also does not address platform policies and their                       associated probabilities, and constraints can be found in Supplementary Methods.
+enforcement, nor other types of algorithmic bias. In particular,                         The only difference among the drifters was the way their friend lists were
+our study is unable to evaluate the effects of Twitter’s                             initialized. This was our experiment’s independent variable or treatment. We
+personalized ranking of news feed posts, friend recommenda-                          started from Twitter accounts associated with established and active news sources
+tions, suspension of accounts, or ads. A ﬁnal limitation of our                      with different political alignments. While mapping the political spectrum to a one-
+                                                                                     dimensional scale is reductive, we obtain manageable experimental treatments by
+experiment is in the small number of deployed neutral bots,                          selecting ﬁve sources: The Nation (Left), The Washington Post (Center-Left), USA
+motivated by the ethical considerations discussed above.                             Today (Center), The Wall Street Journal (Center-Right), and Breitbart News
+   Further research questions remain open concerning political                       (Right). These sources were selected because they are among the most popular on
+bias in the information ecosystems. How would the ﬁndings be                         Twitter, as well as among the most followed by users aligned with different
+                                                                                     portions of the U.S. political spectrum (Supplementary Table 1). The choice of the
+affected by deploying a larger number of bots and starting from                      ﬁve accounts, however, was not based on maximizing any single criterion such as
+news sources with greater or smaller diversity in popularity,                        popularity. The 15 drifters were divided into ﬁve groups so that each of three bots
+inﬂuence, activity, or political slant? What is the net effect of                    in the same group started by following the same source account. The friend list of
+major changes in platform policy/enforcement, such as the                            each drifter was then expanded by following a random sample of ﬁve English-
+                                                                                     speaking friends of the ﬁrst friend, and a random sample of ﬁve English-speaking
+takedown of misinformation “superspreaders”? Or the migration                        followers of the ﬁrst friend — 11 accounts in total.
+of radical users to other platforms? Can the ﬁndings on Twitter be
+generalized to platforms with perhaps different user demo-
+                                                                                     Political alignment metrics and news feed bias. Given our goal of gauging
+graphics or more partisan user populations? Finally, our study is                    political bias, we need to measure the political alignment of tweets and accounts
+U.S.-centric. Similar questions could be explored in the political                   within the liberal-conservative spectrum. This alignment is operationally deﬁned
+contexts of other countries, possibly yielding different                             by a score between − 1 (liberal) and + 1 (conservative). We adopt two independent
+conclusions.                                                                         approaches, one based on hashtags and one on links, to ensure the robustness of
+                                                                                     our results. Both approaches start with assigning political alignment scores to
+                                                                                     entities that may be present in tweets, namely hashtags and links. See Supple-
+Methods                                                                              mentary “Methods” for details about how these entities are extracted from tweets.
+Here we provide details about the design of drifter bots, the computation of         The entity scores are then averaged at the tweet level to obtain alignment scores for
+political alignment metrics, the identiﬁcation of low-credibility sources, and the   the tweets, and further at the user level to measure the political alignment of users.
+
+NATURE COMMUNICATIONS | (2021)12:5580 | https://doi.org/10.1038/s41467-021-25738-6 | www.nature.com/naturecommunications                                                 7
+ARTICLE                                                                                  NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-021-25738-6
+
+
+
+                                                                                            START
+
+
+
+
+                             Action          Reply           Tweet          Retweet            Like           Follow         Unfollow
+
+
+
+
+                             Source                                                                             Few             No           Enough
+                                                                                                             friends?                        friends?
+
+                                                                                                                  Yes
+                                                                                                                                                   Yes
+
+
+
+                             Mention         Random                             Home        Tweets liked    Friends of
+                                                              Trends                                                        Followers        Friends
+                             timeline         quotes                          timeline       by friends      friends
+
+
+Fig. 6 Drifter bot behavior model. Each action box is connected with boxes that indicate the sources used for that action. For example, the source of a
+retweet can be a trending tweet, a tweet in the home timeline, or a tweet liked by a friend. Links to actions and sources are associated with the
+probabilities. Follow and unfollow actions require additional constraints to be satisﬁed (gray diamonds).
+
+    The hashtag-based approach relies on hashtags (keywords preceded by the hash             Identiﬁcation of low-credibility content. In evaluating the credibility of the
+mark #) commonly included by users in their social media posts because they are              content to which drifters are exposed, we focus on the sources of shared links to
+concise and efﬁcient ways to label topics, ideas, or memes so that others can ﬁnd            circumvent the challenge of assessing the accuracy of individual news articles47.
+the messages. Hashtags are often used to signal political identities, beliefs,               Annotating content credibility at the domain (website) level rather than the link
+campaigns, or alignment54. We apply the word2vec algorithm55 to assign political             level is an established approach in the literature33,49,61–63.
+alignment scores to hashtags in a semi-supervised fashion. word2vec maps words                   A low-credibility source is one that exhibits extreme bias, propaganda,
+in the text to continuous vector representations, which have been shown to capture           conspiratorial content, or fabricated news. We use a list of low-credibility sources
+semantic relations between the words56. The axis between a pair of carefully                 compiled from several recent research papers. Speciﬁcally, we consider a source as
+selected word vectors can encode a meaningful cultural dimension and an arbitrary            low-credibility if it fulﬁlls any one of the following criteria: (1) labeled as low-
+word’s position along this axis reﬂects its association with this cultural dimension.        credibility by Shao et al.33; (2) labeled as “Black,” “Red,” or “Satire” by Grinberg
+Using hashtags as words, we look for an axis representing the political alignment in         et al.49; (3) labeled as “fake news” or “hyperpartisan” by Pennycook et al.62; or (4)
+the embedding vector space. We leverage a dataset of political tweets collected              labeled as “extreme Left,” “extreme Right,” or “fake news” by Bovet et al.63. This
+during the 2018 U.S. midterm elections57. The hashtags from the same tweet are               provides us with a list of 570 sources.
+grouped together as a single sentence and fed to the word2vec algorithm to obtain                To measure the percentage of low-credibility links, we extracted the links from
+vector representations for the hashtags. We remove hashtags appearing less than              the home timelines of the drifters (expanding those that are shortened) and then
+ﬁve times in the dataset, which may be a rare misspelling or too uncommon to                 cross-referenced them with the list of low-credibility sources.
+obtain a reliable signal. Note that common variations and misspellings of a hashtag
+are treated similarly to the original one. After ﬁltering, we end up with 54,533
+                                                                                             Echo chambers. We wish to measure the density and transitivity of each drifter
+hashtag vectors. To deﬁne the political alignment axis, we choose #voteblue and
+                                                                                             bot’s ego network. Since reconstructing the full network of friends and followers of
+#votered as two poles because they show clear alignment with U.S. liberal and
+                                                                                             each bot is prohibitively time-consuming due to the Twitter API’s rate limits, we
+conservative political orientations, respectively. The rest of the hashtags are then
+                                                                                             approximated each bot’s ego network by sampling 100 random neighbors from a
+projected onto this axis, and the relative positions, scaled into the interval [ − 1, 1],
+                                                                                             list of the latest 200 friends and 200 followers returned by the Twitter API. We then
+are used to measure the political alignment where negative/positive scores indicate
+                                                                                             checked each pair of sampled neighbors for friendship. We added an undirected
+Left/Right alignment.
+                                                                                             edge if there was a follower/friend link in either direction, so that the sampled ego
+    The link-based approach considers links (URLs) commonly used to share news
+                                                                                             network is undirected and unweighted. Finally, we computed the density and
+and other websites in social media posts, for the purpose of spreading information,
+                                                                                             transitivity of each ego network64.
+expressing opinions, or ﬂagging identity, especially around political matters. Many
+                                                                                                  Since transitivity is correlated with density, we also normalized the transitivity
+websites show clear political bias. If the political ideology of a set of social media
+                                                                                             by the average transitivity of 30 shufﬂed networks generated by a conﬁguration
+users is known, one can use it in conjunction with knowledge of the websites they
+                                                                                             model that preserves the degree sequence of the original ego network. We replace
+share and like on the platform to infer the political bias of the sources58. Therefore,
+                                                                                             any self-loop and parallel edges, generated by the conﬁguration model, with
+the websites (domains) extracted from links provide us with another convenient
+                                                                                             random edges.
+proxy for the political alignment of tweets and users. To assess the political
+alignment of a website, we start with a dataset of 19 thousand ideologically diverse
+news sources, where each domain is assigned a score reﬂecting its political                  Reporting Summary. Further information on research design is available in the Nature
+alignment in the liberal-conservative range [ − 1, + 1]. These scores are obtained           Research Reporting Summary linked to this article.
+from the sharing activity of Twitter accounts associated with registered U.S.
+voters59,60. For each link found in the tweets, we matched the domain to the list to
+obtain a score. See Supplementary “Methods” for additional details.
+                                                                                             Data availability
+    We further aggregate the political alignment scores of the tweets, obtained using        To ensure the reproducibility of the experiment in this study, we share our code that
+either hashtags or links, at the account level. We examine different types of political      generates a database of Twitter content. We do not share the resulting raw data to
+alignment for accounts, each measured on a daily basis. The political alignment to           comply with Twitter terms that prohibit sharing content obtained from the Twitter API
+which a drifter is exposed, sh, is computed by averaging the scores of 50 most recent        with third parties. We do provide code to process the raw data into an intermediate data
+tweets from its home timeline. We also evaluate the political alignment expressed            format that includes all the derived information necessary for analysis. This pre-
+by an account by averaging recent tweets they post. We measure this expressed                processed data are also shared. User and tweet IDs are anonymized to protect subject
+alignment su for each drifter using its most recent 20 tweets. We use sf to represent        privacy. This allows other researchers to reproduce our results and/or compare their
+the political alignment expressed by the friends of each drifter, using their 500            results.
+collective tweets. In Supplementary “Methods”, we detail how political alignment                The data are available in a public repository at Github (github.com/IUNetSci/
+scores are calibrated so that a value of zero can be interpreted as aligned with the         DrifterBot) and at Zenodo (https://doi.org/10.5281/zenodo.4750190)65. Source data are
+political center.                                                                            also provided with this paper.
+    Since sf represents the political alignment expressed by the friends of a drifter
+and sh represents the alignment of the posts to which the drifter is exposed in its
+home timeline, the difference sh − sf can be used to measure potential political bias
+                                                                                             Code availability
+                                                                                             All of the code used to run the experiment and produce the ﬁgures in this manuscript is
+in Twitter’s news feed.
+                                                                                             available in a public repository at Github (github.com/IUNetSci/DrifterBot) and at
+
+
+
+
+8                      NATURE COMMUNICATIONS | (2021)12:5580 | https://doi.org/10.1038/s41467-021-25738-6 | www.nature.com/naturecommunications
+NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-021-25738-6                                                                                              ARTICLE
+
+Zenodo (https://doi.org/10.5281/zenodo.4750190)65. The repository lists dependencies        28. Nikolov, D., Lalmas, M., Flammini, A. & Menczer, F. Quantifying biases in
+on external libraries, such as twurl, chatterbot, gensim, and the Botometer Pro API and         online information exposure. J. Assoc. Inf. Sci. Technol. 70, 218–229 (2019).
+Python client library.                                                                      29. Ciampaglia, G. L., Nematzadeh, A., Menczer, F. & Flammini, A. How
+                                                                                                algorithmic popularity bias hinders or promotes quality. Sci. Rep. 8, 1–7
+Received: 27 May 2020; Accepted: 27 August 2021;                                                (2018).
+                                                                                            30. Avram, M., Micallef, N., Patil, S. & Menczer, F. Exposure to social engagement
+                                                                                                metrics increases vulnerability to misinformation. HKS Misinform. Rev. (2020).
+                                                                                            31. Ribeiro, M. H. et al. Auditing radicalization pathways on YouTube. In Proc.
+                                                                                                2020 Conference on Fairness, Accountability, and Transparency, 131–141
+                                                                                                (ACM, 2020).
+                                                                                            32. Thompson, R. Radicalization and the use of social media. J. Strateg. Secur. 4,
+References                                                                                      167–190 (2011).
+1.    Perrin, A. & Anderson, M. Share of Us Adults Using Social Media, Including            33. Shao, C. et al. The spread of low-credibility content by social bots. Nat.
+      Facebook, Is Mostly Unchanged Since 2018 (Pew Research Center, 2019).                     Commun. 9, 4787 (2018).
+2.    Kramer, A. D., Guillory, J. E. & Hancock, J. T. Experimental evidence of              34. Stella, M., Ferrara, E. & Domenico, M. D. Bots increase exposure to negative
+      massive-scale emotional contagion through social networks. Proc. Natl Acad.               and inﬂammatory content in online social systems. Proc. Natl Acad. Sci. USA
+      Sci. USA 111, 8788–8790 (2014).                                                           115, 12435–12440 (2018).
+3.    Bond, R. M. et al. A 61-million-person experiment in social inﬂuence and              35. Broniatowski, D. A. et al. Weaponized health communication: Twitter bots and
+      political mobilization. Nature 489, 295–298 (2012).                                       Russian trolls amplify the vaccine debate. Am. J. Public Health 108, 1378–1384
+4.    Muchnik, L., Aral, S. & Taylor, S. J. Social inﬂuence bias: a randomized                  (2018).
+      experiment. Science 341, 647–651 (2013).                                              36. Zannettou, S. et al. Disinformation warfare. In Companion Proc. 2019 World
+5.    Weninger, T., Johnston, T. J. & Glenski, M. Random voting effects in social-              Wide Web Conference, 218–226 (ACM, 2019).
+      digital spaces. In Proc. 26th ACM Conference on Hypertext & Social Media,             37. Caldarelli, G., Nicola, R. D., Vigna, F. D., Petrocchi, M. & Saracco, F. The role of
+      293–297 (ACM, 2015).                                                                      bot squads in the political propaganda on Twitter. Commun. Phys. 3, 81 (2020).
+6.    Conover, M. D. et al. Political polarization on Twitter. In Proc. Fifth               38. Colleoni, E., Rozza, A. & Arvidsson, A. Echo chamber or public sphere?
+      International AAAI Conference on Weblogs and Social Media (ICWSM), 89–96                  predicting political orientation and measuring political homophily in Twitter
+      (AAAI, 2011).                                                                             using big data. J. Commun. 64, 317–332 (2014).
+7.    Conover, M. D., Gonçalves, B., Flammini, A. & Menczer, F. Partisan                    39. Hargreaves, E. et al. Fairness in online social network timelines:
+      asymmetries in online political activity. EPJ Data Sci. 1, 6 (2012).                      measurements, models, and mechanism design. Perform. Eval. 129, 15–39
+8.    Hanna, A., et al. Partisan alignments and political polarization online. In Proc.         (2019).
+      2nd Workshop on Politics, Elections, and Data, 15–22 (CIKM, 2013).                    40. Ferrara, E., Varol, O., Davis, C., Menczer, F. & Flammini, A. The rise of social
+9.    Schmidt, A. L., Zollo, F., Scala, A., Betsch, C. & Quattrociocchi, W.                     bots. Commun. ACM 59, 96–104 (2016).
+      Polarization of the vaccination debate on Facebook. Vaccine 36, 3606–3612             41. Cha, M., Haddadi, H., Benevenuto, F. & Gummadi, K. P. Measuring user
+      (2018).                                                                                   inﬂuence in Twitter. In Proc. 4th Intl. AAAI Conference on Weblogs and Social
+10.   Williams, H. T. P., McMurray, J. R., Kurz, T. & Lambert, F. H. Network                    Media (ICWSM, 2010).
+      analysis reveals open forums and echo chambers in social media discussions of         42. Mosleh, M., Martel, C., Eckles, D. & Rand, D. G. Shared partisanship
+      climate change. Glob. Environ. Change 32, 126–138 (2015).                                 dramatically increases social tie formation in a Twitter ﬁeld experiment. Proc.
+11.   Jamieson, K. H. & Cappella, J. N. Echo Chamber: Rush Limbaugh and the                     Natl Acad. Sci. USA 118, e2022761118 (2021).
+      Conservative Media Establishment (Oxford University Press, 2008).                     43. Bessi, A. & Ferrara, E. Social bots distort the 2016 US presidential election
+12.   Garrett, R. K. Echo chambers online?: politically motivated selective exposure            online discussion. First Monday 21, 11. https://doi.org/10.5210/
+      among Internet news users. J. Comput.-Medi. Commun. 14, 265–285                           fm.v21i11.7090 (2016).
+      (2009).                                                                               44. Deb, A., Luceri, L., Badaway, A. & Ferrara, E. Perils and challenges of social
+13.   Lee, J. K., Choi, J., Kim, C. & Kim, Y. Social media, network heterogeneity, and          media and election manipulation analysis: the 2018 US midterms. In
+      opinion polarization. J. Commun. 64, 702–722 (2014).                                      Companion Proc. WWW Conf. 237–247 (2019).
+14.   Flaxman, S., Goel, S. & Rao, J. M. Filter bubbles, echo chambers, and online          45. Varol, O., Ferrara, E., Davis, C. A., Menczer, F. & Flammini, A. Online
+      news consumption. Public Opin. Q. 80, 298–320 (2016).                                     human-bot interactions: Detection, estimation, and characterization. In Proc.
+15.   Sunstein, C. R. #Republic: Divided Democracy in the Age of Social Media.                  Intl. AAAI Conf. on Web and Soc. Media (ICWSM, 2017).
+      (Princeton University Press, 2017).                                                   46. Yang, K.-C. et al. Arming the public with artiﬁcial intelligence to counter
+16.   Garimella, K., De Francisci Morales, G., Gionis, A. & Mathioudakis, M.                    social bots. Hum. Behav. and Emerg. Technol. 1, 48–61 (2019).
+      Political discourse on social media. In Proc. 2018 World Wide Web                     47. Lazer, D. et al. The science of fake news. Science 359, 1094–1096 (2018).
+      Conference, 913–922 (ACM, 2018).                                                      48. Benkler, Y., Faris, R. & Roberts, H. Network Propaganda: Manipulation,
+17.   Wojcieszak, M. ‘Don’t talk to me: effects of ideologically homogeneous online             Disinformation, and Radicalization in American Politics. (Oxford University
+      groups and politically dissimilar ofﬂine ties on extremism. New Media Soc. 12,            Press, 2018).
+      637–655 (2010).                                                                       49. Grinberg, N., Joseph, K., Friedland, L., Swire-Thompson, B. & Lazer, D. Fake
+18.   Del Vicario, M. et al. The spreading of misinformation online. Proc. Natl                 news on Twitter during the 2016 US presidential election. Science 363,
+      Acad. Sci. USA 113, 554–559 (2016).                                                       374–378 (2019).
+19.   Bright, J. Explaining the emergence of political fragmentation on social media: the   50. Yan, H., Yang, K.-C., Menczer, F. & Shanahan, J. Asymmetrical perceptions of
+      role of ideology and extremism. J. Comput.-Mediat. Commun. 23, 17–33 (2018).              partisan political bots. New Media Soc. https://doi.org/10.1177/
+20.   Nikolov, D., Flammini, A. & Menczer, F. Right and left, partisanship predicts             1461444820942744 (2020).
+      (asymmetric) vulnerability to misinformation. HKS Misinform. Rev. https://            51. Luceri, L., Deb, A., Badawy, A. & Ferrara, E. Red bots do it better: comparative
+      doi.org/10.37016/mr-2020-55 (2021).                                                       analysis of social bot partisan behavior. In Companion Proc. 2019 World Wide
+21.   Del Vicario, M., Scala, A., Caldarelli, G., Stanley, H. E. & Quattrociocchi, W.           Web Conference, 1007–1012 (ACM, 2019).
+      Modeling conﬁrmation bias and polarization. Sci. Rep. 7, 40391 (2017).                52. Ghosh, R., Surachawala, T. & Lerman, K. Entropy-based classiﬁcation of
+22.   Sasahara, K. et al. Social inﬂuence and unfollowing accelerate the emergence              ‘retweeting’ activity on Twitter. In Proc. 4th Workshop on Social Network
+      of echo chambers. J. Comput. Soc. Sci. https://link.springer.com/article/                 Mining and Analysis (SNA-KDD), 1406–1415 (ACM, 2011).
+      10.1007/s42001-020-00084-7 (2020).                                                    53. Barbosa, H. S., Oliveira, M., Pacheco, D., Menezes, R. & Ghoshal, G. In
+23.   Hills, T. T. The dark side of information proliferation. Perspect. Psychol. Sci.          Northeast Regional Conference on Complex Systems, (Binghamton, 2018).
+      14, 323–330 (2019).                                                                   54. Cota, W., Ferreira, S. C., Pastor-Satorras, R. & Starnini, M. Quantifying echo
+24.   Nickerson, R. S. Conﬁrmation bias: a ubiquitous phenomenon in many guises.                chamber effects in information spreading over political communication
+      Rev. Gen. Psychol. 2, 175–220 (1998).                                                     networks. EPJ Data Sci. 8, 35 (2019).
+25.   McPherson, M., Lovin, L. S. & Cook, J. M. Birds of a feather: homophily in            55. Mikolov, T., Sutskever, I., Chen, K., Corrado, G. S. & Dean, J. Distributed
+      social networks. Annu. Rev. Sociol. 27, 415–444 (2001).                                   representations of words and phrases and their compositionality. In Advances
+26.   Nikolov, D., Oliveira, D. F. M., Flammini, A. & Menczer, F. Measuring online              in Neural Information Processing Systems, 3111–3119 (Lake Tahoe, 2013).
+      social bubbles. PeerJ Comput. Sci. 1, e38 (2015).                                     56. Kozlowski, A. C., Taddy, M. & Evans, J. A. The geometry of culture: analyzing the
+27.   Baeza-Yates, R. Bias on the web. Commun. ACM 61, 54–61 (2018).                            meanings of class through word embeddings. Am. Sociol. Rev. 84, 905–949 (2019).
+
+
+
+
+NATURE COMMUNICATIONS | (2021)12:5580 | https://doi.org/10.1038/s41467-021-25738-6 | www.nature.com/naturecommunications                                                          9
+ARTICLE                                                                               NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-021-25738-6
+
+
+57. Yang, K.-C., Hui, P.-M. & Menczer, F. Bot electioneering volume. In                    Competing interests
+    Companion Proc. 2019 World Wide Web Conference, 214–217 (ACM, 2019).                   The authors declare no competing interests.
+58. Bakshy, E., Messing, S. & Adamic, L. A. Exposure to ideologically diverse news
+    and opinion on Facebook. Science 348, 1130–1132 (2015).
+59. Robertson, R. E. et al. Auditing Partisan Audience Bias within Google Search.
+                                                                                           Additional information
+                                                                                           Supplementary information The online version contains supplementary material
+    Proceedings of the ACM on Human-Computer Interaction, 2(CSCW) (ACM, 2018).
+                                                                                           available at https://doi.org/10.1038/s41467-021-25738-6.
+60. Robertson, R. Partisan bias scores for web domains. Harvard Dataverse, https://
+    dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/QAN5VX
+                                                                                           Correspondence and requests for materials should be addressed to Filippo Menczer.
+    (2018).
+61. Guess, A., Nagler, J. & Tucker, J. Less than you think: prevalence and predictors      Peer review information Nature Communications thanks the anonymous reviewer(s) for
+    of fake news dissemination on Facebook. Sci. Adv. 5, eaau4586 (2019).                  their contribution to the peer review of this work. Peer reviewer reports are available.
+62. Pennycook, G. & Rand, D. G. Fighting misinformation on social media using
+    crowdsourced judgments of news source quality. Proc. Natl Acad. Sci.USA                Reprints and permission information is available at http://www.nature.com/reprints
+    116, 2521–2526 (2019).
+63. Bovet, A. & Makse, H. A. Inﬂuence of fake news in Twitter during the 2016 US
+                                                                                           Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in
+    presidential election. Nat. Commun. 10, 7 (2019).
+                                                                                           published maps and institutional afﬁliations.
+64. Schank, T. & Wagner, D. Approximating clustering coefﬁcient and
+    transitivity. J. Graph Algorithms Appl. 9, 265–275 (2005).
+65. Chen, W., Pacheco, D., Yang, K.-C. & Menczer, F. Neutral bots probe political
+    bias on social media. Zenodo, https://doi.org/10.5281/zenodo.4750190 (2021).                             Open Access This article is licensed under a Creative Commons
+                                                                                                             Attribution 4.0 International License, which permits use, sharing,
+                                                                                           adaptation, distribution and reproduction in any medium or format, as long as you give
+Acknowledgements                                                                           appropriate credit to the original author(s) and the source, provide a link to the Creative
+We are grateful to Paul Cheung for a conversation that inspired the drifter experiment,    Commons license, and indicate if changes were made. The images or other third party
+and to Eni Mustafaraj for helpful suggestions. This work was supported in part by Knight   material in this article are included in the article’s Creative Commons license, unless
+Foundation and Craig Newmark Philanthropies. Any opinions, ﬁndings, and conclusions        indicated otherwise in a credit line to the material. If material is not included in the
+or recommendations expressed in this material are those of the authors and do not          article’s Creative Commons license and your intended use is not permitted by statutory
+necessarily reﬂect the views of the funding agencies.                                      regulation or exceeds the permitted use, you will need to obtain permission directly from
+                                                                                           the copyright holder. To view a copy of this license, visit http://creativecommons.org/
+                                                                                           licenses/by/4.0/.
+Author contributions
+F.M. and W.C. designed the study. W.C. and D.P. implemented the bot activities and the
+data collection. K.C.Y. developed the hashtag embedding method to infer political          © The Author(s) 2021, corrected publication 2022
+alignment scores. All authors analyzed the data and wrote the report.
+
+
+
+
+10                    NATURE COMMUNICATIONS | (2021)12:5580 | https://doi.org/10.1038/s41467-021-25738-6 | www.nature.com/naturecommunications
+

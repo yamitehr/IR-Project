@@ -1,0 +1,852 @@
+            Fact-Checking, Fake News, Propaganda, and Media Bias:
+                     Truth Seeking in the Post-Truth Era
+
+                   Preslav Nakov                                    Giovanni Da San Martino
+          Qatar Computing Research Institute                        Department of Mathematics
+            Hamad Bin Khalifa University                               University of Padova
+              pnakov@hbku.edu.qa                                    dasan@math.unipd.it
+
+
+
+1   Description                                               2 Outline of the Tutorial
+
+The rise of social media has democratized content             Here is an outline of the tutorial. More informa-
+creation and has made it easy for anybody to share            tion and materials are available online.1
+and to spread information online. On the positive             2.1   Introduction
+side, this has given rise to citizen journalism, thus
+                                                               (i) What is “fake news”?
+enabling much faster dissemination of information
+compared to what was possible with newspapers,                      (a) definitions
+radio, and TV. On the negative side, stripping tra-                 (b) properties
+ditional media from their gate-keeping role has left          (ii) “Fake news” as a weapon of mass deception
+the public unprotected against the spread of dis-
+information, which could now travel at breaking-                    (a) impact on politics, finances, health
+news speed over the same democratic channel.                        (b) can we win the war on “fake news”?
+This situation gave rise to the proliferation of false
+                                                              2.2   Check-Worthiness
+information specifically created to affect individ-
+ual people’s beliefs, and ultimately to influence              (i) Task definition
+major events such as political elections; it also             (ii) Datasets
+set the dawn of the Post-Truth Era, where appeal              (iii) Approaches
+to emotions has become more important than the
+truth. More recently, with the emergence of the                     (a) ClaimBuster
+COVID-19 pandemic, a new blending of medical                        (b) ClaimRank: modeling the context,
+and political misinformation and disinformation                         multi-source learning, multi-linguality
+has given rise to the first global infodemic. Limit-                (c) CLEF shared tasks
+ing the impact of these negative developments has
+                                                              2.3   Detecting Previously Fact-Checked
+become a major focus for journalists, social media
+                                                                    Claims
+companies, and regulatory authorities.
+   The tutorial offers an overview of the emerg-               (i) Task definition
+ing and inter-connected research areas of fact-               (ii) Datasets, e.g., CLEF
+checking, misinformation, disinformation, “fake               (iii) Approaches
+news”, propaganda, and media bias detection, with
+focus on text and on computational approaches. It             2.4   Fact-checking
+further explores the general fact-checking pipeline            (i) Task definitions
+and important elements thereof such as check-
+worthiness estimation, spotting previous fact-                (ii) Datasets, e.g., Snopes, FEVER, ClamsKG,
+checked claims, stance detection, source reliabil-                 MultiFC
+ity estimation, and detecting malicious users in so-          (iii) Information sources: knowledge bases,
+cial media. Finally, it covers some recent develop-                 Wikipedia, Web, social media, multimedia,
+ments such as the emergence of large-scale pre-                     tables
+trained language models, and the challenges and                 1
+                                                                  http://propaganda.qcri.org/
+opportunities they offer.                                     emnlp20-tutorial
+
+                                                          7
+Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: Tutorial Abstracts, pages 7–19
+                    Online, November 19 - 20, 2020. c 2020 Association for Computational Linguistics
+                                            https://doi.org/10.18653/v1/P17
+(iv) Tasks and approaches                                2.8    Propaganda Detection
+     (a)  fact-checking against knowledge bases           (i) Task definitions and examples
+     (b)  fact-checking against Wikipedia                (ii) Propaganda techniques and examples
+     (c)  fact-checking claims using the Web
+                                                         (iii) Datasets
+     (d)  fact-checking rumors in social media
+     (e)  fact-checking multi-modal claims,              (iv) Tasks and approaches
+          e.g., about images                             2.9    Malicious User Detection
+      (f) fact-checking the answers in community
+                                                          (i) Typology of malicious users
+          question answering forums
+(v) Shared tasks at SemEval and FEVER                    (ii) Datasets
+                                                         (iii) Tasks and approaches
+2.5 Fake News Detection
+ (i) Task definitions                                    2.10    Recent Developments and Future
+                                                                 Challenges
+(ii) Datasets, e.g., FakeNewsNet, NELA-GT-
+     2018                                                 (i) Deep fakes: images, voice, video, text
+
+(iii) The language of fake news                          (ii) Text generation: GPT-2, GPT-3, GROVER
+
+(iv) Tasks and approaches                                (iii) Defending against neural fake news
+                                                         (iv) Fighting the COVID-19 Infodemic
+2.6 Stance Detection
+ (i) Task definitions and examples                       3 Reading List
+(ii) Datasets                                            We recommend several surveys. Shu et al. (2017),
+(iii) Stance detection as a key element of fact-         which adopted a data mining perspective on “fake
+      checking                                           news” and focused on social media. Another sur-
+                                                         vey (Zubiaga et al., 2018a) focused on rumor de-
+(iv) Information sources: text, social context,
+                                                         tection in social media. The survey by Thorne
+     user profile
+                                                         and Vlachos (2018) took a fact-checking perspec-
+(v) Tasks and approaches                                 tive on “fake news” and related problems. The
+     (a) neural methods for stance detection             survey by Li et al. (2016) covering truth discov-
+     (b) cross-language stance detection                 ery in general. Lazer et al. (2018) offers a gen-
+                                                         eral overview and discussion on the science of
+(vi) Shared tasks at SemEval and the Fake News           “fake news”, while Vosoughi et al. (2018) fo-
+     Challenge                                           cuses on the process of proliferation of true and
+2.7 Source Reliability and Media Bias                    false news online. Other recent surveys focus on
+    Estimation                                           stance detection (Küçük and Can, 2020), on pro-
+                                                         paganda (Da San Martino et al., 2020b), on so-
+ (i) Task definitions and examples
+                                                         cial bots (Ferrara et al., 2016), on false informa-
+(ii) Datasets: Media Bias Fact/Check, AllSides,          tion (Zannettou et al., 2019b) and on bias on the
+     OpenSources, etc.                                   Web (Baeza-Yates, 2018).
+(iii) Source reliability as a key element of fact-          See also the list of references at the end.
+      checking
+                                                         4 Type of Tutorial
+(iv) Special case: hyper-partisanship
+                                                         The tutorial is both introductory, covering a num-
+(v) Information sources: article text, Wikipedia,
+                                                         ber of topics related to fact-checking, propaganda
+    social media
+                                                         and disinformation, but it is also cutting-edge,
+(vi) Tasks and approaches                                covering some latest developments in these areas.
+     (a) neural methods for source reliability es-
+         timation
+                                                         5 Prerequisites
+     (b) multi-modality                                  Prior knowledge of natural language processing,
+     (c) multi-task learning                             machine learning, and deep learning would be
+
+                                                     8
+needed in order to understand large parts of the           6.2   Giovanni Da San Martino
+contents of this tutorial.                                 Giovanni Da San Martino is a Senior Assistant
+                                                           Professor at the University of Padova, Italy. His
+6       Lecturers
+                                                           research interests are at the intersection of ma-
+6.1 Preslav Nakov                                          chine learning and natural language processing.
+Dr. Preslav Nakov is a Principal Scientist at              He has been researching for 10+ years on these
+the Qatar Computing Research Institute (QCRI),             topics, publishing more than 60 publications in
+HBKU. His research interests include computa-              top-tier conferences and journals. He received his
+tional linguistics, “fake news” detection, fact-           PhD from the University of Bologna, he was a Re-
+checking, machine translation, question answer-            search Fellow at the University of Padova and a
+ing, sentiment analysis, lexical semantics, Web as         Scientist at Qatar Computing Research Institute.
+a corpus, and biomedical text processing. He re-           He has worked on several NLP tasks including
+ceived his PhD degree from the University of Cal-          paraphrase recognition, stance detection and com-
+ifornia at Berkeley, and he was a Research Fellow          munity question answering. Currently, he is ac-
+in the National University of Singapore, a hon-            tively involved in researching on disinformation
+orary lecturer in the Sofia University, and research       and propaganda detection. As part of this research
+staff at the Bulgarian Academy of Sciences.                he has been co-organiser of the Checkthat! labs at
+   At QCRI, he leads the Tanbih project,2 devel-           CLEF 2018-2020, the NLP4IF 2019-2020 work-
+oped in collaboration with MIT, which aims to              shops on ”censorship, disinformation, and propa-
+limit the effect of “fake news”, propaganda and            ganda”, the 2019 Hack the News Datathon and
+media bias by making users aware of what they              the SemEval-2020 task 11 on “Detection of pro-
+are reading. The project was featured by over 100          paganda techniques in news articles.”
+news outlets, including Forbes, Boston Globe, Al-
+jazeera, MIT Technology Review, Science Daily,
+Popular Science, Fast Company, The Register,
+WIRED, and Engadget, among others.
+   As part of the project, he co-organized several
+shared tasks on fact-checking and propaganda de-
+tection at SemEval and CLEF, as well as a related
+NLP4IF workshop.
+   He is President of ACL SIGLEX, a Secretary
+of ACL SIGSLAV, and a member of the EACL
+advisory board. He is also member of the edi-
+torial board of TACL, CS&L, NLE, AI Commu-
+nications, and Frontiers in AI, as well as of the
+Language Science Press Book Series on Phraseol-
+ogy and Multiword Expressions. He co-authored
+a Morgan & Claypool book on Semantic Rela-
+tions between Nominals, two books on computer
+algorithms, and many research papers in top-tier
+conferences and journals. He received the Young
+Researcher Award at RANLP’2011, and he was
+the first to receive the Bulgarian President’s John
+Atanasoff award, named after the inventor of the
+first automatic electronic digital computer.
+
+
+
+
+    2
+        Tanbih project: http://tanbih.qcri.org
+
+                                                       9
+References                                                      Pepa Atanasova, Preslav Nakov, Lluı́s Màrquez, Al-
+                                                                  berto Barrón-Cedeño, Georgi Karadzhov, Tsve-
+Aseel Addawood, Adam Badawy, Kristina Lerman,                     tomila Mihaylova, Mitra Mohtarami, and James
+  and Emilio Ferrara. 2019. Linguistic cues to decep-             Glass. 2019b. Automatic fact-checking using con-
+  tion: Identifying political trolls on social media. In          text and discourse information. J. Data and Infor-
+  Proceedings of the International AAAI Conference                mation Quality, 11(3):12:1–12:27.
+  on Web and Social Media, ICWSM ’19, pages 15–
+  25, Munich, Germany.                                          Pepa Atanasova, Jakob Grue Simonsen, Christina Li-
+                                                                  oma, and Isabelle Augenstein. 2020. Generating
+Firoj Alam, Fahim Dalvi, Shaden Shaar, Nadir Durrani,             fact checking explanations. In Proceedings of the
+   Hamdy Mubarak, Alex Nikolov, Giovanni Da San                   58th Annual Meeting of the Association for Compu-
+   Martino, Ahmed Abdelali, Hassan Sajjad, Kareem                 tational Linguistics, ACL ’20, pages 7352–7364.
+   Darwish, and Preslav Nakov. 2020a. Fighting the
+   COVID-19 infodemic in social media: A holis-                 Isabelle Augenstein, Christina Lioma, Dongsheng
+   tic perspective and a call to arms. ArXiv preprint              Wang, Lucas Chaves Lima, Casper Hansen, Chris-
+   2007.07996.                                                     tian Hansen, and Jakob Grue Simonsen. 2019.
+                                                                   MultiFC: A real-world multi-domain dataset for
+Firoj Alam, Shaden Shaar, Fahim Dalvi, Hassan Sajjad,              evidence-based fact checking of claims. In Pro-
+   Alex Nikolov, Hamdy Mubarak, Giovanni Da San                    ceedings of the 2019 Conference on Empirical Meth-
+   Martino, Ahmed Abdelali, Nadir Durrani, Kareem                  ods in Natural Language Processing and the 9th In-
+   Darwish, and Preslav Nakov. 2020b. Fighting the                 ternational Joint Conference on Natural Language
+   COVID-19 infodemic: Modeling the perspective of                 Processing, EMNLP-IJCNLP ’19, pages 4685–
+   journalists, fact-checkers, social media platforms,             4697, Hong Kong, China.
+   policy makers, and the society. ArXiv preprint
+                                                                Mouhamadou Lamine Ba, Laure Berti-Equille, Kushal
+   2005.00033.
+                                                                 Shah, and Hossam M. Hammady. 2016. VERA:
+                                                                 A platform for veracity estimation over web data.
+Hunt Allcott and Matthew Gentzkow. 2017. Social me-              In Proceedings of the 25th International Conference
+  dia and fake news in the 2016 election. Journal of             Companion on World Wide Web, WWW ’16, pages
+  Economic Perspectives, 31(2):211–36.                           159–162, Montréal, Québec, Canada.
+
+Jisun An, Meeyoung Cha, Krishna Gummadi, Jon                    Adam Badawy, Kristina Lerman, and Emilio Ferrara.
+   Crowcroft, and Daniele Quercia. 2012. Visualizing              2019. Who falls for online political manipulation?
+   media bias through Twitter. In Proceedings of the              In Companion Proceedings of The 2019 World Wide
+   International AAAI Conference on Web and Social                Web Conference, WWW ’19, page 162–168, San
+   Media, ICWSM ’12, pages 2–5, Dublin, Ireland.                  Francisco, California, USA.
+
+Atanas Atanasov, Gianmarco De Francisci Morales,                Ricardo Baeza-Yates. 2018. Bias on the web. Com-
+  and Preslav Nakov. 2019. Predicting the role of po-             mun. ACM, 61(6):54–61.
+  litical trolls in social media. In Proceedings of the
+  2019 SIGNLL Conference on Computational Natu-                 Ramy Baly, Georgi Karadzhov, Dimitar Alexandrov,
+  ral Language Learning, CoNLL ’19, pages 1023–                   James Glass, and Preslav Nakov. 2018a. Predict-
+  1034, Hong Kong, China.                                         ing factuality of reporting and bias of news media
+                                                                  sources. In Proceedings of the 2018 Conference on
+                                                                  Empirical Methods in Natural Language Process-
+Pepa Atanasova, Lluı́s Màrquez, Alberto Barrón-                 ing, EMNLP ’18, pages 3528–3539, Brussels, Bel-
+  Cedeño, Tamer Elsayed, Reem Suwaileh, Wajdi Za-                gium.
+  ghouani, Spas Kyuchukov, Giovanni Da San Mar-
+  tino, and Preslav Nakov. 2018. Overview of the                Ramy Baly, Georgi Karadzhov, Jisun An, Haewoon
+  CLEF-2018 CheckThat! Lab on automatic identi-                   Kwak, Yoan Dinkov, Ahmed Ali, James Glass, and
+  fication and verification of political claims, Task 1:          Preslav Nakov. 2020. What was written vs. who
+  Check-worthiness. In CLEF 2018 Working Notes.                   read it: News media profiling using text analysis and
+  Working Notes of CLEF 2018 - Conference and Labs                social media context. In Proceedings of the 58th An-
+  of the Evaluation Forum, CEUR Workshop Proceed-                 nual Meeting of the Association for Computational
+  ings, Avignon, France. CEUR-WS.org.                             Linguistics, ACL ’20, pages 3364–3374.
+
+Pepa Atanasova, Preslav Nakov, Georgi Karadzhov,                Ramy Baly, Georgi Karadzhov, Abdelrhman Saleh,
+  Mitra Mohtarami, and Giovanni Da San Martino.                   James Glass, and Preslav Nakov. 2019. Multi-task
+  2019a. Overview of the CLEF-2019 CheckThat!                     ordinal regression for jointly predicting the trustwor-
+  Lab on Automatic Identification and Verification                thiness and the leading political ideology of news
+  of Claims. Task 1: Check-Worthiness. In CLEF                    media. In Proceedings of the 2019 Conference of
+  2019 Working Notes. Working Notes of CLEF 2019                  the North American Chapter of the Association for
+  - Conference and Labs of the Evaluation Forum,                  Computational Linguistics: Human Language Tech-
+  CEUR Workshop Proceedings, Lugano, Switzer-                     nologies, NAACL-HLT ’19, pages 2109–2116, Min-
+  land. CEUR-WS.org.                                              neapolis, Minnesota, USA.
+
+                                                           10
+Ramy Baly, Mitra Mohtarami, James Glass, Lluı́s                  Ceren Budak, Sharad Goel, and Justin M Rao. 2016.
+  Màrquez, Alessandro Moschitti, and Preslav Nakov.               Fair and balanced? Quantifying media bias through
+  2018b. Integrating stance detection and fact check-              crowdsourced content analysis. Public Opinion
+  ing in a unified corpus. In Proceedings of the 2018              Quarterly, 80(S1):250–271.
+  Conference of the North American Chapter of the
+  Association for Computational Linguistics: Human               Kevin R. Canini, Bongwon Suh, and Peter L. Pirolli.
+  Language Technologies, NAACL-HLT ’18, pages                      2011. Finding credible information sources in so-
+  21–27, New Orleans, Louisiana, USA.                              cial networks based on content and social structure.
+                                                                   In Proceedings of the IEEE International Confer-
+Alberto Barrón-Cedeño, Giovanni Da San Martino,                  ence on Privacy, Security, Risk, and Trust, and the
+  Israa Jaradat, and Preslav Nakov. 2019. Proppy:                  IEEE International Conference on Social Comput-
+  Organizing the news based on their propagandistic                ing, SocialCom/PASSAT ’11, pages 1–8, Boston,
+  content. Information Processing & Management,                    Massachusetts, USA.
+  56(5):1849 – 1864.
+                                                                 Carlos Castillo, Marcelo Mendoza, and Barbara
+Alberto Barrón-Cedeño, Tamer Elsayed, Reem                       Poblete. 2011. Information credibility on Twitter.
+  Suwaileh, Lluı́s Màrquez, Pepa Atanasova, Wajdi                 In Proceedings of the 20th International Conference
+  Zaghouani, Spas Kyuchukov, Giovanni Da San Mar-                  on World Wide Web, WWW ’11, page 675–684, Hy-
+  tino, and Preslav Nakov. 2018. Overview of the                   derabad, India.
+  CLEF-2018 CheckThat! Lab on automatic identifi-
+  cation and verification of political claims, Task 2:           Carlos Castillo, Marcelo Mendoza, and Barbara
+  Factuality. In CLEF 2018 Working Notes. Working                  Poblete. 2013. Predicting information credibility
+  Notes of CLEF 2018 - Conference and Labs of the                  in time-sensitive social media. Internet Research,
+  Evaluation Forum, CEUR Workshop Proceedings,                     23(5):560–588.
+  Avignon, France. CEUR-WS.org.
+                                                                 Abhijnan Chakraborty, Bhargavi Paranjape, Kakarla
+Alberto Barrón-Cedeño, Giovanni Da San Martino, Is-              Kakarla, and Niloy Ganguly. 2016. Stop clickbait:
+  raa Jaradat, and Preslav Nakov. 2019. Proppy: A                  Detecting and preventing clickbaits in online news
+  system to unmask propaganda in online news. In                   media. In Proceedings of the 2016 IEEE/ACM In-
+  Proceedings of the Thirty-Third AAAI Conference on               ternational Conference on Advances in Social Net-
+  Artificial Intelligence, AAAI’19, pages 9847–9848,               works Analysis and Mining, ASONAM ’16, pages
+  Honolulu, HI, USA.                                               9–16, San Francisco, California, USA.
+Alberto Barrón-Cedeño, Tamer Elsayed, Preslav                  Cheng Chen, Kui Wu, Venkatesh Srinivasan, and
+  Nakov, Giovanni Da San Martino, Maram Hasanain,                  Xudong Zhang. 2013. Battling the Internet Water
+  Reem Suwaileh, and Fatima Haouari. 2020. Check-                  Army: detection of hidden paid posters. In Proceed-
+  That! at CLEF 2020: Enabling the automatic identi-               ings of the 2013 IEEE/ACM International Confer-
+  fication and verification of claims in social media. In          ence on Advances in Social Networks Analysis and
+  Advances in Information Retrieval, ECIR ’20, pages               Mining, ASONAM ’13, pages 116–120, Niagara,
+  499–507, Lisbon, Portugal.                                       Canada.
+Alberto Barrón-Cedeño, Tamer Elsayed, Preslav
+  Nakov, Giovanni Da San Martino, Maram Hasanain,                Sihao Chen, Daniel Khashabi, Wenpeng Yin, Chris
+  Reem Suwaileh, Fatima Haouari, Nikolay Babulkov,                  Callison-Burch, and Dan Roth. 2019a. Seeing
+  Bayan Hamdan, Alex Nikolov, Shaden Shaar, and                     things from a different angle:discovering diverse
+  Zien Sheikh Ali. 2020. Overview of CheckThat!                     perspectives about claims. In Proceedings of the
+  2020 — automatic identification and verification                  2019 Conference of the North American Chapter
+  of claims in social media. In Proceedings of the                  of the Association for Computational Linguistics:
+  11th International Conference of the CLEF Associ-                 Human Language Technologies, NAACL-HLT ’19,
+  ation: Experimental IR Meets Multilinguality, Mul-                pages 542–557, Minneapolis, Minnesota, USA.
+  timodality, and Interaction, CLEF ’2020, Thessa-
+                                                                 Wenhu Chen, Hongmin Wang, Jianshu Chen, Yunkai
+  loniki, Greece.
+                                                                   Zhang, Hong Wang, Shiyang Li, Xiyou Zhou, and
+Anya Belz. 2019. Fully automatic journalism: We need               William Yang Wang. 2019b. TabFact: A large-
+  to talk about nonfake news generation. In Proceed-               scale dataset for table-based fact verification. arXiv
+  ings of the First Conference on Truth and Trust On-              preprint 1909.02164.
+  line, TTO ’19, London, United Kingdom.
+                                                                 Matteo Cinelli, Walter Quattrociocchi, Alessandro
+Gillian Bolsover and Philip Howard. 2017. Compu-                  Galeazzi, Carlo Michele Valensise, Emanuele Brug-
+  tational propaganda and political big data: Moving              noli, Ana Lucia Schmidt, Paola Zola, Fabiana Zollo,
+  toward a more critical research agenda. Big Data,               and Antonio Scala. 2020. The COVID-19 social me-
+  5(4):273–276.                                                   dia infodemic. arXiv preprint 2003.05004.
+
+Zhan Bu, Zhengyou Xia, and Jiandong Wang. 2013. A                Michael Conover, Jacob Ratkiewicz, Matthew R Fran-
+  sock puppet detection algorithm on virtual spaces.               cisco, Bruno Gonçalves, Filippo Menczer, and
+  Know.-Based Syst., 37:366–377.                                   Alessandro Flammini. 2011. Political polarization
+
+                                                            11
+  on Twitter. In Proceedings of the Fifth Interna-             H Eugene Stanley, and Walter Quattrociocchi. 2016.
+  tional AAAI Conference on Weblogs and Social Me-             The spreading of misinformation online. Pro-
+  dia, ICWSM ’11, pages 89–96, Barcelona, Spain.               ceedings of the National Academy of Sciences,
+                                                               113(3):554–559.
+Giovanni Da San Martino, Alberto Barrón-Cedeño,
+  Henning Wachsmuth, Rostislav Petrov, and Preslav           Stefano DellaVigna and Ethan Kaplan. 2007. The Fox
+  Nakov. 2020a. SemEval-2020 task 11: Detection                 News effect: Media bias and voting. The Quarterly
+  of propaganda techniques in news articles. In Pro-            Journal of Economics, 122(3):1187–1234.
+  ceedings of the International Workshop on Semantic
+  Evaluation, SemEval ’20, Barcelona, Spain.                 Leon Derczynski, Kalina Bontcheva, Maria Liakata,
+                                                               Rob Procter, Geraldine Wong Sak Hoi, and Arkaitz
+Giovanni Da San Martino, Alberto Barron-Cedeno, and            Zubiaga. 2017.     SemEval-2017 Task 8: Ru-
+  Preslav Nakov. 2019a. Findings of the NLP4IF-                mourEval: Determining rumour veracity and sup-
+  2019 shared task on fine-grained propaganda detec-           port for rumours. In Proceedings of the 11th In-
+  tion. In Proceedings of the 2nd Workshop on NLP              ternational Workshop on Semantic Evaluation, Se-
+  for Internet Freedom (NLP4IF): Censorship, Disin-            mEval ’17, pages 60–67, Vancouver, Canada.
+  formation, and Propaganda, NLP4IFEMNLP ’19,
+  pages 162–170, Hong Kong, China.                           Yoan Dinkov, Ahmed Ali, Ivan Koychev, and Preslav
+                                                               Nakov. 2019a. Predicting the leading political ide-
+Giovanni Da San Martino, Stefano Cresci, Alberto               ology of YouTube channels using acoustic, textual,
+  Barrón-Cedeño, Seunghak Yu, Roberto Di Pietro,             and metadata information. In Proceedings of the
+  and Preslav Nakov. 2020b. A survey on com-                   20th Annual Conference of the International Speech
+  putational propaganda detection. In Proceedings              Communication Association, INTERSPEECH ’19,
+  of the Twenty-Ninth International Joint Conference           pages 501–505, Graz, Austria.
+  on Artificial Intelligence, IJCAI-PRICAI ’20, pages
+                                                             Yoan Dinkov, Ivan Koychev, and Preslav Nakov.
+  4826–4832.
+                                                               2019b. Detecting toxicity in news articles: Appli-
+Giovanni Da San Martino, Shaden Shaar, Yifan Zhang,            cation to Bulgarian. In Proceedings of the Inter-
+  Seunghak Yu, Alberto Barrón-Cedeño, and Preslav            national Conference on Recent Advances in Natural
+  Nakov. 2020. Prta: A system to support the analysis          Language Processing, RANLP ’19, pages 247–258.
+  of propaganda techniques in the news. In Proceed-          Ming Dong, Bolong Zheng, Nguyen Quoc Viet Hung,
+  ings of the 58th Annual Meeting of the Association           Han Su, and Guohui Li. 2019. Multiple rumor
+  for Computational Linguistics: System Demonstra-             source detection with graph convolutional networks.
+  tions, ACL ’20, pages 287–293.                               In Proceedings of the 28th ACM International Con-
+Giovanni Da San Martino, Seunghak Yu, Alberto                  ference on Information and Knowledge Manage-
+  Barron-Cedeno, Rostislav Petrov, and Preslav                 ment, CIKM ’19, page 569–578, Beijing, China.
+  Nakov. 2019b. Fine-grained analysis of propaganda          Xin Luna Dong, Evgeniy Gabrilovich, Kevin Murphy,
+  in news articles. In Proceedings of the 2019 Con-            Van Dang, Wilko Horn, Camillo Lugaresi, Shao-
+  ference on Empirical Methods in Natural Language             hua Sun, and Wei Zhang. 2015. Knowledge-based
+  Processing, EMNLP ’19, pages 5636–5646, Hong                 trust: Estimating the trustworthiness of web sources.
+  Kong, China.                                                 Proc. VLDB Endow., 8(9):938–949.
+Kareem Darwish, Dimitar Alexandrov, Preslav Nakov,           Sebastian Dungs, Ahmet Aker, Norbert Fuhr, and
+  and Yelena Mejova. 2017. Seminar users in the                Kalina Bontcheva. 2018. Can rumour stance alone
+  Arabic Twitter sphere.     In Proceedings of the             predict veracity? In Proceedings of the 27th In-
+  9th International Conference on Social Informatics,          ternational Conference on Computational Linguis-
+  SocInfo ’17, pages 91–108, Oxford, UK.                       tics, COLING ’18, pages 3360–3370, Santa Fe, New
+                                                               Mexico, USA.
+Kareem Darwish, Michael Aupetit, Peter Stefanov, and
+  Preslav Nakov. 2020. Unsupervised user stance de-          Erick Elejalde, Leo Ferres, and Eelco Herder. 2018. On
+  tection on Twitter. In Proceedings of the Inter-              the nature of real and perceived bias in the main-
+  national AAAI Conference on Web and Social Me-                stream media. PloS one, 13(3):e0193765.
+  dia, ICWSM ’20, pages 141–152, Atlanta, Georgia,
+  USA.                                                       Tamer Elsayed, Preslav Nakov, Alberto Barrón-
+                                                               Cedeño, Maram Hasanain, Reem Suwaileh, Pepa
+Sohan De Sarkar, Fan Yang, and Arjun Mukherjee.                Atanasova, and Giovanni Da San Martino. 2019a.
+  2018. Attending sentences to detect satirical fake           CheckThat! at CLEF 2019: Automatic identifica-
+  news. In Proceedings of the 27th International               tion and verification of claims. In Proceedings of the
+  Conference on Computational Linguistics, COL-                41st European Conference on Information Retrieval,
+  ING ’18, pages 3371–3380, Santa Fe, New Mexico,              ECIR ’19, pages 309–315, Cologne, Germany.
+  USA.
+                                                             Tamer Elsayed, Preslav Nakov, Alberto Barrón-
+Michela Del Vicario, Alessandro Bessi, Fabiana Zollo,          Cedeño, Maram Hasanain, Reem Suwaileh, Gio-
+  Fabio Petroni, Antonio Scala, Guido Caldarelli,              vanni Da San Martino, and Pepa Atanasova. 2019b.
+
+                                                        12
+  Overview of the CLEF-2019 CheckThat!: Auto-                    RumourEval, determining rumour veracity and sup-
+  matic identification and verification of claims. In            port for rumours. In Proceedings of the 13th Inter-
+  Experimental IR Meets Multilinguality, Multimodal-             national Workshop on Semantic Evaluation, pages
+  ity, and Interaction, LNCS, Lugano, Switzerland.               845–854, Minneapolis, Minnesota, USA.
+  Springer.
+                                                               Tim Groseclose and Jeffrey Milyo. 2005. A measure
+Emilio Ferrara, Onur Varol, Clayton Davis, Filippo               of media bias. The Quarterly Journal of Economics,
+  Menczer, and Alessandro Flammini. 2016. The rise               120(4):1191–1237.
+  of social bots. Commun. ACM, 59(7):96–104.
+                                                               Ivan Habernal, Henning Wachsmuth, Iryna Gurevych,
+William Ferreira and Andreas Vlachos. 2016. Emer-                 and Benno Stein. 2018. Before name-calling: Dy-
+  gent: a novel data-set for stance classification. In            namics and triggers of ad hominem fallacies in web
+  Proceedings of the 2016 Conference of the North                 argumentation. In Proceedings of the 2018 Confer-
+  American Chapter of the Association for Computa-                ence of the North American Chapter of the Associ-
+  tional Linguistics: Human Language Technologies,                ation for Computational Linguistics: Human Lan-
+  NAACL-HLT ’16, pages 1163–1168, San Diego,                      guage Technologies, NAACL-HLT ’18, pages 386–
+  California, USA.                                                396, New Orleans, Louisiana, USA.
+Seth Flaxman, Sharad Goel, and Justin M Rao. 2016.
+  Filter bubbles, echo chambers, and online news con-          Andreas Hanselowski, Avinesh PVS, Benjamin
+  sumption. Public opinion quarterly, 80(S1):298–                Schiller, Felix Caspelherr, Debanjan Chaudhuri,
+  320.                                                           Christian M. Meyer, and Iryna Gurevych. 2018. A
+                                                                 retrospective analysis of the fake news challenge
+Mohamed H. Gad-Elrab, Daria Stepanova, Jacopo                    stance-detection task. In Proceedings of the 27th
+ Urbani, and Gerhard Weikum. 2019a. ExFaKT:                      International Conference on Computational Lin-
+ A framework for explaining facts over knowledge                 guistics, COLING ’18, pages 1859–1874, Santa Fe,
+ graphs and text. In Proceedings of the Twelfth ACM              New Mexico, USA.
+ International Conference on Web Search and Data
+ Mining, WSDM ’19, pages 87–95, Melbourne, Aus-                Momchil Hardalov, Ivan Koychev, and Preslav Nakov.
+ tralia.                                                        2016. In search of credible news. In Proceedings
+                                                                of the 17th International Conference on Artificial In-
+Mohamed H. Gad-Elrab, Daria Stepanova, Jacopo Ur-               telligence: Methodology, Systems, and Applications,
+ bani, and Gerhard Weikum. 2019b. Tracy: Tracing                AIMSA ’16, pages 172–180, Varna, Bulgaria.
+ facts over knowledge graphs and text. In The World
+ Wide Web Conference, WWW ’19, pages 3516–                     Maram Hasanain, Fatima Haouari, Reem Suwaileh,
+ 3520, San Francisco, California, USA.                          Zien Sheikh Ali, Bayan Hamdan, Tamer Elsayed,
+                                                                Alberto Barrón-Cedeño, Giovanni Da San Martino,
+Kiran Garimella, Gianmarco De Francisci Morales,                and Preslav Nakov. 2020. Overview of the CLEF-
+  Aristides Gionis, and Michael Mathioudakis. 2018.             2020 CheckThat! lab on automatic identification
+  Political discourse on social media: Echo chambers,           and verification of claims in social media: Arabic
+  gatekeepers, and the price of bipartisanship. In Pro-         tasks. In Working Notes of CLEF 2020—Conference
+  ceedings of the International World Wide Web Con-             and Labs of the Evaluation Forum, CLEF ’2020,
+  ference, WWW ’18, pages 913–922, Lyon, France.                Thessaloniki, Greece.
+Sebastian Gehrmann, Hendrik Strobelt, and Alexan-              Maram Hasanain, Reem Suwaileh, Tamer Elsayed,
+  der Rush. 2019. GLTR: Statistical detection and               Alberto Barrón-Cedeño, and Preslav Nakov. 2019.
+  visualization of generated text. In Proceedings               Overview of the CLEF-2019 CheckThat! Lab on
+  of the 57th Annual Meeting of the Association for             Automatic Identification and Verification of Claims.
+  Computational Linguistics: System Demonstrations,             Task 2: Evidence and Factuality. In CLEF 2019
+  ACL ’19, pages 111–116, Florence, Italy.                      Working Notes. Working Notes of CLEF 2019 -
+Pepa Gencheva, Preslav Nakov, Lluı́s Màrquez, Al-              Conference and Labs of the Evaluation Forum,
+  berto Barrón-Cedeño, and Ivan Koychev. 2017.                CEUR Workshop Proceedings, Lugano, Switzer-
+  A context-aware approach for detecting worth-                 land. CEUR-WS.org.
+  checking claims in political debates. In Proceedings
+  of the International Conference on Recent Advances           Naeemul Hassan, Chengkai Li, and Mark Tremayne.
+  in Natural Language Processing, RANLP ’17, pages               2015. Detecting check-worthy factual claims in
+  267–276, Varna, Bulgaria.                                      presidential debates. In Proceedings of the 24th
+                                                                 ACM International on Conference on Information
+Matthew Gentzkow and Jesse M Shapiro. 2006. Media                and Knowledge Management, CIKM ’15, page
+ bias and reputation. Journal of political Economy,              1835–1838, Melbourne, Australia.
+ 114(2):280–316.
+                                                               Naeemul Hassan, Afroza Sultana, You Wu, Gensheng
+Genevieve Gorrell, Ahmet Aker, Kalina Bontcheva,                 Zhang, Chengkai Li, Jun Yang, and Cong Yu. 2014.
+  Leon Derczynski, Elena Kochkina, Maria Liakata,                Data in, fact out: Automated monitoring of facts by
+  and Arkaitz Zubiaga. 2019. SemEval-2019 task 7:                FactWatcher. PVLDB, 7:1557–1560.
+
+                                                          13
+Naeemul Hassan, Gensheng Zhang, Fatma Arslan, Jo-                on knowledge bases.         Proc. VLDB Endow.,
+  sue Caraballo, Damian Jimenez, Siddhant Gawsane,               12(12):1798–1801.
+  Shohedul Hasan, Minumol Joseph, Aaditya Kulka-
+  rni, Anil Kumar Nayak, Vikas Sable, Chengkai Li,             Shanto Iyengar and Kyu S Hahn. 2009. Red media,
+  and Mark Tremayne. 2017. ClaimBuster: The first-               blue media: Evidence of ideological selectivity in
+  ever end-to-end fact-checking system. Proc. VLDB               media use. Journal of communication, 59(1):19–39.
+  Endow., 10(12):1945–1948.
+                                                               Israa Jaradat, Pepa Gencheva, Alberto Barrón-Cedeño,
+Christopher Hidey, Tuhin Chakrabarty, Tariq Alhindi,              Lluı́s Màrquez, and Preslav Nakov. 2018. Claim-
+  Siddharth Varia, Kriste Krstovski, Mona Diab, and               Rank: Detecting check-worthy claims in Arabic and
+  Smaranda Muresan. 2020. DeSePtion: Dual se-                     English. In Proceedings of the 16th Annual Confer-
+  quence prediction and adversarial examples for im-              ence of the North American Chapter of the Associ-
+  proved fact-checking. In Proceedings of the 58th                ation for Computational Linguistics: Human Lan-
+  Annual Meeting of the Association for Computa-                  guage Technologies, NAACL-HLT ’18, pages 26–
+  tional Linguistics, ACL ’20, pages 8593–8606.                   30, New Orleans, Louisiana, USA.
+                                                               Shan Jiang, Miriam Metzger, Andrew Flanagin, and
+Renee Hobbs and Sandra Mcgee. 2008. Teaching
+                                                                 Christo Wilson. 2020. Modeling and measuring ex-
+  about propaganda: An examination of the historical
+                                                                 pressed (dis)belief in (mis)information. In Proceed-
+  roots of media literacy. Journal of Media Literacy
+                                                                 ings of the International AAAI Conference on Web
+  Education, 6(62):56–67.
+                                                                 and Social Media, ICWSM ’20, pages 315–326, At-
+Benjamin D. Horne, William Dron, Sara Khedr, and                 lanta, Georgia, USA.
+  Sibel Adali. 2018a. Assessing the news landscape:            Zhiwei Jin, Juan Cao, Yu-Gang Jiang, and Yongdong
+  A multi-module toolkit for evaluating the credibility          Zhang. 2014. News credibility evaluation on mi-
+  of news. In Proceedings of the The Web Conference,             croblog with a hierarchical propagation model. In
+  WWW ’18, pages 235–238, Lyon, France.                          Proceedings of the 2014 IEEE International Confer-
+Benjamin D. Horne, Sara Khedr, and Sibel Adali.                  ence on Data Mining, ICDM 2014, ICDM ’14, pages
+  2018b. Sampling the news producers: A large news               230–239, Shenzhen, China.
+  and feature data set for the study of the complex            Zhiwei Jin, Juan Cao, Yongdong Zhang, and Jiebo Luo.
+  media landscape. In Proceedings of the Twelfth In-             2016. News verification by exploiting conflicting
+  ternational Conference on Web and Social Media,                social viewpoints in microblogs. In Proceedings of
+  ICWSM ’18, pages 518–527, Stanford, California,                the Thirtieth AAAI Conference on Artificial Intelli-
+  USA.                                                           gence, AAAI ’16, pages 2972–2978, Phoenix, AZ,
+                                                                 USA.
+Benjamin D. Horne, Dorit Nevo, John O’Donovan, Jin-
+  Hee Cho, and Sibel Adali. 2019a. Rating reliability          Georgi Karadzhov, Pepa Gencheva, Preslav Nakov, and
+  and bias in news articles: Does AI assistance help             Ivan Koychev. 2017a. We built a fake news & click-
+  everyone? In Proceedings of the Thirteenth In-                 bait filter: What happened next will blow your mind!
+  ternational Conference on Web and Social Media,                In Proceedings of the International Conference on
+  ICWSM ’19, pages 247–256, Munich, Germany.                     Recent Advances in Natural Language Processing,
+                                                                 RANLP ’17, pages 334–343, Varna, Bulgaria.
+Benjamin D Horne, Jeppe Nørregaard, and Sibel Adalı.
+  2019b. Different spirals of sameness: A study of             Georgi Karadzhov, Preslav Nakov, Lluı́s Màrquez, Al-
+  content sharing in mainstream and alternative media.           berto Barrón-Cedeño, and Ivan Koychev. 2017b.
+  In Proceedings of the International AAAI Confer-               Fully automated fact checking using external
+  ence on Web and Social Media, ICWSM ’19, pages                 sources. In Proceedings of the International Confer-
+  257–266, Munich, Germany.                                      ence on Recent Advances in Natural Language Pro-
+                                                                 cessing, RANLP ’17, pages 344–353, Varna, Bul-
+Viet-Phi Huynh and Paolo Papotti. 2019a. A bench-                garia.
+  mark for fact checking algorithms built on knowl-
+  edge bases. In Proceedings of the 28th ACM Inter-            Georgios Karagiannis, Immanuel Trummer, Saehan
+  national Conference on Information and Knowledge               Jo, Shubham Khandelwal, Xuezhi Wang, and Cong
+  Management, CIKM ’19, pages 689–698, Beijing,                  Yu. 2019.    Mining an “anti-knowledge base”
+  China.                                                         from Wikipedia updates with applications to fact
+                                                                 checking and beyond.     Proc. VLDB Endow.,
+Viet-Phi Huynh and Paolo Papotti. 2019b. A bench-                13(4):561–573.
+  mark for fact checking algorithms built on knowl-
+  edge bases. In Proceedings of the 28th ACM In-               Twin Karmakharm, Nikolaos Aletras, and Kalina
+  ternational Conference on Information and Knowl-               Bontcheva. 2019. Journalist-in-the-loop: Continu-
+  edge Management, CIKM ’19, page 689–698, Bei-                  ous learning as a service for rumour analysis. In
+  jing, China.                                                   Proceedings of the 2019 Conference on Empiri-
+                                                                 cal Methods in Natural Language Processing and
+Viet-Phi Huynh and Paolo Papotti. 2019c. Buckle:                 the 9th International Joint Conference on Natu-
+  Evaluating fact checking algorithms built                      ral Language Processing: System Demonstrations,
+
+                                                          14
+  EMNLP-IJCNLP ’19, pages 115–120, Hong Kong,                   David M.J. Lazer, Matthew A. Baum, Yochai Ben-
+  China.                                                          kler, Adam J. Berinsky, Kelly M. Greenhill, Filippo
+                                                                  Menczer, Miriam J. Metzger, Brendan Nyhan, Gor-
+Dhruv Khattar, Jaipal Singh Goud, Manish Gupta, and               don Pennycook, David Rothschild, Michael Schud-
+  Vasudeva Varma. 2019. MVAE: Multimodal vari-                    son, Steven A. Sloman, Cass R. Sunstein, Emily A.
+  ational autoencoder for fake news detection. In                 Thorson, Duncan J. Watts, and Jonathan L. Zit-
+  Proceedings of the World Wide Web Conference,                   train. 2018. The science of fake news. Science,
+  WWW ’19, page 2915–2921, San Francisco, Cali-                   359(6380):1094–1096.
+  fornia, USA.
+                                                                Yaliang Li, Jing Gao, Chuishi Meng, Qi Li, Lu Su,
+Johannes Kiesel, Maria Mestre, Rishabh Shukla, Em-                Bo Zhao, Wei Fan, and Jiawei Han. 2016. A sur-
+  manuel Vincent, Payam Adineh, David Corney,                     vey on truth discovery. SIGKDD Explor. Newsl.,
+  Benno Stein, and Martin Potthast. 2019. Semeval-                17(2):1–16.
+  2019 task 4: Hyperpartisan news detection. In Pro-
+  ceedings of the 13th International Workshop on Se-            Yang Liu and Yi-Fang Brook Wu. 2018. Early de-
+  mantic Evaluation, SemEval ’19, pages 829–839,                  tection of fake news on social media through prop-
+  Minneapolis, Minnesota, USA.                                    agation path classification with recurrent and con-
+                                                                  volutional networks. In Proceedings of the Thirty-
+Elena Kochkina, Maria Liakata, and Arkaitz Zubi-                  Second AAAI Conference on Artificial Intelligence,
+  aga. 2018. All-in-one: Multi-task learning for ru-              AAAI ’18, pages 354–361, New Orleans, Louisiana,
+  mour verification. In Proceedings of the 27th In-               USA.
+  ternational Conference on Computational Linguis-
+  tics, COLING ’18, pages 3402–3413, Santa Fe, New              Yi-Ju Lu and Cheng-Te Li. 2020. GCAN: Graph-aware
+  Mexico, USA.                                                    co-attention networks for explainable fake news de-
+                                                                  tection on social media. In Proceedings of the 58th
+Lev Konstantinovskiy, Oliver Price, Mevan Babakar,                Annual Meeting of the Association for Computa-
+  and Arkaitz Zubiaga. 2018. Towards automated                    tional Linguistics, ACL ’20, pages 505–514.
+  factchecking: Developing an annotation schema and
+                                                                Luca Luceri, Silvia Giordano, and Emilio Ferrara.
+  benchmark for consistent automated claim detec-
+                                                                  2020. Detecting troll behavior via inverse reinforce-
+  tion. ArXiv preprint 1809.08193.
+                                                                  ment learning: A case study of Russian trolls in the
+                                                                  2016 US election. In Proceedings of the Fourteenth
+Daniel Kopev, Ahmed Ali, Ivan Koychev, and Preslav
+                                                                  International AAAI Conference on Web and Social
+  Nakov. 2019. Detecting deception in political de-
+                                                                  Media, ICWSM ’20, pages 417–427, Atlanta, Geor-
+  bates using acoustic and textual features. In Pro-
+                                                                  gia, USA.
+  ceedings of the IEEE Automatic Speech Recognition
+  and Understanding Workshop, ASRU ’19, pages                   Michal Lukasik, Trevor Cohn, and Kalina Bontcheva.
+  652–659, Singapore.                                             2015. Point process modelling of rumour dynam-
+                                                                  ics in social media. In Proceedings of the 53rd
+Dilek Küçük and Fazli Can. 2020. Stance detection: A           Annual Meeting of the Association for Computa-
+  survey. ACM Comput. Surv., 53(1).                               tional Linguistics and the 7th International Joint
+                                                                  Conference on Natural Language Processing, ACL-
+Vivek Kulkarni, Junting Ye, Steve Skiena, and                     IJCNLP ’15, pages 518–523, Beijing, China.
+  William Yang Wang. 2018. Multi-view models for
+  political ideology detection of news articles. In Pro-        Jing Ma, Wei Gao, Prasenjit Mitra, Sejeong Kwon,
+  ceedings of the 2018 Conference on Empirical Meth-               Bernard J. Jansen, Kam-Fai Wong, and Meeyoung
+  ods in Natural Language Processing, EMNLP ’18,                   Cha. 2016. Detecting rumors from microblogs with
+  pages 3518–3527, Brussels, Belgium.                              recurrent neural networks. In Proceedings of the
+                                                                   Twenty-Fifth International Joint Conference on Ar-
+Srijan Kumar, Justin Cheng, Jure Leskovec, and V.S.                tificial Intelligence, IJCAI ’16, pages 3818–3824,
+   Subrahmanian. 2017. An army of me: sockpuppets                  New York, NY, USA.
+   in online discussion communities. In Proceedings
+   of the 26th International Conference on World Wide           Jing Ma, Wei Gao, and Kam-Fai Wong. 2017. De-
+   Web, WWW ’17, pages 857–866, Perth, Australia.                  tect rumors in microblog posts using propagation
+                                                                   structure via kernel learning. In Proceedings of the
+Sejeong Kwon, Meeyoung Cha, and Kyomin Jung.                       55th Annual Meeting of the Association for Compu-
+  2017. Rumor detection over varying time windows.                 tational Linguistics, ACL ’17, pages 708–717, Van-
+  PLoS ONE, 12(1):e0168344.                                        couver, Canada.
+
+Sejeong Kwon, Meeyoung Cha, Kyomin Jung, Wei                    Todor Mihaylov, Georgi Georgiev, and Preslav Nakov.
+  Chen, and Yajun Wang. 2013. Prominent features of               2015a. Finding opinion manipulation trolls in news
+  rumor propagation in online social media. In Pro-               community forums. In Proceedings of the Nine-
+  ceedings of the 13th IEEE International Conference              teenth Conference on Computational Natural Lan-
+  on Data Mining, ICDM ’13, pages 1103–1108, Dal-                 guage Learning, CoNLL ’15, pages 310–314, Bei-
+  las, Texas, USA.                                                jing, China.
+
+                                                           15
+Todor Mihaylov, Ivan Koychev, Georgi Georgiev, and              Meredith Ringel Morris, Scott Counts, Asta Roseway,
+  Preslav Nakov. 2015b. Exposing paid opinion ma-                Aaron Hoff, and Julia Schwarz. 2012. Tweeting
+  nipulation trolls. In Proceedings of the International         is believing?: Understanding microblog credibility
+  Conference Recent Advances in Natural Language                 perceptions. In Proceedings of the ACM 2012 Con-
+  Processing, RANLP ’15, pages 443–450, Hissar,                  ference on Computer Supported Cooperative Work,
+  Bulgaria.                                                      CSCW ’12, pages 441–450, Seattle, Washington,
+                                                                 USA.
+Todor Mihaylov, Tsvetomila Mihaylova, Preslav
+  Nakov, Lluı́s Màrquez, Georgi Georgiev, and Ivan             Subhabrata Mukherjee and Gerhard Weikum. 2015.
+  Koychev. 2018. The dark side of news community                  Leveraging joint interactions for credibility analy-
+  forums: Opinion manipulation trolls. Internet Re-               sis in news communities. In Proceedings of the
+  search, 28(5):1292–1312.                                        24th ACM International on Conference on Informa-
+                                                                  tion and Knowledge Management, CIKM ’15, pages
+Todor Mihaylov and Preslav Nakov. 2016. Hunting for               353–362, Melbourne, Australia.
+  troll comments in news community forums. In Pro-
+  ceedings of the 54th Annual Meeting of the Associa-           Moin Nadeem, Wei Fang, Brian Xu, Mitra Mohtarami,
+  tion for Computational Linguistics, ACL ’16, pages             and James Glass. 2019. FAKTA: An automatic end-
+  399–405, Berlin, Germany.                                      to-end fact checking system. In Proceedings of the
+                                                                 2019 Conference of the North American Chapter
+Tsvetomila Mihaylova, Georgi Karadzhov, Pepa                     of the Association for Computational Linguistics,
+  Atanasova, Ramy Baly, Mitra Mohtarami, and                     NAACL-HLT ’19, pages 78–83, Minneapolis, Min-
+  Preslav Nakov. 2019. SemEval-2019 task 8: Fact                 nesota, USA.
+  checking in community question answering forums.
+  In Proceedings of the 13th International Workshop             Preslav Nakov. 2020. Can we spot the “fake news”
+  on Semantic Evaluation, SemEval ’19, pages 860–                 before it was even written?      arXiv preprint
+  869, Minneapolis, Minnesota, USA.                               2008.04374.
+
+Tsvetomila Mihaylova, Preslav Nakov, Lluı́s Màrquez,           Preslav Nakov, Alberto Barrón-Cedeño, Tamer El-
+  Alberto Barrón-Cedeño, Mitra Mohtarami, Georgi                sayed, Reem Suwaileh, Lluı́s Màrquez, Wajdi Za-
+  Karadjov, and James Glass. 2018. Fact check-                    ghouani, Pepa Atanasova, Spas Kyuchukov, and
+  ing in community forums. In Proceedings of the                  Giovanni Da San Martino. 2018. Overview of the
+  Thirty-Second AAAI Conference on Artificial Intel-              CLEF-2018 CheckThat! Lab on automatic identifi-
+  ligence, AAAI ’18, pages 5309–5316, New Orleans,                cation and verification of political claims. In Pro-
+  Louisiana, USA.                                                 ceedings of the Ninth International Conference of
+                                                                  the CLEF Association: Experimental IR Meets Mul-
+Sebastião Miranda, David Nogueira, Afonso Mendes,                tilinguality, Multimodality, and Interaction, Lecture
+  Andreas Vlachos, Andrew Secker, Rebecca Garrett,                Notes in Computer Science, pages 372–387, Avi-
+  Jeff Mitchel, and Zita Marinho. 2019. Automated                 gnon, France. Springer.
+  fact checking in the news room. In Proceedings of
+  the World Wide Web Conference, WWW ’19, pages                 Preslav Nakov, Tsvetomila Mihaylova, Lluı́s Màrquez,
+  3579–3583, San Francisco, California, USA.                      Yashkumar Shiroya, and Ivan Koychev. 2017. Do
+                                                                  not trust the trolls: Predicting credibility in commu-
+Saif Mohammad, Svetlana Kiritchenko, Parinaz Sob-                 nity question answering forums. In Proceedings of
+  hani, Xiaodan Zhu, and Colin Cherry. 2016.                      the International Conference on Recent Advances in
+  SemEval-2016 task 6: Detecting stance in tweets.                Natural Language Processing, RANLP ’17, pages
+  In Proceedings of the 10th International Workshop               551–560, Varna, Bulgaria.
+  on Semantic Evaluation, SemEval ’16, pages 31–41,
+  San Diego, California, USA.                                   An T. Nguyen, Aditya Kharosekar, Matthew Lease,
+                                                                  and Byron C. Wallace. 2018. An interpretable joint
+Mitra Mohtarami, Ramy Baly, James Glass, Preslav                  graphical model for fact-checking from crowds. In
+  Nakov, Lluı́s Màrquez, and Alessandro Moschitti.               Proceedings of the Thirty-Second AAAI Conference
+  2018. Automatic stance detection using end-to-                  on Artificial Intelligence, AAAI ’18, New Orleans,
+  end memory networks. In Proceedings of the 16th                 Louisiana, USA.
+  Annual Conference of the North American Chap-
+  ter of the Association for Computational Linguistics:         Van-Hoang Nguyen, Kazunari Sugiyama, Preslav
+  Human Language Technologies, NAACL-HLT ’18,                     Nakov, and Min-Yen Kan. 2020. FANG: Leveraging
+  pages 767–776, New Orleans, Louisiana, USA.                     social context for fake news detection using graph
+                                                                  representation. In Proceedings of the 29th ACM In-
+Mitra Mohtarami, James Glass, and Preslav Nakov.                  ternational Conference on Information and Knowl-
+  2019. Contrastive language adaptation for cross-                edge Management, CIKM ’20.
+  lingual stance detection. In Proceedings of the 2019
+  Conference on Empirical Methods in Natural Lan-               Yixin Nie, Haonan Chen, and Mohit Bansal. 2019.
+  guage Processing, EMNLP ’19, pages 4442–4452,                   Combining fact extraction and verification with neu-
+  Hong Kong, China.                                               ral semantic matching networks. In Proceedings of
+
+                                                           16
+  the Thirty-Third AAAI Conference on Artificial In-              Processing, EMNLP ’17, pages 2931–2937, Copen-
+  telligence, AAAI ’19, pages 6859–6866, Honolulu,                hagen, Denmark.
+  Hawaii, USA.
+                                                                Jacob Ratkiewicz, Michael Conover, Mark Meiss,
+Jeppe Nørregaard, Benjamin D. Horne, and Sibel                     Bruno Gonçalves, Snehal Patil, Alessandro Flam-
+   Adali. 2019. NELA-GT-2018: A large multi-                       mini, and Filippo Menczer. 2011. Truthy: Mapping
+   labelled news dataset for the study of misinforma-              the spread of astroturf in microblog streams. In Pro-
+   tion in news articles. In Proceedings of the Thir-              ceedings of the 20th International Conference Com-
+   teenth International Conference on Web and Social               panion on World Wide Web, WWW ’11, pages 249–
+   Media, ICWSM ’19, pages 630–638, Munich, Ger-                   252, Hyderabad, India.
+   many.                                                        Marta Recasens, Cristian Danescu-Niculescu-Mizil,
+Symeon Papadopoulos, Kalina Bontcheva, Eva Jaho,                 and Dan Jurafsky. 2013. Linguistic models for ana-
+  Mihai Lupu, and Carlos Castillo. 2016. Overview of             lyzing and detecting biased language. In Proceed-
+  the special issue on trust and veracity of information         ings of the 51st Annual Meeting of the Associa-
+  in social media. ACM Trans. Inf. Syst., 34(3):14:1–            tion for Computational Linguistics, ACL ’13, pages
+  14:5.                                                          1650–1659, Sofia, Bulgaria.
+                                                                Filipe N Ribeiro, Lucas Henrique, Fabricio Ben-
+Verónica Pérez-Rosas, Bennett Kleinberg, Alexandra               evenuto, Abhijnan Chakraborty, Juhi Kulshrestha,
+  Lefevre, and Rada Mihalcea. 2018. Automatic de-                  Mahmoudreza Babaei, and Krishna P Gummadi.
+  tection of fake news. In Proceedings of the 27th In-             2018. Media bias monitor: Quantifying biases of
+  ternational Conference on Computational Linguis-                 social media news outlets at large-scale. In Proceed-
+  tics, COLING ’18, pages 3391–3401, Santa Fe, New                 ings of the Twelfth International AAAI Conference
+  Mexico, USA.                                                     on Web and Social Media, ICWSM ’18, pages 290–
+                                                                   299, Stanford, California, USA.
+Evaggelia Pitoura, Panayiotis Tsaparas, Giorgos
+  Flouris, Irini Fundulaki, Panagiotis Papadakos,               Benjamin Riedel, Isabelle Augenstein, Georgios P Sp-
+  Serge Abiteboul, and Gerhard Weikum. 2018. On                   ithourakis, and Sebastian Riedel. 2017. A simple but
+  measuring bias in online information. SIGMOD                    tough-to-beat baseline for the Fake News Challenge
+  Rec., 46(4):16–21.                                              stance detection task. ArXiv preprint 1707.03264.
+Kashyap Popat, Subhabrata Mukherjee, Jannik                     Natali Ruchansky, Sungyong Seo, and Yan Liu. 2017.
+  Strötgen, and Gerhard Weikum. 2016. Credibility                CSI: A hybrid deep model for fake news detection.
+  assessment of textual claims on the web. In Pro-                In Proceedings of the 2017 ACM on Conference on
+  ceedings of the 25th ACM International Conference               Information and Knowledge Management, CIKM
+  on Information and Knowledge Management,                        ’17, page 797–806, Singapore.
+  CIKM ’16, pages 2173–2178, Indianapolis, Indiana,
+                                                                Diego Saez-Trumper, Carlos Castillo, and Mounia Lal-
+  USA.
+                                                                  mas. 2013. Social media news communities: Gate-
+Kashyap Popat, Subhabrata Mukherjee, Jannik                       keeping, coverage, and statement bias. In Proceed-
+  Strötgen, and Gerhard Weikum. 2017. Where the                  ings of the 22nd ACM International Conference on
+  truth lies: Explaining the credibility of emerging              Information & Knowledge Management, CIKM ’13,
+  claims on the Web and social media. In Proceedings              pages 1679–1684, San Francisco, California, USA.
+  of the 26th International Conference on World Wide            Shaden Shaar, Nikolay Babulkov, Giovanni Da San
+  Web Companion, WWW ’17, pages 1003–1012,                        Martino, and Preslav Nakov. 2020a. That is a known
+  Perth, Australia.                                               lie: Detecting previously fact-checked claims. In
+                                                                  Proceedings of the 58th Annual Meeting of the As-
+Kashyap Popat, Subhabrata Mukherjee, Jannik                       sociation for Computational Linguistics, ACL ’20,
+  Strötgen, and Gerhard Weikum. 2018. CredEye: A                 pages 3607–3618.
+  credibility lens for analyzing and explaining misin-
+  formation. In Proceedings of The Web Conference               Shaden Shaar, Alex Nikolov, Nikolay Babulkov, Firoj
+  2018, WWW ’18, pages 155–158, Lyon, France.                     Alam, Alberto Barrón-Cedeño, Tamer Elsayed,
+                                                                  Maram Hasanain, Reem Suwaileh, Fatima Haouari,
+Martin Potthast, Johannes Kiesel, Kevin Reinartz,                 Giovanni Da San Martino, and Preslav Nakov.
+ Janek Bevendorff, and Benno Stein. 2018. A stylo-                2020b. Overview of the CLEF-2020 CheckThat!
+ metric inquiry into hyperpartisan and fake news. In              lab on automatic identification and verification of
+ Proceedings of the 56th Annual Meeting of the As-                claims in social media: English tasks. In Work-
+ sociation for Computational Linguistics, ACL ’18,                ing Notes of CLEF 2020—Conference and Labs of
+ pages 231–240, Melbourne, Australia.                             the Evaluation Forum, CLEF ’2020, Thessaloniki,
+                                                                  Greece.
+Hannah Rashkin, Eunsol Choi, Jin Yea Jang, Svitlana
+  Volkova, and Yejin Choi. 2017. Truth of varying               Gautam Kishore Shahi, Anne Dirkson, and Tim A. Ma-
+  shades: Analyzing language in fake news and polit-              jchrzak. 2020. An exploratory study of COVID-
+  ical fact-checking. In Proceedings of the 2017 Con-             19 misinformation on Twitter.     ArXiv preprint
+  ference on Empirical Methods in Natural Language                2005.05710.
+
+                                                           17
+Chengcheng Shao, Giovanni Luca Ciampaglia,                      Workshop on Natural Language Processing meets
+  Alessandro Flammini, and Filippo Menczer. 2016.               Journalism, pages 80–83, Copenhagen, Denmark.
+  Hoaxy: A platform for tracking online misinfor-
+  mation. In Proceedings of the 25th International            James Thorne and Andreas Vlachos. 2018. Automated
+  Conference Companion on World Wide Web,                       fact checking: Task formulations, methods and fu-
+  WWW ’16 Companion, pages 745–750, Geneva,                     ture directions. In Proceedings of the 27th Inter-
+  Switzerland.                                                  national Conference on Computational Linguistics,
+                                                                COLING ’18, pages 3346–3359, Santa Fe, New
+Prashant Shiralkar, Alessandro Flammini, Filippo                Mexico, USA.
+  Menczer, and Giovanni Luca Ciampaglia. 2017.
+  Finding streams in knowledge graphs to support fact         James Thorne,       Andreas Vlachos,        Christos
+  checking. In Proceedings of the IEEE International            Christodoulopoulos, and Arpit Mittal. 2018a.
+  Conference on Data Mining, ICDM ’17, New Or-                  FEVER: a large-scale dataset for fact extraction
+  leans, Louisiana, USA.                                        and VERification. In Proceedings of the 2018
+                                                                Conference of the North American Chapter of the
+Kai Shu, Deepak Mahudeswaran, Suhang Wang,                      Association for Computational Linguistics: Human
+  Dongwon Lee, and Huan Liu. 2018. FakeNewsNet:                 Language Technologies, NAACL-HLT ’18, pages
+  A data repository with news content, social context           809–819, New Orleans, Louisiana, USA.
+  and dynamic information for studying fake news on
+  social media. arXiv preprint arXiv:1809.01286.              James Thorne,        Andreas Vlachos,     Christos
+                                                                Christodoulopoulos, and Arpit Mittal. 2019a.
+Kai Shu, Amy Sliva, Suhang Wang, Jiliang Tang, and              Evaluating adversarial attacks against multiple
+  Huan Liu. 2017. Fake news detection on social me-             fact verification systems. In Proceedings of the
+  dia: A data mining perspective. SIGKDD Explor.                2019 Conference on Empirical Methods in Natural
+  Newsl., 19(1):22–36.                                          Language Processing and the 9th International
+                                                                Joint Conference on Natural Language Processing,
+Kai Shu, Suhang Wang, and Huan Liu. 2019. Beyond                EMNLP-IJCNLP ’19, pages 2944–2953, Hong
+  news contents: The role of social context for fake            Kong, China.
+  news detection. In Proceedings of the 12th ACM
+  International Conference on Web Search and Data             James Thorne, Andreas Vlachos, Oana Cocarascu,
+  Mining, WSDM ’19, pages 312–320, Melbourne,                   Christos Christodoulopoulos, and Arpit Mittal.
+  Australia.                                                    2018b.    The fact extraction and VERification
+Peter Stefanov, Kareem Darwish, Atanas Atanasov,                (FEVER) shared task. In Proceedings of the First
+  and Preslav Nakov. 2020. Predicting the topical               Workshop on Fact Extraction and VERification,
+  stance and political leaning of media using tweets.           FEVER ’18, pages 1–9, Brussels, Belgium.
+  In Proceedings of the 58th Annual Meeting of the As-
+  sociation for Computational Linguistics, ACL ’20,           James Thorne, Andreas Vlachos, Oana Cocarascu,
+  pages 527–537.                                                Christos Christodoulopoulos, and Arpit Mittal.
+                                                                2019b. The FEVER2.0 shared task. In Proceed-
+Edson C. Tandoc Jr., Zheng Wei Lim, and Richard                 ings of the Second Workshop on Fact Extraction and
+  Ling. 2018. Defining “fake news”. Digital Jour-               VERification, FEVER ’19, pages 1–6, Hong Kong,
+  nalism, 6(2):137–153.                                         China.
+
+Andon Tchechmedjiev, Pavlos Fafalios, Katarina                Onur Varol, Emilio Ferrara, Clayton A. Davis, Filippo
+  Boland, Malo Gasquet, Matthäus Zloch, Benjamin               Menczer, and Alessandro Flammini. 2017. Online
+  Zapilko, Stefan Dietze, and Konstantin Todorov.               human-bot interactions: Detection, estimation, and
+  2019. ClaimsKG: A knowledge graph of fact-                    characterization. In Proceedings of the Eleventh In-
+  checked claims. In Proceedings of the 18th Interna-           ternational Conference on Web and Social Media,
+  tional Semantic Web Conference, ISWC ’19, pages               ICWSM ’17, pages 280–289, Montréal, Québec,
+  309–324, Auckland, New Zealand.                               Canada.
+
+Denis Teyssou, Jean-Michel Leung, Evlampios                   Slavena Vasileva, Pepa Atanasova, Lluı́s Màrquez, Al-
+  Apostolidis, Konstantinos Apostolidis, Symeon                  berto Barrón-Cedeño, and Preslav Nakov. 2019. It
+  Papadopoulos, Markos Zampoglou, Olga Pa-                       takes nine to smell a rat: Neural multi-task learning
+  padopoulou, and Vasileios Mezaris. 2017. The                   for check-worthiness prediction. In Proceedings of
+  InVID plug-in: Web video verification on the                   the International Conference on Recent Advances in
+  browser. In Proceedings of the First International             Natural Language Processing, RANLP ’19, pages
+  Workshop on Multimedia Verification, MuVer ’17,                1229–1239, Varna, Bulgaria.
+  pages 23––30, Mountain View, California, USA.
+                                                              Andreas Vlachos and Sebastian Riedel. 2014. Fact
+James Thorne, Mingjie Chen, Giorgos Myrianthous,                checking: Task definition and dataset construction.
+  Jiashu Pu, Xiaoxuan Wang, and Andreas Vlachos.                In Proceedings of the ACL 2014 Workshop on Lan-
+  2017. Fake news stance detection using stacked en-            guage Technologies and Computational Social Sci-
+  semble of classifiers. In Proceedings of the EMNLP            ence, pages 18–22, Baltimore, Maryland, USA.
+
+                                                         18
+Soroush Vosoughi, Deb Roy, and Sinan Aral. 2018.              Amy X. Zhang, Aditya Ranganathan, Sarah Emlen
+  The spread of true and false news online. Science,           Metz, Scott Appling, Connie Moon Sehat, Norman
+  359(6380):1146–1151.                                         Gilmore, Nick B. Adams, Emmanuel Vincent, Jen-
+                                                               nifer Lee, Martin Robbins, Ed Bice, Sandro Hawke,
+William Yang Wang. 2017. “Liar, Liar Pants on Fire”:           David R. Karger, and An Xiao Mina. 2018. A struc-
+  A new benchmark dataset for fake news detection.             tured response to misinformation: Defining and an-
+  In Proceedings of the 55th Annual Meeting of the As-         notating credibility indicators in news articles. In
+  sociation for Computational Linguistics, ACL ’17,            Proceedings of the The Web Conference, WWW ’18
+  pages 422–426, Vancouver, Canada.                            companion, pages 603–612, Lyon, France.
+
+Yaqing Wang, Fenglong Ma, Zhiwei Jin, Ye Yuan,                Yifan Zhang, Giovanni Da San Martino, Alberto
+  Guangxu Xun, Kishlay Jha, Lu Su, and Jing Gao.                Barrón-Cedeño, Salvatore Romeo, Jisun An, Hae-
+  2018. EANN: Event adversarial neural networks for             woon Kwak, Todor Staykovski, Israa Jaradat,
+  multi-modal fake news detection. In Proceedings of            Georgi Karadzhov, Ramy Baly, Kareem Darwish,
+  the 24th ACM SIGKDD International Conference on               and Preslav Nakov James Glass. 2019. Tanbih: Get
+  Knowledge Discovery amp; Data Mining, KDD ’18,                to know what you are reading. In Proceedings of the
+  page 849–857, London, United Kingdom.                         2019 Conference on Empirical Methods in Natural
+                                                                Language Processing, EMNLP ’19, pages 223–228,
+Lianwei Wu, Yuan Rao, Yongqiang Zhao, Hao Liang,                Hong Kong, China.
+  and Ambreen Nazir. 2020. DTCA: Decision tree-
+  based co-attention networks for explainable claim           Wanjun Zhong, Jingjing Xu, Duyu Tang, Zenan Xu,
+  verification. In Proceedings of the 58th Annual               Nan Duan, Ming Zhou, Jiahai Wang, and Jian Yin.
+  Meeting of the Association for Computational Lin-             2020. Reasoning over semantic-level graph for fact
+  guistics, ACL ’20, pages 1024–1035.                           checking. In Proceedings of the 58th Annual Meet-
+                                                                ing of the Association for Computational Linguis-
+You Wu, Pankaj K. Agarwal, Chengkai Li, Jun Yang,               tics, ACL ’20, pages 6170–6180, Online.
+  and Cong Yu. 2017. Computational fact checking
+                                                              Xinyi Zhou, Apurva Mulay, Emilio Ferrara, and Reza
+  through query perturbations. ACM Trans. Database
+                                                                Zafarani. 2020. ReCOVery: A multimodal reposi-
+  Syst., 42(1).
+                                                                tory for COVID-19 news credibility research. arXiv
+                                                                preprint 2006.05557.
+Kai-Cheng Yang, Onur Varol, Clayton A. Davis,
+  Emilio Ferrara, Alessandro Flammini, and Filippo            Dimitrina Zlatkova, Preslav Nakov, and Ivan Koychev.
+  Menczer. 2019. Arming the public with artificial in-          2019. Fact-checking meets fauxtography: Verifying
+  telligence to counter social bots. Human Behavior             claims about images. In Proceedings of the Con-
+  and Emerging Technologies, 1(1):48–61.                        ference on Empirical Methods in Natural Language
+                                                                Processing, EMNLP ’19, pages 2099–2108, Hong
+Kai-Cheng Yang, Onur Varol, Pik-Mai Hui, and Fil-               Kong, China.
+  ippo Menczer. 2020. Scalable and generalizable so-
+  cial bot detection through data selection. In Pro-          Arkaitz Zubiaga, Ahmet Aker, Kalina Bontcheva,
+  ceedings of the Thirty-Fourth AAAI Conference on              Maria Liakata, and Rob Procter. 2018a. Detection
+  Artificial Intelligence, AAAI ’20, pages 1096–1103,           and resolution of rumours in social media: A survey.
+  New York, New York, USA.                                      ACM Comput. Surv., 51(2).
+
+Savvas Zannettou, Tristan Caulfield, Emiliano                 Arkaitz Zubiaga and Heng Ji. 2014. Tweet, but verify:
+  De Cristofaro, Michael Sirivianos, Gianluca                   epistemic study of information verification on Twit-
+  Stringhini, and Jeremy Blackburn. 2019a. Disin-               ter. Social Network Analysis and Mining, 4(1):1–12.
+  formation warfare: Understanding state-sponsored
+  trolls on Twitter and their influence on the web. In        Arkaitz Zubiaga, Elena Kochkina, Maria Liakata, Rob
+  Companion Proceedings of The 2019 World Wide                  Procter, Michal Lukasik, Kalina Bontcheva, Trevor
+  Web Conference, WWW ’19, page 218–226, San                    Cohn, and Isabelle Augenstein. 2018b. Discourse-
+  Francisco, California, USA.                                   aware rumour stance classification in social media
+                                                                using sequential classifiers. Inf. Process. Manage.,
+Savvas Zannettou, Michael Sirivianos, Jeremy Black-             54(2):273–290.
+  burn, and Nicolas Kourtellis. 2019b. The web
+  of false information: Rumors, fake news, hoaxes,            Arkaitz Zubiaga, Maria Liakata, Rob Procter, Geral-
+  clickbait, and various other shenanigans. J. Data             dine Wong Sak Hoi, and Peter Tolmie. 2016.
+  and Information Quality, 11(3):10:1–10:37.                    Analysing how people orient to and spread rumours
+                                                                in social media by looking at conversational threads.
+Rowan Zellers, Ari Holtzman, Hannah Rashkin,                    PLoS ONE, 11(3):1–29.
+  Yonatan Bisk, Ali Farhadi, Franziska Roesner, and
+  Yejin Choi. 2019. Defending against neural fake
+  news. In Advances in Neural Information Process-
+  ing Systems 32, NeurIPS ’19, pages 9054–9065,
+  Vancouver, Canada.
+
+                                                         19
+

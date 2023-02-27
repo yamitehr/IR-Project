@@ -1,0 +1,784 @@
+                                                             Computers in Human Behavior 57 (2016) 82e92
+
+
+
+                                                           Contents lists available at ScienceDirect
+
+
+                                                      Computers in Human Behavior
+                                         journal homepage: www.elsevier.com/locate/comphumbeh
+
+
+Full length article
+
+Improving social media measurement in surveys: Avoiding
+acquiescence bias in Facebook research
+Ozan Kuru*, Josh Pasek
+University of Michigan, Ann Arbor, United States
+
+
+
+
+a r t i c l e i n f o                                 a b s t r a c t
+
+Article history:                                      Social media measurement relies heavily on self-report survey research. Hence, known biases in how
+Received 1 July 2015                                  individuals answer survey questions can introduce systematic errors into the social media literature. In
+Received in revised form                              particular, many common social media measures are prone to acquiescence response bias, an error that
+21 November 2015
+                                                      occurs due to individuals' tendency to agree with agreeedisagree questions. The current study tests a
+Accepted 2 December 2015
+Available online 21 December 2015
+                                                      series of techniques to both detect and overcome acquiescence bias in the context of Facebook mea-
+                                                      surement. Controlling for individuals' tendency to agree with agreeedisagree questions, we ﬁnd evi-
+                                                      dence that acquiescence has inﬂated the reliabilities and factor loadings of many Facebook use scales,
+Keywords:
+Social media measurement
+                                                      and has altered correlations both among Facebook use measures and between those measures and
+Acquiescence                                          related covariates. Further, when the individual-level tendency to agree with questions is controlled,
+Agreeedisagree scales                                 Facebook measures demonstrate greater criterion validity in their relations to items that do not use agree
+Survey experiment                                     edisagree scales. Having identiﬁed the presence of acquiescent responding, we test three methods for
+Method biases                                         mitigating this response bias: the use of balanced scales, item-speciﬁc questions, and statistical cor-
+Correlates of Facebook use                            rectives. All three methods appear to reduce the bias introduced by acquiescence. Thus, the results
+                                                      provide comparative evidence on strategies to alleviate the consistent impact of an important method
+                                                      bias in social media measurement and thereby contribute to improving the validity of social media
+                                                      research at large.
+                                                                                                                      © 2015 Elsevier Ltd. All rights reserved.
+
+
+
+
+1. Introduction                                                                      decry the use of AD Likert scales for social research (Fowler, 1995;
+                                                                                     Saris, Revilla, Krosnick, & Shaeffer, 2010). Yet, despite these calls,
+   Acquiescence bias is a pervasive problem in survey research that                  social media measurement through surveys, and especially the
+could translate to social media measurement as well. When ques-                      literature on Facebook, has extensively relied on survey techniques
+tions are presented with agreeedisagree (AD) or yes/no response                      that are prone to acquiescence bias.
+options, some respondents select the “agree” (or “yes”) option                           Domains where AD scales are widely used might be particularly
+disproportionately more frequently than the “disagree” (or “no”)                     susceptible to inferential errors related to acquiescence; and
+option. Presumably, this tendency stems from the social norm to be                   research on the social network site Facebook appears to be one such
+agreeable (see Pasek & Krosnick, 2010). Acquiescence can introduce                   area. With the explosive emergence of social media and the sub-
+errors into data, as survey responses to acquiescence-prone mea-                     sequent proliferation of scholarship on Facebook from diverse
+sures conﬂate individuals' true attitudes and behaviors with                         ﬁelds (e.g. Wilson, Gosling, & Graham, 2012), a number of strategies
+agreeableness. At its most pernicious, this can lead survey re-                      have been introduced for gauging users' behaviors on the site (Kuru
+searchers astray, inducing correlations between similarly worded                     & Pasek, in press). The vast majority of studies of Facebook use,
+items that may be designed to tap unrelated constructs and hence                     however, have been dominated by acquiescence-prone measures.
+resulting in systematic errors (Bagozzi, 1984; MacKenzie &                           Further, these measures tend to conﬂate agreement with greater
+Podsakoff, 2012). These concerns have led some researchers to                        use of the s/ocial network site. Acquiescence bias could therefore be
+                                                                                     an important confound in studies of Facebook, potentially hinder-
+                                                                                     ing researchers' attempts at understanding and situating the social
+  * Corresponding author. Communication Studies, University of Michigan, 105 S.      experience and consequences of site use. Since the Facebook liter-
+State St, 5370 North Quad, Ann Arbor, MI 48109, United States.                       ature is yet a young and emerging ﬁeld, researchers may still have a
+    E-mail address: okuru@umich.edu (O. Kuru).
+
+http://dx.doi.org/10.1016/j.chb.2015.12.008
+0747-5632/© 2015 Elsevier Ltd. All rights reserved.
+                                              O. Kuru, J. Pasek / Computers in Human Behavior 57 (2016) 82e92                                      83
+
+
+chance to adjust course, tracking use of the site in ways that are less         whether they agree with conﬂicting statements about a concept
+susceptible to bias.                                                            (Nunnally, 1978; Schriesheim & Hill, 1981). Although these scales
+   The current study assesses the extent to which acquiescence                  reduce the correlation between acquiescence and the construct of
+response bias may be inﬂuencing current studies of the correlates               interest, they arbitrarily place individuals who always acquiesce at
+of Facebook use. To accomplish this, we look for the presence of                the midpoint of the scale, which may or may not be reasonable
+method bias using an online survey experiment. Where method-                    (Billiet & McClendon, 2000; Pasek & Krosnick, 2010). A second
+ological biases are observed, we test whether a variety of statistical          strategy involves statistically correcting for acquiescence. Tech-
+correctives, balanced scales, and ﬁnally alternative question                   niques such as factor analyses (Billiet & McClendon, 2000; Cheung
+wording might mitigate these biases (cf. Saris et al., 2010). Struc-            & Rensvold, 2000; Podsakoff, MacKenzie, Lee, & Podsakoff, 2003;
+tural equation modeling (SEM) and alternative question wording                  Welkenhuysen-Gybels et al., 2003; Williams, Gavin, & Williams,
+approaches are compared as potential ways to improve indexes of                 1996) and ipsatization (Chan, 2003; Fischer, 2004; Greenleaf,
+Facebook use as well as in their ability to predict a variety of                1992) can be employed to disentangle acquiescence from the
+theoretically related constructs.                                               construct of interest. Finally, researchers can ask questions that are
+                                                                                not susceptible to acquiescence response bias to start with.
+2. Literature review                                                                In particular, replacing AD scales with direct queries about the
+                                                                                concepts of interest e so-called “item-speciﬁc” (IS) questions e can
+2.1. Acquiescence bias                                                          result in measures with potentially greater reliability and validity
+                                                                                (Ross, Steward, & Sinacore, 1995; Saris et al., 2010; Schuman &
+    Survey methodologists have long noted the tendency of re-                   Presser, 1981). Instead of assessing whether respondents agree or
+spondents to agree when confronted with AD questions, regardless                disagree with a prompt, IS-questions solicit the extremity of an
+of their content (Billiet & McClendon, 2000; Jackson, 1959;                     attitude or the extent of a behavior using response options that
+Welkenhuysen-Gybels, Billiet, & Cambre      , 2003). Nonetheless, Lik-         mirror that of the question. For example, instead of asking people
+ert scales using these response options remain prevalent                        how much they agree or disagree with the prompt, “I like cookies,”
+throughout social science research. AD questions are simple to                  researchers could instead ask respondents, “How much do you like
+format and easy to generate, which may explain their prevalence                 cookies?” with response options ranging from “Not at all” to “A
+(Saris et al., 2010), but this simplicity comes at a cost. Acquiescent          great deal.”
+responses can lead scholars to incorrect conclusions because they
+confound the attitudes and behaviors studied with the general                   2.3. Social media measurement: Facebook scales and acquiescence
+tendency to agree. And acquiescence can have a large impact;
+multiple studies suggest that between 10% and 20% of respondents                    With the proliferation of social network sites, researchers have
+engage in this behavior (Krosnick & Fabrigar, 2001; Saris et al.,               scrambled to measure how people are using the sites as well as the
+2010; Schuman & Presser, 1981).                                                 consequences of site use. As Facebook experience became a part of
+    Studies of acquiescence response bias indicate that the tendency            social, political, and economic life, researchers from various disci-
+to acquiesce varies across individuals (MacKenzie & Podsakoff,                  plines incorporated measures of Facebook use in their studies (see
+2012). Three theories have been proposed for why some people                    Wilson et al., 2012 for a review). Faced with the need to rapidly
+behave in this manner. First, considerable evidence shows that                  develop and deploy scales, it is unsurprising that researchers
+respondents treat surveys as conversational (Brown & Levinson,                  generously borrowed measures and scales from a few early papers
+1987; Pasek & Krosnick, 2010). Following conversational conven-                 that established them (see Kuru & Pasek, in press). Unfortunately,
+tions, respondents may agree with survey prompts because “in                    validated scales are scarce, and a majority of the scales are
+everyday conversations people want to be agreeable and want to be               composed of Likert-style AD questions (examples below). Hence, if
+agreed with” (Brown & Levinson, 1987; Leech, 1983). A second                    acquiescence response bias is a problem for AD scales measuring
+possible cause of acquiescence stems from the perceived authority               Facebook, it could represent a limitation for much of the literature.
+of the interviewer. Reacting to this role, respondents might defer to               There are a variety of reasons to worry that acquiescence
+the interviewer, acquiescing to his or her question by responding in            response bias could be altering our understanding of social network
+agreement (Carr, 1971; Lenski & Leggett, 1960). Finally, it is possible         use and particularly Facebook use. First, as noted above, AD Likert-
+that acquiescence is a product of survey satisﬁcing (Krosnick, 1991;            style questions compromise the bulk of measures for many
+Simon, 1957). Instead of pondering the question and contemplating               commonly used Facebook scales. A recent systematic review of
+all the information available to provide the best possible answer,              Facebook studies published since 2007 until the end of 2014 reveals
+respondents might satisﬁce by choosing an answer that seems good                that 20 of the 47 studies used agreeedisagree format in measuring
+enough or appropriate. Agreeing with the prompt appears to be one               Facebook use (Kuru & Pasek, in press). Moreover, many of the
+mechanism for choosing just such an answer (Krosnick, 1999, 1991).              widely adopted and used scales such as the Facebook Intensity
+    Apart from these theoretical mechanisms, individual differences             Scale (Ellison, Steinﬁeld, & Lampe, 2007) also rely on the
+in cognitive abilities and education (Krosnick, 1999; Krosnick &                acquiescence-prone Likert format. Second, these scales have been
+Alwin, 1987; Schuman & Presser, 1981), psychological tendencies                 analyzed without any attempt to assess the extent of acquiescence,
+toward impulsiveness (Couch & Keniston, 1960; Messick, 1991), and               meaning that the potential for bias is unknown. Third, the previous
+agreeableness (Costa & MacCrae, 1992; Knowles & Condon, 1999)                   research on response styles had found that response biases can
+can alter the level of acquiescence bias (MacKenzie & Podsakoff,                alter the correlations between constructs (Baumgartner &
+2012). This suggests that acquiescence can be regarded as an in-                Steenkamp, 2001). And ﬁnally, agreement with AD measures in
+dividual-level trait.                                                           Facebook use scales almost always corresponds with greater use of
+                                                                                the social network site (i.e. the scales are not balanced), meaning
+2.2. Addressing acquiescence                                                    that serial acquiescence could introduce a clear directional bias into
+                                                                                correlations.
+   Three basic strategies have been proposed for mitigating the                     Acquiescence bias could present a cascade of problems for the
+inﬂuence of acquiescence on research conclusions. The ﬁrst in-                  literature. First, confounding respondents' tendency to agree with
+volves the use of “balanced” scales, in which respondents are asked             Facebook use could induce spuriously inﬂated correlations
+84                                                   O. Kuru, J. Pasek / Computers in Human Behavior 57 (2016) 82e92
+
+
+amongst Facebook scales. Second, the association between Face-                           The Facebook Self-Disclosure Scale (Krasnova, Kolesnikova, &
+book use and other social variables of interest e such as social                          Guenther, 2009) measures the level of information that users
+capital, political participation, relationship satisfaction, academic                     share about themselves on Facebook, this six item scale with AD
+success, or psychological well-being e would conﬂate substantive                          options relates theoretically to the potential of online privacy
+ﬁndings with correlates of the tendency to acquiesce. And third,                          issues.
+aside from these within-study effects, systematic errors might then                      The Facebook Intrusion Scale (Elphinston & Noller, 2011) mea-
+accumulate across studies biasing our understanding of social                             sures the excessive use of and dependency on Facebook with
+media use and its correlates.                                                             eight items that have AD options.
+   The potential for acquiescence bias to undermine our under-
+standing of Facebook use and its correlates can be seen in studies                         The measures represent only a small subset of the scales that
+linking Facebook with social capital. In most studies, correlations                    have been employed in the literature, but we chose them for their
+between the frequency or intensity of Facebook use and social                          prominence in the literature as well with the fact that they tap
+capital have been positive (e.g. Ellison et al., 2007; Kwon, D'Angelo,                 distinct, yet related dimensions and domains of use (Kuru & Pasek,
+& McLeod, 2013; Lee, Kim, & Ahn, 2014; Park, Han, & Kaid, 2012).                       in press; Wilson et al., 2012). These measures have allowed re-
+But all nine studies making this comparison used the predomi-                          searchers to make enormous progress in exploring the correlates of
+nantly AD Facebook Intensity Scale.1 For these studies, acquiescent                    Facebook use, relating use to phenomena as diverse as education
+responding might have increased the strength of the correlations                       (Junco, 2012; Wise, Skues, & Williams, 2011), self-esteem (e.g.
+that were observed. Given the consistent use of AD scales across                       Ellison et al., 2007; Mehdizadeh, 2010), personal relationships (e.g.
+these studies, we do not know how robust these relations are to                        Elphinston & Noller, 2011), social capital (e.g. Ellison, Steinﬁeld, &
+controls for acquiescent responding.                                                   Lampe, 2011; Ellison, Vitak, Gray, & Lampe, 2014), and political
+                                                                                       participation (Bode, 2012; Vitak et al., 2011).
+
+2.4. The current study                                                                 2.5. Hypotheses
+
+    The current study presents an online survey experiment that                           Based on longstanding evidence of acquiescence to these types
+explores the scope and implications of acquiescence response bias                      of questions, we hypothesize that a strong method factor will
+in measures of the social network site Facebook and compares                           predict agreement to questions across all AD scales (H1).
+possible remedies. We test for the presence of a method bias in                           Because the systematic error of acquiescence theoretically in-
+responses to agreeedisagree (AD) questions for four commonly                           ﬂates correlations between directionally similar measures, con-
+employed indexes measuring Facebook use. We also incorporated                          trolling for the general tendency to agree using a method factor
+two important covariates that have been widely studied in the                          should reduce correlations among measures of Facebook use (H2a).
+literature for analytical and theoretical comparisons, a balanced                      Further, by the same logic, controlling for a method factor is ex-
+scale measuring self-esteem (Mehdizadeh, 2010; Rosenberg, 1965;                        pected to decrease correlations linking Facebook measures with a
+Steinﬁeld, Ellison, & Lampe, 2008) and a non-balanced scale of                         similarly unbalanced covariate, bridging social capital (H2b). In
+bridging social capital (Ellison, Steinﬁeld, & Lampe, 2007; Williams,                  contrast, correlations should not be altered between Facebook
+2006).                                                                                 measures and a balanced covariate, self-esteem (H2c).
+    In this survey experiment we examined the potential conse-                            Next, we compare the AD measures as well as statistical controls
+quences of dependence on the AD response format in four scales                         to a series of criterion variables to assess the validity of numerous
+measuring aspects of Facebook use. The scales were chosen because                      strategies for correcting for acquiescence bias. Here, we expect that
+they have come to dominate the early literature and are considered                     correlations with major social network site indicators (such as
+to capture important dimensions of engagement with Facebook:                           number of friends, time spent, frequency of use, and account
+                                                                                       accessibility levels) would be lower in AD scales than for AD scales
+  The Facebook Intensity Scale (Ellison et al., 2007) has been used                   where a method factor was controlled (H3). This would in turn
+   in numerous studies and consists of two parts: two items that                       imply that mitigating acquiescence bias increases validity.
+   measure the time spent on Facebook and number of friends and                           Next, we test whether the use of item-speciﬁc (IS) versions of
+   a six question Likert battery with AD options. The measure as-                      these measures might circumvent acquiescence. IS measures are
+   sesses the strength of a user's social network and attitudes and                    expected to be free of acquiescence bias because agreement is not
+   behaviors about usage. In this study, the six item Likert battery is                an option. Hence we hypothesize that the inﬂuence of controlling
+   used whereas time spent and number of friends are excluded                          for a method factor will be demonstrably smaller when using IS
+   from the factor analysis of this scale as they are not attitude                     measures instead of AD measures (H4) and that the IS measures
+   items.                                                                              will also demonstrate greater criterion validity than the AD mea-
+  The Trust Scale (Jarvenpaa, Tractinsky, & Saarinen, 1999;                           sures (H5).
+   Krasnova, Spiekermann, Koroleva, & Hildebrand, 2010;
+   McKnight, Choudhury, & Kacmar, 2002)2 measures the extent                           3. Methods
+   to which Facebook users trust one-another as well as their at-
+   titudes toward the site with six items that have AD options.                        3.1. Sample
+
+                                                                                          This survey experiment was conducted among individuals from
+ 1
+    The numbers presented here come from a recent book chapter by the authors          two non-probability sample sources in 2013. The ﬁrst sample
+(Kuru & Pasek, in press).                                                              consisted of 164 undergraduate students from a departmental
+  2
+    Some citation years that date back before the launch of Facebook should not be     research pool at a large Midwestern university. Individuals in the
+confusing and comes in dialogue with our concerns regarding measures of social         student sample received course credit for completing a speciﬁed
+media activity/usage. Most of early Facebook scales have been partially adapted
+from previous measures of Internet or other online activity measurement, thus
+                                                                                       number of studies or could complete an alternative assignment.
+contributing to the widespread use of highly problematic AgreeeDisagree response       The second sample includes results from 605 participants recruited
+options.                                                                               through Amazon's Mechanical Turk (“Turkers”). We posted the
+                                                       O. Kuru, J. Pasek / Computers in Human Behavior 57 (2016) 82e92                                                      85
+
+
+current study as an assignment on Mechanical Turk, which in-                             of touch” (.25), “Sometimes feel out of touch” (.5), “Most of the time
+dividuals could complete by following a link to a Qualtrics survey.                      feel out of touch” (.75), and “Always feel out of touch” (1). The goal
+Individuals were compensated $.75 if they posted a code that was                         of this procedure was to remain as loyal as possible to the original
+provided to them upon completion of the survey. Individuals were                         question meaning in an IS format. Full question wordings appear in
+limited to completing a single survey.3 All respondents, regardless                      Online Appendix C.
+of sample source, were randomly assigned to one of the experi-
+mental conditions. They were either presented with measures us-                          3.2.3. Covariates
+ing the original AD scales or the equivalent IS versions.4 Online                            Aside from the common scale questions about Facebook use,
+Appendix A shows descriptive statistics as well as results check-                        four measures of Facebook network activity were considered as
+ing the equivalence of the different samples (see also Table B1 in                       covariates to serve as criterion validity checks. These included
+Online Appendix B).                                                                      number of Facebook friends, time spent on Facebook, frequency of
+                                                                                         log-in, and the visibility/accessibility level of respondents'
+3.2. Measures and design                                                                 accounts.6
+
+3.2.1. AD measures                                                                       3.2.4. Equivalence of questions across conditions
+    Four scales of Facebook use were analyzed: The Facebook In-                              Participants were experimentally assigned to receive either AD
+tensity Scale (FBI) (6 items, unbalanced), Trust on Facebook (6                          or IS question wordings and results from both types were
+items, unbalanced), Facebook Self-Disclosure (6 items, unbal-                            compared. By changing response options while keeping the ques-
+anced), and Facebook Intrusion (8 items, unbalanced). Additionally                       tion stems as similar as possible, this design does as little as
+the Bridging Social Capital Scale (8 items, unbalanced; Ellison et al.,                  possible to alter the way that respondents should interpret the
+2007)5 and Rosenberg Self-Esteem Scale (10 items, balanced;                              questions; responses should therefore remain true to the latent
+Rosenberg, 1965) were included in the analysis as Facebook use                           constructs proposed.7 Results checking the equivalence of experi-
+correlates. AD versions of these scales were comprised of ﬁve- and                       mental conditions are shown in Online Appendix A.
+seven-point questions. Responses were recoded to range from 0 to
+1, where 0 represented the lowest possible score (“strongly
+                                                                                         3.3. Analytical procedure
+disagree”) and 1 represented the highest value (“strongly agree”),
+with all other responses assigned to intermediate values (e.g.
+                                                                                             To assess the presence of a method factor in the AD measures of
+“agree” ¼ .75). Full question wordings and response options appear
+                                                                                         Facebook use (H1), we compared two conﬁrmatory factor analyses
+in Online Appendix C.
+                                                                                         (CFAs) using structural equation modeling in the SPSS Amos soft-
+                                                                                         ware (see Online Appendix D for full CFA models in AMOS). The ﬁrst
+3.2.2. IS measures                                                                       model was a traditional CFA model, where indicators of each of the
+    Based on Saris et al.'s (2010) study, IS versions of each question                   four Facebook and two covariate scales were parameterized as a
+were created. For example, the AD version of attitude item 4 in the                      function of the relevant underlying latent construct and some
+Facebook Intensity scale, “I feel out of touch when I haven't logged                     unique indicator-level error (see Fig. 1A for a simpliﬁed version).
+onto Facebook for a day,” with the response options “Strongly                            The second model was a method-factored model; in this model,
+Disagree” (coded: 0), “Disagree” (.25), “Neither Agree nor Disagree”                     indicators of each of the separate scales were treated as a product of
+(.5),” Agree” (.75), and “Strongly Agree” (1) was replaced with “Do                      the relevant underlying latent construct, a consistent methodo-
+you feel out of touch if you do not log into Facebook for a day?” with                   logical bias across all similarly-worded measures, and unique
+the response options “Never feel out of touch” (0), “Rarely feel out                     indicator-level error (see Fig. 1C). A latent factor representing the
+                                                                                         methodological bias or “method factor” was added for the method
+                                                                                         factor model (and shown separately in Fig. 1B) and was constrained
+  3
+     Mechanical Turk is widely used in social science research and provides more         to load consistently across all measures that were similarly worded,
+representative samples than college undergraduate participants (Berinsky, Huber, &
+                                                                                         it is thus a measure of the similarity between measures that is
+Lenz, 2012; Buhrmester, Kwang, & Gosling, 2011). Each Amazon worker could take
+the survey only once and instructions were given for completing the survey within
+                                                                                         induced by the way the measures are constructed (Billiet &
+a reasonable time. Although a signiﬁcant difference in survey completion time is         McClendon, 2000).8 If the method factor accounts for shared
+observed between the two samples e mean completion times for MTurk (13.1) was
+only about 1 min shorter than the mean of the student sample (14.4) e this small
+difference should not raise data quality concerns.
+  4
+     In practice, there were two unique random assignments that were cross-cutting
+                                                                                           6
+in the current study. Individuals were randomly assigned either the AD or IS version          Number of friends was an open-ended question. Time-spent had 7 response
+of the Facebook measures and were also randomly assigned either the AD or IS             options with 30 min of intervals from “0e30 min daily” to “more than 3 h”. Fre-
+version of the outcome measures (Self-Esteem and Social Capital). Estimates of           quency of logging-in had 6 options ranging from “1 times” to “more than 6 times”.
+factors for all measures were generated using all individuals who answered each          Those who stated they were always logged-in were excluded from this variable as
+version of the scales. Estimates for correlations across factors were generated using    this option could not be enumerated along the frequency variable in a theoretically
+pairwise complete observations. When data were combined in AMOS, we used                 meaningful way. Accessibility level of the account, asked as “What is the general
+maximum likelihood imputation to estimate all relations. This procedure provides         accessibility of your account?” had 4 options: “only you”, “your friends only”,
+more accurate estimates so long as missing data are missing at random, which             “friends of your friends as well”, and “everybody/open to the public”. These mea-
+should be ensured given the random assignment of individuals to experimental             sures are important structural properties of Facebook activity/use measurement
+conditions. Nonetheless, to ensure that these crossover results were not yielding        and reported in nearly all studies. In this study they additionally (1) serve as cri-
+different estimates, we replicated all analyses with AD-only and IS-only sub-            terion validity check for the alternative IS measures we develop and (2) their cor-
+samples. Differences were uniformly minor and would not alter any of our                 relations with AD measures are compared across experimental conditions for
+conclusions.                                                                             inferring acquiescence bias effects. Please see Online Appendix B for further details.
+  5                                                                                        7
+     Ellison, Steinfeld and Lampe (2007) used 9 items to measure bridging social              We adopted this approach in the current study to minimize differences be-
+capital; one of these items was not included in the current study because the            tween the two sets of measures. An ideal design approach for IS measures, how-
+wording was deemed awkward. Although this makes the scale a little different             ever, would involve changing the question wording to more closely match the
+from than what had been used in that study, our major focus in this study is to          response options.
+                                                                                           8
+compare a set of scales across diverse acquiescence strategies. The theoretical re-           This assumption is appropriate as acquiescence appears to be an individual-
+sults pertain to comparative statistics regarding acquiescence.                          level trait (Weijters, Geuens, & Schillewaert, 2010).
+86                                                       O. Kuru, J. Pasek / Computers in Human Behavior 57 (2016) 82e92
+
+
+
+
+Fig. 1. Simpliﬁed Model Representations in the SEM. Large circles indicate latent variables, small circles represent error terms, and rectangles represent observed variables. Bolded
+lines in Part C have forced factor loadings of 1 (or 1 for reversed items) whereas coefﬁcients for un-bolded lines were allowed to vary.
+
+
+
+variance between the items (H1), its inclusion should result in                              our hypotheses were about the strength of relations rather than
+improved goodness of ﬁt compared with the traditional CFA                                    their absolute direction. For this reason, a simple t-test comparison
+model.9 Signiﬁcant and sizable loadings on this method factor                                of the factor loadings or correlations would not be able to detect a
+would provide further evidence for H1.                                                       result even if systematic differences existed. To circumvent this
+    Evidence that methodological biases were inﬂating correlations                           problem, we used a linear mixed model for signiﬁcance tests.10
+between unbalanced measures can also be evaluated by comparing
+a method factor model with a traditional CFA model (H2). Here we
+examined the responsiveness of correlations between latent vari-                             4. Results
+ables to the presence of the method factor.
+    Finally, we examined the criterion validity of the AD measures as                        4.1. Method bias in agreeedisagree measures
+well as method-factored versions of those measures. All four sets of
+measures were compared with the four criterion variables                                         Method biases in AD measures were apparent when comparing
+measuring social network site use. Stronger correlations with each                           the model ﬁts of the traditional and method factor CFA models.
+of these measures would be indicative of better measurement (H3).                            Both traditional and method factor models provided an acceptable
+Hence if the method factor model produced higher criterion cor-                              ﬁt for the AD data (Table 2, columns 1 and 2). Both failed the chi-
+relations it would imply that methodological bias was present.                               square test (ps < .001) but passed the root-mean square error of
+    To assess the potential use of IS alternatives to the AD measures,                       approximation test (RMSEA values < .08 and mostly <.05) and
+IS items were subjected to all the same analyses as the AD versions.                         showed CFI values near traditional cut-offs. These values are
+We examined whether IS questions were subject to similar meth-                               indicative of models using large samples that ﬁt the data well, but
+odological biases by comparing a standard CFA with the IS mea-                               could be more parsimonious (cf. Hu & Bentler, 1999).11
+sures with a method factored alternative for model ﬁt, factor                                    Goodness of ﬁt statistics were preferable for all measures using
+loadings, inter-correlations, and reliability (H4). We also compared                         the method factor model as compared to the traditional model. For
+the IS measures to the AD measures to see what model provided the                            example, chi-square for the traditional AD model was 2555
+most valid results when related to criterion variables (H5). Tests of                        whereas the method factor solution chi-square value was 2435
+all hypotheses are summarized in Table 1.                                                    (p < .001 difference in a nested model comparison). Improvements
+    In order to assess the comparative performance of each of the                            were also apparent for RMSEA, which dropped from .049 to .048,
+different models we used, we needed to determine whether factor                              and CFI, which increased from .86 to .87. Although these differences
+loadings and correlations were systematically larger or smaller in                           were small, they were indicative of a method factor that is related
+some methods than in others. This determination was complicated,                             to a small but systematic error that skews the data. The constrained
+however, by the fact that the factor loadings and correlations of
+interest within each of the methods varied drastically in size, and
+                                                                                              10
+                                                                                                  The general formula we tested was Coefmi ~ b model þ RE(Comparison). In this
+                                                                                             model, each individual coefﬁcient we are estimating is regarded as a function of the
+                                                                                             model that is being used (e.g. AD vs. AD with method factor) and includes a random
+  9
+    Model ﬁt indexes tell us how much our theoretical measurement models                     effect for the estimated value of the comparison we are approximating (e.g. the
+accord with the data. Model ﬁts were assessed using four ﬁt indices (Bentler, 1990).         factor loading of a particular item on the FBI scale). The b coefﬁcient for the model
+First we use chi-square, which assesses whether the variance accounted for differs           captures the average difference between coefﬁcients in the models being compared
+signiﬁcantly from a saturated model. Nonsigniﬁcant p values indicate that the                while simultaneously attempting to control for the different expected coefﬁcients
+model captures all relevant variance. Notably, this is rarely true with samples of           of the comparisons that are being estimated. That is, the random effects allow us to
+N > 100. The second ﬁt index we employ is the root-mean square error of                      account for the vast coefﬁcient differences that are expected as a function of widely
+approximation test (RMSEA), which tests the parsimony of the model. In an ideal              varying comparisons and thus to exclude error related to those differences from our
+model, RMSEA should have a value under .05 (Kline, 2005). Third, we use the                  comparison of models.
+                                                                                              11
+comparative ﬁt index (CFI), which produces estimates similar to Chi-squared, but is               This less-than-perfect ﬁt is perhaps unsurprising as we might expect some kind
+less sensitive to sample size; the CFI value should ideally be larger than .95 for a         of second order factor that accounts for commonalities between Facebook mea-
+good ﬁt (Bentler & Bonett, 1980; Hu & Bentler, 1999). In addition to these, we also          sures. The presence of such a factor is not important for the current purposes as the
+assess AIC, which can be used to compare nested models. Lower AIC scores indicate            central interest is in comparative ﬁt between models. There is no formal test for
+better ﬁtting models within the same family.                                                 differences between these coefﬁcients.
+                                                        O. Kuru, J. Pasek / Computers in Human Behavior 57 (2016) 82e92                                                        87
+
+Table 1
+Analytical tools in the conﬁrmatory factor analysis data.
+
+  What we compare            Evidence it provides
+
+  Model ﬁts                  Model ﬁts allow us to compare the overarching effect of systematic error across the models
+  Factor loadings            A decrease in factor loadings for method factor models or alternative question wording (item-speciﬁc) compared to the acquiescence-prone
+                             measures is indicative of acquiescence
+  Factor correlations        Acquiescent responding should inﬂate correlations between unbalanced factors that use acquiescence-prone measures
+  Criterion validity         Measures with less bias should correlate more strongly with exogenous correlates that do not use acquiescence-prone scales
+     correlations
+
+
+
+
+Table 2
+Average loadings and goodness of ﬁt statistics of conﬁrmatory factor analysis (CFA) models.
+
+  Average standardized loadings             Agreeedisagree (AD) CFA              AD method factor model              Itemespeciﬁc (IS) CFA             IS method factor model
+
+  FBI                                       .76                                  .72                                 .71                               .69
+  Trust                                     .81                                  .76                                 .76                               .73
+  Disclosure                                .83                                  .80                                 .71                               .68
+  Intrusion                                 .68                                  .64                                 .63                               .60
+  Social Capital                            .79                                  .74                                 .74                               .71
+  Self Esteem                               .70                                  .70                                 .71                               .71
+  Method Factor                             e                                    .21                                 e                                 .14
+  Average*                                  .77                                  .73                                 .71                               .68
+  Goodness of ﬁt
+  Chi-square                                2555                                 2435                                2144                              2049
+  df**                                      (887)                                (886)                               (887)                             (886)
+  CFI                                       .86                                  .87                                 .87                               .88
+  RMSEA                                     .049                                 .048                                .043                              .041
+  AIC                                       2849                                 2731                                2438                              2345
+
+Notes. Loadings presented are the statistical mean of the absolute values of all indicators for the latent constructs shown. All standardized loadings are signiﬁcant at the
+p < .001 level. Average* indicates the average of the average factor loadings for FBI, Trust, Disclosure, Intrusion and Social Capital items (all unbalanced scales). The balanced
+self-esteem measure was not included in this average. **Degrees of freedom represent the difference between the number of distinct sample moments and the number of
+distinct parameters that are estimated.
+
+
+Table 3
+Random effects regressions assessing differences in coefﬁcients between models.
+
+                                                                Factor loadings (N ¼ 34)                   FB correlations (N ¼ 10)                  SNS correlations (N ¼ 20)
+
+  AD vs Method AD                    Method   b                 .04***                                    .06***                                   .01**
+                                     s.e.                        .003                                       .01                                      .005
+  AD vs IS                           Method   b                 .06***                                    .001                                     .09***
+                                     s.e.                        .01                                        .02                                      .02
+  Method AD vs IS                    Method   b                 -.01                                        .06*                                     .08***
+                                     s.e.                        .01                                        .02                                      .01
+  IS vs Method IS                    Method   b                 .03***                                    .05***                                   .0001
+                                     s.e.                        .002                                       .008                                     .002
+
+Notes. Each coefﬁcient shown presents the result from a separate linear mixed model. Each model treats the loadings/correlations derived using the various methods as a
+function of (1) a random effect indexing what correlation is being predicted and (2) a dummy variable indicating the method used to predict that correlation. For the sake of
+parsimony, only the dummy variables are presented. Self-esteem items have been excluded as theoretically they are expected and found to be invariant across the models. ***
+p<.001, ** p<.01, * p<.05, two-tailed.
+
+
+
+model (i.e. with a method factor) thus represented a signiﬁcant                             (b ¼ .04, s.e. ¼ .003, p < .001, Table 3). These results indicate that
+improvement over the unconstrained model and an improvement                                 standardized loadings for the AD model were inﬂated by an average
+for all measures of model ﬁt. Hence, these results were in line with                        of approximately .04 (Table 3).12 Notably, coefﬁcients for the
+the hypothesized presence of acquiescence bias.                                             balanced self-esteem measure did not diminish when the method
+    Comparing factor loadings across the CFA models provides                                factor was introduced. Since balanced scales are designed to miti-
+additional evidence that methodological bias was present when                               gate errors due to acquiescence bias, this result further conﬁrms
+using the AD questions. Table 2 presents the average standardized                           that drops in other factor loadings were likely a function of serial
+factor loadings for each of the Facebook and covariate scales                               agreement.
+(loadings for all 44 individual items can be found in Online                                    Loadings for the method factor itself further illustrate the extent
+Appendix E). Differences in factor loadings between the tradi-                              of bias in the AD measures. The average standardized loading of AD
+tional and method factor CFAs revealed a consistent pattern                                 measures on the method factor was .21. This suggests
+whereby loadings were markedly higher when the method factor                                that methodological bias accounted for at least one-ﬁfth of the
+was not included (Table 2, columns 1 and 2). For example, the                               variance in the indicators (Table 2, column 2; individual loadings
+average FBI loading dropped from .76 to .72. Similar drops were
+observed in all other unbalanced scales, including the non-
+Facebook measure of social capital; a linear mixed model
+                                                                                             12
+revealed that standardized factor loadings for the method factor                                As an alternative approach we also compare Chronbach's alphas for non-
+model were signiﬁcantly different from the traditional CFA model                            ipsatized and ipsatized measures to assess the maximum possible extent of this
+                                                                                            bias in Online Appendix H.
+88                                                     O. Kuru, J. Pasek / Computers in Human Behavior 57 (2016) 82e92
+
+
+are presented in Online Appendix F). Loadings on the method factor                       due to some unique feature of Facebook use. For the balanced co-
+thus reinforce evidence of the presence and problematic conse-                           variate scale measuring self-esteem, this pattern was not evident.
+quences (i.e. factor loading inﬂation) attributable to acquiescence                      Instead, correlations linking self-esteem with other scales
+bias.                                                                                    remained consistent when the method factor was controlled
+                                                                                         (Table 4, row 6). The lack of a similar pattern for the balanced scale
+4.2. Factor correlations for AD measures                                                 again conﬁrmed that methodological biases were related to the
+                                                                                         direction of the questions.
+    Further evidence of the prevalence and impacts of methodo-
+logical bias can be assessed by examining correlations amongst the                       4.3. Correlations between AD measures and criterion variables
+latent factors measuring Facebook use and other covariates. Cor-
+relations between all six scales in the AD models with and without                           Comparing the traditional and method factor AD models with a
+a method factor are reported in the upper half of Table 4.                               series of criterion variables yielded evidence that latent factors in
+Comparing correlations across these two models, we can identify a                        the method factor model were more valid than those in the tradi-
+pattern of consistent decreases in the correlations observed when                        tional model. Correlations between criterion variables and the
+the method factor was introduced. For example the correlation                            Facebook scales were found to be either equivalent or slightly
+between FBI and Trust variables decreased from .45 to .36 and the                        stronger when the method factor was controlled (compare corre-
+correlation between FBI and Disclosure measures dropped from .57                         lation coefﬁcients for columns 1 and 2 of Table 5). Across all 20
+to .51 when the method factor was included. Amongst the mea-                             correlations with unbalanced measures, the strength of relations
+sures of Facebook use, this decline in correlations was universal. On                    using the method factor model was signiﬁcantly stronger than that
+average, correlations between measures in the method factor                              of the traditional AD model (b ¼ .01, s.e. ¼ .005, p ¼ .01, Table 3).
+model were only 83% as large as corresponding correlations in the                        These results provide evidence that methodological bias was
+traditional model. Further a linear mixed model revealed that the                        reducing the validity of the Facebook scales.
+differences in correlations between models were statistically sig-
+niﬁcant (b ¼ .06, s.e. ¼ .01, p < .001, Table 3). This suggests that                    4.4. The item-speciﬁc alternative
+correlations across measures were inﬂated by methodological bias.
+    Results comparing Facebook scales with the two covariate scales                         When IS measures were used in place of the AD measures, the
+across models provided additional evidence that this bias was                            inﬂuence of controlling for a method factor dropped precipitously.
+indeed acquiescence. Correlations between the Facebook measures                          In contrast with overstated correlations between scales and
+and the unbalanced scale measuring social capital behaved in a                           diminished validity revealed by the method factor for the AD
+manner similar to those amongst the Facebook scales; weaker                              measures, the use of a method factor with the IS measures revealed
+correlations were observed when a method factor was controlled                           smaller inﬂations in the reliability of these measures and no
+(Table 4, row 5). This indicates that decreased correlations were not                    apparent inﬂuence on their validity. Factor loadings for the IS
+
+Table 4
+Correlations between latent variables across models.
+                                                        O. Kuru, J. Pasek / Computers in Human Behavior 57 (2016) 82e92                                                 89
+
+Table 5
+Correlations with social network criterion variables.
+
+                                                            Agreeedisagree (AD)           AD with method factor           Itemespeciﬁc (IS)         IS with method factor
+
+  Number of Friends                 FBI                      .14**                         .16**                           .24**                     .24**
+                                    Trust                   -.02                          -.01                            -.06                      .07
+                                    Self-disclosure          .11*                          .13*                            .16y                      .16y
+                                    Intrusion                .17**                         .19***                          .26*                      .26*
+                                    Social capital           .19***                        .22***                          .22*                      .22*
+                                    Self-esteem             -.02                          -.02                             .03                       .03
+  Time Spent on Facebook            FBI                      .53***                        .54***                          .66***                    .66***
+                                    Trust                    .17*                          .17*                            .31***                    .29**
+                                    Self-disclosure          .30***                        .32***                          .45***                    .44***
+                                    Intrusion                .38***                        .40***                          .61***                    .60***
+                                    Social capital           .19***                        .20***                          .18*                      .16y
+                                    Self-esteem              .01                           .01                            -.02                      .02
+  Frequency of Use                  FBI                      .60***                        .62***                          .77***                    .78***
+                                    Trust                    .11y                          .11y                            .22*                      .22*
+                                    Self-disclosure          .27***                        .28***                          .50***                    .51***
+                                    Intrusion                .38***                        .40***                          .58***                    .60***
+                                    Social capital           .28***                        .28***                          .29**                     .29*
+                                    Self-esteem              .04                           .04                             .06                       .05
+  Accessibility of Facebook         FBI                      .15**                         .15**                           .22**                     .22*
+                                    Trust                    .11*                          .11y                            .16*                      .16y
+                                    Self-disclosure          .16***                        .16**                           .24*                      .24*
+                                    Intrusion                .15**                         .15**                           .11                       .11
+                                    Social capital           .11*                          .11*                            .11                       .11
+                                    self-esteem              .11*                          .11*                            .05                       .06
+  Overall Average                                            .226                          .235                            .317                      .317
+
+Note. Averages were computed as the average of the absolute values for all correlations in each model. *** p<.001, ** p<.01, * p<.05, y p<.10, two-tailed.
+
+measures also diminished when a method factor was controlled                              was higher for the AD (2849) model than the IS (2438) model,
+(b ¼ .03, s.e. ¼ .002, p < .001; Table 3), providing evidence that                       which suggests better overall ﬁt for the IS models. However these
+some methodological consistencies between items remained.                                 signiﬁcance tests of the model differences are not conclusive.
+Notably, this bias was slightly smaller than the bias observed for the                        There is some suggestive evidence that the IS model ﬁts its data
+AD measures and the loadings on the method factor were less                               better than the AD model. In particular, factor loadings in the IS
+substantive (averaging .14 instead of .21; Table 2). Model ﬁts in                         model e although lower than in the AD model (b ¼ .06, s.e. ¼ .01,
+Table 2 (columns 3 and 4) reﬂected this trend. Slight improvements                        p < .001; Table 3) e were not distinguishable from the method
+were apparent when going from the IS model to the IS model with                           factor AD model (b ¼ .01, s.e. ¼ .01, p ¼ .28; Table 3). These results
+method factor. A nested model comparison showed that differences                          are in line with H4, that the IS measures should perform more
+between the ﬁts for the simple model (c2(887) ¼ 2144) and method                          consistently than the AD measures.
+factor model (c2(886) ¼ 2049) were statistically signiﬁcant (df ¼ 1,                          Similarly, the IS measures strongly outperformed the AD mea-
+p < .001), indicating that IS measures may not be immune to                               sures in terms of criterion validity. Correlations linking the IS
+methodological effects. Further, controlling for methodological                           measures with criterion variables were, on average, .09 stronger
+similarity resulted in a decrease in correlations between similarly                       than identical correlations for the AD measures (s.e. ¼ .02, p < .001;
+measured constructs (b ¼ .05, s.e. ¼ .008, p < .001; Table 3).                           Table 3). For example, relations between FBI (excluding the number
+Hence, it appears that some methodological consistency exists                             of friends item as asked in the traditional version of this scale) and
+across the IS measures as well, though this was smaller than for the                      respondents' reported number of friends was only .14 with the AD
+AD measures.                                                                              measures and was .24 with item-speciﬁc measures. In total, 18 out
+    Despite evidence of a method factor for the IS measures, con-                         of 20 criterion variable correlations were stronger with the IS
+trolling for this method factor did not yield the same improvements                       measures, indicating a consistent measurement advantage. This
+in criterion validity. In contrast with the AD measures, there was no                     improvement was also apparent when comparing the method
+change in the average correlations linking Facebook scales with                           factor model for the AD measures with the IS measures as IS
+social network criterion variables when the method factor was                             measures had stronger correlations with criterion variables
+controlled (b ¼ .00, s.e. ¼ .003, p ¼ .99). Hence, methodological bias                    (b ¼ .08, s.e. ¼ .01, p < .001; Table 3). Hence, criterion validity tests
+for IS measures, though apparently present, did not appear to have                        presented some evidence that the IS measures were less sensitive
+been as problematic as those of agreeedisagree scales.                                    to methodological bias than the AD measures.
+
+4.5. Comparing AD and IS models                                                           5. Discussion
+
+    Because AD and IS models were conducted on different sub-                             5.1. Summary of results and implications
+samples (experimental conditions), model ﬁts are not directly
+comparable between these two conditions. These differences thus                               This study presents a ﬁrst assessment of the potential that
+could not be directly tested for signiﬁcance in a nested model. To                        acquiescence bias may be important in scales measuring Facebook
+circumvent this challenge, a Monte Carlo simulation was used to                           use. All hypotheses were fully or mostly supported. Overall, results
+test whether going from AD to IS improved model ﬁts signiﬁcantly.                         indicated that acquiescence-prone questions artiﬁcially inﬂated the
+This nonparametric simulation indicated that the difference be-                           reliability of measures while simultaneously understating the val-
+tween AD and IS chi-squares was not signiﬁcant, however it did                            idity and predictive capacity of these scales. Collectively, the results
+approach signiﬁcance (p < .07). For details of this procedure please                      suggest that acquiescence is an important problem in Facebook
+refer to Online Appendix G. Additionally the AIC model ﬁt index                           measurement with the potential to consistently distort research
+90                                                     O. Kuru, J. Pasek / Computers in Human Behavior 57 (2016) 82e92
+
+
+conclusions about the social network site and its correlates. We also                    not technically eliminate the bias. These scales function by turning
+found that, aside from statistical correctives and balanced scales,                      acquiescence into a sort of stochastic error, whereby serial-
+item-speciﬁc (IS) response scales may provide a low-effort strategy                      acquiescers receive middling scores on the scale regardless of
+for avoiding potential confounds.                                                        their true attitudes (Billiet & McClendon, 2000; Pasek & Krosnick,
+    In particular, the current results indicate that the agreeedis-                      2010).
+agree (AD) questions that dominate contemporary scholarship                                  In general, we think that it makes more sense to attempt to
+should not be preferred. These questions appear to result in inﬂated                     eliminate the largest biases with item-speciﬁc measures as
+factor loadings for latent constructs, artiﬁcially high reliability                      opposed to using measures with a known bias. And our evidence
+scores, and induced correlations between Facebook use and other                          suggests that methodological biases with these measures are both
+constructs that use similar measurement scales. Our results largely                      smaller than those of the AD method and less concerning in their
+replicate evidence from other assessments of agreeedisagree                              relations with criterion measures. We thus primarily recommend
+questions that reveal similar biases (Saris et al., 2010).                               that future researchers design their studies with item-speciﬁc
+    In addition to ﬁnding indications of a pervasive bias, the current                   measures so that methodological biases are less likely to be
+study compares evidence for three major approaches for mitigating                        pernicious.
+the errors attributable to acquiescence. These include the use of                            Among statistical correctives, method factor modeling provides
+balanced scales (Cloud and Vaughan, 1970), method factors in                             the most efﬁcient approach to eliminating acquiescence response
+structural equation models (MacKenzie & Podsakoff, 2012), and the                        bias. Its drawback is that it is relatively difﬁcult to apply to many
+use of an alternative set of response options (IS scales) that have                      research settings. Speciﬁcally, a study needs to use a structural
+been theorized to avoid methodological biases (Fowler, 1995; Saris                       equation model to employ a method factor effectively. An alterna-
+et al., 2010). Evidence for the validity of all three approaches was                     tive procedure called ipsatization can sometimes provide similar
+apparent. As expected, the balanced scale used in the study was not                      mitigation, but is more sensitive to measurement challenges (see
+inﬂuenced by the introduction of a method factor, suggesting that                        Online Appendix H).
+this method indeed avoided systematic bias. Models controlling for                           Collectively, these approaches provide a solid foundation for
+a method factor also behaved as expected with regard to factor                           improving self-report measures in social media studies. As should
+loadings and correlations, indicating that this strategy was also                        be apparent, no method is guaranteed to eliminate all sources of
+effective at identifying and mitigating some of the biases due to                        error. And researchers do not have the option of correcting issues at
+acquiescence. And the IS measures appeared less prone to meth-                           the design stage if they are using secondary data. In general,
+odological biases in the ﬁrst place. Collectively, these results show                    however, we believe that attempts to prevent acquiescence
+that we should not ignore the presence of acquiescence bias in our                       response bias are likely to be more effective than post-hoc cor-
+Likert scales and that we can easily implement a variety of cor-                         rections. Additionally considering the pros and cons of each
+rectives that can limit the errors that these scales produce.                            method in Table 6 in relation to speciﬁc research design (experi-
+                                                                                         ment vs survey), sampling (telephone, online, mobile phone), and
+                                                                                         analysis (structural models, analysis of variance, multiple regres-
+5.2. The toolkit for better social media survey measurement                              sion etc.) plans would also be important at the design stage of
+                                                                                         studies.
+    There are two types of approaches that researchers can use to
+mitigate acquiescence response bias. The ﬁrst seeks to avoid bias                        5.3. Limitations and future research
+through study design. This includes balancing scales as well as an
+approach that relies on “item-speciﬁc” measures that are less prone                          Our evidence in favor of IS measures is not conclusive. Particu-
+to acquiescence. The second is an attempt to statistically adjust for                    larly, we ﬁnd results suggesting that the IS versions of measures are
+it where problematic questions have been used. This approach in-                         not free from all method biases. Although assessments with these
+cludes method factor models and ipsatization.13 For obvious rea-                         measures indicated no change in criterion validity when method
+sons, we believe it is better to avoid these biases in the ﬁrst place                    biases were eliminated, the presence of methodological consis-
+than to need to statistically correct for them. Even the best statis-                    tency in these measures remains a potential concern and an
+tical corrections come at the cost of some loss of information about                     important subject for future research. Indeed, the presence of this
+the construct of interest. In the next few paragraphs, we discuss                        bias may explain some quizzical early results on the use of item-
+some of the advantages and disadvantages to each approach, which                         speciﬁc measures as a means to address acquiescence elsewhere
+are also summarized in Table 6.                                                          (cf. Saris et al., 2010).
+    When researchers have the chance to design scales, at a mini-                            An additional concern is that the method factors we observe for
+mum, they should attempt to create balanced measures. These                              the AD measures may not solely index acquiescence bias. Including
+measures limit the potential for acquiescence and other method                           the covariate measures of self-esteem and social capital should
+biases to undermine inferential statistics (Saris et al., 2010).                         have helped to isolate measurement similarities, but the bias we
+Creating these scales is often relatively painless. Researchers can                      observe could nonetheless represent positivity of the question or
+often reverse an item and ask a similar question about that reversed                     non-differentiation and satisﬁcing for similarly presented items
+item. In some cases, however, the wording may become awkward;                            (MacKenzie & Podsakoff, 2012). Importantly, the use of latent var-
+it is no small feat to reverse, “Facebook is part of my everyday ac-                     iables with SEM ensures that we are only examining the shared
+tivity” such that “strongly agree” would be associated with less use.                    variance across items and are not simply overwhelming a few
+Balanced scales have the advantage of undermining relations be-                          negatively worded items by averaging them with a large number of
+tween acquiescence and the latent variable of interest, but they do                      positively worded items. Nonetheless, it would be valuable for
+                                                                                         future studies to unpack the speciﬁc sources of methodological bias
+                                                                                         in both the AD and IS measures. Of particular interest is the role of
+ 13
+    Aside from these, another less-used procedure, ipsatization correction, as           personality differences such as agreeableness and how they might
+shown in Online Appendix H reduced the inﬂation in reliability measures stemming
+from acquiescence, and we can be conﬁdent this procedure removed acquiescence
+                                                                                         play out in acquiescent responding in the context of social media
+impact because we do not see a similar drop in reliability for the balanced scale in     surveys.
+our analysis.                                                                                Another limitation was a direct product of attempts to match the
+                                                   O. Kuru, J. Pasek / Computers in Human Behavior 57 (2016) 82e92                                                     91
+
+Table 6
+Comparing remedies against acquiescence in social media measurement.
+
+ Method          Acquiescence approach                    Pros                                   Cons
+
+ Likert scale   Potential for considerable acquiescence   Easily adapted to new measures of      Inﬂates and conﬂates the statistical ﬁndings; impact on validity of
+    (doing      bias                                      social media; no extra work            Facebook scales
+    nothing)
+ Balanced Scale Acquiescence bias canceled out;           Relatively easy to apply at design stage Acquiescent respondents scale scores biased towards midpoint; hard to
+                acquiescers placed at midpoint            of studies                               apply to some Facebook use questions (reversed wordings can be
+                                                                                                   awkward)
+ Item-Speciﬁc  Acquiescence is not possible as            Taps at the key construct of interest; Sometimes difﬁcult to determine what the key construct is; must be
+    Scales     agreement and disagreement are not         eliminates bias at the source            implemented at design stage
+               response options
+ Method Factor Acquiescence bias variance is taken out    Great for SEM analysis; targeted       Hard to employ for analytical procedures that do not use SEM e which
+                                                          measurement and removal of             is not common in Facebook studies
+                                                          acquiescence bias
+ Ipsatization   Acquiescence bias averaged out            Easy to control for acquiescence and   Consistent measurement of items is required, which may not always be
+    (Online                                               apply to any analytical procedure      easy for Facebook scales; can over-control when measures are not
+    Appendix H)                                                                                  balanced
+
+
+IS formats with the original scales. The current study prized                         other potential sources of bias in social media measurement.
+equivalent forms that remained loyal to the original meaning of the
+scales instead of perfecting the IS versions that were developed for                  6. Conclusion
+experimental purposes. This preference meant that the IS scales did
+not always include optimal wording or perfect matches between                             Social media measurement extensively relies on survey research
+the question stem and the response categories. Ideally, IS questions                  and this means that traditional self-report problems can also in-
+e like all other survey measures e should be designed to optimize                     ﬂuence social media research (Kuru & Pasek, in press; Junco, 2013).
+principles of survey measurement in all domains (Pasek & Krosnick,                    The current study focused on one such problem in order to
+2010; Schuman & Presser, 1981). More research on how to best                          demonstrate the systematic effects of even a small word choice and
+formulate item-speciﬁc responses would also serve to aide others                      psychological tendency during survey response. We ﬁnd evidence
+hoping to avoid all sorts of measurement biases. We thus recom-                       that the Facebook literature may be prone to just such a bias. At-
+mend that researchers develop item-speciﬁc measures for their                         tempts to correct for acquiescence bias using method factors and IS
+own scales that prioritize measurement of the key constructs of                       response options show that there is a considerable and consistent
+interest rather than adopting the speciﬁc wordings used here.                         impact of acquiescence and that it could be controlled for or pre-
+    Researchers might imagine that the effects of systematic biases                   vented by balanced scales, method factors, and item-speciﬁc
+such as acquiescence in social media scholarship are only marginal,                   question wordings.
+in that they are unlikely to undermine our conclusions when we                            In understanding and quantifying the social media experiences
+ﬁnd large effects. This is indeed true, but we contend that it misses                 of users, and in moving toward exploring causal mechanisms, it will
+the point. For one, the presence of this bias is likely to occlude our                be crucial to improve our measurement strategies. This requires
+assessments of small but important correlates. For another, it can                    social media researchers to pay serious attention to measurement
+introduce major challenges for factor analysis, when differing sets                   and to employ toolkits against response biases such as acquies-
+of measures will share more variance than they should, by stacking                    cence. Overall results indicated that item speciﬁc questions had
+measurement of similar concepts with additional shared variance                       better measurement properties than acquiescence-prone
+due to acquiescence. Further, the biases we observe are likely to                     agreeedisagree measures. Indeed we ﬁnd strong evidence of
+compound one-another when we conduct meta-analyses, large                             acquiescence bias for some the most commonly used Facebook
+national surveys, and ﬁeld experiments within the social network                      measures. More research is needed to establish the importance and
+sites (like those conducted by Facebook's internal data science                       consequences of eliminating such systematic variance in Facebook
+research team) or when we incorporate measures into covariance-                       research and for including IS question formats into the anti-
+based models such as SEM. In this manner, even a small acquies-                       acquiescence toolkit composed of balanced scales, post-hoc
+cence bias could lead to a large misinterpretation when aggregated.                   method factor statistical corrections or standardization procedure.
+    Of course, acquiescence is not the only bias that could skew our
+understanding of social media measurement. And it is likely that                      Acknowledgments
+other methodological biases are operating in our measures and
+may be pernicious. Our focus on acquiescence should not minimize                         Funding for this project came from a Winthrop B. Chamberlain
+the relevance of other biases, such as social desirability bias,                      Graduate Research Fellowship to O.K. by the Department of
+straightlining, or random responding most of which lead to sys-                       Communication Studies at the University of Michigan.
+tematic over-reporting. In this regard, these ﬁndings speak to
+Junco's (2013) comparison of self-report and behavioral data                          Appendix A. Supplementary data
+regarding time spent on Facebook as well. Although open-ended
+questions of time-spent do not have a structure that would                               Supplementary data related to this article can be found at http://
+trigger acquiescence bias, similar over-reporting biases were                         dx.doi.org/10.1016/j.chb.2015.12.008.
+documented in the social media measures (Junco, 2013). But unlike
+many of these other forms of bias, assessing and correcting for                       References
+acquiescence is relatively easy. Eliminating agreeedisagree
+response options obviates our concerns about this bias, and we can                    Bagozzi, R. P. (1984). A prospectus for theory construction in marketing. Journal of
+therefore improve our measures at relatively little cost. And there is                   Marketing, 48(1), 11e29. http://doi.org/10.2307/1251307.
+                                                                                      Baumgartner, H., & Steenkamp, J.-B. E. M. (2001). Response styles in marketing
+little reason to think that a change to item-speciﬁc questions would                     research: a cross-national investigation. Journal of Marketing Research, 38(2),
+make other biases worse. Future research should continue to assess                       143e156.
+92                                                       O. Kuru, J. Pasek / Computers in Human Behavior 57 (2016) 82e92
+
+Bentler, P. M. (1990). Comparative ﬁt indexes in structural models. Psychological              http://doi.org/10.1002/acp.2350050305.
+     Bulletin, 107(2), 238.                                                                Krosnick, J. A. (1999). Survey research. Annual Review of Psychology, 50, 537e567.
+Bentler, P. M., & Bonett, D. G. (1980). Signiﬁcance tests and goodness of ﬁt in the        Krosnick, J. A., & Alwin, D. F. (1987). An evaluation of a cognitive theory of response-
+     analysis of covariance structures. Psychological Bulletin, 88(3), 588e606. http://        order effects in survey measurement. Public Opinion Quarterly, 51(2), 201e219.
+     doi.org/10.1037/0033-2909.88.3.588.                                                       http://doi.org/10.1086/269029.
+Berinsky, A. J., Huber, G. A., & Lenz, G. S. (2012). Evaluating online labor markets for   Krosnick, J. A., & Fabrigar, L. R. (2001). Designing good questionnaires: Insights from
+     experimental research: Amazon.com's mechanical turk. Political Analysis, 20(3),           psychology. New York: Oxford University Press.
+     351e368. http://doi.org/10.1093/pan/mpr057.                                           Kuru, O. & Pasek, J. (in press). Comparing social media use and political engage-
+Billiet, J. B., & McClendon, M. J. (2000). Modeling acquiescence in measurement                ment: Toward a valid measurement strategy. In Richardson G. (Ed.) Social media
+     models for two balanced sets of items. Structural Equation Modeling, 7(4),                and politics: A new way to participate in the political process. Santa Barbara,
+     608e628.                                                                                  CA: ABC-CLIO.
+Bode, L. (2012). Facebooking it to the polls: a study in online social networking and      Kwon, M.-W., D'Angelo, J., & McLeod, D. M. (2013). Facebook use and social capital:
+     political behavior. Journal of Information Technology & Politics, 9(4), 352e369.          to bond, to bridge, or to escape. Bulletin of Science, Technology & Society,
+     http://doi.org/10.1080/19331681.2012.709045.                                              0270467613496767.
+Brown, P., & Levinson, S. C. (1987). Politeness: Some universals in language usage (Vol.   Leech, G. N. (1983). Principles of pragmatics. Taylor & Francis.
+     4). Cambridge University Press.                                                       Lee, E., Kim, Y. J., & Ahn, J. (2014). How do people use Facebook features to manage
+Buhrmester, M., Kwang, T., & Gosling, S. D. (2011). Amazon's mechanical turk a new             social capital? Computers in Human Behavior, 36, 440e445. http://doi.org/10.
+     source of inexpensive, yet high-quality, data? Perspectives on Psychological Sci-         1016/j.chb.2014.04.007.
+     ence, 6(1), 3e5. http://doi.org/10.1177/1745691610393980.                             Lenski, G. E., & Leggett, J. C. (1960). Caste, class, and deference in the research
+Carr, L. G. (1971). The srole items and acquiescence. American Sociological Review,            interview. American Journal of Sociology, 65(5), 463e467.
+     36(2), 287e293. http://doi.org/10.2307/2094045.                                       MacKenzie, S. B., & Podsakoff, P. M. (2012). Common method bias in marketing:
+Chan, W. (2003). Analyzing ipsative data in psychological research. Behaviormetrika,           causes, mechanisms, and procedural remedies. Journal of Retailing, 88(4),
+     30(1), 99e121. http://doi.org/10.2333/bhmk.30.99.                                         542e555. http://doi.org/10.1016/j.jretai.2012.08.001.
+Cloud, J., & Vaughau, G. M. (1970). Using balanced scales to control acquiescence.         McKnight, D. H., Choudhury, V., & Kacmar, C. (2002). Developing and validating
+     Sociometry, 33(2), 192e202. http://dx.doi.org/10.2307/2786329.                            trust measures for e-commerce: an integrative typology. Information Systems
+Cheung, G. W., & Rensvold, R. B. (2000). Assessing extreme and acquiescence                    Research, 13(3), 334e359.
+     response sets in cross-cultural research using structural equations modeling.         Mehdizadeh, S. (2010). Self-presentation 2.0: Narcissism and self-esteem on face-
+     Journal of Cross-Cultural Psychology, 31(2), 187e212. http://doi.org/10.1177/             book. Cyberpsychology, Behavior, and Social Networking, 13(4), 357e364. http://
+     0022022100031002003.                                                                      doi.org/10.1089/cyber.2009.0257.
+Costa, P. T., & MacCrae, R. R. (1992). Revised NEO personality inventory (NEO PI-R) and    Messick, S. (1991). Psychology and methodology of response styles. In Improving
+     NEO ﬁve-factor inventory (NEO FFI): Professional manual. Psychological Assess-            inquiry in social science: A volume in Honor of Lee J (pp. 161e200). Cronbach.
+     ment Resources.                                                                       Nunnally, J. C. (1978). Psychometric theory. New York: McGraw-Hill.
+Couch, A., & Keniston, K. (1960). Yeasayers and naysayers: agreeing response set as a      Park, K.-G., Han, S., & Kaid, L. L. (2012). Does social networking service usage
+     personality variable. The Journal of Abnormal and Social Psychology, 60(2),               mediate the association between smartphone usage and social capital? New
+     151e174. http://doi.org/10.1037/h0040372.                                                 Media & Society, 1461444812465927.
+Ellison, N. B., Steinﬁeld, C., & Lampe, C. (2007). The beneﬁts of facebook “Friends:”      Pasek, J., & Krosnick, J. A. (2010). Optimizing survey questionnaire design in political
+     social capital and college students' use of online social network sites. Journal of       science: Insights from psychology. In Oxford Handbook of American Elections and
+     Computer-Mediated Communication, 12(4), 1143e1168. http://doi.org/10.1111/j.              political behavior (pp. 27e50).
+     1083-6101.2007.00367.x.                                                               Podsakoff, P. M., MacKenzie, S. B., Lee, J.-Y., & Podsakoff, N. P. (2003). Common
+Ellison, N. B., Steinﬁeld, C., & Lampe, C. (2011). Connection strategies: social capital       method biases in behavioral research: a critical review of the literature and
+     implications of Facebook-enabled communication practices. New Media & So-                 recommended remedies. Journal of Applied Psychology, 88(5), 879e903. http://
+     ciety, 13(6), 873e892. http://doi.org/10.1177/1461444810385389.                           doi.org/10.1037/0021-9010.88.5.879.
+Ellison, N. B., Vitak, J., Gray, R., & Lampe, C. (2014). Cultivating social resources on   Rosenberg, M. (1965). Society and the adolescent self-image. Retrieved from http://
+     social network sites: Facebook relationship maintenance behaviors and their               psycnet.apa.org/journals/ort/36/3/560.pdf%26productCode¼pa.
+     role in social capital processes. Journal of Computer-Mediated Communication,         Ross, C. K., Steward, C. A., & Sinacore, J. M. (1995). A comparative study of seven
+     19(4), 855e870.                                                                           measures of patient satisfaction. Medical Care, 33(4), 392e406.
+Elphinston, R. A., & Noller, P. (2011). Time to face it! Facebook intrusion and the        Saris, W. E., Revilla, M., Krosnick, J. A., & Shaeffer, E. M. (2010). Comparing questions
+     implications for romantic jealousy and relationship satisfaction. Cyberp-                 with agree/disagree response options to questions with item-speciﬁc response
+     sychology, Behavior, and Social Networking, 14(11), 631e635. http://doi.org/10.           options. In In survey research methods (Vol. 4, pp. 61e79).
+     1089/cyber.2010.0318.                                                                 Schriesheim, C. A., & Hill, K. D. (1981). Controlling acquiescence response bias by
+Fischer, R. (2004). Standardization to account for cross-cultural response bias A              item reversals: the effect on questionnaire validity. Educational and Psycholog-
+     classiﬁcation of score adjustment procedures and review of research in JCCP.              ical       Measurement,          41(4),       1101e1114.        http://doi.org/10.1177/
+     Journal of Cross-Cultural Psychology, 35(3), 263e282. http://doi.org/10.1177/             001316448104100420.
+     0022022104264122.                                                                     Schuman, H., & Presser, S. (1981). Questions and answers in attitude surveys. New
+Fowler, F. J. (1995). Improving survey questions: Design and evaluation (Vol. 38). Sage.       York: Academic Press.
+Greenleaf, E. A. (1992). Improving rating scale measures by detecting and correcting       Simon, H. A. (1957). Models of man; social and rational. Retrieved from http://doi.
+     bias components in some response styles. Journal of Marketing Research, 29(2),            apa.org/psycinfo/1958-00363-000.
+     176e188. http://doi.org/10.2307/3172568.                                              Steinﬁeld, C., Ellison, N. B., & Lampe, C. (2008). Social capital, self-esteem, and use of
+Hu, L., & Bentler, P. M. (1999). Cutoff criteria for ﬁt indexes in covariance structure        online social network sites: a longitudinal analysis. Journal of Applied Develop-
+     analysis: conventional criteria versus new alternatives. Structural Equation              mental Psychology, 29(6), 434e445 http://doi.org/10.1016/j.appdev.2008.07.002.
+     Modeling: A Multidisciplinary Journal, 6(1), 1e55. http://doi.org/10.1080/            Vitak, J., Zube, P., Smock, A., Carr, C. T., Ellison, N., & Lampe, C. (2011). It's compli-
+     10705519909540118.                                                                        cated: Facebook users' political participation in the 2008 election. CyberP-
+Jackson, D. N. (1959). Cognitive energy level, acquiescence, and authoritarianism.             sychology, Behavior, and Social Networking, 14(3), 107e114 http://doi.org/
+     Journal of Social Psychology, 49(1), 65e69.                                               10.1089/cyber.2009.0226.
+Jarvenpaa, S. L., Tractinsky, N., & Saarinen, L. (1999). Consumer trust in an internet     Weijters, B., Geuens, M., & Schillewaert, N. (2010). The individual consistency of
+     store: a cross-cultural validation. Journal of Computer-Mediated Communication,           acquiescence and extreme response style in self-report questionnaires. Applied
+     5(2), 0e0 http://doi.org/10.1111/j.1083-6101.1999.tb00337.x.                              Psychological       Measurement,        34(2),    105e121.      http://doi.org/10.1177/
+Junco, R. (2012). Too much face and not enough books: the relationship between                 0146621609338593.
+     multiple indices of Facebook use and academic performance. Computers in               Welkenhuysen-Gybels, J., Billiet, J., & Cambre     , B. (2003). Adjustment for acquies-
+     Human Behavior, 28(1), 187e198. http://doi.org/10.1016/j.chb.2011.08.026.                 cence in the assessment of the construct equivalence of Likert-Type score items.
+Junco, R. (2013). Comparing actual and self-reported measures of Facebook use.                 Journal of Cross-Cultural Psychology, 34(6), 702e722. http://doi.org/10.1177/
+     Computers in Human Behavior, 29(3), 626e631. http://doi.org/10.1016/j.chb.                0022022103257070.
+     2012.11.007.                                                                          Williams, D. (2006). On and off the Net: scales for social capital in an online Era.
+Kline, R. B. (2005). Principles and practice of structural equation modeling, 2005. New        Journal of Computer-Mediated Communication, 11(2), 593e628. http://doi.org/10.
+     York, NY: Guilford.                                                                       1111/j.1083-6101.2006.00029.x.
+Knowles, E. S., & Condon, C. A. (1999). Why people say “yes”: a dual-process theory        Williams, L. J., Gavin, M. B., & Williams, M. L. (1996). Measurement and non-
+     of acquiescence. Journal of Personality and Social Psychology, 77(2), 379e386.            measurement processes with negative affectivity and employee attitudes.
+     http://doi.org/10.1037/0022-3514.77.2.379.                                                Journal of Applied Psychology, 81(1), 88e101. http://doi.org/10.1037/0021-9010.
+Krasnova, H., Kolesnikova, E., & Guenther, O. (2009). “It Won't happen to me!”: self-          81.1.88.
+     disclosure in online social networks. Amcis 2009 Proceedings, 343.                    Wilson, R. E., Gosling, S. D., & Graham, L. T. (2012). A review of facebook research in
+Krasnova, H., Spiekermann, S., Koroleva, K., & Hildebrand, T. (2010). Online social            the social sciences. Perspectives on Psychological Science, 7(3), 203e220. http://
+     networks: why we disclose. Journal of Information Technology, 25(2), 109e125.             doi.org/10.1177/1745691612442904.
+     http://doi.org/http://dx.doi.org.proxy.lib.umich.edu/10.1057/jit.2010.6.              Wise, L. Z., Skues, J., & Williams, B. (2011). Facebook in higher education promotes
+Krosnick, J. A. (1991). Response strategies for coping with the cognitive demands of           social but not academic engagement. Changing demands, changing directions.
+     attitude measures in surveys. Applied Cognitive Psychology, 5(3), 213e236.                Proceedings Ascilite Hobart, 1332e1342.
+

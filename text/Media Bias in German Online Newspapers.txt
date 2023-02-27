@@ -1,0 +1,382 @@
+                           Media Bias in German Online Newspapers
+
+                                                 Alexander Dallmann                                     Florian Lemmerich
+                                             Data Mining and Information                                Computational Social
+                                                  Retrieval Group                                          Science Group
+                                               University of Würzburg                                 GESIS - Leibniz Institute for
+                                           dallmann@informatik.uni-                                      the Social Sciences
+                                                wuerzburg.de        florian.lemmerich@gesis.org
+                                                 Daniel Zoller            Andreas Hotho
+                                             Data Mining and Information                          Data Mining and Information
+                                                  Retrieval Group                                       Retrieval Group
+                                               University of Würzburg                             University of Würzburg & L3S
+                                               zoller@informatik.uni-                                   Research Center
+                                                    wuerzburg.de                                      hotho@informatik.uni-
+                                                                                                          wuerzburg.de
+
+ABSTRACT                                                                                              media, online newspapers are potentially affected by media
+Online newspapers have been established as a crucial infor-                                           bias. This describes non-neutral reporting of journalists and
+mation source, at least partially replacing traditional media                                         other news producers, e.g., with respect to specific opinions
+like television or print media. As all other media, online                                            or political parties. Identifying and recognizing biases in
+newspapers are potentially affected by media bias. This                                               media is crucial for an open society due to the large influence
+describes non-neutral reporting of journalists and other news                                         of the news media as the fourth estate. Additionally, making
+producers, e.g., with respect to specific opinions or political                                       biases transparent can also have practical implications: it
+parties. Analysis of media bias has a long tradition in politi-                                       allows journalists and publishers to assess their own work ob-
+cal science. However, traditional techniques rely heavily on                                          jectively, and readers to interpret statements of that source in
+manual annotation and are thus often limited to the analy-                                            the correct context or choose an online newspaper according
+sis of small sets of articles. In this paper, we investigate a                                        to their own political preference. Analysis of media bias has a
+dataset that covers all political and economical news from                                            long tradition in political science. However, many traditional
+four leading German online newspapers over a timespan of                                              techniques require access to a wide range of newspapers and
+four years. In order to analyze this large document set and                                           rely heavily on manual annotation and are therefore often
+compare the political orientation of different newspapers, we                                         limited to the analysis of small sets of articles and thus focus
+propose a variety of automatically computable measures that                                           on small time spans, e.g., election campaigns. This paper
+can indicate media bias. As a result, statistically significant                                       investigates how online newspapers that are freely available
+differences in the reporting about specific parties can be                                            on the web can be analyzed automatically with respect to
+detected between the analyzed online newspapers.                                                      potential bias towards political parties.
+                                                                                                         In this paper, we are not interested in the overall political
+                                                                                                      orientation of online news media as a whole, but focus on
+Categories and Subject Descriptors                                                                    a comparative analysis in order to identify relative biases
+H.4 [Information Systems Applications]: Miscellaneous                                                 between online newspapers. In that direction, we focus on
+                                                                                                      the German online newspaper landscape. We collected a
+                                                                                                      large dataset composed of all articles published in politics
+General Terms                                                                                         and economics sections of four leading online newspaper in
+media analysis, computational social science                                                          Germany, that is, faz.net, spiegel.de, taz.de, and zeit.de, in a
+                                                                                                      four-year period.
+1.      INTRODUCTION                                                                                     Thus, the contribution of this paper is twofold: First, we
+  Online newspapers have been established as a crucial infor-                                         discuss several measures that allow us to identify potential
+mation source in modern societies, at least partially replacing                                       bias towards a political party in online newspapers in an
+traditional media like television or print media. As all other                                        automatic manner. This not only enables the analysis of
+                                                                                                      large document sets with reasonable costs, but also grants
+Permission to make digital or hard copies of all or part of this work for personal or                 results that are not influenced by the subjectivity of human
+classroom use is granted without fee provided that copies are not made or distributed
+for profit or commercial advantage and that copies bear this notice and the full citation
+                                                                                                      annotations. Second, we show for our exemplary dataset
+on the first page. Copyrights for components of this work owned by others than the                    what biases four leading German online newspapers exposed
+author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or                in the analyzed time frame in comparison to each other. In
+republish, to post on servers or to redistribute to lists, requires prior specific permission         that regard, we can identify statistically significant differences
+and/or a fee. Request permissions from Permissions@acm.org.                                           in the coverage of different parties among the analyzed online
+HT '15, September 1–4, 2015, Guzelyurt, Northern Cyprus.                                              newspapers.
+Copyright is held by the owner/author(s). Publication rights licensed to ACM.
+ACM 978-1-4503-3395-5/15/09 ...$15.00.
+                                                                                                         The rest of the paper is structured as follows: Section 2
+DOI: http://dx.doi.org/10.1145/2700171.2791057.                                                       reviews related work. Then, Section 3 introduces a vari-
+
+
+
+
+                                                                                                133
+ety of metrics that indicate potential bias towards political             3. ANALYSIS
+parties in online newspapers. Next, Section 4 presents the                  Measuring bias in printed media is a long-term research
+utilized datasets. Section 5 reports on experimental results.             topic in political science. However, established methods often
+Afterwards, Section 6 discusses limitations of the proposed               involve manual inspection of documents, and are difficult to
+approach. Finally, Section 7 concludes the paper with a                   apply automatically on a large corpus. In addition, existing
+summary and an outlook on future research directions.                     methods are often tailored to the two-party system as it is
+                                                                          established in the United States, but are less suited to a
+2.    RELATED WORK                                                        multi-party system as it exists, e.g., in Germany. Therefore,
+   The analysis of media bias is a well developed and active              we present in the following a set of metrics that indicate
+research field in political sciences, but traditionally relies            possible bias of newspapers towards certain political parties
+heavily on manual annotation of articles. This not only                   in our corpus of German online newspapers. We start by
+makes analytical studies very costly, but also introduces                 introducing some notations.
+another form of bias through the annotators. Therefore,
+“text as data”, i.e., the automated analysis of large text                3.1 Notation
+corpora, has been recognized as an useful tool in political                  The corpus for each online newspaper N = {dN,1 , . . . , dN,k }
+science in the last years, cf. [3]. In that direction, large sets         consists of a set of documents (articles). For each document,
+of parliamentary speeches [11], the political orientation of              the title T (d), the full text F (d), and a set of keywords K(d)
+parties [8, 12, 9], party classification of speeches [17] and             from the HTML header of the online article are available. If
+the distribution of topics in congressional bills [5] have been           a title T (d) contains a subsequence s of one or more words,
+investigated. In contrast to these approaches, this paper                 then this is denoted in this paper as s v T (d) (or s v F (d),
+focuses on the large-scale analysis of online newspapers.                 s v K(d) analogously). Furthermore, the length of the
+   Literature on media bias analysis distinguishes between                respective article in number of words is denoted by |F (d)|.
+three types of media bias, that is, gatekeeping bias, coverage               We focus our analysis on a set of political parties P =
+bias and statement bias [1]. Gatekeeping bias describes the               {P1 , P2 , . . . , Pp }. Since parties are commonly referenced by
+selection of stories out of the potential stories and is gen-             their acronym in Germany (e.g., ”FDP” is the prevalent no-
+erally hard to quantify. Coverage bias expresses how much                 tion for the party ”Freie Demokratische Partei”), we only con-
+space political positions (or in our case, parties) receive in            sider those acronyms. In this paper, we write the acronym of
+media. For traditional newspapers, this has been measured                 a party P as acr(P ). Furthermore, we consider for each party
+by column inches of paper covered [14], see also [1]. As                  a set of prominent party members M (P ) = {mP,1 , . . . , mP,l }.
+an alternative, also counting occurrences in the headlines                We use the notation mP,i v T (d) if the full name (first,
+has been performed for this task [13]. While counting oc-                 middle and last name) of a party member is contained in the
+currences is a tedious task to do manually for full texts of              title of an article (mP,i v F (d), mP,i v K(d) for full texts
+articles, it is easy to perform in an automatic approach as               and keywords respectively).
+advocated in this paper. Statement bias denotes how an
+author’s own opinion is woven within a text. Traditionally,               3.2 Coverage Bias Metrics
+this is often handled by manual annotation of whether a text                 The first group of metrics is concerned with the coverage
+is “favorable“ to a party or not. As one of many examples,                political parties receive. These measures should be inter-
+Ho and Quinn investigated the political position of media                 preted in comparison to the values for other political par-
+in the US party system by labeling and analyzing the agree-               ties. Therefore we apply standard normalization procedures.
+ment of editorials with Supreme Court decisions. For their                Given any raw measure Mx (P, N ), the normalized measure
+study they employed a team of 14 law students and manually                M
+                                                                          d                                         1
+                                                                             x (P, N ) is computed as Mx (P, N ) = Z · Mx (P, N ), with
+                                                                                                      d
+labeled 1500 editorials [7]. These efforts clearly illustrate             the normalization constant Z = P 0 ∈P Mx (P 0 , N ). Addi-
+                                                                                                              P
+the advantages of automatic approaches as proposed in this                tionally, differences between newspaper are easier to spot
+paper. Regarding automatic analysis, Groseclose and Mi-                   when only the deviation for this newspaper in comparison to
+lyo measure bias in newspaper media by first computing a                  the average values for the complete setPof newspapers N are
+score for think tanks based on the citations of Democrat or                                                        N ∈N Mx (P,N )
+                                                                                                                        d
+Republican party members. Using these scores, newspapers                  displayed: Mx (P, N ) = M   x (P, N ) −                 . Please
+                                                                                                    d
+                                                                                                                         |N|
+are then evaluated indirectly by investigating which think                note that our measures do not consider multiple occurrences
+tanks are referenced [4]. Such a method could be addition-                of acronyms or names and count every article only once.
+ally implemented to augment the analysis in our setting.
+However, results could be expected to be less significant                 3.2.1     Party as Main Article Topic
+for the German political landscape since think tanks are                    A first group of measures indicates how often a party
+mostly publicly funded and obligated to political neutrality.             appears as the main topic of an article. In that direction,
+Gentzkow and Shapiro investigate overall bias of US news-                 MT itle (P, N ) describes how often political parties appear in
+papers by determining the number of occurrences of typical                the titles of a newspaper’s articles:
+phrases (as identified by a quantitative analysis of congres-                       M title (P, N ) = |{d ∈ N : acr(P ) v T (d)}|.
+sional records) for Democratic and Republican congressman
+                                                                             Since we are analyzing a corpus of online news, each article
+in newspapers [2]. While this is related to our method for
+                                                                          is associated by its publisher with certain keywords in the
+measuring vocabulary similarity to party manifestos, unlike
+                                                                          HTML header section. These keywords can also be used to
+our work their approach is tailored to the US two-party
+                                                                          identify articles, which are directly concerned with a political
+system. Additionally, this paper uses a variety of different
+                                                                          party. The respective measure Mkeywords is computed as:
+measures for a more comprehensive picture and is focused
+on online newspapers.                                                             M keywords (P, N ) = |{d ∈ N : acr(P ) v K(d)}|.
+
+
+
+
+                                                                    134
+3.2.2     Party and Party Member Mentions
+                                                                           Table 1: Dataset overview: The number of articles
+  Further measures are concerned with the overall coverage                 (|N |), their average length (l, measured in words),
+political parties receive within the full text of the articles. In         the share of articles that mention at least one party
+that direction, we count the number of distinct articles that              (sP ) or party member (sM ) or either party or mem-
+contain a reference to a political party.                                  ber (sC ) in the full text, and the percentage of arti-
+         M F ull (P, N ) = |{d ∈ N : acr(P ) v F (d)}|.                    cles that mention a party acronym in the title (sT )
+As an extension, we do not consider references to the party                or in the keywords (sK )
+itself, but to prominent party members, i.e., all parliament                                                   .
+                                                                           N             |N |      l       sP        sM       sC       sT      sK
+members of the respective party. Then, we count the pro-                   faz.net      40,209   513.5   30.5%     24.5%    35.1%    4.1%    20.1%
+portion of articles in each newspaper that contain the exact               spiegel.de   51,560   472.1   31.7%     30.6%    37.5%    6.0%    10.0%
+name (first, middle and family name) of a prominent member.                taz.de       23,610   477.5   35.9%     27.6%    40.0%    2.5%     2.9%
+Using the exact name ensures that members are detected                     zeit.de      17,926   445.5   36.6%     35.7%    43.2%    6.8%    32.3%
+with high precision.                                                       Average      33,326   477.2   33.7 %    29.6 %   39.0 %   4.9 %   16.3 %
+
+     M F ull mem (P, N ) =
+         |{d ∈ N : (∃mP,i ∈ M (P ) : mP,i v F (d))}|.                      was formed by a conservative-liberal coalition of the parties
+                                                                           CDU, CSU and FDP, led by chancellor Angela Merkel.
+3.3 Statement Bias Metrics                                                    For the analyzed time frame we retrieved all articles that
+  The second group of metrics is designed to indicate state-               have been published in the respective politics and economics
+ment bias, i.e., (un-)favorable reporting about specific politi-           sections. We parsed the article pages and extracted the date,
+cal positions.                                                             the article title, the full text, and the keywords added by the
+                                                                           publisher as meta-information. For each part of the article,
+3.3.1     Sentiment Analysis                                               we identified mentions of the parties and party members that
+                                                                           are also members of the parliament, see also Section 3.
+   We use state-of-the art sentiment analysis for German
+                                                                              Table 1 shows dataset characteristics including the share of
+language and identify for a neighborhood, i.e., four words
+                                                                           articles that contain references to parties or party members as
+before and four words after a mentioning of a party P , the
+                                                                           defined in section 3. Overall, our dataset features more than
+mood S(N, P ). All party mentions are classified by Sen-
+                                                                           130,000 newspaper articles containing more than 62,000,000
+tiStrength [15] for a scaled sentiment strength using the full
+                                                                           words. For each of the four online newspapers more than
+text F (d) of an article. We configure SentiStrength for the
+                                                                           370 articles are available on a monthly average. However,
+syntax of the German language (negation words can occur
+                                                                           not all these articles can be easily associated with party
+after the sentiment). An overall sentiment towards a political
+                                                                           politics as the dataset also includes other articles on e.g.,
+party in a newspaper can then be computed as the sum of
+                                                                           economic topics or foreign politics. On average, only 39% of
+the individual mood ratings.
+                                                                           articles mention a party either directly or indirectly, i.e., by
+                                                                           mentioning a prominent party member. From the analyzed
+3.3.2     Vocabulary Similarity                                            news sites, zeit.de published the smallest amount of articles
+   Although party manifestos show in general a strong overlap              in the analyzed time frame, but it has the highest percentage
+in the used vocabulary, each party lays a distinct emphasis                of articles that mention a party.
+on specific ideological terms such as freedom, solidarity, en-                taz.de started adding keywords only after February 2012.
+vironment, etc., cf. [10]. Common usage of the same terms                  As a result only 2.9% of taz.de articles contain a party
+in an online newspaper and a political party can indicate a                acronym in the keyword meta-information. Also care must
+related ideology. To capture such similarities, we first de-               be taken when judging results for keywords since we found
+termine a list of keywords that specifically point at certain              that some articles are missing important keywords.
+political orientations. For each party, the number of keyword                 For vocabulary analysis, we relied on additional data
+occurrences in recent party manifestos is counted and stored               from previous research in political science: Pappi, Seher
+in a vector. Analogously, another vector then provides the                 and Kurella provide a short list of key vocabulary (such as
+number of keyword occurrences in each online newspaper.                    freedom, solidarity, etc.) including the number of mentions
+A formal measure for the vocabulary similarity between an                  in the respective election programs1 aggregated from 1990
+online newspaper and a party is then given by the cosine                   until 2009 [10].
+similarity of the corresponding vectors.
+                                                                           5. RESULTS
+4.    DATASET                                                               This section presents experimental results of the described
+   For our analysis, we utilized a large dataset consisting of             measures on the German online newspaper dataset.
+articles published on four of the leading online news sites in             5.1 Coverage Bias
+Germany, that is, faz.net, spiegel.de, taz.de, and zeit.de. We
+restrict our analysis to the time between 27th October 2009                  In the following, we present results for the measures that in-
+and 22th October 2013 covering the 17th legislative session                dicate coverage bias, cf. Section 3.2. For these measures, the
+of the German federal parliament. Six main political parties               overall values for each party and online newspaper over the
+sent members to the parliament in this time frame: the                     complete time interval are reported. In order to additionally
+conservative sister parties CDU and CSU, the liberal party                 test the statistical significance of our findings, we calculate
+FDP, the greens (Grüne), the social-democratic SPD and                    1
+                                                                             Manifestos for the CSU have been excluded, since they have
+the left-wing party Linke. The government in this time span                been identical to those of the CDU for most elections.
+
+
+
+
+                                                                     135
+Table 2: Differences in coverage: acronyms in titles.                    Table 4: Differences in coverage: acronyms in full
+                                                                         text (MF ull ).
+     (a) Articles with party acronyms in title (M title ).                    N         CDU     CSU     FDP    Grüne    Linke    SPD
+          N      CDU CSU FDP Grüne Linke SPD                              faz.net     +1.4%   +0.5%   +0.3%   +0.0%    −2.5%    +0.3%
+       faz.net    315 167 481 213     57  543                             spiegel.de   −0.1%   +1.0%   +0.7%   −1.0%    −0.2%    −0.3%
+      spiegel.de 605 296 848  355    266 1,007                              taz.de     −1.9%   −2.0%   −2.5%   +2.4%    +3.1%    +0.8%
+        taz.de    104  28 120 127     99  146                              zeit.de     +0.7%   +0.5%   +1.5%   −1.5%    −0.4%    −0.8%
+       zeit.de    224 118 381 147    90   369
+                                                                         Table 5: Differences in coverage: party members in
+  (b) Normalization over every online newspaper (M
+                                                 ctitle )                full text (MF ull mem ).
+                                                                              N         CDU     CSU     FDP    Grüne    Linke    SPD
+        N        CDU     CSU     FDP    Grüne Linke SPD                   faz.net     +3.7%   +0.2%   −0.8%   −1.4%    −1.6%    −0.0%
+     faz.net     17.7%   9.4%   27.1%   12.0% 3.2% 30.6%                  spiegel.de   +1.8%   +0.4%   +1.0%   −1.1%    −1.8%    −0.4%
+    spiegel.de   17.9%   8.8%   25.1%   10.5% 7.9% 29.8%                    taz.de     −6.5%   −0.6%   −2.3%   +4.2%    +4.3%    +0.9%
+      taz.de     16.7%   4.5%   19.2%   20.4% 15.9% 23.4%                  zeit.de     +1.0%   +0.0%   +2.1%   −1.6%    −0.9%    −0.5%
+     zeit.de     16.9%   8.9%   28.7%   11.1% 6.8% 27.8%
+     Average     17.3%   7.9%   25.0%   13.5% 8.5% 27.9%
+
+        (c) Differences in coverage using titles (Mtitle ).              5.1.2     Articles that Mention Parties
+     N        CDU      CSU       FDP     Grüne    Linke    SPD             Table 4 is obtained by counting articles that contain the
+  faz.net     +0.4%   +1.5%     +2.1%    −1.5%    −5.2%    +2.7%         party acronym in the full text. Again, faz.net favors conser-
+ spiegel.de   +0.6%   +0.9%     +0.1%    −3.0%    −0.6%    +1.9%         vative parties over the Linke in terms of overall coverage. In
+   taz.de     −0.6%   −3.4%     −5.8%    +6.9%    +7.4%    −4.5%         contrast, taz.de favors the Linke and Grüne over the con-
+  zeit.de     −0.4%   +1.0%     +3.6%    −2.4%    −1.7%    −0.1%         servative and liberal parties. zeit.de and spiegel.de display
+                                                                         slight bias towards the liberal FDP and against the Grüne.
+Table 3: Differences in coverage: acronyms in key-                          Table 5 shows results for counting articles that contain
+words (Mkeywords ).                                                      a reference to a prominent party member in the full text
+    N          CDU     CSU       FDP   Grüne Linke SPD                  (see Section 3.2.2). The obtained values support the observa-
+ faz.net      +6.1%   +1.1%     +5.5% −10.7% −2.3% +0.3%                 tions for Table 4. However, the deviations on party member
+spiegel.de    −0.5%   +1.3%     −0.8% −0.3% +1.3% −1.0%
+  taz.de      −7.5%   −2.7%     −6.2% +10.8% +1.8% +3.8%
+                                                                         level seem to be even more significant in comparison to the
+ zeit.de      +1.9%   +0.3%     +1.6% +0.2% −0.8% −3.1%                  deviations for party acronyms.
+
+                                                                         5.2 Statement Bias
+                                                                            Regarding statement bias, we first investigate results for
+all metrics on a monthly basis in the considered time span.              sentiment analysis. Table 6 shows the average scaled senti-
+With the computed values, we conduct a Student’s t-test for              ment strength (see Section 3.3.1) of all parties in each online
+a single sample for each party and online newspaper and                  newspaper. As we can observe from the table, the average
+test if the mean value is significantly different from zero. We          party scores do not deviate significantly from zero. Based
+mark the Bonferroni corrected (m = 24) significant values                on these scores, there is a slight tendency for all newspapers
+at a level of 0.05 bold in the result tables.                            to present the CDU in a slightly positive and the FDP in
+                                                                         a slightly negative way. This could be inferred from the
+5.1.1     Articles about Parties                                         fact that the party got entangled in several affairs in the
+   Table 2 shows results of analyzing party occurrences in               considered time interval. faz.net reports overall slightly more
+article titles (Mtitle ). Using this measure, we also demon-             positive about parties, in particular the conservative ones
+strate the normalization procedures. First, the overall count            CDU and CSU. However, in summary results for the senti-
+of occurrences M title is displayed in Table 2(a). Then, this            ment analysis are inconclusive. In [16] Atteveldt et al. report
+table is normalized to obtain the share of counts M   ctitle for         similar findings for Dutch newspapers. That is possibly due
+each party, see Table 2(b). Finally, the average value for               to the fact that party bias is not expressed bluntly in newspa-
+each party over all online newspapers is subtracted from the             pers, but in a more indirect way, indicating the need for more
+individual newspaper values. Thus, the displayed values show             sophisticated specialized techniques for sentiment analysis.
+how much more or less coverage compared to the average a                    Finally, results for the similarity of key vocabulary in arti-
+party got in each newspaper. Due to constraint space, results            cles and party manifestos are shown in Table 7. It can be seen
+for other measures are only reported after normalization.                that the usage of key terms for the faz.net is more similar to
+   Table 2(c) shows the differences of party mentions in article         governing coalition parties CDU and FDP than it is for other
+titles. The newspaper faz.net tends to slightly favor the                newspapers, especially compared to spiegel.de and taz.de.
+governing parties CDU, CSU and FDP to the leftist Linke                  By contrast, party manifestos of Grüne and Linke are more
+and Grüne. Results for taz.de indicate an opposite ideology.
+For the newspapers zeit.de and spiegel.de, the picture is less
+clear since there are few significant findings. This indicates           Table 6: Average sentiment scale for every online
+that these newspapers are ideologically in the center of the             newspaper and party.
+analyzed spectrum of online newspapers. These findings are                    N       CDU CSU FDP Grüne Linke SPD
+in line with the public perception of these newspapers.                    faz.net   0.002 0.067 −0.013 0.002    0.005 0.014
+   Party mentions in HTML keywords, see Table 3, show over-               spiegel.de −0.026 0.028 −0.057 0.015 −0.065 0.021
+all similar results, but with unusual outliers, i.e., mentions              taz.de   −0.018 0.041 −0.034 −0.020 −0.014 0.002
+of the party Grüne.                                                       zeit.de −0.023 0.066 −0.061 −0.014 −0.048 0.011
+
+
+
+
+                                                                   136
+                                                                           In the future we want to extend our work in different di-
+Table 7: Similarity of the distribution of key vocab-                    rections. First, we will enlarge our dataset by adding more
+ulary between online newspaper articles and party                        news sites and by considering longer time intervals. Fur-
+manifestos (possible range 0 to 1).                                      thermore, we aim at developing more sophisticated measures
+             N        CDU     FDP     Grüne   Linke   SPD
+          faz.net     0.863   0.853   0.731    0.794   0.838
+                                                                         by integrating more data sources such as political speeches.
+         spiegel.de   0.808   0.802   0.756    0.831   0.833             Additionally, while this paper focused on bias towards politi-
+           taz.de     0.756   0.774   0.759    0.835   0.802             cal parties, similar techniques could be used to study other
+          zeit.de     0.846   0.842   0.787    0.845   0.864             types of biases, for example, gender bias or bias against racial
+                                                                         minorities. Finally, a comparative analysis of newspaper sites
+                                                                         with social media sources such as Twitter is an interesting
+dissimilar. Also for other newspapers interesting results can            topic of future work.
+be observed: for taz.de, large distances to CDU and FDP
+vocabularies are evident. Results for zeit.de show higher sim-
+ilarities to the left parties SPD, Grüne, and Linke than other          8. REFERENCES
+newspapers. Vocabulary used in party manifestos of Grüne is              [1] D. D’Alessio and M. Allen. Media bias in presidential
+                                                                              elections: a meta-analysis. Journal of communication,
+most dissimilar to articles in the analyzed online newspapers.                50(4):133–156, 2000.
+Overall, the results point in a similar direction about the               [2] M. Gentzkow and J. M. Shapiro. What drives media slant?
+political orientation of online newspapers as findings with                   Evidence from US daily newspapers. Econometrica,
+coverage bias measures.                                                       78(1):35–71, 2010.
+                                                                          [3] J. Grimmer and B. M. Stewart. Text as data: The promise
+                                                                              and pitfalls of automatic content analysis methods for
+6.   DISCUSSION                                                               political texts. Political Analysis, 2013.
+                                                                          [4] T. Groseclose and J. Milyo. A measure of media bias. The
+   It is important to notice that the proposed measures for                   Quarterly Journal of Economics, pages 1191–1237, 2005.
+coverage bias detection analyze a set of online newspapers                [5] D. Hillard, S. Purpura, and J. Wilkerson. Computer-assisted
+comparatively, that is, the obtained results should only be in-               topic classification for mixed-methods social science research.
+terpreted in relation to the other analyzed online newspapers.                Journal of Information Tech. & Politics, 4(4):31–46, 2008.
+As such, our method is highly dependent on the selection of               [6] G. Hirst, Y. Riabinin, J. Graham, and M. Boizot-Roche.
+online newspapers, e.g., a moderate paper would appear to                     Text to ideology or text to party status? From Text to
+be leftist when compared only to conservative ones.                           Political Positions: Text analysis across disciplines, 55:93,
+                                                                              2014.
+   Counting mentions of party acronyms and member names
+                                                                          [7] D. E. Ho, K. M. Quinn, et al. Measuring explicit political
+is subject to some issues: parties in government tend to                      positions of media. Quarterly Journal of Political Science,
+generate more news and are differently framed depending                       3(4):353–377, 2008.
+on the party status [6]. Additionally, acronyms and names                 [8] M. Laver and K. Beniot. Estimating Irish party position
+might be ambiguous. However, these factors influence all                      using computer wordscoring: the 2002 elections. Irish
+online newspapers in the same way and consequently don’t                      Political Studies, 17(2):97–107, 2003.
+distort the comparative analysis significantly.                           [9] W. Lowe, K. Benoitt, S. Mikhaylov, and M. Laver. Scaling
+   For the proposed measures, different variations could addi-                policy preferences from coded political texts. Legislative
+                                                                              Studies Quarterly, 36(1):123–155, 2011.
+tionally be considered. For example, the measures count each
+                                                                         [10] F. U. Pappi, N. M. Seher, and A.-S. Kurella. Das
+party only once for each article. Instead, each occurrence                    Politikangebot deutscher Parteien bei den Bundestags-
+could also be counted individually. Since these variations                    wahlen seit 1976 im dimensionsweisen Vergleich, 2011.
+lead to very similar results in our initial experiments, we do           [11] K. M. Quinn, B. L. Monroe, M. Colaresi, M. H. Crespin,
+not report them in this paper. Several metrics proposed in                    and D. R. Radev. How to analyze political attention with
+this paper expose similar tendencies, cf. Section 5. Thus, not                minimal assumptions and costs. American Journal of
+every measure is crucial on its own. However, by considering                  Political Science, 54(1):209–228, 2010.
+a broad spectrum of different measures, a more stable picture            [12] J. B. Slapin and S.-O. Proksch. A scaling model for
+                                                                              estimating time-series party positions from texts. American
+of the overall political orientation emerges.                                 Journal of Political Science, 52(3):705–722, 2008.
+                                                                         [13] G. H. Stempel. The prestige press in two presidential
+                                                                              elections. Journalism & Mass Communication Quarterly,
+7.   CONCLUSIONS                                                              42(1):15–21, 1965.
+   This paper was concerned with the large-scale analysis of             [14] G. H. Stempel and J. W. Windhauser. Coverage by the
+online newspapers. In that direction, we discussed several au-                prestige press of the 1988 presidential campaign. Journalism
+tomatically computable metrics that indicate potential bias                   & Mass Communication Quarterly, 66(4):894–919, 1989.
+                                                                         [15] M. Thelwall, K. Buckley, G. Paltoglou, D. Cai, and
+towards a political party. These considered the mentions of
+                                                                              A. Kappas. Sentiment strength detection in short informal
+parties and party members in the title, the keyword and the                   text. Journal of the American Society for Information
+full text of articles, the sentiment in the direct neighborhood               Science and Technology, 61(12):2544–2558, 2010.
+of article mentions, and the vocabulary used in online newspa-           [16] W. Van Atteveldt, J. Kleinnijenhuis, N. Ruigrok, and
+pers in comparison to party manifestos. Using these metrics,                  S. Schlobach. Good news or bad news? conducting
+we investigated a large dataset containing all articles from                  sentiment analysis on dutch text to distinguish between
+the politics and economics sections from four of the leading                  positive and negative relations. Journal of Information
+                                                                              Technology & Politics, 5(1):73–94, 2008.
+German online news sites, that is, faz.net, spiegel.de, taz.de,
+                                                                         [17] B. Yu, S. Kaufmann, and D. Diermeier. Classifying party
+and zeit.de over a four-year period. As a result, we were able                affiliation from political speech. Journal of Information
+to detect statistically significant reporting differences across              Technology & Politics, 5(1):33–48, 2008.
+the analyzed online newspapers.
+
+
+
+
+                                                                   137
+

@@ -1,0 +1,206 @@
+      Journal of Marketing Management
+
+
+
+
+      ISSN: (Print) (Online) Journal homepage: https://www.tandfonline.com/loi/rjmm20
+
+
+
+
+Reinscribing gender: social media, algorithms, bias
+
+Jonathan E. Schroeder
+
+To cite this article: Jonathan E. Schroeder (2021) Reinscribing gender: social media, algorithms,
+bias, Journal of Marketing Management, 37:3-4, 376-378, DOI: 10.1080/0267257X.2020.1832378
+
+To link to this article: https://doi.org/10.1080/0267257X.2020.1832378
+
+
+
+
+       Published online: 14 Oct 2020.
+
+
+
+       Submit your article to this journal
+
+
+
+       Article views: 3722
+
+
+
+       View related articles
+
+
+
+       View Crossmark data
+
+
+
+       Citing articles: 1 View citing articles
+
+
+
+
+                      Full Terms & Conditions of access and use can be found at
+            https://www.tandfonline.com/action/journalInformation?journalCode=rjmm20
+JOURNAL OF MARKETING MANAGEMENT
+2021, VOL. 37, NOS. 3–4, 376–378
+https://doi.org/10.1080/0267257X.2020.1832378
+
+
+COMMENTARY
+
+Reinscribing gender: social media, algorithms, bias
+Jonathan E. Schroeder
+School of Communication, Rochester Institute of Technology, Rochester, USA
+
+
+    ABSTRACT                                                                          KEYWORDS
+    This article reflects on an apparent paradox – in light of cultural               Algorithms; gender; social
+    shifts in gender, as well as a growing understanding of the multi­                media; bias; sexism;
+    plicity of gender, internet algorithms tend to reinforce dualist,                 consumer culture
+    hierarchical notions of gender. Algorithms exert profound influence
+    on how gender is experienced, processed, and recirculated in con­
+    temporary consumer culture. Thus, while consumers and research­
+    ers embrace a broadening conception of gender, the online
+    marketplace seems to be working to reinscribe stereotypical
+    notions of gender. This paradox raises many important issues for
+    research on gender and marketing.
+
+
+
+Despite profound shifts in how gender identity is conceived, growing recognition, in
+many places, of the multiplicity of gender, and striking strides in research on gender and
+marketing, the technologies that underlie daily experience seem to be working to rein­
+scribe gender, solidify the distinctions between male and female, and promote a dualistic
+realm via algorithms that depend on entrenched notions of what men and women want
+and need. Granted, Google’s gender settings include Male, Female, Custom, and Rather
+Not Say. However, in practice, Google assigns dualistic categories of female or male in
+their Google Ad Personalisation Page, which influences what ads will be shown to users,
+with striking implications issues of choice, privacy and transparency (Nisha et al., 2019; see
+also Noble, 2018).
+   Google’s image search also reflects cultural biases – search for CEO and images of
+white men dominate (Kay et al., 2015). Facebook, whose original mission was to make it
+easy for Harvard undergraduates to rate female student’s attractiveness (Kirkpatrick,
+2011), continues to deploy dualistic gender categories throughout its platform (e.g.,
+Bivens, 2017). Much algorithmic work, of course, occurs in the background, without
+consumer awareness. For gender researchers, the algorithmic relation to big data repre­
+sents a crucial concern, particularly for its impact on consumer identity.
+   I reviewed several papers recently on representations of gender for advertising and
+media journals. All brought a nuanced conception of gender to bear on the shifting
+terrain of gender as it appears in advertising (see, e.g., Coffin et al., 2019; Schroeder &
+Borgerson, 2015). This work reflects a sense of ‘undoing of gender’ (Tissier-Desbordes &
+Visconti, 2019, p. 307), as described in a recent special issue on ‘gender after gender’ in
+Consumption Markets & Culture. In the last special issue on gender in this journal, the guest
+
+CONTACT Jonathan E. Schroeder         jesgla@rit.edu   William A. Kern Professor of Communications, School of
+Communication, Rochester Institute of Technology, Rochester, NY 14623, USA
+© 2020 Westburn Publishers Ltd.
+                                                    JOURNAL OF MARKETING MANAGEMENT               377
+
+
+editors suggested that ‘In contemporary consumer culture, however, these dualist cate­
+gorisations and essentialist conceptualisations often break down and become problema­
+tized’ (Arsel, Eräranta & Moisander, 2015, p. 1553). However, in the online world of
+algorithms, dualist, sexist categories dominant, recirculate, and propagate.
+    For example, one study created a basic ad that promoted STEM careers, with the text
+‘Information about STEM careers’, along with a picture that depicted various STEM fields
+(Lambrecht & Tucker, 2019). They placed the ad on Facebook in 191 countries, and found
+that men saw the ad more than women, despite their efforts to make the ad ‘gender
+neutral’. The researchers conclude:
+    Women were far less likely to be shown the ad than men – but not because they
+were less
+
+  likely to click on it. If women ever saw the ad, they were more likely than men to click. Our
+  finding suggests a nuanced view of the potential for apparent discriminatory outcomes even
+  from “neutral” algorithms. (Lambrecht & Tucker, 2019, pp. 2977-2978)
+
+Part of the explanation suggests that women are targeted with more ads for goods – the
+landscape of social media advertising reflects the notion that women ‘are likely to engage
+with advertising and because they traditionally control household expenses’ (Lambrecht
+& Tucker, 2019, p. 2976). This study offers more clues into how algorithms reinscribe
+gender, interacting with stereotypical notions about men’s and women’s career interests,
+online behaviour, and consumer preferences.
+   Moreover, algorithms have been shown to learn gender and incorporate gender
+biases, thus reflect damaging stereotypes about women. A recent study shows how
+gender figures in online reviews, including DVD reviews on Amazon and restaurant
+reviews of Yelp: ‘Utilizing data from millions of observations and a word embedding
+approach, GloVe, we show that algorithms designed to learn from human language
+output, also learn gender bias’ (Mishra et al., 2019, p. 17). This study reveals how
+algorithms pick up cultural biases and feed them back into the online environment,
+without much awareness from users of what is happening, or how their social media
+feed is built. They conclude:
+
+  First, we show that more female images are shown when the search-query is negative (e.g.,
+  impulsive shopper) than positive (e.g., sensible shopper). Second, we demonstrate that in
+  the domain of product recommendation, biased recommendations can influence choices
+  made by female consumers [. . .] Moreover, if these reviews are used to provide recommen­
+  dations in the marketplace, it would result in women being recommended less career-
+  oriented products e.g., less online courses, job advertisements, or even less paying jobs.
+  (Mishra et al., 2019, p. 17)
+
+In other words, algorithmic ‘choice’ may overwhelm consumer choice.
+   Algorithms make up a growing influence of the daily visual consumption of consumers.
+They influence what we read, what we see advertised, and ultimately what we buy. At
+a basic level, algorithms impact the visual world that online consumers inhabit each day.
+Marketing research is beginning to grapple with the implications of our algorithmically
+driven world. However, at the same time that gender has been recognised as fluid,
+dynamic, and multiple, algorithms often reinforce a dualistic, hierarchical, difference-
+based mode of gender. And that seems like a problem.
+378       J. E. SCHROEDER
+
+
+Disclosure statement
+No potential conflict of interest was reported by the author.
+
+
+Notes on contributor
+Jonathan E. Schroeder is the William A. Kern Professor of Communications in School of
+Communication at Rochester Institute of Technology in New York. His research largely focuses
+upon the intersections of branding, identity, and visual culture. He is author or editor of nine books,
+including Visual Consumption (Routledge, 2002), Brand Culture (Routledge, 2005), Designed for Hi-Fi
+Living: The Vinyl LP in Midcentury America (MIT Press, 2017), and Designed for Dancing: How
+Midcentury Records Taught America to Dance (MIT Press, forthcoming).
+
+
+ORCID
+Jonathan E. Schroeder       http://orcid.org/0000-0003-3337-1310
+
+
+References
+Arsel, Z., Eräranta, K., & Moisander, J. (2015). Introduction: Theorising gender and gendering theory
+   in marketing and consumer research. Journal of Marketing Management, 31(15–16), 1553–1558.
+   https://doi.org/10.1080/0267257X.2015.1078396
+Bivens, R. (2017). The gender binary will not be deprogrammed: Ten years of coding gender on
+   Facebook. New Media & Society, 19(6), 880–898. https://doi.org/10.1177/1461444815621527
+Coffin, J., Eichert, C. A., & Noelke, A.-I. (2019). Toward (and beyond) LGBTQ+ studies in marketing and
+   consumer research. In S. Dobscha (Ed.), Handbook of research on gender and marketing (pp.
+   273–293). Edward Elgar.
+Kay, M., Matuszek, C., & Munson, S. A. (2015). Unequal representation and gender stereotypes in
+   image search results for occupations. In Proceedings of the 33rd Annual Association of Computing
+   Machinery (ACM) Conference on Human Factors in Computing Systems (pp. 3819–3828). Seoul,
+   Korea. https://doi.org/10.1145/2702123.2702520
+Kirkpatrick, D. (2011). The Facebook Effect: The inside story of the company that is connecting the
+   world. Simon & Schuster.
+Lambrecht, A., & Tucker, C. (2019). Algorithmic bias? An empirical study of apparent gender-based
+   discrimination in the display of STEM career ads. Management Science, 65(7), 2966–2981. https://
+   doi.org/10.1287/mnsc.2018.3093
+Mishra, A., Mishra, H., & Rathee, S. (2019). Examining the presence of gender bias in customer reviews
+   using word embedding. (Working paper). David Eccles School of Business, University of Utah.
+   Available at SSRN https://ssrn.com/abstract=3327404
+Nisha, S., Chauhan, A., & Muthiah, S. B. (2019). Algorithmic privacy and gender bias Issues in google
+   ad settings. In 11th ACM Conference on Web Science (WebSci ’19), June 30-July 3, 2019, Boston, MA.
+   https://doi.org/10.1145/3292522.3326033.
+Noble, S. U. (2018). Algorithms of oppression: How search engines reinforce racism. New York
+   University Press.
+Schroeder, J. E., & Borgerson, J. L. (2015). Critical visual analysis of gender: Reactions and reflections.
+   Journal of Marketing Management, 31(15–16), 1723–1731. https://doi.org/10.1080/0267257X.
+   2015.1077883
+Tissier-Desbordes, E., & Visconti, L. M. (2019). Gender after gender: Fragmentation, intersectionality,
+   and stereotyping. Consumption Markets & Culture, 22(4), 307–313. https://doi.org/10.1080/
+   10253866.2018.1512238
+

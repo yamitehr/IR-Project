@@ -1,0 +1,538 @@
+              informatics
+Opinion
+Patient Care, Information, Communication and Social Media
+Influencing Bias—A Discourse
+Paula M. Procter
+
+                                          Department of Nursing & Midwifery, Sheffield Hallam University, Sheffield S1 1WB, UK; p.procter@shu.ac.uk
+
+
+                                          Abstract: Misinformation and disinformation are prevalent across society today, their rise to promi-
+                                          nence developed mainly through the expansion of social media. Communication has always been
+                                          recognised in health and care settings as the most important element between people who are re-
+                                          ceiving care and those delivering, managing, and evaluating care. This paper, through a discourse
+                                          approach, will explore communication through the perception of information formed following
+                                          personal selection of influencers and try to determine how such affects patient care.
+
+                                          Keywords: patient communication; misinformation; social media; influencers
+
+
+
+
+                                               Misinformation and disinformation are prevalent across society today, their rise to
+                                          prominence developed mainly through the expansion of social media. Misinformation is
+                                          considered to present false information, presented as fact, regardless of intent to deceive;
+                                whereas disinformation is a type of misinformation that is intentionally false and intended
+         
+                                          to deceive or mislead [1]. They bring with them particular complexities for health and
+Citation: Procter, P.M. Patient Care,     social care for both the patient/consumer and the care professional.
+Information, Communication and                 Communication between people is recognised in health and care settings as the most
+Social Media Influencing Bias—A           important element between those who are receiving care (patients) and those delivering,
+Discourse. Informatics 2021, 8, 28.       managing, and evaluating care (healthcare professionals). The coronavirus pandemic has
+https://doi.org/10.3390/
+                                          highlighted the significance we all place on communication in all its forms, which are
+informatics8020028
+                                          commonly considered as verbal, non-verbal and para-verbal [2]. This paper will explore
+                                          communication through the perception of true or false information formed following the
+Academic Editors: Diane Skiba and
+                                          personal selection of influencers through digital media alongside developed bias and try to
+Michelle Honey
+                                          determine how such impacts upon patient care.
+                                               Human communication is often perceived as an exchange of information between
+Received: 12 March 2021
+Accepted: 15 April 2021
+                                          two or more individuals [3] through live conversations in person or via a telephone/video
+Published: 18 April 2021
+                                          or through written media such as letters. Today, communication may include the use of
+                                          digital devices, allowing for a diversity of communication applications such as searching
+Publisher’s Note: MDPI stays neutral
+                                          for information (e.g., Google, Baidu, Shenma), meetings in groups (e.g., Zoom, WeChat,
+with regard to jurisdictional claims in
+                                          WhatsApp, Instagram, TikTok), keeping up with the latest comments (e.g., Facebook,
+published maps and institutional affil-   Twitter, Sina Weibo, News agencies).
+iations.                                       The core of the exploration in this paper will consider whether the array of information
+                                          sources available have the possibility to develop bias in individuals and especially as
+                                          to whether this has the potential to affect the way in which nurses and all healthcare
+                                          professionals are able to help those in their care through maintaining a lack of bias when
+Copyright: © 2021 by the author.
+                                          communicating with patients. We know, through health professional regulatory body
+Licensee MDPI, Basel, Switzerland.
+                                          standards, that it is important as health professionals to provide unbiased care to those to
+This article is an open access article
+                                          whom we attend but in a time of digital influencers, the question to be addressed is how
+distributed under the terms and           can bias be reduced to meet patient need in practice?
+conditions of the Creative Commons             To live as an individual, a member of a family, or within a community, or profession,
+Attribution (CC BY) license (https://     we all need information, and this information forms the basis of our being [4]. Following a
+creativecommons.org/licenses/by/          constructivist path [5], since birth, gathering information has been key to our development,
+4.0/).                                    from crawling to move somewhere else, to gaining new knowledge and skills throughout
+
+
+
+Informatics 2021, 8, 28. https://doi.org/10.3390/informatics8020028                                    https://www.mdpi.com/journal/informatics
+Informatics 2021, 8, x                                                                                                                   2 of 7
+
+
+
+Informatics 2021, 8, 28                                                                                                                 2 of 7
+                          a constructivist path [5], since birth, gathering information has been key to our develop-
+                          ment, from crawling to move somewhere else, to gaining new knowledge and skills
+                          throughout childhood and beyond. In all these developmental activities, we have all been
+                          childhood and
+                          influenced          beyond.
+                                        by those         In allusthese
+                                                     around         which    has led to us activities,
+                                                                          developmental                    we have based
+                                                                                              making decisions        all been   influenced
+                                                                                                                              upon    our ac-
+                          by those around
+                          ceptance              us which
+                                     or rejection     of these     led to us making
+                                                              hasinfluencers    [6].       decisions based upon our acceptance or
+                          rejection              this further,[6].
+                                     of these influencers
+                                In exploring                      it is generally accepted that most entering adulthood have
+                                In exploring     this
+                          a considerable historyfurther,of life it   is generally
+                                                                  events    and this  accepted
+                                                                                        is uniquethattomost     person. adulthood
+                                                                                                        eachentering       A great deal  have
+                                                                                                                                            of
+                          a considerable      history   of   life events    and   this  is  unique   to each
+                          personal history has been influenced by those around them and as the days, weeks,    person.     A  great   deal  of
+                          personal
+                          months and history   hasgo
+                                           years    been
+                                                       by,influenced
+                                                              more choices      will around
+                                                                           by those    need tothem     and asinthe
+                                                                                                 be made          thedays,
+                                                                                                                       pathsweeks,
+                                                                                                                               each months
+                                                                                                                                      person
+                          and   years  go  by,  more    choices    will   need  to   be made    in the  paths
+                          chooses to follow and whether biased views are a challenge to living and learning     each   person          [7]. to
+                                                                                                                                 chooses
+                          follow and whether biased views are a challenge to living and learning [7].
+                                In recent years, it appears as though the mass of information available to us through
+                                In recent years, it appears as though the mass of information available to us through
+                          various online platforms has driven many to be selective in their choice of influence. Ac-
+                          various online platforms has driven many to be selective in their choice of influence.
+                          cording to Chaffey [8], Social media users are now spending an average of 2 h and 24 min per day
+                          According to Chaffey [8], Social media users are now spending an average of 2 h and 24 min
+                          multi-networking across an average of eight social networks and messaging apps. There is an
+                          per day multi-networking across an average of eight social networks and messaging apps. There
+                          awareness that pretty much everything we do online is tracked in some way or other and
+                          is an awareness that pretty much everything we do online is tracked in some way or
+                          that privacy laws have been slow to protect us all from feeding the ‘big data’ machine.
+                          other and that privacy laws have been slow to protect us all from feeding the ‘big data’
+                          When shopping online, we know that on subsequent digital platforms we are likely to see
+                          machine. When shopping online, we know that on subsequent digital platforms we are
+                          adverts for similar items. this, we have learnt over a very short period of time. However,
+                          likely to see adverts for similar items. this, we have learnt over a very short period of
+                          have we started to think about our use of smart technologies in our homes and how our
+                          time. However, have we started to think about our use of smart technologies in our homes
+                          choices   in the use of technologies such as virtual assistants, smart fridges, smart televi-
+                          and how our choices in the use of technologies such as virtual assistants, smart fridges,
+                          sions—the     list is endless—will
+                          smart televisions—the                     influence our
+                                                        list is endless—will           choice options
+                                                                                    influence            in the
+                                                                                                our choice        future?
+                                                                                                              options    in Of   future?itOf
+                                                                                                                            thecourse,       is
+                          not  a one  direction    issue,   there   will  be many      benefits  as well   as challenges
+                          course, it is not a one direction issue, there will be many benefits as well as challenges in      in the  way   we
+                          live as we
+                          the way    weprogress
+                                         live as we  further
+                                                       progress intofurther
+                                                                       the 21st  Century,
+                                                                              into  the 21st the   pandemic
+                                                                                              Century,          in 2020 clearly
+                                                                                                                            in 2020demon-
+                                                                                                          the pandemic                 clearly
+                          strated  the   need   for  agility   and    resilience   in  our  daily  lives
+                          demonstrated the need for agility and resilience in our daily lives as patients as  patients   or  healthor profes-
+                                                                                                                                       health
+                          sionals, or both.
+                          professionals,    or both.
+                                To  explore the
+                                To explore     the issues     further and
+                                                    issues further           to frame
+                                                                        and to   frame thethe theme
+                                                                                              theme of of the  paper it
+                                                                                                          the paper        might be
+                                                                                                                        it might        useful
+                                                                                                                                   be useful
+                          to consider    a humanistic      information       model    as  a representation     of
+                          to consider a humanistic information model as a representation of information ‘flows’ of information     ‘flows’  of
+                          individuals,    be   they   those    in our    care  as  patients   or  those  in   our   care
+                          individuals, be they those in our care as patients or those in our care as colleagues or family.as  colleagues    or
+                          family.  Pictorially,
+                          Pictorially,  the model        shownisas
+                                                  theismodel         shown
+                                                                        Figureas1.Figure 1.
+
+
+
+
+                          Figure 1.
+                          Figure               Information Model
+                                    Humanistic Information
+                                 1. Humanistic                   [9].
+                                                           Model [9].
+
+                               Although shown
+                               Although   shown as   static on
+                                                  as static on the page, it
+                                                                          it is
+                                                               the page,        important that
+                                                                             is important  that you consider the
+                                                                                                you consider      four cogs
+                                                                                                              the four cogs
+                          as turning, as turning cogs  generate  power.   The   four cogs can represent an individual,
+                          as turning, as turning cogs generate power. The four cogs can represent an individual,           a
+                                                                                                                        oror
+                          team, department,   professional   discipline, or organisation,  but for now, the individual
+                          a team, department, professional discipline, or organisation, but for now, the individual     use
+                          version will be considered.
+                          use version will be considered.
+                               Every waking moment we receive information through all our senses, the acquisition
+                          cog is constantly turning, which drives the other cogs and commonly, this information
+                          comes to us with pre-determined values (jagged line). That is, from sources which place
+Informatics 2021, 8, 28                                                                                              3 of 7
+
+
+
+
+                          their value on the information, such as news bulletins, conversations with friends; or, bland
+                          (straight line) with no values added, such as, for example, a certain aroma from a candle,
+                          although this may evoke memories within us.
+                                 The acquisition cog is connected to the processing cog and the dissemination cog, this
+                          allows for information passage which is either discarded immediately or processed. The
+                          processing cog is the key link between new information and stored information, where
+                          the latter contains our life history, including decisions we have made at different points in
+                          our lives which have made us the person we are. Within the processing cog is a moveable
+                          line dividing conscious and unconscious thought. During our life history we have learnt,
+                          for example, how doors work, thus, most times we do not consciously think about going
+                          through doorways; however, if we are blocked, then the thought level crosses the line into
+                          conscious thought, and we read ‘pull’ whilst we have been pushing the door. The position
+                          of the line determines just how much conscious or unconscious thought we place upon
+                          new information and the influence of stored information has in the determination of the
+                          position of the line, in health and care settings the line for a professional member of the
+                          care team may be quite high (unconscious level, almost automatic), as such, a conversation
+                          with a patient has been carried out before, whereas for the patient all the information has
+                          the potential to be new and so the line is low (conscious level, listening hard, trying to take
+                          it all in) as new knowledge is being processed.
+                                 The next cog is the storage cog, this holds us, our memories, and our lived experiences.
+                          It is this cog that influences the way we deal with new information based upon experiences
+                          and knowledge developed along the life path to date. As time goes by, there can be difficulty
+                          in raising memories to the conscious level and this is acutely seen in those suffering with
+                          dementia, as access to memory reduces over time until just the physical presence of the
+                          individual is left. Such memory loss and ability to filter at conscious and unconscious levels
+                          how information is processed, suggests that stored information is important to progress
+                          through life.
+                                 Finally, the dissemination cog, linking to the storage cog and the acquisition cog. There
+                          are two routes that information can move, either into the acquisition cog where additional
+                          information can be sought to add to that already held (seeking evidence); or, disseminated
+                          externally with individual values amassed during the process. Just the facial expression,
+                          way of standing or walking towards or away will signal your values/biases as to whether
+                          that is intended or not.
+                                 Today, the plethora of information available to us through all forms of media, devices
+                          and people we meet is vast. Below, taken from the 2019 World Economic Forum [10], are
+                          estimates of data that are accessed/uploaded every day:
+                          •    500 million tweets are sent;
+                          •    294 billion emails are sent;
+                          •    Four petabytes of data are created on Facebook;
+                          •    Four terabytes of data are created from each connected car;
+                          •    65 billion messages are sent on WhatsApp;
+                          •    Five billion searches are made.
+                               Indeed, recent reports have suggested that due to reduced airplane traffic linked to the
+                          coronavirus pandemic and the lack of constant information received from sensors in-flight,
+                          that predicting the weather forecast has become less accurate [11]. There have been tales
+                          of individuals using You TubeTM to build a house from scratch or making sourdough
+                          bread with no baking experience, let alone finding information on health-related material
+                          available on multiple social media platforms. The difficulty, particularly in relation to
+                          health and social influencers, is how individuals, patients and professionals, can determine
+                          the reliability and robustness of the information they find. Saigal [12] considered the
+                          access to health information at the outset of the COVID-19 pandemic, particularly in
+                          western cultures, where some 74% of knowledge influence came from news organisations,
+                          with only around 1% being drawn from official health and science sites which led to
+Informatics 2021, 8, 28                                                                                           4 of 7
+
+
+
+
+                          incorrect understanding and potential dissemination of false knowledge, misinformation
+                          or disinformation.
+                                A perfect storm would appear to be on the horizon based upon the level of ability of
+                          individuals to process influencing information at the conscious or unconscious level, the
+                          word ‘infodemic’ has been introduced into our language to describe a mass of information
+                          which may mislead and polarise opinions [13]. Within the realms of health and care
+                          professional working, there is a distinct need to calm the storm and enable practitioners
+                          not only to be digitally capable but also intelligently influence knowledgeable which
+                          necessitates an understanding by the health professional of the patient’s view and checking
+                          their perceptions of the information being exchanged in a care setting.
+                                Building upon an individual’s stored information, their life history, and making sure
+                          that the line between conscious and unconscious processing is appropriately positioned
+                          are complex issues but necessary to promote smart knowledge influence. It is relatively
+                          simple, after many years of professional practice, to assess someone in your care and have
+                          a ‘sixth sense’ that a deeper view of the situation needs to be taken, but how can such
+                          professional curiosity be developed in a healthcare student who is facing such a situation
+                          for the first time or, indeed, a patient facing a new diagnosis or changes to their long time
+                          condition? This is where education comes in for both the practitioner and the patient and
+                          now that there is such a close relationship between human communication and information
+                          technology, maybe it is time to blend the two?
+                                We know that the emerging Fourth Industrial Revolution (Industry 4.0) [14] will
+                          change the way in which information is sourced, filtered, and used. In the past thirty years
+                          we have changed logistics in manufacturing from bulk ordering to just-in-time supply
+                          chains, could this become a basis for re-thinking undergraduate learning? It has been
+                          argued that ‘just-in-time’ (JIT) learning strengthens effectiveness and productivity [15] but
+                          it is equally acknowledged that this is not the silver bullet, and as such, requires JIT to
+                          be used appropriately where it will have most relevance and impact for the individual
+                          whether they be a patient, healthcare professional student, or where the ‘student’ could be
+                          a patient or health provider [16]. Chute and French [17] developed a personal perspective
+                          for individuals which they cite as Care 4.0, using aspects of Industry 4.0 to demonstrate
+                          the ways in which healthcare can be transformed to meet the needs of individuals through
+                          digital technologies.
+                                The ownership of learning and the building of knowledge through information gath-
+                          ering belongs to the individual, be that, in this instance, a patient or a member of the
+                          professional health and care team, gathering information from any source across the infor-
+                          mation intensive world in which we now live, individuals need to be information ‘smart’.
+                          The World Health Organisation [18] offers seven tips for navigating the infodemic as shown
+                          in Figure 2:
+Informatics 2021, 8,
+Informatics 2021, 8, 28
+                     x                                                                                                                       of 77
+                                                                                                                                          55 of
+
+
+
+
+                             Figure 2. Top tips for navigating the infodemic, WHO, 2020.
+
+                                 Social media
+                                Social   media has      opened opportunities
+                                                   has opened       opportunities for  for each
+                                                                                            each of   us, patient
+                                                                                                   of us,  patient and/or               profes-
+                                                                                                                               health profes-
+                                                                                                                     and/or health
+                          sional, to
+                          sional,  to align   ourselves to
+                                       align ourselves          personally selected
+                                                             to personally     selected influencers
+                                                                                           influencers andand this   reduces the
+                                                                                                                this reduces         diversity
+                                                                                                                                the diversity
+                          of information
+                          of  information sharing.
+                                              sharing. Is      there an
+                                                           Is there        automatic assumption
+                                                                       an automatic       assumption made made by     those receiving
+                                                                                                                  by those    receiving carecare
+                          (consumers      of care)  that   those    providing     care  must   be  qualified
+                          (consumers of care) that those providing care must be qualified to do so and have    to do  so  and          the best
+                                                                                                                                have the    best
+                          interests  of  the  patient   at  the  centre  of all  they   do?  Points   1 and   3 above
+                          interests of the patient at the centre of all they do? Points 1 and 3 above are concerned     are concerned       with
+                          this issue.
+                          with   this issue.
+                                 An instance
+                                An   instance from
+                                                 from an     educational setting
+                                                        an educational        setting is   offered to
+                                                                                        is offered   to explore
+                                                                                                        explore this             further. The
+                                                                                                                        aspect further.
+                                                                                                                  this aspect               The
+                          digital  managed      learning    environment,       used   locally,  allows  for  statistical
+                          digital managed learning environment, used locally, allows for statistical reports on stu-     reports   on  student
+                          use as
+                          dent     part
+                                 use  as of
+                                         parteveryday
+                                               of everyday processes;    out of
+                                                                 processes;    outinterest   I recently
+                                                                                     of interest           explored
+                                                                                                   I recently          one one
+                                                                                                                            undergraduate
+                                                                                                                explored          undergrad-
+                          unit  of learning,     which    started    in October     2020   with   751  students
+                          uate unit of learning, which started in October 2020 with 751 students enrolled.         enrolled.         totaltotal
+                                                                                                                               The The       hits
+                          recorded    were   8528   up  until   18  December      2020   and  of these,  no  accesses
+                          hits recorded were 8528 up until 18 December 2020 and of these, no accesses to staff infor-   to staff  information
+                          were made. Such a lack of enquiry about the author(s) of the learning content maybe
+                          mation were made. Such a lack of enquiry about the author(s) of the learning content
+                          suggests that there is a stored rationale that someone ‘teaching’ or offering knowledge
+                          maybe suggests that there is a stored rationale that someone ‘teaching’ or offering
+                          information must be knowledgeable and credible. Such lack of interest in those teaching
+                          knowledge information must be knowledgeable and credible. Such lack of interest in
+                          appears to be very different to the magnetism social media influencers generate. Is the
+                          those teaching appears to be very different to the magnetism social media influencers gen-
+                          same rationale transferred to other situations, particularly related to patients or their
+                          erate. Is the same rationale transferred to other situations, particularly related to patients
+                          relatives and friends where information is exchanged and if it is, how can this cycle be
+                          or their relatives and friends where information is exchanged and if it is, how can this
+                          broken allowing for authorship credibility to be assured between both the patient and the
+                          cycle be broken allowing for authorship credibility to be assured between both the patient
+                          healthcare professional?
+                          and the healthcare professional?
+                                 As considered earlier, each of us have developed our own biases during our lifetime
+                                As considered earlier, each of us have developed our own biases during our lifetime
+                          and when talking with patients, their relatives and friends, do we consider how our own
+                          and when talking with patients, their relatives and friends, do we consider how our own
+                          biases might affect our communication of information? For the patient, is there an auto-
+                          biases   might affectthat
+                          matic acceptance               communication
+                                                    ourthe                       of information?
+                                                              healthcare professional                 For the
+                                                                                               is giving   the appropriate
+                                                                                                                 patient, is there    an auto-
+                                                                                                                                 information
+                          for theacceptance
+                          matic                                or does theprofessional
+                                                  that the healthcare
+                                   patient’s condition                         patient bring   is with
+                                                                                                  givingthem     appropriate gained
+                                                                                                            the information      information
+                                                                                                                                           from
+                          different sources through digital media that conflict with the professional guidancefrom
+                          for  the patient’s    condition      or  does  the   patient    bring   with  them    information     gained      and
+                          different
+                          how might   sources    through
+                                          this impact               themedia
+                                                              digital
+                                                           upon         trust in    theconflict
+                                                                                 that             with the professional
+                                                                                         care relationship?       What measureguidance      and
+                                                                                                                                      of effec-
+                          how   might    this impact     upon    the  trust  in  the  care  relationship?
+                          tiveness of communication trustworthiness should be employed? There are certainly a What    measure     of effective-
+                          lot toofchoose
+                          ness      communication         trustworthiness
+                                           from, for example,          Merk and  should
+                                                                                     Rosmanbe employed?       There
+                                                                                                 [19] and their       are certainly
+                                                                                                                   thoughts             a lot to
+                                                                                                                                on epistemic
+                          choose   from,    for  example,     Merk     and  Rosman       [19] and    their  thoughts
+                          trustworthiness through to the work of Best [20], who outlines elements of trust and          on  epistemic     trust-
+                                                                                                                                              re-
+                          worthiness     through     to the   work    of Best   [20],  who   outlines   elements
+                          sponsibilities of information givers in the form of a blog. In any conversation there may  of trust  and   responsi-
+                          bilities of information
+                          be sensitivities    (biases)givers
+                                                         that are     not form
+                                                                  in the   obvious     blog.the
+                                                                                  of auntil    In any   conversation
+                                                                                                   conversation          there one
+                                                                                                                    ‘touches’    mayofbethose
+                                                                                                                                            sen-
+                          sitivities  (biases)   that  are   not   obvious   until   the  conversation      ‘touches’
+                          sensitivities. How do such biases, in terms of gateways to health care practice and trust-    one  of   those  sensi-
+Informatics 2021, 8, 28                                                                                                              6 of 7
+
+
+
+
+                                  worthiness, affect information exchange/communication in such settings? The coronavirus
+                                   hospitalisations have demonstrated, once again, just how important communication is
+                                   in the caring environment, is there a case now for an outreach approach to be taken by
+                                   healthcare professionals using social media to extend the information and care support to
+                                   those with whom therapeutic relationships have been formed beyond the hospital walls
+                                   as was initially considered through using information prescriptions [21,22]? Point 6 in the
+                                   above image concerns this issue.
+                                         From the image, Points 2, 4 and 5 require health and care professionals to become
+                                   smart knowledge influencers where those in their care can be assured that the information
+                                   exchanged is up to date, evidence based and has a depth that is appropriate to allow for
+                                   full understanding of the communication encounter. Health and care professionals need to
+                                   take a key role in helping those in their care to be assured that the information contained in
+                                   any communication is correct, and as such, act as ‘fact-checkers’ along with the overarching
+                                   regulations such as privacy and data protection legislation.
+                                         Information and communication often appear as simple concepts and indeed they
+                                   are at a basic level, however, with the emergence of social media and greater access
+                                   to information anytime and commonly anywhere, the possibilities for misinformation
+                                   amongst patients are high. Such access is a complicating factor entering biases that all
+                                   health and care practitioners need to understand, the humanistic information model relates
+                                   both to professional activity communicating with those in their care and all individuals
+                                   determining their conscious and unconscious processing of information, which may affect
+                                   their understanding of the care offered. Technology will become more sophisticated and
+                                   require us to be more discerning in the uptake of influenced information, the emerging
+                                  ‘deepfake’ [23] computer generated versions of trusted individuals. As the focus of health
+                                   care becomes more patient/consumer centric, it is vital that the role of influencers through
+                                   social media is acknowledged in their presentation of a diverse range of views, accurately
+                                   or inaccurately, which in turn, has the potential to create bias for both the patient and the
+                                   healthcare professional, thus, complicating and blurring the communication processes.
+                                         It is unlikely that there is a way of halting the infodemic, but there are ways of manag-
+                                   ing it. In this paper, some of the points for consideration by health and care professionals
+                                   as they communicate with patients have been outlined. It is acknowledged that further
+                                  work needs to be undertaken in this area to ensure that there is recognition of 21st Century
+                                  patient care information, misinformation, disinformation, and the role of influencers in
+                                   determining health and care bias amongst patients and professional health care givers.
+
+                                   Funding: This research received no external funding.
+                                   Institutional Review Board Statement: Not applicable.
+                                   Informed Consent Statement: Not applicable.
+                                   Conflicts of Interest: The authors declare no conflict of interest.
+
+References
+1.    Gebel, M. Misinformation vs. Disinformation: What to Know about Each Form of False Information, and How to Spot Them
+      Online. Business Insider. 2021. Available online: https://www.businessinsider.com/misinformation-vs-disinformation?r=US&
+      IR=T (accessed on 12 March 2021).
+2.    Berry, D. Health Communication—Theory and Practice; Open University Press: Berkshire, UK, 2007; ISBN 100335218709.
+3.    Mortensen, C.D. Communication Theory, 2nd ed.; Routledge: London, UK, 2017; ISBN 0-60-044633-1.
+4.    Piaget, J. Piaget’s Theory. In Piaget and His School, Springer Study ed.; Inhelder, B., Chipman, H.H., Zwingmann, C., Eds.; Springer:
+      Berlin/Heidelberg, Germany, 1976. [CrossRef]
+5.    Bada, S.O.; Olusegun, S. Constructivism Learning Theory: A Paradigm for Teaching and Learning. J. Res. Method Educ. 2015, 5,
+      66–70.
+6.    MacDonald, S. How 2020 is Changing the Influencer. 2020. Available online: https://www.shopify.co.uk/enterprise/how-2020
+      -is-changing-the-influencer (accessed on 12 March 2021).
+Informatics 2021, 8, 28                                                                                                             7 of 7
+
+
+
+
+7.    HESA (Higher Education Statistics Agency). Higher Education Student Statistics: UK, 2017/18—Student Numbers and Charac-
+      teristics. 2019. Available online: https://www.hesa.ac.uk/news/17-01-2019/sb252-higher-education-student-statistics/numbers
+      (accessed on 12 March 2021).
+8.    Chaffey, D. Global Social Media Research Summary August 2020. Smart Insights. 2020. Available online: https:
+      //www.smartinsights.com/social-media-marketing/social-media-strategy/new-global-social-media-research/ (accessed on
+      12 March 2021).
+9.    Procter, P.M. The Role of Nurse Education in the Integration of Information in the Health Care Environment. In Nursing Informatics:
+      The Impact of Nursing Knowledge on Health Care Informatics; Gerdin, U., Tallberg, M., Wainwright, P., Eds.; Springer: Amsterdam,
+      The Netherlands, 1997; pp. 195–200.
+10.   World Economic Forum. How Much Data is Generated Each Day? 2019. Available online: https://www.weforum.org/agenda/
+      2019/04/how-much-data-is-generated-each-day-cf4bddf29f/ (accessed on 12 March 2021).
+11.   Physics World. COVID-19 Pandemic Has Made Weather Forecasts Less Reliable. 2020. Available online: https://physicsworld.
+      com/a/covid-19-pandemic-has-made-weather-forecasts-less-reliable/ (accessed on 12 March 2021).
+12.   Saigal, T. Social Media and Health Information: Empowering or Misleading? 2020. Available online: https://www.the-hospitalist.
+      org/hospitalist/article/229003/mixed-topics/social-media-and-health-information-empowering-or-misleading (accessed on
+      12 March 2021).
+13.   World Health Organisation. Managing the COVID-19 Infodemic: Promoting Healthy Behaviours and Mitigating the Harm from
+      Misinformation and Disinformation. 2020. Available online: https://www.who.int/news/item/23-09-2020-managing-the-
+      covid-19-infodemic-promoting-healthy-behaviours-and-mitigating-the-harm-from-misinformation-and-disinformation#:~{}:
+      text=An%20infodemic%20is%20an%20overabundance,will%20continue%20to%20thrive (accessed on 12 March 2021).
+14.   Schwab, K.; Davis, N. Shaping the Future of the Fourth Industrial Revolution: A Guide to Building a Better World; Portfolio Penguin:
+      New York, NY, USA, 2018; ISBN 100241366372.
+15.   Shanavaz, S.F. JIT Learning and How It Leads to Learning Effectiveness. 2019. Available online: https://elearningindustry.com/
+      jit-learning-leads-learning-effectiveness (accessed on 12 March 2021).
+16.   Macey, T. 7 Best Practices for Implementing Just-In-Time Learning. 2014. Available online: https://www.advantageperformance.
+      com/implementing-just-in-time-learning/ (accessed on 12 March 2021).
+17.   Chute, C.; French, T. Introducing Care 4.0: An Integrated Care Paradigm Built on Industry 4.0 Capabilities. Int. J. Environ. Res.
+      Public Health 2019, 16, 2247. [CrossRef] [PubMed]
+18.   World Health Organisation. Let’s Flatten the Infodemic Curve. 2020. Available online: https://www.who.int/news-room/
+      spotlight/let-s-flatten-the-infodemic-curve (accessed on 12 March 2021).
+19.   Merk, S.; Rosman, T. Smart but Evil? Student-Teachers’ Perception of Educational Researchers’ Epistemic Trustworthiness.
+      AERA Open 2019, 5, 1–18. Available online: https://journals.sagepub.com/doi/pdf/10.1177/2332858419868158 (accessed on
+      12 March 2021). [CrossRef]
+20.   Best, J. Here’s What the Science Says about Building Trust with New Students. 3P Learning, 30 September 2020. Available online:
+      https://www.3plearning.com/blog/building-trust-with-students/ (accessed on 12 March 2021).
+21.   Department of Health. Better Information, Better Choices, Better Health: Putting Information at the Centre of Health; Department of
+      Health: London, UK, 2004.
+22.   Brewster, L.; Sen, B. ‘Quality signposting’: The role of online information prescription in providing patient information. Health
+      Inf. Libr. J. 2011, 28, 59–67. [CrossRef] [PubMed]
+23.   Debusmann, B. Deepfake is the Future of Content Creation. BBC News, 8 March 2021. Available online: https://www.bbc.co.uk/
+      news/business-56278411(accessed on 12 March 2021).
+

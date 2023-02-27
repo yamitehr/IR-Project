@@ -1,0 +1,696 @@
+                         Proceedings of the Twelfth International AAAI Conference on Web and Social Media (ICWSM 2018)
+
+
+
+
+                                   Media Bias Monitor: Quantifying Biases of
+                                   Social Media News Outlets at Large-Scale
+       Filipe N. Ribeiro,1,2,3 Lucas Henrique,2 Fabricio Benevenuto,2 Abhijnan Chakraborty,1,4
+                  Juhi Kulshrestha,1 Mahmoudreza Babaei,1 Krishna P. Gummadi1
+                                          1
+                                              Max Planck Institute for Software Systems, Germany
+                                                 2
+                                                   Universidade Federal de Minas Gerais, Brazil
+                                                   3
+                                                     Universidade Federal de Ouro Preto, Brazil
+                                               4
+                                                 Indian Institute of Technology Kharagpur, India
+
+                             Abstract                                           A key characteristic of news on social media is that any-
+                                                                             one can register as a news publisher without any upfront cost
+  As Internet users increasingly rely on social media sites like
+  Facebook and Twitter to receive news, they are faced with
+                                                                             (e.g., anyone can create a Facebook page claiming to be a
+  a bewildering number of news media choices. For example,                   newspaper or news media organization). Consequently, not
+  thousands of Facebook pages today are registered and catego-               only traditional news corporations are increasingly migrat-
+  rized as some form of news media outlets. Inferring the bias               ing to social media, but many social media only news out-
+  (or slant) of these media pages poses a difﬁcult challenge for             lets are also emerging (Lella 2016). With this recent tran-
+  media watchdog organizations that traditionally rely on con-               sition, not surprisingly, there are growing concerns about
+  tent analysis.                                                             ‘fake’ news publishers posting ‘fake’ news stories, and of-
+  In this paper, we explore a novel scalable methodology to                  ten disseminating them widely using ‘fake’ followers (All-
+  accurately infer the biases of thousands of news sources on                cott and Gentzkow 2017; Vosoughi, Roy, and Aral 2018;
+  social media sites like Facebook and Twitter. Our key idea                 Lazer et al. 2018).
+  is to utilize their advertiser interfaces, that offer detailed in-            Even when the accounts being used to publish or promote
+  sights into the demographics of the news source’s audience
+  on the social media site. We show that the ideological (lib-
+                                                                             news stories are not ‘fake bot’ accounts (i.e., they actually
+  eral or conservative) leaning of a news source can be accu-                correspond to real persons or organizations), readers of news
+  rately estimated by the extent to which liberals or conserva-              on social media are often not aware of the biases of these
+  tives are over-/under-represented among its audience. Addi-                accounts. This situation is in sharp contrast to the news con-
+  tionally, we show how biases in a news source’s audience                   sumption over traditional news media channels, where be-
+  demographics, along the lines of race, gender, age, national               cause of the constant monitoring by media studies scholars
+  identity, and income, can be used to infer more ﬁne-grained                and watchdog groups, at least well-informed consumers are
+  biases of the source, such as social vs. economic vs. nation-              aware of the biases of different news publishers.
+  alistic conservatism. Finally, we demonstrate the scalability                 For traditional media, two broad strategies have been used
+  of our approach by building and publicly deploying a sys-
+  tem, called “Media Bias Monitor” 1 , which makes the biases
+                                                                             to quantify the biases of a given news outlet:
+  in audience demographics for over 20, 000 news outlets on                     (i) The ﬁrst strategy is to analyze the readership of the
+  Facebook transparent to any Internet user.                                 news outlets, which assumes that the content and attitudes
+                                                                             of a news outlet end up driving the biases of its audi-
+                                                                             ence. Although this approach has been used by both re-
+                         Introduction                                        searchers (Bakshy, Messing, and Adamic 2015; Gentzkow
+Recent years have witnessed a radical change in the way                      and Shapiro 2010; Zhou, Resnick, and Mei 2011) and think-
+news is being produced and consumed in our society. Online                   tanks like Pew research (Mitchell et al. 2014), they often
+social media sites like Facebook and Twitter have emerged                    rely on readership surveys, and thus can not cover more than
+as popular destinations for users to receive, share, and dis-                a few dozen mainstream news outlets.
+cuss news about the world around them. A recent survey by                       (ii) The second class of approaches quantiﬁes media bias
+Pew Research Center estimates that 62% of the U.S. adults                    directly by inspecting the published content (Covert and
+consume news primarily from social media sites (Mitchell                     Wasburn 2007; Budak, Goel, and Rao 2016), speciﬁcally fo-
+2016), and this number is still growing. Similar to the tra-                 cusing on the coverage of important events by the media or-
+ditional news media, the news stories disseminated over so-                  ganizations. As there are signiﬁcantly more news publishers
+cial media can also have a considerable impact on shaping                    on social media (with a constantly expanding list) than in
+people’s opinions and inﬂuencing their choices, including                    the traditional media scenario, such strategies for measuring
+having the potential to sway the outcomes of political elec-                 media bias do not scale for the current news ecosystem.
+tions (Allcott and Gentzkow 2017).                                           Thus, there is no mechanism available today for the users to
+Copyright   c 2018, Association for the Advancement of Artiﬁcial            know the biases of different publishers on social media.
+Intelligence (www.aaai.org). All rights reserved.                               In this work, we present a novel and scalable methodol-
+    1
+      twitter-app.mpi-sws.org/media-bias-monitor                             ogy to assess the biases of thousands of social media news
+
+
+
+                                                                       290
+outlets. Facebook (as well as other social media sites) pro-            Gentzkow and Shapiro 2010; Groseclose and Milyo 2005;
+vides its advertisers access to its users through its targeted          Munson, Chhabra, and Resnick 2017). Particularly, Grose-
+advertising platform. Before an ad is launched, and before              close et al. (Groseclose and Milyo 2005) linked media
+any cost is incurred, Facebook exposes to the advertisers the           sources to the members of the US Congress utilizing the
+size of the prospective audience that matches advertisers’              co-citation of political thinktanks, and assigned them po-
+targeting criteria composed of various dimensions like age,             litical bias scores based on the ADA scores of Congress
+gender, political leaning, race, etc. Our key idea is to lever-         members given by the political watchdog group ‘Ameri-
+age the advertiser interfaces of social media sites that offer          cans for Democratic Action’ (www.adaction.org). Gentzkow
+detailed insights into the demographics of the news source’s            et al. (Gentzkow and Shapiro 2010) inferred ‘media slant’
+audience on the social media site.                                      based on whether the language used by a media source is
+   To that end, we design a crawler that exploits the Face-             more similar to congressional Republicans or Democrats.
+book marketing API to gather a large number of existing                 Budak et al. (Budak, Goel, and Rao 2016) used a combi-
+news outlets on Facebook. Then, we leverage the Facebook                nation of crowdsourcing and machine-learning methods to
+audience API to collect demographic information about the               study the selection and framing of political issues by differ-
+audience of these news outlets on Facebook. We hypoth-                  ent news organizations.
+esize and empirically show that the ideological (liberal or                 As online news sources are continuously gaining popular-
+conservative) leaning of a news source can be accurately es-            ity, Munson et al. (Munson, Chhabra, and Resnick 2017)
+timated by the extent to which liberals or conservatives are            assigned political bias scores to popular news websites;
+over-/under-represented in the source’s audience.                       whereas Babaei et al. (Babaei et al. 2018) proposed a sys-
+   Finally, we demonstrate the scalability of our approach by           tem called “purple feed” to show users news which is likely
+building and publicly deploying a system called Media Bias              to have high consensus between both republican and demo-
+Monitor2 , which quantiﬁes the ideological biases of 20,448             crat leaning readers. In a recent work, Le et al. (Le, Shaﬁq,
+news outlets in Facebook. Media Bias Monitor also provides              and Srinivasan 2017) presented a method to measure ideo-
+demographic information along ﬁve other dimensions: gen-                logical slant of individual news articles by monitoring their
+der, income level, racial afﬁnity, national identity, and age.          consumption on Twitter. They analyzed the connectivity of
+We hope that our system can bring more transparency to the              the users tweeting an article to label them as republican or
+biases of news publishers on social media, not only to the              democrat leaning.
+most popular ones, but also to small, niche news outlets.                   While political bias of news media has received a lot of at-
+   The rest of the paper is organized as follows. The next              tention, other forms of media biases have also been analyzed
+section describes the related work. After which we present              (e.g., demographic bias (Chakraborty et al. 2017) such as
+our strategies for gathering data from Facebook and discuss             gender (Shor et al. 2015) and racial biases (Ramasubrama-
+our method in detail. We then compare our approach for in-              nian 2007)) to address concerns about these biases in news
+ferring ideological bias with four state-of-the-art methods,            coverage, which can reinforce or even create certain forms of
+with the aim of validating our methodology. Next, we inves-             racial, gender, and ethnic stereotypes (Gilliam Jr et al. 1996).
+tigate other demographic aspects of news outlets with dif-              Similarly, efforts have been made to understand the topical
+ferent ideological biases. We end with a brief discussion of            coverage biases in news dissimination (Chakraborty et al.
+our system design including examples of its application, be-            2016) or recommendations (Bakshy, Messing, and Adamic
+fore ﬁnally concluding the paper with the discussion about              2015; Chakraborty et al. 2015), and whether they can lead to
+potential future research directions.                                   ‘ﬁlter bubbles’ (Pariser 2011). Being aware of such biases of
+                                                                        different news media outlets is crucial for the society, since
+                        Related Work                                    the awareness can play a critical role in shaping readers’ as-
+Traditionally, news media organizations played an important             similation of news published by these outlets (Dooling and
+role in societal evolution by acting as gatekeepers of infor-           Lachman 1971).
+mation, and by deciding and regulating what news is con-                    Overall, existing studies about the bias of news publishers
+sumed by the common people (Shoemaker, Vos, and Reese                   have the following characteristics: (i) They infer bias based
+2009). With this powerful role played by them, media stud-              on either the content or active audience (i.e., people sharing
+ies researchers have long worried that an ideologically parti-          the news); and (ii) They are restricted to a small number of
+san and deregulated media can have a high impact on the                 mainstream news publishers. In this work, we introduce a
+political outcomes, and ultimately on our society (Grose-               new approach to measure bias of news publishers based on
+close and Milyo 2005; Chiang and Knight 2011). Therefore,               their audiences (as inferred by Facebook), which allows us
+a large number of research studies (as well as media watch-             to study the bias of news outlets on a much larger scale. Ad-
+dog groups like FAIR (fair.org) and AIM (aim.org))                      ditionally, our approach allows us to study the biases in the
+have investigated news media bias, and evaluated the con-               source’s audience demographics along the lines of race, gen-
+tent produced by different news organizations for fairness,             der, age, national identity, and income, which can be used to
+balance, and accuracy in news reporting.                                infer more ﬁne-grained leanings of news sources, such as
+   Most of the efforts have focussed on studying political              social vs. economic vs. nationalistic conservatism.
+bias in traditional news media (Budak, Goel, and Rao 2016;                  Finally, a few efforts have explored the Facebook au-
+                                                                        dience API, but with a focus on monitoring lifestyle dis-
+   2
+       twitter-app.mpi-sws.org/media-bias-monitor                       eases (Araujo et al. 2017), study worldwide gender inequal-
+
+
+
+                                                                  291
+ity (Garcia et al. 2017), and movement of migrants (Zagheni,                 In total, we were able to identify 32 news outlets (out of
+Weber, and Gummadi 2017). Our work uses a similar strat-                  36) from the Pew Research study (Mitchell et al. 2014), all
+egy to gather demographic information from Facebook API,                  15 outlets from (Budak, Goel, and Rao 2016), 360 (out of
+but to answer an orthogonal research question. We hope that               500) outlets from (Bakshy, Messing, and Adamic 2015), and
+our novel large-scale approach to measure ideological bias,               81 (out of 112) from AllSides.com.
+as well as our system, will encourage a new research avenue                  As the above process of matching newspaper names using
+of demographic studies related to news media.                             different APIs may result in errors, we conducted a manual
+                                                                          validation for the mapping of news media sites to Facebook
+                       Methodology                                        Pages, using a sample of 150 randomly selected outlets. We
+                                                                          found the precision of the mapping to be 94.3% with 90%
+In this section, we describe how we identiﬁed news outlets                recall. Thus, we can conclude that using the steps described
+on Facebook, and then gathered multiple demographic at-                   earlier, we could identify the Facebook pages belonging to
+tributes of their audiences, which in turn enabled us to mea-             different media outlets with high accuracy.
+sure the biases of these news outlets.
+                                                                          Gathering Audience Demographics
+Finding News outlets on Facebook
+                                                                          Facebook, similar to all large online social media, relies on
+We start with a list of newspapers whose ideological biases               advertisements for its revenue, and it provides advertisers
+we want to infer. To populate this list, we consider the news             with tools for highly targeted advertising. For example, be-
+outlets used in the following prior efforts:                              fore launching an advertisement, the advertiser can use the
+• 36 news outlets considered in the Pew Research survey on                Audience API6 to get the estimated audience (i.e., number
+  media habits (Mitchell et al. 2014).                                    of monthly active users) likely to match the advertising cri-
+                                                                          teria. In this work, we utilize this Audience API to gather
+• 15 news outlets from (Budak, Goel, and Rao 2016).                       the demographics of the audience of identiﬁed news outlets.
+• 500 outlets used in (Bakshy, Messing, and Adamic 2015).                    In brief, our approach consists of selecting an ad audi-
+                                                                          ence by specifying that the target population needs to have
+• 112 news outlets analyzed by the media bias monitoring
+                                                                          a certain attribute or a combination of attributes (this is the
+  website AllSides.com.3
+                                                                          traditional way of targeting ads on Facebook (Speicher et al.
+To identify the Facebook Pages of these news outlets, we                  2018)), and then gathering the size of the targeted audience.
+took the following three-pronged approach:                                Although targeting options are available for 197 countries
+(i) First, we crawled the news media websites and searched                worldwide, we focus only on the US-based Facebook users
+for references to their corresponding Facebook pages. If we               for this study. We plan to extend our effort to more coun-
+found such a reference, we fetched the name and URL of the                tries in the future. For every identiﬁed Facebook page, we
+referred page and compared with the name and URL of the                   considered six demographic dimensions (e.g., gender, race,
+newspaper to validate the mapping between the Facebook                    etc.) and their corresponding attributes (e.g., Male, Female,
+page and the media outlet.                                                African-American, Hispanic, etc.), and computed the demo-
+(ii) If we did not get a match in the ﬁrst step, we searched              graphic composition of Facebook users interested in that
+for the news domains (nytimes.com, cnn.com) using                         page. Table 1 lists all six demographic dimensions we con-
+Facebook Graph API4 , and compared the name and URL in                    sidered and their corresponding attributes.
+the returned Facebook page with the name and URL of the
+news media outlet.                                                                     Quantifying Ideological Biases
+(iii) If we did not succeed in establishing the mapping with              In this section, we ﬁrst describe how we quantiﬁed the ideo-
+the above steps, we searched for the news outlet’s name us-               logical bias of different news outlets. Then, to verify whether
+ing Facebook Graph API, and only included the pages where                 our inference strategy properly captures the news media
+the names and URLs matched exactly.                                       bias, we compare our results with four very different ap-
+   After identifying the Facebook pages for these media out-              proaches to measure media bias.
+lets, we used the page names to search for their correspond-
+ing ‘Interests’ with Facebook Marketing API5 . The API call               Measuring Bias using Facebook Audience
+returns a list of interests related to that name. If the interest
+                                                                          Demographics
+name is identical to the Facebook page name, we link the
+Facebook page to the corresponding Interest ID. Such ID is                As detailed in the earlier section, utilizing the Facebook Au-
+key for our work as it allows us to gather the demographic                dience API, we gathered the number of Facebook users,
+information for the audience interested in the corresponding              with different political leanings, interested in different me-
+page. For example, the Interest ID of ‘The New York Times’                dia outlets. We use this strategy to measure the ideological
+allows us to gather the demographics of the audience inter-               bias score of an outlet. Speciﬁcally, we ﬁrst ﬁnd the fraction
+ested in ‘The New York Times’.                                            of users having different political leanings, and then multi-
+                                                                          ply the fraction for each category with the following values:
+   3
+     allsides.com/media-bias/media-bias-ratings                           very liberal (−2), liberal (−1), moderate (0), conservative
+   4
+     developers.facebook.com/docs/graph-api
+   5                                                                         6
+     developers.facebook.com/docs/marketing-apis                                 developers.facebook.com/docs/marketing-api/audiences-api
+
+
+
+
+                                                                    292
+                           Dimension            Attributes
+                           Gender               Male, Female
+                           Racial Afﬁnity       African American, Asian American, Caucasian, Hispanic
+                           Age                  13-17, 18-24, 25-34, 35-44, 45-54, 55-64, above 65
+                           National Identity    Australia, Africa, Canada, East Asia, Europe, Latin America, Mexico, Middle East, Russia, South Asia
+                           Income Level         30-40K, 40-50K, 50-75K, 75-100K, 100-125K, 125-150K, 150-250K, 250-350K, 350-500K, >500K
+                           Political Leaning    Very Conservative, Conservative, Moderate, Liberal, Very Liberal
+
+                                    Table 1: Different demographic dimensions and attributes gathered from Facebook Audience API.
+
+                                                                                              News Outlet   Source     V. Lib   Lib    Mod    Con      V. Con
+                              1.5                                                                           Pew Res.   0.41     0.26   0.21   0.09     0.03
+                                                                                              NPR
+                                                                                                            Facebook   0.34     0.29   0.19   0.10     0.07
+                                                                                                            Pew R.     0.32     0.28   0.26   0.08     0.05
+     Bias (Pew Research)
+
+
+
+
+                              1.0                                                             BBC
+                                                                                                            Facebook   0.24     0.33   0.22   0.13     0.08
+                              0.5
+                                                                                                            Pew R.     0.4      0.25   0.23   0.09     0.03
+                                                                                              NYTimes
+                                                                                                            Facebook   0.30     0.28   0.21   0.13     0.09
+                                                                                                            Pew Res.   0.19     0.25   0.4    0.12     0.04
+                              0.0                                                             CNN
+                                                                                                            Facebook   0.23     0.27   0.22   0.15     0.12
+                                                                                                            Pew Res.   0.03     0.04   0.14   0.31     0.48
+                             −0.5
+                                                                                              Breitbart
+                                                                                                            Facebook   0.01     0.02   0.07   0.22     0.67
+                                                                                                            Pew Res.   0.04     0.14   0.37   0.27     0.19
+                                                                                              Fox News
+                             −1.0                                                                           Facebook   0.07     0.10   0.17   0.27     0.40
+
+                             −1.5                                                           Table 2: Pew Research results in comparison with our Face-
+                                      −1           0             1
+                                                                                            book audience-based approach for measuring political lean-
+                                           Bias (Media Bias Monitor)                        ing of different news media.
+
+Figure 1: Ideological leaning inferred by Media Bias Mon-
+itor in comparison with the bias inferred by the study from
+Pew Research (Mitchell et al. 2014).
+                                                                                            we compute the bias score from their data similar to how
+                                                                                            we compute the score for our method. For each category,
+(1), and very conservative (2). The resultant sum gives the                                 we multiplied its fraction by its respective value in the scale
+bias score which can vary from −2 to 2, where a high nega-                                  ranging from −2 (consistently liberal) to 2 (consistently
+tive number indicates a highly liberal audience while a high                                conservative). Figure 1 shows the scores obtained by our
+positive number indicates a highly conservative audience for                                method for each news outlets along with the scores for the
+the media outlet. Accordingly, the media outlet is labeled as                               pew research study. Computing the Pearson’s Correlation
+liberal leaning or conservative leaning. We utilized the above                              Coefﬁcient (Lee Rodgers and Nicewander 1988) between
+approach to quantify bias of different media outlets and built                              the scores obtained by both methods, we found the Correla-
+the system ‘Media Bias Monitor’ to make these biases more                                   tion Coefﬁcient to be 0.97 (which is very high), with a 95%
+transparent to social media users (the details are presented                                Conﬁdence Interval of [0.952, 0.986]. This high correlation
+in later sections). Next, we compare our approach with dif-                                 indicates that the results from both methods are almost per-
+ferent approaches used to infer media bias.                                                 fectly matching.
+
+Comparison with Survey Based Approach                                                          Table 2 highlights the inferences from the two approaches
+We begin by comparing our approach with a study con-                                        for some popular news outlets. We can observe that both
+ducted by the Pew Research Center (Mitchell et al. 2014).                                   methods lead to the same conclusions about the political
+Pew research classiﬁed the audience of popular news me-                                     leaning of all these news outlets. Overall, the mean differ-
+dia outlets based on a ten question survey covering a range                                 ence between the results of the two studies is 0.052 ± 0.016
+of issues like homosexuality, immigration, economic policy,                                 for very liberal, 0.034 ± 0.012 for liberal, 0.070 ± 0.023 for
+and the role of government. In that study, the authors in-                                  moderate, 0.061±0.022 for conservative, and 0.099±0.034
+ferred the political leaning of the audience in a 5-point scale                             for very conservative. We observe highest divergence for
+that are conceptually similar to those returned by Facebook                                 very conservative users, which can be explained by the pos-
+Audience API – consistently liberal, mostly liberal, mixed,                                 sibility that number of conservative users may have grown in
+mostly conservative, and consistently conservative. In to-                                  the US since 2014 (when the Pew Research study was con-
+tal, they evaluated 36 mainstream news media outlets, and                                   ducted). We also note that in 26 out of the 32 media outlets,
+we were able to gather the composition of their audience in                                 the number of moderate-leaning users decreased, which is
+Facebook for 32 of them.                                                                    also expected given the high polarization of the news dis-
+   To compare the bias inferred by Pew Research with ours,                                  course around the 2016 presidential election.
+
+
+
+                                                                                      293
+                                    1.0
+       Alignment (Bakshy et al.)
+                                                                                                              0.2
+
+
+
+
+                                                                                       Bias (Budak et al.)
+                                    0.5
+                                                                                                              0.1
+
+                                    0.0                                                                       0.0
+
+
+                                   −0.5                                                                      −0.1
+
+
+                                                                                                             −0.2
+                                   −1.0
+
+                                          −1        0         1       2                                             −1             0           1
+
+                                          Bias (Media Bias Monitor)                                                      Bias (Media Bias Monitor)
+
+Figure 2: Ideological leaning inferred by Media Bias Moni-                      Figure 3: Ideological leaning inferred by Media Bias Mon-
+tor in comparison with the bias inferred by (Bakshy, Mess-                      itor in comparison with the bias inferred by (Budak, Goel,
+ing, and Adamic 2015).                                                          and Rao 2016).
+
+
+Comparison with News Sharing Approach                                           was positive, negative or neutral towards Democrats or Re-
+In (Bakshy, Messing, and Adamic 2015), the authors derived                      publicans. The answer was encoded in separate 5-point scale
+the alignment score of 500 media outlets by ﬁrst identify-                      with the values {−1, −0.5, 0, 0.5, 1} for Democrats, and
+ing the political leaning of over 10 million Facebook users                     {1, 0.5, 0, −.0.5, −1} for Republicans. Therefore, a neg-
+based on self-declarations, and then considering how users                      ative average score implies the article is positive toward
+with different political leanings shared the stories published                  Democrats, while a positive average score indicates Repub-
+by these outlets. Similar to us, the authors measured the ide-                  lican leaning. Finally, the slant for each news outlet is calcu-
+ological leaning of the outlets on a scale ranging from −2                      lated as an average of individual news’ leaning scores.
+(Very Liberal) to +2 (Very Conservative). They identiﬁed                           Figure 3 shows the scatter plot between the bias scores ob-
+the leaning of 500 news outlets, out of which we were able                      tained by us and by (Budak, Goel, and Rao 2016). Overall,
+to ﬁnd the Facebook pages (and thus identify the biases) for                    the Pearson Correlation Coefﬁcient between the scores ob-
+342 outlets.                                                                    tained by these two methods is 0.87, with a 95% conﬁdence
+   There are two reasons for not ﬁnding remaining out-                          interval of [0.650, 0.956]. This implies that our approach in-
+lets in Facebook: (i) we found that the domains of few                          ferred results similar to their content-based approach.
+outlets considered in their study (e.g., dcbeacon.com,
+scgnews.com etc.) are no longer active and hence could                          Comparison with Crowdsourcing Approach
+not be reached; (ii) we could not ﬁnd the Facebook pages or
+Interest IDs for the remaining outlets, without which we can                    Finally, we compare our approach with a crowdsourcing-
+not gather the composition of Facebook users interested in                      based method to infer media bias deployed at the website
+those outlets.                                                                  AllSides.com. It encourages its users to rate different
+   Figure 2 shows the scatter plot of the scores obtained by                    news outlets in one of the ﬁve categories: left, lean left, cen-
+two methods, where each dot in the ﬁgure is a news out-                         ter, lean right, and right8 , using any of three different strate-
+let and the scores of each method can be seen on the axes.                      gies: (i) blind surveys, in which users rate the bias of stories
+Overall, the Pearson Correlation Coefﬁcient for the scores                      without knowing the news source; (ii) showing them the bias
+obtained by our method and the method proposed by (Bak-                         of the source as inferred by previous research efforts (e.g.,
+shy, Messing, and Adamic 2015) is 0.91, with a 95% conﬁ-                        the work by (Groseclose and Milyo 2005)), and (iii) show-
+dence interval of [0.891, 0.927]. Thus, we can note that de-                    ing them the past feedback from the other users. In (iii), a
+spite the large number of news outlets considered, inferred                     user can agree or disagree with the past ratings of the news
+ideological biases from both approaches are very close.                         outlets and can suggest new ones.
+                                                                                   In total, AllSides.com presents bias of 112 media out-
+Comparison with Content Based Approach                                          lets, out of which we were able to identify the Facebook au-
+Budak et al. (Budak, Goel, and Rao 2016) used a content-                        diences for 81 outlets. Similar to the previous approaches,
+based approach to identify the slant of the top 13 U.S. news                    we deﬁned a ﬁxed bias score for each category assigned by
+outlets and two popular political blogs. They sampled two                       AllSides: left (-2), lean left(-1), center(0), lean right (1) and
+political stories per day for each outlet, and used Amazon                      right (2). Figure 4 compares bias scores inferred by our ap-
+Mechanical Turk platform7 to ask human judges if the article                    proach vis-a-vis the scores from AllSides. The Pearson cor-
+   7                                                                               8
+       mturk.amazon.com                                                                allsides.com/media-bias/media-bias-ratings
+
+
+
+
+                                                                          294
+                                                                           Method          Total    Identiﬁed     PCC        CI (95%)
+                                                                         Pew Research        32        36         0.97     [0.946,0.987]
+                           2
+                                                                         Bakshy et al.      500        342        0.91     [ 0.891,0.927]
+                                                                          Budak et al.       15        15         0.87     [0.650, 0.956]
+       Bias (All Sides)
+
+                           1                                             AllSides.com       112        81         0.77     [0.658, 0.843]
+
+                                                                       Table 3: Summary of the comparison between our approach
+                           0                                           to infer ideological bias and four previous efforts.
+
+                          −1
+                                                                       ics for 20,448 news outlets in Facebook transparent to users.
+                                                                       The number of news outlets we cover are at least two orders
+                          −2                                           of magnitude more than any existing efforts.
+                                −1         0          1
+
+                                 Bias (Media Bias Monitor)             Scaling Bias Inference
+                                                                       We begin by describing how we identiﬁed thousands of news
+Figure 4: Ideological leaning inferred by Media Bias                   outlets in Facebook, and then show the importance of iden-
+Monitor in comparison with the bias inferred by                        tifying biases of these outlets.
+Allsides.com.                                                          Finding Large Number of News Outlets on Facebook
+                                                                       Our ﬁrst step to identify a large set of news outlets on Face-
+                                                                       book consisted of identifying large lists of news outlets on
+relation coefﬁcient obtained for the results of the two meth-          the Web. We used three different sources from the Web to
+ods is 0.77 with a 95% conﬁdence interval of [0.658, 0.843].           identify names and web domains of known news outlets:
+   Diving deeper into the mismatches, we observed that                 (i) list of news outlets included in Google News (also used
+main difference occurs when AllSides marks a news out-                 in prior studies such as (Leskovec, Backstrom, and Klein-
+let as center biased, whereas our approach assigns it a lib-           berg 2009)), (ii) 3, 000 most popular newspaper domains as
+eral bias score. Among those media outlets, we found BBC,              determined by Alexa10 , and (iii) list of newspapers curated
+CNN and Reuters, with the following liberal scores accord-             by a website11 . We then combined the news outlets present
+ing to our approach: −0.521, −0.342, and −0.446 respec-                in these lists and extracted an aggregated list of news outlet
+tively. In order to verify the correctness of our score for            names and their corresponding website URLs.
+these speciﬁc cases, we contrasted them with the results                  To identify the Facebook Pages of these news outlets,
+from (Bakshy, Messing, and Adamic 2015) and from (Bu-                  we used the procedure described earlier to ﬁnd news out-
+dak, Goel, and Rao 2016). Both methods assigned liberal                lets on Facebook. After identifying the Facebook pages for
+scores to these news outlets. Additionally, we veriﬁed that            these media outlets and subsequently their Interest IDs using
+media outlets like Al Jazeera, FiveThirtyEight, and NPR                Facebook Marketing API, we obtained a dataset of 2, 466
+have strong liberal bias according to the method by (Bakshy,           news outlets. Although this increased dataset size in one or-
+Messing, and Adamic 2015) as well as our method, whereas               der of magnitude, to cover more outlets, we designed a new
+AllSides marked them as moderate.                                      strategy using another Facebook API call.
+                                                                          Given the Interest ID of a Facebook page, the Facebook
+Summary
+                                                                       Marketing API also suggests a number of Facebook pages
+In summary, Table 3 presents the Pearson Correlation Co-               which are related to it12 . We designed a Breadth-First Search
+efﬁcients (PCC) for the comparison between our approach                (BFS) scheme which recursively collects the suggestions,
+with four existing state-of-the-art methods that use very dif-         starting from each Interest ID we had previously collected
+ferent inference methods. Our method closely matches most              as a seed list. Our crawler exhausted the entire component
+of these studies, thus, validating our methodology to obtain           of a graph in which nodes are Interest IDs and edges are
+the ideological bias. In the next section, we discuss two key          suggestions. In total, we gathered near 240K related Inter-
+beneﬁts of using our approach over the existing ones.                  ests from different categories (as deﬁned by Facebook). We
+                                                                       considered only those pages whose categories are related
+                               Media Bias Monitor                      to News and Media (e.g., ‘Newspaper’, ‘Media/News Com-
+In the previous section, we showed that our approach to                pany’, ‘News & Media Website’, ‘Journalist’, ‘Magazine’,
+quantify media bias can produce inferences similar to four             ‘Broadcasting & Media Production Company’, ‘Website’,
+very different state-of-the-art methods. However, the key ad-          ‘Publisher’ etc.). After ﬁltering out other categories, our ﬁ-
+vantage of our method over the existing approaches is that             nal dataset of news outlets contains 20, 448 Facebook pages
+our approach is highly scalable, and can infer the ideologi-
+                                                                         10
+cal bias of several thousands of news media outlets that exist              alexa.com/topsites/category/Top/News/Newspapers
+                                                                         11
+today. As a show case, we built a system, named Media Bias                  www.listofnewspapers.com
+                                                                         12
+Monitor 9 , which makes the biases in audience demograph-                   Technically, the Marketing API returns a list of related Interest
+                                                                       IDs, and we run a reverse Interest Id – Facebook Page mapping. We
+   9
+       twitter-app.mpi-sws.org/media-bias-monitor                      omit the details for brevity.
+
+
+
+
+                                                                 295
+ Category        (#)     Example News outlets                                              1.00
+ Magazine        2,565   In Touch Weekly, Country Living, UNILAD
+ Newspaper       1,099   The Washington Post, The Daily Caller                             0.75
+ Journalist        750   Bill O’Reilly, Lester Holt, Megyn Kelly
+ News Company    1,346   BuzzFeed Food, Conservative daily
+
+
+
+
+                                                                                     CDF
+ Website         3,687   Topix, GroupMe, Delish                                            0.50
+ Other             900   BuzzFeed, Yahoo! News
+ Radio Station     992   2Day FM, Radio One Lebanon, Radio Disney                          0.25
+ TV Show         4,447   NBC today show, The voice
+ Sports Team     2,615   Dallas Cowboys, Pittsburgh Steelers
+ TV Channel      2,047   ABC, CBS Sports                                                   0.00
+                                                                                                                5      7
+                                                                                                  102 103 104 10 106 10 108
+Table 4: Number of news outlets in different categories cov-                                            Audience Size
+ered by Media Bias Monitor.
+                                                                            Figure 5: Distribution of audience size of news outlets.
+and their corresponding Interest IDs. Then, we gathered the                                                    Male           46%
+demographics of the audiences of all these outlets by follow-                       Gender
+                                                                                                              Female          54%
+ing the procedure detailed in the Methodology section.
+   Table 4 shows the number of news outlets in each cate-                                               African American      16.1%
+gory, as well as a few examples that help us to understand                                               Asian American       3.5%
+                                                                               Racial Afﬁnities
+what kind of news outlets are grouped into each of these                                                   Caucasian          64.3%
+categories. The most popular category is TV show, which                                                      Hispanic         16.1%
+contains TV news programs such as NBC’s Today Show.                                                         30k to 50k        17.9%
+We note that there are also TV shows from outside US, but                                                   50k to 75k        35.6%
+they have large following among the US users. The second                                                   75k to 150k        32.4%
+                                                                                    Income
+most popular category corresponds to external websites, fol-                                                over 150k         14.1%
+lowed by sport teams’ news and magazines. We also observe                                                    under 18         2.4%
+smaller yet considerable fractions of radio stations, newspa-                                                  18-24          16.3%
+pers, and individual journalists. Interestingly, although the                    Age Groups                    25-34          25.3%
+number of individual journalists is small in comparison to                                                     35-44          18.8%
+other categories, some journalists have quite large audi-                                                      45-54          15.4%
+ences. For example, Bill O’Reilly, with an audience of 2.2                                                     55-64          11.9%
+million users is on top of the list, followed by Lester Holt                                                 above 65         9.9%
+(1.8M) and Megyn Kelly (1.3M).                                                                               Natives          84.3%
+                                                                               National Identity
+Importance of Measuring Bias at Scale                                                                         Expats          15.7%
+Figure 5 shows the audience size of all news outlets gath-
+ered using the above steps. We can observe from Figure 5                  Table 5: The composition of the US-based Facebook users
+that although a small number of most popular news out-                    along different demographic dimensions and their corre-
+lets on Facebook reach large number of news readers, still a              sponding attributes.
+large number of news outlets cater to small niche audiences,
+which account for a non-negligible fraction of the overall
+news audience.                                                            news ecosystem. One might wonder, for instance, whether a
+   Interestingly, we ﬁnd that the news outlets with fewer au-             highly conservative media outlet mostly has a young Black
+diences are also those that are most ideologically biased.                audience, or does their audience have a high prevalence of
+For example, among the 10-percent most biased (i.e., either               old Caucasian people. Next, we brieﬂy discuss, through a se-
+most conservative or most liberal) news outlets, 58% outlets              ries of examples, the beneﬁts of incorporating the measure-
+have audience size less than 10, 000 users, whereas, among                ment of other demographic attributes as part of our system.
+the 10-percent least biased outlets, only 31% outlets have                Breakdown of Demographic Dimensions
+less than 10, 000 audience. This suggest that the most biased             A key feature we have incorporated in Media Bias Moni-
+news outlets are usually those that reach niche and smaller               tor is a breakdown of the audience across different demo-
+audience, thereby highlighting the importance of monitor-                 graphic attributes. For example, Figure 6 shows the break-
+ing the news published by these outlets and not only those                down of four demographic dimensions for Breitbart, a well-
+published by the mainstream news publishers.                              known conservative media outlet. As a reference for compar-
+                                                                          ison, Table 5 shows the distribution for these demographic
+Quantifying Biases at Finer Granularity                                   attributes for all Facebook users in the US.
+Most of the prior works on news media bias restricted them-                  As can be noted in Figure 6(a), number of conservative
+selves to political bias, leaving out other dimensions (e.g.,             and very conservative users constitute more than 89% of
+racial bias, gender bias or age bias) that can be very helpful            the Breitbart audience. Figures 6(b), (c), and (d) present the
+in providing a more ﬁne-grained perspective of the complex                breakdown of Breitbart audience along age, racial afﬁnity
+
+
+
+                                                                    296
+          (a) Political Leaning               (b) Age Groups               (c) Racial Afﬁnities           (d) National Identity
+
+                                  Figure 6: Breitbart and its bias across four demographic dimensions.
+
+
+and national identity. These ﬁgures show that the audience of           and the deployed system allows one to get a deeper un-
+Breitbart consists of 96.3% US natives, 86.6% Caucasians,               derstanding of bias in different media outlets. It not only
+and 57.7% of users older than 55 years. These values are                presents the political bias of a large number of news out-
+much higher compared to the Facebook population in the                  lets, but it also provides an interesting way of understanding
+US. Additionally, the proportion of men among Breitbart au-             other intrinsic biases (i.e., gender bias, age bias, etc.) of the
+dience is 55% compared to 46% in the Facebook population                audience interested in a certain news outlet.
+in the U.S. However, in terms of Income Level, the distribu-
+tion is quite similar to the overall Facebook population.               Search and Ranking Functions
+                                                                        As a ﬁnal contribution, the system ‘Media Bias Monitor’
+   Observing the demographic dimensions for The                         consists of a search function, which allows users to search
+Economist (see Figure 7), a liberal biased outlet (more                 for news outlets by name, as well as a ranking function that
+than 65% interested users are Liberal and Very Liberal),                allows the users to ﬁnd news outlets that have most over-
+we ﬁnd that it has a higher fraction (21%) of well-paid                 representation of audience belonging to a particular demo-
+audience, earning more than $150K, against 14.1% in the                 graphic group. For instance, a user belonging to a particular
+US-based Facebook population. Men and expats are also                   demographic group can look up what news sources other fel-
+higher compared to the overall population, while in terms               low group members are subscribing to. First two rows in Ta-
+of age and racial afﬁnities, we don’t see much difference.              ble 6 show news outlets highly gender biased towards either
+   Taking a closer look at other media outlets, we ﬁnd other            men or women. We notice that many sports speciﬁc outlets
+examples in which conservative news outlets have audiences              are highly biased towards men; whereas, outlets related to
+that are over-represented by Men - Drudge Report (63%) and              fashion, makeup, and pregnancy tend to be the ones most
+Rush Limbaugh Show (60%); by older people (aged above                   biased towards women.
+55) - Rush Limbaugh Show (51%) and Sean Hannity Show                       Similarly, the most racially biased outlets (third and fourth
+(67%); and by Native Americans - The Blaze (97%). On                    rows in Table 6) in terms of African-American and Asian-
+the liberal side, we see an over-representations of women -             American users are clearly focused on these speciﬁc racial
+ABC News (70%) and BuzzFeed (71%); African American                     demographic groups. In terms of high age bias (as presented
+- Daily Show (23%) and Al Jazeera America (35%); older                  in Table 6), for under 18 years, we can note TV channels like
+people (aged above 55) - Politico (38%) and PBS (33%);                  Disney which target adolescents, as well as outlets related to
+younger people (aged between 25-34) - Daily Show (34%).                 games. For 18 to 24 years age group, we ﬁnd many news
+   Apart from these well known media outlets, we can ex-                outlets associated with dating, music, TV series, TV shows,
+pand our analysis to a wider range of outlets. For exam-                and games. Interestingly, the outlets most biased towards the
+ple, we found a set of conservative media outlets that are              25 to 34 years old users are associated with business, profes-
+more biased towards men. Such outlets include publish-                  sions, and job seeking. For age groups higher than that, the
+ers of news related to Guns (e.g., Guns.com (92%), Four-                most biased news outlets are related to parenting and family.
+GuysGuns (94%)), or containing military news (e.g., The                 Finally, the last two rows in Table 6 show very conservative
+Fire Critic (83%), publishing stories from Fire Service, and            and very liberal news outlets, which are all focused on pol-
+SOFREP.com (92%), with news written and curated by for-                 itics, with their political leaning being expressed via their
+mer CIA and Veterans). Conservative women, in turn, have                names themselves.
+interest in media outlets publishing religious articles (e.g.,
+PrayAmerica (82%), Breaking Christian News (71%)), or                                             Conclusion
+health related stories (e.g., Lifenews.com (76%), a website             In this work, we proposed a novel methodology to quantify
+that post stories with topics against abortion and euthanasia).         the ideological biases of thousands of news outlets on social
+On the other hand, Liberal outlets with major predominance              media. To do so, we utilized the leaning of their audience
+of men include gay magazines (like Gay Times (84%) and                  which can be obtained from the social media site’s adver-
+Instinct (88%)) and a left-wing magazine (Jacobin - (66%)).             tising framework. Speciﬁcally, for this work, we collected
+Liberal women, are over-represented in the audience of fem-             20, 448 pages categorized as news by Facebook, and then
+inist and liberal magazines: The Man Repeller (96%), Fem-               leveraged the Facebook audience API to obtain demographic
+inisting.com (91%) and Everyday Feminism (90%).                         information for their audiences. Such audience demograph-
+   These examples show that our bias inference approach                 ics allowed us to cover a large number of media outlets,
+
+
+
+                                                                  297
+          Demographic Dimension    Demographic Attributes                              Sample of the Most Overrepresented News Outlets
+                                           Male             Velocity RC Magazine(99%), myGayTrip.com(99%), Best Motoring(99%), The Gentleman’s Journal(99%)
+                 Gender
+                                          Female            Styletoday(100%), Makeuptalk.com(99%), Pregnancy and newborn(99%), Proud single Moms(98%)
+                                     African American       BlackamericaWeb(92%), BlackNews.com(89%), Black Men Magaz.(80%)
+             Racial Afﬁnities
+                                      Asian American        Hoa hoc Tro Magazine(97%), Kenh14.vn(97%), Sportsoho(100%)
+                                         Under 18           Fox Action Movies(25%), Disney Channel(23%), MuchGames.com (24%), BeingGirl(26%)
+                                           18-24            Disaster Date(68%), Fairy Tail Fans(65%), Insert Gamer(76%), Speed and Sound Magazine(66%)
+                                           25-34            JobTopGun(70%), Canadian Business(72%), Marketing na Cozinha(65%), WeddingSutra(76%)
+               Age Groups
+                                           35-44            Fans of Being a Mom(50%), Scholastic Parents(47%), Growing Without Schooling(44%)
+                                           45-54            Rush is a Band (59%), Ultimate Classic Rock(38%), Yahoo! Sports Radio(58%)
+                                           55-64            SmartMoney(61%), The new avengers(42%), The Monkees(38%), I Love Being a Grandma(37%)
+                                        Very Cons.          Legal Insurrection(90%), RedState(84%), Patriot Update(84%), Conservative Angle(82%), Fox Nation(75%)
+             Political Leaning
+                                       Very Liberal         Sister 2 Sister(76%), The Alaska Quarterly Review(66%),Democracy Now(59%)
+
+
+Table 6: Examples of highly biased news outlets in Facebook along different demographic dimensions. The percentage of
+audience belonging to the respective demographic groups are shown in parenthesis.
+
+
+
+
+         (a) Political Leaning                 (b) National Identity                             (c) Gender                              (d) Income Level
+
+                                  Figure 7: The Economist and its bias across four demographic dimensions.
+
+
+which are at least two orders of magnitude more than what                                                               References
+existing efforts have covered. Additionally, we also identi-
+ﬁed news outlets biased along ﬁve other axes: age, gender,                              Allcott, H., and Gentzkow, M. 2017. Social media and fake
+income level, racial afﬁnity, and national identity. Finally,                           news in the 2016 election. Technical Report 2, National Bu-
+we built and publicly deployed a system, called Media Bias                              reau of Economic Research.
+Monitor 13 , which makes the biases for these 20, 448 news                              Araujo, M.; Mejova, Y.; Weber, I.; and Benevenuto, F. 2017.
+outlets transparent to any Internet user.                                               Using facebook ads audiences for global lifestyle disease
+   We believe that systems such as ours are not only use-                               surveillance: Promises and limitations. In Proceedings of
+ful for the social media users, but also for journalists, so-                           the 9th ACM Conference on Web Science (WebSci).
+cial media researchers, developers of recommendation sys-                               Babaei, M.; Kulshrestha, J.; Chakraborty, A.; Benevenuto,
+tems, as well as for governmental agencies wanting to un-                               F.; Gummadi, K. P.; and Weller, A. 2018. Purple Feed:
+derstand the news generated by sources in the entire news                               Identifying High Consensus News Posts on Social Media.
+media ecosystem. Our study forms the foundation for many                                In Proceedings of the AAAI/ACM Conference on Artiﬁcal
+research directions that can be pursued in the future for as-                           Intelligence, Ethics & Society (AIES).
+sessing and mitigating the impact of biases of news sources.
+As future work, we aim at expanding our system to other                                 Bakshy, E.; Messing, S.; and Adamic, L. A. 2015. Expo-
+countries, particularly those with upcoming elections. An-                              sure to ideologically diverse news and opinion on facebook.
+other research direction consists of assessing the advantages                           Science 348(6239).
+and pitfalls of audience-based and content-based methods                                Budak, C.; Goel, S.; and Rao, J. M. 2016. Fair and
+for inferring news media bias.                                                          Balanced? Quantifying Media Bias Through Crowdsourced
+                                                                                        Content Analysis. Public Opinion Quarterly 80(S1).
+Acknowledgments. This work was partially funded by                                      Chakraborty, A.; Ghosh, S.; Ganguly, N.; and Gummadi,
+a Data Transparency Lab grant. F. Ribeiro was supported                                 K. P. 2015. Can trending news stories create coverage bias?
+by a grant from Capes. F. Benevenuto was supported by                                   on the impact of high content churn in online news media.
+grants from Humboldt Foundation, Capes, and Fapemig. A.                                 In Computation and Journalism Symposium.
+Chakraborty is a recipient of Google India PhD Fellowship
+                                                                                        Chakraborty, A.; Ghosh, S.; Ganguly, N.; and Gummadi,
+and Prime Ministers Fellowship Scheme for Doctoral Re-
+                                                                                        K. P. 2016. Dissemination biases of social media channels:
+search, a public-private partnership between Science & En-
+                                                                                        On the topical coverage of socially shared news. In Proceed-
+gineering Research Board (SERB), Department of Science
+                                                                                        ings of the Intl. AAAI Conference on Web and Social Media
+& Technology, Government of India and Confederation of
+                                                                                        (ICWSM).
+Indian Industry (CII).
+                                                                                        Chakraborty, A.; Messias, J.; Benevenuto, F.; Ghosh, S.;
+                                                                                        Ganguly, N.; and Gummadi, K. P. 2017. Who makes trends?
+  13
+       twitter-app.mpi-sws.org/media-bias-monitor                                       understanding demographic biases in crowdsourced recom-
+
+
+
+                                                                                 298
+mendations. In Proceedings of the Intl. AAAI Conference on            Shor, E.; van de Rijt, A.; Miltsov, A.; Kulkarni, V.; and
+Web and Social Media (ICWSM).                                         Skiena, S. 2015. A paper ceiling: Explaining the persistent
+Chiang, C.-F., and Knight, B. 2011. Media bias and inﬂu-              underrepresentation of women in printed news. American
+ence: Evidence from newspaper endorsements. The Review                Sociological Review 80(5).
+of Economic Studies 78(3).                                            Speicher, T.; Ali, M.; Venkatadri, G.; Ribeiro, F. N.; Ar-
+Covert, T. J. A., and Wasburn, P. C. 2007. Measuring media            vanitakis, G.; Benevenuto, F.; Gummadi, K. P.; Loiseau, P.;
+bias: A content analysis of time and newsweek coverage of             and Mislove, A. 2018. On the Potential for Discrimina-
+domestic social issues, 1975–2000. Social science quarterly           tion in Online Targeted Advertising. In Proceedings of the
+88(3).                                                                Conference on Fairness, Accountability, and Transparency
+                                                                      (FAT*’18).
+Dooling, D. J., and Lachman, R. 1971. Effects of com-
+prehension on retention of prose. Journal of experimental             Vosoughi, S.; Roy, D.; and Aral, S. 2018. The spread of true
+psychology 88(2):216.                                                 and false news online. Science 359(6380).
+Garcia, D.; Kassa, Y. M.; Cuevas, A.; Cebrian, M.; Moro,              Zagheni, E.; Weber, I.; and Gummadi, K. 2017. Leverag-
+E.; Rahwan, I.; and Cuevas, R. 2017. Facebook’s gender                ing facebook’s advertising platform to monitor stocks of mi-
+divide. arXiv preprint arXiv:1710.03705.                              grants. Population and Development Review.
+Gentzkow, M., and Shapiro, J. M. 2010. What Drives Media              Zhou, D. X.; Resnick, P.; and Mei, Q. 2011. Classifying the
+Slant? Evidence From U.S. Daily Newspapers. Economet-                 political leaning of news articles and users from user votes.
+rica 78.                                                              In Proceedings of the Intl. AAAI Conference on Web and
+Gilliam Jr, F. D.; Iyengar, S.; Simon, A.; and Wright, O.             Social Media (ICWSM).
+1996. Crime in black and white: The violent, scary world
+of local news. Harvard Intl. Journal of Press/Politics 1(3).
+Groseclose, T., and Milyo, J. 2005. A measure of media
+bias. The Quarterly Journal of Economics 120.
+Lazer, D. M. J.; Baum, M. A.; Benkler, Y.; Berinsky, A. J.;
+Greenhill, K. M.; Menczer, F.; Metzger, M. J.; Nyhan,
+B.; Pennycook, G.; Rothschild, D.; Schudson, M.; Sloman,
+S. A.; Sunstein, C. R.; Thorson, E. A.; Watts, D. J.; and
+Zittrain, J. L. 2018. The science of fake news. Science
+359(6380).
+Le, H. T.; Shaﬁq, Z.; and Srinivasan, P. 2017. Scalable news
+slant measurement using twitter. In Proceedings of the Intl.
+AAAI Conference on Web and Social Media (ICWSM).
+Lee Rodgers, J., and Nicewander, W. A. 1988. Thirteen
+ways to look at the correlation coefﬁcient. The American
+Statistician 42(1).
+Lella, A. 2016. Traditional news publishers take non-
+traditional path to digital growth. ComScore.
+Leskovec, J.; Backstrom, L.; and Kleinberg, J. 2009. Meme-
+tracking and the dynamics of the news cycle. In Proceedings
+of the ACM SIGKDD Intl. Conference on Knowledge Dis-
+covery and Data Mining (KDD).
+Mitchell, A.; Gottfried, J.; Kiley, J.; and Matsa, K. 2014.
+Political polarization and media habits. Pew Research.
+Mitchell, A. 2016. Key ﬁndings on the traits and habits of
+the modern news consumer. Pew Research Center.
+Munson, S.; Chhabra, S.; and Resnick, P. 2017. BAL-
+ANCE - Tools for improving your news reading experience.
+http://balancestudy.org/.
+Pariser, E. 2011. The ﬁlter bubble: What the Internet is
+hiding from you. Penguin UK.
+Ramasubramanian, S. 2007. Media-based strategies to re-
+duce racial stereotypes activated by news stories. Journalism
+and Mass Communication Quarterly 84(2).
+Shoemaker, P. J.; Vos, T. P.; and Reese, S. D. 2009. Journal-
+ists as gatekeepers. The Handbook of Journalism Studies.
+
+
+
+                                                                299
+

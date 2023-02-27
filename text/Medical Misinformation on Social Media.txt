@@ -1,0 +1,166 @@
+                                                                Circulation
+
+                                                                ON MY MIND
+
+                                                                Medical Misinformation on Social Media
+                                                                Cognitive Bias, Pseudo-Peer Review, and the Good Intentions
+                                                                Hypothesis
+
+
+
+
+                                                                T
+                                                                       he importance of understanding factors that drive the spread of medical mis-        Samuel P. Trethewey,
+                                                                       information has been highlighted by recent discourse.1,2 In response to the           MBChB, BSc
+                                                                       growing and pervasive threat of medical misinformation, editors of leading
+                                                                cardiology journals collaborated to shine a spotlight on this issue.3 In their com-
+                                                                mentary, Hill et al3 highlight the responsibility of purveyors of web-based media
+                                                                content to help address medical misinformation.
+                                                                    But what motivates an individual or organization to share a specific scientific
+                                                                or healthcare narrative? Motivations are likely to be multifactorial and may be
+                                                                influenced by individual or organizational biases and competing interests. A news
+                                                                organization may be motivated by the need to generate readership, and therefore
+                                                                income, using sensationalist, inaccurate headlines regarding new medical treat-
+                                                                ments. An additional contributing factor is that individuals may be motivated to
+                                                                share information that they perceive to be both accurate and of social value. For
+Downloaded from http://ahajournals.org by on January 18, 2023
+
+
+
+
+                                                                example, misinformation surrounding Cough CPR has been perpetuated for al-
+                                                                most 20 years, which, in part, has been facilitated by social media.4 People who
+                                                                share articles endorsing Cough CPR may do so with good intentions because of a
+                                                                perception that the medical advice may benefit others. This is a powerful idea be-
+                                                                cause the perceived validity of information shared online is likely related to the level
+                                                                of trust the reader has in the source. Information shared by friends and family may
+                                                                be more likely to be perceived as accurate by a layperson than an article shared by
+                                                                an independent organization. Moreover, social media can create echo chambers of
+                                                                misinformation where ideas are not challenged and users of social media fall foul
+                                                                to confirmation bias and polarized viewpoints within their social networks.2
+                                                                    Historically, the onus has been on clinicians and academics to moderate the dis-
+                                                                semination of medical information. However, dissemination goes beyond confer-
+                                                                ence presentations and publications in peer-reviewed journals; the general public
+                                                                plays a key role. This second stage of dissemination is unregulated and unfiltered
+                                                                and is therefore subject to a high risk of bias. There is no 90% rejection rate after
+                                                                peer review for comments posted on social media platforms such as Twitter, Face-
+                                                                book, or Instagram; comments are available instantly without restriction and are
+                                                                accessible to all indefinitely. In some ways, comments on social media platforms
+                                                                are like a sort of pseudo-peer review: unfiltered comments and unsubstantiated
+                                                                claims or critiques, often made by nonexperts. Anyone can comment on a social              The opinions expressed in this article are
+                                                                media post without giving their credentials. Social media platforms therefore act          not necessarily those of the editors or
+                                                                                                                                                           of the American Heart Association.
+                                                                as an open access publishing forum, with users having instant access to preprints
+                                                                with no mechanism in place to formally moderate claims. This can result in in-             Key Words: bias ◼ communication
+                                                                                                                                                           ◼ health literacy ◼ peer review
+                                                                formation overload from many sources of variable quality, with Internet search             ◼ publication bias ◼ public health
+                                                                engines such as Google facilitating dissemination. The sheer volume of medical             ◼ social media
+                                                                information shared on social media can make it increasingly challenging for lay-           © 2019 American Heart Association, Inc.
+                                                                people to distinguish fact from fake news.
+                                                                                                                                                           https://www.ahajournals.org/journal/circ
+
+
+
+                                                                Circulation. 2019;140:1131–1133. DOI: 10.1161/CIRCULATIONAHA.119.041719                                   October 1, 2019    1131
+                                                                              Trethewey                                                                                       Medical Misinformation on Social Media
+
+
+
+                                                                                  The commentary by Hill et al3 shifts the burden of re-   in the journal following peer review. Initiatives like this
+FRAME OF REFERENCE
+
+
+
+
+                                                                              sponsibility of addressing these issues to those involved    are promising and encourage a proactive approach to
+                                                                              in the spread of information via social media. However,      reviewing content shared on social media.
+                                                                              it is unclear exactly how purveyors of web-based media           The foundation of evidence-based medicine is peer
+                                                                              content should combat the spread of medical misinfor-        review. Peer review enables scientists to critique medi-
+                                                                              mation. It is likely that a multimodal approach, using a     cal research and question the validity of conclusions
+                                                                              wide range of interventions, will be required. Interven-     that can be drawn from that research. However, lay-
+                                                                              tions based on a form of fact-checking of popular so-        people may not understand the importance of the
+                                                                              cial media posts may be a promising avenue to explore.       peer review process, nor may they appreciate the sig-
+                                                                              For example, Twitter could assign a Reviewed Content         nificance of the publishing source as an indirect mark-
+                                                                              status to Tweets that have been reviewed by a verified       er of scientific validity (ie, a reputable medical journal
+                                                                              expert in a relevant field (for example, a professor of      versus an online blog post). Moreover, it is possible
+                                                                              immunology in the case of a Tweet regarding vaccina-         that the general public lack identifiable figureheads
+                                                                              tion). The expert would be tasked with reviewing the         from the medical profession whom they trust regard-
+                                                                              content of the Tweet and would undergo a fact-check-         ing health information. A possible solution would be
+                                                                              ing, critical appraisal process, leading to the produc-      to identify and allocate roles to experts (for example,
+                                                                              tion of a written response to the Tweet. This written        an experienced senior cardiologist) whose specific role
+                                                                              response could have 2 key components: a lay summary          would be to advise the public regarding treatments
+                                                                              of the evidence along with a detailed, referenced re-        and to help dispel misinformation regarding their spe-
+                                                                              view of the evidence. Once a Tweet has been reviewed,        cialty. We need more science communicators who can
+                                                                              a dated Reviewed Content label could be shown with           take complex ideas and share them accurately and in
+                                                                              the Tweet. The written expert review would then be           an understandable format with the general public.
+                                                                              directly linked to the original Tweet for users to ac-       We cannot expect everyone to understand the scien-
+                                                                              cess. For practical purposes, only Tweets containing         tific method or be able to critically appraise literature
+                                                                              specific medical/healthcare terms that have received a       to identify misinformation. Despite good intentions,
+                                                                              sufficient number of interactions (for example, >5000        many people may unknowingly share misinformation
+                                                                              shares/likes/comments) would be considered for con-          via social media. Although there is a role for medi-
+                                                                              tent review and critical appraisal. These Tweets could       cal journals in addressing these issues,5 targeted pub-
+                                                                              be identified using algorithms and screened to deter-
+              Downloaded from http://ahajournals.org by on January 18, 2023
+
+
+
+
+                                                                                                                                           lic health education and social media campaigns may
+                                                                              mine if they warrant formal review. This could help to       also be required to help prevent the spread of medical
+                                                                              target popular issues that have received more wide-          misinformation and develop public health literacy. It
+                                                                              spread attention and are of public health concern. Of        is likely that proactive interventions, such as promot-
+                                                                              course, the threshold at which a Tweet is reviewed           ing scientific literacy in school, will be crucial and may
+                                                                              would require careful consideration. Furthermore, us-        have a greater long-term impact. Furthermore, proac-
+                                                                              ers of Twitter could be assigned a simple, cumulative        tive engagement of the scientific and clinical commu-
+                                                                              Fact-Sharing score based on the number of shares             nity with news and social media providers is essential
+                                                                              of unique expert reviews. The purpose of this metric         to facilitate accurate communication of medical infor-
+                                                                              would be to encourage users to share fact-checked            mation to laypeople.
+                                                                              information originating from expert sources via the
+                                                                              Reviewed Content process. Such a score could be dis-
+                                                                              played on a user profile as a reflection of their engage-    ARTICLE INFORMATION
+                                                                              ment with the fact-checking process. Other possible          Correspondence
+                                                                              interventions include displaying targeted educational        Samuel P. Trethewey, MBChB, BSc, Birmingham Heartlands Hospital, Bordesley
+                                                                              material regarding important public health topics to         Green East, Birmingham, B95SS United Kingdom. Email s-trethewey@doctors.
+                                                                                                                                           org.uk
+                                                                              social media users using automated algorithms and re-
+                                                                              cruiting trusted social media influencers to share fact-
+                                                                                                                                           Affiliation
+                                                                              checked information on their profiles.
+                                                                                  Medical journals are engaging more with social me-       University Hospitals Birmingham NHS Foundation Trust, United Kingdom.
+
+                                                                              dia; many journals have active Twitter profiles sharing
+                                                                              articles and hosting Twitter chats and journal clubs. It     Disclosures
+                                                                              is interesting to note that the Journal of Cardiovascu-      None.
+
+                                                                              lar Electrophysiology has recently begun peer review-
+                                                                              ing Tweets for consideration of publication. In their        REFERENCES
+                                                                              #JCETweet2Press initiative, Journal of Cardiovascular
+                                                                                                                                             1. Merchant RM, Asch DA. Protecting the value of medical science in the
+                                                                              Electrophysiology offers Tweeters the opportunity to              age of social media and “fake news.” JAMA. 2018;320:2415–2416. doi:
+                                                                              share interesting cases, with a chance to be published            10.1001/jama.2018.18416
+
+
+
+                                                                              1132    October 1, 2019                                     Circulation. 2019;140:1131–1133. DOI: 10.1161/CIRCULATIONAHA.119.041719
+                                                                Trethewey                                                                                                   Medical Misinformation on Social Media
+
+
+
+                                                                 2. Chou WS, Oh A, Klein WMP. Addressing health-related misinformation on   4. Trethewey SP. ‘Cough CPR’: misinformation perpetuated by social
+
+
+
+
+                                                                                                                                                                                                                      FRAME OF REFERENCE
+                                                                    social media. JAMA. 2018;320:2417–2418. doi: 10.1001/jama.2018.16865       media. Resuscitation. 2018;133:e7–e8. doi: 10.1016/j.resuscitation.
+                                                                 3. Hill JA, Agewall S, Baranchuk A, Booz GW, Borer JS,                        2018.10.003
+                                                                    Camici PG, Chen PS, Dominiczak AF, Erol C, Grines C, et al. Medical     5. Armstrong PW, Naylor CD. Counteracting health misinforma-
+                                                                    misinformation: vet the message! Circulation. 2019;139:571–572. doi:       tion: a role for medical journals? JAMA. 2019;321:1863–1864. doi:
+                                                                    10.1161/CIRCULATIONAHA.118.039193                                          10.1001/jama.2019.5168
+Downloaded from http://ahajournals.org by on January 18, 2023
+
+
+
+
+                                                                Circulation. 2019;140:1131–1133. DOI: 10.1161/CIRCULATIONAHA.119.041719                                                   October 1, 2019   1133
+

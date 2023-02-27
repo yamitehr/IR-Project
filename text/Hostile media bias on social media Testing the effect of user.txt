@@ -1,0 +1,554 @@
+                                                                                                                                                              25781863, 2020, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/hbe2.185 by Malmad - Israel Center For Digital Information Services, Wiley Online Library on [18/01/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+Received: 16 September 2019          Revised: 17 February 2020    Accepted: 20 February 2020
+DOI: 10.1002/hbe2.185
+
+
+EMPIRICAL ARTICLE
+
+
+
+
+Hostile media bias on social media: Testing the effect of user
+comments on perceptions of news bias and credibility
+
+Sherice Gearhart1                       | Alexander Moe2                     | Bingbing Zhang3
+
+1
+  Department of Public Relations, College of
+Media and Communication, Texas Tech                  Abstract
+University, Lubbock, Texas                           News outlets use social media, especially Facebook, for content distribution and
+2
+ Department of Journalism, Broadcasting, &
+                                                     engagement. This exposes consumers to user comments before reading a news arti-
+Public Relations, The College at Brockport,
+State University of New York (SUNY),                 cle, creating an environment where audiences judge content prior to reading the
+Brockport, New York
+                                                     story. In response to Perloff's (2015) call for research exploring how social media cul-
+3
+ Donald P. Bellisario College of
+Communications, The Pennsylvania State               tivate hostile media effects, this work examines the effects of viewing comments
+University, University Park, Pennsylvania            prior to reading a news story on perceptions of bias and credibility. This application
+Correspondence                                       tests across issue topics and is not limited to strong partisans or individuals with high
+Sherice Gearhart, Department of Public               issue involvement to test effects on a broader population. Results show comments
+Relations, College of Media and
+Communication, Texas Tech University,                under Facebook news teasers influence perceptions of bias and credibility. Specifi-
+3003 15th Street, MS 43082, Lubbock,                 cally, those exposed to congruent opinions reported lower perceptions of bias and
+TX 79409, United States.
+Email: sherice.gearhart@ttu.edu                      higher perceptions credibility than exposed to incongruent opinions. Results extend
+                                                     the hostile media bias theory by focusing on all audiences and prescribes practical
+Funding information
+Texas Tech University—College of Media &             implications for news practitioners.
+Communication
+                                                     KEYWORDS
+Peer Review
+                                                     credibility, Facebook, hostile media bias, online comments
+The peer review history for this article is
+available at https://publons.com/publon/
+10.1002/hbe2.185.
+
+
+
+The hostile media phenomenon contends that individuals, especially                 to audiences (Chung et al., 2015) that can influence perceptions
+strong partisans and individuals who are highly involved with an issue,            (Houston et al., 2011).
+are likely to perceive neutral media coverage as demonstrably biased                    More important, work has not tested the influence of comments
+against their point of view (Vallone, Ross, & Lepper, 1985), which in              seen before accessing news content. Research supports the notion
+turn, lower trust in media and strengthen political polarization. This             that comments influence the reception of online news content and
+perceptual bias explains the relationships between attitudes, public               may even be capable of shaping audience evaluations of the basic
+opinion, and perceptions of media effects (Perloff, 2015).                         functions of news (e.g., Walther, DeAndrea, Kim, & Anthony, 2010;
+      While empirical work on the hostile media effect originally inves-           Waddell, 2018, 2020). That is, hostility toward information encour-
+tigated traditional media, studies have since examined online news                 ages biased perceptions among readers.
+stories, both from mainstream outlets and blogs, with consistent                        The popularity of social media has led to their adoption by both
+results (e.g., Gunther & Liebhart, 2006; Kim, 2015). Yet, one line of              individuals and organizations. One prominent organizational use is
+inquiry aims to investigate the influence of user-generated comments               among news outlets, which use social media to promote and distribute
+on online news stories. While comments have been found to influence                content while simultaneously engaging with audiences (Al-Rawi,
+perceptions of bias in online news through traditional websites                    2017). This is an especially common practice on Facebook, the world's
+(e.g., Houston, Hansen, & Nisbett, 2011; Lee, 2012), investigations                largest social media site that is the most used in the United States for
+into comments on websites and/or blogs have produced mixed results                 news consumption (Matsa & Shearer, 2018). Perloff (2015) has
+(Chung, Munno, & Moritz, 2015; Yun, Park, Lee, & Flynn, 2018).                     claimed that “social media differ from conventional media in their
+Regardless, it has been suggested that comments may act as a cue                   interactivity, helping to transform formerly passive receivers of
+
+140       © 2020 Wiley Periodicals, Inc.                     wileyonlinelibrary.com/journal/hbe2                   Hum Behav & Emerg Tech. 2020;2:140–147.
+                                                                                                                                                              25781863, 2020, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/hbe2.185 by Malmad - Israel Center For Digital Information Services, Wiley Online Library on [18/01/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+GEARHART ET AL.                                                                                                                                        141
+
+
+
+political information into full-fledged political Facebook posters”             which refers to individuals will categorize more contents into opposing
+(p. 719). In an effort to investigate the role of poster in contributing to     opinions than supporting opinions, might aid hostile media bias (Stroud,
+hostile media bias, this project aims to determine whether exposure             2008). Therefore, partisanship that is formed by prior attitudes and
+to user-generated Facebook comments posted on news articles seen                beliefs is believed to be an important factor that may contribute to hos-
+before accessing news stories influences perceptions of bias.                   tile media bias (Bachl, 2016). The influence of prior attitudes has also
+      To date, work has not tested the influence of comments seen               been found to influence perceived bias at varying levels (Gunther,
+before accessing news content, yet research supports the notion that            Miller, & Liebhart, 2009). Gunther et al. (2001) found hostile media bias
+comments may influence the reception of online news content and                 existed not only in partisans but also anyone with opposing opinions
+may be capable of shaping audience evaluations (e.g., Walther et al.,           and argued that a relatively disagreeable media bias existed.
+2010; Waddell, 2018). Therefore, this project aims to determine                     Empirical applications of hostile media bias have traditionally
+whether exposure to Facebook comments seen on a teaser advertis-                incorporated concepts that pertain to political attitudes, public opin-
+ing a news story prior to reading the actual story influence percep-            ion, and media effects on audiences (Perloff, 2015). For instance, it
+tions of news bias and aspects of news credibility.                             has been found that selective exposure, regardless of the perceived
+      Although investigations into the hostile media effect typically           climate of opinion, has the ability to increase polarization of attitudes
+focus on strong partisans or those with high issue involvement, the             (Lord, Ross, & Lepper, 1979). Tsfati (2007) argued that hostile media
+current study enhances the theoretical scope by not limiting respon-            bias even influences perceptions of public opinion, which might lead
+dents to strong partisans nor those with a strong interest in the issue         to alienation of minority opinion holders. In fact, minority opinion
+at hand. Results aim to broaden theoretical scope and test whether              holders who perceived hostile media bias have been found to be more
+different parts of the online news experience, like the inclusion of            likely to ignore mass public opinions, withdraw from civic activities, or
+opinionated commentary before reading a neutral news story, influ-              even do something against democracy (Tsfati & Cohen, 2003).
+ence one another rather than working in isolation.                                  Furthermore, Guther (1998) proposed that audiences regarded
+                                                                                public opinion more against their personal beliefs if they perceived
+                                                                                more hostile media bias. Tsfati and Cohen (2005) also found Israelis
+1     |       L I T E R A T U RE R E V I E W                                    who settled in Gaza believed public opinion would be influenced by
+                                                                                biased media coverage, so they strongly wanted to move somewhere
+1.1       |     Hostile media bias                                              else. In addition, Arabs in Israel perceived bias in Israeli media cover-
+                                                                                age. According to Tsfati (2007), this perception influenced Arab media
+Hostile media bias, also commonly referred to as the hostile media              audiences to believe that the at large Israeli Jewish population were
+effect, was first documented by Vallone et al. (1985) when they pres-           hostile and biased to them, ultimately leading to alienation in contexts
+ented identical television news clips to partisan audiences and found           that transcend the media-realm (Tsfati, 2007). In a previous study, Tsfati
+subjects across the political spectrum perceived the clips as opposi-           and Cohen (2003) argued that perception of media bias may even influ-
+tional to their beliefs and inherently biased. It has been claimed that         ence residential mobility intentions if they felt other people were more
+hostile media bias exists among highly involved partisans, also                 easily affected by perceived issues, biases and/or socio political implica-
+referred to as ego-involved partisans (Vallone et al., 1985; Hansen &           tions informed by adopted media perceptions more than themselves.
+Kim, 2011). These individuals were more inclined to perceive hostile                The body of scholarly literature concerning hostile media bias
+media bias in the opinions presented in media, especially when issue            originally focused on traditional media settings such as newspapers
+presentations appeared on oppositional media outlets (Giner-Sorolla &           and television. Research into the hostile media phenomenon in online
+Chaiken, 1994; Gunther, Christen, Liebhart, & Chih-Yun Chia, 2001).             settings identified similar effects in online news websites and blogs.
+      Prior attitude and climate of opinion has been identified as impor-       For instance, Borah, Thorson, and Hwang (2015) found that perceived
+tant factors that contribute to hostile media bias. Specifically, individuals   bias among partisan blog readers actually encouraged them to visit
+who held negative beliefs and attitudes to a specific news report were          politically homogeneous online spaces, which caused political polari-
+found to be more likely to develop hostile media bias (Giner-Sorolla &          zation. Likewise, others have demonstrated that when blogs share
+Chaiken, 1994). Perloff (2015) also strengthened the claim that prior           news credited to politically incongruent news sources, that the neutral
+attitude, or a previously held belief about a topic, remains an important       articles were perceived to be more biased than those exposed to con-
+factor in how individuals perceive bias. Further, it has been pointed out       gruent news sources (Yun et al., 2018).
+that individuals viewed information in the news report based on differ-
+ent standards and they thought that self-aligning (i.e., congruent) opin-
+ions were more correct than those that differed from their own                  1.2 |       News distribution & consumption on social
+(i.e., incongruent) opinions (Gunther & Schmitt, 2004).                         media
+      Psychological processes regarding how the perceived opinion cli-
+mate may contribute to the hostile media bias has also been proposed.           There is a seemingly long history of distributing news content online,
+Processes such as selective recall, which refers to individuals are             especially through websites connected to news organizations (Al-
+inclined to recall the opposing opinions, and selective categorization,         Rawi, 2017). In the past, news websites actively invited audiences to
+                                                                                                                                                       25781863, 2020, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/hbe2.185 by Malmad - Israel Center For Digital Information Services, Wiley Online Library on [18/01/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+142                                                                                                                                 GEARHART ET AL.
+
+
+
+interact with content through commenting (Al-Rawi, 2017). In fact,          activate hostile media effects. As such, research into online media has
+95% of American newspapers with online websites allowed readers to          taken a focus on user-generated comments, which often accompany
+comment in 2011, indicating that comment sections were seen as              online news. These comments may be capable of influencing percep-
+both popular and profitable (Santana, 2011). However, many news             tions since “audience feedback can bias readers' perceptions of a
+websites soon discontinued comment sections. For instance, CNN              news story's editorial position” (Lee and Tandoc, 2017, p. 440). Lee
+eliminated comment sections in 2014 except for those on “selectively        and Tandoc Jr (2017) further claimed that “user comments can high-
+activated on stories that editors feel have the potential for high-         light certain elements of the news, thereby guiding (i.e., priming) sub-
+quality debate” (CNN, 2014, para. 12). Others followed suit, such as        sequent cognitive processes” (p. 440).
+The Verge and The Daily Dot in 2015 (BBC, 2015), NPR in 2016 (Jesen,            Research into hostile media bias perceived in online comments
+2017), and MSN in 2017 (Smith, 2017), among many others.                    has begun to generate compelling findings. Indeed, comments posted
+      The removal of comment sections indicated a reprioritization          alongside or at the end of news stories have been found to influence
+among established media channels that was caused online users. That         an audience's perception of bias in online news through traditional
+is, as more Americans get news via social media (Greenwood, Perrin, &       websites. For example, Houston et al. (2011) experimentally tested
+Duggan, 2016), this led news outlets to shift their collective attention    whether comments on a news website are capable of influencing
+to social media outlets, such as Facebook (Gottfried & Shearer, 2016)       audience perceptions of bias. Results showed that user-generated
+where they seek to disseminate and promote news content                     comments do, in fact, influence perceptions of content. Similarly, Lee
+(Rowe, 2015).                                                               (2012) found that user-generated comments that accompany online
+      Social media components such as open comment sections are still       news stories are capable of influencing the perception of bias in news
+rife with biases. However, there is still an arguable potential for audi-   content. Specifically, results demonstrated that audiences perceived
+ences having their perceptions of news articles skewed due to hostile       lower levels of bias when they viewed news stories featuring com-
+media bias. For example, Coe, Kenski, and Rains (2014) performed a          ments that aligned with their point of view. Yet, audiences who saw
+content analysis of 300 articles in a local newspaper's website and         online news stories with comments that were against their own opin-
+found that incivility occurs frequently related to news topics and          ion tended to perceive greater bias (Lee, 2012).
+sources. Chung et al. (2015) also found that audiences were more                Some research, however, has shown that online news consumers
+likely to comment on stories biased against their opinions, and more        did not differently perceive bias when exposed to either agreeable or
+likely to share and like stories in favor of their opinions. However, Lee   disagreeable user comments (Yun et al., 2018). However, in this case,
+and Tandoc Jr (2017) claim that findings of previous research on the        the user comment manipulation may not have been strong enough
+influence of user comments on audience perceptions “suggest that            since they only utilized one ideological perspective and the robust
+people may (mis)attribute the characteristics of user feedback to the       source effects might have wiped out effects of comments. Likewise,
+news itself, failing to distinguish between the two sources of informa-     Yun et al. (2018) failed to identify any significant influence of user
+tion” (p. 441).                                                             comments on perceived bias. Yet, there were admitted concerns that
+      News content is increasingly distributed by news organizations        the manipulation may not have effectively been noticed by respon-
+and shared by users across social media outlets (Matsa & Shearer,           dents. Beyond these mixed results, research has identified the effect
+2018). In fact, 68% of U.S. citizens say they gather a portion of their     of online comments significantly relates to varying perceptions of hos-
+news from social media sites, and about 43% of Americans get news           tile media bias. That is, existent research has suggested that com-
+from Facebook, which the most of any other social platform (Matsa &         ments may act as a cue to audiences (Chung et al., 2015) that can
+Shearer, 2018).                                                             influence perceptions (Houston et al., 2011). However, whether expo-
+      To the contrary, more than half (53%) of Facebook users fail to       sure to user-generated Facebook comments posted on news articles
+“understand why particular posts are seen on their news feed” (Smith,       seen before accessing news stories influences perceptions of bias is
+2018, para. 3). This phenomenon may in fact be due to Facebook's            understudied. This study attempts to determine the extent to which
+algorithm that has been known to tailor posts toward individual users       online comments on social media influence perceptions that inform a
+based on their likes and interests. Intentionally preprograming users       hostile media bias prior to users are provided an opportunity to read
+feeds based on such facts may limit exposure to news that may be            the news article itself.
+deemed oppositional to a user's preferences and apparent political              H1: Perceptions of bias will vary as a function of exposure to
+leaning, which may further any present bias and creating an echo            opinionated comments (i.e., agreeable or disagreeable) among
+chamber effect (Bromwich & Haag, 2018).                                     audiences.
+                                                                                Comments have the potential to mediate how internet news is
+                                                                            received. For instance, user comments may influence how audiences
+1.3 | Hostile media bias and online news                                    evaluate news quality (Gearhart & Kang, 2014; Prochazka, Weber, &
+comments                                                                    Schweiger, 2018). Also, Waddell (2018, 2020) has found across multi-
+                                                                            ple studies that negative comments posted on social media news lead
+Perloff (2015) pointed out that there is limited hostile media research     to decreases in audience members' perceptions of article credibility.
+aimed at investigating the ways in which the internet or social media       Additionally, research has shown that infrequent commenters were
+                                                                                                                                                        25781863, 2020, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/hbe2.185 by Malmad - Israel Center For Digital Information Services, Wiley Online Library on [18/01/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+GEARHART ET AL.                                                                                                                                  143
+
+
+
+less civil than frequent commenters, and civil commenters were more        included abortion and gun control, specifically about supporting the
+likely to use evidence in support of their claims (Coe et al., 2014).      ban of the assault rifles such as the AR-15. These two topics were
+      Additionally, Lee, Kim, and Coe (2018) investigated the influence    chosen because news stories that address public affairs have been
+of news shared by other users via social media on perceptions of hos-      found to gain more user comments than others (Boczkowski &
+tile media bias. Results showed that social media users also perceived     Mitchelstein, 2012). Further, in the U.S. context, abortion continues
+hostile media bias in news content shared on social media. This was        to be a highly visible issues that divides citizens (Pew Research Cen-
+especially true among partisans who tended to believe that a news          ter, 2017). Similarly, gun control is also a controversial topic important
+article shared by members from opposing political party was more           to U.S. citizens and also tends to divide citizens across ideological
+biased than articles shared politically like-minded individuals (Lee       lines (Pew Research Center, 2018). Therefore, after random assign-
+et al., 2018). As such, the current study aims to determine the extent     ment, participants were led to issue-specific questions assessing their
+to which online comments influence subjects' perception of news            personal opinions on the topic.
+credibility using the following research questions:                              Next, participants were exposed to the stimulus before complet-
+      RQ1: Do perceptions of professional credibility vary as a function   ing post-test assessments. Through random assignment, participants
+of exposure to one-sided comments expressing opinions that were            were presented with a Facebook post advertising a news story that
+either congruent or incongruent with participant opinions?                 featured user comments that either agreed or disagreed with their
+      RQ2: Do perceptions of civic credibility vary as a function of       opinion on the topic while those in the control condition were
+exposure to opinionated comments (i.e., agreeable or disagreeable)         exposed to the same post without user comments. All conditions con-
+among audiences?                                                           tained an image with a headline for the story. Manipulation of the
+                                                                           opinion environment was achieved through the inclusion of five one-
+                                                                           sided comments that appeared to be posted by other users. As such,
+2     |       METHOD                                                       respondents not assigned to a control condition were exposed to
+                                                                           user-generated comments that either agreed (i.e., congruent) or dis-
+This experimental study used a 2 (abortion or gun control) × 3 (con-       agreed (i.e., incongruent) with their own opinion on the topic below
+gruent opinion climate, incongruent opinion climate, or control)           the Facebook post advertising the news story. Next, all participants
+between-subjects factorial design with a control group. The inclusion      read a short, neutral news story written by a professional journalist
+of the control group alongside the fully crossed factorial design allows   about their assigned topic and answered a post-test questionnaire.
+for comparing relative treatment conditions and absolute comparisons
+to a control group. With IRB approval, respondents were recruited
+using Amazon Mechanical Turk (MTurk), an online mechanical worker          2.2     |       Measures
+platform contracted to recruit a sample of U.S. adult Facebook users
+(N = 670). MTurk has been found to produce a concrete sample pool          2.2.1       |    Bias
+(Mao, Parkes, Procaccia, & Zhang, 2011; Mason & Suri, 2012) illustra-
+tive of the US population (Berinsky, Huber, & Lenz, 2012). The experi-     Developed from items used by Arpan and Raney (2003), this measure
+ment was built in a university-affiliated Qualtrics account and            was used to assess perceptions of news bias. While the original mea-
+distributed to qualified MTurk workers. Each participant was paid          surement focused on five-items, news bias was measured here using
+$1.50 for their participation and MTurk added a $.05 fee to each           three assessments on a 7-point Likert-type scale (1 = greatly biased
+respondent to ensure they were Facebook users. Despite the fee, two        against my opinion to 7 = greatly biased in-favor of my opinion). After
+additional filter questions were added to ensure respondents fit the       exposure to the stimuli news story, respondents were asked to indi-
+desired population of U.S. Facebook users.                                 cate their perceived level bias on three questions including (a) do you
+                                                                           feel that the news story was greatly biased against or in-favor of your
+                                                                           opinion?; (b) do you feel that the writer of the news story was greatly
+2.1       |   Stimulus                                                     biased against or in-favor of your opinion?; and (c) do you feel that
+                                                                           the news outlet that published this story was greatly biased against or
+A total of six conditions, which contained original news stories featur-   in-favor of your opinion? All items were reversed scores so that higher
+ing varying formats of Facebook comments, were created by an indi-         scores on all items reflected higher perceptions of bias against the
+vidual with professional Photoshop experience and a writer with            participant's opinion and were summed to form an index (α = .89;
+professional journalism experience for this experiment. In each condi-     M = 4.04, SD = 1.13).
+tion, stimulus consisted of a Facebook post featuring a neutral image
+and headline advertising the story appearing as content posted by The
+Economist, a news outlet that has been identified as the least biased      2.2.2       |    Professional credibility
+among U.S. citizens (Mitchell, 2014).
+      After answering pretest measures, participants were randomly         Developed from the media credibility scale developed by Gaziano and
+assigned a news story topic. The two topics chosen for this study          McGrath (1986), this item assessed various aspects of journalism
+                                                                                                                                                           25781863, 2020, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/hbe2.185 by Malmad - Israel Center For Digital Information Services, Wiley Online Library on [18/01/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+144                                                                                                                                    GEARHART ET AL.
+
+
+
+reflecting credibility. Mirroring use by Gearhart and Kang (2014), this      (383.07) = 26.34, p < .001. Therefore, the manipulation of both topic
+item used a 7-point semantic differential scale and consisted of six         and opinion climate appear successful.
+items including (a) unfair/fair; (b) does not tell whole story/tells whole
+story; (c) inaccurate/accurate; (d) cannot be trusted/can be trusted;
+(e) opinionated/factual; and (f) has poorly-trained reporters/ has well-     3    |   RE SU LT S
+trained reporters. All items were scored so that higher scores reflected
+a higher level of perceived professional credibility (α = .92; M = 4.54,     The purpose of this analysis is to investigate the influence of the
+SD = 1.30).                                                                  Facebook opinion climate manifested through user comments. There-
+                                                                             fore, conditions related to topic of each news story (i.e., either abor-
+                                                                             tion or gun control) were tested to ensure there was no main effect of
+2.2.3       |    Civic credibility                                           topic on perceptions of bias, professional credibility, nor civic credibil-
+                                                                             ity. After analysis revealed no main effect of topic, conditions were
+To measure an aspect of credibility reflective of journalistic practices     merged. This resulted in conditions featuring Facebook posts advertis-
+that serve citizens, six items were used including (a) does not watch        ing a news story with either agreeable comments (i.e., congruent opin-
+after viewer's interests/watches after viewer interests; (b) not con-        ion climate), disagreeable comments, (i.e., incongruent opinion
+cerned about community's well-being/concerned about community's              climate), or no comments (i.e., neutral opinion climate) before being
+well-being; (c) does not separate fact and opinion/does separate fact        exposed to the news story.
+and opinion; (d) concerned about making profits/concerned about                  H1 posited that perceptions of bias would vary as a function of
+public interest; (e) is unbiased/is biased; and (f) respects people's        exposure to one-sided opinionated comments (i.e., either agreeable or
+invades people's privacy. Items (e) and (f) were reversed so that all        disagreeable) among audiences. Results revealed a significant main
+items were scored with higher scores reflecting a higher level of per-       effect of exposure to opinionated comments appearing on the
+ceived civic credibility (α = .84; M = 4.58, SD = 1.15).                     Facebook post advertising a news story on perceptions of bias among
+                                                                             audience members, F(2, 667) = 8.90, p < .001; ηp2 = .03. A Student–
+                                                                             Newman–Keuls (SNK) post hoc analysis was conducted to observe
+2.2.4       |    Demographics                                                changes in participants perceptions associated with the inquiry herein.
+                                                                             SNK makes pairwise comparisons of mean scores, which are rank-
+Five demographic questions were asked. The majority of the final             ordered to test differences (Winer, 1971; Reinard, 2006). The SNK
+sample were Caucasian (76.4%), followed by Asian/Pacific Islander            test showed that participants exposed to comments expressing like-
+(8.4%). Respondents were nearly evenly split between female (54.3%)          minded sentiments report lower perceptions that the story, writer,
+and male (45.7%) and the average reported age of respondents was             and news outlet were biased against their own opinions (M = 3.80,
+37.86 years old (SD = 11.97). They reported an average income                SD = 1.12) than were those exposed to comments featuring dissimilar
+between above $40,000 and below $60,000 (SD = 2.89). In regard to            comments (M = 4.25; SD = 1.12) and stories without comments
+education, respondents indicated completing between a 2-year and             (M = 4.06, SD = 1.09). Therefore, H1 was supported.
+4-year college degree (1 = less than high school to 7 = doctoral/profes-         RQ1 asked whether perceptions of professional credibility would
+sional degree; M = 4.29, SD = 1.28).                                         vary as a function of exposure to one-sided comments expressing
+                                                                             opinions that were either congruent or incongruent with a partici-
+                                                                             pant's opinions. Data analysis revealed a significant main effect of
+2.3     |       Manipulation check                                           exposure to opinionated comments featured under a Facebook post
+                                                                             advertising a news story on perceptions of professional credibility, F
+As a check of the story type manipulation, each respondent was asked         (2, 667) = 3.45, p = .03; ηp2 = .01. A SNK post hoc analysis showed
+to identify the topic of the news story from a multiple-choice question      that participants exposed to comments expressing like-minded senti-
+offering four options. Respondents who failed one of the two checks          ments reportedly had higher perceptions that the news story pos-
+on data quality (e.g., select strongly agree) or respondents who failed      sessed professional credibility (M = 4.72, SD = 1.30) compared to
+to correctly identify their story topic were removed from the data to        perceptions of professional in stories that featured comments that
+create the final sample (N = 670). As a check of the manipulation of         were incongruent with participant opinions (M = 4.40; SD = 1.28). Par-
+story comments, a single item instructed respondents to think back           ticipants who viewed stories without comments, which were seen in
+the Facebook comments posted under the post initially advertising            the control condition (M = 4.50, SD = 1.31), did not differ significantly
+the story. They were then asked “did the comments tend to disagree           from either individuals in the congruent or incongruent condition.
+or agree with your own opinion” (1 = strongly disagree to 7 = strongly           RQ2 inquired about whether perceptions of civic credibility
+agree). Results indicate that subjects in the like-minded condition indi-    would vary as a function of exposure to opinionated comments
+cated a significantly higher level of agreement that the comments            (i.e., agreeable or disagreeable) among audiences. Results revealed a
+agreed with their opinion (M = 5.87, SD = 1.14) than did respondents         significant main effect of exposure to opinionated comments featured
+in the condition featuring dissimilar comments (M = 2.24, SD = 1.70), t      on the Facebook post featuring the story on perceptions of bias
+                                                                                                                                                          25781863, 2020, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/hbe2.185 by Malmad - Israel Center For Digital Information Services, Wiley Online Library on [18/01/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+GEARHART ET AL.                                                                                                                                    145
+
+
+
+among audiences, F(2, 667) = 3.96, p = .02; ηp2 = .01. SNK post hoc             On the other hand, the opposite was also found to be true. In this
+analysis showed that participants exposed to Facebook comments              case, reader comments expressing disagreement with the participant's
+that expressed similar opinions reported higher perceptions of civic        opinions led to greater perceptions that the story, writer, and outlet
+credibility (M = 4.75, SD = 1.16) compared to perceptions of civic          were biased against their own opinion. That is, exposure to disagreeable
+credibility in stories featuring dissimilar comments (M = 4.45;             comments compelled audiences to perceive greater perceptions of bias
+SD = 1.17). The reported level of perceived civic credibility reported      in the subsequent news story. These findings echo those of Lee (2012)
+among individuals in the control condition (M = 4.54, SD = 1.12), who       who observed that user-generated comments accompanying online
+viewed stories without comments, was not significantly different than       news stories led audiences to perceive lower levels of bias when they
+participants in either the congruent or incongruent conditions.             viewed news stories featuring comments that aligned with their point of
+                                                                            view and greater bias in online news stories with comments that were
+                                                                            against their own opinion (Lee, 2012). This also coincides with Gunther
+4    |   DISCUSSION                                                         et al. (2001) relatively disagreeable media bias, where they point to hos-
+                                                                            tile media bias transcending a traditional partisan political world view
+Guided by the hostile media phenomenon, the primary goal of this            and taking on anyone holding opposing or challenging opinions.
+study was to examine the influence of one-sided comments appearing              Overall, results concerning perceived bias builds on previous
+in Facebook posts advertising a news story before exposure on audi-         research indicating that user-generated comments accompanying
+ence perceptions of neutral news content. Previous applications of          online news content can influence audience perceptions and extend
+hostile media bias tend to focus solely on the perception of bias           application to real-world features of news distribution on Facebook,
+among strong partisans after viewing new or, more recently, have on         the largest social media platform. Specifically, previous research
+the influence of comments seen after exposure to online news con-           exposed participants to comments at the same time as the news con-
+tent (e.g., Houston et al., 2011; Lee, 2012; Lee & Tandoc, 2017;            tent, such as showing user comments placed at the bottom of a news
+Prochazka et al., 2018). Alternatively, the current study took the          story or alongside the news content in the sidebar (e.g., Houston
+unique approach of controlling for partisanship and identified that         et al., 2011; Lee, 2012). Despite the small to medium effect size, the
+social media comments seen before news exposure lead to perceptual          current study supports existent findings and this work indicates that
+biases. Specifically, audiences were found to have increased percep-        the influence of social media comments may be more wide-reaching
+tions of bias and reduced perceptions of credibility after exposure to      than originally anticipated given that the exposure to comments seen
+comments expressing opinions that they disagreed with. The opposite         before accessing news content can bias audience perceptions.
+was also found among those exposed to likeminded comments, who                  In regard to the influence of user comment attributes on audience
+subsequently perceived less bias and enhanced aspects of news credi-        perceptions of credibility, findings align with those above and further
+bility. Results point toward the broad reach of perceptual biases and       demonstrate the influence of comments. Specifically, when evaluating
+extend the theoretical scope to alternative sources of influence.           perceptions of professional credibility, participants responded to items
+    As social media are increasingly used for news dissemination,           that evaluated aspects of a journalist's professional skills, such as their
+news consumers' exposure to comments posted by others prior to              ability to produce fair, objective, accurate, and trustworthy journalistic
+reading a news article is now commonplace (e.g., Rowe, 2015; Green-         content. Previous work has found that audience evaluations of news
+wood et al., 2016; Gottfried & Shearer, 2016). This seemingly innocu-       quality can be influenced by user comments (Prochazka et al., 2018).
+ous practice should be reconsidered due to the most prominent               Although the effect size was smaller than that of perceptions of bias,
+results, which indicated that individuals are primed by comments to         results showed that perceptions of professional credibility were found
+make judgements about news content before they encounter the                to be enhanced among individuals who were exposed to like-minded
+news content. This aligns with Lee and Tandoc (2017) who claimed            comments on the Facebook news teaser, which were seen before
+that “user comments can highlight certain elements of the news,             reading the neutral story in the current study. Although Prochazka
+thereby guiding (i.e., priming) subsequent cognitive processes”             et al. (2018) examined the influence of comments that lacked civility,
+(p. 440). Therefore, this study demonstrates a specific feature of social   their manipulation of incivility was done with comments that used
+media that may enhance the hostile media effect, which is the appear-       “informal and emotional language” (p. 68), which may reflect how dis-
+ance of comments before accessing news content. For instance,               similar viewpoints are perceived by audiences.
+results seen here demonstrate that when individuals were exposed to             Others have found that exposing news audiences to expert opin-
+opinionated comments that agreed with their own opinions, percep-           ions, as opposed to the opinions of other social media users, led to
+tions that the news story, writer of the article, and the news outlet       higher perceptions of news credibility (Pjesivac, Geidner, & Cameron,
+itself were biased were diminished. That is, being exposed to               2018). However, that work examined the opinions embedded in a
+likeminded comments before reading the story led people to have             sidebar of a news article (i.e., seen alongside the text of an article),
+enhanced perceptions of overall news quality. This indicates that sim-      which are different than comments seen on a Facebook post advertis-
+ply viewing congenial content, even when it is posted by unknown            ing a story and seen before reading the news article. The exposure to
+others, has the ability to influence preconceived notions about a news      like-minded comments that were provided underneath a Facebook
+article and the outlet from which it is produced.                           post advertising a news story resulted in perceptions that the news
+                                                                                                                                                             25781863, 2020, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/hbe2.185 by Malmad - Israel Center For Digital Information Services, Wiley Online Library on [18/01/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+146                                                                                                                                      GEARHART ET AL.
+
+
+
+story as increasingly credible. This builds on previous scholarship by       RE FE RE NCE S
+observing a similar trend insofar as the endorsement of civic and pro-       Al-Rawi, A. (2017). News values on social media: News organizations'
+fessional credibility may be attributed to an echo-chamber effect                Facebook use. Journalism, 18, 871–889. https://doi.org/10.1177/
+                                                                                 1464884916636142
+(Bromwich & Haag, 2018). That is, users may claim their endorsement
+                                                                             Arpan, L. M., & Raney, A. A. (2003). An experimental investigation of news
+due to mistaking the attributes inherent in user comments as news                source and the hostile media effect. Journalism & Mass Communication
+content or the presentation of multiple sources of information may               Quarterly, 80, 265–281. https://doi.org/10.1177/107769900308000203
+become muddled and influence perceptions beyond the comments                 Bachl, M. (2016). Selective exposure and hostile media perceptions during
+                                                                                 election campaigns. International Journal of Public Opinion Research, 29,
+alone whereby “audience feedback can bias readers' perceptions of a
+                                                                                 352–362. https://doi.org/10.1093/ijpor/edw014
+news story's editorial position” (Lee and Tandoc Jr, 2017, p. 440).          BBC. (2015, August 19). Is it the beginning of the end for online comments.
+Therefore, the results seen here further demonstrate the influence of            Retrieved        from       https://www.bbc.com/news/blogs-trending-
+news comments, which appear capable of influencing audiences even                33963436.
+                                                                             Berinsky, A. J., Huber, G. A., & Lenz, G. S. (2012). Evaluating online labor
+when they are physically detached from the story content.
+                                                                                 markets for experimental research: Amazon.com's Mechanical Turk.
+      In addition, this study found that perceptions of civic credibility
+                                                                                 Political Analysis, 20, 351–368. https://doi.org/10.1093/pan/mpr057
+were found to decline when users viewed incongruent Facebook com-            Boczkowski, P. J., & Mitchelstein, E. (2012). How users take advantage of
+ments prior to reading the news story. Likewise, the opposite effect             different forms of interactivity on online news sites: Clicking, e-mail-
+was induced when exposed to congruent comments, which led to more                ing, and commenting. Human Communication Research, 38, 1–22.
+                                                                                 https://doi.org/10.1111/j.1468-2958.2011.01418.x
+positive evaluations of civic credibility. When evaluating civic credibil-
+                                                                             Borah, P., Thorson, K., & Hwang, H. (2015). Causes and consequences of
+ity, participants responded to items that inquired about their percep-           selective exposure among political blog readers: The role of hostile
+tions of journalistic practices within the article that aim to serve             media perception in motivated media use and expressive participation.
+citizens, such as whether the story aimed to watch after their interests         Journal of Information Technology & Politics, 12, 186–199. https://doi.
+                                                                                 org/10.1080/19331681.2015.1008608
+and well-being. Since these perceptions were enhanced as result of
+                                                                             Bromwich, J. E. & Haag, M. (2018, January 12). Facebook is changing. What
+exposure to like-minded comments, this indicates that self-aligning per-         does that mean for your news feed? Retrieved from https://www.
+spectives inform an increased perception that the journalist(s) are              nytimes.com/2018/01/12/technology/facebook-news-feed-changes.
+adhering to standards of credible practice. Conversely, this perception          html.
+                                                                             Chung, M., Munno, G. J., & Moritz, B. (2015). Triggering participation:
+was absent where non-self-aligning comments were featured. Although
+                                                                                 Exploring the effects of third-person and hostile media perceptions on
+the effect size was small, these results further suggest the degree to           online participation. Computers in Human Behavior, 53, 452–461.
+which commenters may seek to cultivate views from others with                    https://doi.org/10.1016/j.chb.2015.06.037
+aligning points of view. In such a forum, like-minded audiences appear       CNN. (2014, November 21). Online comments are being phased out.
+                                                                                 Retrieved from https://www.cnn.com/2014/11/21/tech/web/online-
+to flock to comments that share thoughts and perspectives that bolster
+                                                                                 comment-sections/index.html.
+their own pre-established viewpoints. An added perceptual effect, as         Coe, K., Kenski, K., & Rains, S. A. (2014). Online and uncivil? Patterns and
+observed in this study, may be found within the context of self-aligning         determinants of incivility in newspaper website comments. Journal of
+comments that lead to increased perceptions of credibility.                      Communication, 64, 658–679. https://doi.org/10.1111/jcom.12104
+                                                                             Gaziano, C., & McGrath, K. (1986). Measuring the concept of credibility.
+      In sum, this work aimed to extend existing application of the hos-
+                                                                                 Journalism Quarterly, 63, 451–462. https://doi.org/10.1177/
+tile media bias to a social media context that is currently being used
+                                                                                 107769908606300301
+for mass distribution of news content. Due to the broad focus on all         Gearhart, S., & Kang, S. (2014). Social media in television news: The effects
+users, not only strong partisans with high issue involvement, results            of twitter and Facebook comments on journalism. Electronic News, 8,
+provide evidence that enriches application of hostile media bias to              243–259. https://doi.org/10.1177/1931243114567565
+                                                                             Giner-Sorolla, R., & Chaiken, S. (1994). The causes of hostile media judg-
+elements outside of story content (i.e., comments seen before
+                                                                                 ments. Journal of Experimental Social Psychology, 30, 165–180. https://
+accessing a news story). Results build on existent hostile media bias            doi.org/10.1006/jesp.1994.1008
+literature and demonstrate an increasingly potent society-wide prob-         Gottfried, J., & Shearer, E. (2016). News use across social media platforms.
+lem. Lin (2009) pointed out the necessity for communication research             Retrieved from http://assets.pewresearch.org/wp-content/uploads/
+                                                                                 sites/13/2016/05/PJ_2016.05.26_social-media-and-news_FINAL-
+to “accelerate the pace of producing the best and most up-to-date sci-
+                                                                                 1.pdf.
+entific understanding of the Internet's effects on society” (p. 583).        Greenwood, S., Perrin, A., & Duggan, M. (2016). Social Media Update
+Considering the role of internet use in individuals' lives, taken in tan-        2016. Pew Research Center. Retrieved from http://assets.
+dem with Perloff's (2015) call for researchers to explore the role of            pewresearch.org/wp-.
+                                                                             Gunther, A. C. (1998). The persuasive press inference: Effects of mass
+social media in cultivating a hostile media effect, future research
+                                                                                 media on perceived public opinion. Communication Research, 25,
+should further consider the potential of hostile media effect as culti-          486–504. https://doi.org/10.1177/009365098025005002
+vated through participatory media.                                           Gunther, A. C., Christen, C. T., Liebhart, J. L., & Chih-Yun Chia, S. (2001).
+                                                                                 Congenial public, contrary press, and biased estimates of the climate
+                                                                                 of opinion. Public Opinion Quarterly, 65, 295–320. https://doi.org/10.
+ORCID
+                                                                                 1086/322846
+Sherice Gearhart     https://orcid.org/0000-0003-1504-4594                   Gunther, A. C., & Liebhart, J. L. (2006). Broad reach or biased source?
+Alexander Moe      https://orcid.org/0000-0002-0910-3298                         Decomposing the hostile media effect. Journal of Communication, 56,
+Bingbing Zhang      https://orcid.org/0000-0002-8674-1023                        449–466. https://doi.org/10.1111/j.1460-2466.2006.00295.x
+                                                                                                                                                                    25781863, 2020, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/hbe2.185 by Malmad - Israel Center For Digital Information Services, Wiley Online Library on [18/01/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+GEARHART ET AL.                                                                                                                                              147
+
+
+
+Gunther, A. C., Miller, N., & Liebhart, J. L. (2009). Assimilation and contrast       ownership than protecting gun rights. Retrieved from http://www.
+     in a test of the hostile media effect. Communication Research, 36,               people-press.org/2018/10/18/gun-policy-remains-divisive-but-
+     747–764. https://doi.org/10.1177/0093650209346804                                several-proposals-still-draw-bipartisan-support/.
+Gunther, A. C., & Schmitt, K. (2004). Mapping boundaries of the hostile           Pjesivac, I., Geidner, N., & Cameron, J. (2018). Social credibility online: The
+     media effect. Journal of Communication, 54, 55–70. https://doi.org/10.           role of online comments in assessing news article credibility. Newspa-
+     1111/j.1460-2466.2004.tb02613.x                                                  per Research Journal, 39, 18–31. https://doi.org/10.1177/
+Hansen, G. J., & Kim, H. (2011). Is the media biased against me? A meta-              0739532918761065
+     analysis of the hostile media effect research. Communication Research        Prochazka, F., Weber, P., & Schweiger, W. (2018). Effects of civility and rea-
+     Reports, 28, 169–179. https://doi.org/10.1080/08824096.2011.565280               soning in user comments on perceived journalistic quality. Journalism
+Houston, J. B., Hansen, G. J., & Nisbett, G. S. (2011). Influence of user             Studies, 19, 62–78. https://doi.org/10.1080/1461670X.2016.1161497
+     comments on perceptions of media bias and third person effect in             Reinard, J. C. (2006). Communication research statistics. Thousand Oaks,
+     online news. Electronic News, 5, 79–92. https://doi.org/10.1177/                 CA: SAGE.
+     1931243111407618                                                             Rowe, I. (2015). Deliberation 2.0: Comparing the deliberative quality of
+Jesen, E. (2017, August 24). A year after NPR ends commenting, no plans to            online news user comments across platforms. Journal of Broadcasting &
+     revive it. Retrieved from https://www.npr.org/sections/ombudsman/                Electronic Media, 59, 539–555. https://doi.org/10.1080/08838151.
+     2017/08/24/545790266/a-year-after-npr-ends-commenting-no-                        2015.1093482
+     plans-to-revive-it.                                                          Santana, A. D. (2011). Online readers' comments represent new opinion
+Kim, M. (2015). Partisans and controversial news online: Comparing per-               pipeline. Newspaper Research Journal, 32, 66–81. https://doi.org/10.
+     ceptions of bias and credibility in news content from blogs and main-            1177/073953291103200306
+     stream media. Mass Communication & Society, 18, 17–36. https://doi.          Smith, A. (2018, September 5). Many Facebook users don't understand how
+     org/10.1080/15205436.2013.877486                                                 the site's news feed works. Retrieved from http://www.pewresearch.
+Lee, E.-J. (2012). That's not the way it is: How user-generated comments              org/fact-tank/2018/09/05/many-facebook-users-dont-understand-
+     on the news affect perceived media bias. Journal of Computer-Mediated            how-the-sites-news-feed-works/.
+     Communication, 18, 32–45 doi: 10.1111/j.1083-6101.2012.01597.x.              Smith, S. (2017, July 26). MSN quietly ends online comments after 'abusive &
+Lee, E. J., & Tandoc, E. C., Jr. (2017). When news meets the audience:                offensive posts'. Retrieved from http://www.imediaethics.org/msn-
+     How audience feedback online affects news production and consump-                quietly-ends-online-comments-abusive-offensive-posts/.
+     tion. Human Communication Research, 43, 436–449. https://doi.org/            Stroud, N. J. (2008). Media use and political predispositions: Revisiting the
+     10.1111/hcre.12123                                                               concept of selective exposure. Political Behavior, 30, 341–366. https://
+Lee, T. K., Kim, Y., & Coe, K. (2018). When social media become hostile               doi.org/10.1007/s11109-007-9050-9
+     media: An experimental examination of news sharing, partisanship,            Tsfati, Y. (2007). Hostile media perceptions, presumed media influence, and
+     and follower count. Mass Communication & Society, 21, 1–23. https://             minority alienation: The case of Arabs in Israel. Journal of Communica-
+     doi.org/10.1080/15205436.2018.1429635                                            tion, 57, 632–651. https://doi.org/10.1111/j.1460-2466.2007.00361.x
+Lin, C. A. (2009). Effects of the internet. In J. Bryant & M. B. Oliver (Eds),    Tsfati, Y., & Cohen, J. (2003). On the effect of the “third-person effect”:
+     Media effects: Advances in theory and research (pp. 567–591). New                Perceived influence of media coverage and residential mobility inten-
+     York: Routledge.                                                                 tions. Journal of Communication, 53, 711–727. https://doi.org/10.
+Lord, C. G., Ross, L., & Lepper, M. R. (1979). Biased assimilation and atti-          1111/j.1460-2466.2003.tb02919.x
+     tude polarization: The effects of prior theories on subsequently con-        Tsfati, Y., & Cohen, J. (2005). The influence of presumed media influence
+     sidered evidence. Journal of Personality & Social Psychology, 37,                on democratic legitimacy: The case of Gaza settlers. Communication
+     2098–2109. https://doi.org/10.1037/0022-3514.37.11                               Research, 32, 794–821. https://doi.org/10.1177/0093650205281057
+Mao, A., Parkes, D. C., Procaccia, A. D., & Zhang, H. (2011). Human com-          Vallone, R. P., Ross, L., & Lepper, M. R. (1985). The hostile media phenom-
+     putation and multiagent systems: An algorithmic perspective. In Pro-             enon: Biased perception and perceptions of media bias in coverage of
+     ceedings of the twenty-fifth AAAI conference on artificial intelligence.         the Beirut massacre. Journal of Personality & Social Psychology, 49(3),
+Mason, W., & Suri, S. (2012). Conducting behavioral research on Amazon's              577–585. https://doi.org/10.1037/0022-3514.49.3.577
+     Mechanical Turk. Behavior Research Methods, 44, 1–23. https://doi.           Waddell, T. F. (2018). What does the crowd think? How online comments
+     org/10.3758/s13428-011-0124-6                                                    and popularity metrics affect news credibility and issue importance.
+Matsa, K. E. & Shearer, E. (2018, September 10). News Use Across Social               New Media & Society, 20, 3068–3083. https://doi.org/10.1177/
+     Media Platforms 2018. Retrieved from http://www.journalism.org/                  1461444817742905
+     2018/09/10/news-use-across-social-media-platforms-2018/.                     Waddell, T. F. (2020). The authentic (and angry) audience: How com-
+Mitchell, A. (2014, October 30). Which news organization is the most                  ment authenticity and sentiment impact news evaluation. Digital
+     trusted? The answer is complicated. Pew Research Center. Retrieved               Journalism, 8, 249–266. https://doi.org/10.1080/21670811.2018.
+     from       http://www.pewresearch.org/fact-tank/2014/10/30/which-                1490656.
+     news-organization-is-the-most-trusted-the-answer-is.                         Walther, J. B., DeAndrea, D., Kim, J., & Anthony, J. C. (2010). The influence
+Perloff, R. M. (2015). A three-decade retrospective on the hostile media              of online comments on perceptions of antimarijuana public service
+     effect. Mass Communication & Society, 18, 701–729. https://doi.org/              announcements on YouTube. Human Communication Research, 36,
+     10.1080/15205436.2015.1051234                                                    469–492. https://doi.org/10.1111/j.1468-2958.2010.01384.x
+Pew Research Center. (2017, July 7). Public opinion views on abortion:            Winer, B. J. (1971). Statistical principles in experimental design. New York,
+     Views on abortion, 1995 to 2017. Retrieved from http://www.                      NY: McGraw-Hill.
+     pewforum.org/fact-sheet/public-opinion-on-abortion/#.                        Yun, G. W., Park, S. Y., Lee, S., & Flynn, M. A. (2018). Hostile media or hos-
+Pew Research Center. (2018). Gun policy remains divise but several pro-               tile source? Bias perception of shared news. Social Science Computer
+     posals still draw bipartisan support: More prioritize controlling gun            Review, 36(1), 21–35. https://doi.org/10.1177/0894439316684481
+                                                                                                                                              25781863, 2020, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/hbe2.185 by Malmad - Israel Center For Digital Information Services, Wiley Online Library on [18/01/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+148                                                                                                                         GEARHART ET AL.
+
+
+
+AUTHOR BIOGRAPHI ES
+
+
+                      Sherice Gearhart (Ph.D., Texas Tech Univer-
+                      sity) is an assistant professor in the Depart-     How to cite this article: Gearhart S, Moe A, Zhang B. Hostile
+
+                      ment of Public Relations in the College of         media bias on social media: Testing the effect of user
+
+                      Media and Communication at Texas Tech Uni-         comments on perceptions of news bias and credibility. Hum
+
+                      versity. Her research interests include how        Behav & Emerg Tech. 2020;2:140–147. https://doi.org/10.
+
+                      audiences use media to form and express            1002/hbe2.185
+
+                      opinions, especially in online contexts.
+
+                      Alexander Moe (Ph.D., Texas Tech Univer-
+                      sity) is an assistant professor of Media Stud-
+                      ies   in   the   Department     of   Journalism,
+                      Broadcasting & Public Relations at SUNY
+                      Brockport. Moe seeks to understand how
+                      media messages involving news media, social
+                      media, media narratives and sports related
+ media are examined both at the societal and individual levels to
+ comprehend how perceptions, social norms, attitudes, behavioral
+ intent derives from such exposure. He employs methodological
+ plurality across interdisciplinary inquiries with a specialization in
+ survey-experiments, content analyses, and meta-analyses.
+
+                      Bingbing Zhang (M.A., Texas Tech University)
+                      currently is a doctoral student in Mass Com-
+                      munications at the Pennsylvania State Uni-
+                      versity. Her research interests focus on
+                      media effects regarding how online informa-
+                      tion impact individuals’ beliefs, attitudes, and
+                      behaviors. Using quantitative method, she
+ looks at how new technologies influence people’s processing of
+ information and attitudes formation, and how people use differ-
+ ent ways to express their certain opinions online and offline.
+

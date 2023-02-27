@@ -1,0 +1,313 @@
+                        Proceedings of the Fourteenth International AAAI Conference on Web and Social Media (ICWSM 2020)
+
+
+
+
+                              Empirical Evaluation of Three Common
+                         Assumptions in Building Political Media Bias Datasets
+
+                        Soumen Ganguly,1 Juhi Kulshrestha,2 Jisun An,3 Haewoon Kwak3
+                                           1
+                                             Saarland Informatics Campus, Germany
+                                       2
+                                    GESIS - Leibniz Institute for the Social Sciences, Germany
+                           3
+                             Qatar Computing Research Institute, Hamad Bin Khalifa University, Qatar
+                       soumen.ganguly@dfki.de, juhi.kulshrestha@gesis.org, {jisun.an, haewoon}@acm.org
+
+
+                             Abstract                                         validity of the constructed political media bias datasets. The
+                                                                              three assumptions are:
+  In this work, we empirically validate three common assump-
+  tions in building political media bias datasets, which are (i)              A1: Raters’ bias: Political leanings of raters do not af-
+  labelers’ political leanings do not affect labeling tasks, (ii)                 fect their ratings of political content (Gentzkow and
+  news articles follow their source outlet’s political leaning, and               Shapiro 2010; Iyyer et al. 2014; Bamman and Smith
+  (iii) political leaning of a news outlet is stable across different             2015).
+  topics. We build a ground-truth dataset of manually annotated
+  article-level political leaning and validate the three assump-              A2: Media-level bias and article-level bias: News articles
+  tions. Our ﬁndings warn that the three assumptions could be                     follow the political leaning of their source outlet (Pot-
+  invalid even for a small dataset. We hope that our work calls                   thast et al. 2018; Kulshrestha et al. 2018).
+  attention to the (in)validity of common assumptions in build-               A3: Topic-level bias: Political leanings of news outlets do
+  ing political media bias datasets.
+                                                                                  not change while reporting on different topics (Grose-
+                                                                                  close and Milyo 2005; Kulkarni et al. 2018; Bakshy,
+                         Introduction                                             Messing, and Adamic 2015; An et al. 2011; An, Quer-
+In today’s world, bias and polarization are some of the                           cia, and Crowcroft 2013; Kulshrestha et al. 2017).
+biggest problems plaguing our society. In such volatile en-                      In this work, we empirically validate these three assump-
+vironments, news media play a crucial role as the gatekeep-                   tions for building political media bias datasets. For this pur-
+ers of the information. Given the huge impact they can have                   pose, we collected news articles published by 18 U.S. news
+on societal evolution, they have long been studied by re-                     outlets of diverse political leaning on the topics of ‘Gun
+searchers. Researchers and practitioners often build politi-                  policy’ and ‘Immigration’ over a 3-month period in 2018.
+cal bias datasets for a variety of tasks ranging from examin-                 We then built a ground truth dataset of manually annotated
+ing bias of media outlets and news articles to studying and                   article-level political leanings using Amazon Mechanical
+designing algorithmic news retrieval systems for a healthy                    Turk (MTurk) and used it to validate the aforementioned as-
+news diet.                                                                    sumptions.
+   The fundamental task at the core of building political bias                   Surprisingly, or not surprisingly, we discovered that (i) in
+datasets is ‘inferring the political leaning of individual news               certain cases, liberal and conservative raters label leanings
+outlets or articles.’ Inferring the political leaning by human                of news articles differently, (ii) in many cases, the news ar-
+experts, however, is not scalable, and thus researchers often                 ticles do not follow the political leaning of the source outlet,
+label fewer items and then expand these labels to the whole                   and (iii) the political bias of news outlet while reporting on
+dataset. One such widely-used practice is collecting media-                   different topics does not remain unchanged. We hope that
+level bias labels and then using the same to annotate article-                our work calls attention to the need for validating common
+level bias. For example, in this case, all the news articles                  assumptions used for building political media bias datasets.
+from Fox News would be considered right-leaning as Fox
+News is the right-leaning news media. While such ‘propaga-                                          Related Work
+tion’ of media-level leaning to article-level may not always                  As manually detecting the political leaning of outlets or
+be correct, it is widely used without proper veriﬁcation in                   articles is challenging at large scale, signiﬁcant research
+the wild. Through a comprehensive review of previous work                     effort has focused on computationally inferring the polit-
+on building political media bias datasets, in this paper, we                  ical leanings of texts documents such as articles, blogs,
+have compiled three common assumptions that are widely-                       political statements, social media posts and congressional
+used in practice and which might pose potential risks to the                  speeches (Gentzkow and Shapiro 2010; Sim et al. 2013;
+Copyright  c 2020, Association for the Advancement of Artiﬁcial              Iyyer et al. 2014; Preoţiuc-Pietro et al. 2017; Bamman and
+Intelligence (www.aaai.org). All rights reserved.                             Smith 2015; Kulshrestha et al. 2018; Kulkarni et al. 2018;
+
+
+                                                                        939
+Potthast et al. 2018). However, since inferring the political             cles (230 articles each on the topics of ‘Gun policy’ and ‘Im-
+leanings in an automated, scalable manner is a hard task,                 migration’ as determined by keywords search). As MTurk
+researchers often assume certain conditions that make the                 has been widely used to label the dataset in this ﬁeld, we
+problem simpler.                                                          also used MTurk to collect the political leaning of these 460
+   The ﬁrst category of prior studies assumes that the polit-             articles from 5 workers each. To ensure high quality of la-
+ical leaning of raters does not affect their ratings of politi-           bels, we recruited workers who: (i) reside in the U.S., (ii) had
+cal content. Gentzkow and Shapiro (Gentzkow and Shapiro                   successfully completed 1000 MTurk HIT’s with at least 95%
+2010) validate their computed slant indices of outlets against            approval rating, and (iii) have successfully completed our
+reader-submitted ratings of outlet slant from media directory             political bias qualiﬁcation test. We paid the workers $0.10
+website Mondo Times. Mondo Times did not take into ac-                    for each article they reviewed because each news article is
+count the political leaning of readers while aggregating their            long enough to take a few minutes to read.
+ratings. Similarly, Iyyer et al. (Iyyer et al. 2014) do not fully            During the survey, the MTurk workers were shown the
+consider the leanings of Crowdﬂower workers while collect-                headline and body text of an article and were asked, “What
+ing ideological labels for the text from IBC dataset (Gross et            is the political leaning of the article?”. They were shown an-
+al. 2013). As do Bamman and Smith (Bamman and Smith                       swer choices on a ﬁve-point scale, between strongly liberal
+2015) while collecting labels for political beliefs for their             (-2.0) and strongly conservative (+2.0). We computed the
+dataset of assertions by showing them to MTurk workers.                   political leaning score of an article as the average score of
+   The second set of studies assume that the bias of articles             the ﬁve workers, following the previous literature (Budak,
+follows the bias of the outlet publishing it. For instance, Kul-          Goel, and Rao 2016). Splitting the range of political leaning
+shrestha et al. (Kulshrestha et al. 2018) label tweets with               score, we obtained the political leaning label for each article
+the political leaning of the authors of the tweet, Kulkarni et            within the ﬁve bias categories (SL, ML, N, MC, SC). The
+al. (Kulkarni et al. 2018) label each article in their dataset            political leaning score ranges from -2.0 to 2.0, with [-2.0,-
+with the label assigned to its source outlet by Allsides.com,             1.2] for Strongly Liberal (SL), (-1.2,-0.4] for Moderately
+and Potthast et al. (Potthast et al. 2018) assume that all ar-            Liberal (ML), (-0.4, 0.4) for Neutral (N), [0.4, 1.2) for Mod-
+ticles published by outlets with different orientations (main-            erately Conservative (MC) and [1.2,2.0] for Strongly Con-
+stream, left-wing, or right-wing) reﬂect the orientation of the           servative (SC). Table 1 shows the distribution of the articles
+publisher.                                                                across the ﬁve bias categories and the two topics.
+   Finally, many, if not most, studies (Gentzkow and Shapiro
+2010; Groseclose and Milyo 2005; Kulkarni et al. 2018;                          Leaning        SL    ML      N     MC     SC     Total
+Bakshy, Messing, and Adamic 2015; An et al. 2011; An,
+Quercia, and Crowcroft 2013; Kulshrestha et al. 2017) as-                     Gun policy       24     90     78     33      5     230
+sume that the political leanings of news outlets are stable                  Immigration       23     81     65     47     14     230
+while reporting on different topics.
+   In this work, we empirically validate these assumptions                Table 1: Distribution of the articles on two topics along
+for the task of building political bias datasets, on our manu-            ground truth bias labels annotated by MTurk workers
+ally annotated ground-truth dataset of article-level political
+leanings.
+                                                                          Inter-rater agreement
+          Building Ground-Truth Dataset                                   When we investigate the 460 articles labeled by 5 workers
+                                                                          each, we observe a high agreement among the workers. On
+Collecting news articles                                                  average, the political leaning reported by the workers varied
+We collected 114,218 news articles published by 18 U.S.                   by less than one point (0.9) on a ﬁve-point scale, with only
+news media outlets, between 26 June and 25 September                      5% cases with workers rating the article on opposite sides
+2018. 13 of these outlets account for the most percentage of              of the political spectrum (i.e., one rater labeled it as liberal-
+weekly usage during 2017 (Newman et al. 2017). We also                    leaning while the other labeled it as conservative-leaning).
+gathered their political leanings reported by Allsides.com
+along ﬁve bias categories – strongly liberal (SL), moderately             Manual Validation
+liberal (ML), neutral (N), moderately conservative (MC),                  We manually examined whether it is reasonable to use the
+and strongly conservative (SC).                                           average score of the ﬁve workers as political bias score of the
+   Furthermore, to curate a more balanced set of outlets, we              article. For this analysis, we randomly selected 10 articles
+additionally included two strongly conservative, two mod-                 for each topic and two authors independently labelled those
+erately conservative, and one strongly liberal news outlet,               20 articles on the ﬁve-point bias scale. We then compared
+giving us a total of 18 media outlets. Figure 1 depicts these             the author’s labels (average score of the two authors’ labels)
+18 outlets across the political spectrum on the x-axis (as re-            with Mturk worker’s labels. On average, the political leaning
+ported by allsides.com) ranked from SL to SC.                             reported by the Mturk workers differed by 0.525 from the
+                                                                          author’s labels, with zero cases where the two labels were
+Obtaining ground truth bias labels for articles                           on opposite sides of the political spectrum. Our analysis val-
+We randomly selected an equal number of articles from the                 idates that there is high agreement in MTurk workers and
+outlets in each bias categories, giving us a total of 460 arti-           authors’ assessment of the political leaning of articles.
+
+
+                                                                    940
+Publicly sharing dataset                                                  on their political belief (Budak, Goel, and Rao 2016). Simi-
+To encourage further research on inferring political lean-                larly, the extent to which a topic is polarizing may determine
+ings of articles and news outlets, we make our dataset along              how much care needs to be paid to methods for mitigating
+with publisher bias and ground truth labels judged by MTurk               the impact of labeling differences between liberals and con-
+workers publicly available.1                                              servatives.
+
+                Experimental Evaluation                                   A2: News articles follow the political leaning of
+                                                                          their source outlet.
+In this section, we evaluate the three assumptions by statis-
+tical tests and prediction models.                                        To give an idea of how the political leaning of the news
+                                                                          articles can be different from those of their source outlets,
+A1: Raters’ political leanings do not affect their                        we ﬁrst simply count the number of articles for which the
+ratings.                                                                  media-level and article-level political leanings differ. Using
+                                                                          three bias categories (Liberal, Neutral, and Conservative),
+To evaluate the ﬁrst assumption, we selected 20 random ar-                we ﬁnd that for 58.3% (134 out of 230) and 50.9% (117 /
+ticles (four random articles by outlets in each of the ﬁve bias           230) of the articles on Gun policy and Immigration, respec-
+categories) for each topic, giving a total of 40 articles. We             tively, the article-level leanings do not match their media-
+recruited MTurk workers by their political afﬁliation2 , while            level political leanings. As expected, the differences become
+also ensuring that they satisfy the three conditions from Sec-            larger when using ﬁve bias categories–73.9% and 74.8% of
+tion . For each article, we obtained political leaning anno-              the Gun policy and Immigration articles have different po-
+tations (between +2.0 and -2.0) from 5 conservative and 5                 litical leanings from their media-level political leanings.
+liberal MTurk workers.
+                                                                              To evaluate the second assumption, we consider a typical
+   To evaluate whether the conservative and liberal workers
+                                                                          use-case scenario of building a model for predicting the po-
+label the political leaning of articles similarly or not, we per-
+                                                                          litical leaning of a news article using the media bias dataset.
+formed paired t-test over the ratings of liberal and conser-
+                                                                          We want to investigate if we use a dataset following the sec-
+vative workers, for these 40 articles. In this case, our null
+                                                                          ond assumption, how does the performance of the prediction
+hypothesis is – the difference between the political leaning
+                                                                          model change?.
+labels of the same news article by the liberals and conserva-
+tives is zero.                                                                We build and compare the performance of two models,
+                                                                          which are (i) Mg : model trained using articles labeled with
+   Our paired t-tests show inconsistent trends; while we can
+                                                                          ground-truth political leaning, and (ii) Ma : model trained
+reject our null hypothesis for the ‘Gun policy’ articles (t =
+                                                                          using articles labeled with source outlet’s political leaning.
+2.19, p-value = 0.03), we fail to reject the null hypothesis for
+‘Immigration’ (t = 0.45, p-value = 0.65) and ‘All’ articles (t
+= 1.85, p-value = 0.06) at the signiﬁcance level of 0.05. In                                      Immigration
+other words, we do observe a statistical difference between                            Model     Classiﬁer      H,T and P
+the labels of news articles made by liberals and by conserva-
+tives on the topic of ‘Gun policy’, but this difference is not                                     MNBg        0.36 ± 0.03
+signiﬁcant for the topic of ‘Immigration.’ Therefore, our re-                                      SVMg        0.40 ± 0.12
+                                                                                        Mg
+sults suggest that this widely held assumption is not always                                        LRg        0.38 ± 0.07
+valid.                                                                                              RFg        0.37 ± 0.08
+   This ﬁnding, however, does not mean that all the labels                                         MNBa        0.21 ± 0.01
+obtained by crowdsourcing without consideration of label-                                          SVMa        0.22 ± 0.01
+ers’ political leaning are incorrect. Although the liberals and                         Ma
+                                                                                                    LRa        0.23 ± 0.01
+conservatives label the articles differently, no one side is al-                                    RFa        0.23 ± 0.01
+ways correct. It is thus reasonable to expect that averaging
+the ratings from both sides would reduce this bias, which                                          Gun policy
+is what most studies in the past have done. In other words,
+                                                                                       Model     Classiﬁer      H,T and P
+we do not expect that our ﬁndings affect the correctness of
+previous work. Rather, based on our ﬁndings, we would like                                         MNBg        0.39 ± 0.04
+to caution the researchers that there can be scenarios where                                       SVMg        0.35 ± 0.11
+                                                                                        Mg
+these labeling differences may play a signiﬁcant role. For                                          LRg        0.37 ± 0.10
+example, this might be an issue when the rater population                                           RFg        0.39 ± 0.08
+is skewed (e.g., labeling volunteers are students from a uni-                                      MNBa        0.19 ± 0.01
+versity in a strongly liberal region). In this case, researchers                                   SVMa        0.23 ± 0.01
+may need to account for it by either explicitly selecting a                             Ma
+                                                                                                    LRa        0.25 ± 0.01
+balanced set of raters, or by formulating survey questions                                          RFa        0.24 ± 0.01
+that mitigate the differences in the responses of raters based
+   1
+       https://github.com/soumenganguly/icwsm-20-media-bias               Table 2: Average F1-scores and 90% conﬁdence intervals
+   2
+       This requires additional charges in MTurk.                         across the 50 runs
+
+
+                                                                    941
+Figure 1: Political leaning of media outlets: Publisher bias (determined by Allsides.com) & aggregate bias of outlet’s articles
+as judged by MTurkers. Outlets are ranked on x-axis by their publisher bias from SL to SC.
+
+
+   We apply four types of supervised learning classiﬁers for                Allsides.com, while the y-axis depicts the political leaning
+our models Mg and Ma – Multinomial Naive Bayes (MNB),                       scores. We observe that several outlets have differing polit-
+Support Vector Machines (SVM), Logistic Regression (LR)                     ical bias scores for the articles on the two topics, as shown
+and Random Forest (RF). We train each classiﬁer using three                 in the ﬁgure. Moreover, for some media outlets, their polit-
+categories of features: (i) text of the headline (H), (ii) text (T)         ical leaning scores of the two topics are on opposite sides
+of the article, and (iii) political leaning of the source outlet            of the political spectrum. As an example, while The Blaze
+(P) of the article. Additionally, to account for the lack of                is considered strongly conservative, it shows opposing bi-
+balance in our dataset, we utilize class weights for adjusting              ases for articles on Gun policy and Immigration. Similarly,
+the balance of the training set.                                            while ABC is considered a neutral media, the aggregate bias
+   For training our models, we use 5-fold cross-validation,                 of its Immigration-related articles is conservative and that
+where the dataset is partitioned into 5 samples, out of which               of Gun policy-related articles is liberal. Overall, our results
+4 are used for training and the remaining one is used for test-             demonstrate that assuming that the political leaning of outlet
+ing. Since each sample is used exactly once for testing, we                 remains unchanged across the topics is not always correct;
+produce 5 results. The entire 5-fold cross-validation process               particularly, when the dataset covers multiple topics.
+is repeated 10 times with different seeds for shufﬂing and
+partitioning the whole dataset. We report the average F1-                                   Concluding Discussion
+scores and 90% conﬁdence intervals across these 50 runs
+for the 230 articles on the topics of ‘Immigration’ and ‘Gun                In this paper, we empirically evaluated three common as-
+policy’ in Table 2.                                                         sumptions for building political bias datasets. For doing so,
+   Comparing the performance of the two models in Table 2,                  we constructed a manually annotated dataset of news articles
+we observe that Mg , which is trained with ground truth data,               and their political leaning labels. Our experimental evalua-
+performs 56-74% better than Ma , which is trained with the                  tion reveals that these widely held assumptions do not al-
+dataset following A2. Even though it is expected that the gap               ways hold true. Particularly, we found that: (i) in certain
+of the performance between Mg and Ma with larger data                       cases, the political leaning of the rater can affect their rating
+would decrease, the potentially huge impact of the dataset                  of political leaning of the news article, (ii) the political lean-
+built based on A2 should be carefully understood.                           ing of news articles does not always follow the leaning of
+                                                                            the publisher, and (iii) the political leaning of the publisher
+A3: Political leanings of news outlets do not change                        sometimes changes while reporting on different topics.
+across topics.                                                                 While we tried to sample articles from a larger dataset
+                                                                            from multiple outlets with different political leanings and
+Finally, to evaluate the last assumption, we split the data into            handled class imbalance by weights, one limitation of this
+two sets of 230 articles each on the topics ‘Gun policy’ and                work is the small size of the ground truth dataset. It is
+‘Immigration.’ For each topic, we compute the average po-                   mainly because of the cost of recruiting MTurk workers with
+litical bias score for each outlet based on the bias scores of              additional constraints (e.g., the political leaning of work-
+the articles (as determined by MTurk workers) published by                  ers). We hope that our work will inspire further larger-scale
+that outlet.                                                                investigation of these common assumptions based on big-
+    In Figure 1, we present the bias scores for each outlet, av-            ger datasets. Also, self-reported political leanings of MTurk
+eraged across the articles on each topic. Here, the outlets are             workers could potentially introduce bias. It, however, is not
+ranked on the x-axis from strongly liberal to strongly con-                 ad hoc and is repeatedly conﬁrmed by their participation in
+servative according to the outlet-level bias determined by                  other tasks.
+
+
+                                                                      942
+   We believe that our ﬁndings will guide researchers and                bias quantiﬁcation: investigating political bias in social me-
+practitioners to (i) make more informed assumptions while                dia and web search. Information Retrieval Journal 1–40.
+building manually-annotated political bias datasets, and (ii)            Newman, N.; Fletcher, R.; Kalogeropoulos, A.; Levy, D.;
+be more aware of the potential biases of existing datasets               and Nielsen, R. K. 2017. Reuters institute digital news re-
+built without carefully considering the validity of assump-              port 2017.
+tions made.
+                                                                         Potthast, M.; Kiesel, J.; Reinartz, K.; Bevendorff, J.; and
+                                                                         Stein, B. 2018. A stylometric inquiry into hyperpartisan
+                        References                                       and fake news. In Proceedings of the 56th Annual Meeting
+An, J.; Cha, M.; Gummadi, K.; and Crowcroft, J. 2011. Me-                of the Association for Computational Linguistics (Volume 1:
+dia landscape in twitter: A world of new conventions and                 Long Papers), 231–240. Melbourne, Australia: Association
+political diversity. In Fifth International AAAI Conference              for Computational Linguistics.
+on Weblogs and Social Media.                                             Preoţiuc-Pietro, D.; Liu, Y.; Hopkins, D.; and Ungar, L.
+An, J.; Quercia, D.; and Crowcroft, J. 2013. Fragmented so-              2017. Beyond binary labels: political ideology prediction
+cial media: a look into selective exposure to political news.            of twitter users. In Proceedings of the 55th Annual Meeting
+In Proceedings of the 22nd International Conference on                   of the Association for Computational Linguistics (Volume 1:
+World Wide Web, 51–52. ACM.                                              Long Papers), 729–740.
+Bakshy, E.; Messing, S.; and Adamic, L. A. 2015. Expo-                   Sim, Y.; Acree, B. D.; Gross, J. H.; and Smith, N. A. 2013.
+sure to ideologically diverse news and opinion on facebook.              Measuring ideological proportions in political speeches. In
+Science 348(6239):1130–1132.                                             Proceedings of the 2013 Conference on Empirical Methods
+                                                                         in Natural Language Processing, 91–101.
+Bamman, D., and Smith, N. A. 2015. Open extraction
+of ﬁne-grained political statements. In Proceedings of the
+2015 Conference on Empirical Methods in Natural Lan-
+guage Processing, 76–85.
+Budak, C.; Goel, S.; and Rao, J. M. 2016. Fair and balanced?
+quantifying media bias through crowdsourced content anal-
+ysis. Public Opinion Quarterly 80(S1):250–271.
+Gentzkow, M., and Shapiro, J. M. 2010. What drives media
+slant? evidence from us daily newspapers. Econometrica
+78(1):35–71.
+Groseclose, T., and Milyo, J. 2005. A measure of media bias.
+The Quarterly Journal of Economics 120(4):1191–1237.
+Gross, J. H.; Acree, B.; Sim, Y.; and Smith, N. A. 2013.
+Testing the etch-a-sketch hypothesis: a computational anal-
+ysis of mitt romney’s ideological makeover during the 2012
+primary vs. general elections. In APSA 2013 Annual Meet-
+ing Paper.
+Iyyer, M.; Enns, P.; Boyd-Graber, J.; and Resnik, P. 2014.
+Political ideology detection using recursive neural networks.
+In Proceedings of the 52nd Annual Meeting of the Associa-
+tion for Computational Linguistics (Volume 1: Long Papers),
+volume 1, 1113–1122.
+Kulkarni, V.; Ye, J.; Skiena, S.; and Wang, W. Y. 2018.
+Multi-view models for political ideology detection of news
+articles. In Proceedings of the 2018 Conference on Empir-
+ical Methods in Natural Language Processing, 3518–3527.
+Brussels, Belgium: Association for Computational Linguis-
+tics.
+Kulshrestha, J.; Eslami, M.; Messias, J.; Zafar, M. B.;
+Ghosh, S.; Gummadi, K. P.; and Karahalios, K. 2017. Quan-
+tifying search bias: Investigating sources of bias for political
+searches in social media. In Proceedings of the 2017 ACM
+Conference on Computer Supported Cooperative Work and
+Social Computing, 417–432. ACM.
+Kulshrestha, J.; Eslami, M.; Messias, J.; Zafar, M. B.;
+Ghosh, S.; Gummadi, K. P.; and Karahalios, K. 2018. Search
+
+
+                                                                   943
+

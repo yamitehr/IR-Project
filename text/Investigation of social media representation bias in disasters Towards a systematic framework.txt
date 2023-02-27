@@ -1,0 +1,718 @@
+                                              International Journal of Disaster Risk Reduction 81 (2022) 103312
+
+
+
+                                                           Contents lists available at ScienceDirect
+
+
+                              International Journal of Disaster Risk Reduction
+                                                   journal homepage: www.elsevier.com/locate/ijdrr
+
+
+
+
+Investigation of social media representation bias in disasters:
+Towards a systematic framework
+Yudi Chen a, Song He b, *, Zhipeng Zhou a
+a Department of Management Science and Engineering, College of Economics and Management, Nanjing University of Aeronautics and Astronautics,
+Nanjing, 211106, PR China
+b Department of Civil Engineering, College of Architecture and Civil Engineering, Wenzhou University, Wenzhou, 325035, PR China
+
+
+
+
+ARTICLE INFO                                              ABSTRACT
+
+Keywords:                                                 Due to its real-time and human-centered nature, social media posts have been widely applied to
+Disaster management                                       provide rapid situational awareness in disasters, particularly from a human-centered perspective.
+Bayesian-based modeling                                   To generalize social media-derived insights on a population, a pre-requisite is that the employed
+Public transit                                            social media posts are capable of revealing the information of disaster-affected population with-
+COVID-19
+                                                          out bias. Such wide application and pre-requisite underscore the importance of investigating so-
+                                                          cial media bias for deriving reliable decision support insights in disaster management. However,
+                                                          a systematic framework that streamlines the investigation of social media representation bias is
+                                                          still missing. To address the research gap, we propose a framework comprising (1) the setting of
+                                                          an appropriate representation bias benchmark; (2) the modeling of the sampling uncertainty of
+                                                          social media-derived insights; and (3) the derivation and quantification of representation bias
+                                                          distribution across races/ethnicities. Public transit amid COVID-19 in the United States is studied
+                                                          for illustration purposes. Nation-level results show that the White group is over-represented, the
+                                                          Asian group is slightly over-represented, and the Hispanic and Black groups are under-
+                                                          represented throughout the studied period. The level of social media representation bias varies
+                                                          across the states of California, New York, Texas, and Florida, and it is inversely correlated with
+                                                          population ratios. Such findings are beneficial for decision-makers to use social media to derive
+                                                          reliable insights into disaster-affected population, thereby making informed operational deci-
+                                                          sions accordingly.
+
+
+
+1. Introduction
+    As a real-time crowdsourcing information source, social media posts have been widely used in disasters for providing situational
+assessment [1–3]. Through a variety of text mining techniques (e.g., topic modeling), social media posts are purposely processed to
+deliver various types of decision support in disasters, ranging from the detection of emergency events [4], the assessment of disaster
+impacts on the built environments [5,6], and the identification of urgent public demands [7], to name a few. Meanwhile, researchers
+have also recognized that social media users are not an ideal sample of a population without bias [8–12]; consequently, social media
+posts could not be directly used to estimate attributes on disaster-affected populations. For example, researchers have proved that de-
+mographic information significantly affects urban human mobility patterns [13], resulting in a biased representation across popula-
+tion groups. The ignorance of social media bias might lead to inappropriate decision support in disasters, such as allocating more re-
+sources to the over-represented groups on social media [9]. Given the wide applications of social media in disasters, as well as the ex-
+
+    * Corresponding author.
+    E-mail addresses: ychen55@nuaa.edu.cn (Y. Chen), 20210465@wzu.edu.cn (S. He), zhouzhipeng@nuaa.edu.cn (Z. Zhou).
+
+https://doi.org/10.1016/j.ijdrr.2022.103312
+Received 28 May 2022; Received in revised form 20 August 2022; Accepted 16 September 2022
+Available online 23 September 2022
+2212-4209/© 2022 Elsevier Ltd. All rights reserved.
+Y. Chen et al.                                                                       International Journal of Disaster Risk Reduction 81 (2022) 103312
+
+
+istence of social media representation bias, it becomes essential to systematically investigate social media bias for deriving reliable in-
+sights into a disaster-affected population.
+    Researchers have shown that the Twitter population is a highly non-uniform sample of the population [8,11,12]. Tweets are sub-
+ject to a variety of bias types, such as the people who choose to use social media are not randomly selected from the population [14],
+Twitter users have significantly different levels of posting activity rates (e.g., 80/20 Pareto principle) [14], and Twitter users with dif-
+ferent demographic traits (e.g., race/ethnicity, gender, and age) behave differently [15]. All these biases have been empirically
+proved in the previous studies [8,10–12,15]. For example, disaster-related human behaviors (e.g., information seeking, sharing activ-
+ity, and perceptions of information reliability) are found to vary across population groups on social media [9]. In this research, social
+media representation bias is defined as the demographic differences of the populations between the employed social media users and
+disaster-affected population. Such a definition is reasonable because all types of the aforementioned bias are eventually presented by
+the demographic differences between employed social media users and disaster-affected population.
+    Given such a definition of social media representation bias, the most straightforward bias investigation method is to compare the
+demographic distributions of social media users and disaster-affected population. But only a small portion of social media users put
+their demographic traits in their user profiles, highlighting the requirement of utilizing intelligent methods to derive the demographic
+traits. In recent years, researchers have developed multiple methods to infer the demographic traits of social media users
+[8,13,16–18]. Based on their inferring principles, existing methods could be categorized into multivariate-based [16–18] and sur-
+name-based methods [13,19]. Multivariate-based methods predict demographic traits by learning the correlations between a set of
+variates and demographic traits, and they often require large-scale labeled datasets for training. Surname-based methods predict de-
+mographic traits by comparing social media users’ surnames and the comprehensive surname database released by the US Census Bu-
+reau [20]. Surname-based methods have been broadly used in practice due to their simplicity, the absence of labeling requirements,
+and satisfactory performance [8]. In this research, surname-based methods are used to derive the demographic traits of social media
+users.
+    In addition to the prediction of social media users’ demographic traits, we need to (1) identify the affected population in a disaster
+and (2) model the sampling uncertainty of social media-derived attributes, thereby comparing the demographic distributions be-
+tween social media users and disaster-affected population in a reliable manner. In a disaster, social groups with different demographic
+traits are affected unevenly as they have varied levels of vulnerability. Thus, to build an appropriate population benchmark, it is es-
+sential to identify the composition of a disaster-affected population. Regarding the sampling uncertainty modeling, social media users
+are a sample of a population [21], and consequently, social media-derived insights on that population are uncertain values. Such un-
+certainty modeling is particularly needed in scenarios with small numbers of disaster-related social media posts. Building on these
+aforementioned requirements and challenges, we propose a systematic framework that is capable of (1) predicting the demographic
+traits of social media users; (2) modeling the sampling uncertainty of social media-derived population ratios through a Bayesian-
+based method; (3) quantifying social media representation bias by taking disaster-affected population as the benchmark; and (4) ex-
+ploring the temporal and regional trends of social media representation bias. Compared to the methodologies used in previous studies
+[8,11,12], the proposed framework systematically streamlines the steps required for representation bias investigation. In this frame-
+work, an external benchmark is built based on the affected population in a disaster, the sampling uncertainty of social media-derived
+attributes on disaster-affected population is modeled, and finally, social media representation bias is quantified by the population dis-
+tribution differences across demographic traits.
+    The global COVID-19 pandemic has resulted in serious, long-lasting impacts on many societal aspects in the United States, espe-
+cially for public transit systems that have suffered significant ridership loss. Meanwhile, social media platforms play an increasingly
+important role in public transit operations, as they provide rapid and two-way communications between operation agencies and the
+public. Given such severe impacts and the critical role of social media in public transit operations, we study public transit amid
+COVID-19 in US as a case study to illustrate the proposed framework, as well as to provide the context for the presented research. Re-
+sults show that the Black and Hispanic groups are under-represented, the White group is over-represented, and the Asian group is
+slightly over-represented during the analysis period between mid-August and late October 2021. Social media representation bias
+also varies across the studied states (i.e., NY, CA, TX, and FL), and the level of social media representation bias is found to be inversely
+correlated with population ratios.
+    The remainder of this study is organized as follows. First, a literature review section is introduced to present the wide applications
+of social media data in disaster management, underscoring the significance of social media representation bias investigation; the liter-
+ature on Bayesian-based sampling uncertainty modeling is also presented to highlight the methodological contributions of this study.
+Second, details of the proposed framework are presented. Third, the distribution and overview of social media representation bias are
+presented, and the patterns of representation bias are explored and summarized. Last, research contributions, limitations, and poten-
+tial future work are discussed and concluded.
+
+2. Literature review
+2.1. Social media data-driven decision support in disasters
+    Social media data has been broadly used to enhance situational awareness in disaster relief [9,15,22,23], providing timely and hu-
+man-centered decision support. Based on their decision support focuses, existing studies could be grouped as human-focused
+[1,9,13,22–24]; and built environment-focused [2,5,6,15,25–28]. The public has extensively used social media to communicate dis-
+aster-related news and opinions, and such information reflects disaster-related human behaviors. Researchers have conducted various
+human-focused studies to investigate the social and mental aspects of human behavior in disasters [1,22,23,29]. For example, the
+
+                                                                     2
+Y. Chen et al.                                                                              International Journal of Disaster Risk Reduction 81 (2022) 103312
+
+
+temporal trends and spatial patterns of post-disaster public sentiment have been explored to assess the social resilience of communi-
+ties [1] and the urgency of relief resources [25]. In contrast to human-focused studies, built environment-focused studies utilize social
+media data to assess built environment disruptions, such as infrastructure failure [2,5,26]. The near-real-time crowdsourcing nature
+of social media makes it exceptionally promising to obtain insights on disaster-impacted built environments which requires rapid and
+effective restorations following disasters. For example, researchers have used social media data to assess disaster impacts on electric-
+ity infrastructure [26] and to indicate the severity of road transportation disruptions [5].
+    In summary, the aforementioned studies promote the utilization of social media for providing decision support in disaster manage-
+ment. But in these studies, there is an inherent assumption that social media users ideally represent the disaster-affected population
+without bias; such an assumption is inconsistent with the reality wherein social media users are a biased sample of disaster-affected
+population. With a few exceptions, researchers have explored the social media representation bias, but the employed benchmark is
+the entire population [7], which is not appropriate as social groups are affected differently by a certain disaster. In this presented
+study, we build a reliable representation bias benchmark by identifying the affected populations taking public transit amid COVID-19,
+thereby conducting an objective and accurate investigation of social media representation bias.
+
+2.2. Bayesian-based sampling uncertainty modeling
+    Practitioners often use sample data to estimate a population's attributes as experiments on a sample set are feasible, cost-effective,
+and time-efficient. In this context, the estimated population's attributes are uncertain values. Uncertainty level depends on sample
+size: a large sample size leads to a low uncertainty level, and vice versa. Social media users are a sample of the entire population. Due
+to the openness of social media platforms and their wide adoptions by the public, researchers are capable of collecting large social me-
+dia datasets, but the collected large dataset is the collection of small datasets with various specific conditions [30]. For example, there
+are only around three thousands of electricity-related tweets in Hurricane Irma among the over one million disaster-related tweets
+[26]. Therefore, it is essential to include the sampling uncertainty to reliably indicate a population's behavior using social media.
+    Bayesian-based methods are often developed to model uncertainty by combining two types of information: prior knowledge and
+new observations [31]. The prior knowledge is usually obtained from expert experience or historical data, and the new observations
+refer to newly observed instances. By doing so, it is expected to obtain reliable uncertainty modeling in both small dataset and large
+dataset scenarios. For small dataset scenarios, prior knowledge dominates the uncertainty modeling, and for large dataset scenarios,
+new observations could be used to update the uncertainty constantly. In practice, uncertainty is commonly characterized by proba-
+bilistic functions determined based on the characteristics of interest attributes. For example, ratio-like metrics, such as positive senti-
+ment ratio and demand rate, are often characterized by Beta, Binomial, Dirichlet, and Multinomial distributions [7,25]. Researchers
+model the fraction non-conforming using the Beta distribution and Binomial distribution, wherein the Binomial distribution is used to
+model the uncertainty of new observations, and the Beta distribution is used to model the prior [32]. Similar to the fraction non-
+conforming, researchers have used the Beta and Binomial distribution to model demand ratio following disasters using social media
+[7].
+    Building on the aforementioned analysis and the previous successes in Bayesian-based modeling, we will develop a Bayesian-
+based approach to model the sampling uncertainty of the population ratios using a sample population set, such as social media users
+or survey respondents.
+
+3. Methodology
+    To reliably investigate social media representation bias, the presented study proposes a systematic framework containing the mod-
+ules of data collection, population ratio modeling, and representation bias distribution and overview, as shown in Fig. 1. In the data
+collection module, we collect public transit-related social media data and surveys. The surveys are processed to obtain the public tran-
+sit-affected population amid COVID-19 in US. In the population ratio modeling module, the races/ethnicities of social media users are
+predicted, and the composition of the public transit-affected population is calculated. Given that both social media users and surveys
+are samples of the affected population, a Bayesian-based approach is developed to model the sampling uncertainty. In the representa-
+tion bias distribution and overview module, we derive the representation bias distribution across races/ethnicities, and a distance-
+based metric is used to provide an overview of the representation bias.
+    Because of the COVID-19 pandemic, public transit ridership in the United States dropped by nearly 80% in April 2020 compared
+to 2019 and by over 60% each month throughout the rest of the year [33]. To design human-centered countermeasures for reversing
+ridership decrease, decision-makers need to perceive transit-related public opinion rapidly. In this context, social media data is an
+
+
+
+
+                                  Fig. 1. The proposed investigation framework of social media representation bias.
+
+                                                                         3
+Y. Chen et al.                                                                             International Journal of Disaster Risk Reduction 81 (2022) 103312
+
+
+ideal information source to derive useful insights for timely decision support in public transit policymaking. But to use social media
+data in a reliable manner, one must first investigate its representation bias on public transit subjects to make unbiased decisions.
+Given such practical significance, social media representation bias related to public transit amid COVID-19 is studied to illustrate the
+proposed framework.
+
+3.1. Data collection
+3.1.1. Public transit-related social media data
+    In this research, Twitter, a widely adopted social media platform, is used to collect public transit-related posts (i.e., ‘Tweets’) be-
+cause of its support for conveniently collecting large-scale datasets through multiple built-in application programming interfaces
+(API). To ensure collected Tweets are related to COVID-19 and public transit, we employed two sets of keyword filters in the Twitter
+streaming API. The first set of keywords includes “covid”, “pandemic”, “covid-19”, “covid19”, and “coronavirus”, while the second set
+includes “transit”, “bus”, “subway”, “metro”, and “transportation”. Tweets that do not contain keywords from both sets are filtered
+out. The collection period spans approximately ten weeks, from early August to late November 2021, during which time the transit
+ridership was in the process of slow recovery. In addition, Twitter users with higher posting frequencies (>50) in the collection pe-
+riod are removed as these users are usually media accounts.
+    Based on the objective of this study, collected tweets need to be firstly screened to select those posted in US. Geotags (e.g., a place
+name or a pair of latitudinal and longitudinal coordinates) and Twitter user profiles are the two most common sources of location in-
+formation; however, it is reported that only 1%–2% of the tweets are geotagged [6], making it an extremely limited source. Therefore,
+to secure a sufficient number of location-known Tweets, the registered location in the Twitter user profile is also used, assuming that
+the locations of the Tweets are the same as the registered locations of respective Twitter users. By doing so, a total of 45,487 Tweets
+posted in US were selected for representation bias investigation. The states hosting the largest numbers of Tweets are California
+(5,922 Tweets), New York (6,878 Tweets), Texas (2,437 Tweets), and Florida (1,999 Tweets).
+
+3.1.2. Public transit-related surveys
+    In this study, the population affected by public transit policies amid COVID-19 is identified through officially published trans-
+portation-related surveys. The US Census Bureau has conducted the large-scale Household Pulse Survey (HPS) program to measure
+social and economic impacts amid COVID-19, and transportation-related surveys were included in Phase 2. The conduction and dis-
+semination intervals of HPS are two weeks, and Table 1 shows the start and end dates for five of those periods. It is worth noting that
+HPS continues to name these periods “weeks” to maintain consistency with Phase 1, and we also adopt the same protocol in this
+study.
+    The transportation-related surveys in the HPS indicate if respondents substitute their typical in-person work for telework because
+of COVID-19. The transportation-related surveys are presented at both nation- and state-level and grouped by each demographic trait
+(e.g., race/ethnicity, age, and household income). For illustration purposes, transportation-related surveys at the nation-level
+grouped by race/ethnicity are presented in Table 2. The “No” column shows those who did not switch to telework amid COVID-19, in-
+dicating that the respondents still need to take certain transportations for their in-person work. Public transit is one of the main forms
+of transportation, and we assume that the main populations affected by public transit policies are from the populations doing in-
+person work. As a result, the affected population composition is calculated based on the information from the “No” column (see Sec-
+tion 3.2.2).
+
+3.2. Population ratio modeling
+   The population distributions of social media users across races/ethnicities also need to be derived to compare against their coun-
+terparts for representation bias investigation. Given that social media users and survey respondents are sample sets of the affected
+population, a Bayesian-based approach is adopted to account for the sampling uncertainty.
+
+
+
+
+Table 1
+Collection and dissemination periods of HPS in Phase 2 (Year of 2021).
+
+ Week                       13                          14                    15                     16                          17
+
+ Start date                 Aug. 19th                   Sep. 2nd              Sep. 16th              Sep. 30th                   Oct. 14th
+ End date                   Sep. 1st                    Sep. 14th             Sep. 28th              Oct. 12th                   Oct. 26th
+
+
+Table 2
+Transportation-related survey information in Period 1 in US.
+
+ Race/Ethnicity                  Total                       Yes              No                    No change                 Did not report
+
+ Hispanic                        42,196,084                  11,881,165       18,520,271            8,673,938                 3,120,710
+ White                           155,879,601                 57,311,751       65,755,110            25,592,103                7,220,638
+ Black                           29,510,581                  7,855,937        14,307,988            5,512,918                 1,833,738
+ Asian                           12,711,076                  5,709,799        4,162,641             2,245,658                 592,979
+
+
+                                                                          4
+Y. Chen et al.                                                                                    International Journal of Disaster Risk Reduction 81 (2022) 103312
+
+
+3.2.1. User race/ethnicity prediction
+    In the derivation of population distribution of public transit-related social media users, the first step is to predict Twitter users’
+races/ethnicities. In this research, the surname-based approach is used for race/ethnicity prediction due to its simplicity and satisfac-
+tory performance. This approach predicts race/ethnicity by relating the surname of a Twitter user profile name to the surname data-
+base released by the US Census Bureau where the racial/ethnic distribution of any surname with over 100 individuals in US is avail-
+able. For example, as shown in Table 3, 70.90% of US population with the surname “Smith” are categorized as White, while 23.11%,
+0.89%, and 2.40% are considered Black, Asian, and Hispanic, respectively. Notably, the sum of the percentages across the four races/
+ethnicities may not be equal to 1 as other minority races/ethnicities are not included because of their extremely small population
+sizes.
+    In the existing literature, researchers tend to predict a Twitter user's race/ethnicity only based on the largest percentage [13,19],
+which might results in unreliable predictions. For example, as shown in Table 3, it is naïve to predict the race/ethnicity of a Twitter
+user whose surname is “Williams” as Black, given that the percentage for the White group is also relatively high. In this research, the
+whole percentage distribution across races/ethnicities is used to represent the uncertainty of the race/ethnicity information of Twit-
+ter users for more reliable prediction results.
+
+3.2.2. Affected population calculation
+    As there is a large population size in US, it is nearly impossible to obtain the exact information of the affected population in a dis-
+aster. In this research, sample surveys are used to indicate the distribution of the population taking public transit amid COVID-19 in
+US. According to the transportation-related surveys in the HPS program, the numbers of survey respondents doing in-person work are
+recorded. As social groups among races/ethnicities have varied utilization rates of public transit, it is needed to multiply a coefficient
+on the numbers of respondents with in-person work for deriving the actual numbers of respondents taking public transit. According to
+the report released by the American Public Transportation Association [34], the race/ethnicity composition of public transit riders
+and of the population is presented in Table 4. The relative public transit utilization rate ce is calculated using Equation (1).
+
+                 ustr e
+         ce =                                                                                                                                                 (1)
+                 uspr e
+
+wherein uspr and ustr represent US population ratio and public transit population ratio, respectively. And the subscript e stands for
+races/ethnicities. The White group has a relatively lower utilization rate of public transit, while the Black and Hispanic groups have a
+relatively higher utilization rate. As the races/ethnicities of Pacific Islander, Multi-ethnic, and Native American have extremely small
+populations, they are not included in this research. Finally, for the White, Black, Hispanic, and Asian groups, the numbers of the sur-
+vey respondents riding public transit xe are derived using Equation (2).
+
+         xe = snoe × ce                                                                                                                                       (2)
+
+where sno is the number of survey respondents with in-person work.
+
+3.2.3. Bayesian-based uncertainty modeling
+   The Bayesian-based procedures for modeling the population ratios of Twitter users and survey respondents are similar. We will
+completely introduce the population ratio modeling of Twitter users and then briefly introduce the population ratio modeling of sur-
+vey respondents. The population ratio of Twitter users prt is formulated in Equation (3).
+
+
+
+
+Table 3
+Sample set of the percentage distributions.
+
+ Last name                       Count                       White                     Black                    Asian                  Hispanic
+
+ Smith                           2,442,977                   70.90%                    23.11%                   0.89%                  2.40%
+ Williams                        1,625,252                   45.75%                    47.68%                   0.82%                  2.49%
+ Kariuki                         28,311                      3.32%                     94.43%                   0.00%                  0.00%
+ Piedra                          5098                        5.00%                     0.78%                    0.12%                  93.35%
+
+
+Table 4
+Race/ethnicity composition of public transit riders in US.
+
+ Race/ethnicity             Entire population ratio (uspr)            Public transit population ratio (ustr)                  Relative utilization rate
+
+ White                      63%                                       40%                                                     0.63
+ Black                      12%                                       24%                                                     2.00
+ Hispanic                   17%                                       19%                                                     1.12
+ Asian                      5%                                        7%                                                      1.40
+ Pacific Islander           <1%                                       2%                                                      None
+ Multi-ethnic               <1%                                       1%                                                      None
+ Native American            <1%                                       1%                                                      None
+
+
+                                                                              5
+Y. Chen et al.                                                                                         International Journal of Disaster Risk Reduction 81 (2022) 103312
+
+
+
+                   ne
+         prt e =                                                                                                                                                   (3)
+                   N
+
+where n and N represent the number of public transit-related Twitter users for race/ethnicity e and the total number of public transit-
+related Twitter users, respectively. It is worth noting that prte is an uncertain variable. To reliably model such uncertainty, we use a
+Bayesian-based approach that integrates prior knowledge and new social media observations. In this research, population ratios range
+from zero to one, and the numbers of social media users and survey respondents for the studied races/ethnicities are categorical vari-
+ables. In this context, Dirichlet distribution is used to model the prior, and Multinomial distribution is used to model the likelihood of
+new social media observations, as shown in Equations (4) and (5).
+
+                                                          1                            𝛼 −1
+                                                                                                                                                                   (4)
+                                                                            ∏
+         p (prt) = Dir 𝛼 w , 𝛼 h , 𝛼 b , 𝛼 a =                                      prte e
+                      (                     )
+                                                 B 𝛼 w , 𝛼 h , 𝛼 b , 𝛼 a e∈{w,h,b,a}
+                                                  (                     )
+
+
+                                                                            𝛤 (∑𝑒 𝑛𝑒 +1)
+         𝐿 (𝐧∣𝐩𝐫𝐭) = 𝐿 (𝑛w , 𝑛h , 𝑛b , 𝑛a |𝑝𝑟𝑡 w , 𝑝𝑟𝑡h , 𝑝𝑟𝑡b , 𝑝𝑟𝑡a ) =   ∏𝑒 𝛤(𝑛𝑒 +1)
+                                                                                                  𝑛
+                                                                                           ∏𝑒 𝑝𝑟𝑡𝑒 𝑒                                                               (5)
+
+where the subscripts w,h,b,a correspond to the White, Hispanic, Black, and Asian groups, respectively. In Equation (4), B is a multi-
+variate Beta function. αw,αh,αb,αa are the four shape parameters in the prior knowledge. The determination of an informative prior re-
+quires profound domain expertise, which is out of the research scope. Therefore, a non-informative prior Dir(1,1,1,1) is used for illus-
+tration purposes. In Equation (5), Γ is a Gamma function.
+    Through such probability modeling of the prior and likelihood, the posterior of population ratios is derived with a closed analyti-
+cal form, as shown in Equation (6).
+
+                         L (n|prt) p (prt)      (                                  )
+         p (prt|n) =                       = Dir 1 + nw , 1 + nh , 1 + nb , 1 + na                                                                                 (6)
+                               p (n)
+
+Notably, the parameters in the posterior are the direct summation of the parameters in the prior and the numbers of social media ob-
+servations, making it convenient for continuous updating.
+   Similar to the population ratio modeling of social media users, the population ratios for survey respondents are formulated in
+Equation (7).
+
+                         me
+         prse =
+                                                                                                                                                                   (7)
+                        ∑
+                                 me
+                   e∈{w,h,b,a}
+
+
+where m is the number of survey respondents who take public transit amid COVID-19, and it is calculated using Equation (2). Dirich-
+let and Multinomial distributions are also used to model the prior and likelihood. Finally, the posterior of the population ratios of sur-
+vey respondents is formulated in Equation (8).
+
+                          L (m|prs) p (prs)      (                                  )
+         p (prs|m) =                        = Dir 1 + mw , 1 + mh , 1 + mb , 1 + ma                                                                                (8)
+                               p (m)
+
+where prs = {prsw,prsh,prsb,prsa}. It is worth noting that prt is sampled through a two-stage process, wherein the first stage is used to
+sample race/ethnicity information, and the second stage is used to sample population ratios from the modeled posterior in Equation
+(6). In contrast, prs is obtained through directly sampling from the modeled posterior in Equation (8), as the race/ethnicity of each
+survey respondent has been recorded in surveys.
+
+3.3. Representation bias distribution and overview
+   In this section, the representation bias distribution is derived to indicate if a social group is over- or under-represented and to what
+extent. In addition, an overview of the social media representation bias is provided through a distance-based metric.
+
+3.3.1. Representation bias distribution
+    The social media representation bias be is indicated by subtracting population ratios of survey respondents from the population ra-
+tios of Twitter users, as shown in Equation (9).
+
+         be = prte − prse                                                                                                                                          (9)
+
+Such a simple formula provides a straightforward indication of over- and under-representation, wherein be > 0 indicates over-
+representation, while be < 0 indicates under-representation. Given that prs and prt are uncertain variables, their exact values are ran-
+domly sampled from the modeled posteriors in Equations (6) and (8). To ensure a reliable indication, 1000 sets of prs and prt are
+sampled for analyzing representation bias.
+   To statistically indicate the differences of population distributions of social media users and survey respondents, the significance
+level between the two distributions is calculated. As there are three independent variables in the population distributions, the com-
+
+
+
+                                                                                              6
+Y. Chen et al.                                                                               International Journal of Disaster Risk Reduction 81 (2022) 103312
+
+
+monly used univariate significance test (e.g., Z-test) could not be directly used. In this section, we calculate the significance level
+based on the overlap volume (OV) between the population distributions, as presented in Equation (10).
+
+                        1
+
+                   ∭0
+         OV =               min (p (prt|n) , p (prs|m)) dxdydz                                                                                            (10)
+
+
+A small OV represents a significant difference level and vice versa. We defined four difference levels (DL) using Equation (11).
+
+              ⎧                (
+                        Level 3 ∗ ∗ ∗) ov ≤ 0.003
+              ⎪
+              ⎪          Level 2 (∗∗) 0.003 < OV ≤ 0.05
+         DL = ⎨                                                                                                                                           (11)
+              ⎪         Level 1 (∗) 0.05 < OV ≤ 0.32
+              ⎪         Not significant 0.32 < OV
+              ⎩
+
+This definition is consistent with the percentage of the values within standard deviations of the mean in a normal distribution.
+
+3.3.2. Representation bias overview
+    To provide an overview of the social media representation bias, a metric is needed to comprehensively summarize the representa-
+tion bias across races/ethnicities. As race/ethnicity is a categorical variable without intrinsic ordering to the categories, the overview
+metric should not change with the orders of races/ethnicities. In other words, the overview bias for any order of races/ethnicities
+should remain the same. In this context, we propose a distance-based measure that is the summation of the absolute values of repre-
+sentation bias, as formulated in Equation (12).
+                    ∑
+         d=                    |b e |
+                               | |                                                                                                                        (12)
+                 e∈{w,h,b,a}
+
+
+It is worth noting that this overview metric ranges from 0 to 2, wherein 0 indicates there is no representation bias, while 2 represents
+that social media representation is totally different from the affected population. Such a bounded ranged benefits the interpretation of
+social media representation bias. In the future, a bias threshold could be set by expert knowledge to determine if the employed social
+media users are representative of disaster-affected population. If yes, the social media-derived insights could be directly used to esti-
+mate population attributes; otherwise, bias mitigation strategies should be used in order to derive reliable insights using social media.
+
+4. Results
+4.1. Nation-level representation bias
+    Table 5 shows DL between the distributions of the affected population and the employed Twitter users. Throughout the stud-
+ied weeks, the differences between the two population distributions are statistically significant with level 3 (***), which under-
+scores the necessity and importance of investigating social media representation bias. In addition, the parameters of the posteri-
+ors, which are Dirichlet distributions, are also presented. For the affected population distribution, the four parameters are ex-
+tremely large, indicating extremely small uncertainty. Although the four parameters in the social media representation distribu-
+tion are not as large as that in the affected population distribution, they could be taken as large numbers because they are
+larger than 30, the threshold in the law of large numbers. Therefore, the uncertainty of population ratios of Twitter users is also
+small at the nation-level.
+    Fig. 2 presents the temporal trends of the social media representation bias throughout the studied weeks. For each race/ethnicity
+in each week, social media representation bias is indicated in the form of boxplot to reveal the uncertainty. The uncertainty is quite
+small as there are large numbers of survey respondents and Twitter users at the nation level. From the temporal perspective, the so-
+cial media representation biases of the four races/ethnicities are quite stable throughout the studied weeks. Such stable nature
+makes it promising to include the social media representation bias in future research planning. Regarding the representation bias
+level, the White group is over-represented, the Asian group is slightly over-represented, and the Hispanic and Black groups are un-
+der-represented. Such phenomena indicate that decision-makers should scale down the information from the White group while
+scale up the information from the Hispanic and Black groups, thereby obtaining representative insights for the affected population.
+
+
+Table 5
+Difference levels of representation bias at nation-level.
+
+ Week             Affected population dist.                                   Social media representation dist.                                      DL
+
+                  αw                    αh           αb          αa           αw               αh                 αb               αa
+
+ 13               4.2E+7                2.1E+7       2.9E+7      5.8E+6       1.3E+3           1.1E+2             7.3E+1           7.1E+2            ***
+ 14               4.2E+7                2.1E+7       2.7E+7      5.7E+6       1.1E+3           8.3E+1             6.7E+1           2.2E+2            ***
+ 15               4.2E+7                2.1E+7       2.7E+7      5.8E+6       1.1E+3           6.7E+1             6.1E+1           1.5E+2            ***
+ 16               4.3E+7                2.0E+7       2.7E+7      5.5E+6       1.4E+3           8.9E+1             6.7E+1           1.5E+2            ***
+ 17               4.2E+7                2.0E+7       2.7E+7      5.3E+6       1.1E+3           7.0E+1             4.9E+1           1.3E+2            ***
+
+
+                                                                          7
+Y. Chen et al.                                                                                  International Journal of Disaster Risk Reduction 81 (2022) 103312
+
+
+
+
+                                              Fig. 2. Temporal trends of representation bias at nation-level.
+
+
+    The overview of social media representation bias is measured by the distance-based metric, as shown in Fig. 3. The dashed line is
+the mean value of the overall representation bias throughout the studied weeks. For public transit amid the COVID-19 in US, the over-
+all representation bias fluctuates around 0.75–0.82. According to Equation (12), the distance ranges from 0 to 2, wherein the distance
+of 0 indicates an ideal representation, and the distance of 2 indicates an absolutely different social media representation. In this con-
+text, the value ranges from 0.75 to 0.82, indicating a relatively strong social media representation bias, underscoring the importance
+of removing social media representation bias in decision-making processes.
+
+4.2. State-level representation bias
+    In this section, social media representation bias is explored in the four states with the largest volumes of Tweets in US; namely, CA,
+NY, TX, and FL. Temporal analysis with the distance-based measure provides the trends of social media representation bias in differ-
+ent time periods. Such analysis is beneficial for decision-makers to understand representation bias in the near future, thereby design-
+ing appropriate bias mitigation strategies. Fig. 4 shows the temporal trends of social media representation bias at the state level. The
+temporal trends of representation bias in all four states resemble that at the nation level: they are stable throughout the studied
+weeks. The uncertainty of representation bias at the state level is much larger than that at the nation level, which is reasonable as the
+numbers of Twitter users and survey respondents in each state are much smaller than that at the nation level. For the White group,
+there are over-representations for the four states. For the Asian group, the representation bias tends to be 0 in the states of CA and NY,
+while in the states of TX and FL, there are slightly over-representations. For the Hispanic group, there are under-representations for
+the four states, which is exactly opposite to that for the White group. For the Black group, there is under-representation in the states of
+NY, TX, and FL, and in the state of CA, the Black group is well-represented on social media. In addition, it is worth noting that the
+most over-represented group is always the White group, while the most under-represented group varies across the states. The most
+under-represented group in the state of NY is the Black group, and the most under-represented group in the states of CA and TX are
+the Hispanic group. Building on the aforementioned representation patterns, we claim that significant differences exist in social me-
+dia representation bias across the states, especially for under-represented races/ethnicities.
+    To further indicate the patterns of the social media representation bias, the correlations between the representation bias and the
+affected population ratios are analyzed, as shown in Fig. 5. For each subplot, a dot represents a state; there are four points for each
+race/ethnicity as four states are included in this research. For simplicity, the mean values of social media representation bias and af-
+fected population ratios are used. The mean values of representation bias are calculated by averaging all values throughout the stud-
+ied weeks for each race/ethnicity in each state. With the same calculation manner, the mean values of affected population ratios are
+derived. In addition, the statistical results for the linear fit between representation bias and population ratios are listed in Table 6. The
+fitted linear line has the parameters of intercept and slope, and the significance level is provided with a t-test. As shown in this table,
+for all the races/ethnicities, the social media representation bias is inversely correlated with the affected population ratio. And such a
+claim is statistically significant at least with the level of 0.1. In other words, for the over-represented group, social media representa-
+tion bias tends to decrease with the increase of the affected population ratio, while for the under-represented group, the under-
+representation bias level tends to increase.
+    The distance-based overview of social media representation bias at the state level is presented in Fig. 6. To better compare the rep-
+resentation bias with that at the nation level, the mean value of representation bias at the nation level is also included, shown by the
+
+
+
+
+                                       Fig. 3. Temporal trends of distance-based representation bias at nation-level.
+
+                                                                             8
+Y. Chen et al.                                                                                      International Journal of Disaster Risk Reduction 81 (2022) 103312
+
+
+
+
+                                                Fig. 4. Temporal trends of representation bias at the state-level.
+
+
+
+
+                 Fig. 5. Correlations between the affected population ratios and bias mean values: (a) Hispanic; (b) White; (c) Black; (d) Asian.
+
+
+dashed line. The overview of social media representation bias varies across the states: there is a below-national-average representa-
+tion bias in FL; the states of CA and NY are in the vicinity of the national average; TX shows the highest representation bias among the
+four states. This is a clear indication that social media representation bias is more prominent in TX, which is beneficial for decision-
+makers to utilize social media data for transit operation planning and policy development in that jurisdiction.
+
+
+
+
+                                                                                9
+Y. Chen et al.                                                                                           International Journal of Disaster Risk Reduction 81 (2022) 103312
+
+
+Table 6
+Statistical results for the correlation analysis.
+
+ Race                            Variable                       Coefficient                          p-value
+
+ Hispanic                        Slope                          −0.9841                              0.015(**)
+                                 Intercept                      0.1119                               0.132 (Not significant)
+ White                           Slope                          −1.3924                              0.084(*)
+                                 Intercept                      0.7514                               0.032(**)
+ Black                           Slope                          −0.9135                              0.051(*)
+                                 Intercept                      0.0823                               0.287 (Not significant)
+ Asian                           Slope                          −1.0880                              0.019(**)
+                                 Intercept                      0.1471                               0.010(**)
+Note. The symbols ***, **, and * represent the significance of 0.01, 0.05, and 0.1, respectively.
+
+
+
+
+                                Fig. 6. Temporal trends of distance-based representation bias at state-level: (a) CA; (b) NY; (c) TX; (d) FL.
+
+
+5. Conclusion
+    This presented study has theoretical and methodological contributions to social media representation bias investigation. From the
+theoretical side, this study has further underscored the necessity of building an appropriate benchmark for social media representa-
+tion bias investigation. And the explored patterns contribute to understanding the interplay between affected population ratios and
+social media representation bias. In addition, social media representation bias varies across the studied states, which highlights the
+necessity of conducting region-specific representation bias investigation to derive reliable insights using social media. From the
+methodological side, the presented study proposes a systematic representation bias investigation framework that could be easily gen-
+erated for other applications as the only differences are the employed social media data. This presented study intelligently builds a re-
+liable representation bias benchmark by utilizing the information in surveys and official reports. Social media representation bias is
+indicated in a straightforward manner, and a distance-based metric is proposed to provide an overview of the representation bias. In
+addition, a Bayesian-based approach is developed to model the sampling uncertainty of social media users and survey respondents,
+which enables reliable modeling of population ratios. It is worth noting that the proposed framework could be applied to other case
+studies (e.g., disasters with shorter time spans) as long as the demographic information of the benchmark population is available.
+    Practically, the research findings are expected to assist practitioners in making unbiased public transit-related policy decisions us-
+ing social media data. As shown in the proposed framework, the readiness of demographic information for disaster-affected popula-
+tion plays a critical role. To enhance the applicability of the proposed framework, we suggest two ways to accelerate the collection of
+the demographic information: (1) conducting required surveys in a rapid manner, such as online surveys; and (2) summarizing the de-
+mographic characteristics in frequently-occurring hazards, such as hurricanes and storms, and the summarized demographic charac-
+teristics are expected to be directly used in future for regions with similar hazard striking. Once the representation bias has been ob-
+tained, practitioners are expected to make informed disaster relief decisions accordingly. For example, the White group is over-
+represented, and the Black and Hispanic groups are under-represented in this case study. Therefore, to reliably obtain transit-related
+public opinion, decision-makers in this case should scale down the opinion obtained from the White group while scaling up the opin-
+ion from the Black and Hispanic groups.
+
+                                                                                     10
+Y. Chen et al.                                                                                        International Journal of Disaster Risk Reduction 81 (2022) 103312
+
+
+    This presented research suffers several major limitations. First, the used public transit utilization rates are summarized at the na-
+tion level, and they vary across the studied states [34], which affects the calculation accuracy of the affected population distribution
+in the studied states. Second, due to the difficulty of obtaining detailed location information of tweets, this study is conducted at the
+state level and above (i.e., nation level) to ensure enough tweets; thus, it is incapable of providing bias insights in a more detailed geo-
+graphic granularity. Third, the obtained locations of Twitter users might not be completely relevant as the location information in
+user profiles might not be their residential locations, which makes the bias investigation less reliable. Fourth, only the representation
+bias caused by races/ethnicities is studied, and the bias caused by other demographic traits (e.g., household income, age, and gender),
+which has been recognized in previous studies [9,11], is still unclear. Fifth, social media representation bias might vary along with
+time scales, and time scale sensitivity analysis would be beneficial for making the results solid. However, due to the availability of the
+household pulse survey data, such sensitivity analysis is missing in this study.
+    In the future, we aim to conduct the following research efforts. First, the social media representation bias caused by other demo-
+graphic traits (e.g., age and gender) will be studied by utilizing and developing intelligent demographic inferring approaches. Second,
+social media representation bias in other decision support scenarios will be examined to verify the accuracy and consistency of the
+framework. Third, the proposed distance-based measure that reflects representation bias may be converted to other metrics and/or
+incorporated into disaster response and relief decision-making processes. Fourth, representation bias in different types of disasters
+will be further investigated to understand the interplay between representation bias and disaster characteristics. By doing so, compre-
+hensive representation bias investigation results are expected to be obtained to provide unbiased decision support for disaster man-
+agement.
+
+Declaration of competing interest
+    The authors declare that they have no known competing financial interests or personal relationships that could have appeared to
+influence the work reported in this paper.
+
+Data availability
+    Data will be made available on request.
+
+References
+ [1] L. Li, Z. Ma, T. Cao, Leveraging social media data to study the community resilience of New York City to 2019 power outage, Int. J. Disaster Risk Reduct. 51
+     (2020) 101776 Elsevier Ltd July.
+ [2] J.Y. Park, E. Mistur, D. Kim, Y. Mo, R. Hoefer, Toward human-centric urban infrastructure: text mining for social media data to identify the public perception of
+     COVID-19 policy in transportation hubs, Sustain. Cities Soc. 76 (2022), 103524 Elsevier Ltd November 2021.
+ [3] B. Zhong, Y. Huang, Q. Liu, Mental health toll from the coronavirus: social media usage reveals Wuhan residents’ depression and secondary trauma in the
+     COVID-19 outbreak, Comput. Hum. Behav. 114 (2021), 106524 Elsevier Ltd August 2020.
+ [4] X. Lin, K.A. Lachlan, P.R. Spence, Exploring extreme events on social media: a comparison of user reposting/retweeting behaviors on Twitter and Weibo,
+     Comput. Hum. Behav. 65 (2016) 576–581 Elsevier Ltd.
+ [5] Y. Chen, Q. Wang, W. Ji, Rapid assessment of disaster impacts on highways using social media, J. Manag. Eng. 36 (5) (2020) 04020068.
+ [6] Y. Kryvasheyeu, H. Chen, N. Obradovich, E. Moro, P. Van Hentenryck, J. Fowler, M. Cebrian, Rapid assessment of disaster damage using social media activity,
+     Sci. Adv. 2 (3) (2016) 1–12.
+ [7] Y. Chen, W. Ji, Estimating public demand following disasters through Bayesian-based information integration, Int. J. Disaster Risk Reduc. 68 (2022) 102713.
+ [8] N. Cesare, C. Grant, E.O. Nsoesie, Understanding demographic bias and representation in social media health data, in: WebSci 2019 - Companion of the 11th
+     ACM Conference on Web Science, 7–9, 2019.
+ [9] J.S. Dargin, C. Fan, A. Mostafavi, Vulnerable populations and social media use in disasters: uncovering the digital divide in three major US hurricanes, Int. J.
+     Disaster Risk Reduc. 54 (2021), 102043 Elsevier Ltd August 2020.
+[10] A.G. Gulnerman, H. Karaman, D. Pekaslan, S. Bilgi, Citizens’ spatial footprint on twitter-anomaly, trend and bias investigation in istanbul, ISPRS Int. J. Geo-Inf.
+     9 (4) (2020).
+[11] Y. Jiang, Z. Li, X. Ye, Understanding demographic and socioeconomic biases of geotagged Twitter users at the county level, Cartogr. Geogr. Inf. Sci. 46 (3)
+     (2019) 228–242 Taylor & Francis.
+[12] M.M. Malik, H. Lamba, C. Nakos, J. Pfeffer, Population bias in geotagged tweets, in: AAAI Workshop - Technical Report, 2015, pp. 18–27 WS-15-18.
+[13] F. Luo, G. Cao, K. Mulligan, X. Li, Explore spatiotemporal and demographic characteristics of human mobility via Twitter: a case study of Chicago, Appl. Geogr.
+     70 (2016) 11–25 Elsevier Ltd.
+[14] A. Basiri, M. Haklay, G. Foody, P. Mooney, Crowdsourced geospatial data quality: challenges and future directions, Int. J. Geogr. Inf. Sci. 33 (8) (2019)
+     1588–1593 Taylor & Francis.
+[15] J.S. Dargin, A. Mostafavi, Human-centric infrastructure resilience: uncovering well-being risk disparity due to infrastructure disruptions in disasters, PLoS One
+     15 (6) (2020).
+[16] Y. Cui, Q. He, Inferring Twitters’ socio-demographics to correct sampling bias of social media data for augmenting travel behavior analysis, J. Big Data Analyt.
+     Transportat. 3 (2) (2021) 159–174 Springer Singapore.
+[17] A. Culotta, N.K. Ravi, J. Cutler, Predicting the demographics of Twitter users from website traffic data, in: The National Conference on Artificial Intelligence,
+     vol. 1, 2015, pp. 72–78.
+[18] L. Sloan, J. Morgan, P. Burnap, M. Williams, Who tweets? deriving the demographic characteristics of age, occupation and social class from twitter user meta-
+     data, PLoS One 10 (3) (2015) 1–20.
+[19] F. Yuan, M. Li, R. Liu, W. Zhai, B. Qi, Social media for enhanced understanding of disaster resilience during Hurricane Florence, Int. J. Inf. Manag. 57 (2021),
+     102289 Elsevier Ltd April 2020.
+[20] US Census Bureau, Frequently Occurring Surnames from Census 2010, US Census Bureau, 2010. https://www.census.gov/topics/population/genealogy/data/
+     2010_surnames.html.
+[21] D. Ruths, J. Pfeffer, Social media for large studies of behavior, Science 346 (6213) (2014) 1063–1064.
+[22] M. Choli, D.J. Kuss, Perceptions of blame on social media during the coronavirus pandemic, Comput. Hum. Behav. 124 (2021), 106895 Elsevier Ltd September
+     2020.
+[23] M. Jamali, A. Nejat, S. Ghosh, F. Jin, G. Cao, Social media data and post-disaster recovery, Int. J. Inf. Manag. 44 (2019) 25–37 Elsevier December 2017.
+[24] J. Kim, H. Park, A framework for understanding online group behaviors during a catastrophic event, Int. J. Inf. Manag. 51 (2020), 102051 Elsevier June 2019.
+[25] Y. Chen, W. Ji, Public demand urgency for equitable infrastructure restoration planning, Int. J. Disaster Risk Reduc. 64 (2021) 102510.
+
+                                                                                  11
+Y. Chen et al.                                                                                     International Journal of Disaster Risk Reduction 81 (2022) 103312
+
+[26] Y. Chen, W. Ji, Enhancing situational assessment of critical infrastructure following disasters using social media, J. Manag. Eng. 37 (6) (2021) 04021058.
+[27] L. Li, M. Bensi, Q. Cui, G.B. Baecher, Y. Huang, Social media crowdsourcing for rapid damage assessment following a sudden-onset natural hazard event, Int. J.
+     Inf. Manag. 60 (2021), 102378 Elsevier Ltd June.
+[28] Y. Wang, J.E. Taylor, M.J. Garvin, Measuring resilience of human–spatial systems to disasters: framework combining spatial-network analysis and Fisher
+     information, J. Manag. Eng. 36 (4) (2020) 04020019.
+[29] Y. Wang, J.E. Taylor, Coupling sentiment and human mobility in natural disasters: a Twitter-based study of the 2014 South Napa Earthquake, Nat. Hazards 92
+     (2) (2018) 907–925 Springer Netherlands.
+[30] Z. Ghahramani, Probabilistic machine learning and artificial intelligence, Nature 521 (2015) 452–521.
+[31] W.M. Bolstad, J.M. Curran, Introduction to Bayesian Statistics, John Wiley & Sons, 2016.
+[32] W. Ji, S.M. AbouRizk, Credible interval estimation for fraction nonconforming: analytical and numerical solutions, Autom. ConStruct. 83 (2017) 56–67
+     Elsevier July.
+[33] American Public Transportation Association, Public Transportation Ridership Report, American Public Transportation Association (APTA), 2021 Second
+     Quarter 2021.
+[34] H.M. Clark, Who Rides Public Transportation: the Backbone of a Multimodal Lifestyle, American Public Transportation Association, 2017, pp. 1–86.
+
+
+
+
+                                                                                12
+

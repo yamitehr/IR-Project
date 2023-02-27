@@ -1,0 +1,540 @@
+                                                                                                                                                 ORIGINAL RESEARCH
+                                                                                                                                                published: 24 March 2020
+                                                                                                                                           doi: 10.3389/fevo.2020.00071
+
+
+
+
+                                             Social Media and Large Carnivores:
+                                             Sharing Biased News on Attacks on
+                                             Humans
+                                             Veronica Nanni 1,2*, Enrico Caprio 3 , Giulia Bombieri 2,4 , Stefano Schiaparelli 1,5 ,
+                                             Carlo Chiorri 6 , Stefano Mammola 7,8 , Paolo Pedrini 4 and Vincenzo Penteriani 2
+                                             1
+                                               Department of Earth, Environmental and Life Science (DISTAV), University of Genoa, Genova, Italy, 2 Research Unit of
+                                             Biodiversity (UMIB, CSIC-UO-PA), Mieres, Spain, 3 Department of Life Science and Systems Biology, University of Torino,
+                                             Turin, Italy, 4 MUSE – Science Museum, Vertebrate Zoology Section, Trento, Italy, 5 Italian National Antarctic Museum (MNA,
+                                             Section of Genoa), University of Genoa, Genova, Italy, 6 Department of Educational Sciences, University of Genoa, Genova,
+                                             Italy, 7 LIBRe – Laboratory for Integrative Biodiversity Research, Finnish Museum of Natural History, University of Helsinki,
+                                             Helsinki, Finland, 8 Molecular Ecology Group (MEG), Water Research Institute, National Research Council of Italy (CNR-IRSA),
+                                             Verbania, Italy
+
+
+
+                                             The Internet and social media have profoundly changed the way the public receives and
+                                             transmits news. The ability of the web to quickly disperse information both geographically
+                          Edited by:
+                        Miguel Ferrer,
+                                             and temporally allows social media to reach a much wider audience compared to
+           Spanish National Research         traditional mass media. A powerful role is played by sharing, as millions of people
+                       Council, Spain        routinely share news on social media platforms, influencing each other by transmitting
+                       Reviewed by:          their mood and feelings to others through emotional contagion. Thus, social media has
+                    Christopher Wolf,
+Oregon State University, United States       become crucial in driving public perception and opinion. Humans have an instinctive
+                        Emiliano Mori,       fear of large carnivores, but such a negative attitude may be amplified by news media
+             University of Siena, Italy
+                                             presentations and their diffusion on social media. Here, we investigated how reports of
+                  *Correspondence:
+                      Veronica Nanni
+                                             predator attacks on humans published in online newspapers spread on social media. By
+           veronicananni7@gmail.com          means of multi-model inference, we explored the contribution of four factors in driving the
+                                             number of total shares (NTS) of news reports on social media: the graphic/sensationalistic
+                   Specialty section:
+                                             content, the presence of images, the species, as well as the newspaper coverage.
+         This article was submitted to
+                         Conservation,       According to our results, the information delivered by social media is highly biased toward
+                a section of the journal     a graphic/sensationalistic view of predators. Thus, such negative coverage might lead to
+    Frontiers in Ecology and Evolution
+                                             an unjustified and amplified fear in the public with consequent lower tolerance toward
+            Received: 24 July 2019
+          Accepted: 04 March 2020
+                                             predators and decrease in the support for conservation plans. However, because social
+          Published: 24 March 2020           media represents a powerful communication tool, its role might be reversed to positive if
+                             Citation:       used appropriately. Thus, constant engagement of scientists on social media would be
+      Nanni V, Caprio E, Bombieri G,
+                                             needed to both disseminate more accurate information on large carnivores and stem
+Schiaparelli S, Chiorri C, Mammola S,
+    Pedrini P and Penteriani V (2020)        the tide of misinformation before its widespread diffusion, a crucial step for effective
+ Social Media and Large Carnivores:          predator conservation.
+ Sharing Biased News on Attacks on
+     Humans. Front. Ecol. Evol. 8:71.        Keywords: emotional contagion, human-wildlife conflict, media reports, attacks on humans, Twitter, Facebook,
+      doi: 10.3389/fevo.2020.00071           sensationalism
+
+
+
+
+Frontiers in Ecology and Evolution | www.frontiersin.org                            1                                                  March 2020 | Volume 8 | Article 71
+Nanni et al.                                                                                                      Social Media and Large Carnivores
+
+
+
+    “If searching for news was the most important development of the         violent and sensationalistic content (so-called graphic content),
+    last decade, sharing news may be among the most important of             may increase predator risk perception leaving the public gripped
+    the next”                                                                by unwarranted fear (Altheide, 1997; Zillmann et al., 2004;
+                                              (Olmstead et al., 2011).       Schafer, 2011; Bornatowski et al., 2019), thus exacerbating human
+                                                                             conflict with these species.
+INTRODUCTION                                                                     In modern times, predator attacks on humans are rare events
+                                                                             but they are often overplayed by the media (Penteriani et al.,
+The Internet and social media (SM) such as Facebook and                      2016). A single attack may be reported by dozens of different
+Twitter have profoundly changed the way the public receives                  newspapers, causing the public to be inundated with such
+and transmits news. The ability of the web to quickly disperse               information and, consequently, to overestimate the frequency
+information both geographically and temporally allows SM to                  of and increase concerns for such statistically low-risk events
+reach a much wider audience compared to traditional mass                     (Sunstein, 2002). People form their perception of risk by relying
+media (Papworth et al., 2015), and even very localized events                on the information conveyed by the media rather than on
+can be broadcast worldwide. Moreover, the effect of making                   direct personal experience, and media reports can lead to a
+news available anytime and anywhere has been strengthened                    social amplification or attenuation of risk according to the way
+by the ascent of smartphones and mobile connectivity (Purcell                in which the events are framed (Kasperson and Kasperson,
+et al., 2010; Couldry, 2012), and the omnipresent virtual world is           1996; Schafer, 2011). For example, almost half of the media
+emerging as a prevalent and easy-access source of news reports               reports describing predator attacks on humans published in
+(Olmstead et al., 2011).                                                     international newspapers include graphic content, which may
+    By becoming involved in the process of spreading news, the               lead to amplifying the fear of predators in the public (Bombieri
+general public has been converted from passive reader to active              et al., 2018). Because of SM, such graphic reports now have the
+producer (Nov et al., 2010; Szabo and Huberman, 2010; Rutsaert               potential to be quickly shared and spread by readers all around
+et al., 2013). People can now actively personalize, filter, and react        the world, increasing the negative impact of graphic information
+to reports, turning the news into a social experience (Purcell et al.,       through emotional contagion (Kramer et al., 2014; Ferrara and
+2010). As a consequence, society is undergoing a real revolution             Yang, 2015). In addition, spreading and amplifying negative
+based on this novel communication landscape, in which media                  messages about predators through SM could eventually cause
+companies, firms, and many other organizations have embraced                 the failure of coexistence efforts implemented by conservation
+SM to keep close ties with their audience (Kietzmann et al., 2011;           policies (Bornatowski et al., 2019). Additionally, according to
+Hermida et al., 2012; Osatuyi, 2013). Today, most newspapers not             Papworth et al. (2015), the presence of illustrations in online
+only own a website, but also a page on one or more SM platforms,             news reports significantly increases their likelihood of being
+where they can publish and spread their news reports extremely               shared or liked on Facebook and Twitter, as were reports
+fast (Farhi, 2009; Hermida et al., 2012; Ju et al., 2014).                   focused on charismatic mammals. Wu et al. (2018) also found
+    In this context, a powerful role is played by internet sharing.          that a larger number of pictures was associated with a higher
+Indeed, millions of people routinely share news on SM platforms              readership count.
+(Purcell et al., 2010), which has become crucial in supporting                   Here, we investigated how reports on predator attacks
+news production and diffusion (Lee and Ma, 2012), but also in                on humans published in online newspapers spread on SM.
+driving public opinion (Olmstead et al., 2011). When sharing                 Specifically, we hypothesized that: (1) reports containing graphic
+content, people can influence each other by transmitting their               information are more frequently shared on SM than non-graphic
+mood and feelings to others through emotional contagion (Bösch               reports; (2) reports containing images are more frequently shared
+et al., 2018) and, in this sense, SM has the potential power to              than reports with no images; (3) the number of total shares (NTS,
+generate a massive-scale contagion (Kramer et al., 2014). An                 i.e., number of times a report was shared on SM) varies according
+et al. (2011) highlighted the power of social recommendation,                to the species considered; and (4) a wider newspaper audience
+which significantly increases the audience of media sources.                 corresponds to a higher NTS on SM.
+Furthermore, it has been shown that, when newspaper content is
+characterized by awe, anxiety, and anger, it is positively linked to
+online virality (Berger and Milkman, 2012) and that emotionally              METHODS
+charged tweets are retweeted more quickly and more often than
+neutral ones (Stieglitz and Dang-Xuan, 2013).                                Here we updated the dataset used by Bombieri et al. (2018 n
+    Human-large carnivore conflict is the major barrier to the               = 1,584 media reports published between January 2005 and
+conservation of these species and attacks on humans represent                July 2016), by searching for media reports on large carnivore
+the most extreme form of such conflict. It is well-recognized that           attacks on humans published online from August 2016 to
+human acceptance of large carnivores plays a crucial role in the             December 2017 and by recording new variables. The final
+fate of these species (Ripple et al., 2014) and acceptance highly            database contained 1,774 reports on large carnivore attacks
+depends on the real or perceived risk that these species pose to             on humans.
+human safety (Decker et al., 2002; Knopff et al., 2016). Thus,                   The reports concerned attacks by 10 terrestrial predator
+                                                                             species, i.e., gray wolf (Canis lupus Linnaeus, 1758), coyote (C.
+Abbreviations: SM, Social Media; NTS, Number of Total Shares.                latrans Say, 1823), cougar [Puma concolor (Linnaeus, 1771)], lion
+
+
+Frontiers in Ecology and Evolution | www.frontiersin.org                 2                                         March 2020 | Volume 8 | Article 71
+Nanni et al.                                                                                                         Social Media and Large Carnivores
+
+
+
+(Panthera leo Linnaeus, 1758), tiger (P. tigris Linnaeus, 1758),                We also collected information about the newspapers in which
+leopard (P. pardus Linnaeus, 1758), both Eurasian and North                  the reports were published, i.e., (1) name of the journal, (2)
+American brown bear/grizzly (Ursus arctos arctos Linnaeus, 1758              geographical area, and (3) type of distribution/audience, i.e.,
+and U. a. horribilis Ord, 1815), black bear (U. americanus Pallas,           local, national or worldwide. We classified newspapers as local,
+1780) polar bear (U. maritimus Phipps, 1774), and sloth bear                 national, or worldwide on the basis of the World Press Trends
+(Melursus ursinus Shaw, 1791), as well as 3 generic aquatic                  2016 Report (Milosevic, 2016) and cross-checking this on the
+predator taxa, i.e., “sharks,” “crocodiles” and “alligators.” In fact,       newspapers’ webpage. On the basis of the distribution range
+for the latter groups, the exact species was not mentioned in the            of the predator species under study, we classified newspaper
+majority of newspapers. However, in the case of alligators, thanks           geographical areas (i.e., publication area of the newspaper),
+to the information on the geographical area in which the attacks             defining the following regions: Europe, Asia, Africa, North
+occurred, we were able to identify the species, i.e., the American           America (USA and Canada), Central/South America, Oceania;
+alligator [Alligator mississippiensis (Daudin, 1801)] as it is the           the Arctic (i.e., Greenland and Svalbard) and Russia were merged
+only one living in that region.                                              and considered as a single geographical area named “Russia
+    The report search was conducted on Google by using a                     + Arctic.” Some reports were published in newspapers (e.g.,
+combination of the 13 different species or taxa and the word                 LiveLeak, The Conversation, USA Today) which did not belong
+“attack” followed by one of the years between 2005 and 2017 (e.g.,           to a specific area and, therefore, we have included them in an
+“lion attack 2005” or “shark attack 2017”), determined a total               additional category called “undefined.” We use the same defined
+of 169 keyword combinations (i.e., 10 species/taxa x 13 years).              areas to classify large carnivore attack distribution, i.e., where the
+To simulate people’s news searches on the internet, we collected             attack occurred (Figure 2).
+attack news on the first five pages of Google (when no more
+articles on attacks were shown) or up to the 10th Google page                Data Analysis
+if news reports about attacks on humans were still present on the            To determine how media reports of predator attacks on humans
+fifth page.                                                                  spread on SM, a statistical hypothesis testing framework was
+    For each report we recorded the NTS on social media (e.g.,               adopted. The null hypothesis was that there was no association
+Facebook, Twitter, G+, Reddit, Pinterest) as shown on the report             between NTS and: (i) the “report content” (i.e., graphic or non-
+webpage. This information was collected from January to March                graphic), (ii) the presence or absence of images, (iii) the species
+2018. We considered this approach to be reliable given that,                 considered, and (iv) the newspaper coverage (i.e., local, national
+on average, the NTS of reports on SM reach a plateau after 30                or worldwide). We modeled the NTS by specifying a Poisson
+days from their online publication (Papworth et al., 2015). When             error distribution and a log link function. Since all initial models
+the NTS on social media exceeded 999, the reports’ webpage                   were highly over-dispersed (Over-dispersion statistics > 5,000;
+did not show the exact number, but instead reported a range                  Zuur et al., 2009), we set a negative binomial error distribution
+(e.g., 1,000–1,499 or 1,500–2,499). In such cases, we recorded the           model and included newspaper area as a random effect.
+lowest number shown. Furthermore, we recorded the presence                      Because the presence or absence of images and report content
+or absence of images of the predator and/or people involved in               were highly and positively correlated (Pr (>|z|) = 2.84 e−8 ) as
+the attack.                                                                  were species and report content (Logistic GLM, Type II Wald
+    We used the category “report content” with two possible                  Chi Squared Test: Species χ 212 = 31.54, p = 0.002; Cox and
+levels: (a) “non-graphic,” if no graphic/sensationalistic                    Snell’s pseudo R2 = 0.079), we built two different sets of negative
+elements were present in the title, sub-heading and/or                       binomial GLMMs. In the first set of models, we tested the effect
+images, or (b) “graphic,” if the report contained at least one               of report content as well as that of newspaper type by including
+graphic/sensationalistic element. Following Bombieri et al.                  NTS as the response variable, the report content, newspaper type
+(2018), we considered as graphic those titles and subtitles                  and their interaction as fixed factors, and newspaper area as a
+including words such as “horror,” “horrific,” “nightmare,”                   random factor. In the second set of models, we assessed whether
+“man-eating,” “badly,” “scary,” “terrifying,” “terrorizes,” “blood,”         the NTS varied with the presence or absence of images, among
+“bloody,” “gruesome,” “eaten,” and “jaws,” as well as explicit               the species considered (n = 13) and newspaper type. Again,
+mention of the injured part of the body (e.g., “‘He’s eating my              we included NTS as the response variable, presence or absence
+brains’, recalls bear attack survivor”). However, just specific              of images, species and newspaper type as fixed factors, while
+mention of bodily injuries, e.g., “Man sustains leg injuries after           newspaper area was set as a random factor. The best competing
+alligator attack,” was not considered graphic. We considered                 model or set of models was chosen based on corrected Akaike
+images, i.e., drawings, pictures or video, as being graphic if they          criterion for finite sample size (AICc; Hurvich and Tsai, 1989).
+(1) explicitly showed the predator’s teeth and claws, (2) showed             We considered as equally competitive those models with 1AICc
+the attack, and/or (3) included details of injured body parts                < 2 (Burnham and Anderson, 2002). Values of weighted AICc,
+or people clearly displaying their injuries, as well as deceased             indicating the probability that the model selected was the best
+individuals. Images of the animal in normal postures, such as                among the competing candidates, were calculated as well. All
+a walking wolf, a sleeping leopard, a sunbathing alligator, a                analyses were performed in R 3.4.3 (R Core Team, 2017) using the
+swimming shark, or a mother bear with cubs, were regarded as                 package “glmmAMDB” (Fournier et al., 2012; Skaug et al., 2013)
+non-graphic. Some examples of graphic and non-graphic titles,                for model construction and the package “MuMIn” (Bartón, 2013)
+subtitles, and images are presented in Figure 1.                             for model selection.
+
+
+Frontiers in Ecology and Evolution | www.frontiersin.org                 3                                           March 2020 | Volume 8 | Article 71
+Nanni et al.                                                                                                                       Social Media and Large Carnivores
+
+
+
+
+ FIGURE 1 | Some examples of graphic vs. non-graphic titles or subtitles, as well as graphic vs. non-graphic images of predators/people involved in attacks, which
+ were presented in the collected media reports. [Photo credits: Supplemental Table 2].
+
+
+
+
+RESULTS                                                                               half of the reports included graphic elements (43.1%, n = 171).
+                                                                                      Images were present in 75.3% (n = 323) of the reports.
+Out of the 1,774 collected reports, 429 displayed the NTS on their                        In the first set of competing models, the model with the
+webpage. Such reports were published in 155 different online                          lowest AICc included only the variable report content (Table 1).
+newspapers and the majority of them were published in national                        Specifically, graphic reports were shared significantly more
+newspapers (49%, n = 210), followed by local (29.8%, n = 128)                         often on SM than non-graphic reports (Figure 3A), whereas
+and worldwide newspapers (21.2%, n = 91).                                             newspaper type had no effect on the NTS (Figure 3B). However,
+   Most media reports were published in North American                                national and worldwide newspaper reports were more shared
+newspapers (59%, n = 253), followed by European (19.6%, n =                           if they included graphic content, while there was no difference
+84) and Asian (14.7%, n = 63) ones. A small portion came from                         in NTS between graphic and non-graphic reports at a local
+African (2.6%, n = 11) and “Russian + Arctic” newspapers (2.1%,                       scale (Figure 3C).
+n = 9). Only one report was published in an Oceanic newspaper                             In the second set of competing models, the model with
+whereas no reports were published in Central/South America                            the lowest AICc included the variables presence or absence
+(Figure 2B). For 1.9% of the reports (n = 8), geographical area                       of images and species (Table 2), i.e., the former variable
+was categorized as undefined. The scenario differs slightly when                      played a major role in explaining the NTS, with reports
+considering the geographical area in which the attacks occurred                       containing images being shared more frequently than
+(Figure 2B), with European newspapers only reporting cases that                       reports without them. In this model, species also had an
+took place in other parts of the world.                                               important role in determining the NTS (Figure 4B, Table 2).
+   The reports mainly focused on brown bears (16.1 %, n = 69)                         Specifically, lion, shark, and alligator were the most frequently
+and leopards (14.9%, n = 64), followed by black bears (12.4%, n =                     shared species (Figure 4B). For most of the species, graphic
+53), alligators (10.7%, n = 46), crocodiles (10.5%, n = 45), sharks                   reports were more shared than non-graphic reports, but
+(8.2%, n = 35), coyotes (7.2%, n = 31), cougars (5.8 %, n = 25),                      for other species, such as shark, black bear and alligator,
+polar bears (4.2%, n = 18), lions (3.7%, n = 16), wolves (2.8%, n                     the spread of graphic and non-graphic reports did not
+= 12), tigers (1.9%, n = 8), and sloth bears (1.6%, n = 7). Nearly                    differ (Figure 4C).
+
+
+
+
+Frontiers in Ecology and Evolution | www.frontiersin.org                          4                                                 March 2020 | Volume 8 | Article 71
+Nanni et al.                                                                                                                       Social Media and Large Carnivores
+
+
+
+
+ FIGURE 2 | Worldwide* overview of the distribution of the collected reports showing the geographical areas of: (A) large carnivore attacks on humans; and (B) the
+ newspapers in which the reports were published. This information is shown for the subset of reports for which information on the number of shares on social media
+ was available (n = 429). In Europe we can observe a difference between the two maps, which can be explained by the fact that reports published in European
+ newspapers only described events that occurred in other parts of the world. Because the online research of reports describing large carnivore attacks on humans was
+ conducted in the English language, the area of North America is overrepresented. *We had no report for Antarctica and for the southern part of South America (i.e.,
+ Bolivia, Paraguay, Uruguay, Chile, and Argentine) as well as for Iceland.
+
+
+
+
+DISCUSSION                                                                           shark, and alligator were the most frequently shared species
+                                                                                     (Figure 4B), although shark and alligator did not show marked
+Our findings confirm that reports containing graphic elements                        difference between the graphic and non-graphic diffusion of news
+were shared more frequently on SM than non-graphic                                   (Figure 4C). Our findings show that reports about sharks and
+ones (Figure 3A). Indeed, NTS for these sensationalistic                             alligators seem to have great resonance regardless of the way in
+reports is higher than for reports presenting facts more                             which the news was framed. This might be explained by a lower
+objectively, i.e., without adding sensationalistic components.                       empathy for animal groups that are phylogenetically distant to
+Moreover, our results suggest that, when one or more                                 humans (Ingham et al., 2015) and inhabit unfamiliar human
+images were present, reports were more frequently                                    environments (Bornatowski et al., 2019), where there is a deep-
+shared (Figure 4A). Thus, images are crucial in capturing                            rooted fear of these species (Campbell and Smith, 1993; Giblett,
+the attention of readers, motivating them to share the                               2009). Conversely, a strong difference between graphic and non-
+news on SM.                                                                          graphic reports was shown for lion attacks, for which graphic
+   We also found differences in NTS between species, which                           reports were significantly more shared (Figure 4C). Moreover,
+could reflect cultural and social factors. Specifically, lion,                       the lion was the species with the highest NTS. This may be
+
+
+
+Frontiers in Ecology and Evolution | www.frontiersin.org                         5                                                 March 2020 | Volume 8 | Article 71
+Nanni et al.                                                                                                                                     Social Media and Large Carnivores
+
+
+
+TABLE 1 | Comparison of the competing models built to analyze the influence of report content (i.e., graphic or non-graphic), and newspaper type (i.e., local, national or
+worldwide) on the diffusion of the reports on social media.
+
+Competing models                                                        Estimated β ± s.e.               p-value               AICc               1AICc               Weighted AICc
+
+Report content                                                                                                                4948.89               0.00                    0.53
+                                   Intercept                                6.82 ± 0.56
+                                   Report contenta                         −0.76 ± 0.25                    0.002
+Report content * type                                                                                                         4949.62               0.73                    0.37
+                                   Intercept                                7.56 ± 0.69
+                                   Report contenta *typeb                   1.42 ± 0.60                    0.027
+                                   Report contenta *typec                   1.52 ± 0.72                    0.036
+Report content + type                                                                                                         4952.56               3.66                    0.09
+Null model                                                                                                                    4956.36               7.46                    0.02
+Type                                                                                                                          4958.88               9.99                    0.01
+
+a Reference  category: graphic content.
+b Level: national.
+c Level: worldwide.
+
+Reports regarded attacks on humans by 13 different large carnivores around the world. Here, we considered report content, newspaper type, and their interaction as predictive variables.
+Competing model values of AICc, 1AICc, and Weighted AICc are shown from the best (lowest AICc value) to the worse model (highest AICc value).
+
+
+
+
+  FIGURE 3 | Comparison between: (A) graphic and non-graphic reports; and (B) type of newspaper over the number of total shares (NTS) partial residuals. Graphic
+  reports were significantly more shared than non-graphic ones (p = 0.002), whereas there were no significant differences between reports published in local, national or
+  worldwide newspapers (local vs. national: p = 0.52; local vs. worldwide: p = 0.76; national vs. worldwide: p = 0.99). The boxplots (C) show a comparison between
+  graphic (red) and non-graphic (white) reports over the square rooted NTS for each type of distribution/audience. *Significant differences (exact estimated parameters
+  and p-values are in Table 1).
+
+
+
+due to not only the iconic value of this species, but also a                                      Interestingly, the type of newspaper did not affect the NTS.
+possible artifact due to the small sample size of reports for                                  Indeed, this variable was always excluded in the first set of
+lions (n = 16).                                                                                competitive models, and it had low importance in the second
+
+
+Frontiers in Ecology and Evolution | www.frontiersin.org                                   6                                                      March 2020 | Volume 8 | Article 71
+Nanni et al.                                                                                                                  Social Media and Large Carnivores
+
+
+
+TABLE 2 | Comparison of the competing models built to analyze diffusion of the           or Chinese. It is also worth noting that our study design did
+reports on social media regarding attacks on humans by 13 different large                not allow distinguishing between the underlying motivations
+carnivores around the world.
+                                                                                         of each individual share event on SM. Indeed, we had
+Competing          Estimated β ± s.e. p-value         AICc    1AICc Weighted             no access to the content of individual posts on SM but
+Models                                                               AICc                only to the number of total shares (NTS) available in the
+                                                                                         newspaper’s webpage. Therefore, whereas we treated all SM
+Images + species                                    4918.74    0.00       0.52
+                                                                                         sharing about a news article as being in agreement with
+Intercept              5.68 ± 0.36
+                                                                                         the article’s message, some readers may also share news
+Image presence         2.28 ± 0.32       1.6 e−12
+                                                                                         with the intent of criticizing its content as being inaccurate
+Black bear           −1.02 ± 0.50        0.04073
+                                                                                         or sensationalistic.
+Cougar               −1.67 ± 0.60        0.00503                                            The Internet and SM are emerging as influential news
+Coyote               −1.52 ± 0.58        0.00931                                         reference sources, where people inform themselves, learn, and
+Crocodile            −1.74 ± 0.49        0.00039                                         form their perception of the world, becoming major drivers in
+Brown bear           −0.91 ± 0.49        0.06073                                         shaping public opinion. Graphic reports represent a considerable
+Leopard              −2.39 ± 0.49        9.4 e−07                                        percentage (43.1%) of the total of shared reports, and they were
+Lion                   0.11 ± 0.71       0.87394                                         also the most frequently shared reports on SM, suggesting that
+Polar bear           −2.26 ± 0.66        0.00056                                         people are potentially being flooded by content that heightens
+Shark                −0.25 ± 0.57        0.66073                                         their anxieties and fears. Furthermore, the use of violent
+Sloth bear           −1.04 ± 0.97        0.28395                                         and disturbing texts and/or images increases the likelihood
+Tiger                −1.19 ± 0.92        0.19834                                         that an event remains imprinted in our memory (Harrell,
+Wolf                 −2.02 ± 0.76        0.00778                                         2000). This, in turn, negatively conditions our perception
+Images + species                                    4918.51    0.17       0.48           of risk (Myers, 2004), especially if accompanied by visual
++ type                                                                                   communications (Harrell, 2000). This bias in exposure to graphic
+Images                                              4931.39   13.05       0.00           and sensationalistic content can generate unwarranted fear and
+Images + type                                       4933.46   15.12       0.00           prejudice against predators, increasing human-large carnivore
+Species                                             4947.34   29.00       0.00           conflicts and, consequently, lowering public support for predator
+Species + type                                      4950.85   32.51       0.00           conservation policies.
+Null model                                          4955.96   37.62       0.00              Humans have an instinctive fear of large carnivores (Kruuk,
+Type                                                4958.48   40.14       0.00           2002), and such a negative attitude may be reinforced by
+Here, we considered presence or absence of images, species and newspaper type as
+                                                                                         news media presentations (Bombieri et al., 2018) and their
+predictive variables. Competing models values of AICc, 1AICc and Weighted AICc are       spread on SM. Even if attacks provoked by large carnivores
+shown from the best (lowest AICc value) to the worse model (highest AICc value).         have been rising in the last few decades, they still remain
+                                                                                         rare events (Penteriani et al., 2016) and the probability of
+                                                                                         having an encounter is very low, making the concern they
+                                                                                         raise disproportionate.
+set (Table 2), suggesting that newspaper visibility does not                                According to our results, the information that is spread
+necessarily influence the spread of news on SM. Instead, even                            on SM is biased toward a graphic and sensationalistic view
+those events that are only covered by local newspapers can spread                        of predators. Indeed, SM is driving social amplification of
+widely on SM, indicating that, regardless of the source, SM has the                      the perceived risk and lower public tolerance for predators,
+power to disseminate information at a global scale. Even though                          thus potentially affecting large carnivore conservation and
+the NTS was roughly the same at the three scales considered                              management efforts. This is consistent with the large body of
+(Figure 3B), at national and worldwide scales it was significantly                       experimental research showing that media attention is negatively
+higher for graphic reports (Figure 3C). The fact that local reports                      skewed toward negative events (e.g., Trussler and Soroka,
+are more commonly read by local readers (Takhteyev et al., 2012),                        2014), even despite survey evidence which suggests that the
+might suggest that living in proximity of the attack occurrence                          general public does not enjoy negatively framed news (e.g.,
+will more likely induce a reader to share the attack news on SM,                         West, 2001). The psychology of impression formation has
+regardless of its graphic or non-graphic content. Conversely, at                         shown that individuals seem to have a propensity to weigh
+a broader scale (i.e., national or worldwide), only a news report                        negative information more heavily than positive information
+that contains explicit graphic content is likely to upset a distant                      (e.g., Vonk, 1996), possibly for evolutionarily processes, for
+reader, thus inducing them to share it on SM.                                            which it might be advantageous to prioritize negative over
+   We conducted the online reports search in English, since                              positive information (Soroka, 2014). Since humans tend to
+this is the most common spoken language worldwide. However,                              be mildly optimistic, negative information is further away
+this might lead to a bias in NTS, because in geographical                                from their expectations than is positive information. In
+areas where English is not widely spoken, English language                               turn, this makes negative information more aberrant and
+articles might receive less attention (lower NTS). Future                                consequently more useful and interesting (e.g., Skowronski and
+studies could extend this approach and include media reports                             Carlston, 1989), and thus media content may simply reflect
+published in other widely spoken languages, such as Spanish                              this tendency.
+
+
+Frontiers in Ecology and Evolution | www.frontiersin.org                             7                                        March 2020 | Volume 8 | Article 71
+Nanni et al.                                                                                                                            Social Media and Large Carnivores
+
+
+
+
+ FIGURE 4 | Comparison between: (A) presence and absence of images in media reports; and (B) species over the number of total shares (NTS) partial residuals.
+ Reports that included one or more images were more frequently shared than reports without images. There were also differences between species over the NTS.
+ Specifically, reports regarding alligator, brown bear, lion, shark, sloth bear and tiger were more shared on social media. The boxplots in (C) show comparisons
+ between graphic (red) and non-graphic (white) reports over the square rooted NTS for each species. A strong difference between graphic and non-graphic reports is
+ observed for lions, for which graphic reports were significantly more shared, while for sharks and alligators there were no marked differences. *Significant differences
+ (exact estimated parameters and p-values are in Table 2). [Photo credits: Supplementary Table 2].
+
+
+
+
+   However, because SM represents a powerful communication                               media is the fourth sector in the conservation process, together
+tool, its role may change if used appropriately. Constant                                with scientists, policy makers, and the public. By highlighting
+engagement of scientists on SM may contribute to both                                    the tendency of SM to filter and spread news reports that
+disseminate more accurate information on large carnivores                                dramatize attack events by using graphic content, we argue
+and stem the tide of misinformation before its widespread                                that, among all the media and communication tools, SM is
+diffusion, a crucial step for effective predator conservation.                           probably the most powerful and, as such, it should be proactively
+As a consequence, potential strategies to improve human                                  employed by scientists and conservationists as their main
+coexistence with predators need to include the use of SM                                 tool to share and spread accurate information to the public
+to increase public support for conservation actions. Precisely                           at large.
+because of its great ability to reach the public, SM offers
+opportunities for easy exchange and connectivity between
+scientists and the public (Papworth et al., 2015), not just for                          DATA AVAILABILITY STATEMENT
+the fast circulation of messages, but also to grab the attention
+of people that rely on SM to keep themselves informed of                                 All datasets generated for this study are included in the
+recent events. Papworth et al. (2015) stated that the news                               Supplementary Table 1.
+
+
+Frontiers in Ecology and Evolution | www.frontiersin.org                             8                                                  March 2020 | Volume 8 | Article 71
+Nanni et al.                                                                                                                                Social Media and Large Carnivores
+
+
+
+ETHICS STATEMENT                                                                           collaboration contract with the MUSE–Museo delle Scienze of
+                                                                                           Trento (Italy).
+Written informed consent was obtained from the individual(s)
+for the publication of any potentially identifiable images or data                         ACKNOWLEDGMENTS
+included in this article.
+                                                                                           We would like to thank Chiara Bettega, Massimo Pettavino, and
+AUTHOR CONTRIBUTIONS                                                                       Giulia Dapueto for their advice regarding GIS maps. Thanks to
+                                                                                           Giorgio Matricardi and Luisa Stagi who were a link between the
+VN and EC initiated and conceived the study. VN, VP, and                                   team of multidisciplinary co-authors. VN would like to thank
+GB collected online reports. VN implemented and prepared                                   all teachers and professors who have arouse her curiosity. We
+the final dataset. VN and EC performed the statistical analysis                            are also grateful to the editor and the reviewers whose valuable
+and prepared the figures with the help of SM. VN wrote the                                 comments improved the quality of the manuscript.
+manuscript with the help of GB, VP, CC, EC, and SM. EC, GB,
+SS, CC, SM, PP, and VP commented on the manuscript draft.                                  SUPPLEMENTARY MATERIAL
+FUNDING                                                                                    The Supplementary Material for this article can be found
+                                                                                           online at: https://www.frontiersin.org/articles/10.3389/fevo.
+VP was financially supported by the Excellence Project                                     2020.00071/full#supplementary-material
+CGL2017-82782-P financed by the Spanish Ministry of                                        Supplementary Table 1 | Dataset used for the analyses. The dataset includes
+Science, Innovation and Universities, the Agencia Estatal de                               information and the total number of shares (NTS) of the news reports collected
+Investigación (AEI) and the Fondo Europeo de Desarrollo                                    from international newspapers between 2005 and 2017.
+Regional (FEDER, EU). VP was also funded by a GRUPIN                                       Supplementary Table 2 | License information regarding the photos used in
+research grant from the Regional Government of Asturias                                    Figures 1, 4. Credits, types of license and other details are specified for each of
+(Ref.: IDI/2018/000151). GB was financially supported by a                                 the photos used.
+
+
+
+
+REFERENCES                                                                                 Ferrara, E., and Yang, Z. (2015). Measuring emotional contagion in social media.
+                                                                                               PLoS ONE 10:e0142390. doi: 10.1371/journal.pone.0142390
+Altheide, D. L. (1997). The news media, the Problem frame, and the production of           Fournier, D. A., Skaug, H. J., Ancheta, J., Ianelli, J., Magnusson, A., Maunder, M. N.,
+   fear. Soc. Q. 38, 647–668. doi: 10.1111/j.1533-8525.1997.tb00758.x                          et al. (2012). AD model builder: using automatic differentiation for statistical
+An, J., Cha, M., Gummadi, K., and Crowcroft, J. (2011). “Media landscape in                    inference of highly parameterized complex nonlinear models. Optim. Methods
+   twitter: a world of new conventions and political diversity,” in Proceedings                Softw. 27, 233–249. doi: 10.1080/10556788.2011.597854
+   of the Fifth International AAAI Conference on Weblogs and Social Media.                 Giblett, R. (2009). Alligators, Crocodiles and the Monstrous Uncanny. Landscapes of
+   (Barcelona), 623–628.                                                                       Culture and Nature. London: Palgrave Macmillan, 17–35.
+Bartón, K. (2013). Model Selection and Model Averaging Based on Information                Harrell, J. P. (2000). Affective Responses to Television Newscasts: Have You Heard
+   Criteria (AICc and alike). The Comprehensive R Archive Network 1:13. Available              The News? Western Michigan University. Available online at: http://ovidsp.
+   online at: https://cran.r-project.org/web/packages/MuMIn/index.html                         ovid.com/ovidweb.cgi?T=JS&PAGE=reference&D=psyc3&NEWS=N&AN=
+Berger, J. A., and Milkman, K. L. (2012). What makes online content viral? J.                  2000-95022-294.
+   Market. Res. 4, 192–205. doi: 10.1509/jmr.10.0353                                       Hermida, A., Fletcher, F., Korell, D., and Logan, D. (2012). SHARE, LIKE,
+Bombieri, G., Nanni, V., del Mar Delgado, M., Fedriani, J. M., López-Bao, J.                   RECOMMEND: decoding the social media news consumer. J. Stud. 13,
+   V., Pedrini, P., et al. (2018). Content analysis of media reports on predator               815–824. doi: 10.1080/1461670X.2012.664430
+   attacks on humans: toward an understanding of human risk perception                     Hurvich, C. M., and Tsai, C.-L. (1989). Regression and time series model selection
+   and predator acceptance. BioScience 68, 577–584. doi: 10.1093/biosci/                       in small samples. Biometrika 76, 297–307. doi: 10.1093/biomet/76.2.297
+   biy072                                                                                  Ingham, H. R. W., Neumann, D. L., and Waters, A. M. (2015). Empathy-
+Bornatowski, H., Hussey, N. E., Sampaio, C. L. S., and Barreto, R. R. P. (2019).               related ratings to still images of human and nonhuman animal groups in
+   Geographic bias in the media reporting of aquatic versus terrestrial human                  negative contexts graded for phylogenetic similarity. Anthrozoos 28, 113–130.
+   predator conflicts and its conservation implications. Perspect. Ecol. Conserv. 7,           doi: 10.2752/089279315X14129350722136
+   32–35. doi: 10.1016/j.pecon.2018.12.004                                                 Ju, A., Jeong, S. H., and Chyi, H. I. (2014). Will social media save newspapers?
+Bösch, K., Müller, O., and Schneider, J. (2018). “Emotional contagion through                  examining the effectiveness of facebook and twitter as news platforms. J. Pract.
+   social network,” in 26th European Conference on Information Systems: Beyond                 8, 1–17. doi: 10.1080/17512786.2013.794022
+   Digitization - Facets of Socio-Technical Change, ECIS, 11–28.                           Kasperson, R. E., and Kasperson, J. X. (1996). The social amplification
+Burnham, K. P., and Anderson, D. R. (2002). Model Selection and Multimodel                     and attenuation of risk. Ann. Am. Acad. Pol. Soc. Sci. 545, 95–105.
+   Inference: A Practical Information-Theore- Tic Approach. New York,                          doi: 10.1177/0002716296545001010
+   NY: Springer-Verlag.                                                                    Kietzmann, J. H., Hermkens, K., McCarthy, I. P., and Silvestre, B. S. (2011). Social
+Campbell, G. D., and Smith, E. D. (1993). The ‘problem’ of shark attacks upon                  media? Get serious! understanding the functional building blocks of social
+   humans. J. Wilderness Med. 4, 5–10. doi: 10.1580/0953-9859-4.1.5                            media. Bus. Horiz. 54, 241–251. doi: 10.1016/j.bushor.2011.01.005
+Couldry, N. (2012). Media, Society, World: Social Theory and Digital Media                 Knopff, A. A., Knopff, K. H., and St. Clair, C. C. (2016). Tolerance
+   Practice. Cambridge, UK: Polity Press.                                                      for cougars diminished by high perception of risk. Ecol. Soc. 21:33.
+Decker, D. J., Lauber, T. B., and Siemer, W. F. (2002). Human-Wildlife Conflict                doi: 10.5751/ES-08933-210433
+   Management: A Practitioner’s Guide. Ithaca, NY: Northeast Wildlife Damage               Kramer, A. D. I., Guillory, J. E., and Hancock, J. T. (2014). Experimental evidence
+   Management Research and Outreach Cooperative.                                               of massive-scale emotional contagion through social networks. Proc. Natl Acad
+Farhi, P. (2009). The twitter explosion. Am. J. Rev. 31, 1–6.                                  Sci U.S.A. 111, 8788–8790. doi: 10.1073/pnas.1320040111
+
+
+
+
+Frontiers in Ecology and Evolution | www.frontiersin.org                               9                                                     March 2020 | Volume 8 | Article 71
+Nanni et al.                                                                                                                                     Social Media and Large Carnivores
+
+
+
+Kruuk, H. (ed.). (2002). Hunter and Hunted, Relationships between                                Skowronski, J. J., and Carlston, D. E. (1989). Negativity and extremity biases
+   Carnivores and People. Cambridge: Cambridge University Press.                                     in impression formation : a review of explanations. Psychol. Bull. 105:131.
+   doi: 10.1017/CBO9780511614996                                                                     doi: 10.1037/0033-2909.105.1.131
+Lee, C. S., and Ma, L. (2012). News sharing in social media: the effect of                       Soroka, S. N. (2014). Negativity in Democratic Politics Causes and
+   gratifications and prior experience. Comput. Hum. Behav. 28, 331–339.                             Consequences.      Cambridge,         UK:    Cambridge       University    Press.
+   doi: 10.1016/j.chb.2011.10.002                                                                    doi: 10.1017/CBO9781107477971
+Milosevic, M. (2016). World Press Trends 2016. Page Wan Ifra. Available online                   Stieglitz, S., and Dang-Xuan, L. (2013). Emotions and information diffusion
+   at: https://en.wikipedia.org/wiki/List_of_newspapers_by_circulation                               in social media—sentiment of microblogs and sharing behavior.
+Myers, D. G. (2004). Do We Fear The Right Things? American Psychological Society                     J. Manage. Inform. Syst. 29, 217–248. doi: 10.2753/MIS0742-1222
+   Observer. Available online at: http://www.psychologicalscience.org/observer/                      290408
+   1201/prescol.html.                                                                            Sunstein, C. R. (2002). The laws of fear. Harvard Law Rev. 115, 1119–1168.
+Nov, O., Naaman, M., and Ye, C. (2010). Analysis of participation in an online                       doi: 10.2307/1342630
+   photo-sharing community: a multidimensional perspective. J. Am. Soc. Inform.                  Szabo, G., and Huberman, B. A. (2010). Predicting the popularity of online content.
+   Sci. Technol. 61, 555–566. doi: 10.1002/asi.21278                                                 Comun. ACM 53, 80–88. doi: 10.1145/1787234.1787254
+Olmstead, K., Mitchell, A., and Rosenstiel, T. (2011). Navigating News Online:                   Takhteyev, Y., Gruzd, A., and Wellman, B. (2012). Geography of Twitter networks.
+   Where People Go, How They Get There and What Lures Them Away. Pew                                 Soc. Netw. 34, 73–81. doi: 10.1016/j.socnet.2011.05.006
+   Research Center, 1–30. Available online at: http://www.journalism.org/files/                  Trussler, M., and Soroka, S. (2014). Consumer demand for cynical and negative
+   legacy/NIELSENSTUDY-Copy.pdf                                                                      news frames. Int. J. Press/Polit. 19, 360–379. doi: 10.1177/1940161214524832
+Osatuyi, B. (2013). Information sharing on social media sites. Comput. Hum.                      Vonk, R. (1996). Negativity and potency effects in impression
+   Behav. 29, 2622–2631. doi: 10.1016/j.chb.2013.07.001                                              formation. Euro. J.Soc. Psychol. 26, 851–865. doi: 10.1002/(SICI)1099-
+Papworth, S. K., Nghiem, T. P. L., Chimalakonda, D., Posa, M. R. C., Wijedasa, L.                    0992(199611)26:6<851::AID-EJSP790>3.0.CO;2-9
+   S., Bickford, D., et al. (2015). Quantifying the role of online news in linking               West, D. (2001). The Rise and Fall of the Media Establishment. New York, NY.
+   conservation research to facebook and twitter. Conserv. Biol. 29, 825–833.                        doi: 10.1007/978-1-137-07405-8
+   doi: 10.1111/cobi.12455                                                                       Wu, Y., Xie, L., Huang, S., Li, P., Yuan, Z., and Liu, W. (2018). Using social media
+Penteriani, V., del Mar Delgado, M., Pinchera, F., Naves, J., Fernández-Gil, A.,                     to strengthen public awareness of wildlife conservation. Ocean Coast. Manage.
+   Kojola, I., et al. (2016). Human behaviour can trigger large carnivore attacks                    153, 76–83. doi: 10.1016/j.ocecoaman.2017.12.010
+   in developed countries. Sci. Rep. 6:20552. doi: 10.1038/srep20552                             Zillmann, D., Chen, L., Knobloch, S., and Callison, C. (2004). Effects of lead
+Purcell, K., Rainie, L., Mitchell, A., Rosenstiel, T., and Olmstead, K. (2010).                      framing on selective exposure to internet news reports. Commun. Res. 31,
+   Understanding The Participatory News Consumer: How Internet And Cell Phone                        58–81. doi: 10.1177/0093650203260201
+   Users Have Turned News into a Social Experience. Pew Research Center. 1–63.                   Zuur, A. F., Ieno, E. N., Walker, N. J., Saveliev, A. A., and Smith, G.
+R Core Team (2017). R: A Language and Environment for Statistical Computing.                         M. (2009). Mixed Effects Models and Extension in R. Berlin: Springer.
+   Vienna: R Foundation for Statistical Computing. Available online at: https://                     doi: 10.1007/978-0-387-87458-6
+   www.r-project.org/.
+Ripple, W. J., Estes, J. A., Beschta, R. L., Wilmers, C. C., Ritchie, E. G., Hebblewhite,        Conflict of Interest: The authors declare that the research was conducted in the
+   M., et al. (2014). Status and ecological effects of the world’s largest carnivores.           absence of any commercial or financial relationships that could be construed as a
+   Science 343:1241484. doi: 10.1126/science.1241484                                             potential conflict of interest.
+Rutsaert, P., Regan, Á., Pieniak, Z., McConnon, Á., Moss, A., Wall, P., et al. (2013).
+   The use of social media in food risk and benefit communication. Trends Food                   Copyright © 2020 Nanni, Caprio, Bombieri, Schiaparelli, Chiorri, Mammola,
+   Sci. Technol. 30, 84–91. doi: 10.1016/j.tifs.2012.10.006                                      Pedrini and Penteriani. This is an open-access article distributed under the terms
+Schafer, N. P. (2011). Dismantling media produced fear toward predators (Master’s                of the Creative Commons Attribution License (CC BY). The use, distribution or
+   thesis), University of Otago, Dunedin, New Zealand.                                           reproduction in other forums is permitted, provided the original author(s) and the
+Skaug, H., Fournier, D., Nielsen, A., Magnusson, A., and Bolker, B. (2013).                      copyright owner(s) are credited and that the original publication in this journal
+   Generalized Linear Mixed Models Using AD Model Builder. R package                             is cited, in accordance with accepted academic practice. No use, distribution or
+   version 0.77. Available online at: http://glmmadmb.r-forge.r-project.org/                     reproduction is permitted which does not comply with these terms.
+
+
+
+
+Frontiers in Ecology and Evolution | www.frontiersin.org                                    10                                                    March 2020 | Volume 8 | Article 71
+

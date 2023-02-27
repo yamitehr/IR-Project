@@ -1,0 +1,730 @@
+     BiasWatch: A Lightweight System for Discovering
+ and Tracking Topic-Sensitive Opinion Bias in Social Media
+
+                             Haokai Lu                                         James Caverlee                                       Wei Niu
+                     Texas A&M University                                    Texas A&M University                           Texas A&M University
+                    hlu@cse.tamu.edu                                   caverlee@cse.tamu.edu                           weiniu.2010@gmail.com
+
+
+
+ABSTRACT                                                                                            opic, so a system should be adaptable to each topic. Third, the
+We propose a lightweight system for (i) semi-automatically dis-                                     themes by which people express their opinions may change over
+covering and tracking bias themes associated with opposing sides                                    time depending on the circumstances (e.g., gun control debates may
+of a topic; (ii) identifying strong partisans who drive the online                                  take different forms based on the ebb and flow of elections, recent
+discussion; and (iii) inferring the opinion bias of “regular” partic-                               shooting incidents, and so forth). As a result, assessing bias should
+ipants. By taking just two hand-picked seeds to characterize the                                    be adaptive to these temporal changes.
+topic-space (e.g., “pro-choice” and “pro-life”) as weak labels, we                                     Hence in this paper, we develop a lightweight system – BiasWatch
+develop an efficient optimization-based opinion bias propagation                                    – for discovering and tracking opinion bias in social media. Bi-
+method over the social/information network. We show how this                                        asWatch begins by taking just two hand-picked seeds to character-
+approach leads to a 20% accuracy improvement versus a next-best                                     ize the topic-space (e.g., “pro-choice” and “pro-life” for abortion)
+alternative for bias estimation, as well as uncovering the opinion                                  as weak labels to bootstrap the opinion bias framework. Concretely,
+leaders and evolving themes associated with these topics. We also                                   we leverage these hand-picked seeds to identify other emerging
+demonstrate how the inferred opinion bias can be integrated into                                    (and often unknown) themes in social media, reflecting changes in
+user recommendation, leading to a 26% improvement in precision.                                     discourse as new arguments and issues arise and fade from pub-
+                                                                                                    lic view (e.g., an upcoming election, a contentious news story).
+Categories and Subject Descriptors                                                                  We propose and evaluate two approaches for expanding the hand-
+H.3.4 [Information Storage and Retrieval]: Systems and Soft-                                        picked seeds in the context of Twitter to identify supporting and
+ware—Information networks                                                                           opposing hashtags – one based on co-occurrence and one on signed
+                                                                                                    information gain. We use these discovered hashtags to identify
+Keywords                                                                                            strong topic-based partisans (what we dub anchors). Based on the
+opinion analysis; bias; social media                                                                social and information networks around these anchors, we propose
+                                                                                                    an efficient opinion-bias propagation method to determine user’s
+1. INTRODUCTION                                                                                     opinion bias – based on both content and retweeting similarity –
+   Social media has increasingly become a popular and important                                     and embed this method in an optimization framework for estimat-
+platform for “regular” people to express their opinions, without the                                ing the topic-sensitive bias of social media participants. In sum-
+need to rely on expensive and fundamentally limited conduits like                                   mary, this paper makes the following contributions:
+newspapers and broadcast television. These opinions can be ex-                                      • First, we build a systematic framework – BiasWatch – to dis-
+pressed on a variety of themes including politically-charged topics                                    cover biased themes and estimate user-based opinion bias quan-
+like abortion and gun control as well as fun (but heated) rivalries                                    titatively under the context of controversial topics in social me-
+like android vs. iOS and Cowboys vs. 49ers. Our interest in this                                       dia. We propose an efficient optimization scheme – called User-
+paper is in creating a flexible tool for discovering and tracking the                                  guided Opinion Propagation [UOP] – to propagate opinion bias.
+themes of opinion bias around these topics, the strong partisans                                       By feeding just two opposing hashtags, the system can discover
+who drive the online discussion, and the degree of opinion bias of                                     bias-related hashtags, find bias anchors, and assess the degree of
+“regular” social media participants, to determine to what degree                                       bias for “regular” users who tweet about controversial topics.
+particular participants support or oppose a topic of interest.                                      • Second, we evaluate the estimation of users’ opinion bias by
+   However, assessing topic-sensitive opinion bias is challenging.                                     comparing the quality of the proposed opinion bias approach ver-
+First, the opinion bias of “regular” users may not be as pronounced                                    sus several alternative approaches over multiple Twitter datasets.
+as prominent figures, so discerning this bias will require special                                     Overall, we see a significant improvement of 20.0% in accuracy
+care. Second, how opinion bias manifests will inevitably vary by t-                                    and 28.6% in AUC on average over the next-best method.
+                                                                                                    • Third, we study the effect of different approaches for biased
+Permission to make digital or hard copies of all or part of this work for personal or                  theme discovery to measure the impact of newly discovered bi-
+classroom use is granted without fee provided that copies are not made or distributed                  ased hashtags as additional supervision. We observe that the
+for profit or commercial advantage and that copies bear this notice and the full cita-                 newly discovered hashtags are often associated with the underly-
+tion on the first page. Copyrights for components of this work owned by others than                    ing community of similar opinion bias, and that they temporally
+ACM must be honored. Abstracting with credit is permitted. To copy otherwise, or re-
+publish, to post on servers or to redistribute to lists, requires prior specific permission
+                                                                                                       fluctuate due to the impact of new controversial events.
+and/or a fee. Request permissions from Permissions@acm.org.                                         • Finally, we demonstrate how these inferred opinion bias scores
+CIKM’15, October 19–23, 2015, Melbourne, VIC, Australia.                                               can be integrated into user recommendation by giving similar-
+ c 2015 ACM. ISBN 978-1-4503-3794-6/15/10 ...$15.00.                                                   minded users a higher ranking. We show that the integration
+DOI: http://dx.doi.org/10.1145/2806416.2806573.
+
+
+
+
+                                                                                              213
+     can improve the recommendation performance by 26.3% in pre-
+     cision@20 and 13.8% in MAP@20. This result implicitly con-
+     firms the principle of homophily in the context of opinion bias,
+     and demonstrates how topic-sensitive opinion bias can enrich
+     user modeling in social media.
+
+2.      RELATED WORK
+   There has been considerable research effort devoted to exploring
+political polarization, assessing media bias of major news outlets,
+                                                                                              Figure 1: Overall BiasWatch Framework
+and assessing user sentiment towards particular topics.
+   Political polarization. Political polarization has been a topic of           ion bias instead of sentiment. Sentiment [22] centers around users’
+great interest in the past decade and studied in news articles [33],            attitude or emotional state, usually reflected by the use of emo-
+online forums [3] and social media [1, 5, 6, 7, 11, 16, 23]. Adamic             tional words. However, opinion bias can also be reflected by the
+and Glance [1] demonstrated the divided community structure in                  news or factual information she chooses to post, which may lack
+the citation network of political blogs. Conover et al. [7] and Livne           any prominent emotional words.
+et al. [16] showed that there exists a highly segregated network
+structure using modularity. Guerra et al. [11] compared polarized               3. LIGHTWEIGHT BIAS DISCOVERY
+and non-polarized networks and proposed a new measure to deter-                 Problem Statement. We assume there exists a set of users U =
+mine whether a network is polarized given that the network is also              {u1 , u2 , ..., un } sampled from Twitter. Each user has their corre-
+modular. Since knowing users’ political orientation can be of great             sponding tweets D = {d1 , d2 , ..., dn } related to a controversial
+importance for understanding the overall political landscape, many              topic T , where di is a collection of tweets by ui . Since a per-
+approaches have been proposed to classify a user’s political iden-              son’s opinion bias represents the intrinsic tendency that she chooses
+tity. Conover et al. [6] and Pennacchiotti and Popescu [23] exploit             to support or oppose a concept under a controversial context, we
+text and network features for classification. Akoglu [3] proposed               choose to quantize the degree of her opinion bias by a numeric
+to use signed bipartite opinion networks for the classification and             score ranging from -1 to 1. Specifically, we assign B = {b1 , b2 , ..., bn }
+ranking of user’s political polarity on forum data. Zhou et al. [33]            for each user in U , respectively, where bi ∈ [−1, 1]. When bi is
+applied semi-supervised learning methods to classify news articles              close to 1, it denotes that user ui has a strong positive standing to-
+and users’ political standing. Cohen et al. [5] employ supervised               ward the topic; when bi is close to -1, it represents the opposite.
+methods to classify political users into groups with different politi-          Thus, given a controversial topic T , a sampled set of users U and
+cal activities, and conclude that it is hard to infer “ordinary” users’         their on-topic tweets D, we identify the following tasks of the sys-
+political orientation. In our work, instead of simply focusing on               tem framework: (i) Discovering biased themes that are discussed
+the classification of user’s political orientation, we are interested           by opposing sides of users. We denote P as the set of positive
+in developing a flexible tool to explore controversial themes and               themes and N as the set of negative themes; (ii) Finding bias an-
+discover their underlying users’ degree of opinion bias on a topic              chors who show strong degree of opinion bias, which we denote as
+basis. We show that user’s opinion bias can be leveraged to improve             Uanchor ; (iii) Determining “regular” participants’ opinion bias B.
+other applications such as user recommendation.                                 Overall Approach. In order to tackle these tasks, we propose a
+   Media bias. Apart from user-oriented political orientation, some             lightweight framework that propagates opinion bias scores based
+works have explored media bias. Groseclose et al. [10] proposed                 only on a few hand-picked seeds that characterize the topic-space
+a new measure to quantify media bias by comparing the number                    (e.g., “pro-choice” and “pro-life” for abortion). The BiasWatch
+of citations to think tanks and policy groups to those of Congress              framework, illustrated in Figure 1, takes as input these hand-picked
+members. Gentzkow et al. [9] also proposed a media bias measure                 seeds and then proceeds through the following three key steps:
+which considers the frequency of phrases quoted by Congressional
+                                                                                • Finding Bias Anchors. This first step identifies topic-based
+members of Republican and Democratic parties in newspapers. Lin
+                                                                                   partisans whose opinion bias is strongly revealed through their
+et al. [15] focused on the measure of coverage quantity to compare
+                                                                                   choice of hashtags. We develop two automatic approaches to:
+the extent of bias between blogs and news media. Wong et al. [29]
+                                                                                   (i) identify biased themes in the form of hashtags through initial
+quantified the political leanings of media outlets on Twitter using
+                                                                                   seeds; (ii) expand the pools of bias anchors with these identified
+aggregated retweeting statistics. Our work differs from these in that
+                                                                                   biased themes.
+we target the opinion bias of “regular” users instead of prominent
+                                                                                • Propagating Bias. This second step builds a user similarity net-
+media, and with respect to different controversial topics instead of
+                                                                                   work around these expanded anchors and other “regular” partic-
+only political leanings.
+                                                                                   ipants, and propagates bias along this network. The edges here
+   User sentiment. There are also prior works which infer user’s
+                                                                                   measure the similarities of two users through content and link
+sentiment toward a topic in social media or online forums. Tan et al.
+                                                                                   features from tweets.
+[26] proposed a semi-supervised approach to inferring users’ sen-
+timent using social network information. Kim et al. [12] and Gao                • Noise-Aware Optimization. Lastly, we propose to embed the
+et al. [8] proposed to use a collaborative filtering like approach to              previous two steps into a noise-aware optimization framework
+estimate user-level sentiment. Lu et al. [17] proposed to use con-                 where anchors’ opinion bias can be effectively propagated to
+tent and social interactions to discover opinion networks in forum                 each “regular” participant throughout the network. A key facet is
+discussions. However, our work has two differences from these                      that this optimization is tolerant of noisy labels on the initial bias
+and other sentiment-oriented approaches. The first is that many                    anchors, so that initial errors made in identifying bias anchors
+of these works require a significant amount of manually labelled                   need not lead to cascading errors in “regular” participants.
+tweets or users as ground truth. In our work, we develop automatic              3.1 Finding Bias Anchors
+approaches using crowdsourced hashtags as seeds to substantially                  Our first challenge is to identify strong topic-based partisans
+reduce manual labor. The second is that we focus on intrinsic opin-             (what we dub anchors). These anchors serve as the basis for propa-
+
+
+
+
+                                                                          214
+Table 1: Top ten themes at different times for “fracking” discovered          where fhi ∩hj represents the co-occurrence frequency of hi and hj ,
+by seed expansion; red for pro-fracking; blue for anti-fracking.              and fhi ∪hj represents the total occurrence frequency of either hi
+    Dec 2012       Mar 2013         June 2013         Sept 2013               or hj . Thus, σ(h+ , hi ) and σ(h− , hi ) represents the similarity of
+     #shale       #dontfrackny         #shale        #balcombe                hi to the pro-seed and anti-seed, respectively. We select top hash-
+     #natgas         #shale           #energy           #shale                tags with the largest similarity to the pro-seed and anti-seed as the
+       #oil         #energy           #natgas         #frackoff               candidate set C+ and C− . However, since some hashtags, for ex-
+    #energy           #oil              #oil           #energy                ample, “#guncontrol”, are generic and co-occur with both the pro-
+      #gas            #gas              #gas        #greatgasgala             seed and anti-seed, these hashtags do not indicate any opinion bias.
+      #tcot         #natgas       #banfracking         #natgas                To filter out common hashtags like these, we impose the following
+      #jobs          #frack          #fracked       #banfracking              constraint on hashtag from C+ for pro-seed:
+     #frack       #banfracking         #frack            #gas                                      σ(h+ , hi )/σ(h− , hi ) > 
+   #marcellus        #nokxl             #tcot            #oil
+  #naturalgas         #tcot       #dontfrackny          #frack                where a large  reflects more correlation with the pro-seed; similar
+                                                                              constraint can also be imposed to filter hashtags in C− . We then
+                                                                              use the resulting m top hashtags for pro-seed as positive theme set
+gating opinion bias throughout the social and information network.
+                                                                              P , and m top hashtags for anti-seed as negative theme set N .
+One reasonable method for identifying anchors is to manually label
+a number of users, among whom we hope that there exist a portion              Seed Expansion via Signed Information Gain. Although the ap-
+of users whose opinion bias is clearly shown. However, there are              proach above does find other biased hashtags, there are two dis-
+two disadvantages of this approach: (i) it is potentially expensive           advantages: (i) it often gives niche hashtags which are only used
+and time-consuming; and (ii) because of the random nature of la-              by a small number of participants; (ii) it often misses event-related
+beling, typically, we have to label many users whose opinion bias             short-lasting biased hashtags. In light of these issues, we propose
+is not clear or neutral in order to obtain anchors.                           the second approach which relies on weak supervision to select the
+   To overcome these difficulties, we propose to exploit crowd-               most distinguishing hashtags for each side. Specifically, we per-
+generated hashtags in Twitter. Hashtags are often used to tag tweets          form the following procedure:
+with a specific topic for better discoverability or to indicate the           1. Training with pro-seed and anti-seed. First, we aggregate a
+community to which the tweets are posted [30]. Some hashtags                  user’s tweets and use a bag-of-words model to compute TFIDF for
+may be viewed as a rich source of expressing opinions [28], po-               each user. Users who have tweeted with at least one hashtag are
+tentially indicating user’s opinion bias. For example, some most              then selected and used. From these users, we treat users with only
+popular hashtags for “gun control” include #guncontrolnow and                 pro-seed as positive class c+ , users with only anti-seed as negative
+#2ndamendment, which reveal strong user bias, with the former of-             class c− , and the rest for prediction. Finally, an SVM classifier
+ten used by supporters of gun control and the latter by opponents.            is learned on the training data and used to predict the polarity of
+Hashtags of this nature can be essentially considered as weak la-             users which are left. We now have an expanded set of users who
+bels of the polarity of tweets with respect to a controversial topic.         are positive, and an expanded set of users who are negative.
+Hence, to find bias anchors we first seek to identify a candidate set         2. Selecting hashtags. From the expanded sets of users, we use
+of hashtags that provide support for the topic and a candidate set            signed information gain (SIG) proposed by Zheng et al. [31] as the
+of hashtags that express opposition. Since the hashtags used to ex-           measure to select hashtags for pro-seed and anti-seed, respectively.
+press an opinion may change over time as new issues arise and fade                 SIG(hi , c) = sign(AD − BC)·
+from public view (e.g., an upcoming election, a contentious news
+story) and as new arguments are reflected in online discourse, we
+                                                                                                 X       X                   p(h, c)
+                                                                                                             p(h, c) · log
+leverage these seeds to identify emerging themes in social media                                                           p(h) · p(c)
+                                                                                               c∈{c+ ,c− } h∈{hi ,h̄i }
+via seed expansion. To show a concrete example, Table 1 lists top
+ranking opposing and supporting themes at different times for the             where A is the number of users with hi and in class c+ , B is the
+topic “fracking” after seed expansion is performed. We can see that           number of users with hi and in class c− , C is the number of users
+new biased themes emerge as controversial events occur. In the fol-           without hi and in class c+ and D is the number of users without hi
+lowing, we consider two approaches for expanding the hand-picked              and in class c− . Also, h̄i represents hashtags other than hi . Here,
+seeds to identify supporting and opposing hashtags:                           the probability p is obtained by maximum likelihood estimation.
+Seed Expansion via Co-Occurrence. The first approach relies                   We select m hashtags with the largest SIG as the finalized hashtag
+on hashtag co-occurrence statistics to find other hashtags used by            set P for pro-seed, and m hashtags with the smallest SIG as the
+users with similar opinion bias. The intuition is that if two hash-           finalized hashtag set N for anti-seed.
+tags are often used together by different users (whether in the same             As a result, this approach can not only filter out common hash-
+tweet or different tweets with respect to a topic), these two hash-           tags used by both sides of users without manually specifying any
+tags are likely to indicate the same opinion bias. Here, hashtag              extra parameters, but also can discover popular yet distinguished
+co-occurrence is based on users instead of tweets, considering that           biased hashtags.
+a user’s opinion bias is not likely to change. Thus, for hashtags             Bias Anchors. Given the expanded set of hashtags (both support-
+which occur in different tweets, as long as they are used by the              ing and opposing a particular topic), we identify as our strong par-
+same user, they are still considered to occur together.                       tisans users who consistently adopt hashtags from only one opinion
+   Let fi and fj represent the frequency of the hashtag hi and hj             standpoint, which we denote as Uanchor . We assign an initial bias
+related to a topic, respectively. Let f+ and f− represent the fre-            score b˜i to these anchors as
+                                                                                                          (follows:
+quency of the pro-seed h+ and the anti-seed h− , respectively. The                                  ˜       +1, if ui ∈ UP
+                                                                                                    bi =                                       (1)
+similarity between two hashtags, denoted as σ(hi , hj ), is computed                                        −1, if ui ∈ UN
+by Jaccard coefficient (JC) as:
+                                      fhi ∩hj                                 where UP and UN is the set of anchors adopting hashtags from P
+                        σ(hi , hj ) =
+                                      fhi ∪hj                                 and N , respectively, and Uanchor = UP ∪ UN . These opinion
+
+
+
+
+                                                                        215
+bias anchors serve as the basis for propagating bias throughout the              change as an optimization variable, we force the following condi-
+social and information network, which we tackle next.                            tions: (i) for bias anchors, bi should be as close to the bias indicated
+                                                                                 by adopting biased hashtags (Eqn. 1); (ii) for other participants, bi
+3.2 Bias Propagation Network                                                     and bj should be close to the degree indicated by their content and
+   After the discovery of bias anchors, how do we determine the                  link similarity (Eqn. 4). Their opinion bias is initialized randomly
+opinion bias of those remaining participants? We propose to build                between [−1, 1] and can now be iteratively propagated through op-
+a propagation network where two users are only connected if their                timization. Thus, we have the following objective function:
+                                                                                                                               n     n
+similarity passes a threshold. In the following, we adopt both con-                                  X                        X    X
+tent and link features to determine user similarity.                               min f =                  (bi − b˜i )2 + µ1            wij (bi − bj )2
+                                                                                  bi ∈B
+                                                                                                 ui ∈Uanchor                        i=1 j=i+1
+Content-Based Propagation. The assumption of content induced
+propagation is that if two users have a high textual similarity in                  subject to           − 1 ≤ bi ≤ 1               ∀i ∈ {1, ..., n}
+their posts, it is likely that they may share similar opinion bias.                                                                                 (5)
+To compute the content similarity of two users, we aggregate each                where µ1 is the tradeoff weight for different components. Thus,
+user’s topic-related tweets and treat each user as a document. Thus,             by solving this optimization, each user’s opinion bias is propagated
+content similarity of two users can be computed with document                    through the network in an optimized fashion. Since the objective
+similarity. Here, we adopt cosine similarity of the TFIDF of the                 function is convex, we can use the standard L-BFGS method with
+two documents with a standard bi-gram model. Tokenization of                     constraints to solve it efficiently. Another advantage of this frame-
+tweets is done through the tool provided by Owoputi et al. [21]                  work is that other similarity signals such as location, profile demo-
+for its robustness. Hashtags and mentions are also included in the               graphics, and so on can be easily incorporated into Equation 5.
+model as features. To reduce the size of feature dimensions, we                  Handling Noisy Bias Anchors. The essence of the above opti-
+performed stop-word removal and kept only unigrams and bi-grams                  mization framework is that we propagate users’ opinion bias which
+with occurrence frequency greater than two. The content similarity               we know with confidence to other users who we have seldom knowl-
+between ui and uj can be written
+                             (       as:                                         edge of. We can see that anchor’s opinion bias b˜i is treated as the
+                                Cij , if uj ∈ N c (ui )                          golden truth and stays unchanged. However, a prominent issue is
+                  content
+                wij        =                                     (2)             that users who consistently adopt hashtags from either P or N are
+                                0,           / N c (ui )
+                                       if uj ∈
+                                                                                 not guaranteed to have the corresponding opinion bias. To give an
+where Cij is the cosine similarity of ui and uj . To reduce the prop-            example, one user’s tweet reads, “#Gosnell certainly a tragedy, also
+agation complexity, we construct a sparse network by only consid-                cautionary tale, but not an argument against abortion rights in the
+ering k-nearest neighbors N c (ui ) for each user ui . We choose k               US. Want more Gosnells? Ban abortion.” This sarcastic pro-choice
+to be 10 for its efficiency without compromising much accuracy in                user adopted the hashtag #Gosnell, as we can observe from many
+experiments.                                                                     tweets, is a primary hashtag pro-life users would use. Hence, ac-
+                                                                                 cording to Equation 1, this user is falsely identified as a pro-life an-
+Link-Based Propagation. Retweeting can be considered a form of
+                                                                                 chor. Without manual inspection of user’s profile and their related
+endorsement for users in Twitter [4, 7]. Based on this observation,
+                                                                                 tweets, it is very hard to judge whether a bias anchor determined
+it is expected that if a user retweets another user on a topic, both
+                                                                                 from Equation 1 is correctly identified. To relieve this problem, we
+users tend to share similar opinion bias. Thus, we define the link
+                                                                                 introduce another variable yi for ui ∈ Uanchor as the ideal opinion
+similarity between ui and u(j as follows:
+                                                                                 bias. Intuitively, it should satisfy: (i) yi should be close to the opin-
+                     link      1, if uj ∈ N l (ui )                              ion bias inferred from neighbors; (ii) most yi should be consistent
+                  wij     =                                      (3)
+                               0, if uj ∈/ N l (ui )                             with b˜i , with a few of them being noisy. Inspired by the annotation
+                                                                                 of noisy web images in [27], we propose a modified minimization
+where uj is in the neighbors of ui if uj retweeted ui or ui retweeted            function as follows:                            n    n
+uj . Besides retweeting links, we can also take advantage of the fol-                                X                          X    X
+lower/following network information in Twitter. Here, we choose                    min f =                   (bi − yi )2 + µ1             wij (bi − bj )2
+                                                                                  bi ∈B
+not to use it since following link is not as strong a signal as retweet-                         ui ∈Uanchor                        i=1 j=i+1
+
+ing. One reason is that a user whose opinion is on one side may
+                                                                                                           X
+                                                                                                 + µ2                 |yi − b˜i |
+choose to follow someone on the opposite side for the purpose                                           ui ∈Uanchor
+of receiving any topic related statuses or refuting their arguments.
+Furthermore, we notice that the resource of retweeting activities                   subject to     − 1 ≤ bi ≤ 1         − 1 ≤ yi ≤ 1    ∀i ∈ {1, ..., n}
+is usually sparse so that the propagation network constituted only                                                                                     (6)
+from retweeting links is separated into many isolated networks.                  where µ1 and µ2 are the weighting parameters. We use l-1 norm
+Thus, a retweeting-based propagation is not enough to be treated                 to constrain the ideal variable yi to b˜i since normally, only a small
+by itself but needs to be combined with content-based propagation,               portion of bias anchors are noisy and l-1 norm could force most
+leading to the following fusion of similarity between users:                     anchors to stay as biased. We solve the above minimization through
+                                content        link                              the following steps:
+                      wij = wij         + λwij                       (4)
+                                                                                    (i) Initialize yi to b˜i and solve Equation 5 to obtain bi .
+where λ is a weighting parameter for content and link similarity.                   (ii) Solve the following sub-minimization problem with bi to ob-
+                                                                                 tain yi :
+3.3 Optimization Framework                                                             min f =
+                                                                                                        X
+                                                                                                                 (bi − yi )2 + µ2 |yi − b˜i |
+                                                                                      bi ∈B
+   Finally, we embed the discovered anchors and bias propagation                                    ui ∈Uanchor                                        (7)
+network into an optimization setting to propagate the opinion-bias                       subject to          − 1 ≤ yi ≤ 1           ∀i ∈ {1, ..., n}
+score of all users more effectively. Since the initial input to the
+approach is a set of weak labels (two user-specified opposite hash-              We employ the package L1 General [24] to solve the problem.
+tags), we call this optimization User-guided Opinion Propagation                   (iii) Replace b˜i with yi in Equation 5 to get final bi . We could
+[UOP]. Specifically, by allowing each user’s true opinion bias bi to             repeat step (i) and (ii) for several times for further optimization but
+
+
+
+
+                                                                           216
+                         Table 2: Datasets                                                Table 3: Turker labeling results of HITs
+          Topic           Users     Tweets      Retweets                                            Number of users for each category
+                                                                                 topic
+          gun control    70,387    117,679       60,293                                         +2        +1         0        -1      -2
+          abortion       119,664 173,236         93,690                          gun control    116       40        60        54     234
+          obamacare      67,937    123,320       70,008                          abortion       115       54        55        26     254
+          vaccine        27,362     36,822       13,108                          obamacare       82       26        33        26     337
+          fracking       22,231     34,485       14,524
+                                                                              quality of assessment, we follow the suggestions by Marshall and
+usually two to three iterations are enough shown by experiments. In           Shipman [18]. For each human intelligence task, we put two addi-
+this way, errors made in identifying bias anchors can be mitigated,           tional users in random positions, making a total of ten users in one
+leading to more accurate opinion bias estimation.                             HIT. Those users’ bias are already known through experts, which
+                                                                              we refer to as the golden users. If the label given by a turker for
+4.    EXPERIMENTAL EVALUATION                                                 any of these golden users is very different from that by experts, we
+   In this section, we perform several sets of experiments to evalu-          discard the entire answer by this turker for the HIT. Moreover, we
+ate the BiasWatch framework for topic-sensitive opinion bias dis-             ask five turkers to label one user and take the majority vote as the
+covery. We investigate the impact of seed expansion, the quality of           final label for the user. The results are shown in Table 3.
+bias propagation via both content and retweeting links, and com-              Agreement of Opinion Bias Labels. To measure the reliability of
+pare the performance versus alternative opinion bias approaches.              the above human labeling tasks, we investigate the inter-rater agree-
+We couple this study with an application of the system on two more            ment of the obtained assessment with Fleiss’ κ statistic. Specif-
+controversial datasets.                                                       ically, we obtained the 5-category κ statistic of 0.264, 0.393 and
+                                                                              0.418 for “gun control”, “abortion” and “obamacare”, respectively.
+4.1 Data                                                                      These values lie in the interpretation of fair agreement by Landis
+   The datasets that we use are collected with Twitter’s streaming            and Koch [13]. In addition, we also adopt the accuracy of agree-
+API from October 2011 to September 2013. To create topic-related              ment provided by Nowak [20] and adapt it into the following for-
+datasets for opinion discovery, we selected three controversial top-          mula since each user is assessed by more than two turkers:
+                                                                                                    N
+ics: “gun control", “abortion" and “obamacare". We select these                                  1 X # of votes of the majority category for user i
+topics because they are popular controversial topics discussed by a               accuracy =
+                                                                                                N i=1               # of votes for user i
+large number of Twitter users with both opposing sides of opinion
+expressed in the time period. For each topic, we extracted a base             where N is the total number of users to be assessed by turkers for
+set of tweets (and their corresponding users) containing at least one         each topic. The accuracy ranges from 0.304 when the majority is
+topic-related keyword: for “gun control": gun control, gun right,             obtained by chance to 1 when every user’s bias category is agreed
+pro gun, anti gun, gun free, gun law, gun safety, gun violence;               by all turkers. The lower bound 0.304 is obtained by calculating the
+for “abortion": abortion, prolife, prochoice, anti-abortion, pro-             average number of people in a majority out of five when they select
+abortion, planned parenthood; and for “obamacare": obamacare,                 one category from five by chance. Hence, an accuracy of 0.6, for
+#aca. Additionally, we created another two datasets on the top-               example, means that on average, 3 out of 5 turkers agree on a cate-
+ics “vaccine” and “fracking” for demonstration. We select these               gory. The accuracy for “gun control”, “abortion” and “obamacare”
+two topics for further evaluation because they are relatively recent          is 0.646, 0.727 and 0.788, respectively, which means, on average,
+controversial topics compared to the previous ones, and also their            at least 3 turkers agree on the majority category.
+opposing sides may not be fully entrenched in traditional left/right             Furthermore, we aggregated the same polarity into one category,
+party politics. To extract “vaccine” related tweets, we use the fol-          namely, category [+1] and [+2] are combined to one category and
+lowing keywords: vaccine, vaccination, vaccinate, #vaxfax; for                vice versa. The 3-category κ statistic increases to 0.461, 0.588
+“fracking”, we use: fracking, #frack, hydraulic fracturing, shale,            and 0.649, correspondingly, while the accuracy increases to 0.811,
+horizontal drilling. We summarize the datasets in Table 2.                    0.857 and 0.906. The κ values can now be interpreted as moderate
+                                                                              agreement. The accuracy now means at least four out of five peo-
+4.2 Gathering Ground Truth                                                    ple agree on the majority bias polarity on average. This indicates
+   In order to evaluate the framework, we need to know the true               that humans are more capable of discerning the polarity of users’
+opinion of a randomly sampled user set against which we can com-              opinion bias than determining the extent of users’ bias.
+pare the optimization results. Without direct access to user’s bias              In the following, we choose to use the 3 bias categories as ground
+and considering the inherent difficulty of knowing a user’s bias de-          truth since it has the most consistent and reliable performance by
+gree with respect to a controversial topic, we rely on an external            human labelers. We additionally consider only the support and op-
+labeling scheme using Amazon Mechanical Turk. Since the bias                  position categories (ignoring the minority of users who are neutral
+score obtained from Equation 5 is continuous, we discretize the               or do not show evidence, namely, category [0]) so we can cast the
+opinion bias of a Twitter user into the following five categories:            evaluation as a binary class problem. We adopt the standard classi-
+strong support [+2], some support [+1], neutral or no evidence [0],           fication measures of accuracy and area under the curve (AUC).
+some opposition [-1], strong opposition [-2].
+   Thus, we can map the continuous range into the above categories            4.3 Alternative Opinion Bias Estimators
+for evaluation. For each topic, we randomly selected 504 Twitter                To evaluate our approach of determining users’ opinion bias, we
+users from the total users in Table 2, and assigned eight users in            consider the following alternative opinion bias estimators:
+each human intelligence task (HIT), then ask the turkers (human               • SentiWordNet [SWN]. This is a simple sentiment detection ap-
+labeler) to select the most appropriate category for these users. For           proach, where we assign a sentiment score to each user’s tweets
+each user, we show her twitter user ID and her topic related tweets             according to SentiWordNet and classify each user’s opinion bias
+for each turker to examine. We also highlight the hyperlinks em-                with the relative portion of positive and negative tweets. Specif-
+bedded in the tweets and make them clickable. To ensure good                    ically, for each tweet di of user ui , we classify it positive if
+
+
+
+
+                                                                        217
+                                                                          for “abortion”; #ilikeobamacare and #defundobamacare for “oba-
+                                                                          macare”. We later show in the experiments the effect of different
+                                                                          seed selections.
+                                                                             We then highlight the seed expansion methods – both hashtag
+                                                                          co-occurrence (JC) and signed information gain (SIG) – used to
+                                                                          identify biased hashtags adopted by users with similar opinion bias.
+                                                                          For seed expansion via SIG, we need to determine the value of pa-
+                                                                          rameter m. To study the influence of this parameter, we adopt the
+                                                                          method UOP* to evaluate performance changes with values from
+                                                                          {2, 6, 10, 14, 18}. Figure 2 shows that the accuracy is highest when
+           Figure 2: Effect of m for seed expansion via SIG.              m is approximately at 10 for “gun control” and “abortion”, and is
+    P                      P                                              slightly larger for “obamacare”. After those values, accuracy lev-
+       wj ∈di pos(wj ) >       wj ∈di neg(wj ), and vice versa. We then   els or even decreases, possibly because the additional discovered
+    classify user ui as positive if the number of positive tweets is      hashtags are noisy or do not imply much opinion bias. Thus, in the
+    greater than the number of negative tweets, and vice versa.           following experiments, m is fixed at 10 for all topics. For seed ex-
+•   User Clustering with Content [uCC]. In this baseline, we con-         pansion via co-occurrence, we choose m to be 10 using the similar
+    struct a user graph and perform user clustering with tweets. The      approach, and empirically set  to 3. The expanded hashtags, as we
+    nodes of the graph are users and the edges are constructed based      observed from the output, can be approximately categorized as:
+    on k nearest neighbors with the largest content similarities of          (i) Sentiment-oriented. These hashtags can be easily discerned
+    tweets. We choose to use cosine similarity of the TFIDF of bi-        and used directly by participants to show opinion bias, such as
+    grams as the similarity measure. To perform graph clustering, we      #nowaynra for “gun control” and #dontfundit for “obamacare”.
+    apply normalized cuts for graph partitioning by Shi and Malik            (ii) Community identification. These hashtags indicate personal
+    [25] due to its simplicity and good performance. This is essen-       or political identities and are often used in a community, such as
+    tially a max-cut problem explored in [2, 19] to partition news-       #p2, #tcot, #teaparty and #fem2 (for feminists);
+    group and online debates into opposite positions, respectively.          (iii) Thematic. These hashtags often indicate arguments used
+    The purpose of using this unsupervised baseline is to examine         by participants to express their opinion. For example, gun con-
+    whether the selected biased hashtags as a form of weak supervi-       trol antagonists say #gunrights as a constitutional right protected
+    sion can provide much improvement.                                    by #2ndamendment (also #2a); abortion protagonists may empha-
+•   User Clustering with Content and Links [uCCL]. This base-             size #reprorights or #reprojustice in their arguments;
+    line is the modified version of uCC in which the edge weight             (iv) Action-oriented. Examples include #momsdemandaction,
+    combines both content and link similarity. Specifically, if there     #stand4life, #standwithcruz (stand with Ted Cruz), #swtw (stand
+    exists a retweeting link between two users, we add a constant to      with Texas women) and #demandaplan (as in “#demandaplan to
+    its content similarity, i.e., w = wcontent + θ ∗ wlink , where θ      end gun violence”);
+    is used to balance the weights. The purpose of this baseline is to       Overall, we can conclude that seed expansion through our pro-
+    examine if retweeting links can help distinguish opposing sides       posed approaches is able to find other biased hashtags which are
+    of users’ opinion bias compared to uCC.                               used by people with similar opinion bias. The above categoriza-
+•   Weakly-supervised SVM [wSVM]. We train an SVM with a                  tion also serves as guidance for users to pick initial opposing seeds
+    bi-gram model of bias anchors’ tweets, which is then used to          as input to the system. Now that we have discovered the biased
+    classify the test dataset. The parameters of SVM are determined       themes related to each side of polarity for different controversial
+    through 5-fold cross-validation. We denote the trained classifier     topics, can we leverage those to determine “regular” participants’
+    with bias anchors found through initial seeds (IS) as wSVM+IS,        opinion bias? Specifically, we ask the following questions:
+    and the other two classifiers trained on seed expansions as wSVM+JC      (i) Can these newly discovered biased hashtags help to identify
+    and wSVM+SIG. Here, wSVM+IS is treated as the baseline, and           user’s opinion bias? If so, how much better can they do?
+    the other two as our improved versions.                                  (ii) Do different pro-seed and anti-seed selections affect perfor-
+•   Local Consistency Global Consistency [LCGC]. This is a semi-          mance? If so, can seed expansion help us with the selection?
+    supervised method proposed by Zhou et al. [32] and applied in            (iii) Can social ties, in the form of retweeting links, help us de-
+    [33] for the classification of the political learning of news ar-     termine user’s opinion bias?
+    ticles. This method optimizes the tradeoff between local con-         Effect of Seed Expansion. To evaluate the performance of these
+    sistency and global consistency among node labels. Here, we           expanded hashtags, we use wSVM and UOP* as the base meth-
+    use Equation 4 as the affinity between nodes for the method and       ods since both of them only rely on the information provided by
+    adapt LCGC into our own version by incorporating seed expan-          bias anchors and content. For UOP*, the weight parameter µ1 in
+    sion from SIG, denoted as LCGC+SIG.                                   Equation 5, is empirically determined to be 0.1.
+•   UOP∗ . This is the framework in which we only consider content           We now compare the performance between the version when
+    based bias propagation without handling noisy bias anchors.           opinion bias is propagated only through initial seeds and the ver-
+•   UOP† . This is the framework in which we consider both con-           sion when the seeds are expanded. Since the result of accuracy is
+    tent and link based bias propagation without handling noisy bias      similar with AUC, we only show AUC in Figure 3. We can see that
+    anchors, indicated by Equation 5.                                     both seed expansion approaches outperform initial seeds, with seed
+•   UOP. This is the full blown-approach indicated by Equation 6.         expansion via SIG giving the best performance. Specifically, AUC
+                                                                          from seed expansion via SIG gives a 19.5% and 6.8% improvement
+4.4 Biased Theme Discovery                                                over IS and JC for wSVM, respectively, while the improvement is
+  Before experiments, we first select the following pro-seed and          12.5% and 5.6% for UOP*, respectively. This shows that (i) the
+anti-seed manually as the input to the system: #guncontrolnow             newly discovered hashtag set through seed expansion provides ad-
+and #2ndamendment for “gun control”; #prochoice and #prolife              ditional amount of bias information for users; and (ii) the quality of
+
+
+
+
+                                                                    218
+                Figure 3: Effect of seed expansion.                             Figure 5: Performance for different seed expansion approaches
+                                                                                with respect to different fraction of retweeting links for abortion.
+
+                                                                                Equation 4 empirically chosen to be 1. The final results are aver-
+                                                                                aged and plotted in Figure 5. We only show the results for abor-
+                                                                                tion since it is similar with other topics. We can see that as more
+                                                                                retweeting links are added for propagation, the performance in-
+                                                                                creases for all three approaches, which confirms the assumption
+                                                                                that users linked via retweeting tend to share similar opinion bias.
+                                                                                   Furthermore, among these three approaches, the performance
+                                                                                obtained via SIG is always the best for different fractions of retweet-
+                                                                                ing links at all topics. As the fraction gets larger, the improvement
+                                                                                generally gets smaller. This indicates that the effect of seed ex-
+                                                                                pansion gets reduced when the fraction increases. For seed expan-
+                                                                                sion via JC, the performance is generally better than that of initial
+Figure 4: Performance for 25 pro-seed and anti-seed combinations.               seeds when the fraction is small. However, this initial improvement
+                                                                                gets reduced or even disappears when retweeting link is abundant,
+expanded hashtag set via SIG is generally the best, i.e., it is able to         hence, making the extra hashtags obtained via co-occurrence less
+discover higher quality of biased themes.                                       effective. This is probably because of the noisiness of those extra
+Effect of Different Seeds. Here, we are interested in studying the              hashtags. Though beneficial at a small number of retweeting links,
+influence of different choices of initial seeds to the system. To               they prevent the correct bias from being propagated when more of
+that end, we first rank hashtags by occurrence frequency and then               them are added for optimization. This shows again that the key
+manually select top five pro-seeds and top five anti-seeds for “gun             of seed expansion is that not only more biased hashtags should be
+control” by observing tweets with those hashtags. The top five pro-             discovered, but also they should be of high quality.
+seeds are: 1. #nowaynra; 2. #guncontrolnow; 3. #demandaplan;                    4.5 Comparison with Baselines
+4. #newtown; 5. #whatwillittake. The top five anti-seeds are: 1.                   In this section, we compare our proposed BiasWatch framework
+#tcot; 2. #2ndamendment; 3. #nj2as; 4. #2a; 5. #gunrights. We                   with the alternative opinion bias estimators. For uCCL, the weight-
+represent a pro-seed and anti-seed combination with their corre-                balancing parameter θ is selected from {0.05, 0.1, 0.15, 0.2, 0.25}
+sponding number. For example, “12” represents the combination                   to be 0.1 for best performance. For LCGC+SIG, we use the same
+“#nowaynra #2ndamendment”. We then use the method UOP* to                       parameter setting as in [33]. Other parameter settings in UOP*,
+evaluate the performance of each combination for two cases: one                 UOP† and UOP are the same as in previous experiments. For µ2
+with initial seeds; the other with seed expansion via SIG. The re-              in Equation 6, we empirically set it to 0.2 for handling noisy bias
+sults are shown in Figure 4. Overall, we can see that for different             anchors. We choose the best seed expansion approach (via SIG) for
+choices of input seeds, the performance without seed expansion is               all methods. The final results are shown in Table 4.
+very sensitive to the choices, while it gives consistent high accu-                Overall, user-guided approaches give much better performance
+racy for seed expansion with SIG. We can also observe that #nj2as               than unsupervised methods, indicating that by just a small amount
+is not a good anti-seed choice since all combinations with #nj2as               of human guidance — two opposite seed hashtags, the performance
+performs bad. Also, all combinations with #gunrights give unsat-                can be boosted significantly. Moreover, UOP gives the best perfor-
+isfactory results except “55”. These results indicate that it is dif-           mance, reaching an average accuracy and AUC of 0.923 and 0.913,
+ficult to choose the most effective seed combinations, since very               respectively (an improvement of 20.0% and 28.6% over supervised
+often a single pair of seeds can be noisy and do not cover enough               baseline wSVM+IS). Note that the sentiment based approach SWN
+bias related themes. However, seed expansion can mitigate this ef-              gives unsatisfactory results, probably because user’s opinion bias is
+fect by introducing other and often more complete biased hashtags               multifaceted and can be reflected by the topical arguments or fac-
+for bias propagation. Hence, even though the initial seeds are not              tual information published by the user. For example, one of the
+well selected, the final performance does not suffer much due to                anti-obamacare tweets reads, "Double Down: Obamacare Will In-
+the benefits of seed expansion. For other topics, similar results are           crease Avg. Individual-Market Insurance Premiums By 99% For
+observed, and thus are not reported due to the space limit.                     Men, 62% For Women. #Forbes". Also, we can see that UOP†
+Effect of Social Ties. Here, we evaluate the effect of social ties              gives better results than LCGC+SIG, indicating that our framework
+in the form of retweeting links for different seed expansion ap-                works better in capturing user’s opinion bias. UOP, however, gives
+proaches. The retweeting links are randomly sampled for ten times               better performance than UOP† , confirming that initial bias anchors
+for each fraction since a different sample of retweeting links gives a          determined through biased hashtags are noisy, and that UOP is able
+different propagation network. Here, we adopt UOP† for the eval-                to correct some wrongly determined bias anchors due to the l-1
+uation, with the weight given to the link-based propagation λ in                norm regularization on ideal bias scores.
+
+
+
+
+                                                                          219
+Table 4: Comparison of performance with alternative opinion bias estimators. Boldface: the best result for each topic among all methods.
+‘∗’ marks statistically significant difference against the best of alternative opinion bias estimators (with two sample t-test for p ≤ 0.05).
+                                                  Accuracy                                               AUC
+            Method
+                              gun control abortion obamacare average gun control abortion obamacare average
+            SWN               0.560          0.527       0.465           0.517      0.570          0.531       0.541        0.547
+            uCC               0.534          0.537       0.516           0.529      0.533          0.527       0.522        0.527
+            uCCL              0.586          0.530       0.520           0.545      0.584          0.531       0.546        0.554
+            wSVM+IS           0.696          0.825       0.786           0.769      0.745          0.790       0.594        0.710
+            wSVM+SIG 0.860                   0.884       0.727           0.824      0.844          0.874       0.800        0.839
+            UOP∗              0.851          0.847       0.826           0.841      0.853          0.843       0.842        0.846
+            LCGC+SIG 0.858                   0.900       0.811           0.856      0.857          0.900       0.864        0.874
+            UOP†              0.881          0.906       0.894           0.894      0.861          0.903       0.915        0.893
+            UOP               0.908∗         0.915       0.945∗          0.923∗ 0.883∗             0.910       0.945∗       0.913∗
+
+
+   Furthermore, we see from the table that UOP† has an improve-                        Table 5: Multi-category classification performance.
+ment of 0.053 and 0.047 for accuracy and AUC over UOP*, re-                             Method        gun control abortion obamacare
+spectively. Compared to the corresponding improvement of 0.016                        wSVM+SIG          0.611         0.592        0.573
+and 0.027 by uCCL over uCC, it is considerably higher. This in-                       LCGC+SIG          0.632         0.657        0.646
+dicates that retweeting links are more effective in contributing to                      UOP†           0.690         0.699        0.673
+bias propagation with the help of bias anchors. When some users                          UOP            0.705         0.701        0.716
+are correctly “labeled” by discovered biased hashtags, opinion bias
+can be propagated more effectively through retweeting links.
+4.6 Multi-Category Classification
+   In previous experiments, we mainly evaluate our framework as a
+binary class problem. However, in this way, we lose the finer gran-
+ularity of the inferred opinion bias score by ignoring users who are
+neutral or do not show evidence. This category of users can not
+only be beneficial to our understanding of the general landscape of
+controversial topics, but also can be targeted by polarized activists
+to influence their bias. Thus, in this section, we are interested in
+a finer level of evaluation by casting it as a three-class problem.
+Here, instead of combining the category +1 and +2, and the cate-
+                                                                                Figure 6: Temporal volumes of top anti-fracking themes for seed
+gory -1 and -2, we aggregate users in the category of +1, 0 and -1
+                                                                                expansions via co-occurrence (Left) and via SIG (Right).
+into one neutral category 0 for a relatively larger pool of users in
+the middle. We then partition the datasets into 50% for training and
+50% for testing, and compare the performance of wSWM+SIG,                       framework further in another two datasets: “fracking” and “vac-
+LCGC+SIG, UOP† and UOP. We are interested            to see how these           cine”. Since these two topics are relatively new compared to the
+methods perform in the recall defined by 13 i tpitp
+                                              P        i
+                                                            . This mea-         above politically-driven well-known topics, it would be interesting
+                                                      +f ni
+sure indicates the ability of finding out the correct user category in          to discover what is being posted and debated by opinionated users
+a three-category setting for different methods.                                 of both sides. For “fracking”, we pick the seeds #dontfrackny and
+   For wSVM+SIG, we adopt the one-vs-rest multi-class imple-                    #jobs as the input to the system. We select #jobs as the pro-seed
+mentation. For LCGC, we modified it to consider three labels. For               for “fracking” because protagonists tend to emphasize the benefit
+UOP based methods, we select two optimal thresholds as bound-                   of creating jobs as one of the arguments for “fracking”. For “vac-
+aries: θp , used to distinguish category +2 and 0 and θn , used to              cine”, we pick the seeds #health and #autism as the input to the sys-
+distinguish category -2 and 0. These thresholds are selected by                 tem. Again, we select #autism as the anti-seed because antagonists
+searching the range (-1,1) with a step of 0.05 with the training data.          tend to focus the negative effect of vaccination. Overall, selection
+For UOP, θn and θp are determined as -0.25 and 0.2 for “gun con-                of input seeds is intuitive due to the recognizability of some of the
+trol”, -0.35 and 0.35 for “abortion”, -0.2 and 0.2 for “obamacare”.             crowd-generated tags and thus does not require much human effort.
+The final results are shown in Table 5. As we can see, UOP gives                   We first demonstrate the biased themes discovered via SIG. Ta-
+the best performance of all, indicating that it is the most capable in          ble 1 shows the top-ranking biased hashtags for different time pe-
+finding out users who are polarized and neutral. wSVM and LCGC                  riods. We can see that some themes such as #natgas and #frack
+perform worse, probably because of the small amount of training                 remain constantly used by users supporting and opposing fracking,
+samples for category 0. UOP based methods are able to mitigate                  respectively; some other themes, such as #dontfrackny and #bal-
+this effect by propagating constrained bias score without explicit              combe, arise and fade as related controversial events occur. For
+consideration of neutral users and only with bias anchors. Thus,                example, the occurrence of #dontfrackny corresponds with a rally
+we can conclude that UOP is effective in representing the degree of             of New Yorkers in the mid February 2013 to urge Governor Cuomo
+user’s opinion bias under the controversial topics.                             to resist fracking in the state of New York; the occurrence of #bal-
+                                                                                combe corresponds with a protest against a license to drill near Bal-
+4.7 Case Study: Fracking and Vaccines                                           combe in England granted by Environment Agency. These chang-
+   Now that we have demonstrated the effectiveness of the system                ing themes indicate a strong degree of opinion bias and emerge as a
+in finding general users’ opinion bias, we would like to test the               group of users start to use them together, making them a very use-
+
+
+
+
+                                                                          220
+Table 6: Top ten themes at different times for “vaccine”; red for
+pro-vaccine; blue for anti-vaccine.
+    Feb 2012       June 2012       Nov 2012      Apr 2013
+     #vaxfax        #health          #health   #vaccineswork
+     #health        #vaxfax         #vaxfax       #health
+       #flu          #polio           #flu       #measles
+      #polio          #hpv          #autism        #mmr
+       #hpv     #vaccineswork        #news          #hiv
+     #autism       #pakistan         #polio       #autism
+    #thrillers      #autism           #hiv        #vaxfax
+    #measles         #news         #suspense       #polio                             Figure 7: Performance comparison for VSM and OW.
+     #action       #suspense        #thrillers      #flu
+    #flushot        #action           #hpv         #news                        where f (x) is a normalizing function with the form as 1+e1−c·x .
+                                                                                The value of parameter c should be chosen to make b’s transition
+                                                                                to opposite sign steep enough, so that two bias scores with small
+ful signal to determine and propagate user’s opinion bias. Further-             difference but opposite signs can still result in large difference after
+more, the transient property of these changing themes also makes                transformation. Also, when bi and bj have the same sign, they can
+the approach of seed expansion via co-occurrence less effective.                have a relatively large opinion similarity. To this end, c is chosen
+Figure 6 illustrates the temporal characteristics of discovered anti-           to be 5. The final similarity is computed as the weighted sum (α is
+fracking themes for different seed expansion approaches. We can                 the weighting parameter), which we use for ranking users:
+see that seed expansion via co-occurrence failed discovering #bal-                 sim(ui , uj ) = αsimvsm (ui , uj ) + (1 − α)simopi (ui , uj )
+combe and #nogas, as both of these hashtags do not co-occur with
+#dontfrackny. In contrast, SIG tackles the problem by tapping into              5.1 Evaluating User Recommendation
+the power of content to discover more related biased themes. Ta-                   For evaluation, we additionally crawled following links for the
+ble 6 shows the top-ranking biased hashtags at different time pe-               dataset “gun control”, “abortion” and “obamacare”. These follow-
+riods for the dataset “vaccine”. To illustrate how the system can               ing links are used as the ground truth in our experiments. We ran-
+uncover strong partisans, Table 7 shows two uncovered bias an-                  domly sampled 500 users who have at least 20 followees for each
+chors – @Energy21, a pro-fracking account from the Institute for                topic and used the following metrics to evaluate: (i) precision@K:
+21st Century Energy, and @Duffernutter, an anti-fracking account                which measures the percent of the correct followees out of the top K
+associated with TheEnvironmentTV.                                               recommended users; and (ii) mean average precision@K: which is
+                                                                                the average of the precision at the position of each correct followee
+                                                                                out of the top K recommended users. This measure considers the
+5.    INTEGRATING OPINION BIAS INTO                                             positions of the recommended users. K is chosen to be 20.
+      USER RECOMMENDATION                                                          Figure 7 shows the performance comparisons between the two
+   In this section, we demonstrate the application of integrating               approaches. Here, α is set to 0.5. For both metrics, the OW ap-
+opinion bias for user recommendation in social media. The prin-                 proach has a better performance than the vanilla VSM for each
+ciple of homophily, observed both in political blogosphere [1] and              topic. On average, it gives an improvement of 26.3% in preci-
+social media [7], states that people tend to associate with others              sion@20 and 13.8% in MAP@20. These results indicate that user’s
+who are like-minded. Thus, when social media services recom-                    opinion similarity boosted the rank of some of the true followees
+mend users to follow, it is natural to consider recommending users              who have similar opinion bias as the target user, while lowering the
+who have similar opinion bias on shared topic interests. User rec-              similarity with users who hold different opinion. Hence, it implic-
+ommendation can also be considered as a task of link prediction in              itly confirms the principle of homophily that people tend to make
+graphs, and there has already exist many works [14] which specifi-              friends who share similar opinions.
+cally address this task, mostly taking advantage of graph structure.               In Figure 8, we also show the performance at different values
+Here, our goal is to demonstrate how opinion bias can be utilized               of α. As we can see, the best performance is achieved neither at
+for user recommendation as a different dimension.                               α = 0 or 1 for all topics, but at a mixed weight between con-
+   The task can be formally described as follows: Given a contro-               tent and opinion similarity. Even when the weight given to opinion
+versial topic T , a sampled set of users U and their corresponding              similarity is small, i.e., when α = 0.9, the improvement can reach
+on-topic tweets D, recommend k friends to follow for the target                 20.2% for precision@20 and 9.2% for MAP@20 on average. The
+user. Note that we have only tweets to rely on to determine the                 figure shows that the performance is not very sensitive to the value
+recommendations. We provide two approaches for the task.                        of α when α is approximately in the range of (0.2, 0.8), indicating
+Content-Based approach. In this collaborative filtering approach,               it does not require fine tuning to reach a better performance.
+users with the highest content similarities to the target user are rec-         6. CONCLUSION AND NEXT STEPS
+ommended. Specifically, we aggregated the corresponding tweets
+for each user and applied vector space model (VSM) with unigrams                   We have seen how the BiasWatch system can lead to an im-
+and bi-grams, with the similarity computed by cosine measure.                   provement of 20% in accuracy over the next-best alternative for
+Opinion-Weighted (OW) approach. Here, user similarity is con-                   bias estimation, as well as uncover opinion leaders and bias themes
+sidered as a weighted sum of content similarity and opinion similar-            that may evolve over time. We also demonstrated how the in-
+ity. The content similarity is computed in the same way as VSM.                 ferred opinion bias can be integrated into user recommendation and
+The opinion similarity is obtained as follows. First, user’s opin-              showed that it gives a performance improvement of 26% in preci-
+ion bias score is obtained through UOP. Then, we characterize the               sion. While our investigation has focused on textual and relational
+opinion similarity of two users as:                                             features, it does not limit us from integrating new signals such as
+                                                                                location and profile demographics for better performance in future
+              simopi (ui , uj ) = 1 − |f (bi ) − f (bj )|                       work. We are also interested in incorporating opinion bias into a
+
+
+
+
+                                                                          221
+      Table 7: Sample opinionated users and their corresponding tweets for “fracking”; positive bias score represents pro-fracking.
+     users       bias anchor bias score                                                  tweets
+                                                  Four real-life examples of how #shale #energy is creating #jobs and improving the
+  @Energy21          yes          0.91
+                                                                             economy: via @FreeEnterprise.
+                                              RT @ABFalecbaldwin: Together we can help @NYGovCuomo see there is no place for
+ @Duffernutter       yes         -0.92
+                                                                  #fracking in NY. RT to let him know #DontFrackNY.
+                                               RT @JimWoodsUK: Provocative article from @James_BG on New Environmentalism.
+ @IntellisysUK        no          0.15
+                                                             Worth remembering fracking has reduced US CO2 emissions.
+                                              RT @IshtarsGate: A 5.7-magnitude earthquake linked to fracking in Oklahoma in 2011
+ @janet_ewan          no         -0.39
+                                                                    knocked down 14 homes and injured two people.
+
+
+                                                                           [14] D. Liben-Nowell and J. Kleinberg. The link-prediction
+                                                                                problem for social networks. Journal of the American society
+                                                                                for information science and technology, 2007.
+                                                                           [15] Y. Lin, J. Bagrow, and D. Lazer. Quantifying bias in social
+                                                                                and mainstream media. SIGWEB Newsl., 2012.
+                                                                           [16] A. Livne, M. Simmons, E. Adar, and L. Adamic. The party is
+                                                                                over here: Structure and content in the 2010 election. In
+                                                                                ICWSM, 2011.
+                                                                           [17] Y. Lu, H. Wang, C. Zhai, and D. Roth. Unsupervised
+                                                                                discovery of opposing opinion networks from forum
+                                                                                discussions. In CIKM, 2012.
+    Figure 8: Performance at different values of parameter α.              [18] C. Marshall and F. Shipman. Experiences surveying the
+                                                                                crowd: Reflections on methods, participation, and reliability.
+social media dashboard, so that participants can be aware of their              In WebSci, 2013.
+own opinion dynamics as well as those of others.                           [19] A. Murakami and R. Raymond. Support or oppose?:
+                                                                                Classifying positions in online debates from reply activities
+7. ACKNOWLEDGMENTS                                                              and opinion expressions. In COLING, 2010.
+  This work was supported in part by AFOSR grant FA9550-12-                [20] S. Nowak and S. Rüger. How reliable are annotations via
+                                                                                crowdsourcing: A study about inter-annotator agreement for
+1-0363 and NSF grant IIS-1149383. Any opinions, findings and                    multi-label image annotation. In MIR, 2010.
+conclusions or recommendations expressed in this material are the          [21] O. Owoputi, B. O’Connor, C. Dyer, K. Gimpel, N. Schneider,
+author(s) and do not necessarily reflect those of the sponsors.                 and N. Smith. Improved part-of-speech tagging for online
+                                                                                conversational text with word clusters. In NAACL, 2013.
+8. REFERENCES                                                              [22] B. Pang and L. Lee. Opinion mining and sentiment analysis.
+ [1] L. Adamic and N. Glance. The political blogosphere and the                 Foundations and trends in information retrieval, 2008.
+     2004 u.s. election: Divided they blog. In LinkKDD, 2005.              [23] M. Pennacchiotti and A. Popescu. Democrats, republicans
+ [2] R. Agrawal, S. Rajagopalan, R. Srikant, and Y. Xu. Mining                  and starbucks afficionados: User classification in twitter. In
+     newsgroups using networks arising from social behavior. In                 SIGKDD, 2011.
+     WWW, 2003.                                                            [24] Mark Schmidt. L1 general, May 2015.
+ [3] L. Akoglu. Quantifying political polarity based on bipartite          [25] J. Shi and J. Malik. Normalized cuts and image
+     opinion networks. In ICWSM, 2014.                                          segmentation. Pattern Analysis and Machine Intelligence,
+ [4] D. Boyd, S. Golder, and G. Lotan. Tweet, tweet, retweet:                   IEEE Transactions on, 2000.
+     Conversational aspects of retweeting on twitter. In HICSS,            [26] C. Tan, L. Lee, J. Tang, L. Jiang, M. Zhou, and P. Li.
+     2010.                                                                      User-level sentiment analysis incorporating social networks.
+ [5] R. Cohen and D. Ruths. Classifying political orientation on                In SIGKDD, 2011.
+     twitter: It’s not easy! In ICWSM, 2013.                               [27] J. Tang, R. Hong, S. Yan, T. Chua, G. Qi, and R. Jain. Image
+ [6] M. Conover, B. Gonçalves, J. Ratkiewicz, A. Flammini, and                  annotation by knn-sparse graph-based label propagation over
+     F. Menczer. Predicting the political alignment of twitter                  noisily tagged web images. ACM TIST, 2011.
+     users. In SocialCom, 2011.                                            [28] X. Wang, F. Wei, X. Liu, M. Zhou, and M. Zhang. Topic
+ [7] M. Conover, J. Ratkiewicz, M. Francisco, B. Gonçalves,                     sentiment analysis in twitter: a graph-based hashtag
+     A. Flammini, and F. Menczer. Political polarization on                     sentiment classification approach. In CIKM, 2011.
+     twitter. In ICWSM, 2011.                                              [29] F. Wong, C. Tan, S. Sen, and M. Chiang. Quantifying
+ [8] H. Gao, J. Mahmud, J. Chen, J. Nichols, and M. Zhou.                       political leaning from tweets and retweets. In ICWSM, 2013.
+     Modeling user attitude toward controversial topics in online          [30] L. Yang, T. Sun, M. Zhang, and Q. Mei. We know what@
+     social media. In ICWSM, 2014.                                              you# tag: does the dual role affect hashtag adoption? In
+ [9] M. Gentzkow and J. Shapiro. What Drives Media Slant?                       WWW, 2012.
+     Evidence from US Daily Newspapers. National Bureau of                 [31] Z. Zheng, X. Wu, and R. Srihari. Feature selection for text
+     Economic Research Cambridge, Mass., USA, 2006.                             categorization on imbalanced data. SIGKDD Explor. Newsl.,
+[10] T. Groseclose and J. Milyo. A measure of media bias. The                   2004.
+     Quarterly Journal of Economics, 2005.                                 [32] D. Zhou, O. Bousquet, T. Lal, J. Weston, and B. Schölkopf.
+[11] P. Calais Guerra, W. Meira Jr., C. Cardie, and R. Kleinberg.               Learning with local and global consistency. In NIPS, 2004.
+     A measure of polarization on social media networks based              [33] X. Zhou, P. Resnick, and Q. Mei. Classifying the political
+     on community boundaries. In ICWSM, 2013.                                   leaning of news articles and users from user votes. In
+[12] J. Kim, J. Yoo, H. Lim, H. Qiu, Z. Kozareva, and                           ICWSM, 2011.
+     A. Galstyan. Sentiment prediction using collaborative
+     filtering. In ICWSM, 2013.
+[13] J. Landis and G. Koch. The measurement of observer
+     agreement for categorical data. Biometrics, 1977.
+
+
+
+
+                                                                     222
+

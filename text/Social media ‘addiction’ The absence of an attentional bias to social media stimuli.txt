@@ -1,0 +1,755 @@
+                                              Social media ‘addiction’: The absence of an
+                                              attentional bias to social media stimuli
+
+                                         KATIE THOMSON1, SIMON C. HUNTER2,3,
+                                         STEPHEN H. BUTLER1 and DAVID J. ROBERTSON1p
+Journal of Behavioral
+Addictions                               1
+                                             School of Psychological Sciences and Health, University of Strathclyde, Glasgow, UK
+10 (2021) 2, 302–313                     2
+                                             Department of Psychology, Glasgow Caledonian University, Glasgow, UK
+                                         3
+DOI:                                         Graduate School of Education, University of Western Australia, Perth, Australia
+10.1556/2006.2021.00011
+© 2021 The Author(s)
+                                         Received: June 16, 2020 • Revised manuscript received: January 23, 2021 • Accepted: February 07, 2021
+                                         Published online: April 13, 2021
+
+
+
+
+                                         ABSTRACT
+FULL-LENGTH REPORT                       Background and aims: Social media use has become a ubiquitous part of society, with 3.8 billion users
+                                         worldwide. While research has shown that there are positive aspects to social media engagement (e.g.
+                                         feelings of social connectedness and wellbeing), much of the focus has been on the negative mental
+                                         health outcomes which are associated with excessive use (e.g. higher levels of depression/anxiety). While
+                                         the evidence to support such negative associations is mixed, there is a growing debate within the
+                                         literature as to whether excessive levels of social media use should become a clinically defined addictive
+                                         behaviour. Methods: Here we assess whether one hallmark of addiction, the priority processing of
+                                         addiction related stimuli known as an ‘attentional bias’, is evident in a group of social media users (N 5
+                                         100). Using mock iPhone displays, we test whether social media stimuli preferentially capture users’
+                                         attention and whether the level of bias can be predicted by platform use (self-report, objective
+                                         smartphone usage data), and whether it is associated with scores on established measures of social
+                                         media engagement (SMES) and social media ‘addiction’ severity scales (BSNAS, SMAQ). Results: Our
+                                         findings do not provide support for a social media specific attentional bias. While there was a large
+                                         range of individual differences in our measures of use, engagement, and ‘addictive’ severity, these were
+                                         not predictive of, or associated with, individual differences in the magnitude of attentional capture by
+                                         social media stimuli. Conclusions: More research is required before social media use can be definitively
+                                         placed within an addiction framework.
+
+
+                                         KEYWORDS
+                                         addictive behaviour, social media use, attention, attentional bias, individual differences
+
+
+
+
+                                         INTRODUCTION
+                                         There are currently 3.8 billion active social media users (Statista, 2020). With increased
+                                         internet connectivity occurring across the world, individuals now have access to a suite of
+                                         social media platforms (e.g. Facebook, Twitter, Instagram, Snapchat) which provide news,
+                                         information, entertainment, an opportunity to post photos, express opinion, seek compan-
+                                         ionship, and maintain networks of friends and family (Ryan, Chester, Reece, & Xenos, 2014;
+                                         Whiting & Williams, 2013). While engagement with social media can enhance feelings of
+First names were added on 7 April        social connectedness and wellbeing (Allen, Ryan, Gray, McInerney, & Waters, 2014; Leist,
+2022.                                    2013; McDaniel, Coyne, & Holmes, 2012), research has largely focused on investigating the
+p                                        potential for negative mental health outcomes to arise from excessive use (Kırcaburun et al.,
+ Corresponding author.
+E-mail: david.j.robertson@strath.ac.uk   2018; Shensa et al., 2017; Woods & Scott, 2016). In such papers, and more generally, excessive
+                                         social media use is increasingly being characterised as an addictive behaviour (Grifﬁths, 2000;
+                                         Grifﬁths & Kuss, 2017; Kuss & Grifﬁths, 2017; LaRose et al., 2010; Ryan et al., 2014).
+                                         However, it has not yet been recognised as such by the DSM-5 (APA, 2013) or ICD-11
+                                         (WHO, 2018) classiﬁcation systems.
+
+
+
+
+                                                                        Brought to you by University of Haifa | Unauthenticated | Downloaded 01/18/23 07:54 PM UTC
+Journal of Behavioral Addictions 10 (2021) 2, 302–313                                                                                     303
+
+
+    The contemporary conceptualisation of addictive                      Here we investigate the attentional bias component of the
+behaviour no longer focuses on the traditional substance-            addictive process, and such biases have been reported across
+related dependencies of alcohol (Enoch & Goldman, 2002),             a range of substance-related addictions (see Field & Cox,
+smoking (Brown, Beard, Kotz, Michie, & West, 2014), and              2008 for a review), in addition, research has also shown that
+the consumption of illegal drugs (Sofuoglu & Kosten, 2006).          the magnitude of the effect displayed by a user could be
+Problematic behaviours related to gambling (Gainsbury,               indicative of the severity of their addiction. This individual
+2015), gaming (Kuss & Grifﬁths, 2012), and internet use              differences approach has shown that attentional capture by
+(Kuss & Lopez-Fernandez, 2016) are regarded as displaying            alcohol-related images (e.g. a bottle of beer) is signiﬁcantly
+the same common set of underlying biopsychosocial                    greater in problem drinkers, as measured by self-report
+addictive mechanisms (i.e. salience, mood modiﬁcation,               questionnaires of consumption and/or craving, compared to
+tolerance, withdrawal, conﬂict and relapse) as their chemical        social and non-problem drinkers (Jones, Bruce, Livingstone,
+counterparts (Grifﬁths, 2005; 2018). With the growth of              & Reed, 2006; Sharma, Albery, & Cook, 2001). This effect has
+social media, it is now being argued that excessive use              been replicated in smokers (Waters et al., 2003), gamblers
+generates behaviours which meet the criteria for addiction           (Boyer & Dickerson, 2003), and gamers (van Holst et al.,
+(Grifﬁths & Kuss, 2017; Ryan et al., 2014), with a potential         2012). That is, the greater the level of attentional bias (i.e.
+prevalence rate of 4.5% being reported among a large sample          level of related dopaminergic change; Franken, 2003) that a
+of adolescents (Banyai et al., 2017).                                user displays towards addiction related stimuli, the greater
+    The push towards characterising excessive social media           their self-reported rates of engagement with that substance.
+use as a potentially addictive behaviour, which might pro-               Importantly, several recent papers have investigated
+duce negative mental health outcomes, has received mixed             these effects in non-substance related addictions such as
+support in the literature. While there is some evidence that         gambling and problematic levels of internet use. Ciccarelli,
+excessive use may be associated with lower self-esteem               Nigro, Grifﬁths, Cosenza, and D’Olimpio (2016) reported
+(Andreassen, Pallesen, & Grifﬁths, 2017), and increased              the presence of an attentional bias to gambling related im-
+levels of depression (Lin et al., 2016; Shensa et al., 2017) and     ages in problem gamblers using a modiﬁed version of the
+anxiety (Keles, McCrae, & Grealish, 2020), other studies,            Posner Task. The magnitude of the bias was positively
+some using longitudinal methods, have failed to replicate            associated with scores on a gambling craving scale. Similarly,
+these effects (e.g. Coyne, Rogers, Zurcher, Stockdale, &             Jeromin, Nyenhuis, and Barke (2016) reported that a group
+Booth, 2020; Heffer, Good, Daly, MacDonell, & Willoughby,            of excessive gamers showed an attentional bias to computer
+2019; Houghton et al., 2018). What is clear, is that in              related words using a modiﬁed Stroop task, in comparison to
+contrast to substance-related addiction research, much less          a group of non-gamers, a full individual differences analysis,
+focus has been attributed to investigating whether excessive         in terms of addiction severity, was not reported. More
+social media use can be detected through changes in                  recently, Pekal, Laier, Snagowski, Stark, and Brand (2018)
+cognitive processes such as selective attention. The present         reported the presence of an attentional bias to pornographic
+study does so by examining whether an ‘attentional bias’             images in individuals with internet-pornography use disor-
+(Anderson, 2013) to social media related stimuli is present in       der (IPD) using a visual probe task, with a signiﬁcant pos-
+a group of social media users.                                       itive relationship between symptom severity and the
+    It is well-established that addictive behaviours are char-       magnitude of the bias.
+acterised by the priority processing of addiction related                These studies of non-substance related addictions show
+stimuli and that this is linked to the ‘salience’ mechanism          that attentional biases appear to be present in such users
+noted above (Field & Cox, 2008; Robbins & Ehrman, 2004).             (Ciccarelli et al., 2016; Jeromin et al., 2016; Pekal et al.,
+In this way, users’ top down goals bias their attention to-          2018), and that individual differences in the magnitude of
+wards reward-based stimuli, and research suggests that this          the attentional bias effect appear to indicate the level of
+is underpinned by larger dopaminergic responses to addic-            addiction severity (Ciccarelli et al., 2016; Pekal et al., 2018).
+tion related stimuli in brain areas which mediate goal-              This suggests that as addiction progresses in these disorders,
+directed behaviour (Franken, 2003; Haber, 2016), a key               the ‘incentive salience’ of stimuli (Pekal et al., 2018) leads to
+concept in the incentive-sensitization theory of addiction           an increase in the dopaminergic response for goal directed
+(Robinson & Berridge, 1993, 2008). Moreover, once users’             behaviour (Franken, 2003), which manifests itself cognitively
+attention is inordinately captured by addiction related con-         as the increased attentional capture by addiction related
+tent, they appear to show a signiﬁcantly higher degree of ‘cue       content. While such effects appear to be present in non-
+reactivity’ (see Carter & Tiffany, 1999), leading to a greater       substance related addictions such as gambling, gaming, and
+craving for, and propensity to engage in, the addictive              internet-pornography use, it is not yet clear whether such
+behaviour in comparison to non-user neuro-typical controls           effects generalise to excessive social media use.
+(see Brand et al., 2019 and the I-PACE model of addictive                To our knowledge, only one paper has been published to
+behaviours). The combination of attentional bias and                 date which has investigated the presence of an attentional
+heightened cue reactivity is thought to play a major role in         bias in social media users. Nikolaidou, Fraser, and Hinvest
+the development, maintenance, and relapse into addiction             (2019) reported an attentional bias, in the form of increased
+(Drummond, 2000; Papachristou, Nederkoorn, Giesen, &                 attentional dwell times, to social media related stimuli in a
+Jansen, 2014).                                                       group of social media users. However, this ﬁnding could be
+
+
+
+
+                                                            Brought to you by University of Haifa | Unauthenticated | Downloaded 01/18/23 07:54 PM UTC
+304                                                                        Journal of Behavioral Addictions 10 (2021) 2, 302–313
+
+
+limited by the task, which used over-sized social media                  & Wengrovitz, 2016). In addition, we also test whether the
+images (e.g. twitter logo) paired with a control image on                strength of any attentional bias can be predicted by levels of
+each trial. This type of display does not closely mirror real            social media engagement through our own self-report
+world user activity (i.e. searching a cluttered smartphone               questionnaire and objective smartphone data, and whether it
+screen for a social media app). In addition, while the study             is associated with scores on established measures of social
+did report a correlation between the level of urge to be                 media engagement (SMES) and social media ‘addiction’
+online and dwell time to social media stimuli (N 5 16; r 5               severity (BSNAS, SMAQ).
+0.703), the analysis was underpowered with only 16 partic-
+ipants in the sample. Therefore, further research is required
+to assess whether such a bias is present in social media users.
+    To that end, in the present study, we assess whether                 METHOD
+social media users show an attentional bias towards social
+media related stimuli, and by proxy addiction related                    Participants
+changes to the brain’s neurochemistry, and whether levels of             An a priori power analysis was conducted using Gp Power, it
+social media use, engagement, and ‘addictive’ severity are               revealed that a minimum sample of 81 participants was
+associated with the magnitude of the effect. In a novel task,            required for our study in order to detect small effect sizes
+with high ecological validity, participants were required to             (alpha at 0.05, power at 0.80). We recruited one hundred
+view mock iPhone displays and to respond to the presence of              participants with a mean age of 20 years (SD 5 2, Range 5
+a target app (Siri/Camera) while ignoring other distractor               17–32, 82 Female) from our psychology research participa-
+apps present in the display, an example is provided in Fig. 1.           tion pool. One participant was removed from the dataset as
+In condition 1, we assessed the extent to which the presence             they reported not having a social media account with any of
+of a social media app, presented as one of the non-target                the four platforms of interest. This sample size compares
+distractors, captured users’ attention and slowed target                 favourably to previous studies of addiction/social media
+response times (i.e. a response time measure of attentional              related attentional biases reported in the introduction. All
+bias). In condition 2, we again presented social media apps              participants reported having normal or corrected-to-normal
+as distractors, but this time on half of the trials these apps           vision.
+were also paired with a red ‘1’ notiﬁcation symbol, an                       For social media accounts, 96% of the sample were
+example is also provided in Fig. 1. Notiﬁcation symbols                  Facebook users, the rate was 71% for Twitter, 95% for
+should also be highly salient images to social media users as            Instagram, and 94% for Snapchat. Table 1 provides data
+they indicate that they have received feedback, or a ‘reward’            from our questionnaire measures, these show a large degree
+in addiction terminology, in the form of ‘likes’ or ‘com-                of variability, including those at the top end of the response
+ments’ to content that they have posted (see Scissors, Burke,            scales, in platform use, engagement, and ‘addictive’ severity.
+
+
+
+
+Fig. 1. Due to copyright reasons we are not able to show examples of the actual trials used in the experiment, these used real smartphone app
+icons and mirrored a regular iPhone display very closely. Here we present a close approximation of the layout of the display on trials in each
+condition. (Left) Example trial from the baseline condition with no social media distractor. (Middle) Example trial from the ‘mere presence’
+condition with a social media distractor present. (Right) Example trial from the ‘þnotiﬁcation’ condition in which social media distractors,
+                             and non-social media control distractors, were overlaid with a notiﬁcation symbol
+
+
+
+
+                                                                  Brought to you by University of Haifa | Unauthenticated | Downloaded 01/18/23 07:54 PM UTC
+Journal of Behavioral Addictions 10 (2021) 2, 302–313                                                                                      305
+
+
+ Table 1. Participant responses to measures of social media use,      times a day do you check this platform. For the final ques-
+               engagement, and ‘addictive’ severity                   tion, participants were asked to report their social media app
+                              Mean         SD           Range         usage, in minutes, for the previous week, using the objective
+                                                                      data (see Ellis, Davidson, Shaw, & Geyer, 2019; Kaye, Orben,
+Facebook users                                                        Ellis, Hunter, & Houghton, 2020) collected by their smart-
+  Friends                     701          485         50–2,795
+                                                                      phone integrated screen time use software (75% were able to
+  Posts per week                1            1           0–7
+  Daily checks                  9           10           0–50
+                                                                      do so).
+  Usage per week (min)        194          186          0–771
+Twitter users
+                                                                      Bergen Social Networking Addiction Scale (BSNAS). The
+  Friends (Followers)         490         1,585        8–13,300       Bergen Social Media Addiction Scale (BSNAS) (Andreassen
+  Posts per week                3           12          0–100         et al., 2016) is derived from the Bergen Facebook Addiction
+  Daily checks                  9            8           0–30         Scale (Andreassen, Torsheim, Brunborg, & Pallesen, 2012).
+  Usage per week (min)        176          175          0–840         This scale utilises the six items of the addiction components
+Instagram users                                                       model (Grifﬁths, 2005), salience, mood modiﬁcation, toler-
+  Friends (Followers)         951          819         50–4,369       ance, withdrawal, conﬂict and relapse, and assesses the use
+  Posts per week                1            1           0–7          of social media over the past year. Questions included ‘How
+  Daily checks                 14           12           1–60         often in the last year have you felt an urge to use social
+  Usage per week (min)        284          225         33–1,320       media more and more’. Participants were asked to rate all
+Snapchat users
+                                                                      items on a 5-point Likert scale, ranging from 1 (very rarely)
+  Friends                     120           91         20–400
+  Posts per week               12           36          0–300
+                                                                      to 5 (very often). The internal consistency of the BSNAS was
+  Daily checks                 23           27          0–200         satisfactory with Cronbach’s Alpha 5 0.75. For this ques-
+  Usage per week (min)        365          356         6–1,500        tionnaire, and for those noted below a participant’s score
+Bergen Social Networking Addiction Scale (BSNAS)                      consisted of the sum of their Likert scale responses.
+  Self-report ratings          19            5           6–29
+Social Media Addiction Questionnaire (SMAQ)                           Social Media Addiction Questionnaire (SMAQ). This 8-
+  Self-report ratings          35            9           8–51         item questionnaire (Hawi & Samaha, 2017) is derived from
+Social Media Engagement Scale (SMES)                                  the Facebook Intrusion Questionnaire and assesses social
+  Self-report ratings          30            7           5–40         media addiction and use. Questions included ‘The thought
+                                                                      of not being able to access social media makes me feel dis-
+                                                                      tressed’. Participants were asked to rate all items on a 7-
+Apparatus and materials                                               point Likert scale, ranging from 1 (strongly disagree) to 7
+                                                                      (strongly agree). The internal consistency was acceptable
+                                                                      with Cronbach’s Alpha 5 0.82.
+Attentional capture task. The attentional capture task was
+programmed and run using E-Prime 2.0. Stimuli were pre-               Social Media Engagement Scale (SMES). The Social Media
+sented and responses were recorded using a Dell PC with an            Engagement Scale (Przybylski, Murayama, DeHaan, &
+18inch screen. As seen in Fig. 1, each trial consisted of an          Gladwell, 2013) is a 5-item scale which measures the extent
+image of an iPhone display populated with 28 apps. Care               to which people engage with social media in their daily lives.
+was taken to emulate a typical iPhone screen and so the               Questions included ‘How often did you use social media in
+bottom row of apps always consisted of iOS integrated apps            the last 15 minutes before you go to sleep?’ Participants were
+(Phone, Music, Safari, Settings) presented in the same                asked to rate all items on an 8-point Likert scale ranging
+location across trials. The targets were the Siri app and the         from 0 (not one day) to 7 (everyday). The internal consis-
+Camera app and were selected for their similarity in                  tency was satisfactory with Cronbach’s Alpha 5 0.76.
+appearance and familiarity to users. There were 34 non-
+target/non-social media ‘ﬁller’ apps which were selected              Procedure
+from the remaining integrated apps and a selection from the
+top 25 current most downloaded apps. The social media                 Each trial began with the presentation of a central fixation
+distractor apps consisted of Facebook, Twitter, Instagram             point for 500 ms, followed by a mock iPhone display which
+and Snapchat. The iPhone was presented onscreen in its                remained onscreen until response (up to a maximum of
+real-world size (12.4 cm 3 5.9 cm) and each app was 1                 5,000 ms), with a 1,500 ms blank interval following the
+cm 3 1 cm in size. All stimuli were presented on a white              search display. A target appeared on each trial and could be
+background.                                                           the Siri app or Camera app, and participants were instructed
+                                                                      to try and detect the target as quickly and as accurately as
+Social media questionnaire. This questionnaire was devel-             they could while ignoring any other task irrelevant dis-
+oped for this study. The first section asked participants to          tracting information present in the display. Responses were
+record which of the four social media accounts they had, and          made using keyboard keys 1 (Siri) and 2 (Camera). There
+then for each of their accounts (as appropriate): how many            were two practice blocks, each containing 12 trials. In the
+friends/followers do you have, how many accounts do you               first practice block, the display showed only the target app in
+follow, how many times a week do you post, and how many               the absence of any other apps, while these were introduced
+
+
+
+
+                                                             Brought to you by University of Haifa | Unauthenticated | Downloaded 01/18/23 07:54 PM UTC
+306                                                                   Journal of Behavioral Addictions 10 (2021) 2, 302–313
+
+
+in the second practice block to mirror the experimental             from RTs in which a notiﬁcation was paired with a dis-
+displays. No social media distractor apps or notifications          tractor app.
+were displayed during practice.                                         For the RT costs (i.e. the attentional bias) calculated in
+    Following practice, participants completed four experi-         both condition 1 and condition 2, we assess whether indi-
+mental blocks, each containing 96 trials. Experimental              vidual differences in the size of the bias is predicted by social
+blocks 1 and 2 (condition 1), presented social media dis-           media use and whether there are any associations between it
+tractor apps on 50% of trials, with the each of the four social     and scores on our established measures of social media
+media apps (Facebook, Twitter, Instagram, Snapchat)                 engagement (SMES) and ‘addictive’ severity (BSNAS,
+appearing on 12 occasions per block. The remaining 50% of           SMAQ).
+trials contained no social media distractor app, and as such
+provided our baseline response times. The presentation of           Attentional bias condition 1 – Social media distractor
+trials within blocks were randomised, and target/distractor         apps present vs. absent
+type, target/distractor position within the array were coun-
+                                                                    First we assess whether there are any general social media
+terbalanced within participants. The remaining ‘ﬁller’ apps
+                                                                    attentional bias effects. That is, do social media users, in
+used to complete the 24 item display on each trial were
+randomly selected from a 34 item set, with each app only            general, show an attentional bias for any social media dis-
+ever appearing once in a trial display.                             tractor app regardless of whether they have an account with
+                                                                    that platform or not. To that end, all participants mean RTs
+    Experimental blocks 3 and 4 (condition 2) followed the
+                                                                    were entered into a one-way ANOVA with the within-
+same procedure with the exception that here we overlaid a
+                                                                    subjects factor of social media distractor app condition
+notification symbol over the social media distractor app
+                                                                    which has four levels (Facebook app present, Twitter app
+on half of the trials (i.e. 24 trials with a social media
+                                                                    present, Instagram app present, Snapchat app present, and
+distractor, 24 trials with a social media distractor þ
+                                                                    social media distractor app absent). The ANOVA revealed
+notiﬁcation symbol). In addition, to assess whether or not
+any effect of notiﬁcation symbol was speciﬁc to the social          no main effect of distractor app condition, F < 1, with no
+media apps, notiﬁcation symbols were also paired with               signiﬁcant RT cost (i.e. attentional bias) for any of the social
+                                                                    media platforms (M 5 12 ms, SD 5 83 ms for Facebook; M
+four non-social media distractor apps selected from the
+                                                                    5 5 ms, SD 5 99 ms for Twitter; M 5 7 ms, SD 5 96 ms
+set of 34 ﬁller apps. In line with the social media dis-
+                                                                    for Instagram; M 5 1 ms, SD 5 97 ms for Snapchat). That
+tractors, these apps were present on 24 trials without a
+                                                                    is, despite the fact that all participants in this sample were
+notiﬁcation symbol and 24 trials in which it was present.
+                                                                    social media users, none of the social media apps generated
+Trial randomisation and counterbalancing was consistent
+                                                                    an effect which would indicate the presence of an attentional
+with that described above for blocks 1 and 2. Upon
+completion of the attentional capture task, participants            bias towards those stimuli.
+completed the questionnaire measures, with a typical                    However, in order to rule out the possibility that the
+                                                                    overall, all user, analysis did not mask any platform-specific
+testing session lasting approximately 45 minutes.
+                                                                    effects, here we perform four separate one way ANOVAs
+                                                                    with the within subjects factor of social media distractor app
+Ethics                                                              condition (present, absent) for each of the social media
+                                                                    platforms individually. That is, each of the four ANOVAs
+This study was approved by the Ethics Committee of the              include only users who have an account with that specific
+University of Strathclyde School of Psychological Sciences          platform, and only RTs relating to the presence and absence
+and Health.                                                         of that distractor app (e.g. ANOVA 1, Facebook users only,
+                                                                    Facebook distractor app present/absent RTs). As seen in
+                                                                    Fig. 2, there was no evidence for a signiﬁcant attentional bias
+RESULTS                                                             effect when the platforms were considered individually, with
+                                                                    non-signiﬁcant main effects of distractor condition across
+Data analysis                                                       the individual platform analysis, all F’s < 1. These ﬁndings
+                                                                    suggest that, both at an overall group level, and for users of
+As response time (RT) is the primary measure for this task,
+                                                                    speciﬁc platforms, neither the presence of any social media
+and as no theoretically interesting effects arose from our
+error rate analysis, here we report RT effects. Only correct        distractor app, nor the presence of the app for which they
+                                                                    have an account, captures attention to any greater extent
+RTs were included in the final dataset. For condition 1,
+                                                                    than non-social media distractors.
+social media distractor app present vs. absent, an atten-
+tional bias is defined as an RT cost, which is calculated by
+                                                                    Individual differences condition 1
+subtracting RTs in which a social media distractor app was
+absent from RTs in which a social media distractor app was          Although there was no group or platform level attentional
+present. Positive RTs costs would therefore be indicative of        bias effects from the mere presence of the social media
+an attentional bias. Similarly, for condition 2, distractor         distractors, there was a large degree of variability in RT cost
+app vs. distractor app þ notiﬁcation, RT cost is calculated         across participants. This could suggest that some partici-
+by subtracting RTs in which the notiﬁcation was absent              pants, perhaps those who are the most frequent users, the
+
+
+
+
+                                                             Brought to you by University of Haifa | Unauthenticated | Downloaded 01/18/23 07:54 PM UTC
+Journal of Behavioral Addictions 10 (2021) 2, 302–313                                                                                       307
+
+
+
+
+Fig. 2. Condition 1 mean correct target response times (RTs) in the absence of a social media distractor app (black) and the presence of a
+         social media distractor app (grey; Facebook, Twitter, Instagram, Snapchat). Error bars denote standard error of the mean
+
+
+most engaged, and who exhibit the greatest ‘addictive’                 distractor apps across participants, such differences were not
+severity scores, could be demonstrating an attentional bias to         predicted by, or associated with, self-reported, objective, or
+social media stimuli, while more casual users might not. To            established measures of a participant’s level of social media
+assess this, separate multiple linear regressions were calcu-          use, engagement, or ‘addictive’ severity.
+lated for each of the social media platforms, using the pre-
+dictor variables of amount of time spent on the app over the           Attentional bias condition 2 – Distractor apps vs.
+last week from the objective smartphone usage data, self-
+reported number of checks per day, number of posts per
+                                                                       distractor app þ notiﬁcation
+week, as well as number of friends/followers, summary data             As with condition 1 we start by assessing general effects
+for these measures are provided in Table 1. None of the                across all platform users. Participants mean RTs were
+overall models were found to be signiﬁcant, all F’s ≤ 1.24 all         entered into a 2 3 5 repeated measures ANOVA with the
+P’s ≥ 0.304, suggesting that these measures of social media            factors of notification (present, absent) and distractor type
+use were not predictive of the extent to which an individual           (non-social media app, Facebook app, Twitter app, Insta-
+was likely to have their attention captured by a social media          gram app, Snapchat app). The ANOVA revealed a main
+distractor app.                                                        effect of notification F(1, 98) 5 23.97, P < 0.001, hp2 5
+    In addition to the self-report and objective engagement            0.197, with longer RTs for notiﬁcation present trials (M 5
+metrics reported above, we also recorded participant’s scores          881 ms) compared to notiﬁcation absent trials (M 5 845
+on an established social media engagement questionnaire                ms), conﬁrming that our notiﬁcation manipulation was
+(SMES), and two ‘addictive’ severity scales (BSNAS, SMAQ),             effective at capturing attention. There was also a main effect
+mean scores and variability are presented in Table 1. A                of distractor type, F(4, 392) 5 3.91, P 5 0.004, hp2 5 0.038,
+Pearson’s correlation analysis showed that there were                  with numerically longer RTs for Facebook distractors
+moderate-to-strong correlations across these three measures,           compared each of the other distractor types, however, after
+suggesting that each of them is a robust questionnaire which           the application of the Bonferroni correction for multiple
+tap individual differences in social media users (r(98) 5              comparisons (new alpha level 5 0.005), only the difference
+0.782, P < 0.001 for BSNAS/SMAQ; r(97) 5 0.409, P < 0.001              between Facebook app RTs (M 5 886 ms) and Twitter app
+for SMAQ/SMEC; r(97) 5 0.507, P < 0.001 for SMAQ/                      RTs (M 5 848 ms) remained signiﬁcant, t(98) 5 3.44, P 5
+SEMC).                                                                 0.001.
+    However, the important analysis assessed whether there                 Importantly, the notification 3 distractor type interac-
+were any associations between participant’s scores on these            tion was not significant, F(4, 392) 5 1.35, P 5 0.252, hp2 5
+measures, and the level of their social media distractor app           0.014, which shows that, at the overall user level, the RT
+RT cost. To that end, separate Person’s correlations were              notiﬁcation cost was not larger in, or conﬁned to, the social
+calculated for each of the social media platforms and for              media distractor apps (M 5 21 ms for non-social media
+each of the questionnaires, with a Bonferroni corrected                distractors, M 5 64 ms for Facebook, M 5 23 ms for
+alpha level of 0.004 (0.05/12). As shown in Fig. 3, there were         Twitter, M 5 37 ms for Instagram, M 5 32 ms for Snap-
+no signiﬁcant correlations between RT cost and any of the              chat). That is, despite small trends, particularly for Face-
+questionnaire scores across all platforms.                             book, the magnitude of the RT cost found when a
+    That is, despite the large range of individual differences         notiﬁcation symbol was paired with a non-social media
+in the size of the attentional capture effect to social media          distractor app (e.g. Amazon, App Store, BBC iPlayer,
+
+
+
+
+                                                              Brought to you by University of Haifa | Unauthenticated | Downloaded 01/18/23 07:54 PM UTC
+308                                                                        Journal of Behavioral Addictions 10 (2021) 2, 302–313
+
+
+
+
+Fig. 3. Condition 1 scatterplots showing Pearson's correlation coefﬁcients for the level of attentional capture by the presence of a social
+media distractor app (i.e. RT cost; social media distractor app present RT – social media distractor app absent) and scores on the established
+                             social media engagement (SMES) and ‘addictive’ severity scales (BSNAS, SMAQ).
+Note: some of the n values are lower than the total user sample size for each platform as a small number of participants did not complete all
+                                                      sections of all of the questionnaires)
+
+
+Deliveroo) was not statistically different from the effect               Individual differences condition 2
+found when a notiﬁcation symbol was paired with a social
+media app.                                                               In line with the individual differences analysis for condition
+    As with condition 1 we now focus on user and platform                1, individual differences in the time spent on the app over
+specific effects (i.e. Facebook users/Facebook App RTs/                  the last week, number of checks per day, number of posts
+Facbook App þ Notiﬁcation RTs). The platform speciﬁc                     per week, as well as number of friends/followers, were not
+ANOVAs revealed signiﬁcant main effects of notiﬁcation                   predictive of individual differences in the magnitude of
+(present, absent) for each distractor type (non-social media             participants RT cost on trials in which a notification symbol
+distractor, speciﬁc platform distractor; all P’s ≤ 0.007), as            was paired with a social media distractor app for which they
+seen in Fig. 4, and despite a trend for a numerically larger             had an account, all F’s ≤ 1.00, all P’s ≥ 0.431. In addition,
+bias for Facebook distractor paired with a notiﬁcation                   Person’s correlations, as shown in Fig. 5, with a Bonferroni
+compared to the other distractor types, none of the notiﬁ-               corrected alpha level of 0.004 (0.05/12), produced no sig-
+cation condition 3 distractor type interactions were signiﬁ-             niﬁcant associations between RT cost in this condition and
+cant (F’s < 1 for all platforms apart from Facebook, F(1, 95)            established measures of a participant’s level of social media
+5 3.66, P 5 0.059, hp2 5 0.037). This ﬁnding shows that                  use, engagement, or ‘addictive’ severity.
+there would appear to be no difference in the perceptual
+processing ‘weight’ that is being attributed to notiﬁcations
+                                                                         Additional analysis condition 2
+paired with social media stimuli, compared to those paired               There were a number of participants who did not exhibit
+with non-social media stimuli.                                           any attentional capture effect (i.e. RT costs ≤0 ms) for the
+
+
+
+
+                                                                  Brought to you by University of Haifa | Unauthenticated | Downloaded 01/18/23 07:54 PM UTC
+Journal of Behavioral Addictions 10 (2021) 2, 302–313                                                                                         309
+
+
+
+
+Fig. 4. Condition 2 mean correct target response times (RTs) in the non-social media distractor app condition (black), in the non-social
+media distractor app þ notiﬁcation condition (dark blue), in the social media distractor app condition (grey), and the social media distractor
+                        app þ notiﬁcation condition (light blue). Error bars denote standard error of the mean.
+
+
+
+
+baseline condition in which a non-social media distractor                DISCUSSION
+app was paired with a notification despite the notification
+manipulation being successful at the group level. This could
+                                                                         In this study we investigated whether an attentional bias to
+be due to the range of individual differences in the extent to
+                                                                         social media related stimuli might be present in a group of
+which people are able to focus their attention on a primary
+                                                                         social media users. Using a task with high ecological validity,
+task while ignoring task irrelevant information, in general, as
+                                                                         we tested whether social media users might show preferen-
+shown most recently by Eayrs and Lavie (2019). It could
+                                                                         tial attentional capture for social media apps and notifica-
+therefore be the case that participants within the sample who
+                                                                         tions. The sample was well powered and there was a large
+did not exhibit an attentional capture effect by the red
+                                                                         degree of variation in social media use, engagement, and
+notiﬁcation symbol (i.e. those who are better than average at
+                                                                         ‘addictive’ severity as measured through self-reported plat-
+focusing their attention), could be masking attentional bias
+                                                                         form use, objective smartphone data, and existing social
+effects among those in the sample who did exhibit the
+                                                                         media scales (BSNAS, SMAQ, SMES). Our ﬁndings show
+notiﬁcation attentional capture effect.
+                                                                         that the presence of social media distractor apps in mock
+    To rule out this alternative explanation for the findings,
+                                                                         smartphone displays had no effect on users’ target response
+we re-analysed the data using only participants who
+                                                                         times, which in turn did not support the presence of an
+exhibited a minimum of a 10 ms RT cost for the presence
+                                                                         attentional bias to these stimuli.
+of a notification for the non-social media distractors.
+                                                                             This finding is in contrast to research showing atten-
+Despite this, there was no significant change to the find-
+                                                                         tional biases to addiction related stimuli in substance-related
+ings. Differences in RT cost for observing a notification
+                                                                         (see Field & Cox, 2008 for a review) and non-substance
+paired with a social media distractor app compared to
+                                                                         related addictive behaviours. Ciccarelli et al. (2016), Jeromin
+being paired with a non-social media distractor app
+                                                                         et al. (2016), and Pekal et al. (2018) reported attentional
+remained negligible for Facebook (M 5 72 ms for non-
+                                                                         biases to gambling related images, computer related words,
+social media app, M 5 78 ms for Facebook app; t < 1) and
+                                                                         and pornographic images in associated users. However,
+Instagram (M 5 71 ms for non-social media app, M 5 69
+                                                                         based on the ﬁndings from the present study, this does not
+ms for Instagram app; t < 1). For Twitter (M 5 74 ms for
+                                                                         appear to extend to the preferential processing of social
+non-social media app, M 5 21 ms for Twitter app; t(38) 5
+                                                                         media stimuli by social media users. If excessive social media
+1.15, P 5 0.078) and Snapchat (M 5 72 ms for non-social
+                                                                         use is to be viewed as an activity which might be placed
+media app, M 5 43 ms for Snapchat app; t(51) 5 1.15, P 5
+                                                                         within an addiction framework, we would have expected to
+0.255) the numerical differences did become larger in
+                                                                         ﬁnd evidence of an attentional bias in this study. In contrast,
+comparison to the original analysis, however, the change
+                                                                         here, within the context of social media use, we show no
+was in the opposite direction to that expected if the pre-
+                                                                         evidence for the hallmark change to attentional processes
+vious ﬁndings had been masking social media attentional
+                                                                         present in other addictive behaviours, which is thought to be
+bias effects (i.e. trends for smaller RT costs for a notiﬁca-
+                                                                         driven by neurochemical changes to the areas of the brain
+tion paired with a social media app compared to a notiﬁ-
+                                                                         that mediate goal directed behaviour (Franken, 2003;
+cation paired with a non-social media app).
+                                                                         Robinson & Berridge, 1993, 2008).
+
+
+
+
+                                                                Brought to you by University of Haifa | Unauthenticated | Downloaded 01/18/23 07:54 PM UTC
+310                                                                          Journal of Behavioral Addictions 10 (2021) 2, 302–313
+
+
+
+
+Fig. 5. Condition 2 scatterplots showing Pearson's correlation coefﬁcients for the level of attentional capture by a social media distractor paired
+with a notiﬁcation symbol (i.e. RT cost; social media distractor app þ notiﬁcation RT – social media distractor app RT) and scores on the
+established social media scales, the BSNAS (left), the SMAQ (middle), and the SMES (right), presented as a function of social media platform.
+Note: some of the n values are lower than the total user sample size for each platform as a small number of participants did not complete all
+                                                       sections of all of the questionnaires
+
+
+    While we demonstrated an attentional capture effect for                 associations between social media use, engagement, or
+the addition of a notification symbol to our distractor apps,               ‘addictive’ severity. Time spent using the app, number of
+the cost to target RTs was consistent regardless of whether                 checks per day, number of posts per week, and number of
+the notification had been paired with a social media app or                 friends/followers were not predictive of the magnitude of
+not. This is surprising given the importance of such notifi-                user’s level of attentional capture by social media distractors,
+cation symbols as indicators that ‘Likes’ or ‘Comments’ have                nor were there any associations between the level of atten-
+been made to users’ posts (Scissors et al., 2016). In contrast,             tional capture and scores on the established social media
+here we show that social media notiﬁcations did not capture                 engagement and ‘addictive’ severity scales (SMES, BSNAS,
+users’ attention to any greater extent than, for example, a                 SMAQ). Again, this is in contrast to previous work on non-
+weather notiﬁcation. While there was a trend for a larger RT                substance related addictions as shown by Ciccarelli et al.
+cost for the Facebook notiﬁcation in Facebook users, this                   (2016; Gambling), Jeromin et al. (2016; Gamers), and Pekal
+could be due to non-social media speciﬁc effects such as the                et al. (2018; Internet Pornography Use), which reported
+colour contrast (red notiﬁcation, blue Facebook app;                        positive associations between levels of attention bias and use/
+Theeuwes & Godijn, 2002), or a general familiarity effect to                severity measures. Moreover, while Nikolaidou et al. (2019)
+this logo, which is the oldest of the platform logos, and could             did report an association between the level of urge to be
+therefore have been generated by ubiquitous exposure to it                  online and attentional dwell time to social media related
+(see Qin, Koutstaal, & Engel, 2014).                                        stimuli, this effect was based on a small sample size (N 5 16).
+    In line with the lack of an attentional bias effect, our in-                One interesting reason why we may not have found an
+dividual differences analyses also did not yield any                        attentional bias and associated relationship with use,
+
+
+
+
+                                                                    Brought to you by University of Haifa | Unauthenticated | Downloaded 01/18/23 07:54 PM UTC
+Journal of Behavioral Addictions 10 (2021) 2, 302–313                                                                                        311
+
+
+engagement, and severity measures, relates to a recent re-              novel and comprehensive measure for the assessment of
+view of this literature by Field et al. (2016). Field et al. (2016)     individual differences in social media use, engagement,
+argue that research on substance-users does not consistently            ‘addictive’ severity, and craving.
+yield evidence for a robust attentional bias effect. They argue
+that, rather than such a bias being a core aspect of addictive
+behaviour, that it would be better characterised as                     Funding sources: No financial support was received for this
+momentary changes in the evaluation of the addiction                    study.
+related stimuli during periods of subjective craving (‘an
+appetitive motivational process’). When applying this to                Authors’ contribution: Study, concept and design (DJR, KT,
+social media use, the period of subjective craving is actually          SCH, SHB), data collection (KT), statistical analysis (KT,
+most likely to be the period of time after a user has posted an         DJR), interpretation of data (KT, DJR, SCH, SHB),
+item of content. It is likely to be during this period that the         contributed to the manuscript (DJR, KT, SCH, SHB).
+incentive salience of the social media app and notiﬁcation
+symbol are likely to be at their greatest, as participants seek         Conflicts of Interest: The authors declare no conflict of in-
+their behavioural reward (i.e. likes and comments to their              terest.
+post). It might therefore be the case that a social media
+attentional bias is a transient effect which, if the effect exists,     Acknowledgments: Our thanks to Hannah Geddis who
+is mostly likely to be detected after a user has posted content         assisted with data collection.
+for which the reward is peer feedback.
+    Therefore, future research should investigate whether a
+social media attentional bias exists after the user/partici-
+pant has been asked to post content for which they place
+                                                                        REFERENCES
+value on the number of likes/comments returned. In
+addition, while the present study used a variety of social              Allen, K. A., Ryan, T., Gray, D. L., McInerney, D. M., & Waters, L.
+media use, engagement, and ‘addictive’ severity question-                   (2014). Social media use and social connectedness in adoles-
+naires, a new measure should be developed which explicitly                  cents: The positives and the potential pitfalls. The Educational
+refers to the level of ‘craving’ for social media access, and               and Developmental Psychologist, 31(1), 18–31. https://doi.org/
+for social media validation in the form of a ‘craving’ for                  10.1017/edp.2014.2.
+likes and comments (see Savci & Grifﬁths, 2019). This                   American Psychiatric Association. (2013). Diagnostic and statistical
+would bring the individual difference measures used in                      manual of mental disorders (5th ed.). https://doi.org/10.1176/
+relation to social media use in line with other addiction                   appi.books.9780890425596.
+related questionnaires. Similarly, while our sample did                 Anderson, B. A. (2013). A value-driven mechanism of attentional
+capture a large range of individual differences in social                   selection. Journal of Vision, 13(3), 1–7. https://doi.org/10.
+media use, engagement and ‘addictive’ severity, future                      1167/13.3.7.
+research should seek to work on setting out common                      Andreassen, C. S., Billieux, J., Grifﬁths, M. D., Kuss, D. J., Deme-
+criteria which would allow for the categorisation of                        trovics, Z., Mazzoni, E., et al. (2016). The relationship between
+excessive social media use, in the sense ascribed to sub-                   addictive use of social media and video games and symptoms of
+stance-related and other non-substance related addictive                    psychiatric disorders: A large-scale cross-sectional study. Psy-
+behaviours. This would enhance the ability of future studies                chology of Addictive Behaviors, 30(2), 252–262. http://dx.doi.
+to run individual differences analyses not just for potential               org/10.1037/adb0000160.
+attentional bias effects, but also for the further assessment           Andreassen, C. S., Pallesen, S., & Grifﬁths, M. D. (2017). The rela-
+of the positive and negative effects of such use, as outlined               tionship between addictive use of social media, narcissism, and self-
+in the introduction (see also Wegmann, M€         uller, Turel, &           esteem: Findings from a large national survey. Addictive Behaviours,
+Brand, 2020).                                                               64, 287–293. https://doi.org/10.1016/j.addbeh.2016.03.006.
+    In summary, social media use has become a ubiquitous                Andreassen, C. S., Torsheim, T., Brunborg, G. S., & Pallesen, S.
+part of society. Research has largely focused on the negative               (2012). Development of a Facebook addiction scale. Psycho-
+outcomes which may be associated with excessive use, and                    logical Reports, 110, 501–517. https://doi.org/10.2466/02.09.18.
+there is a growing debate which relates to whether this                     PR0.110.2.501-517.
+should be categorised as a clinically relevant addictive                                    Kiraly, O., Maraz, A., Elekes, Z., Grifﬁths, M. D.,
+                                                                        Banyai, F., Zsila A.,
+behaviour. An attentional bias to addiction related stimuli is              et al. (2017). Problematic social media use: Results from a large-
+considered to be a hallmark of the changes to brain                         scale nationally representative adolescent sample. PloS One,
+neurochemistry and attentional deployment which arise                       12(1), e0169839. https://doi.org/10.1371/journal.pone.0169839.
+from addictive behaviours. While there is evidence for such             Boyer, M., & Dickerson, M. (2003). Attentional bias and addictive
+biases in both substance and non-substance related addic-                   behaviour: Automaticity in a gambling-speciﬁc modiﬁed Stroop
+tions, we found no such effect in relation to social media                  task. Addiction, 98(1), 61–70. https://doi.org/10.1046/j.1360-
+stimuli in a varied group of social media users. Future                     0443.2003.00219.x.
+research should focus on whether such a bias may exist in               Brand, M., Wegmann, E., Stark, R., M€     uller, A., W€ olﬂing, K., Rob-
+alternative contexts, as outlined above, and to generate a                  bins, T. W., et al. (2019). The Interaction of Person-Affect-
+
+
+
+
+                                                               Brought to you by University of Haifa | Unauthenticated | Downloaded 01/18/23 07:54 PM UTC
+312                                                                          Journal of Behavioral Addictions 10 (2021) 2, 302–313
+
+
+     Cognition-Execution (I-PACE) model for addictive behaviors:           Grifﬁths, M. D., & Kuss, D. (2017). Adolescent social media
+     Update, generalization to addictive behaviors beyond internet-            addiction (revisited). Education and Health, 35(3), 49–52.
+     use disorders, and speciﬁcation of the process character of               http://sheu.org.uk/sheux/EH/eh353mg.pdf.
+     addictive behaviors. Neuroscience and Biobehavioral Reviews,          Haber, S. N. (2016). Corticostriatal circuitry. Dialogues in Clinical
+     104, 1–10. https://doi.org/10.1016/j.neubiorev.2019.06.032.               Neuroscience, 18(1), 7. https://doi.org/10.31887/DCNS.2016.18.
+Brown, J., Beard, E., Kotz, D., Michie, S., & West, R. (2014). Real-           1/shaber.
+     world effectiveness of e-cigarettes when used to aid smoking          Hawi, N. S., & Samaha, M. (2017). The relations among social
+     cessation: A cross-sectional population study. Addiction, 109(9),         media addiction, self-esteem, and life satisfaction in university
+     1531–1540. https://doi.org/10.1111/add.12623.                             students. Social Science Computer Review, 35(5), 576–586.
+Carter, B. L., & Tiffany, S. T. (1999). Meta-analysis of cue-reactivity        https://doi.org/10.1177/0894439316660340.
+     in addiction research. Addiction, 94(3), 327–340. https://doi.        Heffer, T., Good, M., Daly, O., MacDonell, E., & Willoughby, T.
+     org/10.1046/j.1360-0443.1999.9433273.x.                                   (2019). The longitudinal association between social-media use
+Ciccarelli, M., Nigro, G., Grifﬁths, M. D., Cosenza, M., & D’Olimpio,          and depressive symptoms among adolescents and young adults:
+     F. (2016). Attentional biases in problem and non-problem                  An empirical reply to Twenge et al. (2018). Clinical Psycho-
+     gamblers. Journal of Affective Disorders, 198, 135–141.                   logical Science, 7(3), 462– 470. https://doi.org/10.1177/
+Coyne, S. M., Rogers, A. A., Zurcher, J. D., Stockdale, L., & Booth, M.        2167702618812727.
+     (2020). Does time spent using social media impact mental              van Holst, R. J., Lemmens, J. S., Valkenburg, P. M., Peter, J.,
+     health?: An eight year longitudinal study. Computers in Human             Veltman, D. J., & Goudriaan, A. E. (2012). Attentional bias and
+     Behavior, 104, 106160. https://doi.org/10.1016/j.chb.2019.106160.         disinhibition toward gaming cues are related to problem
+Drummond, D. C. (2000). What does cue-reactivity have to offer                 gaming in male adolescents. Journal of Adolescent Health, 50(6),
+     clinical research? Addiction, 95(8s2), 129–144.                           541–546. https://doi.org/10.1016/j.jadohealth.2011.07.006.
+Eayrs, J. O., & Lavie, N. (2019). Individual differences in parietal       Houghton, S., Lawrence, D., Hunter, S. C., Rosenberg, M., Zadow,
+     and frontal cortex structure predict dissociable capacities for           C., Wood, L., et al. (2018). Reciprocal relationships between
+     perception and cognitive control. Neuroimage, 202, 116148.                trajectories of depressive symptoms and screen media use
+     https://doi.org/10.1016/j.neuroimage.2019.116148.                         during adolescence. Journal of Youth and Adolescence, 47(11),
+Ellis, D. A., Davidson, B. I., Shaw, H., & Geyer, K. (2019). Do                2453–2467. https://doi.org/10.1007/s10964-018-0901-y.
+     smartphone usage scales predict behavior? International Jour-         Jeromin, F., Nyenhuis, N., & Barke, A. (2016). Attentional bias in
+     nal of Human-Computer Studies, 130, 86–92. https://doi.org/10.            excessive Internet gamers: Experimental investigations using an
+     1016/j.ijhcs.2019.05.004.                                                 addiction Stroop and a visual probe. Journal of Behavioral Ad-
+Enoch, M. A., & Goldman, D. (2002). Problem drinking and                       dictions, 5(1), 32–40. https://doi.org/10.1556/2006.5.2016.012.
+     alcoholism: Diagnosis and treatment. American Family Physi-           Jones, B. T., Bruce, G., Livingstone, S., & Reed, E. (2006). Alcohol-
+     cian, 65(3), 441–449. https://www.aafp.org/afp/2002/0201/                 related attentional bias in problem drinkers with the ﬂicker
+     p441.html.                                                                change blindness paradigm. Psychology of Addictive Behaviors,
+Field, M., & Cox, W. M. (2008). Attentional bias in addictive be-              20(2), 171–177. https://doi.org/10.1037/0893-164X.20.2.171.
+     haviors: A review of its development, causes, and consequences.       Kaye, L. K., Orben, A., Ellis, D. A., Hunter, S. C., & Houghton, S.
+     Drug and Alcohol Dependence, 97(1–2), 1–20. https://doi.org/              (2020). The conceptual and methodological mayhem of “screen
+     10.1016/j.drugalcdep.2008.03.030.                                         time”. International Journal of Environmental Research and Public
+Field, M., Werthmann, J., Franken, I., Hofmann, W., Hogarth, L., &             Health, 17(10), 3661. https://doi.org/10.3390/ijerph17103661.
+     Roefs, A. (2016). The role of attentional bias in obesity and         Keles, B., McCrae, N., & Grealish, A. (2020). A systematic review:
+     addiction. Health Psychology, 35(8), 767–780. https://doi.org/            The inﬂuence of social media on depression, anxiety and psy-
+     10.1037/hea0000405.                                                       chological distress in adolescents. International Journal of
+Franken, I. H. (2003). Drug craving and addiction: Integrating                 Adolescence and Youth, 25(1), 79–93. https://doi.org/10.1080/
+     psychological and neuropsychopharmacological approaches.                  02673843.2019.1590851.
+     Progress in Neuro-Psychopharmacology and Biological Psychia-          Kuss, D. J., & Grifﬁths, M. D. (2012). Internet gaming addiction: A
+     try, 27(4), 563–579.                                                      systematic review of empirical research. International Journal of
+Gainsbury, S. M. (2015). Online gambling addiction: The rela-                  Mental Health and Addiction, 10(2), 278–296. https://doi.org/
+     tionship between internet gambling and disordered gambling.               10.1007/s11469-011-9318-5.
+     Current Addiction Reports, 2(2), 185–193. https://doi.org/10.         Kuss, D. J., & Grifﬁths, M. D. (2017). Social networking sites and
+     1007/s40429-015-0057-8.                                                   addiction: Ten lessons learned. International Journal of Envi-
+Grifﬁths, M. (2000). Does internet and computer" addiction" exist?             ronmental Research and Public Health, 14(3), 311. https://doi.
+     Some case study evidence. CyberPsychology and Behavior, 3(2),             org/10.3390/ijerph14030311.
+     211–218. https://doi.org/10.1089/109493100316067.                     Kuss, D. J., & Lopez-Fernandez, O. (2016). Internet addiction and
+Grifﬁths, M. (2005). A “components” model of addiction within a                problematic internet use: A systematic review of clinical
+     biopsychosocial framework. Journal of Substance Use, 10(4),               research. World Journal of Psychiatry, 6(1), 143–176. https://
+     191–197.                                                                  doi.org/10.5498/wjp.v6.i1.143.
+Grifﬁths, M. D. (2018). Common myths in the behavioral addiction           Kırcaburun, K., Kokkinos, C. M., Demetrovics, Z., Kiraly, O.,
+     ﬁeld. Journal of Concurrent Disorders, 1(1), 128–141. http://             Grifﬁths, M. D., & Çolak, T. S. (2018). Problematic online be-
+     irep.ntu.ac.uk/id/eprint/34099.                                           haviors among adolescents and emerging adults: Associations
+
+
+
+
+                                                                    Brought to you by University of Haifa | Unauthenticated | Downloaded 01/18/23 07:54 PM UTC
+Journal of Behavioral Addictions 10 (2021) 2, 302–313                                                                                                       313
+
+
+    between cyberbullying perpetration, problematic social media                   Ryan, T., Chester, A., Reece, J., & Xenos, S. (2014). The uses and
+    use, and psychosocial factors. International Journal of Mental                     abuses of Facebook: A review of Facebook addiction. Journal of
+    Health and Addiction, 17(4), 891–908. https://doi.org/10.1007/                     Behavioral Addictions, 3(3), 133–148. https://doi.org/10.1556/
+    s11469-018-9894-8.                                                                 jba.3.2014.016.
+LaRose, R., Kim, J., & Peng, W. (2010). Social networking:                         Savci, M., & Grifﬁths, M. D. (2019). The development of the
+    Addictive, compulsive, problematic, or just another media                          Turkish social media craving scale (SMCS): A validation study.
+    habit?. In Z. Papacharissi (Ed.) A networked self (pp. 67–89).                     International Journal of Mental Health and Addiction, 1–15.
+    New York, NY: Routledge.                                                           https://doi.org/10.1007/s11469-019-00062-9.
+Leist, A. K. (2013). Social media use of older adults: A mini-review.              Scissors, L., Burke, M., & Wengrovitz, S. (2016, February). What’s
+    Gerontology, 59(4), 378–384. https://doi.org/10.1159/000346818.                    in a like? Attitudes and behaviors around receiving likes on
+Lin, L. Y., Sidani, J. E., Shensa, A., Radovic, A., Miller, E., Colditz, J.            Facebook. In Proceedings of the 19th ACM conference on com-
+    B., et al. (2016). Association between social media use and                        puter-supported cooperative work & social computing (pp.
+    depression among US young adults. Depression and Anxiety,                          1501–1510). https://doi.org/10.1145/2818048.2820066.
+    33(4), 323–331. https://doi.org/10.1002/da.22466.                              Sharma, D., Albery, I. P., & Cook, C. (2001). Selective attentional
+McDaniel, B. T., Coyne, S. M., & Holmes, E. K. (2012). New                             bias to alcohol related stimuli in problem drinkers and non-
+    mothers and media use: Associations between blogging, social                       problem drinkers. Addiction, 96(2), 285–295. https://doi.org/10.
+    networking, and maternal well-being. Maternal and Child                            1046/j.1360-0443.2001.96228512.x.
+    Health Journal, 16(7), 1509–1517. https://doi.org/10.1007/                     Shensa, A., Escobar-Viera, C. G., Sidani, J. E., Bowman, N. D.,
+    s10995-011-0918-2.                                                                 Marshal, M. P., & Primack, B. A. (2017). Problematic social
+Nikolaidou, M., Fraser, D. S., & Hinvest, N. (2019). Attentional bias                  media use and depressive symptoms among US young adults: A
+    in Internet users with problematic use of social networking                        nationally-representative study. Social Science & Medicine, 182,
+    sites. Journal of Behavioral Addictions, 8(4), 733–742. https://                   150–157. https://doi.org/10.1016/j.socscimed.2017.03.061.
+    doi.org/10.1556/2006.8.2019.60.                                                Sofuoglu, M., & Kosten, T. R. (2006). Emerging pharmacological
+Papachristou, H., Nederkoorn, C., Giesen, J. C., & Jansen, A.                          strategies in the ﬁght against cocaine addiction. Expert Opinion
+    (2014). Cue reactivity during treatment, and not impulsivity,                      on Emerging Drugs, 11(1), 91–98. https://doi.org/10.1517/
+    predicts an initial lapse after treatment in alcohol use disorders.                14728214.11.1.91.
+    Addictive Behaviors, 39(3), 737–739. https://doi.org/10.1016/j.                Statista (2020). Social media usage worldwide. Retrieved from
+    addbeh.2013.11.027.                                                                https://www.statista.com/study/12393/social-networks-statista-
+Pekal, J., Laier, C., Snagowski, J., Stark, R., & Brand, M. (2018).                    dossier/on 1st March 2020.
+    Tendencies toward Internet-pornography-use disorder: Differ-                   Theeuwes, J., & Godijn, R. (2002). Irrelevant singletons capture
+    ences in men and women regarding attentional biases to                             attention: Evidence from inhibition of return. Perception & Psy-
+    pornographic stimuli. Journal of Behavioral Addictions, 7(3),                      chophysics, 64(5), 764–770. https://doi.org/10.3758/BF03194743.
+    574–583. https://doi.org/10.1556/2006.7.2018.70.                               Waters, A. J., Shiffman, S., Sayette, M. A., Paty, J. A., Gwaltney, C.
+Przybylski, A. K., Murayama, K., DeHaan, C. R., & Gladwell, V.                         J., & Balabanis, M. H. (2003). Attentional bias predicts outcome
+    (2013). Motivational, emotional, and behavioral correlates of                      in smoking cessation. Health Psychology, 22(4), 378–387.
+    fear of missing out. Computers in Human Behavior, 29(4),                           https://doi.org/10.1037/0278-6133.22.4.378.
+    1841–1848. https://doi.org/10.1016/j.chb.2013.02.014.                          Wegmann, E., M€    uller, S. M., Turel, O., & Brand, M. (2020). In-
+Qin, X. A., Koutstaal, W., & Engel, S. A. (2014). The hard-won                         teractions of impulsivity, general executive functions, and spe-
+    beneﬁts of familiarity in visual search: Naturally familiar brand                  ciﬁc inhibitory control explain symptoms of social-networks-
+    logos are found faster. Attention, Perception, & Psychophysics,                    use disorder: An experimental study. Scientiﬁc Reports, 10(1),
+    76(4), 914–930. https://doi.org/10.3758/s13414-014-0623-5.                         1–12. https://doi.org/10.1038/s41598-020-60819-4.
+Robbins, S. J., & Ehrman, R. N. (2004). The role of attentional bias in            Whiting, A., & Williams, D. (2013). Why people use social media:
+    substance abuse. Behavioral and Cognitive Neuroscience Reviews,                    A uses and gratiﬁcations approach. Qualitative Market
+    3(4), 243–260. https://doi.org/10.1177/1534582305275423.                           Research: An International Journal, 16(4), 362–369. https://doi.
+Robinson, T. E., & Berridge, K. C. (1993). The neural basis of drug                    org/10.1108/QMR-06-2013-0041.
+    craving: An incentive-sensitization theory of addiction. Brain                 Woods, H. C., & Scott, H. (2016). # Sleepyteens: Social media use in
+    Research Reviews, 18(3), 247–291. https://doi.org/10.1016/0165-                    adolescence is associated with poor sleep quality, anxiety,
+    0173(93)90013-P.                                                                   depression and low self-esteem. Journal of Adolescence, 51,
+Robinson, T. E., & Berridge, K. C. (2008). The incentive sensiti-                      41–49.
+    zation theory of addiction: Some current issues. Philosophical                 World Health Organization. (2018). International classiﬁcation of
+    Transactions of the Royal Society B: Biological Sciences,                          diseases for mortality and morbidity statistics (11th Revision).
+    363(1507), 3137–3146. https://doi.org/10.1098/rstb.2008.0093.                      https://icd.who.int/browse11/l-m/en.
+
+
+
+
+Open Access. This is an open-access article distributed under the terms of the Creative Commons Attribution-NonCommercial 4.0 International License (https://
+creativecommons.org/licenses/by-nc/4.0/), which permits unrestricted use, distribution, and reproduction in any medium for non-commercial purposes, provided the
+original author and source are credited, a link to the CC License is provided, and changes – if any – are indicated.
+
+
+
+
+                                                                         Brought to you by University of Haifa | Unauthenticated | Downloaded 01/18/23 07:54 PM UTC
+

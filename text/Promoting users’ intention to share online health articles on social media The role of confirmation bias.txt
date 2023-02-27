@@ -1,0 +1,827 @@
+                                               Information Processing and Management 57 (2020) 102354
+
+
+                                                        Contents lists available at ScienceDirect
+
+
+                                    Information Processing and Management
+                                        journal homepage: www.elsevier.com/locate/infoproman
+
+
+
+
+Promoting users’ intention to share online health articles on social
+                                                                                                                                          T
+media: The role of confirmation bias
+Haiping Zhaoa,b, Shaoxiong Fuc, Xiaoyu Chend,
+                                                                            ⁎
+
+a
+  School of Information Management, Wuhan University, Wuhan, China
+b
+  Department of Digitalization, Copenhagen Business School, Copenhagen, Denmark
+c
+  College of Information Science and Technology, Nanjing Agricultural University, Nanjing, China
+d
+  Wee Kim Wee School of Communication and Information, Nanyang Technological University, Singapore
+
+
+
+
+ARTICLE INFO                                           ABSTRACT
+
+Keywords:                                              Nowadays, it is a common practice for healthcare professionals to spread medical knowledge by
+Confirmation bias                                      posting health articles on social media. However, promoting users’ intention to share such ar-
+Content valence                                        ticles is challenging because the extent of sharing intention varies in their eHealth literacy (high
+eHealth literacy                                       or low) and the content valence of the article that they are exposed to (positive or negative). This
+Health information behavior
+                                                       study investigates boundary conditions under which eHealth literacy and content valence help to
+Social media
+                                                       increase users’ intention to share by introducing a moderating role of confirmation bias—a
+                                                       tendency to prefer information that conforms to their initial beliefs. A 2 (eHealth literacy: high
+                                                       vs. low) × 2 (content valence: positive vs. negative) between-subjects experiment was conducted
+                                                       in a sample of 80 participants. Levels of confirmation bias ranging from extreme negative bias to
+                                                       extreme positive bias among the participants were assessed during the experiment. Results
+                                                       suggested that: (1) users with a high level of eHealth literacy were more likely to share positive
+                                                       health articles when they had extreme confirmation bias; (2) users with a high level of eHealth
+                                                       literacy were more likely to share negative health articles when they had moderate confirmation
+                                                       bias or no confirmation bias; (3) users with a low level of eHealth literacy were more likely to
+                                                       share health articles regardless of positive or negative content valence when they had moderate
+                                                       positive confirmation bias. This study sheds new light on the role of confirmation bias in users’
+                                                       health information sharing. Also, it offers implications for health information providers who
+                                                       want to increase the visibility of their online health articles: they need to consider readers’
+                                                       eHealth literacy and confirmation bias when deciding the content valence of the articles.
+
+
+
+
+1. Introduction
+
+    As acknowledged by healthcare professionals, social media play a notable role in reaching broad audiences and facilitating online
+interactions such as healthcare campaign promotions and health information dissemination (Guo, Guo, Fang, & Vogel, 2017;
+Mano, 2014; Shi, Poorisat, & Salmon, 2018). Given such advantages, over half of public health organizations in the United States have
+provided health information services on social media (Thackeray, Neiger, Smith, & Van Wagenen, 2012). Particularly in China,
+offering online health articles via social media has become a prevalent way for healthcare professionals to make users learn about
+medical knowledge (Zhang, Guo, Xu, & Li, 2020).
+
+
+    All authors contributed equally, whose names are listed in reverse alphabetical order.
+    ⁎
+      Corresponding author at: Nanyang Technological University, WKWSCI Building, 31 Nanyang Link, #05-16, Singapore 637718.
+      E-mail addresses: zhp1994@whu.edu.cn (H. Zhao), fu_shaoxiong@163.com (S. Fu), xiaoyu001@e.ntu.edu.sg (X. Chen).
+
+https://doi.org/10.1016/j.ipm.2020.102354
+Received 1 December 2019; Received in revised form 29 June 2020; Accepted 2 July 2020
+Available online 19 July 2020
+0306-4573/ © 2020 Elsevier Ltd. All rights reserved.
+H. Zhao, et al.                                                                            Information Processing and Management 57 (2020) 102354
+
+
+    Recognized as reputable and trustworthy health information providers, healthcare professionals are able to post self-authored
+health articles via social media such as Weibo and WeChat. Capitalizing on their registered accounts of these platforms, users can
+forward such health information (Gao, Tian, & Tu, 2015). Moreover, these writers are also encouraged to publish health articles on
+some professional websites, including Ding Xiang Yuan (www.dxy.cn), Guoke (www.guokr.com), and Zhihu (www.zhihu.com).
+Likewise, users disseminate these articles through a sharing function of these websites such as reposting them on their preferred social
+media platforms.
+    Users’ sharing of online health articles has become increasingly important. For health information providers, the sharing behavior
+enhances the visibility of their health articles, which probably informs more readers (Shi, Poorisat, & Salmon, 2018). For users, they
+benefit from the sharing behavior as it might enable them to create online personal healthcare knowledge repositories (Mano, 2014).
+If needed, users could conveniently retrieve and access these articles that have been shared on social media platforms. When we
+finalized this manuscript, the 2020 coronavirus pandemic (COVID-19) has forced many people to do activities online. An emerging
+trend we observed is that people share relevant articles, which healthcare professionals published on social media platforms, with
+their friends or family so as to increase their awareness to defend against the virus. Therefore, we focus on such health information
+sharing: users actively choosing to share an article provided by trustworthy healthcare professionals through sharing functions, or
+post a link to an article on social media platforms.
+    Despite the importance, it is very challenging to employ an effective strategy to promote users’ intention to share for two reasons.
+First, current literature suggests that users’ intention to share health information on social media may differ in terms of their levels of
+eHealth literacy (e.g., Chi, He, Han, & Jiang, 2018; Zhang et al., 2018). eHealth literacy refers to the extent to which a user possesses
+the capacity to seek, understand, evaluate and use online health information needed to make appropriate health-related decisions
+(Norman & Skinner, 2006; Van der Vaart et al., 2011). Generally, compared to their counterparts, users who hold a high level of
+eHealth literacy tend to actively engage in online health-related activities, such as health information seeking and use (Chang et al.,
+2015; Quinn, Bond, & Nugent, 2017; Zhang, Sun, & Kim, 2017).
+    Second, when editing an online health article, the providers have to consider how to design the specific content valence. Content
+valence refers to the overall emotions embedded in an online article, which are commonly classified as positive and negative
+(Meng et al., 2018). For a given health topic, positive and negative writing styles may yield distinct stories (Kim, 2015). Additionally,
+extant research reveals mixed findings regarding the effect of content valence on online information diffusion. For example, negative
+online articles seem to draw readers’ attention quickly and cause more transmissions (e.g., Chua & Banerjee, 2018; Yin, Zhang, & Liu,
+2020). By contrast, some research argues that positive online articles could drive information seekers to share it with others (e.g.,
+Berger & Milkman, 2012; Myrick, 2017). Hence, current literature has not achieved a consensus on whether positive or negative
+online health articles evoke users’ intention to share.
+    To promote users’ intention to share health articles on social media by solving two issues above, we posit that users have formed
+their own initial beliefs before exposed to a health article, and subsequently, these initial beliefs play a critical role in their following
+assessment of content embedded in the article. This assumption is inspired by a stream of research that argues that humans are
+shaped by their prior attitudes and viewpoints when processing information (e.g., Alba, Broniarczyk, Shimp, & Urbany, 1994; Jonas,
+Schulz-Hardt, Frey, & Thelen, 2001). Specifically, we argue that users, as they make sense of and cognitively process an online health
+article, exhibit confirmation bias. For this study, confirmation bias refers to the extent to which a user prefers an online health article
+that conforms to their initial beliefs and attitudes (Yin, Mitra, & Zhang, 2016).
+    Related literature has pointed out that confirmation bias affects a user's information-processing styles. If someone has an extreme
+confirmation bias, he or she is likely to agree with online articles that hold standpoints similar to their initial beliefs while rejecting
+those contrary to their preexisting attitudes (Vydiswaran, Zhai, Roth, & Pirolli, 2015). On the other hand, if someone holds a moderate
+confirmation bias, he or she might be cautious on their initial beliefs and thus evaluates the online articles mainly depending on their
+information-use experiences (Knobloch-Westerwick, Johnson, & Westerwick, 2014), as well as the specific content characteristics
+(Knobloch-Westerwick & Kleinman, 2012). Following this view, we argue that the confirmation bias could play a moderating role in the
+relationships among users’ eHealth literacy, content valences of online health articles, and their intention to share.
+    This study holds both theoretical and practical significance. On the theoretical front, this study is among the first attempts to
+incorporate the confirmation bias into users’ intention to share online health articles on social media. In particular, it proposes an
+explanation mechanism about how eHealth literacy and content valence promote users’ intention to share health articles by in-
+troducing the moderating effect of confirmation bias. On the practical front, the findings of this study may inform those healthcare
+professionals who want to increase the visibility of their online health articles. For example, before posting health articles, they are
+supposed to consider target readers’ eHealth literacy and confirmation bias when deciding the content valence of the articles.
+    The rest of the paper proceeds as follows. The next section presents the literature review on eHealth literacy and information
+sharing, content valence and information sharing, as well as the role of confirmation bias in information sharing, also followed by a
+research model highlighted in a figure. After that, we detail the methodology and results of this study. Finally, the paper ends with a
+discussion and conclusion, including key findings, theoretical implications, practical implications, and future research directions.
+
+2. Literature review
+
+2.1. eHealth literacy and information sharing
+
+   eHealth literacy was perhaps firstly proposed by Norman and Skinner (2006). It is a multifaceted construct including several key
+dimensions such as essential mastery of medical knowledge and information-search skills, which are adapted from health literacy and
+
+                                                                     2
+H. Zhao, et al.                                                                                         Information Processing and Management 57 (2020) 102354
+
+
+Table 1
+Comparisons among health literacy, online information literacy and eHealth literacy.
+  Construct              Definition                                               Highlighted ability                             Key reference
+
+  Health literacy        Capability to acquire, handle, comprehend health and     Essential health and medical knowledge;         Institute of Medicine, 2004
+                         medical knowledge needed for health decision-making      Proper health decision-making
+  Online information     Capability to seek, understand, evaluate and use         Self-efficacy for using digital technologies;   Van de Vord, 2010
+      literacy           online information through digital technologies          Information-search skills
+  eHealth literacy       Capability to seek, understand, evaluate and use         Self-efficacy for using (health) digital        Van der Vaart et al., 2011
+                         online health information through digital technologies   technologies; Health information-search
+                         for acquiring and comprehend health and medical          skills; Proper (online) health decision-
+                         knowledge needed for health decision-making              making
+
+
+
+online information literacy (Crook, Stephens, Pastorek, Mackert, & Donovan, 2016; Van de Vord, 2010; Van der Vaart et al., 2011). We
+compared the three related constructs—health literacy, online information literacy, and eHealth literacy—based on the review of
+relevant literature (e.g., Institute of Medicine, 2004; Van de Vord, 2010; Van der Vaart et al., 2011). We find that despite overlaps
+between each concept, they highlight several distinct abilities of online users. The comparison between the three constructs is
+presented in Table 1.
+    First, regarding health literacy, it emphasizes that users should receive health education and master essential health and medical
+knowledge (Institute of Medicine, 2004). Such knowledge can help them make informed health-related decisions, including
+healthcare services selection, disease prevention, and health promotion (Fu, Chen, & Zheng, 2020; Nutbeam, 2000). Prior research
+also indicates that users who have high health literacy are more likely to share health information with others (e.g., Crook, Stephens,
+Pastorek, Mackert, & Donovan, 2016; Pian, Song, & Zhang, 2020). This is perhaps because those who hold high health literacy can
+recognize and articulate their health information needs and thus know how to share the health information with others effectively.
+    Second, regarding online information literacy, it highlights that users should know how to use digital technologies like computers
+and social media services to conduct effective information search on the internet. In brief, high online information literacy requires
+that users should possess a high self-efficacy for using digital technologies and essential online information-search skills. Otherwise,
+even though someone knows how to recognize and articulate their health information needs, he or she might not obtain prompt
+online healthcare services due to a lack of the ability to access online health information resources (Pian, Song, & Zhang, 2020).
+    Third, regarding eHealth literacy, it underlines how users effectively learn, understand, and process online health information by
+using digital technologies and online information-search skills for their health decision-making. Because eHealth literacy underscores
+online health information-search skills, it is reasonable to associate one's eHealth literacy with online health information-seeking.
+Related studies find that users with a high level of eHealth literacy tend to engage in online health information-seeking activities
+frequently (e.g., Chang et al., 2015; Quinn et al., 2017; Wong & Cheung, 2019). Also, eHealth literacy stresses users’ self-efficacy for
+using digital technologies. Accordingly, a user with a high level of eHealth literacy is able to handle health-related apps on their
+smartphones and wearable devices (Cho, Park & Lee, 2014; Kim, Shin, & Yoon, 2017; Zhang et al., 2018).
+    Several researchers have conjectured that eHealth literacy could be highly associated with users’ online health information
+sharing because eHealth literacy serves their online health interactions (e.g., Zhang et al., 2017, 2018). In our research context,
+whether users are willing to share health articles on social media might involve relevant online health interactions. When a user with
+a high level of eHealth literacy reads an online health article, he or she may flexibly connect medical knowledge embedded in the
+article to the reality such as one's current health condition and lifestyle. Consequently, the user might share the article with others for
+further discussions or clarifications (Chi et al., 2018). Users sharing a health article could also be a critical step to make a health-
+related decision such as deciding to inform doctors and discuss with them (Chen, Guo, Wu, & Ju, 2020). Unfortunately, relevant
+empirical investigations into the impact of eHealth literacy on the intention to share are still lacking. Thus, we propose the first
+hypothesis as follows.
+    H1: Users with higher eHealth literacy have a stronger intention to share health articles than those with lower eHealth literacy.
+
+
+2.2. Content valence and information sharing
+
+    Past research has put much effort into exploring the mechanisms underlying the relationship between the content valence of the
+online information (positive or negative) and its diffusion among information consumers (e.g., Berger & Milkman, 2012; Kim, 2015;
+Meng et al., 2018; Wang, Zhou, Jin, Fang, & Lee, 2017; Yin, Zhang, & Liu, 2020). Nonetheless, understanding about whether positive
+or negative online information evokes users’ sharing intention more readily has not achieved a consensus in the literature. Indeed,
+there are two competing mechanisms underlying the relationships between content valences of online information and its diffusion.
+    The first viewpoint suggests that positive online information is more likely to motivate users to share. This is probably because
+sharing positive online information may help the sharers establish a positive image. Most people prefer to share positive content with
+others to make them feel good, thereby making a good impression on others (Berger & Milkman, 2012). In contrast to sharing the
+positive content for the self-presentation purpose, the second viewpoint argues that negative online information is more likely to
+drive consumers’ sharing intention. For example, the literature on online word-of-mouth indicates that negative online reviews on
+products and services draw information seekers’ attention more easily and arouse their intention to share such negative content with
+peers to avoid potential purchase risks (Yin et al., 2016).
+
+                                                                             3
+H. Zhao, et al.                                                                          Information Processing and Management 57 (2020) 102354
+
+
+    In our research context, both two mechanisms could help to explain why users intend to share positive (or negative) health
+articles on social media rather than the opposite ones. On the one hand, users are likely to share positive health information with
+others as they would like to create a self-image that pays attention to healthcare in public. On the other hand, users might be more
+willing to share negative health information with others because such potential risks mentioned in the negative health information
+are more critical to our lives and survival. For this study, it is essential to explore which content valence (positive or negative) of
+health articles exposure to users can drive their stronger intention to share. Thus, we propose hypotheses as follows.
+    H2a: Users have a stronger intention to share positive health articles than negative ones.
+    H2b: Users have a stronger intention to share negative health articles than positive ones.
+
+2.3. The role of confirmation bias in sharing information
+
+    Confirmation bias often occurs when users encounter online information that favors or challenges their prior beliefs and preexisting
+attitudes. In this case, they tend to accept information that conforms to their preexisting beliefs and attitudes, but ignore information
+that deviates them (van Strien, Kammerer, Brand-Gruwel, & Boshuizen, 2016). This bias also affects their online information processing.
+For example, some research finds that people actively search for online information consistent with their preexisting beliefs, opinions,
+attitudes or expectations (e.g., Itzchakov & Van Harreveld, 2018), whereas some other research suggests that users prefer to consume
+and share like-minded online articles but avoid competing ones (e.g., Knobloch-Westerwick & Kleinman, 2012).
+    Confirmation bias varies in terms of one's confidence in their prior beliefs and preexisting attitudes (Yin et al., 2016). Con-
+firmation bias will be strengthened for those who are more likely to trust in their prior beliefs (Jonas et al., 2001). Such self-
+confidence also affects their assessment of the specific content characteristics of given online information that they are exposed to, as
+well as their related information-search experience (Knobloch-Westerwick & Kleinman, 2012). For instance, if people are more
+confident in their initial beliefs, they are more likely to form an extreme confirmation bias (e.g., very agree or very disagree) when
+encountering online information. In this case, people are inclined to process the information by leveraging their preexisting beliefs
+rather than the content characteristics of the information or their particular information-seeking and information-use experience
+(Yin et al., 2016).
+    On the other hand, if people are less uncertain about their initial beliefs, they will form a moderate confirmation bias when
+encountering online information. In this case, people are inclined to rely primarily on the specific content characteristics of the
+information and the experience with seeking and understanding the information to process the information (Knobloch-
+Westerwick et al., 2014; Yin et al., 2016). In our research context, confirmation bias would happen when users read online health
+articles. We posit that confirmation bias will affect individuals’ health information processing, particularly nudging or restraining the
+effects of eHealth literacy and the content valence of an article to which they are exposed on their intention to share. Thus, we
+propose research questions as follows.
+    RQ 1a: How does confirmation bias moderate the relation between eHealth literacy and intention to share?
+    RQ 1b: How does confirmation bias moderate the relation between content valence and intention to share?
+    We choose young people in China as our study participants for three reasons. First, young people are active users on social media
+platforms all over the world (Proulx, 2017). They are increasingly adopting these platforms for information sharing, including sharing
+health-related issues (Korda & Itani, 2013). Second, against the backdrop of China's fast development and transformation, young
+Chinese nowadays face more severe mental and physical health problems than their predecessors (e.g., Gong et al., 2012; Patel,
+Flisher, Hetrick, & McGorry, 2007). Accordingly, health information sharing on social media may become one vital means to enhance
+their healthcare self-awareness (Byron, Albury, & Evers, 2013). Third, research on health information sharing via social media among
+Chinese young people still lags. To respond to such a drawback, we thus investigate this particular group of social media users.
+    Prior research indicates that users’ characteristics such as age, education, and social media usage experience are associated with
+their online health-related behaviors, such as seeking information and sharing information (Zhang et al., 2017). To control such
+potentially confounding factors, we also consider users’ demographic information as control variables (or covariates) in this study.
+The demographic information includes gender, age, education level, discipline background, and information-sharing experience on
+social media (cf. Zhang et al., 2017). The research model and questions are structured and depicted in Fig. 1.
+
+3. Methodology
+
+3.1. Research setting
+
+    This study attempts to draw causal inferences through the use of statistical techniques by empirically investigating users’ intention
+to share online health articles on social media. Specifically, we employed a lab experiment to examine the effects of related variables
+on users’ intention to share. A lab experiment gives us precise control over other confounding factors such as users’ demographic
+information (Ambuehl & Li, 2018; Banerjee & Chua, 2019). Additionally, experimental research is able to establish the existence of
+cause-and-effect relationships among variables of interest (Wahyuni, 2012).
+    Because our target population is young people in China, we recruited participants and conducted our experiment at a public
+university in Central China. This university enrolls young people from almost all provinces of China, including Hong Kong, Macau,
+and Taiwan. We put up posters in several schools of this university to recruit participants. On the posters, we elaborated on our
+research purpose, that is, to understand users’ confirmation bias and related information behavior. In addition, we declared the
+confidentiality of our study on the posters. Specifically, we informed that taking part in this experiment was entirely voluntary and
+
+                                                                   4
+H. Zhao, et al.                                                                           Information Processing and Management 57 (2020) 102354
+
+
+
+
+                                                          Fig. 1. Research model.
+
+
+participants were able to refuse to participate or withdraw from the experiment at any time. We made sure that all participants would
+not be identified by names in any reports of the completed study, and analyses of the collected information would be performed at the
+group level only.
+
+3.2. Research design and procedure
+
+     An initial pool of 94 volunteers from different disciplines was created after obtaining their informed consent. We compared the
+distribution of demographic information for the early 30 respondents and the late 30 respondents (roughly the first and last one-third
+of the sample). We found no significant differences between the two groups, indicating that response bias was not a concern for this
+study (Sivo, Saunders, Chang, & Jiang, 2006). To ensure the data quality collected from the participants, we gave everyone an
+incentive of 30 CNY (about 4.4 USD) as a token of appreciation after they finished the experiment. In the experiment, we followed
+several steps to assign them to different treatment groups randomly, and the detailed process proceeded as follows.
+     Firstly, the participants were asked to participate in a pre-experiment survey. The purpose of the survey is to learn about their
+demographic information and eHealth literacy. Demographic information includes gender, age, education level, discipline back-
+ground, and social media usage experience in sharing information. Measures of eHealth literacy are adapted from the “eHealth
+Literacy Scale” (see Van der Vaart et al., 2011, p. 6). It consists of eight items with a 5-point Likert scale, the options of which range
+from “strongly disagree” to “strongly agree.” Specific items that make up these scales are shown in Table 3.
+     After measuring the participants’ eHealth literacy, they were then divided into two types (high eHealth literacy and low eHealth
+literacy) according to their obtained scores of eHealth literacy. Specifically, those who scored higher than the mean value of eHealth
+literacy (M = 3.525, SD=0.738) were assigned to Group 1 (high eHealth literacy), while those who scored lower than the mean
+value were assigned to Group 2 (low eHealth literacy). To make each group comparable, we randomly removed some participants
+from each group. The final sample of each group includes 40 participants (40 × 2 = 80 participants in total).
+     Next, the participants in Group 1 and Group 2 were invited to read an online health article. In the experiment, we used four online
+health articles for the experimental stimuli, including two positive articles and two negative articles (namely PosiArti One, PosiArti Two,
+NegaArti One, and NegaArti Two; also see Appendix in detail). All the articles are written and reviewed by reputable healthcare
+professionals and thus are of high credibility and quality. We also have invited two experts in public health to evaluate the content
+valences of these articles before experimenting. The experts had related master's degrees from a Chinese university. Both of them
+confirmed the information accuracy and content valence embedded in the articles based on their reading experience.
+     For Group 1 (high eHealth literacy), we randomly assigned either one positive or negative online health article to each participant.
+Specifically, 10 participants of Group 1 were randomly chosen for exposure to one positive article (either PosiArti One or PosiArti Two),
+whereas the other 10 participants were exposed to one negative article (either NegaArti One or NegaArti Two). This thus led to two
+treatment groups—Group 1.A (high × positive) and Group 1.B (high × negative), each of which consisted of 20 participants. In the same
+way, participants from Group 2 (low eHealth literacy) were also randomly assigned either a positive or negative online health article. This
+led to two treatment groups—Group 2.A (low × positive) and Group 2.B (low × negative), each of which consisted of 20 participants.
+     For this study, we designed a 2 (eHealth literacy: high and low) × 2 (content valence: positive and negative) between-participants
+experiment, which contained four treatment groups (high × positive, low × positive, high × negative, and low × negative). Fig. 2
+
+                                                                    5
+H. Zhao, et al.                                                                          Information Processing and Management 57 (2020) 102354
+
+
+
+
+                                                       Fig. 2. Research procedure.
+
+
+presents the process of how the four treatments were created. In summary, a total of 80 participants were randomly assigned to four
+treatment groups, with 20 participants in each treatment group.
+    In the experiment, the participants were asked to assess their confirmation bias after reading the article as well as their intention
+to share the article on social media. Measures of confirmation bias were adapted from Knobloch-Westerwick and Kleinman (2012)
+and comprised three items with a 5-point Likert scale. Measures of intention to share were adapted from Chua and Banerjee (2018)
+and consisted of two items with a 5-point Likert scale.
+    Because our research was conducted in China, all the items of measuring the constructs were translated into Chinese through
+employing a translation committee approach (e.g., Chen, Chua, & Deng, 2018; Fu, Chen, & Zheng, 2020). To ensure the face validity
+of the items, the authors participated in the translation, all of whom were effectively bilingual in Mandarin and English.
+    Table 2 presents the demographic information regarding the participants (n = 80), including gender, age, education level,
+discipline background, and their information-sharing experience on social media. Variables in the survey involve “eHealth literacy,”
+“confirmation bias,” and “intention to share.” Table 3 shows the descriptive statistics of the variables, including mean values,
+standard deviations, Cronbach's α values, and factor loadings values. Table 3 also presents the items for measuring the variables.
+According to the Cronbach's α values (threshold value >0.70) and factor loadings (threshold value >0.50) of the table, we can
+conclude that the variables have good reliabilities (Qiu, Pang, & Lim, 2012).
+
+
+
+                                                                   6
+H. Zhao, et al.                                                                                         Information Processing and Management 57 (2020) 102354
+
+
+          Table 2
+          Demographic information of the participants.
+              Demography                                                             Category                                                 Count
+
+              Gender                                                                 Male                                                     39
+                                                                                     Female                                                   41
+              Age                                                                    ≤18                                                      5
+                                                                                     19–25                                                    63
+                                                                                     ≥26                                                      12
+              Education level                                                        Undergraduate                                            33
+                                                                                     Postgraduate                                             47
+              Discipline background                                                  Humanity & social sciences                               37
+                                                                                     Science and engineering                                  26
+                                                                                     Others                                                   17
+              Information-sharing experience on social media                         ≤1year                                                   1
+                                                                                     2—4 year                                                 36
+                                                                                     5—7 year                                                 28
+                                                                                     ≥8 year                                                  15
+
+
+
+Table 3
+Measures of variables and their descriptive statistics.
+  Construct                     Mean ± SD            Cronbach's α    Items                                                                    Factor loadings
+
+  eHealth literacy              3.525 ± 0.738        .834            1. I know what health resources are available online                     .794
+                                                                     2. I know where to find helpful online health resources                  .801
+                                                                     3. I know how to find helpful online health resources                    .856
+                                                                     4. I know how to use the internet to answer my health questions          .777
+                                                                     5. I know how to use the health information I find to help me            .803
+                                                                     6. I have the skills to evaluate the health information I find           .786
+                                                                     7. I can tell high-quality from low-quality online health                .763
+                                                                     information
+                                                                     8. I feel confident in using online information to make health           .792
+                                                                     decisions
+                       1
+  Confirmation bias             3.512 ± 0.981        .865            1. The arguments in this article are (very inconsistent, inconsistent,   .851
+                                                                     neutral, consistent, very consistent) with my initial beliefs
+                                                                     2. I (very disagree, disagree, am neutral, agree, very agree) with the   .833
+                                                                     arguments in this article
+                                                                     3. I (very dislike, dislike, am neutral with, like, very like) the       .827
+                                                                     arguments in this article
+                       2
+  Intention to share            3.175 ± 1.145        .847            1. I shall share this article with others on social media (from very     .858
+                                                                     impossible to very possible)
+                                                                     2. I intend to share the article with others on social media (from       .869
+                                                                     very impossible to very possible)
+
+Note:1. For interpreting the 5-point Likert Scale of confirmation bias, if the value locates the interval from 1 to 2 (excluding 2), it means extreme
+negative confirmation bias; if the value locates the interval from 2 to 3 (excluding 3), it means moderate negative confirmation bias; 3 means no
+confirmation bias; if the value locates the interval from 3 to 4 (excluding 4), it means moderate positive confirmation bias; if the value locates the
+interval from 4 to 5, it means extreme positive confirmation bias.
+2. For interpreting the 5-point Likert Scale of intention to share, 1 refers to “very impossible,” 2 refers to “impossible,” 3 refers to “neutral,” 4 refers
+to “possible,” and 5 refers to “very possible.”.
+
+
+
+3.3. Manipulation checks
+
+    To ensure that our manipulation of eHealth literacy and content valence was effective, we employed two approaches to check the
+manipulation, respectively. For eHealth literacy, as suggested by Choi, Kim and Jiang (2016), we calculated the mean values and
+standard deviations of obtained scores between participants with high eHealth literacy (M = 3.862, SD = 0.865) and with low
+eHealth literacy (M = 3.144, SD = 1.112). The independent t-test results show that participants with high eHealth literacy scored
+significantly better than those with low eHealth literacy (t (39) = 2.460, p<.01). This result indicated that our manipulation of
+eHealth literacy was effective.
+    We avoided asking the participants to directly judge the content valence of the article that they read. This is because if we did so,
+the participants could realize that there were two types of articles in terms of the content valence (positive and negative) in this
+experiment. Such suspicion could affect their response to questions of the following-up survey. Thus, we took another way to make
+sure the effectiveness of the manipulation of content valence. According to the approach proposed by Li, Huang, Tan and Wei (2013),
+we invited two postgraduates in Information Science to evaluate the content valences of articles, both of whom were preparing for the
+final year projects concerning online health information behaviors. They had read the health articles which would work as the
+experimental stimuli carefully and independently evaluated the content valence of the articles based on their reading experience
+
+                                                                             7
+H. Zhao, et al.                                                                                Information Processing and Management 57 (2020) 102354
+
+
+without any discussion. Both agreed that our manipulation in terms of the content valence of the articles was appropriate.
+
+3.4. Data analysis
+
+    First, to test H1, H2a, and H2b, we investigate the main effects of eHealth literacy and content valence on users’ intention to share
+online health information, respectively. This study conducts a two-way analysis of variance (ANOVA). As a type of hypothesis-based
+test, a two-way ANOVA approach can compare the mean differences between groups that have been split on two independent
+variables (i.e., factors) so as to test if there exists a statistically significant effect of each factor on a dependent variable (Maxwell &
+Delaney, 2004). For this study, this approach examined the independent effect of each factor (i.e., eHealth literacy and content
+valence) on the dependent variable (i.e., intention to share).
+    Second, to address RQ1a and RQ1b, we investigate the moderating effect of confirmation bias on the relations between eHealth
+literacy, content valence, and intention to share. This study thus conducts a two-way analysis of covariance (ANCOVA). This is
+because the ANCOVA approach can simultaneously test the moderating effect of confirmation bias on the relationship between
+eHealth literacy and intention to share as well as the relationship between content valence and intention to share. Furthermore, the
+approach controls the effect of other covariates (participants’ demographic information). The covariates have been transformed into
+dummy variables before conducting the ANCOVA test using a regression model (Maxwell & Delaney, 2004). All data analyses were
+conducted using SPSS Version 21.
+
+4. Results
+
+4.1. Effects of eHealth literacy and content valence on the intention to share
+
+    The results of the two-way ANOVA are shown in Table 4. The results suggest that only the effect of eHealth literacy on users’
+intention to share was significant (F (1, 78) = 3.957, p <0.05, η2 = 0.362), indicating that participants with a high level of eHealth
+literacy (M = 3.425, SD = 0.083) were more willing to share health articles on social media than those with a low level of eHealth
+literacy (M = 2.925, SD = 1.163). Thus, H1 was supported. By contrast, both H2a and H2b were not supported (F (1, 78) = 1.328,
+p = .847), suggesting that participants exposed to positive health articles (M = 3.15, SD = 1.167) held an identical extent of sharing
+intention compared to those exposed to negative articles (M = 3.20, SD = 1.137).
+
+4.2. Moderating role of confirmation bias
+
+   We performed the ANCOVA to test the moderating effect of confirmation bias, wherein participants’ demographic information
+were included as covariates (including gender, age, education levels, discipline background, and social media usage experience). The
+ANCOVA results, as shown in Table 5, revealed that the moderating role of confirmation bias was significant in the relationship
+between eHealth literacy and intention to share (F (3, 76) =21.655, p<.01, p2 =0.905, β coefficient= 0.567), as well as the re-
+lationship between content valence and intention to share (F (4, 75) =3.357, p<.05, p2 =0.281, β coefficient= −0.293).
+    We plotted the distribution of the extent of confirmation bias among 80 participants, as shown in Fig. 3. Specifically, thirty-one of
+the participants in our sample (accounting for 38.75% of the sample) had no confirmation bias (i.e., the score was 3). Only two
+respondents had extreme negative confirmation bias (i.e., the score was 1); eight respondents had moderate negative confirmation
+bias (i.e., the score was 2); twenty-five respondents had moderate positive confirmation bias (i.e., the score was 4); and fourteen
+respondents had extreme positive confirmation bias (i.e., the score was 5).
+    To delve deeper, we further plotted the distributions between the extent of confirmation bias and their intention to share in
+different levels of eHealth literacy (high and low) and content valence (positive and negative), as shown in Fig. 4. The purpose is to
+visualize the moderating role of confirmation bias comprehensively. Because we had divided the participants into four treatment
+groups, we calculated the mean values of their confirmation bias and intention to share across the four treatment groups.
+    The left-side figure showed that participants with a high level of eHealth literacy were probably to have a stronger intention to
+share positive health articles than negative ones when they had polarized confirmation bias. Specifically, the mean value of the
+intention to share went to the maximum when users were exposed to positive health articles and had extreme positive confirmation
+
+Table 4
+Two-way ANOVA results.
+  Sum of Square                                                 df               Mean Square                      F                         Sig
+
+  Effect of eHealth literacy on intention to share (H1)
+  Between Groups                         5.000                  1                5.000                            3.957                     0.049
+  Within Groups                          98.550                 78               1.263
+  Total                                  103.550                79
+  Effect of content valence on intention to share (H2a & H2b)
+  Between Groups                         0.050                  1                0.050                            0.038                     0.847
+  Within Groups                          103.500                78               1.327
+  Total                                  103.550                79
+
+
+
+                                                                     8
+H. Zhao, et al.                                                                                     Information Processing and Management 57 (2020) 102354
+
+
+Table 5
+ANCOVA results.
+  Source                                            Type III Sum of Square       df   Mean square      F           Sig.       2         Observed power
+                                                                                                                              p
+
+
+  Dependent variable: Intention to share
+  Gender                                            3.188                        1    3.188            2.409       0.126      0.037     0.333
+  Age                                               0.920                        1    0.920            0.710       0.091      0.048     0.394
+  Education level                                   4.450                        1    4.450            4.128       0.047      0.065     0.516
+  Discipline background                             4.356                        1    4.356            4.041       0.049      0.064     0.507
+  Information-sharing experience on social media    3.127                        1    3.127            2.810       0.141      0.033     0.325
+  eHealth literacy                                  5.738                        1    5.738            2.831       0.176      0.441     0.243
+  Content valence                                   0.120                        1    0.120            0.014       0.908      0.001     0.051
+  Confirmation bias                                 17.351                       4    4.338            1.747       0.268      0.564     0.265
+  eHealth literacy × Confirmation bias              6.625                        3    2.208            21.655      0.001      0.905     0.999
+  Content valence × Confirmation bias               3.223                        4    0.806            3.357       0.020      0.281     0.791
+
+
+
+
+                                       Fig. 3. The distribution of the extent of confirmation bias in the sample.
+
+
+
+
+        Fig. 4. Moderating effect of confirmation bias on the relationships among eHealth literacy, content valence and intention to share.
+
+
+bias, whereas the users who had extreme negative confirmation bias held the second-largest intention to share health articles re-
+gardless of the articles’ content valence. In contrast, participants with a high level of eHealth literacy were more likely to share
+negative health articles than positive ones when they had moderate confirmation bias or no confirmation bias.
+
+                                                                             9
+H. Zhao, et al.                                                                             Information Processing and Management 57 (2020) 102354
+
+
+    The right-side figure showed that participants with a low level of eHealth literacy reached a maximum mean value of the intention
+to share health articles, regardless of the content valence was positive or negative, only when their confirmation bias went moderate
+positive. However, if they had extreme positive confirmation bias, their intention to share would decrease significantly, especially
+when they were exposed to negative articles. Nonetheless, participants with a low level of eHealth literacy were less likely to share
+when they had negative confirmation bias or had no confirmation bias.
+
+5. Discussion
+
+5.1. Key findings
+
+    Overall, the findings of this paper are twofold. First, we find that: (1) all else equal, users with a high level of eHealth literacy were
+more likely to share health articles than those with a low level of eHealth literacy; and (2) all else equal, the content valence
+embedded in a particular article could not significantly affect users’ intention to share. The current literature has suggested that
+eHealth literacy helps to improve an individual's health decision making (e.g., Quinn et al., 2017; Wong & Cheung, 2019). This study
+confirms the salient role of eHealth literacy in users’ intention to share online health information. Nonetheless, the role of content
+valence in the sharing intention is still not established, which, in turn, preserves the existing dispute that the relationship between the
+content valence of online information and its diffusion is uncertain.
+    Second, after controlling potential covariates (i.e., users’ demographic information), we find that the confirmation bias played an
+intricate role in the relationships between eHealth literacy, content valence, and users’ intention to share. The results showed that: (1)
+users with a high level of eHealth literacy were more likely to share positive health articles when their confirmation bias was
+polarized; (2) users with a high level of eHealth literacy were more likely to share negative health articles when their confirmation
+bias was moderate, or they had no confirmation bias; (3) users with a low level of eHealth literacy were more likely to share
+regardless of the content valence of articles when they had moderate positive confirmation bias; (4) users with a low level of eHealth
+literacy were more likely to share positive health articles than negative ones when they had extreme positive confirmation bias.
+    Although related literature acknowledges the role of confirmation bias in users’ information processing such as seeking and using
+information that conforms to their initial beliefs (e.g., Knobloch-Westerwick et al., 2014; Yin et al., 2016), investigations of the
+impact of users’ confirmation bias on their health information sharing are very few. This study advances this stream of literature by
+uncovering the role of confirmation bias in promoting users’ intention to share health articles on social media.
+
+5.2. Implications for theory
+
+    Theoretically, the most significant contribution of this study is that it proposes an explanation mechanism about how eHealth
+literacy and content valence might promote users’ intention to share health articles on social media. Our results suggest that despite
+the potential variances of eHealth literacy among users and the content valence of health articles that they read, if leveraging their
+confirmation bias appropriately, it is possible to increase their sharing intention on social media.
+    In terms of eHealth literacy, users with a higher level of eHealth literacy held a stronger intention to share. However, our results
+showed that the extent of the sharing intention could shift in terms of their confirmation bias. This fine-grained finding deepens the
+understanding of the effect of eHealth literacy on users’ intention to share online health articles. Increasing the extent of users’
+eHealth literacy seems to promote their sharing intention of health articles. However, the increment of the extent of sharing intention
+varies among them. This is because users’ initial attitudes toward and beliefs about certain health articles also affect their sharing
+intention in the form of confirmation bias.
+    In terms of content valence, our results showed that there was no significant difference in users’ intention to share regardless of
+the health articles were positive or negative. However, our following-up analyses indicated that the impact of content valence on
+users’ sharing intention became significant when considering their eHealth literacy and confirmation bias jointly. Specifically, when
+users with a high level of eHealth literacy were exposed to positive health articles and formed extreme confirmation bias (which
+means the content either deviated their initial beliefs or conforms to their initial beliefs, to a great extent), they were more likely to
+share the articles. This implies that users with a high level of eHealth literacy could exhibit sharing behavior, not only for supporting
+information that similar to their initial beliefs but also for responding to or even combating information that differs from their
+standpoints (Chua & Banerjee, 2017).
+    However, when users with a low level of eHealth literacy were exposed to positive health articles and held extreme positive
+confirmation bias, they were more likely to share the articles. From an evolutionary viewpoint, we conjecture that people could be
+more comfortable with positive health information because such information makes them feel safe. Especially for users with a low
+level of eHealth literacy, they might depend heavily on the positive health information that conforms to their initial beliefs due to
+their incompetence of processing attitude-inconsistency messages (Vydiswaran et al., 2015). Yet, it still needs further empirical
+investigations into this proposition.
+
+5.3. Implications for practice
+
+   Our findings help to inform health information providers who want to promote consumers’ intention to share health information
+on social media. They are suggested to adopt a consumer segmentation strategy when offering online health information. The providers
+probably need to obtain necessary information about consumers, such as their eHealth literacy and their initial beliefs of certain
+
+                                                                     10
+H. Zhao, et al.                                                                           Information Processing and Management 57 (2020) 102354
+
+
+health-related topics, when initially providing them with health articles. In the process, consumers’ eHealth literacy can be measured
+through professional scales (e.g., Norman & Skinner, 2006), while confirmation bias can be assessed by the propensity of their initial
+attitudes toward such topics (Vydiswaran et al., 2015). However, such suggestions are also contingent on related platforms’ affor-
+dances and system settings.
+    If possible, health information providers are encouraged to serve the consumers based on their respective eHealth literacy and the
+assessment of their initial beliefs about a certain topic. For consumers who hold a low level of eHealth literacy, the providers may
+offer positive health articles about the topic similar to their initial beliefs to a great extent (forming an extreme positive confirmation
+bias). On the other hand, for consumers who hold a high level of eHealth literacy, the providers may offer positive articles about the
+topic that leads to their polarized confirmation bias or offer negative articles about the topic that may lead to their relatively
+moderate confirmation bias. As suggested by previous research (e.g., Vydiswaran et al., 2015), confirmation bias can be controlled by
+recommending articles that are inconsistent with consumers’ initial beliefs but full of persuasive and informative arguments.
+
+
+5.4. Limitations and future research directions
+
+    This study is not without limitations. The first limitation can be attributed to our used method—the lab experiment. Although a
+controlled lab experiment can ensure the internal validity of this study, the external validity (i.e., generalizability) might face
+challenges. For this study, we used a between-participants design and each participant was exposed to only one type of online health
+articles (positive or negative). However, in reality, users tend to browse multiple online health articles with congruent or opposite
+valence at the same time. Hence, future research may investigate users’ intention to share when they are exposed to multiple online
+health articles. Moreover, the sample size of our research was relatively small (n = 80). Although prior research using a lab ex-
+periment with a between-participants design suggests that sample size of each treatment group should be larger than 18 (ours is 20
+for each treatment group) (see Qiu et al., 2012), we hope future work to enlarge the sample size and strengthen the reliability of our
+results.
+    Last, our research participants were university students in China as we aimed to target young social media users of China.
+However, it is also interesting to do further investigations to improve generalizability in the following three ways. First, future studies
+may recruit young Chinese people from diverse sources, such as those from local factories and rural China as future research par-
+ticipants. These young people tend to be less educated and thus have relatively low eHealth literacy. The role of confirmation bias in
+their sharing intention could differ from those university students. Second, future studies may target other groups of social media
+users, such as older adults. Because older adults seem to have more health-related issues, and such health conditions might confound
+the role of confirmation bias. Third, future studies ought to conduct cross-cultural studies to validate the findings of this study. One
+significant direction could be a comparison of the role of confirmation bias in sharing online health articles between Chinese social
+media and non-Chinese ones.
+
+
+6. Conclusion
+
+    Social media users have enjoyed a wide variety of information services provided by healthcare professionals, such as dis-
+seminating medical knowledge by writing online health articles. However, enhancing users’ intention to share health articles is tricky
+as the sharing intention differs in their eHealth literacy and the content valence of the articles that they read. This study investigates
+the boundary conditions under which eHealth literacy and content valence can promote users’ intention to share by introducing a
+moderating factor: confirmation bias. This study concludes that for users with a high level of eHealth literacy, their intention to share
+health articles could be promoted in two conditions: (1) if their confirmation bias holds extreme, the providers may edit positive
+health articles for them; (2) if they have moderate confirmation bias or no confirmation bias, the providers may edit negative health
+articles for them. In contrast, for users with a low level of eHealth literacy, only when they have moderate positive confirmation bias,
+their intention to share is enhanced regardless of providing positive or negative health articles.
+
+
+CRediT authorship contribution statement
+
+   Haiping Zhao: Conceptualization, Writing - original draft, Data curation, Writing - review & editing. Shaoxiong Fu:
+Conceptualization, Methodology, Writing - review & editing. Xiaoyu Chen: Formal analysis, Conceptualization, Methodology,
+Writing - original draft, Writing - review & editing.
+
+
+Acknowledgments
+
+   The authors appreciate the comments from Associate Editor Ian Ruthven and the review team that tremendously improve the
+quality of this manuscript. The first author (H. Zhao) would like to thank: (1) National Demonstration Center for Experimental Library
+and Information Science Education of Wuhan University for providing the venue and facilities with us to experiment, and (2) Professor
+Shengli Deng for offering financial support in paying incentives to the research participants. Moreover, the third author (X. Chen)
+would like to thank Dr. Hong Xu and Mr. Han Zheng for commenting on the earlier versions of the manuscript.
+
+                                                                    11
+H. Zhao, et al.                                                                                                 Information Processing and Management 57 (2020) 102354
+
+
+Funding
+
+   This work is jointly supported by the China Scholarship Council (CSC No. 201806270048) and the National Natural Science
+Foundation of China (grant number: 71974149).
+
+Supplementary materials
+
+    Supplementary material associated withthis article can be found, in the online version, at doi:10.1016/j.ipm.2020.102354.
+
+Appendix. Experimental stimuli
+
+    As indicated earlier (see Section 3.2: Research design and procedure), we had four online health articles for the stimuli—two were
+positive, and the other two were negative. Of them, one positive and one negative article were collected from a health professional
+website—Guoke (www.guokr.com), and the other one positive and one negative article were collected from another professional websi-
+te—Zhihu (www.zhihu.com). This strategy enabled us to control the potential effects of both topics and sources of health articles on readers.
+    To avoid potential bias, we kept the themes of the articles (positive and negative) from the same website consistent (Chua &
+Banerjee, 2018). Specifically, articles that were harvested from Guoke concerned eating and health, whereas articles that were
+harvested from Zhihu concerned sexual-related issues. Both themes are among the common health topics discussed by young people
+(see Byron et al., 2013; Chi et al., 2018).
+    To ensure the specific content valences of four articles (positive or negative), we had invited two university students majoring in
+Public Health to judge them before the experiment. Also, we invited another two postgraduates in Information Science to assess
+whether the positive articles and the negative articles were different in terms of the content valence (i.e., manipulation check). The
+basic information of the four online health articles is presented in Table A1.
+
+
+Table A1
+Brief description of the experimental stimuli.
+  Category          Title                                                                                                            Source
+
+  PosiArti One      How to eat to make yourself slim healthily?                                                                      www.guokr.com/article/360937/
+  PosiArti Two      “Daddy, what is masturbation?”—Brilliant answers from Daddy                                                      zhuanlan.zhihu.com/p/45,594,288
+  NegaArti One      All people suffering from “fatty livers” are fatty? Caution! Slim persons and vegetarians also cannot            www.guokr.com/article/445947/
+                    escape.
+  NegaArti Two      AIDS in older adults and their neglected desires: less than 0.1 mm distance.                                     zhuanlan.zhihu.com/p/41,684,852
+
+
+
+
+References
+
+Alba, J. W., Broniarczyk, S. M., Shimp, T. A., & Urbany, J. E. (1994). The influence of prior beliefs, frequency cues, and magnitude cues on consumers’ perceptions of
+    comparative price data. Journal of Consumer Research, 21(2), 219–235. https://doi.org/10.1086/209394.
+Ambuehl, S., & Li, S. (2018). Belief updating and the demand for information. Games and Economic Behavior, 109, 21–39. https://doi.org/10.1016/j.geb.2017.11.009.
+Banerjee, S., & Chua, A. Y. (2019). Trust in online hotel reviews across review polarity and hotel category. Computers in Human Behavior, 90, 265–275. https://doi.org/
+    10.1016/j.chb.2018.09.010.
+Berger, J., & Milkman, K. L. (2012). What makes online content viral? Journal of Marketing Research, 49(2), 192–205. https://doi.org/10.1509/jmr.10.0353.
+Byron, P., Albury, K., & Evers, C. (2013). “It would be weird to have that on Facebook”: Young people's use of social media and the risk of sharing sexual health
+    information. Reproductive Health Matters, 21(41), 35–44. https://doi.org/10.1016/S0968-8080(13)41686-5.
+Chang, F. C., Chiu, C. H., Chen, P. H., Miao, N. F., Lee, C. M., Chiang, J. T., et al. (2015). Relationship between parental and adolescent eHealth literacy and online
+    health information seeking in Taiwan. Cyberpsychology, Behavior, and Social Networking, 18(10), 618–624. https://doi.org/10.1089/cyber.2015.0110.
+Chen, S., Guo, X., Wu, T., & Ju, X. (2020). Exploring the online doctor-patient interaction on patient satisfaction based on text mining and empirical analysis.
+    Information Processing & Management, 57(5), Article 102253. https://doi.org/10.1016/j.ipm.2020.102253.
+Chen, X., Chua, A. Y., & Deng, S. (2018). Comparing the web and mobile platforms of a social Q&A service from the user’s perspective. Aslib Journal of Information
+    Management, 70(2), 176–191. https://doi.org/10.1108/AJIM-06-2017-0149.
+Chi, Y., He, D., Han, S., & Jiang, J. (2018). What sources to rely on? Laypeople's source selection in online health information seeking. Proceedings of the 2018
+    conference on human information interaction & retrieval (pp. 233–236). ACM. https://doi.org/10.1145/3176349.3176881.
+Cho, J., Park, D., & Lee, H. E. (2014). Cognitive factors of using health apps: Systematic analysis of relationships among health consciousness, health information
+    orientation, eHealth literacy, and health app use efficacy. Journal of Medical Internet Research, 16(5), e125. https://www.jmir.org/2014/5/e125/?newDesign.
+Choi, B. C., Kim, S. S., & Jiang, Z. (2016). Influence of firm’s recovery endeavors upon privacy breach on online customer behavior. Journal of Management Information
+    Systems, 33(3), 904–933. https://doi.org/10.1080/07421222.2015.1138375.
+Chua, A. Y., & Banerjee, S. (2017). To share or not to share: The role of epistemic belief in online health rumors. International Journal of Medical Informatics, 108, 36–41.
+    https://doi.org/10.1016/j.ijmedinf.2017.08.010.
+Chua, A. Y., & Banerjee, S. (2018). Intentions to trust and share online health rumors: An experiment with medical professionals. Computers in Human Behavior, 87, 1–9.
+    https://doi.org/10.1016/j.chb.2018.05.02.
+Crook, B., Stephens, K. K., Pastorek, A. E., Mackert, M., & Donovan, E. E. (2016). Sharing health information and influencing behavioral intentions: The role of health
+    literacy, information overload, and the Internet in the diffusion of healthy heart information. Health Communication, 31(1), 60–71. https://doi.org/10.1080/
+    10410236.2014.936336.
+Fu, S., Chen, X., & Zheng, H. (2020). Exploring an adverse impact of smartphone overuse on academic performance via health issues: A stimulus-organism-response
+
+
+
+                                                                                     12
+H. Zhao, et al.                                                                                                Information Processing and Management 57 (2020) 102354
+
+
+     perspective. Behaviour & Information Technology, 1–13. https://doi.org/10.1080/0144929X.2020.1716848 Retrieved on 15th February 2020 from.
+Gao, Q., Tian, Y., & Tu, M. (2015). Exploring factors influencing Chinese user's perceived credibility of health and safety information on Weibo. Computers in Human
+     Behavior, 45, 21–31. https://doi.org/10.1016/j.chb.2014.11.071.
+Gong, P., Liang, S., Carlton, E. J., Jiang, Q., Wu, J., Wang, L., et al. (2012). Urbanisation and health in China. The Lancet, 379(9818), 843–852. https://doi.org/10.
+     1016/S0140-6736(11)61878-3.
+Guo, S., Guo, X., Fang, Y., & Vogel, D. (2017). How doctors gain social and economic returns in online health-care communities: A professional capital perspective.
+     Journal of Management Information Systems, 34(2), 487–519. https://doi.org/10.1080/07421222.2017.1334480.
+Institute of Medicine. (2004). Health Literacy: A Prescription to End Confusion. Retrieved on 26th May 2019 fromhttps://www.ncbi.nlm.nih.gov/pubmed/25009856.
+Itzchakov, G., & Van Harreveld, F. (2018). Feeling torn and fearing rue: Attitude ambivalence and anticipated regret as antecedents of biased information seeking.
+     Journal of Experimental Social Psychology, 75, 19–26. https://doi.org/10.1016/j.jesp.2017.11.003.
+Jonas, E., Schulz-Hardt, S., Frey, D., & Thelen, N. (2001). Confirmation bias in sequential information search after preliminary decisions: An expansion of dissonance
+     theoretical research on selective exposure to information. Journal of Personality and Social Psychology, 80(4), 557. Retrieved on 4th May 2019 from https://psycnet.
+     apa.org/buy/2001-00201-003.
+Kim, H. S. (2015). Attracting views and going viral: How message features and news-sharing channels affect health news diffusion. Journal of Communication, 65(3),
+     512–534. https://doi.org/10.1111/jcom.12160.
+Kim, K. J., Shin, D. H., & Yoon, H. (2017). Information tailoring and framing in wearable health communication. Information Processing & Management, 53(2), 351–358.
+     https://doi.org/10.1016/j.ipm.2016.11.005.
+Knobloch-Westerwick, S., Johnson, B. K., & Westerwick, A. (2014). Confirmation bias in online searches: Impacts of selective exposure before an election on political
+     attitude strength and shifts. Journal of Computer-Mediated Communication, 20(2), 171–187. https://doi.org/10.1111/jcc4.12105.
+Knobloch-Westerwick, S., & Kleinman, S. B. (2012). Preelection selective exposure: Confirmation bias versus informational utility. Communication Research, 39(2),
+     170–193. https://doi.org/10.1177/0093650211400597.
+Korda, H., & Itani, Z. (2013). Harnessing social media for health promotion and behavior change. Health Promotion Practice, 14(1), 15–23. https://doi.org/10.1177/
+     1524839911405850.
+Li, M., Huang, L., Tan, C. H., & Wei, K. K. (2013). Helpfulness of online product reviews as seen by consumers: Source and content features. International Journal of
+     Electronic Commerce, 17(4), 101–136. https://doi.org/10.2753/JEC1086-4415170404.
+Mano, R. S. (2014). Social media and online health services: A health empowerment perspective to online health information. Computers in Human Behavior, 39,
+     404–412. https://doi.org/10.1016/j.chb.2014.07.032.
+Maxwell, S. E., & Delaney, H. D. (2004). Designing experiments and analyzing data: A model comparison perspective (2nd ed.). Lawrence Erlbaum Associates, Inc.
+Meng, J., Peng, W., Tan, P. N., Liu, W., Cheng, Y., & Bae, A. (2018). Diffusion size and structural virality: The effects of message and network features on spreading
+     health information on twitter. Computers in Human Behavior, 89, 111–120. https://doi.org/10.1016/j.chb.2018.07.039.
+Myrick, J. G. (2017). The role of emotions and social cognitive variables in online health information seeking processes and effects. Computers in Human Behavior, 68,
+     422–433. https://doi.org/10.1016/j.chb.2016.11.071.
+Norman, C. D., & Skinner, H. A. (2006). eHealth literacy: Essential skills for consumer health in a networked world. Journal of Medical Internet research, 8(2), e9.
+     Retrieved on 12th May 2019 from https://www.jmir.org/2006/2/e9/?xml.
+Nutbeam, D. (2000). Health literacy as a public health goal: A challenge for contemporary health education and communication strategies into the 21st century. Health
+     Promotion International, 15(3), 259–267. https://doi.org/10.1093/heapro/15.3.259.
+Patel, V., Flisher, A. J., Hetrick, S., & McGorry, P. (2007). Mental health of young people: A global public-health challenge. The Lancet, 369(9569), 1302–1313. https://
+     doi.org/10.1016/S0140-6736(07)60368-7.
+Pian, W., Song, S., & Zhang, Y. (2020). Consumer health information needs: A systematic review of measures. Information Processing & Management, 57(2), Article
+     102077. https://doi.org/10.1016/j.ipm.2019.102077.
+Proulx, N. (2017). How young is too young to use social media? The New York Times. Retrieved on 4th May 2019 from https://www.nytimes.com/2017/12/14/learning/
+     how-young-is-too-young-to-use-social-media.html.
+Qiu, L., Pang, J., & Lim, K. H. (2012). Effects of conflicting aggregated rating on eWOM review credibility and diagnosticity: The moderating role of review valence.
+     Decision Support Systems, 54(1), 631–643. https://doi.org/10.1016/j.dss.2012.08.020.
+Quinn, S., Bond, R., & Nugent, C. (2017). Quantifying health literacy and eHealth literacy using existing instruments and browser-based software for tracking online
+     health information seeking behavior. Computers in Human Behavior, 69, 256–267. https://doi.org/10.1016/j.chb.2016.12.032.
+Shi, J., Poorisat, T., & Salmon, C. T. (2018). The use of social networking sites (SNSs) in health communication campaigns: Review and recommendations. Health
+     Communication, 33(1), 49–56. https://doi.org/10.1080/10410236.2016.1242035.
+Sivo, S. A., Saunders, C., Chang, Q., & Jiang, J. J. (2006). How low should you go? Low response rates and the validity of inference in IS questionnaire research. Journal
+     of the Association for Information Systems, 7(1), 351–414. https://doi.org/10.17705/1jais.00093.
+Thackeray, R., Neiger, B. L., Smith, A. K., & Van Wagenen, S. B. (2012). Adoption and use of social media among public health departments. BMC Public Health, 12(1),
+     242. https://doi.org/10.1186/1471-2458-12-242.
+Van de Vord, R. (2010). Distance students and online research: Promoting information literacy through media literacy. The Internet and Higher Education, 13(3),
+     170–175. https://doi.org/10.1016/j.iheduc.2010.03.001.
+Van der Vaart, R., van Deursen, A. J., Drossaert, C. H., Taal, E., van Dijk, J. A., & van de Laar, M. A. (2011). Does the eHealth Literacy Scale (eHEALS) measure what it
+     intends to measure? Validation of a Dutch version of the eHEALS in two adult populations. Journal of Medical Internet Research, 13(4), e86. Retrieved on 27th
+     November 2019 from https://www.jmir.org/2011/4/e86/.
+van Strien, J. L., Kammerer, Y., Brand-Gruwel, S., & Boshuizen, H. P. (2016). How attitude strength biases information processing and evaluation on the web?
+     Computers in Human Behavior, 60, 245–252. https://doi.org/10.1016/j.chb.2016.02.057.
+Vydiswaran, V. V., Zhai, C., Roth, D., & Pirolli, P. (2015). Overcoming bias to learn about controversial topics. Journal of the Association for Information Science and
+     Technology, 66(8), 1655–1672. https://doi.org/10.1002/asi.23274.
+Wahyuni, D. (2012). The research design maze: Understanding paradigms, cases, methods and methodologies. Journal of Applied Management Accounting Research,
+     10(1), 69–80. Retrieved on 4th May 2019 from http://search.ebscohost.com/login.aspx?direct=true&db=bth&AN=76405928&site=eds-live&scope=site.
+Wang, C., Zhou, Z., Jin, X. L., Fang, Y., & Lee, M. K. (2017). The influence of affective cues on positive emotion in predicting instant information sharing on microblogs:
+     Gender as a moderator. Information Processing & Management, 53(3), 721–734. https://doi.org/10.1016/j.ipm.2017.02.003.
+Wong, D. K. K., & Cheung, M. K. (2019). Online health information seeking and eHealth Literacy among patients attending a primary care clinic in Hong Kong: A cross-
+     sectional survey. Journal of Medical Internet Research, 21(3), e10831. Retrieved on 10th October 2019 from https://www.jmir.org/2019/3/e10831/.
+Yin, C., Zhang, X., & Liu, L. (2020). Reposting negative information on microblogs: Do personality traits matter? Information Processing & Management, 57(1), Article
+     102106. https://doi.org/10.1016/j.ipm.2019.102106.
+Yin, D., Mitra, S., & Zhang, H. (2016). When do consumers value positive vs. negative reviews? An empirical investigation of confirmation bias in online word of
+     mouth. Information Systems Research, 27(1), 131–144. https://doi.org/10.1287/isre.2015.0617.
+Zhang, X., Guo, F., Xu, T., & Li, Y. (2020). What motivates physicians to share free health information on online health platforms? Information Processing & Management,
+     57(2), Article 102166. https://doi.org/10.1016/j.ipm.2019.102166.
+Zhang, X., Yan, X., Cao, X., Sun, Y., Chen, H., & She, J. (2018). The role of perceived e-health literacy in users’ continuance intention to use mobile healthcare
+     applications: An exploratory empirical study in China. Information Technology for Development, 24(2), 198–223. https://doi.org/10.1080/02681102.2017.
+     1283286.
+Zhang, Y., Sun, Y., & Kim, Y. (2017). The influence of individual differences on consumer's selection of online sources for health information. Computers in Human
+     Behavior, 67, 303–312. https://doi.org/10.1016/j.chb.2016.11.008.
+
+
+
+
+                                                                                    13
+

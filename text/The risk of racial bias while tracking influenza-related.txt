@@ -1,0 +1,809 @@
+                             Journal of the American Medical Informatics Association, 28(4), 2021, 839–849
+                                                                                 doi: 10.1093/jamia/ocaa326
+                                                           Advance Access Publication Date: 23 January 2021
+                                                                                      Research and Applications
+
+
+
+
+Research and Applications
+
+The risk of racial bias while tracking influenza-related
+content on social media using machine learning
+
+
+
+
+                                                                                                                                                                 Downloaded from https://academic.oup.com/jamia/article/28/4/839/6114713 by guest on 18 January 2023
+Brandon Lwowski and Anthony Rios
+
+
+Department of Information Systems and Cyber Security, University of Texas at San Antonio, San Antonio, Texas, USA
+
+Corresponding Author: Anthony Rios, Department of Information Systems and Cyber Security, University of Texas at San
+Antonio, San Antonio, TX USA; anthony.rios@utsa.edu
+Received 20 June 2020; Editorial Decision 2 December 2020; Accepted 8 December 2020
+
+
+ABSTRACT
+Objective: Machine learning is used to understand and track influenza-related content on social media. Because
+these systems are used at scale, they have the potential to adversely impact the people they are built to help. In
+this study, we explore the biases of different machine learning methods for the specific task of detecting
+influenza-related content. We compare the performance of each model on tweets written in Standard American
+English (SAE) vs African American English (AAE).
+Materials and Methods: Two influenza-related datasets are used to train 3 text classification models (support
+vector machine, convolutional neural network, bidirectional long short-term memory) with different feature
+sets. The datasets match real-world scenarios in which there is a large imbalance between SAE and AAE exam-
+ples. The number of AAE examples for each class ranges from 2% to 5% in both datasets. We also evaluate
+each model’s performance using a balanced dataset via undersampling.
+Results: We find that all of the tested machine learning methods are biased on both datasets. The difference in
+false positive rates between SAE and AAE examples ranges from 0.01 to 0.35. The difference in the false nega-
+tive rates ranges from 0.01 to 0.23. We also find that the neural network methods generally has more unfair
+results than the linear support vector machine on the chosen datasets.
+Conclusions: The models that result in the most unfair predictions may vary from dataset to dataset. Practi-
+tioners should be aware of the potential harms related to applying machine learning to health-related social me-
+dia data. At a minimum, we recommend evaluating fairness along with traditional evaluation metrics.
+
+Key words: deep learning, classification, machine learning, social network, fairness
+
+
+
+INTRODUCTION                                                                           combat the anti-vaccine narrative.4 Here, we examine machine
+Owing to the seasonal outbreaks of the influenza virus, there is an                    learning methods trained on social media data to track influenza-
+interest in digital tools and techniques for multiple tasks, including,                related content.
+but not limited to, digital contact tracing,1,2 epidemiological stud-                      Current evidence suggests that there is a disproportionate inci-
+ies,3 and monitoring the prevalence of vaccinations.4 The tools and                    dence of disease and death among underrepresented minority
+techniques range from applications installed on user’s personal                        groups. For example, there are significant racial disparities in influ-
+phones to track the exact spread of a virus2 to the development of                     enza vaccinations.10,11 Tse et al12 report a nearly 10% difference in
+machine learning–based techniques to study the spread of a virus us-                   the influenza vaccination rate between non-Hispanic Black/African
+ing social media.5–9 Similarly, machine learning–based methods                         American adults over 50 years of age and non-Hispanic White
+have been developed to monitor the public’s view on vaccines to                        adults. Fiscella et al13 estimated that if influenza immunization rates
+
+C The Author(s) 2021. Published by Oxford University Press on behalf of the American Medical Informatics Association.
+V
+All rights reserved. For permissions, please email: journals.permissions@oup.com                                                                          839
+840                                                            Journal of the American Medical Informatics Association, 2021, Vol. 28, No. 4
+
+
+
+were equal for all races, nearly 2000 minority deaths could be pre-          cal scenario of the use of machine learning to detect vaccine-related
+vented every year, saving more than 33 000 minority life-years.              misinformation. If information spread by African American commu-
+    In this article, we measure the fairness of machine learning–            nities is always (incorrectly) labeled as misinformation, then this
+based tools for the specific task of detecting influenza-related mes-        could further exacerbate the disparities in the vaccination rate. It is
+sages on social media. Machine learning– and technology-based                also important to think about which is more important, predictive
+techniques have the potential to scale traditional public health tasks       equality or equality of opportunity. This importance depends on the
+from a few hundred people at a time to millions (eg, digital contact         downstream application of the models. For the purpose of this arti-
+tracing).1 Therefore, digital tools have the potential to improve pub-       cle, we assume they are equally important.
+lic health faster than ever before. Unfortunately, if there are even             This article focuses on measuring racial bias using the definition
+small differences in the performance of these tools across various de-       of equalized odds. Race is a complex construct, which is correlated
+mographic factors, then they have the potential to exacerbate the            with multiple facets such as dialect, socioeconomic class, and com-
+health disparities instead of improving them.                                munity.31 Unfortunately, users do not generally self-report their race
+    To understand bias in influenza tracking models, we ask the fol-         on social media—at least it is not common on Twitter. Instead, fol-
+lowing questions:                                                            lowing the practice of prior researchers,17,32–34 we rely on the corre-
+
+
+
+
+                                                                                                                                                       Downloaded from https://academic.oup.com/jamia/article/28/4/839/6114713 by guest on 18 January 2023
+                                                                             lation between dialect and race for our analysis. Specifically, we
+•   What is the relationship between overall classifier performance
+                                                                             analyze the African American English (AAE) dialect. AAE has been
+    and fairness?
+                                                                             shown to transfer from the use in face-to-face conversations to writ-
+•   Are the most (un)fair classifiers the same across different, but
+                                                                             ten text on social media.33,35–37 AAE is a common dialect spoken by
+    similar, influenza-related datasets?
+                                                                             some, but not all, African Americans. It is important to emphasize
+    Biases have been found in the machine learning methods devel-            that not all speakers of AAE are African American and not all Afri-
+oped for a wide variety of natural language processing tasks, includ-        can Americans are AAE speakers.35 For more information about the
+ing, but not limited to, text classification, learning word                  correlation between AAE and racial constructs, please see Blodgett
+embeddings, and machine translation. For example, text classifica-           et al.33
+tion models exhibit biases across gender and racial divides for tasks            As previously mentioned, having a machine learning model that
+such as offensive language identification, resulting in differences in       is biased can have consequences. For instance, when using a machine
+performance across groups.14–17 Overall, much of the prior work              learning model to predict potential epidemics, the model could cor-
+has focused on traditionally nonbiomedical text classification tasks         rectly predict the spread of influenza for communities with a high-
+(eg, hate speech classification).                                            resource dialect like Standard American English (SAE), but, at the
+    Word embeddings have also been shown to contain biases.18–21             same time, have a high false negative rate for communities using
+A word embedding is a learned representation or vector for text in           low-resource dialects like AAE. In the computational linguistics
+which words with similar meanings have a similar representation,             community, “low resource” is used to simply mark languages or dia-
+algorithmically capturing the meaning of words. Bolukbasi et al18            lects that appear infrequently in the general population.38 Thus, if
+show that the word embedding for man is similar to doctor, while             we were to randomly sample English text from Twitter, then we
+woman is similar to nurse. Garg et al22 developed a technique to             would expect only a small fraction of the text to be AAE. As a real-
+study 100 years of gender and racial bias using word embeddings.             world example on the impact of biased machine learning methods in
+Kurita et al23 expanded on prior work to generalize bias measure-            the real world, Obermeyer et al39 analyzed real world risk-
+ment metrics for word embedding to contextual word embeddings                prediction software that is applied to roughly 200 million people.
+(eg, BERT).24,25 Machine translation systems have also been shown            The healthcare system relies on these algorithms to identify patients
+to exhibit biases.26,27 Font and Costa-Juss  a26 showed that the sen-       for “high-risk care management” programs. Their research shows
+tence “She works in a hospital, my friend is a nurse” would correctly        that the algorithms were biased, causing differences in care between
+translate the word friend to amiga. However, the sentence “She               Black and White patients. Overall, it is important to understand
+works in a hospital, my friend is a doctor” tends to translate the           how machine learning models will perform on a wide variety of
+word friend to amigo, implying that the friend is male. In general,          tasks when applied to underrepresented populations.
+many articles focus on testing whether bias exists in various models,            Finally, we summarize our 3 major contributions as follows.
+or on developing techniques to remove bias from classification mod-          First, we study the performance differences between SAE and AAE
+els for specific applications. In this article, we focus on measuring        of machine learning models applied to various influenza-related
+racial biases of machine learning methods in the biomedical natural          tasks. Second, we explore the fairness of multiple machine learning
+language processing (NLP) domain.                                            algorithms including linear support vector machines (SVMs) and
+    Fairness can be defined in multiple ways. In this article, we focus      neural networks. Furthermore, we analyze the fairness of the neural
+on 2 specific definitions28–30: equality of opportunity and predictive       networks using multiple pretrained vectors to understand the impact
+equality. Simply, both definitions together are called equalized odds.       they have on the downstream performance of the model. Third, we
+Equality of opportunity assumes that the false negative rate (FNR)           provide a detailed discussion about the results presented in this arti-
+(see Evaluation for a complete definition) is equal between 2 groups.        cle as well as this article’s limitations.
+A high FNR could cause African Americans to potentially miss the
+opportunity to be identified. For instance, as a hypothetical sce-
+nario, if social media is mined to identify potential hotspots of the
+                                                                             MATERIALS AND METHODS
+influenza virus, then a high FNR could lead to inadequate resources          We provide an overview of our study in Figure 1. This article’s
+(eg, vaccinations) to fight the virus. Similarly, predictive equality is a   methodology can be summarized in 4 steps. First, we train a convo-
+measure of the difference between the false positive rates (FPRs) of 2       lutional neural network (CNN) to detect the dialect of individual
+groups. A high FPR could be particularly harmful in the hypotheti-           tweets (ie, SAE vs AAE). Second, the model is used to classify the di-
+Journal of the American Medical Informatics Association, 2021, Vol. 28, No. 4                                                                               841
+
+
+
+                                        Influenza
+                                        Datasets
+                                                                                                              AAE tweets
+                                                                                                               are used in
+                                                                                                              training and
+                                         Train CNN model to                 Classify each tweet in           test datasets             Train and Evaluate
+                        Dialect          detect the dialect of              the influenza datasets                                          the overall
+                        Dataset         tweets (SAE vs AAE)                 as either SAE or AAE.             We vary the               performance and
+                                                                                                                number of                 fairness of the
+                                                                                                               AAE tweets             influenza classifiers
+                                                                                                                  in the
+                                                                                                              training data
+
+
+                                                 (1)                                  (2)                         (3)                         (4)
+                                            Train Dialect                       Detect Dialect           Partition Influenza          Train and Evaluate
+
+
+
+
+                                                                                                                                                                    Downloaded from https://academic.oup.com/jamia/article/28/4/839/6114713 by guest on 18 January 2023
+                                             Classifiers                     of Influenza Tweets           Datasets into             Influenza Classifiers
+                                                                                                          Train/Test Splits
+
+Figure 1. Overview of our data analysis pipeline. In summary, our pipeline has 4 major components: (1) training a dialect classifier to detect Standard American
+English (SAE) and African American English (AAE), (2) training multiple machine learning models on influenza datasets, (3) partitioning the influenza datasets to
+test fairness, and (4) the trained models are analyzed. CNN: convolutional neural network.
+
+
+
+
+Table 1. Breakdown of total examples in each influenza-related dataset
+
+FluTrack dataset summary                                                           FluVacc dataset summary
+
+Class                Total          SAE             AAE           % SAE            Class                    Total           SAE           AAE            % SAE
+
+Related              2436           2334            102           95.81            Vaccine related           9517           9258           259            97.28
+Not related          1900           1830             70           96.32            Not related                483            466            17            96.48
+Awareness            1294           1242             52           95.98            Intent                    3148           3027           121            96.16
+Infection            1359           1303             56           95.88            No intent                 6365           6228           137            97.85
+Self                 1392           1338             54           96.12            Received                  3097           2981           116            96.25
+Other                 664            638             28           96.08            Not received               743            708            35            95.29
+
+  AAE: African American English; SAE: Standard American English.
+
+
+alect of each tweet in various influenza-related datasets. Third, AAE              estimate message-level demographic information (block groups are
+tweets are partitioned in the training and testing datasets. In this ex-           the smallest geographical unit for which the U.S. Census bureau
+periment, we also subsample different numbers of AAE tweets in the                 publishes sample data). Race and ethnicity information for each
+training data to measure the impact of varying amounts of AAE                      block group comes from the Census’ 2013 American Community
+training data on the fairness metrics. Fourth, we train and evaluate               Survey. We make use of 59 million released tweets released by
+various models (ie, neural networks and linear models) on multiple                 Blodgett et al33 that contain message-level demographic estimates.
+influenza datasets to understand the biases in them and its relation-              Note that it is important to point out that message-level estimates
+ship with their overall performance. In the following subsections,                 are indicating whether the text similar to text written in areas with
+we describe the datasets we use for our experiments and each of our                large African American or other communities (eg, Hispanic or
+analysis steps in detail.                                                          White). The estimates are not indicative of the race or ethnicity of
+                                                                                   the individual users. Following the work by Elazar and Goldberg40
+Datasets                                                                           and Rios,17 we group the tweets into 2 linguistic styles: SAE and
+In this section, we provide context on each dataset that we investi-               AAE. We limit our study to all tweets annotated with AAE and SAE
+gate. We also describe how they are used for training and evaluating               with a confidence of at least 80%. This resulted in 1.6 million AAE
+the fairness of machine learning–based influenza classifiers. Specifi-             tweets and millions of SAE tweets. To reduce the size of the SAE
+cally, we make use of 3 datasets: Dialect,33 FluTrack,5 and Flu-                   tweets, we randomly sample 5 million, resulting in a dataset of 6.6
+Vacc.4 Dialect is used for train a model to detect SAE or AAE text.                million tweets. Finally, Dialect is used to train a CNN41 to detect
+FluTrack and FluVacc are used to train the influenza-related classi-               the dialect of each tweet. The CNN model is used in step 2 or our
+fiers. The basic statistics of the influenza-related datasets are shown            data analysis process, as shown in Figure 1.
+in Table 1. Overall, AAE tweets appear infrequently throughout ev-
+ery dataset used in our experiments, matching real-world condi-                    FluTrack dataset
+tions. We describe each dataset in detail subsequently.                            The FluTrack database5 consists of 11 990 tweets collected from
+                                                                                   years 2009 to 2012 (because the dataset was released using Tweet
+Dialect dataset                                                                    IDs, only a subset of the dataset was available for our study, that is,
+Blodgett et al33 developed a probabilistic model that combines geo-                some tweets and accounts were deleted since the original study).
+located tweets with the U.S. Census block group geographic areas to                Each tweet is annotated with up to 3 labels (this is a multilabel clas-
+842                                                            Journal of the American Medical Informatics Association, 2021, Vol. 28, No. 4
+
+
+
+sification task, not multiclass): related vs not related, awareness vs       Influenza classification models
+infection, and self vs other. It is important to note that there is a hi-    We compare 3 models on each of the influenza datasets in step 4
+erarchical structure between the labels. Specifically, only related          (Figure 1): linear SVM, CNN, and bidirectional long short-term
+tweets are annotated with the awareness vs infection and self                memory (BiLSTM). Furthermore, for both neural network models,
+vs other labels. During evaluation, to ensure the fairness estimates         we analyze the use of different pretrained word embeddings. We
+are easy to interpret, we only evaluate the awareness vs infection           briefly describe each model subsequently.
+and self vs other classifiers on related test tweets, otherwise, we need
+to handle cascading errors. . The first class (related vs not related)
+categorizes each tweet based on whether it discusses an influenza-
+                                                                             Linear SVM
+related topic or not. If a tweet is related to influenza, then it is cate-
+                                                                             In biomedical research using social media, linear models have been
+gorized based on whether it is raising awareness to influenza or if it
+                                                                             shown to outperform neural networks for some tasks (eg, identifying
+discusses a specific infection (awareness vs infection). Many tweets
+                                                                             adverse drug reactions).43 We trained a linear SVM using term fre-
+may simply raise awareness, instead of discussing an infection,
+                                                                             quency–inverse document frequency weighting of unigrams and
+meaning that tweets discuss beliefs related to influenza infections or
+
+
+
+
+                                                                                                                                                       Downloaded from https://academic.oup.com/jamia/article/28/4/839/6114713 by guest on 18 January 2023
+                                                                             bigrams (ie, single words [eg, vaccine] and pairs of words like [eg,
+preventative influenza measures are not useful for disease surveil-
+                                                                             flu vaccine] are used as features) and L2 regularization. Term fre-
+lance. Furthermore, each flu-related tweet is also labeled as self or
+                                                                             quency–inverse document frequency weighting is a statistical mea-
+other depending on whether it is about the user (self) or about an-
+                                                                             sure that weights how important words are in a corpus.
+other person (other). Both infection- and awareness-related tweets
+                                                                             Furthermore, we searched for the best C value from the set f
+can be annotated as either self or other. For instance, many tweets
+                                                                             0:0001; 0:001; 0:01; 0:1; 1; 10g using a validation dataset. The SVM
+discussing flu vaccines are annotated as awareness. So, the tweet “I
+                                                                             is implemented using the LinearSVC classifier in scikit-learn.44
+am going to get the flu shot” would be labeled with both the aware-
+ness and self classes.
+
+                                                                             Convolutional neural network
+                                                                             The CNN architecture has shown success in text classification
+FluVacc dataset                                                              across many biomedical tasks.45–47 For the CNN model imple-
+Social media is not only useful for traditional disease surveillance         mented in this article, we use the architecture from Kim.41 Essen-
+tasks. For instance, social media can also be used to understand the         tially, the CNN can discover patterns and identify semantics found
+public’s view about potential treatments and vaccinations. This is           in different sized n-grams for the purpose of classification. Specifi-
+important, especially if we want to combat potential misinformation          cally, for each task, the Kim CNN models were trained with 512 fil-
+campaigns at scale.42 The FluVacc dataset is from Huang et al4 and           ters for each span width of 3, 4, and 5 words. Because of the cost of
+contains 10 000 annotated tweets. Each tweet is categorized with up          training the model, hyperparameters were chosen manually follow-
+to 3 major classes: vaccine related vs not related, which classifies         ing some of the best practices described in Zang and Wallace.48 In
+whether a tweet is about influenza vaccines; received vs not received;       general, we found the ngram ranges of 3, 4, and 5 words (similar to
+and intent vs no intent. Similar to the FluTrack dataset, this is a mul-     the Kim)41 to perform the best with 512 filters with a dropout rate
+tilabel task, and there is a hierarchical structure between the vaccine      of 0.5. From our limited tests, further increasing the filters did not
+related vs not related class, and the others; at test time, to avoid han-    improve the CNN’s performance. The model was trained with the
+dling cascading errors in our analysis, we only apply the received vs        Adam optimizer49 for 30 epochs. The best epoch was chosen based
+not received and intent vs no intent classifiers to vaccine-related          on a held-out validation dataset. The model was implemented using
+tweets Received vs not received is used to detect whether a tweet dis-       the Keras Python package.50
+cusses a user actually receiving a vaccine. Similarly, intent catego-
+rizes whether the user plans to receive the vaccine. It is important to
+note that a tweet may discuss receiving a vaccine and express the in-
+                                                                             Bidirectional LSTM
+tent to receive it again.
+                                                                             We trained a BiLSTM model, which has been shown to perform
+                                                                             well across a wide variety of biomedical NLP tasks.46,51 Unlike the
+                                                                             CNNs, BiLSTM models are recurrent networks that are able to cap-
+Dialect detection with convolutional neural networks                         ture dependencies between words. BiLSTM units perform well with
+As shown in step 2 of Figure 1, we train a CNN model41 to predict            time series and sequence data since information can be kept across
+the dialect of individual tweets using the Dialect dataset. The dialect      the entire sequence. By implementing a BiLSTM, dependencies of
+dataset is split into 80% for training or validation and 20% for test-       words are captured in both directions, forward and backward. The
+ing. Following Rios,17 we use the CNN architecture from Kim.41               BiLSTM model is trained with a hidden state size of 512 for each di-
+The CNN model is trained with 900 filters that spans 3,4, and 5              rection. The model was trained with the Adam optimizer49 for 30
+words. For the AAE class, the final CNN has an F1 of 0.87, with a            epochs. The best epoch was chosen based on a held-out validation
+precision of 0.91 and a recall of 0.84. The precision, recall, and F1        dataset. For the BiLSTM, we tried a few other hyperparameter con-
+for the SAE class were 0.97, 0.95, and 0.96, respectively. Once the          figurations, eg, decreasing and increasing the size of the hidden state
+model is trained, a new tweet can be passed through the CNN and              as well as the number of hidden layers. Overall, a hidden state size
+the predicted dialect of the tweet is returned. This allows us to sepa-      of 512 resulted in the best performance. As the number of layers in-
+rate out data into different populations based on their dialects,            creased, the training time grew exponentially for only a return of
+which is important because these attributes are not provided in in-          less than a fraction of a percentage point. The dropout rate was set
+fluenza datasets. See the Supplementary Appendix for a detailed              to 0.5. The model was implemented using the Keras Python pack-
+evaluation of the dialect detection model on the influenza datasets.         age.50
+Journal of the American Medical Informatics Association, 2021, Vol. 28, No. 4                                                                            843
+
+
+
+Pretrained word embeddings                                                            respectively, where T ¼ fAAE, SAEg. FPR and FNR represent the
+Pretrained word embeddings have been shown to make a large im-                        overall false positive and false negative rates, respectively. FPRt and
+pact on the overall performance of neural network-based text classi-                  FNRt represent the group-specific (ie, AAE or SAE) false positive
+fication models.41 In this article, we also explore the overall                       and false negative rates. Smaller FPED and FNED scores represent
+performance of the CNN and BiLSTM models trained with different                       fairer classifiers. Intuitively, if models have large false positive (or
+pretrained embeddings. We evaluate several variations of GLOVE                        false negative) rates for certain underrepresented groups (eg, African
+and Word2Vec.52,53 Specifically, we test the pretrained Twitter-                      Americans), then large absolute differences in FPR/FNR could po-
+specific embeddings GLOVE 27B embeddings (http://nlp.stanford.                        tentially have unfair consequences if the model is used without this
+edu/data/glove.twitter.27B.zip)with dimensions ranging from 50 to                     knowledge.
+200, GLOVE 6B embeddings (http://nlp.stanford.edu/data/glove.6B.
+zip)trained on Wikipedia 2014 and Gigaword 5 with 300 dimen-
+sions, and Word2Vec Skip-Gram-based embeddings trained on                             RESULTS
+Google News (https://drive.google.com/file/d/0B7XkCwpI5KDYNl-
+NUTTlSS21pQmM/edit)with 300 dimensions.                                               For evaluation, following prior work in methodological testing pro-
+
+
+
+
+                                                                                                                                                                 Downloaded from https://academic.oup.com/jamia/article/28/4/839/6114713 by guest on 18 January 2023
+                                                                                      cedures of machine learning in the biomedical context,54 we per-
+                                                                                      formed Monte Carlo cross-validation testing—sometimes referred
+Evaluation
+                                                                                      to as repeated subsampling. Specifically, the dataset was split into
+We evaluate the 3 influenza classifiers using both overall performance
+                                                                                      10 unique training, validation, and test splits. A total of 80% of the
+(ie, precision, recall, and F1) and fairness. Intuitively, based on our
+                                                                                      data was used for training and validation. A total of 20% of the
+chosen evaluation metrics, we answer the following questions: Which
+                                                                                      data was used for testing. A total of 20% of each training data split
+classifier has the best overall performance on each influenza dataset?
+                                                                                      was used as a validation dataset. Furthermore, because of the vari-
+Which classifier is the fairest? Are fairness and overall performance re-
+                                                                                      ance in performance produced by neural networks, on each data
+lated, that is, is the most accurate classifier the fairest?
+                                                                                      split, we repeatedly train each model 10 times (ie, each model was
+    To measure the fairness of the different models, we compare the
+                                                                                      trained on each split 10 times using different random seeds). This
+absolute differences between the FPR and FNR calculated indepen-
+                                                                                      procedure results in a total of 100 instances trained of each model.
+dently on SAE and AAE.30 FPR and FNR are defined as
+                                                                                      The results reported in this article are the average across both the
+                          FP                           FN                             data splits and multiple runs. Note that for some classes, there were
+              FPR ¼                  and FNR ¼
+                       FP þ TN                       FN þ TP                          not enough AAE tweets to evaluate using AAE tweets in both the
+                                                                                      training and testing datasets. Therefore, we report 2 sets of experi-
+where TP, FP, FN, and TN represent the number of true positives,
+                                                                                      ments. First, when we report the overall results in Tables 2 and 3,
+false positives, false negatives, and true negatives, respectively. Each
+                                                                                      we did not use any AAE examples in the training data. Moreover, in
+score is calculated for the entire test dataset and the SAE and AAE
+                                                                                      the Supplementary Appendix we perform fairness experiments
+test examples independently. The FPR and FNR scores for each
+                                                                                      where all of the AAE examples are only used for testing. This is actu-
+group are combined using the false positive equality difference
+                                                                                      ally a likely scenario in which many dialects will not appear in a
+(FPED) and false negative equality difference (FNED).14 Essentially,
+                                                                                      training dataset (eg, Chicano English or AAE variants such as urban
+FPED is measuring the predictive equality, and FNED is measuring
+                                                                                      or rural AAE). Therefore, these supplementary experiments will pro-
+the equality of opportunity. FPED and FNED are defined as
+                         X                                                            vide insight into how these models will perform for low-resource
+             FPED ¼             FPR  FPRt and FNED                                   dialects that do not appear in the training dataset. Second, for the
+                         Xt2T
+                      ¼         FNR  FNRt ;                                          fairness results in Table 4 and Figures 2 and 3, up to 50% of the
+                            t2T
+                                                                                      AAE tweets are used for training, while the other 50% are used for
+                                                                                      testing. For significance testing, we follow the strategy proposed in
+
+Table 2. The mean P, R, and F1 scores for the 3 labels in the FluTrack dataset
+
+                                             Related vs unrelated                         Awareness vs infection                       Self vs other
+
+                                         P              R             F1              P             R              F1          P            R            F1
+
+Linear SVM                            0.766          0.823          0.793          0.821         0.816         0.818        0.766         0.823        0.793
+CNN GloVe 300                         0.809c         0.850b         0.827c         0.903c        0.906c        0.905c       0.809c        0.847b       0.827c
+CNN Twitter GloVe 50                  0.813c         0.832          0.822c         0.850c        0.848c        0.849c       0.813c        0.832        0.823c
+CNN Twitter GloVe 100                 0.816c         0.850b         0.832c         0.919c        0.881c        0.900c       0.816c        0.850b       0.832c
+CNN Twitter GloVe 200                 0.800c         0.822          0.811c         0.866c        0.882c        0.874c       0.800c        0.822        0.811c
+CNN Word2Vec 300                      0.796c         0.839a         0.817c         0.902c        0.903c        0.903c       0.796c        0.839a       0.817c
+BiLSTM GloVe 300                      0.771          0.836          0.802b         0.857c        0.771         0.812        0.771a        0.836        0.802b
+BiLSTM Twitter GloVe 50               0.759          0.845a         0.799a         0.748         0.760         0.754        0.759         0.845a       0.799a
+BiLSTM Twitter GloVe 100              0.795c         0.794          0.794          0.821         0.752         0.785        0.795c        0.794        0.794
+BiLSTM Twitter GloVe 200              0.767          0.837          0.800a         0.876c        0.737         0.800        0.767         0.837        0.800a
+BiLSTM Word2Vec 300                   0.788c         0.829          0.808c         0.833a        0.819         0.826        0.788c        0.829        0.808c
+
+  P: precision; R: recall. Bold font indicates the best result obtained in each column.
+  a
+    P value (resulting from the Wilcoxon signed rank test) between .05 and .01.
+  b
+    P value (resulting from the Wilcoxon signed rank test) between .01 and 0001.
+  c
+   P value (resulting from the Wilcoxon signed rank test) that is .001.
+844                                                                 Journal of the American Medical Informatics Association, 2021, Vol. 28, No. 4
+
+
+Table 3. The mean P, R, and F1 scores for the 3 labels in the FluVacc dataset
+
+                                             Related vs unrelated                          Received vs not received                    Intent vs no intent
+
+                                         P               R            F1               P              R               F1         P             R               F1
+
+Linear SVM                            0.987          0.994         0.991            0.886          0.939          0.911       0.829          0.828            0.828
+CNN GloVe 300                         0.993c         0.999c        0.996c           0.922b         0.961b         0.944b      0.932c         0.876c           0.903c
+CNN Twitter GloVe 50                  0.993c         0.999c        0.996c           0.917c         0.942          0.920a      0.900c         0.904c           0.902c
+CNN Twitter GloVe 100                 0.991c         0.999c        0.995c           0.926c         0.946          0.936b      0.931c         0.893c           0.912c
+CNN Twitter GloVe 200                 0.991c         1.00c         0.995c           0.945c         0.951a         0.948b      0.923c         0.904c           0.902c
+CNN Word2Vec 300                      0.992c         0.999c        0.996c           0.922c         0.949          0.935b      0.908c         0.876c           0.892c
+BiLSTM GloVe 300                      0.987          0.998c        0.992c           0.874          0.936          0.904       0.833          0.784            0.808
+BiLSTM Twitter GloVe 50               0.987          0.996b        0.991            0.828          0.951          0.885       0.822          0.750            0.784
+BiLSTM Twitter GloVe 100              0.985          0.997c        0.991            0.882          0.892          0.887       0.770          0.874c           0.818
+BiLSTM Twitter GloVe 200              0.991c         0.998c        0.994c           0.902a         0.894          0.898       0.798          0.865c           0.830
+
+
+
+
+                                                                                                                                                                       Downloaded from https://academic.oup.com/jamia/article/28/4/839/6114713 by guest on 18 January 2023
+BiLSTM Word2Vec 300                   0.987          0.998c        0.993c           0.853          0.920          0.885       0.837          0.819            0.828
+
+  P: precision; R: recall. Bold font indicates the best result obtained in each column.
+  a
+    Pvalue (resulting from the Wilcoxon signed rank test) between .05 and .01.
+  b
+    P value (resulting from the Wilcoxon signed rank test) between .01 and 0001.
+  c
+   P value (resulting from the Wilcoxon signed rank test) that is .001.
+
+
+
+Table 4. FluVacc results for the Intent class using a training dataset with a balanced number of AAE and SAE examples
+
+                                                     P                          R                           F1                  FPED                          FNED
+
+Linear SVM                                         0.786                      0.780                       0.783                 0.095                     0.105
+CNN GloVe 300                                      0.752                      0.787                       0.768                 0.095                     0.082
+CNN Twitter GloVe 50                               0.759                      0.764                       0.758                 0.146c                    0.093
+CNN Twitter GloVe 100                              0.760                      0.790a                      0.773                 0.122b                    0.086
+CNN Twitter GloVe 200                              0.777                      0.784                       0.779                 0.096                     0.081
+CNN Word2Vec 300                                   0.766                      0.741                       0.752                 0.080                     0.064
+BiLSTM GloVe 300                                   0.752                      0.727                       0.738                 0.190c                    0.104
+BiLSTM Twitter GloVe 50                            0.755                      0.668                       0.707                 0.257c                    0.172c
+BiLSTM Twitter GloVe 100                           0.755                      0.717                       0.734                 0.250c                    0.143c
+BiLSTM Twitter GloVe 200                           0.764                      0.730                       0.745                 0.218c                    0.142c
+BiLSTM Word2Vec 300                                0.772                      0.644                       0.699                 0.172c                    0.112a
+
+   This table shows theresults of undersampling the SAE examples to be equal to the number of Intent AAE examples. Bold font indicates the highest score in
+each column.
+   AAE: African American English; FNED: false negative equality difference, FPED: false positive equality difference; P: precision; R: recall; SAE: Standard Amer-
+ican English.
+   a
+     P value (resulting from the Wilcoxon signed rank test) between .05 and .01.
+   b
+     P value (resulting from the Wilcoxon signed rank test) between .01 and 0001.
+   c
+    P value (resulting from the Wilcoxon signed rank test) that is .001.
+
+
+
+
+prior biomedical studies54 using the Wilcoxon signed rank test. Sig-                   CNN model, the Twitter GloVe 100 word embeddings outper-
+nificance is calculated with respect to the linear SVM model (ie, we                   formed the others for the Related and Self labels. Twitter GloVe 300
+check if the neural network models are significantly better than the                   was the best for the Awareness label. For the BiLSTM, Word2Vec
+linear SVM for the overall results). For fairness metrics, we test if                  300 generally had the best F1.
+neural network models are significantly worse than the linear SVM.                         In Figure 2, we report the fairness results on the FluTrack data-
+                                                                                       set. The results are reported for the FluTrack class with the greatest
+FluTrack experiments                                                                   number of AAE examples, related vs unrelated. In summary, we
+The overall performance results on the FluTrack5 dataset is pre-                       found that the neural network models generally had higher FPED
+sented in Table 2. Both neural network-based models (ie, the CNN                       and FNED scores than the linear SVM for the other classes. For the
+and BiLSTM) outperformed the baseline linear SVM. When com-                            results in Figure 2, 50% of AAE related vs unrelated examples are
+paring the CNN to the BiLSTM, the CNN outperformed the                                 used for training and the other 50% are used for testing. From the
+BiLSTM consistently across multiple word embeddings. This is an                        50% of AAE examples used in the training dataset, we report the
+important factor to remember when discussing the fairness measure-                     results of using different proportions of AAE examples in the train-
+ments. The best CNN model for related performed nearly 0.03 (3%)                       ing data: 0%, 20%, 40%, 60%, 80%, 100%. The scores do not
+better than the best BiLSTM model. Similarly, the best awareness                       vary substantially as more AAE examples are used in the training
+CNN model outperforms the best BiLSTM model by nearly 0.08                             dataset. For instance, the CNN model, trained with the Word2Vec
+(8%). With regard to the best pretrained word embeddings for the                       300 embeddings, has similar FPED scores using 0% of the AAE
+Journal of the American Medical Informatics Association, 2021, Vol. 28, No. 4                                                                                  845
+
+
+
+
+                                                                                                                                                                       Downloaded from https://academic.oup.com/jamia/article/28/4/839/6114713 by guest on 18 January 2023
+Figure 2. FluTrack’s experimental results using African American English (AAE) tweets in both the training and test datasets. The false positive equality difference
+(FPED) and false negative equality difference (FNED) scores are plotted using different percentages of AAE tweets in the training dataset.
+
+
+
+
+Figure 3. FluVacc’s experimental results using African American English (AAE) tweets in both the training and test datasets. The false positive equality difference
+(FPED) and false negative equality difference (FNED) scores are plotted using different percentages of AAE tweets in the training dataset.
+
+
+
+
+examples as it does use 100%. We find similar results with the                       keywords not appearing often in the not related label (eg,
+FNED scores (eg, BiLSTM Word2Vec 300). See the Supplementary                         “vaccine”). We also find that the best pretrained word embeddings
+Appendix for FluTrack fairness experiments for more classes using                    vary from model to model. For instance, the best embeddings for the
+all of the AAE examples in the test set.                                             CNN are generally GloVe 100 and GloVe 300, while the best
+                                                                                     BiLSTM embeddings are GloVe 300 and Word2Vec 300.
+FluVacc results                                                                          In Figure 3, we report the fairness results of using AAE tweets in
+The overall performance results on the FluVacc4 dataset is presented                 the training set for the FluVacc dataset. Again, we used the class
+in Table 3. The results on FluVacc are similar to the findings on Flu-               with the largest number of evenly distributed AAE examples, the in-
+Track. Specifically, we find that the CNN outperforms both the lin-                  tent vs no intent class. For a majority of the models for the task of
+ear SVM and BiLSTM models across the precision, recall, and F1                       intent classification, there is no consistent pattern of improvement
+metrics for each label. Specifically, the best CNN model for intent                  of the FPED and FNED scores as we add more AAE tweets to the
+detection is 0.912, a nearly 10% absolute improvement over the lin-                  training set. On the contrary, adding AAE tweets seems to have little
+ear SVM (0.828) and the best BiLSTM model (0.828). The best                          effect on the FPED and FNED scores. It is important to note that
+CNN model for the received label also outperformed the other                         there is still an imbalance between SAE and AAE tweets in the train-
+methods by a large margin (eg, by more than a 4% absolute im-                        ing data. However, to the best of our knowledge, this is realistic be-
+provement over the next best BiLSTM model). Moreover, unlike the                     cause current research methodologies do not generally spend time
+FluTrack results, the linear SVM model generally performs equiva-                    collecting equal amounts of examples across all dialects. Therefore,
+lent or better than the BiLSTM. For instance, the linear SVM’s F1                    our results paint a realistic picture about how current models per-
+score for the received label is 0.01 (1%) better than the best per-                  form. Finally, for the FPED scores, we also observe that the SVM
+forming BiLSTM model. For the related label, while the CNN per-                      generally results in the smallest score. See the Supplementary Appen-
+formed best overall, the results are similar across models. We found                 dix for FluVacc fairness experiments for more classes using all of the
+that the related label is relatively easy to classify because of certain             AAE examples in the test set.
+846                                                            Journal of the American Medical Informatics Association, 2021, Vol. 28, No. 4
+
+
+
+    How much does the imbalance between SAE and AAE examples                 be beneficial to explore novel methods of training neural networks
+in the training dataset affect the fairness metrics? In Table 4, we          by augmenting the data using adversarial learning.57
+evaluate the performance of each model on the intent class using a
+balanced training dataset. We use the intent class because it has the
+largest number of AAE examples for both the intent and no intent             DISCUSSION
+cases. The SAE tweets are undersampled at random to match the total
+                                                                             Overall, the major finding of this article is that machine learning
+number of AAE examples. The results of this experiment are shown in
+                                                                             methods for influenza-related tasks using social media data are bi-
+Table 4. We make 2 major findings. First, while not directly compara-
+                                                                             ased. We did not simply detect bias, we also quantified it across mul-
+ble to Table 3, we find that undersampling results in a drop in F1
+                                                                             tiple machine learning models and datasets. With the interest of
+compared with using all of the dataset. Moreover, the linear SVM
+                                                                             using social media to track the spread of viruses, these inaccuracies
+resulted in the most accurate method, which is expected given the
+                                                                             can cause a model to misrepresent certain neighborhoods as hot
+smaller training dataset. Interestingly, we find that the BiLSTM
+                                                                             spots, or worse, identify communities with underrepresented popu-
+method results in the most unfair results (ie, the highest FPED and
+                                                                             lations as unlikely to develop a large number of infections. This can
+FNED scores). The CNN models have higher FPED scores than the
+
+
+
+
+                                                                                                                                                        Downloaded from https://academic.oup.com/jamia/article/28/4/839/6114713 by guest on 18 January 2023
+                                                                             occur if the community, as a whole, uses a different dialect that is
+SVM and both the SVM and CNN have similar FNED scores.
+                                                                             not consistent with the general population in which the data was
+                                                                             collected. Note that the results of this experiment are specific to the
+                                                                             datasets we evaluated. The models may be biased differently on
+                                                                             other datasets and tasks.
+Qualitative error analysis                                                       Another interesting finding which generalizes across both the
+In this section, we provide a couple of AAE examples (the examples
+                                                                             FluTrack and FluVacc datasets is that simple, ngram-based linear
+have been slightly altered to preserve the privacy of users in the data-
+                                                                             SVM models are competitive with some neural networks in terms of
+set) that resulted in incorrect predictions by the classifiers. We want to
+                                                                             overall performance. We find that linear SVMs generally, but not al-
+provide some insight into what aspects of AAE are potentially causing
+                                                                             ways, result in fairer predictions then the best neural network meth-
+the problems. We found many examples in which the models had
+                                                                             ods on the 2 datasets we analyzed. Though neural network–based
+trouble classifying AAE text when they contain phonological variants
+                                                                             methods can achieve better performance compared with traditional
+of words. For instance, in the example from the FluVacc dataset
+                                                                             statistical methods, interpretability is a major limitation for these
+   “Iont think my sister is making me go to school tomorrow since            deep learning methods. Therefore, in this case, linear SVMs provide
+   it’s flu shot day at school”                                              a strong baseline while offering interpretability and fair results (as
+                                                                             compared with the best neural network methods).
+should be classified as “no intent.” However, all of the classifiers
+                                                                                 In summary, it is important to think about the potential impact
+classify it as “intent” instead. The suspected cause is the word
+                                                                             the unfair results can have on minority communities. If statistics
+iont—a well-known AAE phonological word variant55—which
+                                                                             based on machine learning methods are used by policymakers, then
+means “I don’t.” The likely cause of the errors is the limited number
+                                                                             unfair models could impact underrepresented group’s access to cer-
+of AAE tweets. However, because it is not feasible to always collect
+                                                                             tain over-the-counter medications, or worse, affect basic healthcare
+enough AAE examples to handle these AAE word variants, how
+                                                                             resources offered to their communities. For instance, if vaccines are
+could this example be handled correctly? One potential solution
+                                                                             limited, and a model incorrectly predicts that communities with cer-
+would be to use models that operate at the character level, not the
+                                                                             tain large underrepresented populations will not be impacted by in-
+word level. Substrings of iont could correlate with I don’t. The use
+                                                                             fluenza (ie, high FPED), then they will be unfairly impacted. This
+of character information has been shown to be helpful in reducing
+                                                                             could potentially increase health disparities that already exist be-
+bias in named entity recognition models.56 Therefore, similar solu-
+                                                                             cause of economic disparities.
+tions could potentially help for influenza classification.
+    We found other AAE tweets that caused erroneous predictions
+for reasons not related to phonological word variants. For instance,         Limitations to this study
+the FluVacc example AAE tweet,                                               There are 4 limitations to this study. First, we rely on a SAE vs AAE
+                        a                a
+                                                                             dialect classifier to partition the datasets. The classifier is neither
+   “I ain’t donating sh t y’all kiss my a s already forced me to get
+                                                                             perfect nor is the classifier’s training data. However, as was shown
+   the flu shot bullshat”
+                                                                             in prior work17 and in our dialect evaluation in the Supplementary
+was correctly classified by the SVM classifier as received. However,         Appendix, the classifier does a good job at identifying tweets that
+most of the neural network methods incorrectly classified it has not         contain common AAE syntactic and phonetic constructions.
+received. In this example, we believe that the neural networks overfit            Second, the number of AAE tweets is small. However, there is
+the negation word ain’t, and potentially, the curse words (expressing        still evidence of bias in other classes with substantially more AAE
+negative sentiment toward the vaccine). In this case, an obvious po-         data (eg, intent vs no intent which has more than 100 AAE tweets in
+tential solution is to further regularize the neural networks to reduce      each class). Furthermore, the bias is consistent across 2 datasets and
+overfitting (eg, with a larger dropout rate or L2 regularization).           multiple classes.
+However, while more regularization may help, it is nontrivial to do               Third, we focus on dialect, which is directly related to neither
+when there are a small number of minority samples, or worse, mi-             race nor ethnicity. While there has been a wide array of research
+nority samples do not appear in the dataset. It is important to note         that predicts social identity (eg, race and sex) using text information,
+that it is likely not possible to collect large amounts of data for all      relying on text information alone to infer population-level statistics
+dialects, so more data are not a solution for fair classifiers. Because      for race and ethnicity excludes people that do not write in a way
+it looks like the CNN and BiLSTM may rely on surface-level infor-            that matches their group-identities “norm.” Because race and eth-
+mation, rather than on real natural language understanding, it may           nicity are impossible to fully detect automatically, we believe a more
+Journal of the American Medical Informatics Association, 2021, Vol. 28, No. 4                                                                        847
+
+
+
+inclusive way of obtaining social identity information is through op-      on them. The major finding of this article is that the resulting models
+tional self-reported surveys. The approach of asking rather than pre-      are biased. Therefore, practitioners should be aware of the potential
+dicting (ie, relying on self-identified demographic information) is        harms related to biased methods. As future work, it is important to
+also recommended for studies about sex.58,59 Overall, detecting so-        expand this study to other tasks, machine learning models (eg,
+cial identity automatically can potentially lead to adverse outcomes.      BERT24) and demographic factors. Given the generalizability of the
+Hypothetically, predictions of social identity could be used to de-        framework presented in this article, it can easily be applied to other
+prive people of opportunities. Yet, there are potential benefits of so-    datasets. Beyond measuring bias, we believe that it is also important
+cial identity detection methods in the field of biomedical                 to adapt recent methods to reduce the bias of state-of-the-art ma-
+informatics. For example, identity predictions could be used to mea-       chine learning approaches65 to the biomedical NLP domains.
+sure potential health disparities. The decision process of choosing
+which applications will result in harm is complex. There have been
+recent proposals to introduce ethical review boards at the organiza-       FUNDING
+tional level to help make such decisions—potentially extending the         This material is based on work supported by the National Science Foundation
+duties of current institutional review boards.62 Currently, ethical        (Grant No. 1947697).
+
+
+
+
+                                                                                                                                                             Downloaded from https://academic.oup.com/jamia/article/28/4/839/6114713 by guest on 18 January 2023
+issues in natural language processing applications are unlikely to
+raise the flags required to trigger an institutional review board ap-
+proval process.63                                                          AUTHOR CONTRIBUTIONS
+    Fourth, while we predict dialect, we do not make use of manu-          BL performed the experiments and drafted the initial manuscript. AR con-
+ally curated dialect annotations. Our evaluation strategy in the Sup-      ceived of the study, oversaw the design, and reviewed and approved the man-
+plementary Appendix relies on measuring well-known AAE                     uscript.
+phonetic and syntactic constructions. Moreover, our dialect classi-
+fier is trained using estimated dialect annotations. Why don’t we
+manually annotate a small set of AAE tweets to evaluate or train the       SUPPLEMENTARY MATERIAL
+dialect classifier? Our answer to this question has 2 main points.         Supplementary material is available at Journal of the American Medical Infor-
+First, it is difficult to decide a priori the “threshold” required for a   matics Association online.
+tweet to be considered AAE. Is a tweet written in AAE if it contains
+a single AAE phonetic construct (eg, sumn)? Does it need more than
+2 phonetic constructions? Does the tweet need to contain common            ACKNOWLEDGEMENTS
+syntactic patterns (eg, habitual be) to be AAE? Instead, we evaluate       We thank the reviewers for their insightful comments and help improving this
+the dialect classifier in the Supplementary Appendix by comparing          article.
+how likely well-known phonetic and syntactic constructions are in
+tweets labeled as SAE vs AAE by our classifier. We find that the
+well-known AAE constructions are more likely in tweets classified
+                                                                           DATA AVAILABILITY
+as AAE. We believe this evaluation strategy provides more flexibility      The datasets underlying this article are available online. The Blodgett et al33
+than relying on an artificial threshold. Second, we only rely on a         demographic dataset is available online (http://slanglab.cs.umass.edu/Twitter-
+small number of well-known constructions. Thus, could manually             AAE/). Both the FluTrack5 and FluVacc4 datasets are available online (http://
+                                                                           www.cs.jhu.edu/mdredze/data/).
+annotation (eg, using Amazon Mechanical Turk) without relying on
+a few well-known constructions increase the variation of AAE text?
+Potentially, but, if we annotate tweets as AAE without relying on
+                                                                           CONFLICT OF INTEREST STATEMENT
+well-known constructions, we are at-risk of analyzing mock AAE
+rather than AAE itself.60,61 Ronkin and Karn61 defined mock AAE            None declared.
+as “outgroup misappropriation of the language variety, which [in-
+dexes] racist stereotypes by reducing African Americans to stock
+                                                                           REFERENCES
+outgroup images.” Thus, at a minimum, we believe that such an an-
+notation task would require self-identified AAE speakers, or new           1. Ferretti L, Wymant C, Kendall M, et al. Quantifying sars-CoV-2 transmis-
+                                                                              sion suggests epidemic control with digital contact tracing. Science 2020;
+influenza-related data would need to be collected from self-
+                                                                              368 (6491): eabb6936.
+identified AAE speakers on social media. But, beyond the minimum
+                                                                           2. Ekong I, Chukwu E, Chukwu M. COVID-19 mobile positioning data con-
+approach, more work is required to understand the best AAE anno-
+                                                                              tact tracing and patient privacy regulations: exploratory search of global
+tation technique. Recent work in racial categorization for algorithm          response strategies and the use of digital tools in Nigeria. JMIR Mhealth
+fairness suggests “various choices that go into the operationalization        Uhealth 2020; 8 (4): e19139.
+of race for the purposes of fairness-informed analysis or interven-        3. Salathe M, Freifeld CC, Mekaru SR, Tomasulo AF, Brownstein JS. Influ-
+tions significantly impact the result” and “measurement of race               enza a (h7n9) and the importance of digital epidemiology. N Engl J Med
+should be considered as an empirical problem in its own right.”64             2013; 369 (5): 401–4.
+Because dialect annotation strategies can have an impact on the out-       4. Huang X, Smith MC, Paul MJ, et al. Examining patterns of influenza vac-
+come of algorithm fairness studies, we find that the empirical prob-          cination in social media. In: Proceedings of the Thirty-First AAAI Confer-
+                                                                              ence on Artificial Intelligence: AAAI-17; 2017: 542–6.
+lem of annotating dialect should be carefully considered.
+                                                                           5. Lamb A, Paul MJ, Dredze M. Separating fact from fear: tracking flu infec-
+                                                                              tions on Twitter. In: Proceedings of the 2013 Conference of the North
+                                                                              American Chapter of the Association for Computational Linguistics: Hu-
+CONCLUSION
+                                                                              man Language Technologies; 2013: 789–95.
+In this article, we used 2 influenza-related social media datasets to      6. Corley C, Mikler AR, Singh KP, Cook DJ. Monitoring influenza trends
+understand the potential biases in machine learning models trained            through mining social media.BIOCOMP 2009; 2009: 340–6.
+848                                                                 Journal of the American Medical Informatics Association, 2021, Vol. 28, No. 4
+
+
+7. Corley C, Cook D, Mikler A, Singh K. Text and structural data mining of         27. Escude FJ. Determining Bias in Machine Translation with Deep Learning
+    influenza mentions in web and social media. Int J Environ Res Public               Techniques [master’s thesis]. Barcelona, Spain, Universitat Politècnica de
+    Health 2010; 7 (2): 596–615.                                                       Catalunya; 2019.
+8. Santillana M, Nguyen AT, Dredze M, Paul MJ, Nsoesie EO, Brownstein              28. Verma S, Rubin J. Fairness definitions explained. In: 2018 IEEE/ACM
+    JS. Combining search, social media, and traditional data sources to                International Workshop on Software Fairness (FairWare); 2018: 1–7.
+    improve influenza surveillance. PLoS Comput Biol 2015; 11 (10):                29. Makhlouf K, Zhioua S, Palamidessi C. On the applicability of ml fairness
+    e1004513.                                                                          notions. arXiv, doi: https://arxiv.org/abs/2006.16745, 19 Oct 2020, pre-
+9. Ahmed N, Quinn SC, Hancock GR, Freimuth VS, Jamison A. Social me-                   print: not peer reviewed.
+    dia use and influenza vaccine uptake among white and African American          30. Davidson T, Bhattacharya D, Weber I. Racial bias in hate speech and abu-
+    adults. Vaccine 2018; 36 (49): 7556–61.                                            sive language detection datasets. In: Proceedings of the Third Workshop
+10. Fiscella K. Commentary—anatomy of racial disparity in influenza vacci-             on Abusive Language Online; 2019: 25–35.
+    nation. Health Serv Res 2005; 40 (2): 539–50.                                  31. Sen M, Wasow O. Race as a bundle of sticks: Designs that estimate effects
+11. Bleser WK, Miranda PY, Jean-Jacques M. Racial/ethnic disparities in in-            of seemingly immutable characteristics. Annu Rev Polit Sci 2016; 19 (1):
+    fluenza vaccination of chronically-ill us adults: The mediating role of per-       499–522.
+    ceived discrimination in healthcare. Med Care 2016; 54 (6): 570–7.             32. Sap M, Card D, Gabriel S, Choi Y, Smith NA. The risk of racial bias in
+
+
+
+
+                                                                                                                                                                      Downloaded from https://academic.oup.com/jamia/article/28/4/839/6114713 by guest on 18 January 2023
+12. Tse SC, Wyatt LC, Trinh-Shevrin C, Kwon SC. Racial/ethnic differences              hate speech detection. In: Proceedings of the 57th Conference of the Asso-
+    in influenza and pneumococcal vaccination rates among older adults in              ciation for Computational Linguistics; 2019: 1668–78.
+    New York City and Los Angeles and orange counties. Prev Chronic Dis            33. Blodgett SL, Green L, O’Connor B. Demographic dialectal variation in so-
+    2018; 15: E159–9.                                                                  cial media: a case study of African-American English. In: Proceedings of
+13. Fiscella K, Dressler R, Meldrum S, Holt K. Impact of influenza vaccination         the 2016 Conference on Empirical Methods in Natural Language Process-
+    disparities on elderly mortality in the united states. Prevent Med 2007; 45        ing; 2016: 1119–30.
+    (1): 83–7.                                                                     34. Blodgett SL, O’Connor B. Racial disparity in natural language processing: A
+14. Dixon L, Li J, Sorensen J, Thain N, Vasserman L. Measuring and mitigat-            case study of social media African-American English. arXiv, doi: https://
+    ing unintended bias in text classification. In: AIES ’18: Proceedings of the       arxiv.org/abs/1707.00061, 30 Jun 2017, preprint: not peer-reviewed.
+    2018 AAAI/ACM Conference on AI, Ethics, and Society; 2018: 67–73.              35. Green LJ. African American English: A Linguistic Introduction. Cam-
+15. Park JH, Shin J, Fung P. Reducing gender bias in abusive language detec-           bridge, MA: Cambridge University Press; 2002.
+    tion. In: Proceedings of the 2018 Conference on Empirical Methods in           36. Florini S. Tweets, tweeps, and signifyin’ communication and cultural per-
+    Natural Language Processing; 2018: 2799–804                                        formance on “Black Twitter.” Television New Media 2014; 15 (3):
+16. Badjatiya P, Gupta M, Varma V. Stereotypical bias removal for hate                 223–37.
+    speech detection task using knowledge-based generalizations. In: WWW           37. Eisenstein J. Identifying regional dialects in on-line social media. In:
+    ’19: The World Wide Web Conference; 2019: 49–59                                    Boberg C, Nerbonne J, Watt D, eds. The Handbook of Dialectology. Ho-
+17. Rios A. FuzzE: Fuzzy fairness evaluation of offensive language classifiers         boken, NJ: Wiley; 2017: 368–83.
+    on African-American English. Proc AAAI Conf Artif Intell 2020; 34 (1):         38. Zalmout N, Habash N. Adversarial multitask learning for joint multi-
+    881–9.                                                                             feature and multi-dialect morphological modeling. In: Proceedings of the
+18. Bolukbasi T, Chang K-W, Zou JY, Saligrama V, Kalai AT. Man is to com-              57th Annual Meeting of the Association for Computational Linguistics;
+    puter programmer as woman is to homemaker? Debiasing word embed-                   2019: 1775–86.
+    dings. Adv Neural Inf Process Syst 2016; 4349–57.                              39. Obermeyer Z, Powers B, Vogeli C, Mullainathan S. Dissecting racial bias
+19. Zhao J, Zhou Y, Li Z, Wang W, Chang K-W. Learning gender-neutral                   in an algorithm used to manage the health of populations. Science 2019;
+    word embeddings. In: Proceedings of the 2018 Conference on Empirical               366 (6464): 447–53.
+    Methods in Natural Language Processing; 2018: 4847–53.                         40. Elazar Y, Goldberg Y. Adversarial removal of demographic attributes
+20. Zhao J, Wang T, Yatskar M, Cotterell R, Ordonez V, Chang K-W. Gender               from text data. In: Proceedings of the 2018 Conference on Empirical
+    bias in contextualized word embeddings. In: Proceedings of the 2019 Con-           Methods in Natural Language Processing; 2018: 11–21.
+    ference of the North American Chapter of the Association for Computa-          41. Kim Y. Convolutional neural networks for sentence classification. In: Pro-
+    tional Linguistics: Human Language Technologies, Volume 1 (Long and                ceedings of the 2014 Conference on Empirical Methods in Natural Lan-
+    Short Papers); 2019: 629–34.                                                       guage Processing; 2014: 1746–51.
+21. Rios A, Joshi R, Shin H. Quantifying 60 years of gender bias in biomedical     42. Kouzy R, Abi JJ, Kraitem A, et al. Coronavirus goes viral: quantifying the
+    research with word embeddings. In: Proceedings of the 2020 SGIBioMed               covid-19 misinformation epidemic on Twitter. Cureus 2020; 12: e7255.
+    Workshop on Biomedical Language Processing; 2020: 1–13.                        43. Sarker A, Belousov M, Friedrichs J, et al. Data and systems for
+22. Garg N, Schiebinger L, Jurafsky D, Zou J. Word embeddings quantify 100             medication-related text classification and concept normalization from
+    years of gender and ethnic stereotypes. Proc Natl Acad Sci U S A 2018;             twitter: insights from the social media mining for health (smm4h)-2017
+    115: E3635–44.                                                                     shared task. J Am Med Inform Assoc 2018; 25 (10): 1274–83.
+23. Caliskan A, Bryson JJ, Narayanan A. Semantics derived automatically            44. Pedregosa F, Varoquaux G, Gramfort A, et al. Scikit-learn: machine learn-
+    from language corpora contain human-like biases. Science 2017; 356                 ing in python. J Mach Learn Res 2011; 12: 2825–30.
+    (6334): 183–6.                                                                 45. Rios A, Kavuluru R. Convolutional neural networks for biomedical text
+24. Devlin J, Chang M-W, Lee K, Toutanova K. BERT: Pre-training of deep                classification: Application in indexing biomedical articles. In: Proceedings
+    bidirectional transformers for language understanding. In: Proceedings of          of the 6th ACM Conference on Bioinformatics, Computational Biology
+    the 2019 Conference of the North American Chapter of the Association               and Health Informatics; 2015: 258–67.
+    for Computational Linguistics: Human Language Technologies, Volume 1           46. Peng Y, Rios A, Kavuluru R, Lu Z. 2018 Extracting chemical–protein rela-
+    (Long and Short Papers); 2019: 4171–86.                                            tions with ensembles of SVM and deep learning models. Database (Ox-
+25. Kurita K, Vyas N, Pareek A, Black AW, Tsvetkov Y. Quantifying social               ford) 2018; 2018: bay073.
+    biases in contextual word representations. In: 1st ACL Workshop on Gen-        47. Peng Y, Lu Z. Deep learning for extracting protein-protein interactions
+    der Bias for Natural Language Processing; 2019.                                    from biomedical literature. BioNLP 2017; 29–38.
+26. Font JE, Costa-Juss a MR. Equalizing gender bias in neural machine trans-     48. Zhang Y, Wallace B. A sensitivity analysis of (and practitioners’ guide to)
+    lation with word embeddings techniques. In: Proceedings of the First               convolutional neural networks for sentence classification. arXiv, doi:
+    Workshop on Gender Bias in Natural Language Processing; 2019:                      https://arxiv.org/abs/1510.03820, 6 Apr 2016, preprint: not peer
+    147–54.                                                                            reviewed.
+Journal of the American Medical Informatics Association, 2021, Vol. 28, No. 4                                                                                  849
+
+
+49. Kingma DP, Ba J. Adam: A method for stochastic optimization. arXiv,                 ings of the 58th Annual Meeting of the Association for Computational
+    doi: https://arxiv.org/abs/1412.6980, 30 Jan 2017, preprint: not peer               Linguistics; 2020: 4885–901
+    reviewed.                                                                     58.   Scheuerman MK , Paul JM , Brubaker JR. How computers see gender: an
+50. Chollet F, et al. Keras. https://github.com/keras-team/keras Accessed March         evaluation of gender classification in commercial facial analysis services.
+    1, 2020.                                                                            In: Proceedings of the ACM on Human-Computer Interaction; 2019.
+51. Kavuluru R, Rios A, Tran T. Extracting drug-drug interactions with            59.   Keyes O. The misgendering machines: Trans/HCI implications of auto-
+    word and character-level recurrent neural networks. In: 2017 IEEE                   matic gender recognition. In: Proceedings of the ACM on Human-
+    International Conference on Healthcare Informatics (ICHI); 2017:                    Computer Interaction; 2018.
+    5–12.                                                                         60.   Smokoski HL, Voicing the Other: Mock AAVE on Social Media [master’s
+52. Mikolov T, Sutskever I, Chen K, Corrado GS, Dean J. Distributed repre-              thesis]. New York, NY, Graduate Center, City University of New York;
+    sentations of words and phrases and their compositionality. Adv Neural              2016.
+    Inf Process Syst 2013; 2: 3111–9.                                             61.   Ronkin M, Karn HE. Mock Ebonics: linguistic racism in parodies of
+53. Pennington J, Socher R, Manning C. Glove: global vectors for word repre-            Ebonics on the internet. J Sociolinguist 2002; 3 (3): 360–80.
+    sentation. In: Proceedings of the 2014 Conference on Empirical Methods        62.   Leidner JL, Plachouras V. Ethical by design: ethics best practices for natu-
+    in Natural Language Processing; 2014: 1532–43.                                      ral language processing. In: Proceedings of the First ACL Workshop on
+
+
+
+
+                                                                                                                                                                       Downloaded from https://academic.oup.com/jamia/article/28/4/839/6114713 by guest on 18 January 2023
+54. Mobadersany P, Yousefi S, Amgad M, et al. Predicting cancer outcomes                Ethics in Natural Language Processing; 2017.
+    from histology and genomics using convolutional networks. Proc Natl           63.   Hovy D, Spruit SL. The social impact of natural language processing. In:
+    Acad Sci U S A 2018; 115:E2970–9.                                                   Proceedings of the 54th Annual Meeting of the Association for Computa-
+55. Jones T. Toward a description of African American vernacular English di-            tional Linguistics (Volume 2: Short Papers); 2016.
+    alect regions using “Black Twitter.” Am Speech 2015; 90 (4): 403–40.          64.   Hanna A, Denton E, Smart A, Smith-Loud J. Towards a critical race meth-
+56. Mishra S, He S, Belli L. Assessing demographic bias in named entity recog-          odology in algorithmic fairness. In: Proceedings of the 2020 Conference
+    nition. arXiv, doi: https://arxiv.org/abs/2008.03415, 8 Aug 2020, pre-              on Fairness, Accountability, and Transparency; 2020: 501–12.
+    print: not peer reviewed.                                                     65.   Jia S, Meng T, Zhao J, Chang K. Mitigating gender bias amplification in
+57. Nie Y, Williams A, Dinan E, Bansal M, Weston J, Kiela D. Adversarial                distribution by posterior regularization. In: Proceedings of the 58th An-
+    NLI: a new benchmark for natural language understanding. In: Proceed-               nual Meeting of the Association for Computational Linguistics; 2020.
+

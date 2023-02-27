@@ -1,0 +1,476 @@
+ Social Media News Communities: Gatekeeping, Coverage,
+                   and Statement Bias
+
+                   Diego Saez-Trumper                                             Carlos Castillo                              Mounia Lalmas
+                  Universitat Pompeu Fabra                                               QCRI                                    Yahoo! Labs
+                      Barcelona, Spain                                                 Doha, Qatar                             Barcelona, Spain
+              dsaez-trumper@acm.org                                              chato@acm.org                               mounia@acm.org
+
+
+ABSTRACT                                                                                               in an effort to appeal to conservative viewers.1 Exposure
+We examine biases in online news sources and social me-                                                to biases in news reporting has numerous consequences. It
+dia communities around them. To that end, we introduce                                                 has been shown to have the capability to foster intolerance
+unsupervised methods considering three types of biases: se-                                            as well as ideological segregation, and even antagonisms in
+lection or “gatekeeping” bias, coverage bias, and statement                                            major political and social issues [8]. Bias can also affect
+bias, characterizing each one through a series of metrics.                                             voting behavior, depending on the degree and direction of
+Our results, obtained by analyzing 80 international news                                               it, and on voters’ reliance on media [6, 10]. Being aware,
+sources during a two-week period, show that biases are sub-                                            tracking, and overcoming bias in news reporting is important
+tle but observable, and follow geographical boundaries more                                            for a fair society, as media indeed has the power to shape a
+closely than political ones. We also demonstrate how these                                             democratic society.
+biases are to some extent amplified by social media.                                                      Twitter is a major component of the online news ecosys-
+                                                                                                       tem. Once passive, users consuming news online filter news
+                                                                                                       and discuss what media publish on Twitter. Social media
+Categories and Subject Descriptors                                                                     can play a major role in terms of overcoming biases, since
+                                                                                                       social media users can freely (in principle) report on current
+H.1.2 [User/Machine Systems]: Human information pro-                                                   events showing other angles of a story, and also help us un-
+cessing                                                                                                derstand the presence of bias in the news online ecosystem.
+                                                                                                       In this paper, we focus on the latter.
+General Terms                                                                                             Bias can happen in a number of ways [19]: which stories
+                                                                                                       are selected, selection bias, how much attention is given to a
+Measurement, Human Factors                                                                             story, coverage bias, and how a story is reported, statement
+                                                                                                       bias. We analyze data from dozens of international news
+                                                                                                       media organizations to answer how can we quantify biases in
+Keywords                                                                                               online news? Naturally, we do not expect that media bias
+Online News, Framing, News Bias                                                                        can be reduced to a single quantity or metric. Therefore,
+                                                                                                       for each type of bias, we introduce a set of metrics that
+                                                                                                       capture different aspects of it. Our main contributions are
+1. INTRODUCTION                                                                                        the following:
+  What is published by the news media depends on numer-
+ous factors, an important one being the newsworthiness of                                                 • We introduce unsupervised methods to characterize
+a story, but also factors such a space constraint, timeliness,                                              biases in online news media and in their communities
+and how close a story is to readers in a geographical and cul-                                              in social media.
+tural sense [7]. Since it is impossible to report everything,                                             • We demonstrate multiple metrics that capture geo-
+selectivity is inevitable. Nonetheless, reputable news media                                                graphical and political biases in a large sample of in-
+are expected to be objective in which stories they report and                                               ternational news media.
+how they report them; their role is to inform people about
+what is happening either locally, nationally or worldwide.                                                • We describe how, in some cases, biases in social media
+  It is however known that media bias exists. For instance,                                                 are amplified with respect to traditional news sources.
+Fox News has been formally accused of misrepresenting facts
+Permission to make digital or hard copies of all or part of this work for personal or                  2. DEFINITIONS
+classroom use is granted without fee provided that copies are not made or distributed
+                                                                                                        This section introduces the concepts we use in this paper.
+for profit or commercial advantage and that copies bear this notice and the full citation
+on the first page. Copyrights for components of this work owned by others than the                     We start with three definitions.
+author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or                 News article. An online news article or simply “article”
+republish, to post on servers or to redistribute to lists, requires prior specific permission
+                                                                                                       is any document with a publicly-accessible URL, posted on
+and/or a fee. Request permissions from Permissions@acm.org.
+CIKM’13, October 27–November 01 2013, San Francisco, CA, USA
+                                                                                                       one of the news websites we follow.
+Copyright is held by the owner/author(s). Publication rights licensed to ACM.                          1
+ACM 978-1-4503-2263-8/13/10 ... $15.00.                                                                  http://www.guardian.co.uk/media/2004/jun/15/
+http://dx.doi.org/10.1145/2505515.2505623.                                                             broadcasting.ofcom
+
+
+
+
+                                                                                                1679
+News story. An online news story or simply “story” is                    Wikipedia.4 We discarded news aggregators (e.g., Yahoo!
+a collection of several articles that are strongly related to a          News) and websites that do not belong to traditional news
+seminal event [15], e.g. “Death of former UK PM Thatcher”.               organizations (e.g., Reddit, The Onion, and PR Web).
+Entity. We focus on people mentioned in the news, i.e.                      Next we determined the RSS feed for each news source,
+named entities of type person appearing in the content of                when available, and their corporate Twitter account(s). A
+news articles or Twitter messages. This typically includes               news website may have more than one corporate Twitter
+politicians, athletes, and artists, among many others.                   account. For the cases where they correspond to different
+                                                                         sections of the site (e.g., @BBCWorld and @BBCBusiness), we
+                                                                         considered each account as a separate news source. For the
+2.1 Bias                                                                 cases where one account links to a subset of the news posted
+   Bias is offering a partial perspective on facts [18]. The             from a second account (e.g., @AJELive and @AJEnglish), we
+degree to which bias is present on a text is often subject               merged them.
+of considerable debate. We consider three types of bias,                    During a period of two weeks in April 2013, we checked
+following the work by [5]:                                               each source every 30 minutes for new articles. We considered
+Selection bias or gatekeeping. In partisan politics, the                 URLs appearing in the RSS feed (when present), or posted
+preference for selecting stories from one party. We observe              through a corporate Twitter account. After downloading,
+selection bias by determining which media/community cov-                 we removed the ancillary elements of each page (common
+ers a certain story or person.                                           headers, footers, navigational elements, etc.) using a ser-
+                                                                         vice5 that applies an heuristic based on tag-to-text ratio.
+Coverage bias. In partisan politics, the preference for
+                                                                         Finally, named entities where extracted using Open Calais.6
+giving a larger amount of coverage (time/space) to stories
+about one party. We observe coverage bias by looking at the
+amount of attention each story or person is given.
+                                                                         3.2 Aggregating articles into stories
+                                                                            News articles can be aggregated into stories that discuss
+Statement bias. In partisan politics, the preference for                 a common event or topic. In order to create news stories,
+expressing more favorable (or more disfavorable) statements              we measured the cosine similarity of pairs of articles using
+for one party. We observe statement bias by looking at the               TF.IDF weighting. We use the same measure of text sim-
+sentiments in statements mentioning different people.                    ilarity in other tasks throughout the paper. Two articles
+                                                                         having a similarity larger than θ = 0.4 (set empirically on
+2.2 Social media news communities                                        a hold-out set) were considered equivalent in terms of con-
+   All of the news sources we study have a community of                  tent. We built a graph containing all articles, joining by an
+social media users who follows and reposts their stories in              edge all articles having a similarity larger than the thresh-
+social media. There are at least two ways in which these                 old. Each story corresponds to one connected component of
+communities can be understood. On one hand, social media                 this graph, similarly to [25]. These sub-graphs were post-
+communities can be considered a type of “fan” of the news                processed to increase precision, ensuring that all articles on
+source. On the other hand, some community members can                    each group were closely related to each other. The post-
+also be considered as part of the interpretive community of              process consisted in recursively removing all vertices with
+news [24], as they are becoming more accustomed to par-                  degree less than 2.
+ticipate actively on the news process (e.g., discovering new
+stories or placing them into context).                                   3.3 Determining social media communities
+   Both interpretations agree that some users will be more                  The active social media community of a news source should
+active than others and motivate our next definition. We                  include people who are likely to read the news source almost
+define the active social media community of an online news               every day, and who frequently share on Twitter articles from
+source (or “community” in the rest of this paper), as the                that source. For each article from a news source, we collected
+set of users who are regularly exposed to articles from that             the usernames of all Twitter users who posted that URL7 on
+source (most days of the week for instance), are interested              Twitter in the first 12 hours after the article’s publication.
+in sharing those articles, and are active in social media. In            A recent study [11] showed that almost all shares of news
+the next section we operationalize this definition.                      articles happen during this period. To avoid automatic ac-
+                                                                         counts (bots) we blacklisted all users posting more than 10
+                                                                         articles from a single source within a day.8 Twitter’s API
+3. DATA PROCESSING                                                       allows to obtain up to 1,500 tweets for each URL, which was
+  We assembled two collections, one containing news articles             enough for all the articles in our observation period.
+and the other containing Twitter messages (“tweets”).2                      We define the community of a news source on a given day,
+                                                                         as the set of all the people who have tweeted at least K1
+3.1 Collecting news articles                                             4
+  Our data collection covers a large fraction of the English-              http://en.wikipedia.org/wiki/International_
+                                                                         broadcasting             http://en.wikipedia.org/wiki/
+speaking audience of online news. Alexa3 maintains a list of             International_news_channels
+the most visited sites on the Web; from this list, we picked             5
+                                                                           http://viewtext.org/ with ratio 0.7.
+the top 100 websites under the category “news”. We added                 6
+                                                                           http://www.opencalais.com/
+to this list prominent international news sources listed on              7
+                                                                           Shortened URLs (e.g. bit.ly ones) were expanded, and
+                                                                         all URLs were normalized by removing unnecessary and/or
+2
+  Both collections are available upon request for research pur-          tracking-related parameters.
+poses.                                                                   8
+                                                                           We actually observed that many of these accounts were
+3
+  http://www.alexa.com/topsites/category/Top/News                        later removed/deactivated by Twitter.
+
+
+
+
+                                                                  1680
+                                                                       4. SELECTION BIASES
+                                                                          Selection bias is also known as gatekeeping. Printed media
+                                                                       has space constraints, whereas radio and television broad-
+                                                                       cast have temporal constraints. These force editors to rou-
+                                                                       tinely take decisions about which (out of potentially hun-
+                                                                       dreds or thousands of news stories) to cover. The Web allows
+                                                                       for more latitude, but selectivity is still present.
+
+                                                                       4.1 Prolificacy and exclusivity
+                                                                          To place selection biases in context, we first study the
+                                                                       quantity of stories in online media, and the extent to which
+                                                                       those stories are exclusive to one specific news source.
+                                                                          We first compare news sources and their communities in
+                                                                       terms of their overall prolificacy. The number of articles
+                                                                       each source publishes during a 2-week period is typically in
+                                                                       the low hundreds but can reach up to a few thousand in
+                                                                       certain cases. We find that the number of different stories a
+                                                                       source publishes is correlated (r2 = 0.83) with the number
+                                                                       of articles (distinct URLs) that are published, i.e. the more
+                                                                       articles a news source posts, the more likely they are to cover
+                                                                       a story. Looking at communities, larger communities tend to
+                                                                       post9 more stories (r2 = 0.73), and communities post about
+                                                                       2-3 times more stories than the news sources they follow.
+                                                                          Next we observe to what extent the content posted by
+Figure 1: Depiction of the overlap of the communities                  a news source is unique. A sizable fraction of the English
+between news sources. Edges connect two sources if the                 content in news media is produced by agencies. Accord-
+Jaccard coefficient of their respective community mem-                 ing to [17], “only four organizations do extensive interna-
+bers is greater than 0.03 (Best seen in color).                        tional reporting (Reuters, AP, AFP, BBC), a few others do
+                                                                       some international reporting (CNN, MSN, New York Times,
+                                                                       Guardian) and most do no original international report-
+                                                                       ing.” For each article i, we compute its exclusivity Ei as
+                                                                       Ei = 1 − max(sim(i, j)), where sim is the cosine similarity
+articles from that news source in the past K2 days. While              with TF.IDF weighting and the maximum is taken across all
+we expect communities to be dynamic, we do not expect                  articles j 6= i. We find that Associated Press (AP) and other
+them to change completely from day to day, hence we tune               agencies have the most content that is not exclusive. The
+the two parameters K1 and K2 to provide a certain degree               Economist, Newsweek, and other magazines have the largest
+of stability. After experimentation, we set K1 = 3, K2 = 3,            amount of original stories; they tend to carry a smaller num-
+which produces communities that change by roughly 10% of               ber of stories, but most of their content is exclusive. Exclu-
+their members every day on average.                                    sivity seems to be weakly correlated (negatively) with the
+   Previous works e.g. [1] have considered the followers of a          number of stories each media covers (r2 = −0.4), suggest-
+news source on Twitter as its community. While our defini-             ing that in news online being prolific does not necessarily
+tion is different, community sizes according to both defini-           require having more original content.
+tions are correlated (r2 = 0.74, computed in log-log scale).
+The few exceptions are news media sources with content                 4.2 Selection bias and prominence
+that does not change on a daily basis, such as Newsweek.                 A major factor affecting the selection of stories is their
+   The number of common followers in Twitter between US-               relative importance [7]. We measure the prominence of each
+based news media has been found to be correlated with po-              story, which corresponds to the fraction of news sources that
+litical leaning [1]. We perform the same measurement in in-            has at least one article about the story. As in [4], this num-
+ternational news media and with our definition of communi-             ber ranges from a maximum of 1.0 if the story is in the N
+ties, and found this to be correlated more with geographical           news sources in a sample, to a minimum of 1/N if it is only
+factors than political leaning. The resulting graph, thresh-           in 1 of them.
+olded at communities having a Jaccard coefficient greater                Different news sources may have different policies for the
+to 0.03, is shown in Figure 1. We observe clear clusters               selection of stories. For instance one news media may want
+for UK-, USA-, India-, and Australian-based media. Com-                to cover only the top stories of the day, while another may
+munity overlaps vary widely, with 90% of the news sources              want to include a number of minor/niche ones. Indeed, we
+having between 2% and 34% of their community shared with               observe in practice a wide range of prominence distributions
+at least one other source. The exclusivity of the community            across stories published by online news media. In general
+of a news source is to a large extent independent from the             magazine-type of media such as The Economist or Newsweek
+community size (r2 = 0.14).                                            tends to focus on stories of high prominence, and covering
+   The complete list of data sources, including details on
+their number of articles, their number of followers, commu-            9
+                                                                        A community is said to post a story whenever at least one
+nity sizes, and example stories, are included in the Supple-           of its members posts on Twitter the URL of one article be-
+mentary Material.                                                      longing to a story.
+
+
+
+
+                                                                1681
+less stories is correlated with having larger average promi-             order to visualize this similarity matrix, we project it in two
+nence (r2 = −0.51).                                                      dimensions using Principal Component Analysis (PCA).
+   Social media, in principle, should allow a broader selection             The result is shown in Figures 2(a) for news sources and 2(b)
+of stories, including niche ones. In general the prominence              for social media communities. For online news sources, there
+of stories posted by social media communities is significantly           is a clear separation between US-based media and the rest.
+smaller than the prominence of the news media source they                In social media communities, there is much more mixing
+follow. In particular, stories of large prominence are not               of different regions. This means that US-based news me-
+posted as often by social media users. Two factors may                   dia tends to agree in their selection of stories, while their
+contribute to this. First, given that social media users do              communities in social media are interested in a more diverse
+not need to appeal to a broad audience, they may have a                  range of issues. However, as shown next in Section 5.2, they
+stronger preference for niche content. Second, saturation                both tend to be more geographically homogeneous when
+effects have been observed in Twitter; [20] demonstrated                 looking at the amount of attention they devote to stories.
+that the probability that a user posts something initially
+increases with the number of exposures to it, but then drops.            5. COVERAGE BIAS
+Both factors may contribute to observing more stories of
+                                                                            Coverage bias is a preference for giving more airtime, space,
+smaller prominence in social media.
+                                                                         or attention to some issues in contrast to others [5]. While
+   Statistics for each data source in terms of exclusivity, as
+                                                                         two news media may publish articles about the same story,
+well as details on our analysis of prolificacy and examples of
+                                                                         it might be the case that one gives the story much more
+prominence distribution for some media can be found in the
+                                                                         attention than the other.
+Supplementary Material.
+                                                                         5.1 Measuring coverage bias
+4.3 Selection bias and geography                                            There are several ways in which the distribution of at-
+  Next we compare news media according to the overlap in                 tention given to stories can be quantified. In each news
+the stories they post, measured by computing for every pair              source, we can look at the length of the articles covering
+of media the Jaccard coefficient of their sets of stories. In            the story, counting words and adding across multiple arti-
+                                                                         cles of the same story, when necessary. In social media, we
+                                                                         count the number of tweets containing links to articles on a
+                                                                         given story. Communities tend to be influenced by the news
+                                                                         media source they follow. A story prominently displayed
+                                                                         and promoted by traditional news sources should obtain a
+                                                                         larger number of social media reactions from its community.
+                                                                         In addition to observing the distribution of coverage of sto-
+                                                                         ries, we can also quantify coverage biases in the treatment
+                                                                         of different people, by measuring the distribution of number
+                                                                         of mentions per person across different media. These dis-
+                                                                         tributions are compared by using the Jensen-Shannon (JS)
+(a) Selection bias (b) Selection bias     (c)   Coverage bias            divergence between them for each pair of news sources, and
+in sources         in communities         in sources (#words)            for each pair of social media communities. Coverage bias by
+                                                                         story words and by people mentions are somewhat correlated
+                                                                         (r = 0.68). Interestingly, news media coverage as measured
+                                                                         by the length of the stories is correlated with the one ob-
+                                                                         served in the distribution of social media reactions across
+                                                                         all communities (r = 0.84), but not so correlated with the
+                                                                         distribution of tweets in each media’s community (r = 0.40).
+                                                                         This is in agreement with classical results by [13]; the im-
+                                                                         portance given by people to different issues tends to be more
+                                                                         correlated with media as a whole than with the specific me-
+                                                                         dia source(s) each person follows.
+                                                                            More details on the correlations between selection and
+                                                                         coverage bias can be found in the Supplementary Material.
+
+                                                                         5.2 Coverage bias, geography, and politics
+                                                                            We measure the extent of coverage bias with respect to
+                                                                         geographical regions and partisan politics.
+                                                                            The distribution of the coverage of different stories, as
+                                                                         measured in terms of number of words, is strongly corre-
+                                                                         lated with geographical regions, as shown in Figure 2(c).
+                                                                         The same happens if we look at the distribution of tweets
+          (d) Coverage bias in communities (#tweets)
+                                                                         given to different stories by communities, depicted in Fig-
+                                                                         ure 2(d). In both cases, the geographical biases are more
+Figure 2: Similarity according to selection bias in (a)                  evident than when measured using selection-bias metrics.
+and (b). Similarity according to coverage bias in (c) and                This means that, as expected [7], news media tends to write
+(d) (Best seen in color.)                                                articles about the country/region where they are based, and
+
+
+
+
+                                                                  1682
+                                                                            Table 1: People selected in our sample for statement
+                                                                            bias, including number of articles mentioned each person
+                                                                            and the boundaries of the 1st (more negative) and 4th
+                                                                            (more positive) quantiles of valence scores for mentions
+                                                                            of them.
+                                                                                                Number of       Sentiment Quartiles
+                                                                             Name                articles       Media     Community
+                                                                                                              1st   4th   1st     4th
+                                                                             Barack Obama            3,241      5.20   6.26   4.82   6.41
+                                                                             Margaret Thatcher        986       5.15   6.47   4.00   6.41
+(a)      Coverage bias (tweets)   (b)      Coverage bias (stories)           Kim Jong-un              984       5.60   6.62   4.53   6.45
+and partisan politics             and partisan politics                      John Kerry               850       5.10   6.32   4.89   6.39
+                                                                             David Cameron            377       5.82   6.25   4.31   6.48
+                                                                             Julia Gillard            303       5.28   6.62   4.93   6.83
+            Figure 3: Coverage bias and politics.                            Vladimir Putin           291       5.13   6.31   4.89   6.62
+                                                                             Ban Ki-moon              271       4.79   5.33   4.32   5.52
+  that those articles tend to be longer and more frequently                  Bashar al-Assad          260       4.69   6.06   4.49   6.00
+  tweeted by their social media communities. The same geo-                   Hugo Chavez              211       4.86   6.32   4.55   6.39
+  graphical biases have been observed online with respect to
+  search queries [23], indicating that users are interested in
+  what is happening around them, and what is happening to
+                                                                            able tool to study emotions expressed in text, e.g. [16] looked
+  those around them.
+                                                                            at the relationship between tweet sentiments and polls in or-
+     We observe that the amount of attention social media
+                                                                            der to examine how the sentiments expressed in Twitter can
+  communities dedicate to stories follows geographical regions
+                                                                            be used as political or economic indicators.
+  more closely than their selection of stories (compare Fig-
+                                                                               We sort all named entities of type person in our dataset
+  ures 2(d) and 2(b)). The relative diversity in terms of se-
+                                                                            by decreasing number of mentions. The top of this list is
+  lection can be explained by considering the broad range of
+                                                                            dominated by politicians of international relevance, so we
+  stories that each community covers, and the low prominence
+                                                                            focus on a group of 10 present and former heads of state (plus
+  of those stories. The similarities in terms of coverage are
+                                                                            the Secretary of State of the USA and the Secretary General
+  aligned with previous findings [21], in the sense that while
+                                                                            of the United Nations, both prominently mentioned in our
+  anyone in social media can propose new ideas (news stories
+                                                                            sample). We merge entities referring to the same person,
+  in our case), only few ideas succeed in getting enough atten-
+                                                                            e.g. “Obama” and “Barack Obama”. The list is shown in
+  tion. Therefore, although communities talk about a broad
+                                                                            Table 1.
+  range of news, they spend most of their time in a few of
+                                                                               We analyze the sentiments used in relationship to persons
+  them, behaving similarly to traditional news sources.
+                                                                            in our list, using the dictionary provided by the Affective
+     Next, we use a list of USA-based news sources classi-
+                                                                            Norms for English Words (ANEW) [3]. We use the valence
+  fied by political party from [2], considering six conservatives
+                                                                            dimension, which assign to each word a number from 1 (if it
+  (Chicago Tribune, Fox, Forbes, NY Post, Newsmax, U.S.
+                                                                            evokes sadness, dissatisfaction and despair) to 9 (if it evokes
+  News and Washintong Times) and five liberals (ABC, CBS,
+                                                                            happiness, satisfaction, hope). The average sentiment for a
+  NY Times, Huffington and Washington Post). We found a
+                                                                            person on a news source is the micro-average of sentiments in
+  strong correlation between political leaning and measures
+                                                                            all the statement on all the articles mentioning that person.
+  of coverage of stories (this was not the case when using
+                                                                            The average sentiment for a person on a news community is
+  measures of selection of stories). This is depicted in Fig-
+                                                                            the average of sentiments in all the tweets posted by mem-
+  ure 3 where we project in 2 dimensions the matrix of JS-
+                                                                            bers of that community mentioning the person (according
+  divergence between the coverage of media sources. We can
+                                                                            to an exact string match of the last name, which due to
+  see that the distribution of tweets per story follows partisan
+                                                                            their prominence and as verified in our sample, is almost
+  lines closely, whereas the distribution of story lengths also
+                                                                            invariably a reference to the correct person).
+  exhibits the same bias, but not as clearly as in social media.
+                                                                               Statistics about the distribution of the valence of senti-
+  The fact that these biases are stronger in social media than
+                                                                            ments are shown in Table 1. In general the lower quantile
+  in traditional online news may be due to traditional media
+                                                                            (more negative sentiments) is significantly lower in social
+  attempting to strive for an ideal of objectivity that social
+                                                                            media communities when compared to news sources, across
+  media users may not aspire to. This agrees with results in
+                                                                            all the persons included in our sample. Other anecdotal ex-
+  Section 6 where we show that in social media the language
+                                                                            amples can be found in the Supplementary Material.
+  seems to be more strongly opinionated.
+
+
+  6. STATEMENT BIAS                                                         7. RELATED WORK
+     Statement bias has been used to describe a tendency to-                  Reputable news reports are expected to be objective; their
+  wards using more favorable statements to refer to one polit-              role is to inform people about what is happening in the
+  ical party at the expense of another [5]. In this section, we             world. It is however known that bias exists in the way
+  study such statements with respect to people in the news,                 news is reported by the media e.g. [9]. Most attempts to
+  by using sentiment analysis to determine the emotional va-                detect bias are still done on a small scale, with news man-
+  lence (positive or negative) of expressions in which people               ually examined and coded. In this paper, we automatically
+  are mentioned. Sentiment analysis has shown to be a valu-                 process a large sample of articles published in several in-
+
+
+
+
+                                                                     1683
+ternational English-speaking online news sites, avoiding the             References
+manual coding of articles.                                                [1] J. An, M. Cha, P. K. Gummadi, and J. Crowcroft. Media land-
+   Recently, [12], examined the presence of coverage bias in                  scape in twitter: A world of new conventions and political diver-
+mainstream news and blogs. They show that overall only a                      sity. In ICWSM, 2011.
+slight slant in terms of party and political leaning could be             [2] J. An, D. Quercia, and J. Crowcroft. Beyond selective exposure
+observed. However, this changes during important political                    in social media: Concrete evidence for partisan sharing. 2013.
+events, such as a mid-term election. We also observe some                 [3] M. Bradley and P. Lang. Affective norms for English words
+slight political slants, but the geographical bias seems more                 (ANEW). Technical Report C-1, The Center for Research in
+                                                                              Psychophysiology, U. of Florida, 1999.
+prevalent.
+   In this paper, we focus on three types of bias, selection              [4] C. Castillo, G. De Francisci Morales, M. Mendoza, and N. Khan.
+                                                                              Says who? Automatic text-based content analysis of television
+(gatekeeping), coverage, and statement bias, all studied be-                  news. In MNLP, San Francisco, CA, USA, 2013.
+fore. For instance, [5] found no substantial bias on US mag-
+                                                                          [5] D. D’Alessio and M. Allen. Media bias in presidential elections:
+azines, but a small coverage bias was detected on US tele-                    a meta-analysis. J.of Communication, 50(4):133–156, 2000.
+vision. With respect to coverage bias, [22] studied Dutch
+                                                                          [6] S. DellaVigna and E. Kaplan. The fox news effect: Media bias
+and German television and observed that top leaders such                      and voting. The Quarterly J.of Econ., 122(3):1187–1234, 2007.
+as chancellors or prime ministers get a substantially larger
+number of mentions than the second most mentioned politi-                 [7] J. Galtung and M. H. Ruge. The structure of foreign news. J.of
+                                                                              Peace Research, 2(1):64–91, 1965.
+cians. Finally, for statement bias, [14] found large differ-
+ences in the sentiment polarity with which US candidates                  [8] C. J. Glynn, S. Herbs, G. J. OKeefe, , and R. Y. Shapiro. Public
+                                                                              Opinion. Boulder CO: Westview Press, 1999.
+were treated.
+                                                                          [9] T. Groseclose and J. Milyo. A measure of media bias.        The
+                                                                              Quarterly J.of Econ., 120(4):1191–1237, 2005.
+8.   CONCLUSIONS                                                         [10] B. G. Knight and C.-F. Chiang. Media bias and influence: Evi-
+   We studied the presence of bias in online news and the                     dence from newspaper endorsements. Working Paper 14445, Na-
+                                                                              tional Bureau of Economic Research, October 2008.
+social media communities that surround them. Our results
+support the following high-level conclusions.                            [11] J. Lehmann, C. Castillo, M. Lalmas, and E. Zuckerman. Finding
+                                                                              news curators in twitter. In SNOW, May 2013.
+   In international news media, selection and coverage bi-
+ases seem more correlated with geographical variables than               [12] Y.-R. Lin, J. P. Bagrow, and D. Lazer. More voices than ever?
+                                                                              quantifying media bias in networks. In ICWSM, 2011.
+political leaning. In other words, online news sources in a
+given geographical region tend to select the same stories,               [13] M. E. Mccombs and D. L. Shaw. The Agenda-Setting function
+and write articles of similar relative length. Social media                   of mass media. The Public Opinion Quarterly, 36(2):176–187,
+                                                                              1972.
+follows the same pattern, with the communities of media in
+a region showing a similar proportion of tweets to stories.              [14] J. S. Morris and P. L. Francia. From network news to cable
+                                                                              commentary: The evolution of television coverage of the party
+   Political bias is evident in social media, in terms of the                 conventions. In State of the Parties Conf. U. of Akron, 2005.
+distribution of tweets different stories receive. This distri-
+                                                                         [15] R. Nallapati, A. Feng, F. Peng, and J. Allan. Event threading
+bution is more closely related among communities of news                      within news topics. In CIKM, N. York, NY, USA, 2004.
+media having the same political leaning (at least in the US
+                                                                         [16] B. O’Connor, R. Balasubramanyan, B. R. Routledge, and N. A.
+for which we could obtain political leaning information). Po-                 Smith. From tweets to polls: Linking text sentiment to public
+litical bias is also observable in terms of the distribution of               opinion time series. In ICWSM, 2010.
+length of articles on different stories in traditional media,            [17] C. Paterson. News agency dominance in international news on
+but to a smaller extent than in social media. Statement                       the internet. Papers in International and Global Communica-
+bias is also evident in social media. In a sample of state-                   tion, (01/06), May 2006.
+ments referring to world leaders, we find that the language              [18] S. Reese and P. Shoemaker. Mediating the message: Theories of
+used in social media is more opinionated, and often more                      influence on mass media content. Journalism Quarterly, 74:2,
+negative, than the one used in traditional news media.                        1996.
+   In terms of editorial policies regarding the prominence or            [19] S. M. Rivolta. Strategic Maneuvering and Media Bias in Po-
+importance of stories covered, we observe that magazine-                      litical News Magazine Opinion Articles. PhD thesis, U. of Am-
+                                                                              sterdam, 2011.
+type of news (which in general covers less articles and sto-
+ries) tends to select stories of high prominence and produce             [20] D. M. Romero, B. Meeder, and J. Kleinberg. Differences in the
+                                                                              mechanics of information diffusion across topics: Idioms, po-
+exclusive content. More importantly, we observe that social                   litical hashtags, and complex contagion on twitter. In Proc.of
+media tend to be much more focused in niche content than                      WWW, 2011.
+traditional news media. In particular, very prominent sto-               [21] D. Saez-Trumper, G. Comarela, V. Almeida, R. Baeza-Yates,
+ries seem to receive much less attention in social media than                 and F. Benevenuto. Finding trendsetters in information net-
+in traditional news sources.                                                  works. In Proc. of KDD, 2012.
+
+Reproducibility. The dataset used in this paper is avail-                [22] K. Schoenbach, J. De Ridder, and E. Lauf. Politicians on TV
+                                                                              news: Getting attention in dutch and german election cam-
+able upon request for research purposes.                                      paigns. European J.of Political Research, 39(4):519–531, 2001.
+Acknowledgements. Diego Saez-Trumper was supported                       [23] E. Yom-Tov and F. Diaz. Out of sight, not out of mind: on the
+by the HIPERGRAPH project (TIN2009-14560-C03-01) from                         effect of social and physical detachment on information need. In
+the Spanish Economy and Competitiveness Ministry. This                        SIGIR, 2011.
+work was carried out as part of Diego Saez-Trumper in-                   [24] B. Zelizer. Journalists as interpretive communities. Critical
+ternship at QCIR. The authors with to thank colleagues                        Studies in Mass Communication, 10(3):219–237, 1993.
+in Al Jazeera English for valuable discussions, and Noora                [25] Y. Zhai and M. Shah. Tracking news stories across different
+Al-Emadi for her help with the processing of data.                            sources. In ACM Multimedia, 2005.
+
+
+
+
+                                                                  1684
+

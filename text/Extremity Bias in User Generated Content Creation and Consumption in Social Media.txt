@@ -1,0 +1,721 @@
+      Journal of Interactive Advertising
+
+
+
+
+      ISSN: (Print) 1525-2019 (Online) Journal homepage: https://www.tandfonline.com/loi/ujia20
+
+
+
+
+Extremity Bias in User-Generated Content
+Creation and Consumption in Social Media
+
+Ian P. Bigley & James M. Leonhardt
+
+To cite this article: Ian P. Bigley & James M. Leonhardt (2018) Extremity Bias in User-Generated
+Content Creation and Consumption in Social Media, Journal of Interactive Advertising, 18:2,
+125-135, DOI: 10.1080/15252019.2018.1491813
+
+To link to this article: https://doi.org/10.1080/15252019.2018.1491813
+
+
+
+
+       Published online: 27 Sep 2018.
+
+
+
+       Submit your article to this journal
+
+
+
+       Article views: 1448
+
+
+
+       View related articles
+
+
+
+       View Crossmark data
+
+
+
+       Citing articles: 2 View citing articles
+
+
+
+
+                      Full Terms & Conditions of access and use can be found at
+             https://www.tandfonline.com/action/journalInformation?journalCode=ujia20
+JOURNAL OF INTERACTIVE ADVERTISING
+2018, VOL. 18, NO. 2, 125–135
+https://doi.org/10.1080/15252019.2018.1491813
+
+
+
+
+Extremity Bias in User-Generated Content Creation and Consumption in
+Social Media
+Ian P. Bigley and James M. Leonhardt
+University of Nevada, Reno, Nevada, USA
+
+
+   ABSTRACT                                                                                                          KEYWORDS
+   The present research finds support for an extremity bias in social media. User-generated                          Extremity; Instagram;
+   content in social media is found to portray more extreme behavior than what is observed                           makeup; social media;
+   in offline and nonmedia contexts. This bias is observed in the context of makeup-related                          social norms
+   consumer behavior. Study 1 finds that consumers with higher (lower) self-reported extremity
+   in their makeup style are more likely to create (consume) makeup-related content in social
+   media. Likewise, Study 2 finds that makeup styles portrayed in social media are perceived
+   as more extreme than those portrayed offline. Study 3 finds that the extremity bias,
+   observed in the previous studies, can shift other perception; brief exposure to makeup styles
+   on Instagram was found to lessen the perceived extremity of offline makeup styles. The
+   results suggest that, like traditional media, content in social media may be biased toward
+   extremity. This bias may be the result of motivational differences between creators versus
+   consumers of social media content and may result in exposure to social media shifting
+   social norms to more extreme levels.
+
+
+
+
+   “I think social media is good, cuz it lets you get like                    consumer well-being, as it may result in consumers
+   snapshots of what’s going on in the world … it is                          having unrealistic expectations and self-comparisons
+   something that becomes a main part of your life.”
+                                                                              (Barker 2009; Prichard et al. 2017; Tiggemann and
+   —Anonymous makeup user
+                                                                              McGill 2004). Despite some recent research (Alhabash
+                                                                              et al. 2016), social media has largely escaped this criti-
+Traditional media has long been thought to shift                              cism of causing a shift in social norms toward more
+social norms and ideals (Stormer and Thompson                                 extreme, and possibly unhealthy, levels. Unlike trad-
+1996; Tiggemann and Pickering 1996). For example,                             itional media, social media lacks a central source for
+traditional media has brought about changes in what                           the dissemination of information and content. Rather,
+is perceived as acceptable or “normal” in regard to                           its users largely interact with one another in creating,
+body weight (Grabe, Ward, and Hyde 2008). Research                            sharing, and consuming of content (Morrison, Cheong,
+has shown that, in the United States, people regularly                        and McMillan 2013). Such consumer-to-consumer
+misclassify themselves as more overweight than is                             interaction arguably lacks an agenda toward shifting
+objectively the case (Chang 2003). Content analyses of                        social norms toward more extreme levels (Daugherty,
+media portrayals of body weight support this argu-                            Eastin, and Bright 2008).
+ment by finding that fashion models and others in                                 However, it could be the case that, like traditional
+advertising and media typically have lower body                               media, social media might also shift social norms
+weight than is observed in nonmedia contexts                                  toward more extreme levels. Extremity can be an ideal
+(Tiggemann and McGill 2004).                                                  associated with both injunctive and descriptive social
+   The tendency for media to shift social norms toward                        norms, and its expression in individuals is thought to
+more extreme levels has resulted in an evaluation of                          result from a desire for independence and uniqueness
+the role of media and marketing. Critics argue that                           (Markus and Kitayama 1998). In the present research,
+extreme behaviors in media can negatively affect                              “extremity bias” refers to a preference for the
+
+
+CONTACT Ian P. Bigley       ibigley@nevada.unr.edu      University of Nevada, Reno, 1175 Sweetwater Drive, Reno, NV 89509, USA.
+Ian P. Bigley is an undergraduate student at the University of Nevada, Reno.
+James M. Leonhardt (PhD, University of California, Berkeley) is assistant professor of marketing at University of Nevada, Reno.
+ß 2018 American Academy of Advertising
+126     I. P. BIGLEY AND J. M. LEONHARDT
+
+
+consumption and creation of more versus less extreme        Background
+content. In social media, for instance, an extremity
+                                                            User-generated content in social media arises from an
+bias would result in users creating and consuming
+                                                            organic process that differs starkly from the central-
+information (e.g., posts, images, videos) that is more      ized process by which traditional media is created and
+extreme, on average, than what is observed in the off-      then disseminated to mass audiences (Morrison,
+line noncommercial world. Such a bias toward                Cheong, and McMillan 2013). On popular social net-
+extremity has been documented in traditional media          working sites, such as Instagram, consumers can post
+(Grabe, Ward, and Hyde 2008; Prichard et al. 2017);         their own content, share others’ content, comment on
+however, it is currently unknown whether this bias          and like content, or simply consume or view others’
+persists in social media, where content is largely user     content. Much of this content is highly specialized,
+generated and seemingly lacking a centralized source        and users regularly seek, share, and post content
+or agenda.                                                  within specific genres (Lai and Turban 2008). On
+    Documenting such a bias in social media could           Instagram, for instance, users regularly interact on
+have important consumer and managerial implica-             specialized topics such as fashion, makeup, health,
+tions. As with the consumption of traditional media         sports, and many others. Such interactions create the
+(Barker 2009; Tiggemann and McGill 2004), an                bulk of content on social media platforms; that is,
+extremity bias in social media could negatively affect      social media platforms largely consist of and rely on
+consumer well-being by shifting social norms and            user-generated content (Agichtein et al. 2008).
+consumer perceptions of normalcy to more extreme               Social norms may be constructed and altered
+levels (e.g., Cialdini and Trost 1998). On the other        through the consumption and creation of user-gener-
+hand, from a managerial perspective, an extremity           ated content in social media. Social norms are pro-
+bias in social media suggests a possible recentraliza-      moted through the perception of others’ behavior and
+tion of social media content around high-profile users      approval (Cialdini and Trost 1998). In particular,
+(i.e., influencers; Freberg et al. 2011). In addition, it   descriptive social norms guide behavior through the
+suggests an opportunity to increase brand awareness         perception of others’ behavior (Cialdini, Kallgren, and
+through the creation of more extreme brand-related          Reno 1991). In social media, consumption of content
+content in social media.                                    may inform descriptive social norms and their associ-
+    The present research tests for the presence of an       ated ideals. Ideals are certain attributes selected for by
+extremity bias in social media by assessing the con-        social norms (Markus and Kitayama 1998; Tiggemann
+sumption and creation of makeup-related content in          and Pickering 1996). These idealized traits represent
+social media and consumer perceptions of their own          social norms to which people adhere to effectively
+                                                            interact with others and manage their own self-con-
+and others’ makeup usage. Study 1 surveys makeup
+                                                            cept (Cialdini and Trost 1998). Research finds that
+users and finds that those who perceive their own
+                                                            extremity can be an ideal that influences descriptive
+makeup style as more extreme are more likely to post
+                                                            social norms if consumers are exposed to and develop
+their makeup-related content online; while those with
+                                                            a preference for extreme content (Barker 2009;
+a self-perception of having a less extreme makeup
+                                                            Cialdini, Kallgren, and Reno 1991; Prichard et al.
+style are more likely to consume and share others’
+                                                            2017; Tiggemann and McGill 2004). This has been
+makeup-related content online, rather than post their
+                                                            found to occur in the context of traditional media,
+own content. This result suggests that makeup styles        especially regarding consumer perceptions of ideal
+in social media will be more extreme, on average,           body type (Grabe, Ward, and Hyde 2008; Prichard
+than those observed in offline, nonmedia contexts.          et al. 2017).
+Study 2 finds support for this by finding that makeup          However, research has yet to document an extrem-
+styles in social media are perceived as more extreme        ity bias in social media. Consisting largely of user-
+than are those encountered offline. Study 3 then            generated content, social media lacks a centralized
+extends previous work on media’s influence on social        source or strategy regarding the creation and dissem-
+norms by testing whether exposure to makeup styles          ination of content. Instead, most content that is
+in social media shifts consumer perceptions of              posted on social media platforms, such as Instagram
+makeup style extremity. The results of this final study     and Facebook, comes from individual noncommercial
+suggest that, as with traditional media, exposure to        users (Agichtein et al. 2008). Given that most of the
+social media content can shift consumer perceptions         content on social media comes from individual users,
+of extremity and arguably social norms.                     the notion of a centralized and commercial effort
+                                                                            JOURNAL OF INTERACTIVE ADVERTISING         127
+
+
+toward shifting social norms toward more extreme           those creating content in social media may be more
+levels is less clear (Meraz 2009).                         likely to post content that is more extreme than the
+    A preference for extremity could still occur in        status quo. At the individual level, this would imply
+social media if factors other than those typically         that users who are more extreme in a given behavior
+considered (McCombs 2004) promote individual               will be more likely to post their content in social
+interactivity with more (versus less) extreme content.     media, while those who are less extreme will be more
+This could occur if there is a bias among individual       likely to consume others’ content. In addition, given
+users of a given platform, such as Instagram, to post      that most users are consumers rather than creators of
+content that is more extreme than is commonly              social media content (Heinonen 2011), involvement
+observed in offline, nonmedia contexts. Research on        with social media content is likely to be more strongly
+the status quo bias suggests that people are unlikely to   associated with seeking and sharing others’ content
+exhibit behavior that differs from established social      than it is with creating and posting one’s own content
+norms (Zeckhauser and Samuelson 1988). Such                in social media. As in previous research (Cruz,
+research would suggest that users of social media may      Leonhardt, and Pezzuti 2017), involvement with social
+prefer not to post content that differs in extremity       media content refers to the extent that consumers
+relative to what is observed and accepted in off-          interact (e.g., post, like, share, comment) with a spe-
+line contexts.                                             cific content category (e.g., makeup). In the context of
+    However, users differ in how they interact in social   makeup and social media, this discussion encourages
+media. Most users consume content rather than create       testing of the following hypotheses:
+content in social media (Heinonen 2011). The con-            H1: Involvement with makeup-related content in
+sumption of social media content, through viewing            social media will be positively associated with seeking
+and sharing others’ content, is associated with loneli-      and sharing others’ makeup-related content, rather
+ness and low self-esteem (Liu 2016). Such states are         than giving one’s own makeup-related content to
+likely to result in behavior that adheres to social          others in social media.
+norms and the status quo, rather than influencing
+                                                             H2: The extremity of one’s makeup use will be
+others’ behavior toward extremity (Leary 1990).              positively associated with giving one’s own makeup-
+On other hand, those whom create content, through            related content to others on social media, rather than
+posting their own images, text, or video, may do so          seeking and sharing others’ makeup-related content.
+for reasons not concerning maintenance of the
+                                                              The first hypothesis predicts that highly involved
+status quo.
+                                                           users of social media, within a given content category,
+    Research finds that the generation of content in
+                                                           are likely to be consumers rather than creators of con-
+social media, through posting one’s own content, is
+                                                           tent, while the second hypothesis predicts that the cre-
+associated with narcissism and high self-esteem (Sung
+                                                           ators of user-generated content in social media, within
+et al. 2016). In social media, narcissism can lead to
+                                                           a given content category, will largely come from users
+behaviors that are motivated by a desire for attention
+                                                           whose behavior is more extreme in relation to the
+from other users (Andreassen, Pallesen, and Griffiths
+                                                           content category (i.e., users with a more extreme
+2017). Consumers are naturally inclined to attend to
+                                                           makeup style). Should these hypotheses find support,
+extreme behavior or content, which, by definition,
+                                                           then it follows that user-generated content in social
+must differ from accepted social norms or the status
+                                                           media is likely to be more extreme than what is typic-
+quo (Robertson 1989). This attentional bias toward
+                                                           ally observed in offline, nonmedia contexts. Within
+extremity may result in extreme content receiving
+                                                           the context of makeup, this would imply that
+more attention in social media relative to less extreme
+                                                           makeup-related content in social media that is posted
+content that adheres to the status quo (Vries, Gensler,
+                                                           by individual users is likely to be more extreme rela-
+and Leeflang 2012).
+                                                           tive to makeup styles observed in offline, nonmedia
+    Such research suggests different motives for the
+                                                           contexts. This hypothesis can be formally stated
+consumption versus creation of content in social
+                                                           as follows:
+media. The consumption of content may be driven by
+the need for acceptance and belonging through learn-         H3: Makeup styles portrayed in social media will be
+                                                             more extreme than those portrayed offline.
+ing and adhering to social norms, while the creation
+of content may be driven by the need for attention            Together, these hypotheses predict greater extrem-
+from others through shifting social norms. In add-         ity in what is portrayed in social media relative to
+ition, because of the need for attention from others,      what is portrayed in offline contexts. This expectation
+128        I. P. BIGLEY AND J. M. LEONHARDT
+
+
+is predicted to be the result of social media content        media exposure and body image (Prichard et al. 2017;
+largely being created by those who are more extreme          Stormer and Thompson 1996; Tiggemann and McGill
+in a given behavior and social media being consumed          2004). Consumers, especially women, are highly
+by those who are less extreme in this behavior. Should       involved with makeup-related content in social media;
+this be the case, then the consumption of social media       on Instagram, the hashtag term “#makeup” has more
+may lead to a shift in the perceived status quo regard-      than 150 million posts (Instagram 2017). Among
+ing specific behaviors. As found with traditional            users, makeup is often perceived as an important
+media exposure, an increase in exposure to extremity         aspect of personal identity, which can increase
+in traditional media can result in perceiving the self       involvement with the product category (Miller and
+and others as less in line with the status quo               Cox 1982). Makeup usage and style is also highly
+(Tiggemann and Pickering 1996). Should this extend           observable in both online and offline contexts, relative
+to social media, then it is plausible that exposure to       to other behaviors, such as body weight, which can be
+user-generated social media content may shift one’s          concealed by clothing or other environmental factors.
+perception of extremity such that the behaviors of           In addition, like other forms of fashion, such as cloth-
+others, observed offline, will be considered less            ing, makeup styles can be readily adopted, which may
+extreme. In the context of makeup, this prediction can       foster makeup-related interactivity in social media.
+be formally stated as follows:
+      H4: Exposure to makeup styles portrayed in social      Study 1
+      media will result in makeup styles portrayed offline
+      being perceived as less extreme.                       In this study, participants were asked to provide infor-
+   Support for these hypotheses would provide                mation about their personal makeup styles and their
+important insights regarding the creation of social          use of social media for makeup-related purposes. This
+norms in social media and their transmission to off-         allowed for an empirical test of hypotheses 1 and 2.
+line contexts. While much research has addressed
+social norms in offline contexts, including traditional      Participants
+media (e.g., Cialdini and Trost 1998; Tiggemann and
+McGill 2004), much less is known about their creation        The average age of participants was 24.55 years
+and transmission in social media (Alhabash et al.            (SD ¼ 9.22) and the majority (n ¼ 25, 86.2%) reported
+2016). In addition to shifting consumer perceptions to       their sex as female. Participants were recruited in per-
+more extreme levels, with possible adverse consequen-        son on and near a large college campus in the state of
+ces on consumer well-being, an extremity bias in             Nevada. A total of 29 participants completed the sur-
+social media would suggest a route by which brands           vey. The large ratio of female to male participants is
+and individual users can increase their visibility in        likely the result of the study being advertised to
+social media. Recent research suggests a recentraliza-       potential participants as a study on makeup, and that
+tion of social media around high-profile users known         participants needed to be wearing makeup at the time
+as influencers (Booth and Matic 2011; Freberg et al.         of the survey.
+2011). Influencers have high visibility in social media         Upon agreeing to participate in the survey, partici-
+and can shape brand perceptions and the behavior of          pants were asked to rate their makeup style by indi-
+other social media users (Abidin 2016). Should there         cating their agreement (1 ¼ Strongly disagree,
+exist an extremity bias in social media, it would sug-       7 ¼ Strongly agree) with four items asking whether
+gest that users can gain greater visibility in social        their typical makeup style is dramatic, high contrast,
+media through the posting of more extreme content.           natural (reverse-coded), or extreme. These items were
+Such an insight would allow brands to increase their         created based on conversations with our key inform-
+exposure in the competitive landscape of social media        ant, who holds a license from the Milan School of
+(Booth and Matic 2011; Weng et al. 2012).                    Cosmetology, and through conversations with mem-
+                                                             bers of an online cosmetology forum on the social
+                                                             media site Reddit.com. These items showed high reli-
+Overview of Studies                                          ability (Cronbach’s alpha ¼ .86) and thus were aver-
+These hypotheses will be tested in a series of three         aged to create a composite measure of makeup
+empirical studies. Each study is conducted in the con-       style extremity.
+text of makeup-related content in social media. This            In addition to rating their makeup style, partici-
+context was chosen as it extends previous research on        pants were also asked to rate their involvement with
+                                                                               JOURNAL OF INTERACTIVE ADVERTISING           129
+
+
+makeup-related content in social media using a single     Table 1. Correlation table for measures in Study 1.
+item with the end points 1 ¼ Very low, 7 ¼ Very high.     Measures                             1       2       3        4    5
+In the context of social media, there is a lack of con-   1 Involvement with makeup        —
+                                                             content
+sensus on the appropriate way in which to measure         2 Seek others' makeup-related    0.709 —
+consumer involvement with specific social media con-         content
+                                                          3 Share others' makeup-related   0.373   0.464 —
+tent (e.g., makeup-related content). One could adapt         content
+the traditional 10-item scale from Zaichkowsky            4 Give own makeup-related        0.228    0.264   0.565 —
+                                                             content
+(1994); use a behavioral proxy such as number of          5 Extremity of personal          0.067    0.026   0.201   0.542 —
+“likes,” “shares,” and “comments” (Cruz, Leonhardt,          makeup style
+and Pezzuti 2017); or use a single-item measure that      p < .01.
+                                                          p < .05.
+directly relates to the social media context being
+studied. In the present research, the latter approach
+was preferred, as our specific context was consumer       makeup-related content on social media was signifi-
+involvement with makeup-related content in social         cantly correlated with seeking others’ makeup-related
+media. In general, the use of single-item (versus mul-    content online (Pearson correlation, two tailed ¼ .709,
+tiple-item) measures is supported in consumer             p < .01, 95% CI: .463, .853) and sharing others’
+research (Bergkvist and Rossiter 2007) and can help       makeup-related content online (Pearson correlation,
+lessen participant fatigue.                               two tailed ¼ .373, p < .05, 95% CI: .008, .65), but was
+   Participants’ engagement in online word of mouth       not significantly correlated with posting one’s own
+related to makeup was assessed by having participants     makeup-related content online (p > .05).
+indicate their agreement (1 ¼ Strongly Disagree,             The results suggest that people who view them-
+7 ¼ Strongly Agree) with the following three items        selves as more extreme in their makeup styles are
+(Berger and Buechel 2012): “I seek others’ makeup-        those who are also more likely to provide others with
+related content online”; “I share others’ makeup-         their own makeup-related content online. This would
+related content online”; and “I give others my            imply that personal makeup-related content that is
+makeup-related content online.” Upon completion of        uploaded to social media platforms, such as
+the survey, a photograph was taken of each participant    Instagram, is more likely to come from people who
+to document their makeup styles, and these photo-         view themselves as having more extreme makeup
+graphs were used as stimuli in the subsequent studies.    styles. On the other hand, those who are consuming
+The photos were collected after participants had been     makeup-related content, through seeking and sharing
+informed of our intent to use the photos in subse-        others’ makeup-related content online, are more likely
+quent research and had signed a consent form giving       to view themselves as having less extreme makeup
+all rights for future use of the photos to our            styles. In general, these findings support our first two
+research team.                                            hypotheses by suggesting that (hypothesis 1) involve-
+                                                          ment with makeup-related content in social media is
+                                                          associated with the seeking and sharing of makeup-
+Results and Discussion
+                                                          related content online, rather than posting one’s own
+An analysis was conducted to assess whether and how       content, and (hypothesis 2) personal makeup-related
+the self-reported extremity of a person’s makeup style    content is more likely to be posted online by those
+is associated with their involvement with makeup-         who are more extreme in their makeup styles.
+related content online and their engagement in
+makeup-related online word of mouth. Our sample
+                                                          Study 2
+size of 29 precludes the use of multiple regression
+(Kelley and Maxwell 2003); however, it does not pre-      The results of the previous study suggest that people
+clude the use of Pearson correlations (Bonett and         with more extreme makeup styles are more likely to
+Wright 2000; Kraemer 1973). As shown in Table 1,          provide their content to others online. This suggests
+extremity of makeup style was significantly correlated    our third hypothesis: that makeup styles found online
+with posting one’s own makeup-related content online      are likely to be more extreme than those observed in
+(Pearson correlation, two tailed ¼ .542, p < .01, 95%     offline contexts. Study 2 was conducted to assess
+confidence interval [CI]: .219, .757). Extremity in       whether this might be the case. In this study, partici-
+makeup style was not significantly correlated with any    pants rated the extremity of makeup styles of different
+of the other variables (ps > .05). Involvement with       people whose images were either sourced offline (i.e.,
+130       I. P. BIGLEY AND J. M. LEONHARDT
+
+
+from Study 1) or online (i.e., Instagram). We expected     collected, the offline and online stimuli were edited to
+to find that makeup styles sourced from Instagram          be similar in size and aspect ratio.
+would be rated as more extreme than those
+sourced offline.
+                                                           Procedure
+                                                           Participants were randomly assigned to view offline or
+Participants                                               online images of people, and each participant viewed
+A total of 354 participants completed the survey and       and rated only one image. Similar to the previous
+were recruited and paid using Amazon Mechanical            study, participants rated each image by indicating
+Turk. The average age of participants was 35.93 years      their level of agreement (1 ¼ Strongly disagree,
+(SD ¼ 11.7), and the majority (n ¼ 294, 83.1%)             7 ¼ Strongly agree) with four items asking whether the
+reported their sex as female. As in the previous study,    makeup style shown in the image was dramatic, high
+the large ratio of female to male participants is likely   contrast, natural (reverse-coded), or extreme. These
+the result of the study being advertised as a study        items showed high reliability (Cronbach’s alpha ¼ .89)
+on makeup.                                                 and, as in Study 1, were averaged to create a compos-
+                                                           ite measure of makeup style extremity. As in Study 1,
+                                                           participants were also asked to rate their level of
+Stimuli                                                    involvement (1 ¼ Very low, 7 ¼ Very high) with
+The stimuli were collected from two sources. The off-      makeup-related online content.
+line stimuli were collected in the previous study by
+taking photographs of participants after their comple-     Results and Discussion
+tion of the survey. This resulted in a total sample of
+29 offline photographs of participants who portrayed       A one-way analysis of covariance (ANCOVA) model
+their makeup style. From this sample, 10 images were       was estimated to compare perceived extremity in off-
+randomly selected to be used in the present study.         line versus online makeup styles. The model included
+                                                           image source (offline versus online) as the independ-
+The online stimuli were collected from the social
+                                                           ent variable and the composite measure of perceived
+media platform Instagram. The Fair Use Principle,
+                                                           makeup style extremity as the dependent variable. The
+stated in Section 107 of the U.S. Copyright Act, allows
+                                                           model also included the following control variables:
+for the use of the Instagram images, in the present
+                                                           age, sex, involvement with makeup-related online con-
+research, because the use was transformative, educa-
+                                                           tent, and image stimulus.
+tional, did not interfere with their original use, and
+                                                              As anticipated, the results revealed a robust main
+use of the images was not in excess. For previous
+                                                           effect of image source on perceived makeup style
+research involving Instagram images, see Bakhshi,
+                                                           extremity (F (1, 348) ¼ 148.53, p < .001). On average,
+Shamma, and Gilbert (2014) and Hu, Manikonda, and
+                                                           online sourced images (M ¼ 4.95, SD ¼ 1.36) were
+Kambhampati (2014). Instagram was chosen as the
+                                                           perceived as having more extreme makeup styles
+selection site based on the recommendation of our          than those sourced offline (M ¼ 2.89, SD ¼ 1.70).
+key informant who identified Instagram as the most         None of the control variables in the model reached
+popular platform for seeking, sharing, and posting         significance (ps > .05). Figure 1 illustrates the average
+makeup-related content. Ten images were randomly           extremity rating for each of the offline and online
+collected from Instagram using the following proced-       images (N ¼ 20). As shown in Figure 1, the results
+ure. Our key informant identified popular makeup-          suggest that, on average, online makeup styles
+related hashtags (see appendix). The highest-ranked        are perceived as more extreme than offline
+photo in the “Top Posts” category was selected if it       makeup styles.
+did not include eyewear, text, multiple people, or
+other attributes which would distract from portraying
+the person’s makeup style. A total of 35 photos were       Study 3
+collected and numbered according to the order in           The previous studies found that people with more
+which they were collected. The Google random num-          extremity in their makeup style are more likely to
+ber generator (with limits set from 1 to 35) was then      post their personal makeup-related content online
+used to randomly select 10 of the 35 photos. Once          (Study 1), and that makeup styles observed online are
+                                                                                                                                                                                                                JOURNAL OF INTERACTIVE ADVERTISING                        131
+
+
+                         7
+
+                         6
+
+                         5
+
+                         4
+
+                         3
+
+                         2
+
+                         1
+                             Image 1
+                                       Image 2
+                                                 Image 3
+                                                           Image 4
+                                                                     Image 5
+                                                                               Image 6
+                                                                                         Image 7
+                                                                                                   Image 8
+                                                                                                             Image 9
+                                                                                                                       Image 10
+                                                                                                                                  Offline Average
+                                                                                                                                                    Image 1
+                                                                                                                                                              Image 2
+                                                                                                                                                                        Image 3
+                                                                                                                                                                                  Image 4
+                                                                                                                                                                                            Image 5
+                                                                                                                                                                                                      Image 6
+                                                                                                                                                                                                                Image 7
+                                                                                                                                                                                                                          Image 8
+                                                                                                                                                                                                                                    Image 9
+                                                                                                                                                                                                                                              Image 10
+                                                                                                                                                                                                                                                         Online Average
+                                                                         Offline                                                                                                                 Online
+Figure 1. Average perceived makeup style extremity (1 to 7 scale) for images sourced offline versus online.
+
+
+
+perceived as more extreme than those observed offline                                                                                                Procedure
+(Study 2). The present study tests whether being
+                                                                                                                                                     Participants were randomly assigned to one of two
+exposed to online images of makeup styles results in
+                                                                                                                                                     conditions in which they were either exposed (or not
+offline makeup styles being perceived as less extreme.
+                                                                                                                                                     exposed) to five images of online makeup styles prior
+                                                                                                                                                     to rating offline makeup styles. In both conditions,
+Participants                                                                                                                                         participants rated five images of offline makeup styles
+                                                                                                                                                     by indicating their level of agreement (1 ¼ Strongly
+Participants were recruited from a public university in                                                                                              disagree, 7 ¼ Strongly agree) with four items asking
+Nevada and received partial course credit for their                                                                                                  whether the makeup style shown in each image was
+participation.    A     total    of   131     participants                                                                                           dramatic, high contrast, natural (reverse-coded), or
+(Mage ¼ 22.88, SD ¼ 4.32, 55% male) completed the                                                                                                    extreme. These items showed sufficient reliability
+experiment. The similar number of male and female                                                                                                    (Cronbach’s alpha ¼ .80) and were averaged to create
+participants is the result of the experiment being part                                                                                              a composite measure of makeup style extremity.
+of a larger collection effort involving unrelated surveys
+which participants completed after participating in the
+present study.                                                                                                                                       Results and Discussion
+                                                                                                                                                     A mixed-model analysis was estimated to assess
+                                                                                                                                                     whether exposure to online makeup styles resulted in
+Stimuli
+                                                                                                                                                     offline makeup styles being perceived as less extreme
+The makeup style stimuli consisted of images from                                                                                                    than is the case without exposure to online makeup
+online and offline sources. The offline makeup style                                                                                                 styles. The model included exposure (versus no expos-
+stimuli were created by randomly selecting five                                                                                                      ure) to online makeup styles as the between-subject
+images from the images collected in Study 1. The                                                                                                     independent variable, offline image stimuli as a repli-
+online makeup style stimuli were created by ran-                                                                                                     cate within-subject factor, and perceived makeup style
+domly selecting five images from the images col-                                                                                                     extremity as the dependent variable.
+lected from Instagram in Study 2. This random                                                                                                           Exposure had a significant effect on perceived
+selection process was facilitated using the Google                                                                                                   makeup style extremity (F (1, 129) ¼ 22.37, p < .001).
+random number generator, as in the previous study.                                                                                                   Offline makeup styles were perceived to be less
+The selected images were edited to have a similar                                                                                                    extreme when previously exposed to online makeup
+size and aspect ratio.                                                                                                                               styles (M ¼ 2.98, SE ¼ .073) compared to when not
+132      I. P. BIGLEY AND J. M. LEONHARDT
+
+
+  5.5                                                               extreme than those found offline in nonmedia con-
+    5                                                               texts (Study 2), may have shifted participants’ refer-
+  4.5
+    4
+                                                                    ence point regarding normal levels of makeup style
+  3.5                                                               extremity. This new media-elicited ideal may have
+    3                                                               then resulted in offline makeup styles being perceived
+  2.5                                                               as less extreme than would be the case without having
+    2
+  1.5
+                                                                    been exposed to makeup styles in social media. Based
+    1                                                               on this finding, there is a need for future research to
+        Image 1   Image 2   Image 3   Image 4   Image 5   Average   assess whether such an extremity bias in social media
+                       No Exposure     Exposure                     might affect consumer well-being.
+Figure 2. Perception of offline makeup style extremity with
+(treatment) and without (control) exposure to online
+makeup styles.                                                      General Discussion
+                                                                    The present research finds support for a so-called
+                                                                    extremity bias in social media. Extremity bias refers to
+exposed to online makeup styles (M ¼ 3.48,
+                                                                    content in social media being more extreme than
+SE ¼ .075). The replicate factor had a significant effect
+                                                                    what is typically observed offline in nonmedia con-
+on perceived makeup style extremity (F (1,
+                                                                    texts. This finding is surprising, given that social
+129) ¼ 195.35, p < .001), and there was a significant
+                                                                    media largely lacks centralized sources of content cre-
+interaction between the independent variable and the
+                                                                    ation and instead largely relies on user-generated con-
+replicate factor (F (1, 516) ¼ 9.43, p < .001).
+                                                                    tent. Given the organic nature of user-generated
+Subsequent pairwise comparisons revealed that expos-
+                                                                    content creation, it was unknown whether it, like
+ure to online makeup styles decreased the perceived
+                                                                    traditional media, would be biased toward portraying
+extremity of all but one of the five offline images of
+                                                                    more extreme examples relative to category-specific
+makeup style. Figure 2 illustrates this finding of per-
+ceived makeup style extremity ratings between expos-                social norms. In other words, it was unknown
+ure conditions for each of the replicate image stimuli.             whether user-generated online content would be an
+   The results suggest that exposure to online                      accurate or more extreme reflection of what is
+makeup styles results in offline makeup styles being                observed in the everyday world. The present research
+perceived as less extreme. This finding provides sup-               finds the latter to be the case.
+port for hypothesis 4 and suggests that even brief                     The observed extremity bias in social media user-
+exposure to social media content can shift the per-                 generated content, identified in the present research,
+ception of others in offline contexts. This finding                 may be the result of motivational differences in those
+aligns with previous work in traditional media, find-               who typically create versus those who typically con-
+ing that exposure to traditional media can shift per-               sume social media content. Study 1 provides support
+ceptions of the self and others (Grabe, Ward, and                   for this idea by finding that those with more extreme
+Hyde 2008; Prichard et al. 2017). For instance, previ-              makeup styles are more likely to post their content
+ous work in traditional media found that it can                     online, rather than consume others’ content. However,
+influence social norms regarding body weight; when                  consumers who are most involved with makeup-
+exposed to idealized body weights as portrayed in                   related content in social media are those who are
+traditional media, participants were more likely to                 sharing and viewing others’ content, rather than post-
+experience body dissatisfaction (Tiggemann and                      ing their own content. As found in Study 2, this sug-
+Pickering 1996). Extremity in body weight is typically              gests that makeup-related styles in social media are
+idealized in the media through the portrayal of lower               more extreme than those found offline.
+than normal body weights. Exposure to such por-                        Though beyond the scope of the present research,
+trayals may cause participants to perceive that nor-                motivational differences in creating versus consuming
+mal body weight is lower than what is perceived in                  content in social media may be related to chronic
+offline, nonmedia contexts (Chang 2003). As a result,               individual difference factors on dimensions such as
+participants perceived those in offline contexts to be              narcissism, anxiety, and the need to belong (Leary
+higher in body weight relative to their media-elicited              1990; Liu 2016). Previous research finds that posting
+ideal regarding body weight.                                        one’s content online is positively associated with nar-
+   Similarly, in the present study, exposure to makeup              cissism, while low self-esteem is positively associated
+styles in social media, which are typically more                    with the consumption of content and involvement in
+                                                                                JOURNAL OF INTERACTIVE ADVERTISING              133
+
+
+social media (Liu 2016). Such motivational biases may      by supporting their own and their key influencers’
+underlie the extremity bias observed in the present        abilities to attract attention and shape pub-
+research. Future research is needed to assess to what      lic perception.
+extent such motivations underlie the creation and
+consumption of extremity in social media.
+   As described, previous research suggests narcissism     Appendix. Makeup-Related Hashtags Used to
+may drive content creation in social media (e.g., Sung     Source Instagram Images in Study 2
+et al. 2016); however, content creation may also be
+                                                           #urbandecay      #morphe          #norvina         #makeup
+motivated by monetary incentives. Brands can               #motd            #morphebrushes   #makeupbyme      #hudabeauty
+increase exposure by incentivizing influencers on          #sephora         #laurag_143      #vegasnay        #ardelllashes
+                                                           #mua             #beautymakeup    #undiscovered_   #highlightsandcontors
+social media to endorse their products. Some influ-        #makeupgeek      #fentybeauty       muas           #inssta_makeup
+encers are compensated monetarily for their endorse-       #makeupforever   #makeupartist    #mufe            #anastasiabeverlyhills
+                                                                               worldwide     #maccosmetics
+ments; however, compensation is typically not
+substantial (Abidin 2016). Regardless, monetary com-
+pensation could provide additional motivation for
+users seeking high visibility in social media, and lim-    References
+ited availability of compensation to influencers could     Stormer, Susan M., and J. Kevin Thompson (1996),
+increase competition among influencers to create              “Explanations of Body Image Disturbance: A
+extreme content. This additional incentive to get             Test of Maturational Status, Negative Verbal
+                                                              Commentary, Social Comparison, and Sociocultural
+attention from other users in social media could push
+                                                              Hypotheses,” International Journal of Eating Disorders, 19
+content to more extreme levels than would be the              (2), 193–202.
+case in its absence.                                       Abidin, Crystal (2016), “Visibility Labour: Engaging with
+   Future research is also needed to address whether          Influencers’ Fashion Brands and #OOTD Advertorial
+the consumption of social media content affects con-          Campaigns on Instagram,” Media International Australia,
+sumer well-being. Much research has found this to be          161 (1), 86–100.
+                                                           Agichtein, Eugene, Carlos Castillo, Debora Donato,
+the case regarding traditional media (Richards and
+                                                              Aristides Gionis, and Gilad Mishne (2008), “Finding
+Abell 1996; Stormer and Thompson 1996; Tiggemann              High-Quality Content in Social Media,” Proceedings of
+and Pickering 1996). However, given the ubiquity of           the 2008 International Conference on Web Search and
+social media, additional research is needed that specif-      Data Mining, New York: ACM Press, 183–94.
+ically addresses this new media and its emerging plat-     Alhabash, Saleem, Anna R. McAlister, Wonkyung Kim,
+forms. Future research could also help to overcome            Chen Lou, Carrie Cunningham, Elizabeth Taylor
+                                                              Quilliam, and Jef I. Richards (2016), “Saw It on
+limitations of the present research by testing for
+                                                              Facebook, Drank It at the Bar! Effects of Exposure to
+extremity bias across different social media platforms,       Facebook Alcohol Ads on Alcohol-Related Behaviors,”
+regions, cultures, behaviors, and product categories.         Journal of Interactive Advertising, 16 (1), 44–58.
+Such research is needed given the potential for the        Andreassen, Cecilie Schou, Ståle Pallesen, and Mark
+extremity bias to shift social norms and behavior in          Griffiths (2017), “The Relationship between Addictive
+alternative contexts.                                         Use of Social Media, Narcissism, and Self-Esteem:
+                                                              Findings from a Large National Survey,” Addictive
+   Based on the present findings, brand awareness
+                                                              Behaviors, 64, 287–93.
+may be enhanced by promoting extreme content in            Bakhshi, Saeideh, David A. Shamma, and Eric Gilbert
+social media either via brand profiles or through             (2014), “Faces Engage Us: Photos with Faces Attract
+endorsements with key influencers who exhibit                 More Likes and Comments on Instagram,” Proceedings of
+extreme behavior pertaining to the content category           the SIGCHI Conference on Human Factors in Computing
+of interest. Brands could facilitate the creation of          Systems, New York: ACM Press, 965–74.
+                                                           Barker, Valerie (2009), “Older Adolescents’ Motivations for
+more extreme brand-related content in social media            Social Network Site Use: The Influence of Gender, Group
+through the development of less typical products that         Identity, and Collective Self-Esteem,” CyberPsychology
+allow for creative and novel applications. This may           and Behavior, 12 (2), 209–13.
+require greater differentiation from existing products     Berger, Jonah A., and Eva Buechel (2012), “Facebook
+and will likely challenge brands in maintaining a             Therapy? Why Do People Share Self-Relevant Content
+                                                              Online?” SSRN, published electronically February 29, doi:
+consistent brand image. However, with the creation
+                                                              10.2139/ssrn.2013148.
+and promotion of less typical products (e.g., Berger       ———, and Grant Packard (2018), “Are Atypical Things
+and Packard 2018), brands may be better able to               More Popular?,” Psychological Science, published electron-
+compete in the competive landscape of social media            ically April 19, doi:10.1177/0956797618759465.
+134     I. P. BIGLEY AND J. M. LEONHARDT
+
+
+Bergkvist, Lars, and John R. Rossiter (2007), “The Predictive   Lai, Linda, and Efraim Turban (2008), “Groups Formation
+  Validity of Multiple-Item versus Single-Item Measures of        and Operations in the Web 2.0 Environment and Social
+  the Same Constructs,” Journal of Marketing Research, 44         Networks,” Group Decision and Negotiation, 17 (5),
+  (2), 175–84.                                                    387–402.
+Bonett, Douglas G., and Thomas A. Wright (2000), “Sample        Leary, Mark (1990), “Responses to Social Exclusion: Social
+  Size Requirements for Estimating Pearson, Kendall, and          Anxiety, Jealousy, Loneliness, Depression, and Low Self-
+  Spearman Correlations,” Psychometrika, 65 (1), 23–28.           Esteem,” Journal of Social and Clinical Psychology, 9 (2),
+Booth, Norman, and Julie Ann Matic (2011), “Mapping and           222–29.
+  Leveraging Influencers in Social Media to Shape               Liu, Dong (2016), “Social Networking Online and
+  Corporate         Brand        Perceptions,”      Corporate     Personality of Self-Worth: A Meta-Analysis,” Journal of
+  Communications: An International Journal, 16 (3),               Research in Personality, 64, 79–89.
+  184–91.                                                       Markus, Hazel, and Shinobu Kitayama (1998), “Culture and
+Chang, Virginia (2003), “Self-Perception of Weight                the Self: Implications for Cognition, Emotion, and
+  Appropriateness in the United States,” American Journal         Motivation,” Psychological Review, 98 (2), 224–53.
+  of Preventive Medicine, 24 (4), 332–39.                       McCombs, Maxwell (2004), Setting the Agenda: Mass
+Cialdini, Robert, Carl Kallgren, and Raymond Reno (1991),         Media and Public Opinion, Cambridge: John Wiley and
+  “A Focus Theory of Normative Conduct: A Theoretical             Sons.
+  Refinement and Reevaluation of the Role of Norms in           Meraz, Sharon (2009), “Is There an Elite Hold? Traditional
+  Human Behavior,” Advances in Experimental Social                Media to Social Media Agenda Setting Influence in Blog
+  Psychology, 58 (6), 201–34.                                     Networks,”       Journal     of     Computer       Mediated
+———, ———, ———, and Melanie Trost (1998), “Social                  Communication, 14 (3), 682–707.
+  Influence: Social Norms, Conformity, and Compliance,”         Miller, Lynn Carol, and Cathryn Leigh Cox (1982), “For
+  in Handbook of Social Psychology, 4th Ed., vol. 2,              Appearances’ Sake: Public Self-Consciousness and
+  Daniel T. Gilbert, Susan T. Fiske, and Gardner Lindzey,         Makeup Use,” Sociology and Social Psychology Bulletin, 8
+  eds., New York: McGraw-Hill, 151–92.                            (4), 748–51.
+Cruz, Ryan E., James Leonhardt, and Todd Pezzuti (2017),        Morrison, Margaret A., Hyuk Jun Cheong, and Sally J.
+  “Second-Person        Pronouns       Enhance     Consumer       McMillan (2013), “Posting, Lurking, and Networking:
+  Involvement and Brand Attitude,” Journal of Interactive         Behaviors and Characteristics of Consumers in the
+  Marketing, 39, 104–16.                                          Context of User-Generated Content,” Journal of
+Daugherty, Terry, Matthew S. Eastin, and Laura Bright             Interactive Advertising, 13 (2), 97–108.
+  (2008), “Exploring Consumer Motivations for Creating          Prichard, Ivanka, Annabel C. Mclachlan, Tiffany Lavis, and
+  User-Generated Content,” Journal of Interactive                 Marika Tiggerman (2017), “The Impact of Different
+  Advertising, 8 (2), 16–25.                                      Forms of #fitspiration Imagery on Body Image, Mood,
+Freberg, Karen, Laura A. Freberg, Kristin Graham, and             and Self-Objectification among Young Women,” Sex
+  Karen McGaughey (2011), “Who Are the Social Media               Roles, 78 (11–12), 789–98.
+  Influencers? A Study of Public Perceptions of                 Richards, Steven C., and Maryse H. Abell (1996), “The
+  Personality,” Public Relations Review, 33 (1), 90–92.           Relationship between Body Shape Satisfaction and Self-
+Grabe, Shelly, Monique Ward, and Jannet Hyde (2008),              Esteem: An Investigation of Gender and Class
+  “The Role of the Media in Body Image Concerns among             Differences,” Journal of Youth and Adolescence, 25 (5),
+  Women: A Meta-Analysis of Experimental and                      691–703.
+  Correlational Studies,” Pychological Bulletin, 134 (3),       Robertson, Kim (1989), “Strategically Desirable Brand Name
+  460–76.                                                         Characteristics,” Journal of Consumer Marketing, 6 (4),
+Heinonen, Kristina (2011), “Consumer Activity in Social           61–71.
+  Media: Managerial Approaches to Consumers’ Social             Sung, Yongjun, Jung-Ah Lee, Eunice Kim, and
+  Media Behavior,” Journal of Consumer Behavior, 10 (6),          Sejung Marina Choi (2016), “Why We Post Selfies:
+  356–64.                                                         Understanding Motivations for Posting Pictures of
+Hu,     Yuheng,     Lydia     Manikonda,      and    Subbarao     Oneself,” Personality and Individual Differences, 97,
+  Kambhampati (2014), “What We Instagram: A First                 260–65.
+  Analysis of Instagram Photo Content and User Types,”          Tiggemann, Marika, and Belinda McGill (2004), “The Role
+  Proceedings of the Eighth International AAAI Conference         of Social Comparison in the Effect of Magazine
+  on Weblogs and Social Media, Palo Alto, CA: AAAI                Advertisements on Women’s Mood and Body
+  Press, 595–98.                                                  Dissatisfaction,” Journal of Social and Clinical Psychology,
+Instagram (2017), #makeup, December 9. https://www.insta-         23 (1), 23–44.
+  gram.com/explore/tags/makeup/.                                ———, ———, and Amanda S. Pickering (1996), “Role of
+Kelley, Ken, and Scott E. Maxwell (2003), “Sample Size for        Television in Adolescent Women’s Body Dissatisfaction
+  Multiple Regression: Obtaining Regression Coefficients          and Drive for Thinness,” Inernational Journal of Eating
+  That Are Accurate, Not Simply Significant,” Psychological       Dissorders, 20 (2), 199–203.
+  Methods, 8 (3), 305–21.                                       Vries, Lisette, Sonja Gensler, and Peter S.H. Leeflang
+Kraemer,       Helena      Chmura       (1973),    “Improved      (2012), “Popularity of Brand Posts on Brand Fan Pages:
+  Approximation to the Non-Null Distribution of the               An Investigation of the Effects of Social Media
+  Correlation Coefficient,” Journal of the American               Marketing,” Journal of Interactive Marketing, 26 (2),
+  Statistical Association, 68 (344), 1004–08.                     83–91.
+                                                                                     JOURNAL OF INTERACTIVE ADVERTISING   135
+
+
+Weng, Lilian, Alessandro Flammini, Alessandro Vespignani, and         Application to Advertising,” Journal of Advertising, 23
+  Filippo Menczer (2012), “Competition among Memes in a               (4), 59–70.
+  World with Limited Attention,” Scientfic Reports, 2 (335), 1–8.   Zeckhauser, William, and Richard Samuelson (1988),
+Zaichkowsky, Judith Lynne (1994), “The Personal                       “Status Quo Bias in Decision Making,” Journal of Risk
+  Involvement Inventory: Reduction, Revision, and                     and Uncertainty, 1 (1), 7–59.
+

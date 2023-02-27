@@ -1,0 +1,905 @@
+                                                             Online Social Networks and Media 15 (2020) 10 0 058
+
+
+
+                                                                Contents lists available at ScienceDirect
+
+
+                                                   Online Social Networks and Media
+                                                        journal homepage: www.elsevier.com/locate/osnem
+
+
+
+
+Political communication on social media: A tale of hyperactive users
+and bias in recommender systems
+Orestis Papakyriakopoulos∗, Juan Carlos Medina Serrano, Simon Hegelich
+Bavarian School of Public Policy, Technical University of Munich, Germany
+
+
+
+
+a r t i c l e         i n f o                           a b s t r a c t
+
+Article history:                                        A segment of the political discussions on Online Social Networks (OSNs) is shaped by hyperactive users.
+Received 20 May 2019                                    These are users that are over-proportionally active in relation to the mean. By applying a geometric topic
+Revised 10 October 2019
+                                                        modeling algorithm (GTM) on German users’ political comments and parties’ posts and by analyzing com-
+Accepted 22 October 2019
+                                                        menting and liking activities, we quantitatively demonstrate that hyperactive users have a signiﬁcant role
+Available online 25 December 2019
+                                                        in the political discourse: They become opinion leaders, as well as having an agenda-setting effect, thus
+Keywords:                                               creating an alternate picture of public opinion. We also show that hyperactive users strongly inﬂuence
+Social media                                            speciﬁc types of recommender systems. By training collaborative ﬁltering and deep learning recommen-
+Political communication                                 dation algorithms on simulated political networks, we illustrate that models provide different sugges-
+Hyperactive users                                       tions to users, when accounting for or ignoring hyperactive behavior both in the input dataset and in the
+Recommendation systems                                  methodology applied. We attack the trained models with adversarial examples by strategically placing
+Algorithmic bias
+                                                        hyperactive users in the network and manipulating the recommender systems’ results. Given that recom-
+Recommender systems
+Topic modeling
+                                                        mender systems are used by all major social networks, that they come with a social inﬂuence bias, and
+Computational social science                            given that OSNs are not per se designed to foster political discussions, we discuss the implications for
+Political data science                                  the political discourse and the danger of algorithmic manipulation of political communication.
+Agenda setting
+                                                                                                                  © 2019 The Author(s). Published by Elsevier B.V.
+                                                              This is an open access article under the CC BY license. (http://creativecommons.org/licenses/by/4.0/)
+
+
+
+
+1. Introduction                                                                          users to respond to or comment on politicians’ messages, giving
+                                                                                         birth to a new type of political interaction and transforming the
+    To day, the internet prevails as a prominent communication and                       very nature of political communication itself.
+information medium for citizens. Instead of watching TV or read-                             On OSNs, the ﬂow of information from politicians to citizens
+ing newspapers, increasing numbers of people become politically                          and back follows a different broadcasting model than the classi-
+informed through online websites, blogs, and social media services.                      cal one [7]. Instead of journalists monitoring the political activity,
+The latest statistics demonstrate that internet as a news source has                     political actors themselves produce messages and make them pub-
+become as important as television, with its share increasing year                        licly available on the platforms. Each platform provides its users
+by year [1]. Given this shift in the means of news broadcasting,                         with access to the generated content, as well as distributes it
+politicians have altered their tactics of communication to the soci-                     to them through recommendation algorithms [8,9]. The received
+ety. OSNs, such as Twitter, Facebook and Instagram, have become                          information is then evaluated both directly or indirectly [10,11]:
+a cornerstone of their public proﬁles as they use OSNs to transmit                       The political message is interpreted immediately, or subsequently
+their activities and opinions on important social issues [2–4].                          through further social interactions among citizens on the related
+    The growth of online communities on social media platforms                           topics. On OSNs, not only can users respond to politicians in
+have created a public amenable to political campaigning. Political                       the traditional manner i.e., through their political activity in the
+parties and actors have adapted to the new digital environment                           society-, but also respond to or comment on the politicians’ views
+[5], and besides new campaigning methods such as microtargeting                          online. This creates a new type of interactivity, as users, who ac-
+[6], have created microblogs through which they can inform citi-                         tively engage in online discussions sharing their views, are able
+zens of their views and activities. Furthermore, OSNs have enabled                       to inﬂuence the way the initial political information will be as-
+                                                                                         similated by passive users as well as directly inﬂuencing political
+  ∗
+                                                                                         actors.
+    Corresponding author.
+    E-mail addresses: orestis.papakyriakopoulos@tum.de (O. Papakyriakopoulos),
+                                                                                             This new form of political interactivity transforms political
+juan.medina@tum.de (J.C.M. Serrano), simon.hegelich@hfp.tum.de (S. Hegelich).            communication. Given the possibility of users to directly respond
+
+https://doi.org/10.1016/j.osnem.2019.10 0 058
+2468-6964/© 2019 The Author(s). Published by Elsevier B.V. This is an open access article under the CC BY license. (http://creativecommons.org/licenses/by/4.0/)
+2                            O. Papakyriakopoulos, J.C.M. Serrano and S. Hegelich / Online Social Networks and Media 15 (2020) 100058
+
+
+to the political content set by political actors, and discuss polit-               sistent with the political interests of hyperactive users. This phe-
+ical issues with other citizens online, OSNs emerge as a fruitful                  nomenon per se denotes a form of algorithmic manipulation of po-
+space for agonistic pluralism. They provide the necessary chan-                    litical communication: The platform unintentionally magniﬁes hy-
+nels for different interests and opinions to be expressed, heard and               peractive users’ interests, thus posing the risk of political invis-
+counterposed; elements that constitute the very essence of politi-                 ibility for passive users [21]. The investigation of such an issue
+cal communication. If the discussions held are legitimized within a                becomes politically important, considering that the most engaged
+democratic framework, they form the basis for reaching a conﬂict-                  news stories on social media platforms usually come from right-
+ual consensus [12], based on which societal decisions can be made.                 wing media sources and contain provocative content [5,20]. Nev-
+Hence, political communication on OSNs opens new possibilities                     ertheless, understanding the interplay between hyperactive users
+for citizens to participate in the political shaping of the society,               and recommendation systems is not a trivial task. OSNs conceal
+providing them with additional space to address their interests.                   exactly how their models work, as well as their effects on user
+                                                                                   behavior. Given these restrictions, the study tries to shed light on
+1.1. Motivation                                                                    potential algorithmic distortions of content, partly by performing
+                                                                                   simulations that try to replicate real world OSN features.
+    Although the above type of political communication has the                         Last but not least, aforementioned misrepresentations of pub-
+potential to improve the function of democracy, OSNs possess a                     lic opinion have a direct impact on political campaigning. Contem-
+structural property that obstructs the unbiased constructive inter-                porary political actors develop their inﬂuence strategies based on
+action between political actors and citizens: The activities of users              the perceived voter model [22], which presupposes the gathering
+on OSNs follow an extreme value distribution [13–16]. Practically,                 of demographic and political data for the development of statistical
+this means that users are not equally active when using a spe-                     models about the electorate’s attitudes. As major part of these data
+ciﬁc OSN. Among others, the majority of users remain passive, or                   is derived from social media, models that fail to take the effect of
+participate with a very low frequency; they either simply read the                 hyperactive users into account would face an important bias.
+content or like, comment, tweet, etc. very rarely. On the contrary,
+a very small number of the users are hyperactive, as they over-                    1.2. Research questions
+proportionally interact with the platform they use. Thus, in polit-
+ical communication on OSNs, hyperactive users are citizens who                         Considering the above, we want to answer following questions:
+over-proportionally externalize their political attitudes compared
+                                                                                       RQ1: What is the impact of hyperactive users on political
+to the mean. This could be done by liking, commenting, tweeting
+                                                                                         agenda-setting on OSNs?
+or using any other interaction possibility provided by a platform to
+                                                                                       RQ2: Does hyperactive behavior inﬂuence recommendation
+declare an attitude to a political issue.
+                                                                                         algorithms?
+    The given activity asymmetry becomes a major issue, consider-
+ing that a considerable part of the society is politically informed                    To coherently provide answers to the above questions, we an-
+via OSNs. As hyperactive users externalize their political attitudes               alyze a dataset of posts and user reactions generated on political
+more than the others, they have the potential to distort political                 pages on Facebook. We classify the generated content into top-
+communication; political issues that are important to them be-                     ics by applying a topic modeling algorithm and formulate ﬁve hy-
+come overrepresented on OSNs, while the views of normally active                   potheses to be tested.
+users become less visible. Hence, hyperactive users may inﬂuence                       For the investigation of the impact of hyperactive users on po-
+the political discussions towards their ends, creating a deformed                  litical agenda-setting, we want to understand: A. How the user ac-
+picture of the actual public opinion on OSNs. This fact violates the               tivities are distributed on the political pages. B. If hyperactive users
+assumption of an equitable public political discourse as part of po-               are interested in the same content as regular users. C. If hyperac-
+litical communication [17], because the interests and views of nor-                tive users’ opinion is equally, more, or less important in the dis-
+mally active users appear as less important.                                       cussions taking place. Therefore we test the following hypotheses:
+    The above distortion of political communication is intensiﬁed
+by the business models of the OSN platforms. OSNs were not cre-                        H1: The log-normal distribution is the optimal distribution for
+ated to be arenas of political exchange. Their aim is to maximize                         mathematically describing the users’ liking and commenting
+the number of platform users, by keeping them satisﬁed [18], and                          activities on political pages on Facebook.
+to transform this social engagement to proﬁts, i.a. through adver-                     H2: The distribution of topics in which hyperactive users en-
+tisement. Hence, on OSNs, users are both consumers and citizens                           gage does not deviate from the distribution of topics in
+[19]. In order to maximize their proﬁts, OSN platforms adjust their                       which the regular users engage.
+recommendation algorithms to the content popularity, with a view                       H3: Hyperactive users’ comments receive on average the same
+to promoting information that most users will like. For example,                          amount of likes as the comments of the rest of the users.
+the recommendation algorithm of Facebook aims to maximize how                          Besides understanding the role of hyperactive users on politi-
+well users spend their time on the platform [20]. This is translated               cal discussions, we want to quantify the contribution of hyperac-
+to the promotion of content that inﬂuences users to engage more                    tive users on the suggestions made by recommendation systems.
+with the website, i.e to generate more likes, comments or shares.                  We focus on two parts of the recommendation systems. A. Their
+Facebook also gives further incentives for users to engage more on                 training process, and how eﬃcient different models are in learn-
+the platform. It rewards users, giving them badges as ’top com-                    ing from heavy-tailed distributions of political activities. B. Given
+menter’ or ’top fan’ that appear next to their name. This happens                  that algorithmic recommendations on OSNs depend on the users’
+when they are really active on the platform or on a speciﬁc page.                  friendship network, we investigate how the suggested content can
+These awards give users a higher social status on the platform and                 be manipulated by poisoning the friendship graphs, i.e. by adding
+actually aim the mobilization of users to engage more with the ser-                users that show hyperactive behaviour. We achieve this by testing
+vice. This can be then translated to more user data for the platform               following hypotheses on a simulated political network:
+and consequently, yields better placed advertisement.
+    As hyperactive users asymmetrically inﬂuence the popularity of                     H4: Given the heavy tailed distribution of activities and data
+political content, recommender algorithms might also replicate this                       sparsity, standard recommendation algorithms fail to suggest
+asymmetry. A platform might recommend content which is con-                               content that correspond to the users’ political interests.
+                              O. Papakyriakopoulos, J.C.M. Serrano and S. Hegelich / Online Social Networks and Media 15 (2020) 100058                    3
+
+
+   H5: Given the interconnectedness of recommender systems and                      the exact structure of their recommender systems, it is known
+      friendship network structure, graph poisoning by the in-                      that they use the users’ social network structure to improve rec-
+      troduction of hyperactive users signiﬁcantly distorts recom-                  ommendations’ accuracy [31,32]. In this way they take advantage
+      mendations of political content.                                              of the homophily principle that states that a user’s friends will
+                                                                                    have similar interests as the user themselves.
+1.3. Original contribution                                                              Nevertheless, research proves that the training of statistical
+                                                                                    models and neural architectures on extremely skewed and imbal-
+ • We mathematically deﬁne hyperactive users on OSN Facebook,                       anced datasets as that of user activities might yield poor accuracy
+   and identify them on the public pages of the major German po-                    results [33,34]. Therefore, the danger exists that algorithms might
+   litical parties.                                                                 fail to learn and diffuse in a coherent way the users’ political inter-
+ • By applying a state-of-the-art topic modeling algorithm, we in-                  ests, resulting to the algorithmic manipulation of political commu-
+   vestigate whether they spread or like different messages on po-                  nication [21]. To that phenomenon might contribute the fact that
+   litical issues other than normal users and politicians do. We                    recommender systems come with a social inﬂuence bias: They ac-
+   prove that hyperactive users are not only responsible for a ma-                  tually have the power to alter public opinion [35,36].
+   jor part of online political discussions, but also externalize dif-                  Besides having the potential to inﬂuence the recommender sys-
+   ferent attitudes than the average user, changing the discourse                   tems’ training process, hyperactive behavior is able to distort the
+   taking place.                                                                    recommendations of already trained models. Researchers prove
+ • We quantify their effect on content formation by measuring                       that adversarial attacks of neural architectures used for recommen-
+   their popularity and showing that they adopt an opinion leader                   dation systems can make the models fail. This can be done by
+   status.                                                                          both inserting adversarial observations at the level of the model, or
+ • We simulate a social network of political activities and train hy-               by graph poisoning: altering the network structure in a way that
+   brid collaborative ﬁltering and deep learning recommendation                     speciﬁc information will become invisible or be overrepresented
+   algorithms on it. We prove that recommendations are strongly                     [36–40]. Given the number of hyperactive users that explicitly aim
+   inﬂuenced by hyperactive behavior. We also show that the elec-                   the diffusion of political content, it is important to investigate their
+   tion of an appropriate cost function can deal with the issue.                    impact on recommender systems’ results.
+ • We insert adversarial examples of hyperactive users and in-
+   tentionally manipulate the recommender systems’ suggestions.
+                                                                                    3. Data and methods
+   Given the above, we initiate an important discussion on OSNs
+   as spaces of political communication.
+                                                                                        The section provides an overview of the data and methods used
+                                                                                    to study the impact of hyperactive users on political agenda-setting
+2. Background and related work
+                                                                                    (RQ1) and to test if hyperactive behavior inﬂuences recommen-
+                                                                                    dation systems (RQ2). Subsection 3.1 provides an overview of the
+    Research proves that user activities on OSNs are not normally
+                                                                                    data used to test the ﬁve formulated hypotheses and explains the
+distributed. The interactivity time of users with the services, the
+                                                                                    related limitations. Subsections 3.2-3.4 present the tools used to
+frequency with which they generate content on the platforms, how
+                                                                                    quantify the presence and activities of hyperactive users on Face-
+often they like, tweet or comment, all follow an extreme value
+                                                                                    book political pages (RQ1). For answering RQ2, subsections 3.4 and
+distribution [13,14,23]. This denotes a signiﬁcant asymmetry exist-
+                                                                                    3.5 provide details on the development of recommendation sys-
+ing between users’ behaviour, which stops being a mere descrip-
+                                                                                    tems based on user activities and their differences and similarities
+tive behavioral feature when it comes to analyzing phenomena as
+                                                                                    from the actual algorithms used by OSNs. We describe how the
+political communication. The fact that users contribute differently
+                                                                                    systems make recommendations and how we attack the systems
+on political discussions and on news diffusion automatically be-
+                                                                                    with adversarial examples to potentially distort their recommen-
+comes a political phenomenon, which needs to be analyzed by re-
+                                                                                    dations.
+searchers. This is crucial for understanding how political processes
+take place in the digital era.
+    The given asymmetry becomes even more important when con-                       3.1. Data description & limitations
+sidering that most OSN users remain passive. They just browse
+and read political content [16], without contributing in information                    To investigate the effect of hyperactive users, we analyse the
+diffusion [24]. This automatically constitute active and hyperactive                public Facebook pages of the main German political parties. Our
+users as potential opinion inﬂuencers, as they shape the platforms’                 sample includes CDU, CSU, SPD, FDP, Bündnis 90/Die Grünen, Die
+content. Research proves that users who obtain inﬂuential roles in                  Linke, and AfD. CDU is the main conservative party of Germany,
+networks have the ability to politically persuade the rest [25] as                  while CSU is the conservative party active in Bavaria. SPD rep-
+well as to guide information diffusion [26] in terms of news stories                resents the main German social-democratic party, and Die Linke
+and political discussions [27]. Therefore, it is interesting to investi-            the radical left. AfD has a nationalist, anti-immigrant, and neo-
+gate and deﬁne the differences of normally active and hyperactive                   liberal agenda, while FDP is a conservative, neo-liberal party. Fi-
+users, and their role in shaping political content. Hyperactive be-                 nally, Bündnis 90/Die Grünen is the German green party. We focus
+haviour constitutes a widely used tactic in information operations,                 on Facebook, because the platform’s API restrictions and its mon-
+with automated or human accounts intensively trying to inﬂuence                     itoring system largely prevent automated activities, such as those
+discussions taking place [28,29].                                                   performed by social bots on other platforms [41,42]. Therefore we
+    The extremely skewed distribution of user activities also be-                   can evaluate the natural behavior of hyperactive users and not an
+comes an issue when considering the function and impact of                          algorithmically generated one.
+recommendation systems. All major OSNs deploy data-intensive                            We take into consideration all party posts and their reactions
+algorithms for suggesting to the users contents to interact with,                   in the year 2016. This choice is made, because the acquirement of
+especially on the platforms’ news feed. These algorithms consist                    similar data is not feasible today, since Facebook has restricted ac-
+usually of deep neural systems that take as input user speciﬁc                      cess to its public API. In total, by accessing the Facebook Graph
+features and return contents that maximize the probability of a                     API in 2017, we collected 3,261 Posts, 3,084,464 likes and 382,768
+user interacting with it [30]. Although most OSNs do not disclose                   comments, made by 1,435,826 users. The sample includes all posts
+4                                     O. Papakyriakopoulos, J.C.M. Serrano and S. Hegelich / Online Social Networks and Media 15 (2020) 100058
+
+
+                                 Table 1
+                                 Overview of activities on the 7 investigated Facebook pages for the year 2016. Ratio denotes the total number
+                                 of likes and comments made on each page to the total number of active users.
+
+                                                     Subscribers     Active users   Posts   Comments      Likes         Reactions to users ratio
+
+                                    AfD              309,275         642,927        577     176,506       1,601,502     1,778,008   : 642,927
+                                    CDU              123,534         77,400         391     46,837        82,564        129,401 :   77,400
+                                    CSU              148,759         404,641        595     80,618        692,273       772,891 :   404,641
+                                    Die Grünen       132,630         135,217        209     24,750        153,500       288,717 :   135,217
+                                    Die Linke        167,570         135,085        356     14,257        181,161       195,418 :   135,085
+                                    FDP              56,581          76,919         579     9,177         126,584       135,761 :   76,919
+                                    SPD              121,128         179,970        566     30,630        246,887       277,517 :   179,970
+
+
+
+    Table 2                                                                                 population. We adopt the deﬁnitions made by Barnett and Lewis
+    Vuong test results.
+                                                                                            [48], Johnson and Wichern [49] and Ben-Gal [50], and see outliers
+      Log-normal vs       Likes LL-ratio (p-value)    Comments LL-ratio (p-value)           not as errors, or coming from a different generative process, but as
+      Power-law           15.1 (<0.01)                34.9 (<0.01)                          data containing important information, which is inconsistent with
+      Poisson             34.9 (<0.01)                12.7 (<0.01)                          and deviating from the remainder of the data-set. Therefore, given
+      Exponential         12.7 (<0.01)                26.6 (<0.01)                          the extreme skewed distribution of the activities, we follow the
+                                                                                            method proposed by Hubert and Vam der Veeken [51] and Hubert
+                                                                                            and Vandervieren [52] for outlier detection. We calculate the quar-
+and comments on the posts generated for the period under inves-                             tiles of our data Q1 and Q3 , the interquartile range IQR = Q3 − Q1
+tigation.                                                                                   and the whiskers w1 and w2 , which extend from the Q1 and Q3
+    Table 1 provides an overview of the data collected. We only                             respectively to the following limits:
+concentrate on 7 German political pages, and we do not investigate
+the numerous other smaller party pages existing on the platform.                            [Q1 − 1.5e−4MC IQR, Q3 + 1.5e3MC IQR]                             (1)
+Nevertheless, because our sample includes activities of more than
+                                                                                            where MC is the medcouple [53], a robust statistic of the distribu-
+1,4 million people, we can draw consistent inferences about the
+                                                                                            tion skewness. Data beyond the whiskers are marked as outliers.
+statistical distribution of users related to political communication.
+From Table 1 it is visible that activities among the pages are not
+evenly distributed. This conforms with existing literature stating                          3.3. Topic modeling
+that AfD users are the most active German partisans online [43].
+It also agrees with existing literature stating that OSNs come with                             After evaluating the likes and comments distributions, as well
+a population bias: user preferences on OSNs do not describe accu-                           as identifying the existing hyperactive users, we prepare our data
+rately preferences of people oﬄine [44]. This asymmetry does not                            for the application of a topic modeling algorithm. By applying a
+inﬂuence our investigation. Although some pages might be more                               topic modeling algorithm and assigning user activities to the dif-
+popular than others, and user behaviour might vary in between,                              ferent topics, we can test if the distribution of topics in which hy-
+our investigation focuses on revealing statistical properties of user                       peractive users engage does not deviate from the distribution of
+activities on the party pages as an integrated ecosystem. This fact                         topics in which the rest of the users engage (H2).
+also deals with the limitation that we do not have the activities                               As it has been shown that a noun-only topic modeling approach
+of users on other non-political pages. Our analysis deals only with                         yields more coherent topic-bags [54], we clean our posts and com-
+the interaction of users with political content and wants to un-                            ments from the remaining part-of-speech types. To do so, we ap-
+cover features and issues of political communication taking place                           ply the spaCy pretrained convolutional neural network classiﬁer
+on OSNs.                                                                                    [55] based on the Tiger [56] and WikiNER [57] corpuses, classify
+                                                                                            each word in our document collection, and keep only the nouns.
+3.2. Deﬁning hyperactive users                                                                  We want to investigate the various topics that users and par-
+                                                                                            ties discussed but do not want to differentiate on the way they
+    For testing if the log-normal distribution is the optimal distri-                       talked about them. Parties usually use a more formal language
+bution for mathematically describing the users’ liking and com-                             when posting on a topic than users. Therefore, there is the risk
+menting activities on the investigated pages (H1), we make the-                             that the topic modeling algorithm would create different topics on
+oretic assumptions about hyperactive users and choose the formal                            the same issue, one for the parties and one for the users. To avoid
+framework that best complies with their properties.                                         this, we ﬁt our model on the user comments, and then classify the
+    We consider hyperactive users as people, whose behavior de-                             parties’ posts through the trained model.
+viates from the standard on an OSN platform. To obtain an un-                                   For our analysis, we apply a non-parametric Conic Scan-and-
+derstanding of the overall behavior of the users, we ﬁt discrete                            Cover (CoSAC) algorithm for geometric topic modeling [58]. Our
+power-law and extreme value distributions to mathematically de-                             decision is based on the fact that most topic modeling algorithms
+scribe the users’ like and comment activities. Additionally, we run                         (e.g. LDA [59], NMF [60]) need a priori as input the number of top-
+bootstrapped and comparative goodness-of-ﬁt tests based on the                              ics to split the corpus. CoSAC has the advantage of electing itself
+Kolmogorov–Smirnov [45] and the Vuong [46] statistic to evaluate                            the number of topics to ﬁnd the most eﬃcient topic estimates.
+the potential ﬁts, as proposed by Clauset et al. [47]. The KS test                              The algorithm presupposes that the optimal number of topics
+examines the null hypothesis that the empirical sample is drawn                             K are embedded in a V-1 dimensional probability simplex V −1 ,
+from the reference distribution, while the Vuong test measures the                          where V the number of words in the corpus. Each topic β K corre-
+log-likelihood ratio of two distributions and, based on it, investi-                        sponds to a set of probabilities in the word simplex. The totality
+gates whether both empirical distributions are equally far from a                           of topics build a convex polytope B = conv(β1 , ..., βK ). Each docu-
+third unidentiﬁed theoretical one.                                                          ment corresponds to a point pm = ( pm1 , ..., pmV ) inside Polytope B,
+                                                                                                        
+    In order to mathematically describe the activities of hyperac-                          with pm = k βk θmk . θ mk denotes the proportion that topic k cov-
+tive users, we select to treat them as outliers of the standard OSN                         ers in document m. Finally each document is drawn from a multi-
+                                O. Papakyriakopoulos, J.C.M. Serrano and S. Hegelich / Online Social Networks and Media 15 (2020) 100058                    5
+
+
+
+
+                  Fig. 1. (a) The topic polytope embedded in the word simplex. (b) Cones and sphere coverage of the polytope (ﬁgures from [58]).
+
+
+
+nomial distribution of words: wm ~ Multinomial(pm , Nm ), where Nm                    namely if the heavy tailed distribution of user activities inﬂuences
+the number of words in document m.                                                    standard recommendation algorithms in learning the actual politi-
+    The CoSAC algorithm iteratively scans the polytope B and ﬁnds                     cal interests of users.
+the furthest point from its center Cp. It then constructs a coni-                         We explain our methodology and describe differences and simi-
+cal region with angle ω, starting from Cp and embedding the spe-                      larities between our recommendation systems and the actual ones’
+ciﬁc point (Fig. 1). All points within the cone are considered to                     used by OSNs. Our algorithms do not fully correspond to the one’s
+belong in the same topic and are removed from the polytope. The                       actually deployed by Facebook. We are not in the position to do
+procedure is iterated K−1 times, until almost no points remain in                     that, because Facebook and most platforms do not disclose the ex-
+the polytope. A cone is considered suﬃcient if it covers at least a                   act systems they use. Nevertheless, by training recommendation al-
+proportion of documents λ. After ﬁtting the cones, CoSAC places                       gorithms that share common properties with the actual ones, we
+a sphere with radius R to the polytope, to cover the remaining                        want to illustrate potential issues related to political communica-
+points. The K geometric objects and their respective points corre-                    tion on OSNs, as well as point out the need for additional trans-
+spond to the K topics created by the algorithm. In our model, the                     parency on the algorithms used by the platforms and their impact
+hyperparameters were set to ω = 0.6, λ = 0.001 and R = 0.05, as                       on user behavior.
+proposed by the authors.                                                                  To test the effect of hyperactive behavior on the suggestions of
+                                                                                      recommendation algorithms, we simulate a social network of polit-
+3.4. Comparison of activities                                                         ical activities. We use the Facebook social circles dataset developed
+                                                                                      by [62], which contains a real network of 4,039 Facebook users and
+    Given our topics, we want to evaluate the differences in the ac-                  their corresponding 88,234 friendship relations. The dataset also
+tivity of normal and hyperactive users (H2). Therefore, we calcu-                     provides anonymized user metadata about their age, sex, educa-
+late the empirical distributions f(comment|topic) over all topics for                 tion, work, hometown and location. The network consists of 10
+the comments of normal and hyperactive users respectively. We                         communities. We merge them into 7, in order to correspond to
+pairwise compare the distributions for each topic, by applying a                      the number of party pages we investigate. For each community,
+2-Sample Anderson–Darling Test [61]. The test calculates the prob-                    we only map users active on a speciﬁc party page to the nodes,
+ability that the populations from which two groups of data were                       maintaining homophilic features initially existing in the network.
+drawn are identical.                                                                  Homophily states that similar users tend to form ties with each
+    Besides testing the empirical comment-topic distributions, we                     other [63]. We preserve this similarity by keeping the meta-data
+assign to each comment the topic with the highest probability and                     and connections from the original dataset and extend it by adding
+compare the most commented topics for normal and hyperactive                          an additional common feature i.e. the political page users are ac-
+users. Similarly, we assign the classiﬁed party posts to their most                   tive on.
+probable topic and aggregate the likes of normal and hyperactive                          In total, we create a social network that includes users’ political
+users. In this way, we are in the position to locate the concrete                     attitudes and nonpolitical properties, while also having a friend-
+political interests of users.                                                         ship structure corresponding to an actual Facebook sub-network.
+    To complete the investigation of RQ1, we calculate the average                    We do not assign to a user all the posts they reacted on, but use
+likes that the comments of hyperactive and normally active user’                      the developed topics as proxies of the user’s interests i.e., we as-
+comments received. In this way, we test H3, namely if hyperactive                     sign how many times a user liked a post from a speciﬁc topic or
+users’ comments receive on average the same amount of likes as                        commented on a speciﬁc topic. We built recommender systems by
+the comments of the rest of the users.                                                using the tensorrec library [64] based on the users’ meta-data, the
+                                                                                      user’s political interests and the political interests of their friends.
+3.5. Training recommendation algorithms
+                                                                                      In this way we tried to replicate as closely as possible the func-
+                                                                                      tion of the private recommendation systems of OSN platforms,
+    In this and the next subsection we describe the methodology
+                                                                                      which take into consideration user features, location settings and
+followed to answer our second research question: Does hyperac-
+                                                                                      the activities of friends in order to tailor news feed suggestions
+tive behavior inﬂuence recommendation algorithms? Here, we de-
+                                                                                      [31,65,66].
+scribe two types of recommendation systems developed to test H4,
+6                                       O. Papakyriakopoulos, J.C.M. Serrano and S. Hegelich / Online Social Networks and Media 15 (2020) 100058
+
+
+    Of course, the actual OSNs are trained online and have the ac-
+tual posts users have interacted with or might interact with in the
+future, as parameters. They also take as input thousands of features
+we do not have access to. For example, they take into considera-
+tion the pages a user has made a meaningful interaction, regard-
+less of it is related to politics or not. They also include features
+about the general popularity of content generated on the pages,
+how much time a user spends on speciﬁc content, what informa-
+tion they share on other services of the platforms, or what device
+a user uses. All these pieces of information are not available to us,
+and instead of speculating about their impact we leave them out
+of our analysis. Nevertheless, we train recommendation algorithms
+on the available data and illustrate the impact of hyperactive be-
+haviour. Training models on topics as proxies of the actual posts
+does not reduce the credibility of the study, as we want to make
+inferences about the impact of the models on agenda-setting and
+their accuracy on suggesting political content (H4,H5).
+    We train two models, a hybrid collaborative ﬁltering model
+(HCF) and a deep learning recommendation system (DNN-
+                                                                                              Fig. 2. Structure of DNN-BWMRB, consisting of two parallel neural networks lead-
+BWMRB). The ﬁrst one maintains properties of the recommender                                  ing to the balanced weighted margin-Rank Batch loss function.
+systems used on OSNs, i.e. it takes into consideration user fea-
+tures and friends activities, but is not specially designed for ex-
+tremely skewed input data. By contrast, DNN-BWMRB uses a spe-                                     We measure how models’ recommendations change in the pres-
+cial cost function to deal with sparse and asymmetric input and                               ence of adversarial examples that attempt to set the political
+output data.                                                                                  agenda. After training the recommender systems on the initial net-
+    The HCF optimizes the cost function                                                       work, we change the network structure by inserting new users,
+                                                                                              who have purposefully intensive interest on topic 10 i.e., on the
+L = min |P − UW ∗ IV |F
+     W,V                                                                                      deportation of immigrants. We perform a detailed sensitivity anal-
+where P the n by t matrix containing the number of interactions of                            ysis, by varying the number of reactions they make on the topic,
+n users on the t different topics; and U the n by m matrix of user                            the number of users involved in the attack, as well as their posi-
+meta-data containing m features per user and I the t by n friends’                            tion in the network. For that, we calculate the network eigenvalue
+preferences matrix containing for each user how many times their                              centrality for each user in the friendship network, and adding the
+friends interacted about a speciﬁc topic. W and V are n by t and t                            users in positions of high, moderate and low eigenvalue central-
+by t parameter matrices to be optimized, ∗ the dot product, and |.|F                          ity. We sample from the already trained recommendation system’s
+the frobenius norm. Similarly, DNN-BWMRB consists of two paral-                               random suggestions, giving as input the initial and the attacked
+lel architectures with 3 fully connected layers of 276 neurons each,                          network. As recommendation algorithms take users’ friends’ inter-
+which take as inputs matrices U and IT and minimize the balanced                              ests as input, their suggestions adjust in respect to changes in the
+weighted margin-Rank Batch loss [67] (BWMRB) of predicting ma-                                friendship network structure. By performing the aforementioned
+trix P. BWMRB optimizes the rank-sensitive cost function                                      attack, we quantify via counterfactual scenarios how the sugges-
+                                                                                            tions made by the systems shift in the presence of adversarial ex-
+                  n 
+                   t
+                                       n j,k                                                  amples.
+LBW MRB = min                ln               rank( j, k ) + 1
+                                      pop(k )
+                   j=1 k=1
+                                                                                              4. Results
+where j is a user, k a topic, nj,k the interaction of user j with con-
+tent related to topic k, where pop(k) is the total number of interac-                            Our results are split in two parts, each one of them dedicated
+tions on topic k. Also, rank(j, k) is the ranked importance of a topic                        to answer a research question and its related hypotheses. The ﬁrst
+for a user given by the negative sampling equation                                            part investigates hypotheses related to RQ1, i.e. on the impact of
+                 |K |                                                                        hyperactive users on agenda-setting on OSNs. In the second part
+rank( j, k ) =              max(1 − p( j, k ) + p( j, k ), 0 )                               we investigate if hyperactive behaviour impacts recommender sys-
+                 |Z | k ⊂Z
+                                                                                              tems’ suggestions (RQ2).
+where p(j, k), p(j, k ) the scores predicted for user j, topic k, user
+j and a negative topic k’ respectively. |Z| is a set of randomly se-                          4.1. What is the impact of hyperactive users on political
+lected negative samples and |K| the set of all topics. We select the                          agenda-setting on OSNs?
+speciﬁc cost function because it is robust against asymmetric in-
+teractions of unique users on the topics, as well as total popularity                            In order to address RQ1, we present ﬁrst our ﬁndings on the
+asymmetries between topics. An overview of the architecture can                               general user distribution of the investigated pages and answer if
+be found in Fig. 2.                                                                           the log-normal distribution is the optimal one to describe the
+                                                                                              data (H1). Based on that, we analyze the number and distribu-
+3.6. Designing attacks with adversarial examples                                              tion of hyperactive users among the different pages. Then, we com-
+                                                                                              pare the behavior between hyperactive and normal users by taking
+    The last part of our study focuses on understanding the vulner-                           into consideration the topic modeling results and further statistical
+ability of recommender systems to attempts of organized manipu-                               tests. In this way, we both test whether hyperactive users engage
+lation. This concludes the investigation of how hyperactive behav-                            on the same content with the rest (H2) and if they are equally
+ior might inﬂuence recommendation systems (RQ2) by testing if                                 popular to the other users (H3).
+graph poisoning by the introduction of hyperactive users signiﬁ-                                 As a ﬁrst result, we identify the log-normal distribution as the
+cantly distorts recommendations of political content (H5).                                    best measure for describing user activities (Fig. 3), conﬁrming thus
+                             O. Papakyriakopoulos, J.C.M. Serrano and S. Hegelich / Online Social Networks and Media 15 (2020) 100058                    7
+
+
+
+
+                            Fig. 3. Distribution of users’ commenting and liking activites. The red line representes the log-normal ﬁt.
+
+
+
+H1. The bootstrapped KS-Tests (100 samples, two tailed) for both                    users’ commenting and liking activities for each party can be found
+comments and likes fail to reject the null that our data come from                  in Table 3. We also compare the like and comment distributions,
+a log-normal distribution (gof < 0.01, p > 0.05 and gof < 0.01,                     by calculating their gini index. The measure provides a proxy for
+p > 0.2 respectively), while comparative Vuong tests show a bet-                    inequality, with 0 denoting perfect equality and 1 extreme inequal-
+ter ﬁt of the log-normal in comparison to the power-law, pois-                      ity. In our case, we calculate a value of 0.35 and 0.45 for the com-
+son and exponential distributions (Table I). Our results comply                     ment and like distribution respectively. This denotes that like ac-
+with the existing literature, which states that usually complex                     tivities are more unequally distributed than the comment activities
+social network properties are log-normally distributed [15,68,69].                  i.e., hyperactive users play a bigger role in the formation of likes.
+Fig. 3 shows the empirical frequencies of user activities and their                 Additionally, the values denote a degree of inequality between nor-
+respective log-normal ﬁts.                                                          mal and hyperactive users, but not an extreme one. Nevertheless
+    After ﬁnding the distribution that best describes our data, we                  this is misleading, because the measure does not take into consid-
+categorize users in hyperactive and normally active. Through our                    eration inactive users. Had that information been included, the gini
+outlier detection methodology, we detect 12,295 hyperactive users                   index would have been much higher in both cases.
+on the comment section of pages, who correspond to 5.3% of the                           Based on the categorization of users as hyperactive or normal,
+total users commenting on the pages. Due to the extreme skew-                       we evaluate the results of the topic modeling algorithm. The model
+ness of the comments’ distribution, a user is characterized as hy-                  clustered the users’ comments into 69 main topics. A major part of
+peractive if they made three or more comments. This is justiﬁed by                  the topics concern the refugee crisis of 2016 and the related dis-
+the fact that 74% of the users under investigation made only one                    cussions about Islam. A set of topics aggregate comments on Ger-
+comment. Although hyperactive users represent 5.3% of the total                     man Chancellor Merkel, on the leaders of other parties, on female
+commenting population, they account for 25.8% of the total com-                     and male politicians and the German parties in general. There is
+ments generated on the parties’ pages. Furthermore, 56% of these                    one topic summing up comments in English language, as well as
+hyperactive users commented on two or more party pages, de-                         a topic containing hyperlinks. Furthermore, the algorithm created
+noting that they generally interact with users across the political                 policy related topics regarding foreign affairs, as well as the econ-
+spectrum. By evaluating the popularity of the users’ comments, we                   omy and labour market and the state in general. Other topics are
+ﬁnd that hyperactive users tend to get more support than the rest.                  related to the German national identity, society and solidarity, and
+Comments made by hyperactive users on average gained 3.52 likes,                    the nature of democracy. Users also talk about family and gender
+while normal users’ comments only 3.07, a difference that is statis-                policy, homeland security, transportation and environmental pol-
+tically signiﬁcant (Mann-Whitney Test with continuity correction,                   icy. There are topics that include wishes, fear, ironic and aggressive
+one tailed: W = 1.410 , p < 0.01). Thus, we reject the hypothesis                   speech, as well as topics aggregating user thoughts. Finally, a set of
+that hyperactive users’ comments are liked equally often as nor-                    topics is about political events and communications and a number
+mal users’ comments (H3). on the contrary, we show that hyper-                      of topics include comments against mainstream media and the po-
+active users are more appreciated in their contributions. This com-                 litical system.
+plies with previous research stating that highly active users tend                       The GTM algorithm is able to provide a broad picture of the dis-
+to have the characteristics of opinion leaders [25].                                cussion topics on the parties’ pages, revealing numerous insights
+    Similarly, the evaluation of the pages’ likes results in the char-              about the way Facebook users commented on the parties’ posts.
+acterization of 61,372 users as hyperactive, or 4.3% of the total                   By splitting the comments into two categories, one for the ones
+users that liked the parties’ posts. As before, the methodology la-                 generated by hyperactive users and one for the comments of nor-
+bels users as hyperactive if they made three or more likes, because                 mal users, and by assigning them to the topics to which they were
+the majority of the active Facebook population rarely interacted                    mostly related, we create a a heatmap that provides a qualitative
+with the related pages. The likes of these hyperactive users account                overview on the activities across pages (Fig. 4). The heatmap il-
+for 26.4% of total likes, thus having a major effect on the overall                 lustrates which topics are prominent on the users’ comments on
+content liked. In addition, 29% of hyperactive users like posts of                  each political page. Users on the AfD page talk a lot about immi-
+more than one party, denoting again that their activities are spread                gration, on Chancellor Merkel, and the party itself, as well as share
+over the entire parties’ network. The overview of the hyperactive                   a lot of youtube Videos. CDU users are mostly concerned about the
+8                   O. Papakyriakopoulos, J.C.M. Serrano and S. Hegelich / Online Social Networks and Media 15 (2020) 100058
+
+
+
+
+    Fig. 4. Heatmap of user comments on the party pages by topic. The heatmap for hyperactive users aggregates both likes and comments.
+                                     O. Papakyriakopoulos, J.C.M. Serrano and S. Hegelich / Online Social Networks and Media 15 (2020) 100058                             9
+
+
+                           Table 3
+                           Hyperactive users per party – Likes & comments.
+
+                             Party             Likes by Hyperactive Users     Likes Ratio    Comments by Hyperactive Users        Comments Ratio
+
+                             AfD               555,564                        0.35           43,017                               0.24
+                             CDU               16,997                         0.2            20,929                               0.45
+                             CSU               139,493                        0.2            18,312                               0.22
+                             FDP               20,188                         0.16           1,400                                0.15
+                             Die Grünen        28,777                         0.19           8,946                                0.36
+                             Die Linke         24,546                         0.14           2,343                                0.16
+                             SPD               29,057                         0.12           3,926                                0.13
+
+
+
+
+Fig. 5. Proportion of likes and comments generated by normal and hyperactive users. The dotted red line gives the expected proportion of activities for hyperactive users in
+cases where they were not hyperactive. The plot also illustrates the three most and least interesting topics for hyperactive users.
+
+
+
+government and the cooperation with the CSU, topics that are also                           cabulary is rarely used by the parties. In contrast to the com-
+important for the users on the CSU page. CSU users also discuss                             ments’ chart, it is obvious that hyperactive users like speciﬁc topics
+a lot about Bavaria, which is the state on which the party is po-                           with different intensity than normal users. Even though hyperac-
+litically based. Users on the FDP page are mostly concerned about                           tive users perform on average 26.4% of the likes, they like much
+citizen rights, while users on the Green Party page about environ-                          more content related to EU politics and labour policy, while they
+mental issues. Users on the Left Party page talk about immigra-                             have less interest on the conservative party AfD, citizens’ rights
+tion, human rights and welfare policy. Finally, the users on the SPD                        and the region of Bavaria. Therefore, it is clear that hyperactive
+are focused on party related discussions. Besides illustrating the                          users inﬂuence the like distribution of the public on party posts.
+discussions among pages, the heatmap illustrates how hyperactive                            Given the statistical analysis of the liking and commenting activi-
+users behave. Hyperactive users like and comment more contents                              ties of users, we reject the hypothesis that the distribution of top-
+related to EU politics and labour policy, and much less on Bavaria,                         ics in which hyperactive users engage in do not deviate from the
+Merkel, citizen rights and on discussions critical against the AfD.                         distribution of topics in which the rest of the users engage (H2).
+It is shown therefore that hyperactive users have their own prefer-                         It must be noted that our analysis gives an overview of the con-
+ences that do not necessarily concede with the preferences of the                           tent of posts and comments. It cannot identify sentiment, or spe-
+rest.                                                                                       ciﬁc predispositions of users. For a ﬁrm understanding of the is-
+    To test if hyperactive users have the same engaging preferences                         sues that are over- or under-represented by hyperactive users an
+as the rest of the users (H2) we create a stacked chart illustrating                        additional extensive analysis is needed, which is beyond the scope
+the share of hyperactive users’ comments and likes for every topic                          of this paper. Our analysis demonstrates that, both on comment-
+(Fig. 5). It is evident that hyperactive users cover a major part of                        ing and liking, hyperactive users have a different behavior than the
+the comments, and although more active, they comment more or                                other users.
+less similarly to the normal users among the various topics. De-                                To further understand hyperactive behavior, we calculate the
+spite that, the Anderson-Darling tests reject the null hypothesis                           proportion of comments and likes made by hyperactive users for
+that hyperactive and normal users’ comments come from the same                              each post (Fig. 6). Although on average one fourth of the reactions
+distribution for 54 out of the 69 topics. Practically, this means that                      are made by hyperactive users, this ratio is not stable among posts.
+the topic density distributions varies between the comments of                              The proportion of reactions by hyperactive users follows a skewed
+normal and hyperactive users. This is caused when the comments                              distribution, denoting that on some posts hyperactive users are al-
+contain different words in different proportions. Therefore, hyper-                         most not active at all, while on some other they are the major
+active and normal users use different vocabularies when referring                           content generators. This is especially visible on the distribution of
+to a topic and, consequently, externalize overall different views and                       comments, where there are some posts with comments exclusively
+sentiment, or focus on different issues in each case.                                       by hyperactive users, and on a set where hyperactive users are to-
+    Besides the fact that hyperactive users have a different behav-                         tally absent (around 4% of posts). Most of the posts with no hy-
+ior on the posts’ comments, our analysis shows that they also have                          peractive users’ comments were posts generated on the FDP page.
+different liking preferences. After classifying each party post to the                      The fact that the above distributions are not normally distributed
+most relevant topic, we count the likes of the posts that belong to                         denotes again that hyperactive users inﬂuence asymmetrically the
+each topic. We take into consideration only topics that are based                           political discourse on the pages. This is an additional ﬁnding that
+on either political vocabulary or politicians, and ignore topics that                       reinforces the statement that hyperactive users have an inﬂuence
+contain aggressive speech or sentiments, because the related vo-                            on political agenda-setting on OSNs.
+10                             O. Papakyriakopoulos, J.C.M. Serrano and S. Hegelich / Online Social Networks and Media 15 (2020) 100058
+
+
+
+
+                            Fig. 6. Distribution of the proportions of comments and likes by hyperactive users on the investigated posts.
+
+               Table 4
+               Accuracy of the various recommender systems for the training and test phase. We report recall@10, NDGC@10 and each model’s coverage.
+
+                Model            Recall@10 - train    Recall@10 - test    NDGC@10 - train      NDGC@10 - test      coverage - train       coverage - test
+
+                CF               0.23                 0.2                 0.13                 0.11                1                      1
+                HCF              0.24                 0.2                 0.13                 0.13                1                      0.9
+                DNN-BWMRB        0.9                  0.4                 0.84                 0.28                0.95                   0.76
+
+
+
+
+   Given the above results, we prove that hyperactive users ac-                      1 being the best). We also report the coverage of the models, i.e.
+count for a signiﬁcant part of the total users’ activities (around                   the percent of classes suggested to the users. Coverage is used to
+25%). They participate in discussions differently from the rest, com-                assure that a model does not overﬁt, predicting only the most pop-
+menting and liking on different political content than the other                     ular data classes and not the rest.
+users. Moreover, they become opinion leaders, as their comments                          Table 4 provides an overview of the results. The baseline CF
+become more popular than these of the normal users. These ﬁnd-                       model yields the worst results, with the HCF providing a slightly
+ings suggest that hyperactive users have a signiﬁcant impact on                      better accuracy. Nevertheless, none of the collaborative ﬁltering
+political agenda setting on OSNs. Their preferences and behaviour                    models is able to learn the true signal in the data, underﬁtting
+are different in the discussions taking place, and their opinions are                even at the training phase (CF: Recall@10 - 0.23, HCF: Recall@10
+a more valued part of the political discourse.                                       - 0.24). On the contrary, the DNN-BWMRB recommendation sys-
+                                                                                     tem outperforms the other models, being able to make consistent
+4.2. Does hyperactive behavior inﬂuence recommendation                               and diverse recommendations (test set: Recall@10 - 0.4, NDGC@10
+algorithms?                                                                          - 0.28, coverage - 0.76). These values are more than satisfactory,
+                                                                                     when taking into consideration: (a) the sparsity of the data and
+    After quantifying the impact of hyperactive users on the po-                     the limited amount of observations, (b) the number of labels (69
+litical discourse, we illustrate potential effects of hyperactive be-                topics) and the fact that we created our dataset by comprising fea-
+haviour on recommendation systems. To do that, we test if the                        tures from two different user networks.
+presence of hyperactive users inﬂuence recommender systems ac-                           To further evaluate if the models are able to learn the actual
+curacy on suggesting content that actually corresponds to the po-                    political user interests, we treat the trained systems as generative
+litical interests of the users (H4). We also test if inserting targeted              models and sample from them 690 0 0 recommendations, giving as
+adversarial attacks on the friendship network (graph poisoning)                      input the training and the test set. Then, we calculate the propor-
+can result in the distortion of algorithmic recommendations (H5).                    tion of suggestions for each topic and compare it with the actual
+    Given the extreme skewness of the distribution of user reac-                     reactions made by the users. Fig. 7 illustrates how accurately the
+tions and the high sparsity of the input data (2.9%), we train mul-                  models learn and replicate the users political interests. As it is vis-
+tiple recommender systems and evaluate their accuracy. We train a                    ible, the DNN-BWMRB model is able to capture the actual user in-
+baseline collaborative ﬁltering (CF) model that takes only the user                  terests both in the training and test sets, making recommendations
+friendship network activities as input, a HCF model that has user                    that are close to the actual distribution in the data. On the con-
+meta-data and the friendship network activities as input, and a                      trary, the HCF only moderately learns the actual distribution of the
+DNN-BWMRB model that has user meta-data, the friendship net-                         training set, while failing to generate accurate recommendations
+work activities as inputs, and a cost function accounting for asym-                  for the test set.
+metric user behavior. We split our dataset in train (90%) and test                       The inability of HCF to cope with data sparsity and skewness
+set (10%). To evaluate the models’ ability to learn the signal in the                becomes apparent when sampling recommendations from mod-
+dataset and make accurate predictions, we calculate for the train-                   els with and without hyperactive users (Table 5). While the mean
+ing and test set the models’ recall@10 and the normalized dis-                       topic proportion is around 1.4%, the M.A.E for the HCF models
+counted cumulative gain (NDGC@10). Recall@10 gives the percent                       recommendations is higher (1.7% and 1.9% with and without hy-
+of relevant suggestions to the users in the top 10 recommenda-                       peractive users respectively). This denotes that the models are
+tions. NDGC@10 measures how high in the top 10 recommenda-                           not able to provide consistent recommendations, proposing signif-
+tions appear the related recommendations (between 0 and 1, with                      icantly different topics to the users for each case. For example,
+                                   O. Papakyriakopoulos, J.C.M. Serrano and S. Hegelich / Online Social Networks and Media 15 (2020) 100058                           11
+
+
+
+
+Fig. 7. Accuracy of the two different algorithms trained on the total friendship network containing hyperactive users and taking into consideration n=1403 person related
+features.
+
+
+   Table 5                                                                               related to the police and the euro. Nevertheless, they also illustrate
+   Models’ accuracy on the test set when taking into consideration or ignoring
+                                                                                         some differences: Token “Politik” is favored by the model with hy-
+   hyperactive users. The actual mean topic proportion for the users’ interests is
+   provided as a reference point.                                                        peractive users, while token ”Partei” is favored by the model with-
+                                                                                         out hyperactive users.
+                                w. hyperactive users     w/o hyperactive users
+                                                                                             Overall, the DNN-BWMRB model is able to capture the signal
+     mean topic proportion      0.014                    0.014                           in the data successfully. Nonetheless, although in a much less de-
+     HCF M.A.E.                 0.017                    0.019                           gree, the existence of hyperactive users leads the model to provide
+     DNN-BWRB M.A.E.            0.005                    0.005
+                                                                                         slightly different suggestions.
+                                                                                             As the DNN-BWMRB model is able to capture and replicate the
+                                                                                         actual user interactions acceptably, we test its predictions when
+content containing news stories, and issues related to economic,                         faced with politically malicious attacks (H5). First, we calculate the
+labor, and green poicy would be over-represented by the model                            centrality of each user in the network. Then we insert an adversar-
+trained on all data compared to the model trained only on normal                         ial example at the position of the user, which is only engaging to
+users. The opposite applies for contents related to immigration,                         content from topic 10. Next, we calculate the proportion of model
+citizen rights and youtube videos, which would have been signif-                         suggestions related to topic 10. We repeat the process for different
+icantly under-represented. To capture which content would have                           amounts of reactions (10–40) and for different amount of users (1–
+been recommended at each case, we sample posts given the distri-                         3). We calculate the bootstrapped mean (50 times, 100 users with-
+bution of recommended topics and create wordclouds showing the                           out replacement) and the maximum value suggested by the model
+most prominent tokens for each case (Fig. 8). For the model in-                          for each setting.
+cluding hyperactive users, the suggestions would over proportion-                            Fig. 9 provides an overview of the results. It is clear that the
+ally contain the token geld (money), together with youtube videos                        insertion of adversarial examples inﬂuences the suggestions of the
+and content about Merkel. It would also suggest content related                          recommender systems. The more targeted reactions a malicious
+to the government (Regierung), and immigration (Flüchtling) more                         user performs, the more relevant suggestions are made by the sys-
+often that the model not accounting for hyperactive users. The lat-                      tem. Similarly, the more malicious users we place in the network,
+ter would overproportionally suggest content about justice (Recht),                      the more successful is the distortion of the recommendations to
+youtube videos, content about Merkel and content containing the                          our ends. A simple attack of two users reacting 50 times can lead
+token “politik”. It would also suggest more often content about the                      the recommender system in the network to suggest topic 10 80%
+public (Volk) and the police in relation to model including hyper-                       of the times. The results of the placed attacks conﬁrm H5, i.e. that
+active users.                                                                            graph poisoning can successfully distort recommendation systems
+    Given that, it is clear that such a recommendation algorithm is                      suggestions.
+unable to replicate interactions taking place on OSNs, neither accu-                         By conﬁrming H4 and H5, the study shows that recommenda-
+rately, nor consistently, as including or ignoring hyperactive users                     tion algorithms are sensitive to hyperactive behaviour. We locate
+yields signiﬁcantly different recommendations. This fact together                        issues regarding the ability of the models to learn from extremely
+with the low accuracy of CF models leads us to conﬁrm H4: Stan-                          skewed sparse data and make coherent suggestions to the users.
+dard recommendation systems fail to suggest content that corre-                          We also illustrate how simple it is to manipulate models’ inputs in
+spond to the users’ political interests, because of the heavy tailed                     a way that distorts models’ recommendations.
+distribution of activities and data sparsity.
+    On the contrary, the DNN-BWMRB architecture is able not only                         5. Discussion
+to provide higher accuracy, but also in a consistent and reliable
+way. Recommendations made when ignoring or accounting for hy-                                Given that activity asymmetries and recommendation algo-
+peractive users are similar to each other, with the deviations of                        rithms are a feature of OSNs, it is important to evaluate the conse-
+predictions from the true distribution of interactions being more or                     quences for both science and the wider society. Although our anal-
+less the same (M.A.E. - 0.005). As the wordclouds in Fig. 8 suggest,                     ysis was concentrated on Facebook, previous research has proven
+both models recommend content related to Merkel, the country,                            that hyperactive accounts, either human or automated, have the
+and content from media agencies. They equally promote content                            potential to equally inﬂuence political communication on other
+12     O. Papakyriakopoulos, J.C.M. Serrano and S. Hegelich / Online Social Networks and Media 15 (2020) 100058
+
+
+
+
+                         Fig. 8. Most suggested tokens for different recommender models.
+
+
+
+
+     Fig. 9. Mean and maximum proportion of content belonging to Topic 10 after placing adversarial examples.
+                             O. Papakyriakopoulos, J.C.M. Serrano and S. Hegelich / Online Social Networks and Media 15 (2020) 100058                   13
+
+
+platforms [70,71]. The speciﬁc formation and distribution of politi-               have the power to change users’ opinion. Hence, OSNs promoting
+cal interactions on OSNs raises various questions regarding the role               biased political content might result in the algorithmic manipula-
+and impact of OSNs on a political level, on an algorithmic level, as               tion of political communication. This manipulation can be traced
+well as on the intersection of both.                                               back either on the low accuracy of a model, on the attitudes of
+    In the political dimension, the OSN activity asymmetries are                   hyperactive users, or at the structure of the recommender systems
+transformed into an asymmetry of disseminated political content,                   themselves.
+as the attitudes and interests of hyperactive users appear dispro-                     Social media platforms are not designed to foster political dis-
+portionately in the discussions taking place. Until now, research                  courses [80], but rather aim at increasing active users, in order to
+[72,73] has stated that OSNs suffer from a population bias: The                    sell advertising and attract funding from venture capitalists [81].
+people using OSNs are not representative of the actual society. On                 As part of these ends, the structure and impact of recommendation
+top of that, a content bias is now added: The content disseminated                 algorithms used distorts human behavior [44], having transforma-
+on OSNs is not even representative of the mean users’ attitudes                    tive effects that were not foreseen a priori [82]. For example, it has
+on the platform. We showed that hyperactive users have differ-                     been stated that changes of the Facebook recommendation algo-
+ent attitudes than the rest, and different engaging behavior, alter-               rithm not only resulted in the diffusion of more right-wing content
+ing how the public opinion appears macroscopically. This poses a                   on the platform [20], but also altering in general the way users in-
+scientiﬁc problem, as it might lead to erroneous research results.                 teract with on the service.
+Equally important, it poses a political problem, because political                     It is evident from the above, that each algorithm mediates and
+discussions and opinion exchange is distorted by the effect of hy-                 redeﬁnes the importance of political interests [83], raising further
+peractive accounts. This does not happen because the diffused in-                  questions about the opacity of the recommendation systems [84].
+formation in the network is transformed or changed, but because                    In a political context, it becomes important to know as citizens,
+hyperactive users strongly contribute to the type of information                   how, why and with what impact algorithms change political com-
+diffused. Their attitudes ﬁll the communication space, leading to                  munication. This presupposes awareness of the data processed and,
+a bias on the political feedback to politicians, and to a shift on the             the mathematical method applied, as well as knowledge of what
+issues that shape the political agenda. Last but not least, they ac-               exactly a machine learning cost function optimizes and to what
+quire the status of opinion leaders. Given the above, although OSNs                extent recommendation systems alter human behavior. Proposals
+provide a more open environment to express opinions than tradi-                    for algorithmic transparency have already been made [85–87], and
+tional media, it ends up becoming partly a gathering of political                  wait to be applied in practice.
+echoes [74] that struggle to be imposed on each other.                                 Until now, most platforms do not report what measures they
+    In the algorithmic dimension, the extreme skewness of the                      take to assure the consistency of their recommendations, as well
+activity distributions raises speciﬁc issues regarding the recom-                  as the exact effect their systems have on human behavior. They
+mendation algorithms used by OSN platforms. The ﬁrst problem is                    do not disclose the inputs and outputs of their models, and pro-
+related to algorithmic accuracy: skewed data are imbalanced data,                  vide no information on how recommendations are inﬂuenced by
+and their raw use, either as input features or as output labels,                   malicious organized attacks. Our study tried to illustrate potential
+can yield weak classiﬁcation results. The imbalanced learning                      effects by quantifying the impact of hyperactive accounts and at-
+problem applies to both standard statistical algorithms, collabo-                  tacks on simulated case studies. Nevertheless, there is a need for
+rative ﬁltering and neural networks [33,75,76], with algorithms                    transparency that can illustrate whether the actual recommenda-
+over-estimating the importance of outliers and under-estimating                    tion systems used suffer from similar problems.
+the importance of the rest. This also happens in the case of a poor                    The above issues need to be extensively analyzed, in order to
+selection of a cost function [77]. Furthermore, it is proven that                  evaluate and shape the structure of political communication in the
+statistical models as Markov-chains might fail to capture the signal               digital era. In this paper we laid the foundations for this discussion,
+immanent in highly skewed data, while deep learning methods                        by deﬁning, demonstrating and quantifying the effect of hyperac-
+might face the same issue given power-law distributions of data                    tive users on OSNs, through the example of Facebook. We also il-
+[34]. We showed that collaborative ﬁltering models come with the                   lustrated and deﬁned the risks of algorithmic manipulation by the
+same weaknesses. In addition, we showed that the election of a                     OSN recommendation systems. Future research needs to focus on
+proper cost-function can resolve a large part of the issue.                        the aforementioned consequences, evaluate the structure of OSNs
+    The second potential problem is that an algorithm might fail,                  ethically, politically and normatively as political intermediators, as
+not in the sense that it might be unable to learn from the data,                   well as propose and apply solutions to the newly posed problems.
+but rather, it might learn the wrong signal. Hyperactive users can
+be seen as physical adversaries [78] of the mean user attitudes.                   6. Conclusion
+Algorithms trained in the full data will include the bias, track-
+ing and predicting behavioral associations that correspond to hy-                      Our study showed that political communication on German po-
+peractive users rather than to the population majority. Our study                  litical Facebook pages is constituted by the behavior of hyperactive
+showed that even well trained recommendation systems will have                     users. By describing the users’ liking and commenting activities
+slight deviations in their predictions when accounting for or ignor-               on the pages, we characterized users as hyperactive or normal
+ing hyperactive users. We also illustrated that recommendations of                 through outlier detection. We showed that hyperactive users
+already trained models can easily be distorted by the addition of                  account for a signiﬁcant part of the total users’ activities; they
+adversaries of hyperactive behavior. It is not coincidental that the               participate in discussions differently from the rest, and they like
+detection of adversaries in machine learning can be done by sam-                   different content. Moreover, they become opinion leaders, as their
+ple distribution comparison [79], in the same way as we tracked                    comments become more popular than these of the normal users.
+the different preferences of hyperactive users.                                    Taking a set of Facebook pages as an example, we showed that user
+    Solutions to the aforementioned issues exist, and they were                    activities on OSNs might neither be equally nor evenly distributed.
+partially shown in the above study and are usually taken into con-                     We also studied the inﬂuence of hyperactive users on recom-
+sideration by data scientists, who develop recommendation algo-                    mendation systems. Standard factorization models are not able to
+rithms. Nevertheless, in the case of political communication, an                   coherently describe the skewed distribution of activities on OSNs.
+algorithmic issue automatically becomes a political one. Recom-                    On the other hand, models that balance these asymmetries in their
+mendation systems come with a social inﬂuence bias [35,36] i.e.,                   cost function provide results that are closer to the population char-
+14                                   O. Papakyriakopoulos, J.C.M. Serrano and S. Hegelich / Online Social Networks and Media 15 (2020) 100058
+
+
+acteristics. Nevertheless, hyperactive behavior still plays a role on                      [20] N. Analytics, The 2019 guide to Facebook publishing, http://go.newswhip.com/
+the recommendations generated by the systems. Finally, by adding                                2019_03-FacebookPublishing_LP.html.
+                                                                                           [21] T. Bucher, Want to be on the top? Algorithmic power and the threat of invisi-
+adversarial examples in the trained models, we illustrated that it                              bility on Facebook, New Media Soc. 14 (7) (2012) 1164–1180.
+is relatively easy to bias recommendations, and potentially distort                        [22] E.D. Hersh, Hacking the Electorate: How Campaigns Perceive Voters, Cam-
+the political agenda.                                                                           bridge University Press, 2015.
+                                                                                           [23] C. Boldrini, M. Toprak, M. Conti, A. Passarella, Twitter and the press: an ego–
+    Our recommender systems analysis tried to simulate properties                               centred analysis, in: Proceedings of the The Web Conference, International
+of the actual recommender systems used on OSNs. This does not                                   World Wide Web Conferences Steering Committee, 2018, pp. 1471–1478.
+per se mean that the actual systems face the same problems, nor                            [24] D.M. Romero, W. Galuba, S. Asur, B.A. Huberman, Inﬂuence and passivity in
+                                                                                                social media, in: Proceedings of the Joint European Conference on Machine
+that they function in the exact same way. The aim of the study
+                                                                                                Learning and Knowledge Discovery in Databases, Springer, 2011, pp. 18–33.
+was to illustrate potential issues related to political communica-                         [25] B.E. Weeks, A. Ardèvol-Abreu, H. Gil de Zúñiga, Online inﬂuence? Social media
+tion that might emerge by the application of recommender sys-                                   use, opinion leadership, and political persuasion, Int. J. Public Opin. Res. 29 (2)
+                                                                                                (2017) 214–239.
+tems. Given these problems, we want to point out the need for
+                                                                                           [26] V. Arnaboldi, M. Conti, A. Passarella, R.I. Dunbar, Online social networks and
+additional transparency on the actual data-intensive recommenda-                                information diffusion: the role of ego networks, Online Soc. Netw. Media 1
+tion systems used by the platforms, in order to resolve potential                               (2017) 44–55.
+algorithmic interferences in the political discourse.                                      [27] S. Priya, R. Sequeira, J. Chandra, S.K. Dandapat, Where should one get news
+                                                                                                updates: Twitter or Reddit, Online Soc. Netw. Media 9 (2019) 17–29.
+                                                                                           [28] S. Hegelich, D. Janetzko, Are social bots on twitter political actors? Empirical
+Declaration of Competing Interest                                                               evidence from a ukrainian social Botnet, in: Proceedings of the Tenth Interna-
+                                                                                                tional AAAI Conference on Web and Social Media, 2016, pp. 1–4.
+                                                                                           [29] J. Weedon, W. Nuland, A. Stamos, Information operations and Facebook,
+     None.                                                                                      Retrieved from Facebook: https://fbnewsroomus.ﬁles.wordpress.com/2017/04/
+                                                                                                facebook- and- information- operations- v1.pdf (2017).
+                                                                                           [30] P. Covington, J. Adams, E. Sargin, Deep neural networks for Youtube recom-
+CRediT authorship contribution statement                                                        mendations, in: Proceedings of the 10th ACM Conference on Recommender
+                                                                                                Systems, ACM, 2016, pp. 191–198.
+    Orestis Papakyriakopoulos: Writing - review & editing, Writ-                           [31] The Facebook algorithm explained and how to work it, https://www.
+                                                                                                brandwatch.com/blog/the- facebook- algorithm- explained/.
+ing - original draft, Data curation. Juan Carlos Medina Serrano:                           [32] Q. Yuan, S. Zhao, L. Chen, Y. Liu, S. Ding, X. Zhang, W. Zheng, Augmenting col-
+Data curation, Writing - review & editing. Simon Hegelich: Writing                              laborative recommender by fusing explicit social relationships, in: Proceedings
+- review & editing.                                                                             of the Workshop on Recommender Systems and the Social Web, RECSYS, 2009,
+                                                                                                pp. 1–8.
+                                                                                           [33] H. He, E.A. Garcia, Learning from imbalanced data, IEEE Trans. Knowl. Data
+References                                                                                      Eng. 9 (2008) 1263–1284.
+                                                                                           [34] H.W. Lin, M. Tegmark, Criticality in Formal Languages and Statistical Physics,
+ [1] J. Gottfried, E. Shearer, Americans’ online news use is closing in on                      Entropy 19 (2017) 299, doi:10.3390/e19070299.
+     tv news use, 2017, http://www.pewresearch.org/fact-tank/2017/09/07/                   [35] S. Krishnan, J. Patel, M.J. Franklin, K. Goldberg, A methodology for learning,
+     americans- online- news- use- vs- tv- news- use/.                                          analyzing, and mitigating social inﬂuence bias in recommender systems, in:
+ [2] S. Hegelich, M. Shahrezaye, The communication behavior of german MPS on                    Proceedings of the 8th ACM Conference on Recommender systems, ACM, 2014,
+     twitter: preaching to the converted and attacking opponents, Eur. Policy Anal.             pp. 137–144.
+     1 (2) (2015) 155–174.                                                                 [36] D. Cosley, S.K. Lam, I. Albert, J.A. Konstan, J. Riedl, Is seeing believing?: How
+ [3] G.S. Enli, E. Skogerbø, Personalized campaigns in party-centred politics: Twit-            recommender system interfaces affect users’ opinions, in: Proceedings of the
+     ter and Facebook as arenas for political communication, Inf. Commun. Soc. 16               SIGCHI Conference on Human Factors in Computing Systems, ACM, 2003,
+     (5) (2013) 757–774.                                                                        pp. 585–592.
+ [4] V. Arnaboldi, A. Passarella, M. Conti, R. Dunbar, Structure of ego-alter rela-        [37] X. Chen, C. Liu, B. Li, K. Lu, D. Song, Targeted Backdoor Attacks on Deep Learn-
+     tionships of politicians in twitter, J. Comput. Mediated Commun. 22 (5) (2017)             ing Systems Using Data Poisoning, http://arxiv.org/abs/1712.05526 [Cs] (2017).
+     231–247, doi:10.1111/jcc4.12193.                                                           (accessed December 19, 2019).
+ [5] J.C.M. Serrano, S. Hegelich, M. Shahrezaye, O. Papakyriakopoulos, Social Media        [38] B. Li, Y. Wang, A. Singh, Y. Vorobeychik, Data poisoning attacks on factoriza-
+     Report: The 2017 German Federal Elections, 1 ed., TUM.University Press, 2018.              tion-based collaborative ﬁltering, in: Proceedings of the Advances in Neural
+ [6] O. Papakyriakopoulos, S. Hegelich, M. Shahrezaye, J.C.M. Serrano, Social                   Information Processing Systems, 2016, pp. 1885–1893.
+     media and microtargeting: Political data processing and the consequences              [39] A. Bojchevski, S. Günnemann, Adversarial attacks on node embeddings via
+     for germany, Big Data Soc. 5 (2) (2018), doi:10.1177/2053951718811844.                     graph poisoning, in: Proceedings of the International Conference on Machine
+     2053951718811844                                                                           Learning, 2019, pp. 695–704.
+ [7] M.E. McCombs, D.L. Shaw, The agenda-setting function of mass media, Public            [40] D. Zügner, S. Günnemann, Adversarial Attacks on Graph Neural Networks via
+     Opin. Q. 36 (2) (1972) 176–187.                                                            Meta Learning, http://arxiv.org/abs/1902.08412 [Cs, Stat] (2019). (accessed De-
+ [8] E. Bakshy, S. Messing, L.A. Adamic, Exposure to ideologically diverse news and             cember 19, 2019).
+     opinion on Facebook, Science 348 (6239) (2015) 1130–1132.                             [41] Facebook, Using the graph API – documentation, https://developers.facebook.
+ [9] Twitter,    2018,    (https://help.twitter.com/en/using- twitter/twitter- trending-        com/docs/graph- api/using- graph- api/.
+     faqs). Online; accessed 24 August 2018.                                               [42] O. Varol, E. Ferrara, C.A. Davis, F. Menczer, A. Flammini, Online human-bot
+[10] M. Hilbert, J. Vásquez, D. Halpern, S. Valenzuela, E. Arriagada, One step, two             interactions: detection, estimation, and characterization, in: Proceedings of
+     step, network step? Complementary perspectives on communication ﬂows in                    the Eleventh International AAAI Conference on Web and Social Media, 2017,
+     twittered citizen protests, Soc. Sci. Comput. Rev. 35 (4) (2017) 444–461.                  pp. 1–7.
+[11] S. Choi, The two-step ﬂow of communication in twitter-based public forums,            [43] J.C.M. Serrano, M. Shahrezaye, O. Papakyriakopoulos, S. Hegelich, The rise of
+     Soc. Sci. Comput. Rev. 33 (6) (2015) 696–711.                                              Germany’s AFD: a social media analysis, in: Proceedings of the 10th Interna-
+[12] C. Mouffe, The Democratic Paradox, Verso, 20 0 0.                                          tional Conference on Social Media and Society, in: SMSociety ’19, ACM, New
+[13] N. Blenn, P. Van Mieghem, Are human interactivity times lognormal?, arXiv                  York, NY, USA, 2019, pp. 214–223, doi:10.1145/3328529.3328562.
+     preprint (2016).                                                                      [44] D. Ruths, J. Pfeffer, Social media for large studies of behavior, Science 346
+[14] P. Van Mieghem, N. Blenn, C. Doerr, Lognormal distribution in the digg online              (6213) (2014) 1063–1064.
+     social network, Eur. Phys. J. B 83 (2) (2011) 251.                                    [45] T.B. Arnold, J.W. Emerson, Nonparametric goodness-of-ﬁt tests for discrete null
+[15] K. Lerman, R. Ghosh, Information contagion: An empirical study of the spread               distributions., R J. 3 (2) (2011).
+     of news on digg and twitter social networks, in: Proceedings of the Fourth In-        [46] Q.H. Vuong, Likelihood ratio tests for model selection and non-nested hypothe-
+     ternational AAAI Conference on Web and Social Media, AAAI, 2010, pp. 90–97.                ses, Econom. J. Econom. Soc. 57 (2) (1989) 307–333.
+[16] F. Benevenuto, T. Rodrigues, M. Cha, V. Almeida, Characterizing user behavior         [47] A. Clauset, C.R. Shalizi, M.E. Newman, Power-law distributions in empirical
+     in online social networks, in: Proceedings of the 9th ACM SIGCOMM Confer-                  data, SIAM review 51 (4) (2009) 661–703.
+     ence on Internet Measurement, ACM, 2009, pp. 49–62.                                   [48] V. Barnett, T. Lewis, Outliers in Statistical Data, Wiley, 1974.
+[17] A. Schaap, Agonism in divided societies, Philos. Soc. Crit. 32 (2) (2006)             [49] R. Johnson, D. Wichern, Applied Multivariate Statistical Analysis., Pretice Hall,
+     255–277.                                                                                   1998.
+[18] N. Shi, M.K. Lee, C.M. Cheung, H. Chen, The continuance of online so-                 [50] I. Ben-Gal, Outlier detection, in: Data Mining and Knowledge Discovery Hand-
+     cial networks: how to keep people using Facebook? in: Proceedings of                       book, Springer, 2005, pp. 131–146.
+     the Fourty-Third Hawaii International Conference on System Sciences, IEEE,            [51] M. Hubert, S. Van der Veeken, Outlier detection for skewed data, J. Chemom.
+     2010, pp. 1–10.                                                                            J. Chemom. Soc. 22 (3–4) (2008) 235–246.
+[19] C.R. Sunstein, # Republic: Divided Democracy in the Age of Social Media,              [52] M. Hubert, E. Vandervieren, An adjusted boxplot for skewed distributions,
+     Princeton University Press, 2018.                                                          Comput. Stat. Data Anal. 52 (12) (2008) 5186–5201.
+                                     O. Papakyriakopoulos, J.C.M. Serrano and S. Hegelich / Online Social Networks and Media 15 (2020) 100058                                  15
+
+
+[53] G. Brys, M. Hubert, A. Struyf, A robust measure of skewness, J. Comput. Gr.           [72] T. Correa, A.W. Hinsley, H.G. De Zuniga, Who interacts on the web?: the inter-
+     Stat. 13 (4) (2004) 996–1017.                                                              section of users personality and social media use, Comput. Hum. Behav. 26 (2)
+[54] F. Martin, M. Johnson, More eﬃcient topic modelling through a noun only ap-                (2010) 247–253.
+     proach, in: Proceedings of the Australasian Language Technology Association           [73] M. Duggan, J. Brenner, The demographics of social media users - 2012, Tech-
+     Workshop 2015, 2015, pp. 111–115.                                                          nical Report, Pew Research Center’s Internet & American Life Project Washing-
+[55] M. Honnibal, M. Johnson, An improved non-monotonic transition system for                   ton, DC, 2013.
+     dependency parsing, in: Proceedings of the Conference on Empirical Methods            [74] Y.-R. Lin, J.P. Bagrow, D. Lazer, More voices than ever? Quantifying media bias
+     in Natural Language Processing, 2015, pp. 1373–1378.                                       in networks, in: Proceedings of the Fifth International AAAI Conference on
+[56] S. Brants, S. Dipper, P. Eisenberg, S. Hansen-Schirra, E. König, W. Lezius,                Web and Social Media, AAAI, 2011, pp. 1–7.
+     C. Rohrer, G. Smith, H. Uszkoreit, Tiger: linguistic interpretation of a German       [75] Z.-H. Zhou, X.-Y. Liu, Training cost-sensitive neural networks with methods
+     corpus, Res. Lang. Comput. 2 (4) (2004) 597–620.                                           addressing the class imbalance problem, IEEE Trans. Knowl. Data Eng. 18 (1)
+[57] J. Nothman, N. Ringland, W. Radford, T. Murphy, J.R. Curran, Learning mul-                 (2006) 63–77.
+     tilingual named entity recognition from wikipedia, Artif. Intell. 194 (2013)          [76] R. Pan, Y. Zhou, B. Cao, N.N. Liu, R. Lukose, M. Scholz, Q. Yang, One-class col-
+     151–175.                                                                                   laborative ﬁltering, in: Proceedings of the IEEE Eighth International Conference
+[58] M. Yurochkin, A. Guha, X. Nguyen, Conic scan-and-cover algorithms for non-                 on Data Mining, IEEE, 2008, pp. 502–511.
+     parametric topic modeling, in: Proceedings of the Advances in Neural Informa-         [77] C.-C. Lee, P.-C. Chung, J.-R. Tsai, C.-I. Chang, Robust radial basis function neu-
+     tion Processing Systems, 2017, pp. 3878–3887.                                              ral networks, IEEE Trans. Syst. Man Cybern. Part B (Cybernetics) 29 (6) (1999)
+[59] D.M. Blei, A.Y. Ng, M.I. Jordan, Latent Dirichlet allocation, J. Mach. Learn. Res.         674–685.
+     3 (2003) 993–1022.                                                                    [78] A. Kurakin, I. Goodfellow, S. Bengio, Adversarial examples in the physical
+[60] D.D. Lee, H.S. Seung, Learning the parts of objects by non-negative matrix fac-            world, http://arxiv.org/abs/1607.02533 [Cs, Stat] (2017). (accessed December
+     torization, Nature 401 (6755) (1999) 788.                                                  19, 2019).
+[61] F.W. Scholz, M.A. Stephens, K-sample Anderson–darling tests, J. Am. Stat. Assoc.      [79] K. Grosse, P. Manoharan, N. Papernot, M. Backes, P. McDaniel, On the (Statis-
+     82 (399) (1987) 918–924.                                                                   tical) Detection of Adversarial Examples, http://arxiv.org/abs/1702.06280 [Cs,
+[62] J. Leskovec, J.J. Mcauley, Learning to discover social circles in ego networks, in:        Stat] (2017). (accessed December 19, 2019).
+     Proceedings of the Advances in Neural Information Processing Systems, 2012,           [80] S. Engelmann, J. Grossklags, O. Papakyriakopoulos, A democracy called Face-
+     pp. 539–547.                                                                               book? Participation as a privacy strategy on social media, in: Proceedings of
+[63] M. McPherson, L. Smith-Lovin, J.M. Cook, Birds of a feather: homophily in so-              the Annual Privacy Forum, Springer, 2018, pp. 91–108.
+     cial networks, Annu. Rev. Sociol. 27 (1) (2001) 415–444.                              [81] M. Falch, A. Henten, R. Tadayoni, I. Windekilde, Business models in social net-
+[64] J. Kirk, Tensorrec: a tensorﬂow recommendation algorithm and frame-                        working, in: Proceedings of the CMI International Conference on Social Net-
+     work in python, 2019, https://github.com/jfkirk/tensorrec [Online; accessed                working and Communities, 2009, pp. 1–7.
+     04.05.2019].                                                                          [82] B.D. Mittelstadt, P. Allo, M. Taddeo, S. Wachter, L. Floridi, The ethics of algo-
+[65] J. Constine, How facebook news feed works techcrunch, 2016, https://                       rithms: Mapping the debate, Big Data Soc. 3 (2) (2016) 2053951716679679.
+     techcrunch.com/2016/09/06/ultimate- guide- to- the- news- feed/                       [83] H. Nissenbaum, From preemption to circumvention: if technology regulates,
+[66] Twitter      trends    Faqs,    https://help.twitter.com/en/using-twitter/twitter-         why do we need regulation (and vice versa), Berk. Technol. Law J. 26 (2011)
+     trending-faqs.                                                                             1367.
+[67] K. Liu, P. Natarajan, WMRB: Learning to Rank in a Scalable Batch Training Ap-         [84] J. Burrell, How the machine thinks: understanding opacity in machine learning
+     proach, http://arxiv.org/abs/1711.04015 [Cs, Stat] (2017). (accessed December              algorithms, Big Data Soc. 3 (1) (2016) 2053951715622512.
+     19, 2019).                                                                            [85] C. Sandvig, K. Hamilton, K. Karahalios, C. Langbort, Auditing algorithms: re-
+[68] K. Sun, Explanation of log-normal distributions and power-law distributions in             search methods for detecting discrimination on internet platforms, in: Data
+     biology and social science, Technical Report, Department of Physics, University            and Discrimination: Converting Critical Concerns into Productive Inquiry, 2014,
+     of Illinois at Urbana-Champaign, 2004.                                                     pp. 1–23.
+[69] H. Kuninaka, M. Matsushita, Statistical properties of complex systems-lognor-         [86] N. Diakopoulos, Algorithmic-accountability: the investigation of Black Boxes,
+     mal and related distributions, in: Proceedings of the AIP Conference Proceed-              Technical Report, Tow Center for Digital Journalism, 2014.
+     ings, 1468, AIP, 2012, pp. 241–251.                                                   [87] F. Pasquale, The Black Box Society: The Secret Algorithms that Control Money
+[70] A. Thieltges, O. Papakyriakopoulos, J.C.M. Serrano, S. Hegelich, Effects of Social         and Information, Harvard University Press, 2015.
+     Bots in the Iran-Debate on Twitter, http://arxiv.org/abs/1805.10105 [Cs] (2018).
+     (accessed December 19, 2019).
+[71] C. Shao, G.L. Ciampaglia, O. Varol, K.-C. Yang, A. Flammini, F. Menczer, The
+     spread of low-credibility content by social bots, Nat. Commun. 9 (1) (2018)
+     4787.
+
