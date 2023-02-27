@@ -1,0 +1,524 @@
+﻿CSCW 2014 • Social Technologies and Well-Being February 15-19, 2014, Baltimore, MD, USA 
+Characterizing and Predicting Postpartum Depression  from Shared Facebook Data 
+Munmun De Choudhury Scott Counts Eric J. Horvitz Aaron Hoff Microsoft Research, Redmond WA 98052 
+{munmund, counts, horvitz, aaron.hoff}@microsoft.com 
+ABSTRACT  
+The birth of a child is a major milestone in the life of parents.  We leverage Facebook data shared voluntarily by 165 new  mothers as streams of evidence for characterizing their  postnatal experiences. We consider multiple measures  including activity, social capital, emotion, and linguistic  style in participants’ Facebook data in pre- and postnatal  periods. Our study includes detecting and predicting onset of  post-partum depression (PPD). The work complements  recent work on detecting and predicting significant  postpartum changes in behavior, language, and affect from  Twitter data. In contrast to prior studies, we gain access to  ground truth on postpartum experiences via self-reports and  a common psychometric instrument used to evaluate PPD.  We develop a series of statistical models to predict, from data  available before childbirth, a mother’s likelihood of PPD.  We corroborate our quantitative findings through interviews  with mothers experiencing PPD. We find that increased  social isolation and lowered availability of social capital on  Facebook, are the best predictors of PPD in mothers.  
+Author Keywords  
+childbirth; emotion; health; language; postpartum; social  media; Twitter; wellness  
+ACM Classification Keywords  
+H.3.4; H.5.2; H.5.3  
+INTRODUCTION  
+Childbirth is a major life event that changes the lives of  parents. Beyond the joy and happiness of childbirth, a  significant portion of new mothers experience changes in  mood. Such postpartum changes include the “baby blues,”  lasting about 2-4 weeks after childbirth, and consisting of  mild mood instability and anxiety. However, according to  estimates from the CDC, about 12 to 20% of new mothers  experience a mood disorder of greater severity and duration  
+Permission to make digital or hard copies of all or part of this work for personal  or classroom use is granted without fee provided that copies are not made or  distributed for profit or commercial advantage and that copies bear this notice  and the full citation on the first page. Copyrights for components of this work  owned by others than ACM must be honored. Abstracting with credit is  permitted. To copy otherwise, or republish, to post on servers or to redistribute  to lists, requires prior specific permission and/or a fee. Request permissions from  permissions@acm.org. 
+CSCW'14, February 15–19, 2014, Baltimore, Maryland, USA. 
+Copyright © 2014 ACM 978-1-4503-2540-0/14/02...$15.00. 
+http://dx.doi.org/10.1145/2531602.2531675 
+625
+called postpartum depression (http://www.cdc.gov/  reproductivehealth/Depression/). PPD is marked by  symptoms such as sadness, fatigue, changes in sleeping and  eating patterns, reduced libido, crying episodes, anxiety, and  irritability [2]. Beyond negative influence on mothers, there  is evidence that PPD can bear short and long-term negative  effects on the child’s behavior, emotional, and social  wellbeing [16].  
+Despite these ramifications, PPD is underreported, with  estimates that as many as 50% of cases of PPD go undetected  [29]. Underreporting is believed to be due to factors such as  the fear of the social stigma of depression, lack of social  support, or assumptions that the mood changes are a normal  part of the overwhelming nature of new motherhood [7].  Additional barriers to help-seeking include lack of  knowledge about predisposition symptoms, the availability  of appropriate remedial/prevention services, or even privacy  concerns [7]. 
+What makes this form of medical condition even more  challenging is that there are no adequate ways for prevention  or early detection [39], unless a woman has had a history of  depression in the past. Clinical diagnosis of PPD is based on  the mother’s self-reported experiences (e.g., DSM-IV  criteria based on the mood module from the PRIME-MD— Primary Care Evaluation of Mental Disorders: the  Diagnostic and Statistical Manual of Mental Disorders  (DSM) published by the American Psychiatric Association  provides a common language and widely relied upon  standard criteria for the classification of mental disorders),  prior depression history, life stress, behaviors reported by  relatives or friends, and a mental status examination.  Naturally, treatment efforts, that typically comprise  medication, therapy, or both, are also more successful with  early intervention; in fact, the likelihood of achieving full  recovery declines as the illness lengthens [7]. 
+Hence, there is value in innovative methods that can identify  women at risk, even perhaps in the early stages of PPD, and  provide them access to appropriate services and support. To  the extent these methods can provide lower cost  complements to traditional PPD assessments, they may help  reach a larger portion of the population. Prevention efforts  could alter women’s lifetime trajectory of problems arising  from mental illness, and avoid the serious social and medical  ramifications associated with psychopathology.  
+CSCW 2014 • Social Technologies and Well-Being February 15-19, 2014, Baltimore, MD, USA 
+A Digital Safety Net  
+We explore the use of online social networks as a lens on  mood and behavior to glean insights about the postpartum  experience of new mothers. Individuals are increasingly  using online social networks and social media such as  Facebook and Twitter to share updates about their daily  ordeals, but also often to make announcements of major life  milestones, including childbirth and parental milestones  [4,13]. Data captured from social media can span new  mothers’ social activity, interactions with friends and other  audiences, and emotional and linguistic expression.  Consequently, it can provide a natural laboratory for  researchers to study their behavior and experience of  motherhood in general [4,5]. In fact, a body of work has  emerged that has looked at whether the material posted on  social networking site profiles accurately portrays someone’s  mental and physical state [5; 32]. For example, references to  depression or drinking on Facebook are concurrently  associated with self-reported depression rating scores [25],  and postings of displayed risk behavior were found to be  related to injuries as well as substance use or violence among  college undergraduates [23]. 
+Motivated along those lines, we consider the use of social  media data to detect and predict PPD. The work  complements earlier efforts to detect and predict postpartum  changes in behavior, language, and affect from Twitter data.  However, rather than rely on observed changes, in this work  we gain access to ground truth on postpartum levels of  depression and PPD diagnoses via both self-reports and use  of a common psychometric instrument used to evaluate PPD.  
+Our main contributions include:  
+(1) We conduct an online survey to collect gold-standard  labels of depression on 165 new mothers who use Facebook  (scores on the PHQ-9 depression screening tool). We note  here that the PHQ9 depression scores are critical as they  allow us to distinguish new moms actually suffering from  depression versus those that have changed behavior (e.g.,  posting less on Facebook) for more benign reasons like they  simply are too busy with their new baby. Thereafter we  characterize participants’ Facebook behaviors over 50 weeks  of prenatal period and 10 weeks of postnatal, totaling 600K  postings on Facebook. We propose 49 different measures of  mothers’ activity on Facebook, including their available  social capital, emotion, and linguistic style.  
+(2) We develop several statistical models to predict whether  or not a mother will have PPD. A model that uses only  prenatal data is found to explain as much as 31% of variance  in the data, and improves upon a baseline model based on  demographic and childbirth history data by 77%. Including a  short time horizon (~1 month) after childbirth, we achieve  better performance, where our model is found to explain up  to 48% of variance in the data.  
+626
+(3) We corroborate our quantitative findings through semi structured interviews conducted with a sample of the mothers  with PPD. We find that experiences of PPD are best  predicted by increased social isolation as manifested in  reduced social activity and interaction on Facebook, and  decreased access to social capital. We find that emotional  measures as captured through Facebook posts are not  effective predictors of PPD, perhaps due to the stigma  associated with depression.  
+We believe that this research can bring to the fore variables  related to the exacerbation of PPD, thereby enabling new  mechanisms to identify at-risk mothers, and provide  guidance on valuable interventions. In general it could lay  the groundwork for a future digital safety net to scaffold new  mothers following an important phase transition in life.  
+BACKGROUND AND RELATED WORK  
+Clinical/Psychiatry Literature on PPD  
+A considerable body of work in psychiatry and the clinical  literature is devoted to understanding PPD. Much of this  work is survey-driven and relies on self-reported data.  Surveys such as the Postpartum Depression Predictors  Inventory (PPDI) [1] reflect meta-analyses of risk factors for  PPD [2], including lack of social support, socioeconomic  status, and infant temperament, among others (see [30] for  more on risks and influencers of PPD). Lack of social support  and social isolation in particular, along with psychological  stress have been shown to influence the attitudes, emotions,  and behaviors of new mothers [10,48]. In another study [46],  Scott et al. found that the strongest predictors of PPD were  past history of psychopathology and psychological  disturbance during pregnancy, poor marital relationship, low  social support, and stressful life events. Finally, Fleming et  al. [11] observed that depressed mothers exhibited fewer  affectionate contact behaviors (and in general lower maternal  responsiveness) towards their infants postpartum, compared  to non-depressed mothers.  
+Although not exhaustive, proxies for several risk factors of  PPD, like the ones studied in prior literature, might be  monitored via mothers’ activities on social media like  Facebook and Twitter. Social support and access to social  capital might be inferred from a mother’s degree of  interaction with her contacts on social media. Further, infant  temperament and maternal responsiveness might be  measured through posts, photos, and videos the mother  shares about her baby on Facebook, while stressful events in  the past may have cues manifested in an individual’s social  media postings.  
+We note that little prior work has focused on predicting PPD.  This is likely because collecting longitudinal data is difficult  given the resources and invasiveness required to observe  mothers behavior over months and years. Online social  platforms like Facebook show promise in this regard: As  
+CSCW 2014 • Social Technologies and Well-Being February 15-19, 2014, Baltimore, MD, USA 
+numerous people have been using these tools for years, there  are opportunities to track behavioral patterns over time in  fine granularity—in this case, before and after childbirth of  the mothers to understand and identify predictive factors  behind PPD.  
+New Mothers’ Use of Social Media/Networks 
+Mothers are a growing demographic on the Internet—per  NielsenWire polls in 2012, 72% mothers in the US use  Facebook [28]. Over the years, several studies have focused  on studying mothers’ use of social technologies, such as  blogging [22], motherhood and parenting forums [45,36],  and Facebook [13]. McDaniel et al. [22] observed that new  mothers’ frequency of blogging was predictive of feelings of  social connection to extended family and friends, of social  support, and of maternal wellbeing. Based on ethnographic  studies, Gibson and Hanson [13] observed that Facebook  was perceived as a valuable platform by new mothers in  being able to remain socially connected with others  postpartum, to construct a new identity, or to seek  information and reassurance on their choices and concerns  around rearing a newborn. Schoenebeck [45] found that  postings made on the anonymous message board  YouBeMom.com define new types of social norms and  expectations shaping online mom culture.  
+The prior work suggests that online social technologies may  be providing new mothers with mechanisms to utilize their  social capital and to find a disinhibiting outlet for  communication, venting, and sharing baby tips. We pursue  the use of streams of online social activity to understand the  role of online social support or its lack in PPD.  
+In related work, De Choudhury et al. analyzed Twitter  postings of new mothers to detect [4] and to predict [5]  extreme behavioral changes postpartum. The studies did not  gain access to ground truth data on PPD outcomes, but rather  relied on the sensing of extreme changes in Twitter. To the  best of our knowledge, this paper presents the first of its kind  study identifying predictors of postpartum depression based  on new mothers’ use of Facebook.  
+Social Media/Networks in Health and Wellness  Beyond PPD, researchers have been increasingly interested  in understanding how social media activities can be used to  infer the wellbeing of people, and conditions and symptoms  related to diseases [36] and disease contagion, e.g., flu [48].  Facebook use has been shown to help those with lower self esteem to attain higher social capital [47]. Moreno et al., [24]  demonstrated that status updates on Facebook could reveal  symptoms of major depressive episodes, while Park et al.  [32] found differences in the perception of Twitter use  between depressed and non-depressed users—the former  found value in Twitter due to the ability to garner social  awareness and engage in emotional interaction. On similar  lines, De Choudhury et al. [6] examined year-long Twitter  postings of individuals suffering from major depressive  
+627
+disorder to build statistical models that predict the future  occurrence of depression.  
+A common thread in this research is how computational  techniques may be applied to naturalistic data that people  share on today’s online social platforms to infer their health  condition. These techniques are rooted in findings in the  social science literature, where computerized analysis of  language and social network analysis has revealed markers  of depression [42], anxiety, and other psychological  disorders [31,43]. Weaving together these ideas, we  conjecture that linguistic and activity analyses, and notions  of social capital manifested in online social platforms can  offer a novel methodology for augmenting traditional  approaches to measuring and predicting risk for PPD.  
+FACEBOOK DATA COLLECTION  
+We conducted an online survey to collect information about  PPD experiences of new mothers, and to gain access to their  Facebook data for our analyses, with their consent. The  survey website was active between mid-July and mid 
+September, 2012. It was advertised through multiple  channels so as to reach a diverse population of new mothers  in the US—mailing lists of new mothers within our  organization and the broader community in our metropolitan  area (e.g., neighborhood based mommy blogs), postings  from our organization’s official Twitter and Facebook  accounts as well as the authors’ personal Twitter, Facebook  and Google+ accounts, paid Facebook ads targeting mothers  in the age group 20-39 years, and finally sponsored posts on  BabyCenter (babycenter.com), a popular website aimed at  mothers that hosts discussion forums and parenting articles.  
+We recruited mothers who were owners of a Facebook  account and who gave birth to a child within the last nine  months or less, so that we could capture their experiences  with postpartum depression while they were possibly still  persistent. To incentivize participation and to acknowledge  the mothers for their time and effort, they were entered into  the random drawing of four $500 Amazon gift cards.  
+PPD Survey  
+In the survey of participants, we collected demographic data  of the mothers (age, family income, occupation), and data  related to the child/childbirth experience, including the  child’s birthdate, whether the child is the first-born, and  whether the mother had been diagnosed with PPD by a  clinician at some point following childbirth. The survey also  inquired about the different ways the mothers used  Facebook—for status updates, photo-sharing, and so on.  
+In addition to the survey we gave participants a PHQ-9  (Patient Health Questionnaire) depression screening tool  [20] to detect whether mothers were currently depressed.  Specifically, the questionnaire seeks responses over the past  two week period, on the frequency of experiences like “little  interest or pleasure in doing things”; “feeling tired or having  little energy”. Scores on the PHQ-9 range from zero to 27,  where higher scores indicate the presence of more  
+CSCW 2014 • Social Technologies and Well-Being February 15-19, 2014, Baltimore, MD, USA 
+symptomology. Per psychiatric literature [20], individuals  with scores greater than or equal to 15 are considered to be  moderately severe to severely depressed.  
+Following the PHQ-9 questionnaire, mothers were asked to  optionally authorize a Facebook application, with the goal of  allowing us a one-time crawl of their Facebook timeline data.  For each of the mothers who opted-in, we archived a data  dump of the following timeline data: status updates that they  both shared and were tagged in (both content and time),  captions associated with photos, videos, and links they  shared or were tagged in, and like and comment counts on all  these items (statuses, photos, videos, links, check-ins). Note  that actual photos and videos were not crawled, in the interest  of the participants’ privacy.  
+PHQ-9 Score 
+goal was to ensure we are able to recruit sufficient number  of mothers with PPD for reliable statistical analyses.  However this number still aligns with most studies  conducted around depression and mental illness [6].  
+Dataset Statistics  
+We now discuss some statistics of our dataset of mothers.  First, in Table 2, we present some demographic information  such as age, income, ethnicity, and top five occupation types  of the mothers with and without PPD. We do not see any  statistically significant differences between no PPD and PPD  groups for age (based on an independent sample t-test);  however we do observe that mothers with PPD tend to be of  lower income levels (p<0.01) and more likely to be “stay-at home moms” (24%). For ethnicity, we observe that the  majority of the mothers in our dataset are “Caucasian” which  
+Self-report 
+
+
+	no 
+	no 
+	137 
+	yes 
+	13 
+	
+
+
+
+may indicate a bias in the respondent-driven sampling  yes 
+method we adopted in our survey.  
+9 
+Age PPD 
+all 
+	no PPD 
+	31 
+30.36875 
+	31 
+30.582 
+	
+
+
+
+15 
+No PPD 137 PPD 28 Total 165 
+Median age 30 Average age 29.645 Income 
+Median income 55,000 
+Table 1. Mothers with PPD based on self-report and PHQ-9  depression severity scoring.  
+Constructing PPD Ground Truth  
+Average income Ethnicity 
+80,000 
+96,127.48
+	85,500 
+102,040. 
+9
+	
+
+
+
+72,724.1 4 
+Running this online survey gave us 292 responses. After  dismissal of incomplete surveys we obtained 267, out of  which 174 also opted-in to grant us access to use their  Facebook data for our research (59.58% of total responses).  We wished to focus on the subset of the mothers for whom  we could validate their self-reported PPD condition, as well  as their PHQ-9 questionnaire scores. That is, the set of  mothers who reported to have never been diagnosed with  PPD, as well as scored negatively on the questionnaire; and  those who reported to have had PPD following childbirth,  with current PHQ-9 score to be either in the positive PPD  range (persistent PPD), or in the negative PPD range  (receded PPD).  
+Using the standard depression severity scoring of PHQ-9 as  mentioned above, we present a confusion matrix of the  number of mothers with self-reported PPD (yes/no) and  PHQ-9 diagnosed PPD (yes/no) in Table 1. Note that per the  reasoning presented earlier, we obtain 28 mothers with  experiences of PPD following childbirth, while 137 with no  PPD experience at any point in time. We also note here that  mothers who self-reported to have no PPD, but scored  positively in PPD severity in the questionnaire were ignored,  since we could not be sure of their actual/true PPD  experience, or the possibility that responses on the PHQ-9  questionnaire could simply be noisy. The number of mothers  (28, or 16.7% of the sample population) who were detected  to have had PPD is toward the higher end of the CDC  estimate of mothers suffering from PPD in the United States.  We acknowledge here that it might reflect a bias in our  recruitment strategy—some of the ads, especially ones on  babycenter.com were posted on a forum around PPD—our  
+628
+African-American 0 
+3 
+17 
+127 
+9 
+2 
+3 
+	3 
+17 
+98 
+6 
+2 
+2 
+	
+
+
+
+Asian 0 Caucasian 29 Latino/Hispanic 3 Native American 0 Other 1 Occupation 
+Stay at Home Mom 12 
+50 
+21 
+14 
+9 
+8 
+	38 
+20 
+12 
+9 
+4 
+	
+
+
+
+Computer & Mathematical 1 Education, Training, & Lib. 2 Business & Financial Op. 0 Healthcare Practitioner 4 
+Table 2. Demographics of mothers with and without PPD.  
+We observe that mothers giving birth to a second or later  child have considerably higher chances of having PPD  (67.12%), compared to those giving birth to their first kid  (37.78%). We also observe that premature childbirth had  little association with PPD—among the mothers who had  PPD, only 13.33% reported having given birth to a premature  child, while it was 10.2% for those without PPD.  
+Facebook Data  
+We now present some characteristics of the Facebook data  dump that we collected for the set of 165 mothers. For each  mother, we created two separate data files—one spanning the  prenatal period, and the other the postnatal period. In Figure  1, we show cumulative distributions of the duration span of  prenatal and postnatal data we could collect from the  Facebook dumps of the mothers. We notice that for the set of  165 mothers, we have up to 50 weeks of prenatal data, while  for postnatal data, for the same set of mothers we have access  to up to 10 weeks of data. Note that 50 weeks is almost close  
+CSCW 2014 • Social Technologies and Well-Being February 15-19, 2014, Baltimore, MD, USA 
+to a year, which gives us ample data to observe  manifestations of prenatal depression, or even early signs of  PPD. Focusing on 10 weeks of postnatal data consistently for  all mothers gives us sufficient time to observe PPD related  changes following childbirth. Several studies on PPD in the  clinical literature has focused on similar timeframes (e.g.,  O’Hara et al. [29] identified predictors of PPD at the 2nd trimester of pregnancy, while Fleming et al. in [11] studied  PPD at 3 months postpartum).  
+Based on the above time frames, combining the prenatal and  postpartum periods, we obtained 578,220 items that were  posted by the 165 mothers (combining wall posts, photos,  videos, links, check-ins), which had 534,123 likes and  487,072 comments. In terms of the posts received on the  timelines (i.e., posts in which the mothers were tagged in by  friends), there were 21,078 posts in all, with 24,259 likes and  23,830 comments.  
+MEASURING BEHAVIORAL CHARACTERISTICS  We now present a number of measures that we used to  characterize the behavior of the mothers. Unless otherwise  mentioned, we use posts to refer to any item shared/received  on a mother’s timeline that can be a wall post, a photo, video,  link or a check-in.  
+User Characteristics  
+We define seven different user characteristics that measure  a user’s nature of activity on Facebook. The first three  measures include: the number of status updates made by a  mother; the number of media items (photos/videos) uploaded  by a mother; and number of wall posts she made to specific  friends on Facebook.  
+  
+
+Figure 1. Cumulative distributions of durations of prenatal and  postnatal Facebook data for the mothers in our dataset. 
+629
+The remaining measures capture overall Facebook usage  patterns of the mothers. We consider all postings made by a  mother on her timeline per day (including status updates,  media uploaded) as a time-series signal during the entire  duration of the analysis. Based on this data, we define the  remaining measures in the user-characteristics category as  the different properties of this time-series signal.  
+A fourth measure captures the rate of change of posting  activity over time, and is given as the normalized difference  between the number of posts made on a certain day and the  mean number of posts over a time window before (we  consider week-long windows). A fifth measure captures the  degree to which a mother’s Facebook activity shows a  negative trend. This measure is computed from the rate of  change measure as the fraction of weeks during which the  rate of change is negative [17]. A sixth measure captures the  entropy or variation in the number of posts per week over the  entire prenatal period—high entropy would indicate high  volatility of activity. A seventh measure is the mean power  of the number of posts per week, in essence capturing the  degree of periodicity in the frequency domain of a mother’s  activity over time [17]. 
+Social Capital  
+Previous research has found an inverse relationship between  an individual's access to cognitive social capital (social trust,  sense of belonging, mutual aid) and depression [12]. Given  Facebook’s rich friendship networks, we leveraged the  following types of one-to-one social interactions as measures  of a mother’s social capital, as defined as resources and  support embedded within social networks: likes on status  updates (wall posts / check-ins) made by a mother; comments  on status updates; likes on uploaded media (photos/videos/links); comments on uploaded media; wall  posts made by friends to a mother; likes on wall posts made  by friends to a mother; comments on wall posts made by  friends to a mother; media posted by friends on wall; likes on  media posted by friends on wall; comments on media posted  by friends on wall; likes on media with specific friends  tagged; comments on media with specific friends tagged;  likes on wall posts to friends by a mother; comments on wall  posts to friends by a mother; media in which specific friends  were tagged; and number of friends in which a mother  directed a specific communication to via tagging.  
+Content Characteristics  
+Emotional Expression. We consider two measures of the  emotional state of mothers in our dataset: positive affect (PA), and negative affect (NA), motivated from work in [35].  Measurements of PA and NA per mother are computed using  the psycholinguistic resource LIWC (http://www.liwc.net/),  whose emotion categories have been scientifically validated  to perform well for determining affect in Twitter [14].  
+CSCW 2014 • Social Technologies and Well-Being February 15-19, 2014, Baltimore, MD, USA 
+Question-centric Statuses. We also define a content    
+characterization measure of the posts shared by mothers that  
+captures their information/advice seeking tendency on  
+Facebook. For the purpose, we infer whether or not a post  
+made by a mother contains a question—that is, if the post  
+contains a “?” marker and has one of the words “what”,  
+“why”, “how”, “when”, “where”, “who”, “whom” etc. 
+Linguistic Style  
+We also use measures that characterize behavioral change,  
+based on the use of linguistic styles in posts by mothers,  
+during the prenatal and the postnatal periods. Linguistic  
+styles capture how language is used by individuals and  
+provide information about their behavioral characteristics  
+subject to their social and psychological environment [35].  
+We again use LIWC for determining 22 specific linguistic  
+styles, e.g.: articles, verbs, conjunctions, adverbs, personal  
+pronouns, prepositions, functional words, assent, negation,  
+certainty and quantifiers.  
+PPD VERSUS NON-PPD BEHAVIOR  
+We now present statistics characterizing and distinguishing  
+the behavior of the mothers during prenatal and postpartum  
+periods (combined). Table 3 presents the per-day mean,  
+median, and standard deviation of the measures we use to  
+characterize behavior of the mothers, combining the 50 week  
+prenatal and 10 week postnatal periods. We also show which  
+measures statistically distinguish the two cohorts based on  
+independent sample t-tests (after adopting Bonferroni  
+correction).  
+Our observations indicate that most of the user  
+characteristics can distinguish well the behavior of the two  
+cohorts. Specifically, for the PPD experiencing mothers,  
+Facebook activity as measured by status updates and media  
+items shared is lower (difference of means between prenatal  
+and postnatal periods: 14.8% and 8.4% respectively). They  
+also appear to be less socially interactive in reaching out to  
+friends by tagging them in wall posts (30% lower than non 
+PPD mothers).  
+The trends and temporal characteristics of activity of these  
+mothers also has cues attributing the differences in their  
+experiences from those without experiences of PPD.  
+Notably, they show a less periodic (39% lower), highly  
+volatile (note, higher entropy: 15% higher), and raised levels  
+of rate of change of activity over time. We note here that  
+while periodic behavior of social media use often indicates  
+routine nature of lifestyle [14], it is also known that lifestyle  
+irregularities such as sleep disruption often are associated  
+with the psychopathology of depression [37]. Our measures  
+of high volatility and low periodicity in the case of the PPD  
+group attempt to capture such irregularities in Facebook  
+activity. Additionally, we observe that greater fraction of  
+their time on Facebook, the PPD experiencing mothers tend  to show a decreasing trend in their levels of activity, a finding  in line with prior literature that indicates depression to be  associated with social and psychological impairment [34].  Putting these together, we conjecture that PPD experiencing  
+630
+Table 3. Per-day values of the measures characterizing PPD  experiencing and non-PPD mothers (combined prenatal and  postpartum periods). Results of statistical significance tests  (independent sample t-tests) comparing the two cohorts are  indicated by asterisks. 
+CSCW 2014 • Social Technologies and Well-Being February 15-19, 2014, Baltimore, MD, USA 
+mothers are posting less, suggesting a possible loss of social  connectedness.  
+Next, PPD experiencing mothers were significantly lower  than their non-PPD experiencing counterparts on our  measures of social capital. For instance, PPD experiencing  mothers seem to receive lower numbers of likes and  comments on their status updates as well as uploaded media  (17.7% and 22% respectively). They also have fewer wall  posts and media made by friends. From prior literature, we  know that use of social platforms online, like Facebook,  likely supplements people's physical world communication  and thereby helps generate and maintain their social capital  [3,9]. However, in the case of individuals suffering from  major depression, perceptions of levels of cognitive social  capital (trust of neighbors) are considerably lower [12],  potentially explaining our observation in the data.  
+We further observe that the PPD experiencing mothers  exhibit higher expression of NA (and lower PA) compared  to non-PPD mothers, consistent with depression symptoms  such as mental instability and helplessness, loneliness,  restlessness, exhaustion, lack of energy, and sleep  deprivation [38]. However in contrast to previous work on  understanding postpartum changes in new mothers using  Twitter [4], we do not find these distinctions to be highly  statistically significant. This may indicate a reporting bias on  Facebook compared to Twitter: Since Facebook is often a  platform used to connect to physical world contacts (personal  and professional), individuals may be more conscious about  their self-presentation, and might be less comfortable  discussing emotions related to their depression in their wall  posts [27]. There may also be an awkwardness factor or  social stigma associated with depression, due to its sensitive  nature [41] that prevents them from explicit emotional  expression on Facebook.  
+Apart from emotion measures, the PPD experiencing  mothers seem to post considerably greater content that is question-centric (78% higher), reflecting an attempt to use  Facebook as a mechanism for information and advice  seeking, or perhaps leveraging their available social capital  to tackle the challenges of PPD [15,26]. We conjecture this  could also be a manifestation of their attempt to seek social  and emotional support from contacts they trust.  
+Finally, among the linguistic style features, we find that the  presence of the first-person singular pronoun is considerably  high (41.8% higher), while that of 1st person plural, 2nd and  3rd person pronouns is low in posts of the PPD-experiencing  mothers (66%, 4.4%, and 43.4% respectively), reflecting  their high attention to self, self-preoccupation, and  psychological distancing from others [43]. PPD experiencing  mothers also show lower use of articles (37% lower),  indicating less attribution to things around them in their  environment, another correlate of mental illness [43].  Negation, inhibition, non-fluency, and swear words also  seem to be higher for this cohort compared to the other,  which align with observations in prior work where negative  
+631
+cognitive styles and biases have been found to be associated  with depression [40].  
+PPD PREDICTION  
+Comparison of Predictive Models  
+Given the observed differences between the behaviors of the  PPD and non-PPD experiencing mothers, we turned to  predicting the onset of PPD. To start, we use the behavioral  measures collected only from the prenatal period to predict  whether or not a mother will have PPD during the postpartum  period. We fitted a number of regression models to  understand the relative value of considering different  behavioral measures: user characteristics alone, social  capital, content characteristics, and linguistic style, and  finally a model using all of these measures. We also fitted a  null model that uses all of the available demographic and  self-reported attributes relating to childbirth. Prior literature  shows that there is correlation between these attributes and  PPD experience [2]; we sought to evaluate the additional  contributions of Facebook-derived measures to the literature identified models.  
+Measure t-Statistic 
+β 
+	SE 
+	2.4196 ***0.0142 *
+0.0079
+-0.174 **
+-0.046 ***
+-0.636 **
+0.2711
+	 0.036
+ 0.025
+ 0.025
+ 0.023
+ 0.112
+ 0.025
+ 0.023
+	
+
+
+
+Intercept  6.709 Age1  0.174 Ethnicity1  0.031 Occupation1 -0.756 Income  -2.691 First child1 -2.519 Premature child1  1.133 Deviance 115.218 Log likelihood -57.609 pseudo-R2 0.1398 Estimated dispersion parameter 0.919 Number of observations 156 Error degrees of freedom 149 1 binary variable coded as 1/0 
+ age: ≤ 30years → 0; >30years → 1 
+ ethnicity: Caucasian → 1; Other → 0 
+ occupation: Stay-at-home mom → 1; working mom → 0 Table 4. Performance of demographics model.  
+For all of our models in this section, we use stepwise logistic  regression models, in which the independent variables are  the different behavioral measures, and the response variable  is whether or not a particular mother reported the onset of  PPD following the birth as well as scored in the depression  range on the PHQ-9 questionnaire. Particularly, we make use  of the “forward selection” approach of stepwise regression— we start with a (modified) simple null model, and then  incrementally test the addition of variables spanning various  categories based on appropriate model comparison criteria  (e.g., deviance/log likelihood in this case). The advantage of  such a descriptive model as this is that, it allows us to  determine the relative importance of each measure in  predicting PPD, although we acknowledge that it would not  support higher-order interaction between variables without  considerably more data than is available through our dataset.  Note that we use a measure called deviance2 to evaluate  
+CSCW 2014 • Social Technologies and Well-Being February 15-19, 2014, Baltimore, MD, USA 
+goodness of fit, since this model has no direct analog of the  proportion of variance explained by the predictors (R2) in  OLS. However we do provide, for each model, a competing  analogous index: pseudo R2 [21]. Because this statistic does  not mean what R2 means in OLS regression (the proportion  of variance explained by the predictors), we suggest  interpreting this statistic with caution.  
+Performance of Demographics Model  
+We begin with a discussion of a modified null model, which  we call the demographics model, in order to help us make a  stronger claim about the predictive utility of the behavioral  measures. The demographics model uses the variables: age,  ethnicity, occupation, income, whether or not the childbirth  in context of our survey was the first child of the mother, and  if it was a premature child. The results of this model are given  in Table 4. We notice that the variables occupation,  household income, and whether or not it was a mother's first  child were significant, with small to moderate beta  coefficients. Overall this model explains about 14% of  variance in the data (per the value of pseudo R2).  
+Measures t-Stat 
+β 
+	SE 
+	
+
+
+
++ User characteristics (Model 1) 
+Intercept  17.497 
+1.303 *** 
+-0.428 ** 
+-0.622 *** -0.165 * 
+-0.468 ** 
+0.639 *** -0.284 ** 
+-0.176 * 
+-0.283 ** 
+0.096 * 
+	0.084
+0.031
+0.029
+0.052 
+0.031
+0.142
+0.204 
+0.196 
+0.125 
+0.138 
+	
+
+
+
+status updates  -11.86 media uploaded  -16.66 income -3.2044 wall posts to friends  -9.235 Entropy of activity  15.48 first child 7.3729 occupation -2.2193 Mean power of activity -4.4306 age -2.385 Deviance 100.784 Log likelihood -50.392 pseudo-R2 0.183 Estimated dispersion parameter 0.87 Error degrees of freedom 142 + Social capital (Model 2) 
+Intercept 2.4132 
+0.208 ** 
+-0.328 * 
+-1.405 *** -0.639 *** -1.209 *** -0.473 ** 
+-0.435 ** 
+-0.592 ** 
+-0.184 * 
+-1.261 *** 
+	0.107 
+0.041 
+2.306 
+0.032 
+0.094 
+0.391 
+0.495 
+0.029 
+0.183 
+1.143 
+	
+
+
+
+likes on status updates -9.8713 likes on uploaded media -0.6124 Media uploaded -10.395 commt. on stat. updates -13.798 comments on media -3.866 wall posts by friends -4.873 status updates -7.953 first child 1.3308 #frnds in directed comm. -14.782 Deviance 84.588 Log likelihood -42.294 pseudo-R2 0.242 Estimated dispersion parameter 0.81 Error degrees of freedom 126 + Content Characteristics (Model 3) 
+  
+1 In logistic regression analysis, deviance is used instead of sum of  squares calculations, like in linear regression [21]. It is a measure  of the lack of fit to the data in a logistic regression model—lower  numbers are better. Deviance is calculated by comparing a given  
+632
+Intercept 5.1092 
+0.249 ** 
+-0.635 *** -1.038 *** 0.493 ** 
+-0.441 ** 
+-0.146 * 
+-0.076 * 
+-0.483 ** 
+0.459 ** 
+0.037 
+	0.052 
+0.149 
+0.583 
+0.204 
+0.352 
+0.738 
+0.218 
+0.193 
+0.314 
+0.459 
+	
+
+
+
+media uploaded -9.394 comnt. on stat. updates -14.248 Question-centric status 2.7366 status updates -10.395 first child 1.284 Positive Affect -0.3827 wall posts by friends -6.253 entropy of activity 8.948 Negative Affect 0.0814 Deviance 79.644 Log likelihood -39.822 pseudo-R2 0.279 Estimated dispersion parameter 0.79 Error degrees of freedom 123 + Linguistic style (Model 4) 
+Intercept  -0.127 
+-0.032 * 
+1.924 *** 
+-0.392 ** 
+-4.824 *** -3.209 *** -4.085 *** -1.771 ** 
+0.364 ** 
+2.534 *** 1.783 ** 
+2.029 ** 
+	0.058
+7.179
+2.224
+5.262
+2.933
+9.368
+4.303
+0.251
+6.034
+1.686
+3.161
+	
+
+
+
+1st Person Singular  0.472 1st Person Plural  -0.287 2nd Person Pronoun  -0.744 3rd Person Pronoun  -0.899 Article  -0.405 Certain  -0.329 Question-centric status  1.560 #frnds in directed comm.  0.748 comnt. on stat. updates  0.435 Swear words  0.2067 Deviance 61.32 Log likelihood -30.668 pseudo-R2 0.355 Estimated dispersion parameter 0.72 Error degrees of freedom 100 *** p<0.001; ** p<0.01; * p<0.05 
+Table 5. Performances of different stepwise logistic regression  models. We incrementally add variables spanning the four  categories: user characteristics, social capital, content  characteristics, and linguistic style, to the demographics model.  E.g., Model 3 includes variables of content characteristics,  along with those of the demographics, user characteristics, and  social capital models. Top 10 terms per model according to their  β values are shown.  
+Performance of Stepwise Regression Models  
+Next we explore the performance of a number of models that  are incrementally added to the variables in the demographics  model: user characteristics, social capital, content  characteristics, and linguistic style. In Table 5, we report the  results. On adding the user characteristics variables to the  demographics model, it performs slightly better than the  demographics model, explaining about 18% of the variance  in the data. The deviance1 of this model is 100.784 compared  to 115.218 by the demographics model. Lower number of  wall posts made to friends, acting as a proxy of the degree of  the mothers' social interactions, was found to be a better  predictor of PPD experience. As also found in the previous  
+model with the saturated model – a model with a theoretically  perfect fit (the intercept only model in this case). 
+CSCW 2014 • Social Technologies and Well-Being February 15-19, 2014, Baltimore, MD, USA 
+section, high volatility (entropy) and low periodicity of  activity indicated greater likelihood of PPD.  
+Next we discuss performance of the model that adds the  social capital variables to the above model. This model  shows considerable improvement in performance over the  previous ones, explaining 24% of the variance in the data, as  well as showing greater model fit through reduction in  deviance (84.58). Reduced number of comments on status  updates and uploaded media, as well as fewer likes and less  commentary on media posted by friends on wall increased a  mother’s likelihood of PPD. Aside from this form of direct  feedback and acknowledgment from one’s social network,  we also observe that lower degrees of communication  initiated by friends, such as fewer wall posts made by friends  was predictive of having PPD.  
+Our third model that added the content characteristics to the  previous model yielded only marginal boost in performance  explaining about 27% variance in the data—the deviance  reduced to 79.64. We did not observe much effect from the  two affect measures, especially negative affect, confirming  our findings in the previous section that Facebook affective  expression is not characteristically different in the two  cohorts.  
+Our fourth model utilizes the different markers of linguistic  
+interaction: hence likely garner fewer comments from  friends, thereby leading to decreased access to social capital.  
+Finally, we briefly discuss the correlations between pairs of  predictors in this final model (Model 4). We find that the  mean correlation is 0.09 which indicates that there is minimal  collinearity in the variables. We also present results of model  deviance of the various models (Models 1 to 4), assuming  that the difference in deviances across models approximately  follows a χ2 distribution. In Table 6, we report the results of  comparison and boost in explanatory power of the  incremental addition of variables in the models. The model  utilizing all measures (i.e., Model 4, in Table 5) is found to  provide considerable (and the most) explanatory power.  Compared to the demographics model (null model), it gives  χ2(149–49, N=156) = 115.218 – 61.32 = 53.89; p < 10-7.  
+Postnatal Time Horizon and Best Model  
+So far we have investigated predicting new mothers’  likelihood of PPD using data from the prenatal period alone.  However, clinical literature on PPD marks the typical onset  of PPD at about one month following childbirth [2,30].  Hence a few weeks of Facebook activity data in the early  postnatal phase may contain valuable clues about future PPD  experience that can be additionally leveraged to boost  prediction performance.  
+style as additional variables in the regression model,  
+Prenatal 
+	+10d 
+	+20d 
+	+30d 
+	61.32 
+-30.668 
+0.355 
+0.72 
+156 
+100 
+	57.39 
+-26.3 
+0.383 
+0.68 
+156 
+100 
+	52.58 
+-20.34 
+0.439 
+0.62 
+156 
+100 
+	46.61 
+-17.24 
+0.484 
+0.57 
+156 
+100 
+	
+
+
+
+Postnatal 
+explaining more than 35% of the variance in the data, as well  as improving on the demographics variable only model (null  model) by 153% per the value of pseudo R2 with the lowest  deviance so far: 61.32. Interpersonal pronouns are good  predictors as observed in the previous section: higher use of  1st person singular pronouns indicated greater likelihood of  PPD, along with lower usage of 2nd, 3rd person pronouns, and  articles. Note that this model combines all of the 49  behavioral measures for regression.  
+Dev. 58.15 LL -28.84 psd. R2 0.372 sfit 0.703 N 156 Error df 100 
+Table 7. Performance of models with varying postnatal time  horizon. Last column corresponds to a model with month-long  postnatal period data only.  
+
+
+χ2 
+	14.434 
+16.286 
+4.944 
+18.324 
+	
+
+
+
+p-value 
+Thus we now consider harnessing evidence, incrementally,  
+Model 1 vs. demographics model 3.4e-004 Model 2 vs. Model 1 6.3e-004 Model 3 vs. Model 2 7.6e-002 Model 4 vs. Model 3 8.2e-006 
+Table 6. Model deviance of the different stepwise logistic  regression models from Table 5. Significance is judged at  α=.001 confidence level. On being assessed upon a chi-square  distribution, significant values (in italics) indicate that the  addition of variables in a certain model (e.g., Model 2)  considerably improved fit to our data compared to the previous  model (e.g., Model 1).  
+Specifically, in this model we note that increased levels of  both 1st person singular pronoun use and the frequency of  question-centric statuses indicate vulnerability to PPD. One  explanation could be that certain mothers might be turning to  Facebook to pose questions and inquiries about concerns  they might be experiencing themselves, which in turn hints  at high self-attentional focus, and a known attribute of  depression [43]. Furthermore, lowered usage of 2nd person  pronouns in statuses probably indicate less desire for social  
+633
+for an additional period of up to a month following childbirth  for each mother (apart from prenatal period). We do not  report the details of the models here; however performance  is summarized in Table 7. We find that as more information  derived from the postnatal period, our model improves in  performance monotonically. Best performance is given by  the prenatal period + 30 days model, where our predictive  power increases considerably, explaining about 48% of  variance in the data, and improving over our prenatal only  model (Model 4) by 36% and by 246% over the null model,  in terms of variance explained. This is also explained in  terms of model deviance: χ2(100, N=156) = 61.32 – 46.61 =  14.71; p < 10-4. We additionally tested a model that uses  simply the month-long postnatal period data—yielding a  pseudo R2 of 0.37. This model appears to be marginally  better (not statistically significant) compared to the prenatal  only model (Model 4) with model deviance: χ2(100, N=156)  = 61.32 – 58.15 = 3.17; p < 0.08.  
+In essence we conclude that the prenatal period does provide  PPD-predictive information that together with a brief period  
+CSCW 2014 • Social Technologies and Well-Being February 15-19, 2014, Baltimore, MD, USA 
+of postnatal observations, improves our predictions  considerably. This aligns with findings in the clinical  literature where typically prepartum depression is known to  be a good indicator of PPD, along with post-childbirth  anxiety and stress [2]. 
+VALIDATION INTERVIEWS  
+To corroborate our findings with a qualitative sense of  Facebook use by PPD experiencing mothers, we conducted  six semi-structured interviews with a random sample drawn  from our dataset of 28 PPD experiencing mothers. The  interviewee mothers were asked generally about their  diagnosis of PPD, timeline of the persistence of the  condition, coping strategies they adopted, availability of  social and emotional support during the experience, prior  mental illness history, and the role of Facebook during the  entire experience.  
+We coded the data into various themes, and overall the  mothers indicated numerous instances where our findings  were validated. First, in terms of Facebook use, a participant  reported how she was not using Facebook during her PPD  experience to upload media (photos and videos) related to  her newborn daughter—a culture typical of new mothers  otherwise:  
+You know, I exclusively stayed away from using Facebook  during the [PPD] time; it was only when I really needed to,  maybe sometimes to find out about a specific friend. I wasn't  even doing the whole "OMG look at my cute baby" pictures  thing, like you know, a lot of the new mommies do. I didn't feel  as much connection with my baby, actually it was almost like I  was angry, that she came in my life, and suddenly everything  changed, I was a different person. (Mom B)  
+Another mother suffering from PPD indicated a similar  experience about how the ill effects of PPD were obstructing  her normal lifestyle, and thereby lowering her tendency to be  active on Facebook:  
+[PPD] was a terrible time: I would feel exhausted the whole  day—I would wake up in the morning after a whole night’s  sleep, and still not feel fresh and feel like I lack energy to do  anything, even stuff about the baby. Posting on Facebook was  naturally less during the whole time, until I was on meds and  started to feel better. (Mom D) 
+Secondly, almost all mothers (5 out of 6) indicated that they  refrained from reporting their emotion or their mental state  in general during the PPD experience, naturally due to its  sensitive nature, and to avoid the risk of facing judgment,  scrutiny or stigma—an aspect also revealed by our analyses:  
+When I was first diagnosed, no one except my immediate family  knew. Yes I would post less [on Facebook], but when I did, it  would never be about how I was feeling, or the bad times I was  going through. I actually made sure no one knew about my  feelings or thoughts. Doesn’t mean I didn’t do the occasional  posting, but it was hardly anything which would engage my  friends, like, I was trying to be less interactive purposefully,  and just posting rather objectively. (Mom C)  
+634
+Some mothers even reported that the social stigma associated  with mental illness was precluding them from expressing  their emotionality on Facebook (3 out of 6):  
+It is not like I want privacy in a crazy way or something, but I  just thought PPD is such a terrible thing: how could I let my  friends know about it? What would they think? Maybe I was  lacking something—something was wrong with me? That I was  
+not normal? All those thoughts came to me—and obviously I  made a decision: I don’t want people who I actually know in  real life, to know about it. (Mom E)  
+Finally, we found evidence of a variety of negative  experiences from mothers with PPD around receiving social  and emotional support from Facebook (4 out of 6):  
+I initially thought: oh great! Facebook will be a nice place to  connect with my mommy friends and get some help maybe?  Turns out I was so wrong. In some sense, several of these  mommies I connected with, I mean not all, but they were so  inconsiderate and judgmental about me and my condition. I  wanted help, not how they thought I was. Clearly I started  feeling that maybe I wouldn’t be able to get as much help from  them as I thought I would. Those Facebook pages around  motherhood were slightly better—though kinda same story  continued. (Mom C)  
+On similar lines, another participant reported on using  Facebook as a means of seeking information on issues and  concerns at hand; however they felt those postings garnered  relatively lesser social support and feedback, especially  because of mismatch of their particular PPD context or the  maternity experience in general:  
+[I] wasn’t really doing the “oh shit I am feeling terrible” thing  on Facebook. But I did used to post quite a few questions as  and when they popped up, maybe sometimes about what I am  going through, or whether I should do X over Y—stuff like  that—though I made it a point it was sort of obscure, like I  didn’t want folks to know that “hey this is what is happening to  me”. But I felt people were still a little surprised by that—not  many people were responding on those, like they would on say,  the baby pictures. It was like they weren’t really expecting me  to ask those questions, or maybe just trying to stay away from  the whole thing. (Mom B) 
+These interviews, together with our empirical findings, i.e.,  the Facebook predictors of PPD, indicate three important  characteristic aspects of PPD-suffering mothers—(1) their  degree of social activity on Facebook is lower, and Facebook  posts are often objective in nature or geared toward seeking  feedback on concerns and questions; (2) due to the fact that  many Facebook contacts are also physical world friends and  acquaintances, mothers preferred not to disclose  emotionality around their depressive state or feelings relating  to helplessness and insecurity; and (3) that they received  little social and emotional support (note the negative beta  weights in the social capital model in Table 5) and were less  able to leverage social capital from Facebook. In essence,  through the lens of Facebook use, we also observe how social  disapproval as well as hardship and stigma related to mental  illness weigh on PPD suffering mothers.  
+CSCW 2014 • Social Technologies and Well-Being February 15-19, 2014, Baltimore, MD, USA 
+IMPLICATIONS  
+Technology Design  
+The ability to identify characteristic and predictive factors of  PPD presents technology design opportunities for new and  expectant mothers. Like other technologies designed for  motherhood in general, including systems that enable  pregnant women to share baby activity levels with their  intimate social groups [18], “smart baby monitors” [19] that  help mothers document milestones of their child's  development, we envision tools that leverage mothers'  activity on online social platforms for the purpose of  estimating their risk to PPD. Such tools, including software/  smartphone applications and services, can serve as early  warning systems. They can provide pregnant women and  new mothers with personalized information on their risk of  encountering significant behavioral changes, in the form of  PPD, per their Facebook or other social network/media  activity.  
+To be clear, we do not envision these tools as standalone  diagnostic tools, but instead as part of a broader awareness,  detection, and support system. For instance, this technology  could be part of diary-centric systems that capture a self 
+narrative about postpartum life. Such an application is  loosely akin to affective computing systems for depression  treatment, which have been shown to be engaging and  effective [8]. As part of this mix of this PPD detection and  support system, predictions made from Facebook data could  assign a personalized “PPD risk score” to mothers. In  operation, if inferred likelihoods of forthcoming extreme  changes surpass a threshold, mothers could be warned or  otherwise engaged in order to reach out for social support or  medical attention. In short, we hope analytic approaches  based on social media data can play a role in helping PPD  suffering women find timely and appropriate support from  health care professionals and other mothers.  
+Ethics and Policy  
+We envision the systems described above to be designed as  privacy preserving applications that are deployed by and for  individuals, thereby honoring the sensitive aspect of  revealing mental health related information to them. Closely  intertwined with this privacy issue is the challenge of  interventions. Can we design effective interventions for  people, whom we have inferred to be vulnerable to a certain  mental illness (PPD in this case), in a way that is private,  while raising awareness of this vulnerability to themselves  and trusted others (doctors, family, friends)? In extreme  situations, when an individual’s inferred vulnerability to a  mental illness is alarmingly high (e.g., if the individual is  suicide-prone), what should be our responsibility as a  research community? For instance, should there be other  kinds of special interventions where appropriate counseling  communities or organizations are engaged?  
+In short, finding the right types of interventions that can  actually make a positive impact on people’s behavioral state  as well as abide by adequate privacy and ethical norms is a  
+635
+research question on its own. We hope this work triggers  conversations and involvement with the ethics and clinician  community to investigate opportunities and caution in this  regard.  
+Furthermore, there are several other ethical and policy  related dimensions to research that utilizes social network  activities to make inferences about their mental and  behavioral health. Up to what point can such inferences  about illness or disability be deemed to be safe for an  individual’s professional and societal identity? How do we  ensure that such measurements do not introduce new means  of discrimination or inequality in society given that we now  have a mechanism to infer such traditionally stigmatic  conditions which are otherwise chosen to be kept private?  These and other potential consequences such as revealing  nuanced aspects of behavior and mental health conditions to  insurance companies or employers make resolution of these  ethical questions critical to the successful use of these new  data sources.  
+To summarize, we believe that it is important to bring the  possibilities to the fore, so as to leverage the benefits of these  methods and ideas to enhance the quality of life for people,  as well as to stimulate discussion and awareness of the  potential role that policies could play in supporting the  identities and practices that individuals suffering mental  illness develop in the face of social disadvantage.  
+CONCLUSION  
+In this paper, we examined the feasibility of using Facebook  as a tool to detect, characterize, and predict postpartum  depression in new mothers. First we conducted an online  study to gather self-reported diagnoses of PPD, along with  scores on a common depression screening instrument (PHQ 
+9 questionnaire) to evaluate 165 mothers on their PPD  experience. Thereafter, based on their activity, interactions,  emotional and linguistic expression on Facebook over more  than a year, we characterized differences between mothers  with PPD and without PPD. Finally, we adopted a mixed  methods approach in which first we developed a series of  statistical models leveraging these measures, to predict PPD  in our dataset, and then corroborated our findings through six  semi-structured interviews with our participants.  
+We found that experiences of PPD were best predicted (best  model explained 48% variance in the data) by increased  social isolation as manifested in reduced social activity and  interaction on Facebook, and decreased access to social  capital. Since Facebook friend networks typically include  offline social ties spanning friends and coworkers, and due  to the stigma associated with mental illness in general, we  find that emotional measures were less effective predictors.  
+Our work is of course not free from limitations. Analyses  focused on data from online social platforms may suffer due  to challenges of selective self-presentation. In other words,  Facebook or Twitter alone may not represent with high  fidelity the complex realm and circumstances that define the  
+CSCW 2014 • Social Technologies and Well-Being February 15-19, 2014, Baltimore, MD, USA 
+PPD experience. Moreover, this work has focused on a  somewhat limited set of mothers who are active on Facebook  and are concentrated in a particular ethnic community with  upper middle class lifestyle. It remains to be seen in future  work how we can generalize our findings to a larger  population for whom we online data is less available and  therefore manifests less of the PPD experience. We also note  here that the diagnosis of PPD itself may change Facebook  behavior, something we saw some evidence of in the  qualitative findings. While we cannot test this broadly here,  understanding how medical diagnoses impact social media  behavior is an interesting possibility for future work. Further,  although we characterized online social capital of the  mothers in this paper through their Facebook use, and found  that it was a good predictor of PPD, quantifying offline social  capital could provide valuable inputs to our findings as well.  
+Finally, we emphasize here that, like any statistical model,  our model is likely to yield false positives. Because we used  a descriptive approach in this paper, the exact false positive  rate is not known, but we note that the findings of this  research should be interpreted with caution, especially in  terms of what the medical community could do leveraging  them. In particular we recommend against focusing on a  single measure such as the amount of Facebook activity, as  there could be alternative explanations (e.g., mothers could  post less simply because they are now dealing with new time  constraints or simply have changed their priorities and are  less interested in Facebook). Instead we recommend  triangulating with a variety of measures and validating with  known diagnostic instruments, like the PHQ9, so as to  distinguish between those changing their behavior for benign  versus worrisome reasons. Finally, we again stress that this  research is intended not as a standalone diagnostic tool, but  as a mechanism to complement current diagnoses by giving  psychiatrists and caregivers access to a novel and rich non intrusive data source about people’s behavior. 
+REFERENCES  
+1. Beck, C.T. (1998). A checklist to identify women at risk  for developing postpartum depression. Journal of  Obstetric, Gynecologic, & Neonatal Nursing, 27, 39-46. 
+2. Beck, C.T. (2001). Predictors of Postpartum Depression:  An Update. Nursing Research, 50 (5), 275-285.  
+3. Burke, M., Kraut, R., & Marlow, C. (2011). Social  capital on Facebook: Differentiating uses and users.  In Proc. CHI 2011. 571-580.  
+4. De Choudhury, M., Counts, S., & Horvitz, E. (2013).  Major Life Changes and Behavioral Markers in Social  Media: Case of Childbirth. In Proc. CSCW 2013.  
+5. De Choudhury, M., Counts, S., & Horvitz, E. (2013).  Predicting Postpartum Changes in Emotion and  
+Behavior via Social Media. In Proc. CHI 2013.  
+6. De Choudhury, M., Gamon, M., Counts, S., & Horvitz,  E. (2013). Predicting Depression via Social Media. In  Proc. ICWSM 2013.  
+7. Dennis, C., and Chung-Lee, L. Postpartum Depression  Help-Seeking Barriers and Maternal Treatment  
+636
+Preferences: A Qualitative Systematic Review. Birth,  (2006), 33(4), 323-331. 
+8. Doherty, G., Coyle, D., & Sharry, J. (2012).  Engagement with Online Mental Health Interventions:  An Exploratory Clinical Study of a Treatment for  Depression. In Proc. CHI 2012. 
+9. Ellison, N. B., Steinfield, C., & Lampe, C. (2011).  Connection strategies: Social capital implications of  Facebook-enabled communication practices. New Media  & Society, 13(6), 873-892. 
+10.Fleming, A. S., Klein, E. and Corter, C. (1992). The  Effects of a Social Support Group on Depression,  Maternal Attitudes and Behavior in New Mothers. J. Child Psychology and Psychiatry, 33: 685–698.  
+11.Fleming, Alison S.; Ruble, Diane N.; Flett, Gordon L.;  Shaul, David L. (1988). Postpartum adjustment in first time mothers: Relations between mood, maternal  attitudes, and mother-infant interactions. Developmental  Psychology, vol 24(1), pp. 71-81. 
+12.Fujiwara, T., & Kawachi, I. (2008). A prospective study  of individual-level social capital and major depression in  the United States. Journal of Epidemiology and  Community Health, 62(7), 627-633. 
+13.Gibson, L. & Hanson, V.L. “Digital Motherhood”: How  Does Technology Support New Mothers? In Proc. CHI  2013. 
+14.Golder, S. A., & Macy, M. W. (2011). Diurnal and  Seasonal Mood Vary with Work, Sleep and Daylength  Across Diverse Cultures. Science. 30 Sep 2011.  
+15.Gray, R., Ellison, N. B., Vitak, J., & Lampe, C. (2013,  February). Who wants to know?: question-asking and  answering practices among Facebook users. In Proc.  CSCW 2013. 1213-1224.  
+16.Halligan, S.L., Murray, L., Martins, C., and Cooper, P.J.  Maternal depression and psychiatric outcomes in  adolescent offsprint: A 13-year longitudinal study.  Journal of Affective Disorders 97 (2007), 145-154.  
+17.Hamilton, J. D. (1994). Time Series Analysis (Vol. 2).  Princeton: Princeton University Press.  
+18.Hui, M., Ly, C., and Neustaedter, C. MammiBelli:  Sharing Baby Activity Levels Between Expectant  Mothers and Their Intimate Social Groups. In Proc. EA  CHI 2012, 1649--1654. 
+19.Kientz, J. A., Arriaga, R. I., & Abowd, G. D. (2009).  Baby Steps : Evaluation Of A System To Support  Record- Keeping For Parents Of Young Children. In  Proc. CHI 2009. 1713–1722.  
+20.Kroenke K, Spitzer RL, Williams JB (2001). The PHQ 9: validity of a brief depression severity measure. J Gen  Intern Med. 16(9):606.  
+21.McCullagh, P., and J. A. Nelder. Generalized Linear  Models. New York: Chapman & Hall, 1990.  
+22.McDaniel, B.T., Coyne, S.M., and Holmes, E.K. (2012)  New Mothers and Media Use: Associations between  Blogging, Social Networking, and Maternal Well-Being.  Maternal and Child Health Journal, 16(7), 1509-17. 
+23.Moreno MA, Parks MR, & Zimmerman FJ, et al.  (2009). Display of health risk behaviors on MySpace by  
+CSCW 2014 • Social Technologies and Well-Being February 15-19, 2014, Baltimore, MD, USA 
+adolescents: Prevalence and associations. Archives of  Pediatrics and Adolescent Medicine.163(1):35–41.  24.Moreno MA, Jelenchick LA, & Egan KG, et al. (2011).  Feeling bad on Facebook: Depression disclosures by  college students on a social networking site.  
+Depressions and Anxiety. 28(6):447–455.  
+25.Moreno, M. A., Christakis, D. A., Egan, K. G.,  Brockman, L. N., & Becker, T. (2011). Associations  between displayed alcohol references on Facebook and  problem drinking among college students. Archives of  Pediatrics & Adolescent Medicine. 166(2):157-63. 
+26.Morris, M. R., Teevan, J., & Panovich, K. (2010). What  do people ask their social networks, and why?: a survey  study of status message Q&A behavior. In Proc. CHI  2012.  
+27.Newman M, Lauterbach D, Munson SA, Resnick P.,  Morris, M. (2011). It's not that I don’t have problems,  I’m just not putting them on Facebook: Challenges and  Opportunities in Using Online Social Networks for  Health. In Proc. CSCW 2011.  
+28.NielsenWire. Infographic: The Digital Lives of  American Moms.  
+http://www.nielsen.com/us/en/newswire/2012/digital lives-of-american-moms.html May 11, 2012.  
+29.O'Hara, M. W., Neunaber, D. J., &Zekoski, E. M.  (1984). Prospective study of postpartum depression:  prevalence, course, and predictive factors. Journal of  abnormal psychology, 93(2), 158.  
+30.O’Hara, M.W. (1995). Postpartum Depression: Causes  and Consequences. New York: Springer-Verlag.  
+31.Oxman T.E., Rosenberg S.D., & Tucker G.J. (1982).  The language of paranoia. American J. Psychiatry 139:275–82.  
+32.Park, M., McDonald D., & Cha, M. (2013). Perception  Differences between the Depressed and Non-depressed  Users in Twitter. In Proc. ICWSM 2013.  
+33.Paul, M., &Dredze, M. (2011). You are what you tweet:  Analyzing Twitter for public health. In Proc. ICWSM  2011.  
+34.Paykel, E. S., &Weissman, M. M. (1973). Social  adjustment and depression: a longitudinal  
+study. Archives of General Psychiatry, 28(5), 659.  35.Pennebaker, J.W., Mehl, M.R., and Niederhoffer, K.G.  (2002). Pyschological aspects of natural language use:  Our words, ourselves. Annual Review of Psychology 54:  547-477. 
+637
+36.Plantin, Lars, and Kristian Daneback. 2009.  “Parenthood, information and support on the internet. A  literature review of research on parents and  
+professionals online.” BMC Family Practice 10(1):34.  37.Prigerson, H. G., Monk, T. H., Reynolds, C. F., Begley,  A., Houck, P. R., Bierhals, A. J., & Kupfer, D. J. (1995).  Lifestyle regularity and activity level as protective  factors against bereavement-related depression in later  life. Depression, 3(6), 297-302.  
+38.Rabkin, J. G.; & Struening, E. L. 1976. Life events,  stress, and illness. Science, 194(4268), 1013-1020.  39.Righetti-Veltema, M., Conne-Perréard, E., Bousquet,  A., & Manzano, J. (1998). Risk factors and predictive  signs of postpartum depression. Journal of affective  disorders, 49(3), 167-180. 
+40.Robinson, M. S.; & Alloy, L. B. 2003. Negative  cognitive styles and stress-reactive rumination interact  to predict depression: A prospective study. Cognitive  Therapy and Research, 27(3), 275-291. 
+41.Roeloffs, C., Sherbourne, C., Unützer, J., Fink, A.,  Tang, L., & Wells, K. B. (2003). Stigma and depression  among primary care patients. General hospital  psychiatry, 25(5), 311-315. 
+42.Rosenquist, J. N., Fowler, J. H., & Christakis, N. A.  (2010). Social network determinants of depression.  Molecular psychiatry, 16(3), 273-281. 
+43.Rude, S.; Gortner, E.; & Pennebaker, J. 2004. Language  use of depressed and depression-vulnerable college  students. Cognition and Emotion, 1121-1133.  
+44.Sadilek, A., Kautz, H., & Silenzio, V. (2012). Modeling  Spread of Disease from Social Interactions. In Proc.  ICSWM 2011.  
+45.Schoenebeck, S.Y. The Secret Life of Online Moms:  Anonymity and Disinhibition on YouBeMom.com. In Proc. ICWSM 2013. 
+46.Scott KD, Klaus PH, Klaus MH.(1999). The obstetrical  and postpartum benefits of continuous support during  childbirth. J Womens Health Gend Based Med. vol  8(10):1257-64. 
+47.Steinfeld, C., Ellison, N., Lampe, C. (2008). Social  capital, self-esteem, and use of online social network  sites: A longitudinal study. J. of Applied Developmental  Psychology, 29, 434-445.  
+48.Tarkka, M.-T. &Paunonen, M. (1996). Social support  and its impact on mothers’experiences of childbirth.  Journal of Advanced Nursing, 23: 70–75.

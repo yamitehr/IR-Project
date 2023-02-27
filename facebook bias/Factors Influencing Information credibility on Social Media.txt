@@ -1,0 +1,296 @@
+﻿Available online at www.sciencedirect.com     
+ScienceDirect 
+ Procedia Computer Science 72 ( 2015 ) 314 – 328  
+The Third Information Systems International Conference  
+Factors Influencing Information credibility on Social Media  Platforms: Evidence from Facebook Pages  
+Ruohan Lia, Ayoung Suhb  
+aSchool of Creative Media, City University of Hong Kong, Tat Chee Avenue, Kowloon, Hong Kong  
+bSchool of Creative Media & Dep. of Information Systems, City University of Hong Kong, Tat Chee Avenue, Kowloon,  Hong Kong  
+Abstract  
+Information on social media platforms suffers from a relative lack of professional gatekeepers to monitor content.  How to evaluate the information credibility on social media platform has become an important issue for today  information consumers. Despite its importance, little research has empirically examined what factors influence the  information credibility on social media platforms, which limits our understanding of the determinants of online  information assessment. To fill this gap, this study examines the factors that influence individuals’ perceived  information credibility on social media platforms. Drawing on the persuasion theory—the Elaboration Likelihood  Model (ELM), we identify that five factors from two dimensions of credibility (medium and message credibility) are  key ingredients in the online information assessment, and develop a research model that predicts individuals’  perceived information credibility on social media platforms. We test and validate the proposed model with empirical  data from 135 users of the Facebook page. The results show that interactivity, medium dependency from the medium  credibility dimension and argument strength from the message credibility dimension are main determinants of the  information credibility. However, we did not observe any moderating effect of personal expertise between two  credibility dimensions and information credibility, which suggested from ELM.  
+© 2015 Published by Elsevier Ltd. Selection and/or peer-review under responsibility of the scientific  
+© 2015 The Authors. Published by Elsevier B.V. This is an open access article under the CC BY-NC-ND license  (http://creativecommons.org/licenses/by-nc-nd/4.0/). 
+committee of The Third Information Systems International Conference (ISICO 2015)  Peer-review under responsibility of organizing committee of Information Systems International Conference (ISICO2015)
+Keywords: Information credibility; Facebook; online rumour; medium credibility; message credibility; ELM  
+1. Introduction  
+Social media depend on mobile and web-based technologies to create highly interactive platforms through  which individuals and communities share, co-create, discuss, and modify user-generated content. They  
+* Corresponding author. Tel.: +852 5646 9792;  
+E-mail address: ruohanli2-c@my.cityu.edu.hk (R. Li) ahysuh@cityu.edu.hk (A. Suh). 
+1877-0509 © 2015 The Authors. Published by Elsevier B.V. This is an open access article under the CC BY-NC-ND license  (http://creativecommons.org/licenses/by-nc-nd/4.0/). 
+Peer-review under responsibility of organizing committee of Information Systems International Conference (ISICO2015) doi: 10.1016/j.procs.2015.12.146  
+ Ruohan Li and Ayoung Suh / Procedia Computer Science 72 ( 2015 ) 314 – 328 315 
+introduce substantial and pervasive changes to communication between businesses, organizations,  communities, and individuals [1]. The difference between social media platforms and traditional media  channels is that users of social media platforms become content creators, not just content reviewers. We  encounter a great deal of information in our daily life, and one of the criteria we use to filter information  is its credibility, or believability [2]. Information credibility is defined as the extent to which one  perceives information to be believable [3], and is a strong predictor of an information consumer’s further  action [4]. Because large-scale collaborative creation is one of the main ways of forming information in  the social network, the user-generated content is sometimes viewed with skepticism; readers do not  consider it as a reliable source of information [6]. Previous research has reported how to judge the  information credibility on traditional media or websites. However, information on social media platforms  suffers from a lack of professional gatekeepers to monitor content. It is not unusual to find that unverified  or falsified information continues to flood on social media. In this situation, information consumers are  forced to look for new ways to evaluate the credible information. While some researchers have addressed  issues related to the information credibility on social media, they mainly focused on a specific type of  social media platforms, such as blogs or Twitter. Furthermore, most previous studies have produced  fragmented and equivocal research findings. The fractured state of the research and the lack of a coherent  theoretical foundation have limited our understanding regarding the elements of credibility assessment on  social media platforms. Consequently, the question as to what factors influence the information credibility on social media platforms still remains unclear.  
+To fill this gap, this study focuses on the dynamics observed in Facebook pages during the Umbrella  Movement in Hong Kong beginning on September 27, 2014. People used Facebook pages as a new  method to release verified information. Many Facebook pages were created and played a role as fact checking machines. Those Facebook pages allow people to more efficiently manage the quality of  information they have to process during the Umbrella Movement in Hong Kong. Among others, a  Facebook page, “LIVE: Verified updates” that developed by a group of students, has been known to serve  as an effective filtering mechanism [9]. Although information in this Facebook page was user-generated  content and the fidelity of it was hardly judged, this page gained more than 100,000 “Likes” in only four  days during that period. With the emergence of new usage of Facebook pages and new audience of those  platforms, a more precise understanding of the factors that influence the information credibility is  required. Hence, the current study is an effort to answer the following question:  
+What are the factors that influence the information credibility on Facebook pages?  
+To develop a theoretical framework for research question, we rely on two traditional dimensions of  credibility— medium and message credibility—which are supported in the literature [10, 11]. We also  adopt the persuasion theory—the Elaboration Likelihood Model (ELM) [40] to evaluate receiver’s judgment of the information credibility under different levels of expertise. This paper proceeds as follow:  In the next section, we do some literature review to introduce the elements of credibility assessment.  Since the differences among various media channels, we utilize previous literature to develop our  research model and make it more suitable for our study context—Facebook-based platforms. We also  propose some hypotheses. After that, the research methodology is introduced, hypothesis tests are  performed, and results are discussed. At the end, limitations and possibilities of future research are  suggested.  
+2. Theoretical background and hypotheses  
+Research on information credibility began with an interest in its role in the persuasion process— developed by Petty and Cacioppo [40], the elaboration likelihood model (ELM) [40] explains how people 
+316 Ruohan Li and Ayoung Suh / Procedia Computer Science 72 ( 2015 ) 314 – 328  
+become persuaded, providing researchers with a solid theoretical ground to explain what factors influence  people’s perceptions of information credibility. The main tenet of the theory is that there are two routes  that can affect information receiver’s attitude towards the information; the central and the peripheral  routes: (1) the central route that requires lots of diligent consideration of informational factors, such as  content and argument strength of information; and (2) the peripheral route that considers less cognitive  work but focuses on information-irrelevant factors that information consumer use to assess the  information.[40] ELM suggests two factors—information consumer’s motivation and ability—can be the  significant moderators to shift the effects of central and peripheral factors on people’s perception of  information credibility. When people has high level of ability to evaluate the information credibility, he or  she will take central route that consider information content very carefully. When people have minor level  of ability to evaluate the information credibility, he or she will take peripheral route that put effort to  evaluate medium that provide information.  
+Drawing on ELM, we develop a theoretical model that predicts information credibility of social media  platforms. To do so, we first review credibility literature and identify two dimensions of the information  credibility—medium credibility and message credibility. Medium credibility refers to the perceived level  of credibility that individual users have of a specific medium [12, 13]. Message credibility refers to the  perceived credibility of the communicated message itself, such as informational quality, accuracy, or  currency [11]. Next, we derive five key factors from the two dimensions; medium credibility and message  credibility. Three factors, medium dependency, interactivity, and medium transparency were derived from  the medium credibility dimension, two factors, argument strength and information quality were derived  from message credibility dimension. Finally, drawing on the persuasion theory, we identify an  individual’s expertise moderates the effects of those five determinants from medium/message credibility  dimension on information credibility. As shown in Figure 1, we develop research model that explains  information credibility on Facebook pages.  
+  
+2.1. Theoretical credibility dimensions  
+Previous research has argued that readers are less likely to pay attention to information that they do not  believe [8]. Therefore, perceived information credibility has been considered important for the new media  survival [49]. Information credibility is defined as the extent to which one perceives information to be  believable [3], and is a strong predictor of information reader’s further actions, such as recommendation  or willingness to adopt viewpoint of the received information [4]. Researchers have used several  perspectives to explain how to judge the information credibility. According to ELM, conventionally,  information credibility can be investigated by three dimensions—medium, message and source credibility  [10, 11]. Medium credibility refers to the perceived levels of credibility a specific medium that  individuals used [12, 13]. Message credibility refers to the perceived credibility of the communicated  message itself, such as informational quality, accuracy, or currency [11]. Source credibility focuses on the  expertise or trustworthiness of the source as the likelihood to provide credible information [14, 15, 16, 17,  18, 19]. Source credibility rates the authors who provided the information in a way they are credible or  not. However, in some cases (e.g., the context of the Umbrella Movement in Hong Kong), it was  observed that people do not care about source information credibility when they “give a like” to a  Facebook page. Accordingly, we do not take account of source credibility into our research. In this study,  we try to find some new determinants from the remaining two dimensions that lead to this situation.  
+ 
+ Ruohan Li and Ayoung Suh / Procedia Computer Science 72 ( 2015 ) 314 – 328 317 
+2.2. Medium credibility 
+Information on different platforms has different evaluation criteria of medium credibility. Wathen and  Burkell [2] summarized some variables of medium credibility in the context of traditional media and  websites. Research suggests that surface aspects of presentation are relevant to the assessment of medium  credibility [2], for example, new features of websites, such as interface design of websites [21]. Applying  the criteria for the assessment of medium credibility, researchers examined the credibility of social media  platforms, such as blogs and the credibility of Twitter [22, 23]. While previous studies have attempted to  identify the factors that determine medium credibility, focusing on the design features, few studies  empirically examined the information credibility on Facebook pages from user’s perspective. In the  present study, we identified that the customization of layouts in Facebook pages supports only language  change, but does not support background or color changes, which means different Facebook pages have  almost same layouts. Consequently, instead of design features of Facebook pages as attributes of medium  credibility, drawing on extensive literature review [33, 34, 35, 46], we identify the factors that determine  the medium credibility: medium dependency, interactivity, and medium transparency.  
+Medium dependency  
+The media dependency theory suggested that media have capabilities to satisfy audience needs [46].  Medium dependency refers to a relation reflecting how individuals’ goals are conditional upon the  resources media afford. [7, 20] In our research, medium dependency is defined as the feeling or  perception of having no alternatives other than the specific media to get informed about reality [24]. Prior  studies commonly argue that when individual users rely more on a specific medium for information, they  consider it to be more credible than other media [25, 26, 27]. Applying the logic to Facebook pages, we  posit that an individual who perceived a high level of dependency on a medium is more likely to consider  the information from the medium credible. Thus, we formulate the following hypothesis:  
+H1: Medium dependency is positively related to information credibility.  
+Interactivity  
+The concept of interactivity has often been defined and measured from technical perspective. In most  Internet-related research, interactivity is interpreted as the computer’s capability to exchange information  between users and the interface [33]. However, some researchers suggested that interactivity should be  defined and measured by psychological factors [34, 35]. Combining these two directions of definition,  interactivity encompasses the likelihood of engagement in interaction, the perceived ease of interaction,  and the degree of rapport that is activated [33]. Previous findings from literature indicate that individual  users tend to trust information when they perceive a higher level of interactivity in a social media  platform [33]. Consequently, we assume interactivity is strongly associated with medium credibility. An  individual who perceived a high level of interactivity on a medium is more likely to consider the  information from the medium credible. Accordingly, we formulate the following hypothesis:  
+H2: Interactivity is positively related to information credibility.  
+Medium transparency  
+Medium transparency refers to an individual’ perceived willingness to share information freely and  frankly with others on a specific medium [28, 29, 30]. Several studies in public relations propose that  medium transparency is key to building relational trust [31, 32]. It has been also suggested that social  media users consider blogs to be credible because blogs are independent from traditional and corporate 
+controlled media [31], which can allow bloggers to write in-depth, opinionated messages in a transparent  manner [33]. Therefore, we posit that medium transparency is a factor that determines medium credibility 
+318 Ruohan Li and Ayoung Suh / Procedia Computer Science 72 ( 2015 ) 314 – 328  
+[32]. Specifically, we argue that an individual who perceived a high level of transparency on a medium is  more likely to consider the information from the medium credible. Accordingly, we infer the following  hypothesis:  
+H3: Medium transparency is positively related to information credibility.  
+2.3. Message credibility 
+The information credibility is receiver-based judgment that includes both objective perceptions of  message credibility and subjective judgment of medium credibility [5]. Message credibility is the  perceived credibility of the communicated message itself, such as informational quality, accuracy, or  currency [11]. In other words, message credibility can be assessed by the information content on a  medium. In this study, we identify two factors that determine message credibility: argument strength and  information quality.  
+Argument strength  
+Argument strength is defined as the extent to which a message receiver views that argument to be  convincing or valid in supporting its position [38]. Argument strength can be evaluated by completeness  and the logic of message [37]. If an individual perceives the information has some valid arguments, he or  she will develop a positive attitude toward the information and consider it to be credible [38]. Several  studies have confirmed that argument strength is positively affected the attitude of the receiver, especially  under the circumstance of online platforms [39]. Thus, we propose the following hypothesis:  
+H4: Argument strength is positively related to information credibility.  
+Information quality  
+How information is presented influences the choice processes of decision makers and can change how  the user makes decisions [43]. Information quality (IQ) is concerned as the fitness for use of the  information provided. Information quality has become a critical concern of organizations and an active  area of Management Information Systems (MIS) research [44]. From academics’ view of IQ dimensions,  there are four dimension of information quality—Intrinsic IQ, Contextual IQ, Representational IQ and  Accessibility IQ. Given that our research focuses on the information credibility, our study employs the  concept of the intrinsic IQ and defines it as the matter of degree, ranging from the accurate and objective  presentation to the currency of information. We adopt accuracy and objectivity as items to measure the  perceived information quality on the Facebook-based platform. Researchers have consistently observed  that presentation style of message is part of the typical formulation of a reliable message [2]. Therefore, we hypothesize:  
+H5: Information quality is positively related to information credibility.  
+2.4. The moderating effect of expertise 
+According to the ELM, information receiver’s ability to process the information shape the effects of  central and peripheral factors on the receiver’s perception of information credibility [41]. Applying the  notion of the ELM to the context of social media, it is inferred that the judgments of information  credibility on Facebook pages platform can be better understood when we take individuals’ ability to  process information into consideration. Individual ability can be treated as the level of expertise, which is  the extent to which an individual has background knowledge to understand the information on the specific  platform [42]. Thus, we propose the following hypothesis: 
+ Ruohan Li and Ayoung Suh / Procedia Computer Science 72 ( 2015 ) 314 – 328 319 
+H6: Personal expertise moderates the effects of medium credibility and message credibility on  information credibility.  
+Since we introduce five key determinants from medium credibility dimensions and message credibility  dimensions, there are also some sub-hypotheses related to those five factors—medium dependency;  interactivity; medium transparency; argument strength and information quality. 
+H6a: The higher expertise an individual has, the less effects of medium dependency on the credibility  of the information.  
+H6b: The higher expertise an individual has, the less effects of interactivity on the credibility of the  information.  
+H6c: The higher expertise an individual has, the less effects of medium transparency on the credibility  of the information.  
+H6d: The higher expertise an individual has, the more effects of argument strength on the credibility of  the information 
+H6e: The higher expertise an individual has, the more effects of information quality on the credibility  of the information.  
+Medium Credibility 
+Medium Dependency 
+Interactivity 
+Medium Transparency
+	
+
+
+
+Message Credibility 
+Argument Strength 
+Information Quality
+	
+
+
+
+Figure.1. Research model 
+3. Methods  
+Personal Expertise
+Information  
+Credibility 
+To test the proposed research model, we adopted a cross-sectional survey method for data collection  and evaluated our hypotheses by applying the partial least squares (PLS) method. The unit of analysis for  this study is an individual user of social media platforms.  
+3.1. Measurement  
+All measures were adapted from previous research, with some amendments to fit our research context.  The questionnaire consists of two parts; Part A including an explanation of the general research purpose  and a brief introduction of the use of Facebook during the Umbrella Movement and Part B including  question items. Respondents were asked to answer the questions referring to the Facebook use as they had  
+320 Ruohan Li and Ayoung Suh / Procedia Computer Science 72 ( 2015 ) 314 – 328  
+experienced during that time. We also provided four samples that including top four popular Facebook  pages, which provided verified information during the Umbrella Movement, and a blank for respondents  to recognize their favorite Facebook page at that time. We asked the frequency of the use of a specific  Facebook page. Therefore, we can receive the different evaluation from different Facebook pages. As for  those questions related to hypotheses, the multiple-item method was used. And all of those questions had  a context of “When I was using this Facebook page: I think...”. Respondents were required to indicate the  extent to which they agree or disagree with a series of statements, measured by using a 5-point Likert  Scale (1= Strongly Disagree; 5= Strongly Agree). In our research model, medium credibility was  examined from three factors, Medium dependency, Interactivity, and Medium transparency. The general  level of medium dependency on a specific Facebook page was measured using the modified 6 items based  on Medium Dependency Theory [43, 48]. Typical items include “I think this Facebook page could help  me to deepen my own understanding about the events.”; “I think this Facebook page could help me to  participant in related activities.” In order to evaluate the overall interactivity on the specific Facebook  page, we adapted and modified 4 items from [33]. To capture the individual perception of medium  transparency on the specific Facebook page, we used the 3 measurement items revised from literature [28,  29, 30]. The measurement of message credibility contains two constructs, argument strength and  information quality. Argument strength was adapted from [45]. The items for information quality mainly  related to accuracy, objectivity, understandability and timeliness, which were adapted from [44]. The  perceived information credibility on the specific Facebook page was measured by using 4 items modified  from [49]. To measure personal expertise, we adapted from [42]. The measurement items are shown in  Appendix A.  
+3.2. Data collection 
+A web survey was conducted to test the research model proposed above. We used the question, “Did  you use Facebook as a tool to gain information during the Umbrella Movement?” to filter the  respondents. If the respondent answered “no”, the online survey did not proceed. There are 146 people  had started to answer the questionnaire and 135 people used Facebook as an information tool during the  Umbrella Movement. We eliminated those invalid questionnaires and, finally, 135 individuals were used  to test the hypotheses. Among the 135 respondents, 72 (53.3%) were male and 63 (46.66%) were female.  They were generally young, less than 30 years old (85.18%) as described in Table 1.  
+Table 1. Demographic information of respondents 
+Item Category Frequency (Ratio) 
+Gender Male 72 (53.33%) 
+Female 63 (46.66%) 
+Age Less than 18 27 (20%) 
+18-29 88 (65.18%) 
+30-39 14 (10.37%) 
+40 or older 6 (4.44%) 
+Education Level High school or Below 31 (22.96%) 
+Bachelor's degree 71 (52.59%) 
+Master's degree 31 (22.96%) 
+Doctoral degree 2 (1.43%) 
+ Ruohan Li and Ayoung Suh / Procedia Computer Science 72 ( 2015 ) 314 – 328 321 
+Most of respondents were well educated (77.03%), they have a university degree. They were familiar  with the use of Facebook page to gain related information during the Umbrella Movement, and 122  (89.7%) reported using the specific Facebook page several times a day. 103 people (75.7%) chose  Facebook page: LIVE: Verified updates as the information source. This Facebook page was the most  popular one among respondents, which as same as we observed before. Table 1 provides an overview of  the respondents’ characteristics. 
+4. Results 
+4.1. Measurement model 
+We conducted a confirmatory factor analysis (CFA) to assess item reliability, convergent validity, and  discriminant validity. We examined the loadings and the t-statistics of the indicators on their  corresponding construct. According to Hulland [50], items with loading below 0.4 were omitted. Three  items from media dependency (MD1, MD3, and MD4), one item from Argument Strength (AS3), and one  item from Information credibility (CRDT3) were removed because of their low loading values. For the  test of internal consistency, construct reliability was examined using the composite reliability. All  reliability measures were 0.7 or higher, which is well above the recommended level of 0.7, indicating  adequate construct reliability (See Table 3).  
+Table 2. Factor loadings for all constructs 
+AS CRED INTC IQ MD MT PE 
+AS1 0.86 0.08 -0.44 0.55 -0.31 -0.34 -0.03 
+AS2 0.68 0.08 -0.47 0.37 -0.29 -0.41 0.09 
+AS4 0.97 0.30 -0.24 0.58 -0.26 -0.21 -0.02 
+CRED1 0.04 0.90 0.31 0.13 0.30 0.37 0.08 
+CRED2 0.33 0.93 0.43 0.18 0.32 0.44 0.05 
+CRED4 0.22 0.75 0.15 0.24 0.10 0.04 0.01 
+INTC1 -0.42 0.26 0.88 -0.29 0.62 0.61 0.02 
+INTC2 -0.60 0.07 0.79 -0.47 0.66 0.52 0.04 
+INTC3 -0.21 0.41 0.92 -0.13 0.61 0.56 -0.01 
+INTC4 -0.32 0.40 0.93 -0.31 0.64 0.55 -0.02 
+IQ1 0.72 0.07 -0.53 0.64 -0.54 -0.26 0.03 
+IQ2 0.23 0.20 -0.03 0.77 0.08 0.04 0.01 
+IQ3 0.63 0.17 -0.24 0.84 -0.20 -0.12 0.02 
+IQ4 0.38 0.07 -0.25 0.62 -0.44 -0.15 -0.01 
+MD2 -0.48 0.02 0.63 -0.43 0.74 0.32 -0.14 
+MD5 -0.29 0.35 0.68 -0.19 0.99 0.38 -0.01 
+MD6 -0.29 0.07 0.50 -0.26 0.78 0.30 -0.07 
+MT1 -0.31 0.34 0.54 -0.06 0.34 0.93 0.01 
+MT2 -0.35 0.32 0.59 -0.24 0.45 0.84 0.03 
+MT3 -0.18 0.36 0.54 0.03 0.26 0.92 0.09 
+PE1 -0.01 0.07 0.01 -0.01 -0.03 0.05 0.98 
+PE2 0.02 0.01 0.01 0.03 -0.02 0.05 0.61 
+PE3 -0.00 0.02 -0.04 0.07 -0.02 0.03 0.84 
+To assess discriminant validity, we examined the average variance extracted (AVE) value. For  satisfactory discriminant validity, the AVE from the construct should be greater than the variance shared 
+322 Ruohan Li and Ayoung Suh / Procedia Computer Science 72 ( 2015 ) 314 – 328  
+between the construct and other constructs in the model. For each construct, the square root of the average  variance extracted should exceed the construct’s correlation with every other construct. The results  indicate that the AVE for each construct is larger than the correlation of that construct with all the other  constructs in the both models, ensuring the discriminant validity of the constructs. 
+For the test of internal consistency, construct reliability was examined using the composite reliability.  All reliability measures were 0.7 or higher, which is well above the recommended level of 0.7 [51],  indicating adequate construct reliability. The Average Variance Extracted (AVE), which should above 0.5  [51] is used to measure convergent validity. As shown in Table 3, all AVE values in our study meet this  requirement. 
+Table 3. Descriptive results and internal consistency of constructs 
+Construct Number of items AVE Composite  Reliability 
+Cronbach’s Alpha 
+MD 3 0.71 0.88 0.86 
+INTC 4 0.78 0.93 0.92 
+MT 3 0.80 0.92 0.86 
+AS 4 0.74 0.88 0.83 
+IQ 4 0.52 0.81 0.73 
+CRED 4 0.71 0.90 0.84 
+EXPT 3 0.68 0.86 0.81 
+Discriminant validity describes the degree to which the measure of a construct is different from the  measures of other constructs that is does not theoretically resemble. And the square root of every AVE of  each construct should larger than the construct’s correlation with every other constructs. This condition of  discriminant validity was upheld in our study, as shown in Table 4. All values of the square root of AVE  were above 0.7, and exceeded all other cross-correlations. This presents that the variance explained by  each construct was larger than the measurement error variance [51]. Thus, the measures meet the  requirement of discriminant validity. 
+Common method bias is a measurement error [47] that threatens the validity of conclusions drawn  upon the statistic results. We tested the common method bias to prevent any damage from self-report measurement. We undertook the principal component factor analysis to examine the existence of a factor  that explains the majority of common variance. The results from this test revealed that the amount of  variance explained by the identified five factors, with an average of 15.1 percent. On the basis of the  results of test, we concluded that there is little risk of common method bias in the study.  
+Table 4. AVE and discriminant validity 
+AVE AS CRED IQ INTC MD MT PE 
+AS 0.71 0.84 
+CRED 0.74 0.25 0.86 
+IQ 0.52 0.60 0.21 0.72 
+INTC 0.78 -0.36 0.38 -0.28 0.88 
+MD 0.71 -0.32 0.31 -0.21 0.69 0.84 
+MT 0.80 -0.31 0.3 -0.09 0.62 0.39 0.90 EXPT 0.68 -0.01 0.06 0.02 -0.01 -0.03 0.05 0.82
+Note: Diagonal elements (in bold) are the square root of the average variance extracted (AVE). Off-diagonal elements are the  correlations among constructs. 
+ Ruohan Li and Ayoung Suh / Procedia Computer Science 72 ( 2015 ) 314 – 328 323 
+4.2. Test of the structural model 
+To test the research model, partial least squares (PLS) was used. Given that this study is an early  attempt to develop a theoretical model that predicts what factors influence the information credibility on  Facebook-based platform, PLS is appropriate. The model explained 42% of the variance of information  credibility. As we hypothesized, the results showed that perceived interactivity and medium transparency  positively influenced information credibility, supporting H2 and H3. The results also show that argument  strength has a significant on information credibility, supporting H4. However, the results indicated that  medium dependency (H1) and information quality (H5) did not significantly influence information  credibility. Figure 2 shows the results of the test of the structural model.  
+Medium Dependency 
+0.156 
+Interactivity
+Medium Transparency 
+Argument Strength 
+Information Quality 
+Figure 2. Results of the structural model 
+0.303* 
+0.266* 
+0.438*** 0.108 
+0.117 
+-0.162 
+0.112 
+-0.057 
+-0.060 
+Personal Expertise 
+Information Credibility R2=0.425 
+*<.05; **<.01;***<.001 
+Significant path 
+Insignificant path 
+On the other hand, the results of this study indicated that personal expertise has no significant  moderating effects between factors from medium/message credibility dimensions and the perceived  information credibility. Contrary to our expectations, the results did not match with literature.  Accordingly, all hypotheses related to moderating effects were not supported.  
+5. Discussion 
+The aim of this study was to examine the factors that influence the information credibility on social  media platforms. This study identified three factors—medium dependency (H1), interactivity (H2) and  medium transparency (H3) as per medium credibility. Contrary to our expectation, the results show that  medium dependency has no significant influence on information credibility. We attribute the results to the  characteristics of our respondents, who are mainly young people (85.18%) at age below 30. They are the  first generation to come of age in a digital world [46]. In general, this generation has grown up with video  games and social networking, and prefer to be connected at all times to their friends and family through  texting, instant messaging, mobile phones, and Facebook and Myspace [46]. They are familiar with the  
+324 Ruohan Li and Ayoung Suh / Procedia Computer Science 72 ( 2015 ) 314 – 328  
+use of social media platform and there are many different social media platforms for them to use. Individuals who use alternative media sources feel less dependent on the media than those who do not use  alternative sources. We assume that respondents use different social media to gain related information and  the dependency of one specific Facebook page is not too high. The results show that interactivity on  medium was positively associated with information credibility. We attribute the results to the fact that  interactivity presents the likelihood of engagement in interaction, the perceived ease of interaction, and  the degree of rapport activated. Furthermore, this study finds that a significant relationship exists between  medium transparency and information credibility. The results imply that respondents feel that the Facebook pages are independent from mainstream, corporate-controlled media, which can allow authors  to write in-depth, opinionated messages in a transparent manner.  
+ This study identified two factors—argument strength (H4) and information quality (H5) as per message credibility. Our results show that while argument strength has a significant positive influence on  information credibility, information quality has no influence on information credibility. The results  indicate that even though information on Facebook-based platform is based on user-generated content,  respondents hold the opinion that the information was well-planned and had some degrees of strength of  persuasive arguments. In other words, individual have high level of message credibility, and this trust  level might be transferred to medium itself. Future study might consider this type of trust transfer between  social media platforms and information content more in-depth.  
+In addition, we found that there was no moderating effect of personal expertise. One possible  explanation is that information on those social media platforms might not require profound knowledge for  the respondents to be able to understand it. We presume that information consumer can easily get the  viewpoint of information on this social media platform.  
+5.1. Theoretical and practical implications 
+Overall, this study is a response to the call for more in depth research on information credibility on  social media platforms and it holds implication for the academic world, especially, because it served to  broaden our understanding of the factors from the two dimensions (i.e., medium credibility and message  credibility). The main theoretical contribution of this research is that we included some new attributes  into the medium credibility. While many researchers have studied some technical qualities of a medium  regarding medium credibility, little research has considered this concept from the users’ perspective. Our  research provides a more suitable model for today’s online environment, considering medium credibility and message credibility. We believe our conceptualization, measurement, and nomological networks can  be applicable to assess information credibility in a variety of social media platforms, such as Twitter or  YouTube. Since it is impossible to wipe out all of online rumors, credible information on social media  platforms can play an important role for the sustainability of social media. Our study offers several key  implications for practice. First, the findings provide insight for information providers. They should pay  attention to different aspects of the medium credibility if they want to ensure that users see their user generated content as credible and therefore useful. In order to have a high level of information credibility,  we suggest that managers or operations of a social media platform should keep a high level of  interactivity and medium transparency on their platform. Second, for users, to figure out what factors  influence the information credibility on a social media platform will help them more efficiently to filter  useful information, especially when the desire for truth and reliable sources is great. We suggest that  information users pay more attention to argument strength of a message.  
+ 
+ Ruohan Li and Ayoung Suh / Procedia Computer Science 72 ( 2015 ) 314 – 328 325 
+5.2. Limitations and future research 
+These findings should be interpreted in light of the study’s limitations. The first limitation is related to  our examination of the measures that is based on relatively small samples. Second, this study relied on the  self-reported, perception-based measure that was employed for capturing the perception of credibility.  Maybe, due to small samples and self-reported judgment, we did not capture any moderating effect in our  study. Future research could benefit from employing larger and more diverse samples. In addition, we  believe that our research represents exploratory stages in the development of an extended understanding  of online information assessment. To increase the generalizability of our findings, the results of our study  should be compared carefully with those that have been based on objective data [36].  
+6. Conclusion 
+While the growing popularity of the use of social media platform, especially Facebook, and its  potential to propagate misinformation, the ability to judge credible information is becoming more  important. Social media users need to pay attention to information credibility because online rumor may  cause serious harm to individuals and society, as we observed under the context of Umbrella Movement.  Our findings provide an initial step in understanding what factors influence information credibility on  Facebook pages so that information providers and users can evaluate information credibility more  effectively. While we did not observe any moderating effects from individual expertise that was  supported by previous literature, we hope that this research will motivate other research on the factors  influencing information-processing and the effect of persuasion of information on social media platforms. 
+Acknowledgements 
+This research was supported in part by grants No. CityU 21500714 from the Research Grants Council of the Hong Kong SAR, China. This work was also partly supported by the National Research Foundation of  Korea Grant funded by the Korean government (NRF-2013S1A3A2054667). 
+ 
+326 Ruohan Li and Ayoung Suh / Procedia Computer Science 72 ( 2015 ) 314 – 328  Appendix AˊMeasurement Items 
+Construct Item Measures 
+Medium Credibility 
+When I was using this Facebook page˖ 
+Dependency 
+(MD) 
+Interactivity 
+(INTC)  
+Transparency 
+(MT) 
+Message credibility 
+Argument Strength (AS) 
+Information Quality  (IQ)  
+(Accuracy; Objectivity; Understandability;  Timeliness) 
+Personal Expertise (EXPT)  
+Information  
+credibility 
+(CRED)  
+ 
+Item1  Item2  
+Item3    
+Item4  Item5  
+Item6  
+Item1  Item2  
+Item3  Item4  
+Item1  Item2  Item3  
+Item1  Item2  
+Item3  Item4  Item1  Item2  
+Item3  Item4  
+Item1  Item2  
+Item3  Item1  Item2  Item3  Item4  
+I think this Facebook page could help me to participant in related activities. I think this Facebook page could help me to get ideas about how to approach  others. 
+I think this Facebook page could help me to deepen my own understanding about  the events. 
+I think this Facebook page could help me to figure out what is happening. I think this Facebook page could help me to experience enjoyable media content. I think this Facebook page could help me to initiate discussion with others about  the media content. 
+When I was using this Facebook page˖ 
+I think communicating with other users was very easy. 
+I always communicate with other users. (e.g. make comments, give a “like”, repost  messages) 
+I could always get a lot of responses to my posts.  
+Other users replied my posts very quickly. 
+When I was using this Facebook page˖ 
+I think this Facebook page provided unbiased, balanced coverage of information. I think this Facebook page provided detail about how the news was constructed. I think this Facebook page had enough editorial freedom to share information.  
+In general, the argument of information on this Facebook page was convincing. In general, the argument of information on this Facebook page was persuasive. In general, the argument of information on this Facebook page was valid. In general, the argument of information on this Facebook page was logic. 
+In general, the information on this Facebook page was accurate. In general, the information on this Facebook page was objectively presented. In general, the information on this Facebook page was easy to understand. In general, the information on this Facebook page was sufficiently timely. 
+I am familiar with the topic of information on this Facebook page. I am very knowledgeable in evaluating quality of information on this Facebook  page. 
+I do not have any difficulty in understanding information on this Facebook page. In general, I think information on this Facebook page is believable. In general, I think information on this Facebook page is factual. In general, I think information on this Facebook page is credible. In general, I think information on this Facebook page is trustworthy. 
+ Ruohan Li and Ayoung Suh / Procedia Computer Science 72 ( 2015 ) 314 – 328 327 
+References:  
+[1] Kietzmann, J. H., Hermkens, K., McCarthy, I. P., & Silvestre, B. S. (2011). Social media? Get serious! Understanding the  functional building blocks of social media. Business Horizons, 54(3), 241-251. 
+[2] Wathen, C. N., & Burkell, J. (2002). Believe it or not: Factors influencing credibility on the Web. Journal of the American  society for information science and technology, 53(2), 134-144.  
+[3] McKnight, D. H., & Kacmar, C. J. (2007, August). Factors and effects of information credibility. In Proceedings of the 9th International Conference on Electronic Commerce (pp. 423-432). ACM.  
+[4] McKnight, H., & Kacmar, C. (2006, January). Factors of information credibility for an internet advice site. In Proceedings of the  39th Annual Hawaii International Conference on System Sciences (HICSS), IEEE.  
+[5] Smith, R. E., & Vogt, C. A. (1995). The effects of integrating advertising and negative word-of-mouth communications on  message processing and response. Journal of Consumer Psychology, 4(2), 133-151.  
+[6] Wikipedia. Trustworthiness on social media. Retrieved from http://en.wikipedia.org/wiki/Social_media#Trustworthiness  [7] Ball-Rokeach, S. J. (1985). The origins of individual media-system dependency a sociological framework. Communication  Research, 12(4), 485-510. 
+[8] Gaziano, C. (1988). How credible is the credibility crisis? Journalism Quarterly, 65, 267-78, 375. 
+[9] LIVE: Verified updates. (2014). Retrieved from https://www.facebook.com/hkverified 
+[10] Eysenbach, G. (2007). Credibility of health information and digital media: New perspectives and implications for youth.  [11] Metzger, M. J., Flanagin, A. J., Eyal, K., Lemus, D. R., & McCann, R. M. (2003). Credibility for the 21st century: Integrating perspectives on source, message, and media credibility in the contemporary media environment. Communication Yearbook, 27,  293-336.  
+[12] Newhagen, J., & Nass, C. (1989). Differential criteria for evaluating credibility of newspapers and TV news. Journalism  Quarterly, 66(2), 277.  
+[13] Sundar, S. S., & Nass, C. (2001). Conceptualizing sources in online news. Journal of Communication, 51(1), 52-72. [14] Armstrong, C. L., & Nelson, M. R. (2005). How newspaper sources trigger gender stereotypes. Journalism & Mass  Communication Quarterly, 82(4), 820-837.  
+[15] Berlo, D. K., Lemert, J. B., & Mertz, R. J. (1969). Dimensions for evaluating the acceptability of message sources. Public  Opinion Quarterly, 33(4), 563-576.  
+[16] Burgoon, J. K., & Hale, J. L. (1984). The fundamental topoi of relational communication. Communication Monographs, 51(3),  193-214.  
+[17] Flanagin, A. J., & Metzger, M. J. (2003). The perceived credibility of personal Web page information as influenced by the sex  of the source. Computers in Human Behavior, 19(6), 683-701.  
+[18] Hovland, C. I., Janis, I. L., & Kelley, H. H. (1953). Communication and persuasion; psychological studies of opinion change.  [19] McCroskey, J. C., & Richmond, V. P. (1995). Fundamentals of human communication: An interpersonal perspective.  Waveland Pr Inc.  
+[20] Grant, A. E., Guthrie, K. K., & Ball-Rokeach, S. J. (1991). Television shopping a media system dependency  perspective. Communication Research, 18(6), 773-798. 
+[21] Critchfield, R. (1998). Credibility and web site design. [On-line]. Available:  
+http://www.warner.edu/critchfield/hci/critchfield.html.  
+[22] Kang, M. (2010). Measuring social media credibility: A study on a Measure of Blog Credibility. Institute for Public Relations.  [23] Westerman, D., Spence, P. R., Van Der Heide, B. (2012). A social network as information: The effect of system generated  reports of connectedness on credibility on Twitter. Computers in Human Behavior, 28, 199–206. 
+[24] Jackob, N. G. E. (2010). No alternatives? The relationship between perceived media dependency, use of alternative information  sources, and general trust in mass media. International Journal of Communication, 4, 18.  
+[25] Flanagin, A. J., & Metzger, M. J. (2000). Perceptions of Internet information credibility. Journalism & Mass Communication  Quarterly, 77(3), 5-540. 
+[26] Johnson, T. J., & Kaye, B. K. (1998). Cruising is believing?: Comparing Internet and traditional sources on media credibility  measures. Journalism & Mass Communication Quarterly, 75(2), 325-340.  
+[27] Kiousis, S. (2001). Public trust or mistrust? Perceptions of media credibility in the information age. Mass Communication &  Society, 4(4), 381- 403. 
+[28] Butler, J. K. (1991). Toward understanding and measuring conditions of trust: Evolution of a conditions of trust inventory.  Journal of Management, 17(3), 643-663.  
+[29] Gabarro, J. J. (1978). The development of trust, influence, and expectations. Interpersonal behavior: Communication and  understanding in relationships, 290, 303. 
+[30] Mishra, A. K. (1996). Organizational responses to crisis: The centrality of trust. In R. M. Kramer & T. R. Tyler (Eds.), Trust in  organizations: Frontiers of Theory and Research (pp. 261–287). Thousand Oaks, CA: Sage.  
+[31] Andrews, P. (2003). Is blogging journalism? : Nieman Reports. 
+[32] Yang, S. U., & Lim, J. S. (2009). The effects of blog-mediated public relations (BMPR) on relational trust. Journal of Public  Relations Research, 21(3), 341-359.
+328 Ruohan Li and Ayoung Suh / Procedia Computer Science 72 ( 2015 ) 314 – 328  
+[33] Scoble, R., & Israel, S. (2006). Naked conversations: how blogs are changing the way businesses talk with customers. John  Wiley & Sons. 
+[34] Ha, L., & James, E. L. (1998). Interactivity reexamined: A baseline analysis of early business Web sites. Journal of  Broadcasting and Electronic Media, 42, 457–474.  
+[35] Burgoon, J. K., Bonito, J. A., Dmbar, N. E., Kam, K., & Fischer, J. (2002). Testing the inter-activity principle: Effects of  mediation, propinquity, and verbal and nonverbal modalities in interpersonal interaction. The Journal of Communications, 52,  657–677. 
+[36] O’Brien, H. L. (2010). The influence of hedonic and utilitarian motivations on user engagement: The case of online shopping  experiences. Interacting with Computers, 22(5), 344-352. 
+[37] Kim, D., & Benbasat, I. (2009). Trust-assuring arguments in B2C e-commerce: impact of content, source, and price on trust.  Journal of Management Information Systems, 26(3), 175-206.  
+[38] Cacioppo, J. T., Petty, R. E., & Morris, K. J. (1983). Effects of need for cognition on message evaluation, recall, and  persuasion. Journal of Personality and Social Psychology, 45(4), 805. 
+[39] Sia, C. L., Tan, B. C., & Wei, K. K. (1999). Can a GSS stimulate group polarization? An empirical study. Systems, Man, and  Cybernetics, Part C: Applications and Reviews, IEEE Transactions on, 29(2), 227-237.  
+[40] Petty, R. E., & Cacioppo, J. T. (1986). The Elaboration Likelihood Model of Persuasion (pp. 1-24). Springer New York. [41] Luo, C., Luo, X. R., Schatzberg, L., & Sia, C. L. (2013). Impact of informational factors on online recommendation credibility:  The moderating role of source credibility. Decision Support Systems, 56, 92-102. 
+[42] Rudell, F. Consumer Food Selection and Nutrition Information, NY: Praeger, 1979.  
+[43] Ball-Rokeach, S. J. (1998). A theory of media power and a theory of media use: Different stories, questions, and ways of  thinking. Mass Communication and Society, 1(1-2), 5-40. 
+[44] Kahn, B. K., Strong, D. M., & Wang, R. Y. (2002). Information quality benchmarks: product and service performance.  Communications of the ACM, 45(4), 184-192. 
+[45] Petty, R. E., & Morris, K. (1983). Effects of need for cognition on message evaluation, recall, and persuasion. Journal of  Personality and Social Psychology, 45(4), 805-818. 
+[46] Ito, M., et al. (2008). Living and Learning with New Media: Summary of Findings from the Digital Youth Project. John D. and  Catherine T. MacArthur Foundation. 
+[47] Podsakoff, P. M., MacKenzie, S. B., & Podsakoff, N. P. (2012). Sources of method bias in social science research and  recommendations on how to control it. Annual Review of Psychology, 63, 539-569. 
+[48] Patwardhan, P., & Ramaprasad, J. (2005). Rational integrative model of online consumer decision making. Journal of  Interactive Advertising, 6(1), 2-13. 
+[49] Mackay, J. B., & Lowrey, W. (2011). The credibility divide: reader trust of online newspapers and blogs. Journal of Media  Sociology, 3(1-4), 39-57. 
+[50] Hulland, J. (1999). Use of partial least squares (PLS) in strategic management research: A review of four recent studies.  Strategic Management Journal, 20(2), 195-204. 
+[51] Fornell, C., & Larcker, D. F. (1981). Structural equation models with unobservable variables and measurement error: Algebra  and statistics. Journal of Marketing Research, 382-388.

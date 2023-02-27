@@ -1,0 +1,204 @@
+﻿Asian Journal of Humanities and Social Sciences (AJHSS) Volume 2—Issue 2, May, 2014 
+ISSN: 2320-9720 
+Relationship between Facebook Practice and Academic  Performance of University Students 
+Nebiat Negussie1and Girum Ketema2 
+Department of Public Administration, Punjabi University, Patiala, Punjab, India1 E-mail: nebitcorsalini@gmail.com 
+Director of ITCDO, Jimma University , Jimma, Ethiopia2 
+ ABSTRACT 
+Higher education institutions have great fear that student academic performance might affect  adversely because students are paying more attention towards social networking sites. This study  examined the relationship between facebook practice on academic performance of students. A  cross- sectional survey was conducted from March 2012 to March 2013 in Jimma University and  490 postgraduate students were participated in this research. The data were collected using a  pre-tested structured self administrated questionnaire. The result was analyzed in terms of  descriptive statistics followed by inferential statistics. The results indicated that there is no  significant relation between usage time and frequency of login facebook with student GPA. Even  if there is not significant relation between their personal Laptop, Office Computers and Library  Computers used to visit facebook and academic performance of students, there is negative,  moderate and significant relation between using mobile phone to visit facebook and students  academic performance. 
+Keywords: Facebook Practice, University Students, and Academic Performance  
+INTRODUCTION 
+Social media are a collection of internet websites, service and practices that help collaboration,  community building, participation and sharing information (Junco,Heiberger and Loken, 2010 ).  A major category of social media activity is called social networking (Junco,Heiberger and  Loken, 2010; Junco and Mastrodicasa,2007). The use of social networking sites has been  widespread through the world (Banquil et. al, 2009). 
+Currently, there are dozens of social networking websites available online, each with its own  special something to offer its members (Hudson Horizons,2011), but Facebook, Twitter,  MySpace and LinkedIn have become the most visited social networking sites in the world  (Haridakis and Hanson,2009). Among these face book is the most popular social networking site.  In 2009, it has more than 350 million users (Kirschner and Karpinski, 2010).  
+In Ethiopia, among social networking sites, facebook has been the prime among highly visited  social networking sites (Jibat,2012). Based on Internet World Status (Internet world status,2012)  in Ethiopia , in December 2012 among 960,331 total internet users, 902,440 have facebook  account and most user age between 25-34(Staffer,2012).
+www.ajhss.org 31 
+Asian Journal of Humanities and Social Sciences (AJHSS) Volume 2—Issue 2, May, 2014 
+ISSN: 2320-9720 
+Social networking sites have become and integrals part of higher education students  (Junco,2011). Mastrodicasa and Kepic (2005) study also showed that 85% of students who are  learning in large research Universities in USA have facebook account. In recent years, higher  educational institutions have great fear that students academic performance might affect  adversely because students are paying more attention towards social networking sites. In  developed countries this area grasps researchers’ attention but in developing countries like  Ethiopia, it is unexplored area.  
+OBJECTIVE 
+1. To examine the relationship between times spend on facebook and academic performance  of students. 
+2. To examine the relationship between the devices used to login facebook and academic  performance of students. 
+METHOD  
+A cross- sectional survey was conducted from March 2012 to March 2013 in Jimma University.  The target population of this study was all postgraduate students who were attending their  education in Jimma University during the study time. The reason why only post graduate  students included in the study that most facebook users in Ethiopia are within age range between  24-34(Staffer,2011). Based on information obtained from University Registrar office most post  graduate students are in this range rather undergraduate student. A list of 675 students obtained  from the Registrar office of Jimma University. The sample size of the study was determined by  a single population proportion formula assuming, 5% marginal error and confidence interval of  95%. The fifty percent proportion has been preferred due to lack of similar studies in Ethiopia  and accordingly the sample size was calculated to be 384. The final sample size was calculated  by using finite population number correction formula, a design effect of 2 was considered to  have adequate and representative sample size and 10% was added for non- response rate. Thus,  the final sample size calculated was 539. In order to select representative respondents, stratified  random sampling technique was employed. First, 5 Colleges and 2 Institutes in the university  namely: Jimma Institute of Technology, College of Social Sciences and Law, College of Public  Health and Medical Sciences, College of Natural Sciences, College of Business and Economics,  College of Agriculture and Veterinary Medicine and Institute of Education and Professional  Development Studies considered as strata. After determining the total sample size of the study,  by using Proportionate allocation strategy the number of samples from each collage was  determined. Finally, respondents were selected randomly by using lottery method. The data were  collected using a pre-tested structured self administrated questionnaire. Most ingredients of  questionnaire were adapted and taken from the research report of Kirschner and Karpinski  (2010), Junco(2011) Moon(2012) and Ahmed and Qazi(2011). Validity evidence for the  instrument was provided by review the questioners on: clarity in wording, relevance of the items  clarity of instruction, absence of biased words and phrases, use of Standard English and  formatting (Flower, 2002). The questionnaire was reviewed by two Ph.D candidates in Information Technology and Psychology fields. To measure the reliability of the questionnaire,  the questionnaire was pre-tested on 25, graduate students who attended their education in  College of Business and Economics before the start of actual data collection and the cronbach  alpha of the questionnaire was 0.75. The student who were participated in pilot study were 
+www.ajhss.org 32 
+Asian Journal of Humanities and Social Sciences (AJHSS) 
+Volume 2—Issue 2, May, 2014 
+ISSN: 2320-9720 
+excluded from the main study to avoid bias because of repeating the same questionnaire Appropriate modification of the questionnaire was done based on the experience of the pre-test.  The cronbach alpha of the post-test administration was 0.83. Values of 0.70 or greater are  considered adequate for a scale that will be used to analyze associations (Garson, 2006). 
+This study used SPSS version 16.0 to perform the statistical analysis. Aside from basic  descriptive analytic technique, the main analytic technique implemented was Person Product  Moment Correlation to examine the relationship between Facebook practice with academic  performance. The significance level used for the inferential statistics was 0.05. 
+RESULTS 
+A total of 490 questionnaires were returned from 539 questionnaires distributed to respondents. The response rate of the questionnaire was 91%. Four hundred seventy two (96%) of the  respondents were male, the remain 18(4%) were female. Most of participant 485(99%) were  master degree students, the remain 5(1%) were Ph.D students. Three hundred ninety Four (80%)  respondents were facebook users while 96(20%) respondents were non–users. The majority of  respondents visit facebook by their Mobile Phones 176(45%) and their Personal Laptops 172  (43%). A few students use their Office Computers 14(4%) and Library Computers’ 32(8%) to  visit facebook respectively.  
+ Table 1. Respondents’ Personal Information and Facebook Usage (N=490)
+Personal Information 
+	Frequency 
+	Percentage
+	Sex
+	
+
+	
+
+	 Male 
+	472 
+	96
+	 Female 
+	18 
+	4
+	Admission Classification 
+	
+
+	
+
+	 Master 
+	485 
+	99
+	 Ph.D 
+	5 
+	1
+	College of attending their education 
+	
+
+	
+
+	Public health and Medical 
+	222 
+	45
+	Jimma Institute of technology 
+	33 
+	7
+	Agricultural and Veterinary Medicine 
+	91 
+	19
+	Social Science and Law 
+	49 
+	11
+	Natural Science 
+	46 
+	9
+	Business and Economic College 
+	38 
+	8
+	Institute of Education and professional development studies 
+	11 
+	2
+	Facebook Usage
+	
+
+	
+
+	User 
+	394 
+	80
+	Non-User 
+	96 
+	20
+	A device used frequently to visit facebook
+	
+
+	
+
+	Personal Laptop Computers 
+	172 
+	43
+	Mobile Phones 
+	176 
+	45
+	Office computers 
+	32 
+	8
+	Library computers 
+	14 
+	4
+	
+
+
+
+www.ajhss.org 33 
+Asian Journal of Humanities and Social Sciences (AJHSS) Volume 2—Issue 2, May, 2014 
+ISSN: 2320-9720 
+Table 2 shows that age range of the respondent was 20-49 old with mean age was 25. The mean  of the student’s GPA was 3.48 (SD=0.61). The mean time of students spend on facebook was  2.31(SD=0.43) hours per day. Furthermore, the mean amount of face book login frequency were  3(SD=0.51) times per day. 
+ Table 2 descriptive statistics age, academic performance and face book activities (N=394) 
+Variables 
+	Means 
+	Standard Deviation 
+	Age 
+	25.45 
+	0.65
+	Cumulative GPA 
+	3.48 
+	0.61
+	Average duration time spend on facebook per day 
+	2.31 
+	0.43
+	Frequency login in facebook Per day 
+	2.94 
+	0.51
+	
+
+
+
+Table 3 shows correlation of students academic performance (GPA) with time spent on using  social networking sites per day, device used to access facebook , and frequency of login  facebook per day. Based on the result there is no significant relation between of time spent on  facebook (r=0.25, P>0.05) and frequency of login social networking site per day (r=0.31,  p>0.05) with students GPA. The result also indicated that there is no significant relationship  between accessing facebook with their personal Laptop(r=0.41,p>0.05), Office  Computers(r=0.38,p>0.05) and Library Computers(r=0.52,p>0.050) but there is a negative, moderate and significant relationship between using Mobile Phones to access facebook and  students GPA (r= -0.48, p<0.05). 
+Table 3. Correlation of Time spent per day, device used to login and frequency of login per day on students  GPA (N=394) 
+Independent Variables 
+	Students’ Cumulative GPA
+	Time spend on Facebook 
+	0.25
+	Frequency of login Facebook 
+	0.31
+	Mobile Phone 
+	-0.48**
+	Personal Laptop 
+	0.41
+	Office Computers 
+	0.38
+	Library computers 
+	0.52
+	
+
+
+
+ **P<0.05 
+www.ajhss.org 34 
+Asian Journal of Humanities and Social Sciences (AJHSS) Volume 2—Issue 2, May, 2014 
+ISSN: 2320-9720 
+DISCUSSION 
+The result of the study indicated that most students use their personal Laptops and Mobile phone  to visit Facebook. This finding also consistent with previous research done in the United State  (Ahmed and Qazi,2011). The result also indicted that the students spent substantial amount of  time on facebook (2.31hours per day). Even if the students are not facebook addicted but it is  much higher than reported by Golub and Miloloza (2010), Kischner and Karpinski (2010),  Pempeket. al (2009) and closer to averages reported by Junco(10). Literatures indicated that that  a person who spends more than 171munites per day considered as internet addicted person  (ChildInternational, 2006). A possible explanation for the higher average time spend on social  networking sites due to most students have visited social networking sites by using their  personal Laptops and mobile phones and these create the opportunity to use social networking  site for a long hours. The result of the study also indicated that student’s login facebook  approximately a mean of 3 times per day. Compare to previous research report done by Junco  (2010) mean of 6 times per day, the frequency of login in facebook per day were low. 
+The correlation result indicated that there is no significant relation between time spend on  facebook with students’ GPA. This finding is also in line with the findings of study conducted in  Pakistan. In the study conducted in Pakistan, on 6 universities, on 1000 students. The result  indicated that there is no significant relationship between time spend on social networking sites  and students GPA (Ahmed and Qazi,2011). 
+On the other hand using mobile phone to login facebook has a negative, moderate and significant  relationship with students GPA. Previous researches also indicated that mobile internet users are  vulnerable to multitasking, using facebook in conjunction with studying (Gloub and  Miloloza,2010) and multitasking activities are negatively associated with students’ GPA (Ellis,  Daniels and Jauregui,2010). Previous studies also indicated that Multitasking activities not only  affect study times but also it reduce brain's ability to effectively retrieve information (Gloub and  Miloloza,2010).  
+CONCLUSION 
+Higher education institutions have blocked facebook because they fear that time spend on  facebook might affect academic performance of students but the result of the study clearly show  that there is no relationship between time spend on facebook and student academic performance.  Based on this finding, blocking facebook is not solution because students can easily access  facebook by their mobile phones and using mobile phone to access facebook might have created  a problem on their academic performance by fostering students engaged in multitasking  activates. The result of the study also indicated that there is a negative moderate and significant  relationship between using mobile to visit facebook and student GPA. Therefore, it is highly  recommendable that higher education institutes like: Universities, Colleges should foster  students to use face book for educational purpose by providing proper arrangements and training  rather blocking the site.  
+Finally, it is very important undertake further research in area of how mobile internet and multi tasking activities affects students academic performance on large samples of students from  different universities.
+www.ajhss.org 35 
+Asian Journal of Humanities and Social Sciences (AJHSS) Volume 2—Issue 2, May, 2014 
+ISSN: 2320-9720 
+ACKNOWLEDGEMENT 
+We would like to acknowledge Jimma University for the financial support that was provided. 
+REFERENCES 
+Ahmed I and Qazi TF.(2010). A look out for academic impacts of Social networking sites  (SNSs): A student based perspective.African Journal of Business Management.5(12),5022-5031. 
+Banquil K, Chuna NA, Leano GA, Rivero MA, Burce CA, Dianalan SN, Matienzo AR, and  Timog NU. (2009) social networking sites affect one’s academic performance adversely.  Available at: http://www.ust.edu.ph. (Accessed 12 August 2011). 
+ChildnetInerational (2006) Internet addiction. Available at:  
+http://www.childnet.com/downloads/factsheet_addiction.pdf. ( Accessed 30 April 2011) 
+Ellis, Y., Daniels,B., Jauregui,A.(2010) The effect of Multi-tasking on grade performance of  Business students, Research in Higher Education journal. Vol.8. Available at: http://www.aabri.com/manuscripts/10498.pdf. (Accessed 1 September 2011) 
+Fowler, FJ.(2002) Survey research methods . 3rd edition. Thousand Oaks: Sage Publications. 
+Garson, G. D.(2006) Reliability analysis. Available online at: 
+http://www2.chass.ncsu.edu/garson/PA765/ validity.htm. (Accessed 15 March 2012). 
+Gloub,LT&Miloloza,M.(2010) Facebook, academic performance, multitasking and Self-esteem.  Available online at:  
+http://bib.irb.hr/datoteka/511252.facebook_academic_performance_multitasking_and_self esteem.pdf. (Accessed 17 March 2012). 
+Hudson Horizons.(2011).Types of Social Networking  
+Websites.http://www.hudsonhorizons.com/Custom-Website-Solutions/Social-Networking/Types of-Social-Networks.htm.( Accessed 11July 2011). 
+Haridakis, P. and Hanson, G. (2009). Social interaction and co-viewing with Youtube: blending  mass communication reception and social connection. Journal of Broadcasting & Electronic  Media.53(2):317-335. 
+Internet World Status(2013) Africa. Available online at:  
+http://www.internetworldstats.com/africa.htm. (Accessed 28 February 2013) 
+Jibat T.(2012) Ethiopia: Is Facebook Advantageous? Available online at: http://allafrica.com/stories/201210190157.html. (Accessed 28 February 2013).
+www.ajhss.org 36 
+Asian Journal of Humanities and Social Sciences (AJHSS) Volume 2—Issue 2, May, 2014 
+ISSN: 2320-9720 
+Junco, R.(2011). Too much face and not enough books: The relationship between multiple  indices of Facebook use and academic performance. Computers in Human Behavior,  doi:10.1016/j.chb.2011.08.026. 
+Junco R., Heibergert G., and Loken E. (2010). The effect of Twitter college student engagement  and grades. Journal of Computer Assisted Learning, 27(2), 119–132.  
+Junco, R. and Mastrodicasa,J. (2007). Connecting to the Net.Generation: What Higher  Education Professionals Need to Know about Today’s Students. NASPA,Washington, DC. 
+Kirschner, P. A. and Karpinski, A. C. (2010). Facebook and academic performance. Computers and Human Behavior. 26: 1237-1245. 
+Mastrodicasa J.M. and Kepic G. (2005) Parents gone wild. Paper presented at the National  Meeting of the National Academic Advising Association, Las Vegas, NV. 
+Moon, LA .(2011). The Impact of Facebook On Undergraduate Academic Performance:  Implications For Educational Leaders. Available at:  
+http://condor.cmich.edu/cdm/singleitem/collection/p1610-01coll1/id/3528/rec/3 (Accessed 7  May 2012). 
+Pempek, T., Yermolayeva, Y., and Calvert, SL. (2009). College student social networking  experiences on Facebook. Journal of applied Developmental Psychology. 30(3):227-238. 
+Staffer T.(2011) Ethiopia’s Latest Facebook Statistics. Available online at :  http://debirhan.com/?p=384 . (Accessed 27Febuary 2013).
+www.ajhss.org 37

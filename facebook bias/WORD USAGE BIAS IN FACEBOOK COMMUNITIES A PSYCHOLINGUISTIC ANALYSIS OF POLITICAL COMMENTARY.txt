@@ -1,0 +1,1932 @@
+﻿WORD USAGE BIAS IN FACEBOOK COMMUNITIES: A PSYCHOLINGUISTIC ANALYSIS OF POLITICAL COMMENTARY 
+A dissertation submitted 
+by 
+GREGG A. F. MOORE 
+to 
+FIELDING GRADUATE UNIVERSITY 
+in partial fulfillment of the 
+requirements for the degree of 
+DOCTOR OF PHILOSOPHY IN PSYCHOLOGY 
+With an Emphasis in 
+Media Psychology 
+This dissertation has been accepted for  
+the faculty of Fielding Graduate University by   
+_____________________________________________________ Jerri Lynn Hogg, PhD 
+Committee Chair 
+Committee: 
+Jason Ohler, PhD, Faculty Reader 
+Pamela B. Rutledge, PhD, Faculty Research Specialist 
+Gregory Seese, PsyD, External Examiner
+Word Usage Bias in Facebook Communities: 
+A Psycholinguistic Analysis of Political Commentary 
+by 
+Gregg A. F. Moore 
+Abstract 
+This dissertation explores the effects of politically biased news articles on Facebook user public comments. The study looks for word usage biases and patterns by asking if Facebook  communities with opposing political outlooks comment with different word usage when  engaging about the same major news events. This research takes advantage of the massive  amounts of publicly shared feelings and thoughts on Facebook by using a natural language  analysis of comments from multiple popular news media fan pages to establish categorical word  usage profiles using several prevalent psychological and communication concepts. This study  analyzes more than eight thousand comments associated with articles about National Football  League player protests during September 2020 games from three liberal-leaning, three center leaning, and three conservative-leaning news outlet Facebook fan pages. This research expands  the discussion surrounding the effects news and community biases have on social media users by  building a sentiment connection between people, stories, and social media communities based on  how they discuss important news events. The results of this study suggest there are no significant  differences in word usage or important correlations connecting the fan-page, articles, and  comment sections across the political spectrum by news outlet political leanings on Facebook  community comments. 
+Keywords: bias, sentiment, news, social, Facebook, community, politics
+ii 
+Copyright by 
+GREGG ALAN FLANAGAN MOORE 2021
+iii 
+Acknowledgements 
+I would like to recognize my friends and family members with their many diverse political views  and their willingness to share those views on social media. They provided constant reminders  that the news we consume is very much subject to personal interpretation. 
+iv 
+TABLE OF CONTENTS 
+CHAPTER 1. INTRODUCTION................................................................................................ 1 Background ................................................................................................................................. 3 Purpose of the Study ................................................................................................................... 4 Definition of Terms..................................................................................................................... 5 Theoretical Framework ............................................................................................................... 7 
+CHAPTER 2. LITERATURE REVIEW.................................................................................... 9 Introduction ................................................................................................................................. 9 Community and News............................................................................................................... 10 Theories and Concepts.............................................................................................................. 12 Linguistic and Sentiment Analysis............................................................................................ 20 News Bias Research .................................................................................................................. 26 Research Questions................................................................................................................... 35 Hypotheses................................................................................................................................ 37 
+CHAPTER 3. METHODOLOGY............................................................................................. 38 Introduction ............................................................................................................................... 38 Legal and Ethical Considerations.............................................................................................. 39 Research Design........................................................................................................................ 41 Fan Page News Source Selection .............................................................................................. 41 News Event Selection................................................................................................................ 44 Instrumentation.......................................................................................................................... 45 Data Collection.......................................................................................................................... 45 Data Analysis ............................................................................................................................ 47 Analysis of Hypotheses............................................................................................................. 47 Variable Definitions.................................................................................................................. 50 Conclusion................................................................................................................................. 51 
+CHAPTER 4: RESULTS ........................................................................................................... 53 Data Collection.......................................................................................................................... 54 Linguistic Analysis.................................................................................................................... 58 Study Results for Hypothesis 1 ................................................................................................. 68 Study Results for Hypothesis 2 ................................................................................................. 73 Study Results for Hypothesis 3 ................................................................................................. 76 Summary ................................................................................................................................... 78 
+CHAPTER 5: DISCUSSION, CONCLUSIONS, AND RECOMMENDATIONS ............... 80 Summary and Interpretation of Findings .................................................................................. 81 Limitations of the Study............................................................................................................ 83 Recommendations..................................................................................................................... 84 Conclusions............................................................................................................................... 85 References.................................................................................................................................... 86
+v 
+LIST OF TABLES 
+Table 1. U.S. News Facebook Fan Pages ..................................................................................... 43 Table 2. Data Collection Sources.................................................................................................. 55 Table 3. Comment Section and Article Analysis: Summary Variables........................................ 61 Table 4. Comment Section Analysis: Linguistic Dimensions...................................................... 62 Table 5. Comment Section Analysis: Linguistic Dimensions and Grammar............................... 62 Table 6. Comment Psychological Process Analysis: Affective and Social Processes ................. 63 Table 7. Comment Psychological Process Analysis: Social and Cognitive Processes................. 63 Table 8. Comment Psychological Process Analysis: Perceptual and Biological Processes......... 64 Table 9. Comment Psychological Process Analysis: Drives and Time Orientations................... 64 Table 10. Comment Psychological Process Analysis: Relativity and Personal Concerns ........... 65 Table 11. Comment Psychological Process Analysis: Informal Language .................................. 65 Table 12. Comment Section Analysis: Punctuation ..................................................................... 66 Table 13. NEXT Analytics Engagement data............................................................................... 67 Table 14. H1 Descriptive Statistics............................................................................................... 69 Table 15. H1 Multivariate Tests ................................................................................................... 71 Table 16. H1 Multiple Comparisons (LSD) ................................................................................. 72 Table 17. H1 Levene’s Test of Equality of Error Variances ........................................................ 73 
+LIST OF FIGURES 
+Figure 1. Reactions per Comment ................................................................................................ 68 Figure 2. H1 Comment Summary Variable Scores ...................................................................... 70 Figure 3. H2 Emotional Tone Comparison................................................................................... 74 Figure 4. H2 Average Emotional Tone Comparison. ................................................................... 75 Figure 5. H2 Difference in Variable Scores.................................................................................. 76 Figure 6. H3 One-Way ANOVA Means Plot. .............................................................................. 77 Figure 7. H3 Comment Ratio with Emotional Tone Comparison ................................................ 78
+vi 
+Word Usage Bias in Facebook Communities: 
+A Psycholinguistic Analysis of Political Commentary 
+CHAPTER 1. INTRODUCTION 
+In 2016, more than 62% of U.S. adults received at least some news through social media  (Farajtabar et al., 2017). While television is still the dominant news source in America, one study  suggests the portion of American adults who get news through a mobile device has increased  from 54% in 2013 to 72% in 2016 (Mitchell et al., 2016). According to the Pew Research Center,  adult American use of mobile devices and social media sites for news remained relatively steady  from 2016 to 2018. However, Pew found Facebook use among the youngest demographics  increased the slowest (Walker, 2018). As of July 2020, 190 million Americans use Facebook,  which is broken down by location as 73% of Americans living in urban areas, followed by 69%  of Americans living in suburban areas, and 66% of Americans living in rural areas using  Facebook (Chen, 2020). Facebook and Twitter are essential information sources to many users,  especially during a crisis (Narayanan et al., 2018). To direct news stories to most likely preferred  audiences, Facebook and other social media platforms use algorithms designed to organize and  present the stories news consumers most likely want to see. The algorithms also help advertisers  target consumers (Adee, 2016). 
+In addition to the algorithms, users self-select what they view and are more likely to  follow organizational pages and individuals with similar values. The combination of self selection and algorithmic sorting makes social media enjoyable and personally relevant.  However, the sorting of content has two significant problems. One is that it shelters users from  opposing points of view and new ideas. Secondly, social media users find themselves in an  environment where they only encounter beliefs and opinions similar or the same as their own, which insulates and reinforces already held biases and supports the phenomenon known as 
+1 
+confirmation bias (Wason, 1960). According to Shearer and Grieco (2019) from the Pew  Research Center, 88% of Americans recognize that social media companies control their  audiences' news. Sixty-two percent of Americans say social media companies have too much  control, while 15% say social media companies should control the content more. Seventy-five  percent of Republicans and those who lean Republican are much more likely to feel social media  companies control too much, whereas 53% of Democrats and those who lean Democratic feel  that way (Shearer & Grieco, 2019). 
+News audiences have more news sources readily available than at any time in history but  tend to stay with only a few primary sources they trust (Mitchell et al., 2016). Most people limit  their news to sources with perspectives that align within narratives they understand and tend to  agree (Kelly, 2018). Eighty-two percent of American adults trust local news organizations, but  only 34% have confidence in the news on social media (Mitchell et al., 2016). As expected,  younger audiences prefer to get their news online, while older audiences watch the most  television news. Despite mistrust and known biases, Facebook’s 1.94 billion monthly worldwide  users post 510,000 comments, 293,000 status updates, and 136,000 photos per minute (Peslak,  2018).  
+Americans who primarily get their news through social media are more likely to be less  informed on current news events and more likely to believe unproven claims and conspiracy  theories. The Pew Research Center found as many as 81% of social media users who say they  primarily read the news on social media heard conspiracy theories about the origin of COVID 19. Thirty-six percent said they believed the theories to be accurate, which is higher than those  who primarily receive their news through other sources (Mitchell et al., 2020). Americans who  get their information primarily through print or cable TV news were the least likely to have heard 
+2 
+the conspiracy theories. However, more than 60% in each category still reported having heard of  COVID-19 conspiracy theories. However, 27% of Cable TV viewers were more likely to believe  the COVID-19 conspiracies, whereas only 21% of Americans who primarily read their news  through print sources believed the theories (Mitchell et al., 2020). 
+The ways in which people connect and build communities has changed with social media  to add further complexity to deciding which news content to follow. Arguments support that connections and the communities made from these connections affect the real world. Examples of these effects can be found globally, such as in Tahrir Square, Egypt, Brexit in the United  Kingdom, and even the election of Donald Trump (Vesselinov et al., 2019). More and more,  political expressions on social media enable action in the real world. 
+Background 
+Approximately half of American adults aged 18 to 49 get most of their news online,  whereas 72% of ages 50 to 64 and 85% of age 65 and older report they get most of their news  from television (Mitchell et al., 2016). Regardless of the source, there is a social aspect to news  consumption. Nearly two-thirds of Americans report that both online and offline friends and  family are an important part of staying informed, whether through word of mouth or sharing  stories in other ways. Despite their devotion to news consumption, most American audiences still  report that the news media lacks impartiality (Mitchell et al., 2016). Seventy-five percent of  Americans believe news organizations are an essential check on politicians, while 74% believe  the news media are politically biased. Following media that supports one's biases is necessary for  today's information environment because there is too much information available to consume  without prioritizing or discarding all that is available. However, even before the world wide web,
+3 
+news audiences were always attracted to information that agreed with the beliefs they already  held (Pettegree, 2014). 
+America's founders appreciated the news media’s dichotomous role of appealing to and  informing the same citizens who historically distrusted the news media. Thomas Jefferson (1807) highlighted this understanding when he responded to a question about his thoughts regarding  creating a newspaper dedicated to pure, unbiased truth. He replied, "I fear such a paper would  find few subscribers" (para. 1). Jefferson knew audiences would not read newspapers they did  not find appealing. More than two hundred years later, the web and social media give access to  more data than any single person can sift through on their own. People communicating through  those mediums work hard to appeal to their audiences. Today’s news builds upon centuries of  journalistic storytelling conventions and norms, and publishers frame stories to appeal to targeted  audiences (Pettegree, 2014). 
+Purpose of the Study 
+The purpose of this research is to compare the word use of politically diverse public  social media communities on Facebook. The vast amounts of data social media users share  publicly make it possible to measure digital communities' distinguishing characteristics and  increase the understanding of group differences. The literature supports this type of analysis,  suggesting that social media algorithms and human nature encourage and reinforce biased  engagement (Bandura, 2009; Kelly, 2018, McPherson et al., 2001). This study compared public  online written content through emotional-based word usage analysis. This paper asks if it is  possible to distinguish and measure psychological word usage differences and biases of public  Facebook page news communities based on political leaning. This dissertation further discusses
+4 
+found correlations between observable audience biases with the biases expressed in the news  they read.  
+Definition of Terms 
+The following key terms are essential themes for this dissertation. 
+Bias: The term bias, as used here, primarily refers to political predispositions and  leanings expressed by news media and individuals on the topics they choose to discuss, omit, or  lie about (Groseclose & Milyo, 2005, Kelly, 2018). The term bias also describes cognitive  preferences shaped by internal mental processes, which are typically subconscious and  characterized by many psychological theories and mechanisms (Allahverdyan & Galstyan,  2014). Biases are mechanisms that help individuals and groups make judgments and decisions  more efficiently by relying on patterns that seem predictable. Whether cognitive or political,  biases help people understand context and function in a complex world. Biases can reinforce  misunderstandings or blind people to facts that do not fit within the patterns, unfortunately, as well. 
+Community: This research is predominantly concerned with how communities are similar  or dissimilar to one another. While the broad definition of community applies in many cases  discussed herein, the term used here refers to social media communities and specific groups of  people who follow their preferred news fan pages on Facebook. Fan pages attract audiences  based upon a shared affinity for shared interests and goals. Social media communities come  together through self-selection of the social media sites that are important to them, unlike  traditional communities, which typically depend on physical nearness as the primary determinant  of community membership. The literature suggests news media consumers select and stay with
+5 
+preferred news communities and generally limit their exposure to a small number of online  sources and social media fan pages (Schmidt et al., 2017). 
+Connecting with like-minded people through social media, whether through computers or  smartphones, is a solitary endeavor. However, this activity builds social connections similar to  traditional face-to-face interactions with other community members. Social media allows for new  types and choices of connections not possible before social media without a physical presence  (Vesselinov et al., 2019). 
+Opinions, attitudes, beliefs, and values: These terms describe related behavioral  dispositions describing the tendencies to act towards or evaluate objects or activities (Bergman,  1998). Behavioral dispositions can be categorized, organized, and are generally considered to be  developed through socialization. Attitudes describe how individuals and groups emotionally  evaluate objects or actions. Attitudes are cognitive constructions, feelings, and dispositions  towards something. Opinions are statements or views about objects or actions based on concepts  and evaluations (Bergman, 1998). The term opinion can apply to non-emotional statements. On  the contrary, attitude always implies a feeling. However, the terms are interchangeable in most  instances. 
+Values are cultural standards supporting beliefs. Shared values and beliefs are integral  components of group membership. Values tend to be more stable and emotionally based  concepts that describe common modes, means, and end-goals of a group. Beliefs are convictions  individuals and groups hold to be true. Values are group cognitive and affective descriptions of  objects, actions, or concepts (Bergman, 1998).
+6 
+Comments: written commentary posted by Facebook users below content produced by  journalists, marketers, and other communication professionals (Ziegele et al., 2018). Replies to  comments are inclusive of the term. 
+Natural language processing applications: software designed to understand written and  spoken words. Natural language processing is a broadly defined term that combines linguistics,  programming, information science, and artificial intelligence to analyze and process language  (Peslak, 2018). Natural language processing software generally reduces the text to entity target,  the text's sentiment, text posting time, and rating of the sentiment (Liu, 2015). Theoretical Framework 
+Considerable research suggests biases help people organize news stories within the  attitudes they already hold. When news consumers gather information through narratives and  storytelling methods, which are inherently biased, they find the details more memorable and  interesting (Harris & Sanborn, 2014) than the simple factual presentation of information.  Measuring social media community member word usage through natural language and sentiment  analysis may describe biases vary and may be influenced by one group to another. A guiding  explanation of the attraction news audiences hold with views agreeing with biased information is  the social judgment theory (Kelly, 2018). 
+The dissertation research questions, detailed below, were derived from the literature to  address the influences described by a social judgment theory theoretical framework, as well as  other social influence theories. This research asks how political affiliations affect word usage,  how Facebook host pages affect word usage, and the differences between different communities  
+discussing major issues based upon their political leanings. Social judgment theory describes  perceptions and evaluations of ideas by comparing them with currently held attitudes, which 
+7 
+leads to acceptance or rejection of the new information (Sherif et al., 1958). This theory  designates three attitude zones centered on the most acceptable opinion, called the anchor,  followed by the next zone called noncommitment. The furthest is called the rejection zone  (Hovland et al., 1957). According to social judgment theory, individuals express attitudes in  terms of the range of tolerance for the information, called the latitude of acceptance, or the  rejection of information, called the latitude of rejection (Hovland et al., 1957). The literature  supports the idea that biased news is more acceptable for a variety of reasons.
+8 
+CHAPTER 2. LITERATURE REVIEW 
+Introduction 
+This literature review explores works covering a range of communication, journalism,  psychology, computer science, and other topics relevant to understanding the connections  between community members and the news media. Community members depend on news stories  and other defining narratives to describe and identify who they are as individuals and as a group.  Vast literature discussing the relationship between communities and news exists from many  academic disciplines, including communication studies, journalism, history, psychology, and  more. As suggested by the literature, news is the relevant stories of communities and their  connection to events (Harris & Sanborn, 2014). Facebook and other social media sites are the  latest news platforms in a long line of media that attempt to reach audiences with the news they  want and need to understand current affairs and make decisions related to a vast number of  topics, including commerce, politics, and their personal lives. The media has changed with  technology, but people have the same biases and react to narrative and story through the same  cognitive processes that have always existed (Mosseri, 2018). 
+The literature addresses the many cognitive biases influencing audience beliefs and  decisions. Many theoretical frameworks suggest news and other information processed through  cognitive-based, perspective-based, and content-based social media platforms influence  cognitive biases (Kelly, 2018). Machine learning and computerized sentiment analysis tools have  become very useful in helping researchers conceptualize, depict, and delineate the vast amounts  of data posted daily on social media (Boxell, 2018). 
+9 
+Community and News 
+Gutenberg's printing press transformed the Western culture from an oral tradition to  literacy during the 15th century. However, because printing remained relatively expensive for the  first few centuries, the wealthy, nobility, and the church controlled printed news (Pettegree,  2014). The elites wrote their newspapers, pamphlets, and other published sources from their  biased perspectives, such as from a Catholic versus Protestant view or the view of a city or state's  leaders. Publishers stressed counterpoints from their rivals, finding a demand for dramatic points  of view from audiences (Hillgaertner, 2015). Despite the known biases and likelihood of  disinformation, people still craved the information. The print news industry flourished. During  the 17th century, more than 200 different newspaper publishers from 80 different towns and cities  printed as many as 70 million copies in Germany alone (Pettegree, 2014). The stories shared in  newspapers quickly became the subject of public discourse about a range of topics: finance,  culture, and politics (Hillgaertner, 2015). Wealthy elites and autocratic governments used the  printed word to mold and direct public opinion, circulate official viewpoints, raise morale during  troubled times, and educate people about the rules of the land. 
+Access to news, however biased, resulted in a more informed public with increased  political reasoning. Elites realized the impact of the printed word and sought to control it from its  inception. Controlling information over time was an essential strategy for managing the public  (Hillgaertner, 2015). The controlling elites argued they should control the news because straight  reporting was unhealthy for citizens. They felt control was justified because they thought too  many facts would smother and confuse regular people (Pettegree, 2014).  
+Competing newspapers fueled political discourse through to the 18th century. The  American and French Revolution’s leaders called for a free press because they believed liberty 
+10 
+depended upon it (Pettegree, 2014; Jefferson, 1807). Twentieth and 21st century journalism  relies on various professional standards and conventions to get their stories to news consumers.  Bias exists in how the news producer tells the story and how consumers think about it. From the  beginning of printed news to today's online journalism, newsworthy stories should be robust in  five primary characteristics. Personalized stories help connect the audience to individuals. They  must contain drama that includes conflict or struggle. The third characteristic is action, also  known as the "hook." Exciting work helps support the other aspects of a story. Fourth, stories  should include original or deviant ideas from the norm. Redundant information does not do an  excellent job of drawing audience interest. The fifth characteristic is that storytellers must link  their work to ongoing events. In other words, news stories must be timely and relevant (Harris &  Sanborn, 2014).  
+Journalists and editors must make decisions to tell the parts of stories they feel are  relevant to their audiences. These decisions bias the news. The compact and dramatic nature of  news stories means editors exaggerate some facts while omitting others to keep the story short  and interesting. News sources sometimes frame reports that push ethical boundaries with  deceptive wording to fit a perspective or draw the audience's attention by highlighting drama  (Harris & Sanborn, 2014).  
+Algorithms sort stories posted through social media sites to estimate and present what  users most likely want in their feeds. Facebook uses a ranking process for selecting what users  see when browsing the site. The Facebook ranking system starts by inventorying what the user  has not seen from their friends and the pages they follow. Facebook then enumerates what they  call signals, which considers various details such as story age, who posted it, user history of  engagement, length of time it was viewed, and even cellphone type. Facebook’s third step is to 
+11 
+predict user engagement of every story on every user’s inventory. The algorithm prioritizes and  organizes newsfeed stories by calculating story relevancy for each user (Mosseri, 2018). Research suggests rude and uncivil comments in response to the news articles posted on  social media may undercut democratic attitudes and contribute to ideological divergence.  Increased negativity, aggressiveness, and stereotyping within the comment sections on news  postings appear to negatively impact perceptions of the quality of the traditional news value  (Ziegele et al., 2018). Strongly worded and uncivil user commentary can affect public attitudes  and contribute to the silencing of contrary opinions (Ziegele et al., 2018). Comments on news  stories posted on Facebook and other social media platforms is a form of interpersonal  communication. Much of the user comment research takes on a marketing style research  framework by focusing on information usefulness, attitudes, user reviews, user credibility, and  intentions (Ziegele et al., 2018). Users commenting on news article postings is common for most  social media participants (Ziegele et al., 2018). Comments posted by Facebook users below  content produced by journalists, marketers, and other communication professionals are a  significant part of public engagement (Ziegele et al., 2018). However, researchers lack an in depth background in the contribution value of positive or good comments versus negative or  harmful comments and the comments' expected influence (Ziegele et al., 2018). Theories and Concepts 
+Social judgment theory suggests that communication about controversial social issues  may change attitudes away or towards advocated message (Hovland et al., 1957). According to  Hovland et al. (1957), the shift in attitude depends on the receiver's attitudes in relation to the  stand supported by the message. Audiences compare information to their preexisting opinions  and attitudes when exposed to persuasion (Allahverdyan & Galstyan, 2014). Observers are more 
+12 
+likely to perceive media statements that are more in line with their already held beliefs as more  trustworthy. According to the theory, judgments are evaluations of new information based on  how similar or different the information is from already held beliefs (Sherif & Hovland, 1961).  The argument relies on cognitive processes controlling contrast and assimilation of knowledge  and comparing it to what people already think of as correct (Kelly, 2018). When news media  posits opposite or contrasting opinions, the consumer is likely to frame the news outlet as being  in personal opposition. 
+Conversely, when audience members perceive the information agrees with their  viewpoint, they are more likely to rate the news source as more honest, balanced, and less biased  (Kelly, 2018). Social judgment theory suggests that people are self-selecting the media bias that  agrees with their view. This theory may help identify situations when persuasion efforts are  changing opinions. Allahverdyan and Galstyan (2014) build on previous social judgment theory explanations, describing that the theory relies on three zones of attitudes centering on the most  acceptable view, called the anchor. The three zones are acceptance, noncommitment, and  rejection. According to the theory, persuasion efforts are least impactful if the message is close  to the anchor or within the rejection zone. 
+Additionally, earlier studies concluded anchors provide stimuli and influence judgments.  Anchors closer to what one already believes tend to reinforce and increase agreement with the  anchor message, while anchor messages opposed to beliefs tend to produce the opposite effect  (Sherif et al., 1958). Evaluation of communication data regarding subject and group standings on  issues can be measured through a quantitative approach to acceptance-rejection opinion models  (Hovland et al., 1957). However, social judgment theory can also provide a qualitative model  when the data lack mathematical applicability (Allahverdyan & Galstyan, 2014).
+13 
+Similarly, the concept of social prompting describes the influences of cognitive and  behavioral restructuring. Through the behaviors of someone with equal or higher social status,  others may be encouraged to display previously learned behavior that may have been repressed  without encouragement (Bandura, 2009). Bandura’s (2009) concepts suggest media influencers,  such as celebrities or well-known politicians, may lend power for people acting on their beliefs  that other pressures suppressed. 
+Norms, which may be perceived or otherwise, also influence an individual’s social  choices and judgments. People conform to their descriptive norms by favoring stereotypes,  ingroup pressures, and general power dynamics. A person links identity with their ingroup and  works to maintain that identity (Pryor et al., 2019). Injunctive norms cause external social  pressures on individuals to conform to group behaviors. While descriptive norms and injunctive  norms generally align, research suggests people assume injunctive norms from descriptive  norms. The reverse may also be true. Outgroup descriptions are shown to influence the identity  concepts ingroups have of themselves. Norms are perceived as behavioral reference points, and  as the status quo, which influences people to behave similarly with the others they believe as  having the same identity (Pryor et al., 2019). 
+Multiple studies counter the suggestion that the inundation of information by social  media magnifies social and cognitive influences because a substantial majority of Americans state they prefer news with no political bias (Kelly, 2018). The survey results do not match reality because news outlets with more impartial content are losing audiences to more biased  outlets. Today's digital market provides news consumers access to more information than they  can process. Therefore, audiences are likely to reduce information overload by limiting their  news (Kelly, 2018). Stanford University researchers found that in a study covering 12 states and 
+14 
+7,800 students from middle school through college, most students could not tell the difference  between mainstream and fringe news sources or advertisements made to look like news and real  news. A big part of the problem, the study concluded, was that the respondents rarely, if ever,  checked alternate sources to verify whether a story was true or not, especially if it already fit  within their preconceived ideas of the story’s subject (Domonoske, 2016). People tend to select  news sources that cause less cognitive discomfort. Additionally, social media's amplifying effect  not only influences the spread of messages but also increases the speed at which people share  opinions (Mitchell et al., 2016).  
+Perspective-based and content-based social influence theoretical frameworks for  evaluating news biases consider the content positivity towards a political viewpoint and how  well it matches consumer political outlooks (Kelly, 2018). Homophily is a social-organizing  principle stating a higher rate of possible contact between similar people versus dissimilar people  (McPherson et al., 2001). Individuals generally try to connect to others with whom they can  relate. In traditional, proximity-based communities, people would get information, rumors, and  discuss opinions about the day's news from the people they see at their workplaces, community gathering areas, and other places where people come together in person (McPherson et al., 2001).  Social media communities allow people to connect with like-minded others no matter their  location. 
+Community members are subjective to group biases. Minority influence theory, another type of social influence, describes the tendency to accept bias and may influence the spread of a  news story and other popular, or viral, information through social media (Nemeth, 2011).  Majority views frequently affect individuals and groups. According to this theory, a lesser accepted belief can influence the majority if an influential person or group promotes the idea. 
+15 
+Someone who displays a consistent and strong belief in what they say, even if it is a minority  opinion, and even if it is not true, can sway the majority (Nemeth, 2011). 
+The social cognitive theory concludes that people actively influence social interactions,  and other people influence them (Bandura, 2009). The social cognitive theory contains three  primary factors: a) personal determinants are cognitive, affective, and biological events; b)  behavioral determining patterns; and c) environmental determining events (Bandura, 2009).  These factors influence each other. Bandura (2009) stressed social and ethical pressures in social  cognitive theory. He suggests that mass communication influences behavior through morality  modeling, which restructures thoughts about morals and justifies behavior. Perceived morality is  a strong deterrent and influence. Therefore, morality modeling can provide a robust  psychological mechanism to promote behavioral change with feelings of vindication. This  theory's power in the current information environment is that audiences have a choice of media  they consume. Morality as a psychological mechanism makes people more likely to regulate  themselves by their expressed morals and more likely to self-sanction accordingly (Bandura,  2009).  
+An underpinning of social cognitive theory is that audiences have a choice of what they  watch on television and applies even more to the vastly increased options people have in the  current media environment (Bandura, 2009). Audiences may accept others' beliefs as a means of  displacing responsibility to alleviate the cognitive conflict of self-responsibility (Bandura, 2009).  Mass communication can weaken self-sanctioning and self-regulation by a transference of  morality and responsibility to the modeler. People are less likely to self-condemn or self-evaluate  due to the transference of guilt and modeling. Individuals may reduce their empathy towards  others when using mass communication to dehumanize a rival. Television and other forms of 
+16 
+mass communication can use media productions to blame and dehumanize, displace or diffuse  causations, and sterilize negative consequences (Bandura, 2009). 
+Confirmation bias is one of many cognitive biases that describe an individual's  predisposition to process new information that affirms presumptions and creates a perception that  the new data align with prior beliefs (Allahverdyan & Galstyan, 2014). Wason’s early research  (1960) into confirmation bias discussed most subjects' problems with reaching wrong  conclusions during experiments. Many individuals lean on confirming evidence as justification  for previously held beliefs. People create inferences that agree with prior prejudices based on  some confirming evidence, but disregard evidence that contradicts those prejudices. The research  results suggest individuals conclude the evidence is sufficient when it confirms their prior  beliefs, even when clear evidence suggests the prior beliefs are incorrect (Wason, 1960).  Cognitive biases are heuristic processes that help people think quickly and make decisions.  These mental shortcuts diminish the need to understand overwhelming amounts of information leads (Rajsic et al., 2015).  
+Cognitive dissonance is the mental discord and discomfort people experience when  beliefs, attitudes, or behaviors contradict information and viewpoints. This discomfort may lead  to behavioral changes due to unmet expectations (Festinger, 1962). An experiment testing  cognitive dissonance as a consequence of lying found the results varied based upon the size of  the lie and the reward for lying. In this example, researchers paid one group of subjects $1 for  lying and another $20 to make the same lie. The results suggested the subjects who received $1  experienced the most dissonance. The low-paid subjects experienced more discomfort lying than  the subjects who received $20. According to this theory, people endeavor to attain mental 
+17 
+consistency to function in what they perceive as the real world. In the struggle to align beliefs, an  individual may avoid facts or accept known fallacies to regain mental comfort (Festinger, 1962). Often, people do not know what influences their behavior. Through multiple studies,  subjects repeatedly stated they believe they are making conscious choices despite the presence of stimuli triggering subconscious internal responses (Newell & Shanks, 2014). However, Newell  and Shanks (2014) write they do not conclude the evidence supports that subconscious  mechanisms are overriding conscious choices. For example, when experimenters asked subjects to select one of four identical products, the subjects usually selected the product on the right and  then justified their choice after the fact with false explanations. Subjects described their  selections as the better item, notwithstanding that it was identical to the other items. Choosing is  not likely due to the spatial location in the case, as mentioned earlier. The literature suggests  people prefer what currently has their conscious attention. (Newell & Shanks, 2014). Semiotics is the philosophy and study of signs, symbols, and meaning. It provides a set of  assumptions that allow for the systematic analysis of symbolic systems. It applies to visual  imagery as well as to the written word and the depiction of words. Translations of the work by  Swiss linguist Ferdinand de Saussure provided the basis for the modern semiotic theory. Several  basic concepts relevant to semiotics' textual analysis are the paradigmatic, syntagmatic, denotive,  and conative dimensions (Crow, 2010). 
+According to the semiotic paradigmatic dimension, symbols signify context by building  conceptual structures. According to Crow (2010), Saussure said, "The value of a sign is  dependent on the other signs around it" (p. 77). Crow (2010) suggests the media bias may  increase or appear to increase in value based on connected contexts. Saussure saw language as a 
+18 
+system of paradigms that were relevant in context with what was around them. Danesi (2007)  writes that Saussure believed that opposition is also an intrinsic property of linguistic context. The syntagmatic dimension is the semiotic concept of building meaning within a context.  A message's meaning is dependent on the order or structure of the concept, usually regarding time. The syntagmatic dimension is the organizing of structure within a conceptual order of the  packaging of a coded message affecting meaning, while syntagmatic analysis looks at the syntax  and sequence of text to build understanding (Danesi, 2007). The syntagmatic dimension  describes that position of a conception matters. To put in terms of news articles, the headline and  first paragraph are the most memorable parts of the story. Journalists and editors place what they  want their audiences to remember at the top of the story (Harris & Sanborn, 2014). Danesi (2007) writes that the denotative dimension describes that signs reference what  they literally depict or say. Hall (2007) writes signs are “composed of two inseparable elements:  the signifier and the signified” (p. 12). Hall (2007) described that people belonging to most  modern cultures recognize the meanings in language and common symbols within their cultures. Denotation in semiotics refers to the literal meaning of a word or concept.  The connotative dimension of semiotics is the non-literal code representing something  associated with abstract concepts such as emotion, moods, memories, or complex ideas (Danesi,  2007). Emotional engagement strengthens a news consumer's attachment. News media often  connects audiences with stories using anecdotal representations to generate an abstract and  emotional connection, even if the narrative omits some aspects of the larger story. Codes can represent biases only visible to audience members aware of the reference. For  example, allusions are a conventional literary device used to reference something without using  an explicit expression. Semioticians call it the intertextual dimension. "Intertextuality … 
+19 
+involves the 'borrowing' by the creators of texts from previous texts" (Berger, 2012, p. 9).  Intertextuality also applies to the appropriation of concepts, ideas, themes, words, colors,  assumptions, and surrounding implications of all media (Berger, 2012). This concept creates a  reference from one work to another. Thus, a previously known code applies to new media  content. Borrowing ideas from known and popular work lends authority to the reference and  helps the audience decode the new concepts (Crow, 2010). 
+Linguistic and Sentiment Analysis 
+The automated analysis of language builds off decades of empirical studies linking the  content and style of words to reveal underlying psychological processes (Boyd, 2017). Natural  language analysis in psychological research is not new. However, software, combined with the  ubiquity of text now available on social media, gives today's psychologists the ability to develop  psychological footprints of individuals and groups. The Linguistic Inquiry and Word Count  software, also known as LIWC, counts text to produce a percentage of words by various  categories, such as emotions, thinking styles, social-words, and other parts of speech  (LIWC2015, n.d.). LIWC takes into account both open-class and closed-class words. Open-class  words provide content, describing who, what, when, and where of a person's narrative. Closed class words are the functional joining and modifying words, such as "to," "the," "and," and many  others. Closed-class and open-class words are processed differently and in different parts of the  brain. Word usage analysis reveals the author's psychological disposition (Boyd, 2017). 
+Social media communities organize around interests. A social science study of a symphony marketing campaign and the relevant stakeholders assessed relationships through  Facebook engagements. This research centered on stewardship theory and rapport-building  strategies of reciprocity, responsibility, reporting, and relationship nurturing (Clark et al., 2016). 
+20 
+Social media pages elicit more likes and comments when they actively engage their audience.  Clark et al. (2016) argue social media engagement nurtures relationships and encourages long term support for an organization by stakeholders. To assess the importance of engagement with  stakeholders for nonprofits, the researchers measured and compared stakeholder engagement  with private contributions, program revenues, government grants, investment income, and total  symphony assets (Clark et al., 2016). The results demonstrated a significant positive relationship  between income through private contributions and social media engagement. The study included  symphony orchestras with a large enough annual budget to maintain active social media  engagement. The research measured engagement as the quantity of reactions, shares, and  comments. The authors concluded that orchestras that are more reliant upon audience donations  were more likely to engage through Facebook. There was no statistically significant relationship  between organizations more dependent on government grants and engagement with social media.  The findings did not suggest a positive correlation between dollar-levels of public donations and  engaging with audiences on Facebook (Clark et al., 2016). Smaller non-profit symphonies did  not benefit relationally from social media engagement because they could not afford to have a  continuous social media presence. Non-profit organizations investing in social media  engagement and professional assessments appear to benefit from more donations by generating  long-term relationships. The authors recommend additional study into whether the long-term  contributions result from engagements or other mechanisms (Clark et al., 2016). 
+Sentiment analysis of Facebook comments under a childhood vaccination article looked  for insights into the anti-vaccination movement by examining anti-vaccination and pro vaccination commenter text (Faasse et al., 2016). The study focused on the most engaged  comments, also known as “top comments,” posted on a Facebook photo-meme, reminding 
+21 
+audiences it was time for vaccination. The comments received more than 49,000 likes and 1,489  replies within a week. The data collection occurred before the global availability of other  Facebook reactions than the thumbs-up. Fan page followers posted more than half of their comments on the first day and subsided in the number of comments significantly by the end of  one week. With approval from the New South Wales Behavioral Sciences Human Research  Ethics Advisory Panel, the researchers collected the comments. Informed consent was not  required for comments posted in the public forums (Faasse et al., 2016). 
+The data analysis did not include names, URLs, and photo-comments from the data set.  The data retained the number of likes for each comment, and each comment's time and date. The  study classified comments as pro-anti-vaccination, unrelated, or unclear. The text analysis was  conducted using Linguistic Inquiry and Word Count Software (LIWC). The software counts  words and phrases used to categorize the full text into percentages of various psychologically  meaningful linguistic dimensions. Using the data aggregated from LIWC2015, the researchers  used Statistical Package for the Social Sciences, also known as SPSS, to compare the language categories used across the groups (Faasse et al., 2016). 
+The social media comment results showed the anti-vaccination commenters received higher scores in words categorized as analytical thinking than the pro-vaccination or neutral  groups. The anti-vaccination arguments were generally better constructed despite the pseudo factual information they presented. The pro-vaccination comments contained significantly more  anxiety and family-related content than the anti-vaccination or control groups (Faasse et al.,  2016). The anti-vaccination comments contained more biology and science-related language than  pro-vaccination comments, matching many of the same themes and talking points shared on  prominent anti-vaccination websites. The authors believe the link may also correlate to the 
+22 
+linguistic indicators showing the anti-vaccination commenters were authentic, from their  perspectives, in their word usage, per LIWC2015 analysis output. The study highlights some  challenges existing throughout social media regarding efforts to communicate accurate scientific  information (Faasse et al., 2016). 
+Software can construct and analyze data for a linguistic and sentiment analysis of social  media. Peslak (2018) states that LIWC software is the most researched and popular linguistic  analysis tool with multiple studies analyzing Facebook content alone. LIWC2015 counts the  percentages of words that reflect different psychologically relevant categories to describe the  characteristics of the text analyzed. These characteristics include emotions, thought patterns,  social concerns, biases, personality traits, intents, and other psychological factors. LIWC2015 can construct a profile of psychological categories about an author by analyzing her or his  writing (Peslak, 2018). Social media, communication, sociological, and psychological  researchers regularly use the LIWC psychology dictionary. For example, an analysis used it to  determine whether Facebook spread emotions through status updates. The study found  substantial implications that emotional word usage spreads similar to contagion among Facebook  friends (Kramer, 2012).  
+Peslak (2018) evaluated the comments from a group of the most fanned Facebook pages  using the open-source Facepager software to extract publicly available Facebook data.  Researchers constructed a one-way ANOVA to compare hundreds of posts on 11 popular pages  with IBM's SPSS 23.0. The analysis described people's feelings of favorability for or against  Facebook pages (Peslak, 2018). The study used LIWC2015 to compare further the levels of  analytical thinkers, the types of thinkers who posted to the top pages, and measured the clout,  tone, authenticity, style, and positive and negative emotions (Peslak, 2018). The combined 
+23 
+analysis determined that audience engagement is reasonably similar from page to page.  Nevertheless, there can be significant differences between audiences and how they comment on  the pages they follow.  
+Sentiment analysis software classifies relatively detailed opinions regarding positive or  negative sentiment. Researchers subjectively determined positive, negative, and neutral views at  the sentence level. Document and sentence-level analysis cannot describe what opinions are  about unless the research focuses on specific items within the text. Feature-based opinion  mining, also called aspect-based sentiment analysis, parses particular writing parts to describe  goals and nuanced opinions (Liu, 2015). Aspect-based sentiment analysis, also known as opinion  mining, extracts and classifies sentiments (Liu, 2015). It organizes opinions at the document and  sentence level and is more useful for detecting positive, negative, and neutral sentiment only.  However, measuring a text at that level does not classify the author's meaning for individual  aspects within the writing. By separating elements of written content, researchers can deduce the  features of the author's mood, sentiment towards a particular aspect, and segregate nuances  within the sentence or document (Liu, 2015). 
+According to Lui (2015), natural language processing software, such as LIWC2015, use six  core tasks to produce an aspect-based sentiment analysis. The software reduces opinions to entity  target, the sentiment of the opinion, opinion posting time, and rating of the sentiment (Liu,  2015). 
+1. Entity extraction and resolution: An entity is a topic, event, thing, or issue. The analysis  must account for different ways to write about the object. Cluster the entities in related  groups.
+24 
+2. Aspect extraction and resolution: Extract all aspects of the text and group them into  representative clusters. 
+3. Opinion holder extraction and resolution: As in the first two tasks, identify individual  opinion holders and separate them in like groups. 
+4. Time extraction and standardization: Track each opinion posting time and ensure they are  documented in the same format. 
+5. Aspect sentiment classification or regression: Classify the sentiment about each aspect  and entity as positive, negative, or neutral. Or assign a numeric rating to each aspect and  entity. 
+6. Opinion quintuple generation: Following extraction of all entities, the resolution is based  on an opinion's five components. 
+Much of sentiment analysis research focuses on positive and negative feelings regarding  the subject. However, not all opinions are positive or negative. Researchers must also consider  comparative statements. While these terms are incredibly helpful to understand when researching  how customers are engaging online about products, it is also imperative to conduct a  comparative analysis to understand the sentiment and grades of opinions (Liu, 2015).  
+Gradable comparative opinion analysis defines the type of opinion (Liu, 2015).  Metalinguistic comparatives describe that one view expressed by a subject can have more of a  particular property. For example, this phrase represents a concept as a grade: "person x has more  experience than education." 
+Proposition comparatives compare between two propositions with three subcategories.  Nominal comparatives refer to primary differences expressed in nominal phrases. An example is  “person x bought more American products than Chinese products.”
+25 
+Adjectival comparatives are usually expressed with words ending with "er" or concerning  less or more and conjugated with "than." For example, “person x is smarter than person y.” Adverbial comparatives are similar to the first two but include a modifying adverb, such  as, “person x answered the question more quickly than person y” (Liu, 2015). News Bias Research 
+Measuring audience and news producer biases is difficult because there is no agreement  on the definitions of bias and unbiased news. Studies rely on proxies, assumptions, tone, and  other various forms of comparative linguistic analysis (Kelly, 2018). Research methods typically  include analysis of survey questions comparing demographics, political leanings, and social  media and news media habits. News outlets frame their stories to provide context for their  audience. The framing is generally deliberate and operates to meet the news outlet's goals and  may be witnessed throughout the narrative of a body of story topics. Framing around political  news provides a narrative angle to support the political leaning of the outlet. Many studies  depend on active participants and are narrowly focused, which limits the depth of the data, often due to the lack of respondents. 
+Analysis of communication processes revolves around framing as a process and as a  narrative building technique. Framing in the news are repeated concepts, ideas, interpretations,  and storylines that emphasize a discourse. Frames define problems and may provide moral  judgments or even suggest solutions to the problems. The literature shows that individual news  stories are almost part of a larger narrative that audiences combine to build context and belief  through frame analysis. Framing contributes to a depth of understanding and shapes beliefs by  providing context and highlighting specific news parts over others (De Vreese, 2005).
+26 
+Kelly's (2018) general hypothesis for his study of objectivity and credibility in the news  is that news consumers will typically sort themselves into partisan news sources that they  identify with and which support their views. The research does not state which bias evaluation  methods are the most effective. However, Kelly notes the literature concludes that consumer  opinions about news source bias and credibility often vary from person to person, even when  referring to the same source. 
+Nearly two-thirds of American adults read news articles on social media, mainly from  Facebook (Allcott & Gentzkow, 2017). Results from a study of false news stories following the  2016 U.S. Presidential election showed that people believed fake news stories often. The study  confirmed that, for the period investigated, the most shared fake news stories favored the  Republican candidate over the Democrat. One-hundred-fifteen of the top stories were pro-Trump  or anti-Clinton, and users shared them more than 30 million times. By contrast, users shared 41 articles favoring Clinton 7.6 million times. The nearly 38 million sharing instances translate to  760 million clicks on the articles or roughly three stories per American.  
+The results of surveys in early 2017 show the average American adult remembered 1.14  false news stories from 2016 (Allcott & Gentzkow, 2017). Regardless of political leanings,  participants were 15% more likely to believe headlines if they supported their ideology. The  results suggested that the primary influence in more accurate discernment between fake and real  news stories was not party affiliation (Allcott & Gentzkow, 2017). Individuals with an increased  likelihood to identify the difference between real and false news included those who regularly  consumed more news, had more education, and were older. People more likely to believe fake  headlines were those who read more news articles on social media, particularly Facebook users  (Allcott & Gentzkow, 2017). This study did not assess whether fake news swayed the 2016 U.S. 
+27 
+Presidential election. Additional research is needed about the degree to which disinformation  may have influenced the 2016 election and future elections. 
+Groseclose and Milyo (2005) measured news outlet bias by counting the instances each  cited think tanks and then compared the citations with how often Congressional members  mention the same think tanks. A key finding from the study was that news story biases do not  always match editorial biases. The study linked news media political leanings with the known  leanings of politicians, not think tank politics. Bias is different from accuracy and honesty.  Groseclose and Milyo (2005) found multiple studies suggesting journalists rarely make  intentionally dishonest statements. However, all people make deliberate and non-deliberate  commissions and omissions due to their biases (Groseclose & Milyo, 2005). The study suggests  that omitted facts are hundreds of times more common than lies and misstatements. A lack of  facts reinforces news audiences' confirmation bias. By using think tanks as a measure, this study  found that the Drudge Report is as liberal as southern Democratic politicians, although Matt  Drudge is a staunch conservative. The discrepancy was likely because others write more than  95% of the news on his site. The study found that U.S. news media outlets tended to be  conservative. Still, they appeared more liberal when compared with that of U.S. politicians as a  whole when using think tank references as a measure (Groseclose & Milyo, 2005). The study has limitations. However, it does present a method for measuring media bias. The authors assume all  news rests somewhere on a binary political spectrum, bounded by "conservative" and "liberal."  This study was completed before Facebook and other prominent social media sites were  widespread. Therefore this study may not reflect the current political environment. It may also be  problematic to suggest that politicians and journalists use think tank citations to support their  biases similarly, questioning whether using think tank citations is valid.
+28 
+A study using machine learning to measure media bias through images found that  politically leaning websites showed politicians they agreed with more often with positive  emotions and those they disagreed with more often with negative emotions displayed on the  photos (Boxell, 2018). The dataset included more than one million pictures of 61 different faces  of politicians from the 2016 U.S. election cycle. Using Microsoft Emotion API, the researcher  categorized each photo's facial expression as happy, angry, fearful, surprised, disgusted,  contemptuous, sad, or neutral. The Republican sites showed Trump more frequently with negative expressions through the initial part of the campaign and the primary period until he  clinched the nomination (Boxell, 2018). Once Trump was the clear frontrunner, Republican sites  began showing him with positive emotions. Liberal-leaning websites tended to show Trump with  consistent negative emotions, with the peak negativity around winning the Republican  nomination. The same liberal sites showed wide swings of the expressions in Clinton's imagery  for the same period. Overall, Trump was depicted more negatively in media nonverbal  communication than Clinton (Boxell, 2018). The study cannot explain if the bias is deliberate,  subconscious, happenstance, or nonverbal emotional communication due to the politicians  themselves. 
+Allahverdyan and Galstyan (2014) developed a confirmation bias model consisting of  three inputs to evaluate media bias. They approached the study by using Bayesian probabilistic  modeling of cognitive behaviors. The first contribution is from an agent or person with  subjective and potentially problematic opinions. The second is a person administering persuasion  or advising the first person. The third input is the first person's perceived importance of the  second person. The authors monitored participants through a series of interviews between these  three interacting agents. Allahverdyan and Galstyan (2014) concluded that the standard Bayesian 
+29 
+approach does not describe the persuasion process. According to the authors, the study lacks an  explanation of what they call the boomerang effect, which is the phenomenon of the subject  returning to his or her original opinion during portions of the study. The researchers plan to  expand to study collective opinion dynamics in groups (Allahverdyan & Galstyan, 2014). 
+Sylwester and Purver (2015) argue that people who lean left and right politically differ in  their decision-making process, reason, and personalities. Their research aims to confirm other  research and theories that argue conservatives and liberals have measurable differences in word  usage on Twitter. This study takes a big-data approach using public Twitter postings to avoid  self-reporting biases of other studies. The findings agree with other research, for the most part,  that Democrats use more individualizing words, more expressive words, more compassionate  words, and more words about feelings. Republicans tend to use more group identity words,  religious words, and express a need for cognitive closure (Sylwester & Purver, 2015). Sylwester  and Purver (2015) selected posts by Twitter users following various public figures with known  biases for analysis with LIWC. The content analysis considered Democrat and Republican word  use to find indicators of political leanings. The findings suggested a weak correlation between  political leanings and word usage, but trends did exist. The analysis met several challenges based  upon various cultural and logistical differences, such as spelling errors, sensitivity to post  comments by some groups, and the tendency of Democrats to comment less but follow  significantly more public figures and Republicans comment more often and are followed by  more users (Sylwester & Purver, 2015). 
+Another analysis of multiple studies found significant differences in liberals and  conservatives' linguistic styles in 23 out of 27 hypotheses found in the literature (Sterling et al.,  2020). The study relied on 32 dictionaries to analyze language use by a sample of 25,000 
+30 
+English-speaking Twitter users (Sterling et al., 2020). The authors found several key differences  between liberal and conservative word usage. Conservatives use more language describing  anxiety, threats, resistance to change, conformity, loyalty, and references to the past than liberals.  Liberals tend to reference their uniqueness and use approach-related emotional words expressing  moral outrage, anger at injustice, and excitement for positive outcomes. The authors found that  conservatives use more avoidance-related words expressing anxiety, feeling calm, and risk  avoidance. Liberals are more likely to use words expressing anger and benevolence, while  conservatives are more likely to express anxiety and uncertainty (Sterling et al., 2020).  
+A media literacy survey validated a scale measuring theoretical understandings of news  media production and consumption. The authors define news media literacy as the ability to  “access, evaluate, analyze, and create news media products” (Ashley et al., 2013, p. 31). The  researchers modeled the media literacy measurement on an earlier smoking media literacy scale.  The authors divide their model into three domains: Authors and Audiences, Messages and  Meanings, and Representation and Reality (Ashley et al., 2013). Ashley et al. (2013) validated a  news media literacy scale based on an earlier smoking media literacy scale using factor analysis, taking into account media system knowledge. The results provided partial support for the  predictive validity of the scale in comparing knowledge of current events. The authors feel the  study contributed a valuable and validated conceptualization of a news media literacy  measurement test (Ashley et al., 2013). The authors note that survey results may be skewed if the  tested population happens to have higher than average news media literacy or are merely good  test-takers. The participants were first and second-year college students. Ashley et al. (2013) note  that future studies should expand to include students who have not taken a media literacy course.  Additionally, it is essential to explore other means to assess media system knowledge, which was 
+31 
+a significant weakness for this study. Expanding the types of participants to include multiple  background demographics would also improve the quality of the survey (Ashley et al., 2013). An analysis that supports a claim that news media bias affects voting behaviors looked at  voting in 9,256 towns from October 1996 to November 2000 to compare voting trends between  cities with and without Fox News (DellaVigna & Kaplan, 2007). According to their study, they  suggest Fox News may have convinced somewhere from 3 to 28% of their audience to vote for  Republican candidates by the November 2000 election, depending on location. Therefore, the  researchers argued that Fox News had a measurable influence on Republican voter turnout, and  the station may have energized conservative voters in Democrat-leaning districts. The study's  raw data show towns with Fox News by the year 2000 saw an increase of 5.9% in Republican  voters. However, DellaVigna and Kaplan (2007) also found that cities without Fox News  experienced a 7.1% increase. The increase does not consider population size and other  demographics, nor does it account for other cable market variables that may have altered the  outcome, which DellaVigna and Kaplan (2007) accounted for during further analysis. The Fox  News Corporation typically added their affiliates into larger markets with more available  channels. The authors asked if Fox News just happened to be moving into towns already trending  towards an increase in Republican voters. Their investigation told them that was not the case, but  the discrepancies between the Republican voter increases with or without Fox News moving into  an area suggests questionable results. 
+Higher population densities usually correspond with less Republican support (DellaVigna  & Kaplan, 2007). Bush won in Florida by 537 votes during the contentious 2000 election.  According to this study, Fox News shifted 10,757 votes towards the Republican candidate for the  state's presidential vote (DellaVigna & Kaplan, 2007). The authors explain that Fox News was 
+32 
+introduced into towns already becoming more conservative. The non-rational persuasion theory  explains the data results because viewers did not account for Fox’s conservative bias strongly  enough and were more easily persuaded (DellaVigna & Kaplan, 2007). The authors also  explored endogeneity bias and the rational learning theory, which suggest viewers were unaware  of Fox’s conservative bias and were more open to influence. The authors discount these theories  because Fox News’ growth continued and continues growing despite common knowledge of bias  (DellaVigna & Kaplan, 2007). 
+Another study analyzing online traffic of news outlets with various political orientations  considered some of the most trafficked right-leaning and left-leaning websites. The researchers  compared the presentation of news across the outlets over time and on different media platforms,  excluding print sources (Kavanagh et al., 2019). The news outlet criteria included traffic,  political leaning, and the amount of activity through the 2012-2017 study period. The researchers  found the determination of political leaning to be problematic and report that they had to rely  upon multiple sources. Criteria for political source measures were not equal between right and  left-leaning measurements. As the authors noted, the uses and platforms operated differently and  included different affiliations, original sources of information, and various channels to reach  audiences (Kavanagh et al., 2019). 
+More than 50,000 Russian-linked automated accounts operated on Twitter during the  2016 U.S. presidential election, reaching as many as 126 million Americans before the  November vote. A 3-month study of American Twitter and Facebook users examined the  political spectrum of junk news. The authors define junk news as forms of extremist,  sensationalist, conspiratorial, masked commentary, and fake news created to appear as legitimate  news. The study analyzed patterns between accounts that share fake articles and how they 
+33 
+engage with users who disseminate the misinformation (Narayanan et al., 2018). The analysis  included a detailed look at the writing in the articles. The study's authors considered the five  domains of professionalism, style, credibility, reporting bias, and whether they appeared to  counterfeit professional news media in name and appearance. Researchers collected data from  Twitter and Facebook from October 20, 2017, to January 18, 2018. 
+Along with their evaluation of junk news sites, the researchers constructed a social  network map and coded data using the Graphika Visualization Suite. The findings showed that users shared 54% of the identified junk news during the study period on Twitter and 33% on  Facebook. Additionally, their results suggest extreme conservative groups, including Trump supporting groups, accounted for more than 90% of the shares found during the study  (Narayanan et al., 2018). 
+Facebook users are eight times more likely to hit the like button on a posting than to  comment or share. However, nearly half of users leave a comment at least once per day, and a  third leave multiple comments per day (Kaur et al., 2019). Users can leave comments on threads  posted by other users and themselves, and the comments are viewable to those on friend lists,  followers, and others, depending on privacy settings. For analysis, aggregated user comments  include many problems, such as spelling errors, shorthand, emojis, and emoticons, which require  cleaning and adjusting to ensure analysis does not miss user meanings (Barfar, 2019). Sentiment  analysis studies generally take advantage of user comments by extracting and processing the text  left by individuals and combining it into long strings, which are better suited for analysis (Kaur  et al., 2019). 
+Facebook news consumers typically remain within their self-selected news communities,  limiting their exposure to a finite set of pages (Schmidt et al., 2017). These self-limiting 
+34 
+tendencies contribute to the online community structure for news outlets. However, the findings  suggest that users typically have a fuller range of views than those of the news providers they  follow (Schmidt et al., 2017). Despite user physical dispersion, their self-segregation limits  exposure to the same few primary news sites as other community members. As the polarization  increases, news on Facebook is subject to the same sharing dynamics as other popular  information shared on social media, such as videos of kittens or celebrity selfies, suggests  Schmidt et al. (2017). 
+Every major news story shared through multiple Facebook pages generates tens of  thousands of comments from users, worldwide (Mitchell et al., 2016). Analyzing these massive  collections of comments from various popular Facebook pages about the same high-profile news  topic for the same period may reveal themes and patterns relative to the associated articles and  levels of emotionality in relation to political biases possessed by the social media audience.  Categorizing the comments by psychological and emotional word usage may be a method to establish community profiles for audiences on each Facebook page. Data measurement and  analysis should describe audience sentiments, how user engagements show a bias relationship  between the page audiences, and news stories. More importantly, the study should explain the  differences and similarities between user communities. 
+Research Questions 
+This research aims to determine if political biases correlate with the word usage of different public social media communities. The literature review discusses multiple theories that  describe biases that develop among individuals and groups, such as social judgment,  confirmation bias, social cognitive theory, minority influence theory, and social prompting. A  primary driver of biases, as suggested by the literature using these theories, is that social media 
+35 
+engagement rewards participants with social reinforcement, and they receive a positive cognitive  response when they perceive their beliefs as secure or if they can threaten differing opinions  (Allahverdyan & Galstyan, 2014; Bandura, 2009; Kelly, 2018; Nemeth, 2011). There is  considerable research on bias, social media engagement, and social reinforcements of behaviors.  The vast amounts of data social media users share publicly make it probable that the  measurement of distinguishing characteristics of digital communities can increase an  understanding of group differences and similarities. This study proposes to answer the following  research questions: 
+RQ1: What are the word usage differences between Facebook news fan-page  communities with different political affiliations and beliefs? 
+RQ2: How does Facebook news fan-page audience word usage correspond to the words used by news stories chosen by page hosts to inform their audience about a politically  charged news event? 
+Research into Facebook comment section bias uses sentiment analysis processing tools to  analyze mass amounts of textual data to reduce it into psychological categories (Liu, 2015). Natural language analysis software, combined with statistical analysis, can measure differences,  if any, from group to group in the way they comment on social media (Peslak, 2018). Public  Facebook news posts comments, for this study's purposes, describe commentary posted by  Facebook users below content produced by journalists, marketers, and other communication  professionals (Ziegele et al., 2018). 
+This study will compare written content through emotional-based word usage analysis. A  quantitative comparison of groups of people engaging on different Facebook pages is possible by  measuring aggregated samples of public comments on various public Facebook news pages from 
+36 
+across the political and ideological spectrum. Community profiles of their word usage and  potentially group psychological tendencies may be developed with word count software based  upon users' words. 
+Hypotheses 
+These hypotheses offer a theoretical outline to drive bias measurement of social media  communities to produce a statistical comparison from one group to another. The research  questions lead to the following hypotheses: 
+H1: Politically right-leaning Facebook fan page commenters use significantly different  words than politically left-leaning page commenters when discussing the same politically  charged newsworthy event. 
+H2: A politically charged article posted to a Facebook news fan page will have  significantly similar word usage as the comments about the article. 
+H3: Articles about politically charged newsworthy events written with negative emotional  tones will result in more comments on Facebook news fan pages than articles with  positive emotional tone.
+37 
+CHAPTER 3. METHODOLOGY 
+Introduction 
+This study measures and compares social media group psychological profiles based on  word usage within Facebook comment sections. Investigating how community members  communicate concerns psychology academics and theorists. The research takes advantage of the  vast amounts of text news-consumers post into public Facebook fan pages. Word-counting  software creates word usage profiles of the communities from the aggregated data collected from  Facebook. The words were segregated into psychological and emotional categories by  community, highlighting stronger and weaker feelings community members express about a  specific event. The summarized word-count classifications develop word usage profiles of the  separate groups to compare Facebook news-page commenters and their relative political  ideologies. 
+The analysis for this study occurred in three parts. The first step for this study was to  identify a distinct and politically charged news event shared across multiple Facebook news sites  with different political ideologies and collect the commentary associated with the article on each  studied Facebook page. The news event was selected because it attracted significant commentary  on Facebook news pages. The second step was to analyze and compare Facebook news page  comments with associated articles. The expectation is the author's vocabulary and word usage  will be different based upon their political leanings, perspective, and angle. The comments  should reflect the word usage of the article. Finally, the study compared the comment section  analyses between Facebook news pages that shared an article about the same distinct news event. 
+38 
+Legal and Ethical Considerations 
+Social media users add more and more public data every day, revealing their thoughts in  ways never considered before the modern era. Considering the plethora of available information  available to social media researchers and other third parties, concerns should be taken to review  the ethics surrounding the collection and analysis of the information shared by users (Townsend  & Wallace, 2016). A critical factor in accessing information is whether it is public or private.  
+Researchers must question whether the social media user has reasonable expectations of privacy  when they post information, whether the user understands posted social media site policies, and  whether the user can make those decisions. 
+Researchers are able to access much of the data posted on Facebook that many users may  believe is private through third-party apps or, perhaps, because users do not understand or are not  capable of understanding Facebook's privacy policies. Protecting data about minors and others  not able to give consent or other vulnerable populations who are posting information on social  media is the responsibility of the researcher (Townsend & Wallace, 2016). Accessing data on  Facebook user walls or in private and secret groups may be a gray area or may require informed  consent, but it may be less clear to users where that line is when they comment on public fan  pages (Townsend & Wallace, 2016). 
+A critical component for all types of academic and scientific research is informed  consent. Researchers typically build informed consent into their research design by using signed  questionnaires or checked boxes on surveys or through more direct means to ensure participants  are fully aware of their position within a study (Townsend & Wallace, 2016). Big data and social  
+media research have inherent issues concerning research regarding informing subjects and  attaining their consent. It is highly impractical, inefficient, and probably impossible to get 
+39 
+permission from thousands of Facebook users (Townsend & Wallace, 2016). Asking for consent  could bias the data. Researchers should consider textual data more anonymous than photos  because photos can reveal the subject's identity and other information much easier than text  (Willis, 2019).  
+Another problematic area may be protecting research participant anonymity when the  data may be sensitive, revealing, or create potential personal risks. Researchers have a  responsibility towards protecting their subjects, particularly when published data could be  embarrassing, lead to persecution, or harm reputation (Townsend & Wallace, 2016). Observing  humans in public spaces has long been considered within acceptable ethical research standards.  However, defining public space in social media and what users believe is public space is not  always clear (Willis, 2019). Having access to Facebook user data from a public access point does  not automatically indicate it is reasonable to consider it in the public space because users may  not be aware it is public due to a misunderstanding or misperception of Facebook feed privacy  functions (Willis, 2019). 
+Researchers can mitigate the problems by ensuring participants have reasonably expected  the data they post are public by reviewing social media policies, considering the nature of where  users post the data, and taking steps to protect user anonymity (Townsend & Wallace, 2016).  Shielding the identity of unaware participants becomes more important when they do not know  their words are being researched. According to Facebook policy, digital scraping tools are not  authorized without the fan page or group page owner's permission. However, the Facebook  Graph API is not a scraper; it is a Facebook application and therefore is allowed within their  policy (https://www.facebook.com/help/). The Graph API is the registered tool application  developers build into their software to accomplish various data tasks, such as targeting 
+40 
+advertisements and link games. Facebook privacy and data collection policies were followed  throughout the research. Data collection and analysis for purposes of the research used in this  study were limited to highly popular public news pages to ensure a very reasonable expectation  of publicness. Only text was copied, no images were be collected, nor will participant names.  Informed consent was not collected for this study. 
+Research Design 
+This study began with selection of a politically charged news event, which generated significant commentary on Facebook news fan pages. Comments from nine Facebook news fan  pages (three conservative or right-leaning, three center, and three liberal or left-leaning news  sites) provided the word data. Word count analysis developed community profiles based upon  the word usage of the consolidated comments from each fan page. Fan page political leanings  and selection criteria are discussed in the following section.  
+The nine Facebook fan-page word usage profiles were built using a natural language  word count of audience comments from the various Facebook news pages. The research  analyzed comments on English-speaking Facebook pages from across the political spectrum  during a significant news event. An expectation existed that news audience word usage would differ significantly from page to page, making it plausible to psychologically describe different  social media groups. The intention was to analyze and compare the comments from one page to  another about the same news event to create word usage categories and test theories as to  whether the commenters exhibit the different pages' known political biases as a group. Fan Page News Source Selection 
+This study used the Facebook comment data from nine news outlets following a major  news event. The news outlet selection criteria were based on the number of Facebook followers 
+41 
+and political ideology. Data came from the top three followed news fan pages from politically  left, center, and right-leaning sources. 
+As discussed in the literature review, political and news biases exist for various reasons.  American news sources are politically biased and shape their articles to appeal to their audiences.  There are multiple ways to ascertain the political leanings of news outlets. For this research,  multiple sources were consulted to reach a consensus, ensuring a broad range of ideologically  biased audience comments can be evaluated. See Table 1 below with the list of news source  Facebook fan pages that were evaluated as potential data sources. News stories associated with  each page were selected before collecting data.  
+The primary source for media source selection based upon political bias is the Pew  Research Center. Pew based their bias ratings on surveys asking which news sources respondents  of various political orientations they trust for political news. They found no news source in  America received more than a 50% rating, meaning only half or fewer of the people surveyed  trust any one source of news (Jurkowitz et al., 2020). Pew's findings suggest Americans split on  which news sources they trust, which is similar to what other studies have found.  
+Allsides.com was also consulted for news media organization selection based upon  political leanings. Allsides.com is a media political bias rating website. It shares their analysis of  current news events in terms of political bias. Their bias ratings use multiple methodologies to  include a combination of blind surveys, third-party analysis, internal staff editorial reviews,  community feedback, and independent research (Allsides, 2019). According to their website,  Allsides continually reviews and updates its processes based upon audience feedback. Allsides’ ratings are used to corroborate Pew’s news bias selection.
+42 
+Table 1 
+U.S. News Facebook Fan Pages 
+Name and Facebook URL Political Bias Number of Facebook Followers (as of  February 19, 2020) 
+CNN 32,092,369 
+Left 
+	Left 
+	Left 
+	Left 
+	Left 
+	Left 
+	Left 
+	Left 
+	Left 
+	Center 
+	Center 
+	Center 
+	Center 
+	Center 
+	Center 
+	Right 
+	Right 
+	Right 
+	Right 
+	Right 
+	Right 
+	Right 
+	Right 
+	
+
+
+
+The New York Times 16,989,697 
+Time 12,978,772 
+Huffington Post 10,212,246 
+NBC News 9,997,523 
+Washington Post 6,325,231 
+CBS News 5,925,906 
+Buzzfeed News 3,033,063 
+MSNBC 2,318,928 
+USA Today 8,051,445 
+Yahoo News 7,808,547 
+NPR 6,602,892 
+Wall Street Journal 6,401,916 
+Bloomberg 3,075,433 
+The Hill 1,391,365 
+Fox News 17,760,832 
+New York Post 4,183,626 
+Breitbart 4,118,802 
+The Blaze 2,119,925 
+Daily Wire 1,979,509 
+Newsmax 1,240,061 
+National Review 1,056,285 
+CBN 1,011,758 
+The Washington Times Right 671,840 
+Facebook lists tens of thousands of fan pages within their news category; the category is  self-selected by the page creator and includes pages with many different types of information, to  include traditional news. The list above contains most of the largest U.S. news fan pages. In  addition to their main pages, most of the larger news organizations have multiple secondary  pages for niche fans, breaking news, sports, local news, opinion news, and more. Nine left leaning, nine right-leaning, and six center-leaning fan pages are captured on the list to give room  for discretion within the study to ensure like news events are covered and receive enough  engagement for adequate data collection. This study used three of the most relevant fan pages
+43 
+from each political leaning category with the most audience engagement, which varies from  article to article. 
+News Event Selection 
+The study began with the identification of a politically charged major American news  event that shows a large amount of Facebook engagement on multiple major news media pages  known to appeal to different political and ideological audiences. The news event selection was based on the following guidelines. 
+• The articles were created by the pre-identified news outlets and posted on their Facebook  fan pages. 
+• The event was real. 
+• Must be of significant interest and politically charged to English-speaking Americans  across the political spectrum. 
+• The news event was a specific event, with all primary news elements happening on one  day. 
+• An appropriate data collection timeline was set for all Facebook page comment sections.  Depending on the news cycle and taking into consideration peak engagement-times and  late-breaking story adjustments, the collection timeline was between 24-hours and one week. 
+• Data were from the same period for all Facebook pages. 
+A current news event divisive enough to generate significant partisan engagement from  across social media communities should be appropriate for the study. While it is impossible to  establish an actual parity among the articles, it should be possible to select articles with the same 
+44 
+publishing date, similar length, and primary subject matter. Using multiple news articles from  each political leaning category will lend more word data for establishing word usage patterns. Instrumentation 
+The analysis was conducted by natural language analysis. Linguistic Inquiry and Word  Count 2015 and SPSS were used to build statistical comparisons of categories. SPSS Statistics  helped identify associations and patterns between data, including anomalies and outliers (SPSS  Statistics, n.d.). Research concepts and variables included an aggregation of sentiment and other  word usage categories by the community of Facebook commenters and news articles.  
+Similar to other studies reviewed, LIWC2015 compared groupings of commentary on  various Facebook fan-page news sites. LIWC2015 software creates raw word counts and  measures the categories of group clout, tone, authenticity, style, and positive and negative  emotions. The analysis may lead to conclusions on group differences and similarities based on  word usage. 
+Data Collection 
+Data collection was dependent on a news event significant enough to encourage enough  commentaries on multiple news media Facebook fan pages. The collection included target news  event themes and talking points, key comment themes and sentiment or expressed emotions,  themes and sentiment expressed in replies to comments, and overall psychological profiles of  commenters and psychological profiles comments. Nine Facebook fan pages were selected based  on followership, comments, and their posting of an appropriate article, by the predetermined  criteria. As recommended by LIWC2015’s protocols, at least five thousand words were collected  for each section, which is an average of 70 comments, as a minimum adequate amount to provide  enough variety and content for statistical analysis (LIWC2015, n.d.).
+45 
+Once the news event was identified, data were collected using NEXT Analytics software from Facebook comment sections and input into an Excel spreadsheet to create a database for  analysis. Article text of posted stories on each Facebook page was also collected. The collection  retained time/date stamp, number, and type of reactions, such as thumbs up, love, ha-ha, wow,  sad, and angry. NEXT Analytics uses Facebook's Graph API to copy public comment data per  Facebook policy (NEXT Analytics, 2020); therefore, informed consent was not required because  people posted their comments in a public forum (Faasse et al., 2016). 
+NEXT Analytics, a paid software program, can perform social media and video analytics  on several platforms, including Twitter, Google, Instagram, and Facebook (Sui, 2019). The  software allows users to interface with Facebook fan page data by downloading posts or  comments from any public page or list of pages by date (NEXT Analytics, 2020). Through this  software, historical text data populate an Excel spreadsheet for social media analysis (Sui, 2019).  NEXT Analytics aggregates data into a local or cloud database, depending upon customer  requirements. The software allows researchers to work with data on Excel, or to save findings on  a Google sheet for simple distribution (NEXT Analytics, 2020). 
+The data collection did not include commenter names or any other personally identifying information. It did not include photos, memes, or gifs. Identifying information will generally not  contain terms useful for analysis and will not manifest through the data processing. Data were aggregated into an Excel spreadsheet that included time and date of comments, number and types  of reactions, and the comment text. Facebook public fan pages are considered to be in the public  space, despite whether users may or may not be aware of it due to a misunderstanding or  misperception of Facebook feed privacy functions (Willis, 2019). Limiting collection to non-
+46 
+attributed text eliminates the risk of identification and other privacy concerns and does not  violate Facebook policy (Townsend & Wallace, 2016). 
+Article text associated with each comment section was also saved for analysis. The article titles, authors, website URLs, and publishing dates were retained for identification purposes. Data Analysis 
+Comments and articles were grouped for analysis by the news organization's political  position that owns each Facebook fan page. The aggregated comments from each Facebook fan  page comment section were copied from the Excel database created by NEXT Analytics  Facebook application into the LIWC2015 processor to create a breakdown of total output dimensions of grouped public comments. Text from each article associated with news story  posting was also processed through LIWC2015 to create total output dimensions. Analysis  groups were sorted by the Facebook fan page and by political leaning associated with the page (LIWC2015, n.d.). The analysis was by each of the nine fan page groups. The analysis produced nine word-usage profiles, three from each of the political leaning groups. This process  emphasized the majority voices of each of the nine groups because LIWC2015 provides word  counts as a percentage of the word-type for each group.  
+SPSS constructed statistical comparisons and analyzed LIWC2015 outputs of the  community word counts and algorithm-generated percentiles. The majority of LIWC2015's  output is by the percentage of the words for each variable. LIWC2015 also produces the raw  word count for Analytic, Clout, Authentic, and Tone categories. To analyze the hypotheses, general linear model multivariate analysis, logistical regression, and paired-sample T-tests were  conducted through SPSS. 
+Analysis of Hypotheses
+47 
+H1: Politically right-leaning Facebook fan page commenters use significantly different  words than politically left-leaning page commenters when discussing the same politically  charged newsworthy event. 
+Analysis of Facebook comments discussing posted articles about the same news event on  different fan pages was conducted through SPSS MANOVA statistical comparisons of means on  each dimensional category determined by LIWC2015 between groups on different Facebook fan  pages. H1 tests whether comments on different politically leaning Facebook pages have a  
+measurable contrast in commentary word usage. Social judgment theory suggests people are  more likely to subscribe to information when they perceive the information agrees with their  viewpoint (Kelly, 2018). 
+Findings may suggest groups express differing cognitive attitudes based upon their  political leaning. Psycholinguistic studies found measurable differences in word usage of people with contrasting sociopolitical ideologies. Sterling et al. (2020) found conservatives use anxiety  and conformity and referenced the past more often than liberals on Twitter. Liberals were more  likely to express anger and benevolence than other differences (Sterling et al., 2020). Sylwester  and Purver (2015) found trends suggesting Democrats and Republicans produced content and  engaged Twitter differently. 
+The dependent variable for H1 is the word usage result within each comment section of  the Facebook fan pages and evaluated by the LIWC categories of Analytic, Clout, Authentic, and  Tone. The independent variable for H1 is the political leaning of each Facebook fan page. 
+H2: A politically charged article posted to a Facebook news fan page will have  significantly similar word usage as the comments about the article.
+48 
+H2 tests the assumption that right-leaning commenters agree with right-leaning articles  and left-leaning commenters agree with left-leaning articles. The alignment of political leanings  links articles and reader comments through the process social media users go through to compare  new information to their preexisting beliefs (Allahverdyan & Galstyan, 2014). Analysis of this  hypothesis was conducted using a one-way ANOVA of the relationship between the mean group  comment section sentiment and the mean of the associated article sentiment to show article  sentiment difference. If true, it supports the theories about homophily. The relationship between  article sentiment and audience word usage may fit into social influence and social organizing  theoretical frameworks, such as homophily (McPherson et al., 2001), minority influence theory  (Nemeth, 2011), and social cognitive theory (Bandura, 2009). While groups generally feel the  effects of minority influence theory over time, this analysis method may show a correlation  between the acceptance or disregard of a journalist's influence on Facebook fans. Commenters  may connect and influence like-minded people on these pages (Bandura, 2009). Uncorrelated  results may suggest the emotional tone of articles is not essential to commenter word usage.  
+The dependent variable for H2 is the group comment emotional tone. The independent  variable for H2 is the article's emotional tone per defined by the LIWC algorithm. This method  measures the fan page community to generate a model to compare one group of commenters  with another. 
+H3: Articles about politically charged newsworthy events written with negative emotional  tones will result in more comments on Facebook news fan pages than articles with a  positive emotional tone. 
+H3 tests whether an article with negative sentiment increases social media engagement.  Drama and opposition to outgroups typically increase audience interest, as publishers for various 
+49 
+types of news media can attest (Hillgaertner, 2015). Hypothesis analysis was completed using  LIWC2015 categories with a one-way ANOVA statistical comparison of dimensions between  groups and pages (LIWC2015, n.d.). Further consideration of the number of comments with  respect to total page followers was required. 
+The dependent variable for H3 is the number of Facebook responses in the article  comment section with the article. The independent variable for H3 is the article's emotional tone. Variable Definitions 
+• Facebook fan page political leaning: A public Facebook page of a popular national news  source organized by reported political leanings of left, center, or right. Analysis was grouped by political leanings of fan pages. See the list of proposed fan pages above in  Table 1. 
+• The number of responses associated with an article: Total count of comments and  responses to comments in a single fan-page comment section for a particular article. • Word use: Percentage of words used in each of the seven LIWC2015 output categories measuring psychological dimensions. 
+Values and attitudes expressed linguistically are measured by LIWC2015 algorithms and  norms generated against the LIWC2015 psychological word-usage dictionary. These ratings are  standardized scores expressed as a percentile when computed by an algorithm that combines  word count with psychological categories (LIWC2015, n.d.). 
+• Affect words: positive emotion, negative emotion. 
+• Cognitive process words: insight, causation descriptors, discrepancies, tentativeness,  certainty, differentiation. 
+• Core drives and needs words: affiliation, achievement, power, rewards, and risks.
+50 
+• Personal concern words: words dependent upon the story’s theme. 
+• Social words: words dependent upon and linked to the story’s theme. 
+• Time orientation words: past, present, and future. 
+• Summary variables: the other six psychological dimensions are converted to the four  summary variables of analytical thinking, clout, authenticity, and emotional tone. • Analytical thinking: measures the number of words expressing formal, logical, and  hierarchical thinking patterns. A lower score denotes a more personal, narrative, and  present use of language (LIWC2015, n.d.).  
+• Clout: a measurement of words referring to social status, confidence, or leadership (LIWC2015, n.d.). 
+• Authenticity: word usage based on deception studies to measure honesty versus deceptive  language. Higher scores use more personal, humble, and vulnerability revealing words  (LIWC2015, n.d.). 
+• Emotional tone: LIWC2015’s algorithm accounts for negative and positive affect words  percentages used in the measured text. The algorithmic output is a number from 1 to 100.  A number below 50 means the text has a negative tone, while a number above 50 denotes  a positive tone (LIWC2015, n.d.).  
+Conclusion 
+The results discussion will be in terms of the nine groups, divided into word usage  profiles. This research may suggest that political biases reinforce the relationship patterns and  shared sentiments between commenters on Facebook fan pages. Another possible outcome of the  research may be that Facebook commenters with different political leanings are not very  different when it comes to expressing their political biases as measured by their word usage, 
+51 
+regardless of their views. The data can contribute to media literacy education and a better  understanding of the relationships of the sentiment of Facebook comments, the news they are  reading, and across the American political spectrum.
+52 
+CHAPTER 4: RESULTS 
+This research compared the word use of politically diverse public Facebook communities.  This study conducted a psychological and emotional word-based analysis of articles and  comment sections from nine public Facebook fan pages with a cumulative 8,483 comments with  217,736 words. This research asked if comments on pages with different political leanings were  distinguishable and measurable and how they correlated based on community. The study  attempted to answer these two research questions using the following three hypotheses: 
+RQ1: What are the word usage differences between Facebook news fan-page  communities with different political affiliations and beliefs? 
+RQ2: How does Facebook news fan-page audience word usage correspond to the words  used by news stories chosen by page hosts to inform their audience about a politically  charged news event? 
+H1: Politically right-leaning Facebook fan page commenters use significantly different  words than politically left-leaning page commenters when discussing the same politically  charged newsworthy event. 
+H2: A politically charged article posted to a Facebook news fan page will have  significantly similar word usage as the comments about the article. 
+H3: Articles about politically charged newsworthy events written with negative emotional  tones will result in more comments on Facebook news fan pages than articles with a  positive emotional tone. 
+This results chapter will discuss and describe the data and the means of collection. A  statistical analysis of the findings will follow, organized by hypothesis to articulate the results'  significance and confidence.
+53 
+Data Collection 
+Data were collected using NEXT Analytics on September 18, 2020 from articles and  comment sections of nine Facebook fan page comment sections. The collection period was set  from 12:01 am September 13 to 11:59 pm September 17, 2020. Per the research design, the  newsworthy event selected for this study was the reactions to the kneeling and similar political  statements made by football players for the opening games of the 2020 NFL season, primarily on  September 13. Three news sources per political leaning were selected from the list in Chapter 3 based on which outlets shared related stories on Facebook and which had the most comments.  The liberal-leaning Facebook fan pages used for this study were CNN, New York Times, and  CBS News. The center-leaning pages were USA Today, Yahoo News, and The Hill. The  conservative-leaning pages were Fox News, Breitbart, and The Washington Times. 
+While the data collection period was the same for all pages, not all pages wrote and  posted their stories to Facebook on September 13. The total number of comments listed on  Facebook fan pages included hidden comments; however, hidden comments were not  downloaded or analyzed. It is not possible to determine which comments were hidden or why  they were no longer publicly available at that point. Facebook's spam filtering algorithm and  page owners most likely hid the comments. On some pages, as many as half the comments were  hidden, presumably because news pages attract substantial amounts of spam or perceived spam.  Despite the hidden comments, each page contained more than enough words to conduct a  suitable analysis. Table 2 depicts the number of visible comments and other article details. 
+54 
+Table 2 
+Data Collection Sources 
+Facebook fan page and news  
+source Political leaning Date Published Comment count Total words  CNN 39871 
+Liberal 
+	13 Sept 
+	1236 
+	Liberal 
+	13 Sept 
+	752 
+	Liberal 
+	14 Sept 
+	832 
+	Center 
+	14 Sept 
+	413 
+	Center 
+	13 Sept 
+	293 
+	Center 
+	14 Sept 
+	1765 
+	Conservative 
+	13 Sept 
+	567 
+	Conservative 
+	15 Sept 
+	1082 
+	
+
+
+
+New York Times 16073 CBS News 21723 USA Today 8637 Yahoo News 5664 The Hill 42836 Fox News 13066 Breitbart 29250 The Washington Times Conservative 15 Sept 1543 40616 
+A LIWC2015 natural language analysis followed the download of Facebook comments  and article words. The LIWC2015 summary output variables were then analyzed through SPSS  for each hypothesis. 
+Each news source linked a story on their Facebook page from their official corporate  website. Drawing audiences directly to websites enables the media companies to share  advertisements, leave cookies on user devices, and collect demographic data. This study did not  collect information on how many audience members clicked through to the news source  websites, nor did it collect device data or advertising effectiveness information. The identified  news sources shared the following nine stories on their respective Facebook fan pages. Because  articles had varying layouts on each webpage, the article text was copied manually for the  LIWC2015 analysis to avoid advertisement text, photo captions, and other links. The language  analysis included headlines. 
+The three liberal-leaning news sources appeared to frame the protests as appropriate  responses with a broad view of the subject matter and were much longer articles than the center leaning and conservative-leaning outlet stories. CNN's article begins with a photo showing a  lineup of Chicago Bear players on a sideline, some kneeling, below the headline "Here's how 
+55 
+NFL Sunday games highlighted racial inequality in the US." As the longest article of the group,  at 1,904 words, it detailed how some teams and some players expressed their feelings about  racial inequality without presenting counterarguments (Elassar, 2020). The New York Times  article with the headline "N.F.L. Kicks Off Season With Nods to Unrest and Focus on Anthem"  was the next longest at 1,369 words. It was similar to the CNN article in that it covered the  actions of teams and players from across the NFL on the September 13 game day (Belson, 2020).  CBS News posted the third-longest article at 1,176 words with a reprint of an Associated Press  story. Like CNN and The New York Times, CBS News wrote about the forms of protest over  racial injustice throughout the NFL on September 13 with a headline of "NFL teams, players  challenge racial injustice during season openers" (Golen, 2020). 
+The center-leaning posted articles have notably lower word counts than the liberal leaning articles. These posts were generally supportive of the protests and positive in how they  framed the event. USA Today posted an opinion article with 776 words by their sports columnist  with the headline “Opinion: NFL gets behind player protests in opening week, but more support  needed.” The article covered the game day protests and some background information. The  author’s primary message is that the NFL does not provide enough support for player protests  and their racial justice efforts due to repudiation by prominent conservatives (Armour, 2020).  With the headline, "Colts coach Frank Reich kneels during national anthem as players stand,"  Yahoo News highlighted that the Indianapolis Colts' White coach kneeled with a more standard length article of 447 words and several links to Twitter posts about the same topic. Yahoo News  shared the story from its sports webpage, written by a Yahoo sports blogger and editor (Owens,  2020). The Hill posted an article by one of their media writers with the headline "Indianapolis  Colts coach kneels during anthem: 'White leaders really have an opportunity to step up'" with 
+56 
+277 words. The Hill's article included a tweet by Vice President Pence stating he left the game  due to his disagreement with the NFL allowing the protest, highlighting the two major narratives  of this event (Concha, 2020). 
+The articles posted by conservative-leaning news outlets were notably shorter than the  articles posted on the other pages. The conservative stories framed their narratives around the  NFL's negative views and of the protests and used stronger language than the other sites. While  some of the liberal-leaning and center-leaning articles mentioned Colin Kaepernick’s role in the  NFL player protests, Fox News’s 306-word story focused on a critical tweet by Kaepernick. The  report, written by a Fox Sports reporter, covered the NFL's action from a political perspective.  Fox News' headline read, "Colin Kaepernick slams NFL over social justice campaign, Eric Reid  free agency" emphasizing the contention (Gaydos, 2020). The Breitbart article centered on a  sensitive perspective to conservative-leaning readers with the headline, "Giants Stand for 'Black  National Anthem,' at Least 20 Kneel During U.S. Anthem." The 306-word story written by a  sports radio host and author included tweets and 182 words quoted from an ESPN report (Gwinn,  2020). The Washington Times posted a short 201-word article that focused on a statement by  football icon Mike Ditka. The story's headline of "Mike Ditka rips NFL anthem protesters: 'If  you can't respect this country, get the hell out'" reflected much of the sentiment expressed by  other right-wing perspectives (Morton, 2020). 
+Following the collection of comments and article text, LIWC2015 produced four  summary variables through proprietary algorithms that convert 92 categories to percentiles  (LIWC2015, n.d.). This study assumes the LIWC2015 summary variables are significant and relevant, as addressed in the literature review. A LIWC2015 analysis was conducted for the nine  fan page comment groups and the nine associate articles.
+57 
+Linguistic Analysis 
+The following tables show the LIWC2015 scoring for the comment sections and the  associated articles. LIWC2015 counts words to generate 92 word-usage categories. Tables 4  through 12 primarily show the percentage of words and word types used throughout each  Facebook fan page's comment sections. LIWC2015 output variables begin with three general  descriptors, 21 standard linguistic dimensions shown as percentages, 41 psychological construct  word categories, six personal activity describing word categories, five informal language  markers, and 12 categories for punctuation (Pennebaker et al., 2015). Table 13 includes comment  count, the number of "like," "love," "wow," "haha,” “sad,” and “angry" reactions per group from  NEXT Analytics raw Facebook data.  
+Table 3 lists the summary variable scores used to address the hypotheses. LIWC2015  creates these percentiles through a propriety algorithm that combines components of the other  measurements. The percentiles reflect the words used for each news source’s group of  commenters and the associated articles. The comment analytic word scores range from a low of  43.97 for Yahoo News to a relatively close high of 51.79 for The Hill commenters. The nine analytic scores are within five percent of their 47.54 mean and the 47.34, New York Times,  median score. The article analytic word scores range from The Washington Time's 66.65 to  Yahoo News' 98.95. The Washington Times was the analytic score outlier, as USA Today was  the next lowest score at 87.42, and the rest of the articles scored above the 90th percentile. The  mean score is 92.18, and the median was the Fox News article score of 95.58. High analytic  scores are typical for journalistic style writing. The comment clout scores were close, as well.  The comment clout mean of 77.20 and the median of 78.09 is within five percent for all  comment groups. LIWC2015 rated the comments with much more varied word usage scores for 
+58 
+authentic and emotional tone. The article clout mean and median were very close, scoring 75.26  and 75.38, respectively. However, three of the nine articles scored within five percent of the clout mean and median. There were no correlating patterns of higher or lower clout scores  related to political leaning or between articles and comments. 
+Comment authenticity scores range from 10.86, Fox News, to 21.39, for Yahoo News.  The mean authenticity score is 15.35, which is within five percentage points of all sources except  for Yahoo News. The median authentic score is USA Today at 14.65, which is, again, within five  percentage points of all sources except for Yahoo News. The relative closeness of Authenticity  scores with each other and the mean and median suggests commenters used similar types of  words at similar rates with one another across the political spectrum. Articles scored generally  higher authenticity percentiles than their corresponding comment sections, except for Yahoo  News and The Washington Times. Again, there were no patterns associated with political  leanings with scores ranging from The Washington Times 7.69 to The Hill's 56.77. Articles  scored a mean of 31.06, and USA Today was the median with 30.34. 
+The emotional tone score has the most variability between the fan page comment and  article groups. LIWC2015 scores emotional tone differently from the other summary variables,  with the 50th percentile considered a neutral score (LIWC2015, n.d.). Scores below 50 equate to  an overall negative emotional tone score, while scores above 50 have more positive emotional  words. Commenters on the CNN fan page was the only group rated with positive emotional word  usage. The Washington Times article scored the most positive emotional tone, overall, with  94.38. All other comment and article groups and the mean and median scores were rated with  negative emotional tone word usage. The New York Times, Yahoo News, and The Washington  Times commenters were within five percent of the comment mean of 36.40. The New York 
+59 
+Times commenters hold the median comment emotional tone score of 33.39. Comments from  CBS Today, Yahoo News, and The Washington Times are within five percent of the median.  The Yahoo News article was the most negative at 13.62, with Breitbart not far behind at 16.43.  Comment and article emotional tone means were relatively close at 36.40 and 35.86, as were the  median scores at 33.39 and 37.33, respectively.  
+The creators of LIWC2015 analyzed data from tens of thousands of representative blogs,  expressive writing samples, novels, natural speech, Twitter, and The New York Times to  establish sample statistics for comparing output variables. The total analysis from all sources  included 231,190,022 words resulted in mean summary variable scores of 56.34 on analytical,  57.95 on clout, 49.17 on authenticity, and 54.22 on emotional tone (Pennebaker et al., 2015). The  New York Times was used because of its large English-language distribution. The analysis includes editorial stories, features, national and world news, letters to the editor, and more  (Pennebaker et al., 2015). As The New York Times is one of the news outlets analyzed for this  study, it should be considered biased. Because the analyzed sample size was so varied, it offers a  comparison, however, skewed. The New York Times total summary variables scored 92.57 on  analytical, 68.17 on clout, 24.84 on authenticity, and 43.61 on emotional tone (Pennebaker et al.,  2015). LIWC2015’s large sample set of 35,269 tweets from a Twitter textual analysis scored summary variables of 61.94 on analytical, 63.02 on clout, 50.39 on authenticity, and 72.74 on  emotional tone (Pennebaker et al., 2015). The output variables from the articles and comment text for the research resulted in scores clearly out of the range of the normal from the LIWC2015  grand means and other total results, shown at the bottom of Table 3 for comparison. Additional  analysis of other Facebook comments may provide a more useful reference for comparing the  comments used for this study.
+60 
+Table 3 
+Comment Section and Article Analysis: Summary Variables Emo 
+Words  
+Six  
+Diction 
+News source 
+Ana 
+lytic Clout 
+Auth entic 
+tional  Tone 
+Per  
+Sentence 
+letter  words 
+nary  words 
+CNN - Comments 79.80 
+48.47 
+98.05 
+	78.09 
+82.37 
+	14.07 
+35.37 
+	60.33 
+39.88 
+	15.40 
+21.39 
+	18.21 
+23.95 
+	47.34 
+97.01 
+	75.95 
+68.50 
+	16.84 
+23.82 
+	33.39 
+23.48 
+	12.66 
+21.73 
+	18.79 
+22.5 
+	45.19 
+95.72 
+	79.49 
+82.09 
+	13.71 
+39.94 
+	29.62 
+19.43 
+	14.29 
+21.78 
+	17.41 
+19.3 
+	47.90 
+87.42 
+	77.06 
+64.58 
+	14.65 
+30.34 
+	27.89 
+39.60 
+	11.93 
+20.97 
+	17.12 
+21.52 
+	43.97 
+98.95 
+	72.63 
+80.23 
+	21.39 
+15.81 
+	32.12 
+13.62 
+	12.64 
+27.94 
+	17.32 
+26.85 
+	51.79 
+95.30 
+	78.65 
+74.22 
+	12.89 
+56.77 
+	22.27 
+38.62 
+	12.69 
+30.78 
+	17.91 
+19.13 
+	46.81 
+95.58 
+	78.28 
+75.38 
+	10.86 
+15.99 
+	45.45 
+37.33 
+	13.36 
+20.4 
+	17.43 
+25.82 
+	51.13 
+94.91 
+	78.94 
+61.58 
+	19.05 
+53.79 
+	42.13 
+16.43 
+	13.28 
+25.5 
+	18.12 
+17.97 
+	45.23 
+66.65 
+	75.67 
+88.37 
+	14.71 
+7.69 
+	34.44 
+94.38 
+	14.79 
+18.27 
+	16.91 
+16.92 
+	47.54 
+92.18 
+	77.20 
+75.26 
+	15.35 
+31.06 
+	36.40 
+35.86 
+	13.45 
+23.20 
+	17.69 
+21.55 
+	47.34 
+95.58 
+	78.09 
+75.38 
+	14.65 
+30.34 
+	33.39 
+37.33 
+	13.28 
+21.73 
+	17.43 
+21.52 
+	
+
+
+
+CNN - Article 74.74 New York Times - Comments 78.82 New York Times - Article 75.53 CBS News - Comments 82.26 CBS News - Article 75.94 USA Today - Comments 80.49 USA Today - Article 80.15 Yahoo News - Comments 80.74 Yahoo News - Article 75.62 The Hill - Comments 78.99 The Hill - Article 78.34 Fox News - Comments 79.47 Fox News - Article 71.57 Breitbart - Comments 81.80 Breitbart - Article 77.12 The Washington Times - Comments 81.48 The Washington Times - Article 83.58 Comment Mean 80.43 Article Mean 76.95 Comment Median 80.49 Article Median 75.94 LIWC2015 Grand Means 56.34 57.95 49.17 54.22 17.40 15.60 85.18 
+Tables 4 through 7, below, show the LIWC2015 analysis breaks down the comments by  source. The data in these tables are part of LIWC2015's calculation to determine summary  variables (LIWC2015, n.d.). The number for each group in the dictionary word category in Table  3 represents the percentage of LIWC2015 psychological dictionary target words identified within  the collected text. The comment sections each had between 78.82 and 82.26% of the  approximately 6,400 available target words. Table 4 lists the percentage of function words, such  as it, very, or no. Table 4 also lists the percentage of pronouns. Target words relate to other  categories within the LIWC2015 variables, and each dictionary word may be contributing to 
+61 
+other categorical scores; for example, the word "cried" will fall into five categories of sadness,  negative emotion, overall affect, verbs, and past focus (Pennebaker et al., 2015). Table 4 
+Comment Section Analysis: Linguistic Dimensions 
+Facebook fan page  and news source 
+Func tional words 
+Total  pro 
+nouns 
+Pers  pron 
+1st 
+pers  singl 
+1st 
+pers  plrl 
+2nd 
+pers 
+3d 
+pers  sing 
+3d 
+pers  plural 
+Impers 
+pron article prep 
+CNN 10.25 
+47.66 
+	14.73 
+	9.86 
+	2.92 
+	0.76 
+	3.19 
+	1.25 
+	1.74 
+	4.87 
+	5.07 
+	47.86 
+	14.52 
+	8.92 
+	2.21 
+	0.82 
+	3.75 
+	0.23 
+	1.92 
+	5.59 
+	5.48 
+	50.04 
+	15.81 
+	9.74 
+	2.16 
+	1.04 
+	3.77 
+	0.56 
+	2.21 
+	6.07 
+	5.51 
+	48.12 
+	14.22 
+	8.97 
+	1.82 
+	0.98 
+	3.59 
+	0.31 
+	2.27 
+	5.23 
+	5.44 
+	48.48 
+	14.94 
+	9.78 
+	2.74 
+	0.83 
+	3.87 
+	1.17 
+	1.18 
+	5.16 
+	5.16 
+	47.35 
+	13.97 
+	8.70 
+	1.83 
+	0.91 
+	3.83 
+	0.67 
+	1.46 
+	5.28 
+	5.65 
+	47.50 
+	15.00 
+	9.87 
+	2.34 
+	0.73 
+	3.25 
+	2.23 
+	1.32 
+	5.13 
+	5.06 
+	49.14 
+	14.84 
+	9.48 
+	2.01 
+	1.18 
+	3.58 
+	0.43 
+	2.29 
+	5.35 
+	5.68 
+	
+
+
+
+New York Times 10.04 CBS News 10.76 USA Today 10.08 Yahoo News 10.28 The Hill 10.22 Fox News 10.17 Breitbart 10.78 The Washington  
+Times 50.09 15.61 9.71 2.32 1.04 3.75 0.96 1.64 5.88 5.54 10.45 
+Table 5 
+Comment Section Analysis: Linguistic Dimensions and Grammar 
+Facebook fan page  and news source 
+Aux verb 
+Ad 
+verbs conj 
+Nega 
+tions verbs 
+Adjec tives 
+Compar isons 
+Interrog atives 
+Num bers 
+Quant ifiers 
+CNN 1.89 
+9.06 
+	4.74 
+	5.73 
+	2.55 
+	16.63 
+	4.09 
+	1.88 
+	1.57 
+	1.67 
+	9.53 
+	4.70 
+	5.44 
+	3.21 
+	16.18 
+	3.86 
+	1.65 
+	2.07 
+	1.21 
+	9.73 
+	4.67 
+	5.75 
+	2.96 
+	17.46 
+	3.95 
+	1.77 
+	2.15 
+	0.99 
+	9.71 
+	4.72 
+	5.44 
+	3.11 
+	17.3 
+	3.90 
+	1.45 
+	1.97 
+	1.02 
+	9.66 
+	4.84 
+	5.65 
+	3.43 
+	16.83 
+	3.88 
+	1.66 
+	1.68 
+	1.47 
+	9.42 
+	4.50 
+	5.52 
+	2.77 
+	16.54 
+	3.86 
+	1.73 
+	1.90 
+	1.16 
+	8.82 
+	5.08 
+	5.4 
+	2.98 
+	17.11 
+	4.19 
+	1.87 
+	1.74 
+	1.58 
+	9.24 
+	4.74 
+	5.34 
+	2.86 
+	16.29 
+	4.05 
+	1.99 
+	1.72 
+	1.33 
+	
+
+
+
+New York Times 2.08 CBS News 2.09 USA Today 2.12 Yahoo News 2.15 The Hill 2.15 Fox News 1.84 Breitbart 2.31 The Washington  
+Times 9.69 4.36 5.81 3.14 17.5 3.72 1.9 2.07 1.24 2.25
+62 
+Table 6 
+Comment Psychological Process Analysis: Affective and Social Processes 
+Facebook fan page  and news source 
+Affective  processes 
+Positive  emotions 
+Negative  emotions 
+Anxiety words 
+Anger words 
+Sad ness 
+Social process 
+Family words 
+Friend words 
+CNN 0.36 
+7.13 
+	4.47 
+	2.65 
+	0.13 
+	1.25 
+	0.69 
+	12.97 
+	0.29 
+	7.00 
+	3.7 
+	3.25 
+	0.22 
+	1.57 
+	0.56 
+	11.81 
+	0.20 
+	7.50 
+	3.83 
+	3.60 
+	0.17 
+	2.02 
+	0.53 
+	12.85 
+	0.47 
+	6.82 
+	3.45 
+	3.32 
+	0.2 
+	1.81 
+	0.46 
+	11.64 
+	0.19 
+	7.19 
+	3.76 
+	3.39 
+	0.37 
+	1.43 
+	0.78 
+	11.95 
+	0.26 
+	6.76 
+	3.24 
+	3.47 
+	0.2 
+	1.83 
+	0.46 
+	11.78 
+	0.28 
+	6.75 
+	3.9 
+	2.83 
+	0.23 
+	1.12 
+	0.54 
+	12.84 
+	0.21 
+	6.26 
+	3.56 
+	2.65 
+	0.24 
+	1.29 
+	0.34 
+	12.01 
+	0.27 
+	
+
+
+
+New York Times 0.17 CBS News 0.20 USA Today 0.17 Yahoo News 0.21 The Hill 0.20 Fox News 0.21 Breitbart 0.25 The Washington  
+Times 6.53 3.49 2.99 0.16 1.66 0.35 12.15 0.22 0.17 
+Table 7 
+Comment Psychological Process Analysis: Social and Cognitive Processes Differ 
+Facebook fan page and  
+news source female male 
+Cognitive  
+processes insight 
+Cau 
+sation discrep 
+Ten tative 
+Cer tainty 
+entia tion 
+CNN 3.46 
+0.83 
+	0.94 
+	10.93 
+	1.56 
+	1.71 
+	1.47 
+	2.08 
+	2.16 
+	0.21 
+	0.5 
+	11.82 
+	2.17 
+	1.61 
+	1.55 
+	2.63 
+	1.90 
+	0.24 
+	1.13 
+	11.68 
+	1.92 
+	1.60 
+	1.78 
+	2.58 
+	1.81 
+	0.21 
+	0.65 
+	11.79 
+	2.06 
+	1.98 
+	1.81 
+	2.37 
+	1.73 
+	0.46 
+	1.32 
+	12.31 
+	2.26 
+	1.75 
+	1.75 
+	2.17 
+	1.80 
+	0.27 
+	0.93 
+	11.8 
+	1.97 
+	1.78 
+	1.71 
+	2.46 
+	2.08 
+	0.31 
+	2.53 
+	10.59 
+	1.52 
+	1.57 
+	1.67 
+	2.08 
+	1.73 
+	0.17 
+	0.59 
+	11.06 
+	1.61 
+	1.73 
+	1.71 
+	2.23 
+	2.01 
+	
+
+
+
+New York Times 3.66 CBS News 3.68 USA Today 3.54 Yahoo News 4.34 The Hill 3.52 Fox News 3.27 Breitbart 3.33 The Washington Times 0.23 1.29 12.00 1.95 1.61 1.91 2.60 1.83 3.86 
+Tables 8 through 10, below, show the percentages of words measured by category against  the LIWC2015 psychological dictionary. LIWC2015 heavily weights the summary variable  algorithmic calculations with the psychological word percentages (LIWC2015, n.d.). Of note is  the difference in the rate of religious word usage between the commenters on liberal-leaning  news articles versus the groups' comments on conservative-leaning news articles. The comments  on the liberal-leaning articles scored between 0.30 and 0.34% of religious words. The comments  on conservative-leaning article pages ranged from 0.46 to 0.56. While these percentages may 
+63 
+seem small, they equate to a noteworthy difference of approximately one religious word out of  every 11 comments on liberal-leaning pages and one religious word out of every eight comments  on conservative-leaning pages. 
+Table 8 
+Comment Psychological Process Analysis: Perceptual and Biological Processes 
+Facebook fan page and news  source 
+Percep tion 
+Sight words 
+Hear ing 
+Feel ing 
+Bio 
+process 
+Body 
+words health sexual 
+Inges tion 
+CNN 0.12 
+2.73 
+	1.57 
+	0.87 
+	0.26 
+	1.09 
+	0.50 
+	0.36 
+	0.07 
+	2.97 
+	1.67 
+	0.97 
+	0.26 
+	1.14 
+	0.57 
+	0.33 
+	0.07 
+	3.15 
+	1.94 
+	0.77 
+	0.38 
+	1.80 
+	0.89 
+	0.54 
+	0.24 
+	3.13 
+	2.08 
+	0.67 
+	0.25 
+	1.91 
+	1.07 
+	0.58 
+	0.12 
+	3.09 
+	1.98 
+	0.79 
+	0.3 
+	1.57 
+	0.78 
+	0.44 
+	0.07 
+	2.74 
+	1.56 
+	0.77 
+	0.35 
+	1.5 
+	0.74 
+	0.55 
+	0.11 
+	2.57 
+	1.39 
+	0.93 
+	0.19 
+	1.35 
+	0.60 
+	0.47 
+	0.09 
+	2.7 
+	1.57 
+	0.68 
+	0.39 
+	1.79 
+	0.84 
+	0.53 
+	0.08 
+	
+
+
+
+New York Times 0.11 CBS News 0.12 USA Today 0.14 Yahoo News 0.23 The Hill 0.11 Fox News 0.08 Breitbart 0.22 The Washington Times 2.57 1.34 0.82 0.34 1.48 0.68 0.40 0.11 0.17 
+Table 9 
+Comment Psychological Process Analysis: Drives and Time Orientations 
+Facebook fan page and  
+news source drives 
+Affili ation 
+Achieve ment 
+Power words 
+Reward words 
+Risk 
+words 
+Past  focus 
+Present  focus 
+Future  focus 
+CNN 0.75 
+7.75 
+	2.21 
+	0.97 
+	3.57 
+	1.18 
+	0.61 
+	3.03 
+	12.05 
+	6.83 
+	1.83 
+	0.90 
+	2.92 
+	1.01 
+	0.62 
+	2.19 
+	12.2 
+	7.61 
+	2.11 
+	0.98 
+	3.48 
+	1.16 
+	0.56 
+	2.92 
+	12.55 
+	7.80 
+	2.18 
+	0.79 
+	3.42 
+	1.30 
+	0.58 
+	2.59 
+	12.87 
+	7.50 
+	1.71 
+	0.92 
+	3.76 
+	0.76 
+	0.79 
+	2.35 
+	12.22 
+	8.23 
+	1.83 
+	1.09 
+	3.92 
+	1.24 
+	0.83 
+	2.74 
+	11.81 
+	7.24 
+	2.01 
+	1.25 
+	2.93 
+	1.22 
+	0.65 
+	3.19 
+	11.9 
+	7.84 
+	2.34 
+	1.33 
+	3.31 
+	1.18 
+	0.59 
+	3.01 
+	11.59 
+	
+
+
+
+New York Times 1.00 CBS News 0.97 USA Today 0.82 Yahoo News 1.25 The Hill 0.93 Fox News 1.28 Breitbart 1.07 The Washington Times 7.93 2.05 1.03 3.50 1.24 0.69 2.97 12.67 0.92
+64 
+Table 10 
+Comment Psychological Process Analysis: Relativity and Personal Concerns 
+Facebook fan page  and news source 
+Rela tivity 
+Motion words 
+Space words 
+Time words 
+Work words 
+Leisure words 
+Home Words 
+Money words 
+Reli gion 
+Death words 
+CNN 0.41 
+9.33 
+	1.25 
+	4.76 
+	3.51 
+	2.62 
+	1.67 
+	0.29 
+	1.32 
+	0.33 
+	8.98 
+	1.04 
+	5.08 
+	2.94 
+	1.85 
+	1.49 
+	0.24 
+	0.72 
+	0.34 
+	9.02 
+	1.22 
+	4.91 
+	2.96 
+	1.74 
+	1.54 
+	0.21 
+	0.58 
+	0.30 
+	9.39 
+	1.42 
+	4.69 
+	3.31 
+	1.86 
+	1.69 
+	0.09 
+	1.23 
+	0.71 
+	9.82 
+	1.29 
+	4.91 
+	3.65 
+	1.96 
+	1.47 
+	0.39 
+	0.56 
+	0.30 
+	9.27 
+	1.17 
+	4.87 
+	3.24 
+	2.12 
+	1.01 
+	0.26 
+	0.71 
+	0.27 
+	10.36 
+	1.56 
+	5.04 
+	3.97 
+	2.72 
+	1.57 
+	0.15 
+	1.51 
+	0.47 
+	10.94 
+	1.56 
+	5.96 
+	3.48 
+	2.41 
+	1.60 
+	0.30 
+	0.95 
+	0.46 
+	
+
+
+
+New York Times 0.31 CBS News 0.55 USA Today 0.42 Yahoo News 0.46 The Hill 0.60 Fox News 0.18 Breitbart 0.27 The Washington  
+Times 9.44 1.45 5.19 2.92 1.94 1.31 0.23 0.93 0.56 0.36 Table 11 depicts the percentage use of language types by the fan page comment sections.  Commenters used informal language at least two percent of the time, and the other language  types much less. The scores for this word category do not significantly differentiate or show  correlations necessary for this analysis. 
+Table 11 
+Comment Psychological Process Analysis: Informal Language 
+Facebook fan page and  news source 
+Informal words 
+Swear 
+words netspeak 
+Assent words 
+Nonflu encies 
+Filler words 
+CNN 0.02 
+2.53 
+	0.24 
+	1.93 
+	0.28 
+	0.16 
+	2.11 
+	0.26 
+	1.30 
+	0.35 
+	0.21 
+	2.60 
+	0.62 
+	1.50 
+	0.30 
+	0.23 
+	2.50 
+	0.32 
+	1.63 
+	0.31 
+	0.24 
+	2.00 
+	0.12 
+	1.17 
+	0.58 
+	0.23 
+	2.54 
+	0.46 
+	1.59 
+	0.36 
+	0.22 
+	2.82 
+	0.41 
+	1.85 
+	0.28 
+	0.29 
+	2.59 
+	0.53 
+	1.57 
+	0.34 
+	0.20 
+	
+
+
+
+New York Times 0.04 CBS News 0.01 USA Today 0 
+Yahoo News 0 
+The Hill 0.04 Fox News 0.04 Breitbart 0.02 The Washington Times 2.56 0.66 1.38 0.41 0.18 0.02 
+Table 12 lists the percentages of punctuation from the nine groups of Facebook user  comments. Punctuation may be useful for other types of analysis, and they have been shown to  vary with different genres (Pennebaker et al., 2015). However, these scores do not contribute to  the summary variable scores used for this study.
+65 
+Table 12 
+Comment Section Analysis: Punctuation All 
+Period 
+Com 
+Semi 
+Question  
+Facebook fan page and news source 
+Punctuation 
+s 
+mas Colons 
+colons 
+Marks 
+CNN 1.04 
+20.61 
+	7.73 
+	2.41 
+	0.11 
+	0.01 
+	21.55 
+	8.28 
+	2.74 
+	0.07 
+	0.09 
+	19.73 
+	7.68 
+	2.25 
+	0.06 
+	0 
+	20.91 
+	8.83 
+	2.27 
+	0.03 
+	0.05 
+	21.19 
+	8.47 
+	2.49 
+	0.12 
+	0 
+	21.13 
+	7.78 
+	2.36 
+	0.03 
+	0.03 
+	22.23 
+	8.06 
+	2.4 
+	0.01 
+	0.05 
+	19.76 
+	8.08 
+	2.55 
+	0.02 
+	0 
+	17.75 
+	6.91 
+	2.35 
+	0.03 
+	0.02 
+	Exclamation  marks 
+	Dashes 
+	Quotes
+	Apostro 
+phes
+	Paren 
+theses
+	0.78 
+	2.32 
+	0.52 
+	2.48 
+	0.24 
+	1.11 
+	1.84 
+	0.63 
+	3.05 
+	0.27 
+	1.18 
+	1.98 
+	0.62 
+	2.86 
+	0.09 
+	1.90 
+	1.59 
+	0.36 
+	2.59 
+	0.09 
+	1.36 
+	1.85 
+	0.60 
+	3.16 
+	0.32 
+	1.83 
+	2.13 
+	0.59 
+	2.75 
+	0.19 
+	2.23 
+	2.06 
+	0.32 
+	2.72 
+	0.09 
+	1.71 
+	1.47 
+	0.57 
+	2.82 
+	0.19 
+	
+
+
+
+New York Times 1.31 CBS News 1.20 USA Today 1.33 Yahoo News 0.97 The Hill 1.27 Fox News 1.54 Breitbart 0.91 The Washington Times 0.99 Other 
+Facebook fan page and news source 
+Punctuation 
+CNN 2.97 New York Times 2.15 CBS News 1.8 USA Today 1.86 Yahoo News 1.84 The Hill 2.17 Fox News 2.76 Breitbart 1.45 The Washington Times 1.65 1.33 0.41 2.64 0.15 1.27 
+Table 13 contains NEXT Analytics engagement raw data from the nine Facebook  comment sections. Higher or lower comment counts do not correlate with political leanings,  ranging from 293 comments for Yahoo News' group to 1,765 comments about The Hills' article.  "Like" is by far the most selected reaction for every group. The conservative-leaning Facebook  fan pages garnered substantially more total reactions in ratio to the number of comments. The  reactions-per-comment category does not include correlations for the number of followers or  possible bots; it is merely the total number of reactions divided by the total number of comments  to demonstrate the relationship between engagement forms by a fan page.
+66 
+Table 13 
+NEXT Analytics Engagement data 
+Facebook fan page and  news source 
+Comment  
+Count Likes Love Wow Haha Sad Angry 
+Total  
+Reactions 
+Reactions/  Comment 
+CNN 3.72 
+1236 
+	3243 
+	339 
+	31 
+	879 
+	20 
+	97 
+	4609 
+	752 
+	3454 
+	179 
+	21 
+	804 
+	7 
+	23 
+	4488 
+	832 
+	2074 
+	205 
+	18 
+	454 
+	12 
+	123 
+	2886 
+	413 
+	1074 
+	43 
+	2 
+	182 
+	7 
+	11 
+	1319 
+	293 
+	632 
+	57 
+	0 
+	134 
+	3 
+	17 
+	843 
+	1765 
+	8154 
+	564 
+	70 
+	1613 
+	66 
+	261 
+	10728 
+	567 
+	4806 
+	325 
+	3 
+	384 
+	10 
+	32 
+	5560 
+	1082 
+	13075 
+	473 
+	8 
+	270 
+	47 
+	55 
+	13928 
+	
+
+
+
+New York Times 5.97 CBS News 3.47 USA Today 3.19 Yahoo News 2.88 The Hill 6.08 Fox News 9.81 Breitbart 12.87 
+The Washington Times 1543 18614 975 33 1264 48 456 21390 13.86
+The analysis suggests a conspicuous trend in the ratio between comments and reactions  per fan page based on political lean. The ratios for liberal and center leaning groups range from  2.88 to 6.08 reactions per comment, with no trending between the six outlets. However, the  conservative-leaning reactions per comment ratios are all pointedly higher. Fox News' ratio is  9.81, Breitbart's is 12.87, and The Washington Times is 13.86. See Figure 1 for a graphic  representation highlighting the pattern, with the clearly rising trend-line average. The reasons behind the much higher levels of reactions per comment are not clear. The differences do not relate to the number of followers because the liberal and center-leaning groups with comparable  or more followers did not have the similar results. It could be due to different engagement styles  between the groups, automated bots, or something else.  
+67 
+Figure 1 
+Reactions per Comment  
+Reactions per comment for each news source
+16 
+14 
+t 
+n
+e
+m
+m
+o
+c
+ 
+r
+e
+p
+ 
+s
+n
+o
+it
+c
+a
+e
+R
+12 
+10 
+8 
+6 
+4 
+2 
+0 
+CNN New York 
+Times 
+CBS News USA Today Yahoo News The Hill Fox News Breitbart The Washington 
+Times 
+News Outlets 
+Study Results for Hypothesis 1 
+H1: Politically right-leaning Facebook fan page comments use significantly different  words than politically left-leaning page comments when discussing the same politically  charged newsworthy event. 
+Hypothesis 1 tests whether word usage in comments is different based on a Facebook fan  page's political orientation. An SPSS MANOVA measuring the nine fan page comment groups  through the lens of the LIWC2015 summary variables: analytical thinking, clout, authenticity,  and the emotional tone was conducted to test Hypothesis 1. Higher analytical thinking scores  suggest more formal and logical word usages, versus more narrative and personal for lower  scores. A higher clout score suggests more words usage describing social status, confidence, and  leadership. Higher authenticity scores suggest more personal, humble, and vulnerable word  usage that correlates to more honesty. An emotional tone score of above 50 describes more 
+68 
+positive emotional word usage, while below 50 suggests more negative emotional words were  used in the comment section (LIWC2015, n.d.).  
+The SPSS MANOVA analysis of the LIWC2015 summary variables shows no  statistically significant difference in the categorical results between the three politically leaning  groups for Analytical Thinking, Clout, and Authenticity (see Table 14). Emotional Tone analysis  shows a much greater difference in the groups as expected due to the greater variability in the  raw statistics between each news outlet's comment section results. The mean Emotional Tone for  liberals and conservatives were close, at 41.1 and 40.7, respectively. The center-leaning groups  scored 27.4, the liberal and conservative-leaning groups’ comments were similarly more negative than the center-leaning group. However, the liberal-leaning commenters resulted in a  standard deviation of 16.7 due to the much more significant difference in the only positively  scoring comment group under CNN's Facebook page. 
+Table 14 
+H1 Descriptive Statistics 
+LIWC 2015 Category Political Leaning Mean Std. Deviation N Analytical 3 
+Liberal 
+Center 
+Conservative 
+Total 
+	47.0000 
+47.8867 
+47.7233 
+47.5367 
+	1.66622 
+3.91002 
+3.05420 
+2.64862 
+	Liberal 
+Center 
+Conservative 
+Total 
+	77.8433 
+76.1133 
+77.6300 
+77.1956 
+	1.78284 
+3.11965 
+1.72919 
+2.15466 
+	Liberal 
+Center 
+Conservative 
+Total 
+	14.8733 
+16.3100 
+14.8733 
+15.3522 
+	1.71267 
+4.48656 
+4.09744 
+3.23711 
+	Liberal 
+Center 
+Conservative 
+Total 
+	41.1133 
+27.4267 
+40.6733 
+36.4044 
+	16.74854 
+4.94132 
+5.64769 
+11.38335 
+	
+
+
+
+Thinking 3 3 
+9 
+Clout 3 3 
+3 
+9 
+Authenticity 3 3 
+3 
+9 
+Emotional Tone 3 3 
+3 
+9
+69 
+The New York Times and CBS News scored lower than all three conservative groups.  These results suggest no statistically significant difference in commenter word usage, as  measured by LIWC2015 summary variables. Furthermore, the results suggest emotional tone  between groups has the most significant difference from group to group. The scores correlate  with political leanings, according to the analysis of the LIWC2015 emotional tone scores. No  significant increase or decrease score trends present between the news outlets or the political  leaning groups, as depicted in Figure 2. 
+Figure 2 
+H1 Comment Summary Variable Scores 
+Comment Summary Variable Scores
+90 
+80 
+e 
+r
+o
+c
+S 
+e
+l
+b
+a
+ir
+a
+V
+70 
+60 
+50 
+40 
+30 
+20 
+10 
+0 
+CNN New York 
+Times CBS News USA Today Yahoo 
+News The Hill Fox News Breitbart 
+The 
+Washington Times 
+Analytic 48.47 47.34 45.19 47.9 43.97 51.79 46.81 51.13 45.23 Clout 78.09 75.95 79.49 77.06 72.63 78.65 78.28 78.94 75.67 Authentic 14.07 16.84 13.71 14.65 21.39 12.89 10.86 19.05 14.71 Tone 60.33 33.39 29.62 27.89 32.12 22.27 45.45 42.13 34.44 
+NEWS OUTLETS 
+Table 15 lists the multivariate values: Pillai’s Trace, Wilks’ Lambda, Hotelling’s Trace,  and Roy's Largest Root. These are the multivariate values for the entire model. The F values for  
+70 
+the Intercept, per the upper part of the table, are all the same. However, the POLLEAN  independent variable F values are all different. The values are not above 1%, indicating that on  the dependent variables, there is a not statistically significant difference in the word usage  between the three groups from different politically leaning Facebook fan pages, F (8, 4) = 0.45, p  > .0005; Wilk's Λ = 0.392, partial η2 = .37.  
+Table 15 
+H1 Multivariate Tests 
+Effect Value F 
+Hypothesis  df 
+Error  
+df Sig. 
+Partial Eta  Squared 
+Intercept Pillai's Trace 1.000 
+1.000 
+0.000 
+4279.320 4279.320 
+	3209.490b 
+3209.490b 
+3209.490b 
+3209.490b 
+	4.000 
+4.000 
+4.000 
+4.000 
+	3.000 
+3.000 
+3.000 
+3.000 
+	0.000 
+0.000 
+0.000 
+0.000 
+	0.623 
+0.392 
+1.513 
+1.487 
+	0.453 
+0.448b 
+0.378 
+1.487c 
+	8.000 
+8.000 
+8.000 
+4.000 
+	8.000 
+6.000 
+4.000 
+4.000 
+	.858 
+.855 
+.887 
+.355 
+	
+
+
+
+Wilks' Lambda 1.000 Hotelling's Trace 1.000 Roy's Largest Root 1.000 
+POLLEAN Pillai's Trace 0.312 Wilks' Lambda 0.374 Hotelling's Trace 0.431 Roy's Largest Root 0.598 a. Design: Intercept + POLLEAN 
+b. Exact statistic 
+c. The statistic is an upper bound on F that yields a lower bound on the significance level. d. Computed using alpha = .05
+71 
+Table 16 
+H1 Multiple Comparisons (LSD) 
+Dependent Variable 
+(I) Political  Leaning 
+(J) Political  Leaning 
+Mean Difference  (I-J) 
+Std.  
+Error Sig. 
+95% Confidence Interval Lower Bound Upper Bound 
+Analytical Thinking Liberal Center -.8867 5.1504 
+2.46724 
+2.46724 
+2.46724 
+2.46724 
+2.46724 
+2.46724 
+	.732 
+.779 
+.732 
+.949 
+.779 
+.949 
+	-6.9238 
+-6.7604 
+-5.1504 
+-5.8738 
+-5.3138 
+-6.2004 
+	1.87977 
+1.87977 
+1.87977 
+1.87977 
+1.87977 
+1.87977 
+	.393 
+.913 
+.393 
+.451 
+.913 
+.451 
+	-2.8696 
+-4.3863 
+-6.3296 
+-6.1163 
+-4.8130 
+-3.0830 
+	2.97588 
+2.97588 
+2.97588 
+2.97588 
+2.97588 
+2.97588 
+	.646 
+1.000 
+.646 
+.646 
+1.000 
+.646 
+	-8.7184 
+-7.2817 
+-5.8451 
+-5.8451 
+-7.2817 
+-8.7184 
+	8.65161 
+8.65161 
+8.65161 
+8.65161 
+8.65161 
+8.65161 
+	.165 
+.961 
+.165 
+.177 
+.961 
+.177 
+	-7.4831 
+-20.7297 
+-34.8564 
+-34.4164 
+-21.6097 
+-7.9231 
+	
+
+
+
+Conservative -.7233 5.3138 
+Center Liberal .8867 6.9238 Conservative .1633 6.2004 
+Conservative Liberal .7233 6.7604 Center -.1633 5.8738 
+Clout Liberal Center 1.7300 6.3296 Conservative .2133 4.8130 
+Center Liberal -1.7300 2.8696 Conservative -1.5167 3.0830 
+Conservative Liberal -.2133 4.3863 Center 1.5167 6.1163 
+Authenticity Liberal Center -1.4367 5.8451 Conservative .0000 7.2817 
+Center Liberal 1.4367 8.7184 Conservative 1.4367 8.7184 
+Conservative Liberal .0000 7.2817 Center -1.4367 5.8451 
+Emotional Tone Liberal Center 13.6867 34.8564 Conservative .4400 21.6097 
+Center Liberal -13.6867 7.4831 Conservative -13.2467 7.9231 
+Conservative Liberal -.4400 20.7297 Center 13.2467 34.4164 
+Based on observed means. 
+The error term is Mean Square (Error) = 112.276 
+Levene’s Test produced mixed results; see Table 17. The significance is greater than .05  in all instances, except for Emotional Tone based on mean. Therefore, Levene’s Test suggests  equal variances are assumed for all summary variables except when based on the mean of  Emotional Tone. However, that score was just below the significance level at .049.
+72 
+Table 17 
+H1 Levene’s Test of Equality of Error Variances Dependent Variable 
+Levene  
+Statistic df1 df2 Sig. 
+Analytical Thinking Based on Mean .548 
+.667 
+.471 
+.471 
+.655 
+	2 
+2 
+2 
+2 
+	6 
+6 
+4.854 
+6 
+	1.131 
+.285 
+.285 
+1.040 
+	2 
+2 
+2 
+2 
+	6 
+6 
+4.308 
+6 
+	1.216 
+.451 
+.451 
+1.149 
+	2 
+2 
+2 
+2 
+	6 
+6 
+4.351 
+6 
+	5.210 
+.582 
+.582 
+4.478 
+	2 
+2 
+2 
+2 
+	6 
+6 
+2.449 
+6 
+	
+
+
+
+Based on Median .646 
+Based on Media and with adjusted df .650 
+Based on trimmed mean .553 
+Clout Based on Mean .383 Based on Median .762 
+Based on Media and with adjusted df .765 
+Based on trimmed mean .409 
+Authenticity Based on Mean .360 Based on Median .657 
+Based on Media and with adjusted df .664 
+Based on trimmed mean .378 
+Emotional Tone Based on Mean .049 Based on Median .588 
+Based on Media and with adjusted df .621 
+Based on trimmed mean .065 
+Study Results for Hypothesis 2 
+H2: A politically charged article posted to a Facebook news fan page will have  significantly similar word use as the article's comments. 
+Hypothesis 2 tests the differences in LIWC2015 summary variable scores of the selected  news articles and the associated Facebook fan page comments. H2 asks if a politically charged  article may be capable of exciting a reader’s emotions. The study defines and measures political  charge with a LIWC2015 word count analysis to compare the article's emotional tone with the  emotional tone of the associated comments. LIWC2015 quantifies emotional tone as a percentile  from a combination of affect words expressing tone with 50 as neutral. A score higher than 50 is  a positive tone and below 50 is a negative tone (LIWC2015, n.d.). 
+Figures 2 and 3 below compare LIWC2015 Emotional Tones between each article and  associated comment section and the average comparisons between each group's political leaning,  respectively. These plots show no relationship trends between the emotional tone of an article 
+73 
+and its associated comments. Additionally, there is no noteworthy relationship in the averages by  political lean. The data are further skewed because The Washington Times article scored  comparatively high and was the only article with a positive emotional tone. Figure 3 
+H2 Emotional Tone Comparison.  
+Emotional Tone Comparison 
+100 
+) 
+l
+e 
+r
+o
+c
+S 
+yr
+a
+m
+m
+u
+S 
+e
+n
+o
+T
+ 
+la
+n
+o
+it
+o
+m
+E
+a
+r
+t
+u
+e
+n
+ 
+s
+i
+ 
+0
+5
+ 
+,
+e
+v
+i
+t
+a
+g
+e
+n
+ 
+s
+i
+ 
+0
+5
+ 
+w
+o
+le
+b 
+,
+e
+v
+i
+t
+i
+s
+o
+p
+ 
+s
+i
+ 
+0
+5
+ 
+e
+v
+o
+b
+A
+(
+90 
+80 
+70 
+60 
+50 
+40 
+30 
+20 
+10 
+0 
+CNN New York 
+Times 
+CBS News USA Today Yahoo News The Hill Fox News Breitbart The Washington 
+NEWS OUTLETS 
+Times 
+Comment Emotional Tone Article Emotional Tone 
+2 per. Mov. Avg. (Comment Emotional Tone) 2 per. Mov. Avg. (Article Emotional Tone)
+While emotional tone scores average lower for liberal-leaning news outlet articles, there  is no clear correlation or pattern suggested for an article to comment emotional tone scores from  liberal to conservative-leaning fan pages. 
+74

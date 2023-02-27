@@ -1,0 +1,69 @@
+﻿Understanding the Sensibility of Social Media Use and Privacy with Bangladeshi Facebook Group Users 
+Sharifa Sultana 
+Cornell University, USA ss3634@cornell.edu S.M. Raihanul Alam BUET, Bangladesh 
+Pratyasha Saha 
+University of Dhaka 
+pratyasha.saha1195@gmail.com Rokeya Akter 
+Khulna University, Bangladesh 
+Shaid Hasan 
+BUET, Bangladesh 
+hasan.s.eeebuet@gmail.com Md. Mirajul Islam 
+United International University 
+1505010.smra@ugrad.cse.buet.ac.bd 
+rokeya160210@gmail.com 
+mirajul1995@gmail.com 
+Raihan Islam Arnob 
+Utah State University, USA raihanislam@aggiemail.usu.edu 
+Mahdi Nasrullah Al-Ameen Utah State University, USA mahdi.al-ameen@usu.edu 
+Syed Ishtiaque Ahmed University of Toronot, Canada ishtiaque@cs.toronto.edu 
+ABSTRACT 
+Facebook users often join Facebook groups to connect to the people with the same interest regardless of the fact that the other members take the same standing with them. Our study aims to investigate Bangladeshi users’ motivation to join and strategies to manage their Facebook groups and identify the relevant challenges. In our ongoing work, we are conducting a survey and interviewing Facebook-group users to understand how Facebook groups are bringing the users of similar interest and agenda together on Facebook and providing the admins with imagined sovereignty. This poster presents some of our crucial findings. This set of findings will be useful in designing better tools for managing Facebook groups for empowering the admins and the users. 
+Author Keywords 
+Facebook Groups, Social Media Use, Privacy, Bangladesh 
+CCS Concepts 
+•Human-centered computing → Empirical studies in HCI; Human computer interaction (HCI) Empirical studies in HCI 
+INTRODUCTION 
+Information and Communication Technologies and Develop ment (ICTD) and social computing researchers have been in vestigating in the Global South and reporting for the past two decades - people’s access to information. This body of work includes building robust and inexpensive computing infrastruc tures including computers, mobile phones, and telecommuni cation networks to make ICT available in remote areas [3, 4] and different set of marginalized population [1, 5, 2]. Today, almost 95% of the population the world is under mobile net work coverage [6]. However, online social media - a particular 
+Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. 
+COMPASS,2020 Ecuadore, June 15–17, 2020, ESPOL–Guayaquil, Ecuadore 
+© 2020 Copyright held by the owner/author(s). Publication rights licensed to ACM. ISBN 978-1-4503-7129-2/20/06. . . $15.00 
+DOI: 10.1145/3378393.3402235
+. . . 
+method of connecting people, is new to most people in the Global South, and little do we know what happens in the on line social media groups among the people in the Global South. We extend this body of work and solicits what happens when people in global south access the space of greater connectivity and how they achieve their broader agenda of development. Our participants reported of working on empowering the users by intervening the enrollment in the groups, setting code of conducts within the groups, and taking disciplinary actions against the trouble-makers. 
+METHODS 
+This study consists of an online survey and an interview with the Facebook users in Bangladesh who are the members of at least one Facebook group. So far we have 57 survey responses and 32 interview participations. Our survey asked about their subscription to Facebook groups, their privacy concerns while sharing general and personal information in such groups, and their opinions about the different groups’ admins seeking users information while adding them to the groups. In the interview, we asked about the entry processes that include the admins of the groups asking more information to let them join the groups, rules and regulations of those groups, maintenance and management procedures, and the tools and technologies used in this regard. 
+FINDINGS 
+Our survey reports that the most of the participants, with a percentage of 61, are members of more than 15 groups. The major type of groups they are interested to join are generally focused on personal interest and creativity related (see Fig-1). More than 21% of our participants follow Facebook groups with specific focus on educational and professional content, or their institution specific groups. 
+While answering the question that which of the methods of admins of the groups collecting information make them un comfortable, 51% of the participants mentioned that admins asking them information in text messages over Facebook is the one. More than 31% mentioned that they are hesitant to fill in surveys. Another 46% mentioned that admins scrolling through their profile for personal information is discomforting 
+317 
+  
+
+Figure 1. The types of groups participants are most interested into. The explanation of the types are- G1: Personal Interest and Creative; G2: Educational and Professional; G3: News and Informational; G4: Nationality and Ethnicity Centered; G5: Religious G6: Political; G7: Women Empowerment; G8: Event Specific; G9: F-Commerce. 
+as well. Our survey informs that, the discomfort with sharing current address, phone number, and political views were pretty consistent across the groups of diverse interests. 
+Member Enrollment and Maintenance 
+Seven of our participants mentioned that they do not care much who joins their Facebook group, as they care more about having a good number of members in their group. However, the other members explained to us how they adapted different strategies to go through member enrollment process. When we asked them how do they evaluate the join requests made by any Facebook profile with the locked option turned on, so the admins do not see any relevant information of the profile they would generally look up, one of the admins explained their strategies, 
+“We don’t add people if they don’t give the information. If the profile is locked, we just see the answers(to the questions that comes with join request) then."(P7) 
+Thirteen of the admins mentioned that they use a very specific written code of conduct with groups’ rules and regulation so that the group members obey those. Eleven of the admins mentioned that their groups prefer the language of post to be either in Bengali or English and not a mix-up of those. 
+Troubleshooting 
+Seven of the group admins mentioned that often their group members get overwhelmed form diverse phenomena and start being aggressive to each other. In such a situation, they post troll comments and offensive memes. The admins mentioned of their zero tolerance for it. Some groups find spamming and advertisements as an offensive actions and set some rules against it. Four group admins mentioned that they do not appreciate gender harassment in their groups and immediately banned the members responsible for these. 
+Tools and Technologies Used 
+The admins of the groups use different strategies and tools to assist them maintaining the group. Sometimes they use the built-in Facebook tools and facilities in this regard. For example, 12 of the groups’ admins mentioned that they have either a separate group or a chat thread to maintain the base group. Five of the admins mentioned that they generally use 
+the Facebook built-in turn off the comments option for the problematic posts. Three of the other admins mentioned that they also use the mute option for a particular trouble making members to stop them posting comments. Two of the admins also mentioned that how they used Google forms, Google survey, and Google spreadsheets to keep track of the member enrollment process, banned members’ list, and record the code of conducts of the groups. 
+Limitations of the Work 
+This ongoing work has several limitations. First, our work is not free from participation bias and selection bias. We re cruited the interview participants through a snowball sampling process. Their opinions and arguments may not represent the collective view of all the Facebook users of the whole geographic area. Also, we believe our study is not free of question-order bias. 
+REFERENCES 
+[1] Syed Ishtiaque Ahmed, Maruf Hasan Zaber, Mehrab Bin Morshed, Md Habibullah Bin Ismail, Dan Cosley, and Steven J Jackson. 2015. Suhrid: A Collaborative Mobile Phone Interface for Low Literate People. In Proceedings of the 2015 Annual Symposium on Computing for 
+Development. ACM, 95–103. 
+[2] Rikin Gandhi, Rajesh Veeraraghavan, Kentaro Toyama, and Vanaja Ramprasad. 2007. Digital green: 
+Participatory video for agricultural extension. In 
+Information and Communication Technologies and Development, 2007. ICTD 2007. International 
+Conference on. IEEE, 1–10. 
+[3] Kurtis Heimerl, Shaddi Hasan, Kashif Ali, Eric Brewer, and Tapan Parikh. 2013. Local, sustainable, small-scale cellular networks. In Proceedings of the Sixth 
+International Conference on Information and 
+Communication Technologies and Development: Full Papers-Volume 1. ACM, 2–12. 
+[4] Daniel Iland and Elizabeth M Belding. 2014. 
+EmergeNet: Robust, rapidly deployable cellular 
+networks. IEEE Communications Magazine 52, 12 (2014), 74–80. 
+[5] Neil Patel, Deepti Chittamuru, Anupam Jain, Paresh Dave, and Tapan S Parikh. 2010. Avaaj otalo: a field study of an interactive voice forum for small farmers in rural india. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems. ACM, 733–742. 
+[6] International Telecommunications Union. 2017. ICT Facts and Figures 2017. https://www.itu.int/en/ITU-D/ Statistics/Pages/facts/default.aspx. (2017). 
+318

@@ -1,0 +1,1691 @@
+﻿Accelerating the world's research. 
+India Elections 2014: Time-Lagged Correlation between Media Bias and Facebook Trend 
+Francis P Barclay 
+Related papers 
+Download a PDF Pack of the best related papers 
+Media effect on media: Progression of political news and tweets during India 2014 Francis P Barclay   
+Inter-Media Interaction and Effects in an Integrated Model of Political Communication: India 2014 Francis P Barclay 
+India 2014: Press trend as a predictor of election outcome 
+Francis P Barclay, chinnaswamy pichaandy 
+Global Journal of HUMAN-SOCIAL SCIENCE: A    
+Arts & Humanities - Psychology 
+Volume 15 Issue 2 Version 1.0 Year 2015  
+Type: Double Blind Peer Reviewed International Research Journal 
+Publisher: Global Journals Inc. (USA) 
+Online ISSN: 2249-460x & Print ISSN: 0975-587X 
+India Elections 2014: Time-Lagged Correlation between Media Bias  and Facebook Trend 
+By Francis P. Barclay, C. Pichandy & Anusha Venkat  
+PSG College of Arts and Science, India  
+Abstract- After establishing print media bias and Facebook trend as reliable predictors of election  outcome, the study analyses the relationship between the two before and during the 2014 Indian  Lok Sabha election. Time-lagged correlation is used to study the immediate effect of newspaper  reports on the political behaviour of Facebook. Further, a correlation was found to exist between  the long-term political trends in the print media and Facebook. That is, the number of positive  and negative news reports published on a party in the newspapers affected the number of ‘likes’  recorded on the Facebook fan page of the party or its candidate.  
+GJHSS-A Classification : FOR Code: 200199 
+IndiaElections2014TimeLaggedCorrelationbetweenMediaBiasandFacebookTrend  
+ Strictly as per the compliance and regulations of:   
+© 2015. Francis P. Barclay, C. Pichandy & Anusha Venkat. This is a research/review paper, distributed under the terms of the  Creative Commons Attribution-Noncommercial 3.0 Unported License http://creativecommons.org/licenses/by-nc/3.0/), permitting  all non-commercial use, distribution, and reproduction in any medium, provided the original work is properly cited. 
+India Elections 2014: Time-Lagged Correlation  between Media Bias and Facebook Trend 
+Francis P. Barclay α, C. Pichandy σ & Anusha Venkat ρ 
+Abstract- After establishing print media bias and Facebook  trend as reliable predictors of election outcome, the study  analyses the relationship between the two before and during  the 2014 Indian Lok Sabha election. Time-lagged correlation is  used to study the immediate effect of newspaper reports on  the political behaviour of Facebook. Further, a correlation was  found to exist between the long-term political trends in the  print media and Facebook. That is, the number of positive and  negative news reports published on a party in the newspapers  affected the number of ‘likes’ recorded on the Facebook fan  page of the party or its candidate.  
+I. INTRODUCTION 
+M  
+edia effect on the masses is an intensely studied area of communications research, but  the relationship that exists between different  
+media platforms and they way they interact and  influence each other have been barely explored. Print  media remains to be a main source of political  information in India and it also influences voter decisions  (Chiang and Knight, 2011). On the other hand, the  online social media has become a tool for free  expression of political opinion—its content being user  generated (Woolley, et al., 2010). Hence, it can be  consciously and cautiously assumed that print media  behaviour could affect the political trend observed on  online social media. To test this theory in the context of  the 2014 Indian Parliamentary election, four leading  English newspapers and Facebook were chosen.  
+Perhaps, India’s 2014 general election was the  world’s largest democratic exercise—with about 814.5  million eligible voters—conducted in nine phases from  April 7 till May 12, 2014. The Indian National Congress  (INC or just the Congress), Bharatiya Janata Party (BJP)  and the Aam Aadmi Party (AAP) were the dominant  parties contesting the election. Arvind Kejriwal led the  AAP, while Rahul Gandhi, son of former Prime Minister  Rajiv Gandhi and Congress President Sonia Gandhi,  was portrayed as the face of INC. BJP nominated  Narendra Damodardas Modi as its prime ministerial  candidate, who led his party to a thumbing victory.  
+Author α: Department of Mass Communication and Journalism, PSG  College of Arts and Science, Coimbatore, Tamil Nadu, India.  e-mail: francisjournalist@gmail.com 
+Author σ: PhD., Head of the Department of Communication, PSG  College of Arts and Science, Coimbatore, Tamil Nadu, India.  e-mail: cpichaandy@yahoo.co.in 
+Author ρ: PSG College of Arts and Science, Coimbatore, Tamil Nadu,  India. e-mail: anusha.venkat91@gmail.com 
+While the Congress party secured 106,935,311  (19.3%) votes, the BJP amassed 171,637,684 (31%).  AAP managed a meagre 11,325,635. 
+Both the mainstream print and the online social  media played decisive roles during the election period,  spreading political news and moulding public opinion  (Pansare, 2014; and Swamy, 2014). In India,  newspapers are witnessing steady growth in circulation  numbers bucking the global trend (Hooke, 2012). India  is home to the world’s largest English-language  newspaper readership (Hayden, 2012) and the fastest  growing newspaper market (The Economist, 2011, and  All About Newspapers, 2010). This apart, India recorded  the fastest Facebook growth in 2014 (PTI, 2014).  Facebook announced on March 31, 2014, that its Indian  user base had just crossed the 100-million milestone  (Singh, 2014).  
+As the circulation of newspapers and the  number of Facebook users increase, their influence on  the electorate is only amplified. Hence, it becomes  important to study their political behaviour during  elections. Accordingly, the aim of the present study is  stated to be:  
+To identify the political trends that prevailed in the print  media and Facebook during the period of study— January 24 to May 12, 2014. 
+To validate those political trends by correlating them  with the election results.  
+To associate the political trends by correlating them with  each other.  
+For the present study, the top four English  newspapers published from India—readership wise— were chosen. By content analysing the newspapers, the  political trend that prevailed during the study period can  be estimated using time-series analysis.  
+Similarly, the top national parties chosen for the  study were the Congress, BJP and AAP, as the  prospects of others claiming a majority at the Centre  were bleak. 
+Political influence of print media: Bartels (1993)  analysed the persuasive effects of media exposure and  concluded that new information absorbed via media  exposure must be about three times as distinctive as  has generally been supposed in order to account for  observed patterns of opinion change. Rhee (1997)  found that news frames in election coverage affected  individuals' interpretation of campaigns. Druckman and  
+© 2015 Global Journals Inc. (US) 
+5 1
+0
+2
+r 
+a
+e
+Y
+29 
+  
+I
+ 
+n
+o
+i
+s
+r
+e
+V
+ 
+I
+I
+ 
+e
+u
+s
+s
+I
+ 
+V
+X
+ 
+e
+m
+u
+l
+o
+V
+) 
+A
+( 
+ 
+  
+e
+c
+n
+e
+i
+c
+S
+ 
+l
+a
+i
+c
+o
+- 
+S
+ 
+n
+a
+m
+u
+H
+ 
+f
+o
+ 
+l
+a
+n
+r
+u
+o
+J
+ 
+l
+a
+b
+o
+l
+G
+India Elections 2014: Time-Lagged Correlation between Media Bias and Facebook Trend 
+Parkin (2005) investigated how editorial slant—defined  as the quantity and tone of a newspaper’s candidate  coverage as influenced by its editorial position—shaped  candidate evaluations and vote choice. Combining  comprehensive content analyses of the papers with an  Election Day exit poll, the researchers assessed the  slant of campaign coverage and its effects on voters.  The researchers claimed to have found compelling  evidence that editorial slant affected electoral decisions.  Exposure to newspapers affects political behaviour and  opinion (Gerber, et al., 2006). Kuypers (2002) charted  the potential effects that the press has upon the  messages of political and social leaders when they  
+5 
+1
+discuss controversial issues. Endersby (2011) observed  
+0
+2
+that news consumers who read papers are more likely  
+r 
+a
+to modify their perceptions of party ideology in the  e
+Y
+direction of press bias. Furthermore, media  30 
+consumption correlated with ideological preferences  and perceptions of political parties. Reviewing the past    
+studies, it can be cautiously assumed that the print  
+I
+ 
+n
+media could exhibit bias in their election coverage—and  
+o
+i
+s
+thereby, influence the voters. 
+r
+e
+V
+Political communication on Facebook: Williams and  
+ 
+I
+I
+Gulati (2007) investigated the extent of Facebook profile  
+ 
+e
+u
+use in 2006, and analyzed which Congressional  
+s
+s
+I
+candidates were more likely to use them, with what   
+V
+impact on their vote shares. As part of a 2006 election  
+X
+ 
+feature, Facebook created entries for all U.S.  
+e
+m
+congressional and gubernatorial candidates.  
+u
+l
+o
+Candidates or their campaign staff then could  V
+personalise the profile with everything from photographs  ) 
+to qualifications for office. Facebook members could  
+A
+( 
+ 
+view these entries and register their support for specific  
+  
+e
+c
+candidates. They also received notification every time  
+n
+e
+one of their Facebook friends registered support for a  
+i
+c
+S
+candidate. Facebook displayed the number of  
+ 
+l
+a
+supporters for each candidate and calculated the  
+i
+c
+o
+percentage of ―votes that candidate had in his or her  
+- 
+S
+ 
+race. The study found that the number of Facebook  
+n
+a
+supporters was an indicator of a campaign resource  
+m
+u
+that did matter, and was independent of the impact of  
+H
+ 
+other variables in their predictive model. This theory is  
+f
+o
+ 
+applied in the present study as well, however, instead of  
+l
+a
+n
+the profile pages that were created for the US  
+r
+u
+Congressional candidates, the Indian politicians have  
+o
+J
+ 
+verified fan pages functioning on the social network.  
+l
+a
+b
+Kushin and Kitchener (2009) studied the emergence of  
+o
+l
+Facebook as a platform for political discourse and  G
+raised new questions for study of online political  discussion as it occurred in the emergent Internet  technologies of social network sites. 
+Vitak (2011) observed that in the 2008 US  presidential election, social network sites such as  Facebook allowed users to share their political beliefs,  support specific candidates and interact with others on  political issues. The researchers also found evidence  
+© 2015 Global Journals Inc. (US) 
+that political activities on Facebook affected political  participation among young voters. 
+Reviewing the past studies, it can be inferred  that various aspects of Facebook and political  communication happening on the social network has  been studied and the online social network is  recognised as a crucial tool for propaganda and political  deliberation. However, using the number of ‘likes’  recorded on Facebook fan pages and predicting  election outcomes have not been studied, at least, in the  studies reviewed. Facebook, like a few other online  platforms, offers users the power to freely express their  political opinion. The present study uses the count of  ‘likes’ recorded on the Facebook fan pages of  ‘Narendra Modi’, ‘Arvind Kejriwal’ and ‘Indian National  Congress’ during the study period to trace the political  trend of Facebook. 
+Furthermore, time—that is an important aspect  of communication—has been ignored in the past  studies. But the present study employs reliable  methodologies to study the political trends in the print  media and on Facebook, and track their shift over time.  
+On Facebook, the number of ‘likes’ recorded on the fan  pages of the politicians can help estimate the political  trend prevailing on the social network. But for the  newspapers, the political polarity of each of the political  news items published on the three parties—that is,  whether it is favourable, unfavourable or neutral—and  their position in the papers—that is, on which page, the  news items were published—have to be considered to  track the political trend.  
+a) Research questions 
+At this stage, to bring in some focus to the  study, the following research questions are asked:  
+RQ1. Do the newspapers show a particular partisan  political orientation?  
+RQ2. Is the political trend in the papers associated with  the election results? 
+RQ3. Which political party is popular on Facebook and  to what extent?  
+RQ4. Is Facebook popularity associated with the  election results? 
+RQ5. Is the press trend associated with the Facebook  popularity? 
+b) Hypotheses for the newspapers 
+Press popularity can be defined in many ways.  Even the number of mentions of a party name could be  used to estimate popularity. But the present study is  focussed on studying latent content rather than manifest  content as the former is considered more meaningful.  Since, the study considers the political polarities of  political news items and their respective positions in the  paper, the following hypothesis is proposed for the  newspapers: 
+India Elections 2014: Time-Lagged Correlation between Media Bias and Facebook Trend 
+More number of strategically-positioned positive  reports on a party in the newspapers means more votes for that party in the election. 
+This hypothesis takes into account only the  positive reports published on a particular party.  Newspapers publish both positive and negative reports  and hence, another hypothesis is proposed to take into  account the negative reports as well: 
+More number of strategically-positioned positive  reports and comparatively lesser number of  strategically-positioned negative reports on a party in  the newspapers means more votes for that party in the  election. This hypothesis could be simplified by  introducing a term ‘positivity’ which will stand for  ‘strategically-positioned positive reports and  comparatively lesser strategically-positioned negative  reports’ as: More positivity for a party in the newspapers  means more votes for that party in the election. 
+Testing this hypothesis will answer RQ1 and RQ2. 
+c) Hypotheses for Facebook  
+On Facebook, leaders of two of the three  chosen parties had verified fan pages. However, for the  other party, the fan page of the party was taken into  account for analysis. The number of ‘likes’ recorded on  the fan pages of the representative of the parties were  more than that of the party, which means, the leaders  were more popular that their respective parties on social  media.  
+Hence, the hypothesis for Facebook would be: More number of ‘likes’ recorded on the fan  page of a party or the representative of the party means  more votes for that party in the election. 
+Likes are termed positive. However, the number  of ‘likes’ keeps adding up. At the start of the study, the  parties had different number of ‘likes’ and hence,  calculations based on them could be erratic. Hence, to  track the actual political trend on Facebook, the number  of new ‘likes’ recorded every day was taken into  account. For that analysis, the hypothesis is as follows: 
+More number of new ‘likes’ recorded on the fan  page of a party or the representative of the party means  more votes for that party in the election. 
+Testing this hypothesis will answer RQ 3 and RQ 4. 
+d) Hypotheses for print media-Facebook association The above-mentioned hypotheses identify the  political trends that prevailed in the print media and  Facebook during the period of study and validate them.  But the present study also seeks to analyse short- and  long-term effects of the print media on the people and  Facebook by comparing the content of newspapers with  that of the online social network. People are the  connection between mass media and the online social  media. So, if the trends and shocks observed in the  press is reflected and felt on the online social media  then the amount of influence that these media exert on  
+the people and vice-versa can be deduced. Hence, the  following hypothesis is proposed to infer and check the  effects of the print media: 
+More positivity for a party in the newspapers  means more number of new ‘likes’ recorded on the fan  page of a party or the representative of the party. 
+After the hypotheses are proposed, the next  step would be to choose appropriate methods of  research. The method of research chosen is explained  in the following chapter.  
+II. METHOD OF RESEARCH 
+a) Newspapers 
+5 
+1
+0
+Based on readership figures, the following  2
+broadsheet dailies were selected for the study: The 
+r 
+a
+Times of India (ToI), Hindustan Times (HT), The Hindu 
+e
+Y
+(TH) and The Telegraph (TT). Political news items  31 
+published in the chosen four newspapers were collected  on a daily-basis from January 24 to May 12, 2014— the  
+  
+I
+period of study. In this study, ‘news item’ refers to news  
+ 
+n
+stories, editorials, op-ed pieces, columns, standalone  
+o
+i
+s
+r
+pictures, info-graphics and opinion pieces published in  
+e
+V
+the newspapers. The unit of analysis is a news item. Of  
+ 
+I
+I
+the news items published, the ones that were related to  
+ 
+e
+the chosen parties—the Congress, BJP and AAP—were  
+u
+s
+s
+I
+segregated.  
+ 
+Each of the items was analysed and classified  
+V
+X
+as positive, neutral or negative for a party based on its  
+ 
+e
+content. A common formula was applied to each of the  
+m
+u
+l
+news item in this comparative study to mitigate any  
+o
+V
+inherent bias in the data analysis.  
+) 
+A
+Scoring guidelines for polarity: Nine categories were  
+( 
+ 
+  
+chosen for categorisation of political polarity—Congress  
+e
+c
+positive, Congress negative and Congress neutral; BJP  
+n
+e
+i
+positive, BJP negative and BJP neutral; AAP positive,  
+c
+S
+ 
+AAP negative and AAP neutral. While reporting an issue  
+l
+a
+i
+or controversy, if a news item presented the view or  
+c
+o
+- 
+statement of a party or the views that favour that party,  
+S
+ 
+n
+then the news item was classified as positive for that  a
+m
+party.  
+u
+In the case of multiple views, the dominant view  
+H
+ 
+f
+was considered.  
+o
+ 
+l
+If a news item had the mention of a party and  
+a
+n
+r
+was found to be damaging the image of that party, it  u
+o
+was rated as negative. If a news item was based on the  
+J
+ 
+l
+political campaign of a party, then it was classified as  
+a
+b
+positive for that party. Positive and negative statements  
+o
+l
+were tracked in news reports to decide their polarity. If a  G
+news item mentions more than one party, then the party  that is dominantly discussed in the news report is  considered.  
+A news item that did not exhibit a perceivable  political polarity was categorised as neutral. Only the news items that exhibited a political polarity—that is,  either positive or negative—were considered for further  analysis of political orientation of the newspapers. 
+© 2015 Global Journals Inc. (US) 
+India Elections 2014: Time-Lagged Correlation between Media Bias and Facebook Trend 
+Scoring guidelines for position: Based on the position of  the news item in the paper—that is on which page it  appeared— weightage was assigned to it. Front page  news item - 5; editorial - 4; news item on editorial or op 
+ed page - 3 and news item on nation page - 2.  
+Independent variables in this study are  newspaper, party and ‘time’, while the dependent  variables are political polarity and the position of news  items in the paper, which were measured in ratio points.  Political orientation of a newspaper was calculated  based on the two dependent variables. Calculation was  done daily to track the trend over time as the four  papers analysed are daily broadsheets. For the  
+5 
+1
+independent variable time, the unit of measurement was  
+0
+2
+one day.  
+r 
+a
+Reliability: An ‘a priori’ coding scheme describing all the  
+e
+Y
+measures was created and the scoring guidelines were  32 
+served to the coders, who were trained with samples  before the study period. Since a human coding method  
+  
+I
+was employed, the meaning and content of the news  
+ 
+n
+items were better analysed to estimate the political  
+o
+i
+s
+r
+orientation of the chosen four newspapers.  
+e
+V
+Inter-coder reliability was tested. Cohen’s κ was  
+ 
+I
+I
+run to determine if there was agreement between two  
+ 
+e
+coders using a sample of 50 news items and the  
+u
+s
+s
+I
+guidelines proposed. There was almost perfect   
+agreement between the coders’ judgments, κ = .856  
+V
+X
+(Std. error .055), p < .0005. 
+ 
+e
+m
+b) Facebook 
+u
+l
+o
+For the content analysis of Facebook, the  V
+official verified fan pages of Narendra Modi and Arvind  
+) 
+A
+Kejriwal were chosen to represent their respective  
+( 
+ 
+  
+parties—BJP and AAP. Rahul Gandhi did not have a  
+e
+c
+verified fan page on Facebook. However, during the  
+n
+e
+i
+middle of the study, through promotional campaigns  
+c
+S
+ 
+and adverts, the Indian National Congress party  
+l
+a
+i
+publicised its website and official Facebook fan page.  
+c
+o
+- 
+After that, the Indian National Congress official fan page  
+S
+ 
+n
+was chosen to represent the Congress party on  a
+m
+Facebook. The number of ‘likes’ recorded on these fan  u
+pages were recorded on a daily-basis during the study  
+H
+ 
+f
+period—January 24 to May 12, 2014. 
+o
+ 
+l
+The unit of analysis is a ‘like’. The number of  
+a
+n
+‘likes’ for a day was randomly recorded at different times  
+r
+u
+o
+during the day. However, the number of ‘likes’ on each  
+J
+ 
+l
+of the fan pages was recorded at the same time during  
+a
+b
+a day to mitigate bias and inter-subjectivity. Since a ‘like’  
+o
+l
+carries a positive character and there was not a negative  G
+equivalent to it on Facebook, the number of ‘likes’ was  only used to understand the political trend on Facebook. Independent variables are party and ‘time’, while the  dependent variable is ‘like’, which were measured in  ratio points. Political trend that prevailed on Facebook  was deduced using the counts of ‘likes’ that were  recorded on each of the chosen fan pages. It was  recorded daily to track the trend over time. For the  
+© 2015 Global Journals Inc. (US) 
+independent variable time, the unit of measurement was  one day. Political trends were calculated for the whole  study period to conclude which party was favoured and  to what extent on Facebook. The political trend of  Facebook was determined using the number of actual  ‘likes’ and the number of new ‘likes’ recorded on the fan  pages. 
+The data were collected and analysed using  Microsoft Excel spreadsheet and a portable version of  the SPSS statistics software. For the time-series  analyses, linear and quadratic regression models and  SPSS Expert Modeler were employed. 
+III. FINDINGS AND DISCUSSION 
+RQ1. Do the newspapers show a particular partisan  political orientation? 
+Political news published in the four chosen  newspapers—The Times of India, Hindustan Times, The  Hindu and The Telegraph—were reviewed on a daily  basis during the period of study—January 24 to May 12,  2014. Of them, the political news items published on the  front page, editorial page, Op-ed page and nation  pages on the three national parties selected for the  study were rated as positive and negative for a party.  That was identified as the political polarity of a news  item. Based on the news item’s position in the paper— that is, on which page it was published—each news  item was assigned a weightage. Daily scores for the  papers were calculated by summing up the weightages  of the positive and negative news items. The first part of  the analysis deals with finding out the political  orientations of the four newspapers—that is, which  newspaper supported which political party and to what  extent. 
+a) One-way Anova: Party vs Positivity 
+To determine the political orientation of the  newspapers, the political polarities identified in its  reports with the position weightage attributed to each of  the polarity were summed up for the whole study period.  Then the negative scores were subtracted from the  positive scores to get the positivity scores, which were  used to define the political orientation of the  newspapers.  
+One-way Anova was performed to find out if  there were statistically significant differences among the  three chosen parties with regard to the positivity scores  that each of them earned in the daily newspapers during  the study period and the results are presented in Table1. 
+India Elections 2014: Time-Lagged Correlation between Media Bias and Facebook Trend 
+Table 1 : One-way Anova results: Party vs. Positivity 
+ Sum of Squares df Mean Square F Sig.  
+Between Groups 12284.642 2 6142.321 19.907 .000 Within Groups 99972.275 324 308.556 
+Total 112256.917 326 
+There was a statistically significant difference  among the parties with regard to their average positivity  scores as determined by one-way Anova (p < .0005). A  Tukey post-hoc test revealed the political orientations of  the newspapers (BJP-21.44; Congress-15.66 and AAP 
+6.55) were in favour of the BJP, see Table 2. The Aam Aadmi Party drew the least amount of support from the  newspapers—that is, it saw the least number of  favourable news reports. 
+5 
+Table 2 : Table of means 
+95% Confidence Interval  
+1
+0
+2
+r a
+e
+Y
+ N Mean Std.  
+Std.  
+for Mean Minimum Maximum  
+33 
+Deviation  
+Error  
+Lower  Bound 
+Upper Bound 
+  
+I
+Congress 109 15.6606 19.24800 1.84362 12.0062 19.3149 -18.00 84.00 
+ 
+n
+BJP 109 21.4404 21.09697 2.02072 17.4349 25.4458 -39.00 70.00 
+o
+i
+s
+AAP 109 6.5505 10.49293 1.00504 4.5583 8.5426 -21.00 34.00 
+r
+e
+Total 327 14.5505 18.55657 1.02618 12.5317 16.5692 -39.00 84.00 
+V
+ 
+I
+I
+RQ2. Is the political trend in the papers associated with  the election results? 
+The daily positivity scores are summed up for  the whole study period and these scores are used to  
+find an association between press trends and election  
+ 
+e
+u
+results. The sum of the overall positivity scores for the  
+s
+s
+I
+three chosen parties and the election results are tabled   
+V
+in Table 3. 
+X
+ 
+e
+Table 3 : Political orientation of the papers vs. election results 
+m
+u
+l
+o
+ Congress BJP AAP  
+V
+Press trend 1707 2337 714 
+) 
+Popular vote share 106760001 171459286 11325635 
+A
+( 
+ 
+Press trend % 35.88 49.12 15.01 
+  
+e
+Popular vote share% 36.87 59.22 3.91 
+c
+n
+e
+i
+To measure the strength and direction of  association that exists between press trends and  elections results, Spearman’s rank-order correlation  coefficient was calculated and the test results are  presented in Table 4. The coefficient will provide a  
+nonparametric measure of association between the  
+c
+S
+ 
+political trends in newspapers (media bias) and poll  
+l
+a
+i
+results, and will be used to test the hypothesis that  
+c
+o
+- 
+press trends are positively associated with election  
+S
+ 
+n
+results. 
+a
+m
+u
+Table 4 : Spearman’s correlation results: newspapers vs. election results 
+H
+ 
+f
+
+
+	Press trend 
+	Popular vote share 
+	Spearman’s rho
+	Press trend 
+	Correlation Coefficient 
+	1.000 
+	1.000**
+	Sig. (1-tailed) 
+	. 
+	. 
+	Popular vote share
+	Correlation Coefficient 
+	1.000** 
+	1.000
+	Sig. (1-tailed) 
+	. 
+	. 
+	**. Correlation is significant at the 0.01 level (1-tailed).
+	
+
+
+
+o
+ 
+l
+a
+n
+r
+u
+o
+J
+ 
+l
+a
+b
+o
+l
+G
+A Spearman’s rank-order correlation was run to  determine the relationship between the political trend on  the newspapers and election results. There was a  strong, positive correlation between them, which was  statistically significant (rs = 1.000, p < .01). 
+Hence, the hypothesis that more positivity for a  party in the newspapers means more votes for that party  in the election is tenable. 
+RQ3. Which political leader is popular on Facebook and  to what extent?  
+BJP’s prime ministerial candidate Narendra  Modi and AAP’s Arvind Kejriwal had verified ‘Fan pages’  in their respective names on Facebook. But Congress’s  Rahul Gandhi did not have one. Hence, for the study,  the Facebook fan pages of ‘Narendra Modi’, ‘Arvind  Kejriwal’ and ‘Indian National Congress’ were  
+© 2015 Global Journals Inc. (US) 
+India Elections 2014: Time-Lagged Correlation between Media Bias and Facebook Trend 
+considered and the varying number of ‘Likes’ on each of  those pages were recorded on a daily-basis for analysis.  Each of these fan pages will represent one of the  chosen parties—the Congress, BJP and Aam Aadmi  Party. 
+To estimate the political trend on Facebook— that is, how popular the party and politicians chosen for  
+the study are on Facebook—a one-way Anova test was  conducted which would identify statistically significant  differences among them with regard to the number of  new ‘likes’ recorded on their respective Facebook fan  pages during the period of study. 
+The results are presented in Table 5.  
+Table 5 : One-way Anova results: Party vs. New likes 
+ Sum of Squares df Mean Square F Sig.  Between Groups 75052301982.529 2 37526150991.265 63.409 .000 Within Groups 156830582914.706 265 591813520.433 
+Total 231882884897.235 267 
+5 
+1
+0
+There is a statistically significant difference  2
+r 
+among the three chosen parties with regard to the  
+a
+e
+average number of new ‘likes’ that they secured each  Y
+day during the period of study as determined by the  34 
+one-way Anova (F(2,267) = 63.409, p < .0005), refer  Table 6. A Tukey post-hoc test revealed that Narendra  
+  
+I
+ 
+Modi (49589.44 ± 36178.298 likes, p < .0005) was  
+n
+o
+i
+s
+more popular than the Indian National Congress  (21720.38 ± 14957.793 likes) and Arvind Kejriwal  (13307.04 ± 7084.970 likes) on Facebook. There was  no statistically significant difference between the  average numbers of new ‘likes’ recorded by INC and  Kejriwal (p = .103). 
+Table 6 : Table of means 
+r
+e
+V
+ 
+I
+I
+ N Mean Std. Deviation Std. Error  
+ 
+e
+u
+s
+MODI 108 49589.44 36178.298 3481.258 
+s
+I
+INC 52 21720.38 14957.793 2074.273 
+ 
+V
+KEJRIWAL 108 13307.04 7084.970 681.752 
+X
+ 
+Total 268 29560.74 29469.904 1800.161 
+e
+m
+u
+RQ4. Is Facebook popularity associated with the  
+l
+o
+election results? 
+V
+The average number of new ‘likes’ recorded  
+) 
+A
+during the period of study is used to find an association  
+( 
+ 
+  
+e
+between Facebook political trends and election results,  see Table 7. 
+Table 7 : Political trend on Facebook vs. election results 
+c
+n
+e
+i
+ BJP INC AAP  
+c
+S
+ 
+l
+Average number of new likes recorded  
+a
+during the study period 49589.44 21720.38 13307.04 
+i
+c
+o
+- 
+Percentage 58.60 25.67 15.73 
+S
+ 
+n
+Popular vote share – election outcome 17,16,37,684 10,69,35,311 1,13,25,635 a
+Percentage 59.21 36.89 3.91 
+m
+u
+H
+To measure the strength and direction of  
+ 
+f
+o
+association that exists between Facebook’s trends and  
+ 
+l
+a
+elections results, Spearman’s rank-order correlation  
+n
+r
+coefficient was calculated and the test results are  
+u
+o
+J
+presented in Table 8. The coefficient will provide a  
+ 
+l
+a
+b
+nonparametric measure of association between the  political trends on Facebook and poll results, and will be  used to test the hypothesis that Facebook popularity is  positively associated with election results. 
+Table 8 : Spearman’s correlation results: Facebook trend vs. election results 
+o
+l
+G
+
+
+	ANL 
+	VOTES
+	Spearman’s rho
+	ANL 
+	Correlation Coefficient 
+	1.000 
+	1.000**
+	Sig. (1-tailed) 
+	. 
+	. 
+	VOTES
+	Correlation Coefficient 
+	1.000** 
+	1.000
+	Sig. (1-tailed) 
+	. 
+	. 
+	
+
+
+
+ANL— Average number of new likes recorded during the study period;  
+VOTES— Popular vote share – election outcome. 
+© 2015 Global Journals Inc. (US) 
+India Elections 2014: Time-Lagged Correlation between Media Bias and Facebook Trend 
+A Spearman’s rank-order correlation was run to  determine the relationship between the political trends  on Facebook and election results. There was a strong,  positive correlation between them, which was  statistically significant (rs = 1.000, p < .01).  
+There is a strong correlation between the  average number of new likes recorded during the study  period and the election results.  
+Hence, the hypothesis that more number of new  ‘likes’ recorded on the fan page of a party or the  representative of the party means more votes for that  party in the election is tenable. 
+RQ5. Is the press trend associated with the Facebook  popularity? 
+Based on the polarity and position of political  items published in the newspapers, daily scores were  
+assigned to the parties under six categories—Congress  positive, Congress negative, BJP positive, BJP negative,  AAP positive and AAP negative. These daily scores for  the parties in the four newspapers combined were used  to understand the underlying political trends in the  newspapers. Similarly, the Facebook fan pages of  ‘Narendra Modi’, ‘Arvind Kejriwal’ and ‘Indian National  Congress’ were considered and the varying number of  ‘Likes’ on each of those pages were recorded on a  daily-basis for analysis. To measure the effect of press  trends on Facebook, the daily positivity scores for the  three parties chosen in the newspapers and the number  of new ‘likes’ recorded on each day of the study period  
+5 
+1
+have to be correlated. The daily scores for the parties in  
+0
+2
+the papers and Facebook are presented in Table 9. 
+r 
+a
+e
+Y
+Table 9 : Daily scores for the parties in the newspapers and Facebook 
+35 
+Date PCONG PBJP PAAP FBJP FCONG FAAP  
+  
+I
+24-Jan-2014 6 13 5  
+ 
+n
+o
+25-Jan-2014 -6 18 0 78796 11994 
+i
+s
+r
+26-Jan-2014 5 5 15 117183 18221 e
+V
+27-Jan-2014 4 4 16 45075 12368  
+I
+28-Jan-2014 44 9 4 149679 24993 
+I
+ 
+e
+29-Jan-2014 -7 7 -5 110274 28889 
+u
+s
+30-Jan-2014 7 8 27 21920 8643 
+s
+I
+31-Jan-2014 26 14 8 67892 24926 
+ 
+V
+01-Feb-2014 23 22 28 35194 13398 
+X
+ 
+02-Feb-2014 3 0 -2 21056 7799 e
+m
+03-Feb-2014 6 27 -15 32844 10752 
+u
+l
+04-Feb-2014 23 -5 28 99996 17483 
+o
+V
+05-Feb-2014 -2 9 4 103576 13194 ) 
+06-Feb-2014 -11 37 12 135441 10794 
+A
+( 
+07-Feb-2014 18 9 4 65647 18512 
+ 
+  
+08-Feb-2014 16 19 26 237202 12219 
+e
+c
+09-Feb-2014 -14 25 26 70981 12424 
+n
+e
+i
+10-Feb-2014 5 37 25 162104 26964 
+c
+S
+11-Feb-2014 18 9 -9 7455 42333 
+ 
+l
+a
+12-Feb-2014 41 31 29 79816 29396 
+i
+c
+o
+13-Feb-2014 9 21 34 19115 19291 
+- 
+S
+ 
+14-Feb-2014 7 36 1 14545 14701 
+n
+a
+15-Feb-2014 -16 -2 3 17240 16022 m
+16-Feb-2014 8 -20 -2 16288 13959 
+u
+H
+17-Feb-2014 15 -15 21 12279 6691 
+ 
+f
+18-Feb-2014 23 7 15 25315 14915 
+o
+ 
+l
+19-Feb-2014 -3 13 -7 3269 2472 
+a
+n
+20-Feb-2014 22 14 6 21843 11578 
+r
+u
+21-Feb-2014 31 4 12 29402 26056 
+o
+J
+ 
+22-Feb-2014 15 4 13 39720 14376 
+l
+a
+23-Feb-2014 4 14 2 24583 13528 
+b
+o
+l
+24-Feb-2014 12 -9 28 25927 13384 G
+25-Feb-2014 4 19 8 23784 13802 26-Feb-2014 18 23 -6 7287 4559 27-Feb-2014 -9 35 6 24601 12860 28-Feb-2014 23 19 23 29823 14364 01-Mar-2014 5 18 5 39675 11853 02-Mar-2014 4 21 12 12952 15338 03-Mar-2014 9 26 14 24660 12914 04-Mar-2014 2 9 8 4660 10914 05-Mar-2014 10 16 8 44661 14915 
+© 2015 Global Journals Inc. (US) 
+India Elections 2014: Time-Lagged Correlation between Media Bias and Facebook Trend 
+06-Mar-2014 13 -7 10 24660 5914 
+07-Mar-2014 0 14 -13 104661 19914 
+08-Mar-2014 6 3 17 14660 1726 
+09-Mar-2014 7 0 -21 54661 2000 
+10-Mar-2014 4 42 17 74566 1892 
+11-Mar-2014 -1 17 -8 39882 4938 
+12-Mar-2014 21 14 -4 39941 12469 
+13-Mar-2014 -9 -2 7 89941 10469 
+14-Mar-2014 -8 13 6 9880 16941 
+15-Mar-2014 0 39 3 59883 14934 
+16-Mar-2014 -8 70 27 41021 5336 
+17-Mar-2014 62 38 8 30842 10111 
+18-Mar-2014 17 4 12 47899 14430 
+19-Mar-2014 21 22 2 43147 10121 
+5 
+20-Mar-2014 35 6 5 39733 7671 
+1
+0
+21-Mar-2014 45 50 4 36884 12082 
+2
+r 
+22-Mar-2014 16 -23 2 54126 11497 11061 
+a
+e
+23-Mar-2014 7 -39 13 12254 12519 16215 
+Y
+24-Mar-2014 4 23 8 44912 26680 17697 
+36 
+25-Mar-2014 3 8 15 20220 8890 9327 
+26-Mar-2014 19 23 18 54229 29537 23098 
+  
+27-Mar-2014 84 48 -2 41211 31118 16183 
+I
+ 
+n
+28-Mar-2014 -13 7 0 53761 49881 18984 
+o
+i
+s
+29-Mar-2014 3 30 -4 36813 36586 14524 
+r
+e
+30-Mar-2014 23 -19 10 43428 56581 14515 
+V
+31-Mar-2014 8 29 8 73429 16599 14423 
+ 
+I
+I
+01-Apr-2014 32 63 -5 13428 36571 14619 
+ 
+e
+u
+02-Apr-2014 13 51 19 74428 56585 14521 
+s
+s
+I
+03-Apr-2014 75 45 10 12429 16584 14518 
+ 
+04-Apr-2014 -18 16 -4 43427 36582 14522 
+V
+X
+05-Apr-2014 37 19 -7 12115 36585 14520 
+ 
+e
+06-Apr-2014 46 7 14 111711 43621 19261 
+m
+u
+07-Apr-2014 66 35 4 63711 37621 19161 
+l
+o
+08-Apr-2014 18 3 4 7971 10701 990 
+V
+09-Apr-2014 32 35 -1 63956 42144 34430 
+) 
+A
+10-Apr-2014 26 41 10 60837 34605 25881 
+( 
+ 
+11-Apr-2014 44 38 15 12670 7644 5824 
+  
+e
+12-Apr-2014 41 9 17 55382 27276 20233 
+c
+n
+13-Apr-2014 1 2 -14 64361 27968 19611 
+e
+i
+c
+14-Apr-2014 0 20 7 90695 31533 22180 
+S
+ 
+l
+15-Apr-2014 38 39 8 93594 37139 23903 
+a
+i
+c
+16-Apr-2014 25 52 -1 27244 12242 7161 
+o
+- 
+S
+17-Apr-2014 39 63 2 90331 44006 21011 
+ 
+n
+18-Apr-2014 10 6 3 25975 11779 6501 
+a
+19-Apr-2014 16 67 3 78275 24728 17344 
+m
+u
+20-Apr-2014 31 18 0 29507 14331 6365 
+H
+ 
+21-Apr-2014 5 34 2 29509 4339 6356 
+f
+o
+ 
+22-Apr-2014 8 -35 -1 60002 37435 12958 
+l
+a
+23-Apr-2014 33 20 -9 66264 30903 13541 
+n
+r
+24-Apr-2014 -1 15 12 54703 21471 9981 
+u
+o
+J
+25-Apr-2014 40 49 0 45987 5193 9845 
+ 
+l
+a
+26-Apr-2014 15 31 10 48903 5092 10640 
+b
+o
+27-Apr-2014 64 45 0 44002 3994 10314 
+l
+G
+28-Apr-2014 17 45 2 40717 4320 9345 
+29-Apr-2014 29 20 -2 54011 8061 11562 
+30-Apr-2014 14 13 8 52588 8786 9504 
+01-May-2014 2 16 11 59385 6994 9178 
+02-May-2014 23 36 10 53328 8303 8164 
+03-May-2014 30 41 4 23152 3296 3700 
+04-May-2014 28 32 -4 60652 16772 8876 
+05-May-2014 5 56 2 60652 8771 8776 
+06-May-2014 -4 57 2 39433 19008 5634 
+07-May-2014 32 45 2 50503 15360 7201 
+© 2015 Global Journals Inc. (US) 
+India Elections 2014: Time-Lagged Correlation between Media Bias and Facebook Trend 
+08-May-2014 13 49 6 45934 16345 7421 09-May-2014 0 56 2 30463 10110 3967 10-May-2014 0 41 12 39357 12776 6316 11-May-2014 31 38 4 40223 11766 5718 12-May-2014 -6 43 -13 33440 232 4838 
+ PCONG – Daily positivity score for the Congress in the newspapers 
+ PBJP – Daily positivity score for the BJP in the newspapers 
+ PAAP – Daily positivity score for the AAP in the newspapers 
+ FCONG – Increase in the number of ‘Likes’ for ‘INC’ over the previous day’s score   FBJP – Increase in the number of ‘Likes’ for ‘Narendra Modi’ over previous day’s score   FAAP – Increase in the number of ‘Likes’ for ‘Arvind Kejriwal’ over the previous day’s score  
+These positivity scores for the Congress, BJP  and AAP, calculated daily, were used for further  analysis. In time-series analysis, the first step would be  to plot the data, to acquire a basic understanding of the  
+nature of the time-series and which models and type of  5 
+analysis would best suit them. The scores of the three  
+1
+0
+2
+parties—Congress, BJP and AAP—are plotted in Fig. 1. r 
+a
+e
+Y
+37 
+NEWSPAPERS 
+  
+I
+ 
+100 
+n
+o
+i
+s
+r
+e
+V
+50 
+ 
+I
+I
+ 
+e
+u
+s
+s
+I
+0 
+ 
+V
+-50 
+159 
+3 1
+7 1
+1 2
+5 2
+9 2
+3 3
+7 3
+1 4
+5 4
+9 4
+3 5
+7 5
+1 6
+5 6
+9 6
+3 7
+7 7
+1 8
+5 8
+9 8
+3 9
+7 9
+1 0
+1
+5 0
+1
+9 0
+1
+X 
+e
+m
+u
+lo
+PCONG PBJP PAAP 
+V
+) 
+A
+( 
+Figure 1 : Time-series plot for positivity scores 
+ 
+  
+e
+Similarly, the daily increase in the number of ‘likes’ is plotted in Fig. 2.  
+c
+n
+e
+i
+c
+S
+FACEBOOK 
+ 
+l
+a
+i
+c
+o
+- 
+S
+250000 
+ 
+n
+a
+200000 
+m
+u
+H
+150000 
+ 
+f
+o
+ 
+100000 
+l
+a
+n
+r
+50000 
+u
+o
+J
+ 
+0 
+l
+a
+b
+1 6 11 16 21 26 31 36 41 46 51 56 61 66 71 76 81 86 91 96 101106 
+o
+l
+G
+FCONG FBJP FAAP 
+Figure 2 : Time-series plot for daily increase in the number of Fan page ‘likes’ 
+Analysing Fig.1 and 2, it is observed that the curves exhibit seasonal fluctuations hiding the  underlying trend. It is also observed that the curves  sport a trend and not stationary. A series is stationary if  
+its mean and variance stay about the same over the  length of the series. 
+To estimate the immediate effect of the print  media on Facebook using cross-correlation, the time- 
+© 2015 Global Journals Inc. (US) 
+India Elections 2014: Time-Lagged Correlation between Media Bias and Facebook Trend 
+series need to be stationary. Hence, using the first order  of difference of the time-series, the original curves are  converted into stationary curves. Then the time-series for  
+Congress party in the newspapers and Facebook were  cross-correlated and the results are presented in  Table10. 
+Table 10 : Cross-correlations: Series pair PCONG with FCONG 
+Lag 
+	Cross Correlation 
+	Std. Errora 
+	-7 
+	-.148 
+	.100
+	-6 
+	.104 
+	.100
+	-5 
+	-.043 
+	.099
+	-4 
+	-.019 
+	.099
+	-3 
+	.065 
+	.098
+	-2 
+	.002 
+	.098
+	-1 
+	-.070 
+	.097
+	0 
+	.024 
+	.097
+	1 
+	.103 
+	.097
+	2 
+	-.179 
+	.098
+	3 
+	.072 
+	.098
+	4 
+	.062 
+	.099
+	5 
+	-.072 
+	.099
+	6 
+	-.048 
+	.100
+	7 
+	.105 
+	.100
+	a. Based on the assumption that the series are not cross correlated and that one of the series is white noise.
+	
+
+
+
+5 
+1
+0
+2
+r 
+a
+e
+Y
+38 
+  
+I
+ 
+n
+o
+i
+s
+r
+e
+V
+The analysis shows that the press trend  
+ 
+I
+I
+(positivity scores) for the Congress party is a leading  
+ 
+e
+u
+indicator for the number of likes that the fan page of  
+s
+s
+I
+Indian National Congress secures. As shown in the plot   
+V
+(Fig. 3), most of the correlations are small. There is a  
+X
+ 
+fairly large negative correlation of −0.179 at lag 2. A  
+e
+m
+u
+l
+o
+V
+) 
+A
+( 
+ 
+  
+e
+c
+n
+e
+i
+c
+S
+ 
+l
+a
+i
+c
+o
+- 
+S
+ 
+n
+a
+m
+u
+H
+ 
+f
+o
+ 
+l
+a
+n
+r
+u
+o
+J
+ 
+l
+a
+b
+o
+l
+G
+positive lag indicates that the first series leads the  second series. It can be concluded that the leading  indicator press trend of Congress really is a leading  indicator and that it works best at predicting the value of  new Facebook ‘likes’ two periods later. 
+Figure 3 : Cross-correlations: Congress 
+Similarly, the time-series for BJP in the  newspapers and Facebook were cross-correlated and  the results are presented in Fig. 4. In the case of BJP,  
+© 2015 Global Journals Inc. (US) 
+too, the press trend (positivity scores) was found to be a  leading indicator for the number of likes that the fan  page of Narendra Modi secured. As shown in the plot  
+India Elections 2014: Time-Lagged Correlation between Media Bias and Facebook Trend 
+(Fig. 4), most of the correlations are small. There is a  fairly large positive correlation of 0.226 at lag 6 and a  fairly large negative correlation of −0.239 at lag 7. The  
+leading indicator works best at predicting the value of  Facebook ‘likes’ seven days later. 
+5 
+1
+0
+2
+r 
+a
+e
+Y
+39 
+  
+I
+ 
+n
+o
+i
+s
+r
+e
+V
+ 
+I
+I
+ 
+e
+u
+s
+s
+I
+Figure 4 : Cross-correlations: BJP 
+ 
+V
+X
+Similarly, the time-series for AAP in the  newspapers and Facebook were cross-correlated and  the results are presented in Fig. 5. In the case of AAP,  too, the press trend (positivity scores) was found to be a  leading indicator for the number of likes that the fan  page of Arvind Kejriwal secured. As shown in the plot  
+(Fig. 5), most of the correlations are small. There is a  
+ 
+e
+fairly large negative correlation of −0.174 at lag 0 and a  
+m
+u
+l
+fairly large positive correlation of 0.214 at lag 3. The  
+o
+V
+leading indicator works best at predicting the value of  ) 
+Facebook ‘likes’ three days later. 
+A
+( 
+ 
+  
+e
+c
+n
+e
+i
+c
+S
+ 
+l
+a
+i
+c
+o
+- 
+S
+ 
+n
+a
+m
+u
+H
+ 
+f
+o
+ 
+l
+a
+n
+r
+u
+o
+J
+ 
+l
+a
+b
+o
+l
+G
+Figure 5 : Cross-correlations: AAP 
+© 2015 Global Journals Inc. (US) 
+India Elections 2014: Time-Lagged Correlation between Media Bias and Facebook Trend 
+Though the time-lagged correlation coefficients  found an association between the press and Facebook  trends at several lags, those are about seasonal  fluctuations. The study aims at establishing a correlation  between the long term political trends of Facebook and  the print media. Since the original curves are highly  distorted by seasonal fluctuations, the curves are  
+decomposed to extract the seasonal component by  calculating the moving averages for seven periods— since data were collected on all the seven days of a  week. After the seasonal component is removed from  the original curves, the residual data is subjected to  correlation analysis and the results of the analysis are  presented in Table 11. 
+5 1
+0
+2
+r 
+a
+e
+Y
+40   
+Table 11 : Correlation results: Press trends vs. Facebook trends 
+ FB FC FA  Pearson Correlation -.073 .304 .177 PC  
+Sig. (1-tailed) .232 .015 .038 N 102 51 102 
+Pearson Correlation .177 -.141 -.212 Sig. (1-tailed) .038 .163 .016 
+PB  
+N 102 51 102 
+Pearson Correlation .235 .081 .576 Sig. (1-tailed) .009 .286 .000 
+PA  
+N 102 51 102 
+ PA — Deseasonalised newspaper scores for AAP; PB — Deseasonalised newspaper scores for BJP: 
+I
+ 
+n
+ PC — Deseasonalised newspaper scores for Congress; FA — Deseasonalised Facebook scores for AAP;  
+o
+i
+s
+ FB — Deseasonalised Facebook scores for BJP; FC — Deseasonalised Facebook scores for Congress 
+r
+e
+V
+A Pearson product-moment correlation was run  
+ 
+I
+I
+to determine the relationship between the  
+ 
+e
+u
+deseasonalised daily positivity scores that the Congress  
+s
+s
+I
+earned in the newspapers and the number of new ‘likes’   
+V
+recorded on the Facebook fan page of the Indian  X
+ 
+National Congress during the study period. The data  e
+m
+showed no violation of normality, linearity or  
+u
+l
+o
+homoscedasticity. There was a strong, positive  V
+correlation between the press and Facebook trends,  ) 
+which was statistically significant (r = .304, n = 51, p =  
+A
+( 
+ 
+.015). Similarly, there was a significant correlation  
+  
+e
+c
+between the deseasonalised daily positivity scores that  n
+e
+the BJP earned in the newspapers and the number of  
+i
+c
+S
+new ‘likes’ recorded on the Facebook fan page of  
+ 
+l
+a
+Narendra Modi during the study period (r = .177, n =  
+i
+c
+o
+102, p = .038). The deseasonalised daily positivity  
+- 
+S
+ 
+scores that the AAP earned in the newspapers was also  
+n
+a
+positively correlated with the number of new ‘likes’  
+m
+u
+recorded on the Facebook fan page of Arvind Kejriwal  
+H
+ 
+during the study period (r = .576, n = 102, p < .0005).  
+f
+o
+ 
+l
+a
+IV. CONCLUSION 
+n
+r
+u
+o
+As the results of the empirical analyses show,  
+J
+ 
+l
+both the political trends in the print media and on  
+a
+b
+Facebook were reliable predictors of the outcome of the  
+o
+l
+2014 Lok Sabha elections. Press trend or media bias  G
+(Congress – 35.88%; BJP – 49.12% and AAP – 15.01%)  was highly in favour of the BJP party and correlated with  the popular vote share of the parties in the polls that the  BJP won. Similarly, the political trend on Facebook  (Congress – 25.67%; BJP – 58.6% and AAP – 15.73%)  that was tracked using the number of ‘likes’ recorded on  the fan pages of the parties and their popular  candidates was highly in favour of the BJP and  
+© 2015 Global Journals Inc. (US) 
+correlated with the election results (Congress – 36.89%;  BJP – 59.21% and AAP – 3.91%). That is, analysing the  bias in the press reports published during the election,  the probable winner of the elections can be predicted. In  simple terms, more positive news and comparatively  lesser amount of negative news published in the  newspapers means more votes for the party in the  elections. Similarly, the number of ‘likes’ recorded on the  Facebook fan page of a party or its candidate can be  used to estimate how popular the party or candidate is  among the people. The study results have shown that  the political trend on Facebook can also be used to  predict the probable winner. 
+The thread that connects the print media and  Facebook are the people. People who read news  reports published in the papers are influenced by it and  when they lend their support to their favourite parties on  Facebook, that influence is felt. This theory was found to  be tenable through statistical tests. A correlation was  found to exist between press and Facebook trends. That  is, the effect of political news published in the papers  during the election period was felt on Facebook with  variations in the number of ‘likes’ recorded on the fan  pages of the parties. 
+The present study investigated both short- and  long-term effects. Cross-correlation analyses were  performed to estimate the immediate effects. It was  found that in all three cases—the Congress, BJP and  AAP—the press trend was a leading indicator. That is,  the press trend can be used as a predictor for the  Facebook trend. In other words, analysing the number  of positive and negative reports published in the  newspapers, the probable increase or decrease in the  number of ‘likes’ recorded on the Facebook fan pages  
+India Elections 2014: Time-Lagged Correlation between Media Bias and Facebook Trend 
+can be predicted. However, the strongest amount of  correlation between press and Facebook trends was  found to be several lags away. That is, the effect of  media reports on Facebook was not immediately felt,  but several periods—in the present case, several  days—later. The study was more interested in finding a  correlation between the long-term political trends of the  newspapers and Facebook. 
+Positive correlations were reported indicating  that the newspapers had an effect on Facebook—which  in turn, shows that the newspapers had an effect on the  people. 
+Since media bias, Facebook trend and the  electionresults correlated, the present study concludes  that just by studying the content of a mass media that  people avidly use, the outcome of the election—or any  other future behaviour of the people—can be predicted. 
+References Références Referencias 
+1. All About Newspapers. (2010). Growth of Indian  newspapers during recent times. E-magazine, 5(5), Sep-October. Retrieved March 30, 2014,  from http://www.allaboutnewspapers.com/sep10/ar ticle1.html 
+2. Bartels, Larry M. (1993). Messages received: the  political impact of media exposure. American  Political Science Review, 87(2): 267-285. 
+3. Chiang, Chun-Fang, and Brian Knight. (2011).  Media Bias and Influence: Evidence from  Newspaper Endorsements. Review of Economic  Studies, 78(3): 795-820. http://restud.Oxfordjour  nals.org/content/78/3/795.short 
+4. Druckman, James N., and Michael Parkin. (2005).  The impact of media bias: How editorial slant affects  voters. Journal of Politics, 67(4): 1030-1049. 
+5. Endersby, James W. (2011). Fair and Balanced?  News Media Bias and Influence on Voters. SSRN. 6. Gerber, Alan, Dean S. Karlan, and Daniel Bergan.  
+(2006). Does the media matter? A field experiment  measuring the effect of newspapers on voting  behavior and political opinions. Yale Economic  Applications and Policy Discussion. Paper 12. 
+7. Hayden, Michael E. (2012). In India, English Language Newspapers Are Thriving. Advertising  Age. October. Retrieved March 31, 2014,  from http://adage.com/article/global-news/india.en glish-language-newspapers-thriving/237795/  
+8. Hooke, Paolo. (2012). Why newspaper markets are  growing in China and India, while they decline in the  US and UK. eJournalist. Retrieved March 30, 2014,  from http://ejournalist.com.au/v12n1/Hooke.pdf 
+9. Kushin, Matthew J., and Kelin Kitchener. (2009).  Getting political on social network sites: Exploring  online political discourse on Facebook. First  Monday, 14(11). 
+10. Kuypers, Jim A. (2002). Press bias and politics: How  the media frame controversial issues. Greenwood  Publishing Group. 
+11. Pansare, Prashant. (2014). How social media  played game changer for election 2014 in the  world’s largest democracy. DNA. Published June  11. Retrieved June 13, from http://www.dnaindia.  com/blogs/post-how-social-media-played-game-ch  
+anger-for-election-2014-in-the-world-s-largest-demo  cracy-1994841 
+12. Rhee, June Woong. (1997). Strategy and issue  frames in election campaign coverage: A social  cognitive account of framing effects. Journal of  
+5 
+1
+Communication, 47(3): 26-48. 
+0
+2
+13. Singh, Shelley. (2014). After 100 million users in  
+r 
+a
+India, Facebook aims at 1 billion. The Economic  
+e
+Y
+Times. Published April 9. Retrieved June 25,  41 
+from http://articles.economictimes.indiatimes.com/ 2014-04-09/news/49000101_1_javier-olivan-mobile   
+users-one-billion-users 
+I
+ 
+n
+14. Swamy, Rohan. (2014). Did Social Media Really  
+o
+i
+s
+Impact the Indian Elections? NDTV. May 20. 
+r
+e
+Retrieved June 25, from http://gadgets.ndtv.com/  
+V
+ 
+I
+social-networking/features/did-social-media-really-i  
+I
+ 
+e
+mpact-the-indian-elections-527425 
+u
+s
+s
+15. The Economist. (2011). Bulletins from the  
+I
+ 
+future. www.economist.com. July 7. Retrieved  V
+X
+March 25, 2014, from http://www.economist.com/  
+ 
+e
+node/18904136 
+m
+u
+l
+16. Vitak, Jessica, Paul Zube, Andrew Smock, Caleb T.  o
+V
+Carr, Nicole Ellison, and Cliff Lampe. (2011). It’s  ) 
+complicated: Facebook users' political participation  
+A
+( 
+in the 2008 election. Cyber Psychology, behavior,  
+ 
+  
+and social networking, 14(3): 107-114. 
+e
+c
+n
+17. Williams, Christine B., and Girish J. Gulati. (2007).  
+e
+i
+c
+Social networks in political campaigns: Facebook  
+S
+ 
+l
+and the 2006 midterm elections. Annual meeting of  
+a
+i
+c
+the American Political Science Association. 
+o
+- 
+S
+18. Woolley, Julia K., Anthony M. Limperos, and Mary  
+ 
+n
+Beth Oliver. (2010). 
+a
+m
+The 2008 presidential election, 2.0: A content  u
+H
+analysis of user-generated political Facebook  
+ 
+f
+o
+groups. Mass Communication and Society, 13(5):  
+ 
+l
+a
+631-652. 
+n
+r
+u
+o
+J
+ 
+l
+a
+b
+o
+l
+G
+© 2015 Global Journals Inc. (US)

@@ -1,0 +1,1766 @@
+﻿1059710SMSXXX10.1177/20563051211059710Social Media <span class="symbol" cstyle="Mathematical">+</span> Societyde León and Trilling   
+research-article20212021 
+Article 
+A Sadness Bias in Political News Sharing?  The Role of Discrete Emotions in the  Engagement and Dissemination of  
+Political News on Facebook 
+Ernesto de León1 and Damian Trilling2 
+Abstract 
+Social Media + Society 
+October-December 2021: 1–12 © The Author(s) 2021 
+Article reuse guidelines: 
+sagepub.com/journals-permissions DOI: 10.1177/20563051211059710 
+https://doi.org/10.1177/20563051211059710 journals.sagepub.com/home/sms 
+In this study, we address the role of emotions in political news sharing on Facebook to better understand the complex  relationship between journalism, emotions, and politics. Categorizing Facebook Reactions (particularly, the Sad, Angry, Love,  and Wow Reactions) according to the discrete emotions model, we evaluate how positive versus negative political content  relates to emotional responses, and how this consequentially influences the degree to which articles are shared across social  media in the context of an election. We focus on the landmark 2018 Mexican elections to enable a nuanced conversation  on how cues of user emotion predict the far-reaching dissemination of news articles on Facebook during a moment of  heightened political attention. Our findings demonstrate a negativity bias in news sharing and engagement, showing an  outsized prevalence of anger in response to political news. In addition, we provide evidence of a novel sadness bias in the  sharing of political coverage, suggesting that emotions considered as deactivating should be reevaluated in the context of  social media. 
+Keywords 
+emotions, Facebook, elections, automated content analysis, news sharing, political news
+Introduction 
+How people engage with political news on social network  sites (SNSs) has become a major subject of academic atten tion. Most work has focused on “sharing,” “liking,” and  “commenting” of content, as these staple interactions are  available across a plethora of SNSs (e.g., Facebook, Twitter,  Reddit, and Instagram). Much less has been said about  Facebook’s Reactions feature that was introduced in 2016  (we distinguish between Facebook’s “Reactions” feature and  “reactions” in general by capitalization). Through these  Reactions, users can describe how a post makes them feel by  clicking one of five icons: “Angry,” “Love,” “Haha,” “Sad,”  and “Wow,” providing much more versatile feedback than  the traditional “Like” (Sturm Wilkerson et al., 2021). Based  on these Reactions, researchers have studied the link between  emotions and posts by political parties (Eberl et al., 2020),  scientific literature (Freeman et al., 2019), news consump tion feedback (Larsson, 2018), and controversy in news  (Basile et al., 2018; Sriteja et al., 2017). In a way, these stud 
+ies use Reactions as simplified yet differentiated crowd sourced data on human expression. As indications of specific  emotions, they make the task of identifying types of human  
+reaction to content online much simpler. Despite these  inroads, more work is required to understand how Reactions  are used in relation to political news, especially considering  the crucial role played by emotions in political content  engagement on SNSs (Papacharissi, 2016). The recent focus  on emotions in journalism studies has also brought emotions  and news content to the forefront of communication studies,  highlighting the need to understand how audiences engage  emotionally with the media, especially on sites such as  Facebook (Wahl-Jorgensen, 2020). 
+In this study, we ask how we can better understand  Facebook Reactions as expressions of online sentiment dur ing moments of political mobilization: elections. We focus  on Reactions to political news during the 2018 Mexican gen eral election. Despite emotional engagement with news  
+1University of Bern, Switzerland 
+2University of Amsterdam, The Netherlands 
+Corresponding Author: 
+Ernesto de León, University of Bern, Fabrikstrasse 8, CH-3012 Bern,  Switzerland.  
+Email: ernesto.deleon@unibe.ch 
+Creative Commons Non Commercial CC BY-NC: This article is distributed under the terms of the Creative Commons Attribution NonCommercial 4.0 License (https://creativecommons.org/licenses/by-nc/4.0/) which permits non-commercial use, reproduction  and distribution of the work without further permission provided the original work is attributed as specified on the SAGE and Open Access pages  (https://us.sagepub.com/en-us/nam/open-access-at-sage).   
+2 Social Media + Society 
+during elections having implications for the political process,  little work has sought to explore the links between political  news and this new form of online emotional engagement. We  ask, 
+How did Facebook users use the Facebook Reactions feature to  engage with political news content during the 2018 Mexican  Election? 
+Emotions can also impact news sharing. Emotions in  news articles impact their “shareworthiness” (Savolainen  et al., 2020; Trilling et al., 2017), and, in general, emotional  news is more popular on Facebook (Gupta & Yang, 2019).  While work on general news sharing has demonstrated that  the presence of either positive or negative content leads to  higher sharing (Bakshy et al., 2011; Berger, 2012; Kümpel  et al., 2015), studies focusing exclusively on political news  have shown that negative content receives more attention on  websites, with some initial evidence that this attention trans lates into news sharing on SNS (Harcup & O’Neill, 2017;  Ørmen, 2019; Trussler & Soroka, 2014). These preliminary  results linking negativity and political news sharing are far  from surprising—decades of research in psychology have  documented the outsized impact that negative messages have  on individuals. 
+Reactions can help us take our understanding of the rela tionship between emotions and news sharing beyond the  typical measures of negative–positive classification of con tent commonly used in the news sharing literature.  Accordingly, Soroka et al. (2015) have highlighted the need  for more nuance when it comes to emotions and news. For  example, within negative emotions, news causing sadness  will have qualitatively different effects on audiences than  news causing anger. With the distinctions made by Facebook  Reactions between these two emotions, we can address the  nuances in emotional reactions correlated to the sharing of  political news. We ask, 
+How do emotional Reactions to political news articles help us  understand how these articles are shared across Facebook? 
+To do so, we collected N = 16,852 articles from Mexican  news sites during the official 2018 campaign period, retriev ing Facebook metrics for each using the Crowdtangle API.  After enriching our data with several automated content  analysis techniques, we model the Reactions the articles  received using negative binomial regression models to reach  a nuanced understanding of the relationship between politi cal news, Reactions, and sharing. 
+Theoretical Framework 
+Facebook Reactions and Emotion 
+The field of computer-mediated communication has long  recognized the important role that emoticons play in general  
+expression (Walther & D’addario, 2001), but particularly in  communicating emotion (Aldunate & González-Ibáñez,  2017; Derks et al., 2008; Provine et al., 2007). These can  help individuals communicate how they are feeling by pro 
+viding “paralinguistic cues to convey emotional meaning”  (Aldunate & González-Ibáñez, 2017, p. 1). Facebook  Reactions are similar. Introduced in 2016, Facebook users  can click–react to content beyond the classic “Like,” using  the “Angry,” “Love,” “Haha,” “Sad,” and “Wow” Reactions  (Larsson, 2018). Sturm Wilkerson et al. (2021) argue that  these Reactions enable “affective affordances”—the capac 
+ity for users to interact emotionally with content, “making  possible the expression of feeling in relation to content  through discrete, preconfigured emotional choices” (p. 15). 
+Studies have made use of these Reactions to understand  how publics engage with a wide variety of material on  Facebook, including posts from political actors (Eberl et al.,  2020; Jost et al., 2020), and news articles (Larsson, 2018;  Savolainen et al., 2020; Sturm Wilkerson et al., 2021). While  several have broadly categorized Reactions into positive  (Love, Wow, and Haha) and negative (Angry and Sad) senti 
+ment (Eberl et al., 2020; Savolainen et al., 2020), we argue  that these Reactions can be better understood as discrete  choices rather than on a simple negative–positive scale. 
+Discrete-Emotions Models of Affect (Frijda, 1986;  Lazarus, 1991) add to the positive–negative divide in affect  by linking emotions to behavior. While also conceptualizing  emotions as broadly pertaining to negative versus positive  affect, they add a second dimension to emotional reactions,  not only typifying them by affect (positive vs. negative), but  also by high and low arousal (Russell, 1980). For example,  within positive affect emotions, happiness produces bask and  bonding action tendencies, while contentment is linked to  immobility; anger and sadness, both negative valence emo tions, result in different action tendencies, the former leading  to attack and rejection, while the latter invokes revisiting and  doubt (Oatley, 1992; Roseman et al., 1994; Scherer, 1984). 
+When it comes to negatively valenced discrete emotions,  work has long distinguished between anger and sadness. The  distinguishing feature most discussed is the level of arousal  between the two (Shields, 1984). This arousal impacts judg 
+ment and social information processing strategies  (Bodenhausen, 1993). Assuming the Angry Reaction repre sents anger, we can classify the Reaction not only as negative,  but also as high-arousal, while the Sad Reaction—assuming  it represents sadness—also negatively valenced, can be  understood as low-arousal (Russell, 1980). 
+In past work, the Love Reaction has been discussed as  symbolizing positive valence. While some work has pointed  to the different degrees of arousal that are associated with  emotions such as happiness (Bjalkebring et al., 2015), other  work has posited that positively valenced emotions such as  satisfaction, happiness, and gladness are categorized by their  low- to mid-arousing properties (Russell, 1980, 2003;  Russell & Barrett, 1999). Therefore the Love 
+de León and Trilling 3 
+recognize and embrace the role of emotion for audience    
+engagement, storytelling, and public captivation (Wahl 
+Jorgensen, 2020). 
+Work in this area has sought to document how audiences  
+react emotionally to news as well as how emotions in news  
+can affect audiences. Highlighting the importance emotion in  
+the media, Wahl-Jorgensen (2019) makes the case for study 
+ing “mediated emotions,” arguing that emotional portrayal in  
+the news impacts citizens’ understandings of politics. Studies  
+have also sought to understand how users engage with emo 
+tional news on Facebook. Work on “emotional appeals” has  
+shown that heightened emotional content results in higher  
+news sharing, at least in the case of the viral “Icebucket  
+Challenge” (Kilgo et al., 2017). This is also true for partisan  
+(Hasell, 2021) and hyperpartisan news (Sturm Wilkerson  
+et al., 2021), with high emotional appeals in content resulting  
+in distinct behaviors on Facebook. Such news is shared more,  
+and is also engaged with more, with Reactions being in line  
+Figure 1. Facebook Reactions mapped onto the Russell’s  circumplex model (Russell, 1980).
+Reaction—assuming it represents a mix of happy, content,  and pleased emotions—can be understood as representing  positive valence and low- to mid-arousal. The Wow Reaction  is most closely related to surprise, astonishment, and alarm.  While clearly representing high-arousal states (Russell,  1980; Russell & Barrett, 1999; Watson et al., 1999), they are  harder to categorize on a valence scale. Some have argued  that these states are both negative and positive (Watson et al.,  1999), while Russell and Barrett (1999) claim that “rather  than both positive and negative, surprise is neither positive  nor negative” (p. 816). Therefore, we understand the Wow  Reaction as being high in arousal, but ambivalent in its  valence. 
+These ideas are represented in broad strokes in Figure 1,  where we match each Reaction to their closest description  within Russell’s Circumplex Model (Russell, 1980). This is  by no means a definitive categorization of Reactions, but  offers a rough guide to how arousal and valence diverge  across Reactions. We excluded the vague Like and Haha  Reactions. 
+Emotions in the Press, Reactions on Facebook 
+While scholars have long recognized the role that emotions  play in journalism (Pantti, 2010), only recently has there  been an emotional turn in journalism studies (Lecheler,  2020; Wahl-Jorgensen, 2019, 2020), with scholars seeking to  understand the role of emotion in audience engagement.  These studies emphasize that, due to the interactive and digi 
+tal nature of today’s media, news increasingly relies on emo tion to convey meaning to readers. Lower participation  barriers, demand for new journalistic formats, and the ease of  emotional audience participation on SNSs have made actors  
+with the emotion present in the article. 
+The idea that media messages can produce emotional  reactions is not new. Experimental work on the persuasion of  audio–visual effects has analyzed the role that “high-arousal”  content plays in emotional reactions, showing a relationship  between exposure to high affect images and persuasive emo 
+tional reactions (Nabi, 2003). Framing Theory also informs  our understanding of the relationship between news and  audiences, studying, for example, how valence in news  affects emotional responses (Gross & D’ambrosio, 2004).  Positive framing in journalism results in positively valenced  emotional reactions (Lecheler et al., 2015); frames empha 
+sizing the negative aspect of a story result in negative emo tions and opinions (Brader et al., 2008). 
+The valence of Facebook Reactions is usually in line  with the content they are Reacting to (Giuntini et al.,  2019). The popular Love and Angry Reactions have been  shown to be commonly used with positive and negative  political party posts and news (Eberl et al., 2020; Muraoka  et al., 2021; Savolainen et al., 2020). Much less has been  said about the Sad and Wow Reactions. The Sad Reaction  can be convincingly linked to negative valence due to the  clear link to sadness. Interpretation of the valence of the  Wow Reaction is harder, with work in psychology high lighting the ambivalence of surprise. We hypothesize as  follows: 
+Hypothesis 1a (H1a): Negative political news is associ ated with negative Reactions, such as Angry or Sad. 
+Hypothesis 1b (H1b): Positive political news is associated  with positive Reactions, such as the Love Reaction. 
+Because of the lack of work on the Wow Reaction, as well  as the ambivalent valence of surprise, we pose the following  research question: 
+4 Social Media + Society 
+Research Question 1 (RQ1): How is the Wow Reaction  used in relation to positive and negative political news  content? 
+The existence of a negativity bias (Tversky & Kahneman,  1992) has long been recognized, with negative content domi nating attention (Neuman et al., 2018), and having a stronger  impact on political behavior (e.g., Ansolabehere et al., 1994;  Lau & Rovner, 2009). Similarly, negative news results in  stronger reactions than positive news (Soroka et al., 2015).  Therefore, we hypothesize as follows: 
+Hypothesis 1c (H1c): Negative political news will elicit  stronger emotional responses than positive political news. 
+Emotions and News Sharing Behavior 
+Studies aiming to understand what content characteristics  influence news sharing often take a news-value approach and  argue that there are structural characteristics that make a  story more “shareworthy” (Trilling et al., 2017). In this con 
+text, the effect of the valence (i.e., positivity and negativity)  of news has been studied extensively. Of course, other char acteristics such as—to just name a few—geographical loca tion, topic, conflict, or actors (e.g., Araujo & van der Meer,  2020; García-Perdomo et al., 2017; Trilling et al., 2017;  Valenzuela et al., 2017) can play an equally or even more  important role than the valence, and quite intuitively so:  news from a remote location, involving unknown people, on  topics that one does not care about is unlikely to catch one’s  interest, even if it is more positive or negative than a story  much closer to one’s life. In our study, though, many of these  factors are relatively constant, as we study domestic political  
+news only. Therefore, we will focus on the valence. Also from a conceptual point of view, positivity and nega tivity as news factors play a central role in the shareworthi ness literature. Eilders (2006) argues that news factors serve  as a “relevance indicator” (p. 5). In particular, she argues that  “Damage can affect an individual directly, and since we have  learned to be better off attending to negative events, we  assign relevance to damage” (p. 15). This argument can be  extended to sharing behavior, as Bobkowski (2015) points  out that “informational utiliy” is a major force that drives  sharing. While the relevance of positive news may be a bit  less obvious, Harcup and O’Neill (2017) show that positivity  is a news factor as well. Trilling et al. (2017) argued that  sharing of positive news may be explained by the desire of  the sharer to construct a positive image of themselves. In spite of the inclusion of valence in multiple studies, the  jury is still out, with some studies finding that positive  valence is linked to more sharing (Bakshy et al., 2011;  Berger, 2012; Kümpel et al., 2015), while others provide evi dence for both negative and positive news increasing sharing  (Trilling et al., 2017), and others argue that arousal, regard less of valence, is what drives sharing (Berger, 2011). 
+This possible bias for positive material, however, is found  on content encompassing a variety of topics. The literature  focusing exclusively on politics has extensively documented  the stronger effect negativity has on individuals. This trans 
+lates into SNSs, with negative content driving a variety of  engagement metrics (e.g., sharing, commenting, and liking)  (Ørmen, 2019), confirming previous findings from the nega tivity bias literature. When looking explicitly at political  news, studies conclude that negative political news stories  receive more attention on websites, with some initial evi dence that this attention translates into more news sharing on  SNSs (Harcup & O’Neill, 2017; Ørmen, 2019; Trussler &  Soroka, 2014). Because we study solely political news, we  expect a stronger propensity for users to share negative news: 
+Hypothesis 2a (H2a): Negative political news articles are  more likely to be shared than positive political news  articles. 
+We also expect this relationship to be present in the  valence of Reactions: 
+Hypothesis 2b (H2b): Political news articles producing  Sad and Angry Reactions are more likely to be shared  than political news producing the Love Reaction. 
+According to the Discrete-Emotions Models of Affect,  external stimuli produce emotional reactions that create  action tendencies that help us understand how emotions  guide behavior (Frijda, 1986; Lazarus, 1991). Depending on  the degrees of arousal, researchers have different expecta 
+tions as to how individuals will react when experiencing, for  example, anger or sadness, with the former producing more  arousal than the latter. Taking a differentiated approach to  discrete emotions is especially relevant considering recent  work showing how similarly valenced emotions, such as  anger and sadness, have different impacts on how people  engage on social media (Hasell, 2021; Hasell & Weeks,  2016; Wollebæk et al., 2019). While studies have sought to  differentiate between these emotions by manually coding  content (e.g., Hasell, 2021; Kilgo et al., 2017), this is a chal lenging task for human coders, let alone machines, consider 
+ing their internal bias: a news piece that represents something  sad to one person might anger another. One approach to cir cumvent this bias can be to use crowdcoded data rather than  expert-coded data for sentiment-analysis-related tasks  (Haselmayer & Jenny, 2017). 
+To differentiate between these qualitatively different  emotions, we reduce our efforts to coding texts as simply  negative versus positive, and then rely on the Facebook  Reactions feature to identify the discrete emotions produced  by the texts themselves, as a pseudo-crowd-sourcing manner  of data collection on emotional reactions. Treating Facebook  Reactions in this manner, we can obtain a more nuanced  understanding of how valenced news content leads to news 
+de León and Trilling 5 
+sharing—is negative news shared more because it induces  sadness, or because it leads to anger? Because of the activat ing properties of anger as opposed to the deactivating nature  of sadness, as well as literature that has demonstrated the link  between anger and sharing (Berger, 2011; Hasell & Weeks,  2016), and the general activating nature of anger in the politi cal world (e.g., Lecheler et al., 2013; Soroka et al., 2015;  Trussler & Soroka, 2014), we expect the following: 
+Hypothesis 2c (H2c): Political news articles that produce  Angry Reactions are more likely to be shared than politi cal news articles that produce Sad Reactions. 
+The same logic applies to non-negative Reactions—with  the modestly low arousal produced by happiness in compari son to the highly-activating surprise, we expect: 
+Hypothesis 2d (H2d): Political news articles that produce  Wow Reactions are more likely to be shared than political  news articles that produce Love Reactions. 
+Why the Mexican 2018 Elections? 
+The 2018 Mexican elections were the biggest celebrated in  the democratic history of the country (Greene & Sáchez Talanquer, 2019). We focus on them for two main reasons.  First, it was an election marked by high emotions: the anti systemic rhetoric employed by victor Andres Manuel López  Obrador brought to the forefront the extreme corruption, vio lence, and poverty in the country. Fury, hope, and disappoint ment intermingled in a highly polarized electorate—an ideal  case study for understanding the role that emotions play in  people’s Reactions to political press on SNSs. They were  especially marked by corruption—with large-scale corrup tion case brought against a main contender—and violence,  with the assassination of 120 elected officials, 45 candidates,  and 351 unelected officials making it the most violent cam paign period in the country’s democratic history (Esteinou,  2019; Valli & Nai, 2020). 
+Second, the election witnessed an unprecedented level  of online SNS engagement. With growing digitalization of  political and news consumption activities in non-Western  countries, we need to understand the role of digital tech 
+nologies outside the typical Western research focus. With  the fifth most Facebook users in the world, Mexico presents  such an opportunity. de León et al. (2021) demonstrated  that elections significantly alter the sharing of political  news, especially in Mexico. Glowacki et al. (2018), analyz 
+ing Twitter and Facebook in the lead-up to the election,  confirm that this election indeed witnessed unprecedented  levels of online engagement, especially when compared to  “routine” political periods (de León et al., 2021). How  emotions were channeled on SNSs, however, still remains  an open question. 
+Method 
+Data 
+As most SNS news engagement was with established main stream news brands (Glowacki et al., 2018), we focus on five  major Mexican news sites—El Universal, El Financiero,  Proceso, Milenio, and Excelsior—collecting articles pub lished during the official campaigning period (1 March  2018–1 July 2018). We did so through Archive.org’s  “Wayback Machine,” which archives past versions of web sites, allowing us to scrape past versions of these news sites’  frontpages (Grusky et al., 2018, de León et al., 2021).  Focusing on the frontpages could have arguably introduced  some bias in our sample, potentially overrepresenting top  stories (see Supplemental Appendix 1). This resulted in a  total of N = 47,341 articles. 
+We used supervised machine learning to identify political  articles. A stratified random sample of n = 2,000 articles  was manually annotated by topic (α = .86) to train a support  vector machine (here we relied on the codebook provided by  Trilling et al. [2020]). The classifier performed above the  usual quality metrics, with precision and recall > 0.85.  Applying this classifier, we identified n = 16,852 political  articles. 
+We used the CrowdTangle API to retrieve Facebook inter action data for all articles, receiving information for each  “public” post that included the respective link, and informa tion on how many times the post itself was interacted with by  private accounts. This has implications for our study, as we  cannot make assertions as to how people interacted with  news throughout all Facebook, only on public posts. This is,  however, a lot more information than what is available  through Facebook’s public API (Supplemental Appendix 3). 
+Variables 
+We operationalized Facebook’s Reactions feature as distinct  emotional reactions. We focus on four of them: Angry, Sad,  Wow, and Love. Shares represent the number of times a  given news article was distributed on Facebook. Shares are  composed of both the amount of times a news article was  posted by public pages on Facebook, and the number of  times these posts were then shared again by private users. We  also account for the number of days since T0 , because once  the election got closer, people shared more political news. 
+Content Variables. Negative news is understood as news that  deals with particularly negative topics, such as crime, defeat,  or loss, or news that has particularly negative connotations,  while positive news refers to articles that report on successes  and victories. We follow previous work (e.g., González 
+Bailón & Paltoglou, 2015) using supervised machine learn ing to classify articles by their valence. Manual coders  labeled a total of n = 1,500 articles to train these classifiers, 
+6 Social Media + Society 
+Table 1. Descriptive Statistics of All Variables in the Data Set.   
+Variable N M SD Min Max Median 
+Shares 16,852 279.601 1,549.876 0 86,212 0 
+Angry 16,852 75.575 486.818 0 18,197 0 
+Love 16,852 28.656 191.279 0 8,562 0 
+Sad 16,852 4.562 51.342 0 2,943 0 
+Like 16,852 351.566 1,423.633 0 40,833 0 
+Haha 16,852 136.621 659.751 0 17,952 0 
+Wow 16,852 18.027 115.028 0 5,554 0 
+labeling articles as positive, negative, or neutral. This label 
+ing resulted in satisfactory intercoder reliability scores as  
+calculated by the Krippendorff’s alpha for both positive  
+news ( α =.75) and negative news ( α =.88). In all, 80% of  
+the labeled data were used to train two separate supervised  vector machines for negative and positive news, which were  then tested on the remaining 20%, with Precision and Recall  scores of 0.72 and 0.7 for negative news and of 0.71 and 0.25  for positive news (Supplemental Appendix 2). 
+Finally, we note the high prevalence of negative news in  the sample, with 8,019 negative articles, which is in stark  contrast to the 1,207 articles identified as positive news. This  low occurrence can be explained through the low recall of  the supervised machine learning classifiers used: for positive  news the recall was of 0.25, meaning that only around a quar 
+ter of all cases were identified. Nevertheless, the high preci sion of the classifiers suggests that we can be certain that the  majority of cases that were identified were done so correctly,  meaning that estimates produced will be more conservative.  We also rerun our analyses using only hand-coded articles in  Supplemental Table A5 as a robustness check. 
+Results 
+Article Content and Emotional Reactions 
+We first refer back to the descriptive statistics in Table 1 and  Figure 2, as they provide initial insight into how people inter act with political news on Facebook in the form of Sharing  and Reactions. Figure 2 showcases the volume of Reactions  and shares: the Angry reaction is clearly the most used reac tion in political news, with a total of almost 1.3 million  Reactions in comparison to the 0.5 million Love and 76,000  Sad Reactions. These, however, pale in comparison to the  total number of shares received: at over 4.5 million total  shares, it is clear that Facebook users share political news  more often than they use the Angry, Love, and Sad reactions.  These are all much smaller than the number of Likes, how ever, the staple interaction on Facebook, but not a focus of  this study. 
+This first section of the analysis seeks to understand  the effect that valence in political news content have on  how individuals react emotionally on Facebook. Table 2  
+Figure 2. Total count of Reactions in sample.
+presents five negative binomial regression models predict ing the effect of content on Reactions received by each  article on Facebook. As an independent variable in the  model increases by a single unit, the expected value of the  dependent variable has to be multiplied by the incidence  rate ratio (IRR). Therefore, an IRR of 0.8 means that a one unit increase in the independent variable leads to only 80%  of expected Reactions (a negative effect), while an IRR of  1.2 results in 120% of expected Reactions (a positive effect). 
+H1a predicted that negative news will result in negatively  valenced emotions; here, the Angry and Sad Reactions.  Models 2 and 3 confirm this hypothesis: the effect on Angry  Reactions is an IRR of 1.284 (negative news articles are  expected to receive 28% more Angry Reactions). Similarly,  Model 3 shows a positive relationship between negative  political news and Sad Reactions—here, however, the effect  is five times the magnitude, with an IRR of 2.453 (a 145%  increase in expected Reactions). Both these results support  H1a: the Angry and Sad Reactions are used to engage with  negative political news. 
+H1b focuses on the effect of positive news on Reactions,  hypothesizing that positive political news is linked to posi tively valenced reactions: here, the Love Reaction . Model 4  supports this hypothesis, showing a positive relationship  between positive news and Love reactions, with an IRR of  1.852. When an article is positive, it is predicted to receive  85% more Love reactions; nevertheless, negative news leads  to a 68.2% decrease, allowing us to confirm H1b. With RQ1,  we enquire into the relationship between article valence and  the Wow Reaction. Model 1 shows that positive political  news has no effect on Wow Reactions, while negative news  has a positive effect on Wow Reactions, with an IRR of 1.196  (receiving 19.6% more Wow Reactions). This suggests that  the Wow Reaction is more closely associated to negative  news. 
+de León and Trilling 7 
+. 
+k
+o
+o
+b
+e
+c
+a
+F
+ 
+n
+o
+ 
+s
+n
+o
+i
+t
+c
+a
+e
+R
+ 
+f
+o
+ 
+r
+e
+b
+m
+u
+N
+ 
+e
+h
+t
+ 
+g
+n
+i
+t
+c
+i
+d
+e
+r
+P
+ 
+s
+n
+o
+i
+s
+s
+e
+r
+g
+e
+R
+ 
+l
+a
+i
+m
+o
+n
+i
+B
+ 
+e
+v
+i
+t
+a
+g
+e
+N
+. 
+2 
+e
+l
+ba
+T
+s 
+e
+r
+a
+h
+S
+ 
+:
+5
+ 
+l
+e
+d
+o
+M
+e 
+v
+o
+L
+ 
+:
+4
+ 
+l
+e
+d
+o
+M
+d 
+a
+S
+ 
+:
+3
+ 
+l
+e
+d
+o
+M
+y 
+r
+g
+n
+A
+ 
+:
+2
+ 
+l
+e
+d
+o
+M
+w 
+o
+W
+ 
+:
+1
+ 
+l
+e
+d
+o
+M
+e 
+c
+n
+e
+l
+a
+v
+ 
+e
+l
+c
+i
+t
+r
+A
+] 9
+8
+4
+.
+1
+ 
+,
+5
+4
+2
+.
+1
+[ 
+*
+*
+*
+2
+6
+3
+.
+1
+] 5
+4
+7
+.
+0
+ 
+,
+3
+2
+6
+.
+0
+[ 
+*
+*
+*
+2
+8
+6
+.
+0
+] 4
+1
+7
+.
+2
+ 
+,
+7
+1
+2
+.
+2
+[ 
+*
+*
+*
+3
+5
+4
+.
+2
+] 9
+1
+4
+.
+1
+ 
+,
+2
+6
+1
+.
+1
+[ 
+*
+*
+*
+4
+8
+2
+.
+1
+] 9
+9
+2
+.
+1
+ 
+,
+1
+0
+1
+.
+1
+[ 
+*
+*
+*
+6
+9
+1
+.
+1
+e 
+v
+i
+t
+a
+g
+e
+N
+] 2
+2
+3
+.
+1
+ 
+,
+1
+3
+9
+.
+0
+[ 
+5
+0
+1
+.
+1
+] 6
+0
+2
+.
+2
+ 
+,
+5
+6
+5
+.
+1
+[ 
+*
+*
+*
+2
+5
+8
+.
+1
+] 4
+6
+2
+.
+1
+ 
+,
+9
+3
+8
+.
+0
+[ 
+6
+2
+0
+.
+1
+] 5
+7
+3
+.
+1
+ 
+,
+7
+2
+9
+.
+0
+[ 
+4
+2
+1
+.
+1
+] 5
+5
+0
+.
+1
+ 
+,
+1
+6
+7
+.
+0
+[ 
+3
+9
+8
+.
+0
+e 
+v
+i
+t
+i
+s
+o
+P
+s 
+l
+o
+r
+t
+n
+o
+C
+] 6
+9
+4
+.
+0
+ 
+,
+2
+8
+3
+.
+0
+[ 
+*
+*
+*
+6
+3
+4
+.
+0
+] 7
+3
+4
+.
+0
+ 
+,
+7
+3
+3
+.
+0
+[ 
+*
+*
+*
+4
+8
+3
+.
+0
+] 3
+3
+6
+.
+0
+ 
+,
+1
+7
+4
+.
+0
+[ 
+*
+*
+*
+7
+4
+5
+.
+0
+] 3
+6
+6
+.
+0
+ 
+,
+5
+9
+4
+.
+0
+[ 
+*
+*
+*
+4
+7
+5
+.
+0
+] 6
+3
+4
+.
+0
+ 
+,
+3
+4
+3
+.
+0
+[ 
+*
+*
+*
+7
+8
+3
+.
+0
+l 
+a
+s
+r
+e
+v
+i
+n
+U
+ 
+l
+E
+] 7
+1
+5
+.
+0
+ 
+,
+4
+8
+3
+.
+0
+[ 
+*
+*
+*
+5
+4
+4
+.
+0
+] 7
+3
+6
+.
+0
+ 
+,
+3
+7
+4
+.
+0
+[ 
+*
+*
+*
+9
+4
+5
+.
+0
+] 2
+3
+6
+.
+0
+ 
+,
+8
+4
+4
+.
+0
+[ 
+*
+*
+*
+3
+3
+5
+.
+0
+] 7
+9
+7
+.
+0
+ 
+,
+9
+6
+5
+.
+0
+[ 
+*
+*
+*
+3
+7
+6
+.
+0
+] 7
+1
+5
+.
+0
+ 
+,
+2
+9
+3
+.
+0
+[ 
+*
+*
+*
+0
+5
+4
+.
+0
+r 
+o
+i
+s
+l
+e
+c
+x
+E
+] 4
+5
+0
+.
+1
+ 
+,
+4
+9
+7
+.
+0
+[ 
+5
+1
+9
+.
+0
+] 6
+2
+2
+.
+1
+ 
+,
+6
+2
+9
+.
+0
+[ 
+6
+6
+0
+.
+1
+] 1
+0
+0
+.
+1
+ 
+,
+6
+2
+7
+.
+0
+[ 
+3
+5
+8
+.
+0
+] 5
+7
+9
+.
+0
+ 
+,
+9
+0
+7
+.
+0
+[ 
+*
+1
+3
+8
+.
+0
+] 4
+8
+8
+.
+0
+ 
+,
+1
+8
+6
+.
+0
+[ 
+*
+*
+*
+6
+7
+7
+.
+0
+o 
+i
+n
+e
+l
+i
+M
+] 0
+0
+6
+.
+2
+ 
+,
+7
+1
+9
+.
+1
+[ 
+*
+*
+*
+2
+3
+2
+.
+2
+] 6
+2
+2
+.
+1
+ 
+,
+7
+0
+9
+.
+0
+[ 
+4
+5
+0
+.
+1
+] 6
+8
+6
+.
+2
+ 
+,
+1
+2
+9
+.
+1
+[ 
+*
+*
+*
+1
+7
+2
+.
+2
+] 9
+0
+3
+.
+5
+ 
+,
+5
+7
+7
+.
+3
+[ 
+*
+*
+*
+6
+7
+4
+.
+4
+] 6
+4
+2
+.
+2
+ 
+,
+0
+0
+7
+.
+1
+[ 
+*
+*
+*
+4
+5
+9
+.
+1
+o 
+s
+e
+c
+o
+r
+P
+] 2
+0
+0
+.
+1
+ 
+,
+2
+0
+0
+.
+1
+[ 
+*
+*
+*
+2
+0
+0
+.
+1
+] 2
+0
+0
+.
+1
+ 
+,
+2
+0
+0
+.
+1
+[ 
+*
+*
+*
+2
+0
+0
+.
+1
+] 1
+0
+0
+.
+1
+ 
+,
+1
+0
+0
+.
+1
+[ 
+*
+*
+*
+1
+0
+0
+.
+1
+] 2
+0
+0
+.
+1
+ 
+,
+2
+0
+0
+.
+1
+[ 
+*
+*
+*
+2
+0
+0
+.
+1
+] 1
+0
+0
+.
+1
+ 
+,
+1
+0
+0
+.
+1
+[ 
+*
+*
+*
+1
+0
+0
+.
+1
+s 
+n
+o
+i
+t
+c
+a
+e
+R
+ 
+m
+u
+S
+] 2
+0
+0
+.
+1
+ 
+,
+9
+9
+9
+.
+0
+[ 
+0
+0
+0
+.
+1
+] 3
+0
+0
+.
+1
+ 
+,
+0
+0
+0
+.
+1
+[ 
+*
+1
+0
+0
+.
+1
+] 0
+1
+0
+.
+1
+ 
+,
+7
+0
+0
+.
+1
+[ 
+*
+*
+*
+9
+0
+0
+.
+1
+] 4
+0
+0
+.
+1
+ 
+,
+1
+0
+0
+.
+1
+[ 
+*
+*
+*
+3
+0
+0
+.
+1
+] 4
+0
+0
+.
+1
+ 
+,
+1
+0
+0
+.
+1
+[ 
+*
+*
+*
+3
+0
+0
+.
+1
+0 
+T
+ 
+e
+c
+n
+i
+s
+ 
+s
+y
+a
+D
+] 4
+4
+1
+.
+3
+1
+ 
+,
+4
+6
+8
+.
+9
+[ 
+*
+*
+*
+3
+7
+3
+.
+1
+1
+] 1
+2
+0
+.
+2
+ 
+,
+3
+1
+5
+.
+1
+[ 
+*
+*
+*
+7
+4
+7
+.
+1
+] 9
+4
+2
+.
+0
+ 
+,
+0
+8
+1
+.
+0
+[ 
+*
+*
+*
+2
+1
+2
+.
+0
+] 0
+2
+0
+.
+3
+ 
+,
+9
+8
+1
+.
+2
+[ 
+*
+*
+*
+8
+6
+5
+.
+2
+] 3
+3
+7
+.
+1
+ 
+,
+5
+3
+3
+.
+1
+[ 
+*
+*
+*
+9
+1
+5
+.
+1
+t 
+n
+a
+t
+s
+n
+o
+C
+2 5
+8,
+61
+2 5
+8,
+61
+2 5
+8,
+61
+2 5
+8,
+61
+2 5
+8,
+61
+N 
+0 8
+2.
+1
+4
+1
+,
+45
+−
+0 9
+2.
+99
+7,
+1
+3−
+0 8
+1
+.
+73
+1
+,
+91
+−
+0 0
+7.
+75
+0,
+83
+−
+0 5
+6.
+61
+6,
+23
+−
+d o
+o
+h
+i
+l
+e
+k
+i
+l
+ 
+g
+o
+L
+) 2
+0
+0
+.
+0
+( 
+*
+*
+*
+7
+2
+1
+.
+0
+) 2
+0
+0
+.
+0
+( 
+*
+*
+*
+4
+3
+1
+.
+0
+) 2
+0
+0
+.
+0
+( 
+*
+*
+*
+3
+1
+1
+.
+0
+) 2
+0
+0
+.
+0
+( 
+*
+*
+*
+1
+0
+1
+.
+0
+) 3
+0
+0
+.
+0
+( 
+*
+*
+*
+6
+5
+1
+.
+0
+θ 
+. 
+t
+c
+e
+ff
+e
+ 
+e
+v
+i
+t
+i
+s
+o
+p
+ 
+a
+ 
+e
+t
+a
+c
+i
+d
+n
+i
+ 
+1
+>
+s
+e
+u
+l
+a
+v
+ 
+,
+t
+c
+e
+ff
+e
+ 
+e
+v
+i
+t
+a
+g
+e
+n
+ 
+a
+ 
+e
+t
+a
+c
+i
+d
+n
+i
+ 
+1
+<
+s
+e
+u
+l
+a
+V
+ 
+.
+s
+t
+e
+k
+c
+a
+r
+b 
+n
+i
+ 
+s
+l
+a
+v
+r
+e
+t
+n
+i
+ 
+e
+c
+n
+e
+d
+i
+fn
+o
+c
+ 
+h
+t
+i
+w
+ 
+s
+R
+R
+I
+ 
+.
+s
+o
+i
+t
+a
+r
+ 
+e
+t
+a
+r
+ 
+e
+c
+n
+e
+d
+i
+c
+n
+i
+ 
+:
+s
+R
+R
+I
+Table 3. Negative Binomial Regressions Predicting the Number  of Shares on Facebook. 
+Model 6: Shares 
+Reactions 
+Angry 1.0002*** [1.0002, 1.0002] Love 0.9996*** [0.9996, 0.9996] Haha 1.0001*** [1.0001, 1.0001] Wow 1.0007*** [1.0007, 1.0007] Sad 1.0009*** [1.0009, 1.0009] Like 1.0002*** [1.0002, 1.0002] Controls 
+El Universal 0.6837*** [0.6811, 0.6864] Excelsior 0.4012*** [0.3989, 0.4034] Milenio 0.9882*** [0.9844, 0.9921] Proceso 3.5304*** [3.5199, 3.5410] Days since T0 0.9995*** [0.9995, 0.9995] Constant 129.9800*** [129.5388, 130.4224] 
+N 16,852 
+Log Likelihood −4,762,723.0000 
+θ 4,427,942.0000 
+IRR: incidence rate ratio. IRRs with confidence intervals in brackets.  Values<1 indicate a negative effect, values>1 indicate a positive effect. *p<.05; **p<.01; ***p<.001.
+H1c addresses the relative strength of effects produced by  positive and negative news. Comparing the effect sizes of  positive and negative news across Models 1–4 one can appre ciate that on one hand, the effect of positive news on Love  Reactions (1.852) is smaller than the effect of negative news  on Sad Reactions (2.453). This effect, on the other hand, is  larger than the effect of negative news on anger (1.284) (these  differences are deemed significant as the 95% confidence  intervals do not overlap). Because the effect of positive news  on Love is bigger than the effect of negative news on anger,  we do not have enough evidence to conclusively support H1c.  As a robustness check, models were replicated using only the  hand-coded sample of articles (N = 1,500) in Table A5 of  the Supplementary Information file. 
+Emotional Reactions and News Sharing 
+Before addressing the relationship between Reactions and  sharing, we first look at the effect of content and sharing.  Specifically, H2a expected that negative content would be  positively related to sharing: Model 5 (Table 2), which dis 
+plays the effect of content variables on article sharing, allows  us to evaluate this relationship. With an IRR of 1.362 of neg 
+. 
+1
+ative news on sharing, negativity increases the expected  
+0
+0
+.
+<
+number of shares an article receives by 36.2%, while positive  
+p
+*
+*
+news has no significant effect on sharing. We can confirm  
+*
+ 
+;
+1
+H2a. 
+0
+.
+<
+With Table 3, we address the difference emotional valence  
+p
+*
+*
+ 
+and arousal have on political news sharing. We first tackle dif 
+;
+5
+0
+.
+ferences in the negative–positive valence division: when it  
+<
+p
+*
+8 Social Media + Society 
+comes to the most popular Reactions, namely, Angry and  Love, the negative-valenced reaction has a stronger impact on  political news sharing, with an IRR of 1.0002, while Love  reactions have a negative effect on sharing, with an IRR of  0.9996. Similarly, the Sad Reaction, with an IRR of 1.0009 is  a stronger predictor of sharing than the Wow Reaction, with an  IRR of 1.0007. This provides evidence that negative-valenced  Reactions are stronger predictors of sharing—this is especially  the case considering that the Wow Reaction can also be con sidered as negatively valenced, considering its strong relation  to negative political content identified above. 
+Our categorization of Reactions allows us to explore the  nuances in emotional arousal. In H2c, we expected that  Angry Reactions would be a stronger predictor of sharing  than Sad Reactions, as anger is understood to be more arous 
+ing than sadness. The model does not support this hypothe sis, since Sad Reactions have the strongest IRR of all  reactions, at 1.0009. In H2d, we expected that political arti cles producing Wow Reactions would result in more sharing  than those producing Love Reactions, as amazement is a  more stimulating reaction than happiness. With an IRR of  1.0007 for Wow Reactions compared with the 0.9996 for  Love Reactions, we find support for H2d.1 
+While small, these IRRs need to be interpreted in the con text of SNSs, where articles receive high volumes of reactions  that range into the several thousands. In this model, a 1,000  increase in Sad Reactions, for example, leads to a 146%  increase in the number of expected shares (1.00091000 =2.46  IRR), a 1,000 increase in Angry Reactions leads to 22% more  (1.00021000 =1.22 IRR), while the same increase in Love  Reactions leads to an article receiving only 67% of expected  shares ( 0.99961000 =0.67 IRR), and in Wow Reactions leads  to a 101% increase (1.00071000 =2.01326 IRR). 
+A 1,000 unit Reaction increase is more common among  certain reactions than others (see Table 1). To account for  these drastic differences, it is important to interpret the  results in relation to the relative distribution of each Reaction  using the standard deviations (SD) of each. For the Angry  Reaction, the model estimates that a two-SD increase in  Reactions leads to an increase of 21% of shares  (1.0002(486.818⋅2) =1.21); a two-SD increase in Sad Reactions  leads to a 10% increase in expected shares  (1.0009(51.342⋅2) =1.10); and a two-SD increase in Love  Reactions results in a 14% reduction in expected shares  ( 0.9996(194.084⋅2) =0.86), while a similar increase in Wow  Reactions leads to a 17% increase in expected shares  (1.0007(115.028⋅2) =1.17). Therefore, while the Sad reaction  has the strongest effect on sharing behavior, it is impossible  to deny the dominance of Angry reactions when it comes to  political news during the elections. 
+Discussion and Conclusion 
+In this study we explored the relationship between political  news valence, Facebook emotional Reactions, and news  
+sharing during the 2018 Mexican elections. Through a large  sample of political news (N = 16,852), we show that the  valence of political news affects how an online audience  engages emotionally with news, and that these expressions  of emotion influence the degree to which political articles are  shared throughout SNSs. Building on the discrete-emotions  models of affect to qualify emotional reactions beyond the  positive-negative divide, this study provides (a) an explora tion of how Reactions are used to respond to positive versus  negative political content (b) evidence supporting negativity  bias in emotional engagement with political news, and (c)  the existence of a “sadness-bias” in the sharing of political  news. 
+Does political news sentiment affect an audience’s emo tional reactions on social media? The results presented in this  article suggest a resounding yes—Positive News leads to  positive emotional responses on Facebook, while Negative  News is linked to negative responses. When it comes to the  emotionally clear-cut Angry and Love Reactions, our find ings support previous work noting the effect valenced politi cal content has on the prevalence of Angry Reactions and  Love Reactions (Eberl et al., 2020; Heiss et al., 2019; Jost  et al., 2020), with the Angry Reaction linked to negative  political news, and the Love Reaction to positive political  news. In addition, we study two Facebook Reactions that  have been widely overlooked: the Sad and Wow Reactions.  We find a very strong relationship between negative news  and the Sad Reaction, as well as between negative news and  the Wow Reaction. This last finding suggests that, when it  comes to political news, the Wow Reaction is used as a nega tive expression—disbelief rather than amazement. 
+Evaluating the use of Reactions themselves, we find a  strong dominance of the Angry Reaction in our sample of  political news, which is telling of an election marked by cor ruption and violence. With almost 13 million Angry  Reactions, anger was expressed at a rate over 250% of the  next leading Reaction, Love, with only 5 million interac tions. Work on negativity in politics has pointed to citizens’  willingness to express outrage (Hasell & Weeks, 2016;  Neuman et al., 2018; Soroka, 2009; Soroka et al., 2015;  Valentino et al., 2011), and that anger is prevalent among  emotional reactions to news articles (Hasell, 2021). With the  ability to publicly express displeasure at the click of a button,  it is becoming easier for affective publics to voice their dis content (Papacharissi & De Fatima Oliveira, 2012). This  speaks of the rising body of literature that documents the  prevalence of anger as an emotional expression on Facebook  in relation to political news (Savolainen et al., 2020; Sturm  Wilkerson et al., 2021) and politician posts throughout the  world (Eberl et al., 2020; Heiss et al., 2019; Jost et al., 2020;  Muraoka et al., 2021). 
+The second contribution this article offers is in the area of  news sharing, by assessing the influence of both content and  Reactions on political news sharing. We find that negative  political articles are shared more often than positive ones. 
+de León and Trilling 9 
+Although future research needs to rule out alternative expla nations (such as other news values that we did not include),  this finding has implications for our understanding of both  news sharing and the 2018 Mexican elections. Focusing on  political news, our evidence suggests that, unlike findings in  the broader news sharing literature where positive stories  inspiring hope and happiness are shared relatively often  (e.g., Trilling et al., 2017), citizens are more likely to engage  with negative political content. There is no doubt that the  sharing of negative news is linked to the size and quantity of  scandals that dominated media coverage in the 2018 Mexican  election, reflecting the general level of exasperation felt  throughout the electorate (Esteinou, 2019). In this context, it  is natural to expect citizens to be more concerned about alle 
+gations of corruption and acts of political violence, to the  point where these news stories become viral. 
+In addition, we disentangle the effects of articles produc ing sadness and anger, two different emotions that are often  grouped under the umbrella of negativity. While both psy chological understanding of emotions (Russell, 1980) and  work on discrete emotions on social media (Hasell & Weeks,  2016; Kilgo et al., 2017; Wollebæk et al., 2019) suggest  anger would lead to more sharing than sadness, this was not  the case in our study: the effect of Sad Reactions on sharing  is larger than that of Angry Reactions. There are numerous  explanations for these differences: the use of self-reported  sharing behavior (Hasell & Weeks, 2016), and measuring  emotion in content instead of Reactions (Kilgo et al., 2017;  Wollebæk et al., 2019) are some of many. In addition, media induced sadness might not be as deactivating, triggering  “different motivational goals than sadness in response to real  events” (Zerback & Wirz, 2021, p. 39). 
+The literature on people’s desire to avoid conflict on SNSs  also helps contextualize this counter-intuitive finding. Since  Facebook is mostly made up of “close ties” (Valenzuela  et al., 2018), users are less likely to publicly share political  material deemed to be controversial (Valenzuela et al., 2017).  Sharing a political article inspiring anger might lead to con 
+flict with Facebook contacts. Users might therefore be more  likely to redistribute news producing sadness instead. Other  scholars have discussed the sharing of especially negative  news: “people may feel more personally touched by disas 
+trous news, and they may also feel more need to discuss and  contextualize it, both things which might provoke sharing  (Bright, 2016, p. 348). Although their own findings reject  this hypothesis, we find some support for this idea. Referring  directly to articles with most Sad Reactions, one finds head 
+lines on Donald Trump’s child separation policy, the murder  of local political candidates, and analyses of policies failing  to reduce poverty. These articles, while political, are devoid  of ideological interpretations, addressing issues that are  tragic in nature. Perhaps users of Facebook are more inclined  to share tragic stories to collectively express and participate  in the grief caused by such news. 
+Overall, this finding suggests that when understanding  political news sharing on Facebook, it is important to look  beyond the “stuff that makes you laugh and stuff that makes  you angry” (Newman, 2011, p. 24), also considering the stuff  that makes you sad. This is inline with the recent findings by  Zerback and Wirz (2021), who show that themes of sadness  are more strongly associated with sharing than themes of  anger in political party postings. This sadness bias in the  sharing of political news informs the news sharing literature  in several ways. First, it speaks of the role that controversy  (or articles that make you feel anger) has on reducing sharing  (Valenzuela et al., 2018) in comparison to articles inducing  grief. Second, this unexpected result highlights the need to  further explore the commonly overlooked role that sadness  can have on social media platforms, as existing work is lim ited and mostly focused on emotional appeals in articles  themselves (Kilgo et al., 2017; Sturm Wilkerson et al., 2021),  rather than user-expressed emotion on SNSs. 
+Finally, we assessed the effect of positive political news  and emotions on news sharing. Focusing on the Love  Reaction, we find that the Love Reaction leads to a decrease in news sharing . Regarding the valence-ambivalent Wow  Reaction, we find a strong positive effect on sharing.  Moreover, our analysis revealed that Wow is more closely  linked to negative than positive content. It is possible that it  is the negative use of the Wow Reaction that is leading to  higher shares. Studies that have found a relationship between  positive news and increased sharing usually address a sam 
+ple containing a variety of news topics, where political news  is shared less than lifestyle news (Bakshy et al., 2011; Berger,  2012; Kümpel et al., 2015; Trilling et al., 2017). We show  that when it comes to political news, Facebook audiences  share less stories resulting in Love Reactions, opting instead  for those that produce negative emotions. This finding fur 
+ther provides evidence for emotional engagement theories  that argue that, when it comes to politics, positive emotions  are generally deactivating. 
+While we believe we contribute to the literature on share worthiness by adding valuable nuance, unlike Trilling et al.  (2017) and subsequent studies (e.g., Araujo & van der Meer,  2020; García-Perdomo et al., 2017; Valenzuela et al., 2017)  we did not incorporate other factors of shareworthiness. In  addition, we want to highlight that by not coding articles on  a discrete emotion basis, but rather on a simple positive– negative–neutral classification, we cannot fully explain what  characteristics in articles are linked to discrete Facebook  Reactions (i.e., what separates articles that get Sad vs. Angry  Reactions). Relatedly, the low recall of our positive news  classifier suggests we might be capturing a sub-concept of  positivity. Future research could aim at further exploring  dimensions of positivity in news. Lastly, we wish to high 
+light that we do not want to imply that the Reactions mediate  the relationship between content and sharing, as we did not  explicitly test this in a mediation model (for a conversation 
+10 Social Media + Society 
+on the nuances of mediation with count data, see Cheng  et al., 2018). 
+Declaration of Conflicting Interests 
+The author(s) declared no potential conflicts of interest with respect  to the research, authorship, and/or publication of this article. 
+Funding 
+The author(s) received no financial support for the research, author ship, and/or publication of this article. 
+ORCID iD 
+Ernesto de León https://orcid.org/0000-0003-3152-0722 
+Supplemental Material 
+Supplemental material for this article is available online. 
+Note 
+1. One may object that the high multicollinearity between Love  and Like (see Supplemental Appendix A6) makes the esti mates of both coefficients problematic. Unfortunately, this is  an unsolvable problem, as Likes—being the most common  reaction—is conceptually a critical baseline variable. Running  a model without Likes turns the effect of Love into a posi tive one, but also biases all other coefficients. Future research  needs to disentangle the exact underlying mechanisms 
+References 
+Aldunate, N., & González-Ibáñez, R. (2017). An integrated review  of emoticons in computer-mediated communication. Frontiers  in Psychology, 7, Article 2061. https://doi.org/10.3389/ fpsyg.2016.02061 
+Ansolabehere, S., Iyengar, S., Simon, A., & Valentino, N. (1994).  Does attack advertising demobilize the electorate? American  Political Science Review, 88(4), 829–838. https://doi. org/10.2307/2082710 
+Araujo, T., & van der Meer, T. G. (2020). News values on social  media: Exploring what drives peaks in user activity about  organizations on Twitter. Journalism, 21, 633–651. https://doi. org/10.1177/1464884918809299 
+Bakshy, E., Hofman, J. M., Mason, W. A., & Watts, D. J. (2011).  Everyone’s an influencer: Quantifying influence on twitter. In  Proceedings of the 4th ACM international conference on web  search and data mining, WSDM 2011 (pp. 65–74). https://doi. 
+org/10.1145/1935826.1935845 
+Basile, A., Caselli, T., Merenda, F., & Nissim, M. (2018). Facebook  reactions as controversy proxies: Predictive models over Italian  news. Italian Journal of Computational Linguistics, 4(2), 73– 89. https://doi.org/10.4000/ijcol.514 
+Berger, J. (2011). Arousal increases social transmission of infor mation. Psychological Science, 22(7), 891–893. https://doi. org/10.1177/0956797611413294 
+Berger, J. (2012). What makes online content viral? Strategic  Direction, 28(8), 90–91. https://doi.org/10.1108/sd.2012. 05628haa.014 
+Bjalkebring, P., Västfjäll, D., & Johansson, B. E. (2015). Happiness  and arousal: Framing happiness as arousing results in lower  happiness ratings for older adults. Frontiers in Psychology, 6,  Article 706. https://doi.org/10.3389/fpsyg.2015.00706 
+Bobkowski, P. S. (2015). Sharing the news: Effects of informa tional utility and opinion leadership on online news sharing.  Journalism and Mass Communication Quarterly, 92(2), 320– 345. https://doi.org/10.1177/1077699015573194 
+Bodenhausen, G. V. (1993). Emotions, arousal, and stereotypic  judgments: A heuristic model of affect and stereotyping. In D.  M. Mackie & D. L. Hamilton (Eds.), Affect, cognition and ste reotyping (pp. 13–37). Elsevier. 
+Brader, T., Valentino, N. A., & Suhay, E. (2008). What triggers pub lic opposition to immigration? Anxiety, group cues, and immi gration threat. American Journal of Political Science, 52(4),  959–978. https://doi.org/10.1111/j.1540-5907.2008.00353.x 
+Bright, J. (2016). The social news gap: How news reading and news  sharing diverge. Journal of Communication, 66(3), 343–365.  https://doi.org/10.1111/jcom.12232 
+Cheng, J., Cheng, N. F., Guo, Z., Gregorich, S., Ismail, A. I., &  Gansky, S. A. (2018). Mediation analysis for count and zero inflated count data. Statistical Methods in Medical Research,  27(9), 2756–2774. https://doi.org/10.1177/0962280216686131 
+de León, E., Vermeer, S., & Trilling, D. (2021). Electoral news shar ing: A study of changes in news coverage and Facebook shar ing behaviour during the 2018 Mexican elections. Information,  Communication and Society. Advance online publication.  https://doi.org/10.1080/1369118X.2021.1994629 
+Derks, D., Bos, A. E., & Von Grumbkow, J. (2008). Emoticons in  computer-mediated communication: Social motives and social  context. Cyberpsychology & Behavior, 11(1), 99–101. https:// doi.org/10.1089/cpb.2007.9926 
+Eberl, J. M., Tolochko, P., Jost, P., Heidenreich, T., & Boomgaarden,  H. G. (2020). What’s in a post? How sentiment and issue  salience affect users’ emotional reactions on Facebook. Journal  of Information Technology and Politics, 17(1), 48–65. https:// 
+doi.org/10.1080/19331681.2019.1710318 
+Eilders, C. (2006). News factors and news decisions. Theoretical  and methodological advances in Germany. Communications,  31(1), 5–24. https://doi.org/10.1515/COMMUN.2006.002 
+Esteinou, J. (2019). Las elecciones de 2018 y el triunfo de AMLO/ Morena [The 2018 elections and the triumph of AMLO/ Morena]. Argumentos. Estudios críticos de la sociedad,  89(300), 13–28. 
+Freeman, C., Roy, M. K., Fattoruso, M., & Alhoori, H. (2019).  Shared feelings: Understanding face-book reactions to schol arly articles. In Proceedings of the ACM/IEEE Joint Conference  on Digital Libraries (pp. 301–304). IEEE. 
+Frijda, N. H. (1986). The emotions: Studies in emotion and social  interaction. Cambridge University Press. 
+García-Perdomo, V., Salaverr’ıa, R., Kilgo, D. K., & Harlow,  S. (2017). To share or not to share: The influence of  news values and topics on popular social media content  in the United States, Brazil, and Argentina. Journalism  Studies, 19(8), 1180–1201. https://doi.org/10.1080/14616 
+70X.2016.1265896 
+Giuntini, F. T., Ruiz, L. P., Kirchner, L. D. F., Passarelli, D. A.,  Reis, M. D. J. D. D., Campbell, A. T., & Ueyama, J. (2019).  How do I feel? Identifying emotional expressions on Facebook 
+de León and Trilling 11 
+reactions using clustering mechanism. IEEE Access, 7, 53909– 53921. https://doi.org/10.1109/ACCESS.2019.2913136 Glowacki, M., Narayanan, V., Maynard, S., Hirsch, G., Kollanyi,  B., Neudert, L.-M., . . . Barash, V. (2018). News and politi cal information consumption in Mexico: Mapping the 2018  Mexican Presidential Election on Twitter and Facebook (Tech.  Rep.). The Computational Propaganda Project. 
+González-Bailón, S., & Paltoglou, G. (2015). Signals of public  opinion in online communication: A comparison of meth ods and data sources. Annals of the American Academy of  Political and Social Science, 659(1), 95–107. https://doi. org/10.1177/0002716215569192 
+Greene, K. F., & Sáchez-Talanquer, M. (2019). Latin America’s  shifting politics: Mexico’s party system under stress. Journal  of Democracy, 29(4), 31–42. https://doi.org/10.1353/ jod.2018.0060 
+Gross, K., & D’ambrosio, L. (2004). Framing emotional response.  Political Psychology, 25(1), 1–29. https://doi.org/10.1111/ j.1467-9221.2004.00354.x 
+Grusky, M., Naaman, M., & Artzi, Y. (2018). Newsroom: A data set of 1.3 million summaries with diverse extractive strategies.  arXiv preprint arXiv:1804.11283. 
+Gupta, R. K., & Yang, Y. (2019). Predicting and understanding  news social popularity with emotional salience features. In  Proceedings of the 27th ACM international conference on mul timedia (pp. 139–147). ACM Press. 
+Harcup, T., & O’Neill, D. (2017). What is News? News values  revisited (again). Journalism Studies, 18(12), 1470–1488.  https://doi.org/10.1080/1461670X.2016.1150193 
+Hasell, A. (2021). Shared emotion: The social amplification of par tisan news on twitter. Digital Journalism, 9, 1085–1102 https:// doi.org/10.1080/21670811.2020.1831937 
+Hasell, A., & Weeks, B. E. (2016). Partisan provocation: The role  of Partisan News use and emotional responses in political  information sharing in social media. Human Communication  Research, 42(4), 641–661. https://doi.org/10.1111/hcre.12092 
+Haselmayer, M., & Jenny, M. (2017). Sentiment analysis of politi cal communication: Combining a dictionary approach with  crowdcoding. Quality & Quantity, 51(6), 2623–2646. https:// doi.org/10.1007/s11135-016-0412-4 
+Heiss, R., Schmuck, D., & Matthes, J. (2019). What drives inter action in political actors’ Facebook posts? Profile and content  predictors of user engagement and political actors’ reactions.  Information, Communication and Society, 22(10), 1497–1513. 
+Jost, P., Maurer, M., & Hassler, J. (2020). Populism fuels love  and anger: The impact of message features on users’ reactions  on Facebook. International Journal of Communication, 14,  Article 22. https://doi.org/1932-8036/20200005 
+Kilgo, D. K., Lough, K., & Riedl, M. J. (2017). Emotional appeals  and news values as factors of shareworthiness in ice bucket  challenge coverage. Digital Journalism, 8(2), 267–286. https:// doi.org/10.1080/21670811.2017.1387501 
+Kümpel, A. S., Karnowski, V., & Keyling, T. (2015). News sharing  in social media: A review of current research on news shar ing users, content, and networks. Social Media + Society, 1(2),  1–14. https://doi.org/10.1177/2056305115610141 
+Larsson, A. O. (2018). Diversifying Likes: Relating reactions  to commenting and sharing on newspaper Facebook pages.  Journalism Practice, 12(3), 326–343. https://doi.org/10.1080 /17512786.2017.1285244 
+Lau, R. R., & Rovner, I. B. (2009). Negative campaigning. Annual  Review of Political Science, 12(1), 285–306. https://doi. org/10.1146/annurev.polisci.10.071905.101448 
+Lazarus, R. S. (1991). Cognition and motivation in emo tion. American Psychologist, 46(4), 352–367. https://doi. org/10.1037/0003-066X.46.4.352 
+Lecheler, S. (2020). The emotional turn in journalism needs to be  about audience perceptions: Commentary-virtual special issue  on the emotional turn. Digital Journalism, 8(2), 287–291.  https://doi.org/10.1080/21670811.2019.1708766 
+Lecheler, S., Bos, L., & Vliegenthart, R. (2015). The mediating role  of emotions: News framing effects on opinions about immigra tion. Journalism and Mass Communication Quarterly, 92(4),  812–838. https://doi.org/10.1177/1077699015596338 
+Lecheler, S., Schuck, A. R., & De Vreese, C. H. (2013). Dealing  with feelings: Positive and negative discrete emotions as medi ators of news framing effects. Communications, 38(2), 189– 209. https://doi.org/10.1515/commun-2013-0011 
+Muraoka, T., Montgomery, J., Lucas, C., & Tavits, M. (2021).  Love and anger in global party politics: Facebook reactions to  political party posts in 79 democracies. Journal of Quantitative  Description: Digital Media, 1, 1–49. https://doi.org/10.51685/ 
+jqd.2021.005 
+Nabi, R. L. (2003). “Feeling” resistance: Exploring the role  of emotionally evocative visuals in inducing inoculation.  Media Psychology, 5(2), 199–223. https://doi.org/10.1207/ S1532785XMEP05024 
+Neuman, W. R., Marcus, G. E., & MacKuen, M. B. (2018).  Hardwired for news: Affective intelligence and political atten tion. Journal of Broadcasting and Electronic Media, 62(4),  614–635. https://doi.org/10.1080/08838151.2018.1523169 
+Newman, N. (2011). Mainstream media and the distribution of  news in the age of social media (Tech. Rep.). Reuters Institute  for the Study of Journalism. 
+Oatley, K. (1992). Best laid schemes: The psychology of the emo tions. Cambridge University Press. 
+Ørmen, J. (2019). From consumer demand to user engagement:  Comparing the popularity and virality of election coverage on  the Internet. The International Journal of Press/Politics, 24(1),  49–68. https://doi.org/10.1177/1940161218809160 
+Pantti, M. (2010). The value of emotion: An examination of  television journalists’ notions on emotionality. European  Journal of Communication, 25(2), 168–181. https://doi. org/10.1177/0267323110363653 
+Papacharissi, Z. (2016). Affective publics and structures of sto rytelling: Sentiment, events and mediality. Information,  Communication and Society, 19(3), 307–324. https://doi.org/1 0.1080/1369118X.2015.1109697 
+Papacharissi, Z., & De Fatima Oliveira, M. (2012). Affective news  and networked publics: The rhythms of news storytelling on  Egypt. Journal of Communication, 62(2), 266–282. https://doi. org/10.1111/j.14602466.2012.01630.x 
+Provine, R. R., Spencer, R. J., & Mandell, D. L. (2007). Emotional  expression online: Emoticons punctuate website text messages.  Journal of Language and Social Psychology, 26(3), 299–307.  https://doi.org/10.1177/0261927X06303481 
+Roseman, I., Wiest, C., & Swartz, T. (1994). Phenomenology,  behaviors, and goals differentiate discrete emotions. Journal of  Personality and Social Psychology, 6(2), 206–221. https://doi. org/10.1037/0022-3514.67.2.206
+12 Social Media + Society 
+Russell, J. A. (1980). A circumplex model of affect. Journal of  Personality and Social Psychology, 39(6), 1161–1178. https:// doi.org/10.1037/h0077714 
+Russell, J. A. (2003). Core affect and the psychological construc tion of emotion. Psychological Review, 110(1), 145–172.  https://doi.org/10.1037/0033-295X.110.1.145 
+Russell, J. A., & Barrett, L. F. (1999). Core affect, prototypical emo tional episodes, and other things called emotion: Dissecting the  elephant. Journal of Personality and Social Psychology, 76(5),  805–819. https://doi.org/10.1037/0022-3514.76.5.805 
+Savolainen, L., Trilling, D., & Liotsiou, D. (2020). Delighting  and detesting engagement: Emotional politics of junk  news. Social Media + Society, 6, 1–13. https://doi. org/10.1177/2056305120972037 
+Scherer, K. R. (1984). On the nature and function of emotion: A com ponent process approach. In K. R. Scherer & P. Ekman (Eds.),  Approaches to emotion (pp. 397–410). Lawrence Erlbaum. 
+Shields, S. A. (1984). Reports of bodily change in anxiety, sad ness, and anger. Motivation and Emotion, 8(1), 1–21. https:// doi.org/10.1007/BF00992989 
+Soroka, S. (2009). Negativity in democratic politics: Causes  and consequences. Cambridge University Press. https://doi. org/10.1017/CBO9781107477971 
+Soroka, S., Young, L., & Balmas, M. (2015). Bad news or mad  news? Sentiment scoring of negativity, fear, and anger  in news content. Annals of the American Academy of  Political and Social Science, 659(1), 108–121. https://doi. 
+org/10.1177/0002716215569217 
+Sriteja, A., Pandey, P., & Pudi, V. (2017). Controversy detection using  reactions on social media. In IEEE International Conference on  Data Mining Workshops, ICDMW (pp. 884–889). IEEE. 
+Sturm Wilkerson, H., Riedl, M. J., & Whipple, K. N. (2021). Affective  affordances: Exploring Facebook reactions as emotional  responses to hyperpartisan political news. Digital Journalism,  9, 1040–1061. https://doi.org/10.1080/21670811.2021.1899011 
+Trilling, D., Kulshrestha, J., de Vreese, C., Halagiera, D., Jakubowski,  J., Möller, J., . . . Vaccari, C. (2020, September). Codebooks  SHARENEWS. https://doi.org/10.21942/uva.12933341.v1 
+Trilling, D., Tolochko, P., & Burscher, B. (2017). From  NEWSWORTHINESS TO SHAREWORTHINESS: How  to predict news sharing based on article characteristics.  Journalism and Mass Communication Quarterly, 94(1), 38– 
+60. https://doi.org/10.1177/1077699016654682 
+Trussler, M., & Soroka, S. (2014). Consumer demand for  cynical and negative news frames. The International  Journal of Press/Politics, 19(3), 360–379. https://doi. org/10.1177/1940161214524832 
+Tversky, A., & Kahneman, D. (1992). Advances in prospect theory:  Cumulative representation of uncertainty. Journal of Risk and  Uncertainty, 5, 297–323. https://doi.org/10.1007/BF00122574 
+Valentino, N. A., Brader, T., Groenendyk, E. W., Gregorowicz,  K., & Hutchings, V. L. (2011). Election night’s alright for  fighting: The role of emotions in political participation.  Journal of Politics, 73(1), 156–170. https://doi.org/10.1017/ 
+S0022381610000939 
+Valenzuela, S., Correa, T., & Gil de Zúñiga, H. (2018). Ties, likes,  and tweets: Using strong and weak ties to explain differences in  
+protest participation across Facebook and Twitter use. Political  Communication, 35(1), 117–134. https://doi.org/10.1080/1058 4609.2017.1334726 
+Valenzuela, S., Piña, M., & Ramírez, J. (2017). Behavioral effects of  framing on social media users: How conflict, economic, human  interest, and morality frames drive news sharing. Journal of  Communication, 67(5), 803–826. https://doi.org/10.1111/ 
+jcom.12325 
+Valli, C., & Nai, A. (2020). Attack politics from Albania to  Zimbabwe: A large-scale comparative study on the driv ers of negative campaigning. International Political  Science Review. Advance online publication. https://doi. org/10.1177/0192512120946410 
+Wahl-Jorgensen, K. (2019). Emotions, media and politics. Polity. Wahl-Jorgensen, K. (2020). An emotional turn in journalism stud ies? Digital Journalism, 8(2), 175–194. https://doi.org/10.1080 /21670811.2019.1697626 
+Walther, J. B., & D’addario, K. P. (2001). The impacts of emoti cons on message interpretation in computer-mediated com munication. Social Science Computer Review, 19(3), 324–347.  https://doi.org/10.1177/089443930101900307 
+Watson, D., Wiese, D., Vaidya, J., & Tellegen, A. (1999). The two  general activation systems of affect: Structural findings, evolu tionary considerations, and psychobiological evidence. Journal  of Personality and Social Psychology, 76(5), 820–838. 
+Wollebæk, D., Karlsen, R., Steen-Johnsen, K., & Enjolras, B. (2019).  Anger, fear, and echo chambers: The emotional basis for online  behavior. Social Media+ Society, 5(2), 2056305119829859.  https://doi.org/10.1177/2056305119829859 
+Zerback, T., & Wirz, D. (2021). Appraisal patterns as predictors of  emotional expressions and shares on political social network ing sites. Studies in Communication Sciences, 21(1), 27–45.  https://doi.org/10.5167/uzh-206208 
+Author Biographies 
+Ernesto de León is a Doctoral Student at the Institute for  Communication and Media Science, University of Bern  (Switzerland). He is interested in questions of political news con sumption and its effect on political identities and behavior, as well  as the role that social network sites play in an electorate’s interac tion with news and its implications for democracies. He is also  interested in exploring the benefits computational methodologies  can offer the study of political communication online. 
+Damian Trillig, PhD, is an Associate Professor of Political  Communication and Journalism at the Department of  Communication Science, University of Amsterdam (The  Netherlands), where he also received his PhD. He is affiliated with  the Amsterdam School of Communication Research. He is inter 
+ested in questions such as “How does the changing media landscape  change political communication and journalism?”; “How do citi zens, politicians, and journalists make use of new tools?”; and  “What is the impact of these changes?” He is also interested in  methodological innovations to study communication in an age  where more and more communication is happening digitally. This  includes methods of automated content analysis and computational  social science approaches in general.

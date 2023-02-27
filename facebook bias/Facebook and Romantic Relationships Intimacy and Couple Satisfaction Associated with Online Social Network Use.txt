@@ -1,0 +1,724 @@
+﻿CYBERPSYCHOLOGY, BEHAVIOR, AND SOCIAL NETWORKING 
+Volume 16, Number 1, 2013 
+ª Mary Ann Liebert, Inc. 
+DOI: 10.1089/cyber.2012.0038 
+Facebook and Romantic Relationships: 
+Intimacy and Couple Satisfaction Associated 
+with Online Social Network Use 
+Matthew M. Hand, PhD,1 Donna Thomas, PhD,2 Walter C. Buboltz, PhD,2 
+Eric D. Deemer, PhD,3 and Munkhsanaa Buyanjargal, MBA4 
+Abstract 
+ 
+Online social networks, such as Facebook, have gained immense popularity and potentially affect the way 
+.
+y
+l
+n
+people build and maintain interpersonal relationships. The present study sought to examine time spent on online 
+o
+ 
+e
+s
+u
+social networks, as it relates to intimacy and relationship satisfaction experienced in romantic relationships. 
+ 
+l
+a
+n
+Results did not find relationships between an individual’s usage of online social networks and his/her per 
+o
+s
+r
+e
+ception of relationship satisfaction and intimacy. However, the study found a negative relationship between 
+p
+ 
+r
+o
+intimacy and the perception of a romantic partner’s use of online social networks. This finding may allude to an 
+F
+ 
+.
+2
+2
+attributional bias in which individuals are more likely to perceive a partner’s usage as negative compared to 
+/
+2
+1
+/
+their own usage. Additionally, it was found that intimacy mediates the relationship between online social 
+1
+1
+ 
+t
+network usage and overall relationship satisfaction, which suggests that the level of intimacy experienced in a 
+a
+ 
+m
+o
+relationship may serve as a buffer that protects the overall level of satisfaction. 
+c
+.
+b
+u
+p
+t
+r
+e
+b
+e
+i
+Introduction 
+l
+.
+w
+w
+During the past few years, online social networks have 
+w
+ 
+m
+o
+r
+become immensely popular and have gained significant 
+f
+ 
+a
+f
+i
+attention from the media. Since their inception, these net 
+a
+H
+ 
+works have increasingly changed the way people communi 
+y
+b
+ 
+d
+cate and build relationships. Online social networks, such as 
+e
+d
+a
+Facebook, take the relationship-building aspect of computer 
+o
+l
+n
+mediated communication further by focusing on interacting 
+w
+o
+D
+with a variety of people in an organized format. With the increasing amount of time spent on these networks, questions arise as to how interpersonal relationships are affected. While studies have begun exploring ways in which these networks are related to psychological and social factors such as life satisfaction,1 level of shyness,2 and self-esteem,3 there has been little research specifically examining the impact of these sites on current romantic relationships. Considering the po tential effects these online social networks may have on ro mantic relationships, the present study explores the influence of these networks on intimacy and relationship satisfaction. 
+While there is generally a dearth of research specifically exploring online social networks and romantic couples, a study by Elphinston and Noller4 has explored the effects these Web sites have on romantic relationships and found that ex 
+cessive attachment to Facebook is associated with increased jealousy and dissatisfaction. Additionally, studies have ex amined how these networks and other forms of computer mediated communication (CMC) may impact nonromantic interpersonal relationships. Pollet et al.5 found that the amount of time spent using online social networks is associated with a higher number of online friends, but not emotional closeness in face-to-face relationships. Furthermore, engaging in online interaction has been associated with loneliness in offline non romantic familial relationships6 and a tendency to shy away from face-to-face relationships.7,8 A finding by Sheldon sug gests that individuals who experience anxiety and fears in face to-face communication use Facebook to feel less lonely.9 Not all findings point to a negative association between social network usage and interpersonal relationships. Kujath10 found that communicating on networks such as Facebook and My Space served as an extension, rather than a substitute, to communicate face to face. Additionally, Kraut et al.11 found that after a period of time where people adjust to Internet usage, CMC can be associated with positive effects on both psychological well being and interpersonal relationships. 
+Considering the potential effect on interpersonal relation ships, it is important to closely examine the effect online social networks have on romantic relationships. Consequently, this 
+1Department of Psychology, Texas Wesleyan University, Fort Worth, Texas. 2Department of Psychology and Behavioral Sciences, Louisiana Tech University, Ruston, Louisiana. 3Department of Educational Studies, Purdue University, West Lafayette, Indiana. 4University of Houston-Downtown, Houston, Texas. 
+8 
+FACEBOOK AND ROMANTIC RELATIONSHIPS 9 
+study examined the effect that time spent on online social networks have on romantic relationships. More specifically, the purpose of the present study was to examine the rela tionships among online social network usage, intimacy, and relationship satisfaction experienced by couples. 
+Intimacy and relationship satisfaction are good indicators of relationship strength. Intimacy is characterized by a feeling of closeness with another person12 as well as a tendency to self-disclose13 to the other individual. Partners who report a high level of intimacy are affectionate, validating, and trust ing of one another.14 Much like relationship satisfaction, higher levels of intimacy are associated with positive benefits for the individual and the relationship. Intimacy can serve as a buffer against negativity that can be destructive in the re lationship,15 and researchers have found evidence for a pos itive relationship between intimacy and relationship satisfaction.16,17 Partners with higher relationship satisfaction tend to be more committed, and they also tend to be more invested in the relationship.18 A couple’s level of relationship satisfaction can reliably predict whether the couple will re main together or separate. Satisfying relationships also are 
+ 
+.
+y
+l
+associated with positive benefits for the individual. In 
+n
+o
+ 
+e
+dividuals who report being satisfied in a relationship tend to 
+s
+u
+ 
+l
+be physically healthier19 and generally more satisfied with 
+a
+n
+o
+life.20 
+s
+r
+e
+p
+ 
+r
+o
+F
+The present study 
+ 
+.
+2
+2
+/
+2
+The purpose of the present study was to examine the re 
+1
+/
+1
+1
+lationships among online social network usage, intimacy, and 
+ 
+t
+a
+ 
+relationship satisfaction experienced by couples. To obtain a 
+m
+o
+c
+.
+more detailed picture of how online social network usage 
+b
+u
+p
+affects couples, both the individual’s own usage as well as 
+t
+r
+e
+b
+his/her perception of his/her partner’s usage were examined. 
+e
+i
+l
+.
+The relationships among the variables were examined with 
+w
+w
+couples who maintain an offline relationship as well as cou 
+w
+ 
+m
+ples who communicate primarily online. 
+o
+r
+f
+ 
+a
+In examining the relationship among the variables, a 
+f
+i
+a
+model was derived that attempted to explain the association 
+H
+ 
+y
+b
+among online social networks, intimacy, and relationship 
+ 
+d
+e
+d
+satisfaction. This model utilized a form of mediational anal 
+a
+o
+l
+ysis to predict the relationships among the variables.21 Since 
+n
+w
+o
+not all the variables in the current study have been researched D
+specifically in relation to online social networks, the predicted model was derived from examining factors common to the variables, as well as an examination of logical connections among the variables. Previous research indicates that online social network use may have a negative effect on the rela tionships.4–9 As such, it was hypothesized in the current study that both individual usage and perceived partner usage would predict decreased intimacy and relationship satisfac tion for the couple. Considering the positive relationship between intimacy and romantic relationship satisfaction,15–17 it was further hypothesized that intimacy would mediate the relationship between online social network usage and rela tionship satisfaction. 
+Method 
+Participants 
+Participants were undergraduate students at a medium sized Southern University. Participation was voluntary, and 
+participants were treated in accordance with the ethics guidelines established by the American Psychological Asso ciation.22 The original sample consisted of 253 participants. If a participant was missing more than 10 percent of scores for a given measure, they were excluded from final analyses. This 10 percent cutoff is consistent with Bennett’s23 suggestion that a higher percentage of missing values could result in statis tical bias. After identifying and deleting cases that exceeded the 10 percent cutoff, a final sample of 233 was obtained. A criterion for participation was that participants had to cur rently be in a relationship. All age ranges were accepted, and volunteers ranged from 18–57 (M = 20.82, SD = 3.91) years of age. Reported ethnicities were as follows: Caucasian (n = 177, 76 percent), African American (n = 44, 18.90 percent), His panic (n = 8, 3.40 percent), Asian (n = 2, 0.90 percent), and identified as other (n = 2, 0.90 percent). Regarding gender, 60.50 percent were women (n = 141), while 39.50 percent were men (n = 92). The types of relationship reported by partici pants were as follows: Dating exclusively (n = 187, 80.30 percent), Dating not exclusively (n = 29, 12.40 percent), and Married (n = 17, 7.30 percent). The average length of rela tionship reported by participants was 22.52 months (SD = 34.95). 
+Procedure 
+Participants were given a packet of self-report measures. This packet included a demographics questionnaire and an online usage survey that asked questions about the amount of time both the participant and their romantic partner spend on online social networks. The packet also included measures that assess the romantic relationship satisfaction (the rela tionship assessment scale [RAS] and the satisfaction subscale of the dyadic adjustment scale [DAS]) and intimacy (the personal assessment of intimacy in relationships [PAIR]). 
+Measures 
+Demographics questionnaire. The demographics ques tionnaire included questions that ascertain age, gender, and ethnicity of the couples as well as relationship status. 
+Online survey. The online usage survey addresses the level of usage of both partners in the relationship for both the Internet and social networking Web sites as well as whether the current relationship is primarily online or offline in the method of communication. 
+Relationship assessment scale. The RAS is an instru ment designed to measure relationship satisfaction.18 There are seven items in the RAS that assess the participants’ atti tudes toward their relationships and their partners. Re sponses are given on a five-point Likert scale, which ranges from one (very dissatisfied) to five (very satisfied). Internal consistency of the RAS is high (a = 0.86), and the test–retest reliability has been estimated at 0.85. The instrument has demonstrated good convergent validity with a 0.80 correla tion with the DAS.24 
+Dyadic adjustment scale. The DAS is an instrument de signed to measure relationship quality.24 The scale has four subscales, including dyadic satisfaction, dyadic cohesion, dyadic consensus, and affectional expression. The instrument 
+10 HAND ET AL. 
+has demonstrated evidence of concurrent validity, positively correlating with the Locke-Wallace Marital Adjustment Scale.25 The DAS has demonstrated very strong internal consistency with an alpha of 0.96. For the purpose of the current study, eight items related to dyadic satisfaction were used to assess rela tionship satisfaction. The DAS originally was designed to measure the relationship quality between married couples. To make the instrument applicable to the population in the current study, wording pertaining to being married was changed to include all types of romantic relationships. For example, one question was changed from ‘‘Do you ever regret that you married or lived together?’’ to ‘‘Do you ever regret getting into a relationship with your partner?’’ 
+PAIR inventory. The PAIR inventory is designed to measure intimacy along five dimensions.13 The scale consists of 36 items that measure dimensions of intimacy, including emotional intimacy, sexual intimacy, social intimacy, recrea tional intimacy, and intellectual intimacy. Emotional inti macy involves the sharing of personal feelings and intimate information. Social intimacy concerns a couple’s sharing of 
+ 
+.
+y
+l
+friends and the concept of visiting friends as a pair. Recrea 
+n
+o
+ 
+e
+tional intimacy relates to the sharing of hobbies and the en 
+s
+u
+ 
+l
+gagement in leisure time together. Sexual intimacy involves 
+a
+n
+o
+s
+sexual contact and the feeling of being comfortable with the 
+r
+e
+p
+ 
+partner in sexual matters. Additionally, the scale includes a 
+r
+o
+F
+six-term conventionality scale measuring social desirability. 
+ 
+.
+2
+2
+/
+Concurrent validity of the PAIR was obtained with a signif 
+2
+1
+/
+icant correlation with the Moos Family Environment Scale 
+1
+1
+ 
+t
+and the Locke-Wallace Marital Adjustment Scale. The in 
+a
+ 
+m
+strument has adequate internal consistency with an alpha of 
+o
+c
+.
+b
+0.70. The PAIR Inventory has been used in numerous studies 
+u
+p
+t
+r
+that have examined the relationship between intimacy and 
+e
+b
+e
+relationship satisfaction.17,26–28 
+i
+l
+.
+w
+w
+w
+ 
+m
+Data analysis 
+o
+r
+f
+ 
+a
+f
+i
+Intercorrelations and structural equation modeling. 
+a
+H
+ 
+Intercorrelations that demonstrate the relationships among 
+y
+b
+ 
+d
+the variables can be found in Table 1. Participant and partner 
+e
+d
+a
+o
+l
+n
+w
+o
+usage were considered to be two separate variables so as to determine whether one was more significantly related than the other with intimacy and relationship satisfaction. Ad ditionally, online social network usage was divided into weekday usage and weekend usage to account for differ ences. Intercorrelations were found for indicators represent ing intimacy and relationship satisfaction as shown in Table 1. Indicators for relationship satisfaction included The RAS (Hendrick18) and subscale items from the DAS (Spanier24). Indicators for intimacy consisted of the PAIR inventory, measuring a global level of intimacy, and the subscales of the PAIR inventory measuring emotional intimacy, sexual inti macy, social intimacy, recreational intimacy, and intellectual intimacy (Schaefer and Olson13). 
+The relationships among the variables of participant and partner online social network usage, couple intimacy, and relationship satisfaction were analyzed using structural equation modeling. A predicted model was derived to test the logical connections among the variables. A representation of this predicted model, with unstandardized and standardized regression coefficients as well as standard errors for direct and indirect paths, can be found in Figure 1. Participant and perceived partner usage were set to covary with one another, representing the significant positive correlation between the two variables (as seen in Table 1). The model was created to examine whether the participant’s and the partner’s per ceived online social network usage significantly predicted intimacy in the relationship as well as relationship satisfac tion. Additionally, the model examined whether intimacy serves as a mediator between both the participant’s and the partner’s usage and relationship satisfaction. 
+Results 
+Missing values, descriptive, and correlational data 
+Bivariate correlation analyses were performed for all var iables in the study, and the results of these analyses are given in Table 1. Participant online social network usage was sig nificantly positively correlated with perceived partner online social network usage for both average weekday usage 
+Table 1. Intercorrelations Among All Variables 
+D
+Variable 1 2 3 4 5 6 7 8 9 10 11 12 13 
+1. OSNI — 
+2. OSNIW 0.66** — 
+3. OSNP 0.26** 0.24** — 
+4. OSNPW 0.28** 0.40** 0.77** — 
+5. DAS 0.02 - 0.04 - 0.13 - 0.14* — 
+6. RAS 0.06 - 0.02 - 0.08 - 0.11 0.76** — 
+7. PAIR 0.07 - 0.01 - 0.18** - 0.20** 0.68** 0.70** — 
+8. EMO 0.05 - 0.03 - 0.08 - 0.11 0.61** 0.63** 0.88** — 
+9. SOC 0.08 0.08 - 0.18** - 0.11 0.51** 0.49** 0.71** 0.54** — 
+10. SEX 0.07 - 0.03 - 0.14* - 0.16* 0.23** 0.29** 0.61** 0.44** 0.25** — 
+11. INTEL 0.06 - 0.02 - 0.20** - 0.24** 0.62** 0.62** 0.86** 0.75** 0.53** 0.38** — 12. REC 0.06 - 0.02 - 0.14* - 0.20** 0.52** 0.54** 0.83** 0.65** 0.52** 0.43** 0.68** — 13. CONV - 0.01 - 0.04 - 0.12 - 0.15* 0.71** 0.75** 0.86** 0.76** 0.53** 0.39** 0.74** 0.67** — 
+*p < 0.05; **p < 0.01. 
+OSNI, participant’s Avg. weekday online social network (OSN) usage; OSNIW, participant’s Avg. weekend-day OSN usage; OSNP, Avg. weekday perceived partner OSN usage; OSNPW, Avg. weekend-day perceived partner OSN usage; DAS, dyadic satisfaction subscale of the dyadic adjustment scale; RAS, relationship assessment scale; PAIR, personal assessment of intimacy in relationships inventory; EMO, emotional intimacy; SEX, sexual intimacy; SOC, social intimacy; REC, recreational intimacy; ITL, intellectual intimacy; CONV, conventiality. 
+FACEBOOK AND ROMANTIC RELATIONSHIPS 11 
+those pertaining to sexual intimacy (r = - 0.16, p < 0.05), in   
+tellectual intimacy (r = - 0.24, p < 0.01), and recreational inti 
+macy (r = - 0.20, p < 0.01). Both the dyadic satisfaction 
+subscale of the DAS and the RAS significantly and positively 
+correlated with all of the PAIR inventory subscales. For the 
+dyadic satisfaction subscale of the DAS intercorrelations with 
+the PAIR subscales was as follows: emotional intimacy 
+(r = 0.61, p < 0.01); sexual intimacy (r = 0.23, p < 0.01); social 
+intimacy (r = 0.51, p < 0.01); recreational intimacy (r = 0.52, 
+p < 0.01); and intellectual intimacy (r = 0.62, p < 0.01). Sig 
+nificant positive correlations among the RAS and the PAIR 
+subscales were as follows: emotional intimacy (r = 0.63, 
+p < 0.01); sexual intimacy (r = 0.29, p < 0.01); social intimacy 
+(r = 0.49, p < 0.01); recreational intimacy (r = 0.54, p < 0.01); and 
+intellectual intimacy (r = 0.62, p < 0.01). All of the PAIR sub 
+scales significantly correlated with each other. 
+When scored as a whole inventory, the PAIR was signifi 
+cantly correlated with perceived partner usage of online so 
+cial networks on an average weekday (r = - 0.18, p < 0.01), 
+perceived partner usage of online social networks on an av 
+erage weekend day (r = - 0.20, p < 0.01), the satisfaction sub 
+ 
+.
+y
+l
+scale of the DAS (r = 0.68, p < 0.01), the RAS (r = 0.70, p < 0.01), 
+n
+o
+ 
+e
+and all of the PAIR subscales (emotional intimacy, r = 0.88, 
+s
+u
+ 
+l
+p < 0.01; social intimacy r = 0.71, p < 0.01; sexual intimacy 
+a
+n
+o
+s
+r = 0.61, p < 0.01; recreational intimacy r = 0.83, p < 0.01; intel 
+r
+e
+p
+ 
+lectual intimacy r = 0.86, p < 0.01; and conventionality r = 0.86, 
+r
+o
+F
+p < 0.01). 
+ 
+.
+2
+2
+/
+2
+1
+/
+Model pathways 
+1
+1
+ 
+t
+a
+ 
+Unstandardized and standardized regression coefficients 
+m
+o
+c
+.
+as well as standard errors for direct and indirect paths are 
+b
+u
+p
+reported in Figure 1. Nonsignificant paths in the predicted 
+t
+r
+e
+b
+FIG. 1. Predicted model, including all path coefficients and 
+e
+i
+l
+.
+standard errors. Standardized regression coefficients are 
+w
+w
+shown first for each path; unstandardized coefficients fol 
+w
+ 
+lowed by standard errors are presented in parentheses. 
+m
+o
+r
+f
+OSNParticip, online social network usage by the participant; 
+ 
+a
+f
+i
+OSNPartner, online social network usage by the participant’s 
+a
+H
+ 
+romantic partner, INT, intimacy; RS, relationship satisfac 
+y
+b
+ 
+tion; OSNI, Avg. weekday participant online social network 
+d
+e
+d
+usage; OSNIW, Avg. weekend-day participant online social 
+a
+o
+l
+n
+network usage; OSNP, Avg. weekday perceived partner 
+w
+o
+online social network usage; OSNPW, Avg. weekend-day D
+perceived partner online social network usage; EMO, emo tional intimacy; SEX, sexual intimacy; SOC, social intimacy; REC, recreational intimacy; ITL, intellectual intimacy; RAS, relationship assessment scale; DAS, dyadic satisfaction sub scale of the dyadic adjustment scale. ***p < 0.001. 
+(r = 0.26, p < 0.01) and weekend usage (r = 0.40, p < 0.01). Per ceived partner usage on the weekend was significantly neg atively correlated with the dyadic subscale of the DAS (r = - 0.14, p < 0.05). Significant positive correlations were also found between the dyadic satisfaction subscale of the DAS and the RAS (r = 0.76, p < 0.01). Perceived partner usage of online social networks on a weekday was significantly neg atively correlated with some of the PAIR inventory, including those pertaining to social intimacy (r = - 0.18, p < 0.01), sexual intimacy (r = - 0.14, p < 0.05), intellectual intimacy (r = - 0.20, p < 0.01), and recreational intimacy (r = - 0.14, p < 0.05). Per ceived partner usage of online social networks on an average weekend day was also significantly negatively correlated with some of the subscales of the PAIR inventory, including 
+model included the online social network usage by the par ticipant (OSNParticip)/intimacy (INT) path (b = 0.00, p = 1.00, nonsignificant [ns]), online social network usage by the par ticipant’s romantic partner (OSNPartner)/relationship satis faction (RS) path (b = 0.03, p = 0.64, ns), and OSNParticip/RS path (b = 0.01, p = 0.89, ns). Significant paths in the model in cluded the OSNPartner/INT path (b = - 0.28, p < 0.001) and INT/RS path (b = 0.82, p < 0.001). The predicted model re presented a good fit for the data, v2 (40, n = 233) = 65.69, p < 0.01, comparative fit index (CFI) = 0.997, root mean square error of approximation (RMSEA) = 0.053, standardized root mean square residual (SRMR) = 0.05. The relationship between participant online social network usage and intimacy was not significant. Also, the relationship between participant usage and relationship satisfaction was not significant. 
+In the predicted model, a significant negative relationship was found between perceived partner online social network usage and intimacy (Fig. 1). Additionally, the relationship be tween intimacy and relationship satisfaction was significant and positive. The relationship between perceived partner usage, and relationship satisfaction was not statistically significant. Utilizing the Sobel test, it was found that the OSNPartner/INT/RS indirect path was significant, z = - 3.51, p < 0.001. Intimacy was found to mediate the relationship between perceived partner usage and relationship satisfaction. 
+Discussion 
+Intimacy and relationship satisfaction were found to be significantly and positively related. This finding is 
+12 HAND ET AL. 
+not surprising, considering that the relationship between intimacy and relationship satisfaction has been well documented.15,16,26,29,30 
+It was originally predicted that online social network usage would be a negative predictor of intimacy. In the structural model, a significant negative relationship was found between perceived partner usage and intimacy, while a significant relationship did not exist between participant usage and in timacy. As participants reported the usage of themselves and their partners, the difference between participant usage and perceived partner usage may be linked to the tendency to attribute behavior that is problematic in the relationship to the other partner. A fundamental assertion of attribution theory posits that an individual’s choice of a causal expla nation for a behavior will determine that individual’s per ception of that behavior.31,32 If the differences in the findings are related to an attributional bias, factors such as romantic jealousy may be connected with the participants’ tendency to respond differently when reporting their own usage versus the usage of their partner. This would be consistent with Elphinston and Noller’s4 previous finding that an increase in 
+ 
+.
+y
+l
+romantic jealousy and relationship dissatisfaction is associ 
+n
+o
+ 
+e
+ated with excessive attachment to Facebook. Further research 
+s
+u
+ 
+l
+is needed to explore whether attributional biases are related 
+a
+n
+o
+s
+to the perception of a romantic partner’s usage of online social 
+r
+e
+p
+ 
+networks, and if so, which factors might influence these 
+r
+o
+F
+attributions. 
+ 
+.
+2
+2
+/
+It also was predicted that online social network usage 
+2
+1
+/
+would negatively predict relationship satisfaction. The model 
+1
+1
+ 
+t
+did not find a significant relationship between relationship 
+a
+ 
+m
+satisfaction and either participant usage or perceived partner 
+o
+c
+.
+b
+usage. However, it was found that intimacy mediates the 
+u
+p
+t
+r
+relationship between perceived partner usage and relation 
+e
+b
+e
+i
+ship satisfaction. It is possible that the lack of significance 
+l
+.
+w
+found between online social network usage and relationship 
+w
+w
+ 
+satisfaction could be due to this mediating effect. This me 
+m
+o
+r
+diating effect suggests that while perceived partner usage 
+f
+ 
+a
+f
+i
+negatively affects intimacy, intimacy may serve a protective 
+a
+H
+ 
+function, such that relationship satisfaction is not signifi 
+y
+b
+ 
+d
+cantly affected by this perception of partner usage. This is 
+e
+d
+a
+consistent with previous findings that suggest that intimacy 
+o
+l
+n
+is beneficial to the relationship16,26,29 and can serve as a buffer 
+w
+o
+D
+against negative forces.15 This mediating effect was not however significant for participant self-reported usage of online social networking sites. The difference between the participant’s self-reported usage and perceived partner usage may be related to an attributional bias that assigns a more negative connotation to the partner’s usage. Results of the current study imply that while online social network usage may be negatively related to certain components of relation ship satisfaction, as a whole, satisfaction in the relationship is not significantly affected. 
+Limitations 
+The current study did not differentiate between couples in different stages in their relationships. Examining increasing levels of online social network usage for couples in different stages of their romantic relationships could help in increasing knowledge of the relationships among the variables. Another limitation of the study involves the use of self-report. By measuring online social network usage by self-report of own 
+usage and partner usage, results may have been influenced by attributional biases. 
+Implications 
+In general, findings from the study demonstrate the power of perceptions in judging online social network usage. Find ing that participants are less likely to judge their own usage as negative compared to the usage of their partners implies that perception of usage may be as important as actual usage. The finding that in contrast to perceptions of their own usage, participants were more likely to perceive their partner’s on line social network usage as having a negative effect on in timacy in their relationship suggests an attributional bias in which the behavior of online social network usage is per ceived as harmful only when it is attributed to someone else. Another possible interpretation can be informed by previous studies regarding CMC before recent iterations of online so cial networks became popular. While Kraut et al.33 initially found that introducing a form of CMC into lives of individ uals resulted in increased depression and loneliness, a follow up by Kraut et al.11 found that these negative effects disappeared after a period of time, and that increased Internet usage was associated with positive effects on both psycho logical well being and interpersonal relationships. The im mense popularity of online social networks is a relatively new phenomenon, and it is possible that individuals have not completely assimilated these networks in their lives, resulting in perceptions that usage of these networks decreases emo tional closeness. 
+Findings also demonstrate the importance of intimacy in serving a protective function. By mediating the relationship between online social network usage and couple satisfaction, intimacy serves as a buffer that may affect the couple from experiencing a decreased level of satisfaction, which is con sistent with previous findings.15 Further research is needed to explore the relationship between social network usage and different aspects of intimacy, such as self-disclosure and emotional closeness. 
+Author Disclosure Statement 
+There are no actual or potential conflicts of interest with any of the authors of this article. 
+References 
+1. Valenzuela S, Park N, Kee KF. Is there social capital in a social network site?: Facebook use and college students’ life satisfaction, trust, and participation. Journal of Computer Mediated Communication 2009; 14:875–901. 
+2. Orr ES, Sisic M, Ross C, et al. The influence of shyness on the use of facebook in an undergraduate sample. CyberPsy chology and Behavior 2009; 12:337–340. 
+3. Gonzales AL, Hancock JT. Mirror, mirror on my facebook wall: effects of exposure to facebook on self-esteem. Cyber psychology, Behavior, and Social Networking 2011; 14:79–83. 
+4. Elphinston RA, Noller PA. Time to face it! Facebook intru sion and the implications for romantic jealousy and rela tionship satisfaction. Cyberpsychology, Behavior, and Social Networking 2011; 14:631–635. 
+5. Pollet TV, Roberts SGB, Dunbar RIM. Use of social network sites and instant messaging does not lead to increased offline 
+FACEBOOK AND ROMANTIC RELATIONSHIPS 13 
+social network size, or to emotionally closer relationships with offline network members. Cyberpsychology, Behavior, and Social Networking 2011; 14:253–258. 
+6. Ong CS, Chang SC, Wang CC. Comparative loneliness of users versus nonusers of online chatting. Cyberpsychology, Behavior, and Social Networking 2011; 14:35–40. 
+7. Curtis P. (1997) Mudding: social phenomena in text-based virtual realities. In: Kiesler S, ed. Culture of the Internet. Mahwah, NJ: Erlbaum, pp. 121–142. 
+8. Ward CC, Tracey TJG. Relation of shyness with aspects of online relationship involvement. Journal of Social and Per sonal Relationships 2004; 21:611–623. 
+9. Sheldon P. The relationship between unwillingness-to communicate and students’ Facebook use. Journal of Media Psychology: Theories, Methods, and Applications 2008; 20: 67–75. 
+10. Kujath CL. Facebook and myspace: complement or substi tute for face-to-face interaction? Cyberpsychology, Behavior, and Social Networking 2011; 14:75–78. 
+11. Kraut R, Kiesler S, Boneva B, et al. Internet paradox re visited. Journal of Social Issues 2002; 58:49–74. 
+12. Reis HT, Shaver P. (1988) Intimacy as an interpersonal 
+ 
+.
+y
+l
+process. In: Duck SW, ed. Handbook of personal relationships. 
+n
+o
+ 
+e
+Chichester, England: Wiley, pp. 367–389. 
+s
+u
+ 
+l
+13. Schaefer M, Olson D. Assessing intimacy: the PAIR inven 
+a
+n
+o
+tory. Journal of Marital and Family Therapy 1981; 7:47–60. 
+s
+r
+e
+p
+14. Aron A, Westbay L. Dimensions of the prototype of love. 
+ 
+r
+o
+Journal of Personality and Social Psychology 1997; 70:535–551. 
+F
+ 
+.
+2
+15. Huston TL, Chorost AE. Behavioral buffers on the effect of 
+2
+/
+2
+1
+negativity on marital satisfaction: a longitudinal study. 
+/
+1
+1
+ 
+Personal Relationships 1994; 1:223–239. 
+t
+a
+ 
+16. Hassebrauck M, Fehr B. Dimensions of relationship quality. 
+m
+o
+c
+.
+Personal Relationships 2002; 9:253–270. 
+b
+u
+p
+17. Schreurs K, Buunk B. Closeness, autonomy, equity, and re 
+t
+r
+e
+b
+lationship satisfaction in lesbian couples. Psychology of 
+e
+i
+l
+.
+Women Quarterly 1996; 20:577–592. 
+w
+w
+18. Hendrick SS. A generic measure of relationship satisfaction. 
+w
+ 
+m
+Journal of Marriage and the Family 1998; 50:93–98. 
+o
+r
+f
+ 
+19. Kiecolt-Glaser JK, Newton TL. Marriage and health: his and 
+a
+f
+i
+a
+hers. Psychological Bulletin 2001; 127:472–503. 
+H
+ 
+y
+20. House JS, Landis KR, Umberson D. Social relationships and 
+b
+ 
+d
+e
+health. Science 1988; 241:540–545. 
+d
+a
+o
+21. Baron RM, Kenny DA. The moderator-mediator variable 
+l
+n
+w
+distinction in social psychological research: conceptual, 
+o
+D
+strategic, and statistical considerations. Journal of Person ality and Social Psychology 1986; 51:1173–1182. 
+22. American Psychological Association. (2002) American Psy chological Association ethical principles of psychologists and code of conduct. Retrieved from http://apa.org/ethics/ code/index.aspx (accessed July 5, 2011). 
+23. Bennett DA. How can I deal with missing data in my study? Australian and New Zealand Journal of Public Health 2001; 25:464–469. 
+24. Spanier GB. Measuring dyadic adjustment: new scales for assessing the quality of marriage and similar dyads. Journal of Marriage and the Family 1976; 38:15–28. 
+25. Locke H, Wallace K. Short marital-adjustment and predic tion tests: their reliability and validity. Marriage and Family Living 1959; 21:251. 
+26. Greeff AP, Malherbe HL. Intimacy and marital satisfaction in spouses. Journal of Sex and Marital Therapy 2001; 27:247– 257. 
+27. LeBeau L, Buckingham J. Relationship social comparison tendencies, insecurity, and perceived relationship quality. Journal of Social and Personal Relationships 2008; 25:71–86. 
+28. White JK, Hendrick SS, Hendrick C. Big five personality variables and relationship constructs. Personality and In dividual Differences 2004; 37:1519–1530. 
+29. Dandeneau ML, Johnson SM. Facilitating intimacy: inter ventions and effects. Journal of Marital and Family Therapy 1994; 20:17–33. 
+30. Hendrick SS. Self-disclosure and marital satisfaction. Journal of Personality and Social Psychology 1981; 40:1150–1159. 31. Weiner B. An attributional theory of achievement motivation and emotion. Psychological Review 1985; 92: 548–573. 
+32. Weiner B. (1995) Judgments of responsibility: a foundation for a theory of social conduct. New York: Guilford Press. 33. Kraut R, Patterson M, Lundmark V, et al. Internet para-dox: a social technology that reduces social involvement and psychological well-being? American Psychology 1998; 53: 1017–1031. 
+Address correspondence to: 
+Dr. Matthew M. Hand 
+Department of Psychology 
+Texas Wesleyan University 
+1201 Wesleyan Street 
+Fort Worth, Texas 76105 
+E-mail: mmhand78@gmail.com

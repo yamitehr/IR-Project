@@ -1,0 +1,113 @@
+﻿Rhodes, Bryan, and Ellen Marks. 2011. “Using Facebook to Locate Sample Members.” 
+Survey Practice 4 (5). https://doi.org/10.29115/SP-2011-0023.
+ARTICLES  
+Using Facebook to Locate Sample Members  
+Bryan Rhodes 1 , Ellen Marks 1  
+1 RTI  
+Keywords: survey practice  
+https://doi.org/10.29115/SP-2011-0023  
+Survey Practice  
+Vol. 4, Issue 5, 2011  
+Using Facebook to Locate Sample Members  
+Locating and retaining sample members is a challenge for any longitudinal  study. If sample members are lost to follow-up, the potential for non-response  bias increases and power for analyses decreases. Survey researchers have several  tools available to locate sample members and a new one has emerged: the  internet. This article reports on the use of social media—in particular,  Facebook—to contact participants in a longitudinal study and encourage them  to complete a telephone interview. Individuals we located on Facebook were  significantly more likely to be white, have attended at least some college, and  have higher household incomes than the rest of the study sample.  
+We then identify two categories of completed interviews associated with  Facebook: those achieved (1) as a direct result of our Facebook contact and  (2) seemingly because they were influenced by the Facebook contact. There  were no significant differences on several demographic measures for the former  group, but the latter shows differences in race/ethnicity, education, age, and  household income—and not always in expected directions. We conclude that  Facebook can be an effective tool for locating and contacting sample members  who have not replied to more traditional attempts to reach them.  
+The internet’s presence in American life has become pervasive: nearly 70% of  U.S. households have internet service (U.S. Census Bureau 2010), and more  than 95% of U.S. adults accessed the internet in the past year (World Bank  2011). The widespread availability of the internet means that social networking  sites—such as Facebook, MySpace, or LinkedIn – have become an integral part  of many users’ internet experience. The most commonly used one is Facebook  with over 157 million visitors in May 2011 alone (Lipsman 2011), and more  than 750 million active users (Facebook Statistics 2011). As social networking  sites (SNS) have extended their reach into the population, survey researchers  have attempted to leverage them, but little research on methods or results has  been published. One longitudinal study reported a 4.6% reduction in attrition  by using Facebook and MySpace to locate and contact sample members  (Nwadiuko et al. 2010). Another study used Facebook and MySpace to locate  sample members; of 406 messages sent to SNS, 29 (7.1%) resulted in completed  interviews (Perkins, Granger, and Saleska 2009). Both studies surveyed young  adults, a group with particularly high rates of SNS usage (Wilkinson and  
+Using Facebook to Locate Sample Members 
+Thelwall 2010). Both studies were conducted several years ago so would not  have benefited from SNS expansion (since 2009 Facebook’s user base has  grown by 200% (Foster 2010)).  
+Study Description  
+SEED for Oklahoma Kids (SEED OK) is a random assignment experiment to  test the impacts of giving every child a savings account at birth, “seeded” with  an initial deposit and offering additional funds to match deposits. A random  sample was drawn from birth records in Oklahoma, stratified by geographic  location, with oversamples of American Indians, Hispanics, and African  Americans. RTI conducted baseline telephone interviews with the sampled  child’s mother shortly after birth and a follow-up survey 3 years later.  
+The follow-up survey first attempted to contact sample members through  mailings, e-mail, and telephone. When a sample member could not be reached,  the case was assigned to field staff who attempted to locate sample members in  person and encourage them to call in to complete the survey.  
+As field personnel were attempting in-person locating, two project staff used  Facebook to attempt to locate and contact non-respondents. The locators used  their own personal Facebook accounts; we considered setting up new accounts  solely to locate and contact sample members but felt that messages from a new  Facebook account with few or no friends might look like ‘spam’ to recipients.  
+Each locator had basic information about sample members including full  name, best known address, age, e-mail address, and child’s name. Locators used  Facebook’s built- in search feature to locate sample members.  
+Once the locator found a profile that appeared to be the sample member, she  sent a message to the sample member. A Facebook message is not public and  can be viewed only by the message’s sender and recipient. The message said we  were looking for someone with the sample member’s name who participated in  the SEED OK survey about three years ago, and asked that if we had the right  person she call a toll-free number to complete the interview.  
+Results  
+Locators attempted to find 919 sample members on Facebook, all of whom  had not been reached through previous telephone or mail attempts. This group  was significantly more likely to be American Indian or Hispanic (compared to  African American or Caucasian), have not attended college, be single, and be  over 30 years old.1  
+1 p≤.05  
+Survey Practice 2
+Using Facebook to Locate Sample Members 
+Exhibit 1 Demographic composition of sample members located on Facebook.  
+Located on Facebook (n=294) Unable to Locate on Facebook (n=625)  
+Race/ethnicity**  
+White (other)a 47.96 35.36  
+African American 17.01 16.80  
+American Indian 24.15 21.76  
+Hispanic 10.88 26.08  
+Education**  
+Less than high school 25.85 38.40  
+High school diploma or GED 34.69 34.88  
+Some college or more 39.46 26.72  
+Marital Status  
+Married 50.34 47.04  
+Divorced, separated, or widowed 8.50 10.08  
+Single (never married) 41.16 42.88  
+Age  
+Less than 25 52.38 59.20  
+25 to 30 31.63 28.96  
+31 or older 15.99 11.84  
+Household Incomeb,**  
+Low 39.74 52.38  
+Middle 38.49 32.99  
+High 21.94 14.63  
+a This group contains all other racial categories, but consists primarily of Caucasian sample members.  
+b The sample is split into three categories based on an income measurement that uses an equivalence scale to account for different household sizes.  ** p≤.01.  
+Of the 919 we tried to locate on Facebook, we found profiles and sent messages  to 294 sample members (32%).2 Our efforts were more successful in locating  some demographic groups than others. As shown in Exhibit 1, study  participants located through Facebook were significantly more likely to be  white, have attended at least some college, and have higher household incomes.3  
+Since the study was attempting to locate and contact sample members by  phone and in person concurrently with the Facebook locating effort, we cannot  tease apart the unique effect of the Facebook message on survey completion  rates. We can, however, credit the Facebook message as contributing to a  completed interview if it was our last contact with the sample member before  she completed the interview. Of 294 sample members, 92 (31%) received a  Facebook message and then completed an interview. Thus, sending a Facebook  
+Although staff felt that these Facebook pages matched the sample members, there is no way to be certain that the message was sent to the  
+2  
+correct person (rather than someone with the same name) or that the recipient read the message.  
+All demographic characteristics are based on responses to the baseline survey.  
+3  
+Survey Practice 3
+Using Facebook to Locate Sample Members 
+message eliminated the need for further in-person or telephone outreach by  10% (92 of 919 non-respondents). These Facebook completes represent 4% of  all completed interviews.  
+We next examined Facebook completes by demographic characteristics  (Exhibit 2). Although there were differences in characteristics for sample  members located through Facebook, there are no statistically significant  differences in characteristics for sample members who completed interviews.  
+Although we attribute only 92 completed interviews directly to the Facebook  effort, there is some evidence that the Facebook communication helped sway  sample members to respond to phone and in-person attempts to locate them.  Of those contacted on Facebook, 215 of 294 (73 percent) ultimately completed  an interview for the study — significantly more than those we attempted to  locate on Facebook but could not, suggesting the Facebook message may have  had some influence on the respondent’s decision to complete the interview.  Those who ultimately completed the interview after being contacted through  Facebook were significantly different from the rest of the sample on race/ ethnicity, education, age, and income. Exhibit 2 shows comparisons between  (1) completes directly attributed to Facebook and all other completed  interviews and (2) completes influenced by Facebook contact (including those  directly attributed) and all other completed interviews. As an example, the  race/ethnicity of interviews completed as a direct result of contact with  Facebook users (column 1) was not significantly different from the race/ ethnicity of all other completed interviews (column 2), but the race/ethnicity  of those whose completion of the interview may have been influenced by  the Facebook message (column 3) was significantly different from all others  (column 4).  
+We then examined whether the Facebook completes differed from the rest of  the sample on an important outcome variable: whether they had saved for their  child’s education.4 Those who ultimately completed the interview after being  contacted through Facebook were not significantly more likely to have savings  for their child’s college education.  
+We also constructed logistic models that included all variables from the above  analyses (Exhibits 1 and 2), but we quickly ran into problems with  intercorrelation, small cell sizes (often less than 5 or 10 cases), and large  standard errors. We believe multivariate analyses are important for  understanding the relationships at play and hope that other studies will soon  have enough cases to warrant this type of investigation.  
+4 This is a key measure for the SEED OK experiment described in Marks, Rhodes, and Scheffler 2008.  
+Survey Practice 4
+Using Facebook to Locate Sample Members 
+Exhibit 2 Comparison of Facebook completes to all other completed interviews.  
+Direct Facebook  Completes (n=92)  
+Other  
+completes  (n=2,208)  
+Completes influenced  by Facebook (n=215)  
+Other  
+completes  (n=2,085)  
+All  
+completes  (n=2,300)  
+Race/ethnicity *  
+White (other) 55.43 48.01 50.70 48.06 48.30  African American 15.22 17.30 13.95 17.55 17.22  American Indian 22.83 18.93 25.58 18.42 19.09  Hispanic 6.52 15.76 9.77 15.97 15.39  Education *  
+Less than high  
+school 21.74 22.15 23.26 22.01 22.13  
+High school  
+diploma or GED 32.61 28.35 35.81 27.77 28.52  
+Some college or  
+more 45.65 49.50 40.93 50.22 49.35  Marital Status  
+Married 59.78 58.38 51.63 59.14 58.43  Divorced,  
+separated, or  widowed  
+Single (never  
+7.61 7.20 6.98 7.24 7.22  
+married) 32.61 34.42 41.40 33.62 34.35  Age *  
+Less than 25 53.26 42.39 53.95 41.68 42.83  25 to 30 29.35 35.05 30.70 35.25 34.83  31 or older 17.39 22.55 15.35 23.07 22.35  Household Income *  
+Low 33.72 46.97 38.35 34.84 35.17  Middle 37.21 23.86 40.29 33.50 34.13  High 29.07 29.17 21.36 31.66 30.70  Have savings for child’s college  
+Yes 34.07 33.65 28.04 34.35 33.76  No 65.93 66.35 71.96 65.65 66.24  
+* p ≤.05.  
+Conclusions  
+Facebook can be an effective tool for locating and contacting sample members  who have not replied to more traditional attempts to reach them. This kind  of Facebook effort can increase overall response rates and can be particularly  effective for certain demographic groups, namely younger and more highly  educated sample members—essentially mirroring the population of Facebook  users.  
+We had greater success locating and contacting sample members through SNS  than previous studies, most likely because of increased use of SNS (particularly  Facebook) since the previous studies were fielded. Importantly, Facebook was  effective in locating sample members across a range of demographic  characteristics.  
+Survey Practice 5
+Using Facebook to Locate Sample Members 
+Sample members who were contacted through Facebook and subsequently  completed the follow-up interview were significantly different from those  contacted in some other way. This difference suggests that we were able to reach  segments of the sample through Facebook that we might not have otherwise  been able to contact, potentially reducing non-response bias.  
+Survey Practice 6
+Using Facebook to Locate Sample Members 
+references  
+Facebook Statistics. 2011. 2011. https://www.facebook.com/press/info.php?statistics.  Foster, B. 2010. “Facebook User Growth Chart – 2004–2011.” http://www.benphoster.com/ facebook-user-growth-chart-2004-2010.  
+Lipsman, A. 2011. “The Network Effect: Facebook, Linkedin, Twitter & Tumblr Reach New  Heights in May.” ComScore Voices (blog). June 15, 2011. http://blog.comscore.com/2011/06/ facebook\_linkedin\_twitter\_tumblr.html.  
+Marks, E., B. Rhodes, and S. Scheffler. 2008. SEED for Oklahoma Kids: Baseline Analysis. Research  Triangle Park, NC: RTI International.  
+Nwadiuko, Joseph, Patricia Isbell, Adam J. Zolotor, Jon Hussey, and Jonathan B. Kotch. 2010.  “Using Social Networking Sites in Subject Tracing.” Field Methods 23 (1): 77–85. https://doi.org/ 10.1177/1525822x10384088.  
+Perkins, J.L., R.K. Granger, and E.L. Saleska. 2009. “Data Security Considerations When Using Social  Networking Websites for Locating and Contacting Sample Members.” Presented at the IFD&TC  2009, May.  
+U.S. Census Bureau. 2010. “Statistical Abstract of the United States: 2011 (130th Edition).”  Washington, DC.  
+Wilkinson, David, and Mike Thelwall. 2010. “Social Network Site Changes over Time: The Case of  MySpace.” Journal of the American Society for Information Science and Technology 61 (11):  2311–23. https://doi.org/10.1002/asi.21397.  
+World Bank. 2011. “World Development Indicators.” 2011. http://data.worldbank.org/data-catalog/ world-development-indicators.  
+Survey Practice 7

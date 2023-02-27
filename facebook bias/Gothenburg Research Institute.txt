@@ -1,0 +1,848 @@
+﻿KAPITELRUBBE 
+e 
+t
+u
+t
+i
+t
+s
+n
+I
+ 
+h
+c
+r
+a
+e
+s
+e
+R
+ 
+g
+r
+u
+b
+n
+e
+h
+t
+o
+G
+lim
+GRI-rapport 2012:3 
+Sweden´s largest Facebook study 
+  
+  
+  
+  
+  
+
+AUTHORS 
+LEIF DENTI  
+ISAK BARBOPOULOS  
+IDA NILSSON  
+LINDA HOLMBERG 
+MAGDALENA THULIN  
+MALIN WENDEBLAD 
+LISA ANDÉN 
+EMELIE DAVIDSSON
+© Gothenburg Research Institute 
+All rights reserved. No part of this report may be reproduced with out the written permission from the publisher. 
+Gothenburg Research Institute 
+School of Business, Economics and Law 
+at University of Gothenburg 
+P.O. Box 600 
+SE-405 30 Göteborg 
+Tel: +46 (0)31-786 54 13 
+Fax: +46 (0)31-786 56 19 
+E-post: gri@gri.gu.se 
+ISSN 1400-4801 
+Layout: Hanna Tomic, Magnus Körner, Lise-Lotte Walter,  
+2 
+GOTHENBURG RESEARCH INSTITUTE, GRI 
+GRI är Handelshögskolans institut för tvärvetenskaplig forskning. Här har  Handelshögskolans forskare möjlighet att i programform arbeta med for skningsprojekt med hög näringslivs- och samhällsrelevans. Vi bedriver  forskning inom ämnen såsom företagsekonomi, antropologi, sociologi, och  teknik och samhällsvetenskaplig miljöforskning. GRI står för samarbete och  långsiktighet.  
+VALENTIN&BYHR 
+– ett kommunikationshus som integrerar strategi, kreativitet och design. 
+Inom kommunikationshuset skapar vi relevant och fungerande kommuni kation genom att integrera medier och kompetenser. Kommunikationen är  digital, social och interaktiv, den är analog, effektiv och kreativ. Vi har över  20 års erfarenhet av att arbeta tillsammans med stora kunder, i Sverige och  Europa och för varje dag blir vi ännu större, ännu mer insiktsfulla med ännu  fler kompetenser. Vi vet att bra kommunikation kommer att uppmärksam ma och belöna våra kunder liksom oss själva. 
+Just nu jobbar vi med digitala, sociala & interaktiva medier, PR & event,  radio, TV & print, strategi & affärsutveckling, grafisk formgivning, förpack ningsdesign & action marketing, direktmarknadsföring & tidningsproduk tion samt foto, retusch & repro.
+3 
+  
+
+SWEDEN´S LARGEST  FACEBOOK STUDY
+4 
+POPULÄRVETENSKAPLIG SVENSK SAMMANFATTNING
+Internets framväxt har gjort det enklare för människor att få  utlopp för sina sociala behov. Facebook är den största webb sidan för socialt nätverkande med sina 845 miljoner med lemmar världen över. I Sverige närmar sig siffran 4.5 miljoner  medlemmar. Således är ungefär halva Sveriges population  medlemmar i Facebook. För att få ökad förståelse av de kon sekvenser som Facebook har på sina svenska användare ge nomfördes under 2011 Sveriges största Facebook-studie. Vi  hade två syften med studien. För det första ville vi förstå vilka  användningsområden svenska Facebookanvändare anser är  de mest centrala, vad som väljs att skriva om i statusupp dateringar, och bakomliggande orsaker till att uppdatera en  status. För det andra ville vi undersöka om Facebook utövar  någon slags psykologisk effekt, såsom om intensivt använ dande av Facebook har ett samband med låg självkänsla och  lågt välmående. 
+Mera specifikt ville vi besvara följande frågeställningar: 1. Vad gör människor på Facebook och vilka användnings områden tenderar att vara viktigare än andra?  2. Hur förmedlar Facebookanvändare sin personlighet ge nom statusuppdateringar, samt vad väljer de att uppdatera  om? 
+3. Vilka underliggande skäl är anledningen till att man upp daterar sin status? 
+4. Vilka psykologiska effekter hör samman med höginten siv användning av Facebook, och då med utgångspunkt  i självkänsla och välbefinnande i relation till Facebook användning? 
+Studien baseras på datainsamling på över 1000 personer, i  åldrarna 14 till 73 år, från Sverige. Datainsamlingen genom fördes via en webb-baserad enkät mellan juni och september  2011.  
+Studien visar bland annat: 
+t /ÊTUBO    QSPDFOU BW 'BDFCPPL BOWÊOEBSOB JOLMVEFSBS 'B cebook i sin dagliga rutin och de flesta loggar in vanemäs sigt varje gång de startar datorn.  
+t /ÊTUBO IÊMGUFO BW 'BDFCPPL BOWÊOEBSOB LÊOOFS BUU EF GÌS  svårt att hänga med utan Facebook och en #ärdedel tror  att de skulle må dåligt om de inte loggade in på Facebook  under en längre tid. 
+t 4WFOTLB LWJOOPS ÊS BLUJWB QÌ 'BDFCPPL J HFOPNTOJUU    NJO  per dag och män omkring 64 min om dagen. 
+t      QSPDFOU  BW  LWJOOPSOB  TQFOEFSBS  ÚWFS  IÊGUFO  BW  WBSKF  online-timme på Facebook. 
+t  -ÌHVUCJMEBEF  PDI  MÌHJOLPNTUUBHBSF  BOWÊOEFS  'BDFCPPL  mer än genomsnittet. Inom dessa grupper visar studien att ju  mer de använder Facebook desto sämre mår de. t  ,WJOOPS  TPN  UJMMCSJOHBS  NFS  UJE  QÌ  'BDFCPPL  ÊS  NJOESF  nöjda med sina liv.  
+t 'BDFCPPL BOWÊOEBSOB CFSÊUUBS NFTU QÌ 'BDFCPPL PN TUPSB  händelser, positiva företeelser och när man mår bra. Enbart  38 procent uppger att de delar med sig av negativa känslor  eller företeelser på Facebook.  
+t  &O  USFEKFEFM  BW  NÊOOFO  VQQHFS  BUU  EF  QSPWPDFSBS  J  TUB tusuppdateringar och kommentarer på Facebook. Det är  nästan dubbelt så många som bland kvinnorna. t ½WFS UWÌ USFEKFEFMBS UJUUBS HÊSOB QÌ BOESBT CJMEFS PDI PN kring en #ärdedel besöker profiler som man inte känner eller  vänners vänner. 
+Våra analyser visade att svenska kvinnor spenderar betydligt  mer tid på Facebook jämfört med svenska män. Generellt  sett användes Facebook för att underhålla sociala relationer,  som att hålla kontakt med människor användarna inte träf 
+far så ofta. Facebook är inget forum som väljs för att träffa  nya människor, utan det är befintliga relationer som står i  fokus. Kvinnor tenderar att vara mer engagerade och aktiva  på Facebook än män. Anledningen till att kvinnor ägnar mer  tid på Facebook grundar sig troligen i att kvinnor generellt  är mer sociala och lägger mer tid på relationer med vänner.  Istället för fikastunder, telefonsamtal och mejl har Facebook  blivit ytterligare ett verktyg för att engagera sig i sina vänner. 
+Studien visar också att kvinnor som tillbringar mer tid på Fa cebook är mindre lyckliga och nöjda med sina liv, medan det  bland män inte fanns ett självklart förhållande mellan välbe finnande och Facebook. Det här är troligtvis konsekvensen  av att användare på Facebook presenterar sig på sitt mest  fördelaktiga sätt och tenderar att sprider positiva nyheter om  sig själv. När användarna jämför sina liv med andra kan det  leda till uppfattningen att andra har mer framgångsrika kar riärer, händelserika liv och trevligare relationer. Det kan leda  till ett större missnöje med sitt eget liv. 
+5 
+ABSTRACT
+$e emergence of the Internet has made it easier for people  to socially interact than ever before. Today, the most popular  channel is Facebook with over 845 million users world wide.  In Sweden, the number of users amount to approximately  half of the population. We had two aims with this study.  First, we investigate which areas of Facebook usage that  Swedish Facebook users consider more important vis-a-vis  less important. We were also interested in how users convey  their persona through their status updates, including what  they status update about, and the underlying reasons for up dating one’s status. Second, we investigate what psychologi cal effects Facebook may induce. More specifically, we look  at the psychological constructs self-esteem and well-being  in relation to Facebook usage. We surveyed 1011 Swedish  Facebook users with our questionnaires, measuring respond 
+ents’ Facebook usage patterns, well-being and self-esteem.  Our analyses revealed that on average Swedish women spend  81 minutes per day on Facebook, whereas Swedish men are  logged on to the site about 64 minutes per day. Generally,  Facebook is used for social network maintenance, such as  maintaining contact with people one doesn’t meet so often.  However, Facebook is seldom used for meeting new people.  
+Another finding is that Facebook users generally tend to  update their status about positive events, major events and  when they are feeling well, rather than negative events and  when they are feeling bad. Women seem to be more engaged  and active on Facebook than men, agreeing that a vast num 
+ber of uses is significantly more important. Furthermore,  women tend to write more about their thoughts and feelings,  whereas twice as many men state that they provoke others  on Facebook. Pertaining to Facebook’s psychological effects,  the amount of time spent on Facebook had no relationship  with self-esteem when controlling for gender, age, education  and income. $is result runs counter to previous findings.  However, women who spend more time on Facebook report  feeling less happy and feel less content with their lives. For  men, this relationship was not evident. $e study teaches  that Facebook is used as a tool for affiliating with friends and  family, as well as a personal showcase, where users show their  positive sides. Herein lies also a danger. When Facebook us ers compare their own lives with others’ seemingly more suc cessful careers and happy relationships, they may feel that  their own lives are less successful in comparison.  
+6 
+TABLE OF CONTENTS 
+INTRODUCTION..............................................................................................................................................8   FACEBOOK TODAY ......................................................................................................................... 8  A SOCIAL PERSPECTIVE ON BEING HUMAN .............................................................................. 8   AFFILIATION, A BASIC HUMAN NEED......................................................................................... 8  THE INTERNET............................................................................................................................... 8   AIMS OF THIS STUDY ................................................................................................................... 8  BEING SOCIAL ON FACEBOOK ..................................................................................................... 9  INDIVIDUAL IDENTITY AND SOCIAL COMPARISON .................................................................. 9  SOCIAL COMPARISON ON FACEBOOK......................................................................................... 9 
+ SELF-PRESENTATION ON FACEBOOK ......................................................................................... 10 WHEN SOCIAL COMPARISION MAY MISFIRE ON FACEBOOK.................................................... 10  THE EFFECT ON INDIVIDUALS’ SELF-ESTEEM AND WELL-BEING............................................ 10 
+RESEARCH QUESTIONS ................................................................................................................................ 11  RESEARCH QUESTION 1............................................................................................................... 11 RESEARCH QUESTION 2............................................................................................................... 11 
+PROCEDURE....................................................................................................................................................12 PARTICIPANTS.............................................................................................................................. 12  MATERIALS ................................................................................................................................... 12   PRESENCE ON FACEBOOK ............................................................................................................ 12  USAGE ON FACEBOOK................................................................................................................... 12  PSYCHOMETRICS.......................................................................................................................... 13  BACKGROUND INFORMATION ...................................................................................................... 13 
+METHODS OF ANALYSIS ...............................................................................................................................14 DATA PREPARATION AND SCREENING ....................................................................................... 14  RESEARCH QUESTION 1............................................................................................................... 14   RESEARCH QUESTION 2............................................................................................................... 14 
+RESEARCH QUESTION 1: FACEBOOK USAGE ..............................................................................................15 HOW MUCH DO PEOPLE USE FACEBOOK?.................................................................................... 15  GENDER AND FACEBOOK USAGE ................................................................................................. 16  AGE AND FACEBOOK USAGE ........................................................................................................ 16 WHAT ARE THE MOST IMPORTANT USES OF FACEBOOK? ......................................................... 16  GENDER AND IMPORTANT USES OF FACEBOOK......................................................................... 18  AGE AND IMPORTANT USES OF FACEBOOK................................................................................ 18 WHAT ARE STATUS UPDATES TYPICALLY ABOUT?..................................................................... 20  GENDER AND STATUS UPDATES .................................................................................................. 21  AGES AND STATUS UPDATES....................................................................................................... 21 WHAT IS THE PURPOSE OF USERS STATUS UPDATES............................................................... 22  GENDER AND PURPOSE OF STATUS UPDATES ........................................................................... 22 
+RESEARCH QUESTION 2: THE INFLUENCE OF FACEBOOK  
+USAGE ON SELF-ESTEEM AND WELL-BEING ..............................................................................................23  FACEBOOK USAGE AND SELF-ESTEEM....................................................................................... 23  SOCIAL COMPARISON AND SELF-ESTEEM ................................................................................ 23  FACEBOOK USAGE AND WELL-BEING.......................................................................................... 23  GENDER DIFFERENCES ............................................................................................................... 23  EDUCATIONAL DIFFERENCES...................................................................................................... 23  INCOME DIFFERENCES................................................................................................................. 23 
+WHO USES FACEBOOK THE MOST? .............................................................................................. 23  SOCIAL COMPARISON AND WELL-BEING................................................................................... 23 
+DISCUSSION..................................................................................................................................................24 HOW FACEBOOK IS USED ............................................................................................................. 24  FACEBOOK USAGE AND SOCIAL COMPARISON ......................................................................... 24  GENDER DIFFERENCES IN FACEBOOK USAGE ........................................................................... 25  AGES DIFFERENCES IN FACEBOOK USAGE................................................................................ 25  FACEBOOK USAGE AND WELL-BEING.......................................................................................... 26 WHY IS THE RELATIONSHIP SALIENT ONLY FOR WOMEN? ....................................................... 26 WHAT ABOUT THE REVERSE? ....................................................................................................... 26  FACEBOOK USAGE AND SELF-ESTEEM....................................................................................... 26 WHY IS FACEBOOK USAGE RELATED TO WELL-BEING BUT NOT SELF-ESEEM? ...................... 27 
+CONCLUSIONS ...............................................................................................................................................28  LIMITATIONS OF THIS STUDY ..................................................................................................... 28  FUTURE RESEARCH ...................................................................................................................... 29 
+REFERENCES..................................................................................................................................................30 ABOUT THE AUTHORS....................................................................................................................................31 APPENDIX A – TABLES ..................................................................................................................................32
+7 
+INTRODUCTION 
+FACEBOOK TODAY 
+Social media is becoming a more and more important part of  our lives. Today, the most popular channel is Facebook with  over 845 million active users. Founded in 2004 by Mark  Zuckerberg, Facebook was originally intended as a digital  student catalogue, making it easier for students to expand  their social network.1 
+Facebook has become a personal showcase where users share  whatever goes on in their life. $e Facebook platform allows  users to spread news about themselves and their pictures and  films. $ey can get in touch with old friends, initiate group  discussions and even directly interact with companies and  public organizations.  
+In modern society, Facebook has also become a tool for opin ion forming and propaganda. $ere are now numerous ex amples of people with various interests that have found each  other via Facebook and, united, managed to influence the  world. Facebook was, for instance, a significant instrument  during the recent revolutions in both Tunisia and Egypt, giv ing activists and viewers the opportunity to communicate,  coordinate and document the occurrence.2 
+Despite its size, Facebook is still expanding rapidly. $e  number of Swedish users has increased by two million over  the past two years, and today almost one in two swedes are  active members. $is adds up to a total of 4.5 million Swed 
+ish users. 55 percent are male and 45 percent are female.  $e largest group is 25–34 years old, representing almost  one million members.3 However, during the last six months  57–64 year-olds is the group that has grown the most.4 
+A SOCIAL PERSPECTIVE ON BEING HUMAN Human beings are born social and are constantly socialized  through interacting and communicating with others. We  pursue to connect with people and without affiliation with  others we find it difficult to derive a deeper meaning from  our lives.5 
+AFFILIATION, A BASIC HUMAN NEED Being social beings, we interact with friends, family, col leagues and even strangers. According to Abraham Maslow’s  well-known hierarchical theory of basic human needs, af filiation is a basic psychological need that emerge the instant  the physiological and primary needs are met. We affiliate be cause of four underlying psychological reasons;  i. to receive emotional support  
+ii. to obtain positive stimuli  
+iii. to receive attention  
+iv. to compare ourselves to others via a process called social  comparison.6 
+Significant research indicates that the need of affiliation is  powerful, fundamental and with an extremely pervasive  motivation for human beings. Research has also shown that  maintaining positive relationships is an important factor for  satisfaction with life. 7 
+THE INTERNET 
+$e emergence of the Internet has made it easier for people  to interact with each other now than ever before. $ere are  fewer barriers for communication today and the boundaries  between local and global are gone. $us, social interaction  has increased as a function of greater accessibility to the out 
+side world.8 Yet, the current field of research yields relatively  few studies that represent the psychological effects of social  network use.9 
+AIMS OF THIS STUDY  
+Since Facebook is the largest social network we believe that it  is important to investigate those effects. In this report we aim  to answer two questions related to Facebook usage and the  corresponding psychological effects. First, we aim to investi 
+gate which areas of Facebook usage that are considered more  important vis-a-vis less important. We are also interested in  how Facebook users convey their persona through their sta tus updates, including what they status update about, and  the underlying reasons for updating one’s status. Second, we  
+1 Phillips, S. (2007). A brief history of Facebook. $e Guardian, viewed February 2 2012, http://www.guardian.co.uk/technology/2007/jul/25/media.newmedia#history-link-box 2 Al-Reufeye, S. (2011). Facebook i revolutionerna - En studie om användningen av Facebook i revolutionerna i Tunisien och Egypten. Karlstad: University of Karlstad  3 Socialbakers (2012). Viewed February 2 2012, http://www.socialbakers.com/facebook-statistics/sweden. 
+4 Sundén, S (2011). Facebook Sverige Statistik 2011. Viewed February 5 2012, http://www.joinsimon.se/facebook-statistik-2011/ 
+5 Nilsson, B. (2006). Samspel i grupp. Lund: Studentlitteratur 
+6 Passer, M., Smith, R., Holt, N., Bremner, A, Surtherland, E., & Vliek, M. (2008). Psychology, the science of mind and behaviour. 1st European ed. London: McGraw Hill Higher Education 7 ibid. 
+8 Giddens, A. (2006). Sociology. 5th ed. Politer Press. 
+9 Gosling. S. D. (2011). Manifestations of personality in online social networks: Self-reported Facebook-related behaviors and observable profile information. Cyberpsychology, Behavior and Social Networking,  14, 483-487.
+8 
+INTRODUCTION 
+aim to investigate what psychological effects Facebook may  induce. More specifically, we look at the psychological con structs self-esteem and well being in relation to Facebook  usage. 
+BEING SOCIAL ON FACEBOOK 
+On Facebook, users can chat, send “pokes” (a feature used  to attract the attention from another user, although no body knows what a “poke” really means), “like” each others  pictures and status updates (signified by a thumbs up sign),  and publish pictures and status updates. Facebook users  can also write on friends walls and send personal messages.  Furthermore, users can “check in” to different places depend 
+ing on where they are located, sending a virtual “I was here”  message. Altogether, communication on Facebook between  users is more or less transparent and constantly accessible  – anyone can contact a user or find out what he or she are  doing at any time and vice versa. 
+Recent research has shown that Facebook users’ main pur pose for using Facebook is to be aware of activities in their  social network. 10 Another study found that the most promi nent habits were status updating, connecting with friends  and family, uploading content such as pictures, and “social  network surfing” – i.e. virtual people watching11. $us, bear ing in mind Facebook’s high membership, we conclude that  Facebook offers a platform that most effectively serves peo ples’ fundamental social needs, albeit in a slightly different  way compared to offline life. 
+INDIVIDUAL IDENTITY  
+AND SOCIAL COMPARISON 
+Some influential theorists even claim that social interaction  is so fundamental that we become human beings first when  we interact with other people.12 What we develop in these  interactions, among other things, is our individual identity –  our sense of ourselves. 
+Our identity consists of different components. For instance,  
+self-perception refers to the image we have of ourselves. Self esteem is the assessment of oneself ’s worth, and self-confi dence is the extent we believe in our own abilities. 
+To an extent, other people are our mirrors in which we con tinuously reflect ourselves. We have a ongoing need of ac quiring information about ourselves in order to answer un derlying questions about our identity. For example, “Am I a  
+cool person?” (self-perception), “Am I a successful person?”  (self-esteem) and “Am I a capable person?” (self-confidence). 
+To address these questions, we need information about oth ers. To obtain this information, we observe the actions of  other people and subsequently assess where we stand on a  continuum of skills, abilities, and so forth, compared to oth ers. For instance, let’s say a person runs 100 meters in 13  seconds flat. If this person is a hermit, living all by him- or  herself without human contact, it is virtually impossible to  know if this is fast or slow, unless the person compares the  time to someone else who runs the same distance.  
+Extending this example, it is clear that in order to gauge  where we stand on a multitude of skills, abilities, traits, and  so forth, including “coolness”, “success”, and “capability”, we  need to constantly compare ourselves to others. According  to Suls, Martin and Wheeler, “social comparison consists of  comparing oneself with others in order to evaluate or to en hance some aspects of the self ”.13 
+SOCIAL COMPARISON ON FACEBOOK Facebook and other related social networking sites offers an  excellent and never before seen arena for this comparison.  
+First, through these sites, users have access to more people  to compare themselves to than ever before in history. $e  average Facebook user has around 130 friends according to  statistics from Facebook in February, 2012.  
+Second, the depth of information is greater than ever before.  
+10 Quan-Haase, A., & Young, A. L. (2010). Uses and gratifications of social media: A comparison of Facebook and instant messaging. Bulletin of Science Technology & Society, 30, 350-361. 11 Joinson, A. N. (2008). ‘Looking at’, ‘Looking up’ or ‘Keeping up with’ people? Motives and uses of Facebook. Paper presented at the 2008 proceedings of the twenty-sixth annual SIGCHI conference on human  factors in computing systems. 
+12 Nilsson, 2006, op. cit. 
+13 Suls, J., Martin, R., & Wheeler, L. (2002). Social comparison: Why, with whom, and with what effect? Current Directions in Psychological Science, 11, 159–163, p. 159.
+9 
+INTRODUCTION 
+$rough pictures, status updates, and personal information  Facebook users can infer information about other people  such as work, family, marital status, habits, hobbies and va cation preferences. $is also allows for drawing crude infer ences about more psychological phenomena, such as peoples’  happiness and success. 
+SELF-PRESENTATION ON FACEBOOK However, the information on Facebook may be biased.  People are often interested in presenting themselves in a  more positive manner than may be the reality.14 $is hap pens all the time in the real world. At the work interview,  we wish to convey an image of ourselves as being ambitious  and hard working, and at the lunch table with our colleagues,  we wish to convey an image of having interesting lives when  asked the question “what did you do this weekend?”. 
+People do this for a number of reasons. First, we may have  conscious or unconscious agendas or goals with the kind of  information we present about ourselves. For instance, peo ple who are single and are searching for a partner may wish  to convey an image of being funny, smart, interesting, good  looking or otherwise “dateable”. A person in search of a job  or career opportunities may wish to convey an image of be 
+ing successful, knowledgeable, capable, and so forth. Second,  social norms and rules in the social situation may dictate that  we simply want to avoid to sound negative or pessimistic, be cause if we come across as too negative, fewer people may  want to interact with us. $ird, given that people are engaged  in a number of events each day, it is perhaps more likely that  an event more “worthy” to report is being reported (e.g. at 
+tended the opening of the new/hip restaurant) than events  less worthy to report (e.g. ate a sandwich). 
+It is plausible that these self-presentation biases are present  on Facebook.15 On Facebook, people may choose which parts  of their lives to present to others. It is likely, from the reasons  explained above, that people choose to present those parts of  their lives that are a bit more extravagant, funny, interesting  
+14 Goffman, E. (1959). $e presentation of self in everyday life. New York: Anchor Books. 
+and so forth, in order to come across as a person that does  extravagant, funny and interesting things.16 
+WHEN SOCIAL COMPARISON MAY  MISFIRE ON FACEBOOK 
+When the information on Facebook is biased towards the  positive end of the positive-negative continuum, i.e. when  people are seemingly more extravagant, interesting and suc cessful – the social comparison process may produce adverse  effects when individuals’ own (moderately interesting, quite  mundane) lives are being compared to the lives of their Face book friends. From this skewed comparison, individuals may  falsely infer that they are living less interesting lives, and that  they are less successful than what may be the case. 
+THE EFFECT ON INDIVIDUALS’  
+SELF-ESTEEM AND WELL-BEING 
+$is process of skewed comparison with a biased source of  information may in turn impact Facebook users self-esteem  and how they feel. To exemplify, people might ask themselves  questions such as “Why am I sitting here while my friends  are visiting expensive restaurants?”, “Why aren’t my spouse  and I going to New York for a shopping weekend?” – these  activities are being reported because it is more interesting to  report such activities than mundane everyday events. $us,  Facebook users who engage themselves in social compari son may feel that they are worth less than other people and  consequently feel worse when they think that their own lives  don’t measure up to the seemingly happier lives of their Fa cebook friends. 
+15 Mehdizadeh, S. (2010). Self-Presentation 2.0: Narcissism and self-esteem on Facebook. Cyberpsychology, Behavior and Social Networking, 13, 357–364. 16 Peluchette, J., & Karl, K. (2010). Examining students’ intended image on Facebook: “What were they thinking?!”. Journal of Education for Business, 85, 30–37.
+10 
+RESEARCH QUESTIONS 
+In this report, we aim to address two main research ques tions.  
+RESEARCH QUESTION 1 
+First, because of Facebook’s overwhelming popularity and  day-to-day usage, we wanted to investigate the most impor tant uses of Facebook. Our first research question pertains  to how much and for what reasons Facebook is used, both  generally and across genders and age groups. More specifi cally, we looked at how much Swedish Facebook users use  Facebook, what users consider to be the most important uses  of Facebook, what users usually write status updates about,  and the main underlying reasons for writing status updates.  
+RESEARCH QUESTION 2 
+For this research question, we wanted to investigate potential  relationships between Facebook usage (i.e. time spent on Fa cebook) and social comparison behavior on self-esteem and  subjective well-being. Our expectations were as follows:  
+First, we expected a negative relationship between Facebook  usage and self-esteem and well-being, respectively, in that  higher Facebook usage is related to lower self-esteem and  well-being.  
+Second, we expected a negative relationship between social  comparison behavior and self-esteem and well-being, respec tively, in that more frequent social comparison behavior is  related to lower self-esteem and well-being. 
+CONTENT  OF STATUS  UPDATES 
+PATTERN  
+OF USAGE 
+Figure 1. Our first research question.
+PURPOSE  OF STATUS UPDATES 
+11 
+PROCEDURE 
+On June 10, 2011 we created an event on the social network  site Facebook. Participants were invited from the friend net works of seven members of the research team. $e event was  used both to keep participants informed of the progression  of the survey, and as a link between the participants and the  research team. $e participants attending the event were  also asked to invite their own friends and acquaintances, for  example by writing status updates, e-mails, blogs, on twit 
+ter, and so on. Finally, when the questionnaire was distrib uted, the event was used as a distribution channel, and event  members were asked to spread the link to the questionnaire  to their friends and acquaintances. Everyone who took the  questionnaire was also encouraged to spread the question naire link to their friends and audiences. $is lead to a “snow ball effect”, where the initial 601 event members grew to over  one thousand respondents. $e event was active the four  weeks prior to the distribution of the questionnaire, as well  as during the six weeks that the questionnaire was kept open.  We are therefore confident that even casual Facebook users  would have had plenty of opportunity to take note of the  questionnaire and answer it.  
+PARTICIPANTS 
+$e sample consisted of 1011 participants. Out of these, 335  were men (33.1 %) and 676 were women (66.9 %). $e av erage age was 32.6 years (men = 33.0 years, women = 32.4  years). $ree age groups were created with approximately  33.3% of the participants in each group; 36.2 percent were  aged 14–26, 30.6 percent were aged 27–35, and 33.2 percent  were 36 years or older. In regard to education, 49.4 percent  had Swedish gymnasium degrees or less, 49.5 percent had  bachelor’s, master’s degrees or equivalent, and 1.1 percent  had doctoral degrees. 29.3 percent stated that they were  students, 70.7 percent that they had part time or full time  employment and 7.8 percent that they were unemployed.  Some overlap is present in this variable, i.e. a person can be  
+both a student and a part time worker. On average, partici pants have had a Facebook account for 3.6 years. $e average  number of Facebook friends was 312 (men = 343, women  = 297). 
+MATERIALS 
+$e web-based questionnaire had four sections:  i. Presence on Facebook  
+ii. usage of Facebook  
+iii. psychometric measures 
+iv. background information  
+PRESENCE ON FACEBOOK 
+In the first section of the questionnaire, respondents an swered questions about their presence on Facebook, includ ing how many Facebook friends they have, how many min utes they spend on Facebook a regular day, how large part of  
+an hour spent on the Internet was spent on Facebook, as well  as how many times they log into Facebook on a regular day.  
+USAGE OF FACEBOOK 
+In the second section of the questionnaire, respondents an swered questions regarding their usage of Facebook. Eight  items about habitual Facebook usage were adapted from the  Self-Report Habit Index (e.g. “I often begin logging in to  Facebook before I realize I do it”)17. Seventeen items were  adapted from two studies on Facebook usage, one study by  Joinson18, and the other by Quan-Haase and Young19. Exam 
+ples of items are “Find out what old friends are doing today”  and “Write status updates”. $e respondents were to rate the  importance of each of these uses on a 6-point scale ranging  from 0 (Not at all important) to 5 (Very important). Ad 
+ditionally, 8 items were created to assess to what degree the  respondents write status updates about different subjects,  for example “Everyday events” and “Major events in my life”,  these were rated on a 6-grade scale ranging from 0 (Not  
+17 Verplanken, B., & Orbell, S. (2003). Reflections of past behavior: A self-report index of habit strength. Journal of Applied Social Psychology, 33, 1313–1330. 18 Joinson, 2008, op. cit. 
+19 Quan-Haase & Young, 2010, op. cit. 
+20 Joseph, S., Linley, P. A., Harwood, J., Lewis, C. A., & McCollam, P. (2004). Rapid assessment of well-being: $e Short Depression-Happiness Scale (SDHS). Psychology and Psychotherapy: $eory, Research  and Practive, 77, 463–478. 
+21 Rosenberg, M. (1965). Society and the adolescent self-image. Princeton, NJ: Princeton University Press.
+12 
+PROCEDURE 
+at all) to 5 (In a very high degree). Last, 9 items assessed  the purpose of the status updates, rated on a 6-point scale  ranging from 0 (Not true at all) to 5 (Completely true). $e  8-item and 9-item scales were created based on discussions  within the group of authors.  
+PSYCHOMETRICS 
+In the third section of the questionnaire, respondents an swered six questions about subjective well-being and eight  about self-esteem. Well-being was assessed using the Short  Depression-Happiness Scale (SDHS; e.g. “$e conditions  of my life are excellent”)20 and self-esteem was assessed us ing the Rosenberg Self-Esteem Scale (e.g. “I feel that I have  a number of good qualities”)21. Both of these scales were  rated on 6-grade scales, ranging from 0 (Not at all true) to 5  (Completely true).  
+BACKGROUND INFORMATION 
+Last, background information was assessed, including gen der, age, education, income level, marital status, and employ ment.
+13 
+METHODS OF ANALYSIS
+DATA PREPARATION AND SCREENING First, we screened the data for cases that could be considered  outliers. Four participants were excluded from the sample be cause they had entered unrealistic figures (e.g. 10^35) in the  following items: “Roughly how many minutes do you spend  on Facebook a normal day?” and “Roughly how many times  do you log on to Facebook a normal day?”. For the measures  ‘well being’ and ‘self esteem’, we recoded the items that were  reverse coded and calculated mean weighted indexes for the  measures. 
+RESEARCH QUESTION 1 
+To analyze the data for research question 1, we used Pear son’s chi-squared test to assess differences between genders  and age groups on various variables that were designed to  measure participants;  
+i. Facebook usage 
+ii. status update content 
+iii. underlying purpose for writing status updates.  For this report, we chose to convert all scales to 2-grade  nominal scales (e.g. agree vs. disagree). Increments 0–2 were  converted to the first value, and increments 3–5 were con verted to the second. We judged that the gain in terms of  ease of presentation was more important than keeping the  original scale (with it’s higher power) at this point. Detailed  results from Pearson’s chi-squared test on the nominal scale  are presented in tables 1–4, appendix A.  
+RESEARCH QUESTION 2 
+To analyze the data for research question 2, we conducted a  series of hierarchical multiple regression analyses. $e cri terion variables were i. self-esteem and ii. well-being. $e  predictor variables were i. “Roughly how many minutes do  you spend on Facebook a normal day?” and ii. “I usually com pare my profile to others, for example how many Facebook  friends I have”. $us, because we had two predictor variables  and two criterion variables, we conducted four analyses in  total. In each analysis we controlled for i. gender, ii. age, iii.  educational differences and iv. differences in annual income. 
+$e analysis strategy was as follows. For each criterion vari able, we entered either of the two predictor variables in a first  step in the hierarchical multiple regression analysis. In a sec ond step, we entered the control variables. If a relationship  between the predictor variable (e.g. Facebook usage) and  the criterion variable (e.g. well-being) was significant after  controlling for our control variables, we then proceeded to  conduct subgroup analyses (gender, age, education, income)  to assess where the relationship is present. Detailed results  from these analyses are presented in tables 5–9, appendix A.  
+Means, standard deviations and inter-correlations for the  study variables (Facebook usage, social comparison behavior,  self-esteem, well-being, gender, age, education, and income)  are presented in table 10, appendix A. 
+14 
+RESEARCH QUESTION 1: 
+FACEBOOK USAGE 
+HOW MUCH DO PEOPLE USE FACEBOOK? On average, the respondents log on to Facebook 6.1 times  a day and spend a total of 75.2 minutes logged in. About  one third of the 1011 respondents answered that they spend  fifty percent or more of their daily online-time on Facebook  (29.2% agreed to this statement).  
+Facebook is a daily routine for 84 percent of Swedish users As many as 84.0 percent of the respondents agreed that log ging on to Facebook belong to their daily routine, and 69.7  percent agreed that they log on to Facebook every time they  start their computer or their web browser. Facebook usage  seems to be habitual to a large portion of the respondents.  Short of half agreed that they sometimes log on to Facebook  when they had intended to do something else (43.3%), 42.2  percent that they sometimes log on to Facebook without  thinking about it, and 29.8 percent that they often start to  log in to Facebook before they realize that they are doing it.  Furthermore, 43.3 percent feel they do not keep up if they  do not log on to Facebook for a long time, and 25.8 percent  would feel ill at ease if they did not log on to Facebook for a  long time.  
+0       
+-)0  
+,&0  
+75.2 MINUTES: 
+THE AVERAGE TIME SPENT ON  FACEBOOK EVERY DAY. 
+6.1 TIMES: 
+THE AVERAGE NUMBER OF LOGINS TO FACEBOOK EVERY DAY. 
+70%  
+LOG ON TO FACEBOOK EVERY TIME  THEY START THEIR COMPUTER. 
+25.8%  
+FEEL ILL AT EASE WHEN AWAY  FROM FACEBOOK. 
+0        
+Figure 2. Habitual Facebook usage.  
+Percentage of users who agree (vs.  
+disagree) with the statements.  
+)*0  )(0  )'0  
+)*0  )(0  )'0    
+(&0 '+0  
+(&0 '+0  
+          
+     
+                   
+  
+     
+
+    
+            
+      
+                  
+                 
+    
+            
+        
+ 
+       "      
+
+            
+         
+          
+      #  
+        
+       
+ 
+     
+
+                        
+            
+               
+                  
+         
+          
+                 
+       
+      #  
+        
+    
+                   
+15 
+RESEARCH QUESTION 1: FACEBOOK USAGE 
+GENDER AND FACEBOOK USAGE 
+Although women and men do not differ significantly in the  number of times they log on to Facebook each day (6.1 times  for women vs. 6.2 times for men) or in their agreement that  logging on to Facebook belong to their daily routine (84.8%  for women vs. 82.4% for men), females spend 17 more min 
+utes on Facebook than males (81 minutes for women vs. 64  minutes for men). And 35.7 percent of women agree that  they spend 50 percent or more of their online-time on Face book, compared to only 16.1 percent of men.  
+Facebook usage also seems to be more habitual for women  respondents, as more women than men agree that they log  on to Facebook every time they start their computer or their  web browser (74.6% of women vs. 60.0% of men). Some 
+times they log on to Facebook when they had intended to do  something else (49.6% vs. 34.9%), sometimes they log on to  Facebook without thinking about it (45.3% vs. 33.1%), and  that they often start to log in to Facebook before they realize  that they are doing it (33.7% vs. 21.8%). More women feel  like they would not keep up if they did not log on to Face book for a long time (51.2% vs. 27.5%) and that this would  make them feel ill at ease (30.0% vs. 17.3%). Women and  younger age groups seem to be more engaged and active on  Facebook than men and older users. 
+AGE AND FACEBOOK USAGE 
+$e age groups differ in how much they use Facebook. Re spondents between ages 14–26 spend 82.5 minutes on aver age on Facebook, ages 27–35 spend 72.7 minutes, and ages  36–73 spend 69.2 minutes.  
+Furthermore, 36.0 percent of the youngest age group said  they spend 50 percent or more online-time on Facebook,  whereas 25.2 percent and 25.7 percent of the middle and  oldest age group agreed to this statement respectively.  Younger respondents seem to use Facebook in a more ha 
+bitual manner than older respondents. More members of the  younger age group agreed that they log on to Facebook every  time they start their computer or their web browser (81.1%;  73.5%; 53.7% for the young, middle and older age group  respectively), sometimes log on to Facebook when they  had intended to do something else (61.4%; 45.3%; 25.7%),  sometimes log on to Facebook without thinking about it  (58.4%; 43.4%; 20.3%), and that they often start to log in to  Facebook before they realize that they are doing it (49.3%;  30.1%; 14.3%). Younger respondents were also more likely  to feel like they would not keep up if they did not log on to  
+81 MINUTES:  
+THE TIME SWEDISH WOMEN SPEND ON FACEBOOK EVERY DAY. 
+64 MINUTES:  
+THE TIME SWEDISH MEN SPEND ON  FACEBOOK EVERY DAY. 
+1/3 
+OF WOMEN USERS WOULD FEEL ILL  AT EASE IF THEY DID NOT LOG ON  TO FACEBOOK FOR A LONG TIME. 
+YOUNG PEOPLE 
+SPEND THE MOST TIME ON  
+FACEBOOK. AGES 14–26 SPEND 82.5 MINUTES PER DAY.
+Facebook for a long time (47.4%; 44.3%; 37.9%) and that  this would make them feel ill at ease (29.9%; 24.9%; 22.1%).  A larger proportion of the youngest age group and the mid dle age group agreed that logging on to Facebook belong to  their daily routine, compared to the oldest age group (86.3%;  89.0%; 76.7% of the youngest, middle and oldest age groups  respectively). See table 1 in appendix A for an overview of  Facebook usage.  
+WHAT ARE THE MOST IMPORTANT USES OF FACEBOOK?  
+Most respondents seem to use Facebook to maintain their  existing social contacts and networks. A large majority of  the respondents agreed that an important use of Facebook  is to maintain contact with people one does not meet so of 
+ten (88.1%), as well as to maintain ones contacts in general  (82.5%).  
+Other social applications of Facebook were also generally  agreed upon as important, for example to showing others  encouragement (69.1%) and letting other people know they  
+16 
+RESEARCH QUESTION 1: FACEBOOK USAGE 
+care about them (65.8%). Furthermore, many respondents  use Facebook as a way to stay updated on the lives of their  friends (old and new). For example, to look at other peoples  photos (63.3%), find out what old friends are doing now  (62.7%), and visit the profiles of friends (49.6%).  
+Escapism was generally less agreed upon as an important  use of Facebook, as relatively few respondents thought that  passing time (55.9%), getting away from things one ought to  do (27.0%), as well as getting away from responsibilities and  pressure (21.9%) was an important use of Facebook. Getting  to know more people (32.5%), and visit profiles of people  
+one does not know (19.6%), were also less important to a  majority of respondents. $e least important use of Face book was to “tag” people in photos (8.2%).  
+0       
+226  
+2-6    
+116  
+036  006  0-6  0-6  
+)*0  )(0  )'0  
+6        
+/06  
+/*6  .16  
+Figure 3. $e importance of differ 
+ent uses of Facebook. Percentage of  
+users who agree (vs. disagree) that  
+the use is important to them. 
+--6  ,36  ,16 ,,6  ,*6  +36  
+(&0 '+0  
+      #  $                               !    
+26  
+     $ %           #                    %   
+   $     #          
+          $              
+         #  #        
+                   #     
+         #  #        
+
+         #      
+                   
+              $           #        
+                          
+     $ %                #           
+                 #     
+             '          
+ 
+     
+
+    
+            $                 
+      
+                  
+                 
+    
+            
+                             '     $  
+                    
+         
+          
+      #  
+        
+ 
+       
+ 
+17 
+RESEARCH QUESTION 1: FACEBOOK USAGE 
+GENDER AND IMPORTANT USES OF FACEBOOK 
+Men and women differ significantly in regard to what they  think are important uses of Facebook. Generally, more  women agreed that any given use of Facebook was impor tant when compared to men. Social applications of Facebook  were typically more important for women than for men, for  example letting other people know they care about them  (71.9% vs. 53.4%), visiting the profiles of friends (55.8% vs.  37%), and showing others encouragement (74.6% vs. 58.2%).  Men and women did not differ in respect to getting to know  more people, visit profiles of people one does not know and  “tag” people in photos.  
+AGE AND IMPORTANT USES OF FACEBOOK $e different age groups were generally in agreement over  how important the social applications of Facebook were, for  
+OLDER 
+FACEBOOK USERS USE  FACEBOOK TO GET TO KNOW MORE PEOPLE. 
+67.1%  
+OF YOUNG USERS USE  FACEBOOK TO PASS TIME.  
+               
+                
+Figure 4. Gender differences in  the importance of selected uses of  Facebook. Percentage of users who  agree (vs. disagree) that the use is  important to them.  
+# '  
+#!'  # '    
+!"'  !$' ! '  !"'  ! '    
+ #'  
+ #'  
+                                                                         
+                                                        
+  
+18 
+RESEARCH QUESTION 1: FACEBOOK USAGE
+example maintain contact with people one does not meet so  often and to maintain ones contacts in general. However,  there were some differences, for example, older respondents  thought it was more important to use Facebook as a means  to getting to know more people, letting others know they  care about them, and to show encouragement. 
+Younger respondents generally thought that passing time  and to get away from things one should do was a more  important use of Facebook than older respondents did.  
+$ey were also more interested in visiting friends profiles  and profiles of people one does not know. See table 2 in ap pendix A for a detailed overview of the important/unimpor tant uses of Facebook.  
+-/2 -)2  -&2  ,-2  
+    '*#(,      (-#)+      ),#-)  
+Figure 5. Age differences in the  
+importance of selected uses of Fa 
+cebook. Percentage of users who  
+agree (vs. disagree) that the use is  
+important to them.  
+,-2  
+,&2  +.2  
++-2  
++,2  
++(2  
+)/2  *(2  *&2  )'2  
+(.2  
+),2  
+(/2  
+(+2  
+ 
+      
+ 
+         
+                 
+            
+                      
+  
+  
+  
+                                  
+'/2  
+                                     
+'/2  
+'&2  
+                           "         
+19 
+RESEARCH QUESTION 1: FACEBOOK USAGE 
+WHAT ARE STATUS UPDATES TYPICALLY  ABOUT?  
+A large majority of respondents answered that their status  updates are typically about positive things that has happened  to them (77.3%) as well as major events in their lives (68.7%).  
+Many also write updates about everyday events (65.7%) and  about feeling good (51.0%). It was less common to write up dates about private/personal events (38.1%), negative things  that has happened to them (37.6%), relationships (26.1%)  and about feeling bad (15.6%).  
+77.3% 
+OF FACEBOOK USERS TYPICALLY  WRITE ABOUT POSITIVE THINGS. 
+37.6%  
+WRITE ABOUT NEGATIVE THINGS. 
+0       
+((-  
+'*-  ''-    
+&#-  
+%)-  %)-  
+)*0  )(0  )'0  
+-        
+Figure 6. What status updates are  usually about. Percentage of users  who answered that they write about  the given topic to a high degree (vs.  low degree). 
+$'-  
+#'-  
+                                 
+          
+(&0 '+0  
+                                                      
+      
+
+    
+            
+      
+                  
+                  
+  
+                
+  
+                   
+         
+          
+                       #  
+        
+  
+    
+                   
+  
+20 
+RESEARCH QUESTION 1: FACEBOOK USAGE 
+GENDER AND STATUS UPDATES 
+Men and women differ in regards to what they typically  write about. Women will for example more often write up dates about when they are feeling good and relationships,  while men and women write about negative things that has  happened to them about as often (39.6% for women vs.  33.4% for men). Men did not seem to write more about  any given subject than women.  
+AGE AND STATUS UPDATES 
+Older respondents more often write about everyday events  (62.2%; 61.2%; 73.4% for the youngest, middle and oldest  age groups respectively), private/personal events (25.5%;  39.5%; 50.1%) and relationships (20.8%; 26.5%; 31.3%),  
+and also about when they are feeling bad (11.2%; 18.1%;  17.9%), whereas younger respondents slightly more often  write about major life events (69.9%; 72.8%; 63.6%). $e  age groups did not differ significantly in how often they  write about positive and negative things that has happened  to them, or about when they are feeling good. See table 3 in  appendix A for an overview. 
+WOMEN WRITE 
+MORE ABOUT FEELINGS 
+AND RELATIONSHIPS. 
+ 
+  
+     
+ 
+% )  
+$$)    
+$&)  
+"%)  
+"!)  
+ 
+  
+     
+  
+$&)  
+"%)  
+ #)  
+Figure 7. Selected gender differ ences in what status updates are  usually about. Percentage of users  who answered that they write about  the given topic to a high degree (vs.  low degree). 
+"!)  
+ #)  
+  
+    
+
+            
+    
+
+      
+                   
+    
+
+      
+           
+21 
+RESEARCH QUESTION 1: FACEBOOK USAGE 
+WHAT IS THE PURPOSE OF USERS STATUS 
+UPDATES?  
+Most respondents answered that the purpose of their sta tus updates was to amuse others, as well as express thoughts,  broadcast information and knowledge and express feelings.  Fewer answered that the purpose of their status updates was  to get attention, acknowledgement, vent, provoke others or  brag.  
+GENDER AND PURPOSE OF 
+STATUS UPDATES.  
+Whereas women more often wanted to express their thoughts  (71.9% of women vs. 65.1% of men) and feelings (55.6% vs.  39.1%), men more often wanted to spread information and  knowledge (57.0% of women vs. 65.7% of men) as well as  provoke others (21.2% of women vs. 36.7% of men).  
+Age and purpose of status updates. $e age groups were gen erally in agreement as to the purpose of their status updates,  however, there were some differences. Younger respondents  were less likely to broadcast information/knowledge (53.4%;  61.8%; 64.8%), provoke others (21.6%; 26.5%; 31.0%) and  express thoughts (64.4%; 73.8%; 71.6%). See table 4 in  appendix A.  
+0       
+,+1  
+,&1  
++&1  
+*&1  
+)*0  )(0  )'0  
+AMUSING OTHERS:  THE MAIN REASON FOR WRITING STATUS UPDATES. 
+1/4 
+OF SWEDISH USERS BRAG 
+ON FACEBOOK. 
+WOMEN 
+WANT TO EXPRESS THEIR 
+THOUGHTS AND FEELINGS MORE. 
+1/3 
+OF THE MEN WANT TO PROVOKE ON  FACEBOOK. THAT’S TWICE AS MANY  COMPARED TO THE WOMEN. 
+OVER 50%  
+BROADCAST INFORMATION AND KNOWLEDGE ON FACEBOOK.  
+1      
+Figure 8. $e purpose of status  
+updates. Percentage of users who  
+think that the statement is true (vs.  
+untrue) about the purpose of their  
+status updates. 
+(.1  (.1  
+'-1  '+1  ')1  
+(&0 '+0  
+    
+    
+    
+    
+          #         !                          
+        
+         
+ !                
+   
+        
+  
+           
+        
+   
+
+                    
+            
+               
+                            
+                       #  
+        
+  
+    
+                   
+22 
+       
+RESEARCH QUESTION 2 
+THE INFLUENCE OF FACEBOOK USAGE ON SELF-ESTEEM  AND WELL-BEING. 
+FACEBOOK USAGE AND SELF-ESTEEM We entered Facebook usage (“Roughly how many minutes  do you spend on Facebook a normal day?”) as a predictor on  the self-esteem index in a hierarchical multiple regression  analysis. Results showed that Facebook usage had a signifi cant negative relationship with self esteem (b = –.074, p <  .05). In other words, the results indicated that users who  spend more time on Facebook have lower self-esteem. How ever, when we entered the control variables gender, age, edu cation and income, the relationship between Facebook usage  and self-esteem was not significant (b = –.029, p > .369). See  table 5, appendix A. 
+SOCIAL COMPARISON AND SELF-ESTEEM Social comparison and self-esteem. In the next regression  analysis, we entered the predictor social comparison behavior  (“I usually compare my profile to others, for example how  many Facebook friends I have”) on the self-esteem index. We  found a significant negative relationship with self esteem (b  = –.082, p < .05). $ose who compare themselves more have  lower self esteem. Control variables were gender, age, educa tion and income (see table 6, appendix A). 
+From these analyses we conclude that Facebook usage is not  related to self-esteem when controlling for demographic  variables, but the amount of social comparison is negatively  related. 
+WOMEN 
+WHO USE FACEBOOK MORE HAVE  LOWER WELL-BEING. NO RELATION SHIP FOR MEN.
+FACEBOOK USAGE AND WELL-BEING When well-being was the criterion and we entered the pre dictor Facebook usage, we found a significant negative rela tionship between Facebook usage and well-being, controlling  for gender, age, education and income (b = –.078, p < .05).  In other words, users who spend more time on Facebook also  have lower subjective well being (see table 7, appendix A). 
+GENDER DIFFERENCES 
+Further analyses showed that this relationship only holds for  women (b = –.088, p < .05). For men, this relationship is not  significant (see table 8, appendix A). 
+EDUCATIONAL DIFFERENCES 
+In regard to education, the negative relationship is present in  the group with gymnasial degrees or lower (b = –.109, p < .05),  whereas the relationship is not significant in the university  educated group (see table 8, appendix A).  
+INCOME DIFFERENCES 
+$e relationship was near significant in the group with the  lowest income (0–200.000 SEK / year) (b = –.100, p = .053),  while it was not significant in the other income groups (see  table 8, appendix A).  
+WHO USES FACEBOOK THE MOST? 
+$e low education – low income groups are the groups that  use Facebook the most compared to the high education –  high income groups. In our sample, those who reported  gymnasial degrees or less (this group includes university stu 
+dents) spent 85 minutes on average, while those with univer sity degrees spent 65.2 minutes on average. Moreover, the low  income group (0–200.000 SEK / year) spends 90 minutes  per day on average, while the middle income group (200.000  – 350.000 SEK / year) and high income group (350.000  SEK / year) spends 74 and 49 minutes respectively.  
+Last, women spend 81 minutes each day on Facebook, while  men spend 64 minutes. 
+SOCIAL COMPARISON AND WELL-BEING In our last analysis, we entered social comparison behavior on  well-being and found a significant negative relationship with  well-being, controlling for age, gender, education and income  (b = –.111, p < .001). See table 9, appendix A.  
+We conclude that Facebook usage is significantly related to well  being, when controlling for demographic variables. $is rela tionship is salient for women, groups with low education and  low income. Intensity of social comparison behavior is also relat ed to well being. $us, Facebook users that use Facebook more,  and engage in social comparison, also experience less well being. 
+23 
+DISCUSSION 
+$e aim of this study was first to get a better understanding  of how Facebook is used, and second what effects Facebook  has on its users. Among the main results of the study, we  found that the average respondent spends as much as 75.2  minutes on Facebook each day and that a great majority in 
+clude Facebook in their daily routine (84.0%). Investigation  of user patterns suggest that Facebook is primarily used for  maintenance of existing social contacts and networks, rather  than to meet new people or to pass time. $e results also  suggest that users may, deliberately or not, attempt to paint  a more positive and interesting picture of themselves, as they  more often write status updates about positive and major  events in their lives, rather than negative, everyday or per sonal events. We also found several gender and age differ 
+ences. In general, women and younger users seem to be more  engaged and active on Facebook than men and older users.  
+Previous research has found that time spent on Facebook  may result in the perception that others have a better life  and are happier than oneself22. Although time spent on Fa cebook was related to low self-esteem and low well-being  in this study, the relationship with time spent on Facebook  and self-esteem disappeared when we controlled for gender,  age, education and income. $e relationship between time  spent and well-being was significant for women but not men.  Furthermore, users who compare themselves to others show  both lower self-esteem and lower subjective well-being. $is  suggests that for some groups, and for some uses, Facebook  usage may potentially lead to low self-esteem and unhap piness. We believe that this highlights the importance of  studying Facebook usage, as well as its effects, since it is not  only widespread23, but evidently also habit-forming. Based  on these results, there seems to be some risk for addiction to  Facebook, especially for some groups. 
+HOW FACEBOOK IS USED 
+Pertaining to the first research question, we found that the  average user logs on to Facebook several times a day and  spends up to the equivalent of a full length movie while  logged in. $e great majority state that they include Face 
+book in their daily routine, and most log on habitually every  time they turn on their computer/browser. Almost half of  
+the respondents say that it’s getting hard to keep up socially  without Facebook, and as many as one quarter believe that  they would feel bad if neglecting to log on to Facebook over  time. $ese figures are much higher than we previously ex 
+pected – and the question of what people actually do on Fa cebook becomes even more relevant. Most respondents seem  to use Facebook to maintain their existing social contacts  and networks, as well as stay updated on the lives of their  friends. Other uses, for example passing time or getting to  know more people, does not seem to be as important. For  many respondents, Facebook seems to be a social tool that  may challenge more traditional social interactions, such as  phone conversations and talking over a coffee. $is raises the  question of whether Facebook may replace, or perhaps com 
+plement, these traditional tools for social upkeep in certain  groups, and if so, what consequences this may have. We im agine that there might be both good and bad consequences  of over-reliance on Facebook as a social forum. Although it  might help people to maintain a much larger social network  in general, it may at the same time lead to more shallow social  contacts, and less frequent “real world” social interactions.  Needless to say, it is important to understand how this ef 
+fects us, being the social animals that we are24.  
+FACEBOOK USAGE AND SOCIAL  
+COMPARISON  
+Our results support the notion that Facebook is a personal  showcase, as the respondents seem to primarily share things  that are typically positive or important, whereas troubles and  bad feelings are much less common. $is is in line with pre 
+vious studies which show that self-presentation biases are  present on Facebook25. It is likely that Facebook users select  events which they think others will find interesting, in order  to come across as persons that do extravagant, funny and in 
+teresting things26. Many may for example choose to report  expensive restaurant visits or shopping weekends in other  countries, whereas less interesting and more mundane events  are left unreported. $ere may be several reasons for this.  We may often have conscious or unconscious agendas about  how we wish to be perceived. Single people may for example  wish to be perceived as funny, smart, interesting, good look ing or otherwise “dateable”, whereas a person wanting to fur 
+22 Chou, H-T G., & Edge, N. (2012). “$ey are happier and having better lives than I am”: $e impact of using Facebook on perceptions of others’ lives.  Cyberpsychology, Behavior and Social Networking, 15, 1–5. 
+23 Phillips, S. (2007), op. cit. 
+24 Nilsson, B. (2006), op. cit. 
+25 Mehdizadeh, S. (2010), op. cit.  
+26 Peluchette, J., & Karl, K. (2010), op. cit. 27 Suls, J., Martin, R., & Wheeler, L. (2002), op. cit.
+24 
+DISCUSSION 
+ther their career may wish to convey an image of being suc cessful, knowledgeable or capable. Another motive may be  the norms which govern social situations. We may attempt  to avoid sounding negative or pessimistic, as this may hurt  our chances for future social interactions27. $us, Facebook  may be used as a kind of social curriculum vitae, where one is  trying to show off ones’ positive characteristics.  
+Facebook makes social comparison easier than ever, as the  average user has access to status updates, pictures and per sonal information from hundreds of people. Given that most  people primarily select events and happenings of a positive  and interesting nature, regularly reading up on what others  are doing and comparing it to one’s own activities, may pro vide a biased picture which show others as much more active,  interesting and successful than oneself. We therefore believe  that people who tend to compare themselves to others using  Facebook, may falsely infer that they are living less interest ing lives and that they are less successful than others, which  in turn may affect their self-esteem and subjective well-being.  
+GENDER DIFFERENCES IN  
+FACEBOOK USAGE 
+Men and women differed in quite many respects pertain ing to Facebook usage. $e general pattern seems to be that  women spend more time on Facebook, use it more habitu ally, think the different uses are more important, and write  more about any given subject in their status updates. $ese  findings were especially true for typical social applications,  which apparently, are more important for women than for  men. As for the purpose of status updates, women were over represented in most cases. However, men did agree more  than women that the purpose of their status updates was  to spread information and knowledge, as well as to provoke  others. In fact, as many as one third of men agreed that they  provoke deliberately on Facebook compared to one fifth of  women. $ese findings suggest that men and women use Fa cebook quite differently.  
+$e potential negative effects of Facebook are likely more of  a risk to the average woman compared to the average man,  due to the fact that women spend more time on Facebook,  and also seem to take the usage more seriously. Women seem  to rely more on Facebook as a social tool – a way to keep up  
+27 Suls, J., Martin, R., & Wheeler, L. (2002), op. cit. 
+with friends and maintain social contacts – and they may  therefore also be more vulnerable to effects of social compar ison and self-presentation biases. On the contrary, men are  likely not as vulnurable, as they spend less time on Facebook,  thinks its uses are less important, and seem to use it less as  a social maintanence tool. Men may see Facebook more as a  past time among many, than as an important social forum  with real world implications.  
+AGE DIFFERENCES IN FACEBOOK USAGE $e age groups also seemed to differ in their usage of Fa cebook. On average, users in the youngest age group spend  more time on Facebook and do it more habitually than older  users. Moreover, different age groups rate different uses of  Facebook as more important. To younger users, Facebook  seems to be more about passing time, getting away from  things one ought to do, as well as visit other people’s pro files (e.g. friends, friends of friends, and people one does not  know). For older users, some social applications of Facebook  seems to be more important, for example getting to know  more people, letting others know they care about them and  show encouragement. However, users of all ages were in  agreement that Facebook is important as a way to maintain  contact with other people and to keep up with what they are  doing. Pertaining to status updates, older respondents were  more likely to write status updates of a more personal char acter, such as everyday events, personal events, relationships  and about feeling bad.  
+All in all, we believe that these differences may lead to dif ferences in vulnerability to social comparison and self presentation biases. Since younger users spend more time  on Facebook and do so more habitually, they may be more  exposed to a biased picture of others, and more likely to com pare themselves to it. However, since older users are more  likely to write about things of personal and everyday nature,  they may perceive the difference between themselves and the  biased picture to be much larger than do other users. $is  also highlights the importance of not only understanding the  effects of frequent or habitual Facebook usage, but also of the  effects of different uses of Facebook. It is reasonable to ex pect that it is primarily the way people use Facebook, and not  how much they use it, that may affect their self-esteem and  subjective well-being. $is brings us to our second research  question.  
+25 
+DISCUSSION
+FACEBOOK USAGE AND WELL-BEING We found that Facebook usage is indeed related to a well-be ing. $ose who used Facebook more rated themselves as feel ing less happy and content with their lives. When we probed  into this relationship further, we could see that it only held  for women, the group with the lowest income (i.e. 0–200K  SEK annual income), and the group with the lowest educa tion (i.e. Swedish gymnasium degrees). Moreover, we found  that those who compared themselves to other Facebook users,  i.e. engaged themselves in social comparison, felt less happy.  $ese findings support our argument that social comparison  on Facebook may be a risky endeavour for one’s well being.  We argued that the information we are comparing ourselves  to may be skewed, first of all because people generally wish to  convey an image of being successful and positive, and second  of all because people on Facebook are likely to only report the  events that are worthy of reporting. If everyone would report  only those events that are worthy of reporting, the end result  would be an illusion of people in general being more happy  and successful than may be the case. When we then compare  our own lives with others’ seemingly more successful careers  and happy relationships, we may feel that our own lives are  less successful in comparison. Our findings are in line with a  recent study by Chou and Edge who found that students who  spend more time on Facebook were more inclined to perceive  others as living happier lives in comparison to one’s own life.28 
+$is study extends the current research field in that we sur veyed a large sample in all ages and income levels. While for  instance, Chou and Edge only surveyed a student sample29,  we now know that Facebook usage and well-being does not  appear to have a relationship for men, for the well educated,  and for the well paid. 
+WHY IS THE RELATIONSHIP SALIENT ONLY FOR WOMEN?  
+We found that the negative relationship between Facebook  usage and well being only was statistically significant for  women. For men, the relationship was not evident. Why may  this be the case? A starting point may be found in our other  
+28 Chou, H-T G., & Edge, N. (2012), op. cit.  
+29 Ibid. 
+30 Myers, D.G. (2002). Social psychology. New York: McGraw-Hill. 
+31 Peluchette & Karl, 2010, op. cit. 
+results. More women than men seem to think that they need  Facebook in order to keep up with the lives of their friends  and that they would feel bad if they did not log in for a long  period of time. Women also seem to think that Facebook is  more important as a way to interact and maintain contact  with other people. $e picture that emerges is that women  seem to be more engaged and active on Facebook and seem  to think that what happens on Facebook is more important.  $is is congruent with other findings on gender and socia bility. Women are more prone to cherish close relationships  and women more than men derive their identities through  their close personal relationships with friends and family.  Women also spend more time staying connected with people  they are close. For instance women write two to four times as  many personal letters and make 10 to 20 percent more long  distance calls to friends and family.30 $is study shows that  women use Facebook more than men; 81 minutes per day  compared to 64 minutes. $e same pattern of usage is also  evident for the low income and low education groups, who  used Facebook significantly more compared to the high in come and high education groups. 
+WHAT ABOUT THE REVERSE? 
+As this study is cross-sectional, we cannot exclude the hy pothesis that people with low well-being may use Facebook  more because they may find positive reinforcement and af fection (e.g. encouraging comments) through the interactions  with their friends.31 As of yet, we don’t know which direction  the arrow of causality goes, and this needs to be further ex amined in future research. 
+FACEBOOK USAGE AND SELF-ESTEEM For Facebook usage and self-esteem, we did not find any rela tionship when we controlled for demographic variables such  as gender, age, education and income. $e relationship was  significant before we entered our control variables. Our find ings runs counter to other findings32 33 who report positive  significant relationships between Facebook usage and self esteem. However, the aforementioned studies only surveyed  student samples and consequently did not control for vari 
+32 Valkenburg, P. M., Peter, J., & Schouten, A. P. (2006). Friend networking sites and their relationship to adolescents’ well-being and social self-esteem. Cyberpsychology & Behavior, 9, 584–590. 33 Mehdizadeh, 2010, op. cit. 
+26 
+DISCUSSION 
+ables that are related to age, education and income. $us, this  study contributes to the field of social network research by  showing that the relationship between Facebook usage and  self-esteem does not exist in a broader population. 
+We did however find a significant relationship between so cial comparison behavior and self-esteem, in that those who  compare themselves more to other Facebook users also had  lower self-esteem.  
+WHY IS FACEBOOK USAGE RELATED TO WELL-BEING BUT NOT TO SELF-ESTEEM? $is is indeed a valid question. Our initial expectations were  that Facebook usage would be negatively related to both self esteem and well-being. However, Facebook usage is related  only to well-being when controlling for demographic vari ables. $e concepts differ from each other in that well-being  is a more global measure of one’s affect (i.e. feeling happy or  sad), whereas self-esteem is an assessment of one’s perceived  value or worth. It is plausible that well-being and self-esteem  are affected by different kinds of information to which Face book users compare themselves to in the social comparison  process. For example, happiness may be more impacted by  information about others’ happiness, and self esteem percep tions may be more impacted by information about others’ ca reer success, skills, abilities, and so forth. Further, Facebook  users may be to some extent aware of the fact that people  tend to post information about themselves that may be more  worthy to report (e.g. getting a promotion, buying a car).34 
+It is possible that Facebook users are better in accurately as sessing information regarding other peoples career success,  skills and abilities, than to accurately assess peoples’ inner  states, such as happiness. It is simply easier to accurately as sess how successful or skillful a person should be compared  
+34 Peluchette & Karl, 2010, op. cit. 
+35 Chou & Edge, 2012, op. cit.
+to others, than to assess how happy a person should be. To  assess happiness in others correctly, Facebook users may need  more information than what is presented on Facebook via  pictures and status updates.  
+$is notion is supported by the findings by Chou and Edge35,  who argue that we often fall victim to the correspondence  bias. Because Facebook users often don’t have access to a full  range of information about a person, they may erroneously  infer that if a person is happy on virtually every picture, this  person must be a very happy person. Of course, people are  seldom constantly happy and it is more likely that our level  of happiness rises and falls in cycles during the length of a  day or week. $e correspondence bias is closely related to  the fundamental attribution error – our tendency to ascribe  a certain trait (e.g. happiness) to an individuals’ personality  (happy kind of person), rather than to external circumstanc es (the party caused the happiness). $us, on Facebook, it  is easy to disregard that nearly all pictures are taken under  happy circumstances (parties, vacations, interaction with  friends and family) and thus erroneously conclude that other  people are more happy than they may be. Interestingly, Chou  and Edge found that heavy users of Facebook were even more  inclined to believe that others were happier and had better  lives. $e finding supports the notion that users of Facebook  need more information than Facebook pictures/status up dates to accurately assess the happiness levels of their peers.  
+If Facebook users overestimate the happiness of their peers  (which seem to be high and consistent), they may fall into  the trap of comparing their own happiness (which consists  of highs and lows and is constantly fluctuating) and conse 
+quently end up feeling less happy. 
+27 
+CONCLUSIONS 
+$e modern and efficient communication tool that Face book represents has opened up new possibilities for creating  and managing a vast network of friends and acquaintances.  Yet, users of Facebook should heed a point of caution - treat  information on Facebook as you would treat any other  source of information on the Internet: with vigilance. Face book offers a great way for people to create an idealized im age of themselves,35 and even if creating an idealized image is  not on the agenda, people still tend to report on those events  that are more worthy to report compared to mundane and  every-day events. In this study, we found that people tend to  report positive events and when they feel good, rather than  negative events and when they feel down. We also found in  this study that the more time people spent on Facebook and  the more people compared themselves to other users, the less  happy they are.  
+Although we can’t draw conclusions regarding the direction  of causality between Facebook usage and well-being at this  point, three likely scenarios are likely based on these results.  First, it could be that Facebook usage, in itself or combined  with certain user groups or usage patterns, leads to an over 
+exposure of biased information regarding other’s well-being  and success, which makes one feel less happy and success ful in comparison. If this is the case, then this should be ex pected to have a negative effect on subjective well-being. Sec ond, it could be that those who already are unhappy, for one  reason or another, spend more time on Facebook (or use it  more for social comparison), whereas people who are happy  spend more time doing other things (e.g. spend time doing  fun activities with friends and family). If this is the case, then  more time spent on Facebook would appear to lead to de creased subjective well-being, whereas it might actually be  the other way around: decreased subjective well-being leads  to increased Facebook usage. $e third scenario, which we  believe is the most likely one, is a combination of scenario 1  and 2. Given that people who are unhappy spend more time  on Facebook instead of doing other things (as in scenario 2),  and given that they on Facebook are over-exposed to biased  information regarding other’s well-being and success (as in  scenario 1), then this may further reduce their subjective  well-being. $us, for unhappy people who use Facebook as  a way to compare themselves to others, Facebook usage may  
+lead to a negative spiral with decreasing well-being as a re sult. However, it should be carefully noted that we do not  believe that this is a problem for the majority of Facebook  users, instead, it is likely only a problem for certain groups  of users. Nevertheless, due to the widespread and habitual  use of Facebook, this potential risk may very well be real for  a great deal of people, and should not be underestimated or  ignored.  
+We recommend Facebook users – especially those who spend  a lot of time on Facebook or tend to compare themselves to  others – to take into consideration the fact that others may  often attempt to portray an idealized picture of themselves  on Facebook, and that comparing oneself to others’ Facebook  personas may therefore be misleading. Although Facebook  makes it much easier to maintain a large network of friends,  it might also be a good idea to be careful not to let Facebook  replace real world social interactions, which are likely much  deeper and more satisfying than digital interactions. Real  world social interactions may also give better or more accu rate information about others’ happiness and success, leading  to less biased social comparisons.  
+LIMITATIONS OF THIS STUDY 
+$e inferences from this study should be interpreted in  the light of it’s limitations. First and foremost, our sam pling strategy was non-random. Although this problem  affects inferences about the total Swedish Facebook pop ulation, we do however advocate that it is likely that the  sample is representative towards most Swedish Facebook  users, because of our large and diverse dataset. We draw  our inferences from a dataset where all income levels, all  educational levels, and ages ranging from 14 to 73 are  represented. In short, all relevant social classes are repre sented in our data. Further, this study is most likely to be  more relevant to Swedish Facebook users than previous  studies on Facebook users, where American undergradu ate students in the majority of cases represent the sample.  However, we acknowledge that the problem of representa tiveness would have been alleviated should we have used  a random sampling procedure. $is limitation is especially  salient for our first research question and in this case the  absolute figures (e.g. 25 percent brag on Facebook). $e  
+35 Bergman, S. M., Fearrington, M. E., Davenport, S. W., & Bergman, J. Z. (2011). Millennials, narcissism, and social networking: What narcissists do on social networking sites  and why. Personality and Individual Differences, 50, 706-711.
+28 
+CONCLUSION 
+differences between groups that we have found (e.g. women  use Facebook significantly more than men) are less likely  to be affected by our non-random sampling procedure. For  our second research question, the non-random sample is  not a major issue because the theoretical inferences about  Facebook usage and well-being, and our correlation based  analyses do not require random sampling. Still we encour age future researchers to use random sampling strategies in  their studies. $e second limitation in this study is that we  cannot draw inferences about causality in our relationships  (e.g. Facebook usage and well being), as the design is cross sectional. $ird, we did not sample non-users of Facebook,  but on the other hand we do not make any claims about  this group. 
+FUTURE RESEARCH 
+Social networks present challenges for researchers in the  field because it is a complex and wide-ranging area. Previ ous research has often focused on student samples,36 37 38 but  since Facebook and similar social networks at this time are  widely used by the general population, we encourage future  
+36 Bergman et al., 2011, op. cit. 
+37 Gosling et al., 2011, op. cit. 
+38 Chou & Edge, 2012, op. cit.
+research endeavours to sample from this population. We ar gue that some relationships that may be present in student  samples may not hold in the general population (e.g. as was  evident in this study, the relationship between Facebook us age and self-esteem) and only using student samples would  
+not advance the field of social network studies. Moreover, future research ought to involve surveys based on  other designs than cross-sectional designs to increase the va lidity of inferences drawn. Quasi-experimental designs and  longitudinal survey designs would introduce the dimension  of time, which allows for stronger inferences regarding the  causality of relationships. 
+Our results also showed a remarkable difference between  men and women’s patterns of using Facebook. A future av enue of research would be to study the reason why these  differences exist and the consequences of them. Moreover, a  large proportion of respondents agree that Facebook is used  to maintain continued contact with friends they rarely meet.  An interesting aspect is whether these friendships decrease  or increase in intensity and number over time. 
+29 
+REFERENCES
+Al-Reufeye, S. (2011). Facebook i revolutionerna - En studie  om användningen av Facebook i revolutionerna i Tunisien  och Egypten. Karlstad: University of Karlstad. 
+Bergman, S. M., Fearrington, M. E., Davenport, S. W., &  Bergman, J. Z. (2011). Millennials, narcissism, and social  networking: What narcissists do on social networking sites  and why. Personality and Individual Differences, 50, 706- 
+711. 
+Chou, H-T G., & Edge, N. (2012). “$ey are happier and  having better lives than I am”: $e impact of using Facebook  on perceptions of others’ lives. Cyberpsychology, Behavior  and Social Networking, 15, 1-5. 
+Giddens, A. (2006). Sociology. 5th ed. Politer Press. 
+Goffman, E. (1959). $e presentation of self in everyday life.  New York: Anchor Books. 
+Gosling. S. D. (2011). Manifestations of personality in on line social networks: Self-reported Facebook-related behav iors and observable profile information. Cyberpsychology,  Behavior and Social Networking, 14, 483-487. 
+Joinson, A. N. (2008). ‘Looking at’, ‘Looking up’ or ‘Keep ing up with’ people? Motives and uses of Facebook. Paper  presented at the 2008 proceedings of the twenty-sixth an nual SIGCHI conference on human factors in computing  systems. 
+Joseph, S., Linley, P. A., Harwood, J., Lewis, C. A., & McCol lam, P. (2004). Rapid assessment of well-being: $e Short  Depression-Happiness Scale (SDHS). Psychology and Psy chotherapy: $eory, Research and Practive, 77, 463-478.  
+Lundh, L-G., & Smedler, A-C. (2007). Personlighetsp sykologi. In P. Hwang, I. Lundberg, J. Rönnberg & A-C.  Smedler (eds.). Vår tids psykologi (s. 221-274). Stockholm:  Natur och Kultur. 
+Mehdizadeh, S. (2010). Self-Presentation 2.0: Narcissism  and self-esteem on Facebook. Cyberpsychology, Behavior  and Social Networking, 13, 357-364. 
+Myers, D.G. (2002). Social psychology. New York: McGraw Hill. 
+Nilsson, B. (2006). Samspel i grupp. Lund: Studentlitteratur. 
+Nilsson, B. (1996). Socialpsykologi. Lund: Studentlitteratur. Passer, M., Smith, R., Holt, N., Bremner, A, Surtherland,  E., & Vliek, M. (2008). Psychology, the science of mind and  behaviour.. 1st European ed. London: McGraw Hill Higher  Education. 
+Peluchette, J., & Karl, K. (2010). Examining students’ in tended image on Facebook: “What were they thinking?!”.  Journal of Education for Business, 85, 30-37. 
+Phillips, S. (2007). A brief history of Facebook. $e Guard ian, viewed February 2 2012, http://www.guardian.co.uk/ technology/2007/jul/25/media.newmedia#history-link box  
+Quan-Haase, A., & Young, A. L. (2010). Uses and gratifica tions of social media: A comparison of Facebook and instant  messaging. Bulletin of Science Technology & Society, 30,  350-361.  
+Rosenberg, M. (1965). Society and the adolescent self-im age. Princeton, NJ: Princeton University Press.  
+Socialbakers (2012). Viewed February 2 2012, http://www. socialbakers.com/facebook-statistics/sweden. 
+Suls, J., Martin, R., & Wheeler, L. (2002). Social compari son: Why, with whom, and with what effect? Current Direc tions in Psychological Science, 11, 159-163. 
+Sundén, S (2011). Facebook Sverige Statistik 2011. Viewed  February 5 2012, http://www.joinsimon.se/facebook-statis tik-2011/. 
+Valkenburg, P. M., Peter, J., & Schouten, A. P. (2006). Friend  networking sites and their relationship to adolescents’ well being and social self-esteem. Cyberpsychology & Behavior,  9, 584-590. 
+Verplanken, B., & Orbell, S. (2003). Reflections of past be havior: A self-report index of habit strength. Journal of Ap plied Social Psychology, 33, 1313-1330.  
+30 
+ABOUT THE AUTHORS
+LEIF DENTI 
+is a doctoral student of Psychology at the University of Goth enburg, Department of Psychology. Aside from studying be havior on Facebook, his main research interest is how project  leaders stimulate creativity and innovation in their project  teams (Project name: Management for Sweden / Chefskap  för Sverige). Leif Denti is also involved in a research project  at the School of Business, Economics and Law, University of  Gothenburg, studying organizational factors that may influ ence creative problem solving in project teams. He is also a  acclaimed lecturer in the leadership, creativity and innova tion fields. Leif Denti holds a licentiate degree of Psychology  at the University of Gothenburg. 
+ISAK BARBOPOULOS 
+is a doctoral student of Psychology at the University of  Gothenburg, Department of Psychology. He does research  on consumer motives, and is particularly interested in how  individual and situational factors influence how products  and services are evaluated and selected. Isak Barbopoulos is  currently involved in a multi-disciplinary research project,  with researchers from the Department of Psychology at the  University of Gothenburg, as well as the School of Business,  Economics and Law, at the University of Gothenburg, study ing the importance of social and moral signaling for green  consumption and policy effectiveness. 
+IDA NILSSON  
+works as a communication strategist with the specialty  of social media and online PR at Valentin & Byhr in Goth enburg. Ida has worked with social media for more than five  years and have helped companies to communicate in the  right way in social media channels. A large part of Ida’s work  is about understanding how the audience acts in the social  media environment and why they do it. With a great passion  for social medias cause and effect for both individuals and  businesses Ida is an active lecturer in the field. Ida also runs  the blog Gilla Kommunikation with a focus on PR, commu 
+nication and social media. 
+LINDA HOLMBERG 
+currently studies social psychology at the University of  Skövde at a program called “Staff, organization and leader ship” (Personal, organisation och ledarskap). It is a Bach elor’s degree program ending in June 2013. She decided on  a course of study after working for IKEA as a step towards  furthering her career within the company.  
+MAGDALENA THULIN  
+is a student at the Univerity of Skövde. She studies a bach elor degree within behavioral science with a focus on social  psychology. 
+MALIN WENDEBLAD 
+27 years old from Sjövik. Studying for a bachelor’s degree  at the University of Skövde and studying behavioral science  with a focus on human resources, organization and leader ship. 
+LISA ANDÉN 
+21 years old from Stenungsund. Studies behavioral science  with a focus on human resource management at the Univer sity of Skövde. 
+EMELIE DAVIDSSON 
+20 years old from Skövde. Studies behavioral science with a  focus on human resource management at the University of  Skövde. 
+31 
+APPENDIX A  TABLES
+32 
+Table 1.  
+Habitual Facebook usage. Percentage of users who agree (vs. disagree) with the statements,  as well as chi-square and significance levels 
+All Gender Age 
+F M  2 14-26 27-35 36-73  2 
+keep up43.3% 51.2% 27.5% 52.14*** 47.4% 44.3% 37.9% 8.42ns 
+A. Feel like I do not  
+computer, web browser69.7% 74.6% 60.0% 22.49*** 81.1% 73.5% 53.7% 64.93*** 
+B. Every time I start  
+about it42.2% 45.3% 33.1% 15.36*** 58.4% 43.4% 20.3% 106.79*** 
+C. Without thinking  
+something else 44.7% 49.6% 34.9% 19.40*** 61.4% 45.3% 25.7% 90.18*** 
+D. Had intended to do  
+I’m doing it29.8% 33.7% 21.8% 17.06*** 43.3% 30.1% 14.3% 71.91*** 
+E. Before realize I that  
+F. Would feel Ill at ease 25.8% 30.0% 17.3% 18.91*** 29.9% 24.9% 22.1% 5.69ns routine84.0% 84.8% 82.4% 0.94ns 86.3% 89.0% 76.7% 20.34*** 
+G. Belong to daily  
+* Chi-square is significant at p < 0.05; ** at p < 0.01; *** at p < 0.001; ns = p > 0.05 
+Table 2.  
+The importance of different uses of Facebook. Percentage of users who agree (vs. disagree) that the use is important to them, as well as chi-square and significance levels 
+All Gender Age 
+F M  2 14-26 27-35 36-73  2 
+friends are doing62.7% 67.2% 53.7% 17.27*** 63.0% 60.8% 63.9% 0.67ns A. Find out what old  
+B. Maintain contact  with people one does  not meet so often 
+88.1% 90.2% 83.9% 8.65** 86.8% 86.7% 90.7% 3.34ns 
+people32.5% 32.7% 32.2% 0.02ns 27.9% 31.1% 38.8% 9.81** 
+C. Get to know more 
+in general 82.5% 83.4% 80.6% 1.25ns 80.8% 83.8% 83.0% 1.14ns 
+D. Maintain contacts  
+E. Pass time 55.9% 60.2% 47.2% 15.46*** 67.1% 57.3% 42.4% 43.70*** 
+F. Get away from  pressure and  
+responsibility  
+21.9% 24.1% 17.3% 6.06* 23.6% 20.4% 21.5% 1.03ns 
+things I ought to do27.0% 30.6% 19.7% 13.55*** 36.2% 24.9% 19.1% 26.79*** 
+G. Get away from  
+care about them65.8% 71.9% 53.4% 33.91*** 58.1% 66.7% 73.4% 18.44*** 
+H. Let others know I  
+encouragement69.1% 74.6% 58.2% 28.05*** 59.7% 69.9% 78.5% 28.99*** 
+I. Show  
+pictures63.3% 67.2% 55.5% 13.06*** 69.9% 68.6% 51.3% 31.14*** 
+J. Look at others’  
+pictures8.2% 9.0% 6.6% 1.79ns 11.0% 8.4% 5.1% 8.03* 
+K. Tag people in  
+L. Upload pictures 29.0% 33.0% 20.9% 15.92*** 27.7% 27.2% 31.6% 1.94ns friends49.6% 55.8% 37.0% 31.52*** 56.4% 51.5% 40.3% 18.85*** 
+M. Visit profiles of  
+people I don’t know19.6% 19.5% 19.7% 0.00ns 28.8% 19.4% 9.6% 41.05*** 
+N. Visit profiles of  
+friends19.4% 20.1% 17.9% 0.70ns 28.8% 17.2% 11.3% 35.35*** 
+O. Visit friends’  
+updates47.1% 50.4% 40.3% 9.25** 36.7% 47.6% 57.9% 31.55*** 
+P. Write status  
+Q. Read status updates 76.9% 81.1% 68.4% 20.33*** 75.9% 77.3% 77.3% 0.27ns * Chi-square is significant at p < 0.05; ** at p < 0.01; *** at p < 0.001; ns = p > 0.05 
+33 
+Table 3.
+* Chi-square is significant at p < 0.05; ** at p < 0.01; *** at p < 0.001; ns = p > 0.05 
+Table 3. 
+What status updates are usually about. Percentage of users who answered that they write  about the given topic to a high degree (vs. low degree), as well as chi-square and significance  levels 
+All Gender Age 
+F M  2 14-26 27-35 36-73  2 
+A. Everyday events 65.7% 71.2% 54.6% 27.14*** 62.2% 61.2% 73.4% 13.68** B. Private/personal events 38.1% 40.8% 32.5% 6.53* 25.5.% 39.5% 50.1% 45.58*** C. Relationships 26.1% 32.0% 14.3% 36.06*** 20.8% 26.5% 31.3% 10.09** D. Major events 68.7% 71.9% 62.4% 9.42** 69.9% 72.8% 63.6% 6.74* E. Positive things 77.3% 81.4% 69.0% 19.62*** 76.7% 77.0% 77.9% 0.15ns F. Negative things 37.6% 39.6% 33.4% 3.69ns 34.0% 38.8% 40.3% 3.29ns G. About when I feel good 51.0% 58.0% 37.0% 39.43*** 47.7% 53.4% 52.5% 2.65ns H. About when I feel bad 15.6% 19.1% 8.7% 18.47*** 11.2% 18.1% 17.9% 8.16* * Chi-square is significant at p < 0.05; ** at p < 0.01; *** at p < 0.001; ns = p > 0.05 
+Table 4.  
+The purpose of status updates. Percentage of users who think that the statement is true (vs.  untrue) about the purpose of their status updates, as well as chi-square and significance  levels 
+All Gender Age 
+F M  2 14-26 27-35 36-73  2 
+A. Broadcast info/knowledge 59.8% 57.0% 65.7% 7.09** 53.4% 61.8% 64.8% 10.14** B. Amuse others 76.2% 76.5% 75.5% 0.11ns 74.0% 76.1% 78.5% 1.98ns C. Provoke others 26.3% 21.2% 36.7% 27.98*** 21.6% 26.5% 31.0% 7.99* D. Vent 27.5% 27.5% 27.5% 0.00ns 29.0% 28.5% 24.8% 1.83ns E. Brag about something 23.9% 24.3% 23.3% 0.12ns 23.6% 23.3% 24.5% 0.14ns F. Get attention 39.4% 40.8% 36.4% 1.83ns 41.1% 39.2% 37.6% 0.90ns G. Get acknowledgement 38.7% 40.8% 34.3% 3.99* 37.0% 38.8% 40.3% 0.81ns H. Express thoughts 69.6% 71.9% 65.1% 4.93* 64.4% 73.8% 71.6% 7.92* I. Express feelings 50.1% 55.6% 39.1% 24.44*** 47.9% 53.1% 49.9% 1.78ns * Chi-square is significant at p < 0.05; ** at p < 0.01; *** at p < 0.001; ns = p > 0.05
+34 
+Table 5. 
+Hierarchical multiple regression analysis on self-esteem (criterion). In block 1, the predictor  is minutes of Facebook usage per day. In block 2, the control variables gender, age,  education and income are added. 
+Self esteem 
+(n = 1011) 
+Independent variables R2 Adj R2 Beta t p Block 1: .006 .005 
+ Facebook usage -.074 -2.32 .021 Block 2: .048 .043 
+ Facebook usage -.029 -.899 .369  Gender .002 .070 .944  Age .032 .845 .398  Income .125 3.16 .002  Education .110 3.22 .001 
+Table 6. 
+Hierarchical multiple regression analysis on self-esteem (criterion). In block 1, the predictor  is amount of social comparison. In block 2, the control variables gender, age, education and  income are added. 
+Self esteem 
+(n = 1011) 
+Independent variables R2 Adj R2 Beta t p Block 1: .010 .009 
+ Social comparison -.100 3.12 .002 Block 2: .052 .048 
+ Social comparison -.082 -2.51 .012  Gender -.002 -.051 .960  Age .018 .480 .631  Income .120 3.08 .002  Education .119 3.53 .001
+  
+35 
+Table 7. 
+Hierarchical multiple regression analysis on well-being (criterion). In block 1, the predictor  is minutes of Facebook usage per day. In block 2, the control variables gender, age,  education and income are added. 
+Well being 
+(n = 1011) 
+Independent variables R2 Adj R2 Beta t p Block 1: .011 .010 
+ Facebook usage -.103 -3.23 .001 Block 2: .033 .028 
+ Facebook usage -.078 -2.39 .017  Gender -.010 -.314 .754  Age .062 1.65 .100  Income .105 2.66 .008  Education .002 .072 .943 
+Table 8. 
+Subgroup analyses on Facebook usage (predictor) and well-being (criterion). Subgroup Beta t p 
+Gender 
+ Men (n = 332) -.066 -1.19 .235 
+ Women (n = 674) -.088 -2.19 .029 
+Education 
+ Gymnasial degree or lower (n = 492) -.109 -2.37 .018 
+ University degree (n = 509) -.050 -1.10 .270 
+  
+Income 
+ 0-200K SEK / year (n = 391) -.100 -1.94 .053 
+ 200-350K SEK / year (n = 375) -.087 -1.67 .096 
+  
+ 350K+ SEK / year (n = 204) .087 1.20 .230 
+Note: In all subgroup analyses we controlled for gender, age, education and  income. These are omitted for presentation clarity purposes.
+36 
+Table 9. 
+Hierarchical multiple regression analysis on well-being (criterion). In block 1, the predictor  is amount of social comparison. In block 2, the control variables gender, age, education and  income are added. 
+Well-being 
+(n = 1011) 
+Independent variables R2 Adj R2 Beta t p Block 1: .017 .016 
+ Social comparison -.131 -4.13 .001 Block 2: .037 .032 
+ Social comparison -.111 -3.44 .001  Gender -.021 -.646 .519  Age .041 1.08 .280  Income .105 2.66 .008  Education .019 .546 .585
+37 
+Table 10. 
+Means, standard deviations, and intercorrelationsa between study variables. 
+Variable Mean SD 1 2 3 4 5 6 7 8 1. Facebook usage (minutes per day) 75.2 77.2 - 
+2. Social comparison behavior .81 1.17 .077* - 
+3. Self-esteem 4.07 .90 -.075* -.104** (.91) 
+4. Well-being 3.59 .92 -.102** -.130** .729** (.86) 
+5. Genderb - - .106** .023 -.013 -.035 - 6. Age (in years) 32.6 11.0 -.075* -.162** .124** .121** -.029 - 7. Educationc 5.19 1.13 -.173** .009 .171** .073* -.008 .231** - 
+8. Income (annual)d 5.07 2.65 -.18** -.134** .184** .150** .125** .533** .360** - a n = 1011, for variable 8, n = 970. Cronbach’s coefficient alphas are given on the diagonal, where relevant. b Gender was coded as follows: 1 = “male”, 2 = “female”. 
+c Education was coded as follows: 1 = "No elementary school", 2 = "Elementary school", 3 = Student at a  gymnasium, 4 = "Degree from gymnasium", 5 = "Student at a university", 6 = "Degree from a university", 7 =  "Doctoral student", 8 = PhD degree 
+d Income (annual) was coded as follows: 1 = "0-50 KSEK", 2 = "50-100 KSEK", 3 = "100-150 KSEK", 4 =  "150-200 KSEK", 5 = "200-250 KSEK", 6 = "250-300 KSEK", 7 = "300-350 KSEK", 8 = "350-400 KSEK", 9 =  "400 KSEK and above". 
+*. Correlation is significant at the 0.05 level (2-tailed). 
+**. Correlation is significant at the 0.01 level (2-tailed).
+38

@@ -1,0 +1,520 @@
+﻿Social Network Analysis and Mining (2021) 11:94  
+https://doi.org/10.1007/s13278-021-00806-3 
+ORIGINAL ARTICLE 
+Characterizing political bias and comments associated with news  on Brazilian Facebook 
+Samuel S. Guimarães1  · Julio C. S. Reis2 · Marisa Vasconcelos3 · Fabrício Benevenuto1 
+Received: 14 February 2021 / Revised: 20 September 2021 / Accepted: 22 September 2021 / Published online: 10 October 2021 © The Author(s), under exclusive licence to Springer-Verlag GmbH Austria, part of Springer Nature 2021 
+Abstract 
+Social media sites became an important channel to consume information, including news articles. In this context, there are  a growing number of outlets that present themselves as news sources. However, among these outlets, we may have people  objectively presenting reliable information or a political group acting in bad faith. Their actions can even provoke diferent  kinds of hateful responses from their audience, in the form of toxic comments. Therefore, identifying and characterizing  all the news pages that play a vital role in information dissemination is essential for understanding this media ecosystem in  a country. This work provides a detailed diagnostic of news stories and political opinions shared on Facebook, focusing on  Brazilian pages. We present as main contributions: (1) a methodology to identify and measure the political bias of Facebook  pages for a given country and (2) an in-depth characterization of the political bias, audience demographics, reactions in posts,  and toxicity of the comments of a sample of mainstream media, alternative media, and public fgures. 
+Keywords Alternative media · Political bias · Toxicity · News ecosystem · Social computing · Machine learning 
+1 Introduction 
+Nowadays, social media systems like Facebook and Twitter  are popular destinations for users to fnd, share, and dis cuss current events in real time. Recent surveys estimate  that 68% of US adults (Shearer and Matsa 2018) and 66%  of Brazilians (Newman et al. 2019) consume news primar ily from social media Web sites. Furthermore, since 2018,  social media outpaced print newspapers as a news source for  North Americans (Shearer 2018). Meanwhile, this surpass ing has happened in Brazil since 2014 (Newman et al. 2019). 
+Furthermore, social media systems have created a shift  in how users produce and consume news, as anyone can  register as a news producer on those sites and claim to be  a news outlet. As a consequence, independent journalism  vehicles have emerged, for instance, the citizen journalism  
+🖂 Samuel S. Guimarães  
+samuelsg@ufmg.br 
+1 Universidade Federal de Minas Gerais, Belo Horizonte,  Brazil 
+2 Universidade Federal de Viçosa, Viçosa, Brazil 
+3 IBM Research, São Paulo, Brazil
+from the Arab spring (Russell 2011) and others reported for  by Ribeiro et al. in the USA (Ribeiro et al. 2018). This independent journalism, also called alterna tive news media, still generates some debates about frm  descriptions, at times challenging the defnition of journal ism (Newman 2011). Further, Holt et al. (2019) conceptual ized some key dimensions where this journalism difers from  the so-called mainstream media, which are the producers,  the content, the media organizations formed, and the media  systems where it lives. Recently, public fgures or political  entities have also been acting as news producers. Since they  are the target of scrutiny by the mainstream media, some  started using their social media accounts to provide infor mation directly to the public. A clear example is Former US  President Donald Trump’s use of Twitter (Wells et al. 2020).  Alternative media has been gaining considerable space and  power since the last few years, sometimes using political  bias as fuel (Kelkar 2019; Newman et al. 2019). Therefore, understanding how each of these types of  social media accounts interacts with its audience is crucial to  comprehending the news ecosystem in these environments.  For instance, alternative media pages may infuence public  opinion by composing the news diet of a large following.  Then, they dictate which stories are relevant for that portion  of people by focusing on specifc events and ignoring others.  
+Vol.:(0123456789) 1 3 
+94 Page 2 of 24 
+For instance, in 2018 in Brazil, a few alternative media pages  had violated Facebook’s authenticity policies when politi cal activists created them as a network of outlets support ing one specifc politician (Toledo 2018). On the one hand,  credible independent journalists can create these pages. Yet,  political groups can also start their outlets to shape public  discourse, disseminating their narratives, or attack politi cal enemies (Holt 2018; Kelkar 2019). These circumstances  make the identifcation and mapping of their political stance  crucial to a more transparent environment. We address all  these issues in this work. 
+Particularly, we propose a methodology to identify and  measure the political bias of Facebook pages for a given  country based on graph-based semi-supervised learning.  We validate this methodology by comparing it to more con 
+strained previous work. We then conduct an in-depth char acterization of pages from three actors cited: mainstream  media, alternative media, and public fgures, along with  analyzing the interactions between their audience and them. 
+In this work, our main contribution is a new approach to  identify Facebook pages for a given country as mainstream  media, alternative media, and public fgures, as well as their  ideological bias. Preliminary results of this method were  presented before briefy in (Guimarães et al. 2020a). Along  with the ideology identifcation, we also provide an over 
+view of the found media ecosystem through a characteriza tion of the audience of these pages (e.g., followers). Moreover, social media Web sites also ofer a dissemina tion strategy, where users help to share news pieces attempt ing to infuence their friends (Barros and Carreiro 2015;  Weeks and Holbert 2013). Besides sharing, another popular  resource on these sites is the comments section, where users  can interact and discuss with other people who read the post.  About 77.9% of social media users read comments on social  media (Stroud et al. 2016) at some point. Among these mes sages, a signifcant proportion of toxic messages may be  found on news posts (Su et al. 2018; Hille and Bakker 2014),  similarly to comments on news Web sites, mostly negative  independently of the headline (Reis et al. 2015). Thus, our second contribution is an extensive diagnos tic of the interactions between the pages and the users. We  frst consider Facebook reactions (i.e., Haha and Angry),  which are more descriptive than regular likes to assess the  negativity and anger express by the users. Then, we compare  the users’ reactions with the toxicity score of the comments  associated with the news posts shared on Facebook, briefy  analyzed in some of our previous works (Guimarães et al.  2020b). 
+As a case study of the use of our methodology, and explo ration of a media environment, we analyze the ecosystem of  news on Brazilian Facebook, which has a history of interac tion between alternative media and politics (Haynes 2018). 
+Social Network Analysis and Mining (2021) 11:94 
+This work adds new contributions to our previous  work (Guimarães et al. 2020a). First, we give extra details  of the construction of datasets used for validating our politi cal bias method. Secondly, we use the biases measured to  present an overview of the media ecosystem in Brazil, which  further confrms the accuracy of our methodology when the  fndings are related to previous works without automatic bias  metrics. This overview includes a more in-depth characteri 
+zation of the audience of the pages divided by demographic  aspects, an analysis of toxicity data of comments on a sam ple of all pages, and, fnally, a cross-reference between the  
+new results from Facebook reactions and the toxicity. The rest of the paper is organized as follows. First, we  discuss the related eforts in Sect. 2. Then, in Sect. 3, we  detail our methodology and the limitations of our proposed  approach. Section 4 discusses the results of assessing the  ideological leaning of Facebook pages, while Sect. 5 pre sents the demographics of these pages’ audience. Later, we  characterize the interactions of this audience by analyzing  posts’ reactions and toxicity in comments in Sects. 6 and 7.  Last, Sect. 8 concludes and presents some directions for  future work. 
+2 Related work 
+In this section, we review related studies along fve dimen sions: (i) identifying online news pages, (ii) polarization and  relationship graphs, (iii) political bias measurement studies,  (iv) the use of toxicity in news comments, and (v) analysis  of posts reactions. 
+Identifying online news pages: Some studies working to  fnd news pages found alternative news outlets by screening  the most popular links on Facebook groups and pages (Bak shy et al. 2015), while others searching for narratives shared  by alternative media (Starbird 2017). Also notably, the  authors in Ribeiro et al. (2018) used recommendations from  Facebook Marketing API1 to create a snowball process col lecting all of these recommendations for US pages. We have  a similar approach using a diferent tool from the Facebook  Ads platform2 in the Brazilian context. 
+Polarization and relationship graphs: Researches con sidering political polarization and relationship graphs focus  mainly on Twitter (Makazhanov and Rafei 2013; Starbird  2017). Conover et al. (2011) is one example, having com pared diferent methods for measuring the political align ment of Twitter users, including text, hashtags, and label  propagation analysis using both mentions and retweets  graphs. This retweet graph-based approach inspired part of  
+1 https://developers.facebook.com/docs/marketing-apis. 2 https://www.facebook.com/business/.
+1 3 
+Social Network Analysis and Mining (2021) 11:94 
+our proposed graph-based strategy, as we will present in  Sect. 3. 
+Political bias measurement studies: For assessing  ideological bias for news outlets, we compare our method  with four other studies. First, one research done by the Pew  Research Center (Mitchell et al. 2014) analyzed the audi 
+ences from 36 news outlets by interviewing 2901 people  and asking them what media they know, which one they  read, their political self-identifcation, and their trust in the  media. Their focus was a diagnostic of how diferent politics  afected the perception of the news. 
+Then, another article (Budak et al. 2016) used content  analysis to identify the overall ideological bias of 15 major  US news outlets by compiling 803,146 published stories over  a year and later using 749 human judges to classify 10,502  political articles. The overall leaning was measured using  these articles, and the results showed little diference in the  coverage by outlets of diferent bias, except in scandals. 
+Similarly, Bakshy et al. (2015) calculate the ideology,  using Facebook data, from 500 Web sites with the links  shared on the platform. They classify 226,000 URLs shared  by them over six months from the self-reported ideology of  10.1 million users. The authors showed that the content on  social media could cross ideological lines and reach people  from the opposite perspective. 
+Last, Ribeiro et al. (2018) used the Facebook Marketing  API to assess the proportion of users identifed within dif ferent parts of the political spectrum, computing a score for  political bias for 20,448 American media outlets. They pro vide a demographic analysis of the US audience, especially  using the demographic division of the users in fve political  positions to generate the bias score. However, their approach  is unfeasible for countries other than the USA because the  ideology of the pages’ audience is not available. 
+As in the above studies, we assess the political bias of  Facebook pages by using their audience, with the advantage  of applying to any other country where Facebook Marketing  API is available. 
+Toxicity analysis in news comments: As previously  mentioned, comments on social media are also the target  of hostile discussions. Su et al. (2018) found that impolite ness and incivility were more prevalent on comments on  Facebook pages from conservative and local news sites, with  around 20% to 40% of uncivil comments. Similarly, using  sentiment analysis, Reis et al. (2015) showed that comment  sections from infuential newspapers are the target of hostil ity and trolls. We also focus on comments from news pages,  complementing our study by contrasting it to other relevant  page categories, such as politicians. 
+Few articles attempt to create or use databases of Face book news comments or post reactions like we intend to  use. Khan and Chang (2019) built a dataset from Facebook  data. In their work, the Amazon Facebook page had its posts  
+Page 3 of 24 94 
+collected during fve years, using the Graph API3. Then, the  authors tried to predict the number of distinct interactions  the posts would receive using diferent neural networks. Kol hatkar and Taboada (2017) created a dataset focused on the  notion of the constructiveness of news comments, which  was related to constructing a civil dialogue, evaluating the  result with a deep-learning approach. With the dataset, they  analyzed the relationship of toxicity with constructiveness  using the Perspective API4. For Brazilian data, de Pelle and  Moreira (2017) created the dataset OfComBr using one of  the biggest news Web sites in Brazil, called G15. Their focus  was on creating a valuable database for machine learning,  labeling 1250 comments from the Web site commenting  section. 
+Analysis of posts reactions: Meanwhile, a few articles  examining the posts’ reactions were also relevant to our  study. First, Tian et al. (2017) test the relation of emojis  in 8 million comments to reaction profles of pages, using  emoji sentiment scores to calculate the message’s senti 
+ment. They conclude that the comments and reactions to  posts may work as an indication of the emotional state and  attitudes of Facebook users. Our comparison to toxicity lev els adds to this result. Another study (Giuntini et al. 2019)  was directly interested in confrming with the users that their  use of emoticons and reactions expressed the emotions they  desired. They examined the relationship between the actual  feelings from the users and used reactions, showing a cor respondence between the two. 
+From a diferent perspective, some articles deal with the  problem of predicting reactions to posts. Moers et al. (2018)  created and evaluated alternative methods for predicting  these reactions to posts on supermarket chains pages. Their  fnal model predicted the reaction distribution using 8,103  posts on the customer service pages of 12 big supermarket  chains. Their results were afected by using likes, and similar  analysis leads us to also remove the likes in our study. Our  results create a dataset with more pages that could improve  their model. 
+Finally, Basile et al. (2017) also tried to predict results  using Facebook reactions as proxies for predicting the con troversy of a news article. They hypothesized that a higher  controversy happens if a news story has varied reactions  divided into diferent emotions, measuring this situation  through reactions’ entropy. We adopted this idea in our  analysis of reactions and compared it to toxicity, consider ing data from another context in our case. 
+In line with the studies presented above, we conduct  an extensive analysis in the Brazilian context, focusing on  
+3 https://developers.facebook.com/docs/graph-api/. 
+4 https://www.perspectiveapi.com. 
+5 https://g1.globo.com/.
+1 3 
+94 Page 4 of 24 
+Fig. 1 The steps of our meth 
+odology 
+Facebook, the largest social media platform used for news  sharing. To the best of our knowledge, we are the frst study  to compared alternative media, mainstream media, and pub lic fgures in the current context. 
+3 Methodology 
+In this section, we describe the methodology proposed to  conduct our analysis. We detail how we select the news out lets and political pages to form our dataset. We thus col lected the reactions and comments to infer the toxicity of  both comments and posts. Figure 1 shows each step of our  methodology, including the data gathering process. 
+3.1 Identifying pages’ characteristics (page type  and political bias) 
+The frst step of our process was fnding all the relevant  Facebook pages to analyze. We focus on pages related to  politics, including Brazilian public fgures and news outlets  reporting political news. One main challenge here is the lack  of ground-truth political bias for Brazilian media. 
+Inspired by the method proposed by Ribeiro et al. (2018),  we use the Facebook Ads platform to classify the political  leaning of a given Facebook page. First, we use the Face book Marketing API6, which allows creating ads on Face book by specifying the target audience with attributes such  as age, location, gender, and interests. Besides that, we also  use the Audience Insights Tool7 to develop our new method  to fnd pages. 
+By using these two tools from the Ads platform, we itera tively collect a list of relevant pages as follows: (1) compile  a small number of “seed” pages that were, preferentially,  manually curated; (2) get the associated interests for each  
+6 https://developers.facebook.com/docs/marketing-apis/. 7 https://www.facebook.com/ads/audience_insights. 
+Social Network Analysis and Mining (2021) 11:94 
+  
+
+page; (3) use these returned interests to fnd related pages;  and (4) go back to (2) until the platform suggests no new  page. In step 3, we consider pages that are mainly of 13 rel evant categories8: Public Figures, Politicians, Government  Ofcials, Authors, Political Organizations, Political Parties,  Media, News & Media Websites, Media/News Companies,  Broadcasting & Media Production Companies, Magazines,  Journalists, TV Programs (News related), and Newspapers.  We can also further flter the resulting pages to keep only  pages with associated interests in the dataset. We do this  fltering for one of our analyses. In other cases, we use all  pages, including the found as related pages, without an inter 
+est liked to it. 
+This new method proposed in this work assesses the  political bias of a Facebook page by utilizing audience inter action information. Previous methodologies are limited to  US pages (Ribeiro et al. 2018), as they collected political  leaning directly from the demographic information in the  API that is not available in most countries. However, in our  proposed methodology, we infer the political leaning from  an initial list of pages with self-reported ideology. We then  use the interests graph to propagate the political stance to  related pages. With this, we expand the possibility of assess 
+ing political bias to other countries such as Brazil. To demonstrate how diferently we use the interests, we  present a hypothetical scenario. For example, consider two  pages with associated interests, a and b. Given an interest  in page a, the Audience Insights provides a list of related  pages, including b. For each related page, the tool produces  three metrics: Monthly Active People (MAP), Audience, and  Afnity score, as shown in Fig. 2. In our example, MAP is  the number of monthly active users on page b. The audience  is the number of active users on page b, given the interest on  page a. Then, the afnity score measures how likely a user  interested in a is to like page b compared to a random user. 
+8 When a user creates a page, he can assign a pre-defned category  to it.
+1 3 
+Social Network Analysis and Mining (2021) 11:94 
+Fig. 2 Facebook audience  
+insights tool
+While the afnity score allows us to compare related  pages found using the same interest in the snowball process,  it is not straightforward to compare pages found by searching  diferent interests. Thus, we propose a new normalized afn 
+ity score, A, between pages (e.g., for pages a and b), that  is calculated based on the MAP and Audience as follows: 
+Page 5 of 24 94 
+  
+
+6. We defne the page’s ideological leaning as the prob ability of a page has been classifed as right-wing minus  the likelihood of the page being left-wing, giving a skew  between -1 (left) and 1 (right). As we use cross-valida tion, we take the average of this bias on all folds. 
+Aa,b = 
+(Audiencea,b + Audienceb,a MAPa + MAPb 
+For step (5), we experiment with three existing graph 
+) 
+based SSL algorithms. They are classic label propagation  
+. 
+(LP) (Zhou et al. 2003), label propagation with smooth func 
+In this case, A is the total number of people interested in one  page and like the other, and vice versa, divided by the sum  of the number of active users of both pages. It is important  to note that all the audience of one interest is not equal to the  MAP of the related page. For instance, a person may like a  fan page of one celebrity but not the ofcial page. Facebook  still counts that person as interested in that celebrity. 
+With this new afnity score, we compute the political  leaning. For that, we construct a graph using the score and  use a semi-supervised learning method (SSL) to propagate  the ideological bias of some known pages to all others in the  following steps:  
+1. For each page found as for a given interest, we calculate  our new afnity score A; 
+2. We create an undirected weighted graph whose nodes  represent the pages and, an edge is added between two  nodes if a page is related to the other on the Audience  Insights data. The edge weight is defned as the comple 
+ment of afnity: w(u, v) = 1 − Au,v; 
+3. We apply the Floyd–Warshall algorithm (Floyd 1962)  to fnd the distance between all pairs of nodes of that  graph; 
+4. We verify which pages from the selected 13 categories  can be identifed as right-wing or left-wing and then  label them as such; 
+5. We use a graph-based SSL method to classify the  remaining pages as left or right, passing the graph as a  parameter; 
+tion classes (Smooth LP) (Zhu et al. 2003), and spectral  graph transducer (SGT) (Joachims 2003). As the baseline  method, we explore the K-nearest neighbor (KNN) algo rithm (Cover and Hart 1967) using only the known part  of the graph in supervised learning. We perform tenfold  cross-validation and report the area under the ROC curve  (AUC) for all instances, using this metric and cross-valida tion scheme to perform a grid search on the best hyperpa rameters. In the next section, we present the results of this  assessment, showing which algorithm we chose for step (5).  After this decision, we compare our entire process to calcu late political bias using the chosen SSL method to the other  four related works (Ribeiro et al. 2018; Bakshy et al. 2015;  Mitchell et al. 2014; Budak et al. 2016). As these previ ous strategies focused on US data, in this process, we use a  group of American Facebook pages as the validation dataset,  as shown in action (I) of our general methodology in Fig. 1. 
+3.2 Collecting pages’ audience information 
+For our analysis, we collect the demographic information  of the audiences for each relevant interest using the Face book Marketing API. Four demographic dimensions were  collected: gender, age, relationship status, and education.  Previous works have used that same information to infer  health patterns in user’s ofine life, approximate election  polling, and analyze cultural diferences (Araujo et al. 2017;  Ribeiro et al. 2019; Vieira et al. 2020). 
+We then used the demographic data collected to assess  how diferent a page’s audience is from the general Brazilian  
+1 3 
+94 Page 6 of 24 
+Table 1 Examples of comments  
+Social Network Analysis and Mining (2021) 11:94 
+and their toxicity score Comment (Translated to English) Toxicity This M*fo gets nothing more, he is a f*got 0.905 
+How about ... killing Lula and all the supreme court bad guys 0.884 
+They will all go to jail 0.506 
+U know he doesn’t like the poor 0.673 
+Guuuuuuys ... nobody does anything to stop this scum? 0.369 
+Don’t let them set Barabbas out again. Can’t make this mistake again . 0.199 
+of course it is ... he wants it to remain state owned to get his hands on the money that comes in ..  very simple 
+0.128 
+Facebook audience in their demographic composition. To  that end, we calculate the mean absolute deviation (MAD)  for each demographic dimension. We formally defne the  deviation, 𝛥pa, of Facebook page p for one demographic  attribute a as follows: 𝛥pa = 𝜋pa − 𝜋Ba . In this formula, 𝜋pa is  the proportion of users who are the audience of Facebook  page p and have the demographic attribute a and 𝜋Ba is the  proportion of all Brazilian users who has the demographic  attribute a. Intuitively, 𝛥pa measures how one demographic  group is under-represented (< 0) or over-represented (> 0)  in an audience of certain page p compared to the average.  For example, 𝛥PublicFigureA 
+female = 𝜋PublicFigureA 
+female − 𝜋Bfemale = 
+0.9135 − 0.5396 = 0.3739, which indicates females are  37.39% over-represented in the audience of the “Public Fig ure A” page. From this deviation, we calculate the MAD for  each demographic dimension by page as: 
+16, 2019—two weeks during the main Brazilian political  event of 20199. 
+We also assess the toxicity of the posts and comments on  the Facebook pages. For that, we used Google’s Perspective  API, which provides diferent models to identify abusive  textual content in several languages, including Portuguese.  According to the API, the toxicity score measures how likely  it is for a comment to be a “rude, disrespectful, or unreason 
+able comment that is likely to make people leave a discus sion.”10 The models return a score of the probability of a  given text being toxic or an attack. When the message is  confusing or misspelled, it returns no score, as the model  does not recognize the text as the correct language. Table 1 shows examples of comments and their corresponding toxic ity scores. 
+For our dataset, the API could not estimate the toxicity  
+MADpd = 
+� 
+∑ 
+ai∈d 
+� 
+�𝛥pai� 
+value for 8.17% of the posts and 9.13% of the comments.  These texts contained very informal writing or misspellings. 
+3.3.1 Pages’ post reactions 
+��d�� 
+where d is one demographic dimension (i.e., gender) and ||d||  is the number of possible values of that dimension (i.e., 2  for male and female). In contrast to 𝛥pa, MADpd does not dif ferentiate under- from over-representation but assesses the  magnitude of the total shift from the baseline. 
+3.3 Analyzing page and audience interactions 
+For each page collected in the snowball data sample, we  have used the Facebook Graph API to collect their posts  and comments. The data from these posts and comments  included their textual content, the number of likes, published  dates, and mentions of other Facebook users in the text. We  also collect all the replies to the comments. For our analy 
+sis, due to limitations in Facebook access via the API, we  focused on posts created between October 27 and November  
+Besides assessing toxicity, we also examine the reactions  given by the users to the posts utilizing the Facebook Crowd Tangle platform11 tool. For each page post, we collected  each of the fve possible Facebook reactions: Love, Haha,  Wow, Sad, and Angry12, normalized by their proportion in  the total, creating a profle by page. We then clustered the  pages by their profles to analyze possible patterns between  the political bias and page types. We used the K-means algo 
+rithm to do the clustering (Lloyd 1982). We examine these  reactions ignoring Likes because it was the immense major ity of all interactions, similar to Moers et al. (2018). In total,  
+9 https://www.theguardian.com/world/2019/nov/08/lula-brazil-relea sed-prison-supreme-court-ruling 
+10 https://developers.perspectiveapi.com/s/about-the-api-attributes and-languages. 
+11 https://www.crowdtangle.com. 
+12 In this work we ignore Care because it was not available in  2019 (Moers et al. 2018) .
+1 3 
+Social Network Analysis and Mining (2021) 11:94 
+we gathered all the reactions from 2,006,359 posts published  in 767 pages from 79 categories over six months, from May  15 to November 30, 2019. 
+To assess how controversial a post is, we compute the  entropy of the reactions as done by Basile et al. (2017). For  each post, we calculate this metric from the proportions of  each one of the fve relevant reactions: 
+H(X)=−∑n=5 
+P(xi) × log(P(xi)) 
+i=1 
+where xi is the proportion of reaction i in all fve reactions  given to a post. For pages and page types, we calculate the  average of this metric to compare the infuence of these  divisions. 
+3.4 Potential API limitations 
+We acknowledge some limitations of our analyses, in par ticular, because of the data provided by used APIs. Limitation of obtaining Facebook historical com ments: Due to the Facebook Graph API limit, we are lim ited in the number of comments for which we can apply  our toxicity analysis. The API limits the number of daily  requests for data, the number of messages per request, and  the number of posts visible in a given period. Consequently, because of that constraints, the best strat egy to collect the comments of a post is to consider a time  window gathering them as they happen. Moreover, that is  also the best approach for collecting toxic content since  Facebook has a policy to actively trying to diminish the toxic  environment that can occur on comment threads13. Since  data collection can take a few days or even weeks, our data  may not include all the comments posted, as Facebook may  remove part of the most toxic ones. Indeed, we found that  Facebook removed 1% of a random sample of comments  we collected during the two months after our initial search.  Thus, to obtain a more accurate picture of a given post, we  decided to focus on a single event and collect all comments  on as many pages as possible. After trying to collect data  on two other political events, we fnally used a consolidated  list of most relevant pages to collect comments as the most  impactful political event of 2019 was happening, the release  of Former President Lula. Even with these limitations, we  believe that our dataset can still provide relevant insights on  the toxicity level present in Facebook comments. Gathering demographic information using the Mar keting API.: For our demographical analysis, we examined  the audiences of each page using the Facebook Marketing  
+13 https://www.facebook.com/business/news/sharing-actions-on stopping-hate.
+Page 7 of 24 94 
+API. The API is used for advertisements management, for  instance, when someone wants to target an ad on a specifc  audience, the tool returns information about Facebook  interests. To gather data about Facebook pages, we use the  interests associated with them. However, only some of the  pages have this characteristic. Therefore, for this evaluation,  we need to create a subset of the pages that have interests 
+defned, but for other analyses, we used all pages available  to us. 
+Accuracy of the toxicity inference by Perspective API  models for Portuguese language: Google’s Perspective  API represents one of the frst “of-the-shelf” tools avail able, but there are no studies about the accuracy of the API  for the Portuguese language texts. Therefore, to estimate its  accuracy, we manually labeled a sample of the data. We  measured the Fleiss’s kappa coefcient of agreement (Cohen  1960) for our labeling and our agreement with the results  provided by Perspective API. We instructed three volunteers  on the defnition of toxicity given by the API. Then, they  labeled 2000 comments each, randomly selected, as toxic  or non-toxic, reaching an average kappa coefcient of 0.41,  within a confdence interval of [0.38–0.43]. To reach a fnal  verdict on labeling, we adopted a majority vote strategy. If  a message received votes from at least two people, we con 
+sidered it toxic. Finally, we compare human classifcation  with the one provided by the Perspective API model, testing  diferent cutofs based on previous works and a live demo  on the ofcial Web site. After that testing, we decided to use  the value of 0.8 as the cutof. The average kappa coefcient  between the human label and the API was 0.52, within a  confdence interval of [0.48–0.56]. Likewise, using transla tion and then using the Perspective API in English gives  an average kappa of 0.44, within a confdence interval of  [0.40–0.49],. That suggests that the Portuguese version of  the API is better than using what is available with transla 
+tion. These results also show that measuring the toxicity of  texts is a complex test and that the Perspective API can be  as good as a human. 
+4 Characterizing alternative media  and political bias 
+In this section, we present the results of four semi-super vised learning algorithms. We compare our methodology for  quantifying the ideological leaning of Facebook pages with  previous methods and show the estimated political bias of  Facebook pages in our data collection. 
+1 3 
+94 Page 8 of 24 
+Table 2 Overview of datasets used to validate our political bias  assessing method 
+Social Network Analysis and Mining (2021) 11:94 
+Table 3 AUC scores for diferent SSL methods with 95% confdence  intervals 
+Dataset Total number of  pages 
+Intersection  with our entire  data 
+AUC (Train) AUC (Test) 
+LP 0.9546 [0.9414–0.9679] 0.8440 [0.8091–0.8790] 
+ Mitchell et al. (2014) 32 24 (75.00%) Bakshy et al. (2015) 500 111 (22.20%) Budak et al. (2016) 15 14 (93.33%) Ribeiro et al. (2018) 20,448 302 (1.48%) Our extra data 527 527 (100.00%) 
+4.1 Dataset used for validation 
+For validating our methodology to assess political bias, we  used a dataset of US news outlets to compare our results  to previous work (Mitchell et al. 2014; Bakshy et al. 2015;  Budak et al. 2016; Ribeiro et al. 2018) since, to the best of  our knowledge, there is no similar work in Brazil. 
+To accomplish that, we frst compiled a list of seed pages  for step (1) of our snowball method described in Sect. 3.1. We  use the list of 15 news outlets created by Budak et al. (2016)  as our starting “seed” pages list. After ten iterations of the  snowball approach, we found 832 pages that had any interest  in Facebook. Using their political self-identifcation, we also  grouped 136 public fgures and political entities from these  pages into 65 left-wing and 71 right-wing pages used as train 
+ing data by our method. Table 2 shows the number of pages in  each dataset and the overlap with our collected dataset. This dataset of 832 US pages found by our snowball  method has more of its pages coming from the two more  extensive datasets (111 from Bakshy et al. (2015) and 302  from Ribeiro et al. (2018)), but proportionally, it covers  more pages from the smaller datasets (75% from Mitchell et  al. 2014 and 93.33% from Budak et al. 2016), as given in  Table 2. This fact shows one limitation of our approach,  which is the use of interests to fnd new pages. When com pared with the most comprehensive list of pages available in  the literature (Ribeiro et al. 2018), our proposed method was  able to capable of fnding 302 of the 20,448 pages. The most probable reason is that this dataset includes a  high percentage of smaller alternative media that do not have  interests related to them. It is also possible that some large  regional or national mainstream media has an interest, and,  therefore, a smaller local news outlet afliated to it does not  receive their interest, as they are covered by the topic of the  larger outlet. 
+One evidence that seems to support this possibility is  the interaction of this broader dataset with the others. Only  three pages from Mitchell et al. (2014) were not present in  the data from Ribeiro et al. (2018). These three pages were  two public fgures, Rush Limbaugh and Sean Hannity, and  one news outlet, Buzzfeed News, related to a broader news  
+Smooth LP 0.9509 [0.9298–0.9719] 0.8926 [0.8718–0.9133] SGT 0.9615 [0.9462–0.9768] 0.9482 [0.9290–0.9674] KNN 1.0000 [1.0000–1.0000] 0.9122 [0.8806–0.9437] 
+Best results are in bold 
+and entertainment outlet already included in this dataset,  Buzzfeed. 
+Another relevant contrast is that our methodology found  most of the public fgures in all datasets considered, with  most of them not being present in any of the previous works.  These data only encountered by our proposition are shown  in Table 2 as the extra data row of the table. As we use the  public fgures to measure the political bias of all pages, using  their self-identifcation, we can test our results for them con trasting our fnding to their declared ideology. Therefore,  the absence in the other works does not impact our analysis.  Finally, it is also important to note that the proportion of  alternative media is higher in the more extensive datasets,  with the smallest ones almost entirely composed of main 
+stream media outlets. 
+4.2 Comparing graph‑based SSL algorithms 
+In order to identify the best graph-based SSL algorithm to use  in step (5) of our methodology (see Sect. 3.1), we compare  well-known graph-based SSL methods in the task of clas sifying Facebook pages as either left or right, which we will  call the classifcation step. Later, we use the best algorithms  to calculate an actual political bias score using the ideologi cal leaning of US pages calculated from the average outcome  of the tenfold of the supervised learning and comparing our  results to the other four related studies (Ribeiro et al. 2018;  
+Bakshy et al. 2015; Mitchell et al. 2014; Budak et al. 2016). From the 832 pages that we found in the previous section  and which had an interest in Facebook, we reserved ten test  sets of 83 pages for each fold and proceeded with tenfold  cross-validation. 
+For the hyperparameters of these algorithms, we used a  grid search14 over the parameter space of each one of them  using this cross-validation scheme to test the results. For all  algorithms, except SGT, we used the scikit-learn implemen 
+tation, as we acquired the code for SGT from the original  author Web site15. We found that the best results were using  
+14 https://scikit-learn.org/stable/. 
+15 http://sgt.joachims.org/.
+1 3 
+Social Network Analysis and Mining (2021) 11:94 
+Page 9 of 24 94 
+  
+Fig. 3 Comparison of our method to the baseline political leanings from methods based on audience metrics 
+Table 4 Pearson’s r for each  combination of political leaning  baseline and graph-based SSL  method 
+Smooth LP SGT KNN 
+Mitchell et al. (2014) 0.7642 [0.5216 – 0.8925] 0.8193 [0.6212 – 0.9190] 0.8091 [0.6022 – 0.9141] Bakshy et al. (2015) 0.8353 [0.7686 – 0.8841] 0.8483 [0.7863 – 0.8934] 0.8204 [0.7485 – 0.8733] Budak et al. (2016) 0.6267 [0.1440 – 0.8685] 0.6616 [0.2019 – 0.8824] 0.6414 [0.1681 – 0.8744] Ribeiro et al. (2018) 0.8225 [0.7823 – 0.8559] 0.6266 [0.5528 – 0.6906] 0.8263 [0.7868-0.8590] 
+Best results are in bold 
+50 neighbors for KNN, the RBF kernel for both LP and  Smooth LP, and the SGT with its c hyperparameter equal to  1000. The 𝜎 used in the kernel for the LP method was equal  to 0.35, while the same parameter was 0.55 for the Smooth  LP method. The best RBF kernel found was not the stand 
+ard implementation available on the scikit-learn library but  our version that used our afnity score directly instead of  calculating the Euclidean distance on it. Table 3 shows the  results of each tested model for both training and test sets. 
+We fnd that SGT has the best result on average for the  test set with AUC equal to 0.9482, surpassing the KNN  baseline. Smooth LP appears in the second position with  AUC = 0.8926, but statistically tied to the baseline, while  LP was the worst. In the training set, KNN was better than  all others, with AUC equal to 1. However, as the training  set for KNN was only composed of the labeled data, it had  an easier task when learning the classes on that set, making  it a less meaningful comparison than the test data. As the  KNN may not generalize the classifcation using the unla beled data, allowing some error for the training data, it just  learned the class of all data points in that partition. 
+4.3 Comparing our proposed method with previous  eforts 
+We now take the three algorithms that had the best results  in the previous subsection (SGT, Smooth LP, and the KNN  Baseline) to use them in step (5) of our methodology with  four well-known datasets of political bias. 
+  
+
+Fig. 4 Comparison of our method to the political leanings from  Budak et al. (2016), based on media content 
+4.3.1 Comparing algorithms for the complete task 
+To compare the results from the graph-based SSL methods  with the four datasets created by other methods from relevant  related work, we use the Pearson correlation coefcients16,  shown in Table 4. We note that almost all these methods  had statistically equivalent results, with statistically signif 
+cant diferences only on data from Ribeiro et al. (2018). In  this case, Smooth LP and KNN have the highest correla tions, and SGT is worse than all other options. As KNN and  Smooth LP were also satisfactory in the classifcation step,  
+16 The confdence intervals were calculated using Fisher Z transfor mation as presented on: http://onlinestatbook.com/2/estimation/corre lation_ci.html.
+1 3 
+94 Page 10 of 24 
+Table 5 Overview of the interest related to the Brazilian pages with  calculated political bias 
+Alt. Media Main. Media Pub. Figures 
+Pages 332 180 255 Posts 802,956 991,374 212,029 Avg. Likes 662.697 679.336 2,990.927 Avg. Reactions 263.912 285.152 697.831 Total Reactions 211,909,710 282,692,338 147,960,457 
+the SGT advantage becomes less relevant as it only won in  that step alone. Additionally, considering that the KNN uses  only the labeled data, we can deem the Smooth LP the best  method, as it uses semi-supervised learning, training with  most of the graph. In other words, as the amount of labeled  data afect the overall result, in cases where labeling is more  complex than usual, we expect the semi-supervised approach  to be better. 
+4.3.2 Comparing our method to other methodology 
+After establishing the best algorithm (i.e., Smooth LP), we  now compare our entire methodology with the four relevant  methods described in the related work section. Figures 3 and 4 depict how similar our bias scores computed with the  
+Smooth LP algorithm are to the ground truth datasets. We observe that the results of our method had a high cor relation with the results of those three audience-based data sets (Person’s r = 0.8 on average). Notably, the sets that also  used Facebook data (Ribeiro et al. 2018; Bakshy et al. 2015)  had narrower confdence intervals. Meanwhile, Mitchell et  al. (2014) had a slightly wider confdence interval, with the  lower bound of its correlation being as low as 0.5216, prob ably because it assessed audience bias using a survey instead  of Facebook data, being less comparable to our strategy. Following that trend, the dataset that measured the  political bias of news stories by showing them to Amazon  Mechanical Turk17 human judges instead of using Face book (Budak et al. 2016) had the broadest confdence inter vals and the worst correlation with our method. This result  happened even after using their list of pages for our start ing list in step (1) of our methodology. This problem was  equally detrimental for all algorithms. We theorize that the  number of outlets, together with the content-based scores  from human labeling, generated this lower performance.  Unfortunately, the paper does not provide any rater reliabil ity metric (e.g., kappa score), making it harder to analyze  other possible causes of that discrepancy. 
+17 https://www.mturk.com/.
+Social Network Analysis and Mining (2021) 11:94 
+Table 6 Overview of Brazilian Facebook pages data 
+Left Center Right Total by type 
+Alt. Media 127 51 154 332 Main. Media 28 36 116 180 Pub. Figures 62 32 161 255 Total by Bias 217 119 431 All Pages:767 
+Nonetheless, our method performance with data from  audience analysis indicates how it is reliable compared to  other similar methodologies. These methodologies have  some margin of error, estimating a bias that may be slightly  of, something also present in our method. However, because  these related works have presented fair results and our meth 
+odology is comparable to them, we efectively built another  functional alternative. 
+4.4 The Brazilian alternative news landscape 
+After validating our method, we apply the same methodol ogy to analyze Brazilian Facebook pages. We start from a list  of 22 Facebook pages introduced in Moretto and Ortellado  (2018), which included Brazilian mainstream and alterna tive media outlets and other meta-information such as their  political afliation and the public they reach. To extend this  dataset of Brazilian pages, we used this initial list of pages  as the “seed” pages of the snowball described in Sect. 3.1.  In total, we found 767 pages, with 114 public fgures and  political entities, which are identifable as left-wing (58) or  right-wing (56) pages. Table 5 shows the distribution of this  dataset with their classifcation in mainstream, alternative  media, and public fgures. 
+For Step (5) of our method, we selected Smooth LP algo rithm reaching test set AUC of 0.9875 within a 95% con fdence interval ([0.9686–1.0]). Using this classifcation,  we correctly identifed all the ideological leanings of the  “seed” pages from the original article (Moretto and Ortel lado 2018). 
+4.4.1 Assessing the political polarization of Brazilian pages 
+To further analyze our estimated bias, we divided the range  of [−1,1] of our score into three parts to represent Left,  Center, and Right political leanings. To accomplish this,  we used the standard deviation of the bias assessed from the  folds of the cross-validation (𝛿). We transform the numerical  bias score into a categorical class based on the sign of the  average score by adding and subtracting 𝛿. If it is negative  in both cases, we consider its label as Left. If it remains  positive, we labeled it Right. Otherwise, the page is labeled  as Center leaning. Finally, we classify each collected page  as a public fgure, mainstream media, or alternative media.  
+1 3 
+Social Network Analysis and Mining (2021) 11:94 
+Page 11 of 24 94 
+  
+Fig. 5 Pages graph with their associated interests 
+We grouped all politicians and public fgures in the pub lic fgure category. Newspapers, Websites, TV, Radio, and  Magazines were classifed as mainstream media if they  have a registry in any Brazilian ofcial press organization.  If there was no registry, we considered them as alternative  news media. 
+Table 6 shows the distribution of pages by their politi cal bias and types. We observe that alternative media out lets have the most pages classifed as left-wing (38.25%),  while mainstream media outlets have the most right-wing  outlets (64.44%). One explanation for that is that alterna tive media pages found were from the previous left-wing  Brazilian governments. Meanwhile, some big mainstream  outlets have more center-right positions, as they exist since  the right-wing Brazilian military government and are pro business (Ganter and Paulino 2020). 
+Figure 5 shows part of the pages’ network built in the pro cess of our method. In particular, we present only the pages  used for the demographic analysis presented in the next sec tion. As they are less numerous, it is enough to make the  graph more legible. This graph represents the connections  built using the Audience Insights tool before the changes we  made for the semi-supervised algorithms. 
+Table 7 Overview of the pages with demographics collected Type Pages Avg. Audience Size 
+Alternative media 31 7,031,467.74 Mainstream media 59 5,678,779.66 Public fgures 64 2,808,625
+1 3 
+94 Page 12 of 24 
+  
+Fig. 6 Distribution of the audience size for each page 
+In the graph, pages are the nodes, which are colored based  on their political ideology. We created an edge if one page  was suggested as a related page to another, with the size of  these edges having no meaning, only spacing the nodes to  be visible. Note that right-wing pages (blue color nodes) are  less connected than the other ideologies. 
+5 Demographics of the pages’ audience 
+In this section, we examine the demographics of their audi ences in the context of the ecosystem on Brazilian political  Facebook pages. After assessing the information about the  political bias of the pages, we collect the demographic data  of the audiences for each page with interest. For any case  where this association was not present, we did not have the  data available due to the limitation of the Marketing API.  This subgroup is composed of 156 pages, and Table 7 shows  an overview of the number of pages per type and their aver 
+age audience size. 
+5.1 Audience size across political leanings 
+Here, we examine the size of the audience for each page.  Figure 6 depicts the cumulative distribution function (CDF)  
+Social Network Analysis and Mining (2021) 11:94 
+of audience size from all the pages and considering the  political leanings (log scale in x-axis). We can observe that  half of the pages have an audience of up to 3 million users,  while about 12.5% of them had an audience of more than  10 million users. 
+Grouping by ideology, we then test the statistical sig nifcance of the diferences using the Mann–Whitney U test (Mann and Whitney 1947). We note that left-wing pages  have smaller audiences compared to both right-wing (U =  2417, p < 0.005) and centrist pages (U = 513.5, p < 0.005).  Yet, considering the two types of media and public fgures,  we found no signifcant diference in their audience distribu tion, comparing it to all pages. 
+5.2 Contrasting demographic dimensions 
+We analyze each demographic dimension comparing the  MAD among the diferent media types. Here, the MAD  represents how far the audience of one page difers from  the average Brazilian Facebook user. We used the attribute  deviation (𝛥) to identify which demographic attributes are  under or over-represented. 
+Among the demographics, gender had the highest values  of MAD. About 30% of all pages had an over-representation  of men in their audience. In those, there was a 10% higher  proportion of men than the average. However, the over 
+representation was not uniform, with public fgures having  MAD scores signifcantly higher than the other categories  (U = 3661, p < 0.05). It means that even with several pages  having some gender over-representation, the deviation in this  category was the highest. In that case, we observed that pub 
+lic fgures are followed mostly by men, as shown in Fig. 7a. The age dimension was also signifcantly higher in pages  of public fgures. The audience of these pages was com posed of people over 45 years old, with the MAD score  being statistically higher than that of mainstream media (U = 1633, p < 0.05), shown in Fig. 7b. In contrast, we  do not find statistically significant differences between  alternative media and the other two groups. Moretto and  
+  
+Fig. 7 Cumulative distribution function (CDF) of the deviation (𝛥) and MAD score for demographic attributes and dimensions
+1 3 
+Social Network Analysis and Mining (2021) 11:94 
+  
+
+Fig. 8 Cumulative distribution function (CDF) for education MAD  score grouped by political leaning 
+  
+Fig. 9 Correlation of education score and political bias
+Ortellado (2018) found a similar trend with partisan alter native media having more interactions from men and  people older than 41 years old compared to traditional  media. We conjecture that this shift from users interacting  with alternative news media pages to following public fg ures might be related to the deactivation of some pages from  their study since 2017. 
+One demographic dimension that we also analyze, and  is not present in that work, is the relationship status. We  considered the following relationship status: Single, In a  Relationship, Married, Not specifed, and Others. The Oth 
+ers group includes groups less frequent in our data, such as  Divorced or In an Open Relationship. For all pages in our  data, the proportion of people in a relationship, particularly  relationships like marriage, was higher than the average. 
+But, this deviation is not uniform again, and when we  examine the values of MAD, we see the inverse order for  the types of the age dimension. Mainstream media had a  signifcantly higher shift from the average compared to  public fgures (U = 2471, p < 0.05). That is most evident  when we look at people without any status, counted as Not  Specifed. About 45.55% of all Brazilians on Facebook do  not have any relationship status. Figure 7c shows how the  three types of pages deviate from this average. For 72.5% of  
+Page 13 of 24 94 
+all Mainstream media pages, less than 35% of their audience  do not have any status, while only 47% of public fgures page  have this proportion of users with this Not Specifed status. 
+Lastly, we look at the education dimension in the pages  we collected. In our analysis, we observe that all pages tend  to have an audience with an over-representation of people  with higher education, like college and grad school, and an  under-representation of people with only more basic educa 
+tion (e.g., high school and professional degrees). Previous  studies found something similar in an analysis of demo graphic information in American Facebook users (Ribeiro  et al. 2020). In particular, alternative news media audiences  had the highest MAD scores in this dimension, statistically  higher than both mainstream media (U = 542, p < 0.05) and  public fgures (U = 1156, p < 0.05). These scores mean that  part of the public who follows alternative media are more  diferent from the average Brazilian user than the followers  of public fgures. 
+Figure 8 depicts a clear diference in the MAD score, with  a signifcant ( p < 0.0005) relation of right-wing < centrist  < left-wing. 
+To test this trend, we also calculated the Pearson cor relation coefcient (𝜌) between the education deviation and  the political bias, as shown in Fig. 9. We found 𝜌 equal to  −0.4456 within a confdence interval of [−0.5640, −0.3092],  suggesting that as more to the left, the page is aligned (more  negative), the higher is the educational level of the audience.  These fndings are in agreement with previous observations  that cultural and lifestyle diferences are afected by political  bias (Shi et al. 2017). 
+In sum, our analysis reveals that the followers of public  fgures are mainly men and had at least 45 years old. For all  types, the people with some relationship were more prev alent than those without any. Their percentage was higher  than the average, especially with committed relationships  like marriage. But that was more accentuated for mainstream  media, which had a signifcantly higher variation from the  mean when compared to public fgures. Between the two  types of media, alternative media had an audience mainly  composed of men and older than 41 years old compared to  traditional media. Last, we also found a correlation between  political leaning and the educational level of the audience,  which suggests that pages further to the left have an audi 
+ence that self-described as more educated. 
+6 Posts reactions 
+In this section, we focus on the results from the posts’ reac tions analyzes and investigate the extent to which they are  correlated with diferent categories and ideological leaning. 
+1 3 
+94 Page 14 of 24 
+  
+
+Fig. 10 Intra-cluster sum of squared residuals for the best number of  clusters for our pages 
+  
+Fig. 11 Silhouette metric for the best number of clusters for our pages 
+To accomplish that, we frst create a profle of these reac tions for each page of our entire Brazilian dataset, including  pages without interests. We built this profle based on the  
+Table 8 Page reaction per  
+Social Network Analysis and Mining (2021) 11:94 
+proportion of each of these reactions received on each post.  With that done, we group the pages of similar profles using  the K-means algorithm. 
+To defne the number of clusters (K) in our data, we use  the elbow method (Thorndike 1953). This method aims to  apply an approximation of the variance explained by the  clustering as a performance indicator. 
+One possible approximation is the square of the distance  between the points in each cluster and its centroid. We can  see this value as the sum of squared residuals (SSR). For  each K-value, we calculate this metric. When K approaches  the number of real clusters, the SSR shows a rapid decline,  but when that number goes beyond that value, the same met 
+ric will continue to decline but slower. Following this proce dure, Fig. 10 shows how the SSR changes for each value of  K, where we can see the transition described when we have  four clusters. To confrm this result, we also evaluate the  silhouette metric (Rousseeuw 1987). 
+Figure 11 presents the variation of the average silhouette  metric for each value of K. We can see that there is a change  in the behavior of the curve when K is equal to four, simi lar to our analysis of the elbow method. As the value only  diminishes when we increase K, we expect that our data do  not have a high separation between all clusters, with some  points being harder to place in one group or another. 
+With the decision to use K equal to 4, Fig. 12 presents  the silhouette plot of these four clusters, and Fig. 13 dis plays their reaction profiles. The silhouette plot shows  one curve for each group, showing the metric for each  point of each group and the average silhouette score of the  whole clustering as a vertical line. What we can conclude  
+profle groups Reaction profle Political bias Page type 
+Public fgures Mainstream media Alternative media 
+Largely Love (337 Pages) Left-wing 15,89% 20,97% 38,71% 
+Centrist 17,22% 29,03% 18,55% 
+Right-wing 66,89% 50,00% 42,74% 
+Total Pages 151 62 124 
+Largely Haha (140 Pages) Left-wing 20,00% 7,69% 32,89% 
+Centrist 4,00% 12,82% 10,53% 
+Right-wing 76,00% 79,49% 56,58% 
+Total Pages 25 39 76 
+Balanced (105 Pages) Left-wing 66,67% 15,15% 49,02% 
+Centrist 9,52% 21,21% 9,80% 
+Right-wing 23,81% 63,64% 41,18% 
+Total Pages 21 33 51 
+Optimistic (185 Pages) Left-wing 32,76% 15,22% 35,80% 
+Centrist 5,17% 13,04% 18,52% 
+Right-wing 62,07% 71,74% 45,68% 
+Total Pages 58 46 81
+1 3 
+Social Network Analysis and Mining (2021) 11:94 
+  
+Fig. 12 Final silhouette metric of the four clusters 
+  
+Fig. 13 Radar graph of all groups
+is that the first and last clusters are the ones that contain  the harder points to separate. 
+Now analyzing the clusters, we can note that there is a  group of pages that mainly receive the reaction of Love,  one composed mostly by Haha as a response, and the last  two types of pages receive a more balanced mix of all  these reactions, with one still having a significant amount  of Love reactions. To discover which pages are in each  cluster, we analyze the page types, again adding to our  comparison to previous sections. 
+Page 15 of 24 94 
+6.1 Page reaction profles relation with page types 
+In this section, we analyze the relation between page reac tion profles and page types. Table 8 presents the distri bution of political bias and the type of pages in the four  clusters aforementioned. 
+In the frst cluster, which we call the Largely Love Cluster, we observe that pages from public fgures seem  to receive more of the Love reaction in proportion to all  possible reactions. More specifcally, in this group, where  most of the reactions were Love, most pages are from  public fgures (44.81%). In particular, this cluster had  numerous writers, artists, and authors, being 71.52% of all  these fgures. Nonetheless, the proportion of personalities  directly linked to politics was also signifcant compared  to other groups, with this cluster had the second largest  proportion of politicians (30%). 
+Furthermore, we discover fewer pages from mainstream  media, about 18.40% smaller compared to the number of  alternative media pages. One possible reason is that people  may consider the pages of public fgures as homogeneous  political discussion spaces where they support the cor 
+responding person. On the other hand, they might recog nize the media pages as cross-cutting political discussion  spaces where people with various political leanings come  together and argue or discuss, as some previous works  indicated as a possibility (An et al. 2019). 
+When we also look at the political bias for all three  types of pages, the right-wing pages were the majority,  possibly showing how popular pages with this politics are  on Facebook. Indeed, most pages we fnd have that politi 
+cal leaning. 
+In the second group, the Largely Haha cluster, we  can see that the Haha reaction is prevalent. This group is  mainly comprised of pages from media, with a considerable  amount of them related to entertainment more than to news  (64.35%). Comedians that usually make comments about  politics and pages that present headlines in a satirical way  also exist in this group. We expect to fnd more pages linked  to political satire in the alternative media, and in fact, only  27.86% of these pages are considered mainstream media.  The high proportion of right-wing pages in this cluster, even  compared to other groups, also give insight into the most  common politics related to this kind of content. This insight  relates again to the right-wing popularity seen in Sect. 5. 
+Now, examining the last page clusters, we found two  groups with a balanced mix of responses. We call the frst  one the Balanced cluster. Because of our method, which  measures controversy by the entropy of the reactions, we  expect this group to have the most controversial posts by  defnition. Interestingly, news media is mainly present here,  with 71.43% of all the media pages exclusively related to  the news. 
+1 3 
+94 Page 16 of 24 
+Social Network Analysis and Mining (2021) 11:94 
+  
+Fig. 14 Cumulative distribution function (CDF) of the reactions proportions grouped by political bias 
+  
+Fig. 15 Cumulative density function (CDF) of the reactions proportions grouped by page type
+These outlets account for 37.31% of all pages focused  on news coverage in all the clusters. This group also has  the highest proportion of mainstream media (31.43%). It is  expected that mainstream media pages have a more general  audience (Bakshy et al. 2015), and this higher proportion  reinforces this notion that these pages are an ecosystem  where diferent political sides meet. This situation possi 
+bly creates more controversy and might even bring more  toxic messages, which we will analyze in the next section.  Similarly, this is the only group where the left is more rep resented than the right, showing the diference in response  of the audience in those pages. 
+Last, we investigate one group closer to both the bal anced and the largely love clusters, the Optimist group of  pages. The pages of this cluster have a similar balanced  proportion of reactions, with a more pronounced amount  of Love. Diferently from the Balanced cluster, we can see  
+proportionally more public fgures (31.35%), especially  considering the presence of 41.67% of all politicians. It  also has a higher proportion of entertainment media pages,  with 62.70% of all media of this subset being more focused  on entertainment than in news. What we see in this cluster  is the same high frequency of Love toward public fgures  and less restrained alternative media. But, in this case, the  pages receive more mixed responses in their reactions,  showing a higher controversy, like Pentecostal pastor Silas  Malafaia and the TV show host and journalist Ratinho. 
+In sum, we have two clusters with more public fgures  which received more Love reactions, Largely Love and  Optimistic, and one with more proportion of mainstream  media, which received a more diverse set of reactions, Bal 
+anced. Last, looking into politics, the Largely Haha cluster  is the one that had the highest proportion of right-wing  
+1 3 
+Social Network Analysis and Mining (2021) 11:94 
+
+Fig. 16 Cumulative distribution function (CDF) of the entropy  grouped by political bias and page type 
+pages, while the ones in the Balanced group were more  commonly left-wing. 
+6.2 Reactions relation to political biases and page  types 
+Beyond the clusters of the reaction profles, we also analyze  the distribution of the posts by political bias, as shown in  Fig. 14a–d. For more negative emotions, like Angry and Sad,  
+Page 17 of 24 94 
+left-wing pages receive signifcantly more of those reactions  in their posts compared to pages with other politics. The users also give statistically fewer amounts of Angry to  right-wing pages than to centrist ones. The same right-leaning  pages have most of the Haha reactions of all three ideologies,  with statistical signifcance. This prominence was also indi cated by the clustering, as the Largely Haha cluster had more  pages on the right. Finally, we did not fnd any statistically  signifcant distinctions for the Wow reaction. 
+Furthermore, when we look into the relationship between  reactions and page types, we found no statistical signifcance  for the two most negative responses. For Haha and Wow, we  have a relation of the proportion of the reactions that are:  Mainstream Media > Alternative Media > Public Figures, as  shown in Fig. 15b, c. Figure 15a displays the exact reversed  relationship for the Love reaction. This discrepancy between  Love and Haha may indicate that the last one may be used as  a negative reaction. 
+Last, we analyze our measure of controversy, the entropy  of the reactions as defned in Sect. 3.3.1 We found that main stream media posts have higher entropy than both other types,  and centrist pages have less entropy than pages of other biases,  in both cases with statistical signifcance (p < 0.001). Fig ure 16a, b shows the CDFs for these results. 
+In summary, we found signifcant diferences between the  three types of pages when we evaluate the reaction clusters,  with public fgures receiving more reactions considered more  cheerful. Moreover, mainstream media receives a more  diverse set of reactions by post. For political bias, the more  evident diference is present in the analysis of individual reac 
+tions, with Angry and Sad being more common in the left wing pages and right-leaning outlets and fgures having more  Haha reactions. 
+Table 9 Overview of toxicity metrics calculated on the subset of pages with comments 
+Pages Posts Comments Toxic comments oxic posts Avg. Toxicity Std. Mean Sq. error Entropy 
+Political bias 
+Right-wing 28 7,300 2,847,079 13.48% 1.10% 0.3446 0.1426 0.0203 0.3953 Centrist 8 2,125 180,051 14.05% 0.05% 0.3709 0.1986 0.0621 0.4058 Left-wing 27 6400 1,068,789 12.59% 0.81% 0.3330 0.1831 0.0338 0.3784 Page Type 
+Public Figures 26 2,100 1,921,947 9.58% 1.48% 0.2886 0.1168 0.0146 0.3158 Alternative Media 22 7,000 769,853 17.15% 1.24% 0.3912 0.1945 0.0429 0.4583 Mainstream Media 15 6,725 1,404,119 16.19% 0.22% 0.3903 0.1633 0.0323 0.4428 Total All Pages 63 15,825 4,095,919 13.27% 0.84% 0.3427 0.1728 0.0346 0.3915
+1 3 
+94 Page 18 of 24 
+
+Fig. 17 Cumulative distribution function (CDF) of the amount of  toxic comments and posts 
+
+Fig. 18 Cumulative distribution function (CDF) of toxicity of com ments compared to their responses 
+7 Toxicity in alternative media 
+After looking at post reactions in the previous section, we  explore the toxicity level of comments and posts on each  page. We also present how they correlate with the results  from the reactions. 
+In this scenario, we have a limited subset of pages used  for the toxicity analysis. As we focus on the comments, we  had a constraint in the number of pages that could be ana lyzed due to the use of Graph API to gather the data, fol lowing Facebook terms of use18. Due to this limitation, we  focused on a single event, collecting all comments on as  many pages as possible. We gathered data from one week  prior and one week after the most impactful political event  of 2019, the release of Former President Lula19. 
+We present all the data available in the Facebook Graph  API during the period collected in Table 9. As we can see,  most of the pages are from public fgures (26), followed by  
+18 https://developers.facebook.com/terms/. 
+19 https://www.nytimes.com/2019/11/08/world/americas/lula-brazil supreme-court.html.
+Social Network Analysis and Mining (2021) 11:94 
+alternative media (22) and mainstream media (15). Looking  at the results of our method for political bias, we observe  that there is a balanced split between left and right (27 and  28, respectively), with fewer pages being centrists (8). 
+In this work, we consider a comment or post to be toxic  if the toxicity score is above 0.8, following our validation of  the toxicity measure and previous studies (ElSherief et al.  2018). Using this threshold, we found that 13.27% of com 
+ments and 0.84% of posts were considered toxic. While the  percentages of these messages and posts may appear low, the  level of toxicity varies between pages by a factor of two to  ten compared to average values. Figure 17 shows the cumu 
+lative distribution function (CDF) of the toxicity scores for  all comments and posts, comparing how the two distribu tions difer. 
+From the fgure, we can note that 20% of all pages are  responsible for 60% of toxic comments and 56% of all toxic  posts. A large number of these comments on a page may  indicate that a group of angry users is attacking the page or  that a fght is occurring between users, created by discus 
+sion in the comment section. But, it can also indicate that  a page is “requesting” those messages. We then test that  by using the Chi-squared test between the toxic posts and  posts with the proportion of toxic comments above the aver 
+age of our data. We found that the toxicity of the publica tion and the percentage of these messages have a dependent  relation (𝜒2=36.867, p < 0.005). Furthermore, using the  Mann–Whitney U test, we fnd the responses to a comment  tend to be more toxic than a regular comment to a post (U > 3.6 × 1011, p < 0.005). Figure 18 shows more details  about that comparison showing that even though there is  little diference in the percentage at the cutof point, as the  test shows, there is a higher probability of the toxicity of the  responses being greater than regular messages. This analysis  shows one possible way that the toxicity increases through out one interaction, with replies getting more toxic than the  original comments they respond to it. 
+7.1 Toxicity in Brazilian pages 
+Examining how various characteristics of the pages are  related to the level of toxicity in the comment sections, we  initially calculated the proportions of the toxic messages  commented on in each of the posts. We frst investigate how  the political leaning of public fgures (left, center, or right 
+leaning) and the type of media (mainstream or alternative)  of pages are related to the level of toxicity in their comment  sections. 
+For each sub-group, we aggregate all the comments on  the corresponding pages. Table 9 shows that the average tox icity of these comments for public fgures (0.2886) is slightly  lower than for both kinds of media (0.3903 and 0.3912). For  political bias, the efect is slightly smaller. Centrist pages  
+1 3 
+Social Network Analysis and Mining (2021) 11:94 
+Page 19 of 24 94 
+Fig. 19 Cumulative distribution function (CDF) of toxicity in comments and posts by page type 
+have higher average toxicity (0.3709) in comparison with  the other two alignments (0.3330 and 0.3446). Figure 19 shows the cumulative distributions of the com ments’ toxicity per post, the proportion of toxic comments  per post, and posts’ toxicity. Figure 19a illustrates the dis tinction between the comments average toxicity of diferent  page types, showing that it is present in the entire distribu tion, with toxicity being statistically lower for public fgures,  with signifcance according to the Mann–Whitney U test  (U > 3.52 × 1012, p < 0.005). That supports our previous  fnding that shows that these pages receive a higher num ber of positive reactions. Likewise, Fig. 19b shows these  fndings in terms of the percentage of toxic comments (i.e.,  comments whose toxicity is higher than 0.8). We can see  signifcant diferences between the three types of pages (U  > 1.17 × 107, p < 0.005), suggesting that media publica tions receive more toxic comments than public fgures. The  averages of the proportion of these comments in publica tions of public fgures are lower than that of posts in media  with means of 9.58% and 16.53%, respectively, as shown  in Table 9. 
+Using the Mann–Whitney U test to assess the diference  in these proportions, we see a signifcant efect on the type  of pages (U > 1.17 × 107, p < 0.005). This result shows that  publications in the media receive statistically more toxicity  than publications by public fgures. This fact might refect  the environment in the news pages, as we expect to be cross 
+cutting across political lines more often than in the other  pages, as discussed in Sect. 6. 
+For public fgures pages, we see less toxicity when a  user interacts with people who have similar beliefs. That  suggests that heterogeneous media environments may be  more susceptible to have a higher level of toxicity (Bakshy  et al. 2015). Figure 19c presents a sign that the environ 
+ment itself may be responsible for the diference. We also  observe that the traditional media has a distribution of  the toxicity of the posts with less toxicity, indicating that  the higher proportion of toxic comments does not come  from having many toxic posts. When examining media  pages, only one had less than 10% of toxic comments.  
+Meanwhile, half of the pages of public fgures do not have  such a level of toxicity in their messages. The pages by the  current president of Brazil (i.e., Jair Messias Bolsonaro)  and other former presidents are the pages with the two  lowest proportions of the toxic comments in their pages. 
+With the political polarization of recent years and all of  them being some of the fgures more related to that polari zation, it is unexpected that they have such low values.  Besides possibly being homogeneous political discussion  spaces, another possible explanation is that, as politicians,  some professional public relations might maintain their  accounts. As the online presence is remarkably crucial for  public fgures, their assistants could fag the toxic com ments and try to remove them. In contrast, news media  might not have the same amount of efort, and, in some  cases, they might even beneft if people come to their page  to fght about current events, especially alternative media.  Then, their efort to fag comments and moderate them  might be of a lesser extent. 
+7.2 Aspects of toxicity in comments 
+To delve deeper into what causes a user to publish toxic  comments, we analyze all the messages whose toxicity score  is equal to 1 (the maximum score). 
+Fig. 20 Distribution of comments with toxicity equal to 1 by page
+1 3 
+94 Page 20 of 24 
+Social Network Analysis and Mining (2021) 11:94 
+Fig. 21 Heatmap of proportion of toxic reply comments by page type and original comment toxicity 
+Table 10 Page reaction profles of the pages with toxicity data 
+Cluster Pages Avg. Toxic  Comments 
+Avg. Toxic Posts Avg. Entropy Worse Toxic Comments Worse Toxic Posts 
+Largely Love 13 8.08% 0.71% 0,61468 Silas Malafaia (20.73%) Carlos Bolsonaro (6.00%) Optimist 11 13.01% 1.19% 0,716406 Diário Causa Operária (22.91%) Ciro Gomes (2.67%) Balanced 22 14.58% 0.64% 0,816313 Ivan Valente (23.33%) Jornal da Cidade Online (5.00%) Largely Haha 17 19.10% 0.97% 0,808381 Falando Verdades (25.28%) Olavo de Carvalho (15.00%)
+Thereby, we frst look into the political leaning of the  collected pages as well as their type (Fig. 20). We note that  right-wing pages have the highest number of toxic com ments, and alternative media pages have slightly more of  these comments than mainstream media. Centrist pages  receive less toxic messages, with public fgures of this ide ology having much fewer comments with maximum toxicity.  This result reinforces our analysis done exclusively with the  proportion of toxic content divided by page types. 
+Looking for specifc instances in the data to fnd relevant  patterns, we observe again how public fgures are diferent  from media. As aforementioned, president Bolsonaro has  a lower proportion of toxic comments, but he still receives  extremely toxic messages (i.e., toxicity score equals 1).  It might imply that: i) he does not actively remove these  comments, but due to his more extensive audience, the  
+proportion of them stays at a lower level, or ii) those com ments might not aim at him and thus are not fagged. However, as we found a general trend in the comment  sections we collected, shown in Fig. 18, in which replies  are more toxic than the messages they respond to, we would  expect that having many comments with maximum toxicity  would generate a higher proportion of these hateful mes sages. Figure 21 shows the possible explanation for this  discrepancy. 
+The heatmap shows the average percentage of toxic  replies a comment receives, given the type of page where  the comment was made and its toxicity level. In general, we  can see that comments with toxicity considered toxic, that is,  with toxicity above 0.8, provoke even more messages above  this limit. That is, toxic comments can attract even more of  them. Yet, this phenomenon is not uniform in all page types.  The percentage of toxic messages received as a reply to a  
+1 3 
+Social Network Analysis and Mining (2021) 11:94 
+comment with toxicity equal to 1 on a page from a right wing public fgure is 0.24. This same proportion appears  for toxic replies of comments with toxicity equal to 0 on a  left-wing alternative media page. 
+Thus, we fnd some characteristics of toxic comments,  which can be summarized as follows. It is possible to note  that the responses to a comment tend to be more toxic than  a regular comment to a post, but the type of page and its ide 
+ology afect how the audience responds in general. Besides  that, even though pages of public fgures receive fewer toxic  messages proportionally, in some cases, they receive numer ous messages with the highest values of toxicity. This result  is related to the Love and Haha reactions that were the most  found in posts of these pages. There are much more optimis tic interactions in this type of page, but the higher popular ity also brought some strong detractors. Finally, we observe  again indications that media pages might be perceived as  cross-cutting political discussion spaces in contrast to a more  homogeneous following of public fgures. As this result fol lows trends found by previous works (An et al. 2019) and is  based on our method, it is more evidence of its accuracy in  properly dividing the pages. 
+7.3 Reactions and toxicity 
+Lastly, we can unite the toxicity analysis with the reaction  data, using the dataset of comments from a sample of 63  pages to contrast it to the data from reactions, which we  collected for all pages. Table 10 shows this interposition  between the data with toxicity measured and the page pro 
+fles we found using these reactions. 
+We found that the page profles can be ranked by the aver age percentage of toxic comments, with Largely Love hav ing the lowest proportion of these messages and the Largely  Haha with the most. 
+According to results previously presented in Table 9,  alternative media has the highest percentage of toxic com ments of all three page types, and following that trend, the  order of Largely Love, Optimist, Balanced, and Largely  Haha in Table 10 follows how much of their pages are  alternative media which is, respectively, 36.80%, 43.78%,  48.57%, and 54.29%. The inverse happens to public fgures,  which are more prevalent in the Largely Love cluster and  have the least toxic comments. 
+Along with the clusters’ information, we also present  the pages with the worst proportion of toxic comments and  posts by groups. In Table 10, the pages that received the  most toxicity are mainly left-wing pages, with most of these  messages being on alternative media pages. Meanwhile, the  pages with more toxic posts are, for the most part, right 
+wing, with the one that produced the most toxic posts being  from a right-wing public fgure. 
+Page 21 of 24 94 
+Although there are signs of correlation of the average  entropy to the average percentage of toxic comments, it is  not signifcant. We speculate that this occurs due to the large  confdence interval of this small sample. Nonetheless, as it  indicates the possibility of a real correlation, we examine  the same metric by page. In that case, the correlation drops  to 0.377, but now with a confdence interval from 0.116 to  0.589 and a p-value of 0.00589. Finally, going to the level of  the post itself, the correlation diminishes to 0.14. However,  using Pearson’s Chi-square test, we were able to fnd that  posts with entropy above the average also had toxic com ments above the mean in our data, with signifcance (𝜒2 
+=374.01, p < 0.005). 
+Lastly, we also searched for a relationship with individual  types of responses. From the fve reactions we collected,  Angry, Love, and Haha had the best correlation with the  percentage of toxic messages, respectively, a correlation of  0.581, −0.572, and 0.461 when looking by page. Similar to  entropy, when applied to posts, all correlations drop below  0.3. 
+Moreover, we fnd posts with one of these reactions above  the average proportion, which also had the toxic comments  above the average percentage they appear, with the statisti cal relevance confrmed by using the Pearson’s Chi-square  test. In this case, the post’s popularity might be what creates  this dependency. However, these reactions can be used as  indications of which publications we need to prioritize when  searching or inhibiting hateful content. 
+In sum, we found some general trends examining the post  reactions along with our toxicity results. Public fgures  had a lower proportion of toxic messages and high lev els of positive reactions. Meanwhile, mainstream media  receives more toxic comments and more varied interac tions by post, indicating higher entropy than the other  types. Analyzing the direct correlation between toxicity and  post reactions, the alternative media impacts which page  reaction profles have the highest toxicity levels. 
+8 Conclusion and future work 
+In this work, we presented an approach to study a new  environment of news media that is gaining relevance and  where alternative media (i.e., users or pages that present  themselves as media afecting public perception of afairs,  sometimes having politically biased coverage) proliferates.  Specifcally, we developed a method to identify alternative  media and validate it in the context of US media, where  there are datasets of the political leaning of several news  outlets. We then apply this method in the context of Bra zilian pages, producing in our further analyses a series of  measures about the pages’ audience, post reactions, and  the toxicity of the comments.
+1 3 
+94 Page 22 of 24 
+We also tested four diferent learning algorithms and  compared them with multiple datasets of diferent methods  for estimating ideological leaning (Ribeiro et al. 2018;  Bakshy et al. 2015; Mitchell et al. 2014; Budak et al.  2016). Our proposed approach presents competitive results  with most of them, particularly with other Facebook-based  data (Ribeiro et al. 2018; Bakshy et al. 2015). Between  the tested algorithms, we found that Label propagation  with Smooth function classes (Smooth LP) had the best  results when considering both the classifcation alone and  the comparison to the results of the previous works. 
+From the application of this method, our main discov eries in the context of Brazilian Facebook pages can be  grouped as insights about the audience, the post’s reac tions, and the toxicity of the comments. First, we discov ered in the audience analysis that: 
+– Left-wing pages found have smaller audiences com pared to both right-wing and centrist pages. – Public fgures have an older and more male audience,  confrming similar trends from other works. – For all page types, the people that disclosed some rela tionship were more prevalent than those without any. – There is a mild correlation between political bias and  the education level, which showed pages further to the  left having an audience that self-describes as more edu cated. 
+Secondly, regarding our posts’ reactions analyses, our results  reveal a series of relevant trends. We found signifcant difer ences between the page type, some based on the clustering  of the pages and others in the individual reaction types. We  fnd four clusters called Largely Love, Largely Haha, Bal anced, and Optimistic. The trends from this analysis can be  summarized as: 
+– There are two clusters with more public fgures, Largely  Love and Optimistic, and one with more proportion of  mainstream media, Balanced; 
+– The Largely Haha cluster is the one that had the highest  proportion of right-wing pages, while the ones in the  Balanced were more commonly left-wing; 
+– Public fgures were clustered in the group that received  more interactions related to mostly positive feelings,  while mainstream media received more varied reactions  by post; 
+– There is an evident diference with diferent types of  reactions considering ideology, with the left-wing outlets  receiving more negative interactions and the audience of  right-leaning pages giving more Haha reactions; 
+– Evaluating the controversy of a post in terms of the  received reactions, we found that posts from pages of  
+Social Network Analysis and Mining (2021) 11:94 
+mainstream media or with centrist bias have higher  entropy than the other types and biases. 
+Finally, analyzing the toxicity score in various levels of  granularity, we confrm some of the trends from the post’s  reactions, besides some new patterns. In general, we can  say that: 
+– Comments replying to other commentaries are more toxic  than single responses; 
+– There are more of these messages on pages with more  toxic publications, even when the post and toxicity score  of comments do not have a high correlation; 
+– News media pages receive more toxicity than pages from  public fgures, but when a post cites public fgures, the  proportion of toxic messages increases; 
+– Considering the page types, the political afliation of the  public fgures did not afect the percentage of toxic com ments or posts, while Mainstream media receives more  toxic comments than alternative media; 
+– Analyzing the direct correlation between toxicity and  post reactions, alternative media impacts which page  reaction profles, created by the clustering, have the high est toxicity levels. 
+A key implication of our work is the development of a  methodology to identify alternative news media sources,  automatically label their political leaning, and gather and  characterize valuable information about their audience’s  demographics and comments’ toxicity. We hope our method 
+ology and fndings for the Brazilian news ecosystem might  open a new avenue of future work and inspire researchers to  reproduce our study in other countries and contexts. 
+Acknowledgements This work was partially supported by the Ministé rio Público de Minas Gerais (MPMG), project Analytical Capabilities,  as well as grants from CNPq, CAPES, and Fapemig. 
+Declarations 
+Conflict of interest: The authors declare that they have no confict of  interest. 
+Availability of data and materials: The datasets generated during and/or  analyzed during the current study are available from the corresponding  author on reasonable request. 
+References 
+An J, Kwak H, Posegga O, Jungherr A (2019) Political discussions in  homogeneous and cross-cutting communication spaces. In: Pro ceedings of the 13th international AAAI conference on web and  social media. AAAI Press, pp 68–79
+1 3 
+Social Network Analysis and Mining (2021) 11:94 
+Araujo M, Mejova Y, Weber I, Benevenuto F (2017) Using Facebook  ads audiences for global lifestyle disease surveillance: Promises  and limitations. In: Proceedings of the 9th ACM on web science  conference. Association for Computing Machinery, pp 253–257 
+Bakshy E, Messing S, Adamic LA (2015) Exposure to ideo logically diverse news and opinion on Facebook. Science  348(6239):1130–1132 
+Barros S, Carreiro R (2015) A discussão pública e as redes sociais  online: o comentário de notícias no facebook. Fronteiras-estudos  Midiáticos 17(2):174–185 
+Basile A, Caselli T, Nissim M (2017) Predicting controversial news  using facebook reactions. In: Proceedings of the 4th Italian confer ence on computational linguistics. Accademia University Press,  pp 12–17 
+Budak C, Goel S, Rao JM (2016) Fair and balanced? quantifying media  bias through crowdsourced content analysis. Public Opin Quart  80(S1):250–271 
+Cohen J (1960) A coefcient of agreement for nominal scales. Educ  Psychol Meas 20(1):37–46 
+Conover MD, Gonçalves B, Ratkiewicz J, Flammini A, Menczer F  (2011) Predicting the political alignment of twitter users. In: Pro ceedings of the 2011 IEEE international conference on privacy,  security, risk and trust and 2011 IEEE international conference  on social computing. IEEE, pp 192–199 
+Cover T, Hart P (1967) Nearest neighbor pattern classifcation. IEEE  Trans Inf Theory 13(1):21–27 
+ElSherief M, Nilizadeh S, Nguyen D, Vigna G, Belding E (2018) Peer  to peer hate: hate speech instigators and their targets. In: Proceed ings of the 12th international AAAI conference on web and social  media. AAAI Press, pp 52–61 
+Floyd RW (1962) Algorithm 97: shortest path. Commun ACM 5(6):345 Ganter SA, Paulino FO (2020) Between attack and resilience: the ongo ing institutionalization of independent digital journalism in brazil.  Digit J pp 1–20 
+Giuntini FT, Ruiz LP, Kirchner LDF, Passarelli DA, Dos Reis MDJD,  Campbell AT, Ueyama J (2019) How do i feel? Identifying emo tional expressions on facebook reactions using clustering mecha nism. IEEE Access 7:53909–53921 
+Guimarães SS, Reis JCS, Lima L, Ribeiro FN, Vasconcelos M, An J,  Kwak H, Benevenuto F (2020a) Identifying and characterizing  alternative news media on facebook. In: Proceedings of the 2020  IEEE/ACM international conference on advances in social net 
+works analysis and mining, pp 448–452 
+Guimarães SS, Reis JCS, Ribeiro FN, Benevenuto F (2020b) Character izing toxicity on facebook comments in Brazil. In: Proceedings of  the Brazilian symposium on multimedia and the web. Association  for Computing Machinery, pp 253–260 
+Haynes B (2018) Facebook retira do ar rede ligada ao mbl antes  das eleições https://br.reuters.com/article/idBRKBN1KF1MI OBRDN.Accessed 30 Sept 2020 
+Hille S, Bakker P (2014) Engaging the social news user: comments on  news sites and facebook. J Pract 8(5):563–572 
+Holt K (2018) Alternative media and the notion of anti-systemness:  towards an analytical framework. Media Commun 6(4):49–57 Holt K, Ustad Figenschou T, Frischlich L (2019) Key dimensions of  alternative news media. Digit J 7(7):860–869 
+Joachims T (2003) Transductive learning via spectral graph parti tioning. In: Proceedings of the 20th international conference on  machine learning. AAAI Press, pp 290–297 
+Kelkar S (2019) Post-truth and the search for objectivity: political  polarization and the remaking of knowledge production. Engag  Sci Technol Soc 5:86–106 
+Khan SA, Chang HT (2019) Comparative analysis on facebook post  interaction using DNN, ELM and LSTM. PLoS ONE 14(11):1–26 Kolhatkar V, Taboada M (2017) Constructive language in news  comments. In: Proceedings of the frst workshop on abusive  
+Page 23 of 24 94 
+language online. Association for Computational Linguistics,  pp 11–17 
+Lloyd S (1982) Least squares quantization in PCM. IEEE Trans Inf  Theory 28(2):129–137 
+Makazhanov A, Rafei D (2013) Predicting political preference of twit ter users. In: Proceedings of the 2013 IEEE/ACM international  conference on advances in social networks analysis and mining.  Association for Computing Machinery, 298–305 
+Mann HB, Whitney DR (1947) On a test of whether one of 2 random  variables is stochastically larger than the other. Ann Math Stat  18(1):50–60 
+Mitchell A, Gottfried J, Kiley J, Matsa KE (2014) Political polarization  & media habits. https://www.pewresearch.org/journalism/2014/ 10/21/political-polarization-media-habits/. Accessed 15 Dec 2019 
+Moers T, Krebs F, Spanakis G (2018) Semtec: social emotion mining  techniques for analysis and prediction of facebook post reactions.  In: Proceedings of the 10th international conference on agents  and artifcial intelligence. Springer International Publishing, pp  361–382 
+Moretto M, Ortellado P (2018) Quanto mais velhos, mais polarizados:  Perfl dos usuários que interagem com páginas de notícias no face book. Tech. Rep. 1, Monitor do Debate Político no Meio Digital 
+Newman N (2011) Mainstream media and the distribution of news in  the age of social media. RISJ Report 2011, Reuters Institute for  the Study of Journalism 
+Newman N, Fletcher R, Kalogeropoulos A, Nielsen R (2019) Reuters  Institute digital news report 2019. Reuters Institute for the Study  of Journalism 
+de Pelle RP, Moreira VP (2017) Ofensive comments in the Brazilian  web: a dataset and baseline results. In: Proceedings of the 6th  Brazilian workshop on social network analysis and mining. SBC,  pp 510–519 
+Reis J, Benevenuto F, Vaz de Melo P, Prates R, Kwak H, An J (2015)  Breaking the news: frst impressions matter on online news. In:  Proceedings of the 9th international AAAI conference on web blogs and social media. AAAI Press, pp 357–366 
+Ribeiro FN, Henrique L, Benevenuto F, Chakraborty A, Kulshrestha J,  Babaei M, Gummadi KP (2018) Media bias monitor: quantifying  biases of social media news outlets at large-scale. In: Proceed ings of the 12th international AAAI conference on web and social  media. AAAI Press, pp 290—-299 
+Ribeiro FN, Kansaon D, Benevenuto F (2019) Leveraging the face book ads platform for election polling. In: Proceedings of the 25th  Brazilian symposium on multimedia and the web. Association for  Computing Machinery, pp 305–312 
+Ribeiro FN, Benevenuto F, Zagheni E (2020) How biased is the popula tion of facebook users? Comparing the demographics of facebook  users and census data to generate correction factors. In: Proceed ings of the 12th ACM web science conference. Association for  Computing Machinery, pp 325–334 
+Rousseeuw PJ (1987) Silhouettes: a graphical aid to the interpretation  and validation of cluster analysis. J Comput Appl Math 20:53–65 Russell A (2011) The Arab Spring| extra-national information fows,  social media and the 2011 Egyptian uprising. Int J Commun 5:10 Shearer E (2018) Social media outpaces print newspapers in the US as a  news source. https://www.pewresearch.org/fact-tank/2018/12/10/ social-media-outpaces-print-newspapers-in-the-u-s-as-a-news source/. Accessed 15 Dec 2019 
+Shearer E, Matsa KE (2018) News use across social media platforms  2018 https://www.journalism.org/2018/09/10/news-use-across social-media-platforms-2018/.Accessed 15 Dec 2019 
+Shi Y, Mast K, Weber I, Kellum A, Macy M (2017) Cultural fault lines  and political polarization. In: Proceedings of the 9th ACM on  web science conference. Association for Computing Machinery,  pp 213–217
+1 3 
+94 Page 24 of 24 
+Starbird K (2017) Examining the alternative media ecosystem through  the production of alternative narratives of mass shooting events on  twitter. In: Proceedings of the 11th international AAAI conference  on web and social media. AAAI Press, pp 230–239 
+Stroud NJ, Van Duyn E, Peacock C (2016) Survey of commenters and  comment readers https://mediaengagement.org/research/survey of-commenters-and-comment-readers/. Accessed 21 Feb 2020 
+Su LYF, Xenos MA, Rose KM, Wirz C, Scheufele DA, Brossard D  (2018) Uncivil and personal? Comparing patterns of incivility  in comments on the facebook pages of news outlets. New Media  Soc 20(10):3678–3699 
+Thorndike RL (1953) Who belongs in the family? Psychometrika  18(4):267–276 
+Tian Y, Galery T, Dulcinati G, Molimpakis E, Sun C (2017) Face book sentiment: reactions and emojis. In: Proceedings of the ffth  international workshop on natural language processing for social  media. Association for Computational Linguistics, pp 11–16 
+Toledo LF (2018) Maior rede pró-bolsonaro do facebook é excluída  após denúncia do ‘estado’. https://politica.estadao.com.br/noticias/ eleicoes,maior-rede-pro-bolsonaro-do-facebook-e-excluida-apos denuncia-do-estado,70002558430. Accessed 15 May 2020 
+Vieira C, Ribeiro F, Vaz de Melo PO, Benevenuto F, Zagheni E (2020)  Using facebook data to measure cultural distance between coun tries: the case of Brazilian cuisine. In: Proceedings of the web  
+Social Network Analysis and Mining (2021) 11:94 
+conference 2020. Association for Computing Machinery, pp  3091–3097 
+Weeks BE, Holbert RL (2013) Predicting dissemination of news con tent in social media: a focus on reception, friending, and partisan ship. J Mass Commun Quart 90(2):212–232 
+Wells C, Zhang Y, Lukito J, Pevehouse JCW (2020) Modeling the  formation of attentive publics in social media: the case of Donald  Trump. Mass Commun Soc 23(2):181–205. https://doi.org/10. 1080/15205436.2019.1690664 
+Zhou D, Bousquet O, Lal TN, Weston J, Schölkopf B (2003) Learning  with local and global consistency. In: Proceedings of the 16th  international conference on neural information processing sys tems. MIT Press, pp 321–328 
+Zhu X, Ghahramani Z, Laferty JD (2003) Semi-supervised learning  using gaussian felds and harmonic functions. In: Proceedings of  the 20th international conference on machine learning. AAAI  Press, pp 912–919 
+Publisher's Note Springer Nature remains neutral with regard to  jurisdictional claims in published maps and institutional afliations.
+1 3

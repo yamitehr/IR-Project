@@ -1,0 +1,806 @@
+﻿CYBERPSYCHOLOGY, BEHAVIOR, AND SOCIAL NETWORKING 
+Volume 18, Number 4, 2015 
+ª Mary Ann Liebert, Inc. 
+DOI: 10.1089/cyber.2014.0656 
+Optimistic Bias and Facebook Use: 
+Self–Other Discrepancies About Potential Risks 
+and Benefits of Facebook Use 
+Sunny Jung Kim, PhD,1 and Jeffrey T. Hancock, PhD2 
+Abstract 
+Despite the accumulating evidence on the positive and negative outcomes of Facebook use, how people  
+perceive themselves to be subject to these outcomes as well as the consequences and mechanisms of these 
+.
+y
+l
+n
+perceptions are underexplored. According to optimistic bias, Facebook users may perceive that bad things are 
+o
+ 
+e
+s
+more likely to happen to others than to themselves, while good things are more likely to happen to them than to 
+u
+ 
+l
+a
+n
+others. The findings from an online survey among Facebook users indicate that the negative psychological and 
+o
+s
+r
+e
+social outcomes of using Facebook were perceived to be more likely to happen to other Facebook users than to 
+p
+ 
+r
+o
+themselves, p < 0.001. These self–other discrepant perceptions toward negative social events (e.g., Facebook 
+F
+ 
+.
+2
+cyberbullying and scams) significantly mediated one’s willingness to support Internet regulation, Sobel z = 2.49, 
+2
+/
+2
+1
+/
+p = 0.01. For positive outcomes of Facebook use, the direction of optimistic bias was reversed, t(235) = - 5.52, 
+1
+1
+ 
+t
+p < 0.01, indicating that people minimized the likelihoods of experiencing positive events from Facebook while 
+a
+ 
+m
+o
+assessing that other Facebook users are prone to encounter those positive events. This reversal pattern emerged 
+c
+.
+b
+u
+among those with negative attitudes toward, and low involvement with, Facebook. These findings demonstrate 
+p
+t
+r
+e
+important and novel self–other discrepant perceptions concerning the risks and benefits of Facebook use. 
+b
+e
+i
+l
+.
+w
+w
+w
+ 
+m
+o
+others.13 This self–other discrepant perception toward future 
+r
+Introduction 
+f
+ 
+a
+f
+events drives unrealistic optimism,13 so-called optimistic 
+i
+a
+With the rise of social media as a dominant inter personal and business communication medium, vari 
+H
+ 
+bias, and is defined as people’s comparative judgment that 
+y
+b
+ 
+d
+‘‘bad things are more likely to happen to others than to me, 
+e
+d
+a
+ous social and psychological costs and benefits of using social 
+o
+l
+n
+media have been extensively examined in recent years. A 
+w
+o
+D
+growing volume of research reports possible benefits of using social media, such as increased social capital,1 an enhanced sense of well-being2 and social and emotional support,3,4 and decreased depressive symptoms.5 A number of studies also report negative outcomes associated with social media use, such as decreased self-esteem and happiness,6 increased psychological distress,7 a sense of social isolation and jeal ousy,5,8 conflict among romantic partners,9,10 and being victimized by cyberbullying.11,12 
+Despite a rapidly growing body of evidence on the mixed outcomes of Facebook use, very little is known about how people perceive themselves to be subject to these negative or positive outcomes of using Facebook. The literature on self perceptions posits that people possess an innate tendency to view their future as more positive and rosier than that of 
+while good things are more likely to happen to me than to others.’’(13p807) 
+This framework has been applied to an array of different contexts, including to what extent frequent exposure to news induces or reduces optimistic biases for critical events,14 and how people operate optimistic biases toward online threats.15 The optimistic biases were also found to influence subse quent health behaviors. For example, optimistic biases measured after viewing antismoking messages were associ ated with an increase in smokers’ information-seeking be haviors,16 and people’s optimistic biases regarding their health conditions can be associated with delays in adopting positive health behaviors.17 
+This optimistic bias framework can be used to understand people’s perceptions of encountering potential risks and benefits from Facebook use. According to the predictions of optimistic bias, people have an intrinsic tendency to imagine 
+1Center for Technology and Behavioral Health, Dartmouth Psychiatric Research Center, Geisel School of Medicine at Dartmouth, Dartmouth College, Lebanon, New Hampshire. 2Department of Communication, Cornell University, Ithaca, New York. 
+214 
+OPTIMISTIC BIAS AND FACEBOOK USE 215 
+future events in a manner that enhances positive self regard,18,19 which leads people to underestimate their vulner ability to negative events.13 When Facebook users operate optimistic biases in their risk judgments, they should perceive detrimental outcomes of Facebook, such as ex periencing depression or loneliness and becoming a victim of a scam, to be more likely to happen to others than to themselves. 
+Furthermore, if Facebook users believe that other people are more likely to experience negative outcomes of Face book, this perception may trigger the importance of having protective actions, such as Internet regulations and media literacy education to reduce the potential harm to others. Similar to the third-person effect that has often been con nected to the optimistic bias framework,20 the perceived negative media effects on others stimulate support for protective actions. As such, this study investigates a po tential link between optimistic bias and one’s willingness to support protective actions with respect to negative Face book outcomes. 
+In regard to optimistic bias in encountering positive out 
+ 
+.
+y
+l
+comes from Facebook use, users should believe that they will 
+n
+o
+ 
+e
+reap positive outcomes associated with Facebook use rela 
+s
+u
+ 
+l
+tive to others. This prediction, however, requires a precon 
+a
+n
+o
+dition that people hold positive attitudes toward the events 
+s
+r
+e
+p
+ 
+under consideration. It is important to note that optimistic 
+r
+o
+bias is a manifestation of wishful thinking13 that leads people 
+F
+ 
+.
+2
+2
+to construe future events in a favorable light.21 When os 
+/
+2
+1
+/
+tensibly positive outcomes, such as receiving social support 
+1
+1
+ 
+t
+from Facebook friends to ameliorate depressive symptoms22 
+a
+ 
+m
+and coping with negative psychological states by looking at 
+o
+c
+.
+b
+one’s own Facebook profiles,23 are perceived to be unusual 
+u
+p
+t
+r
+and socially stigmatizing for themselves, the magnitude and 
+e
+b
+e
+i
+the direction of the optimistic bias for these objectively 
+l
+.
+w
+positive outcomes can be dampened or even reversed. 
+w
+w
+ 
+Given the contingent nature of optimistic biases, a novel 
+m
+o
+r
+prediction is proposed that attitudinal and experiential fac 
+f
+ 
+a
+f
+i
+tors can reverse the direction of optimistic biases for positive 
+a
+H
+ 
+events.15,24,25 More specifically, if individuals have negative 
+y
+b
+ 
+d
+attitudes toward Facebook use, they should believe that 
+e
+d
+a
+others are more prone to experience those objectively posi 
+o
+l
+n
+tive (yet personally undesirable) benefits from Facebook. 
+w
+o
+D
+Similarly, people’s beliefs about their chances of experi encing a positive Facebook outcome should be contingent upon their personal involvement with Facebook. Because people construct perceptions through social practices over time, Facebook users who rarely use Facebook may not view seemingly positive outcomes of Facebook as valuable ben efits. When individuals infrequently use a medium, they are unlikely to expect any outcomes of media use, even if they are positive. Thus, lack of personal involvement with Face book should yield a reversed optimistic bias that others will be more likely to encounter positive outcomes on Facebook. Based on the predictions addressed above, the following hypotheses are proposed: 
+H1: Facebook users will perceive other users to be more likely to experience negative social and psychological out comes of Facebook use relative to themselves. 
+H2: Optimistic bias for (a) negative social outcomes and (b) negative psychological outcomes will increase support for protective actions. 
+H3a: When individuals have negative pre-existing attitudes toward Facebook’s influence, they will estimate that other users are more likely to experience positive outcomes from Facebook use relative to themselves. 
+H3b: When individuals have low involvement in Facebook, they will believe that other users are more likely to expe rience positive outcomes from Facebook use relative to themselves. 
+Method 
+Participants and procedure 
+A total of 237 participants between 18 and 37 years of age (M = 20.4 years, SD = 1.95 years) at a university in the northeastern United States who use Facebook on a daily basis participated in the study in exchange for extra credit. Once participants agreed upon the informed consent form, they were directed to an external web-server hosting the online survey. 
+In assessing optimistic bias, the indirect method was used whereby participants made two assessments including one’s own likelihood of experiencing positive and negative Face book outcomes and other people’s likelihood of experiencing them. By subtracting the latter from the former judgment, a differential score was calculated for each outcome. The order of measures for self-estimation versus those for other estimation was counterbalanced.26 This indirect method, measuring comparative judgment of the self versus the other is a widely used approach to gauge optimistic bias18 when it is difficult or impossible to estimate the actual likelihood of a future event.27–29 Participants were also asked to rate their likelihood of supporting protective actions (e.g., Internet regulations), personal Facebook involvement, and attitudes toward Facebook use prior to answering demographic questions. 
+Measures 
+Optimistic biases for negative outcomes, including nega tive effects on psychological well-being and social conse quences, were measured by eight items on a 7-point Likert scale (1 = ‘‘strongly disagree’’ to 7 = ‘‘strongly agree’’). Confirmatory factor analysis (CFA) on the likelihood of experiencing negative outcomes revealed two factors: the negative psychological outcomes and the negative social outcomes (Table 1). The estimation of their own chances of experiencing negative psychological outcomes was labeled as the negative psychological outcomes for self scale (Cronbach’s a = 0.93), and the estimation of other people’s chances of experiencing those items formed the negative psychological outcomes for others scale (Cronbach’s a = 0.88). The estimation of their own probability of expe riencing negative social outcomes was scaled and labeled as the negative social outcomes for self scale (Cronbach’s a = 0.73). The corresponding items estimating other users’ chances were labeled as the negative social outcomes for others scale (Cronbach’s a = 0.76). 
+Support for protective actions regarding Facebook use was measured by four items, such as ‘‘the government’s tech nology policies should state the consequences of misconduct on social media Web sites,’’ on a 7-point Likert scale ranging from 1 = ‘‘strongly disagree’’ to 7 = ‘‘strongly agree.’’ The 
+216 KIM AND HANCOCK 
+Table 1. Negative Outcomes of Facebook Use, Descriptive Statistics, and Factor Loadings One’s own likelihood Others’ likelihood 
+Measurements M SD 
+Psych 
+factor 
+(a = 0.93) 
+Social 
+factor 
+(a = 0.73) M SD 
+Psych 
+factor 
+(a = 0.88) 
+Social 
+factor 
+(a = 0.76) 
+1. Facebook could lead ___ to depression. 2.57 1.45 0.90 0.18 3.59 1.40 0.86 0.02 2. Facebook could lead ___ to social isolation. 2.59 1.46 0.87 0.18 3.75 1.28 0.84 0.19 3. Facebook could lead ___ to loneliness. 2.76 1.63 0.92 0.18 3.78 1.38 0.88 0.18 4. Facebook could decrease ___ self-esteem. 3.23 1.70 0.85 0.22 4.22 1.28 0.73 0.29 
+5. ___ future employers could find 
+inappropriate photos posted on ___ Facebook. 6. ___ could encounter unwanted 
+contact with dangerous people on Facebook. 7. ___ could be the victim of 
+cyberbullies on Facebook. 
+3.42 1.85 0.06 0.61 5.36 1.26 0.00 0.69 3.05 1.54 0.20 0.79 3.97 1.34 0.30 0.78 2.59 1.44 0.46 0.63 3.82 1.32 0.38 0.69 
+8. ___ could be the target of a Facebook scam. 3.66 1.70 0.16 0.82 4.48 1.42 0.27 0.75 
+Extraction method: principal components. Rotation method: varimax with Kaiser normalization. All questions are statements in the form of a 7-point Likert scale ranging from 1 = ‘‘not at all likely’’ to 7 = ‘‘very likely.’’ Factor loadings > 0.60 are reported in italic. The ___ was replaced with ‘‘I (my)’’ or with ‘‘the typical X student(’s)’’ depending on the context. The name of the institution was replaced with ‘‘X’’ for anonymity. 
+ 
+.
+y
+l
+n
+o
+ 
+e
+s
+u
+ 
+l
+four-item scale achieved solid reliability (M = 4.51, 
+a
+n
+o
+SD = 1.26, Cronbach’s a = 0.87). 
+s
+r
+e
+p
+ 
+Optimistic biases for positive outcomes were measured by 
+r
+o
+F
+five items, such as ‘‘Facebook would lead me (or the typical 
+ 
+.
+2
+2
+Xa student) to have more social support,’’ and ‘‘Facebook 
+/
+2
+1
+/
+would increase my (or the typical X student’s) sense of 
+1
+1
+ 
+t
+connectedness to the community.’’ CFA confirmed that five 
+a
+ 
+m
+items for self-estimation as well as those for other estima 
+o
+c
+.
+b
+tions loaded on each single factor, thus averaged and formed 
+u
+p
+t
+r
+into the positive outcomes for self scale (Cronbach’s a = .85), 
+e
+b
+e
+i
+and the positive outcomes for others scale (Cronbach’s 
+l
+.
+w
+a = 0.82), respectively. 
+w
+w
+ 
+Two items adopted from Perloff30 and Zhao and Cai31 
+m
+o
+r
+were used to measure attitudes toward Facebook influence. 
+f
+ 
+a
+f
+i
+The attitudes toward Facebook use scale demonstrated ade 
+a
+H
+ 
+quate reliability (r = 0.72, M = 3.60, SD = 1.00). Three items 
+y
+b
+ 
+d
+were adopted from previous research to measure Facebook 
+e
+d
+a
+involvement,32 such as ‘‘How relevant is Facebook to you?,’’ 
+o
+l
+n
+on a 7-point Likert scale (a low number indicates a low 
+w
+o
+D
+involvement). Three items were averaged and formed the Facebook involvement scale (M = 4.97, SD = 1.22, Cron bach’s a = 0.87). 
+Results 
+Optimistic bias and negative Facebook outcomes 
+Paired-sample t tests revealed that participants displayed a strong optimistic bias, believing that they are less likely than others are to experience negative psychological outcomes (self: M = 2.79, SD = 1.41; others: M = 3.83, SD = 1.14), t(236) = - 13.79, p < 0.001, Cohen’s d = - 0.91, and negative social outcomes (self: M = 3.18, SD = 1.21; others: M = 4.41, SD = 1.02), t(236) = - 18.00, p < 0.001, Cohen’s d = - 1.18 (Table 1). Thus, H1 was supported. 
+A series of mediation analyses33,34 were conducted to test H2a and H2b. Optimistic bias of other people’s chances of experiencing negative social outcomes (e.g., being the target of Facebook scams) mediated the relationship between op timistic self-views on avoiding negative social outcomes and 
+support for protective actions (Fig. 1). A Sobel test and ad ditional bootstrap analysis with 1,000 resamples, reporting point estimates and bias-corrected 95% confidence intervals (CI) for effect size inferences, confirmed this mediation re lationship (z = 2.49, p = 0.01, point estimate = 0.113 [95% CI = 0.011, 0.216]). Thus, H2a was fully supported. For op timistic biases for psychological outcomes tested in H2b (Fig. 1), mediation analyses followed by a Sobel test with bootstrapping (1,000 resamples) showed that the perception of other Facebook users’ chances of experiencing negative psychological outcomes did not mediate the relationship between one’s own optimistic views and support for pro tective actions (z = 1.25, p = 0.21; point estimate = 0.053 [95% CI = - 0.050, 0.149]). Thus, H2b was not supported. 
+Optimistic bias and positive outcomes 
+Note that the preliminary analyses reported that the opti mistic bias for positive outcomes of Facebook use was re versed, perceiving other Facebook users to be more likely to experience positive outcomes of Facebook than themselves, t(236) = - 5.52, p < 0.01, Cohen’s d = - 0.37. H3a and H3b were developed to examine the reversed optimistic biases by taking participants’ attitudes toward Facebook use and Fa cebook involvement into account. Following Cho et al.,15 the attitudes toward Facebook use scale was dichotomized based on its median point, and entered into a mixed general linear model (GLM) as a moderating factor. There was a significant interaction between optimistic bias and attitudes, F(1, 235) = 7.45, p = 0.007, gp2 = 0.03, indicating that participants who perceived the influence of Facebook to be undesirable tended to perceive that other people were more likely to experience positive outcomes of Facebook than themselves (Fig. 2). Thus, H3a was supported. 
+In order to test H3b, the Facebook involvement scale was dichotomized by its median point into two groups: a high Facebook involvement group and a moderate Facebook in volvement group. Those with high Facebook involvement estimated a greater likelihood of experiencing positive 
+OPTIMISTIC BIAS AND FACEBOOK USE 217   
+FIG. 1. Mediation analyses predicting support for Internet regulations. The numbers are unstandardized regression coefficients; the coefficient in parentheses is the value obtained when both negative social (or psychological) outcomes for self and negative social (or psychological) outcomes for others were included as predictors of support for Internet regu lations. Asterisks indicate values significantly different from zero: *p < 0.05; **p < 0.01. 
+ 
+.
+y
+l
+n
+o
+ 
+e
+outcomes than those with less involvement, F(1, 235) = 41.79, 
+s
+u
+ 
+l
+p < 0.001, gp2 = 0.15 (Fig. 3). The reversed optimistic bias for 
+a
+n
+o
+s
+positive Facebook outcomes emerged only among those with 
+r
+e
+p
+ 
+low Facebook involvement, predicting that other users would 
+r
+o
+F
+experience positive outcomes of Facebook relative to them 
+ 
+.
+2
+2
+selves, F(1, 235) = 17.41, p < 0.001, gp2 = 0.07 (Fig. 3). Thus, 
+/
+2
+1
+/
+H3b was supported. 
+1
+1
+ 
+t
+a
+ 
+m
+o
+c
+.
+Discussion 
+b
+u
+p
+t
+r
+As the popularity and ubiquity of using Facebook con 
+e
+b
+e
+i
+tinues to grow, users are increasingly mindful that the fashion 
+l
+.
+w
+in which they interact with others and engage with the con 
+w
+w
+ 
+tent on Facebook can have an impact on their psychological 
+m
+o
+r
+health and social well-being. Although a large volume of 
+f
+ 
+a
+f
+i
+research has examined the costs and benefits of using Face 
+a
+H
+ 
+y
+b
+ 
+d
+e
+d
+a
+o
+l
+n
+w
+o
+D  
+FIG. 2. Self versus other estimations for the likelihood of experiencing positive outcomes from Facebook use as a function of attitudes toward Facebook. Note: Error bars in dicate 95% confidence intervals. 
+book, it is not clear how Facebook users perceive themselves to be likely to experience these potential risks and benefits, and what the implications of having these perceptions are. It was predicted that people make distinctions for self versus others when considering the potential outcomes of Facebook use. The optimistic bias framework was applied to under stand these self–other discrepant perceptions. 
+The findings expand and refine the standard framework of optimistic bias in the realm of social media, and make sev eral distinct contributions to the understanding of subsequent behaviors and mechanisms under these self–other discrepant perceptions. First, the study extends the framework of opti mistic bias13 to an array of potential negative and positive outcomes of Facebook use, ranging from cyberbullying,11 and the effects on self-esteem,2 to enhanced social integra tion and social support. Strong optimistic biases for social 
+  
+
+FIG. 3. Self versus other estimations for the likelihood of experiencing positive outcomes from Facebook use as a function of Facebook involvement. Note: Error bars indicate 95% confidence intervals. 
+218 KIM AND HANCOCK 
+and psychological risks of Facebook use emerged: partici pants perceived that they were less likely to encounter these negative outcomes (e.g., depression, loneliness, and Face book cyberbullying) relative to other users. Although some might argue that it is still premature to claim that Facebook use is a direct predictor of extreme events such as clini cal depression35 and suicidal attempts, a growing line of research indicates that negative events such as Facebook cyberbullying can result in detrimental consequences, in cluding depression and substance use problems.12 Without adequate protections and regulatory oversight, the damage of these critical events can be severe. This is especially the case for those in a vulnerable health condition, in which this op timistic bias for risk events can leave them unprepared without adequate health protective behaviors.36 
+Despite robust effect sizes for optimistic biases toward negative psychological and social outcomes (H1)—Cohen’s d = - 0.91 and Cohen’s d = - 1.18 respectively—only opti mistic biases for socially negative outcomes (e.g., Facebook scams) increased support for implementing strict regulations and Facebook policies (H2a). However, this was not the case 
+ 
+.
+y
+l
+for optimistic biases concerning negative psychological 
+n
+o
+ 
+e
+outcomes (e.g., depression; H2b). This pattern, in which 
+s
+u
+ 
+l
+concern for social but not psychological outcomes drove 
+a
+n
+o
+protective action preferences, suggests that the underlying 
+s
+r
+e
+p
+ 
+mechanism of support for protective action is concern over 
+r
+o
+F
+negative social events, not the psychological well-being of 
+ 
+.
+2
+2
+others. One possible reason for this distinction can be that the 
+/
+2
+1
+/
+psychological outcomes, compared to social outcomes, were 
+1
+1
+ 
+t
+perceived as less amenable to policies and regulations. Per 
+a
+ 
+m
+haps people with strong optimistic biases for negative psy 
+o
+c
+.
+b
+chological events may underestimate the importance of 
+u
+p
+t
+r
+implementing health protective regulations. We argue that 
+e
+b
+e
+i
+Facebook may serve as a source of emotional support be 
+l
+.
+w
+tween users, and a platform to disseminate health protective 
+w
+w
+ 
+messages through ties amongst a network to prevent negative 
+m
+o
+r
+psychological consequences of Facebook use. Given that 
+f
+ 
+a
+f
+i
+negative personal and health news, such as stressful events 
+a
+H
+ 
+and depressive symptoms, are frequently shared on Face 
+y
+b
+ 
+book,37 Facebook may be an important observational site for 
+d
+e
+d
+a
+negative psychological states of users. 
+o
+l
+n
+The reversed optimistic bias concerning positive outcomes 
+w
+o
+D
+of Facebook use (e.g., sense of closeness with friends and connectedness to their community) is a novel and intriguing effect. Although some argue that logging into Facebook fulfills affiliation38 and psychological needs, participants did not perceive that they were more likely to gain seemingly positive outcomes from Facebook use. Instead, participants continued to believe that these events would be more likely to happen to others. 
+This reversal effect manifested among those with negative attitudes toward Facebook and those who had lower Face book involvement. Indeed, these two concepts have been fundamental rationales for optimistic bias in many different situations.18,19 Prior studies on optimistic biases hinted that optimistic bias is influenced by conditional factors,13 such as stereotypes of the events, people’s attitudes toward events, and their personal involvement with these events. The neg ative attitudes toward Facebook could be due to the possibly negative connotations associated with expecting benefits from Facebook use. For instance, people with negative atti tudes toward Facebook might have believed that seeking 
+remedies for psychological or social well-being from Face book indicates poor face-to-face interpersonal skills or so cially undesirable attributes. Hence, the emergence of the optimistic bias reversal effect may have reflected participants distancing themselves from expecting benefits from Face book use. This reversal has broader implications for opti mistic bias, and suggest that the processes of optimistic bias involve not only motivational factors (e.g., self-serving views about one’s future events) but also cognitive reasoning (determining if the events are personally beneficial).39 
+A recent phenomenon of interest here is the population of users who have stopped using Facebook. Stieger et al.40 found that users with privacy concerns, scoring highly in conscientiousness, and having concerns about Internet ad diction were most likely to deactivate their Facebook ac count completely. One other reason might be that Facebook quitters do not hold the kinds of optimistic biases around negative Facebook use that we observed here. That is, they anticipated negative effects for themselves, and not just others. This is an important avenue of future research that goes beyond personality differences. 
+Finally, the results should be understood within the limi tations imposed by the research method. The college student sample in the study limits the generalizability of the results to a larger population. However, this sampling procedure was reasonable for a first study on optimistic bias on Facebook and for the population of interest here: regular Facebook users. Multivariate relationships were also investigated among conceptual variables, which are likely to show con sistent results when conducted with a random sample of the general population.41 Nonetheless, future research should expand the scope of the populations to test the generaliz ability of the results. Intentions for taking protective actions were tested in the study, but future research should also test other types of behaviors that could have been influenced by optimistic biases, such as increased hours on Facebook use, and changes in privacy or security settings. Future research should also examine other driving factors of optimistic biases for Facebook risks and benefits, such as the type and degree of one’s Facebook activities, and the strength of one’s net work ties. This approach, along with assessing optimistic biases for an extended array of potential risks and benefits of Facebook use, will shed light on developing Facebook lit eracy that can enhance awareness and skills to reap benefits while reducing potential risks. 
+Notes 
+a. The name of the institution was replaced with ‘‘X’’ in order to maintain anonymity. 
+Author Disclosure Statement 
+No competing financial interests exist. 
+References 
+1. Ellison NB, Steinfield C, Lampe C. Connection strategies: social capital implications of Facebook-enabled commu nication practices. New Media & Society 2011; 13:873– 892. 
+2. Gonzales AL, Hancock JT. Mirror, mirror on my Facebook wall: effects of exposure to Facebook on self-esteem. 
+OPTIMISTIC BIAS AND FACEBOOK USE 219 
+Cyberpsychology, Behavior, & Social Networking 2011; 14:79–83. 
+3. Ko HC, Kuo FY. Can blogging enhance subjective well being through self-disclosure? Cyberpsychology, Behavior, & Social Networking 2009; 12:75–79. 
+4. Nabi RL, Prestin A, So J. Facebook friends with (health) benefits? Exploring social network site use and percep tions of social support, stress, and well-being. Cyberpsy chology, Behavior, & Social Networking 2013; 16:721– 727. 
+5. Wright KB, Rosenberg J, Egbert N, et al. Communication competence, social support, and depression among college students: a model of facebook and face-to-face support network influence. Journal of Health Communnication 2013; 18:41–57. 
+6. Chou H-TG, Edge N. ‘‘They are happier and having better lives than I am’’: the impact of using facebook on per ceptions of others’ lives. Cyberpsychology, Behavior, & Social Networking 2012; 15:117–121. 
+7. Chen W, Lee KH. Sharing, liking, commenting, and dis tressed? The pathway between Facebook interaction and psychological distress. Cyberpsychology, Behavior, & So 
+ 
+.
+y
+l
+cial Networking 2013; 16:728–734. 
+n
+o
+ 
+e
+8. Muise A, Christofides E, Desmarais S. More information 
+s
+u
+ 
+l
+than you ever wanted: does Facebook bring out the green 
+a
+n
+o
+eyed monster of jealousy? Cyberpsychology, Behavior, & 
+s
+r
+e
+p
+Social Networking 2009; 12:441–444. 
+ 
+r
+o
+9. Clayton RB, Nagurney A, Smith JR. Cheating, breakup, 
+F
+ 
+.
+2
+and divorce: is Facebook use to blame? Cyberpsychology, 
+2
+/
+2
+1
+Behavior, & Social Networking 2013; 16:717–720. 
+/
+1
+1
+ 
+10. Clayton RB. The third wheel: the impact of Twitter use on 
+t
+a
+ 
+relationship infidelity and divorce. Cyberpsychology, Be 
+m
+o
+c
+.
+havior, & Social Networking 2014; 17:425–430. 
+b
+u
+p
+11. O’Keeffe GS, Clarke-Pearson K. The impact of social 
+t
+r
+e
+b
+media on children, adolescents, and families. Pediatrics 
+e
+i
+l
+.
+2011; 127:800–804. 
+w
+w
+12. Selkie EM, Kota R, Chan YF, et al. Cyberbullying, de 
+w
+ 
+m
+pression, and problem alcohol use in female college stu 
+o
+r
+f
+ 
+dents: a multisite study. Cyberpsychology, Behavior, & 
+a
+f
+i
+a
+Social Networking 2015; 18:79–86. 
+H
+ 
+y
+13. Weinstein ND. Unrealistic optimism about future life 
+b
+ 
+d
+e
+events. Journal of Personality & Social Psychology 1980; 
+d
+a
+o
+39:806–820. 
+l
+n
+w
+14. Chapin J, de las Alas S, Coleman G. Optimistic bias among 
+o
+D
+potential perpetrators and victims of youth violence. Ado lescence 2005; 40:749–760. 
+15. Cho H, Lee J-S, Chung S. Optimistic bias about online privacy risks: testing the moderating effects of perceived controllability and prior experience. Computers in Human Behavior 2010; 26:987–995. 
+16. Zhao X, Cai X. The role of risk, efficacy, and anxiety in smokers’ cancer information seeking. Health Communica tion 2009; 24:259–269. 
+17. Fishbein M, Yzer MC. Using theory to design effective health behavior interventions. Communication Theory 2003; 13:164–183. 
+18. Chambers JR, Windschitl PD. Biases in social comparative judgments: the role of nonmotivated factors in above average and comparative-optimism effects. Psychological Bulletin 2004; 130:813–838. 
+19. Helweg-Larsen M, Shepperd JA. Do moderators of the optimistic bias affect personal or target risk estimates? A review of the literature. Personality & Social Psychology Review 2001; 5:74–95. 
+20. Gunther AC, Mundy P. Biased optimism and the third person effect. Journalism & Mass Communication Quar terly 1993; 70:58–67. 
+21. Lench HC, Ditto PH. Automatic optimism: biased use of base rate information for positive and negative events. Journal of Experimental Social Psychology 2008; 44:631–639. 
+22. Moreno Ma, Jelenchick La, Egan KG, et al. Feeling bad on Facebook: depression disclosures by college students on a social networking site. Depression & Anxiety 2011; 28:447–455. 
+23. Toma CL, Hancock JT. Self-affirmation underlies Face book use. Personality & Social Psychology Bulletin 2013; 39:321–331. 
+24. Harris PR, Griffin DW, Murray S. Testing the limits of optimistic bias: event and person moderators in a multilevel framework. Journal of Personality & Social Psychology 2008; 95:1225–1237. 
+25. Chapin J, Coleman G. Optimistic bias: what you think, what you know, or whom you know? North American Journal of Psychology 2009; 11:121–132. 
+26. Pahl S, Eiser JR. The focus effect and self-positivity in ratings of self-other similarity and difference. British Journal of Social Psychology 2006; 45:107–116. 
+27. Klein CTF, Helweg-Larsen M. Perceived control and the optimistic bias: a meta-analytic review. Psychology & Health 2002; 17:437–446. 
+28. Kreuter MW, Strecher VJ. Changing inaccurate perceptions of health risk: results from a randomized trial. Health Psychology 1995; 14:56–63. 
+29. Rothman AJ, Klein WM, Weinstein ND. Absolute and relative biases in estimations of personal risk. Journal of Applied Social Psychology 1996; 26:1213–1236. 
+30. Perloff RM. The third person effect: a critical review and synthesis. Media Psychology 1999; 1:353–378. 
+31. Zhao X, Cai X. From self-enhancement to supporting censorship: the third-person effect process in the case of internet pornography. Mass Communication & Society 2008; 11:437–462. 
+32. Rojas H, Shah DV, Faber RJ. For the good of others: censorship and the third-person effect. International Journal of Public Opinion Research 1996; 8:163–186. 
+33. Baron RM, Kenny DA. The moderator–mediator variable distinction in social psychological research: conceptual, strategic, and statistical considerations. Journal of Person ality & Social Psychology 1986; 51:1173–1182. 
+34. Preacher K, Hayes A. SPSS and SAS procedures for esti mating indirect effects in simple mediation models. Beha vior Research Methods, Instruments, & Computers 2004; 36:717–731. 
+35. Jelenchick LA, Eickhoff JC, Moreno MA. Facebook de pression? Social networking site use and depression in older adolescents. Journal of Adolescent Health 2013; 52:128–130. 
+36. Weinstein ND, Klein WM. Resistance of personal risk perceptions to debiasing interventions. Health Psychology 1995; 14:132–140. 
+37. Bevan JL, Cummings MB, Kubiniec A, et al. How are important life events disclosed on facebook? Relationships with likelihood of sharing and privacy. Cyberpsychology, Behavior, & Social Networking 2015; 18:8–12. 
+38. Lee CC, Chiou WB. Keep logging in! Experimental evi dence showing the relation of affiliation needs to the idea of online social networking. Cyberpsychology, Behavior, & Social Networking 2013; 16:419–422. 
+220 KIM AND HANCOCK 
+39. Metcalfe J. Cognitive optimism: self-deception or memory based processing heuristics? Personality & Social Psy chology Review 1998; 2:100–110. 
+40. Stieger S, Burger C, Bohn M, et al. Who commits virtual identity suicide? Differences in privacy concerns, Internet addiction, and personality between Facebook users and quitters. Cyberpsychology, Behavior, & Social Networking 2013; 16:629–634. 
+41. Basil MD, Brown WJ, Bocarnea MC. Differences in uni variate values versus multivariate relationships. Human Communication Research 2002; 28:501–514. 
+ 
+.
+y
+l
+n
+o
+ 
+e
+s
+u
+ 
+l
+a
+n
+o
+s
+r
+e
+p
+ 
+r
+o
+F
+ 
+.
+2
+2
+/
+2
+1
+/
+1
+1
+ 
+t
+a
+ 
+m
+o
+c
+.
+b
+u
+p
+t
+r
+e
+b
+e
+i
+l
+.
+w
+w
+w
+ 
+m
+o
+r
+f
+ 
+a
+f
+i
+a
+H
+ 
+y
+b
+ 
+d
+e
+d
+a
+o
+l
+n
+w
+o
+D
+Address correspondence to: 
+Dr. Sunny Jung Kim 
+Geisel School of Medicine at Dartmouth Dartmouth College 
+Rivermill Commercial Center 
+85 Mechanic Street, Suite B4-1 Lebanon, NH 03766 
+E-mail: sunny.j.kim@dartmouth.edu

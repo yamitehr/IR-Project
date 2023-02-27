@@ -1,0 +1,625 @@
+﻿See discussions, stats, and author profiles for this publication at: https://www.researchgate.net/publication/277597470 
+Activity Matters: Investigating the Influence of Facebook on Life Satisfaction of Teenage Users 
+Conference Paper · October 2014 
+CITATIONS 
+46 
+3 authors: 
+Helena Wenninger   
+Lancaster University 
+10 PUBLICATIONS   693 CITATIONS    
+SEE PROFILE 
+Peter Buxmann   
+Technische Universität Darmstadt 
+294 PUBLICATIONS   3,933 CITATIONS    
+SEE PROFILE 
+Some of the authors of this publication are also working on these related projects: 
+READS 
+2,824 
+Hanna Krasnova   
+Universität Potsdam 
+86 PUBLICATIONS   3,656 CITATIONS    SEE PROFILE 
+  
+Digital Integration: The Role of Technology in the Social Inclusion of the Refugees View project   Gender and Social Media View project 
+All content following this page was uploaded by Hanna Krasnova on 02 July 2015. The user has requested enhancement of the downloaded file.
+ACTIVITY MATTERS: INVESTIGATING THE INFLUENCE  OF FACEBOOK ON LIFE SATISFACTION OF TEENAGE  USERS  
+ Complete Research  
+Wenninger, Helena, Technische Universität Darmstadt, Germany,  
+wenninger@is.tu-darmstadt.de  
+Krasnova, Hanna, University of Bern, Switzerland, krasnovh@wiwi.hu-berlin.de  Buxmann, Peter, Technische Universität Darmstadt, Germany, buxmann@is.tu-darmstadt.de  
+Abstract  
+As Facebook has become an integral part of a daily routine for many, the impact of its participation  on users’ lives is of growing interest. Nonetheless, extant research does not offer a clear answer on  the directionality of the link between Facebook use and markers of subjective well-being. These issues are particularly critical for the vulnerable segment of teenage users. Suggesting both negative and  positive outcomes, existing studies are plagued by recall bias, with available findings often  undermined by the reliance on aggregated measures of Facebook use. To close these gaps and  address unique dynamics of the teen segment, in this study we adopt a diary approach to reliably  capture different indicators of FB participation by young adolescents. This method allows us to arrive 
+at more concrete conclusions regarding the counter-acting forces at work when it comes to the  influence of Facebook. Based on our analysis, we show that the type of activity matters. Specifically, while such active uses of FB as posting and chatting are positively associated with life satisfaction in  young adolescents, passive following has an adverse effect. Theoretically, our findings help getting a more holistic picture of the consequences of SNS use by teens.  
+Keywords: Facebook, Life Satisfaction, Subjective Well-Being, Usage Patterns.  
+Motivation  
+Since the emergence of Social Networking Sites (SNSs), like Facebook (FB) and MySpace, the use of  these platforms by young adolescents has been in the focus of scholarly attention. This is not  surprising, since teenagers are among the busy users of Social Media applications and the “always on”  aspect of these technologies is very distinctive for them (e.g. Davies, 2012). Indeed, a whopping 93%  of teens in the age of 12-17 have an account on FB, with 64% of 12-13 year olds using FB in the U.S.  (Lenhart et al., 2011).  
+The fact that using SNSs is an integral part of most young adolescents’ lives is a valuable reason on its  own to investigate the outcomes of this technology use. Teenagers are also a group in society in need  of protection due to their state of being underage and their lack of experience. As a result, an array of  stakeholders, including parents, educators and politicians, call for better understanding of the  consequences of SNS use. In addition, providers themselves exhibit an unprecedented level of concern 
+Twenty Second European Conference on Information Systems, Tel Aviv 2014 1 
+Wenninger et al. / The Influence Of Facebook on Life Satisfaction  
+directed at supporting the interest of this audience – and this despite a rather low share of this user  segment in the overall demographic structure of the FB audience: Only 13% of FB users are under 18  in Germany (statista.com, 2013). The reason for this is rooted in the trendsetting potential of the  growing “iPhone” generation, whose key relevance has been recently demonstrated by the media  frenzy around the newly reported findings that Twitter is replacing FB as the most important SNS for  young adolescents (Bosker, 2013). As a result of this dissatisfying outcome, FB has relaxed its privacy  regulations for its 13- to 17 year old user segment, allowing teens to have more freedom with regard to  the audience they would like to reach with their status updates, photos and comments.  
+In response to this ubiquitous interest, significant body of research has been accumulated studying  various aspects of SNS use by teenagers. On the positive side, studies underline the benefits of social  connectedness and social capital as teens seek for advice and emotional support from friends and  relatives on SNSs (Notley, 2008). Teens are also shown to enhance their relationships both at school  as well as online by using SNSs, which facilitates the creation of bridging social capital (Ahn, 2012).  In addition, SNSs have the potential to enhance the learning experience of adolescents, as they  facilitate knowledge sharing and building (Ahn, 2011; Itō et al., 2009; Notley, 2008) and also provide  basis for the development of transferable technical skills (Livingstone and Brake, 2010).  
+On the negative side, the link between SNS usage and privacy problems is well-documented (e.g. Ku  et al., 2013; Shin, 2010) including risks arising from extensive self-disclosure on a SNS (Krasnova et al., 2010). However, despite the worrisome nature of these findings, a number of recent studies signal that teen users have elaborated their privacy-protecting practices (Patchin and Hinduja, 2010)  exhibiting greater reliance on privacy settings and a more selective approach to friending - practices that at times are even superior to those of adults (O'Brien et al., 2011). For example, a whopping  76.3% of teens have set their profiles to private (Taraszow et al., 2010). Other downsides include  cyberbullying (Schneider et al., 2013) and sexual solicitation (Ybarra and Mitchell, 2008), just to  name a few. These issues are no isolated cases, but apply to many teenagers using SNSs (Schneider et  al., 2013). Negative consequences regarding the offline live of the younger generation contain a  weaker school performance (Espinoza and Juvonen, 2011) and less time spent with parents (Lee,  2009). Moreover, frequent SNS use may also grow into a “bad habit” or even addiction, which can be  socially harmful and produce conflict with ongoing tasks (e.g. Floros et al., 2013; Turel and Serenko, 2012).  
+Taken together, extant research provides an array of findings concerning a multitude of different  aspects of SNS use, with studies generally showing significant agreement with regard to the above mentioned benefits and dangers for teens. Nonetheless, despite the unquestionable value of these  insights, the global picture on the consequences of SNS participation is still missing and is plagued by  considerable controversy. In particular, we still lack full understanding of the ultimate impact of SNSs  on younger users’ (as well as adults’) subjective well-being (SWB) – a “measure of the quality of life  of an individual and of societies” (Diener et al., 2003, p. 405) and a subject of significant public  interest. So far, some studies focussing on teens suggest that social capital can be one reason for  increased well-being in teenagers (Ahn, 2011), with SNSs helping to reduce loneliness in adolescents  and thereby enhance life satisfaction (Apaolaza et al., 2013). In contrast, a number of most recent  findings mainly using student samples provide evidence for the detrimental effects of SNS use, linking 
+it to depression (Pantic et al., 2012), increased anxiety (Farahani et al., 2011), reduction in life  satisfaction (Krasnova et al., 2013), and even possible substance abuse and self-destructive behaviours  (O'Keeffe and Clarke-Pearson, 2011). If, indeed, despite all the potential benefits, SNSs do endanger  well-being of the growing generation, interested stakeholders should be urged to reconsider its  ubiquitous promotion and use. Conversely, if young adolescents may sustainably enhance their quality  of life by participating on SNSs, its use should generally be encouraged.  
+In the light of these controversies and recognizing the significant social importance of a given issue,  the goal of this study is to investigate the impact of FB participation on users’ SWB. In contrast to the 
+Twenty Second European Conference on Information Systems, Tel Aviv 2014 2 
+Wenninger et al. / The Influence Of Facebook on Life Satisfaction  
+majority of studies in this area, in this study we take distance from traditional recall-based measures of  FB participation, as we adopt a diary approach to capture different indicators of FB use by teens. This  way, we build on more reliable and granular measures of FB use, which allow us to arrive at more  concrete conclusions regarding the counter-acting forces at work when it comes to the influence of FB  on users’ well-being. Our results promise to help parents, policy-makers and educators in their efforts  to single out and promote beneficial and limit harmful uses of SNSs. From the theoretical perspective, we contribute to the emerging discourse regarding the global effect of Social Media applications on  the indices of users’ well-being.  
+1 Understanding the Impact of SNS Use on Subjective Well-Being  1.1 Overview of Past Research  
+Considering the role of SWB in the overall quality of life, determinants of SWB have long been in the  focus of various disciplines, including psychology, sociology and mental health studies. Reflecting  “how people evaluate their lives”, in these studies SWB has been operationalized in a variety of ways,  covering both affective as well as cognitive components of this multi-faceted construct (Diener et al.,  2003, p. 404). Specifically, dealing with the affective side of SWB, researchers measured respondents’ feelings and emotional reactions, level of happiness, affect, or moods, thereby typically capturing  frequencies of individual reactions to occurrences in one’s life as they take place. In the cognitive  domain, SWB has been usually derived using global measures of life satisfaction, with some authors  taking a more granular look at the “fulfillment in various life domains such as marriage, work, and  leisure” (Diener, 1994; Diener et al., 2003, p. 405). Defined as a “a global summary of one's life as a  whole” (Diener, 1994, p. p. 107, p. 107) and rooted in "the perceived discrepancy between aspiration  and achievement” (Campbell et al., 1976, p. 8), life satisfaction occupies a prominent place in these  discussions, being in some contrast to the fleeting nature of affective experiences.  
+With the spread and ubiquitous use of technologies, including Social Media applications, Information  Systems researchers have also started to make advancements in the critical area of SWB (e.g.  Krasnova et al., 2013). Indeed, with the overwhelming majority of teens (and adults) visiting SNSs  daily or at least several times a week (Schneider et al., 2013), it will not be a surprise that the  affordances provided by these emerging technologies are likely to bear an effect on the indices of life  satisfaction and its affective counterparts. Summarized in Tables 1 (indices of affective SWB) and  Table 2 (life satisfaction as a measure of cognitive SWB), however, state-of-the-art research has not  yet arrived at the definitive conclusion regarding the directionality of the link between the use of SNSs  and indices of SWB, with studies reporting both negative (e.g. Krasnova et al., 2013), positive  (Apaolaza et al., 2013) and non-existing (Jelenchick et al., 2013) relationships.  
+Remarkably, most of these studies have been performed on the data collected from students, who  might have different emotional and cognitive responses than teenagers, as they approach or undergo  their puberty (see column “Mean Age” in Tables 1 and 2). A notable exception is the study by  Apaolaza et al. (2013) who find that daily time spent on Tuenti may have a favorable impact on teens’  life satisfaction, as it helps to boost self-esteem and reduces loneliness. Furthermore, Valkenburg et al.  (2006) find that teens’ life satisfaction can be enhanced as a result of a chain of causal reactions,  involving CU2 use, subsequent tone of reactions and subsequent enhancement in social self-esteem.  Nonetheless, while these studies may instill hope in the ultimate positive outcomes of SNS use among  younger adolescents, a large number of studies with students question these findings. For example,  Krasnova et al. (2013) find that FB use threatens one’s self-esteem as it breeds envy, thereby  undermining one’s life satisfaction. Moreover, reliance on local Tuenti (Apaolaza et al., 2013) and  CU2 (Valkenburg et al., 2006) networks as a basis for data collection put limits of the generalizability  of these findings, when compared to such populated networks as FB or Twitter. 
+Twenty Second European Conference on Information Systems, Tel Aviv 2014 3 
+Wenninger et al. / The Influence Of Facebook on Life Satisfaction  
+Source 
+	Mean  
+Age 
+	Activity  
+on SNS 
+	Measured Activity on SNS 
+	Outcome  
+(Depend. Variable) 
+	Direction  
+of the  
+Effect 
+	Muise et al. (2009) 
+	18.7 
+	General 
+	Time spent 
+	SNS Jealousy 
+	unfavorable 
+	Utz and Beukeboom  (2011) 
+	22 
+	Login frequency 
+	SNS Jealousy 
+	n.s. 
+	SNS Rel-p Happiness 
+	mixed 
+	Jelenchick et al.  
+(2013) 
+	18.9 
+	Time spent 
+	Depression 
+	n.s. 
+	Farahani et al. (2011) 
+	21 
+	Use 
+	Anxiety 
+	unfavorable 
+	Stress 
+	unfavorable 
+	Kross et al. (2013) 
+	19.5 
+	Time spent 
+	Affect 
+	unfavorable 
+	Lee et al. (2011) 
+	21.3 
+	Time spent 
+	Affective Balance 
+	n.s. 
+	Pantic et al. (2012) 
+	18.0 
+	Time spent 
+	Depression 
+	unfavorable 
+	Rosen et al. (2013) 
+	30.7 
+	FB general use 
+	Major Depression 
+	n.s. 
+	Davila et al. (2012) 
+	20.2 
+	Login frequency 
+	Depressive Sympt-s 
+	n.s. 
+	Time spent 
+	Depressive Sympt-s 
+	n.s. 
+	19.4 
+	Tone 
+	Positivity in interactions 
+	Depressive Sympt-s 
+	favorable 
+	Negativity of interactions 
+	Depressive Sympt-s 
+	unfavorable 
+	Haferkamp and  
+Kraemer (2011) 
+	22.5 
+	Passive 
+	Exposure to attractive  
+profile pictures 
+	Less positive  
+emotions 
+	unfavorable 
+	Exposure to successful  profile vitae 
+	Less positive  
+emotions 
+	unfavorable 
+	Utz and Beukeboom  (2011) 
+	22 
+	SNS grooming 
+	SNS Jealousy 
+	mixed 
+	Active 
+	SNS Rel-p Happiness 
+	mixed 
+	Self-presentation 
+	SNS Jealousy 
+	n.s. 
+	SNS Rel-p Happiness 
+	n.s. 
+	Kim and Lee (2011) 
+	19.6 
+	Positive self-presentation 
+	Subj.Happiness 
+	favorable 
+	Honest self-presentation 
+	Subj. Happiness (via  Social Support) 
+	n.s.  
+(favorable) 
+	Kim et al. (2013) 
+	< 30 
+	Self-disclosure 
+	Happiness and  
+Satisfaction 
+	favorable 
+	Davila et al. (2012) 
+	19.4 
+	Time interacting 
+	Depressive Sympt-s 
+	n.s. 
+	Lee et al. (2011) 
+	21.3 
+	Self-disclosure. 
+	Affective Balance 
+	favorable 
+	Locatelli et al. (2012) 
+	18.7 
+	Frequency of neg. posts 
+	Depression 
+	unfavorable 
+	Frequency of pos. posts 
+	Depression 
+	n.s. 
+	
+
+
+
+Table 1. Linking SNS measures to affective well-being: Overview of past research.  
+Overall, significant discrepancies in the conflicting outcomes reported by studies linking SNS use to  indices of affective and cognitive well-being (as summarized in Table 1 and 2) can be possibly traced  back to the measurement problems to correctly capture different markers of SNS use. First, a dominant  majority of studies in this area involve recall-based self-report measures of SNS participation that can  be significantly threatened by memory distortions, with respondents often being asked about the  “average daily time spent on social networking sites” (Pantic et al., 2012, p. 91) or “weekly SNSs  usage time” (Lee et al., 2011, p. 152). While the bias of recalling events and experiences over longer  time periods can be healed through the use of the diary method (Almeida, 2005), this procedure is  hardly used in SNS research, with the study by Kross et al. (2013) being a notable exception. 
+Twenty Second European Conference on Information Systems, Tel Aviv 2014 4 
+Wenninger et al. / The Influence Of Facebook on Life Satisfaction  
+Source 
+	Mean  
+Age 
+	Activity  
+on SNS 
+	Measured Activity on SNS 
+	Outcome  
+(Depend.Variable) 
+	Direction of  the Effect 
+	Valenzuela et al.  
+(2009) 
+	20.7 
+	General 
+	Intensity of Use 
+	Life Satisfaction 
+	favorable 
+	Kross et al. (2013) 
+	19.5 
+	Time spent 
+	Life Satisfaction 
+	unfavorable 
+	Lee et al. (2011) 
+	21.3 
+	Time spent 
+	Life Satisfaction 
+	n.s. 
+	Apaolaza et al. (2013) 
+	12-17 
+	Daily time spent 
+	Life Satisfaction (via  ↑Self-Esteem and ↓ Loneliness) 
+	favorable 
+	Wang (2013) 
+	ca. 24 
+	Active 
+	Sharing 
+	Life Satisfaction 
+	favorable 
+	Lee et al. (2011) 
+	21.3 
+	Self-disclosure 
+	Life Satisfaction 
+	favorable 
+	Locatelli et al. (2012) 
+	18.7 
+	Frequency of neg. posts 
+	Life Satisfaction 
+	unfavorable 
+	Frequency of pos. posts 
+	Life Satisfaction 
+	n.s. 
+	Lee et al. (2013) 
+	26.8 
+	Self-disclosure 
+	Life Satisfaction  
+(via Social Support) 
+	n.s.  
+(favorable) 
+	Valkenburg et al.  
+(2006) 
+	14.8 
+	Tone 
+	Tone of feedback 
+	Life Satisfaction  
+(via Social Self 
+Esteem ) 
+	favorable 
+	Krasnova et al. (2013) 
+	24.3 
+	Passive 
+	Passive Following 
+	Life Satisfaction 
+	unfavorable 
+	
+
+
+
+Table 2. Linking SNS measures to life satisfaction: Overview of past research.  
+Second, as can be derived from Tables 1 and 2, a large share of studies look at the general indices of SNS participation (Jelenchick et al., 2013; Pantic et al., 2012) – thereby possibly “mixing apples with  oranges”: It is not unusual to measure SNS participation by asking respondents about their overall  time spent using a SNS (e. g. Kross et al., 2013; Muise et al., 2009; Pantic et al., 2012), login  frequency (e.g. Davila et al., 2012) or rely on general scale-based measures of intensity of FB use  borrowed from Ellison et al. (2007) (e.g. Utz and Beukeboom, 2011; Valenzuela et al., 2009).  Recognizing problematic consequences of aggregated measures, an array of studies attempt to cure the  problem of confounded measures by singling out and testing the impact of more specific usage  patterns, with studies concentrating on markers of active (e.g. sharing content and communicating) and  passive participation (e.g. following information on SNS), as well as tonality of the feedback received  on a SNS (see column “Activity on SNS” from Tables 1 and 2). While these attempts do shed light on  the intricate web of links between different SNS uses and resulting consequences, most of these  studies do not make an exhaustive differentiation between specific usage patterns (e.g. chatting vs.  gaming on FB, reading News Feed, sharing, or commenting), but rather concentrate on a subset of  these activities (e.g. Lee et al., 2011). Hence, measures for the whole range of possible FB uses do not  get accounted for. Possibly as a result of these shortcomings, reported relationships and outcomes are contradictory, preventing an interested readership from building a complete picture of the influence of  SNS use on indices of SWB. For example, while Kross et al. (2013) show a negative link between  overall time spent on FB and users’ life satisfaction, Lee et al. (2011) find this link to be insignificant.  
+Against this background, this study aims to close the gaps identified in previous research. Specifically,  we aim to investigate the impact of the whole range of markers of FB participation on the global  measure of SWB - life satisfaction - for teen users. FB is chosen as a focal network to enhance  generalizability of our findings. Recall-based bias is minimized by relying on a diary method as an  approach to data collection.  
+1.2 Linking Facebook Use to Users’ Subjective Well-Being  
+While SNSs in general and FB in particular offer significant opportunities for users to engage with the  platform, the functional means to do so are still limited. Overall, recent statistics suggests that users  invest significant time looking at homepage / News Feed, photos and profiles of others, spending there
+Twenty Second European Conference on Information Systems, Tel Aviv 2014 5 
+Wenninger et al. / The Influence Of Facebook on Life Satisfaction  
+27%, 17% and 21% of their overall SNS time respectively. 10% of time is spent on apps and other  tools offered on FB (Keath, 2012). Contributing to this data, 49% of surveyed U.S. adults have  indicated “posting on the walls” as the FB activity they spent most time on, with 45% choosing News  Feed and only 17% referring to games (statista.com, 2011). Furthermore, “liking” is particularly  popular on FB, with a third of users using this function at least once a week according to (Barash et  al., 2010).  
+Insights on adult use of SNSs are further complemented by teen-specific data on usage collected by  (Lenhart et al., 2011), which suggests that chatting represents a major activity for teens on FB, with 88% engaging in it. Posting comments, status updates and photos / videos are next in importance, as  over 80% of teen users engage in any of these behaviors. Contrary to the stereotypical notion that all teens are addicted to FB games, 50% of teens indicated to play games on Social Media Sites according  to (Lenhart et al., 2011).  
+Building on the available data, in this study we concentrate on the dominant uses of FB by teens, as  these activities have the potential to impact users’ subjective well-being. On the active side, posting,  commenting and “liking” content are chosen as markers of public active participation; and chatting as  a measure of private active communication. We refrain from measuring engagement with private  messages, since FB has recently merged this functionality into one “chatting” function. On the passive side, we measure time spent on following News Feed and information of others - passive following,  separately capturing tonality of feedback users receive. Finally, time spent on gaming is also integrated  into our study to account for this common use of SNSs by teenagers.  
+1.2.1 Posting and commenting  
+Public status updates (in the form of text or photos) and comments represent salient ways of active participation on FB, as they imply interaction to or with other community members. Extant studies  suggest a positive (or at least a non-negative) relationship between indices of active participation and  SWB. For example, self-disclosure was found to have a positive impact on one’s level of happiness  (Kim and Lee, 2011; Kim et al., 2013), affective balance (Lee et al., 2011), and life satisfaction (Lee et  al., 2011; Wang, 2013). This relationship is supported by a large body of related research linking  active sharing and communication with increases in emotional support, social connectedness and  social capital (e.g. Kalpidou et al., 2011; Koroleva et al., 2011), which may act as mediators in the  relationship between active SNS use and SWB. Beneficial effects of sharing have been confirmed also  in clinical research that has demonstrated that talking about oneself results in the activation of certain  brain regions that respond to intrinsically rewarding experiences (Tamir and Mitchell, 2012). This is in  line with Kim and Lee (2011) who find that positive self-presentation on FB enhances perceptions of  subjective happiness.Taken together, these insights hint at a positive link between SWB and such  markers of active participation as posting and commenting. Hence, the following hypotheses (H) are  proposed: Higher levels of sharing (posting status updates, photos etc.) and commenting are  associated with a greater level of SWB (H1 | H2). 
+1.2.2 “Liking”  
+In contrast to public status updates and comments, “likes” represent a mixture of active participation and passive following. Indeed, even though “liking” requires an active action, giving “likes” demands  significantly less involvement on behalf of the user (Koroleva et al., 2011, p., p. 9). Originally  intended as a “sign of appreciation” of the content itself (Spiliotopoulos et al., 2013), “likes” steadily  transform themselves into confirmations of “I have read it” (Bosch, 2013). For example, Barash et al.  (2010) found that while FB users differentiate between entertaining and boring posts when they  engage in commenting, “likes” do not depend on the type of posts. Nonetheless, despite their effortless  nature, “likes” are a scarce resource, with users more likely to be “liked” than to “like” themselves  (Hampton et al., 2012). “Likes” appear to be selective, with users “liking” content to support  relationships with a receiver as he or she is likely to interpret them as a sign of personal predisposition 
+Twenty Second European Conference on Information Systems, Tel Aviv 2014 6 
+Wenninger et al. / The Influence Of Facebook on Life Satisfaction  
+and attention. As a result, “likes” are likely to induce positive feelings in the recipient, and hence help  to reinforce a positive relationship between both parties involved - an outcome which is often seen as a  foundation for personal life satisfaction and happiness (Cotten, 2008). Considering these effects, we  hypothesize that: Higher level of liking is associated with a greater level of SWB (H3). 
+1.2.3 Chatting  
+Chatting is another salient component of active participation, even though a non-public one. Motivated  to kill boredom and follow the latest trend (Lenhart et al., 2013), teens readily use a chatting function,  which has been recently merged with private messages functionality on FB. Considering significant  time investments this activity requires, it comes as no surprise that chatting on FB was found to be a 
+negative predictor of preparation for class for university students (Junco, 2012).  
+While evidence from the FB context is scarce, research on instant messaging (IM) offers a large  plethora of insights, which, however, remain mixed. On the negative side, IM has been linked to social anxiety and loneliness in school (Gross et al., 2002), as well as cause addiction and decrement in  academic performance (Huang and Leung, 2009). On the positive side, chatting was found to help  distressed teenagers to release emotionally (Dolev-Cohen and Barak, 2012), lead to better quality of  adolescents’ friendships (Valkenburg and Peter, 2009), enhance mattering (Cotten, 2008) and  facilitating relationship maintenance and development (Quan-Haase and Young (2010) - factors that  may work to enhance one’s sense of well-being (Dolev-Cohen and Barak, 2012). Overall, recognizing  a mixed nature of existing research, we tentatively hypothesize that: Higher level of chatting is  associated with a greater level of SWB (H4).  
+1.2.4 Passive Following  
+In contrast to active participation, research provides a mixed picture on the outcomes of passive following, reflected in the time users spend reading their News Feed or browsing profiles of others. On  the one hand, studies single out passive following as a source of pleasurable experiences (Wise et al.,  2010), informational and networking benefits with users having an opportunity to broaden their  horizons (Koroleva et al., 2011), build a desired sense of connectedness and social trust (Valenzuela et  al., 2009). On the other hand, research directly linking passive following with markers of SWB tells a different story. Haferkamp and Kraemer (2011) find that exposure to attractive profile pictures and  successful profile vitae of others produce negative reactions, as unfavourable social comparison may  cause feelings of inferiority and envy, which have been shown to have a strong negative effect on  users’ life satisfaction on FB (Krasnova et al., 2013). Further, jealousy feelings resulting from being  able to monitor one’s romantic partner on a continuous basis have been reported (Muise et al., 2009;  Utz and Beukeboom, 2011). Recognizing the mixed nature of existing findings, in this study we lean  towards the second stream of research and tentatively hypothesize that: Higher level of passive  following is associated with a lower level of SWB (H5). 
+1.2.5 Tone of Feedback  
+In addition to investigating the impact of objective measures of passive following, some studies have  concentrated on the tonality of feedback SNS users receive, which typically takes the form of friends’ comments, wall posts, or direct chatting. This factor may be particularly salient in teenagers’  environment, with a recent study revealing SNSs as a central crime scene for cyberbullying, with  16.6% of adolescents having been threatened, blackmailed, offended, teased, or humiliated online  (Schneider et al., 2013). As a result of this negative feedback, episodes of depression may be triggered  (Davila et al., 2012). Conversely, positive feedback appears to lead to better outcomes in terms of life  satisfaction and social self-esteem, particularly for younger adolescents (Valkenburg et al., 2006).  Moreover, positive attention may predispose a user to develop a stronger sense of social  connectedness, which was found to be associated with lower depression and anxiety (Grieve et al., 
+Twenty Second European Conference on Information Systems, Tel Aviv 2014 7 
+Wenninger et al. / The Influence Of Facebook on Life Satisfaction  
+2013). Taken together, we hypothesize that: Greater positivity of feedback is associated with a greater  level of SWB (H6).  
+1.2.6 Gaming  
+Finally, SNS gaming represents a separate domain of SNS participation, with scarce research reporting  mixed results. Building on the affordances to leverage one’s social network, many games involve a  social component, which may ultimately have a positive impact on SWB. For example, research on  Farmville – one of the most successful FB apps – reveals that experience of self-efficacy may follow  its participation. Further, social relationships can be maintained as users group around common  activities (Kinder, 2012). Nonetheless, traditional research on online gaming attributes this activity to  problematic Internet use, linking it with social anxiety, decreased interpersonal relationships (Lo et al.,  2005), aggression (Ko et al., 2009), depressive tendencies, lower self-esteem (Stetina et al., 2011) and  decreased mattering (Cotten, 2008). In the FB context, (Junco, 2012) finds that playing games has a  negative impact on engagement for students. Relying on the latter stream of research, we tentatively  hypothesize that: Greater engagement in SNS gaming is associated with a lower level of SWB (H7).  
+1.2.7 Controls  
+Beyond control variables typical for FB studies, such as age, gender and number of FB friends, we  additionally control for users’ self-esteem. Indeed, numerous studies view self-esteem as one of the  strongest determinants of life satisfaction, with high self-esteem having a favorable influence on  individual perceptions of subjective well-being (Diener and Diener, 1995). Furthermore, the time users  spend on the Internet besides FB is also controlled for, to account for other uses of the Web, such as  information collection, surfing, and other activities. 
+2 Study Design and Analysis  
+2.1 Method  
+2.1.1 Study Design, Procedure and Sample  
+The study was conducted in two German schools in July 2013. Prior to the start of the study,  permissions from the principals and written consent from parents of participating teenagers were  obtained. To avoid bias, the study was titled in general terms: “Teenagers on Facebook”. The whole  study involved three stages. First, an initial survey was conducted in which demographic variables and  level of self-esteem were elicited. In the second step, teenagers participated in a 7-day diary study (starting day: Monday), during which they had to report, among others, their FB and Internet usage  patterns on a daily basis. To accurately capture FB and other online activities on a given day,  respondents were instructed to take part in the online questionnaire shortly before going to bed.  Analysis of the field data has confirmed that teens have generally complied with this requirement, with  the earliest access across the study period taking place at 5:02 p.m., and the latest at 11:46 p.m. on the  weekday, and at 4:45 a.m. on the weekend (median access time throughout the week equaled 9 p.m.).  To link measurements of one person throughout the course of the study week while simultaneously  assuring confidentiality, every respondent was assigned a personal code in the beginning of the study. At the end of the 7-day period, respondents were asked to take part in the concluding survey, where  measures of life satisfaction were captured. Teenagers who participated for at least six days received a  €15 gift coupon as a reward for their efforts. 94 teenagers initially took part in the study. In further  analyses, however, only 80 adolescents who used FB for at least three days during the period of  investigation were included. Teenagers in our net sample were aged between 13 and 16 years  (mean=14.9, median=15, SD=0.7). Female FB users were overrepresented with 62.5% of all  participants. FB use ranged from three to seven days (mean=6.0, median=6.5, SD=1.2) during a study  week. Number of FB friends was between 10 and 833 (mean=193.5, median=190, SD=131.0). 
+Twenty Second European Conference on Information Systems, Tel Aviv 2014 8 
+Wenninger et al. / The Influence Of Facebook on Life Satisfaction  
+2.1.2 Measures  
+The study included three types of instruments assessing (1) overall and granular measures of FB use as well as the overall Internet use (see Table 3), (2) psychological constructs of emotional evaluation of  one’s self-esteem and well-being as well as (3) demographic variables. All questions were initially  formulated in English and then carefully translated into German. When available, pre-tested  translation was used.  
+Specifically, to assess the passive component of FB use, participants were daily asked the following:  “On Facebook, how much time did you spend today on browsing the News Feed and looking through  the profiles of other users?” Answers had to be stated in hours and minutes. Time spent chatting on  FB, FB gaming as well as overall time spent on FB were assessed in the same way. As a control  variable overall time spent on the Internet apart from FB was also elicited. Evidently, participation  measurements gained in that way is far more reliable than the typical recall-based questions on how  much time was spend on a SNS in general or over the last weeks. Posting, commenting and “liking”  behavior was measured daily with one question for each activity: “How many posts ¦ comments ¦ likes  did you make today?” Further, respondents were daily asked whether they obtained any feedback from  others, and if so, tone of feedback was elicited with the following question: “Overall, the sentiment of  feedback I received was...” with answer options ranging from 1=very unfriendly; 2=unfriendly,  3=neither friendly nor unfriendly, 4=friendly and 5=very friendly.  
+Self-esteem was measured on the first day of the survey using a well-known measure from Rosenberg  (1965) with a 5-point Likert scale. An exemplary item was: “I feel that I have a number of good  qualities.” A revised German version from von Collani and Herzberg (2003) was used for translation.  Cronbach’s alpha was appropriate reaching .75 (Nunnally, 1978). Mean across construct items reached  3.1 (median=3.3; SD=0.7). To capture SWB, Satisfaction with Life was measured on the last day of  the study with the well-established scale from Diener et al. (1985) on a 5-point Likert scale. An  exemplary item is: “In most ways, my life is close to my ideal.” Satisfaction with Life as a dependent  variable was chosen above affect-based measures of SWB, since it reflects “a global summary of one's  life as a whole” (Diener, 1994, p. p. 107, p. 107), and hence represents a more comprehensive measure  of this construct. Cronbach’s alpha reached .86, which is above the required threshold of 0.7  recommended by Nunnally (1978). Mean across construct items reached 3.5 (median=3.5; SD=0.9).  
+2.2 Results  
+2.2.1 Descriptive Analysis  
+Descriptive analysis for variables measuring FB and Internet use is presented in Table 3. We find that users rarely resort to such active uses of FB as posting and commenting. Thus, only 55% and 25% of  respondents commented or posted something in the course of the study respectively. Among those  who did, the frequency of these activities was not high with 50.2% and 60% leaving at most two  comments and posts respectively in the week of the study. In contrast, “liking” is common among  teenagers in our sample, with teens giving 2.3 “likes” per day on average. Overall, an overwhelming  majority of teens did “like” something in the course of the study, with only 9 teens not engaging in this  activity. Moreover, 45% of “likers” left 10 or more “likes” in the course of the week. This is in sharp  contrast to posts and comments, with only 20 and 44 users engaging in these activities at least once  respectively (see column “# of non-users / users” in Table 3). While public active participation was  relatively rare, private communication using the chat functionality was ubiquitous, with most time on  FB spent on it: Specifically, 42.7 minutes per day on average was invested into this activity. The  magnitude of time spent on chatting was followed by time spent on browsing the News Feed and  profiles of others – passive following, with an average time of 27.0 minutes per day. FB gaming was  extremely rare, and was subsequently excluded from the regression model, since a very low share of  respondents joined gaming applications in the course of the study (just 13.7%), in most cases investing  little time into this activity. Only 2 respondents were “heavy” gamers, each spending 120 and 340 
+Twenty Second European Conference on Information Systems, Tel Aviv 2014 9 
+Wenninger et al. / The Influence Of Facebook on Life Satisfaction  
+minutes on FB games during the whole week. This is in line with Nazir et al. (2008) and Lenhart et el. (2011) who argue that a limited fraction of FB users account for this activity. In terms of tone of  feedback received, 35% of respondents described the feedback they obtained in the course of the study  as neither friendly nor unfriendly, friendly or very friendly, with only 6 respondents selecting a neither  friendly nor unfriendly category. Interestingly, none of the respondents indicated receiving unfriendly  comments or Wall posts, suggesting that feedback teens receive is overwhelmingly positive. Besides  FB, participating teens were using the Internet for 46.5 minutes per day on average.  
+Measure 
+	Variable 
+	Mean 
+	Median 
+	SD 
+	Min 
+	Max 
+	# of  
+non 
+users /  
+users 
+	Variable  
+group 
+	How many  
+posts/comments  /likes did you  
+make today? 
+	Number of… per week (measured on a daily basis) 
+	Posts 
+	0.7 
+	0.0 
+	1.6 
+	0 
+	8 
+	60 / 20 
+	FB activity  
+(model 1) 
+	Comments 
+	3.6 
+	1.0 
+	7.8 
+	0 
+	45 
+	36 / 44 
+	“Likes” 
+	15.8 
+	7.0 
+	32.9 
+	0 
+	254 
+	9 / 71 
+	How much time  did you spent  
+on … today (on  FB)? 
+	Time spent per day: (in minutes ¦ 7 days as a basis) (measured on a daily basis) 
+	… chatting on FB 
+	42.7 
+	17.1 
+	82.6 
+	0 
+	570.0 
+	3 / 77 
+	… on the FB News Feed 
+	27.0 
+	16.1 
+	30.9 
+	0 
+	177.9 
+	3 / 77 
+	… gaming on FB 
+	1.1 
+	0 
+	5.9 
+	0 
+	48.6 
+	69 / 11 
+	…on the Internet 
+	46.5 
+	29.3 
+	51.4 
+	0 
+	199.3 
+	5 / 75 
+	Control 
+	How much time  did you spent  
+today on FB? 
+	Time spent per day: (in minutes 7 days as a basis) (measured on a daily basis) 
+	Time spent on FB 
+	88.8 
+	48.9 
+	130.8 
+	1.0 
+	351.4 
+	0 / 80 
+	FB use (ad  
+hoc model 2) 
+	
+
+
+
+Table 3. Descriptive statistics for FB and Internet use variables.  
+2.2.2 Hypothesis Testing  
+For the subsequent analysis, overall time in minutes for the whole week was calculated for every  participant for chatting, passive following and time spent on the Internet variables. Considering a low  number of posts and comments per person, these variables were entered as dummies into the  regression model (0=no posts/comments made throughout the week; 1=at least one post/comment  made). Since “likes” were more common, their absolute values per week (sum across all days) were  entered. Further, since respondents reported receiving only positive or neutral feedback, the scores for  the tone of feedback were recoded into a new variable positivity of feedback, with 0=no feedback;  1=neither unfriendly nor friendly, 2=friendly, 3=very friendly feedback. 11 times respondents  indicated to have received feedback (comments or Wall posts from others), but did not provide  assessment of its sentiment. Such responses were assigned into the “0” category. Finally, mean values  for items were calculated and aggregated at a construct level to derive scores for self-esteem and life  satisfaction.  
+A two-step hierarchical multiple regression model was used to test the hypotheses: H1-H6, with life  satisfaction (SWB) as a dependent variable. In the first step, control variables age, gender, number of  FB friends, self-esteem scores and average time spent on the Internet (besides FB) were entered into  the model for factoring out their effects. In the second step, the predictor variables were added  simultaneously including posting, commenting, liking, chatting, passive following and positive  feedback. Absence of multicollinearity among independent variables was assured, since the maximum  variance inflation factor (VIF) was 1.96, which is below the threshold of 2 (Miles and Shevlin, 2001). Table 4 presents the regression results for hypotheses H1 to H6 (in column labeled model 1).  Significant beta weights are highlighted in bold and asterisked. 
+Twenty Second European Conference on Information Systems, Tel Aviv 2014 10 
+Wenninger et al. / The Influence Of Facebook on Life Satisfaction  
+ 
+	Model 11 
+	Ad Hoc Model 2 
+	Step Predictors 
+	ß t value 
+	VIF 
+	H Result 
+	ß t value 
+	1 Age 
+ Gender 
+ # FB friends 
+ Self-esteem 
+ Time spent on Internet  
+ 
+	0.03 0.27 
+-0.04 -0.32 
+-0.09 -0.86 
+0.48 4.51** 
+-0.09 -0.88 
+F = 4.99**  
+adjusted R² = 20.2% 
+	1.12  
+1.12  
+1.11  
+1.11  
+1.11 
+	
+
+	  
+  
+  
+  
+  
+  
+ 
+	2 Age 
+ Gender 
+ # FB friends 
+ Self-esteem 
+ Time spent on Internet 
+ Posting (dummy) 
+ Commenting (dummy)  Liking 
+ Chatting 
+ Passive Following  Positivity of Feedback  Time spent on FB  
+ 
+	0.08 0.70 
+-0.05 -0.42 
+-0.16 -1.50 
+0.45 4.30** 
+-0.13 -1.12 
+0.25 2.25* 
+-0.03 -0.23 
+0.14 1.21 
+0.30 2.25* 
+-0.27 -2.21* 
+-0.14 -1.16 
+- - 
+F = 3.77**  
+R² change = 7.6%  
+adj. R² = 27.8% 
+	1.32  
+1.38  
+1.29  
+1.20  
+1.46  
+1.30 
+1.28 
+1.38 
+1.96 
+1.58 
+1.68 
+1.22  
+ 
+	H1 supported  H2 rejected  
+H3 rejected 
+H4 supported H5 supported H6 rejected
+	0.03 0.24  
+-0.02 -0.16  
+-0.08 -0.29  
+0.48 4.48**  
+-0.12 -1.05  
+- -  
+- -  
+- -  
+- -  
+- -  
+- -  
+0.09 0.83  
+F = 4.25**  
+R² change = -0.4%  adj. R² = 19.8% 
+	
+
+
+
+Table 4. Results of Hierarchical Regressions with Life Satisfaction (SWB) as Dependent  Variable. *p<0.05 ** p <0.01.  
+In line with past research (Diener and Diener, 1995), self-esteem turned out to be the only control  variable leading to a significant increase in life satisfaction (SWB) (ß = 0.48, p<0.01). This relationship  is confirmed in multiple studies for Western societies as feeling good about oneself is an integral  property in individualistic cultures (e.g. Campbell, 1981; Diener and Diener, 1995). With the only  significant predictor, the model in step 1 explains 20.2 % of variance (F (5,74) = 4.99, p<0.01) in life  satisfaction, confirming self-esteem as a salient determinant of SWB (Campbell, 1981).  
+Following results of step 2, we find that such active forms of SNS participation as posting (ß = 0.25,  p<0.05) and chatting (ß = 0.30, p <0.05) may work to enhance life satisfaction (SWB), which supports  hypotheses H1 and H4. However, activities such as commenting (ß = -0.03, p>0.05) and liking (ß =  0.14, p>0.05) exert no significant impact, leading us to reject hypotheses H2 and H3.  
+Our data confirm a negative impact of passive following on users’ life satisfaction (SWB) (H5: ß =  -0.27, p<0.05). This result is particularly intriguing in the absence of the significant effect of time  spent on the Internet (ß = -0.09, p>0.05) – an activity that is also often of passive nature (e.g. reading  news, searching for information). Together, these findings suggest that users do distinguish between  social and non-social information, as they have a differential impact on their well-being. In an attempt  to explain this phenomenon, past research has linked properties of social information to such  unfavorable outcomes as envy (Krasnova et al., 2013), social overload (Maier et al., 2012) or jealousy (Muise et al., 2009), which may possibly provide rationale for these disparate effects.  
+  
+1 Since FB gaming was dropped from the analysis, hypothesis 7 (H7) could not be tested within this study.
+Twenty Second European Conference on Information Systems, Tel Aviv 2014 11 
+Wenninger et al. / The Influence Of Facebook on Life Satisfaction  
+Interestingly, greater positivity of feedback was not associated with a greater level of life satisfaction (SWB) (ß = -0.14, p>0.05). A possible explanation for this surprising result could be the low frequency  of comments respondents receive as well as the absence of negative comments. It seems that teen  users do not attribute such great relevancy to this type of feedback, as long as it stays positive.  
+Together, FB variables added 7.6% of unique variance to the model beyond the predictive power of  self-esteem leading to an overall adjusted R2 of 27.8% (F (11,68) = 3.77, p<0.01).  
+2.2.3 Testing the Impact of General Facebook Use: Ad Hoc Model 2  
+To compare our model to more “traditional” measurement methods, we additionally evaluated an ad  hoc model 2 (see Table 4). Specifically, in the second step we added just one variable aggregating FB  use - the overall time spent on FB. Interestingly, the predictor variable did not show any significant  effect (ß = 0.09, p>0.05) on life satisfaction (SWB). Summarizing such different activities as posting  content on FB, chatting with friends as well as browsing the News Feed within one variable possibly  equilibrated the positive effects of active participation and negative impact of passive following found  in our study. This result provides explanation for the frequently non-significant link reported in  previous studies (Tables 1 and 2) and calls for caution when measuring Social Media use using general  measures. This call is supported by the study of Koroleva et al. (2011) who advocate the differential  treatment of participation variable to better understand the causal structure of the resulting outcomes.  
+3 Discussion  
+The purpose of this study was to gain a better understanding into the impact of FB use on teenagers’  well-being. To obtain a more concrete picture and address weaknesses of prior research, different uses of FB were considered and captured using a diary method to minimize the recall bias. This procedure  is hardly used in SNS research certainly forming an advantage of our study. Differentiating between  specific uses of FB has helped us to avoid the “aggregation” bias, while simultaneously disentangling  the crisscrossing effects of various activities on users’ life satisfaction.  
+Based on our analysis, we show that the type of FB activity does matter. Specifically, we confirm that such active uses of FB as posting and chatting are positively associated with subjective well-being in  young adolescents. Thus, following the logic of our hypotheses we are able to show that just talking  about oneself to a large audience of FB friends can help users advance their life satisfaction (Tamir  and Mitchell, 2012). Simultaneously, easy access to instant communication via a chatting function  promotes teens’ well-being as it may help them release stress and obtain emotional support (Quan Haase and Young, 2010; Valkenburg and Peter, 2009).  
+To our surprise, commenting is not associated with increases in individual life satisfaction. In contrast  to posting, which is often self-promoting and narcissistic in nature (Hum et al., 2011; Peluchette and  Karl, 2009), commenting is typically less self-centered, with a commenter often expressing his or her  opinion on a given subject of discussion. As a result, the self-promoting element of communication -  often associated with a positive affect (Gonzales and Hancock, 2011) - is missing. Moreover,  commenting is in most cases asynchronous, with network participants rarely engaging in a  simultaneous dialogue with each other. Hence, possibilities for immediate emotional support and  problem-solving are limited. Just as commenting, “liking” was also found to exert no significant effect  on individual well-being. This outcome indirectly corroborates the view that “liking” is rather located  between a passive and an active uses of FB, increasingly signifying “I hear you” (Bosch, 2013), rather  than a sincere desire to initiate a meaningful dialogue.  
+Corroborating previous research efforts (e.g. Haferkamp and Kraemer, 2011; Krasnova et al., 2013),  we find that passive following of the News Feed as well as looking through the profiles of others  decreases teenagers’ life satisfaction. So far, extant research provides a number of competing  explanations for this outcome. Krasnova et al. (2013) suggest that particular qualities of the FB 
+Twenty Second European Conference on Information Systems, Tel Aviv 2014 12 
+Wenninger et al. / The Influence Of Facebook on Life Satisfaction  
+context promote narcissistic nature of sharing, which in turn triggers social comparison and envy.  Maier et al. (2012) demonstrate that continuous requests for help coming from FB “friends” may  promote the feelings of social overload leading to emotional exhaustion. An alternative explanation is offered by Koroleva et al. (2010), who find that information overload on the News Feed may induce  irritation and frustration with SNSs. Further, jealousy feelings should not be disregarded in the SNS  context, as romantic partners are able to intentionally or unintentionally monitor each other on the  network (Muise et al., 2009; Utz and Beukeboom, 2011). Finally, since passive following is time 
+consuming, users may later regret this activity as they possibly face worse performance in school  (Ahn, 2011). Overall, since browsing the News Feed and looking through the profiles of others is one  of the favorite pastime activities of teenage users on FB, capturing nearly half of the overall time spent  on FB in our sample, this result should be alarming for all stakeholders involved.  
+Astonishingly, positivity of feedback did not have any effect on the well-being of teens in our sample.  Generally, respondents received feedback from others relatively rarely (since posting and commenting  are by themselves rare activities among teens), which may provide an explanation for the absence of  the link between receiving a positive feedback and life satisfaction. Overall, however, the absence of negative comments in teens’ communication is encouraging, suggesting that public efforts to fight  cyberbullying and prevent problematic social media use might bear their fruits – at least in our sample.  
+Taken together, our results shed light on the contentious findings of past research by showing the  effects of SNS usage patterns on participants’ well-being. We find that activity matters, with the  possibility of both, harmful and positive outcomes. Investigating diverse SNS activities within one  study and examining their influence on users’ life satisfaction contributes to a better understanding of  the “Facebook” phenomenon capturing the majority of the young population in the Western world.  
+Implications for SNS providers are complex. On the one hand, motivating their younger customers to  active participation not only enriches user-generated content, but also favorably affects their lives. On  the other hand, blindly advising adolescents, parents and policy-makers to encourage (particularly  public) active SNS use would truly be a grave faux pas considering manifold threats to users’ privacy  prevalent in an SNS environment. Indeed, in the current situation, users have to carefully weigh  benefits of active participation against the potential risks to their privacy. Considering the complex nature of this calculus, it is no surprise that many teens are leaving FB to engage with alternative  platforms, such as Snapchat (Bosker 2013), that have a similar potential to promote their well-being,  while providing protection to their identity. In the view of these challenges, FB, as a major SNS, is  urged to lobby international laws protecting privacy of users’ information, assuring individual control  over personal data as well as clear rules for all stakeholders. These measures are desperately required  to stabilize the market share of SNSs among a survival-critical teen user segment in a crowded social  environment.  
+This study has several limitations, which, however, provide fruitful venues for future research  endeavors. First, our study has a limited sample size. However, by ruling out serious recall problems  using a diary method, data quality is reliable. Due to the low use of FB gaming in the sample, we were  not able to test our respective hypothesis leaving the answer for future investigation. Furthermore,  subjective well-being was operationalized using the life satisfaction scale by Diener et al. (1985). We  leave the assessment of the relationship between Facebook usage patterns and affective components of  SWB for future research. Additionally, follow-up research should also investigate the role of possible mediators to enrich our basic model. Finally, qualitative approaches can be used to gain richer findings  into the underlying dynamics. 
+Twenty Second European Conference on Information Systems, Tel Aviv 2014 13 
+Wenninger et al. / The Influence Of Facebook on Life Satisfaction  
+References  
+Ahn, J. (2011). The Effect of Social Network Sites on Adolescents' Social and Academic  Development: Current Theories and Controversies. Journal of the American Society for  Information Science and Technology, 62 (8), 1435-1445.  
+Ahn, J. (2012). Teenagers’ Experiences with Social Network Sites: Relationships to Bridging and  Bonding Social Capital. The Information Society, 28 (2), 99-109.  
+Almeida, D.M. (2005). Resilience and Vulnerability to Daily Stressors Assessed Via Diary Methods.  Current Directions in Psychological Science, 14 (2), 64-68.  
+Apaolaza, V., Hartmann, P., Medina, E., Barrutia, J.M. and Echebarria, C. (2013). The Relationship  between Socializing on the Spanish Online Networking Site Tuenti and Teenagers’ Subjective  Wellbeing: The Roles of Self-Esteem and Loneliness. Computers in Human Behavior, 29 (4), 1282-1289.  
+Barash, V., Ducheneaut, N., Isaacs, E. and Bellotti, V. (Year) Published. Faceplant: Impression  (Mis)Management in Facebook Status Updates. Proceedings of the Fourth International  AAAI Conference on Weblogs and Social Media, 2010.  
+Bosch, T. (2013). On Facebook, "Like" Can Mean "Dislike"." Get over It. [Online]. Available:  http://www.slate.com/blogs/future_tense/2013/04/03/dislike_button_why_facebook_doesn_t_ need_one.html (Accessed December 5,).  
+Bosker, B. (2013). Facebook's Rapidly Declining Popularity with Teens in 1 Chart [Online].  Available: http://www.huffingtonpost.com/2013/10/23/facebooks-teen-trouble in_n_4150940.html (Accessed December 1,).  
+Campbell, A. (1981). The Sense of Well-Being in America: Recent Patterns and Trends, New York,  McGraw-Hill  
+Campbell, A., Converse, P.E. and Rodgers, W.L. (1976). The Quality of American Life: Perceptions,  Evaluations, and Satisfactions, New York, Russell Sage Foundation.  
+Cotten, S.R. (2008). Students' Technology Use and the Impacts on Well‐Being. New Directions for  Student Services, 2008 (124), 55-70.  
+Davies, J. (2012). Facework on Facebook as a New Literacy Practice. Computers & Education, 59 (1), 19-29.  
+Davila, J., Hershenberg, R., Feinstein, B.A., Gorman, K., Bhatia, V. and Starr, L.R. (2012). Frequency and Quality of Social Networking among Young Adults: Associations with Depressive  Symptoms, Rumination, and Corumination. Psychology of Popular Media Culture, 1 (2), 72- 86.  
+Diener, E. (1994). Assessing Subjective Well-Being: Progress and Opportunities. Social Indicators  Research, 31 (2), 103-157.  
+Diener, E. and Diener, M. (1995). Cross-Cultural Correlates of Life Satisfaction and Self-Esteem.  Journal of Personality and Social Psychology, 68 (4), 653.  
+Diener, E., Emmons, R.A., Larsen, R.J. and Griffin, S. (1985). The Satisfaction with Life Scale.  Journal of Personality Assessment, 49 (1), 71-75.  
+Diener, E., Oishi, S. and Lucas, R.E. (2003). Personality, Culture, and Subjective Well-Being:  Emotional and Cognitive Evaluations of Life. Annual Review of Psychology, 54 (1), 403-425.  
+Dolev-Cohen, M. and Barak, A. (2012). Adolescents’ Use of Instant Messaging as a Means of  Emotional Relief. Computers in Human Behavior, 29 (1), 58-63. 
+Twenty Second European Conference on Information Systems, Tel Aviv 2014 14 
+Wenninger et al. / The Influence Of Facebook on Life Satisfaction  
+Ellison, N., Steinfield, C. and Lampe, C. (2007). The Benefits on Facebook "Friends": Social Capital  and College Students Use of Online Social Network Sites. Journal of Computer-Mediated  Communication, 12 (4), 1143–1168.  
+Espinoza, G. and Juvonen, J. (2011). The Pervasiveness, Connectedness, and Intrusiveness of Social  Network Site Use among Young Adolescents. Cyberpsychology, Behavior, and Social  Networking, 14 (12), 705-709.  
+Farahani, H.A., Kazemi, Z., Aghamohamadi, S., Bakhtiarvand, F. and Ansari, M. (2011). Examining  Mental Health Indices in Students Using Facebook in Iran. Procedia - Social and Behavioral  Sciences, 28, 811-814.  
+Floros, G.D., Siomos, K., Fisoun, V. and Geroukalis, D. (2013). Adolescent Online Gambling: The  Impact of Parental Practices and Correlates with Online Activities. Journal of Gambling  Studies, 29 (1), 131-150.  
+Gonzales, A.L. and Hancock, J.T. (2011). Mirror, Mirror on My Facebook Wall: Effects of Exposure  to Facebook on Self-Esteem. Cyberpsychology, Behavior, and Social Networking, 14 (1-2), 79-83.  
+Grieve, R., Indian, M., Witteveen, K., Anne Tolan, G. and Marrington, J. (2013). Face-to-Face or  Facebook: Can Social Connectedness Be Derived Online? Computers in Human Behavior, 29  (3), 604-609.  
+Gross, E.F., Juvonen, J. and Gable, S.L. (2002). Internet Use and Well‐Being in Adolescence. Journal  of social issues, 58 (1), 75-90.  
+Haferkamp, N. and Kraemer, N.C. (2011). Social Comparison 2.0: Examining the Effects of Online  Profiles on Social-Networking Sites. Cyberpsychology, Behavior, and Social Networking, 14  (5), 309-314.  
+Hampton, K., Goulet, L.S., Marlow, C. and Rainie, L. (2012). Why Most Facebook Users Get More  Than They Give. Pew Internet & American Life Project.  
+Huang, H. and Leung, L. (2009). Instant Messaging Addiction among Teenagers in China: Shyness,  Alienation, and Academic Performance Decrement. CyberPsychology & Behavior, 12 (6), 675-679.  
+Hum, N.J., Chamberlin, P.E., Hambright, B.L., Portwood, A.C., Schat, A.C. and Bevan, J.L. (2011). A  Picture Is Worth a Thousand Words: A Content Analysis of Facebook Profile Photographs.  Computers in Human Behavior, 27 (5), 1828-1833.  
+Itō, M., Horst, H., Bittani, M., boyd, d., Herr-Stephenson, B., Lange, P.G., Pascoe, C.J. and Robinson,  L. (2009). Living and Learning with New Media: Summary of Findings from the Digital  Youth Project, Massachusetts, MIT Press.  
+Jelenchick, L.A., Eickhoff, J.C. and Moreno, M.A. (2013). "Facebook Depression?" Social  Networking Site Use and Depression in Older Adolescents. Journal of Adolescent Health, 52  (1), 128-130.  
+Junco, R. (2012). The Relationship between Frequency of Facebook Use, Participation in Facebook  Activities, and Student Engagement. Computers & Education, 58 (1), 162-171.  
+Kalpidou, M., Costin, D. and Morris, J. (2011). The Relationship between Facebook and the Well Being of Undergraduate College Students. Cyberpsychology, Behavior, and Social  Networking, 14 (4), 183-189. 
+Twenty Second European Conference on Information Systems, Tel Aviv 2014 15 
+Wenninger et al. / The Influence Of Facebook on Life Satisfaction  
+Keath, J. (2012). Where Users Spend Most of Their Time on Facebook [Online]. Available:  http://www.maestrosocialmedia.com/social-media-101/social-media-for-business/facebook for-business/where-users-spend-most-of-their-time-on-facebook/ (Accessed December 1,).  
+Kim, J. and Lee, J.-E.R. (2011). The Facebook Paths to Happiness: Effects of the Number of  Facebook Friends and Self-Presentation on Subjective Well-Being. Cyberpsychology,  Behavior, and Social Networking, 14 (6), 359-364.  
+Kim, J.Y., Chung, N. and Ahn, K.M. (2013). Why People Use Social Networking Services in Korea  the Mediating Role of Self-Disclosure on Subjective Well-Being. Information Development, 1-12.  
+Kinder, K. (2012). „You Have a Farmville Gift Request”–Thesen Zum Erfolg Von Social Casual  Gaming Auf Facebook. Kommunuikation@ Gesellschaft-Journal für alte und neue Medien  aus soziologischer, kulturanthropologischer und kommunikationswissenschaftlicher  Perspektive, 13.  
+Ko, C.-H., Yen, J.-Y., Liu, S.-C., Huang, C.-F. and Yen, C.-F. (2009). The Associations between  Aggressive Behaviors and Internet Addiction and Online Activities in Adolescents. Journal of  Adolescent Health, 44 (6), 598-605.  
+Koroleva, K., Krasnova, H. and Günther, O. (Year) Published. Stop Spamming Me!’ - Exploring  Information Overload on Facebook. AMCIS 2010 Proceedings, 2010.  
+Koroleva, K., Krasnova, H., Veltri, N.F. and Günther, O. (Year) Published. It’s All About  Networking! Empirical Investigation of Social Capital Formation on Social Network Sites.  ICIS 2011 Proceedings, 2011.  
+Krasnova, H., Spiekermann, S., Koroleva, K. and Hildebrand, T. (2010). Online Social Networks:  Why We Disclose. Journal of Information Technology, 25 (2), 109-125.  
+Krasnova, H., Wenninger, H., Widjaja, T. and Buxmann, P. (Year) Published. Envy on Facebook: A  Hidden Threat to Users' Life Satisfaction? Wirtschaftsinformatik, 2013. 92.  
+Kross, E., Verduyn, P., Demiralp, E., Park, J., Lee, D.S., Lin, N., Shablack, H., Jonides, J. and Ybarra,  O. (2013). Facebook Use Predicts Declines in Subjective Well-Being in Young Adults. PloS  one, 8 (8), e69841.  
+Ku, Y.-C., Chen, R. and Zhang, H. (2013). Why Do Users Continue Using Social Networking Sites?  An Exploratory Study of Members in the United States and Taiwan. Information &  Management, 50 (7), 571-581.  
+Lee, G., Lee, J. and Kwon, S. (2011). Use of Social-Networking Sites and Subjective Well-Being: A  Study in South Korea. Cyberpsychology, Behavior, and Social Networking, 14 (3), 151-155.  
+Lee, K.-T., Noh, M.-J. and Koo, D.-M. (2013). Lonely People Are No Longer Lonely on Social  Networking Sites: The Mediating Role of Self-Disclosure and Social Support.  Cyberpsychology, Behavior, and Social Networking, 16 (6), 413-418.  
+Lee, S.J. (2009). Online Communication and Adolescent Social Ties: Who Benefits More from  Internet Use?*. Journal of Computer‐Mediated Communication, 14 (3), 509-531.  
+Lenhart, A., Madden, M., Smith, A., Purcell, K., Zickuhr, K. and Rainie, L. (2011). Teens, Kindness  and Cruelty on Social Network Sites. Pew Research Center.  
+Lenhart, A., Purcell, K., Smith, A. and Zickuhr, K. (2013). Social Media and Young Adults. Pew  Internet and American Life Project.  
+Livingstone, S. and Brake, D.R. (2010). On the Rapid Rise of Social Networking Sites: New Findings  and Policy Implications. Children & society, 24 (1), 75-83. 
+Twenty Second European Conference on Information Systems, Tel Aviv 2014 16 
+Wenninger et al. / The Influence Of Facebook on Life Satisfaction  
+Lo, S.-K., Wang, C.-C. and Fang, W. (2005). Physical Interpersonal Relationships and Social Anxiety  among Online Game Players. CyberPsychology & Behavior, 8 (1), 15-20.  
+Locatelli, S.M., Kluwe, K. and Bryant, F.B. (2012). Facebook Use and the Tendency to Ruminate  among College Students: Testing Mediational Hypotheses. Journal of Educational Computing  Research, 46 (4), 377-394.  
+Maier, C., Laumer, S., Eckhardt, A. and Weitzel, T. (Year) Published. When Social Networking Turns  to Social Overload: Explaining the Stress, Emotional Exhaustion, and Quitting Behavior from  Social Network Sites' Users. ECIS 2012 Proceedings, 2012.  
+Miles, J. and Shevlin, M. (2001). Applying Regression and Correlation: A Guide for Students and  Researchers, London, Sage.  
+Muise, A., Christofides, E. and Desmarais, S. (2009). More Information Than You Ever Wanted: Does  Facebook Bring out the Green-Eyed Monster of Jealousy? CyberPsychology & Behavior, 12  (4), 441-444.  
+Nazir, A., Raza, S. and Chuah, C.-N. (Year) Published. Unveiling Facebook: A Measurement Study of  Social Network Based Applications. Proceedings of the 8th ACM SIGCOMM conference on  Internet measurement, 2008. ACM, 43-56.  
+Notley, T.M. (2008). Online Network Use in Schools: Social and Educational Opportunities. Youth  Studies Australia, 27 (3), 20-29.  
+Nunnally, J.C. (1978). Psychometric Theory, New York, McGraw-Hill.  
+O'Brien, L., Read, P., Woolcott, J. and Shah, C. (2011). Understanding Privacy Behaviors of  Millennials within Social Networking Sites. Proceedings of the American Society for  Information Science and Technology, 48 (1), 1-10.  
+O'Keeffe, G.S. and Clarke-Pearson, K. (2011). The Impact of Social Media on Children, Adolescents,  and Families. Pediatrics, 127 (4), 800-804.  
+Pantic, I., Damjanovic, A., Todorovic, J., Topalovic, D., Bojovic-Jovic, D., Ristic, S. and Pantic, S. (2012). Association between Online Social Networking and Depression in High School  Students: Behavioral Physiology Viewpoint. Psychiatria Danubina, 24 (1), 90-93.  
+Patchin, J.W. and Hinduja, S. (2010). Changes in Adolescent Online Social Networking Behaviors  from 2006 to 2009. Computers in Human Behavior, 26 (6), 1818-1821.  
+Peluchette, J. and Karl, K. (2009). Examining Students’ Intended Image on Facebook:“What Were  They Thinking?!”. Journal of Education for Business, 85 (1), 30-37.  
+Quan-Haase, A. and Young, A.L. (2010). Uses and Gratifications of Social Media: A Comparison of  Facebook and Instant Messaging. Bulletin of Science, Technology & Society, 30 (5), 350-361.  
+Rosen, L.D., Whaling, K., Rab, S., Carrier, L.M. and Cheever, N.A. (2013). Is Facebook Creating  “Idisorders”? The Link between Clinical Symptoms of Psychiatric Disorders and Technology  Use, Attitudes and Anxiety. Computers in Human Behavior, 29 (3), 1243-1254.  
+Rosenberg, M. (1965). Rosenberg Self-Esteem Scale (Rse). Acceptance and Commitment Therapy.  Measures Package, 61.  
+Schneider, C., Katzer, C. and Leest, U. (2013). Cyberlife - Spannungsfeld Zwischen Faszination Und  Gefahr. Cybermobbing Bei Schülerinnen Und Schülern. Karlsruhe: Bündnis gegen  Cybermobbing e.V. 
+Twenty Second European Conference on Information Systems, Tel Aviv 2014 17 
+Wenninger et al. / The Influence Of Facebook on Life Satisfaction  
+Shin, D.-H. (2010). The Effects of Trust, Security and Privacy in Social Networking: A Security Based Approach to Understand the Pattern of Adoption. Interacting with Computers, 22 (5), 428-438.  
+Spiliotopoulos, T., Karnik, M., Oakley, I., Venkatanathan, J. and Nisi, V. (Year) Published. Towards  Understanding Social Media: Two Studies Exploring the Uses and Gratifications of Facebook.  Proceedings of HCI Korea, 2013 Gangwon, South Korea.  
+statista.com. (2011). Nutzung Der Zeit Auf Facebook Durch Nutzer in Den USA Im Jahr 2011  [Online]. Available: http://de.statista.com/statistik/daten/studie/201501/umfrage/nutzung-der zeit-auf-facebook-durch-nutzer-aus-den-usa/ (Accessed December 2,).  
+statista.com. (2013). Nutzer Von Facebook Nach Altersgruppen Seit 2009 [Online]. Available:  http://de.statista.com/statistik/daten/studie/70194/umfrage/nutzer-von-facebook-in 
+deutschland-nach-altersgruppen-seit-2009/ (Accessed December 12,).  
+Stetina, B.U., Kothgassner, O.D., Lehenbauer, M. and Kryspin-Exner, I. (2011). Beyond the  Fascination of Online-Games: Probing Addictive Behavior and Depression in the World of  Online-Gaming. Computers in Human Behavior, 27 (1), 473-479.  
+Tamir, D.I. and Mitchell, J.P. (2012). Disclosing Information About the Self Is Intrinsically  Rewarding. Proceedings of the National Academy of Sciences, 109 (21), 8038-8043.  
+Taraszow, T., Aristodemou, E., Shitta, G., Laouris, Y. and Arsoy, A. (2010). Disclosure of Personal  and Contact Information by Young People in Social Networking Sites: An Analysis Using  Facebook Profiles as an Example. International Journal of Media & Cultural Politics, 6 (1), 81-101.  
+Turel, O. and Serenko, A. (2012). The Benefits and Dangers of Enjoyment with Social Networking  Websites. European Journal of Information Systems, 21 (5), 512-528.  
+Utz, S. and Beukeboom, C.J. (2011). The Role of Social Network Sites in Romantic Relationships:  Effects on Jealousy and Relationship Happiness. Journal of Computer-Mediated  
+Communication, 16 (4), 511-527.  
+Valenzuela, S., Park, N. and Kee, K.F. (2009). Is There Social Capital in a Social Network Site?:  Facebook Use and College Students' Life Satisfaction, Trust, and Participation. Journal of  Computer-Mediated Communication, 14 (4), 875-901.  
+Valkenburg, P.M. and Peter, J. (2009). Social Consequences of the Internet for Adolescents a Decade  of Research. Current Directions in Psychological Science, 18 (1), 1-5.  
+Valkenburg, P.M., Peter, J. and Schouten, A.P. (2006). Friend Networking Sites and Their  Relationship to Adolescents' Well-Being and Social Self-Esteem. CyberPsychology &  Behavior, 9 (5), 584-590.  
+von Collani, G. and Herzberg, P.Y. (2003). Eine Revidierte Fassung Der Deutschsprachigen Skala  Zum Selbstwertgefühl Von Rosenberg. Zeitschrift für Differentielle und Diagnostische  Psychologie, 24 (1), 3-7.  
+Wang, S.S. (2013). “I Share, Therefore I Am”: Personality Traits, Life Satisfaction, and Facebook  Check-Ins. Cyberpsychology, Behavior, and Social Networking, 16 (12), 870-877.  
+Wise, K., Alhabash, S. and Park, H. (2010). Emotional Responses During Social Information Seeking  on Facebook. Cyberpsychology, Behavior, and Social Networking, 13 (5), 555-562.  
+Ybarra, M.L. and Mitchell, K.J. (2008). How Risky Are Social Networking Sites? A Comparison of  Places Online Where Youth Sexual Solicitation and Harassment Occurs. Pediatrics, 121 (2), 350-357.  
+Twenty Second European Conference on Information Systems, Tel Aviv 2014 18 View publication stats

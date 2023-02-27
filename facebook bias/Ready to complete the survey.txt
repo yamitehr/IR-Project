@@ -1,0 +1,221 @@
+﻿International Journal of Market Research Vol. 55 Issue 1 
+‘Ready to complete the survey  on Facebook’ 
+Web 2.0 as a research tool in business studies 
+Aleix Gregori 
+Rovira i Virgili University 
+Fabiola Baltar 
+University of Mar del Plata 
+Practical issues associated with sampling and data collection are of real concern  to business researchers. Some important methodological issues are the willingness  to participate of the individuals and the provision of accurate information. Therefore, the aim of this article is to present the results obtained from the  combination of social networking sites (Facebook) with an online questionnaire  to study transnational entrepreneurs in Spain. The article analyses the pattern of  answer of 219 entrepreneurs surveyed, and a cluster analysis of respondents and  types of question is developed. The conclusion is that new technologies can help  researchers to tackle some of the limitations associated with the administration  of surveys to business people (e.g. lack of motivation to answer, intermediate  filters) and can improve the quality of the information collected (e.g. higher level  of response to confidential questions). However, it is acknowledged that ethical  and methodological considerations are of great importance in this kind of study. 
+Introduction 
+In many areas of social science research, access to the object of study is still  a major concern for researchers. There are topics that have been showing  operative limitations because of the characteristics of the population, its  localisation and the level of personal commitment required to participate  in the study. Specifically, in the business research field, ‘researchers  are frequently confronted by the need to collect substantial quantities  of empirical data, often from a reluctant population’ (Newby et al. 
+Received (in revised form): 30 December 2011
+© 2013 The Market Research Society 131 DOI: 10.2501/IJMR-2013-010 
+‘Ready to complete the survey on Facebook’ 
+2003, p. 1). Although many authors have discussed the importance of  methodological issues concerned with the data collection process to study  small to medium-sized enterprises (SMEs) (Hansen et al. 1983; Alpar &  Spitzer 1989; Simsek & Veiga 2001; Cycyota & Harrison 2006; Baruch &  Holtom 2008; Bavdaz et al. 2009), there has not been substantial advance  in the application of new technologies, specifically the Web 2.0 frame, to  reach and research entrepreneurs in small firms. Thus, we formulate the  following exploratory questions: (a) ‘Is it possible to integrate Web 2.0  technology as a research tool to improve the data collection process in  the small business research field?’ and (b) ‘Which are the main attributes  of those technologies that favour the involvement of entrepreneurs in  business surveys?’ 
+The aim of the study is to explore the advantages and disadvantages of  using new technologies for data collection to study SMEs. Considering  that the main administration form of business surveys commonly used  is the email (Faria & Dickinson 1992; Dennis 2003), our contribution  is to propose an alternative methodological approach, combining social  networking sites (Facebook) with online surveys, to improve the level  of participation of business owners. The hypothesis is that the contact  by a social networking site favours access and increases entrepreneurs’  commitment. Moreover, the complementary administration of an online  survey minimises time and costs concerning the fieldwork, and improves  the quality of responses. 
+The next section provides a brief overview of the theoretical contributions  to the study of business surveys. Three dimensions of analysis are  considered: 
+1. the problems with business surveys 
+2. the recruitment process using Web 2.0 
+3. the advantages and disadvantages of using online instruments. 
+After that, we present the methodology proposed to test the hypothesis,  and a discussion of the results obtained. Finally, conclusions are exposed. 
+The problems with business surveys 
+The problem of data collection in business research has been sufficiently  studied (Duhan & Wilson 1990; Jobber & O’Reilly 1998; Dennis 2000,  2003; Greer et al. 2000; Newby et al. 2003; Lynn & Sala 2004; Bartholomew  & Smith 2006; Cycyota & Harrison 2006; Bavdaz et al. 2009). These 
+132 
+International Journal of Market Research Vol. 55 Issue 1 
+studies suggest that the need to collect substantial quantities of empirical  data from a hard-to-involve population is a huge methodological challenge  for researchers in SMEs studies. Despite the non-response bias, researchers  have usually implemented mail surveys for data collection. Such is the  importance of the reluctant behaviours among entrepreneurs that many  strategies have been proposed in order to stimulate questionnaire returns  and increase external validity (Yammarino et al. 1991; Claycomb et al. 
+2000; Porter 2004), and to improve data quality and minimise costs and  time in the data collection process (Fox et al. 1998). 
+In revising studies that have used industrial samples, Newby et al. (2003)  found that the main methodological concerns dealing with these surveys  are: (1) the attention-seeking strategy applied to increase the response  rate, such as telephone pre-notifications and personalised strategies;  (2) strategies applied for questionnaires to be completed, such as the  use of university sponsorship, anonymity guarantees, the format of the  questionnaire (coloured print, coloured paper, or the double-sided rather  than single-sided presentation); (3) strategies to improve questionnaire  returns with follow-up techniques; and (4) the relation between incentives  and response rate (e.g. monetary, non-monetary and the offer of results). 
+Although the literature has investigated strategies to induce reluctant  entrepreneurs to participate in business studies, its contributions in  proposing new alternatives to approach them are scarce. We consider that  the new information technologies – for example, social networking sites  (SNSs) – and the development of online surveys software can improve data  quality and the representativeness of the results. 
+The recruitment process using Web 2.0: the case of Facebook 
+Many researchers recognise that, since the creation of Facebook in 2004,  the social networking phenomenon has attracted more users, not only in  the United States, but all around the world. At the beginning, Facebook’s  aim was to connect Harvard students, but it rapidly spread to include  high-school students, professionals … and then everyone! Currently,  more than 500 million users worldwide share their interests and personal  information on Facebook. These individuals link to others, creating online  communities of friends who share public information or send private  messages. Furthermore, they can also create new groups or join existing  groups based on common interests (school, fans, religious, ethnicity, etc.). 
+One advantage of these groups is that each member has his, her or its own  Facebook profile and can be contacted individually.
+133 
+‘Ready to complete the survey on Facebook’ 
+Social networks such as Facebook, and information-sharing sites,  have transformed the way people interact online and share information. Increasingly, firms are using these networks to find employees or clients. Recent studies highlight the importance of the virtual environment in the  development of business strategies, including those of SMEs. For instance,  Ball (2010) – using a survey sent by Facebook, Twitter and email – found  that SME owners indicated Facebook as the first networking site to use  to develop their businesses. The main conclusion of the study is that  entrepreneurs consider that it is necessary to incorporate this tool because  clients are there, and in this age of new technologies firms need to integrate  them with their daily activities. Furthermore, 62% of owners seem to be  responsible for the direction of their fan pages and play an active part in  this activity. 
+Given this context, SNSs appear to provide an accurate space via which  to improve results in business surveys because entrepreneurs are familiar  with this technology. Furthermore, SNSs can minimise time costs and  increase trust because of the accessibility of the researcher profile and its  network. Moreover, it is possible to expand the sample by virtual snowball  sampling, where a subject can give to the researcher the name of another  subject, who in turn provides the name of a third one, and so on. Virtual  snowball sampling not only facilitates access to the ‘hard to involve’  population, but also can expand sample size and the scope of the study. 
+However, recruiting units of observation is only the first step. In order to  access information, online surveys can be a useful complement to generate  valid and rigorous data. As Brickman-Bhutta (2009, p. 5) points out: 
+Facebook and other social network sites allow us to carry chain-referral  methods into the age of the Internet, while also exploiting the strengths of online  questionnaires. A single scholar can complete projects that previously required  large teams. Costs of printing, postage, and data entry virtually disappear. 
+Feedback is instantaneous. Turnaround times shrink from weeks to days. It  becomes much easier to reach remote, diffuse, and alienated subpopulations. 
+Advantages and disadvantages of online surveys 
+Evans and Marthur (2005) have described the main advantages of online  surveys as follows: 
+•  the flexibility to apply them in different formats or have many versions  according to the respondent (e.g. language)
+134 
+International Journal of Market Research Vol. 55 Issue 1 
+•  they can be administered in a time-efficient manner, minimising the  period needed to collect and process data 
+•  technology innovations make questionnaires more attractive and  easier to use, also for those respondents without computational skills •  respondents can answer at a time convenient to themselves •  once the last questionnaire for a study has been submitted, the  researcher instantaneously has all the data stored in a database •  they can include all kinds of questions (e.g. dichotomous,  multiple-choice, scales, open-ended questions) 
+•  costs are lower because there are specialised online questionnaire  development firms, surveys are self-administered and do not require  personal interviews 
+•  they increase survey response rate because is easier to follow up  non-respondents 
+•  respondents answer questions in the order intended by the study  designer 
+•  they can be constructed so that the respondent must answer one  question before advancing to others, and to ensure that respondents  answer only the questions that are specific to them. 
+However, there is a set of problems associated with the use of online  surveys, such as: 
+•  the perception that the mail is ‘spam’, which increases the non-response  rate 
+•  selection bias in relation to internet population (gender, age, education  level, socio-economic level, etc.) 
+•  the sample selection methods are ‘volunteer’ samples; blanket email  is sent to a huge number of potential respondents in an unsolicited  manner and attracts the attention of proactive participants •  respondents’ lack of online experience 
+•  unclear answering instructions because online questionnaires are  self-administered 
+•  impersonal – there is usually no human contact in online surveys •  privacy concerns as to, e.g., how data will be used 
+•  some studies reflect that there is a low response rate to many online  surveys (Fricker & Schonlau 2002; Evans & Marthur 2005; Converse  et al. 2008; Poole & Loomis 2009).
+135 
+‘Ready to complete the survey on Facebook’ 
+We consider that some of these barriers can be reduced with the application  of SNSs to contact participants. Facebook can minimise problems  associated with ‘spam’, impersonal contact, unclear answers and low  response rates. Moreover, the possibility to gain access to offline contacts  via recommendation given by online ones can reduce the problems  associated with selection bias and representation. Consequently, we  consider that SNSs applied to small business research can be beneficial  in two dimensions. First, they offer a useful means by which to identify  the hard-to-reach population and expand sample size. Second, they can  increase the low response rate observed in business surveys because some  barriers associated with these samples are minimised (e.g. lack of time to  answer, level of confidence, time cost and intermediation). We observed  these issues in the study of Argentinean entrepreneurs living in Spain. 
+Methodology 
+When we started the study of Argentinean entrepreneurs living in  Spain we faced a methodological challenge due to the characteristics  of the population. On the one hand, many of them were immigrants  with double nationality: Argentina and an EU country. As they usually  register themselves as community immigrants because of the advantages  associated, they do not appear in statistics as Argentinean immigrants in  Spain (hidden population). On the other hand, we were looking for those  we could consider as entrepreneurs – who, as noted above, are usually  unwilling or hesitant to participate in such studies (reluctant population). 
+How to find individuals who belong to a hidden population and  encourage them to get involved whenever contacted is a major concern  for social researchers. The need to search for individuals who are not  easily identifiable may involve a lot of effort, while their reluctance to  become informants for the study may affect its results and, ultimately, its  representativeness. In this regard, we hypothesise that some properties of  Facebook as a social networking site can help researchers to overcome  those limitations. 
+The first question we had to deal with was how to contact those  Argentinean entrepreneurs in Spain. To our knowledge, any official  registry of firms run by Argentineans would have been of little help  because most of these immigrants are registered as community ones. Thus,  the use of such data would lead to self-biased results as many Argentinean  entrepreneurs would never be there. Yet, almost everybody is on Facebook. 
+According to a recent report, 78% of internet users in Spain claimed that 
+136 
+International Journal of Market Research Vol. 55 Issue 1 
+they had a Facebook account and used it regularly.1 As a matter of fact,  many Argentineans living in Spain would also do so. So, why not try to  find them on that virtual space? 
+The second concern was how to avoid reluctant behaviours among those  entrepreneurs once identified. Many shortcomings associated with the  lack of involvement have to do with how and when individuals are asked  to participate. First, individuals are often confronted with the possibility  of participating with very little knowledge on the object of the study. In  particular, they know very little about who is behind the request and is  therefore responsible for the data collected. Also entrepreneurs are often  contacted in an intermediated way (e.g. via a secretary or institutional  mail). Second, individuals are often asked to participate while they are  at work. This is possibly not the best context to induce them to do so as  busy respondents would not be willing to sacrifice time on such matters. 
+In this scenario, SNSs such as Facebook offer new possibilities. With  regard to the manner in which people are invited to participate, Facebook  permits the presentation of detailed information not only about the  particular object of the study but also contrastable personal data on the  researchers and/or the institution they work for. In addition, Facebook  permits person-to-person contact through their own profiles. In this case,  no intermediation exists, so researchers can contact subjects directly. As  regards the moment individuals are asked to participate, we know that  people mainly use Facebook in their leisure time rather than in working  hours. Thus, making an approach to individuals via Facebook may reduce  reluctant behaviours due to work or business duties. 
+Taking all those potential advantages into account, we decided to  continue the study using Facebook as the primary platform via which  to identify subjects and collect data. In order to meet our goals, while  reducing the possible adverse effects of virtual sampling, we developed a  three-step method combining an SNS (i.e. Facebook), traditional snowball  sampling and an online questionnaire. 
+The first step involved the creation of an ad hoc Facebook profile of  the researcher. The profile contained information on the purpose of the  study and the personal details of the researcher, as well as the affiliation  institution. Such a profile permits access to the social network in order  to begin the subject research process. Even more importantly, however,  the profile is the link between researcher and subject. In this regard, the  profile serves to create an atmosphere of confidence for the individual to  
+1 Informe de resultados. Observatorio Redes Sociales, February 2011. Available online at: http://www.tcanalysis. com/2010/02/01/segunda-oleada-del-observatorio-de-redes-sociales/ (accessed 15 November 2012).
+137 
+‘Ready to complete the survey on Facebook’ 
+participate without suspicion. Therefore, in general such a profile should  contain all the information the researcher considers necessary for subjects  to trust them. 
+The second step consisted of the subject research itself. In this case, we  needed to find Argentinean entrepreneurs in Spain. It’s quite obvious that  we cannot identify such individuals in a straightforward manner. One way  to approach the problem was to detect, first, Argentineans living in Spain. 
+It is known that people living abroad tend to group together in immigrant  communities. The virtual space is no exception. We explored 52 virtual  groups of Argentinean immigrants living in Spain (e.g. ‘Argentineans  in Madrid’, ‘Argentineans in Barcelona’). For each group we contacted  their members, sending them private messages and asking if they were  Argentineans and if they had started up a firm in Spain (Figure 1). Sending  such messages via Facebook is not, however, without problems. If a message  is sent too often in a short period of time, Facebook detects it as spam. 
+Then the sender receives a warning message. If the practice does not cease,  Facebook eventually closes their account. In fact, it was necessary to use  three Facebook accounts in order to accelerate the searching process. All  three accounts were created according to the criteria explained in the first  step. Although direct messaging might cause problems, we want to highlight  that this form of recruitment is laborious but effective. We have compared  our results with others obtained by different online recruitment techniques,  such as intermediation of an administrator and mailing list. The response  rates in those alternative ways were lower and similar to the tendency  of studies using traditional techniques. An alternative to sending private  messages is to post a message on the group’s wall for every member to see. 
+  
+Figure 1 Facebook groups’ and members’ profiles
+138 
+International Journal of Market Research Vol. 55 Issue 1 
+Furthermore, we tried to extend the sample size, asking each member if  they knew anyone else (online or offline contact) who could meet the  sample criteria and participate in the study. We managed to contact 2,073  individuals. From this sample frame we obtained 1,103 responses (53.2%),  of which 343 were entrepreneurs (31%). 
+Finally, in a third step, an online questionnaire was sent to those  entrepreneurs. From the 343 entrepreneurs identified, 218 answered  the survey (63.5%). Comparing these results with the average response  
+rate in business studies (35%), the  percentage is significantly higher –  especially considering that, in an  exploratory study, obtaining an  accurate sample size is an important  issue for internal validity. Table 1 
+summarises the structure of the  survey according to type of question,  in order to identify the level of  complexity of the questionnaire. 
+Table 1 Structure of the business survey  according to type of question 
+Type of question Frequency % Dichotomous 21 41.2 One option 14 27.5 Multiple options 7 13.7 Likert 4 7.8 Open questions 5 9.8 Total 51 100
+As can be observed, online surveys are flexible in terms of the technical  possibilities offered to search different types of information. In fact,  although the 68.7% of the questions are close answers (dichotomous and  one option selection answers), it is feasible to combine different types  of question according to the research objectives. The advantages of the  technical benefits provided by online surveys are reflected in the rate of  invalid cases detected by erroneous interpretations of the questions or  bad answers. This is consistent with studies that highlight the importance  of the survey format to improve the quality of data (Evans & Marthur  2005). With the information collected from those questionnaires, we built  indicators related to the item non-response rate, demographic characteristics  (age, type of firm and education) and environment indicators related to  survey administrations. We classified this information, creating profiles of  entrepreneurs in relation to their characteristics, quality of answers and  type of firm surveyed (technological or traditional sectors). 
+With regard to the validity of the study, using an online sampling  technique raises an important issue, i.e. the truthfulness of the information  obtained by internet means. In this regard, we have supervised the real  existence of the entrepreneur by requesting some personal data (telephone,  addresses, name of firm, etc.). Furthermore, we have complemented the  information with personal interviews in order to cross-validate the results. 
+We considered the contributions of previous research, which argue that  
+139 
+‘Ready to complete the survey on Facebook’ 
+the quality of the information shared in social networks by the individuals  is higher in the Facebook site. Furthermore, people tend to behave in a  confident manner in this virtual context (Acquisti & Gross 2006; Dwyer  et al. 2007; Zhou 2011). 
+Finally, we might as well discuss some considerations regarding  the external validity of the sample. As is known, traditional snowball  sampling can be seen as a biased sampling technique because it is not  random. However, virtual networks incorporate random elements (the  random selection of the virtual groups, the contact to every member  inside them, etc.) to be considered in the analysis of representation bias. 
+Cohen (1990, p. 64) explains that a snowball procedure with ‘random  sequences’ is not a random sample, but it is the best way to select users  from a representative form. In order to test the representativeness of the  sample, we have applied a mean difference test (chi square test) to compare  the territorial distribution of the units of observation in the sample with  the census data regarding the Argentinean population living in Spain.2 We  have obtained the correlation between the geographic distribution of the  sample units and that of the Argentinean population (Figure 2). 
+% 
+30 25 20 15 10 5 
+0 
+Population distribution Sample distribution 
+Islas Baleares 
+Islas Canarias 
+Asturias 
+Granada 
+Navarra 
+ExtremaduraMadridMurcia 
+La RiojaValencia Melilla 
+AndalucíaAragón 
+Cataluña 
+Castilla la Mancha 
+CantabriaGalicia 
+Regions 
+País Vasco 
+Ceuta
+Non-response 
+Figure 2 Comparison of territorial distribution of Argentineans in the sample and in Spain 2 Source of the Argentinean population in Spain among regions: INE (Spanish National Statistics Institute). 
+140 
+International Journal of Market Research Vol. 55 Issue 1 
+The relationship between the territorial distribution of the total  population and that in the sample gave a correlation index of 0.92, which  means that, although we cannot generalise the results, it is possible to  obtain an accurate sample. 
+Results 
+To test the hypothesis of the usefulness of Web 2.0 to involve entrepreneurs  in business research, we present the following results considering three  dimensions of analysis: (1) the demographic attributes of the entrepreneurs;  (2) the environment; and (3) the firm’s characteristics. 
+The profiles of small business owners 
+The most common limitations of online social research present in the  literature are related to the bias selection problem and the technological  barriers. In fact, many authors argue that there is an overestimation  of highly educated young men among the population operating on the  internet (Couper 2000). Some of the explanations are associated with the  technological barriers for older and less educated people. Thus, to analyse  the efficacy of ‘Web 2.0’ resources to study SME firms, first, we present  the entrepreneurs’ profiles in order to describe the heterogeneity of groups  and the quality of response inside them. We have applied a cluster analysis  considering demographic characteristics to classify entrepreneurs with  heterogeneous attributes. We managed to identify four groups according  to age, education and sex variables. In Table 2, we summarise the results. 
+The differences in the level of item non-response are not statistically  significant among groups. This means that there are not in fact relevant  
+Table 2 Profiles of entrepreneurs according to age, education and sex variables and item  non-response rate 
+Group 0 to 15% 15.1 to 50% More than 50% % sample 
+I: Highly educated male entrepreneurs,  more than 42 years old 
+II: Low educated entrepreneurs (either sex  and age)  
+III: Highly educated male entrepreneurs,  less than 42 years old 
+IV: Highly educated women entrepreneurs  (either age) 
+80.3 11.8 7.9 34.8 82.8 10.9 6.3 29.3 91.7 5.6 2.8 16.5 71.4 23.8 4.8 19.2 
+Total 81.2 12.8 6.0 100
+141 
+‘Ready to complete the survey on Facebook’ 
+problems associated with technological barriers to operating with online  surveys, although the quality of information is higher in questionnaires  sent by highly educated young entrepreneurs than that in other groups. Even though the results confirm that there is a propensity to make better  use of these technologies in a targeted population, they do not constitute  a technological barrier for the rest. As can be seen in the table, 81.2% of  the questionnaires had been completed successfully in at least 85% of the  questions. This is a good indicator of quality and reflects the strength of  the method applied, compared with the average item non-response rate  (35%) observed in business surveys collected by email (Dennis 2003). 
+The environment of survey administration 
+Many of the problems that entrepreneurs reported as reasons for not  responding are associated with environmental factors. For example, lack  of time and the need to solve urgent issues related to activities of the firm  
+that oblige them to postpone other  unprofitable activities. Furthermore,  the seek-for-attention strategy is often  difficult because of intermediation filters  (secretaries, cancelled appointments,  etc.). Table 3 shows the distribution of  answers according to the moment of the  day they have completed them. 
+Table 3 Comparison of surveys  completed in working hours  
+vs spare time hours 
+Time Frequency % Working hours 96 43.8 Spare time hours 123 56.2 Total 219 100
+The table shows that 56.2% of entrepreneurs completed the survey  in their spare time. Furthermore, 83.5% completed them the first time  they accessed the survey. We consider this a good indicator of Facebook’s  contribution as a contact space because people mostly use it in their free  time. The possibility of accessing the survey by informal means can increase  the level of participation and the quality of the information collected. 
+Moreover, online questionnaires allow us to know the day of the week on  which the questionnaire was completed. Only 21.9% of cases completed  the survey at the weekend. However, if we compare the percentage of  entrepreneurs that realised the survey in non-activity hours, the positive  effect of informal online contacts is higher. For example, lunchtime, early  morning and late at night are the most common moments used to complete  them. It is interesting to note that women have a greater propensity to  answer the survey in their working hours than do male entrepreneurs. This  might be related to the other activities that women have to do in their free  time, which is sometimes more chaotic than the firm’s routines. 
+142 
+International Journal of Market Research Vol. 55 Issue 1 
+Types of firm and quality of answers 
+Firms’ characteristics can be an indicator of the accessibility of the  technology to a broad or narrow public. In fact, it is expected that  technology-based firms have more expertise to manage internet resources  that do other firms. Table 4 shows the distribution of cases according to  the type of firm and time spent to complete the survey. 
+Table 4 Comparison of time spent to complete the survey according to type of business 
+Time* 
+Technology-based  firms 
+Non-technology 
+based firms Total 
+1 to 10 minutes 12.9% 8.2% 21.1% 11 to 15 minutes 32.3% 25.2% 57.5% 16 to 25 minutes 27.4% 36.7% 64.1% More than 25 minutes 12.9% 15.0% 27.9% Did not complete 11.3% 10.9% 22.2% Non-response 3.2% 4.1% 7.3% Total 64 154 218 
+*χ2 = 18.640; df = 10; Asymp sig = 0.045. Al = 95% 
+This result shows that there are statistical differences between minutes  spent answering by technology-based firms and minutes spent by  traditional ones. However, this variable does not affect the quality of data  because the level of item non-response rate and not finished questionnaires  is similar in both groups. In this regard, Table 5 presents the relationship  of type of business to the quality of the information collected in both  groups. 
+Table 5 Level of response and type of business 
+Group 0 to 15% 15.1 to 50% More than 50% Total Technology-based firms 77.4 12.9 9.7 100 Non-technology-based firms 82.3 13.6 4.1 100 Total 80.9 13.4 5.7 100
+Contrary to the expected results, entrepreneurs with a firm in a  traditional sector have better levels of item response, although time spent  to complete the survey is higher than in technology-based firms. This is a  positive indicator of the accessibility of the virtual environment to all kinds  of enterprises that are connected with an internet server. 
+Finally, we compare the moment chosen to answer the survey in both  groups (Table 6). 
+143 
+‘Ready to complete the survey on Facebook’ 
+Table 6 Comparison of working hours vs spare time hours answers and type of business 
+Time* 
+Technology-based  firms 
+Non-technology 
+based firms Total 
+Working hours 53.2% 41.5% 94 Spare time hours 46.8% 58.5% 114 Total 64 155 218 
+*χ2 = 4.855; df = 2; Asymp sig = 0.088. Al = 90%
+In this case we observe that entrepreneurs from technology-based  firms tend to answer during their working hours, while the others spend  time from their leisure at that task. We argue that the use of technology  in the workplace allows those technology-based entrepreneurs to enjoy  other online activities while they are working. On the other hand,  non-technology-based entrepreneurs have to decide when and where they  are available to check the email, to search for information or to visit social  networking sites. 
+Discussion and implications 
+This article explores how the characteristics of online tools, internet  surveys and social networking sites can usefully be applied to  business studies. The main problems of entrepreneurship research are  associated with barriers to access (time spent, intermediation, etc.), the  environment via which to contact entrepreneurs (working vs spare time  hours) and confidence about the use of the information they provide  (anonymous treatment of data). From the results obtained in the study of  immigrant entrepreneurs in Spain, we can extract useful implications for  practitioners in the area of business research. Moreover, we consider it  relevant to show some weaknesses and problems that can emerge during  the fieldwork. 
+Virtual design is a powerful tool via which to recruit and survey  business-person subjects. We believe that the factors affecting the  successful result in terms of response rate are the use of virtual  environments and the technical properties of online questionnaires. In  the case of virtual environments, we conclude that Facebook provides a  suitable strategy to avoid the contextual problems observed in business  survey administration (intermediation, contact in busy hours, etc.). 
+The possibility to access the online questionnaire during their leisure  time (weekends and spare time hours) improves willingness to dedicate  
+144 
+International Journal of Market Research Vol. 55 Issue 1 
+time to non-remunerable tasks. Furthermore, Facebook opens a new  means of recruitment that can improve the effectiveness of traditional  snowball sampling methods. This is particularly useful in studies with  high barriers to access, as was described in our empirical example. In  this regard, the combination of social networking sites with online  instruments – e.g. linked questionnaires – improves the level of answers  with less incomplete information. The benefit of this combination is  that, while the entrepreneur is spending time in social activities, they  can also, simultaneously, complete the survey. This direct link increases  efficiency, compared to the email or postal contact strategy. Additionally,  Facebook can increase the level of confidence because entrepreneurs can  access private information on the researcher (age, nationality, affiliation  institution, etc.). 
+Moreover, in the case of the existence of technological barriers to  answer the survey online, we found that there are heterogeneous groups  of entrepreneurs in terms of education, sex and the type of firm they run. Although young entrepreneurs with a high level of education, operating  in technology-based sectors, are more familiar with the use of online  technologies, they do not differ statistically from the rest in terms of quality  of information and level of item non-response rate among groups. This  means that this strategy can be independently administered to all kind of  profiles of entrepreneurs, so selection bias may be reduced. 
+So far, the use of Facebook for academic purposes sounds somewhat  exciting. Nevertheless, for as long as an individual’s privacy is involved,  ethical concerns will arise. In this regard, the researcher might have the  feeling of invading another person’s domain or may be using a tool for a  purpose for which it was not designed. Firms and trademarks increasingly  use Facebook as a source of clients and business, and the screen is full  of advertisements from the very moment a user logs in. The question  is: ‘What is Facebook’s aim?’ We actually don’t know the answer. SNSs  have become a sort of modern global forum where everyone can access  and see other people’s activity. All the same, individuals can manage their  privacy so as to permit or prevent others accessing their information. So, in  principle, every Facebook user is aware of what anyone can or cannot see  on their own profile. Also, they can decide who is allowed, or not, to send  them messages via Facebook. Provided that anyone is allowed to contact  any other person registered with Facebook, unless they expressly opt out to  the contrary, the researcher’s task is in a sense legitimated. Not to mention  that any additional information obtained has, of course, to be used with  the proper consent.
+145 
+‘Ready to complete the survey on Facebook’ 
+Furthermore, we consider that many issues associated with the external  validity of the results must be considered and further explored. We  believe that more studies are necessary to understand how to incorporate  those technologies, avoiding methodological problems. In this regard, we  argue that the extent of the sample size and an increase in the response  rate to business surveys can only improve business studies. At the same  time, it is important to understand the potential bias associated with use  of the internet. However, we believe that the introduction of these new  technologies can be a useful methodological strategy to minimise reluctant  behaviours. 
+References 
+Acquisti, A. & Gross, R. (2006) Imagined communities: awareness, information sharing, and  privacy on the Facebook, in Golle, P. & Danezis, G. (eds) Proceedings of 6th Workshop on  Privacy Enhancing Technologies. Robinson College, Cambridge, pp. 36–58. 
+Alpar, P. & Spitzer, D. (1989) Response behavior of entrepreneurs in a mail survey. Entrepreneurship Theory and Practice, 14, 1, pp. 31–44. 
+Ball, L. (2010) How small business owners use Facebook. Available online at: http://www. marketingtechblog.com/analytics/small-business-owners-and-social-media/ (accessed 10 May  2011). 
+Bartholomew, S. & Smith, A.D. (2006) Improving survey response rates from chief executive  officers in small firms: the importance of social networks. Entrepreneurship Theory and  Practice, 30, 1, pp. 83–96. 
+Baruch, Y. & Holtom, B. (2008) Survey response rate levels and trends in organizational  research. Human Relations, 61, 8, pp. 1139–1160. 
+Bavdaz, M., Drnovsek, M. & Lotric Dolinar, A. (2009) Achieving a response from fast growing companies: the case of Slovenian gazelles. Economic and Business Review, 11, 3,  pp. 187–203. 
+Brickman-Bhutta, C. (2009) Not by the book: Facebook as sampling frame. Available online  at: www.thearda.com/.../Not%20by%20the%20Book%20-%20Bhutta.doc (accessed 23 June  2011). 
+Claycomb, C., Porter, S. & Martin, C. (2000) Riding the wave: response rates and the effects  of time intervals between successive mail survey follow-up efforts. Journal of Business  Research, 48, 2, pp. 157–162. 
+Cohen, P. (1990) Drugs as a Social Construct. Amsterdam: Universiteit van Amsterdam. Converse, P., Walfe, E., Huang, X. & Oswald, F. (2008) Response rates for mixed-match  surveys using mail and email/web. American Journal of Evaluation, 29, 1, pp. 99–107. Couper, M.P. (2000) Web surveys: a review of issues and approaches. Journal of Public  Opinion Quarterly, 64, 4, pp. 464–494. 
+Cycyota, C.S. & Harrison, D.A. (2006) What (not) to expect when surveying executives. Organizational Research Methods, 9, pp. 133–160. 
+Dennis, W.J. (2000) Small Business Problems and Priorities. Washington, DC: NFIB Education  Foundation. 
+Dennis, W.J. (2003) Raising response rates in mail surveys of small business owners: results of  an experiment. Journal of Small Business Management, 41, pp. 278–295.
+146 
+International Journal of Market Research Vol. 55 Issue 1 
+Duhan, D.E. & Wilson, R.D. (1990) Pre-notification and industrial survey responses. Industrial  Marketing Management, 19, pp. 95–105. 
+Dwyer, C., Starr, H. & Passerini, K. (2007) Trust and privacy concerns within social  networking sites: a comparison of Facebook and MySpace. American Conference on  Information Systems Proceedings. Available online at: http://aisel.aisnet.org/amcis2007/339  (accessed 27 July 2011). 
+Evans, J. & Marthur, A. (2005) The value of online surveys. Internet Research, 15, 2, pp. 195– 219. 
+Faria, A.J. & Dickinson, J.R. (1992) Mail survey response, speed, and cost. Industrial  Marketing Management, 21, 1, pp. 51–60. 
+Fox, C.M., Robinson, K.L. & Boardley, D. (1998) Cost-effectiveness of follow-up strategies  in improving the response rate of mail surveys. Industrial Marketing Management, 27, 2,  pp. 127–133. 
+Fricker, R. & Schonlau, M. (2002) Advantages and disadvantages of internet research surveys:  evidence from the literature. Field Methods, 14, 4, pp. 347–367. 
+Greer, T.V., Chuchinprakam, N. & Seshadri, S. (2000) Likelihood of participating in mail  survey research: business respondents’ perspective. Industrial Marketing Management, 29,  2, pp. 97–109. 
+Hansen, R.A., Tinney, C.H. & Rudelius, W. (1983) Increase response to industrial surveys. Industrial Marketing Management, 12, 3, pp. 165–173. 
+Jobber, D. & O’Reilly, D. (1998) Industrial mail surveys: a methodological update. Industrial  Marketing Management, 27, 2, pp. 95–107. 
+Lynn, P. & Sala, E. (2004) The Contact and Response Process in Business Surveys: Lessons  from a Multimode Survey of Employers in the UK. Working Papers of the Institute for Social  and Economic Research, paper 2004–12. Colchester: University of Essex. 
+Newby, R., Watson, J. & Woodliff, D. (2003) SME survey methodology: response rates,  data quality, and cost effectiveness. Entrepreneurship Theory and Practice, 28, pp. 163– 172. 
+Poole, B. & Loomis, D. (2009) A comparative of mail and internet surveys. Proceedings  Recreation Research, GTR-NRS-P-66, Northeastern. 
+Porter, S.R. (2004) Raising response rates: what works? New Directions for Institutional  Research, 121, pp. 5–21. 
+Simsek, Z. & Veiga, J.F. (2001) A primer on internet organizational surveys. Organizational  Research Methods, 4, pp. 218–235. 
+Yammarino, F.J., Skinner, S. & Childers, T. (1991) Understanding mail survey response  behavior: a meta-analysis. Public Opinion Quarterly, 55, pp. 613–639. 
+Zhou, T. (2011) Understanding online community user participation: a social influence  perspective. Internet Research, 21, 1, pp. 67–81. 
+About the authors 
+Aleix Gregori is a PhD candidate in the Economics and Business Doctoral  Program at the Rovira i Virgili University, Catalonia, Spain. He is interested  in the areas of health economics, innovation, theory of the firm and  entrepreneurship. He is a member of the Economic Analysis and Health  Research Group (GRAES) at Rovira i Virgili University and has several  publications in indexed journals.
+147 
+‘Ready to complete the survey on Facebook’ 
+Fabiola Baltar is a Professor of Economics at the University of Mar del  Plata, Argentina. She received her PhD in Economics and Business at Rovira  i Virgili University, Spain. Her areas of research are: entrepreneurship,  decision-making strategies in SMEs and virtual research methodologies. 
+Her recent publications include several pieces on the application of  Web 2.0 to business research. 
+Address correspondence to: Aleix Gregori, Facultat d’Economia i  Empresa, Av. de la Universitat 1, 43204 Reus, Spain. 
+Email: aleix.gregori@urv.cat
+148

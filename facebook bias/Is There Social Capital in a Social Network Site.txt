@@ -1,0 +1,3545 @@
+﻿Journal of Computer-Mediated Communication 
+Is There Social Capital in a Social Network Site?: Facebook Use and College Students’ Life Satisfaction, Trust, and Participation1 
+D
+Sebastian Valenzuela ´ 
+o
+w
+n
+Namsu Park 
+l
+o
+a
+Kerk F. Kee 
+d
+e
+d
+ 
+University of Texas at Austin 
+f
+r
+o
+m
+ 
+h
+t
+t
+p
+s
+:
+/
+/
+a
+c
+This study examines if Facebook, one of the most popular social network sites among 
+a
+d
+college students in the U.S., is related to attitudes and behaviors that enhance individuals’ 
+e
+m
+i
+social capital. Using data from a random web survey of college students across Texas 
+c
+.
+o
+(n = 2, 603), we find positive relationships between intensity of Facebook use and students’ 
+u
+p
+.
+c
+life satisfaction, social trust, civic engagement, and political participation. While these 
+o
+m
+findings should ease the concerns of those who fear that Facebook has mostly negative effects 
+/
+j
+c
+m
+on young adults, the positive and significant associations between Facebook variables and c
+/
+a
+social capital were small, suggesting that online social networks are not the most effective 
+r
+t
+i
+c
+solution for youth disengagement from civic duty and democracy. 
+l
+e
+/
+1
+4
+doi:10.1111/j.1083-6101.2009.01474.x 
+/
+4
+/
+8
+7
+5
+/
+4
+5
+8
+3
+Moral panic is a common reaction to new forms of communication (Chalaby, 2000; 
+5
+5
+2
+Winston, 1986). The advent of television spawned fears of mass escapism (Klapper, 
+ 
+b
+y
+1960; Pearlin, 1959). In the 1990s, critics held the diffusion of Internet as evidence 
+ 
+g
+u
+e
+of individuals’ increasing alienation from society and public life (see Kraut et al., 
+s
+t
+ 
+o
+1998; Turkle, 1996; White, 1997). The story with Facebook, MySpace, and other 
+n
+ 
+1
+social network sites (SNSs) is not any different. Unsafe disclosure of information, 
+2
+ 
+N
+cyberbullies, addiction, risky behavior, and contact with dangerous communities 
+o
+v
+e
+are popular concerns raised in the mainstream media about the use of SNSs (e.g., 
+m
+b
+e
+Hodgkinson, 2008; Koloff, 2008; Stone, 2007). 
+r
+ 
+2
+As could be expected, researchers have begun to empirically test these claims. For 
+0
+2
+2
+instance, a thorough content analysis of teenagers’ profiles in MySpace concluded that personal information disclosure on this site is quite uncommon (Hinduja & 
+1 Earlier versions of this study were presented at the 2008 International Symposium on Online Journalism and the 2008 APSA Preconference on Political Communication. For intellectual and financial support on this research, we thank Sharon Strover. Helpful comments at various stages were provided by Jeff Gulati and Talia Stroud. Corresponding author: Sebastian Valenzuela [sebastianvalenzuela@mail.utexas.edu] ´ 
+Journal of Computer-Mediated Communication 14 (2009) 875–901 ♥ 2009 International Communication Association 875 
+Patchin, 2008, p. 125). Other research shows that young people are motivated to join these sites to keep strong ties with friends and to strengthen ties with new acquaintances, but not so much to meet new people online (Acquisti & Gross, 2006; Ellison, Steinfield, & Lampe, 2007). 
+The present study seeks to contribute to a more accurate understanding of SNSs by examining their potential as new venues for civic and political engagement. There is plenty of anecdotal evidence to suspect that such an impact exists. In the 2008 U.S. presidential election, the Obama campaign created a SNS, my.barackobama.com, to D
+successfully recruit thousands of campaign volunteers from across the country and 
+o
+w
+n
+to sign them up for door-knocking and precinct-walking (Dickinson, 2008). In the 
+l
+o
+a
+civic realm, TakingITGlobal.org and YouthNoise.org offer social network services 
+d
+e
+d
+for users worldwide who are interested in learning about and taking action in their 
+ 
+f
+r
+o
+m
+communities to address pressing issues such as poverty, global warming, AIDS, and 
+ 
+h
+t
+human rights (Raynes-Goldie & Walker, 2008). Even major organizations such as 
+t
+p
+s
+:
+Amnesty International have used Facebook to coordinate protests in major cities 
+/
+/
+a
+c
+around the world (Stirland, 2007). 
+a
+d
+e
+We used original survey data to test several hypotheses regarding the relationship 
+m
+i
+c
+between Facebook use and college students’ social capital—a multidimensional 
+.
+o
+u
+p
+construct that includes civic participation, political engagement, life satisfaction, and 
+.
+c
+o
+social trust. We opted to focus on Facebook only for two reasons. First, at the time 
+m
+/
+j
+c
+of the study, Facebook was the most popular SNS for the population under scrutiny 
+m
+c
+(Bulik, 2007).1 Second, it has been found that different segments of the population 
+/
+a
+r
+t
+i
+choose specific SNS platforms for distinct purposes (Hargittai, 2007, p. 277). If there 
+c
+l
+e
+/
+is a problem of selection bias (e.g., Facebook attracts people with more social capital, 
+1
+4
+/
+4
+while MySpace attracts people with less social capital), then it would be unwise to 
+/
+8
+7
+aggregate use of specific sites into an overall measure of SNS use. 
+5
+/
+4
+5
+It is important to study the relationship between using an SNS and developing 
+8
+3
+attitudes and behaviors that promote social capital and democratic citizenship. Social 
+5
+5
+2
+trust facilitates associative behavior, fosters a strong civil society, and makes political 
+ 
+b
+y
+ 
+institutions and officials more responsive, all of which translates into a more effective 
+g
+u
+e
+democracy (Putnam, 2000). Similarly, when people participate, they have a voice in 
+s
+t
+ 
+o
+public affairs, they can hold authorities accountable and they are empowered to act 
+n
+ 
+1
+2
+on their own behalf (Verba, Schlozman, & Brady, 1995). Because young adults have 
+ 
+N
+o
+been at the forefront of declining levels of participation in the U.S. and elsewhere 
+v
+e
+m
+(Nickerson, 2006; Putnam, 2000), studying how a popular online service can promote 
+b
+e
+their engagement in public affairs is particularly significant. 
+r
+ 
+2
+0
+2
+2
+Defining Social Capital 
+There seems to be a consensus that social capital is an important feature of healthy, effective democracies (Putnam & Goss, 2002). But what exactly is social capital? A cursory review of the literature on the subject shows that researchers have defined the construct in terms of social networks, trust, civic engagement, life satisfaction 
+876 Journal of Computer-Mediated Communication 14 (2009) 875–901 ♥ 2009 International Communication Association 
+and a variety of other concepts (Bourdieu, 1983; Brehm & Rahn, 1997; Coleman, 1988; Dekker & Uslaner, 2001; Lin, 2001; Newton, 2006; Putnam, 2000). The core idea of social capital, however, is straightforward: It is the resources available to people through their social interactions (Lin, 2001; Putnam, 2004). Individuals with a large and diverse network of contacts are thought to have more social capital than individuals with small, less diverse networks. Although people often accumulate social capital as a result of their daily interactions with friends, coworkers, and strangers, it is also possible to make conscious investments in social interaction (Resnick, 2002). D
+This is what transpires when people report that their main reason to join Facebook 
+o
+w
+n
+and to spend time on the site is to keep in touch with old friends and to strengthen 
+l
+o
+a
+bonds with colleagues. By using SNSs, individuals seek to maintain and increase their 
+d
+e
+d
+social networks (Ellison et al., 2007; Joinson, 2008). 
+ 
+f
+r
+o
+m
+Investment in social networks enables individuals to develop norms of trust and 
+ 
+h
+t
+reciprocity, which are necessary for successful engagement in collective activities 
+t
+p
+s
+:
+(e.g., participation in neighborhood associations). In other words, trust facilitates 
+/
+/
+a
+c
+working with others on common issues (Putnam, 2004). Social capital also allows 
+a
+d
+e
+individuals to access information and opportunities (e.g., job openings) that are 
+m
+i
+c
+otherwise unavailable (Lin, 2001). This means that improving individuals’ well-being 
+.
+o
+u
+p
+and quality of life are byproducts of social capital. 
+.
+c
+o
+Since several studies have equated expectations of reciprocity, civic engagement, 
+m
+/
+j
+c
+and life satisfaction with social capital, some researchers have rendered the construct 
+m
+c
+of social capital too broad to be useful as a scientific concept. An alternative path 
+/
+a
+r
+t
+is to recognize that social capital is a multidimensional construct that is based on 
+i
+c
+l
+e
+/
+individuals’ social networks and their predicted effects. The challenge, in this case, is to 
+1
+4
+/
+4
+integrate different dimensions of social capital into a coherent theoretical framework. 
+/
+8
+7
+One such effort was conducted by Scheufele and Shah (2000), who distinguished 
+5
+/
+4
+between three domains of social capital: intrapersonal, interpersonal, and behavioral. 
+5
+8
+3
+The intrapersonal domain is related to individuals’ life satisfaction. The interpersonal 
+5
+5
+2
+domain refers to trust among individuals, also called social or generalized trust in 
+ 
+b
+y
+ 
+others. The behavioral domain involves individuals’ active participation in civic and 
+g
+u
+e
+political activities (for a similar approach, see Howard & Gilbert, 2008). This study 
+s
+t
+ 
+o
+adopts Scheufele and Shah’s (2000) framework to test the impact of Facebook on 
+n
+ 
+1
+2
+users’ life satisfaction, social trust, and civic and political participation. 
+ 
+N
+o
+v
+e
+m
+Life Satisfaction and Social Trust 
+b
+e
+Life satisfaction and other indicators of quality of life reflect a general evaluation of 
+r
+ 
+2
+0
+one’s surroundings, an evaluation which may be positive or negative (Scheufele & 
+2
+2
+Shah, 2000). Usually, researchers equate life satisfaction with subjective happiness or personal contentment (Diener, Emmons, Larsen, & Griffin, 1985). Existing research highlights that individuals’ life satisfaction is determined, in part, by their social ties (Kahneman & Krueger, 2006). Ratings of happiness made by one’s friends (Leary & Kowalski, 1990), a sociable and extraverted personality (Francis, 1999), frequent interpersonal communications that have positive affect (Diener, Sandvik & Payot, 
+Journal of Computer-Mediated Communication 14 (2009) 875–901 ♥ 2009 International Communication Association 877 
+1991), and happiness of one’s family members (Clore, Wyer, Dienes, Gasper, & Isbell, 2001) all are correlated to high life satisfaction and happiness. 
+Extending this rationale to SNSs, it could be expected that people who actively participate in Facebook are more likely to experience connectedness and feel happier (Valkenburg, Peter, & Schouten, 2006). The relationship between personal contentment and SNS also could be reciprocal. For instance, college students with lower levels of life satisfaction could seek to participate in online networks to increase their personal well-being (Ellison et al., 2007). 
+D
+Higher levels of life satisfaction, almost invariably, are positively associated with 
+o
+w
+n
+norms of reciprocity and trust (Putnam, 2000). The direction of causality, however, 
+l
+o
+a
+is not clear. Some researchers have found that those who believe that strangers can 
+d
+e
+d
+be trusted report higher subjective-well being, while others have concluded that life 
+ 
+f
+r
+o
+m
+satisfaction is a prerequisite of social trust (Helliwell & Putnam, 2004). It may well be 
+ 
+h
+t
+that life satisfaction and generalized trust have a reciprocal relationship (Inglehart, 
+t
+p
+s
+:
+1990). For instance, people who belong to a wide network of trusted members can 
+/
+/
+a
+c
+receive more emotional support in times of personal crisis. This support, in turn, 
+a
+d
+e
+could further enhance their trust in network members. 
+m
+i
+c
+Although some consider social trust as a stable personality trait determined by 
+.
+o
+u
+p
+socialization processes (Uslaner, 2002), it is useful to treat it as an attitude that can 
+.
+c
+o
+change over time. Because trust is a belief that others will not knowingly or willingly 
+m
+/
+j
+c
+harm us, trust is built upon imperfect knowledge. Online social networks allow users 
+m
+c
+to learn detailed information about their contacts, including personal background, 
+/
+a
+r
+t
+interests, music tastes, and whereabouts. This information can reduce uncertainty 
+i
+c
+l
+e
+/
+about other users’ intentions and behaviors, which is a necessary condition for 
+1
+4
+/
+4
+developing norms of trust and reciprocity (Berger & Calabrese, 1975). If individuals 
+/
+8
+7
+are unable to get to know each other, the possibility they will develop an enduring, 
+5
+/
+4
+trusting relationship is reduced. Of course, uncertainty reduction does not necessarily 
+5
+8
+3
+lead to more social trust (Berger, 1986). Through Facebook, users may actually learn 
+5
+5
+2
+that their contacts possess attributes that make them less attractive, which may lead 
+ 
+b
+y
+ 
+to mistrust. Therefore, the more we know about others, the more we may trust 
+g
+u
+e
+or distrust them (Newton, 1999). However, it is improbable that Facebook users 
+s
+t
+ 
+o
+will maintain in their personal list of friends people who they really distrust. Hence 
+n
+ 
+1
+2
+Facebook usage could be positively correlated to having online networks of likeable 
+ 
+N
+o
+and trusting members. Likewise, believing that others will not knowingly harm us 
+v
+e
+m
+may facilitate usage of online network services. In other words, social trust and 
+b
+e
+Facebook use may have a reciprocal relationship. 
+r
+ 
+2
+0
+2
+2
+Civic and Political Participation 
+Political and civic participation are slippery concepts; several interpretations have been given of what exactly is meant by these terms. Some researchers equate participation with electoral activities, such as voting and working for political parties (e.g., Conway, 1985). Recognizing that participation goes beyond elections, others have included in their measures of participation activities such as working for the 
+878 Journal of Computer-Mediated Communication 14 (2009) 875–901 ♥ 2009 International Communication Association 
+community and attending a protest (e.g., Verba et al., 1995). Even media use and news attention have been identified as markers of participation (e.g., Zaller, 1992). Given the multidimensionality of the construct, this study measures participation at the political and civic levels. Verba and colleagues (1995) defined political participation as behavior that seeks to influence government action by affecting public policymaking. This includes traditional activities such as voting, working for political campaigns, donating money to candidates, and displaying political bumper stickers, as well as less conventional behaviors, such as protesting, boycotting, and buying D
+products for political reasons (i.e., ‘‘buycotting’’). Civic participation, on the other 
+o
+w
+n
+hand, is defined as individual or collective behavior aimed at resolving problems of the 
+l
+o
+a
+community (Zukin, Keeter, Andolina, Jenkins, & Delli-Carpini, 2006). Volunteering 
+d
+e
+d
+to help the needy, fundraising for nongovernmental organizations, participating in 
+ 
+f
+r
+o
+m
+community services, or being an active member of an environmental organization 
+ 
+h
+t
+would all fall under the category of civic participation. 
+t
+p
+s
+:
+By including different types of activities under the umbrella of participation, we 
+/
+/
+a
+c
+recognize that the domain of politically relevant activities is wide-ranging. Some 
+a
+d
+e
+people may be politically engaged but less civically engaged; others may be oriented 
+m
+i
+c
+toward civic participation, but less inclined to participate in political matters; still 
+.
+o
+u
+p
+others may be both politically and civically engaged. The boundaries between political 
+.
+c
+o
+and civic activities are, of course, quite porous, as the environmental movement and 
+m
+/
+j
+c
+its corresponding Green Party demonstrate. 
+m
+c
+The development of SNSs dedicated to fostering civic and political engagement 
+/
+a
+r
+t
+i
+among users, particularly young people, speaks in a loud voice to the potentialities of 
+c
+l
+e
+/
+social media as a tool for collective action. We already mentioned TakingITGlobal.org 
+1
+4
+/
+4
+as a SNS designed specifically for civic engagement (see Raynes-Goldie & Walker, 
+/
+8
+7
+2008). General sites also can connect activists with similar goals and create awareness 
+5
+/
+4
+5
+about critical issues. A well-known example is students’ use of their MySpace profiles 
+8
+3
+to organize a national protest for immigration reform in the U.S. in 2006 (boyd, 
+5
+5
+2
+2008). SNSs do not need to succeed at mobilizing users offline to represent a unique 
+ 
+b
+y
+ 
+contribution to people’s engagement. For instance, many credit the 20,000 Canadian 
+g
+u
+e
+users who joined a Facebook group against a government-led copyright reform bill 
+s
+t
+ 
+o
+for the delay in the introduction of the bill in late 2008 (Nowak, 2008). 
+n
+ 
+1
+2
+ 
+N
+o
+v
+e
+Internet Use and Individuals’ Social Capital 
+m
+b
+e
+Existing research on the relationships between SNSs and people’s well-being, trust, 
+r
+ 
+2
+0
+and participation tends to be limited and anecdotal. The same cannot be said of the 
+2
+2
+literature on general Internet use and social capital. In fact, research is ample enough to accommodate competing paradigms, which may illuminate our discussion on the net effects of SNS use on social capital. Echoing Putnam’s (2000) ‘‘time displacement hypothesis,’’ Nie (2001) found that Internet users had fewer face-to-face interactions, much like heavy television watchers (see also Kraut et al., 1998). Subsequent research found that online communications have a positive effect on individuals’ social trust 
+Journal of Computer-Mediated Communication 14 (2009) 875–901 ♥ 2009 International Communication Association 879 
+and participation in community life (Best & Dautrich, 2003; Kavanaugh, Reese, Carroll, & Rosson, 2005; Kobayashi, Ikeda, & Miyata, 2006; Ras¨ anen & Kouvo, ¨ 2007). Although the intellectual battle between cyberpessimists and cyberoptimists continues, it is clear that the positive and negative effects of the Internet on social capital are contingent upon the way scholars conceptualize the medium (Williams, 2006) and how people use it (Ji-Young, 2006; Kwak, Shah, & Holbert, 2004; Shah, Kwak, & Holbert, 2001). 
+According to Williams (2006), the problem with the ‘‘time displacement D
+hypothesis’’ is that it ignores the differences between traditional, mass media and 
+o
+w
+n
+new, interactive media. When watching television, people cannot communicate 
+l
+o
+a
+with each other. With e-mail, chat services, and SNSs, people can engage in 
+d
+e
+d
+interpersonal contact. When researchers operationalize Internet use as time spent 
+ 
+f
+r
+o
+m
+with the technology, they ignore the multiple audiences, motives, and experiences 
+ 
+h
+t
+that the medium allows and tend to find a negative effect on individual-level 
+t
+p
+s
+:
+production of social capital (e.g., Nie & Hillygus, 2002). On the other hand, 
+/
+/
+a
+c
+when researchers recognize the different uses of the Internet (e.g., informational, 
+a
+d
+e
+recreational, communicative, entertainment, etc.), they tend to find a positive link 
+m
+i
+c
+between certain motives for Internet use and social capital (see Beaudoin, 2008; 
+.
+o
+u
+p
+Raacke & Bonds-Raacke, 2008; Shah et al., 2001). 
+.
+c
+o
+The general assumption is that patterns of new media use related to information 
+m
+/
+j
+c
+acquisition and community building (e.g., online news, political blogs, virtual 
+m
+c
+communities) are positively associated with individual-level production of social 
+/
+a
+r
+t
+i
+capital. In contrast, patterns of use related to entertainment and diversion (e.g., 
+c
+l
+e
+/
+games and online movies) are negatively associated with social capital (Norris & 
+1
+4
+/
+4
+Jones, 1998; Shah, Schmierbach, Hawkins, Espino, & Donavan, 2002; Wellman, 
+/
+8
+7
+Haase, Witte, & Hampton, 2001). Thus, it is not the technology per se that can 
+5
+/
+4
+5
+affect individuals’ social capital but the specific ways in which individuals use the 
+8
+3
+5
+technology. This explains why online activities have been found to both reduce and 
+5
+2
+increase social capital. As Resnick (2002) noted, when we spend time on the Internet 
+ 
+b
+y
+ 
+that we would otherwise use to engage in face-to-face contact, social capital will 
+g
+u
+e
+diminish. But if going online displaces activities like commuting or watching crime 
+s
+t
+ 
+o
+dramas, the net effect could be positive. 
+n
+ 
+1
+2
+Extending this rationale to SNSs, we could say that their impact on social 
+ 
+N
+o
+capital should be contingent upon the specific uses and gratifications sought by 
+v
+e
+m
+users. Using Putnam’s (2000) concepts of bridging, weak-tie social capital (i.e., 
+b
+e
+across diverse social groups) versus bonding, strong-tie social capital (i.e., across 
+r
+ 
+2
+0
+homogeneous groups),2 Williams (2006) noted that the type of relationships within 
+2
+2
+social networks can predict different kinds of social capital. Weak-tie networks produce bridging social capital because they connect people from different life situations. These networks broaden the set of information and opportunities for users in the network. However, individuals in weak-tie relationships do not gain the benefits of bonding social capital, such as the emotional support that occurs based on the interdependence and commonalities of strong-tie networks. As we shall see, 
+880 Journal of Computer-Mediated Communication 14 (2009) 875–901 ♥ 2009 International Communication Association 
+the features of Facebook allow for the production and maintenance of both strong ties and weak ties and, by extension, can influence positively users’ life satisfaction, trust and public participation. 
+Why Facebook Can Promote Social Capital 
+Donath and boyd (2004) were among the first to hypothesize that online social networks may not increase the number of strong ties a person may have. Instead, D
+a person’s weak ties may increase because the technology is suited to maintaining 
+o
+w
+n
+these links cheaply and easily. This proposition was empirically tested by Ellison, 
+l
+o
+a
+d
+Steinfield, and Lampe (2007) using survey data from a small sample of undergraduate 
+e
+d
+students in the U.S. They found that use of Facebook had a strong association with 
+ 
+f
+r
+o
+m
+maintaining or solidifying existing offline relationships, as opposed to meeting new 
+ 
+h
+t
+people. The strongest relationship, however, was between Facebook use and bridging 
+t
+p
+s
+:
+social capital. Interestingly, these authors found that the use of the SNS interacted 
+/
+/
+a
+c
+with students’ psychological well-being, suggesting that Facebook might provide 
+a
+d
+e
+greater benefits for users who have low self-esteem and low life satisfaction. 
+m
+i
+c
+Although the existing literature shows a link between Facebook use and individual 
+.
+o
+u
+p
+level production of social capital, it is not clear what specific features produce these 
+.
+c
+o
+effects. As aforementioned, the uses and gratifications approach (Katz & Gurevitch, 
+m
+/
+j
+c
+1974; Ruggiero, 2000) provides a useful framework for drawing these inferences. 
+m
+c
+First, Facebook helps with personal identity construction—one of the key motives 
+/
+a
+r
+t
+i
+for media consumption—by enabling multiple channels for interpersonal feedback 
+c
+l
+e
+/
+and peer acceptance. For instance, there are two types of messaging services within 
+1
+4
+/
+4
+Facebook. A private system, which is very similar to web-based e-mail services, and 
+/
+8
+7
+a public system called ‘‘The Wall,’’ where contacts or ‘‘friends’’ leave comments 
+5
+/
+4
+5
+to the owner of the Facebook profile and the comments can be viewed by other 
+8
+3
+5
+users. Usually, ‘‘The Wall’’ (and the later addition of ‘‘Super Wall’’) contains short 
+5
+2
+messages that reflect sentiments, common activities between ‘‘friends,’’ or details 
+ 
+b
+y
+ 
+about external websites or events. Another form of feedback within Facebook is 
+g
+u
+e
+information about whether prospective contacts have accepted or rejected the owner 
+s
+t
+ 
+o
+of a profile as a ‘‘friend’’. As interpersonal feedback and peer acceptance are strong 
+n
+ 
+1
+2
+predictors of life satisfaction (Harter, 1999; Valkenburg et al., 2006), Facebook can 
+ 
+N
+o
+affect (positively or negatively) users’ self-esteem and life satisfaction. 
+v
+e
+m
+Second, Facebook can fulfill the informational needs of users, a key ingredient 
+b
+e
+for strengthening weak ties and promoting collective action (Kenski & Stroud, 
+r
+ 
+2
+0
+2006; Shah et al., 2001). In order to keep users updated about their social circles, 
+2
+2
+Facebook has two features: ‘‘News Feed’’, which appears on each user’s homepage, and ‘‘Mini-Feed’’, which appears in each individual’s profile. ‘‘News Feed’’ updates a personalized list of news stories throughout the day generated by the activity of ‘‘friends’’ (e.g., John added the Rolling Stones to his favorites; Jane changed her status to ‘‘single’’ again). Thus, each time users log in, they get the latest updates about their contacts. ‘‘Mini-Feed’’ is similar, except that it centers around one individual. 
+Journal of Computer-Mediated Communication 14 (2009) 875–901 ♥ 2009 International Communication Association 881 
+Each person’s ‘‘Mini-Feed’’ shows what has changed recently in their profile and what content or modules (‘‘applications’’) they have added. Thus, Facebook use can reinforce existing ties and communities by keeping users constantly updated about what is going on with their contacts (Hargittai, 2007). On the other hand, Facebook allows users to create and to join groups based around common interests and activities by incorporating their profiles into the ‘‘Facebook Groups’’ application. The ‘‘Groups’’ application displays each individual’s group memberships as well as groups their ‘‘friends’’ have joined. Thus, those who belong to a political group within D
+Facebook can receive mobilizing information that may not be available elsewhere and 
+o
+w
+n
+can encounter more opportunities to engage in political activities. A similar scenario 
+l
+o
+a
+may apply to civic groups who have a presence in the online network. An important 
+d
+e
+d
+share of the civic and political impact of Facebook, then, should occur within groups 
+ 
+f
+r
+o
+m
+developed by users and organizations. At the same time, increased participation 
+ 
+h
+t
+in online and offline groups typically helps to build trusting relationships among 
+t
+p
+s
+:
+members, further enhancing the potential of Facebook to increase social capital 
+/
+/
+a
+c
+(Kobayashi et al., 2006). 
+a
+d
+e
+Third, users can log in to Facebook to satisfy needs of pure entertainment and 
+m
+i
+c
+recreation, which previous research has found to be negatively related to social capital 
+.
+o
+u
+p
+production (Nyland, Marvez, & Beck, 2007). A popular application for Facebook 
+.
+c
+o
+is ‘‘FunWall,’’ which allows users to post a much broader range of content than 
+m
+/
+j
+c
+the traditional ‘‘The Wall,’’ such as games, videos, and music. Posting links to 
+m
+c
+jokes in YouTube on the FunWall or spending time creating Facebook Groups 
+/
+a
+r
+t
+i
+such as ‘‘If 1,000,000 People Join I’ll Legally Change My Name To McLovin’’ can 
+c
+l
+e
+/
+foster a sense of customization and enjoyment but drive attention away from the 
+1
+4
+/
+4
+real world. As Shah and colleagues (2001) have argued, ‘‘in such cases, recreation 
+/
+8
+7
+and socializing may become privatized while the illusion of social interaction is 
+5
+/
+4
+5
+maintained’’ (p. 154). Consequently, using Facebook mainly for fun may distract 
+8
+3
+users from more meaningful, public affairs content. 
+5
+5
+2
+Lastly, the most obvious motive for Internet users to join a SNS is what McQuail 
+ 
+b
+y
+ 
+(2005) defined as the need for integration and social interaction. Identifying with 
+g
+u
+e
+others and gaining a sense of belonging; finding a basis for conversation and social 
+s
+t
+ 
+o
+interaction; connecting with family, friends, and society; and gaining insight into 
+n
+ 
+1
+2
+the circumstances of others—all these reasons can cause people to use SNSs. By 
+ 
+N
+o
+making users feel connected to a community and increasing their knowledge of 
+v
+e
+m
+other members, sites such as Facebook can foster norms of reciprocity and trust and, 
+b
+e
+therefore, create opportunities for collective action. 
+r
+ 
+2
+0
+2
+2
+Hypotheses and Research Questions 
+With the existing literature on SNSs and social capital in mind, this study uses original survey data to test the relationship between Facebook use and college students’ life satisfaction, social trust, and civic and political participation. Formally, the hypotheses are as follows: 
+882 Journal of Computer-Mediated Communication 14 (2009) 875–901 ♥ 2009 International Communication Association 
+H1: Intensity of Facebook use is positively associated with life satisfaction. 
+H2: Intensity of Facebook use is positively associated with social trust. 
+H3a: Intensity of Facebook use is positively associated with civic participation. 
+H3b: Intensity of Facebook Groups use is positively associated with civic participation. 
+H4a: Intensity of Facebook use is positively associated with political participation. 
+D
+o
+w
+n
+l
+o
+H4b: Intensity of Facebook Groups use is positively associated with political participation. 
+a
+d
+e
+d
+ 
+f
+Whatever association exists between Facebook use and young adults’ social 
+r
+o
+m
+capital, it may be contingent upon individuals’ socialization (e.g., gender, ethnicity, 
+ 
+h
+t
+t
+socioeconomic background, etc.) and attitudes toward their life and others (i.e., life 
+p
+s
+:
+/
+satisfaction and social trust, respectively). Earlier research in this area, however, is too 
+/
+a
+c
+a
+contradictory to formulate specific or directional hypotheses. Hence, we investigate 
+d
+e
+m
+the following research questions: 
+i
+c
+.
+o
+u
+RQ1: Does the relationship between intensity of Facebook use and civic and political participa 
+p
+.
+c
+tion vary according to gender, race and ethnicity, parental education, life satisfaction, and 
+o
+m
+social trust? 
+/
+j
+c
+m
+c
+/
+RQ2: Does the relationship between intensity of Facebook Groups use and civic and political 
+a
+r
+t
+participation vary according to gender, race and ethnicity, parental education, life satisfaction, 
+i
+c
+l
+e
+and social trust? 
+/
+1
+4
+/
+4
+/
+8
+Methods 
+7
+5
+/
+4
+5
+Sample 
+8
+3
+5
+To fulfill the goals of this project, a web-based survey was conducted in Fall 
+5
+2
+ 
+2007 at two large public universities in the southwestern U.S. state of Texas, a 
+b
+y
+ 
+g
+predominantly undergraduate university in a small town and a commuter school 
+u
+e
+s
+in a large metropolitan area. The cultural and geographical distinctiveness of both 
+t
+ 
+o
+n
+campuses ensured surveying a diverse, representative population of college students. 
+ 
+1
+2
+ 
+N
+o
+Procedures 
+v
+e
+m
+To obtain a representative sample of both campuses, the lists of all registered students 
+b
+e
+for the Fall 2007 semester were obtained from the registrar’s office of the universities 
+r
+ 
+2
+0
+through an open records request. In total, the e-mail addresses of 76,729 students 
+2
+2
+were collected. From this total, 40,360 addresses were randomly selected using SPSS 15.0’s random sample procedure, and this list became the sampling frame.3 Between November 9, 2007 and December 9, 2007, responses from 3,296 individuals were collected using Survey Monkey (www.surveymonkey.com), an online survey hosting site. Because the purpose of this study is to assess the role of Facebook among college-age adults, only respondents in the 18 to 29 age group were selected for 
+Journal of Computer-Mediated Communication 14 (2009) 875–901 ♥ 2009 International Communication Association 883 
+the analysis, which reduced the sample size to 2,603 individuals. As an incentive to participate, respondents were entered in a random drawing for four $25 gift cards to Amazon.com.4 
+The simple response rate was 8.2%, in the lower bound of most web-based surveys (Schonlau, Elliot, & Fricker, 2002). We can think of a number of reasons that could explain the response rate obtained. First, the proliferation of web-based surveys across many campuses has increased dramatically in the last few years, decreasing students’ willingness to complete surveys (Sax, Gilmartin, & Bryant, 2003, p. 423). Second, the D
+questionnaire was rather dense, including more than 85 items. Lastly, we assumed 
+o
+w
+n
+that students actually use the e-mail addresses provided to the registrar’s office, but it 
+l
+o
+a
+is quite possible that many students use these addresses infrequently, relying instead 
+d
+e
+d
+on other e-mail accounts. 
+ 
+f
+r
+o
+m
+It must be noted, however, that low response rates alone do not necessarily 
+ 
+h
+t
+suggest bias. According to Krosnick (1999) and Dillman (1991), when respondent 
+t
+p
+s
+:
+characteristics are representative of nonrespondents, low rates of response do not 
+/
+/
+a
+c
+necessarily result in biased estimates. We estimated nonresponse bias in two ways. 
+a
+d
+e
+First, we compared the demographic breakdown of the total population of students 
+m
+i
+c
+at both universities as provided by their registrar’s offices with that of our sample and 
+.
+o
+u
+we did not find any substantial differences.5 Of course, demographic information 
+p
+.
+c
+o
+may not reveal the uniqueness of nonrespondents in terms of their attitudes or how 
+m
+/
+j
+c
+they would have responded to survey items. Hence, we also estimated nonresponse 
+m
+c
+bias by equating individuals who responded later in the survey administration period 
+/
+a
+r
+t
+i
+(i.e., last 3 weeks, or 10% of total sample) with nonrespondents and compared this 
+c
+l
+e
+/
+group with the early respondents (i.e., within the first week, or 90% of total sample) to 
+1
+4
+/
+4
+determine types of bias. For 10 of the 12 variables of interest, there was no statistically 
+/
+8
+7
+significant difference between early respondents and late respondents. For gender 
+5
+/
+4
+5
+and civic participation, however, the differences were statistically significant (at p < 
+8
+3
+.05), but even in these cases, the magnitude of the difference in substantive terms was 
+5
+5
+2
+below 10%. We believe that these comparisons are sufficient to demonstrate that the 
+ 
+b
+y
+ 
+sample obtained does not suffer from nonresponse bias. 
+g
+u
+e
+s
+t
+ 
+o
+n
+Measures 
+ 
+1
+2
+Life Satisfaction 
+ 
+N
+o
+Respondents’ perceived level of personal well-being was assessed using the Satisfaction 
+v
+e
+m
+with Life Scale developed by Diener, Emmons, Larson and Griffin (1985). This 5- 
+b
+e
+item scale is among the most widely used measures in psychology to assess global 
+r
+ 
+2
+0
+life satisfaction, showing high levels of internal consistency and temporal reliability 
+2
+2
+(Pavot, Diener, Colvin, & Sandvik, 1991). Respondents were asked their level of agreement using a 6-point scale ranging from 1 (strongly disagree) to 6 (strongly agree) with each of the following statements: ‘‘In most ways my life is close to my ideal’’ (M = 4.41, SD = 1.12), ‘‘The conditions of my life are excellent’’ (M = 4.59, SD = 1.08), ‘‘I am satisfied with my life’’ (M = 4.79, SD = 1.03), ‘‘So far I have gotten the important things I want in life’’ (M = 4.56, SD = 1.15), and ‘‘If I could 
+884 Journal of Computer-Mediated Communication 14 (2009) 875–901 ♥ 2009 International Communication Association 
+live my time over, I would change almost nothing’’ (M = 4.22, SD = 1.35). To ease the interpretation of the multivariate analyses, each individual item was recoded to a 0 to 1 range and then averaged to create an index of life satisfaction (Cronbach’s α = .87, M = .75, SD = .16). 
+Social Trust 
+A popular measure of social trust is Rosenberg’s (1956) Faith in People scale, which has been used with minor variations by major surveys, including the General Social D
+Survey and the World Values Survey. The scale consists of a series of two forced 
+o
+w
+n
+choice statements, such as ‘‘Generally speaking, would you say that most people 
+l
+o
+a
+can be trusted, or that you can’t be too careful in dealing with people?’’ This scale, 
+d
+e
+d
+however, presents two problems. First, the items are double-barreled questions, 
+ 
+f
+r
+o
+m
+that is, the two parts of each question are not exact opposites but two separate 
+ 
+h
+t
+questions (Miller & Mitamura, 2003; Wuthnow, 1998). Second, conceptualizing trust 
+t
+p
+s
+:
+as a dichotomy prevents respondents from making a more fine-grained judgment. 
+/
+/
+a
+c
+Hence, the original Rosenberg scale was broken down into single items and response 
+a
+d
+e
+choices were expanded using a 5-point scale ranging from 1 (never) to 5 (all of the 
+m
+i
+c
+time), following the approach of Burns and Kinder (2000). The statements used 
+.
+o
+u
+p
+were: ‘‘Generally speaking, would you say that people can be trusted’’ (M = 3.42, 
+.
+c
+o
+SD = .65), ‘‘People try to take advantage of you if they got the chance’’ (reversed, 
+m
+/
+j
+c
+M = 2.96, SD = .64), ‘‘People try to be fair’’ (M = 3.45, SD = .63), ‘‘You can’t be 
+m
+c
+too careful in dealing with people’’ (reversed, M = 2.52, SD = .84), ‘‘People try to 
+/
+a
+r
+t
+i
+be helpful’’ (M = 3.54, SD = .59), and ‘‘People are just looking out for themselves’’ 
+c
+l
+e
+/
+(reversed, M = 2.61, SD = .68). The items also were recoded to a 0 to 1 range 
+1
+4
+/
+4
+and then averaged to create an index of social trust (Cronbach’s α = .74, M = .52, 
+/
+8
+7
+SD = .11). 
+5
+/
+4
+5
+8
+3
+5
+Civic and Political Participation 
+5
+2
+Respondents’ civic and political participation was gauged using a reduced form 
+ 
+b
+y
+ 
+of the Index of Civic and Political Engagement developed by CIRCLE (Andolina, 
+g
+u
+e
+Keeter, Zukin, & Jenkins, 2003), an organization that has conducted several national 
+s
+t
+ 
+o
+surveys related to youth engagement. Using three response choices (0 = no, never; 
+n
+ 
+1
+2
+0.5 = yes, but not within the last 12 months; and 1 = yes, within the last 12 months), 
+ 
+N
+o
+respondents’ were asked whether they had (a) worked or volunteered in a community 
+v
+e
+m
+project (M = .84, SD = .27); (b) worked or volunteered for nonpolitical groups such 
+b
+e
+as a hobby club, environmental group or minority student association (M = .75, 
+r
+ 
+2
+0
+SD = .35); (c) raised money for charity or ran/walked/biked for charity (M = .64, 
+2
+2
+SD = .36); (d) worked or volunteered for political groups or candidates (M = .18, SD = .32); (e) voted in a local, state or national election (M = .43, SD = .43); (f) tried to persuade others in an election (M = .35, SD = .44); (g) signed a petition (M = .56, SD = .41); (h) worn or displayed a badge or sticker related to a political or social cause (M = .41, SD = .44); and (i) deliberately bought certain products for political, ethical, or environmental reasons (M = .56, SD = .46). Responses to 
+Journal of Computer-Mediated Communication 14 (2009) 875–901 ♥ 2009 International Communication Association 885 
+items (a), (b) and (c) were added and averaged to create a civic participation scale (Cronbach’s α = .66, M = .74, SD = .26), while responses to the remaining items (d), (e), (f), (g), (h), and (i) were averaged to create a political participation scale (Cronbach’s α = .68, M = .41, SD = .26). 
+Intensity of Facebook Use 
+The traditional approach for measuring media use in communication research is to gauge the frequency or duration of exposure to a medium, but this approach fails to D
+account for the richer user experience provided by interactive online sites. A more 
+o
+w
+n
+complete measure of intensity of Facebook use was developed by Ellison, Steinfield, 
+l
+o
+a
+and Lampe (2007), who created a scale to gauge user engagement in Facebook 
+d
+e
+d
+activities based on number of ‘‘friends,’’ amount of time spent on the network on a 
+ 
+f
+r
+o
+typical day, and level of agreement with several statements gauging users’ emotional 
+m
+ 
+h
+attachment to the site. The same scale was used in this study (see Table 1 for response 
+t
+t
+p
+s
+choices and descriptive statistics). Due to differing item scale ranges and to ease the 
+:
+/
+/
+a
+c
+interpretation of the statistical analyses, the individual items were first recoded to 
+a
+d
+e
+m
+i
+c
+.
+Table 1 Descriptive Statistics for Scale of Intensity of Facebook Use 
+o
+u
+p
+.
+% M SD 
+c
+o
+m
+/
+Intensity of Facebook Usea .66 .19 
+j
+c
+m
+(Cronbach’s α = .89) 
+c
+/
+a
+About how many total Facebook friends do you have? 6.03 2.49 
+r
+t
+i
+c
+1 Less than 10 2.0 
+l
+e
+/
+2 10–49 8.4 
+1
+4
+3 50–99 9.7 
+/
+4
+/
+8
+4 100–149 11.3 
+7
+5
+5 150–199 12.2 
+/
+4
+5
+6 200–249 9.9 
+8
+3
+7 250–299 8.9 
+5
+5
+8 300–399 11.7 
+2
+ 
+b
+9 400 or more 26.0 
+y
+ 
+g
+On a typical day, about how much time do you spend on Facebook? 2.41 1.26 
+u
+e
+s
+0 No time at all 4.9 
+t
+ 
+o
+1 Less than 10 min 18.2 
+n
+ 
+1
+2 10 to 30 min 34.9 
+2
+ 
+N
+3 More than 30 min, up to 1 hr 22.2 
+o
+v
+4 More than 1 hr, up to 2 hrs 14.3 
+e
+m
+5 More than 2 hrs, up to 3 hrs 3.9 
+b
+e
+6 More than 3 hrs 1.5 
+r
+ 
+2
+Facebook is part of my everyday activityb 4.54 1.48 
+0
+2
+I am proud to tell people I am on Facebookb 4.27 1.29 2
+Facebook has become part of my daily routineb 4.54 1.48 I feel out of touch when I haven’t logged onto Facebook for a dayb 3.29 1.62 I feel I am part of the Facebook community at the campusb 3.72 1.52 I would be sorry if Facebook shut downb 4.61 1.53 
+Notes: aIndividual items were first recoded to a 0 to 1 range before taking an average to create the scale. b Response categories ranged from 1=strongly disagree to 6=strongly agree. 
+886 Journal of Computer-Mediated Communication 14 (2009) 875–901 ♥ 2009 International Communication Association 
+range from 0 to 1 before taking an average to create an intensity of Facebook use scale (Cronbach’s α = .89, M = .66, SD = .19). 
+Intensity of Facebook Groups use 
+Respondents were asked several questions about how often they read and posted messages and posted new discussion topics on the profiles of the online groups they had joined on Facebook, as well as how much time they spent reading and posting messages on the profiles of the online groups. Another question asked respondents 
+D
+o
+w
+to describe their participation in the online groups they had joined (see Table 2 
+n
+l
+o
+for response choices and descriptive statistics).6 Again, individual items were first 
+a
+d
+e
+d
+ 
+f
+r
+o
+m
+Table 2 Descriptive Statistics for Scale of Intensity of Facebook Groups Use 
+ 
+h
+t
+t
+p
+s
+% M SD 
+:
+/
+/
+a
+c
+Intensity of Facebook Groups Usea .19 .14 
+a
+d
+e
+(Cronbach’s α = .82) 
+m
+On a typical day, about how much time do 
+you spend reading and posting 
+(combined) messages on the profiles of 
+online groups you have joined on 
+Facebook? 
+0 No time at all 51.5 1 Less than 10 min 37.2 2 10 to 30 min 8.6 3 More than 30 min, up to 1 hr 2.2 4 More than 1 hr, up to 2 hrs 0.2 5 More than 2 hrs, up to 3 hrs 0.1 In the past week, how often do you: Read 
+the profiles of online groups you have 
+joined?b (reversed) 
+Post the messages in online groups you have 
+joined?b (reversed) 
+Post the new discussion topics in online 
+groups you have joined?b (reversed) 
+Which one of the following best describes 
+your participation in the online groups 
+you have joined on Facebook? 
+1 Rarely visit profiles 64.3 2 Reads wall/discussion board 16.8 
+.63 .79 
+1.05 .93 
+.63 .75 .38 .64 1.60 .92 
+ic
+.
+o
+u
+p
+.
+c
+o
+m
+/
+jc
+m
+c
+/a
+r
+t
+ic
+le
+/1
+4
+/4
+/8
+75
+/4
+583552
+ 
+b
+y
+ 
+gu
+e
+s
+t 
+o
+n
+ 
+12
+ 
+N
+o
+v
+e
+m
+be
+r
+ 
+20
+3 Mostly reads, sometimes write on wall/discussion board 
+15.1 
+22
+4 Reads and writes on wall/discussion board 2.5 
+5 Reads, writes and starts new topics on wall/discussion board 
+1.4 
+Notes: aIndividual items were first recoded to a 0 to 1 range before taking an average to create the scale. bResponse categories ranged from 1=all of the time to 5=never. 
+Journal of Computer-Mediated Communication 14 (2009) 875–901 ♥ 2009 International Communication Association 887 
+recoded to range from 0 to 1 before taking an average to create an index of intensity of Facebook Groups use (Cronbach’s α = .82, M = .19, SD = .14). 
+Sociodemographics 
+The variables included gender (female = 66.3%), age (M = 20.88, SD = 2.43), ethnicity (whites = 82.1%), hometown (Texas = 84.0%), year in school (M = 2.94, SD = 1.45), and highest level of education completed by parents (ranging from 1 = less than high school to 5 = graduate,M = 3.89, SD = .99). 
+D
+o
+w
+Statistical Analysis 
+n
+l
+o
+In order to test whether there was a relationship between intensity of using Facebook 
+a
+d
+e
+and each social capital variable, hierarchical multivariate ordinary least squares (OLS) 
+d
+ 
+f
+r
+regressions were run to account for potential rival explanations and to assess the 
+o
+m
+ 
+exact contribution of each block of predictors. Since OLS assumes interval-level 
+h
+t
+t
+p
+or dichotomous variables only and most of our variables came from Likert-type 
+s
+:
+/
+/
+questions, caution should be applied in the interpretation of the regressions.7 Given 
+a
+c
+a
+d
+the reciprocal relationship between the intrapersonal and interpersonal dimensions of 
+e
+m
+social capital, life satisfaction was entered as a predictor of social trust and vice versa. 
+i
+c
+.
+o
+In turn, both variables were entered as predictors of civic and political participation. 
+u
+p
+.
+c
+o
+m
+/
+Results 
+j
+c
+m
+c
+/
+Descriptives 
+a
+r
+t
+i
+c
+Before proceeding to the formal tests of the hypotheses, it was important to gain an 
+l
+e
+/
+1
+understanding of the differences between those who did (n = 2,437, or 94%) and 
+4
+/
+4
+did not (n = 166, or 6%) have a Facebook account. Small differences would reassure 
+/
+8
+7
+us that the effects of intensity of Facebook use tested in the subsequent multivariate 
+5
+/
+4
+5
+analyses were not the result of a self-selection bias, that is, that those with higher 
+8
+3
+5
+life satisfaction, social trust, and civic and political participation happened to use 
+5
+2
+ 
+Facebook more often. 
+b
+y
+ 
+g
+Table 3 presents t-tests and chi-square tests between members and nonmembers 
+u
+e
+s
+of Facebook on demographics and social capital variables. Female students were more 
+t
+ 
+o
+n
+likely to have a Facebook account than male students, which was coherent with the 
+ 
+1
+2
+true gender distribution of users of this site.8 Not surprisingly, age and year in school 
+ 
+N
+o
+were highly correlated with being a Facebook user, with younger cohorts having more 
+v
+e
+m
+presence on the site than older cohorts. Students with a Facebook account were more 
+b
+e
+r
+likely to be white and Texan. Interestingly, students’ socioeconomic background 
+ 
+2
+0
+did not have a linear relationship with having a Facebook account. Though higher 
+2
+2
+levels of parental education were positively related with being a member of the site, nonmembers outnumbered members in terms of parents with postgraduate degrees. Most importantly, Facebook members and nonmembers did not differ in terms of their life satisfaction, social trust or political participation. There was a marked difference, however, on civic engagement, with Facebook members reporting higher levels of participation in nonpolitical activities. 
+888 Journal of Computer-Mediated Communication 14 (2009) 875–901 ♥ 2009 International Communication Association 
+Table 3 Differences Between Facebook Members and Nonmembers 
+Members Nonmembers Significance of 
+(n = 2,437) (n = 166) Differencea 
+Gender (female) 66.6% 55.5% χ2 = 6.29, p < .01 Age (years) 20.71 23.74 t = 9.37, p < .001 Hometown (within Texas) 84.5% 74.8% χ2 = 8.07, p < .001 Race/ethnicity (white) 82.6% 71.4% χ2 = 9.72, p < .001 
+Year in school (1 = freshman, 6 = doctoral) 
+Highest level of parental education: 
+2.89 3.70 t = 5.32, p < .001 
+D
+o
+3.90 3.73 t = −1.56, p < .10 
+w
+n
+l
+o
+a
+d
+Life Satisfaction .75 .74 t = −.95, n.s. 
+e
+d
+Social Trust .52 .52 t = .39, n.s. 
+ 
+f
+r
+o
+Civic Engagement .75 .58 t = −6.31, p < .001 m
+Political Engagement .42 .38 t = −1.81, p < .10 
+ 
+h
+t
+t
+p
+s
+Notes: aStatistical significance of the difference between members and nonmembers was 
+:
+/
+/
+a
+c
+assessed with chi-square tests for nominal variables and one-tailed t-test scores not assuming 
+a
+d
+equal variances for continuous variables. 
+e
+m
+i
+c
+.
+o
+u
+p
+We can draw two preliminary conclusions from this portrait of Facebook users 
+.
+c
+o
+m
+and nonusers. First, the demographic differences between both groups of respondents 
+/
+j
+c
+m
+suggest that the adoption of Facebook was not random across the population of 
+c
+/
+a
+college students included in the study. The small sample size of nonusers, however, 
+r
+t
+i
+c
+prevents us from speculating further why it is that older, male, and minority students 
+l
+e
+/
+1
+did not report using Facebook as often as their younger, female, white counterparts 
+4
+/
+4
+/
+did. Second, we should be cautious in attributing increases in civic participation 
+8
+7
+5
+to Facebook use; rather, Facebook seems to attract students who are more civically 
+/
+4
+5
+8
+engaged. The lack of differences in the other social capital variables, however, should 
+3
+5
+5
+increase our confidence in the potential cause-effect relationship between Facebook 
+2
+ 
+b
+use and life satisfaction, social trust, and political engagement. 
+y
+ 
+g
+u
+e
+s
+t
+ 
+o
+Life satisfaction and social trust 
+n
+ 
+1
+2
+As shown in Table 4, the total variance in life satisfaction and social trust explained by 
+ 
+N
+o
+the regression models was below 10%. The block of demographic variables had less 
+v
+e
+m
+explanatory power compared to the attitudinal block, due to the strong relationship 
+b
+e
+between life satisfaction and social trust. Most importantly, the contribution made 
+r
+ 
+2
+0
+by Facebook use to these two components of social capital was small but statistically 
+2
+2
+significant. As predicted by the first couple of hypotheses (H1 and H2), intensity of Facebook use was positively associated with life satisfaction and social trust. However, Facebook use had a stronger relationship with life satisfaction than with social trust. Specifically, the model predicted that the index of life satisfaction was, ceteris paribus, 14.5 percentage points higher for those with the highest score in the index of intensity of Facebook use compared to those with the lowest value. In comparison, social trust 
+Journal of Computer-Mediated Communication 14 (2009) 875–901 ♥ 2009 International Communication Association 889 
+Table 4 Regressions Predicting Life Satisfaction and Social Trust 
+Life Satisfaction (n = 1,935) Social Trust (n = 1,935) 
+B (SE) t B (SE) t 
+Gender (Female) .01 (.01) 1.51 .01 (.01) 1.03 Age −.00 (.00) −1.09 .00 (.00) .99 Race (white) .02 (.01) 2.21* .01 (.01) 2.19* 
+Year in School .01 (.00) 2.15* .00 (.00) .93 Hometown in Texas .02 (.01) 2.50* .00 (.01) .57 
+D
+Highest level of parents’ .01 (.00) 2.07* .01 (.00) 2.25* 
+o
+w
+education 
+n
+l
+o
+R2 (%) 2.6 1.7 
+a
+d
+e
+Social trust .26 (.03) 8.48 * ** — — 
+d
+ 
+f
+Life satisfaction — — .14 (.02) 8.48*** 
+r
+o
+m
+R2Change (%) 4.1 4.2 
+ 
+h
+Intensity of Facebook use .15 (.02) 7.56 * ** .05 (.01) 3.37*** 
+t
+t
+p
+R2Change (%) 2.7 0.6 
+s
+:
+/
+/
+Final R2 (%) 9.4 6.4 
+a
+c
+a
+Adjusted R2 (%) 9.1 6.0 
+d
+e
+m
+i
+Notes: Regression coefficients are unstandardized, controlling for all other variables. Standard 
+c
+.
+o
+errors in parentheses. R2 change refers to the unique contribution of each block of variables 
+u
+p
+.
+c
+controlling for the previous variables entered in the regression. Statistical significance is 
+o
+m
+derived from two-tailed t tests. Dashes mean that the independent variable was not entered in 
+/
+j
+c
+m
+the regression. *p < .05, ** p < .01, ***p < .001 
+c
+/
+a
+r
+t
+i
+c
+increased by 4.7 percentage points when the index of intensity of Facebook use was 
+l
+e
+/
+1
+varied from the lowest value to the highest value. 
+4
+/
+4
+/
+8
+7
+5
+Civic and political participation 
+/
+4
+5
+The models shown in Table 5 also explained less than 10% of the variance in the 
+8
+3
+5
+dependent variables. Demographic predictors exhibited the strongest relationships 
+5
+2
+ 
+with civic and political engagement. The explanatory power of life satisfaction 
+b
+y
+ 
+g
+and social trust was substantial for civic engagement, but negligible for political 
+u
+e
+s
+participation. The variance in both forms of participation explained by the block of 
+t
+ 
+o
+n
+Facebook variables was small as well. Nonetheless, both intensity of Facebook use and 
+ 
+1
+2
+intensity of Facebook Groups use were positively associated to civic participation, 
+ 
+N
+o
+which supported H3a and H3b. Specifically, civic engagement increased 16.1 and 
+v
+e
+m
+9.5 percentage points, respectively, when the indexes for intensity of Facebook use 
+b
+e
+r
+and intensity of Facebook Groups use changed from their lowest value to their highest 
+ 
+2
+0
+value, holding all other variables constant. 
+2
+2
+In the regression analysis predicting political participation, only Facebook Groups use had a statistically significant positive relationship, consistent with H4b. Holding everything else constant, changing the index of Facebook Groups from its lowest score to its highest score resulted in an increase of political engagement of 27.4 percentage points. Intensity of Facebook use, in comparison, did not have a significant relationship with participation, suggesting that only certain features of Facebook 
+890 Journal of Computer-Mediated Communication 14 (2009) 875–901 ♥ 2009 International Communication Association 
+Table 5 Regressions Predicting Civic and Political Participation 
+Civic Participation Political Participation 
+(n = 1,727) (n = 1,901) 
+B (SE) t B (SE) t 
+Gender (Female) .04 (.01) 3.27 * ** −.03 (.01) −2.07* Age −.01 (.01) −2.50* −.00 (.01) .23 Race (white) −.00 (.02) −.00 .04 (.02) 2.36* Year in School .01 (.01) .81 .03 (.01) 3.99 * ** 
+D
+Hometown in Texas .04 (.02) 2.20* .03 (.02) 1.88 
+o
+w
+Highest level of parents’ .02 (.01) 2.96 * * .01 (.01) 1.54 
+n
+l
+o
+education 
+a
+d
+e
+R2 (%) 4.3 2.7 
+d
+ 
+f
+Social trust .19 (.05) 3.61 * ** −.00 (.06) −.04 
+r
+o
+m
+Life satisfaction .22 (.04) 5.64 * ** −.01 (.04) −.27 
+ 
+h
+R2 Change (%) 3.8 0.0 
+t
+t
+p
+Intensity of Facebook use .16 (.04) 4.53 * ** .02 (.04) .43 
+s
+:
+/
+/
+Intensity of Facebook .10 (.04) 2.16* .27 (.05) 5.71 * ** 
+a
+c
+a
+groups use 
+d
+e
+R2 Change (%) 1.8 2.1 
+m
+i
+Final R2 (%) 9.9 4.8 
+c
+.
+o
+Adjusted R2 (%) 9.4 4.2 
+u
+p
+.
+c
+o
+Notes: Regression coefficients are unstandardized, controlling for all other variables. Standard 
+m
+/
+j
+errors in parentheses. R2 change refers to the unique contribution of each block of variables 
+c
+m
+c
+controlling for the previous variables entered in the regression. Statistical significance is 
+/
+a
+r
+t
+derived from two-tailed t tests. *p < .05, ** p < .01, *** p < .001 
+i
+c
+l
+e
+/
+1
+4
+/
+4
+(in this case, Facebook Groups) are associated with political participation. H4a was 
+/
+8
+7
+thus not supported. 
+5
+/
+4
+5
+A posthoc analysis provided further evidence of the role played by Facebook 
+8
+3
+5
+Groups. Table 6 shows regression analyses of political and civic participation on 
+5
+2
+membership in political and civic groups within the online network. The coefficients 
+ 
+b
+y
+ 
+of the regressions reveal that belonging to political groups in Facebook was strongly 
+g
+u
+e
+related with political participation, while belonging to civic groups was not (with 
+s
+t
+ 
+o
+the exception of student groups). With civic participation, the relationship was the 
+n
+ 
+1
+2
+opposite: Belonging to civic groups in Facebook was positively associated with offline 
+ 
+N
+o
+civic engagement, while belonging to political groups was not. 
+v
+e
+m
+RQ1 asked if the relationship between intensity of Facebook use and civic 
+b
+e
+and political participation varied according to gender, race and ethnicity, parental 
+r
+ 
+2
+0
+education, life satisfaction, and social trust. To answer this question, a series of 
+2
+2
+interactions between intensity of Facebook use and each demographic characteristic were entered into the models of participation (not shown). For the model predicting civic participation, only the interaction between race and Facebook was statistically significant. Specifically, intensity of Facebook use had a weaker relationship on civic participation among white students compared to nonwhite students (β = −.16, p < .05). In the model of political participation, there was a positive, significant 
+Journal of Computer-Mediated Communication 14 (2009) 875–901 ♥ 2009 International Communication Association 891 
+Table 6 Regressions Predicting Civic and Political Participation With Specific Facebook Groups 
+Civic Participation Political Participation 
+(n = 1,951) (n = 1,925) 
+B (SE) t B (SE) t 
+Demographics R2 (%) 4.9 2.4 
+Social trust and life satisfaction R2Change (%) 
+3.4 0.0 
+D
+o
+Intensity of Facebook use .12 (.03) 3.70 * ** .01 (.03) .15 
+w
+n
+Member of a political Facebook Group (yes) 
+Member of an off-campus organization Facebook 
+Group (yes) 
+Member of an on-campus organization Facebook 
+Group (yes) 
+Member of a student group Facebook Group (yes) 
+.00 (.01) .11 .16 (.01) 12.73 * ** 
+l
+o
+a
+d
+e
+d
+.01 (.01) 1.08 .01 (.01) 1.09 
+ 
+f
+r
+o
+m
+ 
+h
+t
+t
+p
+.08 (.01) 6.85 * ** .03 (.01) 1.95 
+s
+:
+/
+/
+a
+c
+a
+d
+e
+.06 (.01) 4.91 * ** .04 (.01) 3.26 * ** 
+m
+i
+c
+.
+o
+u
+R2 Change (%) 7.1 10.6 
+p
+.
+c
+Final R2 (%) 15.3 12.9 
+o
+m
+Adjusted R2 (%) 14.7 12.3 
+/
+j
+c
+m
+c
+Notes: Regression coefficients are unstandardized, controlling for all other variables. Standard 
+/
+a
+r
+errors in parentheses. Statistical significance is derived from two-tailed t tests. *p < .05, 
+t
+i
+c
+l
+e
+**p < .01, ***p < .001 
+/
+1
+4
+/
+4
+/
+8
+7
+interaction between intensity of Facebook use and social trust (β = .59, p < .05), 
+5
+/
+4
+suggesting that the correlation of using the social network site with these young 
+5
+8
+3
+adults’ political engagement was particularly strong for trusting individuals. No other 
+5
+5
+2
+interactive term in the regression of political participation was statistically significant. 
+ 
+b
+y
+ 
+The second research question (RQ2) asked if the association between intensity 
+g
+u
+e
+of Facebook Groups use and civic and political participation varied according to 
+s
+t
+ 
+o
+respondents’ demographics, life satisfaction and social trust. Using the same approach 
+n
+ 
+1
+2
+of entering multiplicative terms in the models for civic and political participation, only 
+ 
+N
+o
+one interaction achieved statistical significance: The relationship between intensity 
+v
+e
+m
+of Facebook Groups use and political participation was weaker for white respondents 
+b
+e
+than for minority respondents (β = −.23, p < .05). 
+r
+ 
+2
+0
+2
+2
+Discussion 
+The purpose of this study was to explore whether college students’ use of Facebook was related with their stock of social capital, a construct that includes intrapersonal, interpersonal, and behavioral elements. Using survey data collected at two different campuses, we predicted that there would be positive relationships between intensity 
+892 Journal of Computer-Mediated Communication 14 (2009) 875–901 ♥ 2009 International Communication Association 
+of Facebook use and intensity of Facebook groups use and students’ life satisfaction, social trust, and civic and political participation. Our results provide consistent evidence that these positive associations exist. After taking into account several demographic and attitudinal variables, Facebook use and Facebook Groups use still predicted respondents’ social capital. These findings do not support the popular view that heavy Facebook users are more isolated and less connected than occasional users. The data show that the opposite holds true, a finding that is coherent with the recent literature on the effects of informational, social interaction and identity-construction D
+uses of the Internet. 
+o
+w
+n
+Admittedly, the relationship between Facebook use and social capital was not 
+l
+o
+a
+large, as revealed by the small percentage of variance of the dependent variables 
+d
+e
+d
+explained by the regression models. This should not come as a surprise. Previous 
+ 
+f
+r
+o
+m
+research has demonstrated that individuals’ life satisfaction, trust, and participation in 
+ 
+h
+t
+collective activities are influenced by their personality, life experiences, socialization 
+t
+p
+s
+:
+into adulthood, news media use, and a host of other factors. In fact, it would be 
+/
+/
+a
+c
+quite troubling if a sole technological platform such as Facebook determines young 
+a
+d
+e
+adults’ stock of social capital. Nevertheless, the results of this investigation contradict 
+m
+i
+c
+the expectations of the ‘‘time displacement hypothesis,’’ which was first suggested by 
+.
+o
+u
+p
+Putnam (2000) for the effects of television on social capital and then expanded to the 
+.
+c
+o
+Internet by the so-called cyberpessimists. 
+m
+/
+j
+c
+In this study, the intensity of Facebook use appears to be related with personal 
+m
+c
+contentment, greater trust, and participation in civic and political activities among 
+/
+a
+r
+t
+i
+college students. We have argued that certain specific features of Facebook enable 
+c
+l
+e
+/
+users to engage in behaviors that contribute to their social capital. In this study, we 
+1
+4
+/
+4
+focused on Facebook Groups as one application that can satisfy the informational 
+/
+8
+7
+and integrative needs of users. Future research could explore the contribution of 
+5
+/
+4
+5
+other Facebook applications, such as messaging services, on individuals’ production 
+8
+3
+5
+of social capital. 
+5
+2
+Interestingly, the associations between Facebook use and social capital variables 
+ 
+b
+y
+ 
+were not moderated by gender, parental education, and—in the case of 
+g
+u
+e
+participation—by life satisfaction or social trust. Only ethnicity moderated the 
+s
+t
+ 
+o
+relationship between Facebook usage and social capital, with nonwhite students 
+n
+ 
+1
+2
+who used Facebook scoring higher in the social capital variables compared to white 
+ 
+N
+o
+students. This study mostly finds an additive relationship between socioeconomic 
+v
+e
+m
+status and using the social network site, that is, the relationships between social capital 
+b
+e
+and Facebook use did not vary by college students’ socioeconomic background. 
+r
+ 
+2
+0
+Alternatively, other users’ characteristics (e.g., personality traits) that were not 
+2
+2
+measured here could discriminate better for which groups the association between social capital by using the social network site are stronger and/or weaker. 
+A major contribution of this study lies in the conceptualization of Facebook use and social capital. The scale of intensity of Facebook use, which was developed by Ellison and colleagues (2007), was applied with success in this study. The novel measure of intensity of Facebook Groups use, on the other hand, confirms the 
+Journal of Computer-Mediated Communication 14 (2009) 875–901 ♥ 2009 International Communication Association 893 
+necessity of implementing novel measures for individual use of SNSs. Both scales combined the traditional approach of measuring duration and frequency of exposure to the medium with the approach of gauging individuals’ emotional attachment to it. Moreover, this study innovated by measuring exposure to specific types of Facebook Groups. As expected, offline political participation is associated to online political groups and offline civic participation is associated to online civic groups. Thus, this study supports the notion that both a medium’s technological capabilities as well as the actual content it transmits can influence students’ attitudes and behaviors. D
+Likewise, the multifaceted concept of social capital was broken down into three 
+o
+w
+n
+levels, which allowed for a fine-grained assessment of the potential impact of using 
+l
+o
+a
+social network sites. The results show a stronger association of Facebook use with the 
+d
+e
+d
+intrapersonal and behavioral components of social capital than with the interpersonal 
+ 
+f
+r
+o
+m
+dimension. Thus, it could be argued that although the different components of social 
+ 
+h
+t
+capital are interrelated, SNSs have a stronger connection with some components only. 
+t
+p
+s
+:
+Another contribution of this study is related to the demographic portrayal of 
+/
+/
+a
+c
+Facebook users. A popular myth is that Facebook is dominated by idle, young, female, 
+a
+d
+e
+upper-middle class college undergraduates. The characteristics of our sample show 
+m
+i
+c
+a more nuanced picture. For instance, over a third of Facebook members in the 
+.
+o
+u
+p
+18 to 29 age group were male and a similar proportion were seniors or graduate 
+.
+c
+o
+students or students whose parents did not complete a college degree. Nearly one 
+m
+/
+j
+c
+out of five members was a minority student. Moreover, almost 95% of respondents 
+m
+c
+had an account on Facebook and reported using the online network on a daily basis. 
+/
+a
+r
+t
+i
+Nevertheless, the small sample size of nonusers does not allow us to elaborate more 
+c
+l
+e
+/
+on the differences found between them and Facebook users. 
+1
+4
+/
+4
+Given the cross-sectional nature of this study, we cannot conclude that there is a 
+/
+8
+7
+causal relationship between using Facebook and increased social capital. It may well 
+5
+/
+4
+5
+be that happy, trusting, civically and politically engaged students are more likely to 
+8
+3
+5
+join Facebook. The analysis of the profile of Facebook users suggests that those who 
+5
+2
+are more civically oriented choose to join the online network in a disproportionate 
+ 
+b
+y
+ 
+fashion. This limitation could be better addressed by a longitudinal study, which 
+g
+u
+e
+would track changes in Facebook usage to changes in social capital variables. Beyond 
+s
+t
+ 
+o
+our inability to test for cause-effect relationships, the use of a college student sample 
+n
+ 
+1
+2
+limits the ability to generalize our findings to the whole 18-to-29 age group. For 
+ 
+N
+o
+instance, compared to other young adults, college students tend to come from 
+v
+e
+m
+the middle and upper-middle classes, have universal access to the Internet, and 
+b
+e
+possess more time and resources to engage in civic and political activities. Future 
+r
+ 
+2
+0
+research, then, should examine the role of SNSs on individuals’ social capital using 
+2
+2
+a more diverse population. At the same time, longitudinal designs would allow for disentangling the causal links between use of SNSs and engagement with public affairs. An additional limitation of the study was the conceptualization of civic and political engagement. The lack of existing research on SNS use and users’ public participation made it prudent to rely on traditional scales of civic and political engagement. This had the additional benefit of making the results of the study 
+894 Journal of Computer-Mediated Communication 14 (2009) 875–901 ♥ 2009 International Communication Association 
+comparable to other surveys that delve into the relationship between media use and civic or political engagement. However, alternate measures of participation that better fit the new media environment constitute a good venue for future research. For instance, we could have asked respondents if they listed any particular 2008 U.S. presidential candidate on their Facebook profile. This may be problematic as a traditional measure of participation, but fits very well into how Facebook users might be using the network to engage in politics. In other words, by listing candidates and declaring being ‘‘fans’’ of political causes, users may be engaging in a type of political D
+participation that our measures miss completely. 
+o
+w
+n
+Overall, the findings of the study should ease the concerns of those who fear 
+l
+o
+a
+that Facebook has mostly negative effects on young adults’ engagement and social 
+d
+e
+d
+capital. Nevertheless, the positive and significant associations between the Facebook 
+ 
+f
+r
+o
+m
+variables and the dependent variables were small, suggesting that SNSs are not the 
+ 
+h
+t
+most effective solution for youth disengagement from civic duty and democracy. This 
+t
+p
+s
+:
+study captures a snapshot of Facebook as an example of a SNS. As these technologies 
+/
+/
+a
+c
+continue to evolve and diffuse further into the society, we hope the findings reported 
+a
+d
+e
+in this study contribute to the larger understanding of social capital in SNSs. 
+m
+i
+c
+.
+o
+u
+p
+.
+c
+Notes 
+o
+m
+/
+j
+1 According to comScore Inc.’s rankings of top websites, in 2008 Facebook.com was 
+c
+m
+c
+ranked as the 16th most visited website on the Internet in the U.S. (comScore, 
+/
+a
+r
+2008a), with 34 million unique visitors by January 2008, and as the 13th most 
+t
+i
+c
+l
+e
+popular website worldwide (comScore, 2008b), with 98 million unique visitors by 
+/
+1
+4
+December 2007. As of March 2008, Facebook reported having 67 million active 
+/
+4
+/
+8
+users (those who have returned to the site in the last 30 days), with more than half of 
+7
+5
+/
+them returning daily and spending an average of 20 minutes per day on the site 
+4
+5
+8
+(Facebook, 2008). 
+3
+5
+2 According to Putnam (2000), bridging and bonding are two forms of social capital. 
+5
+2
+ 
+b
+Whereas the former is related to networks of individuals formed across diverse 
+y
+ 
+g
+social settings for the purpose of exchanging useful information, the latter is linked 
+u
+e
+s
+to bonds of connectedness among tightly knit groups—usually family and friends 
+t
+ 
+o
+who provide emotional support. 
+n
+ 
+1
+2
+3 Although we had access to the total student population, we preferred to draw a 
+ 
+N
+sample rather than conduct a census. Our rationale was that (1) it would have taken 
+o
+v
+e
+far too much time to collect responses from every student, and (2) many students 
+m
+b
+would opt out of the survey anyway, rendering the census an impossible task. Thus, 
+e
+r
+ 
+2
+drawing sample was a more convenient and realistic approach. 
+0
+2
+2
+4 Participants were sent up to three reminder e-mails during the first two weeks of being contacted and a final e-mail the day before the survey closed. 
+5 At the larger of the two campuses, the ethnic breakdown of the respondents compared well with the university’s actual demographics. Likewise, the sample 
+representing the other public school involved in this study reflected closely the 
+university’s diversity. The major difference between sample and population 
+demographics relates to gender. At the larger university, 37% of the respondents Journal of Computer-Mediated Communication 14 (2009) 875–901 ♥ 2009 International Communication Association 895 
+were male and 63% were female, while the actual breakdown is 53% male and 47% female. A similar pattern was evident at the second university—29% of the 
+respondents were male and 71% were female, whereas the actual breakdown is 43% males and 57% females. 
+6 Number of groups joined was deliberatively excluded from the measure of intensity of Facebook Groups use for two reasons. First, joining groups is only one click away, which means that many groups are episodic and supporting a one time event. Second, the existing literature on participation in online communities does not support the notion that number of groups is proportional to the intensity of 
+D
+o
+participation in those groups. For instance, Kollock (1999) and Mathwick (2002) 
+w
+n
+l
+found that online participation implies engaging in activities that require time and 
+o
+a
+d
+effort, something that number of groups does not gauge at all. 
+e
+d
+ 
+7 Many statisticians in the social sciences (e.g., Harris, 2001; Tabachnick & Fidell, 
+f
+r
+o
+m
+2007) argue that the application of parametric statistics such as OLS to scores that 
+ 
+h
+fall short of the requirements for continuous level of measurement does not 
+t
+t
+p
+s
+necessarily lead to problems so long as the variables meet the distributional 
+:
+/
+/
+a
+properties required by the statistical procedure (see Warner, 2008). 
+c
+a
+d
+8 At the time of the survey, the proportion of female undergraduate students using 
+e
+m
+Facebook in the U.S. was 54%, compared to 46% of male students. 
+i
+c
+.
+o
+u
+p
+.
+c
+o
+m
+References 
+/
+j
+c
+m
+c
+Acquisti, A., & Gross, R. (2006, June). Imagined communities: Awareness, information sharing, 
+/
+a
+r
+t
+i
+and privacy on the Facebook. Paper presented at the 6th Workshop on Privacy Enhancing 
+c
+l
+e
+/
+Technologies, Cambridge. 
+1
+4
+/
+4
+Andolina, M., Keeter, S., Zukin, C., & Jenkins, K. (2003). A guide to the index of civic and 
+/
+8
+7
+political engagement. Retrieved October 12, 2007, from http://www.civicyouth.org/ 
+5
+/
+4
+5
+PopUps/IndexGuide.pdf. 
+8
+3
+5
+Baumeister, R. F., Campbell, J. D., Krueger, J. I., & Vohs, K. D. (2003). Does high self-esteem 
+5
+2
+ 
+cause better performance, interpersonal success, happiness, or healthier lifestyles? 
+b
+y
+ 
+g
+Psychological Science, 4, 1–44. 
+u
+e
+Beaudoin, C. E. (2008). Explaining the relationship between Internet use and interpersonal 
+s
+t
+ 
+o
+n
+trust: Taking into account motivation and information overload. Journal of 
+ 
+1
+2
+Computer-Mediated Communication, 13, 550–568. 
+ 
+N
+o
+Berger, C. R. (1986). Uncertain outcome values in predicted relationships: Uncertainty 
+v
+e
+m
+reduction theory then and now. Human Communication Research, 13, 34–38. 
+b
+e
+r
+Berger, C. R., & Calabrese, R. J. (1975). Some explorations in initial interaction and beyond: 
+ 
+2
+0
+Toward a development theory of interpersonal communication. Human Communication 
+2
+2
+Research, 1, 99–112. 
+Best, S., & Dautrich, K. (2003). Reinvigorating democracy: Generating social capital and political participation on the Internet. Paper presented at the annual meeting of the American Association for Public Opinion Research, Nashville, TN. 
+Bourdieu, P. (1983). Forms of capital. In J. G. Richardson (Ed.), Handbook of theory and research for the sociology of education (pp. 241–258). New York: Greenwood Press. 
+896 Journal of Computer-Mediated Communication 14 (2009) 875–901 ♥ 2009 International Communication Association 
+boyd, d. (2008). Why youth ♥ social network sites: The role of networked publics in teenage social life. In D. Buckingham (Ed.), Youth, identity, and digital media (pp. 119–142). Cambridge: MIT Press. 
+Brehm, J., & Rahn, W. (1997). Individual-level evidence for the causes and consequences of social capital. American Journal of Political Science, 41, 999–1023. 
+Bulik, B. S. (2007, October 8). Apple, Facebook tops for college students. Advertising Age, 78, 12. 
+Burns, N., & Kinder, D. R. (2000). Social trust and democratic politics. Report to the National D
+o
+Election Studies Board based on the 2000 NES Special Topic Pilot Study Retrieved 
+w
+n
+l
+September 17, 2007, from ftp://ftp.electionstudies.org/ftp/nes/bibliography/ 
+o
+a
+d
+documents/nes010112.pdf. 
+e
+d
+ 
+f
+Chalaby, J. K. (2000). New media, new freedoms, new threats. Gazette: International Journal 
+r
+o
+m
+for Communication Studies, 62(1), 19–29. 
+ 
+h
+t
+t
+p
+Coleman, J. S. (1988). Social capital in the creation of human capital. American Journal of 
+s
+:
+/
+/
+Sociology, 94, 95–120. 
+a
+c
+a
+comScore. (2008a). Comscore top 50 properties (U.S.). Retrieved March 10, 2008, from 
+d
+e
+m
+http://www.comscore.com/press/data/top_50_web_properties.asp. 
+i
+c
+.
+o
+comScore. (2008b). Top global web properties. Retrieved March 10, 2008, from 
+u
+p
+.
+c
+http://www.comscore.com/press/data/top_worldwide_properties.asp. 
+o
+m
+Clore, G. L., Wyer, R. S., Jr., Dienes, B., Gasper, K., & Isbell, L. M. (2001). Affective feelings 
+/
+j
+c
+m
+as feedback: Some cognitive consequences. In L. L. Martin & G. L. Clore (Eds.), Theories 
+c
+/
+a
+of mood and cognition: A user’s guidebook (pp. 27–62). Hillsdale, NJ: Erlbaum. 
+r
+t
+i
+c
+l
+e
+Conway, M. M. (1985). Political participation in the United States. Washington, DC: 
+/
+1
+4
+Congressional Quarterly. 
+/
+4
+/
+8
+Dekker, P., & Uslaner, E. M. (Eds.). (2001). Social capital and participation in everyday life. 
+7
+5
+/
+4
+London: Routledge. 
+5
+8
+3
+Dickinson, T. (2008, March 20). The machinery of hope. Rolling Stone, 1048, 36–42. 
+5
+5
+2
+Diener, E., Emmons, R. A., Larsen, R. J., & Griffin, S. (1985). The satisfaction with life scale. 
+ 
+b
+y
+Journal of Personality Assessment, 49(1), 71–75. 
+ 
+g
+u
+e
+Diener, E., Sandvik, E., & Pavot, W. (1991). Happiness is the frequency, not the intensity, of 
+s
+t
+ 
+o
+positive versus negative affect. In F. Strack, M. Argyle, & N. Schwarz (Eds.), Subjective 
+n
+ 
+1
+well-being: An interdisciplinary perspective (pp. 119–139). Oxford, England: Pergamon 
+2
+ 
+N
+Press. 
+o
+v
+e
+m
+Dillman, D. A. (1991). The design and administration of mail surveys. Annual Review of b
+e
+Sociology, 17, 225–249. 
+r
+ 
+2
+0
+Donath, J., & boyd, d. (2004). Public displays of connection. BT Technology Journal, 22(4), 
+2
+2
+71–82. 
+Ellison, N. B., Steinfield, C., & Lampe, C. (2007). The benefits of Facebook ‘‘friends:’’ Social capital and college students use of online social network sites. Journal of 
+Computer-Mediated Communication, 12, 1143–1168. 
+Facebook. (2008). Statistics. Retrieved March 14, 2008, from http://www.facebook.com/ press/info.php?statistics. 
+Journal of Computer-Mediated Communication 14 (2009) 875–901 ♥ 2009 International Communication Association 897 
+Francis, L. J. (1999). Happiness is a thing called stable extraversion: A further examination of the relationship between the Oxford Happiness Inventory and Eysenck’s dimensional model of personality and gender. Personality and Individual Differences, 26, 5–11. 
+Hargittai, E. (2007). Whose space? Differences among users and non-users of social network sites. Journal of Computer-Mediated Communication, 13, 276–297. 
+Harris, R. J. (2001). A primer of multivariate statistics (3rd ed.). Mahwah, NJ: Lawrence Erlbaum Associates. 
+Harter, S. (1999). The construction of the self: A developmental perspective. New York: Guilford D
+Press. 
+o
+w
+n
+Helliwell, J. F., & Putnam, R. D. (2004). The social context of well-being. Philosophical 
+l
+o
+a
+d
+Transactions of the Royal Society of London, 359, 1435–1446. 
+e
+d
+Hinduja, S., & Patchin, J. (2008). Personal information of adolescents on the Internet: A 
+ 
+f
+r
+o
+m
+quantitative content analysis of MySpace. Journal of Adolescence, 31, 125–146. 
+ 
+h
+t
+Hodgkinson, T. (2008). With friends like these...The Guardian. Retrieved February 27, 
+t
+p
+s
+:
+2008, from http://www.guardian.co.uk/technology/2008/jan/14/facebook. 
+/
+/
+a
+c
+Howard, M. M., & Gilbert, L. (2008). A cross-national comparison of the internal effects of 
+a
+d
+e
+participation in voluntary organizations. Political Studies, 56(1), 12–32. 
+m
+i
+c
+Inglehart, R. (1990). Culture shift in advanced industrial society. Princeton, NJ: Princeton 
+.
+o
+u
+p
+University Press. 
+.
+c
+o
+Ji-Young, K. (2006). The impact of Internet use patterns on political engagement: A focus on 
+m
+/
+j
+c
+online deliberation and virtual social capital. Information Polity: The International Journal 
+m
+c
+of Government & Democracy in the Information Age, 11(1), 35–49. 
+/
+a
+r
+t
+i
+Joinson, A. N. (2008, April). Looking at, looking up or keeping up with people?: Motives and use 
+c
+l
+e
+/
+of Facebook. Paper presented at the 26th annual SIGCHI conference on Human Factors in 
+1
+4
+/
+4
+Computing Systems, Florence, Italy. 
+/
+8
+7
+Kahneman, D., & Krueger, A. B. (2006). Developments in the measurement of subjective 
+5
+/
+4
+5
+well-being. Journal of Economic Perspectives, 20(1), 3–24. 
+8
+3
+5
+Katz, E., & Gurevitch, M. (1974). Utilization of mass communication by the individual. In 
+5
+2
+ 
+J. G. Blumler & E. Katz (Eds.), The uses of mass communication (pp. 19–32). London: 
+b
+y
+ 
+g
+Faber. 
+u
+e
+s
+Kavanaugh, A., Reese, D., Carroll, J., & Rosson, M. (2005). Weak ties in networked 
+t
+ 
+o
+n
+communities. Information Society, 21, 119–131. 
+ 
+1
+2
+Kenski, K., & Stroud, N. J. (2006). Connections between Internet use and political efficacy, 
+ 
+N
+o
+knowledge, and participation. Journal of Broadcasting & Electronic Media, 50(2), 173–192. 
+v
+e
+m
+Klapper, J. H. (1960). The effects of mass communication. New York: The Free Press. 
+b
+e
+r
+Kobayashi, T., Ikeda, K. i., & Miyata, K. (2006). Social capital online: Collective use of the 
+ 
+2
+0
+Internet and reciprocity as lubricants of democracy. Information, Communication & 
+2
+2
+Society, 9, 582–611. 
+Kollock, P. (1999). The economies of online cooperation: Gifts and public goods in cyberspace. In M. A. a. K. Smith, P. (Ed.), Communities in cyberspace (pp. 220–239). London: Routledge. 
+Koloff, A. (2008, February 7). States push for cyberbully controls; but efforts to go beyond schools raise concerns over freedom of speech, privacy. USA Today, p. 3A. 
+898 Journal of Computer-Mediated Communication 14 (2009) 875–901 ♥ 2009 International Communication Association 
+Kraut, R. E., Patterson, M., Lundmark, V., Kiesler, S., Mukopadhyay, T., & Scherlis, W. (1998). Internet paradox: A social technology that reduces social involvement and 
+psychological well-being? American Psychologist, 53, 1017–1031. 
+Krosnick, J. A. (1999). Survey research. Annual Review of Psychology, 50, 537–567. 
+Kwak, N., Shah, D. V., & Holbert, R. L. (2004). Connecting, trusting, and participating: The direct and interactive effects of social associations. Political Research Quarterly, 57, 
+643–652. 
+Leary, M. R., & Kowalski, R. M. (1990). Impression management: A literature review and D
+two-component model. Psychological Bulletin, 107, 34–47. 
+o
+w
+n
+Lin, N. (2001). Social capital: A theory of social structure and action. New York: Cambridge 
+l
+o
+a
+d
+University Press. 
+e
+d
+Mathwick, C. (2002). Understanding the online consumer: A typology of online relational 
+ 
+f
+r
+o
+m
+norms. Journal of Interactive Marketing, 16(1), 40–55. 
+ 
+h
+t
+McQuail, D. (2005). McQuail’s mass communication theory (5th ed.). London: Sage. 
+t
+p
+s
+:
+Miller, A., & Mitamura, T. (2003). Are surveys on trust untrustworthy? Social Psychology 
+/
+/
+a
+c
+Quarterly, 66, 62–70. 
+a
+d
+e
+Newton, K. (1999). Social and political trust in established democracies. In P. Norris (Ed.), 
+m
+i
+c
+Critical citizens: Global support for democratic governance (pp. 169–187). Oxford, UK: 
+.
+o
+u
+p
+Oxford University Press. 
+.
+c
+o
+Newton, K. (2006). Political support: Social capital, civil society and political and economic 
+m
+/
+j
+c
+performance. Political Studies, 54, 846–864. 
+m
+c
+Nickerson, D. W. (2006). Hunting the elusive young voter. Journal of Political Marketing, 
+/
+a
+r
+t
+i
+5(3), 47–69. 
+c
+l
+e
+/
+Nie, N. H. (2001). Sociability, interpersonal relations, and the Internet: Reconciling 
+1
+4
+/
+4
+conflicting findings. American Behavioral Scientist, 45, 420–435. 
+/
+8
+7
+Nie, N. H., & Hillygus, D. S. (2002). The impact of Internet use on sociability: Time-diary 
+5
+/
+4
+5
+findings. IT & Society, 1(1), 1–20. 
+8
+3
+5
+Norris, P., & Jones, D. (1998). Editorial: Virtual democracy. Harvard International Journal of 
+5
+2
+ 
+Press/Politics, 3(2), 1–4. 
+b
+y
+ 
+g
+Nowak, P. (2008). Copyright bill protests surge online. CBC News. Retrieved October 26, 
+u
+e
+s
+2008 from http://www.cbc.ca/technology/story/2008/06/13/tech-copyright.html. 
+t
+ 
+o
+n
+Nyland, R., Marvez, R., & Beck, J. (2007, February). MySpace: Social networking or social 
+ 
+1
+2
+isolation? Paper presented at the midwinter conference of the Association for Education 
+ 
+N
+o
+in Journalism and Mass Communication, Reno, NV. 
+v
+e
+m
+Pavot, W. G., Diener, E., Colvin, C. R., & Sandvik, E. (1991). Further validation of the 
+b
+e
+r
+satisfaction with life scale: Evidence for the cross-method convergence of well-being 
+ 
+2
+0
+measures. Journal of Personality Assessment, 57, 149–161. 
+2
+2
+Pearlin, L. (1959). Social and personal stress and escape television viewing. Public Opinion Quarterly, 23, 255–259. 
+Putnam, R. D. (2000). Bowling alone: The collapse and revival of American community. New York: Simon and Schuster. 
+Putnam, R. D. (2004). Bowling together. OECD Observer. Retrieved July 28, 2008, from http://www.oecdobserver.org/news/fullstory.php/aid/1215/Bowling_together.html. 
+Journal of Computer-Mediated Communication 14 (2009) 875–901 ♥ 2009 International Communication Association 899 
+Putnam, R. D., & Goss, K. A. (2002). Introduction. In R. D. Putnam (Ed.), Democracies in flux: The evolution of social capital in contemporary society (pp. 3–19). New York: Oxford University Press. 
+Raacke, J., & Bonds-Raacke, J. (2008). MySpace and Facebook: Applying the uses and gratifications theory to exploring friend-networking sites. CyberPsychology & Behavior, 11, 169–174. 
+Ras¨ anen, P., & Kouvo, A. (2007). Linked or divided by the web?: Internet use and sociability ¨ in four European countries. Information, Communication & Society, 10, 219–241. D
+o
+Raynes-Goldie, K., & Walker, L. (2008). Our space: Online civic engagement tools for youth. 
+w
+n
+l
+In W. L. Bennett (Ed.), Civic life online: Learning how digital media can engage youth 
+o
+a
+d
+(pp. 161–188). Cambridge, MA: MIT Press. 
+e
+d
+ 
+f
+Resnick, P. (2002). Beyond bowling together: Sociotechnical capital. In J. M. Carroll (Ed.), 
+r
+o
+m
+Human-computer interaction in the new millennium (pp. 247–272). Reading, MA: 
+ 
+h
+t
+t
+p
+Addison-Wesley. 
+s
+:
+/
+/
+Rosenberg, M. (1956). Misanthropy and political ideology. American Sociological Review, 21, 
+a
+c
+a
+690–695. 
+d
+e
+m
+Ruggiero, T. (2000). Uses and gratifications theory in the 21st century. Mass Communication 
+i
+c
+.
+o
+& Society, 3, 3–37. 
+u
+p
+.
+c
+Sax, L. J., Gilmartin, S. K., & Bryant, A. N. (2003). Assessing response rates and nonresponse 
+o
+m
+bias in web and paper surveys. Research in Higher Education, 44, 409–432. 
+/
+j
+c
+m
+Scheufele, D. A., & Shah, D. V. (2000). Personality strength and social capital: The role of 
+c
+/
+a
+dispositional and informational variables in the production of civic participation. 
+r
+t
+i
+c
+l
+e
+Communication Research, 27, 107–131. 
+/
+1
+4
+Schonlau, M., Elliot, M. N., & Fricker, R. D. (2002). Conducting research surveys via e-mail 
+/
+4
+/
+8
+and the web. Santa Monica, CA: RAND. 
+7
+5
+/
+4
+Shah, D. V., Kwak, N., & Holbert, R. L. (2001). ‘‘Connecting’’ and ‘‘disconnecting’’ with civic 
+5
+8
+3
+life: Patterns of Internet use and the production of social capital. Political 
+5
+5
+2
+Communication, 18, 141–162. 
+ 
+b
+y
+Shah, D. V., Schmierbach, M., Hawkins, J., Espino, R., & Donavan, J. (2002). Nonrecursive 
+ 
+g
+u
+e
+models of Internet use and community engagement: Questioning whether time spent 
+s
+t
+ 
+o
+online erodes social capital. Journalism & Mass Communication Quarterly, 79, 964–987. 
+n
+ 
+1
+Stirland, S. L. (2007). ‘‘Open-source politics’’ taps Facebook for Myanmar protests. Wired. 
+2
+ 
+N
+Retrieved April 26, 2008, from http://www.wired.com/politics/onlinerights/news/ 
+o
+v
+e
+m
+2007/10/myanmarfacebook. 
+b
+e
+Stone, B. (2007, July 30). New scrutiny for Facebook over predators. The New York Times. 
+r
+ 
+2
+0
+Retrieved November 2, 2008, from 
+2
+2
+http://www.nytimes.com/2007/07/30/business/media/30facebook.html. 
+Tabachnick, B. G., & Fidell, L. S. (2007). Using multivariate statistics (5th ed.). Boston: Pearson. 
+Turkle, S. (1996, Winter). Virtuality and its discontents: Searching for community in cyberspace. The American Prospect, 24, 50–57. 
+Uslaner, E. M. (2002). The moral foundations of trust. New York: Cambridge University Press. 900 Journal of Computer-Mediated Communication 14 (2009) 875–901 ♥ 2009 International Communication Association 
+Valkenburg, P. M., Peter, J., & Schouten, A. P. (2006). Friend networking sites and their relationship to adolescents’ well-being and social self-esteem. CyberPsychology & 
+Behavior, 9, 584–590. 
+Verba, S., Schlozman, K. L., & Brady, H. E. (1995). Voice and equality: Civic voluntarism in American politics. Cambridge, MA: Harvard University Press. 
+Warner, R. M. (2008). Applied statistics: From bivariate to multivariate techniques. Los Angeles: Sage Publications. 
+Wellman, B., Haase, A. Q., Witte, J., & Hampton, K. (2001). Does the Internet increase, D
+decrease, or supplement social capital? Social networks, participation, and community 
+o
+w
+n
+commitment. American Behavioral Scientist, 45, 436–455. 
+l
+o
+a
+White, C. S. (1997). Citizen participation and the Internet: Prospects for civic deliberation in 
+d
+e
+d
+the information age. Social Studies, 88(1), 23–28. 
+ 
+f
+r
+o
+m
+Williams, D. (2006). On and off the ’net: Scales for social capital in an online era. Journal of 
+ 
+h
+t
+Computer-Mediated Communication, 11, 593–628. 
+t
+p
+s
+:
+Winston, B. (1986). Misunderstanding media. Cambridge, MA: Harvard University Press. 
+/
+/
+a
+c
+Wuthnow, R. (1998). Loose connections: Joining together in America’s fragmented communities. 
+a
+d
+e
+Cambridge, MA: Harvard University Press. 
+m
+i
+c
+Zaller, J. (1992). The nature and origins of mass opinion. New York: Cambridge University 
+.
+o
+u
+p
+Press. 
+.
+c
+o
+Zukin, C., Keeter, S., Andolina, M., Jenkins, K., & Delli-Carpini, M. X. (2006). A new 
+m
+/
+j
+c
+engagement? Political participation, civic life, and the changing American citizen. New York: m
+c
+Oxford University Press. 
+/
+a
+r
+t
+i
+c
+l
+e
+/
+1
+4
+About the Authors 
+/
+4
+/
+8
+7
+5
+/
+Sebastian Valenzuela ´ is a doctoral student in the School of Journalism at the 
+4
+5
+8
+University of Texas at Austin. His primary research interest is in the area of political 
+3
+5
+5
+communication, with particular attention to the role of news media and online social 
+2
+ 
+b
+media in shaping people’s political attitudes and behavior. 
+y
+ 
+g
+u
+Address: School of Journalism, University of Texas at Austin, 1 University Station 
+e
+s
+t
+A1000, Austin, TX 78712, USA. Email: sebastianvalenzuela@mail.utexas.edu 
+ 
+o
+n
+ 
+1
+2
+Namsu Park is a doctoral candidate in the Department of Radio, Television, and 
+ 
+N
+o
+Film at the University of Texas at Austin. Her research focuses on the effect of new 
+v
+e
+m
+media technology on society, culture and the individual. 
+b
+e
+r
+Address: Department of Radio TV Film, University of Texas at Austin, 1 University 
+ 
+2
+0
+2
+Station A0800, Austin, TX 78712, USA. Email: nspark@mail.utexas.edu 
+2
+Kerk F. Kee is a doctoral student and assistant instructor in Organizational Communication in the Department of Communication Studies at the University of Texas at Austin. His current research examines technology adoption, distributed collaboration, and virtual organization. 
+Address: P.O. Box 8287, Austin, TX 78713, USA. Email: research@ekerk.com Journal of Computer-Mediated Communication 14 (2009) 875–901 ♥ 2009 International Communication Association 901

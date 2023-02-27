@@ -1,0 +1,335 @@
+﻿The current issue and full text archive of this journal is available on Emerald Insight at: 
+www.emeraldinsight.com/0959-0552.htm
+	
+
+
+
+Cultivating the brand-customer relationship in Facebook fan pages A study of fast-fashion industry 
+Shing-Wan Chang 
+Department of Marketing, Branding and Tourism, 
+Middlesex University, London, UK, and 
+Shih-Heng Fan 
+Department of Planning, Publicis Media, Taipei, Taiwan 
+Abstract 
+Purpose – The purpose of this paper is to examine the determinants of continuous brand-customer relationship via company-hosted social networking sites (SNSs). Factors that influence fans to continue using fast-fashion brands’ Facebook fan pages and to maintain the brand-customer relationship are discussed first. Subsequently, the predictors of fans’ engagement and affective commitment to a fast-fashion brand are examined with the aim to explore the key elements that nurture the brand-customer relationship via brands’ SNSs. 
+Design/methodology/approach – A quantitative research was conducted and the structural equation modelling was used to test the hypotheses on a sample of 202 fast-fashion Facebook fan page users in Taiwan. 
+Findings – The results demonstrate that engagement, affective commitment and continued intention to use are predominantly influenced by, in turn, social interaction tie, content value and affective commitment. Research limitations/implications – The study is limited because it investigated the fast-fashion fan page users in an Asian country, so the findings cannot be generalised to other contexts. Practical implications – The findings suggest that fan page managers’ initiation and involvement in conversations, frequent responses, listening to fans’ opinions and improving fans’ experiential value may facilitate them to engage in the brand’s activities at a higher level. 
+Originality/value – The findings of this integrated model suggest managerial guidelines for brand managers in this industry regarding how to maintain the brand-customer relationship through social media strategy and how they contribute to theory building in continuance intention of SNSs. Keywords Affective commitment, Content value, Continued intention to use, Engagement, Self-image congruence, Social interaction tie 
+Paper type Research paper 
+1. Introduction 
+Social networking sites (SNSs) have been used by numerous brands as two-way communication platforms towards the target audience to stream instant information, as well as to initiate dialogues and interactions (Key Note, 2015a; Park and Cho, 2012; Kim and Ko, 2010; Nisar and Whitehead, 2016; Gonzalez-Lafaysse and Lapassouse-Madrid, 2016). Hence, the consumer can keep pace with brands’ movements and engage in brands’ online environment, through brands’ SNSs. This study specifically investigates the factors influencing the continuous brand-customer relationship, via fast-fashion brands’ company hosted Facebook fan pages. The fast-fashion trends are defined by Key Note (2015a, p. 11) that fashion retailers distribute catwalk-inspired items at much lower prices so that consumers can affordably embrace products embedded with the latest fashion elements and fashion retailers increase the amount of sales. Those fast-fashion brands track fashion trends quickly and make popular new designs at a cheaper price (Barnes and Lea-Greenwood, 2010). Successful fast-fashion retailers, such as Topshop and Zara, regularly incorporate the up-to-date fashion trend and launch new products on a weekly basis (Mollá-Descals et al., 2011). 
+Facebook 
+fan pages
+253 
+Received 16 May 2016 Revised 17 June 2016 
+25 September 2016 
+Accepted 15 November 2016 
+International Journal of Retail & Distribution Management Vol. 45 No. 3, 2017 
+pp. 253-270 
+© Emerald Publishing Limited 0959-0552 
+DOI 10.1108/IJRDM-05-2016-0076 
+IJRDM 45,3
+254 
+Facebook has been the most important social media platform for fashion brands (Mintel, 2014), where the real-time engagement via Facebook indeed extends the brand affinity. Fashion retailers showcase their brands via Facebook by highlighting image heavy, appealing and sharable content to encourage customer engagement. Although the ease of joining a Facebook fan page and its simple usability have led to a rather high popularity on numerous valuable fast-fashion brands’ social network platforms (demonstrated as the number of “likes”), the lack of fans’ actual and long-term engagement still remains a problem that may harm the brand-customer relationship (Poyry et al., 2013). eMarketer (2015) shows that increasing audience engagement has been considered the crucial objective in social media marketing. Thus, identifying and comprehending the consumer’s motivation to continue using brands’ SNSs will further help understand the drivers of the sustainable relationship between customers and a brand. This study predominantly focusses on fans’ total experience in the context of brands’ SNSs from emotional (e.g. engagement) and affective aspects (e.g. affective commitment), instead of brands’/products’ functional attributions. With the aim of capturing customer loyalty through their emotional responses, engagement and affective commitment with the brand are deemed as indispensable ingredients for the lasting brand-customer relationship. These not only allow fans to genuinely and continuously participate in brands’ social environment but facilitate marketers to accomplish their goals to sustain the relationship with its customers (Luo et al., 2011; Wolny and Mueller, 2013). 
+Therefore, the aim of this study is to examine the key factors that affect fans’ continuous intention to maintain the relationship with fast-fashion brands via company-hosted Facebook fan pages, using the survey data collected in Taiwan where Facebook penetration rate is very high at 83.8 per cent (Internet World Stats, 2016). The main objectives of this study are to explore the determinants of continuous brand-customer relationship personified by fast-fashion brands’ Facebook fan pages; and investigate fans’ motivations that influence their engagement and affective commitment with fast-fashion brands. These objectives are designed to answer the following research questions: 
+RQ1. Why are fans willing to continue using fast-fashion brands’ Facebook fan pages to maintain the relationship with fast-fashion brands? 
+RQ2. What are antecedents of the sustainable brand-customer relationship via fast-fashion brands’ Facebook fan pages? 
+The remainder of the paper is organised as follows. Section 2 describes the literature related to the influential factors of brand-customer relationship and hypotheses development. Section 3 presents the methodology used. Section 4 contains hypotheses testing and results. The final section shows the conclusions and implications. 
+2. Theoretical background and hypotheses 
+This section discusses the relevant variables that prior studies have shown to influence the continued intentions of using online brand communities, followed by a description of the research model and hypotheses. 
+2.1 Continued intention to use 
+Fans’ continuance intention of usage in the context of company-hosted Facebook fan pages may have influence on the performance of organisations, including sales, future purchase and potential value of community members who might be non-buyers at present (Poyry et al., 2013; Gonzalez-Lafaysse and Lapassouse-Madrid, 2016). Additionally, user retention is considered an essential determinant of sustaining the long-term intangible assets or profitability of B2C (business-to-consumer) organisations. Therefore, continued intention to 
+use company-hosted SNSs becomes a fundamental metric to measure the performance of a company’s social network platform (Thong et al., 2006). Meanwhile, the continuance intention may also be concerned with the long-lasting relationship between users (e.g. existing customers, potential customers) and a brand (Tzokas et al., 2001). 
+Numerous prior studies have examined consumers’ behavioural intention through TAM (technology acceptance model) (Gupta et al., 2010; Al-Maghrabi and Dennis, 2011) and theory of planned behaviour (TPB) (Lee et al., 2005; Bagozzi and Dholakia, 2002). TAM is a well-known model for explaining how consumers accept and use a technology. TPB posits that an individual’s intention to do a given behaviour is useful in predicting the actual behaviour. Both models have been applied to explain people’s intention to adopt new technology and usage. The tenet of the models focusses on initial acceptance, pre-acceptance or -usage expectation and these models are typically influenced by second hand information such as others’ opinions, WOM or information propagated via mass media (Bhattacherjee, 2001; Casalo et al., 2010). However, the success and viability of a Facebook fan page relies heavily on individuals’ continuance intention of usage related to his/her own experience or even the affection towards the fan page. If a fan’s desire or experience towards a fan page shrank or lessened after “Liking” (initial adoption), then the fan page may turn out to be disused subsequently (Thong et al., 2006). Therefore, this study investigates continued intention to use through two main aspects of engagement and affective commitment. These aspects emphasise an individual’s experiential value and his attachment towards a brand. 
+Furthermore, most prior studies have discussed the continuous participation with online brand communities or the loyalty towards community membership (Casalo et al., 2010; Fang and Chiu, 2010). The motif of these studies is mainly derived from the group’s collective goals or social identity with the network. However, this study specifically explores fans’ continuance intention towards the brand-customer relationship, in which a fan’s continuance intention of fan page usage is ascribed to one’s brand-focussed mind, experiential value and emotional bond with the brand. 
+2.2 Factors influencing continuous brand-customer relationship 
+2.2.1 Engagement. Engagement represents the combination of behavioural responses with an emotional context (Vivek et al., 2012) and contains specifically interactive relationship between individuals and a brand (Brodie et al., 2013; Wirtz et al., 2013). Relationship marketing theory highlights the interactivity and experiential value as the notion of engagement, which goes beyond the solely usage intensity (Vivek et al., 2012; Wirtz et al., 2013; Brodie et al., 2013). Also, experiential marketing emphasises the extent that customers are emotionally involved with an object, according to their memorable experiences (Luo et al., 2011). Pleasurable experiences create hedonic values to engage customers and enhance emotional responses to brands. Thus, engagement is a direct and crucial metric of customer experience, which engages customers in a personal way and makes them feel as if being part of the brand’s network (Luo et al., 2011). Along the same line, engagement in this study is defined as an interactive, active participating and content-contributing behaviour within the online brand-related community (Poyry et al., 2013). 
+In a brand-customer relationship, engagement is defined as “the level of a customer’s motivational, brand-related and context-dependent state of mind characterised by specific levels of cognitive, emotional and behavioural activity in brand interactions” (Brodie et al., 2013, p. 106). Thus, consumers’ engagement in an online brand community stands for his or her overall engagement towards the brand (Wirtz et al., 2013). One of the most ubiquitous platforms where customers engage behaviourally with brands is SNSs, which are particularly suitable for developing and consolidating brand-customer relationships 
+Facebook fan pages
+255 
+IJRDM 45,3
+256 
+through users’ repeated interactions, knowledge co-creation and event or activity participation (Huang et al., 2013). In the context of company-hosted Facebook fan pages, fans’ interactive and integrative participation therefore becomes the focus of a brand’s social media strategy, which aims at engaging, integrating and immersing fans in the brand’s fan page community ( Jahn and Kunz, 2012). Given that engagement is a significant driver and facilitator for the brand-customer relationship, the hypothesis below was proposed: 
+H1. Engagement has a positive effect on fans’ continued intention to use fast-fashion brands’ Facebook fan pages. 
+Engagement is the predictor of cognitive and affective commitment to an active brand customer relationship, personified by the website or other computer-mediated entities (Wirtz et al., 2013; Huang et al., 2013). Likewise, affective commitment to a brand is significantly determined by active participation (engagement) in its online brand community (Royo-Vela and Casamassima, 2011; Casalo et al., 2010; Poyry et al., 2013; Brodie et al., 2013). Thus, this study posits that: 
+H2. Fans’ affective commitment to fast-fashion brands’ Facebook fan pages is positively influenced by their engagement. 
+2.2.2 Affective commitment. The foundation for maintaining brand-customer relationship is keeping the promises of customers and their ongoing desire to sustain the relationship with a brand; thereby commitment is regarded as the highest level of relational bond (Sánchez-Garcia et al., 2007; Rufín et al., 2013). In accordance with commitment theory (Zhou, 2011; Chen et al., 2013), affective commitment serves as a psychological or emotional barrier to switch a brand, due to one’s emotional attachment and desire to continue the brand-customer relationship instead of being driven by instrumental motivations (Richard and Zhang, 2012). Sánchez-Garcia et al. (2007) show that affective commitment is a significant constituent of relationship quality, in which customers’ emotional motives and feelings of belonging towards a brand play a fundamental role. 
+Affective commitment is defined as “the psychological attachment of an exchange partner to the other based on feelings of identification, loyalty, and affiliation” (Vivek et al., 2012, p. 135), which pertains to an emotional, intrinsic and desire-based attachment and represents the enduring desire to maintain a valued relationship (Chen et al., 2013; Wu et al., 2012; Jahn and Kunz, 2012). Organisations (brands) can acquire more follow-up benefits derived from customers’ affective commitment, due to a strong emotional attachment which reflects customers’ bond with a brand (Luo et al., 2011), such as loyalty (Zhou et al., 2012; Wu et al., 2012), WOM communication (Wolny and Mueller, 2013) and repurchase (Brodie et al., 2013). Jahn and Kunz (2012) in their study notes that commitment to a brand’s online community functions as brand commitment, and participants of the community possess much stronger commitment towards the brand, compared with others who do not belong to the community. Thus, affective commitment in this study primarily focusses on fans’ unique affection, evoked by a particular fast-fashion brand and the emotional attachment to an active brand-customer relationship (Wolny and Mueller, 2013; Huang et al., 2013). Wolny and Mueller’s (2013) study reports that the emotional bond with brands is particularly crucial in the fashion domain, which heavily relies on emotional differentiation rather than functional product differentiation. If a customer has a high affective commitment to a fast-fashion brand, he/she might be motivated to continuously maintain the brand-customer relationship (Choi et al., 2010). Thus, this study examines the following hypothesis: 
+H3. Affective commitment has a positive effect on fans’ continued intention to use fast-fashion brands’ Facebook fan pages. 
+2.3 The formation of brand-customer relationships 
+2.3.1 Social interaction tie. According to the social capital theory, social capital is conceptualised as the sum of the assets or resources inherent in interpersonal relationships among individuals or in their connections with the networks (Chang and Chuang, 2011; Chao et al., 2007). Social interaction tie is categorised as the structural dimension of social capital, indicating the overall pattern and strength of the relationship, such as the amount of time spent, the frequency of interaction and the emotional intensity among individuals in the same network (Liao and Chou, 2011; Hsiao and Chiou, 2012; Chiu et al., 2006). Ties based on social interaction can be established via SNS because the users can express themselves and communicate with others to develop and maintain their interpersonal networks through this online platform (Lin and Lu, 2011; Kim, Park and Jin, 2008; Kim, Choi, Qualls and Kyesook, 2008). As such, social interaction ties are the fundamental roots of building relationships and holding relationships together, due to the strength of social bond (i.e. a close interpersonal relationship), which is also associated with the relationship continuity (Chao et al., 2007; Liao and Chou, 2011; Chiu et al., 2006). Nahapiet and Ghoshal (1998) argue that the underlying proposition of the social capital theory is a tie/ties in a network providing access to resources (Chiu et al., 2006), which has an enormous impact on one’s behavioural intention (Huang et al., 2013). A close interpersonal relationship may enclose the social capital inherent in the relationship that may result in members’ higher engagement in a network (Chao et al., 2007). 
+The social capital theory reports that structural social capital (social interaction tie) is an essential driver of the relational social capital (affective commitment) ( Jones and Taylor, 2012), referring to the affective nature of social relationships within a collective (Wiertz and Ruyter, 2007). This tenet is consistent with Granovetter’s (1973) theory of strong ties and weak ties, given that an individual’s attachment towards a relationship is likely to blossom, if a strong tie exists between the two parties (Lin and Lu, 2011). The communicative interplay between organisations and customers plays a principal role in forging their relational bonds, and the relationship quality may also be enhanced, due to the high quality of interaction between the two parties (Sánchez-Garcia et al., 2007; Wiertz and Ruyter, 2007). The hypotheses below were thereby developed: 
+H4. Social interaction tie has a positive effect on fans’ engagement in fast-fashion brands’ Facebook fan pages. 
+H5. Social interaction tie has a positive influence on fans’ affective commitment to fast-fashion brands’ Facebook fan pages. 
+2.3.2 Self-image congruence. Self-concept theory and image congruency theory suggest that individual’s behaviour is directed towards the protection, maintenance and enhancement of his or her self-concept (sense of self) (Heath and Scott, 1998; Kwak and Kang, 2009; Jahn and Kunz, 2012; Diamantopoulos et al., 2005; Parker, 2009; Liu et al., 2012; Andreassen and Lanseng, 2010). Self-image congruence notes that consumers evaluate and select consumption objects according to how the objects’ images correspond to the consumer’s self-image (Andreassen and Lanseng, 2010; Kanga et al., 2012; Grzeskowiak et al., 2016), because consumer tends to embrace a brand based on the congruity between his or her self-concept and the brand image or its symbolic meaning (Diamantopoulos et al., 2005; Ibrahim and Najjar, 2008; Liu et al., 2012). Brand image refers to consumers’ perceptions and beliefs held about a particular brand, or the set of brand associations held in consumer memories (Keller, 1993; Matthiesen, 2010; Hu et al., 2012; Ross and Harradine, 2011; Carlson et al., 2008). Keller (1993) proposed that brand image plays a vital role in conceptualising brand equity in addition to brand awareness (i.e. recognition and recall), and it is composed of brand personality, product attributes and benefits of a brand (Bian and Moutinho, 2011; 
+Facebook fan pages
+257 
+IJRDM 45,3
+258 
+Ross and Harradine, 2011; Carlson et al., 2008). Chang and Liu (2009) note that brand image is one of the vital ingredients in establishing brand-customer relationships, and that the brand value of organisations as well as the brand’s intangible assets are also likely to be improved via brand image development. Therefore, self-image congruence is essential for understanding consumers’ decision-making and representation of their insight (Bosnjak and Rudolph, 2008; Ibrahim and Najjar, 2008). 
+The perception of similarity or overlap with a particular brand enables brand admirers to engage in the brand’s online community, or its activities, at a higher level ( Jahn and Kunz, 2012; Carlson et al., 2008; Casalo et al., 2010). Thus, the following hypotheses were offered: 
+H6. Self-image congruence has a positive effect on fans’ engagement in fast-fashion brands’ Facebook fan pages. 
+H7. Self-image congruence has a positive effect on fans’ affective commitment to fast-fashion brands’ Facebook fan pages. 
+2.3.3 Content value. Content value in this study was derived from intrinsic and extrinsic motivational perspectives (Lee et al., 2005), in turn, represented by hedonic value and utilitarian values (Foster et al., 2010; Poyry et al., 2013; Jahn and Kunz, 2012; Hsu and Lu, 2007; Premkumar et al., 2008; Kim, 2012). The two types of values are notably important, when it comes to participation in online communities ( Jin et al., 2010; Hsu and Lu, 2007; Bagozzi and Dholakia, 2002) or in online activities on SNSs (Foster et al., 2010; Poyry et al., 2013; Jahn and Kunz, 2012). 
+Hedonic value represents an intrinsic motivation, and refers to the extent that participating in an online community is perceived as enjoying, entertaining and pleasant (Luo et al., 2011; Hsu and Lu, 2007; Hunt et al., 2012; Dholakia et al., 2004). Hence, hedonic value plays a significant role in content posted on SNSs (Bagozzi and Dholakia, 2002; Jahn and Kunz, 2012). Consumers tend to make favourable evaluations and engage in playful behaviours, demonstrating a direct effect of enjoyment on behavioural outcomes (Luo et al., 2011). 
+Utilitarian value resembles the conception of perceived usefulness in TAM (Lee et al., 2005), indicating the cognitive evaluation with respect to the utility or content of SNSs (Zhou et al., 2012; Premkumar et al., 2008; Kim, 2012). Information value is deemed as a predominant utilitarian value, accrued in online communities for accomplishing or achieving purposive tasks (Zhou et al., 2012; Wiertz and Ruyter, 2007; Park and Cho, 2012), and also as a determinant of participation in online brand communities (Shang et al., 2006) as well as social networks (Foster et al., 2010; Jahn and Kunz, 2012). Moreover, the members of a virtual community may feel attracted to the social group, if their motives are achieved or needs are fulfilled, due to the usefulness or the information value provided by the community (Zhou et al., 2012; Cheung and Lee, 2009). Thus, the following hypotheses were presented: 
+H8. Content value has a positive influence on fans’ engagement in fast-fashion brands’ Facebook fan pages. 
+H9. Content value has a positive effect on fans’ affective commitment to fast-fashion brands’ Facebook fan pages. 
+On the basis of the aforementioned hypotheses, the research model of this study is as shown in Figure 1. 
+3. Research methodology 
+3.1 Measurement 
+The questionnaire of this study was designed to measure the effect of social interaction tie, self-image congruence and content value on fans’ engagement on the fast-fashion brand’s 
+Social 
+Interaction Tie Self-image 
+H4 
+H5 
+H1 
+H6 
+Engagement 
+Continued 
+Facebook fan pages
+Congruence Content Value Hedonic Value 
+H7 
+H8 
+H9 
+H2   
+H3 
+Affective 
+Commitment 
+Intention to Use 
+259 
+Utilitarian Value Figure 1. The research model 
+Facebook fan page as well as on affective commitment to the brand, and also whether or not these aforementioned constructs will lead to fans’ continued intention to use the fan page. As shown in Table AI, each measured item in each construct was adapted from credible prior studies to ensure the content validity. Content value, a second-order latent variable, was measured by utilitarian and hedonic values. All measurement items were measured on a seven-point Likert scale, with anchors ranging from “strongly disagree”, represented by 1, to “neutral” at the midpoint (4), and to “strongly agree”, represented by 7. The questionnaire was revised and confirmed by senior marketing academics with the content validity. All measures were pretested and verified during the pilot study. 
+3.2 Data collection 
+The survey was conducted by a self-administered questionnaire in Taiwan through convenience sampling because Facebook users account for 83.8 per cent of the whole population (Internet World Stats, 2016). To avoid the systematic response bias from using a single method of data collection, both paper-and-pencil questionnaire and online survey were used. Respondents were users of any fast-fashion brand’s Facebook fan page and requested to identify their most used fast-fashion brand’s Facebook fan page in the past six months before completing the main questionnaire. After eliminating the invalid questionnaires with missing values, 202 valid questionnaires were retained from 242 survey questionnaires distributed. In more detail, 85 samples were collected from university students, 53 samples were obtained from customers in a downtown department store and 64 samples were collected via Facebook. Before assessing the measurement model, reliability analysis was conducted, Cronbach’s α was measured to prove the internal consistency of each construct. The degree of reliability of all constructs was excellent, ranging from 0.854 to 0.926 (Nunnally, 1978). To check the common method bias, Harman’s single-factor test (Podsakoff et al., 2003) was conducted using unrelated principal component analysis. The result has shown that no single factor accounted for most of the variance in the variables, suggesting there are no common method bias issues in the data. 
+4. Analysis and results 
+Among a total of 202 respondents, 56 per cent are male and the other 44 per cent are female. The majority of respondents were in the age group of between 18 and 24 (38.1 per cent) and 25 and 34 years (42.57 per cent). Of these, 71.8 per cent of respondents held a bachelor 
+IJRDM 45,3
+260 
+Table I. 
+CFA results 
+(university/college) degree followed by master’s degree (17.82 per cent) and high school graduates (8.42 per cent). Nearly half of the respondents’ income are less than 20,000 Taiwanese dollars (47 per cent), followed by 29 per cent of respondents whose monthly income were between 20,000 and 40,000 Taiwanese dollars, and 14.85 per cent of them had income between 40,000 and 60,000 Taiwanese dollars. Moreover, the most commonly used fast-fashion brand’s Facebook fan page by respondents are ZARA (34.7 per cent) and UNIQLO (32.7 per cent). 
+4.1 Measurement model 
+Two-step approach suggested by Anderson and Gerbing (1988) was adopted to examine the measurement model and structural model using AMOS 21.0. The confirmatory factor analysis was conducted to test the measurement model. Table I shows the result of CFA. The χ2/df was less than the recommended threshold of 3 (CMIN/df¼ 1.888, p¼ 0.000), therefore the model fit to the data is excellent (Hayduk, 1987). Also, other model fit indices (GFI¼ 0.872, NFI¼ 0.913, TLI¼ 0.947, CFI ¼ 0.957, RMSEA ¼ 0.066) were all satisfactory (Segars and Grover, 1993; Seyal et al., 2002). Each factor loading conformed to the recommended threshold of between 0.5 and 0.95 and even achieved the more strict threshold value of 0.7 (Bagozzi and Yi, 1988). Moreover, the factor weights of hedonic value and utilitarian value (first-ordered constructs) for the content value (second-order construct) were 0.88 and 0.91, respectively. 
+Reliability and convergent validity of the factors were examined by composite reliability (CR) and by the average variance extracted (AVE). Table II displays the convergent and discriminant validities of the measures in the proposed model. The CR of each construct reached the acceptance value at 0.7, ranging from 0.882 to 0.929, thereby all constructs were shown as highly reliable (Bagozzi and Yi, 1988; Hair et al., 1998). The AVE of each construct reached the acceptable level of 0.50 suggested by Fornell and Larcker (1981), indicating a high portion of variance in items explained by the construct. All factor loadings (0.5-0.95), CR (W0.7) and AVE (W0.5) reached their recommended threshold, and each construct’s CR all exceeded its AVE (Hair et al., 1998; Fornell and Larcker, 1981). Thus, the convergent 
+Construct Item Loading Mean SD Cronbach’s α 
+Social interaction tie ST1 0.858 3.27 1.750 0.913 ST2 0.869 3.03 1.630 
+ST3 0.950 3.09 1.769 
+Self-image congruence SC1 0.868 4.70 1.151 0.926 SC2 0.834 4.66 1.170 
+SC3 0.870 4.75 1.241 
+Hedonic value HV1 0.831 4.86 1.181 0.897 HV2 0.714 4.33 1.336 
+HV3 0.902 4.67 1.156 
+Utilitarian value UV1 0.839 4.76 1.131 0.913 UV2 0.824 4.83 1.170 
+UV3 0.815 4.79 1.216 
+Engagement EG1 0.930 3.51 1.774 0.920 EG2 0.931 3.56 1.908 
+EG3 0.799 3.92 1.573 
+Affective commitment AC1 0.868 4.11 1.399 0.874 AC2 0.853 4.27 1.489 
+AC3 0.811 4.03 1.353 
+Continued intention to use CI1 0.854 3.83 1.520 0.854 CI2 0.827 4.22 1.402 
+CI3 0.875 3.98 1.593 
+validity of the measurement model was confirmed. The discriminant validity was assessed by comparing the squared correlation between two constructs with AVE between each pair of constructs and it is confirmed when the squared correlation between the two constructs is greater than the AVE between each pair of constructs (Fornell and Larcker, 1981). 
+4.2 Structural model 
+The results of the structural model analysis show that the overall model fit was highly qualified and satisfactory (CMIN/df ¼ 1.700, p ¼ 0.00, GFI ¼ 0.889, NFI ¼ 0.926, TLI ¼ 0.958, CFI ¼ 0.968, RMSEA ¼ 0.059) (Hayduk, 1987; Segars and Grover, 1993). Moreover, the social interaction tie, self-image congruence, and the content value explained approximately 69.4 per cent of the variance on engagement in this research model. Affective commitment was explained as 71.6 per cent of the variation by this model. The model accounts for 78.6 per cent of the explained variances in continued intention to use. Hypotheses’ testing was conducted via structural equation modelling after the overall model fit was confirmed. Figure 2 demonstrates the results of the proposed research model and standardised path coefficients for all hypotheses. 
+The significantly direct effects of engagement ( β ¼ 0.272, p ¼ 0.005) on continued intention to use were found, supporting H1. The relationship between engagement and 
+CR AVE EG ST SC CV AC CI 
+EG 0.918 0.790 0.889 
+ST 0.922 0.798 0.823 0.893 
+SC 0.893 0.735 0.525 0.496 0.857 
+CV 0.929 0.867 0.425 0.382 0.690 0.931 AC 0.882 0.713 0.715 0.650 0.695 0.671 0.844 CI 0.888 0.726 0.806 0.768 0.607 0.549 0.804 0.852 Note: The diagonal terms indicate the square root of AVE for each construct; the off-diagonal terms show the correlations 
+Facebook 
+fan pages
+261 
+Table II. 
+Convergent validity and discriminant validity 
+Social Interaction Tie 
+Self-image 
+Congruence 
+Content Value 
+0.740***   
+0.129 ns 
+0.045 ns 
+0.239*** 
+R2=0.694 Engagement 
+0.409*** 
+0.272** 
+R2=0.786 
+Continued Intention to Use 
+Hedonic Value Utilitarian Value 
+0.274*** 
+0.105 ns 0.427*** 
+Affective 
+Commitment 
+R2=0.716 
+Figure 2. 
+Results of structural 
+Notes: ns=non-significant. **p<0.05; ***p<0.001 
+model analysis 
+IJRDM 
+45,3
+262 
+Table III. 
+Summary of hypothesis testing results 
+affective commitment was verified to be significantly positive ( β ¼ 0.409, po0.001), supporting H2. The significantly direct effects of affective commitment ( β ¼ 0.427, po0.001) on continued intention to use were found, supporting H3. Social interaction tie ( β ¼ 0.740, po0.001) was positively related to engagement, supporting H4. The effect of social interaction tie on affective commitment was observed as insignificant ( β ¼ 0.105, p ¼ 0.287), rejecting H5. The direct effects of self-image congruence on engagement ( β ¼ 0.129, p ¼ 0.098) was not significant, rejecting H6. Yet, the path of self-image congruence to affective commitment ( β ¼ 0.239, p ¼ 0.005) was verified, supporting H7. The content value had no significant effect on engagement ( β ¼ 0.045, p ¼ 0.541), rejecting H8. However, it had a significantly direct effect on affective commitment ( β ¼ 0.274, po0.001), supporting H9. The hypothesis testing results are summarised in Table III. Overall, six of nine hypotheses were supported (H1-H4, H7, H9). 
+5. Discussion and implications 
+5.1 Discussion and theoretical implications 
+This study makes significant contributions to the SNSs literature and fashion retailing marketing. First, this study proposes and tests a new research model to discover the essential components of continuous brand-customer relationship, by examining the determinants of fans’ intention to continue using fast-fashion brands’ Facebook fan pages. Second, this study is first of the kind investigating the antecedents that influence the formation of the brand-customer relationship via SNSs from three dimensions of social capital theory, self-congruity theory and motivation perspectives. The findings of this study not only extend the extant literature in the fast-fashion contexts but also provide useful implications for marketers. 
+The overall result provides support for the proposed model of this study. The direct effects of engagement and affective commitment on continued intention to use were both found to be significantly positive. Also, the significantly indirect effect of engagement on continued intention to use was observed, through the mediation of affective commitment. Among the three antecedents of this model, social interaction tie was observed to be the most influential in nurturing the relationship between fans and a brand, in terms of engagement and affective commitment. Additionally, the findings provide theoretical and managerial contributions to the growing body of knowledge on engagement in company hosted Facebook fan pages. 
+Primarily, this study provides significant implication that engagement is an essential indicator for the formation and extension of brand-customer relationship. Theoretical extensions of engagement are contributed from three viewpoints. First, engagement was found to be a determinant of continued intention to use. The directly positive impact of engagement on continued intention to use is consistent with the study of Poyry et al. (2013). 
+Hypothesis Result 
+H1: Engagement→continued intention to use Supported H2: Engagement→affective commitment Supported H3: Affective commitment→continued intention to use Supported H4: Social interaction tie→engagement Supported H5: Social interaction tie→affective commitment Rejected 
+H6: Self-image congruence→engagement Rejected H7: Self-image congruence→affective commitment Supported H8: Content value→engagement Rejected H9: Content value→affective commitment Supported 
+This result suggests that continuance intention of fan page usage or one’s membership is significantly related to his/her engagement in company-hosted Facebook pages. Second, engagement and affective commitment were proven to be catalysts of the long-lasting relationship between fans and a brand. And the significantly positive relationship between engagement and affective commitment extends the engagement model of Vivek et al.’s (2012) study. Thus, fans’ affective commitment to a brand or its SNS will be strengthened and evolved from the emotional involvement in brand interactions (Luo et al., 2011; Brodie et al., 2013; Poyry et al., 2013; Jahn and Kunz, 2012). Moreover, this study verifies the indirectly positive relationship between engagement and continued intention to use mediated by affective commitment, suggesting that the whole context of fans’ emotional responses can ultimately develop their behavioural intention to continue the brand customer relationship. Third, results of this study supported the directly positive effects of social interaction tie on engagement, in the context of fast-fashion brands’ Facebook fan pages. Since relationship ties are established based on social interactions (Tsai and Men, 2013), this study conceptualises interactions between fans and SNS representatives of brands as the predominant antecedent to engagement. The significantly positive relationship between social interaction tie and engagement is in accordance with prior studies (Wiertz and Ruyter, 2007; Kim and Ko, 2012), given that frequent and intense interactions between users and brand representatives will strengthen his or her quality and quantity of participation as well as contribution to brands’ social network platforms. 
+Second, affective commitment was found to have the strongest impact on continued intention to use. This study provides a new insight towards community continuance intention by identifying the relationship between affective commitment and continued intention to use, based on an individual’s affection or psychological bond with a particular brand (Choi et al., 2010). Most prior studies record that individuals’ continuance intention is based on his/her attachment to a collective entity or to the social group ( Jin et al., 2010), such as social virtual world services (Zhou et al., 2012) or virtual communities (Cheung and Lee, 2009). As opposed to findings of these prior studies, this study provides a new continuance model, which deems brand-driven or self-experienced attachment as the most essential motif in continuance intention towards company-hosted SNSs. 
+Third, this study adopts the social interaction tie from the structural dimension of social capital from the perspective of social capital theory to examine its effect on brand-customer relationship embodied through engagement and affective commitment. This study discovered that, if the interactive or interpersonal relationship between two parties has no emotional basis, this customer may not be motivated to consolidate the psychological bond. 
+Furthermore, in line with the study of Zhang and Bloemer’s (2008), self-image congruence was found to positively influence affective commitment, given that the congruency between customers’ self-concept and brand image is rather vital in the ready-to-wear section. Self-image congruence in this study predominantly refers to fans’ self-identification with a particular brand; in other words, the image congruity between fans’ actual-self-concept and the brand’s brand image. As the emphasis of image congruity between fans and a brand in this study, identification with a company-hosted Facebook fan page is therefore regarded as identification with the brand (Kim, Park and Jin, 2008; Kim, Choi, Qualls and Kyesook, 2008). 
+Lastly, numerous extant research verifies the significantly positive effect of hedonic value on affective commitment, but the relationship between utilitarian value and affective commitment was found to be insignificant (Wiertz and Ruyter, 2007; Zhou et al., 2012; Cheung and Lee, 2009; Hsu and Lu, 2007). In contrast, the construct of content value, a combination of both hedonic and utilitarian value from motivational perspectives was found to have a significantly positive effect on affective commitment. If the content value is 
+Facebook fan pages
+263 
+IJRDM 45,3
+264 
+tempting, enjoyable and valuable, the content receivers may increase their affective commitment to the brand, as a behavioural outcome is derived from the intrinsic/emotional and extrinsic/purposive gains (Luo et al., 2011). 
+5.2 Managerial implications 
+The findings provide significant managerial contributions to brand communicators or representatives and help them further comprehend the mechanism to underpin and strengthen the brand-customer relationship via SNSs. To improve fans’ engagement level, page managers are suggested to frequently initiate and participate in dialogues with fans through constant listening, answering and sharing to enhance their experiential value and interactivity. Moreover, offering creative or interactive activities to increase interactions between fans and the brand is also recommended. For instance, page managers can host a poll on their fan pages in light of the most favourable fashion style/category or ask fans’ opinions regarding the current or upcoming fashion trends. By doing so, it can not only help companies understand fans’ present preference or needs but facilitate interactions between fans and brand communicators via SNSs. 
+Moreover, the delivery of fast-fashion brands’ image via Facebook is an essential tactic for building the continuous relationship with customers. Page managers should often create or post contents that reflect the brand image via communication tools (e.g. text, image, video) and constantly propagate the tenet or spirit of the brand in the way of storytelling. Content equipped with both hedonic and utilitarian values may evolve fans’ brand attachment over time and gradually cultivate their intention to maintain the brand-customer relationship, as a result of their psychological dimension of loyalty. Therefore, as a brand communicator, page managers should propagate the content of brands’ SNSs that is amusing, enjoyable, informative and incentive to fulfil fans’ needs. With the aim to nurture and foster fans’ continuance intention towards the brand-customer relationship as well as the usage of brands’ SNSs, brand communicators should amplify the interaction with fans and constantly increase their experiential value as well as emotional bond with the brand. 
+5.3 Limitations and future research 
+Primarily, the behaviour of male and female towards fan page may differ; future research is therefore suggested to investigate the impact of gender on fan page continuance usage. Moreover, the other limitation is that this study focussed on the fast-fashion fan page users in Taiwan, so the findings cannot be generalised to other countries or other industries, because of the culture and industry differences. Despite the fact that the sample of this study represents the target young group of fashion retailers, the small sample size implies that the findings may not be generalisable. As such, a cross-cultural study using larger samples collected from different sectors is recommended for future research. Furthermore, this study acknowledges the disadvantage of convenience sampling. Future research can conduct random sampling for data collection to increase generalisability. 
+References 
+Al-Maghrabi, T. and Dennis, C. (2011), “What drives consumers’ continuance intention to e-shopping?: conceptual framework and managerial implications in the case of Saudi Arabia”, International Journal of Retail and Distribution Management, Vol. 39 No. 12, pp. 899-926. 
+Anderson, J.C. and Gerbing, D.W. (1988), “Structural equation modeling in practice: a review and recommended two-step approach”, Psychological Bulletin, Vol. 103 No. 3, pp. 411-423. 
+Andreassen, T.W. and Lanseng, E.J. (2010), “Service differentiation: a self-image congruency perspective on brand building in the labor market”, Journal of Service Management, Vol. 21 No. 2, pp. 212-236. 
+Bagozzi, R.P. and Dholakia, U.M. (2002), “International social action in social communities”, Journal of Interacting Marketing, Vol. 16 No. 2, pp. 2-21. 
+Bagozzi, R.P. and Yi, Y. (1988), “On the evaluation of structural equation models”, Academic of Marketing Science, Vol. 16 No. 1, pp. 76-94. 
+Barnes, L. and Lea-Greenwood, G. (2010), “Fast fashioning the supply chain: shaping the research agenda”, Journal of Fashion Marketing and Management, Vol. 10 No. 3, pp. 259-271. 
+Bhattacherjee, A. (2001), “Understanding information systems continuance: an expectation confirmation model”, MIS Quarterly, Vol. 25 No. 3, pp. 351-370. 
+Bian, X. and Moutinho, L. (2011), “The role of brand image, product involvement, and knowledge in explaining consumer purchase behaviour of counterfeits – direct and indirect effects”, European Journal of Marketing, Vol. 45 Nos 1-2, pp. 191-216. 
+Bosnjak, M. and Rudolph, N. (2008), “Undesired self-image congruence in a low-involvement product context”, European Journal of Marketing, Vol. 42 Nos 5-6, pp. 702-712. 
+Brodie, R.J., Ilic, A., Juric, B. and Hollebeek, L. (2013), “Consumer engagement in a virtual brand community: an exploratory analysis”, Journal of Business Research, Vol. 66 No. 1, pp. 105-114. 
+Carlson, B.D., Suter, T.A. and Brown, T.J. (2008), “Social versus psychological brand community: the role of psychological sense of brand community”, Journal of Business Research, Vol. 61 No. 4, pp. 284-291. 
+Casalo, L.V., Flavianb, C. and Guinaliu, M. (2010), “Relationship quality, community promotion and brand loyalty in virtual communities: evidence from free software communities”, International Journal of Information Management, Vol. 30 No. 4, pp. 357-367. 
+Chang, H.H. and Chuang, S.S. (2011), “Social capital and individual motivations on knowledge sharing: participant involvement as a moderator”, Information and Management, Vol. 48 No. 1, pp. 9-18. 
+Chang, H.H. and Liu, Y.M. (2009), “The impact of brand equity on brand preference and purchase intentions in the service industries”, The Service Industries Journal, Vol. 29 No. 12, pp. 1687-1706. 
+Chao, P., Fu, H.P. and Lu, I.Y. (2007), “Strengthening the quality-loyalty linkage: the role of customer orientation and interpersonal relationship”, The Service Industries Journal, Vol. 27 No. 4, pp. 471-494. 
+Chen, A., Lu, Y., Wang, B., Zhao, L. and Li, M. (2013), “What drives content creation behavior on SNSs? A commitment perspective”, Journal of Business Research, Vol. 66 No. 12, pp. 1-7. 
+Chiu, C.M., Hsu, M.H. and Wang, E.Y.G. (2006), “Understanding knowledge sharing in virtual communities: an integration of social capital and social cognitive theories”, Decision Support Systems, Vol. 42 No. 3, pp. 1872-1888. 
+Chiua, C.M., Chenga, H.L., Huangb, H.Y. and Chen, C.F. (2013), “Exploring individuals’ subjective well-being and loyalty towards social network sites from the perspective of network externalities: the Facebook case”, International Journal of Information Management, Vol. 33 No. 3, pp. 539-552. 
+Choi, T.M., Liu, N., Liu, S.C., Mak, J. and To, Y.T. (2010), “Fast fashion brand extensions: an empirical study of consumer preferences”, Fast Fashion Brand Extensions, Vol. 17 No. 7, pp. 472-487. 
+Cheung, C.M.K. and Lee, M.K.O. (2009), “Understanding the sustainability of a virtual community: model development and empirical test”, Journal of Information Science, Vol. 35 No. 3, pp. 279-298. 
+Diamantopoulos, A., Smith, G. and Grime, I. (2005), “The impact of brand extensions on brand personality: experimental evidence”, European Journal of Marketing, Vol. 39 Nos 1-2, pp. 129-149. 
+Facebook fan pages
+265 
+IJRDM 45,3
+266 
+Dholakia, U.M., Bagozzi, R.P. and Pearo, L.K. (2004), “A social influence model of consumer participation in network – and small-group-based virtual communities”, International Journal of Research in Marketing, Vol. 21 No. 3, pp. 241-263. 
+eMarketer (2015), “Increasing audience engagement key objective in social media marketing”, available at: www.emarketer.com/Article/Increasing-Audience-Engagement-Key-Objective-Social-Media Marketing/1013148 (accessed 14 May 2016). 
+Fang, Y.H. and Chiu, C.M. (2010), “In justice we trust: exploring knowledge-sharing continuance intentions in virtual communities of practice”, Computers in Human Behavior, Vol. 26 No. 2, pp. 235-246. 
+Fornell, C. and Larcker, D.F. (1981), “Evaluating structural equation models with unobserved variables and measurement error”, Journal of Marketing Research, Vol. 18 No. 1, pp. 39-50. 
+Foster, M.K., Francescucci, A. and West, B.C. (2010), “Why users participate in online social networks”, International Journal of e-Business Management, Vol. 4 No. 1, pp. 4-16. 
+Gonzalez-Lafaysse, L. and Lapassouse-Madrid, C. (2016), “Facebook and sustainable development: a case study of a French supermarket chain”, International Journal of Retail and Distribution Management, Vol. 44 No. 5, pp. 560-582. 
+Govers, P.C.M. and Schoormans, J.P.L. (2005), “Product personality and its influence on consumer preference”, Journal of Consumer Marketing, Vol. 22 No. 4, pp. 189-197. 
+Granovetter, M.S. (1973), “The strength of weak ties”, The American Journal of Sociology, Vol. 78 No. 6, pp. 1360-1380. 
+Grzeskowiak, S., Sirgy, M.J., Foscht, T. and Swoboda, B. (2016), “Linking retailing experiences with life satisfaction”, International Journal of Retail and Distribution Management, Vol. 44 No. 2, pp. 124-138. 
+Gupta, S., Kim, H.W. and Shin, S.J. (2010), “Converting virtual community members into online buyers”, Cyberpsychology, Behavior, and Social Networking, Vol. 13 No. 5, pp. 513-520. 
+Gustafsson, A., Johnson, M.D. and Roos, I. (2005), “The effects of customer satisfaction, relationship commitment dimensions, and triggers on customer retention”, Journal of Marketing, Vol. 69 No. 4, pp. 210-218. 
+Hair, J., Anderson, R., Tatham, R. and Black, W. (1998), Multivariate Data Analysis, 5th ed., Prentice Hall, Upper Saddle River, NJ. 
+Hayduk, L.A. (1987), Structural Equation Modeling with LISREL, John Hopkins University, Baltimore, MD. 
+Heath, A.P. and Scott, D. (1998), “The self-concept and image congruence hypothesis – an empirical evaluation in the motor vehicle market”, European Journal of Marketing, Vol. 32 Nos 11-12, pp. 1110-1123. 
+Hsiao, C.C. and Chiou, J.S. (2012), “The effect of social capital on community loyalty in a virtual community: test of a tripartite-process model”, Decision Support Systems, Vol. 54 No. 1, pp. 750-757. 
+Hsu, C.L. and Lu, H.P. (2007), “Consumer behavior in online game communities: a motivational factor perspective”, Computers in Human Behavior, Vol. 23 No. 3, pp. 1642-1659. 
+Hu, J., Liu, X., Wang, S. and Yang, Z. (2012), “The role of brand image congruity in Chinese consumers’ brand preference”, Journal of Product and Brand Management, Vol. 21 No. 1, pp. 26-34. 
+Huang, R., Kim, H.J. and Kim, J. (2013), “Social capital in QQ China: impacts on virtual engagement of information seeking, interaction sharing, knowledge creating, and purchasing intention”, Journal of Marketing Management, Vol. 29 Nos 3-4, pp. 292-316. 
+Hunt, D., Atkin, D. and Krishnan, A. (2012), “The influence of computer-mediated communication apprehension on motives for Facebook use”, Journal of Broadcasting and Electronic, Vol. 56 No. 2, pp. 187-202. 
+Ibrahim, H. and Najjar, F. (2008), “Assessing the effects of self-congruity, attitudes and customer satisfaction on customer behavioural intentions in retail environment”, Marketing Intelligence and Planning, Vol. 26 No. 2, pp. 207-227. 
+Internet World Stats (2016), “Internet usage, population statistics and Facebook information”, available at: www.internetworldstats.com/stats3.htm (accessed 25 September 2016). 
+Jahn, B. and Kunz, W. (2012), “How to transform consumers into fans of your brand”, Journal of Service Management, Vol. 23 No. 3, pp. 344-361. 
+Jin, X.L., Lee, M.K.O. and Cheung, C.M.K. (2010), “Predicting continuance in online communities: model development and empirical test”, Behaviour and Information Technology, Vol. 29 No. 4, pp. 383-394. 
+Jones, T. and Taylor, S.F. (2012), “Service loyalty: accounting for social capital”, Journal of Services Marketing, Vol. 26 No. 1, pp. 60-74. 
+Kanga, J., Tangb, L., Leea, J.Y. and Bosselmanc, R.H. (2012), “Understanding customer behavior in name-brand Korean coffee shops: the role of self-congruity and functional congruity”, International Journal of Hospitality Management, Vol. 31 No. 3, pp. 809-818. 
+Keller, K.L. (1993), “Conceptualizing, measuring, and managing customer-based brand equity”, Journal of Marketing, Vol. 57 No. 1, pp. 1-22. 
+Key Note (2015a), Clothing Retailing, Key Note Ltd., London, pp. 1-126. 
+Kim, A.J. and Ko, E. (2010), “Impacts of luxury fashion brand’s social media marketing on customer relationship and purchase intention”, Journal of Global Fashion Marketing, Vol. 1 No. 3, pp. 164-171. 
+Kim, A.J. and Ko, E. (2012), “Do social media marketing activities enhance customer equity? An empirical study of luxury fashion bran”, Journal of Business Research, Vol. 65 No. 10, pp. 1480-1486. 
+Kim, H.J. (2012), “The dimensionality of fashion-brand experience – aligning consumer-based brand equity approach”, Journal of Fashion Marketing and Management, Vol. 16 No. 4, pp. 418-441. 
+Kim, H.-S., Park, J.Y. and Jin, B. (2008), “Dimensions of online community attributes”, International Journal of Retail and Distribution Management, Vol. 36 No. 10, pp. 812-830. 
+Kim, J.W., Choi, J., Qualls, W. and Kyesook, H. (2008), “It takes a marketplace community to raise brand commitment: the role of online communities”, Journal of Marketing Management, Vol. 24 Nos 3-4, pp. 409-431. 
+Kwak, D.H. and Kang, J.H. (2009), “Symbolic purchase in sport: the roles of self-image congruence and perceived quality”, Management Decision, Vol. 47 No. 1, pp. 85-99. 
+Laroche, M., Habibi, M.R., Richard, M.O. and Sankaranarayanan, R. (2012), “The effects of social media based brand communities on brand community markers, value creation practices, brand trust and brand loyalty”, Computers in Human Behavior, Vol. 28 No. 5, pp. 1755-1767. 
+Lee, M.K.O., Cheung, C.M.K. and Chen, Z. (2005), “Acceptance of internet-based learning medium: the role of extrinsic and intrinsic motivation”, Information and Management, Vol. 42 No. 8, pp. 1095-1104. 
+Liao, S. and Chou, E.Y. (2011), “Intention to adopt knowledge through virtual communities: posters vs lurkers”, Online Information Review, Vol. 36 No. 3, pp. 442-461. 
+Lin, K.Y. and Lu, H.P. (2011), “Intention to continue using Facebook fan pages from the perspective of social capital theory”, Cyberpsychology, Behavior, and Social Networking, Vol. 14 No. 10, pp. 565-569. 
+Liu, F., Li, J., Mizerski, D. and Soh, H. (2012), “Self-congruity, brand attitude and brand loyalty: a study on luxury brands”, European Journal of Marketing, Vol. 46 Nos 7-8, pp. 922-937. 
+Facebook fan pages
+267 
+IJRDM 45,3
+268 
+Luo, M.M., Chen, J.S., Ching, R.K.H. and Liu, C.C. (2011), “An examination of the effects of virtual experiential marketing on online customer intentions and loyalty”, The Service Industries Journal, Vol. 31 No. 13, pp. 2163-2191. 
+Matthiesen, I.M. (2010), “Brand image inconsistencies of luxury fashion brands: a buyer-seller exchange situation model of Hugo Boss Australia”, Journal of Fashion Marketing and Management, Vol. 14 No. 2, pp. 202-218. 
+Mintel (2014), Youth Fashion – UK, Mintel Group Ltd., London. 
+Mollá-Descals, A., Frasquet-Deltoro, M. and Ruiz-Molina, M.E. (2011), “Internationalization patterns in fashion retail distribution: implications for firm results”, The Service Industries Journal, Vol. 31 No. 12, pp. 1979-1993. 
+Nahapiet, J. and Ghoshal, S. (1998), “Social capital, intellectual capital, and the organizational advantage”, Academy of Management Review, Vol. 23 No. 2, pp. 242-266. 
+Nisar, T.M. and Whitehead, C. (2016), “Brand interactions and social media: enhancing user loyalty through social networking sites”, Computers in Human Behavior, Vol. 62, pp. 743-753. 
+Nunnally, J.C. (1978), Psychometric Theory, McGraw-Hill, New York, NY. 
+Park, H. and Cho, H. (2012), “Social network online communities: information sources for apparel shopping”, Journal of Consumer Marketing, Vol. 29 No. 6, pp. 400-411. 
+Parker, B.T. (2009), “A comparison of brand personality and brand user-imagery congruence”, Journal of Consumer Marketing, Vol. 26 No. 3, pp. 175-184. 
+Podsakoff, P.M., MacKenzie, S.B., Lee, J.Y. and Podsakoff, N.P. (2003), “Common method biases in behavioral research: a critical review of the literature and recommended remedies”, Journal of Applied Psychology, Vol. 88 No. 5, pp. 879-903. 
+Poyry, E., Parvinen, P. and Malmivaara, T. (2013), “Can we get from liking to buying? Behavioral differences in hedonic and utilitarian Facebook usage”, Electronic Commerce Research and Applications, Vol. 12 No. 4, pp. 224-235. 
+Premkumar, G., Ramamurthy, K. and Liu, H.N. (2008), “Internet messaging: an examination of the impact of attitudinal”, Information and Management, Vol. 45, pp. 451-457. 
+Rufín, R., Medina, C. and Rey, M. (2013), “Building trust and commitment to blogs”, The Service Industries Journal, Vol. 33 Nos 9-10, pp. 876-891. 
+Rhee, J. and Johnson, K.K.P. (2011), “Investigating relationships between adolescents’ liking for an apparel brand and brand self congruency”, Young Consumers, Vol. 13 No. 2, pp. 74-85. 
+Richard, J.E. and Zhang, A. (2012), “Corporate image, loyalty, and commitment in the consumer travel industry”, Journal of Marketing Management, Vol. 28 No. 5, pp. 568-593. 
+Ross, J. and Harradine, R. (2011), “Fashion value brands: the relationship between identity and image”, Journal of Fashion Marketing and Management, Vol. 15 No. 3, pp. 306-325. 
+Royo-Vela, M. and Casamassima, P. (2011), “The influence of belonging to virtual brand communities on consumers’ affective commitment, satisfaction and word-of-mouth advertising the ZARA case”, Online Information Review, Vol. 35 No. 4, pp. 517-542. 
+Sanchez-Franco, M.J. and Rondan-Cataluna, F.J. (2010), “Virtual travel communities and customer loyalty: customer purchase involvement and web site design”, Electronic Commerce Research and Applications, Vol. 9 No. 2, pp. 171-182. 
+Sánchez-Garcia, J., Moliner-Tena, M.A., Callarisa-Fiol, L. and Rodríguez-Artola, R.M. (2007), “Relationship quality of an establishment and perceived value of a purchase”, The Service Industries Journal, Vol. 27 No. 2, pp. 151-174. 
+Segars, A.H. and Grover, V. (1993), “Re-examining perceived ease of use and usefulness: a confirmatory factor analysis”, MIS Quarterly, Vol. 17 No. 4, pp. 517-525. 
+Seyal, A., Rahman, M. and Rahim, M. (2002), “Determinants of academic use of the Internet: a structural equation model”, Behaviour and Information Technology, Vol. 21 No. 1, pp. 71-86. 
+Shang, R.A., Chen, Y.C. and Liao, H.J. (2006), “The value of participation in virtual consumer communities on brand loyalty”, Internet Research, Vol. 16 No. 4, pp. 398-418. 
+Thong, J.Y.L., Hong, S.J. and Tam, K.Y. (2006), “The effects of post-adoption beliefs on the expectation confirmation model for information technology continuance”, International Journal of Human Computer Studies, Vol. 64 No. 9, pp. 799-810. 
+Tsai, W.S.H. and Men, L.R. (2013), “Motivations and antecedents of consumer engagement with brand pages on social networking sites”, Journal of Interactive Advertising, Vol. 13 No. 2, pp. 76-87. 
+Tzokas, N., Saren, M. and Kyziridis, P. (2001), “Aligning sales management and relationship marketing in the services sector”, The Service Industries Journal, Vol. 21 No. 1, pp. 195-210. 
+Vivek, S.D., Beatty, S.E. and Morgan, R.M. (2012), “Customer engagement: exploring customer relationships beyond purchase”, Journal of Marketing Theory and Practice, Vol. 20 No. 2, pp. 127-145. 
+Wiertz, C. and Ruyter, K. (2007), “Beyond the call of duty: why customers contribute to firm-hosted commercial online communities”, Organization Studies, Vol. 28 No. 3, pp. 347-376. 
+Wirtz, J., Ramaseshan, B., Klundert, J., Canli, Z.G. and Kandampully, J. (2013), “Managing brands and customer engagement in online brand communities”, Journal of Service Management, Vol. 24 No. 3, pp. 223-244. 
+Wolny, J. and Mueller, C. (2013), “Analysis of fashion consumers’ motives to engage in electronic word of-mouth communication through social media platforms”, Journal of Marketing Management, Vol. 29 Nos 5-6, pp. 2-22. 
+Wu, X., Zhou, H. and Wu, D. (2012), “Commitment, satisfaction, and customer loyalty: a theoretical explanation of the ‘satisfaction trap”, The Service Industries Journal, Vol. 32 No. 11, pp. 1759-1774. 
+Zhang, J. and Bloemer, J.M.M. (2008), “The impact of value congruence on consumer-service brand relationships”, Journal of Service Research, Vol. 11 No. 2, pp. 161-178. 
+Zhou, T. (2011), “Understanding online community user participation: a social influence perspective”, Internet Research, Vol. 21 No. 1, pp. 67-81. 
+Zhou, Z.P., Fang, Y., Vogel, D.R., Jin, X.L. and Zhang, X. (2012), “Attracted to or locked In? Predicting continuance intention in social virtual world services”, Journal of Management Information Systems, Vol. 29 No. 1, pp. 273-305. 
+Further reading 
+Ishii, K. and Wu, C.I. (2006), “A comparative study of media cultures among Taiwanese and Japanese youth”, Telematics and Informatics, Vol. 23 No. 2, pp. 95-116. 
+Key Note (2015b), Youth Fashionwear, Key Note Ltd., London, pp. 1-59. 
+(The Appendix follows overleaf.) 
+Facebook fan pages
+269 
+IJRDM 45,3
+Appendix 
+Construct Items 
+270 
+Table AI. 
+Constructs and measures 
+Social interaction ties (Lin and Lu, 2011; Chang and Chuang, 2011) 
+Self-image congruency (Rhee and Johnson, 2011; Choi et al., 2010; Govers and Schoormans, 2005) 
+Hedonic value ( Jahn and Kunz, 2012; 
+Thong et al., 2006; Poyry et al., 2013) 
+Utilitarian value ( Jahn and Kunz, 2012; Wiertz and Ruyter, 2007) 
+Engagement (Poyry et al., 2013; Casalo et al., 2010; Laroche et al., 2012) 
+Affective commitment (Gustafsson et al., 2005; Gupta et al., 2010; Sanchez-Franco and Rondan-Cataluna, 2010) 
+Continued intention to use (Lin and Lu, 2011; Chiua et al., 2013; Poyry et al., 2013; Fang and Chiu, 2010) 
+Corresponding author 
+ST1: I often interact with the page manager on this fast-fashion brand’s Facebook fan page 
+ST2: I spend a lot of time interacting with the page manager on this fast-fashion brand’s Facebook fan page ST3: I have frequent communication with the page manager on this fast-fashion brands’ Facebook fan pages SC1: This fast-fashion brand is consistent with how I see myself 
+SC2: This fast-fashion brand matches me a lot SC3: I think fast-fashion brands’ image is closely related to my self-image 
+HV1: The content of this fast-fashion brand’s fan page is pleasant 
+HV2: The content of this fast-fashion brand’s fan page is entertaining 
+HV3: The content of this fast-fashion brand’s fan page is enjoyable 
+UV1: The content of this fast-fashion brand’s fan page is helpful for me 
+UV2: The content of this fast-fashion brand’s fan page is useful for me 
+UV3: The content of this fast-fashion brand’s fan page is practical for me 
+EG1: I participate actively in this fast-fashion brand’s Facebook fan page. For example, by posting to the page or commenting other’s posts 
+EG2: I usually provide useful information to complement the brand’s or others’ posts 
+EG3: In general, I engage with this fan page with a great excitement and frequency 
+AC1: I am very committed to my relationship with the fast-fashion brand on the Facebook fan page AC2: Even if I could, I would not leave this Facebook fan page 
+AC3: My affective bonds with this fast-fashion brand’s fan page are the main reason why I’m still using CI1: It would be hard for me not to use this fast-fashion retailer’s Facebook fan page 
+CI2: I intend to spend more time on fast-fashion retailers’ Facebook fan pages than on other categories of pages 
+CI3: It is likely that I will continue interacting with the page manager in the future 
+Shing-Wan Chang can be contacted at: swchangtw@gmail.com 
+For instructions on how to order reprints of this article, please visit our website: www.emeraldgrouppublishing.com/licensing/reprints.htm Or contact us for further details: permissions@emeraldinsight.com

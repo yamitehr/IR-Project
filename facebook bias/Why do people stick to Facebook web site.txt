@@ -1,0 +1,380 @@
+﻿The current issue and full text archive of this journal is available at 
+www.emeraldinsight.com/0959-3845.htm
+	
+
+
+
+Why do people stick to 
+Facebook web site? A value theory-based view 
+Heng-Li Yang and Chien-Liang Lin 
+Department of Management Information Systems, 
+National Cheng-Chi University, Taipei, Taiwan 
+Abstract 
+Purpose – Based on past study, three different value constructs, including social value, hedonic value, and epistemic value, were adopted in this study to examine their influence on individual’s stickiness to use Facebook. Besides, this paper aims to explore how “trust” affects the personal usage behaviors. Design/methodology/approach – The research model was tested with data from 345 Facebook’s users using a web survey. The partial least squares technology was used to test the proposed hypotheses. 
+Findings – Results confirmed that hedonic value served as important value concerns for Facebook users. Besides, considering trust factor, the respondents can be classified into two groups. In the high-trust group, social value and hedonic value produced significant impacts on stickiness. In the low-trust group, the statistical results show that epistemic value and hedonic value had impacts on the stickiness for Facebook web site use, but social value aspect had no significant impact. 
+Research limitations/implications – The respondents were mainly the subjects that belonged to the young age group in Taiwan. Therefore, it should be cautious to generalize the conclusions to other areas or the elder. 
+Practical implications – This study results facilitate web site operators and marketing researchers to understand what value factors and trust affect the user stickiness of Facebook. Their marketing plan and application plug-in can be accordingly adjusted. 
+Originality/value – This study provides positive evidences how value factors affect Facebook stickiness. The paper also proved that high-trust and low-trust people have different value models. Keywords Hedonic value, Empirical study, Facebook, Social value, Virtual community, Social networking (e.g. Facebook, second life), E-inclusion/exclusion, Epistemic value, Community stickiness 
+Paper type Research paper 
+Introduction 
+Due to the continuous and rapid development of information technology, the internet has become an important tool for people to communicate online and continue to receive more services and functions. In addition, owing to the rise of the Web 2.0 model, social network services have become a simple and universal concept in the internet environment. There had been widespread concerns over the social network sites (SNS). Boyd and Ellison (2007) stipulate that SNS must allow users to construct public or semi-public profiles within a bounded system, generate lists of individuals with whom they share a connection, and navigate these connections and those made by other users. Sites such as Facebook and MySpace, etc., possess these attributes. According to the latest data from Socialbakers (2013), Facebook has more than 964 million registered users in worldwide; and according to eBizMBA (2013) rank, it is the number one SNS as 
+The authors thank the National Science Council, Taiwan, for financially supporting this research under contract NSC 99-2410-H-004-102-MY2. 
+A value theory based view
+21 
+Received 13 November 2012 Revised 10 March 2013 30 June 2013 
+Accepted 7 July 2013 
+  
+
+Information Technology & People Vol. 27 No. 1, 2014 
+pp. 21-37 
+r Emerald Group Publishing Limited 0959-3845 
+DOI 10.1108/ITP-11-2012-0130 
+ITP 27,1
+22 
+of June 2013 with 750 million visitors per month, ahead of Twitter (250 million visitors per month), Linkedin (110 million visitors per month), and MySpace (70.5 million visitors per month). Therefore, Facebook was chosen for investigation in this study. 
+In recent years, the academic field has had increasing concern for social network service related issues (Yang and Lai, 2011; Mital and Sarkar, 2011; Merchant, 2012). There are a number of previous studies focussed on the social function aspect of Facebook. For example, Lakshminarasimha and Ajay (2008) investigated the value chain relationships among Facebook members. Bateman et al. (2010) and Park et al. (2011) explored the intention to self-disclosures and the impacts of self-disclosures on Facebook on the relationships among community members. Lin and Lu (2011a) investigated the intention to continue using Facebook fan pages from the perspective of social capital theory. On the other hand, the current Facebook not only provides the traditional social network functions, but also offers many entertainment-oriented application services through its platform. There have been also some studies (e.g. Shin and Shin, 2011; Xu et al., 2012) focussed on its hedonic values. Since diverse functionalities have been provided by Facebook, some researchers (e.g. Cheung et al., 2011; Nadkarni and Hofmann, 2012; Al-Debei et al., 2013) tried to understand the underlying reasons why people use Facebook. However, relatively little attention has been given to community members’ perceived value of use through Facebook. This study would consider the determinants of Facebook stickiness (i.e. not only usage, but also long stay) from the pure perspective of perceived values. 
+On the other hand, it was found from past researches that internet users would have greater risks than the risks involved in the physical environment, and had no high trust on web sites (Hoffman et al., 1999). It was asserted that the success of an online service, whether it is commercial or not, depends not only the benefits which brings to the users but also on the level of trust which users have during the system’s usage (Beldad et al., 2010; Wu et al., 2011). Therefore, trust for web sites would be an important moderator variable while exploring the antecedent factors for Facebook usages. Based on the above discussion, the research problems in this study are as follows. What value factors would affect users’ stickiness to Facebook? How the role of trust plays in the Facebook platform environment? 
+Literature review and hypotheses development 
+Stickiness 
+Zott et al. (2000) proposed stickiness as “the ability of websites to draw and retain customers.” Thorbjornsen and Supphellen (2004) indicated that there are two kinds of browsing behavior in a web site: frequency of visits and duration of each visit. Lin (2007) also defined as the user’s willingness to return to and prolong her duration of stay in a web site. Besides, stickiness had been applied in many fields, for example, e-commerce shopping (Zott et al., 2000), online purchasing behavior (Lin, 2007), online game behavior (Wu et al., 2011), blog stickiness ( Johnson et al., 2003; Lu and Lee, 2010). Based on previous literature definitions, stickiness is defined as willingness to return to and prolong the duration of stay on the Facebook web site. 
+Perceived values 
+The perceived value is defined as “consumers view the overall evaluation of the practicality of the product” (Zeithalm, 1988). In other words, from the cost-benefit paradigm ( Johnson and Payne, 1985), the perceived value is a trade-off between cognitive 
+net benefits and cognitive costs. Actually, the value identification is an evaluation procedure (Zeithalm, 1988). Furthermore, uses and gratifications paradigm (Katz, 1959) from mass communications research is another relevant paradigm in this context. It asserts that users are goal-directed in their behaviors; i.e. they perform certain behaviors to achieve a certain goal related to fulfilling a need (i.e. capturing value) on the platform of Facebook, which is a new form of computer-mediated communication technologies. 
+Research in the field of marketing (e.g. Hirschman and Holbrook, 1982; Sheth et al., 1991; Yen, 2012) suggested the perceived hedonic, social, and utilitarian value can explain the purchased product/service satisfaction and loyalty. In Web 2.0 web sites, Al-Lozi and Al-Debei (2012) suggested that social value, hedonic value, epistemic value, gift value, and utilitarian value as the values created and exchanged among users. Cheung and Lee (2009) identified that purposive value, self-discovery, entertainment value, social enhancement, and maintaining interpersonal connectivity are the key values (or needs) to determine the use of virtual communities. Facebook is a platform which was originally designed for self-discovery, social enhancement, and maintaining interpersonal connectivity for users. These are main functionalities of SNS and were integrated as social value in this study. On the other hand, currently, Facebook can also provide fun, entertainment, and relaxation through playing embedded games or otherwise interacting with others, which is hedonic value. In addition, owing to the Web 2.0 characteristic of Facebook, epistemic value is important for users who can look for novelty experience as well as new knowledge. Therefore, this study synthesized and integrated the above literature adopt three dimensions of perceived value, epistemic, social, and hedonic values, to fit the situation of Facebook. 
+Epistemic value 
+Epistemic value refers to a consumer’s novelty value for a new product (Pihlstro¨m and Brush, 2008). Past study results show that novelty affect the consumers’ willingness to purchase goods (Cotte et al., 2006). Novelty is generally a positive state of mind, which allows users to create curiosity and interest in the new products and services (Sullivan and Drennan, 2005). It is claimed that the search for novelty is people’s search for more hedonic benefits rather than the utilitarian benefits (Raacke and Bonds-Raacke, 2008). The Facebook platform provides users with a space that allows them to establish new links with old/new friends in a fast and easy way. It provided brand-new friend relationship opportunities to users. In addition, Facebook contains plenty of embedded games. Through these embedded games, users’ entertainment curiosity can be satisfied, which in turn facilitates a new way for more frequent exchanges on the social web sites. Furthermore, through dynamic news, users can get timely access to or make comments on the daily changes or moods of their friends (Ellison et al., 2007). Fans can track the footmarks or spy out gossip of their favorite stars, and discuss with other fans. Moreover, the photo/video sharing functions could provide further details or give surprise to satisfy users’ curiosity. Owing to the Web 2.0 characteristics, new contents would spring up every moment. Thus, users can acquire new information or knowledge to satisfy epistemic value (Al-Lozi and Al-Debei, 2012). Therefore, the epistemic value would never diminish over time. According to the above reasoning, the hypothesis proposed targeting the epistemic value is as follows: 
+H1. The higher the epistemic value perceived by a Facebook user, the higher the user’s stickiness for Facebook would be. 
+A value theory based view
+23 
+ITP 27,1
+24 
+Social value 
+Social value is defined as the social recognized or strengthened social self-concept generated by service use (Sweeney and Soutar, 2001). Social value expectations would have impacts on the user of entertainment services because the social environment often involves interpersonal interactions (Sullivan and Drennan, 2005). Pihlstro¨m and Brush (2008) investigated the mobile service users and found that the user group’s use intentions and social value were significantly correlated. Facebook is itself a friend network site. Maintaining interpersonal relationships is the main purpose for most Facebook users (Raacke and Bonds-Raacke, 2008). It can be conjectured that users choose to use Facebook probably because they can gain recognition from the social group, meet the social norms, or display their intrinsic image. Many researchers believed that Facebook is an online platform allowing people to establish interpersonal networks because it provides users with communication tools (e.g. text, media such as video and photos) so that the users are more capable of interacting and communicating with other users to maintain and expand interpersonal networks, i.e. meet new people as well as connect with old friends (Chang and Zhu, 2011; Lin and Lu, 2011a). Besides, through the embedded online game, users can chat/interact with other players; thus their social network relations have been further strengthened (Hsiao and Chiou, 2012). Therefore, Facebook provides a wealth of social values that meet the need for interpersonal interaction and help friends establish long-term relationships on the web site. Thus, the hypothesis is as follows: 
+H2. The higher the social value of Facebook deemed by the social group users, the higher their stickiness for Facebook would be. 
+Hedonic value 
+Babin et al. (1994) pointed out that hedonic value is the festive, epicurean, and entertainment produced from engaging in online shopping. The purpose is to reflect shoppers’ potential value for entertainment and emotions rather than pre-determining and completing the ultimate goal. The hedonic process is often accompanied by fantasy, feel, fun, and sign-related elements (Hirschman and Holbrook, 1982), or it may involve festive and ludic feelings (Sherry, 1990). The features of the hedonic dimension are also frequently discussed in studies on behaviors (Sherry, 1990; Wang et al., 2007). 
+In social group environment, Tufekci (2008) found that users used social web sites to acquire interesting peer information. On the Facebook platform, users enjoy sharing interesting contents, embedded pictures, text, or images with their friends or peers on their own pages, and they can also browse the contents shared by their friends. While users browsing a Facebook community page, they are exposed to sensory stimulation through multimedia content, new ideas, and information related to their area of interest (Poyry et al., 2013). When users feel pleasant, they would provide more diverse interesting contents in return through the web site. Thus, people are entertained as a result of communicating with others in Facebook, or reading information about different sources in Facebook. 
+Moreover, Facebook not only provides social features but also has many embedded browser games (Shin and Shin, 2011). It provides many new embedded game functions that conventional SNS do not have (Lee and Wohn, 2012). Consequently, Yang and Lai (2011) point out that people might join Facebook for playing the embedded games. It is not hard to imagine that the current Facebook is not simply a social platform, but also 
+has a wealth of entertainment. Therefore, based on the above discussion, the hypothesis proposed is as follows: 
+H3. The higher one’s perceived hedonic value is, the higher one’s stickiness for Facebook would be. 
+Trust 
+Trust refers the willingness of a party to be vulnerable to the actions of another party, with the expectation that the other will perform a particular action important to the trustor, irrespective of the ability to monitor or control that other party (Ring and Van de, 1992). Trust is an important factor in the internet environment (Lai et al., 2011). The success of operations in computer environments depends on the users’ full trust (Coutu, 1998). As mentioned by Beldad et al. (2010), online trust is different from offline trust because in an online context, both the technology and the organization deploying the technology are the objects of trust. Therefore, it is more difficult for internet web users to maintain high trust for the web sites. 
+Without mutual trust as the basis, long-term relationships between both sides can never be established (Hoffman et al., 1999). From the past researches, it has been confirmed that trust positively affects the consumers’ establishment of long-term relationships on the web site platforms (Dayal et al., 1999). Therefore, trust has been proven to increase web site use intentions and reduce the uncertainty in web site use (Gefen et al., 2000; Palvia, 2009). Moreover, Ridings et al. (2002) also proposed that trust is crucial in virtual communities where the absence of workable rules creates reliance on others behaving in a socially acceptable manner; that is, trust is essential for community continuity. Sledgianowski and Kulviwat (2009) claimed that trust is critical aspect of SNS services because some potentially harmful opportunistic behaviors have beleaguered the confidence in these services; they also empirically verified that perceived trust has a significant positive effect on intention to use SNS. Since this study proposed to investigate the Facebook stickiness from the pure perspective of perceived values, we would not include trust as an antecedent factor of stickiness. However, it is conjectured that trust would have some moderator effects. Therefore, this study proposes the hypothesis as follows: 
+H4. Trust would have moderator effect on the impact of one’s perceived epistemic, social, and hedonic values on stickiness for Facebook. 
+Research model 
+Based on the discussion above, this study proposed that hedonic value, social value, and epistemic value act as critical antecedents to the Facebook stickiness. Figure 1 shows the value model developed according to the above literature. In addition, trust was regarded as a potential critical moderator variable influencing the validity of the value model. 
+It is noted that there are some recent Facebook researches based on widely mentioned technology acceptance model (TAM), theory of planned behavior (TPB), or unified theory acceptance use of technology. As shown in Table I, “perceived ease of use” and “perceived usefulness” variables are their focus. Their variables cannot fully provide the reasons to explain why people perceive Facebook useful. Though Al-Debei et al. (2013) mentioned “perceived value,” they did not drill down into different value 
+A value theory based view
+25 
+ITP 27,1
+26 
+elements. This study is only concerned about how people perceive Facebook valuable, and adopts three major dimensions of perceived value: epistemic, social, and hedonic. 
+Sample survey 
+Instrument development 
+A pilot test was conducted involving three experts and five PhD students to assess its questionnaire consistencies, and ease of understanding. Then, a pilot study with 53 student’s users was also conducted to assess the reliability and validity of the instrument. 
+Social value was measured using a scale modified from Turel et al. (2010) and Sweeney and Soutar (2001). The measurement of hedonic value was adapted from Babin et al. (1994) and Wang et al. (2007). The items measuring epistemic value were adapted from Donthu and Garcia (1999), Pihlstro¨m and Brush (2008), Wang et al. (2007), and Moon and Kim (2001). Measures of stickiness were adapted from Lin (2007). Trust was measured using items adapted from Gefen et al. (2000) and Pavlou and Gefen (2005). The definitions of these variables are shown in Table II. 
+Lastly, all items were measured along a seven point Likert-type scale, ranging from 1 for “strongly disagree,” to 7 for “strongly agree.” Since the items were first translated into Chinese by an IS professor and then translated back into English by another translator with special training in English-Chinese translation. Because the questionnaires were for distribution in Taiwan, the translation into Chinese allowed the respondents to read the items with no difficulty. The two-way translation also ensured that no loss of information occurred during the translation process. 
+Stickiness   
+Figure 1. 
+Epistemic Value 
+Social 
+Value 
+Hedonic 
+H1 
+H2 
+H3H4 
+The value model for the Facebook stickiness 
+Value 
+Literature Variables 
+Trust 
+Table I. 
+Some recent Facebook research based on TAM or TPB 
+Kwon and Wen (2010) Social identity, altruism, telepresence, perceived usefulness, perceived ease of use, perceived encouragement, actual use 
+Shin and Shin (2011) Perceived usefulness, perceived enjoyment, perceived playfulness, perceived security, flow, attitude, intention, behavior 
+Lin and Lu (2011b) Number of members, number of peers, perceived complementarity, usefulness, enjoyment, continuance, intention to use 
+Lee et al. (2012) Perceived usefulness, perceived enjoyment, perceived ease of use, arousal, valence, attitude toward using Facebook, intention to go to the event 
+Braun (2013) Perceived usefulness, trust, and frequency of internet use, perceived ease of use, social pressures, intention to use 
+Al-Debei et al. (2013) Attitude, subjective norms, perceived behavioral control, perceived value, continuance participation intention, continuance participation behavior 
+Common variance bias 
+In addition, this research has taken procedural remedies to mitigate possible common method biases. The suggestions of Tourangeau et al. (2000) were applied to construct the questionnaire items to reduce method biases. The expert review described earlier also served to assist this purpose. Reminding respondents to answer questions as honestly as possible by assuring them there were no right or wrong answers would also help reducing common method biases (Podsakoff et al., 2003). 
+Data collection 
+The formal survey was carried out after the pilot test. An online mode of data collection were selected because of its advantages in expediency in data collection, ease of data tabulation, and the ability to reach a wide population of users (Bhattacherjee, 2002). Because of the difficulty of reaching all Facebook users, online questionnaires were distributed to randomly chosen Facebook users. Meanwhile, an invitation message with the URL to the online questionnaire was posted on a number of online social groups and fans pages of Facebook and telnet://ppt.cc, the most popular bulletin board systems in Taiwan. To increase the number of survey participants, those who completed the questionnaire were entitled to enter a lottery. In order to avoid duplicate registrations and to identify attempts at opportunism, the IP address of each respondent was recorded. 
+A total of 365 responses were collected, among which 20 were discarded because of incomplete response or lack of experiences with Facebook. That is, 345 valid responses were collected, yielding a response rate of 94.52 percent. Table III shows the demographic information of the respondents. 
+Results 
+Measurement model 
+A confirmatory factor analysis was performed to examine the measurement model. The partial least squares (PLS) method was chosen because it presumes no distributional form for measured variables, nor does it posits strong requirement on large sample sizes (Chin, 1998; Chin et al., 2003). Internal consistency can be assured by examining the composite reliability of the constructs (Fornell and Larcker, 1981). As shown in Table III, all composite reliability values were 40.7 (Fornell and Larcker, 1981). Convergent validity refers to the degree to which multiple items measure one construct. 
+Convergent validity can be evaluated by checking whether the average variance extracted (AVE) values are larger than 0.5 (Fornell and Larcker, 1981), and the factor loadings of the all items are significant and higher than 0.7 (Nunnally, 1978). As shown 
+Variable Definitions 
+Social value The utility acquired from using the Facebook to improve the impression, identification and intimacy of relatives and friends and enhance social self-concept Epistemic value Derived from the Facebook capacity to provide novelty, arouse curiosity, and/or satisfy knowledge-seeking aspirations 
+Hedonic value The extent to which participation in Facebook is perceived to be pleasurable, exciting, enjoyable, and fun 
+Trust The tendency to believe in others and in their posted articles on the Facebook web site 
+Stickiness Willingness to return to and prolong the duration of stay on the Facebook web site 
+A value theory based view
+27 
+Table II. 
+Research variable 
+definition 
+ITP 27,1
+Measure Items Frequency % Measure Items Frequency % 
+Gender Male 187 54.2 Frequency of using Facebook 
+o1 day 44 12.8 
+Female 158 45.8 2-3 day 42 12.2 
+Age Below 20 33 9.6 3-5 day 59 17.1 28 
+20-30 280 81.2 5-7 day 200 57.9 
+Over 30 32 9.2 Reason of Facebook using 
+Most friends have used 
+122 35.4 
+Job occupation Student 163 42.3 Keep in touch 108 31.3 
+Not 
+student 
+182 57.7 Looking for old friends and 
+classmates 
+12 3.5 
+Facebook using experience 
+o1 year 72 20.9 Make friends 8 2.3 
+Table III. 
+Demographic information 
+1-2 year 169 49.0 Entertainment purposes 
+2-3 year 86 24.9 Looking for internet 
+information 
+65 18.8 19 5.5 
+of respondents 
+43 year 28 8.2 Others 11 3.2 
+in Table IV, all these conditions were met, indicating acceptable convergent validity of the measurement. 
+Discriminant validity requires whether the measures of constructs are different from each other. Discriminant validity can be assessed by examining whether the square root of AVE of each construct is larger than the correlation between constructs (Chin, 1998; Fornell and Larcker, 1981). As shown in Table V, since the smallest value of the square root of AVE of the constructs was 0.716 (for epistemic value) and the largest correlation between constructs was 0.6298 (for hedonic value), discriminant validity was confirmed. In summary, the measurement model of this study demonstrated adequate reliability, convergent validity, and discriminant validity. 
+The mean comparison and test 
+Before testing the overall model, we first checked the means of the constructs. As shown in Table VI, the results showed that the epistemic value had the highest mean (4.91), followed by hedonic value (4.85), social value (4.71), and stickiness (4.56). However, it is worth mentioning that the mean of trust (3.93) is smaller than the median 4 (with scale 1-7), though not significant. It implies that in general the respondents did not have strong trust. Thus, for further comparison, with the mean of trust (3.93) as the criterion, respondents could be divided into two groups: high trust (defined as those perceived trust higher than 3.93) and low trust (defined as those perceived trust lower than 3.93). There are 184 and 161 respondents, respectively. 
+Table VII compares the constructs of the high-trust and low-trust group. It can be found that significant differences existed between all constructs (epistemic value, hedonic value, social value, stickiness, trust) of these two groups. Therefore, it deserves to consider these differences on model testing. 
+Structural equation modeling 
+The model test for the all respondents is shown in Figure 2(a). The model explained 50.3 percent of the variances in stickiness to adopt Facebook. The path coefficients 
+Construct Item 
+Factor loading 
+Composite 
+reliability AVE 
+Cronbach’s a 
+A value theory based view
+Epistemic value 
+Social value 
+Hedonic 
+value 
+Epist1: I used Facebook service out of 
+curiosity 0.76 0.842 0.512 0.768 
+Epist2: interacting with Facebook site made 
+29 
+me curious 0.78 
+Epist3: browsing on Facebook site aroused 
+my imagination 0.85 
+Social1: the Facebook use helps me feel 
+acceptable 0.84 0.914 0.726 0.875 
+Social2: the Facebook use improves the way 
+I am perceived 0.87 
+Social3: the fact I use Facebook makes a good 
+impression on other people 0.86 
+Social4: the Facebook use gives me social 
+approval 0.84 
+Hedonic1: compared to other things I could 
+have done, the time spent shopping online 
+at Facebook site was truly enjoyable 0.80 0.835 0.562 0.738 
+Hedonic2: I enjoyed being immersed in 
+exciting new information on Facebook site 0.86 
+Hedonic3: during the navigating Facebook 
+process, I felt the excitement of the hunt 0.72 
+Trust Trust1: people on Facebook are trustworthy 0.7682 0.908 0.623 0.879 Trust2: I trust Facebook’s information to 
+be true 0.835 
+Trust3: I usually trust Facebook unless it 
+gives me a reason not to trust it 0.8356 
+Trust4: overall, Facebook is trustworthy 0.7586 
+Trust5: Facebook does respect and would 
+not abuse my privacy information and 
+browsing log history 0.7899 
+Trust6: the security guard and mechanism 
+of Facebook is trustworthy 0.744 
+Stick1: I would stay a longer time on 
+Stickiness 
+Facebook than other web sites 0.81 0.898 0.688 0.849 Stick2: I intend to prolong my staying on 
+Facebook web site 0.83 
+Stick3: I would visit Facebook web site as 
+often as I can 0.86 
+Stick4: I intend to link to Facebook web site 
+every time I am online 0.83 
+Epistemic Hedonic Social Stickiness Trust 
+Table IV. 
+Composite reliability, factor loading, AVE, and Cronbach’s a of constructs 
+Epistemic 0.716 
+Hedonic 0.5616 0.852 
+Social 0.4286 0.5121 0.750 
+Stickiness 0.4692 0.6298 0.4368 0.829 Trust 0.3456 0.5164 0.4093 0.4842 0.789 
+Note: The values in the diagonal are square roots of AVE 
+Table V. 
+Square root of AVE and correlation between constructs 
+ITP 
+27,1
+30 
+Table VI. 
+Means of the constructs 
+epistemic value (H1) to stickiness were found to be positive but no significant, with coefficients of 0.061 (t-value ¼ 1.084). Second, social value (H2, b ¼ 0.091, t ¼ 1.427) had no significantly effect on stickiness. Finally, the effect of hedonic value on stickiness (H3, b ¼ 0.420, t ¼ 6.468) was significant at the po0.05 level. In addition, the trust moderator effects (H4) are not significant. 
+Without considering the moderator effect, the test of the value model is shown in Figure 2(b). The model explained 42.3 percent of the variances in stickiness to adopt Facebook. The path coefficients epistemic value (H1) to stickiness were found to be positive but no significant, with coefficients of 0.065 (t-value ¼ 1.084). Second, social value (H2, b ¼ 0.114, t ¼ 1.662) had no significantly effect on stickiness. Finally, the effect of hedonic value on stickiness (H3) was significant at the po0.05 level. 
+It is conjectured that though trust has no moderator effect, in fact, high-trust and low-trust groups might have different models. Further, we test the high-trust group. As shown in Figure 3(a), social value (b ¼ 0.219, t ¼ 5.070) and hedonic value (b ¼ 0.439, t ¼ 10.157) produced significant impacts on stickiness, but no significant impact was produced for epistemic value (b ¼ 0.082, t ¼ 1.544). 
+Figure 3(b) reports the test for the low-trust group. The statistical results show that epistemic value (b ¼ 0.108, t ¼ 2.080) and hedonic value (b ¼ 0.488, t ¼ 11.554) had impacts on the stickiness for Facebook web site use, but in terms of the social value aspect, (b ¼ 0.020, t ¼ 0.384) no significant impact was produced for stickiness. 
+To avoid group split bias, this study also tried two other different ways to divide high- vs low-trust groups with the median 4 of trust as the criterion: high trust (defined as those perceived trust higher than 4) and low trust (defined as those perceived trust equal to or lower than 4). There are 177 and 168 respondents, respectively; and high trust (defined as those perceived trust higher than 4) and low trust (defined as those perceived trust equal to 4). There are 177 and 161 respondents, respectively. In either of two cases, their significance results are similar to Figure 3 except for slightly different coefficients. 
+Construct Mean Significance (two-tailed) 
+Epistemic value 4.91 0.000* Hedonic value 4.85 0.000* Social value 4.71 0.000* Trust 3.93 0.190 
+Stickiness 4.56 0.000* Notes: *Significant at 0.05 level; the means were tested with the median 4 
+Construct 
+Mean of high-trust group 
+Mean of low-trust group 
+Mean 
+difference t-test Significance 
+Table VII. 
+Construct comparison of the high and low trust groups 
+Epistemic value 5.40 4.86 0.54 5.115 0.000* Hedonic value 5.17 4.30 0.87 7.213 0.000* Social value 4.93 4.27 0.66 6.935 0.000* Stickiness 4.93 4.07 0.86 7.881 0.000* Trust 4.73 3.02 1.71 28.543 0.000* 
+Note: *Significant at 0.05 level 
+Value Model for All Respondents: with Moderator Variable (Trust) 
+A value theory 
+Epistemic Value 
+Social 
+Value 
+Hedonic Value 
+0.061 
+(1.084) 
+0.091 
+(1.427) 
+0.420* 
+(6.468) –0.173 (0.886) 
+0.065 
+(1.244) 
+Trust 
+Stickiness   
+R2= 0.503 
+0.104 
+(1.244) 
+based view31 
+Value Model for All Respondents: without Moderator Variable (Trust) 0.065 
+Epistemic Value 
+Social 
+Value 
+Hedonic Value 
+(1.084) 
+0.114 
+(1.662) 
+0.537* 
+(9.597) 
+Stickiness   
+R2= 0.423 
+Figure 2. 
+Test of the value model 
+for all respondents: with 
+Notes: *Denotes p < 0.05; the values within parentheses along the line denote corresponding t-values 
+Discussions and conclusions 
+This study explored the impacts of community users’ stickiness to Facebook. The samples were collected through the online questionnaire survey on the platform of Taiwan Facebook. This study proposed that hedonic value, social value, and epistemic value act as critical antecedents to the Facebook stickiness. The overall statistical results are discussed as follows. 
+First, the model test for all respondents indicates that hedonic value (H3) produced a positive impact on the stickiness for Facebook. This finding coincides with the results in the study conducted by Sweeney and Soutar (2001). Probably, Facebook’s active effort in popularizing applications and the widely played embedded games have contributed to this outcome. Meanwhile, the diversity of embedded games has provided more fun to attracting member stickiness to Facebook. In addition, people are also 
+vs without moderator variable (trust) 
+ITP 
+27,1
+32 
+Figure 3. 
+Epistemic Value 
+Social 
+Value 
+Hedonic Value 
+Epistemic Value 
+Social 
+Value 
+Hedonic Value 
+High-Trust Group (Higher Than Mean 3.93) 
+0.082   
+(1.544) 
+0.219* 
+(5.070) 
+0.439* 
+(10.157) 
+Low-Trust Group (Lower Than Mean 3.93) 
+0.108*   
+(2.080) 
+0.020 
+(0.384) 
+0.488* 
+(11.554) 
+Stickiness R2= 0.406 
+Stickiness R2= 0.321 
+The value model for high trust and low-trust groups 
+Notes: *Denotes p < 0.05; the values within parentheses along the line denote corresponding t-values 
+entertained as a result of usually communicating with others in Facebook, or reading important information about different sources in Facebook. 
+On the contrary, social value (H2) did not produce any impact on stickiness, and this finding coincides with the results of the study conducted by Pihlstro¨m and Brush (2008). It is conjectured that Facebook itself has been just an alternative type of platform for social interaction, and most of the community members have established long-term and interactive relationships. To most of the Facebook community members, the relationships among them have already become a deep-rooted and they have many alternative communication channels. Therefore, perceived social value might not cause them to stick to Facebook. 
+Neither did epistemic value (H1) produce any impact on stickiness. This finding coincides with past researches Chen et al. (2008) and Lin et al. (2010). It seems that in general, perceived fashion or novelty on the platform could not cause members to indulge themselves in Facebook. 
+However, one should note that trust plays a role in this scenario. Although trust has no moderator effect on the original model, people with different degree of trust indeed has different value models. In both high- and low-trust groups, hedonic value had 
+significant impact on stickiness. But in high-trust group, social value had significant impact; in low-trust group, epistemic value was significant. We can conjecture that for those people, who had high trust to Facebook, are more comfortably on the platform to disclose them and also watch the footsteps of their friends or peers in using the platform. For them, social value becomes an important factor to stickiness. To the contrast, it would be unlikely for those low-trust people to adopt Facebook it as the valuable social communication channel. In this case, when people have little trust for social platform web sites, the core of the web site operation lies in how to propose fun and novelty applications to attract web users and produce long-term use results. 
+As mentioned before, from the cost-benefit paradigm and uses and gratifications paradigm, and other empirical studies about Facebook, these three value constructs should be significant to stickiness. However, our findings reported different results and the further analyses indicated the trust role is very important for perceived values. As discussed by Beldad et al. (2010), the success of an online service depends not only on the perceived benefits it brings but also on the level of trust users have on the service, the technology used for service delivery, and the party behind the service. Although Facebook has been naturally deemed as social interaction tool, such perception would not exist for low-trust people. Without trust as the basis, social interaction would be fragile and cannot be lasted for long term. Social interaction has higher risk than social game. Chang and Fang (2013) claimed that online distrust would significantly decrease high-risk internet behaviors. The above arguments possibly could explain the different value model of low-trust and high-trust people. The Facebook platform operator and fan page manager should be careful to increase and maintain the users’ trust. The marketing campaign might be also differently designed for people who have not had high trust on Facebook. 
+This study had also some limitations. The respondents were mainly the subjects that belonged to the young age group in Taiwan. Therefore, it should be cautious to generalize the conclusions to other areas or the elder. There might be some potential for conducting a cross-culture study. In addition, probably some other environmental factors were not considered. Further research may explore other moderator variables, e.g. perceived risk, user involvement difference. 
+Finally, one should note that Facebook provides a myriad of services, including chats, posts, games, commerce, info streams, sponsored links, picture sharing, video sharing, etc. This study did not request questionnaire respondents to review each of service. That is, respondents might treat Facebook as a monolithic concept to answer the questionnaire. As discussed in the preceding sections, although some function might be originally designed for satisfying one value (e.g. game for hedonic value), it might give other values to users at the same time. The focus of this study is the value that users perceived by their experience in Facebook. According to different circumstances or scenarios, users have different value perception even for the same service. Future research may examine each service in details. 
+References 
+Al-Debei, M.M., Al-Lozi, E. and Papazafeiropoulou, A. (2013), “Why people keep coming back to Facebook: explaining and predicting continuance participation from an extended theory of planned behaviour perspective”, Decision Support Systems, Vol. 55 No. 1, pp. 43-54. 
+Al-Lozi, E. and Al-Debei, M.M. (2012), “A framework of value exchange and role playing in Web 2.0 websites”, Proceedings of the European, Mediterranean & Middle Eastern Conference on Information Systems (EMCIS 2012), Munich, June 6-7. 
+A value theory based view
+33 
+ITP 27,1
+34 
+Babin, B.J., Darden, W.R. and Griffin, M. (1994), “Work and/or fun: measuring hedonic and utilitarian shopping value”, The Journal of Consumer Research, Vol. 20 No. 4, pp. 644-656. Bateman, P.J., Pike, J.C. and Butler, B.S. (2010), “To disclose or not: publicness in social 
+networking sites”, Information Technology and People, Vol. 24 No. 1, pp. 78-100. Beldad, A., de Jong, M. and Steehouder, M. (2010), “How shall I trust the faceless and the intangible? A literature review on the antecedents of online trust”, Computers in Human Behavior, Vol. 26 No. 5, pp. 857-869. 
+Bhattacherjee, A. (2002), “Individual trust in online firms: scale development and initial test”, Journal of Management Information Systems, Vol. 19 No. 1, pp. 211-241. Boyd, D.M. and Ellison, N.B. (2007), “Social network sites: definition, history and scholarship”, Journal of Computer-Mediated Communication, Vol. 13 No. 1, pp. 210-230. Braun, M.T. (2013), “Obstacles to social networking website use among older adults”, Computers in Human Behavior, Vol. 29 No. 3, pp. 673-680. 
+Chang, Y.P. and Zhu, D.H. (2011), “Understanding social networking sites adoption in china: a comparison of pre-adoption and post-adoption”, Computers in Human Behavior, Vol. 27 No. 5, pp. 1840-1848. 
+Chang, Y.-S. and Fang, S.-R. (2013), “Antecedents and distinctions between online trust and distrust: predicting high- and low-risk internet behaviors”, Journal of Electronic Commerce Research, Vol. 14 No. 2, pp. 149-166. 
+Chen, Y.C., Shang, R.A. and Lin, A.K. (2008), “The intention to download music files in a P2P environment: consumption value, fashion, and ethical decision perspectives”, Electronic Commerce Research and Applications, Vol. 7 No. 4, pp. 411-422. 
+Cheung, C.M.K. and Lee, M.K.O. (2009), “Understanding the sustainability of a virtual community: model development and empirical test”, Journal of Information Science, Vol. 35 No. 3, pp. 279-298. 
+Cheung, C.M.K., Chiu, P.Y. and Lee, M.K.O. (2011), “Online social networks: why do students use Facebook?”, Computers in Human Behavior, Vol. 27 No. 4, pp. 1337-1343. Chin, W.W. (1998), “The partial least squares approach for structural equation modeling”, in Marcoulides, G.A. (Ed.), Modern Methods for Business Research, Lawrence Erlbaum Associates, Mahwah, NJ, pp. 295-336. 
+Chin, W.W., Marcolin, B.L. and Newsted, P.R. (2003), “A partial least squares latent variable modeling approach for measuring interaction effects: results from a Mote Carlo simulation study and voice mail emotion/adoption study”, Information Systems Research, Vol. 14 No. 2, pp. 189-217. 
+Cotte, J., Tilottama, G.C., Ratneshwar, S. and Ricci, L. (2006), “Pleasure or utility? Time planning style and web usage behaviors”, Journal of Interactive Marketing, Vol. 20 No. 1, pp. 45-57. Coutu, D.L. (1998), “Organization: trust in virtual teams”, Harvard Business Review, Vol. 76 No. 3, pp. 20-21. 
+Dayal, S., Landesberg, H. and Zeisser, M. (1999), “How to build trust online”, Marketing Management, Vol. 8 No. 3, pp. 64-69. 
+Donthu, N. and Garcia, A. (1999), “The internet shopper”, Journal of Advertising Research, Vol. 39 pp., No. 3, 52-58. 
+eBizMBA (2013), “Top 15 most popular social networking sites”, available at: www.ebizmba.com/ articles/social-networking-websites (accessed June 23, 2013). 
+Ellison, N.B., Steinfield, C. and Lampe, C. (2007), “The benefits of Facebook ‘friends:’ social capital and college students’ use of online social network sites”, Journal of Computer-Mediated Communication, Vol. 12 No. 4, pp. 1143-1168. 
+Fornell, C. and Larcker, D.F. (1981), “Evaluating structural equation models with unobservable variables and measurement error”, Journal of Marketing Research, Vol. 18 No. 1, pp. 39-50. 
+Gefen, D., Straub, D.W. and Boudreau, M.C. (2000), “Structural equation modeling and regression: guidelines for research practices”, Communication of the Association for Information Systems, Vol. 7 No. 4, pp. 1-79. 
+Hirschman, E. and Holbrook, M.B. (1982), “Hedonic consumption: emerging concepts, methods and propositions”, Journal of Marketing, Vol. 46 No. 3, pp. 92-101. 
+Hoffman, D.L., Novak, T.P. and Peralta., M. (1999), “Building consumer trust online”, Communication of the ACM, Vol. 42 No. 4, pp. 80-85. 
+Hsiao, C.C. and Chiou, J.S. (2012), “The Impact of online community position on online game continuance intention: do game knowledge and community size matter?”, Information & Management, Vol. 49 No. 6, pp. 292-300. 
+Johnson, E.J. and Payne, J.W. (1985), “Effort and accuracy in choice”, Management Science, Vol. 31 No. 4, pp. 395-414. 
+Johnson, E.J., Bellman, S. and Lohse, J. (2003), “Cognitive lock-in and the power law of practice”, Journal of Marketing, Vol. 67 No. 2, pp. 62-75. 
+Katz, E. (1959), “Mass communication research and the study of popular culture: an editorial note on a possible future for this journal”, Studies in Public Communication, Vol. 2, pp. 1-6. Kwon, O. and Wen, Y. (2010), “An empirical study of the factors affecting social network service use”, Computers in Human Behavior, Vol. 26 No. 2, pp. 254-263. 
+Lai, I.K.W., Tong, V.W.L. and Lai, D.C.F. (2011), “Trust factors influencing the adoption of internet based interorganizational systems”, Electronic Commerce Research and Applications, Vol. 10 No. 1, pp. 85-93. 
+Lakshminarasimha, A. and Ajay, V. (2008), “Value chain analysis: social networking communities”, The ICFAI University Journal of Marketing Management, Vol. VII No. 3, pp. 34-42. Lee, W.J., Xiong, L. and Hu, C. (2012), “The effect of Facebook users’ arousal and valence on intention to go to the festival: applying an extension of the technology acceptance model”, International Journal of Hospitality Management, Vol. 31 No. 3, pp. 819-827. Lee, Y.-H. and Wohn, D.Y. (2012), “Are there cultural differences in how we play? Examining cultural effects on playing social network games”, Computers in Human Behavior, Vol. 28 No. 4, pp. 1307-1314. 
+Lin, J.C.C. (2007), “Online stickiness: its antecedents and effect on purchasing intention”, Behaviour and Information Technology, Vol. 26 No. 6, pp. 507-516. 
+Lin, K.Y. and Lu, H.P. (2011a), “Intention to continue using Facebook fan pages from the perspective of social capital theory”, CyberPsychology, Behavior, and Social Networking, Vol. 14 No. 10, pp. 565-570. 
+Lin, K.Y. and Lu, H.P. (2011b), “Why people use social networking sites: an empirical study integrating network externalities and motivation theory”, Computers in Human Behavior, Vol. 27 No. 3, pp. 1152-1161. 
+Lin, P., Huang, Y. and Wang, J. (2010), “Applying the theory of consumption values to choice behavior toward green products”, The 2010 IEEE International Conference on Management of Innovation and Technology, IEEE Xplore, Singapore, June 2-5, pp. 348-353. 
+Lu, H.-P. and Lee, M.-R. (2010), “Demographic differences and the antecedents of blog stickiness”, Online Information Review, Vol. 34 No. 1, pp. 21-38. 
+Merchant, G. (2012), “Unravelling the social network: theory and research”, Learning, Media and Technology, Vol. 37 No. 1, pp. 4-19. 
+Mital, M. and Sarkar, S. (2011), “Multihoming behavior of users in social networking web sites: a theoretical model”, Information Technology and People, Vol. 24 No. 4, pp. 378-392. Moon, J.W. and Kim, Y.G. (2001), “Extending the TAM for a world-wide-web context”, Information and Management, Vol. 38 No. 4, pp. 217-230. 
+A value theory based view
+35 
+ITP 27,1
+36 
+Nadkarni, A. and Hofmann, S.G. (2012), “Why do people use Facebook?”, Personality and Individual Differences, Vol. 52 No. 3, pp. 243-249. 
+Nunnally, J. (1978), Psychometric Theory, McGraw-Hill, New York, NY. 
+Palvia, P. (2009), “The role of trust in e-commerce relational exchange: a unified model”, Information and Management, Vol. 46 No. 4, pp. 213-220. 
+Park, N., Jin, B. and Annie Jin, S.A. (2011), “Effects of self-disclosure on relational intimacy in Facebook”, Computers in Human Behavior, Vol. 27 No. 5, pp. 1974-1983. Pavlou, P.A. and Gefen, D. (2005), “Psychological contract violation in online marketplaces: antecedents, consequences, and moderating role”, Information Systems Research, Vol. 16 No. 4, pp. 372-399. 
+Pihlstro¨m, M. and Brush, G.J. (2008), “Comparing the perceived value of information and entertainment mobile services”, Psychology and Marketing, Vol. 25 No. 8, pp. 732-755. Podsakoff, P.M., MacKenzie, S.B., Lee, J.-Y. and Podsakoff, N.P. (2003), “Common method biases in behavioral research: a critical review of the literature and recommended remedies”, Journal of Applied Psychology, Vol. 88 No. 5, pp. 879-903. 
+Poyry, E., Parvinen, P. and Tuuli, M. (2013), “Can we get from liking to buying? Behavioral differences in hedonic and utilitarian Facebook usage”, Electronic Commerce Research and Applications, Vol. 12 No. 4, pp. 879-903. 
+Raacke, J. and Bonds-Raacke, J. (2008), “Myspace and Facebook: applying the uses and gratifications theory to exploring friend-networking sites”, Cyberpsychology and Behavior, Vol. 11 No. 2, pp. 169-174. 
+Ridings, C.M., Gefen, D. and Arinze, B. (2002), “Some antecedents and effects of trust in virtual communities”, Journal of Strategic Information Systems, Vol. 11 Nos 3-4, pp. 271-295. Ring, P.S. and Van de, V.A.H. (1992), “Structuring cooperative relationships between organizations”, Strategic Management Journal, Vol. 13 No. 7, pp. 483-498. Sherry, J.F.J. (1990), “A sociocultural analysis of a Midwestern American flea market”, Journal of Consumer Research, Vol. 17 No. 1, pp. 13-30. 
+Sheth, J.N., Newman, B.I. and Gross, B.L. (1991), “Why we buy what we buy: a theory of consumption values”, Journal of Business Research, Vol. 22 No. 2, pp. 159-170. Shin, D.-H. and Shin, Y.-J. (2011), “Why do people play social network games?”, Computers in Human Behavior, Vol. 27 No. 2, pp. 852-861. 
+Sledgianowski, D. and Kulviwat, S. (2009), “Using social network sites: the effects of playfulness, critical mass and trust in a hedonic context”, The Journal of Computer Information Systems, Vol. 49 No. 4, pp. 74-83. 
+Socialbakers (2013), “Facebook statistics by country”, available at: www.socialbakers.com/ facebook-statistics/ (accessed February 9, 2013). 
+Sullivan, M.G. and Drennan, J. (2005), “Marketing M-services: establishing a usage benefit typology related to mobile user characteristics”, Database Marketing and Customer Strategy Management, Vol. 12 No. 4, pp. 327-341. 
+Sweeney, J.C. and Soutar, G.N. (2001), “Consumer perceived value: the development of a multiple item scale”, Journal of Retailing, Vol. 77 No. 2, pp. 203-220. 
+Thorbjornsen, H. and Supphellen, M. (2004), “The impact of brand loyalty on web site usage”, Journal of Brand Management, Vol. 11 No. 3, pp. 199-208. 
+Tourangeau, R., Rips, L.J. and Rasinski, K. (2000), The Psychology of Survey Response, Cambridge University Press, Cambridge. 
+Tufekci, Z. (2008), “Grooming, gossip, Facebook and Myspace: what can we learn about social networking sites from non-users”, Information, Communication and Society, Vol. 11 No. 4, pp. 544-564. 
+Turel, O., Serenko, A. and Bontis, N. (2010), “User acceptance of hedonic digital artifacts: a theory of consumption values perspective”, Information and Management, Vol. 47 No. 1, pp. 53-59. 
+Wang, L.C., Baker, J., Wagner, J.A. and Wakefield, K. (2007), “Can a retail web site be social?”, Journal of Marketing, Vol. 71 No. 3, pp. 143-157. 
+Wu, K., Zhaoa, Y., Zhua, Q., Tan, X. and Zheng, H. (2011), “A meta-analysis of the impact of trust on technology acceptance model: investigation of moderating influence of subject and context type”, International Journal of Information Management, Vol. 31 No. 6, pp. 572-581. 
+Xu, C., Ryan, S., Prybutok, V. and Wen, C. (2012), “It is not for fun: an examination of social network site usage”, Information & Management, Vol. 49 No. 5, pp. 210-217. Yang, H.L. and Lai, C.Y. (2011), “Effects of perceived values on continuance usage of Facebook”, The 2011 International Conference on Electronic Commerce, Web Application and Communication (ECWAC 2011), April 17-18, Communications in Computer and Information Science, Vol. 143, Part I, pp. 254-260. 
+Yen, Y.S. (2012), “Exploring customer perceived value in mobile phone services”, International Journal of Mobile Communications, Vol. 10 No. 2, pp. 213-229. 
+Zeithalm, V. (1988), “A consumer perception of price, quality, and value: a means-end model and synthesis of evidence”, Journal of Marketing, Vol. 52 No. 3, pp. 2-22. 
+Zott, C., Amit, R. and Donlevy, J. (2000), “Strategies for value creation in e-commerce: best practice in Europe”, European Management Journal, Vol. 18 No. 5, pp. 463-75. 
+About the authors 
+Heng-Li Yang is a Professor in the Department of Management Information Systems, National Cheng-Chi University in Taiwan. His research interests include data and knowledge engineering, software engineering, knowledge management, information management in organizations, technology impacts on organizations, and empirical studies in MIS. His papers appeared on information and management, expert systems with applications, information processing and management, data and knowledge engineering, cybernetics and systems, online information review, industrial management and data systems, computer standards and interfaces, cyberpsychology and behavior, computers in human behavior, computers and education, behavior and information technology, etc. Professor Heng-Li Yang is the corresponding author and can be contacted at: yanh@nccu.edu.tw 
+Chien-Liang Lin is a Doctoral Student in the Department of Management Information Systems at the National Cheng-Chi University, Taipei, Taiwan. He received the MS degrees in information management from the Ming Chuan University. His research interests include IT adoption behavior, electronic commerce, virtual community, and E-learning. He has presented journal and conference papers at Managing Service Quality, International Journal of Digital Content and its Applications, Journal of Educational Media and Library Sciences (in Chinese), Instructional Technology and Media (in Chinese), Pacific Asia Conference on Information Systems, International Conference on e-Business, and Global Chinese Conference on Computers in Education. 
+To purchase reprints of this article please e-mail: reprints@emeraldinsight.com Or visit our web site for further details: www.emeraldinsight.com/reprints 
+A value theory based view
+37
